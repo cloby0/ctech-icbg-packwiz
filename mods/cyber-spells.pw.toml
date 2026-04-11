@@ -1,0 +1,13 @@
+name = "Cyber_Spells"
+filename = "CyberSpells-1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "88c8d350956889ba76007e2fae522e1ab08fac8c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7643730
+project-id = 1463259

@@ -1,0 +1,13 @@
+name = "Greate"
+filename = "greate-0.0.75.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be5a01379a229e19ced847cb3d1181b1ff670751"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7853389
+project-id = 901996

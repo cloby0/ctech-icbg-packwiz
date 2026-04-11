@@ -1,0 +1,13 @@
+name = "CastLib"
+filename = "CastLib-1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7bdf90f23a8d0e839cb64a327ca29250798963a4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7364524
+project-id = 1310383

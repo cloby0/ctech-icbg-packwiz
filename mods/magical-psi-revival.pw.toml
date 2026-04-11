@@ -1,0 +1,13 @@
+name = "Magical Psi: Revival"
+filename = "MagicalPsiRevival-1.20.1-1.1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "79e7f8f4cedbaa655dfe1d0e553a6355082a8acd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7054436
+project-id = 1320084

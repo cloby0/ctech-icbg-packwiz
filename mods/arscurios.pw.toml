@@ -1,0 +1,13 @@
+name = "ArsCurios"
+filename = "ArsCurios-1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3e5b7c825ea12f45d22ce6eb443285bbf8ebee53"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7364518
+project-id = 1311075

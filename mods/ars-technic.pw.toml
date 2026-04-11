@@ -1,0 +1,13 @@
+name = "Ars Technic"
+filename = "arstechnic-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "61fead78a0bb419ab5ba393b51491613c556f7bb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4825732
+project-id = 929916

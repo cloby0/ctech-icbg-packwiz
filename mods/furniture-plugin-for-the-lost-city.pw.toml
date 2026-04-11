@@ -1,0 +1,13 @@
+name = "Furniture Plugin for The Lost City"
+filename = "the_lost_city_and_mrcrayfishs_furniture_mod-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8073f43939a23bf3b84c73dbde78c540b886df8a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6839913
+project-id = 1317272

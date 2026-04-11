@@ -1,0 +1,13 @@
+name = "Crazy AE2 Addons LITE"
+filename = "crazyae2addonslite-1.0.3-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dabda930e50ee90a1bd88ef3e698f3fa4448d0a1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7466368
+project-id = 1426975

@@ -1,0 +1,13 @@
+name = "Serene Seasons Plus - (Previously Extended Fix)"
+filename = "Forge-Version-sereneseasonsplus-1.20.1-0.5.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "955b43a982af7c13926ae158c8865aa66ca11788"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7774663
+project-id = 1288843

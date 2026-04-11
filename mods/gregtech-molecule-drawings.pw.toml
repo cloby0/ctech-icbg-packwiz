@@ -1,0 +1,13 @@
+name = "GregTech Molecule Drawings"
+filename = "gtmoldraw-3.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f70703aed4baa682a987f788950135ade3d7c0a7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7809039
+project-id = 1348330

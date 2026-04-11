@@ -1,0 +1,13 @@
+name = "Just Parry"
+filename = "just_parry-2.5-forg-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a791bf554d3555565b0d4577c37e3b5e93d39a90"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6863415
+project-id = 1193072
