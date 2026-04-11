@@ -33,6 +33,18 @@ file = "kubejs/startup_scripts/example.js"
 hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
 
 [[files]]
+file = "mods/CyberSpells-1.1.jar"
+hash = "b912cf2b8f80ce9b13059e0fc26c40b6ee5aaad967c86b392c676fec4e023d41"
+
+[[files]]
+file = "mods/IDA-v2.0.5.jar"
+hash = "4935eed910173c1abcac9819d6f7b3e16b6aca9d44cc8270e2e04930d0905a15"
+
+[[files]]
+file = "mods/SilentCompat-forge-1.20.1-1.4.0.jar"
+hash = "739fb3f43c8e70985ce24eb8c8b03d75b2b088feabef14bfd572891756633fff"
+
+[[files]]
 file = "mods/ad-astra-structures-overhaul.pw.toml"
 hash = "421a7e78b70a3fae38a42cb21ff01ed0e3e3c415410a52cf550fd015df763f0b"
 metafile = true
@@ -138,11 +150,6 @@ hash = "fe693ae80d95c3b06c0c91285417bf58d13e1e1d69496d35224dbf0002d54476"
 metafile = true
 
 [[files]]
-file = "mods/ars-n-spells.pw.toml"
-hash = "c73a376b85e900f991a8375ccd4c4943fc7b4697ba0781fbb582d8af6eb1350b"
-metafile = true
-
-[[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
@@ -151,6 +158,10 @@ metafile = true
 file = "mods/ars-technic.pw.toml"
 hash = "31957f8001371a8e6ff3be810d54755f656703f89dc060e6b733121b0e2720d2"
 metafile = true
+
+[[files]]
+file = "mods/ars_n_spells-1.8.0.jar"
+hash = "aa07342d6222abf9897d42d62ddc8b4edff20fb35f6fdbdec2aa8fbb9baee97f"
 
 [[files]]
 file = "mods/arscurios.pw.toml"
@@ -333,11 +344,6 @@ hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
 metafile = true
 
 [[files]]
-file = "mods/cyber-spells.pw.toml"
-hash = "22a792075283893bdd6c67a373c98338e63557e4a8e5b63102728425617098b9"
-metafile = true
-
-[[files]]
 file = "mods/cyberware-reforged.pw.toml"
 hash = "20cc062985320cf7210197e0eefd49354b755ce38a7b899fe2ce8f31b9cbad9f"
 metafile = true
@@ -388,9 +394,8 @@ hash = "76700218b9a2e6ca8854512ca7c90511c756ae7f76a93fa81518d9d0e81ef084"
 metafile = true
 
 [[files]]
-file = "mods/entityculling.pw.toml"
-hash = "9dae4d133b30d6775fce8b29cc8094201a6b8ea6809687f5eeb6d13fced46f74"
-metafile = true
+file = "mods/entityculling-forge-1.10.1-mc1.20.1.jar"
+hash = "1231bb17e3db1a7d4e98800bb070ec1e7e7c016b934e1eb11c1cc63d11d0aa2d"
 
 [[files]]
 file = "mods/every-compat.pw.toml"
@@ -580,11 +585,6 @@ metafile = true
 [[files]]
 file = "mods/integrated-cataclysm.pw.toml"
 hash = "f27119e6d95e46b4943ec7af13ff5a68f8344c6f0344e86a22fe686512c754f7"
-metafile = true
-
-[[files]]
-file = "mods/integrated-dungeons-arise.pw.toml"
-hash = "4d2366dece91ae72f9c83d735ffba4c1ebad41f742fd2b56105bc772e3a3e630"
 metafile = true
 
 [[files]]
@@ -903,9 +903,8 @@ hash = "0866601075de9d01e56c078d6f80c0981d9653cf287178243acc0a9798de4355"
 metafile = true
 
 [[files]]
-file = "mods/packagedtacz.pw.toml"
-hash = "92d86b857a1cffbd28791736854ffd3184a2d3fc669e11e405be7013dc6827e4"
-metafile = true
+file = "mods/packagedtacz-1.0.4.jar"
+hash = "f996db49bacd4fc3ee7262040a30cf1dc233623c2d1804d8a208a949f657e35e"
 
 [[files]]
 file = "mods/pams-harvestcraft-2-crops.pw.toml"
@@ -1070,11 +1069,6 @@ metafile = true
 [[files]]
 file = "mods/silent-lib.pw.toml"
 hash = "7f281333e1c573bc3673446c291d82f3137bfc7de6a5256d61417f67be7b40bc"
-metafile = true
-
-[[files]]
-file = "mods/silentgear-compat.pw.toml"
-hash = "38b00dd0ebb49d9b378bb11afbc53b1e9f983dba1288e3254ff6e7e8d9226cda"
 metafile = true
 
 [[files]]
