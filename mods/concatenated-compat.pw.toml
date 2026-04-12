@@ -1,0 +1,13 @@
+name = "Concatenated Compat"
+filename = "concatenationcompat-1.1.1-universal-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9c04e37063a140de9351919388847ee3429ed3f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7892919
+project-id = 1404000

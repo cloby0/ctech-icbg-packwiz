@@ -279,6 +279,11 @@ hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
 metafile = true
 
 [[files]]
+file = "mods/concatenated-compat.pw.toml"
+hash = "73d7446aeae8ac9473160de6177d47a6879c965d3ae84db40cc1ba11958c7d90"
+metafile = true
+
+[[files]]
 file = "mods/configuration.pw.toml"
 hash = "7c1e6a587c3a46d1f9c379cdd0dc6305a87d578700c64f46da0f630f14b8a98f"
 metafile = true
@@ -709,7 +714,7 @@ metafile = true
 
 [[files]]
 file = "mods/loot-beams.pw.toml"
-hash = "2591b640a80eb4cfbcadfa20ac748d3f683844ab66b69f4744d645c3a3ed9f8a"
+hash = "2e809358b613687328446e37faf0e102583b77d719856fc20324de1da4ba4bcd"
 metafile = true
 
 [[files]]
@@ -730,6 +735,11 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a"
+metafile = true
+
+[[files]]
+file = "mods/lychee.pw.toml"
+hash = "71ca7c8a43d0dcbc52b73039e0b1e344e8f5d941eaa8decb4f4828b4a11c8204"
 metafile = true
 
 [[files]]
