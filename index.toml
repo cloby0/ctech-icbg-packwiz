@@ -120,6 +120,11 @@ hash = "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
 metafile = true
 
 [[files]]
+file = "mods/applied-cooking.pw.toml"
+hash = "426446bc043d83e2463ab4bae4ba86f4c2fc9c2ed3b28a96101ccb1d977b920e"
+metafile = true
+
+[[files]]
 file = "mods/applied-energistics-2-wireless-terminals.pw.toml"
 hash = "f3ddc5ed65361138c4c66fd4abd05b6050b24362dc7bb83a5ca54eafb74dd181"
 metafile = true
@@ -181,6 +186,11 @@ metafile = true
 [[files]]
 file = "mods/attributefix.pw.toml"
 hash = "828d571a91296e2ee3be1ec509619ea01f6a61a03958461fbe543bd377daa194"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
 
 [[files]]
@@ -304,6 +314,11 @@ hash = "1e56f528d8e21b0cf9c52c3d6deea2a4eafa408170b39a070195dbf66617f373"
 metafile = true
 
 [[files]]
+file = "mods/cooking-for-blockheads.pw.toml"
+hash = "919eac641320df56ffaad0132877cb67bd8b942ee23eeb0f137993c8df18b952"
+metafile = true
+
+[[files]]
 file = "mods/corgilib.pw.toml"
 hash = "28053b4a334c4079b5d4c7ea2d3b8d48f8fa61420498f1bed0ff83cd316bbba0"
 metafile = true
@@ -420,6 +435,16 @@ metafile = true
 [[files]]
 file = "mods/extended-crafting.pw.toml"
 hash = "8fe5f4760379d967b02b397b30a61ca27357d896ad4a1aac1f3c8fcee203bf11"
+metafile = true
+
+[[files]]
+file = "mods/extended-terminal.pw.toml"
+hash = "cefcb3c94319ed4f385fe9a7a557f5e1a578d34427eb8daa58e0d139f7622ad4"
+metafile = true
+
+[[files]]
+file = "mods/extreme-sound-muffler.pw.toml"
+hash = "7320fd87f159717c76caa5fdceed3aa2994963529bef19f649ad234d1af01b70"
 metafile = true
 
 [[files]]
@@ -803,6 +828,11 @@ hash = "893b3e91c2165e5b3d7950ad543d6898bd3d50b7bfa411352ab0c60447c9e8e3"
 metafile = true
 
 [[files]]
+file = "mods/minecraft-cursor.pw.toml"
+hash = "1cd5fdc6ea4599a095631f82dfcb06b46dff7824f79239edf7d595a08c211f28"
+metafile = true
+
+[[files]]
 file = "mods/mining-gadgets.pw.toml"
 hash = "d4a42351be29d476b540e810a2339b05f2f0cf789d62404da7c708b685c9ecda"
 metafile = true
@@ -1062,6 +1092,11 @@ hash = "2cb8dd9a3944a6430b49916a4fe1b6cf0bd7efd907054f8e679a02717149404f"
 metafile = true
 
 [[files]]
+file = "mods/sebastrnlib.pw.toml"
+hash = "293c2540f4490e6c25a660dfcad115ed952a63c1b66b1dfdaab25f18d0154946"
+metafile = true
+
+[[files]]
 file = "mods/selene.pw.toml"
 hash = "8c1ddc34636bfb9ab2209a4d387900f03682a65ed5fcf8b5027ffdd9ba49880f"
 metafile = true
@@ -1119,6 +1154,11 @@ metafile = true
 [[files]]
 file = "mods/spark.pw.toml"
 hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
+metafile = true
+
+[[files]]
+file = "mods/storage-drawers.pw.toml"
+hash = "371b68e257eaca322ca4e95f4aa8d95441d84110b69243dda818f743a0111ba5"
 metafile = true
 
 [[files]]
