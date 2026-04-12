@@ -1007,11 +1007,6 @@ hash = "2b0772879a1d43e6fc0d892dca4a85d360e813d5cd3907fc2ab42f345b146362"
 metafile = true
 
 [[files]]
-file = "mods/project-atmosphere.pw.toml"
-hash = "5d3b478da0cfbc7f04c020e770f309d41dba2d2a793b8fa617e00b72acd9c6e0"
-metafile = true
-
-[[files]]
 file = "mods/psi.pw.toml"
 hash = "a87548b87f5073c5b48a947e7c0eccd6e29a0205c3c202d07f74fc4d82ae2d1f"
 metafile = true
