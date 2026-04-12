@@ -884,12 +884,12 @@ metafile = true
 
 [[files]]
 file = "mods/obscure-tooltips-fix.pw.toml"
-hash = "1248fbaa453925ba1ddbb79f869d772b155e0cf96e0ed96da991e9dbdbdfebb8"
+hash = "05a1d0e61ff403528e33294d7bf943e47133d8fc5f2fc58219a25ddbb09f5ae1"
 metafile = true
 
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
-hash = "bb8f658b64fb2bea25d698dfbe50b8c83bef15fa60403166e84f9bccb8774295"
+hash = "f6495df74eb760bbc429430ed7ab8ba5583481e01fca2f5ffa4cf4d5fbab94d9"
 metafile = true
 
 [[files]]
