@@ -660,11 +660,6 @@ file = "mods/ars_n_spells-1.8.0.jar"
 hash = "aa07342d6222abf9897d42d62ddc8b4edff20fb35f6fdbdec2aa8fbb9baee97f"
 
 [[files]]
-file = "mods/arscurios.pw.toml"
-hash = "73f9effe521bc97b30c4d06fd4b22e43a4a0b7cbfbab985b95a775c24112b5f9"
-metafile = true
-
-[[files]]
 file = "mods/artifacts.pw.toml"
 hash = "9224b29b7fc388a0a030f8a6e87b26b24ec73dbc853bcdd531a144ed8e59ccea"
 metafile = true
@@ -1281,11 +1276,6 @@ metafile = true
 [[files]]
 file = "mods/macaws-windows.pw.toml"
 hash = "8ee3776430187fb4d69278e645e10fefb7fe7342caee0a5861479ce25956713a"
-metafile = true
-
-[[files]]
-file = "mods/magical-psi-revival.pw.toml"
-hash = "c8af2515f5d296b3be60af68ef249ff54ecd417929c0f26dd8b70780b6366f67"
 metafile = true
 
 [[files]]
