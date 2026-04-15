@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+        }
+    },
+    "name": {
+        "text": "Ruthenium Trinium Americium Neutronate Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 976561.5234375,
+            "armor_durability": 58593.69140625,
+            "enchantment_value": 54687.4453125,
+            "rarity": 78124.921875,
+            "charging_value": 2734.3722656249997,
+            "harvest_speed": 80,
+            "melee_damage": 7812.4921875,
+            "magic_damage": 3906.24609375,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 195.31230468750002,
+            "attack_speed/hoe": 195.31230468750002,
+            "ranged_damage": 7812.4921875,
+            "ranged_speed": 1953.123046875,
+            "projectile_speed": 3906.24609375,
+            "projectile_accuracy": 4296.870703125001,
+            "armor": 58593.69140625,
+            "armor/helmet": 7812.4921875,
+            "armor/chestplate": 23437.4765625,
+            "armor/leggings": 19531.23046875,
+            "armor/boots": 7812.4921875,
+            "magic_armor": 23437.4765625
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 7812.4921875
+            },
+            "ranged_speed": {
+                "add": 781.2492187500001
+            },
+            "melee_damage": {
+                "add": 3906.24609375
+            },
+            "attack_speed": {
+                "add": 390.62460937500003
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 499999.5
+            },
+            "armor_durability": {
+                "add": 15624.984375
+            },
+            "harvest_speed": {
+                "add": 3906.24609375
+            },
+            "melee_damage": {
+                "add": 3906.24609375
+            },
+            "ranged_speed": {
+                "add": 781.2492187500001
+            },
+            "rarity": {
+                "add": 31249.96875
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#F0F0F0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

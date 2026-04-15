@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:titanium_carbide_ingot"
+        }
+    },
+    "name": {
+        "text": "Titanium Carbide Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 2250.0,
+            "armor_durability": 135.0,
+            "enchantment_value": 126.0,
+            "rarity": 180.0,
+            "charging_value": 6.3,
+            "harvest_speed": 15,
+            "melee_damage": 18.0,
+            "magic_damage": 9.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.45,
+            "attack_speed/hoe": 0.45,
+            "ranged_damage": 18.0,
+            "ranged_speed": 4.5,
+            "projectile_speed": 9.0,
+            "projectile_accuracy": 9.9,
+            "armor": 135.0,
+            "armor/helmet": 18.0,
+            "armor/chestplate": 54.0,
+            "armor/leggings": 45.0,
+            "armor/boots": 18.0,
+            "magic_armor": 54.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 18.0
+            },
+            "ranged_speed": {
+                "add": 1.8
+            },
+            "melee_damage": {
+                "add": 9.0
+            },
+            "attack_speed": {
+                "add": 0.9
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1152.0
+            },
+            "armor_durability": {
+                "add": 36.0
+            },
+            "harvest_speed": {
+                "add": 9.0
+            },
+            "melee_damage": {
+                "add": 9.0
+            },
+            "ranged_speed": {
+                "add": 1.8
+            },
+            "rarity": {
+                "add": 72.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A0A0A0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

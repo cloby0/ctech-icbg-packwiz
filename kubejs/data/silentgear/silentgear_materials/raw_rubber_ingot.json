@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 1,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:raw_rubber_ingot"
+        }
+    },
+    "name": {
+        "text": "Raw Rubber Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 62.5,
+            "armor_durability": 3.75,
+            "enchantment_value": 3.5,
+            "rarity": 5.0,
+            "charging_value": 0.175,
+            "harvest_speed": 1,
+            "melee_damage": 0.5,
+            "magic_damage": 0.25,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.0125,
+            "attack_speed/hoe": 0.0125,
+            "ranged_damage": 0.5,
+            "ranged_speed": 0.125,
+            "projectile_speed": 0.25,
+            "projectile_accuracy": 0.275,
+            "armor": 3.75,
+            "armor/helmet": 0.5,
+            "armor/chestplate": 1.5,
+            "armor/leggings": 1.25,
+            "armor/boots": 0.5,
+            "magic_armor": 1.5
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 0.5
+            },
+            "ranged_speed": {
+                "add": 0.05
+            },
+            "melee_damage": {
+                "add": 0.25
+            },
+            "attack_speed": {
+                "add": 0.025
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 32.0
+            },
+            "armor_durability": {
+                "add": 1.0
+            },
+            "harvest_speed": {
+                "add": 0.25
+            },
+            "melee_damage": {
+                "add": 0.25
+            },
+            "ranged_speed": {
+                "add": 0.05
+            },
+            "rarity": {
+                "add": 2.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A0522D"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:duranium_ingot"
+        }
+    },
+    "name": {
+        "text": "Duranium Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 8000.0,
+            "armor_durability": 480.0,
+            "enchantment_value": 448.0,
+            "rarity": 640.0,
+            "charging_value": 22.4,
+            "harvest_speed": 18,
+            "melee_damage": 64.0,
+            "magic_damage": 32.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 1.6,
+            "attack_speed/hoe": 1.6,
+            "ranged_damage": 64.0,
+            "ranged_speed": 16.0,
+            "projectile_speed": 32.0,
+            "projectile_accuracy": 35.2,
+            "armor": 480.0,
+            "armor/helmet": 64.0,
+            "armor/chestplate": 192.0,
+            "armor/leggings": 160.0,
+            "armor/boots": 64.0,
+            "magic_armor": 192.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 64.0
+            },
+            "ranged_speed": {
+                "add": 6.4
+            },
+            "melee_damage": {
+                "add": 32.0
+            },
+            "attack_speed": {
+                "add": 3.2
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 4096.0
+            },
+            "armor_durability": {
+                "add": 128.0
+            },
+            "harvest_speed": {
+                "add": 32.0
+            },
+            "melee_damage": {
+                "add": 32.0
+            },
+            "ranged_speed": {
+                "add": 6.4
+            },
+            "rarity": {
+                "add": 256.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#0000FF"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

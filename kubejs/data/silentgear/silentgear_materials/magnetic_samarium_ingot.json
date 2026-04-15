@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:magnetic_samarium_ingot"
+        }
+    },
+    "name": {
+        "text": "Magnetic Samarium Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 1250.0,
+            "armor_durability": 75.0,
+            "enchantment_value": 70.0,
+            "rarity": 100.0,
+            "charging_value": 3.5,
+            "harvest_speed": 10,
+            "melee_damage": 10.0,
+            "magic_damage": 5.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.25,
+            "attack_speed/hoe": 0.25,
+            "ranged_damage": 10.0,
+            "ranged_speed": 2.5,
+            "projectile_speed": 5.0,
+            "projectile_accuracy": 5.5,
+            "armor": 75.0,
+            "armor/helmet": 10.0,
+            "armor/chestplate": 30.0,
+            "armor/leggings": 25.0,
+            "armor/boots": 10.0,
+            "magic_armor": 30.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 10.0
+            },
+            "ranged_speed": {
+                "add": 1.0
+            },
+            "melee_damage": {
+                "add": 5.0
+            },
+            "attack_speed": {
+                "add": 0.5
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 640.0
+            },
+            "armor_durability": {
+                "add": 20.0
+            },
+            "harvest_speed": {
+                "add": 5.0
+            },
+            "melee_damage": {
+                "add": 5.0
+            },
+            "ranged_speed": {
+                "add": 1.0
+            },
+            "rarity": {
+                "add": 40.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FFD700"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

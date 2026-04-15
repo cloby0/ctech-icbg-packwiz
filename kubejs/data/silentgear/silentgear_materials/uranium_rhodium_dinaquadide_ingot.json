@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:uranium_rhodium_dinaquadide_ingot"
+        }
+    },
+    "name": {
+        "text": "Uranium Rhodium Dinaquadide Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 6000.0,
+            "armor_durability": 360.0,
+            "enchantment_value": 336.0,
+            "rarity": 480.0,
+            "charging_value": 16.799999999999997,
+            "harvest_speed": 70,
+            "melee_damage": 48.0,
+            "magic_damage": 24.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 1.2000000000000002,
+            "attack_speed/hoe": 1.2000000000000002,
+            "ranged_damage": 48.0,
+            "ranged_speed": 12.0,
+            "projectile_speed": 24.0,
+            "projectile_accuracy": 26.400000000000002,
+            "armor": 360.0,
+            "armor/helmet": 48.0,
+            "armor/chestplate": 144.0,
+            "armor/leggings": 120.0,
+            "armor/boots": 48.0,
+            "magic_armor": 144.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 48.0
+            },
+            "ranged_speed": {
+                "add": 4.800000000000001
+            },
+            "melee_damage": {
+                "add": 24.0
+            },
+            "attack_speed": {
+                "add": 2.4000000000000004
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 3072.0
+            },
+            "armor_durability": {
+                "add": 96.0
+            },
+            "harvest_speed": {
+                "add": 24.0
+            },
+            "melee_damage": {
+                "add": 24.0
+            },
+            "ranged_speed": {
+                "add": 4.800000000000001
+            },
+            "rarity": {
+                "add": 192.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#32CD32"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:enriched_naquadah_ingot"
+        }
+    },
+    "name": {
+        "text": "Enriched Naquadah Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 5000.0,
+            "armor_durability": 300.0,
+            "enchantment_value": 280.0,
+            "rarity": 400.0,
+            "charging_value": 14.0,
+            "harvest_speed": 60,
+            "melee_damage": 40.0,
+            "magic_damage": 20.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 1.0,
+            "attack_speed/hoe": 1.0,
+            "ranged_damage": 40.0,
+            "ranged_speed": 10.0,
+            "projectile_speed": 20.0,
+            "projectile_accuracy": 22.0,
+            "armor": 300.0,
+            "armor/helmet": 40.0,
+            "armor/chestplate": 120.0,
+            "armor/leggings": 100.0,
+            "armor/boots": 40.0,
+            "magic_armor": 120.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 40.0
+            },
+            "ranged_speed": {
+                "add": 4.0
+            },
+            "melee_damage": {
+                "add": 20.0
+            },
+            "attack_speed": {
+                "add": 2.0
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 2560.0
+            },
+            "armor_durability": {
+                "add": 80.0
+            },
+            "harvest_speed": {
+                "add": 20.0
+            },
+            "melee_damage": {
+                "add": 20.0
+            },
+            "ranged_speed": {
+                "add": 4.0
+            },
+            "rarity": {
+                "add": 160.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#323232"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:cobalt_brass_ingot"
+        }
+    },
+    "name": {
+        "text": "Cobalt Brass Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 1000.0,
+            "armor_durability": 60.0,
+            "enchantment_value": 56.0,
+            "rarity": 80.0,
+            "charging_value": 2.8,
+            "harvest_speed": 7,
+            "melee_damage": 8.0,
+            "magic_damage": 4.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.2,
+            "attack_speed/hoe": 0.2,
+            "ranged_damage": 8.0,
+            "ranged_speed": 2.0,
+            "projectile_speed": 4.0,
+            "projectile_accuracy": 4.4,
+            "armor": 60.0,
+            "armor/helmet": 8.0,
+            "armor/chestplate": 24.0,
+            "armor/leggings": 20.0,
+            "armor/boots": 8.0,
+            "magic_armor": 24.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 8.0
+            },
+            "ranged_speed": {
+                "add": 0.8
+            },
+            "melee_damage": {
+                "add": 4.0
+            },
+            "attack_speed": {
+                "add": 0.4
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 512.0
+            },
+            "armor_durability": {
+                "add": 16.0
+            },
+            "harvest_speed": {
+                "add": 4.0
+            },
+            "melee_damage": {
+                "add": 4.0
+            },
+            "ranged_speed": {
+                "add": 0.8
+            },
+            "rarity": {
+                "add": 32.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#0000FF"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

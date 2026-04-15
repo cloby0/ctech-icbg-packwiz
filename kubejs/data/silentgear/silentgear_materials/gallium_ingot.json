@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 1,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:gallium_ingot"
+        }
+    },
+    "name": {
+        "text": "Gallium Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 294.921875,
+            "armor_durability": 17.6953125,
+            "enchantment_value": 16.515625,
+            "rarity": 23.59375,
+            "charging_value": 0.8257812499999999,
+            "harvest_speed": 5,
+            "melee_damage": 2.359375,
+            "magic_damage": 1.1796875,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.058984375000000006,
+            "attack_speed/hoe": 0.058984375000000006,
+            "ranged_damage": 2.359375,
+            "ranged_speed": 0.58984375,
+            "projectile_speed": 1.1796875,
+            "projectile_accuracy": 1.2976562500000002,
+            "armor": 17.6953125,
+            "armor/helmet": 2.359375,
+            "armor/chestplate": 7.078125,
+            "armor/leggings": 5.8984375,
+            "armor/boots": 2.359375,
+            "magic_armor": 7.078125
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 2.359375
+            },
+            "ranged_speed": {
+                "add": 0.23593750000000002
+            },
+            "melee_damage": {
+                "add": 1.1796875
+            },
+            "attack_speed": {
+                "add": 0.11796875000000001
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 151.0
+            },
+            "armor_durability": {
+                "add": 4.71875
+            },
+            "harvest_speed": {
+                "add": 1.1796875
+            },
+            "melee_damage": {
+                "add": 1.1796875
+            },
+            "ranged_speed": {
+                "add": 0.23593750000000002
+            },
+            "rarity": {
+                "add": 9.4375
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#DCDCDC"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

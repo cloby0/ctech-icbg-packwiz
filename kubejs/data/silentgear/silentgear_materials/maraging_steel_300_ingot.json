@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:maraging_steel_300_ingot"
+        }
+    },
+    "name": {
+        "text": "Maraging Steel 300 Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 2750.0,
+            "armor_durability": 165.0,
+            "enchantment_value": 154.0,
+            "rarity": 220.0,
+            "charging_value": 7.699999999999999,
+            "harvest_speed": 17,
+            "melee_damage": 22.0,
+            "magic_damage": 11.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.55,
+            "attack_speed/hoe": 0.55,
+            "ranged_damage": 22.0,
+            "ranged_speed": 5.5,
+            "projectile_speed": 11.0,
+            "projectile_accuracy": 12.100000000000001,
+            "armor": 165.0,
+            "armor/helmet": 22.0,
+            "armor/chestplate": 66.0,
+            "armor/leggings": 55.0,
+            "armor/boots": 22.0,
+            "magic_armor": 66.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 22.0
+            },
+            "ranged_speed": {
+                "add": 2.2
+            },
+            "melee_damage": {
+                "add": 11.0
+            },
+            "attack_speed": {
+                "add": 1.1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1408.0
+            },
+            "armor_durability": {
+                "add": 44.0
+            },
+            "harvest_speed": {
+                "add": 11.0
+            },
+            "melee_damage": {
+                "add": 11.0
+            },
+            "ranged_speed": {
+                "add": 2.2
+            },
+            "rarity": {
+                "add": 88.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#B0C4DE"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

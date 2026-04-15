@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 1,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:indium_ingot"
+        }
+    },
+    "name": {
+        "text": "Indium Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 281.25,
+            "armor_durability": 16.875,
+            "enchantment_value": 15.75,
+            "rarity": 22.5,
+            "charging_value": 0.7875,
+            "harvest_speed": 4,
+            "melee_damage": 2.25,
+            "magic_damage": 1.125,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.05625,
+            "attack_speed/hoe": 0.05625,
+            "ranged_damage": 2.25,
+            "ranged_speed": 0.5625,
+            "projectile_speed": 1.125,
+            "projectile_accuracy": 1.2375,
+            "armor": 16.875,
+            "armor/helmet": 2.25,
+            "armor/chestplate": 6.75,
+            "armor/leggings": 5.625,
+            "armor/boots": 2.25,
+            "magic_armor": 6.75
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 2.25
+            },
+            "ranged_speed": {
+                "add": 0.225
+            },
+            "melee_damage": {
+                "add": 1.125
+            },
+            "attack_speed": {
+                "add": 0.1125
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 144.0
+            },
+            "armor_durability": {
+                "add": 4.5
+            },
+            "harvest_speed": {
+                "add": 1.125
+            },
+            "melee_damage": {
+                "add": 1.125
+            },
+            "ranged_speed": {
+                "add": 0.225
+            },
+            "rarity": {
+                "add": 9.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A8A8A8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

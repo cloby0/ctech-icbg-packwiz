@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:red_steel_ingot"
+        }
+    },
+    "name": {
+        "text": "Red Steel Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 2441.40625,
+            "armor_durability": 146.484375,
+            "enchantment_value": 136.71875,
+            "rarity": 195.3125,
+            "charging_value": 6.8359375,
+            "harvest_speed": 11,
+            "melee_damage": 19.53125,
+            "magic_damage": 9.765625,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.48828125,
+            "attack_speed/hoe": 0.48828125,
+            "ranged_damage": 19.53125,
+            "ranged_speed": 4.8828125,
+            "projectile_speed": 9.765625,
+            "projectile_accuracy": 10.7421875,
+            "armor": 146.484375,
+            "armor/helmet": 19.53125,
+            "armor/chestplate": 58.59375,
+            "armor/leggings": 48.828125,
+            "armor/boots": 19.53125,
+            "magic_armor": 58.59375
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 19.53125
+            },
+            "ranged_speed": {
+                "add": 1.953125
+            },
+            "melee_damage": {
+                "add": 9.765625
+            },
+            "attack_speed": {
+                "add": 0.9765625
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1250.0
+            },
+            "armor_durability": {
+                "add": 39.0625
+            },
+            "harvest_speed": {
+                "add": 9.765625
+            },
+            "melee_damage": {
+                "add": 9.765625
+            },
+            "ranged_speed": {
+                "add": 1.953125
+            },
+            "rarity": {
+                "add": 78.125
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FF0000"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

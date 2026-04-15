@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 1,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:polyethylene_ingot"
+        }
+    },
+    "name": {
+        "text": "Polyethylene Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 125.0,
+            "armor_durability": 7.5,
+            "enchantment_value": 7.0,
+            "rarity": 10.0,
+            "charging_value": 0.35,
+            "harvest_speed": 2,
+            "melee_damage": 1.0,
+            "magic_damage": 0.5,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.025,
+            "attack_speed/hoe": 0.025,
+            "ranged_damage": 1.0,
+            "ranged_speed": 0.25,
+            "projectile_speed": 0.5,
+            "projectile_accuracy": 0.55,
+            "armor": 7.5,
+            "armor/helmet": 1.0,
+            "armor/chestplate": 3.0,
+            "armor/leggings": 2.5,
+            "armor/boots": 1.0,
+            "magic_armor": 3.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 1.0
+            },
+            "ranged_speed": {
+                "add": 0.1
+            },
+            "melee_damage": {
+                "add": 0.5
+            },
+            "attack_speed": {
+                "add": 0.05
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 64.0
+            },
+            "armor_durability": {
+                "add": 2.0
+            },
+            "harvest_speed": {
+                "add": 0.5
+            },
+            "melee_damage": {
+                "add": 0.5
+            },
+            "ranged_speed": {
+                "add": 0.1
+            },
+            "rarity": {
+                "add": 4.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#F0F0F0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

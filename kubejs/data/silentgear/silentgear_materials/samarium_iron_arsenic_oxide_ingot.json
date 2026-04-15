@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:samarium_iron_arsenic_oxide_ingot"
+        }
+    },
+    "name": {
+        "text": "Samarium Iron Arsenic Oxide Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 1750.0,
+            "armor_durability": 105.0,
+            "enchantment_value": 98.0,
+            "rarity": 140.0,
+            "charging_value": 4.8999999999999995,
+            "harvest_speed": 12,
+            "melee_damage": 14.0,
+            "magic_damage": 7.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.35000000000000003,
+            "attack_speed/hoe": 0.35000000000000003,
+            "ranged_damage": 14.0,
+            "ranged_speed": 3.5,
+            "projectile_speed": 7.0,
+            "projectile_accuracy": 7.700000000000001,
+            "armor": 105.0,
+            "armor/helmet": 14.0,
+            "armor/chestplate": 42.0,
+            "armor/leggings": 35.0,
+            "armor/boots": 14.0,
+            "magic_armor": 42.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 14.0
+            },
+            "ranged_speed": {
+                "add": 1.4000000000000001
+            },
+            "melee_damage": {
+                "add": 7.0
+            },
+            "attack_speed": {
+                "add": 0.7000000000000001
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 896.0
+            },
+            "armor_durability": {
+                "add": 28.0
+            },
+            "harvest_speed": {
+                "add": 7.0
+            },
+            "melee_damage": {
+                "add": 7.0
+            },
+            "ranged_speed": {
+                "add": 1.4000000000000001
+            },
+            "rarity": {
+                "add": 56.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FFD700"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

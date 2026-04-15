@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:tungsten_steel_ingot"
+        }
+    },
+    "name": {
+        "text": "Tungstensteel Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 2000.0,
+            "armor_durability": 120.0,
+            "enchantment_value": 112.0,
+            "rarity": 160.0,
+            "charging_value": 5.6,
+            "harvest_speed": 13,
+            "melee_damage": 16.0,
+            "magic_damage": 8.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.4,
+            "attack_speed/hoe": 0.4,
+            "ranged_damage": 16.0,
+            "ranged_speed": 4.0,
+            "projectile_speed": 8.0,
+            "projectile_accuracy": 8.8,
+            "armor": 120.0,
+            "armor/helmet": 16.0,
+            "armor/chestplate": 48.0,
+            "armor/leggings": 40.0,
+            "armor/boots": 16.0,
+            "magic_armor": 48.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 16.0
+            },
+            "ranged_speed": {
+                "add": 1.6
+            },
+            "melee_damage": {
+                "add": 8.0
+            },
+            "attack_speed": {
+                "add": 0.8
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1024.0
+            },
+            "armor_durability": {
+                "add": 32.0
+            },
+            "harvest_speed": {
+                "add": 8.0
+            },
+            "melee_damage": {
+                "add": 8.0
+            },
+            "ranged_speed": {
+                "add": 1.6
+            },
+            "rarity": {
+                "add": 64.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#000000"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

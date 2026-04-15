@@ -1,0 +1,132 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:hsse_ingot"
+        }
+    },
+    "name": {
+        "text": "HSS-E Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 3000.0,
+            "armor_durability": 180.0,
+            "enchantment_value": 168.0,
+            "rarity": 240.0,
+            "charging_value": 8.399999999999999,
+            "harvest_speed": 9,
+            "melee_damage": 24.0,
+            "magic_damage": 12.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": 0.6000000000000001,
+            "attack_speed/hoe": 0.6000000000000001,
+            "ranged_damage": 24.0,
+            "ranged_speed": 6.0,
+            "projectile_speed": 12.0,
+            "projectile_accuracy": 13.200000000000001,
+            "armor": 180.0,
+            "armor/helmet": 24.0,
+            "armor/chestplate": 72.0,
+            "armor/leggings": 60.0,
+            "armor/boots": 24.0,
+            "magic_armor": 72.0
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 24.0
+            },
+            "ranged_speed": {
+                "add": 2.4000000000000004
+            },
+            "melee_damage": {
+                "add": 12.0
+            },
+            "attack_speed": {
+                "add": 1.2000000000000002
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1536.0
+            },
+            "armor_durability": {
+                "add": 48.0
+            },
+            "harvest_speed": {
+                "add": 12.0
+            },
+            "melee_damage": {
+                "add": 12.0
+            },
+            "ranged_speed": {
+                "add": 2.4000000000000004
+            },
+            "rarity": {
+                "add": 96.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.66
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#000000"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}
