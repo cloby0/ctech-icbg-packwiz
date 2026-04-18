@@ -775,6 +775,11 @@ hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
 metafile = true
 
 [[files]]
+file = "mods/codechicken-lib-1-8.pw.toml"
+hash = "f88db7aef79947669ba4d736cc2f352a2269eb21770d5597d306c3017ea126dc"
+metafile = true
+
+[[files]]
 file = "mods/concatenated-compat.pw.toml"
 hash = "73d7446aeae8ac9473160de6177d47a6879c965d3ae84db40cc1ba11958c7d90"
 metafile = true
@@ -892,6 +897,11 @@ metafile = true
 [[files]]
 file = "mods/emi.pw.toml"
 hash = "d48a1ea93de8cd5febb95ba52989d8d9ab4e998cfbdf9c1076a9f2e571d2fcbe"
+metafile = true
+
+[[files]]
+file = "mods/ender-storage-1-8.pw.toml"
+hash = "638f7c447dbe7dc2e85e4bf89d70fb41632db940a57de498094f2be57fa6c18d"
 metafile = true
 
 [[files]]
@@ -1089,6 +1099,21 @@ hash = "5cc92eb0e58c2afbfd625d727d80da1d1c84500ec962bb22f5be28b864f18551"
 metafile = true
 
 [[files]]
+file = "mods/hex-ars-linker.pw.toml"
+hash = "a6f914660cda8891afa8a9486b802325adb66b2bf7efb0e05d1c973d3eaef3cb"
+metafile = true
+
+[[files]]
+file = "mods/hexal.pw.toml"
+hash = "05f0aaf63c00487b7e7744c940dc5e4aacdf5843fe6368c3ac22ab07b52f3124"
+metafile = true
+
+[[files]]
+file = "mods/hexcasting.pw.toml"
+hash = "df0bc0ad5b00c9a0f2900b3f8866825c1ba8f21e55b1f8b92ff264d43c13093e"
+metafile = true
+
+[[files]]
 file = "mods/iceberg.pw.toml"
 hash = "5851bef35e786bfcdb837dfc380c4bd22c857434b2997235a551b3a0cf72d158"
 metafile = true
@@ -1096,6 +1121,11 @@ metafile = true
 [[files]]
 file = "mods/idas.pw.toml"
 hash = "56e2d042f5d49a155e38b8d6a29cc621044c50fa82a4bd322396272c0deac223"
+metafile = true
+
+[[files]]
+file = "mods/inline.pw.toml"
+hash = "d92834912371593543ac5c2de473e438fcf831e6e7641634c5e95918b73c211a"
 metafile = true
 
 [[files]]
@@ -1339,6 +1369,11 @@ hash = "dbace38e760e0db22e7ec59ddb56aa16d0c044c01540fb852a2a16f26aab3e4b"
 metafile = true
 
 [[files]]
+file = "mods/moreiotas.pw.toml"
+hash = "ca8acf37c54ea6cb9241fc4aa1b9465d25a6dde291e9919d72c50da2f8793498"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "e72f73611904e14d915418f0e3c6cb483cdc600e211375c2eceb393fec5b80f1"
 metafile = true
@@ -1346,6 +1381,11 @@ metafile = true
 [[files]]
 file = "mods/mowzies-mobs.pw.toml"
 hash = "69c100deb9011e828b3f11a0df754316829b751833ac30bc4726710c082f9808"
+metafile = true
+
+[[files]]
+file = "mods/multiblocked2.pw.toml"
+hash = "6928b1c2aa2aa9b84b639fb07f6a2e7d197ff9e39002e25d269b85baff22f772"
 metafile = true
 
 [[files]]
@@ -1450,6 +1490,11 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "b2cb681aaf3e6085148392a06d40899239dc299aaf5ce0adf168fc225d922c97"
+metafile = true
+
+[[files]]
+file = "mods/paucal.pw.toml"
+hash = "d545e2d90446465d26dfef1c6777edde1fa9d2b873674834dd761342a40088bf"
 metafile = true
 
 [[files]]
@@ -1573,6 +1618,11 @@ hash = "4337bb9f8d504a42da9ca4d56041e1353aa2f84e5470308e3806ce5650691044"
 metafile = true
 
 [[files]]
+file = "mods/servercore.pw.toml"
+hash = "4c1d37d3aecc6d67ce6c6a97d859345cdaefcf619a057069b0a8635f2ad551ac"
+metafile = true
+
+[[files]]
 file = "mods/silent-gear.pw.toml"
 hash = "15e0370f60f782909c94eabc3e9f79c7c716e8433988a0571847146391e89440"
 metafile = true
@@ -1590,6 +1640,11 @@ metafile = true
 [[files]]
 file = "mods/simple-clouds.pw.toml"
 hash = "5b8e9b68de4791fc875de20080977ea4103f5da72adc3a4ff9e541992b24826a"
+metafile = true
+
+[[files]]
+file = "mods/smooth-boot-reloaded.pw.toml"
+hash = "8b001d223c2458eed8970eb699974cb73d93b75c6ceee62b5f61be85913b98ac"
 metafile = true
 
 [[files]]
