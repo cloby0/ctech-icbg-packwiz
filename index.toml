@@ -1117,6 +1117,11 @@ hash = "8a185af41fb24e83e4497c9362943723b6afee585cf8a3bf280ac155d29bf593"
 metafile = true
 
 [[files]]
+file = "mods/ftb-filter-system.pw.toml"
+hash = "306994966b56905bb3468a0a9abb5bbcef853d4b1081526e62143c86fe473932"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "48e2fa3089beed20a23ff2d171259768b2080ab0ff196841a18eb93c38e1c8b2"
 metafile = true
@@ -1309,6 +1314,11 @@ metafile = true
 [[files]]
 file = "mods/json-things.pw.toml"
 hash = "87a44d6b5809a25d586f30c6a17f4a777194a582bd7c34e8504ae1abe4ba7c74"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-filtering-jef.pw.toml"
+hash = "2f2e5e8586bbec9f3e9a802833daa8188c018c26fc2f16d0e4026352358b37ba"
 metafile = true
 
 [[files]]

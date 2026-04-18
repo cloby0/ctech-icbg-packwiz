@@ -1,0 +1,13 @@
+name = "Just Enough Filtering (JEF)"
+filename = "jef-1.20.1-forge-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "294829230e42aaea9897f4e604e0347b6d753a05"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7613271
+project-id = 1460375
