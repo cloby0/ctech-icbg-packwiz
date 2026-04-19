@@ -1013,6 +1013,11 @@ hash = "e2a140b6be9ae47a0930aea5690713bcee50ce70861332f8c15df7cc2c6fc00d"
 metafile = true
 
 [[files]]
+file = "mods/emi-enchanting.pw.toml"
+hash = "6d5b51a81ccf1a172c9d15461f6405d32f55fbd1b27b8ab6b272fca9fd817508"
+metafile = true
+
+[[files]]
 file = "mods/emi.pw.toml"
 hash = "d48a1ea93de8cd5febb95ba52989d8d9ab4e998cfbdf9c1076a9f2e571d2fcbe"
 metafile = true
