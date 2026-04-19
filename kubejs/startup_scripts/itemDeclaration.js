@@ -18,13 +18,14 @@ StartupEvents.registry('item', event => {
     event.create('elementite_dust')
 
     event.create('terra_firma_mote')
+    .displayName("Mote of the Terra Firma")
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('ambrosium').gem().color(0x839689)
-    event.create('luminessence').dust().color(0x839689)
-    event.create('holy_silver').ingot().color(0x839689)
-    event.create('prima_materia').ingot().color(0x839689)
-    event.create('abstract_metal').ingot().color(0x839689)
-    event.create('source').gem().color(0x839689)
+    event.create('ambrosium').gem().color(0xf1ef5f)
+    event.create('luminessence').dust().color(0xfafa5d)
+    event.create('holy_silver').ingot().color(0xe7f79e)
+    event.create('prima_materia').ingot().color(0xAEF76D)
+    event.create('abstract_metal').ingot().color(0xA2A6A2)
+    event.create('source').gem().color(0xAE44E2)
 })
