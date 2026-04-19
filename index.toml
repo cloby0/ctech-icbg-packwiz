@@ -613,8 +613,8 @@ file = "kubejs/server_scripts/example.js"
 hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
 
 [[files]]
-file = "kubejs/startup_scripts/example.js"
-hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
+file = "kubejs/startup_scripts/itemDeclaration.js"
+hash = "6122fe900232d1e726968f6a26b5fe0b40b803dde9e4455a0bdfcde5cdd2e96f"
 
 [[files]]
 file = "mods/CyberSpells-1.1.jar"
