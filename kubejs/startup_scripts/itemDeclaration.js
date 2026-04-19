@@ -21,21 +21,10 @@ StartupEvents.registry('item', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('ambrosium')
-        .gem()
-
-    event.create('luminessence')
-        .dust()
-
-    event.create('holy_silver')
-        .ingot()
-
-    event.custom('prima_materia')
-        .ingot()
-
-    event.custom('abstract_metal')
-        .ingot()
-
-    event.custom('source')
-        .gem()
+    event.create('ambrosium').gem().color(0x839689)
+    event.create('luminessence').dust().color(0x839689)
+    event.create('holy_silver').ingot().color(0x839689)
+    event.custom('prima_materia').ingot().color(0x839689)
+    event.custom('abstract_metal').ingot().color(0x839689)
+    event.custom('source').gem().color(0x839689)
 })
