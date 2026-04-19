@@ -18,7 +18,6 @@ StartupEvents.registry('item', event => {
     event.create('elementite_dust')
 
     event.create('terra_firma_mote')
-    )
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
