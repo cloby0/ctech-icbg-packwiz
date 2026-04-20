@@ -1357,6 +1357,21 @@ hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
 metafile = true
 
 [[files]]
+file = "mods/kubejs-ars-nouveau.pw.toml"
+hash = "94416feb86dc3a3e476e1c3d761111b0223426c92b9a2b0f388abca81b5b5a57"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-botania.pw.toml"
+hash = "e7487953f43437713f12546e228607f3cc713d51d6130860d4d99f6ef3541aae"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "7e9ef26310359f482e595815664b3d08381b30c6517c32a58078b0999e1d953a"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "873d23ad2ce05e3e92a05e011f3f9a375a745a4ca6ed4c9fffb0518fc8255bf7"
 metafile = true
