@@ -142,471 +142,471 @@ hash = "e641ee5161de4d83903af046619a7c73ccdf6640a10a9f075cc94fcd2b2f31e3"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/aluminium_ingot.json"
-hash = "eeb85c564865fcc8cfda4b96bc9a08370ba633c23f328fa810709845c5bd7298"
+hash = "24d29f32acd3e991b438ead53ecaf97527dae1cc8cc4e2423d871ee855da2283"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/americium_ingot.json"
-hash = "15630a5380d862f24e8b5102b0e64350d3dfbaf97d50d8a025b72d896b15b9a9"
+hash = "aec12107ca225948f9b52feafc45620043296319a9668516b70dedb7a645ec6c"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/annealed_copper_ingot.json"
-hash = "b2b434661396c8f358aa7026d9359816ca4226e522be2c9a8c53a3706a1d68f5"
+hash = "a10a893a9a49c375c5fc7b31ff555f9d8810e991417c718e9fe1969244abc309"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/antimony_ingot.json"
-hash = "87c3f3f9a575cf233714aef52542d012d50c9524fc74aeee11c51b937cd584ec"
+hash = "36a5984835327420c0463ce262e4e1a747d69b2b8120cf3901059421ed5e9ad5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/battery_alloy_ingot.json"
-hash = "a75fca1c43b9238445a44f9361c40c230d58dbf02f77b4f29167ead589cadf9a"
+hash = "869acff289a883c46542fa92b24fb2afcdfe781ca1fe18d8b668008881347eb1"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/beryllium_ingot.json"
-hash = "0791300c1fc4f5498a7ef2630ebc2f7f50bb3fbee516ac95dfbd51a814d1febd"
+hash = "5923125db49d76df4f758493436ab1c56b8ad3500da7f08878ebf5902d117bd8"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/bismuth_bronze_ingot.json"
-hash = "96eb3b687b7f8ec2479c35ff7ee38556fb7a938a2545fa0a68270b459a4b8040"
+hash = "ec38f05f0ed931b4ae2cba2998569398db3fffc059c9819987eee7381966589e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/black_bronze_ingot.json"
-hash = "87806325d2b6585d08de5b4bf7a7fdea8f252ff3023d72abaa0ba01acc9aa2b7"
+hash = "c4d49a43d035444c1f6656ed53be5826d13a3848af5a55fe07bbad2807cdc729"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/black_steel_ingot.json"
-hash = "4b3467cbb4b23e2a752cd27db77bc4d6cf3f98174301a95d265e078406e0cbe3"
+hash = "5c811692c035b032d41e5d25932d491c6caaf10a74ff8b478bfaae3343e63013"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/blue_alloy_ingot.json"
-hash = "41a084abfcdc052f740203f4ce2c5145c36b599508c1308ee70d00fe54361133"
+hash = "3c913d5095a15a248c8f57c91fb65b4d671dedd45748b3431790246ac2eeaef7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/blue_steel_ingot.json"
-hash = "699441f3941219ae1aaf025a2f0d69ef32e572db11f47c53f40c9d0e794837a1"
+hash = "48ee7eb1bacbe6951092b04f3036ed62c61143900f073c2e011e20c90879c05e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/borosilicate_glass_ingot.json"
-hash = "f8ae32b9071b292a297dc8079ffcb3b933bddd0a692440aad49b90edd5966c47"
+hash = "69ac1f7cf3f3fde07ae8620bd80a58d348c51e815023a6c0c5f3c4a714b95ff7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/chromium_ingot.json"
-hash = "0183dd0758ac5d87a487668fddadb05a6c53d5c0ff55fd6473ac2fb165262bc1"
+hash = "5f42c1a073fce9a007ffe977138b4299103fe4bc50c1138832ca8268955540ee"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/cobalt_brass_ingot.json"
-hash = "ef6a147aba8829073ffacd7ca4f8abfca8db3d2328c434fef82e61c85e0e95b5"
+hash = "d77bb32c3483b247b4be939484de0e47865ad410aa2f47f80f97028be30e7962"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/cobalt_ingot.json"
-hash = "cb337c51d03a997571fcb95127182027ce426567bc2922cb731c06f74e890adf"
+hash = "0fa44b70689df7a9e7685a38f087d85ec390498681788b95f875e8949ddf1cf9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/cupronickel_ingot.json"
-hash = "d79649b18b661755db6e54a8c4bcaacbfa01fc82a211e429700513b3d8fd5a76"
+hash = "e9592499a9e486ca0eb0d5d70465189cea46e20948242c9ffe086884ce94fdc7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/damascus_steel_ingot.json"
-hash = "493fff32779a320f2df6bef820a9916f1ba6021fe5b44bd589c06f7550a94ba6"
+hash = "b7030f1bf09b6f45461a9cfdfb1dd035223dd03cfc47851947291b350a5c6e00"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/darmstadtium_ingot.json"
-hash = "25033b1d0981dde506b55d92a7b541a1b6a61bf026505b725c1f1224d48ee247"
+hash = "fbd010eb89c8c24b3ff7bc5e9808a1f592afd840ae4a8563341a6ecbc3143e2d"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/duranium_ingot.json"
-hash = "27b0362a84e8a2b73b61d92ce587b5132ea5ea2692ed2e0058b0a7cda72a0417"
+hash = "91dfc283a119cdac470664a40372080ccf3091f57795a40304d25edfafec916a"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/enriched_naquadah_ingot.json"
-hash = "bd65e0280908646afb401af43edad697a64d630f21712cf2e85812f966c25ffe"
+hash = "f4744038bca2964a7c7fb4386f566af5dac9c514ccc6ee350c220bde3415d2db"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/enriched_naquadah_trinium_europium_duranide_ingot.json"
-hash = "2c7b1ee13ddad1db8d98286916189a58484379cacfae55088dbd3d22a2eea80a"
+hash = "1304aa36514e3716ccfb107edf7a2db504fb3f02362eb45927a22bafa1f65a25"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/epoxy_ingot.json"
-hash = "6318eb5af34825984d47db76fead66cfa5b4c49bd8bf50aa2d548079f93461a4"
+hash = "9d2d16f90b24b81e064c21a0387ea4f32180dddaa4f3b3611162e11a5ed86545"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/europium_ingot.json"
-hash = "804fba3786c80a1928db553d0ceb7e99963c45a196335f1d3bc0811e651be733"
+hash = "a3b9852413131a32788e0b33ed44cf1a1b9d5628a717b46885b0b63dcc19c465"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/gallium_arsenide_ingot.json"
-hash = "e9b7956a1bd8fcbd174d6d6d3fed3ce4e7bb264e4ae5e2ef089cd14565fa55a3"
+hash = "ab74ffdc83442f895b36e46cc1d3ebd21c4865d8a126a3e3f70d39ea28bd3918"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/gallium_ingot.json"
-hash = "90b3d66acb9101f637e65f8bb8e38de5f36d5f3bb8ae5a3d146f9aebf66f0990"
+hash = "46d23cad801441493fb4739f7e3e598b794267b49a4c517158755b134813a2e6"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/graphene_ingot.json"
-hash = "06301e582a65b096cc47271b9c096e2c07a516e307bc85bdbbfcdcbfddf98f0a"
+hash = "0e0071a4d1b5b70bed73a75320c8a3176c51195e420992b5877d7cf937941783"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hastelloy_c_276_ingot.json"
-hash = "fd1b9dc5364979fd267bde342bb1bef1551873be64e7e6806bc750b1069e295b"
+hash = "3295f499257a275358ce9a08d2f08188d60578f38d149ddd68de856145a7dd25"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hastelloy_x_ingot.json"
-hash = "4ff1dbc298a961f2fbb0b3e1e732bf8c3c9e13c3e37195598aa5f7aa051abb33"
+hash = "55ba02aa4a86c4af002bb733af3f93dc5c3e2f20d8f19fb354bc945c04a79687"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsla_steel_ingot.json"
-hash = "fcae03ae6a743f0d798c6f1536bbbbdabc7aa84c190f0bcdfcff4a025835fbcb"
+hash = "10f275804db62dc4f21301006a31394535cd35caeab47abd99bee85ae2a078e0"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsse_ingot.json"
-hash = "9618826ebbd448d260a3f737e355fcb79dc8b9fe40744393553c8d182f8dc191"
+hash = "b7e33c468d58fc02787e36557f8e3551b8de9b504bb1d86ffbe30ee244b395c7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hssg_ingot.json"
-hash = "724266b8225246eea30a946a667feb2f9f8fe6b788eb6ff10270eaf5f4f5de9d"
+hash = "5b3cc7105733f465ff174da6326fb839f7fef56ab965b9b1546a7b8c7d721a63"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsss_ingot.json"
-hash = "de7be66359f60b8bb477ab3531dc75b421dfe1519be6cf7d5ade08f835dde604"
+hash = "8e1b98b417055b9009289fff59392c9260c7f96dee7ce5544faab39b19567cf4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/incoloy_ma_956_ingot.json"
-hash = "c126f3066f60ab52a88ae3424e37a28f1808d60130696738ec007f1609aeac7c"
+hash = "191d6e725baee5785ff346ff89519656d6b6fb9950242d94794059f0ab057ce9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/indium_gallium_phosphide_ingot.json"
-hash = "dceab657688cebaf70c1cfff3e15da11d9993763d548c3fe9812190c3af2e841"
+hash = "774ac18663624207add88b906027250010b63d5ebc73fd2ef983883317b52702"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/indium_ingot.json"
-hash = "4240460c1cedb4b955cf7a732e4d44008481b87e2bea067b1666905a415502b4"
+hash = "acfc08881e4a85e96eaef7cb45d299a90ca67e82149e3a34fad928df9679b9cd"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/indium_tin_barium_titanium_cuprate_ingot.json"
-hash = "3fac01ea1ce458c6e3809c3760eb4c816be7e6561093603b6b1f0cc3c4cf46f8"
+hash = "69406a900290f52947fa47bf839e6e3968732f0b35f475d074f827fa094fc970"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/iridium_ingot.json"
-hash = "688962bce920a539e45ed77f47a8cbfe724b1cd86349ae191979281c37f17b06"
+hash = "5dc2a816fde536b49c53b544f4b2a23ca2dd34e1c4b7d16a0ec52e150dd000d5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/kanthal_ingot.json"
-hash = "12b159bd2db2b9338a06c428f779725a2c190c9c23673c27fe5c904f1e571fd4"
+hash = "8a4ab4aa2980370103b5424e1703144b24d7e5454ca0f4f0b79495768c05d55d"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnalium_ingot.json"
-hash = "8f60391c2565598944a3ef4c27af9c3a6bc8552fe7635a1a120c9a5b28c3ce22"
+hash = "793053698adaeb18e45de1a803b98ee270495e1a5f26a90ecff38beab775a44f"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnesium_diboride_ingot.json"
-hash = "94597445b76fb2f0ac953dee814225fde59aae38f10560c1eb80ec4af0735a69"
+hash = "deb83a398ac5bfd9bc3a33bf9fa383697e679fe67ffb40ba5df95b2af8aa176f"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnetic_iron_ingot.json"
-hash = "e4c59055f64dd5be7490a22fa7d49ea206f3dc42b73dffb95ac0709f38bfde3f"
+hash = "6cd315e88dd5e3a1c1bafe1b685f2e2727cd96e820ac68f6abb57fe45ba0bdc9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnetic_neodymium_ingot.json"
-hash = "c39d1058656a9e8227acbb28bc9620d5265ed8b2c1361dad71229ac590bb917f"
+hash = "9085e54c6fd4eb086cac8f9fc1b8d153937a406e86f71471cafc433935a945a4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnetic_samarium_ingot.json"
-hash = "8c8b2305d6bee04803f744b0b674039514a3d66e22849e2247298fe369581098"
+hash = "d925f348c7e40913cb0d0ac5d046ffc452b8bfa3f328d55ade51f0040cc8ca8e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnetic_steel_ingot.json"
-hash = "a1872debf6bef8a3d1b4913950dda43c3eeae84dd86a76eb36a6a705a53913f9"
+hash = "86c1ecdaa55415388ce92a0037b39a9a50a1b13ac551f683dd4f049e791b99a2"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/manganese_ingot.json"
-hash = "22c9dd40af4d42a75d1e178a1b9017b2424b6d8da343383ba40f5942ab7f0d52"
+hash = "ddee71afd1b3898c09437b80fb29a33aeb740499a45d82c777f8c5672155d43f"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/manganese_phosphide_ingot.json"
-hash = "44a1d58f1810570d4ab8f40f69088f109825227fedfd56ad89397a2c33a51414"
+hash = "f69111d4d02c45f65ac31cce8d3d2bb18097bfa286898ff94ce119f422ba7979"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/maraging_steel_300_ingot.json"
-hash = "4812776f7525f52ae0402645f98359ab25821677bd6446e0477adb5ec9863edd"
+hash = "d04f3ca7b7ae12b82c4e3aebb15a48b5683d093f6cd99cedb30fca7f7ed52ffb"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/mercury_barium_calcium_cuprate_ingot.json"
-hash = "6bfe6a616be1088b10e9df6f2788550272e58788356f49856ec109d43a4a8303"
+hash = "a520b9c51bc70ed060e4870fe227745f04ce33a91fb2d14f798fa9d9adec1cdf"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/molybdenum_disilicide_ingot.json"
-hash = "d0137a25d977df184576beafb9c2016d5d11ea0de334b276d284457938801a52"
+hash = "0b783f5b8b43a2c468987b889299b56748c54e6a3cbea4b344e08a98dd191bac"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/molybdenum_ingot.json"
-hash = "a29e48b089aa447d5e27d5655ab87c4f4769541f7719eb9f5d090e7172bf28aa"
+hash = "b63020cb4cf83c28ff79613cd5866c23dcc8b0c3560239b6c651eddd9fb561e8"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_alloy_ingot.json"
-hash = "bcbdedc9655b6c8ed95b81926cbb5344f975c8e815cba23ec88ed9cfe248c24b"
+hash = "69092c5cef572ed1d8cb81b91c95d2c67306f4e07567b116f8568f73f14c6023"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_ingot.json"
-hash = "6b0fb403dec7c45e6888e7720aee02c66fb9b9909e2070cfafb4a4bf9a9cf250"
+hash = "07d062bda845daca53c0c80550ba8a3a2d3f2b65980157785a88d7c25f2e3ddd"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadria_ingot.json"
-hash = "d164753d2bce5f273520eb841a8ed26a436fa8a460681f6d703c2f03f33d6258"
+hash = "ea75d84f0ae2b24702f57de8c37aeaa51d8170605aad890d7fe7183550fb3c48"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/neodymium_ingot.json"
-hash = "fe3609e6d233b6ba4f3aababa8d44ef41b0b38317102bd7297021ca7dcfaed33"
+hash = "fd05e8a4539c0f8ecb465dd5be7154287a00d796667e36190e7b30f58114f3c1"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/neutronium_ingot.json"
-hash = "fd9e1309a4b7ac6aa8c7d7d9615d5b524418886b8d092a914d76bd96c3fcac75"
+hash = "f705e3fe3712f5bb7edf4906413a7cb9269981667dd08030dc868b2056262cb6"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/nichrome_ingot.json"
-hash = "484cf4cf1b34e73474c6f722e6d21e24f7602720064cc28429190df69371c2e0"
+hash = "ee7cb71bb7f21ee893be93181e3aea968fb4c0118a05d330be23b4c2dca989bf"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/nickel_zinc_ferrite_ingot.json"
-hash = "556d61bb1229f4d0efb7c0ac39274495ee606d83fe59f4b5f43442ce6f48bba6"
+hash = "30145a2768790b18fb490096018fa6f0a9a526f7663ddb162d9a2f4afe2caedf"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/niobium_ingot.json"
-hash = "c921826b4900a4525791f3db82134b423c17c85ec80cd79cba9b1198ce31b9ab"
+hash = "f32ae2d6e04e95440d6febf7131d28e06503bd31e8796b9a3129f6f13de83769"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/niobium_nitride_ingot.json"
-hash = "5aa48537d842f1cb1c9f57c36d1fb6f2c2eca435f53e97f04d63e3def393fbe9"
+hash = "582ca769335703a32b5d157605a23d9b6ad3f16b54aaa5c4480f2956a740b88f"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/niobium_titanium_ingot.json"
-hash = "31edfb90d2c9ac0c0a80aa55ded58459c973a1c9c8913b9c0fb4dfdc078bc055"
+hash = "f7a4d070d762ffe14f4957a7a37c78e406bebe974d1ccd93299c2e928b7d85e2"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/osmiridium_ingot.json"
-hash = "3982a9ecbf5401ff28d77121aaee02673ac821be5809b872247d8ba05990b157"
+hash = "280c23c1c24a1870768ade49543a40e5db236cd872c8589cae1e265d38112958"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/palladium_ingot.json"
-hash = "dde055a456ccc709f88ae466fa3264dc84d61961a93de6752dcbadca78873d6c"
+hash = "1b7d67fd7a355af3dca38f51b016e1ba05854c106abc3ad531da565f9027b1c1"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/plutonium_241_ingot.json"
-hash = "679e132641daecdc6ca2355e6aa7e3f2bba219c71f43ae7543e2a34a78bd1415"
+hash = "1c20f8b48a2b44a973e6325b9f42c705d9458dff49e08a327216e65a13465d20"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/plutonium_ingot.json"
-hash = "8344984e9df9e284128fa813229ea37d96668fccd5126ce23316c7b3409c98ca"
+hash = "2df7597eca060bb767ddb2f9d6d41f5a93090f690a4ce115462767146636f9b4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polybenzimidazole_ingot.json"
-hash = "9adc3257938ed82aa8424fdba27b9e689eec62288a47779caf4daf36330609ff"
+hash = "b95053f51f3720df0e428340c39d6223167e12b06f069c8baa6e6ac39e214a2d"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polycaprolactam_ingot.json"
-hash = "8dc6b9577d27a63db7ad72bbd4d4dfcd1bcb5c909574be1f3e84bf5f38e57985"
+hash = "5a5bc9d131d350fb40828f9ee19e17047a83878d1fe19f73a3789605486af42c"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polyethylene_ingot.json"
-hash = "89c284b49dae6a1edee69494632622f4e921368a91cc9dffc4efe61a0fbb63f8"
+hash = "1094312c75114a34c6dfc5b58bb52a9d02ac1205b43264754f381291be7774ed"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polyphenylene_sulfide_ingot.json"
-hash = "fb2fd622578a7c00e8a9e1bff4c89d06055b3b74a2b797ccba68490990b0ae94"
+hash = "5709db44e19281abfa7ffff45228e3be89e0e5581f60fcab7b402cb2ef8d7f81"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polytetrafluoroethylene_ingot.json"
-hash = "4e77d1175d409658c7f6f7ba25cbcaa9d42a8ace49baa816e772469e6452b7f7"
+hash = "0fee76e2ccee8e116913dfa6cb454f825dcc205b68ba1d547ca77b13bdf10d57"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polyvinyl_butyral_ingot.json"
-hash = "14f2de5fd3d942c8bbcae19bf8aa3fecd394f3a3a5d748fe21895407d9637747"
+hash = "b4a8e5d191ca319edb1c2b561408c817d7cc3e085a30a72d1d0fb984f3677d01"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/polyvinyl_chloride_ingot.json"
-hash = "c7ce64cf5ce61c8abf877018364e1943e6692d17c05f1e1b914b8ea0e0eef586"
+hash = "6cfe156e866a703610473cb40cd05b23bf367fbc123b36c8a16297eefc228e93"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/potin_ingot.json"
-hash = "b1230f04083a3bb3139f26ae3872acc004281a0bdf816c168d4ed44c1b088b99"
+hash = "bd35b4de16f240cb55d13555282b0a2fe292685819d797592d82fccb920940bf"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/raw_rubber_ingot.json"
-hash = "3d978a1a4dcba972fd3bf404914e9342e6830224309507ee818d9570228c168f"
+hash = "48135815d825b60bfea05ad74a892036e724a2ecf512bd2fd0298ff74e6572ca"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/red_alloy_ingot.json"
-hash = "ef299bee2453c364f4bde06af33a6b9d1aa0f23b3b13b71f71269104870e62d6"
+hash = "d088874d04fc399c413efb287d7556064998262aa44fec1468cf4259b9a15117"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/red_steel_ingot.json"
-hash = "7e5212ee4eaa52b116902f860ddd06bb45871639552d6e5869ef88acb4abb0ae"
+hash = "f355700ba4a44f37829a3230556d754d3be6b8dc5d88b55995eec5effe3837ea"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/reinforced_epoxy_resin_ingot.json"
-hash = "53158b80b4f24a40357c1556aa91ba252ce151dd9b9970d9c87763599ed887b4"
+hash = "42d6b2d5ff85710e79109f32a78b4c8f58c52738a81a39f63e891b0f6cf5091e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/rhodium_ingot.json"
-hash = "7d8f3b2f98c85f331883890c8b28a03c0d07c8e2acd99e7c9216a9e027073d04"
+hash = "4eb26b6f7b6ff33c5074f1fd5b8c0a48c9165173149433b92b6b9d37ebc0a024"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/rhodium_plated_palladium_ingot.json"
-hash = "b8752980e46f82d1204876b73643a7df982742856fe65aa6d4002d42a6a764bb"
+hash = "4ef77da18184b6ed453560c0518fcd683413c82fe000ac1f19ee816ffb6b1675"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/rose_gold_ingot.json"
-hash = "29f5cd1a34952e1239da919943186c41e2ef5a1d5251faedaa407b7181fe328f"
+hash = "386c00326c59282d811690435b96fe347866c45b259308d7ff8de0d9bacc307f"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/rtm_alloy_ingot.json"
-hash = "175287838b95f5297a497ee92c92501eabac88b70906a39377fb37301a7f5ee4"
+hash = "5a636540028960dff8478a514b7050000d6a26289cb88dce9aee176e269a7f7b"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/rubber_ingot.json"
-hash = "26b029d936b98c9ca4808ef8f5db40d96c2eaad3a38a9f5a59a73ea453157945"
+hash = "fa965ba81f15961ec14248c4c9f63679112cb71a0e27ee286a55a36a5fdbed05"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ruridit_ingot.json"
-hash = "755d6a2cea80b87913a0b1c85175765e7edf647812a6b5465ea251b32c206156"
+hash = "73c0598ca1d448b033e69df4cad32c297fddd19b98a49e695992fad816db7440"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ruthenium_ingot.json"
-hash = "afec5ce88f15fcb3db1e07be58ab88f63a869276811dc7ffdcaf71db87603917"
+hash = "f784d6bf4cf81b29d4fa9ca0670c9c85ebdce7f8d9dfb82d5455e653710502e5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ruthenium_trinium_americium_neutronate_ingot.json"
-hash = "ac0d8dd545d2fd7377365b9c66a4df8c04e82af3a81a7087c74748f764a1845d"
+hash = "616018d2dfa7d88c6d349062f8bb455c030e60028b8b96955f856bd2f08c77f7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/samarium_ingot.json"
-hash = "64ebe958efb75df33255607c6a2221771f2abe60c3c1425229692f148d222900"
+hash = "c90b4e16b1ad618f09005e241d902cc821d549451feed6c7f221a61e842a45a1"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/samarium_iron_arsenic_oxide_ingot.json"
-hash = "6e9429af03b9df3c10e62a34b21cff85379e9fe437012c9fd830f62cc9408e65"
+hash = "3015712f0e6fa798c49c8d51ac917ddfc67589b6bb91c152776164b620bb19eb"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/silicon_ingot.json"
-hash = "61cf17bdaa217f87853abe2eb19f9531d56bad4d22e369b89952c246ecec6c29"
+hash = "cd416e4251da75223bce9b4b7d0f584b3c89a24e3d4577b9b97c501e04e6172a"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/silicone_rubber_ingot.json"
-hash = "77daf394c49ad6443246ee185bc3012d3d548b30560db497b384bf242969f251"
+hash = "54b4cdcd03d93de27fcbf63488604d3ca20e108094ff1fd3fbad0f333e880024"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/soldering_alloy_ingot.json"
-hash = "b035e73296159219bee7e6df533fdf1122e8b3691b0ba297342970da232dc966"
+hash = "9d3476ca1df94b3489285f4fccf85af170f6c9c8c1af4096675b637e3d46a74c"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/stainless_steel_ingot.json"
-hash = "941837471cdfc476584fcfc94e25dc4fb0153cf4709b8dc5313662995a40794e"
+hash = "e11dd967d796980855882d7a9d482b28cd7ba83f9f0ef2bb2a4905122f93ecd6"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/stellite_100_ingot.json"
-hash = "b124e50af7f6765f9bde2f4052069139b2ed19e30d4d3bc1cf97b3538d85c63f"
+hash = "0eccaf50378023cb7d8925a1e4a1667e069a8562d37b0f2046fd342bd34b5b39"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/sterling_silver_ingot.json"
-hash = "74e827a0019c384515504c5a65d257fc94a6e0b8923ea38fc8a786aab037dfac"
+hash = "200eb307abe1b2e2aa1f1a95ff09baeb66a6a1b70dc44b7bd276092baf569946"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/styrene_butadiene_rubber_ingot.json"
-hash = "1f4b4e3732748fec95f10c2af2b8eb852566943f47c486adff30cccfa0801c7a"
+hash = "1003a834c40a309ffe417da7d54c83a7ec70518b03c0d592e99329d2cf2c6a7b"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tantalum_carbide_ingot.json"
-hash = "e541c53bd8180d1ca7626f806fb02a01c9a64b7a16228e74549e69659446100a"
+hash = "645ba33e2834c4b82353be5e97841a6494cd198f8ff2939708dccebb4dc01e05"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tantalum_ingot.json"
-hash = "7cec835bbbf74fd6d95bc84743503dbd3753a46f423638ba68f271764893c18f"
+hash = "d074debb4f350cd74125b032b3befa146d4919c104bb45fe255baa65104f49ca"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/thorium_ingot.json"
-hash = "4270dae3f522d33db95d8f356efde8f26ba53b1d7566b38360d6b248d2b696be"
+hash = "9f7083ce73b01fee78e3732cd31d42d68eaec1459e102cda2de615d1eb8cb380"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tin_alloy_ingot.json"
-hash = "661c0701bd14fe73b8b232b51de3cee296bb6b98da4dcd89a18c70c599e9d6c3"
+hash = "23feb6ddd7db932847f32a2aea153fe561a80fbd93622e98c5b6d696284f355e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_carbide_ingot.json"
-hash = "165105bb66011226f97499acacd2a53b89dc1cdbe86ac8d5aec759f1e7eddc7a"
+hash = "4d35e49962bd347db44354de3c897cc6034ce25265b15eb13772ec75051fe6cf"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_ingot.json"
-hash = "f18680913645d01d8bacfbe297507a4d0cc9c76224ed2afd7e40c3acf988c9db"
+hash = "a20c0d0c8e2143b15851d5a0efa9515c00c7109247df5ddff2321c400eb91115"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_tungsten_carbide_ingot.json"
-hash = "ee9fbc967ad2386c9f1b0c011a23b580f16fa6694f86225b4049cf85f44b17a7"
+hash = "03b30cd93973666224eb5b500e6d8e5f0b8d06fc286638a3a87b3d1a659fe8ca"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/trinium_ingot.json"
-hash = "5b145d49cfcc97a02394372e3f390279dafa94a12ac68c68d303746fd766f281"
+hash = "aa0ab45cac4f42d9c197327ee938040360905d76c4ef9bab5af8efc91af8778a"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tritanium_ingot.json"
-hash = "1280cc6d9521b4ca0f5bd98359a569d1a1488c565e01a2e0551127f834ed096a"
+hash = "be41253bdcc80dbd528498ff464c38dd8fe5c4567c999a2004be763971cf3185"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tungsten_carbide_ingot.json"
-hash = "3a46a4e4a75326e999e6f2ff466463e4d1602b4850db8dedc0a131544dcfee09"
+hash = "41c75323ec1ee7aa50ad891cd61e163a95b6773145c8da513327f56a91a16d8e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tungsten_ingot.json"
-hash = "00c5822cda3f72a78a562a34db3c7bfcc80b172a06676e1fc3e46f77ede2ed79"
+hash = "ac899185292c2088bc5b2a29e1700833979b92240fde1b4e8f506b8360639499"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tungsten_steel_ingot.json"
-hash = "bb737b169d63b4d491739972e59d500c0b629399a22d9a778e124200cddbf358"
+hash = "f5c7c275f04682af4343127e60ddf841d52611d1aa0957f373d3db5ebb064b41"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ultimet_ingot.json"
-hash = "ee68e28f0ca32977a5748cba1c951f9c108d643f9a5cc9c7c9cff8574b193315"
+hash = "83f1986e8f9fc2fb68dc1383ff785515f08aaa3f8a3e6d3d787dcea5d06ac020"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_235_ingot.json"
-hash = "ad6aca3a95eb09b3347ca1f46b8e102b4b8b63b949de456eabf927302852feaa"
+hash = "a8307c1bbee155cc37fb7c05897fdf23025d51fae4941741122e8b1101292413"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_rhodium_dinaquadide_ingot.json"
-hash = "1b9d08ca3f2a80daae1a1e43592bf6c8e52ffc523930717050b3cc161b843439"
+hash = "381034101e9339e7da7812e43bdf16d2464e780c3f3e99b7446af9e89e0e55dc"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_triplatinum_ingot.json"
-hash = "839d33a7647e96a54789951db61fb086efdabd5cc3f0e68597d6ee84e3c98482"
+hash = "50128137028b747ea490020656a9fc66a870770007d4e31c4b833d839dbb17ac"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/vanadium_gallium_ingot.json"
-hash = "a916c1076d52debd0740a6091c46caf6305fd1881d42d489a96b9a594bd0c174"
+hash = "96880a5bee0c5e35bdd536027232fc6373c794eb98eb286c120f5e8f21806e04"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/vanadium_ingot.json"
-hash = "d2300dd5ed52b76f1e718b651b5bdcb6afb6e350ff05d428b3c25db753d7636d"
+hash = "558f3a8ce0292946b3537b1d4f04d016d51a75663a6e816bc5f0e82704505cea"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/vanadium_steel_ingot.json"
-hash = "c11c4db917522b3fdfb9af3ff792e10923f9c3514a5b62ec4fbaca9b773d5a50"
+hash = "23e43301fb5cfa652581f455eed8f9c97c72d4f51500c1793cb6b608381557e4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/watertight_steel_ingot.json"
-hash = "607ec3862095f12f4ed0b51db1128762c7240b2671eb345f4adeadd85f26c71b"
+hash = "1b82dc2c590bda19339cd5cf18b5942dabbeda09dfc12a0153f1e8404aef1300"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/wrought_iron_ingot.json"
-hash = "992eb4ca561a33ab8e00e8703764f172f8c439f6f3bf7f4c272550d8ad68080c"
+hash = "e51806b1568bd25bd8b77150c3d5bab517919ff7c9a972cf6b04a69d66fa4c10"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/yttrium_barium_cuprate_ingot.json"
-hash = "806911792a603e7aa83042955fbd017ba4f6289e7b834c2ac48e120b9485d262"
+hash = "cb7d1518decdfc87433ce46bbaf81a2b8b87ccc6bbb1920fd4ee3339d67155e4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/yttrium_ingot.json"
-hash = "4e22642dad0d1ebad01d385359331719925be6a4d3937dd5b64ab0f36691e0ae"
+hash = "ab304dd6a44ffe8bb8228fcbd49e2e44dbd212e5e2cdf757c4891309f5522009"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
-hash = "4de1628f3b6fb7978e4a0ca483a2e0633985777a7c2d0be375b0bd6e251d1eb6"
+hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/example.js"
