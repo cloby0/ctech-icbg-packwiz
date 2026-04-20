@@ -21,51 +21,58 @@
     },
     "stats": {
         "main": {
-            "durability": 210.0,
-            "armor_durability": 13.0,
+            "durability": 250.0123,
+            "armor_durability": 7.5276,
             "enchantment_value": 18.0,
-            "rarity": 20.0,
-            "charging_value": 1.4,
-            "harvest_speed": 6.0,
-            "melee_damage": 1.5,
-            "magic_damage": 1.5,
+            "rarity": 10.5276,
+            "charging_value": 0.5456,
+            "harvest_speed": 1.8425,
+            "melee_damage": 1.0441,
+            "magic_damage": 0.465,
             "attack_speed": 0.1,
-            "attack_speed/axe": -0.1,
-            "attack_speed/hoe": 0.0,
-            "ranged_damage": 0.5,
-            "ranged_speed": 0.1,
-            "projectile_speed": 1.0,
-            "projectile_accuracy": 1.0,
-            "armor": 11.0,
-            "armor/helmet": 2.0,
-            "armor/chestplate": 4.0,
-            "armor/leggings": 3.0,
-            "armor/boots": 2.0,
-            "magic_armor": 9.0
+            "attack_speed/axe": -0.2544,
+            "attack_speed/hoe": -0.4473,
+            "ranged_damage": 0.6931,
+            "ranged_speed": 0.0351,
+            "projectile_speed": 0.8421,
+            "projectile_accuracy": 0.919,
+            "armor": 6.65,
+            "armor_toughness": 1.0181,
+            "magic_armor": 2.4564,
+            "armor/helmet": 1.064,
+            "armor/chestplate": 2.527,
+            "armor/leggings": 1.995,
+            "armor/boots": 1.064
         },
         "rod": {
             "harvest_speed": {
-                "mul2": 0.2
+                "mul2": 0.0098
+            },
+            "melee_damage": {
+                "mul2": 0.0077
             },
             "ranged_damage": {
-                "mul2": 0.1
+                "mul2": 0.0063
             }
         },
         "tip": {
             "durability": {
-                "add": 96.0
+                "add": 37.2
             },
             "armor_durability": {
-                "add": 3.0
+                "add": 1.74
             },
             "harvest_speed": {
-                "add": 1.0
+                "add": 0.48
             },
             "melee_damage": {
-                "add": 1.0
+                "add": 0.45
+            },
+            "ranged_damage": {
+                "add": 0.06
             },
             "rarity": {
-                "add": 8.0
+                "add": 3.88
             }
         }
     },
@@ -73,43 +80,19 @@
         "main": [
             {
                 "name": "silentgear:malleable",
-                "level": 3
-            },
-            {
-                "name": "silentgear:soft",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.5
-                    }
-                ]
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
+                "level": 1
             }
         ],
         "rod": [
             {
-                "name": "silentgear:bending",
-                "level": 2
-            },
-            {
-                "name": "silentgear:soft",
-                "level": 2
+                "name": "silentgear:flexible",
+                "level": 1
             }
         ],
         "tip": [
             {
                 "name": "silentgear:malleable",
-                "level": 2
+                "level": 1
             }
         ]
     },

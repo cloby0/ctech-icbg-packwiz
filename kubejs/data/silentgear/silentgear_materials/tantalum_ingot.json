@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:diamond",
     "availability": {
-        "tier": 4,
+        "tier": 5,
         "categories": [
             "metal"
         ],
@@ -21,60 +21,58 @@
     },
     "stats": {
         "main": {
-            "durability": 1750.0,
-            "armor_durability": 105.0,
-            "enchantment_value": 98.0,
-            "rarity": 140.0,
-            "charging_value": 4.8999999999999995,
-            "harvest_speed": 13,
-            "melee_damage": 14.0,
-            "magic_damage": 7.0,
-            "attack_speed": 0.0,
-            "attack_speed/axe": 0.35000000000000003,
-            "attack_speed/hoe": 0.35000000000000003,
-            "ranged_damage": 14.0,
-            "ranged_speed": 3.5,
-            "projectile_speed": 7.0,
-            "projectile_accuracy": 7.700000000000001,
-            "armor": 105.0,
-            "armor/helmet": 14.0,
-            "armor/chestplate": 42.0,
-            "armor/leggings": 35.0,
-            "armor/boots": 14.0,
-            "magic_armor": 42.0
+            "durability": 1383.3989,
+            "armor_durability": 22.5256,
+            "enchantment_value": 4.0465,
+            "rarity": 25.5256,
+            "charging_value": 0.8164,
+            "harvest_speed": 6.8419,
+            "melee_damage": 4.2729,
+            "magic_damage": 1.444,
+            "attack_speed": 0.0921,
+            "attack_speed/axe": 0.0164,
+            "attack_speed/hoe": -0.1349,
+            "ranged_damage": 1.8388,
+            "ranged_speed": 0.2434,
+            "projectile_speed": 1.0921,
+            "projectile_accuracy": 1.0314,
+            "armor": 16.4403,
+            "armor_toughness": 7.0589,
+            "magic_armor": 5.1643,
+            "armor/helmet": 2.63,
+            "armor/chestplate": 6.247,
+            "armor/leggings": 4.932,
+            "armor/boots": 2.63
         },
         "rod": {
             "harvest_speed": {
-                "add": 14.0
-            },
-            "ranged_speed": {
-                "add": 1.4000000000000001
+                "mul2": 0.0682
             },
             "melee_damage": {
-                "add": 7.0
+                "mul2": 0.0536
             },
-            "attack_speed": {
-                "add": 0.7000000000000001
+            "ranged_damage": {
+                "mul2": 0.0438
             }
         },
         "tip": {
             "durability": {
-                "add": 896.0
+                "add": 163.02
             },
             "armor_durability": {
-                "add": 28.0
+                "add": 6.11
             },
             "harvest_speed": {
-                "add": 7.0
+                "add": 1.57
             },
             "melee_damage": {
-                "add": 7.0
+                "add": 1.32
             },
-            "ranged_speed": {
-                "add": 1.4000000000000001
+            "ranged_damage": {
+                "add": 0.44
             },
             "rarity": {
-                "add": 56.0
+                "add": 9.09
             }
         }
     },
@@ -82,7 +80,7 @@
         "main": [
             {
                 "name": "silentgear:malleable",
-                "level": 3
+                "level": 2
             },
             {
                 "name": "silentgear:magnetic",
@@ -91,6 +89,16 @@
                     {
                         "type": "silentgear:material_ratio",
                         "ratio": 0.66
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
                     }
                 ]
             }
@@ -102,7 +110,7 @@
             },
             {
                 "name": "silentgear:magnetic",
-                "level": 3,
+                "level": 2,
                 "conditions": [
                     {
                         "type": "silentgear:material_ratio",
@@ -122,10 +130,46 @@
         "main/all": [
             {
                 "texture": "silentgear:main_generic_hc",
-                "color": "#DCDCDC"
+                "color": "#B8C0CC"
             },
             {
                 "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#B8C0CC"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#B8C0CC"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#B8C0CC"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#B8C0CC"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#B8C0CC"
+            },
+            {
+                "texture": "silentgear:tip_shine"
             }
         ]
     }
