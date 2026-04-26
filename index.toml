@@ -773,8 +773,8 @@ hash = "f74d674d172fb27b93f1738f092a2d6b2d4cecc578656f9357886b8e13fecc35"
 metafile = true
 
 [[files]]
-file = "mods/ars_n_spells-1.8.0.jar"
-hash = "aa07342d6222abf9897d42d62ddc8b4edff20fb35f6fdbdec2aa8fbb9baee97f"
+file = "mods/ars_n_spells-1.8.9.jar"
+hash = "1c7581cdb3ccdb0d9b0b228c6538ad5fdc50d29ecdd21723431154b4266a0e4c"
 
 [[files]]
 file = "mods/artifacts.pw.toml"
