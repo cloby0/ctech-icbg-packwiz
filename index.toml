@@ -1022,10 +1022,6 @@ hash = "6a18fc39dbe317dcdba9aac9d5457e1bb2aa6decf77a6f4d6e67d7fbff0831d0"
 metafile = true
 
 [[files]]
-file = "mods/dndecor-2.1.0.jar"
-hash = "d9a0288ccc4e5d94ffaeb2ff89c2ece24f45b6f9b6092e9ca0df8f8e2dc13b10"
-
-[[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
 hash = "8f2270a50a633db681826cbfb691e6efdb25e1e0c4702125c13d525b52fe229f"
 metafile = true
