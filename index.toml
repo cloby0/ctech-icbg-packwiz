@@ -972,11 +972,6 @@ hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
 metafile = true
 
 [[files]]
-file = "mods/create-design-n-decor.pw.toml"
-hash = "994435ced6de94b36b0a2a5e40ad87f38c1bf3f076ee94f65dfe102d4cb93f9f"
-metafile = true
-
-[[files]]
 file = "mods/create-sentry-mechanical-arm.pw.toml"
 hash = "6d763ef8abcc9df931de5995f67035469b8d2175037e51037a8ce407d1003b5a"
 metafile = true
@@ -1025,6 +1020,10 @@ metafile = true
 file = "mods/distant-horizons.pw.toml"
 hash = "6a18fc39dbe317dcdba9aac9d5457e1bb2aa6decf77a6f4d6e67d7fbff0831d0"
 metafile = true
+
+[[files]]
+file = "mods/dndecor-2.1.0.jar"
+hash = "d9a0288ccc4e5d94ffaeb2ff89c2ece24f45b6f9b6092e9ca0df8f8e2dc13b10"
 
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
