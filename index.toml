@@ -643,6 +643,11 @@ hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
 metafile = true
 
 [[files]]
+file = "mods/adams-ars-plus.pw.toml"
+hash = "36b28e94121afec4f1231f6c499634313ecb917ba6f9c18585e1a0b5f5c4f8f2"
+metafile = true
+
+[[files]]
 file = "mods/addonslib.pw.toml"
 hash = "1e37b70e5697c834a09fbfb4ed66774884292708de5012015f1330cb6a9180e9"
 metafile = true
@@ -797,6 +802,11 @@ hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
 
 [[files]]
+file = "mods/bellsandwhistles.pw.toml"
+hash = "585a3071c68587c3c041832210a58e74e7701162dbc360d47956655ca1a6438e"
+metafile = true
+
+[[files]]
 file = "mods/berezka-library.pw.toml"
 hash = "62d2bd3cb16f22975b2f9f2e9e6237c75aa2484c848ea9d7f96155cf563f76bf"
 metafile = true
@@ -927,6 +937,11 @@ hash = "919eac641320df56ffaad0132877cb67bd8b942ee23eeb0f137993c8df18b952"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "4101243ecfad34970b81cf6c99f458b67fe848d11870112bc9bab3b16af985eb"
+metafile = true
+
+[[files]]
 file = "mods/corgilib.pw.toml"
 hash = "28053b4a334c4079b5d4c7ea2d3b8d48f8fa61420498f1bed0ff83cd316bbba0"
 metafile = true
@@ -947,8 +962,28 @@ hash = "99570d052b207740d16257ad390fb5fb13b832928f846dd8f659247da60fd17d"
 metafile = true
 
 [[files]]
+file = "mods/create-bits-n-bobs.pw.toml"
+hash = "55f00dec6de619116fbedc14296e64a0124d22db005eb1433385014c95083444"
+metafile = true
+
+[[files]]
+file = "mods/create-blocks-bogies.pw.toml"
+hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
+metafile = true
+
+[[files]]
+file = "mods/create-design-n-decor.pw.toml"
+hash = "994435ced6de94b36b0a2a5e40ad87f38c1bf3f076ee94f65dfe102d4cb93f9f"
+metafile = true
+
+[[files]]
 file = "mods/create-sentry-mechanical-arm.pw.toml"
 hash = "6d763ef8abcc9df931de5995f67035469b8d2175037e51037a8ce407d1003b5a"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+hash = "a432e8775c2bdec53fca88146917905c5c82273e1b66af48b5ace0809433c8fe"
 metafile = true
 
 [[files]]
@@ -1925,6 +1960,11 @@ metafile = true
 [[files]]
 file = "mods/via-romana.pw.toml"
 hash = "48eed900ade7aa55bae93837f7a748a961d882bd9ec2714602a079550b2d7fe3"
+metafile = true
+
+[[files]]
+file = "mods/vista.pw.toml"
+hash = "6d50a30e770d310b41b6bc7b72ad1a133fe9836132c7b5a90d9efbb5358500f2"
 metafile = true
 
 [[files]]
