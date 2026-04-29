@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         );
 
     event.shaped(
-            Item.of('ars_nouveau:storage_lectern', 1),
+            Item.of('ars_nouveau:repository', 1),
             [
                 'ACA',
                 'B B',
@@ -143,4 +143,40 @@ ServerEvents.recipes(event => {
                 C: 'ars_nouveau:archwood_slab'
             }
         );
+
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "gtceu:source_dust"
+        },
+        "output": "kubejs:pure_source_gem_dust",
+        "pedestalItems": ["kubejs:magebloom_sieve"],
+        "source": 500
+    });
+
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "kubejs:pure_source_gem_dust"
+        },
+        "output": "kubejs:rough_source_gem",
+        "pedestalItems": ["ars_nouveau:fire_essence"],
+        "source": 2500
+    });
+
+    event.custom({
+        "type": "create:sandpaper_polishing",
+        "ingredients": [
+            {
+            "item": "kubejs:rough_source_gem"
+            }
+        ],
+        "results": [
+            {
+            "item": "gtceu:source_gem"
+            }
+        ]
+    });
 });
