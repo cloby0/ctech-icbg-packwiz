@@ -129,6 +129,10 @@ file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
+file = "defaultconfigs/aether-server.toml"
+hash = "b0396c1d80a73a716b99c9702ff4cb139cf7d7126a70dfbd8b1b8405b5db78a1"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -638,7 +642,11 @@ hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "b4fd77a33b5ea03a9470f14f4202a2a73a6b2681054e9f193eb671203399b126"
+hash = "1f6d97aa44d5b10540d80ca7659cf95ed3ba913d403a47f4cc4a2219158c4d57"
+
+[[files]]
+file = "kubejs/server_scripts/tags.js"
+hash = "40e96c57e1a8432cebb540c7550310ae633f955dbec4cf8b7c4b69b61b4971ac"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"

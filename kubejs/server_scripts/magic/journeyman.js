@@ -13,6 +13,11 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'ars_nouveau:source_jar'})
 
+    event.remove({ id: 'ars_nouveau:storage_lectern'})
+
+    event.remove({ id: 'ars_nouveau:repository'})
+
+
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
             [
@@ -88,7 +93,7 @@ ServerEvents.recipes(event => {
                 ' A '
             ],
             {
-                A: 'irons_spellbooks:arcane_cloth',
+                A: 'irons_spellbooks:magic_cloth',
                 C: 'enderstorage:ender_chest',
                 B: 'gtceu:luminessence_dust'
             }
@@ -102,10 +107,40 @@ ServerEvents.recipes(event => {
                 'ADA'
             ],
             {
-                A: '#minecraft:wooden_slabs',
+                A: 'ars_nouveau:archwood_slab',
                 B: 'minecraft:glass',
                 C: 'gtceu:ambrosium_gem',
                 D: '#forge:plates/gold'
+            }
+        );
+
+    event.shaped(
+            Item.of('ars_nouveau:storage_lectern', 1),
+            [
+                ' E ',
+                'CDC',
+                'ABA '
+            ],
+            {
+                A: '#forge:plates/silver',
+                B: 'ars_nouveau:repository',
+                C: 'gtceu:ambrosium_gem',
+                D: 'minecraft:lectern',
+                E: 'irons_spellbooks:iron_spell_book'
+            }
+        );
+
+    event.shaped(
+            Item.of('ars_nouveau:storage_lectern', 1),
+            [
+                'ACA',
+                'B B',
+                'ACA '
+            ],
+            {
+                A: '#forge:screws/gold',
+                B: '#forge:logs/archwood',
+                C: 'ars_nouveau:archwood_slab'
             }
         );
 });
