@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'ars_nouveau:imbuement_lapis'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
+    event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});
 
     event.custom({
         "type": "ars_nouveau:imbuement",
@@ -98,6 +99,9 @@ ServerEvents.recipes(event => {
         ],
         "output": {
             "item": "kubejs:glowing_compound_dust"
+        },
+        "liquidOutput": {
+            "fluid": "minecraft:lava"
         },
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"

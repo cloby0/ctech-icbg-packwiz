@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/aether-common.toml"
+hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
+
+[[files]]
 file = "config/almostunified/unify.json"
 hash = "cf24084143262988792f25335ee110354513328f91613a3c70f9fcb8996a037e"
 
@@ -119,6 +123,10 @@ hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
 [[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
+
+[[files]]
+file = "config/reliquary-common.toml"
+hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -622,11 +630,15 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "3ca08a897122fe07abd2027d0f23e70c1b43f1dc31770518b0e4abc9502e3b0c"
+hash = "745b6bd921b9d03dae0a658ec1796c9ac004bcab3addae8da9b4288611f97a45"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "5e91f6c5d7edde9aec601fda70017bf10d5c84ddb4747fe5499f49c145577b12"
+hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
+
+[[files]]
+file = "kubejs/server_scripts/magic/journeyman.js"
+hash = "7f159293811743d3fb92ebca10bff57498e7cb7b7f6fd6795edee31136f237e3"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
@@ -920,11 +932,6 @@ metafile = true
 [[files]]
 file = "mods/codechicken-lib-1-8.pw.toml"
 hash = "f88db7aef79947669ba4d736cc2f352a2269eb21770d5597d306c3017ea126dc"
-metafile = true
-
-[[files]]
-file = "mods/concatenated-compat.pw.toml"
-hash = "73d7446aeae8ac9473160de6177d47a6879c965d3ae84db40cc1ba11958c7d90"
 metafile = true
 
 [[files]]
