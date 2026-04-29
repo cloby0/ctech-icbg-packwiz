@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
                  {
                      A: 'irons_spellbooks:magic_cloth',
                      B: 'minecraft:book',
-                     C: 'irons_spellbooks:arcane_essence'
+                     C: 'irons_spellbooks:arcane_essence',
                      G: 'gtceu:gold_foil'
                  }
     );

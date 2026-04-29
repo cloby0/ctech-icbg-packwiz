@@ -622,7 +622,7 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "531d8daa99007d0d4edc557ae8c743cab64d9a0091e36b90c826580f147dacce"
+hash = "3ca08a897122fe07abd2027d0f23e70c1b43f1dc31770518b0e4abc9502e3b0c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
