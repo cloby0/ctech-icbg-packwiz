@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
             }
         );
     event.shaped(
-            Item.of('reliquary:alkhaestry_altar', 1),
+            Item.of('reliquary:alkahestry_altar', 1),
             [
                 'ABA',
                 'BCB',

@@ -154,7 +154,7 @@ hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
 
 [[files]]
 file = "kubejs/config/client.properties"
-hash = "5030b3679f3a06d56ff97d4c65582092b37bbac1da8517de7c89507a74dd7adb"
+hash = "064b0a9846aa33d5a9d35fe79b87f1152eb35d3a90e8d4ab11a3ce1016a48d7d"
 
 [[files]]
 file = "kubejs/config/common.properties"
@@ -638,7 +638,7 @@ hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "7f159293811743d3fb92ebca10bff57498e7cb7b7f6fd6795edee31136f237e3"
+hash = "b4fd77a33b5ea03a9470f14f4202a2a73a6b2681054e9f193eb671203399b126"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
