@@ -5,6 +5,10 @@ file = "config/almostunified/unify.json"
 hash = "cf24084143262988792f25335ee110354513328f91613a3c70f9fcb8996a037e"
 
 [[files]]
+file = "config/ars_botania-common.toml"
+hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "cc7b7524a1409711280d59e9af31b93d161cb654981abb0b2ea945111734fd3d"
 
@@ -121,6 +125,10 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/assets/ars_nouveau/lang/en_us.json"
+hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
+
+[[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "c4bec4e48c9ff2b80c0557818551659ffca8a025da4bdcc3c848032c187b3eec"
 
@@ -138,7 +146,7 @@ hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
 
 [[files]]
 file = "kubejs/config/client.properties"
-hash = "0d3b01690176794387d3677d91d35a2ddc3a8393837adbb5fb596a9d37415b32"
+hash = "5030b3679f3a06d56ff97d4c65582092b37bbac1da8517de7c89507a74dd7adb"
 
 [[files]]
 file = "kubejs/config/common.properties"
@@ -613,12 +621,20 @@ file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
 hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
-file = "kubejs/server_scripts/example.js"
-hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
+file = "kubejs/server_scripts/magic/apprentice.js"
+hash = "531d8daa99007d0d4edc557ae8c743cab64d9a0091e36b90c826580f147dacce"
+
+[[files]]
+file = "kubejs/server_scripts/magic/hobbyist.js"
+hash = "5e91f6c5d7edde9aec601fda70017bf10d5c84ddb4747fe5499f49c145577b12"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
 hash = "713face9f65b08d0b060df2e46d80c3dd3ff4197f720a3dcde3f6e821336a643"
+
+[[files]]
+file = "kubejs/startup_scripts/namespace.js"
+hash = "01964c3f216d60e80dfcf0f800792001b8f0315f0d41b658ecd6e0874dea2152"
 
 [[files]]
 file = "mods/CyberSpells-1.1.jar"
