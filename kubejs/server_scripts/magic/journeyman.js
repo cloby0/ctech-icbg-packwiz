@@ -135,29 +135,46 @@ ServerEvents.recipes(event => {
             }
         );
 
-    event.custom({
+    event.custom(
+        {
         "type": "ars_nouveau:imbuement",
         "count": 1,
         "input": {
             "item": "gtceu:source_dust"
         },
         "output": "kubejs:pure_source_gem_dust",
-        "pedestalItems": ["kubejs:magebloom_sieve"],
+        "pedestalItems": [
+            {
+            "item": {
+                "item": "kubejs:magebloom_sieve"
+            }
+            }
+        ],
         "source": 500
-    });
+        }
+    );
 
-    event.custom({
+    event.custom(
+        {
         "type": "ars_nouveau:imbuement",
         "count": 1,
         "input": {
             "item": "kubejs:pure_source_gem_dust"
         },
         "output": "kubejs:rough_source_gem",
-        "pedestalItems": ["ars_nouveau:fire_essence"],
+        "pedestalItems": [
+            {
+            "item": {
+                "item": "ars_nouveau:fire_essence"
+            }
+            }
+        ],
         "source": 2500
-    });
+        }
+    );
 
-    event.custom({
+    event.custom(
+        {
         "type": "create:sandpaper_polishing",
         "ingredients": [
             {
@@ -169,5 +186,6 @@ ServerEvents.recipes(event => {
             "item": "gtceu:source_gem"
             }
         ]
-    });
+        }
+    );
 });

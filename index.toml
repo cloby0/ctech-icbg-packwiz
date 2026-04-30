@@ -642,7 +642,7 @@ hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "82b8c187407345f01868f48546a7882e121a466522be918276e268c9ababf621"
+hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -676,11 +676,6 @@ metafile = true
 [[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
-metafile = true
-
-[[files]]
-file = "mods/adams-ars-plus.pw.toml"
-hash = "36b28e94121afec4f1231f6c499634313ecb917ba6f9c18585e1a0b5f5c4f8f2"
 metafile = true
 
 [[files]]
@@ -865,6 +860,16 @@ metafile = true
 [[files]]
 file = "mods/botania.pw.toml"
 hash = "31862fa4fcae1cd40268e143d166327274d76b365fd1f1fb78e9fae4fdc34cb1"
+metafile = true
+
+[[files]]
+file = "mods/botanical-machinery-extra-reforked.pw.toml"
+hash = "61f12f8f23463eac2452a57fcb7fad57bc3279d1271132a13225d874f6e3db6c"
+metafile = true
+
+[[files]]
+file = "mods/botanical-machinery.pw.toml"
+hash = "ded48f94aa921f609b31af737a8eca191e7fce430db847c577df3b0ae7f04fc5"
 metafile = true
 
 [[files]]
@@ -1478,6 +1483,11 @@ metafile = true
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "75199fa3b762c5aa781e3cb2aab7779d19128b2a1c5b15798d5e613df8d16573"
+metafile = true
+
+[[files]]
+file = "mods/libx.pw.toml"
+hash = "2c255a6aff5c016d8769777fd9e23f4bbc256d103fb45eef12b1d6af77249ba1"
 metafile = true
 
 [[files]]

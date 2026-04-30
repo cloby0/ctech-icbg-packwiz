@@ -1,0 +1,13 @@
+name = "Botanical Machinery Extra Reforked"
+filename = "botanicalextramachinery-1.2.9.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "720092a1fe2d4f984b9a0f9bb2ca85e0230f46ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7986908
+project-id = 1415795
