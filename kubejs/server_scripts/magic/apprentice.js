@@ -66,6 +66,11 @@ ServerEvents.recipes(event => {
                  }
     );
 
+    event.remove({ id: 'ars_nouveau:imbuement_fire_essence' });
+    event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
+    event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
+    event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
+
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
