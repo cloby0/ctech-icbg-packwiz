@@ -2,21 +2,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'reliquary:lantern_of_paranoia' })
     event.remove({ id: 'reliquary:interdiction_torch' })
     event.remove({ id: 'reliquary:alkahestry_altar' })
-
     event.remove({ id: 'hexerei:mahogany_broom_from_mixing_cauldron' })
     event.remove({ id: 'hexerei:willow_broom_from_mixing_cauldron' })
     event.remove({ id: 'hexerei:witch_hazel_broom_from_mixing_cauldron'})
-
     event.remove({ id: 'enderstorage:ender_chest' })
     event.remove({ id: 'enderstorage:ender_tank' })
     event.remove({ id: 'enderstorage:ender_pouch'})
-
     event.remove({ id: 'ars_nouveau:source_jar'})
-
     event.remove({ id: 'ars_nouveau:storage_lectern'})
-
     event.remove({ id: 'ars_nouveau:repository'})
-
 
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
@@ -57,7 +51,6 @@ ServerEvents.recipes(event => {
                 C: 'minecraft:glowstone'
             }
         );
-
     event.shaped(
             Item.of('enderstorage:ender_chest', 1),
             [
@@ -98,7 +91,6 @@ ServerEvents.recipes(event => {
                 B: 'gtceu:luminessence_dust'
             }
         );
-
     event.shaped(
             Item.of('ars_nouveau:source_jar', 1),
             [
@@ -113,13 +105,12 @@ ServerEvents.recipes(event => {
                 D: '#forge:plates/gold'
             }
         );
-
     event.shaped(
             Item.of('ars_nouveau:storage_lectern', 1),
             [
                 ' E ',
                 'CDC',
-                'ABA '
+                'ABA'
             ],
             {
                 A: '#forge:plates/silver',
@@ -135,7 +126,7 @@ ServerEvents.recipes(event => {
             [
                 'ACA',
                 'B B',
-                'ACA '
+                'ACA'
             ],
             {
                 A: '#forge:screws/gold',

@@ -642,7 +642,7 @@ hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "f4e861e9e2ed11fbb62789ec243c56d9d63bc5828dba690347dee0a02a9fd274"
+hash = "82b8c187407345f01868f48546a7882e121a466522be918276e268c9ababf621"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -650,7 +650,7 @@ hash = "40e96c57e1a8432cebb540c7550310ae633f955dbec4cf8b7c4b69b61b4971ac"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
-hash = "ce05cb13a95b0aa07533e01867253b27df7081f60e4f3ad13ec8c704783c2a35"
+hash = "8eff70f976f27a8be901e754931056b7e43fd41fe52aa5983c2e933c4e9b4cf2"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"
