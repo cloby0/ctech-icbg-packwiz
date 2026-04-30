@@ -1924,6 +1924,11 @@ hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
 metafile = true
 
 [[files]]
+file = "mods/starbunclemania.pw.toml"
+hash = "5db8d594f2f22b256379bd0a9880c86016d0e83f2dff486ea4143ff8e676eab5"
+metafile = true
+
+[[files]]
 file = "mods/storage-drawers.pw.toml"
 hash = "371b68e257eaca322ca4e95f4aa8d95441d84110b69243dda818f743a0111ba5"
 metafile = true
