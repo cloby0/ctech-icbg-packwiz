@@ -650,7 +650,7 @@ hash = "40e96c57e1a8432cebb540c7550310ae633f955dbec4cf8b7c4b69b61b4971ac"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
-hash = "8eff70f976f27a8be901e754931056b7e43fd41fe52aa5983c2e933c4e9b4cf2"
+hash = "d51e2bc657ad2eb41039332b5793e3b0b98066eb2c6f837c9cb6e7399d1eabeb"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"

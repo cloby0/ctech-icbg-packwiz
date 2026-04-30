@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gem()
         .color(0xf1ef5f)
         .iconSet(GTMaterialIconSet.CERTUS)
-        .flags(GTMaterialFlags.GENERATE_LENS
+        .flags(GTMaterialFlags.GENERATE_LENS)
         .ore()
     event.create('luminessence')
         .dust()
