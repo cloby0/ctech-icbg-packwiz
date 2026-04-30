@@ -11,14 +11,17 @@ StartupEvents.registry('item', event => {
     event.create('chaos_essence')
 
     event.create('magebloom_sieve')
-    event.create('prima_materia_sieve')
 
     event.create('weak_elementium_dust')
     event.create('raw_elementite')
     event.create('elementite_dust')
 
-    event.create('terra_firma_mote')
-    .displayName("Mote of the Terra Firma")
+    event.create('florid_compound')
+    event.create('living_metalloid')
+
+    event.create('vengeful_gaia_spirit')
+    event.create('soul_of_gaia')
+    event.create('boundless_gaia_spirit_ingot')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
