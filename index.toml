@@ -1052,8 +1052,18 @@ hash = "20cc062985320cf7210197e0eefd49354b755ce38a7b899fe2ce8f31b9cbad9f"
 metafile = true
 
 [[files]]
+file = "mods/cyberware-visible-modifications.pw.toml"
+hash = "25ef5b604e8beeb17f0b9f8a4b500318e98152ce51e55d70ec0329dbf2bf45ac"
+metafile = true
+
+[[files]]
 file = "mods/data-anchor.pw.toml"
 hash = "acb7ebe72eeb476a26e5777cbbbad0a270db8ff85de0aa417be8e1228d26e2f4"
+metafile = true
+
+[[files]]
+file = "mods/dglib.pw.toml"
+hash = "2814e499ba7f657b213f84884795a845988a9ee45db35749d93032df08dd09c8"
 metafile = true
 
 [[files]]
