@@ -641,6 +641,10 @@ file = "kubejs/server_scripts/magic/hobbyist.js"
 hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
 
 [[files]]
+file = "kubejs/server_scripts/magic/initiate.js"
+hash = "f0ffbf944033dec3e3691a4dbae189c4e37280b0f945095ee53dfc8e7a3662fa"
+
+[[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
 hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
@@ -1008,6 +1012,11 @@ hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
 metafile = true
 
 [[files]]
+file = "mods/create-new-age.pw.toml"
+hash = "af254a9e26ed280c6078e2d02aa9f511d5b3f0ae43767e6a35a87583014e5e6e"
+metafile = true
+
+[[files]]
 file = "mods/create-sentry-mechanical-arm.pw.toml"
 hash = "6d763ef8abcc9df931de5995f67035469b8d2175037e51037a8ce407d1003b5a"
 metafile = true
@@ -1020,11 +1029,6 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "9d7971a7af2ff4a96a0e5aede76f9cf8dc978da601e2754f79d6ec8631125bb9"
-metafile = true
-
-[[files]]
-file = "mods/createaddition.pw.toml"
-hash = "8a5f33277995fccd2be6793c4fba1b5d657983be32f0b47e4afab4eac70b8ab8"
 metafile = true
 
 [[files]]
