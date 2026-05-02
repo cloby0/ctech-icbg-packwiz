@@ -121,6 +121,10 @@ file = "config/ftbquests/quests/reward_tables/titanium.snbt"
 hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
 
 [[files]]
+file = "config/gtceu.yaml"
+hash = "b008b31cabf2bc659eea4c92c760211fadfe6fe725e7ce452c2fd646a9824fee"
+
+[[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
