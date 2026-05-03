@@ -1,0 +1,13 @@
+name = "Chunk Optimization"
+filename = "ChunkOpt-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a682858609488f4bfe10e7a32b64eca273def337"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7865912
+project-id = 1400281

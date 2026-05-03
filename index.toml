@@ -757,6 +757,11 @@ hash = "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
 metafile = true
 
 [[files]]
+file = "mods/applied-botanics-addon.pw.toml"
+hash = "64ad6dacf8e6d1c70567b2119054ab358ff0556feea8037d51379727cef641db"
+metafile = true
+
+[[files]]
 file = "mods/applied-cooking.pw.toml"
 hash = "426446bc043d83e2463ab4bae4ba86f4c2fc9c2ed3b28a96101ccb1d977b920e"
 metafile = true
@@ -901,6 +906,11 @@ hash = "165f496ee20ef2b79b60b01c3f6ae27113238a0f09491fdf22c577548b6994a8"
 metafile = true
 
 [[files]]
+file = "mods/canary.pw.toml"
+hash = "e5df83a3dd1686106741d1d61da5869aed0537c2931a40234e1b3bd2d09e1971"
+metafile = true
+
+[[files]]
 file = "mods/castlib.pw.toml"
 hash = "c0e801e563dd3ebe56ceeaa9c65f390178ea4a2abef10a0396527757e2d981f2"
 metafile = true
@@ -941,6 +951,16 @@ hash = "71a33fe41bead909b3e95643351ef8015def70d3cb083916469f492f66434b45"
 metafile = true
 
 [[files]]
+file = "mods/chunk-optimization.pw.toml"
+hash = "1a56c1a9836fb15a272be93bbd7e187aa816aad349a08f99a082cbf855d3d649"
+metafile = true
+
+[[files]]
+file = "mods/chunky-pregenerator-forge.pw.toml"
+hash = "7d3fded0a343b2953e2a77fd1d2ed7abc547d7008f5b1b842546f28b8df1b802"
+metafile = true
+
+[[files]]
 file = "mods/citadel.pw.toml"
 hash = "5a4b03567f23fe0aac7806bd7cc9734138bf5fc098e98c1bb552d5b288bef258"
 metafile = true
@@ -948,6 +968,11 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+hash = "e3173aaa4e9078ad7ace2b9ef43ce15ce9919c0b566d8830cea87264f92b3a6a"
 metafile = true
 
 [[files]]
@@ -1074,6 +1099,21 @@ hash = "6a18fc39dbe317dcdba9aac9d5457e1bb2aa6decf77a6f4d6e67d7fbff0831d0"
 metafile = true
 
 [[files]]
+file = "mods/doespotatotick.pw.toml"
+hash = "b1c17405d4c3cf5b461cc9b71ae7436c1e2d313c59ee5f1a9c2a9e220158f3f7"
+metafile = true
+
+[[files]]
+file = "mods/duplicationless.pw.toml"
+hash = "8421350563d3ae212a0a6198d36e6a3a43c0047ef00f5057322aa99a5934fc51"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-view.pw.toml"
+hash = "a884ab98ff6006ab5e4815431a0d7d35582e415df5168769c1a6ef8c93849947"
+metafile = true
+
+[[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
 hash = "8f2270a50a633db681826cbfb691e6efdb25e1e0c4702125c13d525b52fe229f"
 metafile = true
@@ -1126,6 +1166,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling-forge-1.10.1-mc1.20.1.jar"
 hash = "1231bb17e3db1a7d4e98800bb070ec1e7e7c016b934e1eb11c1cc63d11d0aa2d"
+
+[[files]]
+file = "mods/etched.pw.toml"
+hash = "c9f73e2b93b64fb0c44fbbde6245a5d5934143d6c4b9cc9829e3ba62c02ead4e"
+metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
@@ -1352,6 +1397,11 @@ hash = "56e2d042f5d49a155e38b8d6a29cc621044c50fa82a4bd322396272c0deac223"
 metafile = true
 
 [[files]]
+file = "mods/immersive-optimization.pw.toml"
+hash = "db1d8dfc5374fdfe515b40fda2cfc775160442e2cd63a1b8d083267065f824be"
+metafile = true
+
+[[files]]
 file = "mods/inline.pw.toml"
 hash = "d92834912371593543ac5c2de473e438fcf831e6e7641634c5e95918b73c211a"
 metafile = true
@@ -1474,6 +1524,11 @@ metafile = true
 [[files]]
 file = "mods/ldlib.pw.toml"
 hash = "afd880e9028403834211fb8e19a77bed5e546da72570fb62086e46de83a530ef"
+metafile = true
+
+[[files]]
+file = "mods/leaky.pw.toml"
+hash = "5a4824b1c905eb1c7a3f1b89fe332d2147feae5a29072b773df2359dafa02711"
 metafile = true
 
 [[files]]
@@ -1617,6 +1672,11 @@ hash = "5859dfd186c4ac5e7e4627639dc2aeca5478dd1f9d6f09020e49a9788edbf4de"
 metafile = true
 
 [[files]]
+file = "mods/mns-moogs-nether-structures.pw.toml"
+hash = "9653aa00a74c2223f416b2846e04017d8b6a45f8b38c2e6b5f0c9e66a9a91eb7"
+metafile = true
+
+[[files]]
 file = "mods/modern-ae2-additions.pw.toml"
 hash = "b8b547d9d06d90eaf9e3d48d08fabe87b23a247e9f53384038b6c7be1d0457bc"
 metafile = true
@@ -1624,6 +1684,21 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "f0d2394f2d9c3e7d25f744aabc26fbc806eb8694e239b333cfe56e4a6df07f17"
+metafile = true
+
+[[files]]
+file = "mods/moogs-end-structures.pw.toml"
+hash = "be8382d4f45cdde9c21b0ea8087081c7054052469660b966b6883e082ba69e14"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "17e4dafb5a358e998d47db18a2d0b2d66360a835adf1b3cf06514398e99b3017"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "c2d4e0f4c71992d795116e94eeba7bc93ff67f8a1a167912f6c5f7a2d6ff00fc"
 metafile = true
 
 [[files]]
@@ -1932,6 +2007,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "4e24dc04cef348fd40e0967e05446343665e02f201dc80731272416214054c22"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "ee2d9154be68ef20293596a3f65810111fd35a802f1e8292e9ba8872de463a14"
 metafile = true
 
 [[files]]
