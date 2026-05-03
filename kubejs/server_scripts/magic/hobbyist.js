@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     //mixing cauldron recipe
     event.remove({ id: 'hexerei:mixing_cauldron' });
     event.shaped(
-        Item.of('hexerei:mixing_cauldron', 1), // arg 1: output
+        Item.of('hexerei:mixing_cauldron', 1),
             [
                 'BDB',
                 'ACA',
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             ],
             {
                  A: '#forge:plates/iron',
-                 B: 'gtceu:iron_bolt',  //arg 3: the mapping object
+                 B: 'gtceu:iron_bolt',
                  C: 'minecraft:cauldron',
                  D: '#forge:plates/gold',
                  E: '#minecraft:wooden_slabs'

@@ -54,5 +54,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xAE44E2)
         .secondaryColor(0xE244C8)
         .iconSet(GTMaterialIconSet.QUARTZ)
-        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.NO_ORE_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.NO_ORE_SMELTING, GTMaterialFlags.GENERATE_ROD)
 })

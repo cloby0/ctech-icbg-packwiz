@@ -21,16 +21,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});
 
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": {
-            "item": "minecraft:amethyst_shard"
-        },
-        "output": "irons_spellbooks:arcane_essence",
-        "pedestalItems": [],
-        "source": 500
-    });
+    event.recipes.ars_nouveau.imbuement(
+        "minecraft:amethyst_shard",
+        "irons_spellbooks:arcane_essence",
+        5000,
+        []
+    );
 
     event.remove({ id: 'ars_nouveau:scribes_table' });
     event.shaped(
@@ -112,16 +108,12 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": {
-            "item": "kubejs:glowing_compound_dust"
-        },
-        "output": "kubejs:impure_glimmering_dust",
-        "pedestalItems": [],
-        "source": 100
-    });
+    event.recipes.ars_nouveau.imbuement(
+        "kubejs:glowing_compound_dust",
+        "kubejs:impure_glimmering_dust",
+        100,
+        []
+    );
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
 })

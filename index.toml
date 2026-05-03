@@ -638,15 +638,15 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "f2dbcf99a066a1f1b991e482b43b359855440544a01b905447c233c02421ef6d"
+hash = "cf69b018ddef8c65625f8fa77a03b0f42f92525b10aca9f404310917ab39a27d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "07a68448a6cceeefb6a3e64977361068939992b8f08b30b98a0f89c67a77de8b"
+hash = "c9602b435866c400c509b88406c7e7792915dfd68d8ba1821628eda249ff13f7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "f0ffbf944033dec3e3691a4dbae189c4e37280b0f945095ee53dfc8e7a3662fa"
+hash = "c9e1e3b80a98a2f0f377cac6cc08b9049c17a063227f7473288531bb56ccf01e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -658,7 +658,7 @@ hash = "40e96c57e1a8432cebb540c7550310ae633f955dbec4cf8b7c4b69b61b4971ac"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
-hash = "53fae5a6f189e47c2dcc4b9e16de403c4c16279247de1b747f44470cf0800eea"
+hash = "d335737824563b3bcb65b144a315361d69a83a816574c890faf1a31e2edd93e0"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"
