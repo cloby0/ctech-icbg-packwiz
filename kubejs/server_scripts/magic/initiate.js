@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         {
             A: '#forge:rods/gold',
             B: '#forge:rods/long/gold',
-            C: 'irons_spellbooks:diving_pearl'
+            C: 'irons_spellbooks:divine_pearl'
     });
 
     event.recipes.ars_nouveau.enchanting_apparatus(
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
             "gtceu:luminessence_dust",
             "gtceu:luminessence_dust"
         ],
-        "gtceu:silver_dust",
+        "gtceu:pure_silver_dust",
         "kubejs:holy_silver_blend",
         1000,
     );
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         "kubejs:holy_silver_blend",
         "gtceu:holy_silver_dust",
         1000,
-        ["gtceu:ambrosium_dust"]
+        ["reliquary:mercy_cross"]
     );
 
     event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})

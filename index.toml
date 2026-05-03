@@ -646,7 +646,7 @@ hash = "c9602b435866c400c509b88406c7e7792915dfd68d8ba1821628eda249ff13f7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "acb637803a64e7c693494fce86891514d3448348e1bd61afe6bd5bc011ce2a26"
+hash = "0aeb562fc2c7b86a0151d9db35c46540e24813cb2384ed75b12e143e9d769cc9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
