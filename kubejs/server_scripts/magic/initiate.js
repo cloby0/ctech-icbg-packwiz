@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "constructionwand:infinity_wand" });
 
-    event.recipe.ars_nouveau.imbuement(
+    event.recipes.ars_nouveau.imbuement(
         "gtceu:source_gem",
         "reliquary:void_tear",
         500,
