@@ -21,10 +21,10 @@ ServerEvents.recipes(event => {
         "reliquary:void_tear",
         500,
         [
-            "minecraft,crying_obsidian", 
-            "minecraft,crying_obsidian", 
-            "minecraft,crying_obsidian", 
-            "minecraft,crying_obsidian"
+            "minecraft:crying_obsidian", 
+            "minecraft:crying_obsidian", 
+            "minecraft:crying_obsidian", 
+            "minecraft:crying_obsidian"
         ]
     );
 
