@@ -646,7 +646,7 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "3ffe24e440a25a28721d35f2c22e3b031964cfaa5d304cbc8b2edb28032c3d2a"
+hash = "c2593715c2541387943c2526d8b4359d5c4b8b3936b48a8b93bfee339ab5537c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -654,7 +654,7 @@ hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "e8bb7d5db02320dfeb9395dd48bb8c08ed6437404b58b381880075b0104946e1"
+hash = "b2c24bec61783a30940cd20e3c931b5e64bef52da334c85a6354325660f75210"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -662,7 +662,7 @@ hash = "615f32f43f6826dd6df43d85d8352b00e47f327958b743b80f4d9ca1e0a8707d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "fb4ffcfac27c36a05ef3d6daf5db164f563ff206dcea9566dc8d8f52da5d34ae"
+hash = "24913e303f9c1575a7c18736f4984c01384954d28336d29c69348cbe249869f2"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"

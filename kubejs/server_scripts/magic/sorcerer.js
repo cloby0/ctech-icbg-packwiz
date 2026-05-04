@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ id: 'ars_nouveau:apprentice_spell_book' })
+    event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             "gtceu:holy_silver_foil",
@@ -39,7 +39,8 @@ ServerEvents.recipes(event => {
             A: 'minecraft:bow',
             B: 'ars_nouveau:source_jar',
             C: 'gtceu:source_block',
-            D: 'gtceu:holy_silver_rod'
+            D: 'gtceu:holy_silver_rod',
+            E: "gtceu:double_holy_silver_plate"
         }
     )
 

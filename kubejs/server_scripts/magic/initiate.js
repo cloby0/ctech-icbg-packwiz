@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'gtceu:long_wood_rod',
-            B: 'irons_spellbooks:protective_rune',
+            B: 'irons_spellbooks:protection_rune',
             C: 'reliquary:void_tear',
             D: 'reliquary:lantern_of_paranoia'
         }

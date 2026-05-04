@@ -2,7 +2,7 @@
 //this is for "unnerfing" some gregtech nerfs to allow them to
 //be craftable by magic players, with a slight amount of difficulty
 
-StartupEvents.registry('item', event => {
+ServerEvents.recipes(event => {
     
     event.custom(
         {
@@ -20,5 +20,5 @@ StartupEvents.registry('item', event => {
         }
     );
 
-    
+
 })
