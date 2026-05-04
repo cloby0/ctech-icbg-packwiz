@@ -1,4 +1,53 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'ars_nouveau:apprentice_spell_book' })
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "gtceu:holy_silver_foil",
+            "ars_nouveau:magebloom_fiber",
+            "ars_nouveau:blank_parchment",
+            "ars_nouveau:blank_parchment",
+        ],
+        "ars_nouveau:novice_spell_book",
+        "ars_nouveau:apprentice_spell_book",
+        3500,
+    );
+
+    event.remove({ id: 'reliquary:glowing_water' })
+    event.remove({ id: 'reliquary:glowing_water_from_potion_vial' })
+
+    event.shaped(
+        Item.of('reliquary:glowing_water', 3),
+        [
+            '   ',
+            ' B ',
+            ' A '
+        ],
+        {
+            A: Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
+            B: 'gtceu:holy_silver_dust',
+        }
+    )
+
+    event.shaped(
+        Item.of('ars_nouveau:basic_spell_turret', 1),
+        [
+            ' D ',
+            'CBA',
+            ' D '
+        ],
+        {
+            A: 'minecraft:bow',
+            B: 'ars_nouveau:source_jar',
+            C: 'gtceu:source_block',
+            D: 'gtceu:holy_silver_rod'
+        }
+    )
+
+    //tbd magic gun recipes
+
+    event.remove({ mod: 'tacz' })
+
+    //beyond this lies progression
     const elements = [
         "air",
         "earth",
@@ -20,7 +69,7 @@ ServerEvents.recipes(event => {
             ],
             "ars_nouveau:magebloom_crop",
             `mysticalagriculture:${element}_seeds`,
-            1000,
+            5500,
         );
         event.replaceInput(
             { input: `ars_nouveau:${element}_essence` },
@@ -29,5 +78,26 @@ ServerEvents.recipes(event => {
         )
     })
 
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "mysticalagriculture:air_essence",
+            "gtceu:source_block",
+            "mysticalagriculture:earth_essence",
+            "gtceu:source_block",
+            "mysticalagriculture:water_essence",
+            "gtceu:source_block",
+            "mysticalagriculture:fire_essence",
+            "gtceu:source_block"
+        ],
+        "gtceu:holy_silver_ingot",
+        "kubejs:chaos_essence",
+        6000,
+    );
 
+    event.recipes.ars_nouveau.imbuement(
+        "kubejs:chaos_essence",
+        "gtceu:prima_materia_ingot",
+        10000,
+        ["kubejs:element_attunement_stone"]
+    )
 });

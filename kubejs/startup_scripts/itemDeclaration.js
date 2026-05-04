@@ -29,7 +29,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gem()
         .color(0xf1ef5f)
         .iconSet(GTMaterialIconSet.CERTUS)
-        .flags(GTMaterialFlags.GENERATE_LENS)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS
+        )
         .ore()
     event.create('luminessence')
         .dust()
@@ -39,10 +41,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xe7f79e)
         .iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_FOIL
+        )
     event.create('prima_materia')
         .ingot()
         .color(0xAEF76D)
         .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
     event.create('abstract_metal')
         .ingot()
         .color(0xA2A6A2)
@@ -54,5 +69,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xAE44E2)
         .secondaryColor(0xE244C8)
         .iconSet(GTMaterialIconSet.QUARTZ)
-        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.NO_ORE_SMELTING, GTMaterialFlags.GENERATE_ROD)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS, 
+            GTMaterialFlags.NO_ORE_SMELTING, 
+            GTMaterialFlags.GENERATE_ROD
+        )
 })

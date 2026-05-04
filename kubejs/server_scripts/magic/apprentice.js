@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
                 "item": "minecraft:blaze_powder"
             },
             {
-                "item": "ars_nouveau:fire_essence"
+                "tag": "kubejs:fire_essences"
             },
             {
                 "item": "minecraft:glow_berries"

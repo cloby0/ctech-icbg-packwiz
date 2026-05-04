@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     event.recipes.ars_nouveau.imbuement(
         "gtceu:source_gem",
         "reliquary:void_tear",
-        500,
+        1500,
         [
             "minecraft:crying_obsidian", 
             "minecraft:crying_obsidian", 
@@ -28,6 +28,105 @@ ServerEvents.recipes(event => {
         ]
     );
 
+    event.shaped(
+        Item.of('reliquary:ender_staff', 1),
+        [
+            ' D ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'gtceu:long_wood_rod',
+            B: 'irons_spellbooks:ender_rune',
+            C: 'reliquary:void_tear',
+            D: 'minecraft:ender_eye'
+        }
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "minecraft:blue_ice",
+            "#kubejs:water_essences",
+            "minecraft:snowball",
+            "minecraft:snowball",
+        ],
+        "minecraft:shears",
+        "reliquary:shears_of_winter",
+        2500,
+    );
+
+    event.shaped(
+        Item.of('reliquary:sojourner_staff', 1),
+        [
+            ' D ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'gtceu:long_wood_rod',
+            B: 'irons_spellbooks:protective_rune',
+            C: 'reliquary:void_tear',
+            D: 'reliquary:lantern_of_paranoia'
+        }
+    )
+
+    event.shaped(
+        Item.of('reliquary:glacial_staff', 1),
+        [
+            ' D ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'gtceu:long_iron_rod',
+            B: 'irons_spellbooks:ice_rune',
+            C: 'reliquary:void_tear',
+            D: 'minecraft:blue_ice'
+        }
+    )
+
+    event.shaped(
+        Item.of("reliquary:hero_medallion", 1),
+        [
+            'CBC',
+            'BAB',
+            'CBC'
+        ],
+        {
+            A: 'reliquary:fortune_coin',
+            B: 'gtceu:wrought_iron_plate',
+            C: 'gtceu:source_gem'
+        }
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "irons_spellbooks:nature_rune",
+            "irons_spellbooks:nature_rune",
+            "ars_nouveau:magebloom_fiber",
+            "gtceu:source_gem"
+        ],
+        "minecraft:fishing_rod",
+        "reliquary:rod_of_lyssa",
+        2500,
+    );
+
+    event.shaped(
+        Item.of('constructionwand:infinity_wand', 1),
+        [
+            ' D ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'gtceu:long_iron_rod',
+            B: 'irons_spellbooks:evocation_rune',
+            C: 'constructionwand:diamond_wand',
+            D: 'gtceu:source_gem'
+        }
+    )
+
+    //after here lies only progression related recipes
     event.shaped(
         Item.of('ars_nouveau:enchanting_apparatus', 1),
         [
@@ -71,7 +170,7 @@ ServerEvents.recipes(event => {
     event.recipes.ars_nouveau.imbuement(
         "minecraft:ender_pearl",
         "irons_spellbooks:divine_pearl",
-        1000,
+        3000,
         ["gtceu:ambrosium_dust"]
     );
 
@@ -98,13 +197,13 @@ ServerEvents.recipes(event => {
         ],
         "gtceu:pure_silver_dust",
         "kubejs:holy_silver_blend",
-        1000,
+        2000,
     );
 
     event.recipes.ars_nouveau.imbuement(
         "kubejs:holy_silver_blend",
         "gtceu:holy_silver_dust",
-        1000,
+        2500,
         ["reliquary:mercy_cross"]
     );
 
