@@ -654,7 +654,7 @@ hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "764b152ecd39e1d9719bc940c81dbe1becb46948d2422ea0df265ba1f764cc17"
+hash = "a12a33b3a44010dde15982efd8441371ccf11136b2e0f32da71e209a1c306fae"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
