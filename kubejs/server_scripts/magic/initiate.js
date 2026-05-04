@@ -76,17 +76,18 @@ ServerEvents.recipes(event => {
     );
 
     event.shaped(
-        Item.of('reliquary:mercy_cross', 1),
+        Item.of('reliquary:mercy_cross', '{Damage:0}'),
         [
             ' A ',
             'ACA',
-            ' B'
+            ' B '
         ],
         {
             A: '#forge:rods/gold',
             B: '#forge:rods/long/gold',
             C: 'irons_spellbooks:divine_pearl'
-    });
+        }
+    );
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [

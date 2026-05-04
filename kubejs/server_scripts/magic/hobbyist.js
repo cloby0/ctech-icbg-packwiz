@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     //mixing cauldron recipe
     event.remove({ id: 'hexerei:mixing_cauldron' });
+
     event.shaped(
         Item.of('hexerei:mixing_cauldron', 1),
             [
@@ -50,6 +51,132 @@ ServerEvents.recipes(event => {
         ],
         "output": {
             "item": "ars_nouveau:fire_essence"
+        },
+        "liquidOutput": {
+            "fluid": "minecraft:lava"
+        },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    //crude water essence recipe
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": {
+            "fluid": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "tag": "forge:corals/alive"
+            },
+            {
+                "item": "minecraft:kelp"
+            },
+            {
+                "tag": "forge:corals/alive"
+            },
+            {
+                "item": "minecraft:kelp"
+            },
+            {
+                "tag": "forge:corals/alive"
+            },
+            {
+                "item": "minecraft:kelp"
+            },
+            {
+                "tag": "forge:corals/alive"
+            },
+            {
+                "item": "minecraft:kelp"
+            }
+        ],
+        "output": {
+            "item": "ars_nouveau:water_essence"
+        },
+        "liquidOutput": {
+            "fluid": "minecraft:water"
+        },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    //crude air essence recipe
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": {
+            "fluid": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "quark:bottled_cloud"
+            },
+            {
+                "item": "minecraft:feather"
+            },
+            {
+                "item": "quark:bottled_cloud"
+            },
+            {
+                "item": "minecraft:feather"
+            },
+            {
+                "item": "quark:bottled_cloud"
+            },
+            {
+                "item": "minecraft:feather"
+            },
+            {
+                "item": "quark:bottled_cloud"
+            },
+            {
+                "item": "minecraft:feather"
+            }
+        ],
+        "output": {
+            "item": "ars_nouveau:air_essence"
+        },
+        "liquidOutput": {
+            "fluid": "minecraft:water"
+        },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    //crude earth essence
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": {
+            "fluid": "minecraft:lava"
+        },
+        "ingredients": [
+            {
+                "item": "gtceu:lead_ingot"
+            },
+            {
+                "item": "minecraft:dirt"
+            },
+            {
+                "item": "gtceu:lead_ingot"
+            },
+            {
+                "item": "minecraft:dirt"
+            },
+            {
+                "item": "gtceu:lead_ingot"
+            },
+            {
+                "item": "minecraft:dirt"
+            },
+            {
+                "item": "gtceu:lead_ingot"
+            },
+            {
+                "item": "minecraft:dirt"
+            }
+        ],
+        "output": {
+            "item": "ars_nouveau:earth_essence"
         },
         "liquidOutput": {
             "fluid": "minecraft:lava"

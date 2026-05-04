@@ -642,15 +642,19 @@ hash = "cf69b018ddef8c65625f8fa77a03b0f42f92525b10aca9f404310917ab39a27d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "c9602b435866c400c509b88406c7e7792915dfd68d8ba1821628eda249ff13f7"
+hash = "36025fa34c3606d7857345ec7808b381279400ee462c53d42b9fbc3dd21b7858"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "0aeb562fc2c7b86a0151d9db35c46540e24813cb2384ed75b12e143e9d769cc9"
+hash = "a2570a3e84267af718bbb4859629134fcb392bdecf9db3c94167be0e6a5aa4b3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
 hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
+
+[[files]]
+file = "kubejs/server_scripts/magic/sorcerer.js"
+hash = "764b152ecd39e1d9719bc940c81dbe1becb46948d2422ea0df265ba1f764cc17"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -1584,6 +1588,11 @@ metafile = true
 [[files]]
 file = "mods/loot-integrations.pw.toml"
 hash = "41a036a86db9c0cab20b9b8956b0749bdfea13942d6ca00668304e5d0731166f"
+metafile = true
+
+[[files]]
+file = "mods/lootjs.pw.toml"
+hash = "de2643b3bb36e6b5fd97540bd79619e0844293b43487ecce1613165a409ce8cc"
 metafile = true
 
 [[files]]
