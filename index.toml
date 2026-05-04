@@ -654,11 +654,11 @@ hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "a12a33b3a44010dde15982efd8441371ccf11136b2e0f32da71e209a1c306fae"
+hash = "e94a62e68a6b0a56be0515b1a87599725c43cfd52bd963c7da78d6a57c32eadc"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "40e96c57e1a8432cebb540c7550310ae633f955dbec4cf8b7c4b69b61b4971ac"
+hash = "615f32f43f6826dd6df43d85d8352b00e47f327958b743b80f4d9ca1e0a8707d"
 
 [[files]]
 file = "kubejs/startup_scripts/itemDeclaration.js"
