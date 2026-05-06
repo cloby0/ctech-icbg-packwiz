@@ -40,7 +40,7 @@ GTCEuServerEvents.oreVeins(event => {
             .withBlock(GTMaterials.get('ambrosium'), 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get('source'))
+            .surfaceRock(GTMaterials.get('ambrosium'))
             .placement("above") // 
             .density(0.4)
             .radius(5)
@@ -64,7 +64,7 @@ GTCEuServerEvents.oreVeins(event => {
             .withBlock(GTMaterials.get('mithril'), 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get('source'))
+            .surfaceRock(GTMaterials.get('mithril'))
             .placement("above") // 
             .density(0.4)
             .radius(5)

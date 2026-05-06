@@ -662,7 +662,7 @@ hash = "d5290167a30178e2f95abc994b85706452fff4fa8e0f9f45973351b1065c383e"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "78b225365e3d4b3ad16cb4290b93e82f41db009eedd6dea71c2ba8f30bd27a0f"
+hash = "a1a60d13f94d3c9f6b536af6cf1e20b4869b8ad74a5805187cd07ad9040c8849"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -674,7 +674,7 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "030ffe864e40f05fd2b0a9c6482bb378196e101999614ec0fba9c5f806a69074"
+hash = "1a6261337ebab2e50cf7bac85ebd1f95241bc2a4f4b6a5dc3e5a61ad8357527c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -690,7 +690,7 @@ hash = "64028e948e5a48c7ec89d4faa662d19dfdfbe3e33f2dd36d6c7b0bf8bf3b9c03"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "fd7da586cda9cdb1e82a1e3ce0e86c57e1b4a7987cb0b01ca28e44b90bd21086"
+hash = "ee52d8b99e0f5cd71ef3fe7e0662b55035c1c62b36d6b9fb6c60df650e49a678"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
