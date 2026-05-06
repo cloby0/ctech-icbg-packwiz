@@ -146,7 +146,7 @@ hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "c4bec4e48c9ff2b80c0557818551659ffca8a025da4bdcc3c848032c187b3eec"
+hash = "7c45f2efcec97927f9f7fce0247b27f8d7241ff82e1a374a6f1b213343daee47"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -686,7 +686,7 @@ hash = "24913e303f9c1575a7c18736f4984c01384954d28336d29c69348cbe249869f2"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "74e2774ee4b47268e0c3f70d0a2717e8c904d11247d410baec3b91cfe66a072f"
+hash = "dd5911c96e7d31c66a0f56972e1ca9aafeae13c12135e8b7a10e6d3f32b50d80"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

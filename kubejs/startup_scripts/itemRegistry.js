@@ -33,10 +33,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LENS
         )
         .ore()
+    
     event.create('luminessence')
         .dust()
         .color(0xfafa5d)
         .iconSet(GTMaterialIconSet.SHINY)
+    
     event.create('holy_silver')
         .ingot()
         .color(0xe7f79e)
@@ -48,6 +50,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL
         )
+    
     event.create('prima_materia')
         .ingot()
         .color(0xAEF76D)
@@ -58,11 +61,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
+    
     event.create('abstract_metal')
         .ingot()
         .color(0xA2A6A2)
         .secondaryColor(0x505350)
         .iconSet(GTMaterialIconSet.METALLIC)
+    
     event.create('source')
         .gem()
         .ore()
