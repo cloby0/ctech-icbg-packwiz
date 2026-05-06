@@ -12,7 +12,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(-60, 20)
 
         vein.veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.source, 4) // 
+            .oreBlock(GTMaterials.SOURCE, 4) // 
 
             .rareBlockChance(0.25)
             .veininessThreshold(0.1)
@@ -26,7 +26,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
 
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.source)
+            .surfaceRock(GTMaterials.SOURCE)
             .placement("above") // 
             .density(0.4)
             .radius(5)
