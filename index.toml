@@ -653,6 +653,14 @@ file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
 hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
+file = "kubejs/server_scripts/blockTags.js"
+hash = "ed2ff26b60107d4db9e8e1ccda2f61453fe55eec559ccc2363236ead702eb74f"
+
+[[files]]
+file = "kubejs/server_scripts/itemTags.js"
+hash = "615f32f43f6826dd6df43d85d8352b00e47f327958b743b80f4d9ca1e0a8707d"
+
+[[files]]
 file = "kubejs/server_scripts/magic/aetherWorldgen.js"
 hash = "925a7c40297507a1d713d022d89f9e892873e1b57ae095eb783fa244a86801fd"
 
@@ -675,10 +683,6 @@ hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
 hash = "93478869cc44f583437546f8da277cffc8781aecbb03b47aa3b014b10544e793"
-
-[[files]]
-file = "kubejs/server_scripts/tags.js"
-hash = "615f32f43f6826dd6df43d85d8352b00e47f327958b743b80f4d9ca1e0a8707d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
