@@ -18,12 +18,15 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
             .stateSupplier(properties.blockState)
             .baseModelLocation(properties.baseModel)
             .materialSupplier(properties.material)
-            .unificationEnabled(true)
-            .materialIconType(GTMaterialIconType.ore)
             .miningToolTag("mineable/pickaxe")
-            .generationCondition(ItemGenerationCondition.hasOreProperty)
     }
-    
-    createStoneTypeOre('aether:holystone', { blockState: () => 
-        UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
+    // Aether
+    createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
+
+    // Ad Astra
+    createStoneTypeOre('ad_astra:moon_stone')
+    createStoneTypeOre('ad_astra:mars_stone')
+    createStoneTypeOre('ad_astra:venus_stone')
+    createStoneTypeOre('ad_astra:mercury_stone')
+    createStoneTypeOre('ad_astra:glacio_stone')
 })
