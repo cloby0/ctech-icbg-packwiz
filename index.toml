@@ -690,7 +690,7 @@ hash = "64028e948e5a48c7ec89d4faa662d19dfdfbe3e33f2dd36d6c7b0bf8bf3b9c03"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "28a2822b7d5946f58fe988244885e749c58aafd11de2704bc1bebc94fc0cda42"
+hash = "fd7da586cda9cdb1e82a1e3ce0e86c57e1b4a7987cb0b01ca28e44b90bd21086"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

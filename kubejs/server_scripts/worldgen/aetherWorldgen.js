@@ -36,7 +36,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(20, 95)
         
         vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.SILVER, 4, 40, 95)
+            .withBlock(GTMaterials.Silver, 4, 40, 95)
             .withBlock(GTMaterials.get('ambrosium'), 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
