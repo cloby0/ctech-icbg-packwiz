@@ -654,7 +654,7 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/aetherWorldgen.js"
-hash = "7f9912abfd3831c6936faf5372d864ce24871068b3ca7964ec1c5f126db47da4"
+hash = "925a7c40297507a1d713d022d89f9e892873e1b57ae095eb783fa244a86801fd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"

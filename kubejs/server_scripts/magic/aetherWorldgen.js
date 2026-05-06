@@ -9,12 +9,11 @@ GTCEuServerEvents.oreVeins(event => {
         vein.dimensions("aether:the_aether")
         vein.biomes("#aether:is_aether")
 
-        vein.heightRangeUniform(-60, 20)
+        vein.heightRangeUniform(20, 95)
 
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.get('source'), 4) // 
 
-            .rareBlockChance(0.25)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.3)
             .minRichness(0.3)
