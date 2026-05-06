@@ -91,4 +91,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_ORE_SMELTING, 
             GTMaterialFlags.GENERATE_ROD
         )
+
+    event.create('mithril')
+        .ingot()
+        .ore()
+        .color(0xc7ebec)
+        .secondaryColor(0x486b82)
+        .iconSet(GTMaterialIconSet.SHINY)
+
+    event.create('gravitite')
+        .ingot()
+        .ore()
+        .color(0xE072D7)
+        .secondaryColor(0x871F7E)
+        .iconSet(GTMaterialIconSet.METALLIC)
 })

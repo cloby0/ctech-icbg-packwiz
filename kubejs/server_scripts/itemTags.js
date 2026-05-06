@@ -12,4 +12,6 @@ ServerEvents.tags('item', event => {
     event.add(`kubejs:${element}_essences`, `ars_nouveau:${element}_essence`);
     event.add(`kubejs:${element}_essences`, `mysticalagriculture:${element}_essence`);
   })
+
+  event.add('forge:ingots/silicon', 'ae2:silicon');
 });

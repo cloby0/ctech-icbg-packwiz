@@ -3,11 +3,12 @@
     "minecraft",
     "kubejs",
     "crafttweaker",
-    "gtceu",
     "create",
     "thermal",
     "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "silentgems",
+    "gtceu"
   ],
   "stoneStrata": [
     "stone",
@@ -16,7 +17,8 @@
     "diorite",
     "granite",
     "nether",
-    "end"
+    "end",
+    "holystone"
   ],
   "tags": [
     "forge:nuggets/{material}",
@@ -34,6 +36,7 @@
   ],
   "materials": [
     "aeternium",
+    "ambrosium",
     "aluminum",
     "amber",
     "apatite",
@@ -73,6 +76,8 @@
     "potassium_nitrate",
     "ruby",
     "sapphire",
+    "salt",
+    "silicon",
     "signalum",
     "silver",
     "steel",
@@ -80,7 +85,8 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc"
+    "zinc",
+    "zanite"
   ],
   "priorityOverrides": {},
   "customTags": {},

@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'ars_nouveau:source_gem_block'})
+    
     event.remove({ id: 'reliquary:lantern_of_paranoia' })
     event.remove({ id: 'reliquary:interdiction_torch' })
     event.remove({ id: 'reliquary:alkahestry_altar' })
@@ -13,17 +15,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:repository'})
 
     event.shaped(
-            Item.of('reliquary:lantern_of_paranoia', 1),
+            Item.of('kubejs:magebloom_sieve', 1),
             [
-                'DAD',
-                'BCB',
-                'DAD'
+                'ABA',
+                'BBB',
+                'ABA'
             ],
             {
-                A: '#forge:plates/iron',
-                B: 'minecraft:glass',
-                C: 'gtceu:luminessence_dust',
-                D: '#forge:rods/silver'
+                A: 'ars_nouveau:magebloom_fiber',
+                B: 'aether:carved_stone'
             }
         );
     event.shaped(
@@ -137,6 +137,21 @@ ServerEvents.recipes(event => {
 
 
     //here be progression
+    event.shaped(
+            Item.of('reliquary:lantern_of_paranoia', 1),
+            [
+                'DAD',
+                'BCB',
+                'DAD'
+            ],
+            {
+                A: '#forge:plates/iron',
+                B: 'minecraft:glass',
+                C: 'gtceu:luminessence_dust',
+                D: '#forge:rods/silver'
+            }
+        );
+
     event.custom(
         {
         "type": "ars_nouveau:imbuement",
