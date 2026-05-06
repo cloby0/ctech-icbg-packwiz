@@ -15,4 +15,5 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:ingots/silicon', 'ae2:silicon');
   event.add('forge:gems/ambrosium', 'aether:ambrosium_shard');
+  event.add('forge:gems/zanite', 'aether:zanite_gemstone');
 });

@@ -88,7 +88,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.EMERALD)
         .flags(
             GTMaterialFlags.GENERATE_LENS, 
-            GTMaterialFlags.NO_ORE_SMELTING, 
             GTMaterialFlags.GENERATE_ROD
         )
 
