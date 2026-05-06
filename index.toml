@@ -169,6 +169,22 @@ file = "kubejs/config/common.properties"
 hash = "e641ee5161de4d83903af046619a7c73ccdf6640a10a9f075cc94fcd2b2f31e3"
 
 [[files]]
+file = "kubejs/data/aether/worldgen/biome/skyroot_forest.json"
+hash = "f32fb52df1fea241727441d2d780db02e33ba39f1cfe5605ee2dfa022169e749"
+
+[[files]]
+file = "kubejs/data/aether/worldgen/biome/skyroot_grove.json"
+hash = "412b35fbfd8e02faeb60e7a93a453fa0813a42d45c11f95cdac8f237cc923a62"
+
+[[files]]
+file = "kubejs/data/aether/worldgen/biome/skyroot_meadow.json"
+hash = "dc17d34725e3e9e5f58aa609664bbe49c8e61fd0e5b39c4a5229549ac221811d"
+
+[[files]]
+file = "kubejs/data/aether/worldgen/biome/skyroot_woodland.json"
+hash = "2d80ce7a418af499573c6c5ed64679faf7cb61d1cfb466a83594523ded0897a1"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/aluminium_ingot.json"
 hash = "24d29f32acd3e991b438ead53ecaf97527dae1cc8cc4e2423d871ee855da2283"
 
@@ -637,6 +653,10 @@ file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
 hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
+file = "kubejs/server_scripts/magic/aetherWorldgen.js"
+hash = "1e99e63e0ea445a954bfe8558255eb25c8b9ad78a87cbe553c2ec5b918e33aff"
+
+[[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
 hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
@@ -646,7 +666,7 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "c2593715c2541387943c2526d8b4359d5c4b8b3936b48a8b93bfee339ab5537c"
+hash = "030ffe864e40f05fd2b0a9c6482bb378196e101999614ec0fba9c5f806a69074"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -654,7 +674,7 @@ hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "b2c24bec61783a30940cd20e3c931b5e64bef52da334c85a6354325660f75210"
+hash = "93478869cc44f583437546f8da277cffc8781aecbb03b47aa3b014b10544e793"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -665,12 +685,20 @@ file = "kubejs/server_scripts/tech/nerf_unnerf.js"
 hash = "24913e303f9c1575a7c18736f4984c01384954d28336d29c69348cbe249869f2"
 
 [[files]]
-file = "kubejs/startup_scripts/itemDeclaration.js"
+file = "kubejs/startup_scripts/itemRegistry.js"
 hash = "74e2774ee4b47268e0c3f70d0a2717e8c904d11247d410baec3b91cfe66a072f"
+
+[[files]]
+file = "kubejs/startup_scripts/layerRegistry.js"
+hash = "df6c03f2415b3a298a1ea474e1c2e4dcaeecc51143776645e6b4fd7a3d9ce6d3"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"
 hash = "01964c3f216d60e80dfcf0f800792001b8f0315f0d41b658ecd6e0874dea2152"
+
+[[files]]
+file = "kubejs/startup_scripts/oreRegistry.js"
+hash = "a01b9aa0af260c61b0d96334f71913a7e164920ed13c41908cc8c4b75064ec46"
 
 [[files]]
 file = "mods/CyberSpells-1.1.jar"

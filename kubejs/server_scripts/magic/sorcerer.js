@@ -28,12 +28,13 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.remove ({ id: 'ars_nouveau:basic_spell_turret' });
     event.shaped(
         Item.of('ars_nouveau:basic_spell_turret', 1),
         [
-            ' D ',
+            'ED ',
             'CBA',
-            ' D '
+            'ED '
         ],
         {
             A: 'minecraft:bow',

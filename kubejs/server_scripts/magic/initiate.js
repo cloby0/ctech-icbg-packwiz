@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
             "gtceu:luminessence_dust",
             "gtceu:luminessence_dust"
         ],
-        "gtceu:pure_silver_dust",
+        "gtceu:silver_dust",
         "kubejs:holy_silver_blend",
         2000,
     );
