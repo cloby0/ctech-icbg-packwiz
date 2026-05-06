@@ -10,20 +10,11 @@ GTCEuServerEvents.oreVeins(event => {
         vein.biomes("#aether:is_aether")
 
         vein.heightRangeUniform(20, 95)
-
-        vein.veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.get('source'), 4) // 
-
-            .veininessThreshold(0.1)
-            .maxRichnessThreshold(0.3)
-            .minRichness(0.3)
-            .maxRichness(0.5)
-            .edgeRoundoffBegin(10) // 
-
-
-            .maxEdgeRoundoff(0.2) // 
+        
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get('source'), 4, 40, 95) // 
+            .withBlock(GTMaterials.get('zanite'), 3, 20, 55) // 
         )
-
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('source'))
             .placement("above") // 

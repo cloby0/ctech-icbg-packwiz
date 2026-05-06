@@ -3,7 +3,11 @@
 //be craftable by magic players, with a slight amount of difficulty
 
 ServerEvents.recipes(event => {
-    
+    //nerf
+    event.remove({ id: 'terralith:piston_alt' });
+    event.remove({ id: 'aether:skyroot_piston' });
+
+    //unnerf
     event.custom(
         {
         "type": "create:sandpaper_polishing",
@@ -19,6 +23,7 @@ ServerEvents.recipes(event => {
         ]
         }
     );
+
 
 
 })

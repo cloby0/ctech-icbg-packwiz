@@ -122,7 +122,7 @@ hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
 
 [[files]]
 file = "config/gtceu.yaml"
-hash = "b008b31cabf2bc659eea4c92c760211fadfe6fe725e7ce452c2fd646a9824fee"
+hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -662,7 +662,7 @@ hash = "615f32f43f6826dd6df43d85d8352b00e47f327958b743b80f4d9ca1e0a8707d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/aetherWorldgen.js"
-hash = "925a7c40297507a1d713d022d89f9e892873e1b57ae095eb783fa244a86801fd"
+hash = "4426f2bebc815d965d34fa92fabba2d17f20a5bd8cb705fb552b20b2f1a4c48d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -678,7 +678,7 @@ hash = "030ffe864e40f05fd2b0a9c6482bb378196e101999614ec0fba9c5f806a69074"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "c4e88a874f123cc0ae8831378ce1a394cce3a8cda5b5368b88c30c40453713d5"
+hash = "bf535c15bfdcfbd106ab8733b5cd73f30e085c8e778f27571b8a23853c663089"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -686,11 +686,11 @@ hash = "93478869cc44f583437546f8da277cffc8781aecbb03b47aa3b014b10544e793"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "24913e303f9c1575a7c18736f4984c01384954d28336d29c69348cbe249869f2"
+hash = "64028e948e5a48c7ec89d4faa662d19dfdfbe3e33f2dd36d6c7b0bf8bf3b9c03"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "dd5911c96e7d31c66a0f56972e1ca9aafeae13c12135e8b7a10e6d3f32b50d80"
+hash = "0e9416e5ae3fed6d79bc27ec062fa0125c37e68447bc472e7a76cd3a065a5376"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

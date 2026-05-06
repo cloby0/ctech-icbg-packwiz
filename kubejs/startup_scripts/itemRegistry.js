@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ambrosium')
         .gem()
         .color(0xf1ef5f)
-        .iconSet(GTMaterialIconSet.CERTUS)
+        .iconSet(GTMaterialIconSet.RUBY)
         .flags(
             GTMaterialFlags.GENERATE_LENS
         )
@@ -74,6 +74,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xAE44E2)
         .secondaryColor(0xE244C8)
         .iconSet(GTMaterialIconSet.QUARTZ)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS, 
+            GTMaterialFlags.NO_ORE_SMELTING, 
+            GTMaterialFlags.GENERATE_ROD
+        )
+
+    event.create('zanite')
+        .gem()
+        .ore()
+        .color(0x9455F2)
+        .secondaryColor(0x431686)
+        .iconSet(GTMaterialIconSet.EMERALD)
         .flags(
             GTMaterialFlags.GENERATE_LENS, 
             GTMaterialFlags.NO_ORE_SMELTING, 
