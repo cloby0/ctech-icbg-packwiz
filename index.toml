@@ -6,7 +6,7 @@ hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
 [[files]]
 file = "config/almostunified/unify.json"
-hash = "8674bedf501c85a306463ed9e44ac1e0cfcc89992ea7f2e1ed68695c5ee81373"
+hash = "d6c582f8fcab8ec372999b8b9d2c54abd3bccea789654fe4b19bf096c3e4e55b"
 
 [[files]]
 file = "config/ars_botania-common.toml"
@@ -150,7 +150,7 @@ hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "eabdc55472330bbb3fd7725ba9282b85dc55222645869b3193ee6de99c132fc5"
+hash = "fd0f726227bc468ac37b6dc7b0c55ba66765c1adccb81d93dc62ce15378c4c74"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -678,11 +678,11 @@ hash = "1a6261337ebab2e50cf7bac85ebd1f95241bc2a4f4b6a5dc3e5a61ad8357527c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "923a6a0aa98b2f255415a4fa930f9d85ace21bbcf928cc8c74e3a55f72592c63"
+hash = "6c0bf5ab3865e00538f8d4b8df9f8361f050d1616ddbe8f501a0ae8eb723a4ac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "93478869cc44f583437546f8da277cffc8781aecbb03b47aa3b014b10544e793"
+hash = "7be16eacaf83862ebf93b7ff1d0e68a7da3bb17246471eeab16c53e9a3235eb4"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
@@ -694,7 +694,7 @@ hash = "ee52d8b99e0f5cd71ef3fe7e0662b55035c1c62b36d6b9fb6c60df650e49a678"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "2c3f07f25b5ceff2778af40b982cef81425909e8941527d68616e4d58ec07c05"
+hash = "fe5f741f3966784c560ba352069ea006ae03f3b40230a8a18785671e5f57e793"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

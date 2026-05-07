@@ -6,18 +6,20 @@ StartupEvents.registry('item', event => {
     event.create('pure_source_gem_dust')
     event.create('rough_source_gem')
 
+    event.create('magebloom_sieve')
+
     event.create('holy_silver_blend')
     event.create('element_attunement_stone')
     event.create('chaos_essence')
 
-    event.create('magebloom_sieve')
+    event.create('disorganized_metal_form')
+
+    event.create('florid_compound')
+    event.create('living_metalloid')
 
     event.create('weak_elementium_dust')
     event.create('raw_elementite')
     event.create('elementite_dust')
-
-    event.create('florid_compound')
-    event.create('living_metalloid')
 
     event.create('vengeful_gaia_spirit')
     event.create('soul_of_gaia')
@@ -104,4 +106,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
+
+    event.create('concepts')
+        .fluid()
+        .color(0x500bbf)
+        .flags(GTMaterialFlags.STICKY)
+        .flags(GTMaterialFlags.PHOSPHORESCENT)
+
+    event.create('metal_form')
+        .fluid()
+        .color(0xA2A6A2)
+        .flags(GTMaterialFlags.STICKY)
+        .flags(GTMaterialFlags.PHOSPHORESCENT)
 })

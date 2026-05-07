@@ -17,9 +17,9 @@ ServerEvents.recipes(event => {
     event.shaped(
             Item.of('kubejs:magebloom_sieve', 1),
             [
-                'ABA',
-                'BBB',
-                'ABA'
+                'BAB',
+                'AAA',
+                'BAB'
             ],
             {
                 A: 'ars_nouveau:magebloom_fiber',

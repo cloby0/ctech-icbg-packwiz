@@ -78,6 +78,7 @@ ServerEvents.recipes(event => {
             `ars_nouveau:${element}_essence`,
             `#kubejs:${element}_essences`
         )
+        event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
     })
 
     event.recipes.ars_nouveau.enchanting_apparatus(

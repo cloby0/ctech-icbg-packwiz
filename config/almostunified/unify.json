@@ -1,6 +1,7 @@
 {
   "modPriorities": [
     "minecraft",
+    "aether",
     "kubejs",
     "crafttweaker",
     "ae2",
