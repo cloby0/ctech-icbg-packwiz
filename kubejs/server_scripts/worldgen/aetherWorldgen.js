@@ -9,7 +9,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.dimensions("aether:the_aether")
         vein.biomes("#aether:is_aether")
 
-        vein.heightRangeUniform(20, 95)
+        vein.heightRangeUniform(16, 128)
         
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.get('source'), 4, 40, 95) // 
@@ -33,7 +33,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.dimensions("aether:the_aether")
         vein.biomes("#aether:is_aether")
 
-        vein.heightRangeUniform(20, 95)
+        vein.heightRangeUniform(16, 128)
         
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.Silver, 4, 40, 95)
@@ -57,7 +57,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.dimensions("aether:the_aether")
         vein.biomes("#aether:is_aether")
 
-        vein.heightRangeUniform(20, 95)
+        vein.heightRangeUniform(16, 128)
         
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.get('gravitite'), 4, 40, 95)
@@ -65,6 +65,30 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('mithril'))
+            .placement("above") // 
+            .density(0.4)
+            .radius(5)
+        )
+    })
+
+    event.add("kubejs:skyjade", vein => {
+        vein.weight(200)
+        vein.clusterSize(40)
+        vein.density(0.3)
+        vein.discardChanceOnAirExposure(0)
+
+        vein.layer("holystone")
+        vein.dimensions("aether:the_aether")
+        vein.biomes("#aether:is_aether")
+
+        vein.heightRangeUniform(16, 128)
+        
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get('veridium'), 4, 40, 95) // 
+            .withBlock(GTMaterials.get('skyjade'), 3, 20, 55) // 
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('source'))
             .placement("above") // 
             .density(0.4)
             .radius(5)

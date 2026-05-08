@@ -20,8 +20,11 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
             .materialSupplier(properties.material)
             .miningToolTag("mineable/pickaxe")
     }
+
     // Aether
     createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
+    createStoneTypeOre('aether:icestone')
+    createStoneTypeOre('deep_aether:aseterite', { blockState: () => UtilsJS.parseBlockState("deep_aether:aseterite[double_drops=true]")})
 
     // Ad Astra
     createStoneTypeOre('ad_astra:moon_stone')

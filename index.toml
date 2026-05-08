@@ -189,6 +189,38 @@ file = "kubejs/data/aether/worldgen/biome/skyroot_woodland.json"
 hash = "2d80ce7a418af499573c6c5ed64679faf7cb61d1cfb466a83594523ded0897a1"
 
 [[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/cloudcaps.json"
+hash = "69ecfb62c8696bf4e9159840ec5841b264df7b42ca0bca81cb3b0584981f95dd"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/frosted_forests.json"
+hash = "47b27954baedb09ee87fc1a220b3d7ca147a00226447980698f57b0c70a5bf6c"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/gilded_grasslands.json"
+hash = "aa3c8a82a81f3bd0bbd2dcf1b43d317273064210776903c996f6488490c9ecd8"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/gilded_groves.json"
+hash = "4a5ee0bc86797e8aa0ce749757a1e925b934805b68f0996afb3a3906b23054ec"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/glacial_tundra.json"
+hash = "82cb5d48e14579a69eb3ba5910545583f85805f25df97edd222d3d1748de6075"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/skyfields.json"
+hash = "f3ba440f3328c1c8b6a5b65d662353f287521dd125c421024b69b060ae3e1477"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/skyroot_shrublands.json"
+hash = "55b61aa7c7e2671907520637f65af1b0308a09574fbc568978d6c2cbc5e5671c"
+
+[[files]]
+file = "kubejs/data/aether_redux/worldgen/biome/the_blight.json"
+hash = "9930456509448af79b11aacd36a672595408c8e70f44ad94b860fc0c1ae81440"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/aluminium_ingot.json"
 hash = "24d29f32acd3e991b438ead53ecaf97527dae1cc8cc4e2423d871ee855da2283"
 
@@ -658,7 +690,7 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/blockTags.js"
-hash = "d5290167a30178e2f95abc994b85706452fff4fa8e0f9f45973351b1065c383e"
+hash = "674c3a8c0e30a2ca33e993d4f59e34ae259a11f6fb6f3cbc6f3d86a0f284e9ea"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
@@ -674,7 +706,7 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "1a6261337ebab2e50cf7bac85ebd1f95241bc2a4f4b6a5dc3e5a61ad8357527c"
+hash = "fe1c1f3da37a4fe800a4555a3cdfd38c0278718026cd691edb7d5301d8ac4021"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -690,11 +722,15 @@ hash = "64028e948e5a48c7ec89d4faa662d19dfdfbe3e33f2dd36d6c7b0bf8bf3b9c03"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "ee52d8b99e0f5cd71ef3fe7e0662b55035c1c62b36d6b9fb6c60df650e49a678"
+hash = "71a01d33f17fe3802c25c96ef53694460b71e35d7fae81f2e0cee21cd7595c36"
+
+[[files]]
+file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
+hash = "466d8f04813e2d8e7edaaae2728ed30be9ec69fc79174fea5be203bcd9b60e29"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "fe5f741f3966784c560ba352069ea006ae03f3b40230a8a18785671e5f57e793"
+hash = "c531291cee12a60abd56d98806908c6bce9c7aea6420bb614ef113490ab98304"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -706,7 +742,7 @@ hash = "01964c3f216d60e80dfcf0f800792001b8f0315f0d41b658ecd6e0874dea2152"
 
 [[files]]
 file = "kubejs/startup_scripts/oreRegistry.js"
-hash = "7f9c1c191a2da7714f4f75cedeb81c4d1a725df07180ad146ccbfb12fa8ea118"
+hash = "e28d9a55843378d221b5406c649d3dbb724e2b8d5d230d1fc6c2379f9df8d3c8"
 
 [[files]]
 file = "mods/CyberSpells-1.1.jar"
