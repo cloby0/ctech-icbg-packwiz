@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            "gtceu:block_of_prima_materia",
+            "gtceu:prima_materia_block",
             "minecraft:experience_bottle",
             "minecraft:experience_bottle",
             "hexcasting:charged_amethyst"
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     );
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            "gtceu:block_of_prima_materia",
+            "gtceu:prima_materia_block",
             "minecraft:experience_bottle",
             "minecraft:experience_bottle",
             "hexcasting:charged_amethyst"
@@ -69,7 +69,12 @@ ServerEvents.recipes(event => {
         "gtceu:metal_form_bucket",
         "kubejs:disorganized_metal_form",
         3000,
-        ["gtceu:holy_silver_block"]
+        [
+            "mysticalagriculture:ice_essence", 
+            "mysticalagriculture:ice_essence", 
+            "mysticalagriculture:ice_essence", 
+            "mysticalagriculture:ice_essence"
+        ]
     )
 
     event.smelting('gtceu:abstract_metal_ingot', 'kubejs:disorganized_metal_form')
@@ -79,9 +84,11 @@ ServerEvents.recipes(event => {
         "input": {
             "item": "gtceu:abstract_metal_ingot"
         },
-        "mana": 30000,
+        "mana": 23500,
         "output": {
             "item": "botania:manasteel_ingot"
         }
     })
+
+    event.remove({ id: "botania:mana_infusion/manasteel" })
 })
