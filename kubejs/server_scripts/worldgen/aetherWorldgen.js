@@ -88,7 +88,7 @@ GTCEuServerEvents.oreVeins(event => {
             .withBlock(GTMaterials.get('skyjade'), 3, 20, 55) // 
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get('source'))
+            .surfaceRock(GTMaterials.get('skyjade'))
             .placement("above") // 
             .density(0.4)
             .radius(5)

@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     
     event.create('veridium')
-        .gem()
+        .ingot()
         .ore()
         .color(0x446AAC)
         .secondaryColor(0x25366A)

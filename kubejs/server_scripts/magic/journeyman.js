@@ -205,4 +205,15 @@ ServerEvents.recipes(event => {
         ]
         }
     );
+
+    event.recipes.ars_nouveau.crush(
+        "gtceu:raw_source",
+        [
+            {
+                stack: Item.of("gtceu:source_dust"),
+                chance: 1.0,
+                maxRange: 10
+            }
+        ]
+    );
 });
