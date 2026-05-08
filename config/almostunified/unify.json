@@ -1,16 +1,16 @@
 {
   "modPriorities": [
     "minecraft",
-    "aether",
     "kubejs",
+    "gtceu",
+    "aether",
+    "silentgems",
+    "create",
     "crafttweaker",
     "ae2",
     "thermal",
     "immersiveengineering",
-    "mekanism",
-    "silentgems",
-    "create",
-    "gtceu"
+    "mekanism"
   ],
   "stoneStrata": [
     "stone",
