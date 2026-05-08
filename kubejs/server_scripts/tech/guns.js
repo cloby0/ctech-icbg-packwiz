@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'fallout' })
     event.remove({ mod: 'applied_armorer' })
 
+    /*
     event.recipes.gtceu.arms_making('test')
         .itemInputs(
             '64x minecraft:dirt',
@@ -18,5 +19,6 @@ ServerEvents.recipes(event => {
         )
         .duration(100)
         .EUt(32)
+    */
 
 });
