@@ -221,6 +221,42 @@ file = "kubejs/data/aether_redux/worldgen/biome/the_blight.json"
 hash = "9930456509448af79b11aacd36a672595408c8e70f44ad94b860fc0c1ae81440"
 
 [[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/aerglow_forest.json"
+hash = "bc84599dff8a6b62c64dc05f2cf25658bb3a93d26eb92ec73d318af7214fcfc7"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/aerlavender_fields.json"
+hash = "7554c5a6c1ea5221d39307e66746155049c787ecf5c7dae2eedaf4721e53215e"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/blue_aerglow_forest.json"
+hash = "8fd02d1bb03a955fd5cfd3e05ea6699b43c374ac0801957bf42b6931ebc5fd55"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/cloud.json"
+hash = "73010d0e628e3dd4df699edee96ac1c66b53232eb711b038412299a3c41629af"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/golden_grove.json"
+hash = "7af0971dd1a427e75a8f62c761f6c4a78a3542ade01c7156db52f8243d51b23a"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/golden_heights.json"
+hash = "d9e83d655bb1467c79876af0b83ec346531b8f5d73fd7a7bb69d48e30b240413"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/luminescent_forest.json"
+hash = "216a1064a219efd0a3252219faedf08ff5a36fc7bc30bb707ad31e2be32bc5d7"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/mystic_aerglow_forest.json"
+hash = "614f131be6b7a4392af3a1b8059d476bd750d3f6f13b0743beb6f6aef4f80a36"
+
+[[files]]
+file = "kubejs/data/deep_aether/worldgen/biome/yagroot_swamp.json"
+hash = "b3bf3df719f70dd8bdcab291f95cc282535c12333ec1fd966937a7ccc620e6aa"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/aluminium_ingot.json"
 hash = "24d29f32acd3e991b438ead53ecaf97527dae1cc8cc4e2423d871ee855da2283"
 
@@ -726,7 +762,7 @@ hash = "71a01d33f17fe3802c25c96ef53694460b71e35d7fae81f2e0cee21cd7595c36"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "466d8f04813e2d8e7edaaae2728ed30be9ec69fc79174fea5be203bcd9b60e29"
+hash = "f0687dc251c035f196854db3d555c5a8076892bae4e8567455ba5d6ad9e95bb9"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

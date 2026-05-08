@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     
     event.create('skyjade')
-        .ingot()
+        .gem()
         .ore()
         .color(0xCFF095)
         .secondaryColor(0x7d9f66)
@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     
     event.create('veridium')
-        .ingot()
+        .gem()
         .ore()
         .color(0x446AAC)
         .secondaryColor(0x25366A)
