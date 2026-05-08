@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
     //tbd magic gun recipes
 
-    event.remove({ mod: 'tacz' })
+    
 
     //beyond this lies progression
     const elements = [

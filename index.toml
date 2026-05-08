@@ -6478,7 +6478,11 @@ hash = "70bd975c786ec3d0c0412f619b27a89700316c37fc83abaaf2dd8ffe4b5fcd70"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "7be16eacaf83862ebf93b7ff1d0e68a7da3bb17246471eeab16c53e9a3235eb4"
+hash = "787c3d53561793564e9c9888750bc2ff2a05d8a7c384f18b12bb432330a5ae3e"
+
+[[files]]
+file = "kubejs/server_scripts/tech/guns.js"
+hash = "0159f95568f607b485bdb3c29d9a635415662e65aea2956575a78ea3b54f572a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
@@ -6487,6 +6491,10 @@ hash = "79df83bf2e7d660e58af6668f42cd9df2ae9ab3670b3520be971db40b3dac5a8"
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
+hash = "212aa35d1e4e8c87554cb3abcf4911cbc6e6bcca56890e787b66f819bae10fed"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
