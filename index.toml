@@ -1865,6 +1865,11 @@ file = "mods/packagedtacz-1.0.4.jar"
 hash = "f996db49bacd4fc3ee7262040a30cf1dc233623c2d1804d8a208a949f657e35e"
 
 [[files]]
+file = "mods/packet-fixer.pw.toml"
+hash = "c1629f045dd324a286871a1d2503bb0cf22cdb8a354da2d07dc7cef3e9afcada"
+metafile = true
+
+[[files]]
 file = "mods/pams-harvestcraft-2-crops.pw.toml"
 hash = "58fa126079b9f120d9b70cc9676eda1fecbc515edd14123f57a88abd35645998"
 metafile = true
