@@ -21,4 +21,19 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(1)
 
+    event.recipes.gtceu.arms_manufacturer('fallout_rifle')
+        .itemInputs('6x gtceu:_wrought_iron_plate', '2x gtceu:wrought_iron_bolt', '4x gtceu:wrought_iron_ring', 'gtceu:potin_tiny_fluid_pipe', '2x gtceu:treated_wood_plate')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 500))
+        .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"fallout:assault_rifle",HasBulletInBarrel:0b}'))
+        .duration(100)
+        .EUt(30)
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('556')
+        .itemInputs('24x gtceu:brass_bolt', '6x minecraft:gunpowder', '16x create:copper_nugget' )
+        .inputFluids()
+        .itemOutputs(Item.of(Item.of('tacz:ammo', 20, '{AmmoId:"fallout:10mm"}')))
+        .duration(100)
+        .EUt(30)
+        .circuit(1)
 });
