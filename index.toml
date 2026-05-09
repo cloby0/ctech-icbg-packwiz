@@ -137,6 +137,10 @@ file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
 [[files]]
+file = "config/quark-common.toml"
+hash = "3057fb5d38a27fc699fb951874b326c18cb5cf463e7e561ee99b99bf267f653c"
+
+[[files]]
 file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
@@ -1947,10 +1951,6 @@ metafile = true
 file = "mods/packagedexcrafting.pw.toml"
 hash = "0866601075de9d01e56c078d6f80c0981d9653cf287178243acc0a9798de4355"
 metafile = true
-
-[[files]]
-file = "mods/packagedtacz-1.0.4.jar"
-hash = "f996db49bacd4fc3ee7262040a30cf1dc233623c2d1804d8a208a949f657e35e"
 
 [[files]]
 file = "mods/packet-fixer.pw.toml"
