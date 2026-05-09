@@ -14,8 +14,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .definition((tier, builder) => {
             builder
+                .langValue(`${GTValues.VLVH[tier]} Arms Manufacturer`)
                 .recipeType('arms_manufacturer')
-                .workableCasingModel('gtceu:block/machines/assembler')
+                .workableTieredHullModel('gtceu:block/machines/assembler')
         }
     );
 })
