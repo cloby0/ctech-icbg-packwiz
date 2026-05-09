@@ -4,12 +4,21 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'create_armorer' })
     event.remove({ mod: 'fallout' })
     event.remove({ mod: 'applied_armorer' })
+    event.remove({ mod: 'immersive_armorer' })
 
-    event.recipes.gtceu.arms_manufacturer('test')
-        .itemInputs('64x minecraft:dirt', '32x minecraft:diamond')
-        .inputFluids(Fluid.of('minecraft:lava', 1500))
-        .itemOutputs('minecraft:stick')
+    event.recipes.gtceu.arms_manufacturer('10mm_pistol')
+        .itemInputs('2x gtceu:double_wrought_iron_plate', '2x gtceu:wrought_iron_bolt', '3x gtceu:wrought_iron_ring', 'gtceu:treated_wood_plate')
+        .inputFluids()
+        .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"fallout:10mm_pistol",HasBulletInBarrel:0b}'))
         .duration(100)
         .EUt(30)
+
+    event.recipes.gtceu.arms_manufacturer('10mm_bullet')
+        .itemInputs('32x gtceu:bronze_bolt', '8x minecraft:gunpowder', '32x create:copper_nugget' )
+        .inputFluids()
+        .itemOutputs(Item.of(Item.of('tacz:ammo', 60, '{AmmoId:"fallout:10mm"}')))
+        .duration(100)
+        .EUt(30)
+        .circuit(1)
 
 });
