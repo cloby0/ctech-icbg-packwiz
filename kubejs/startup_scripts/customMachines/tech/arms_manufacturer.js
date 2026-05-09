@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             builder
                 .recipeType('arms_manufacturer')
-                .workableTieredHullRenderer('gtceu:block/machines/assembler')
+                .workableCasingModel('gtceu:block/machines/assembler')
         }
     );
 })
