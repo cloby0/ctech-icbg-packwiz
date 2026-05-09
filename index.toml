@@ -778,7 +778,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "585e63a37caa18185d7373d7f15a3dbb559cfda79b9a72687fcb7fad17b63248"
+hash = "a67c5b15bc175713824da3b8292c78b31164edeb6d7bee2541e7569bb8f5104f"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
