@@ -766,7 +766,7 @@ hash = "787c3d53561793564e9c9888750bc2ff2a05d8a7c384f18b12bb432330a5ae3e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "687eb8bd57f0212f2572afd9cf2a3c119bb06f2239f61e438ca056d9c121749a"
+hash = "7ee6a07ef40be7c553f3ba435baa88cdb9248a44e7db9f0a561c6bfb05462e83"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
@@ -778,7 +778,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "ea1c5ebc928f3a396e7822b7c888faf03f276c32d7bd9831d93b8f25cff6d21a"
+hash = "585e63a37caa18185d7373d7f15a3dbb559cfda79b9a72687fcb7fad17b63248"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
