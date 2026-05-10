@@ -157,6 +157,10 @@ file = "kubejs/assets/ars_nouveau/lang/en_us.json"
 hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
+file = "kubejs/assets/gtceu/alloys/manasteel.json"
+hash = "a3382e0a1421aaee9fa88b71d8241545d579e4c89b06e049021dcace7ac4f61c"
+
+[[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "81c25a3e6e49c7c53117932a067bbe965d892fb6994e6a1c0d3bce90743db1fe"
 
