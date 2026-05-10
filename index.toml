@@ -777,6 +777,10 @@ file = "kubejs/server_scripts/tech/nerf_unnerf.js"
 hash = "79df83bf2e7d660e58af6668f42cd9df2ae9ab3670b3520be971db40b3dac5a8"
 
 [[files]]
+file = "kubejs/server_scripts/tech/test.js"
+hash = "6e33c3eae27292de445b0ce4e74168214a36bb8c1a2ae159ef382d1c1eddd4e9"
+
+[[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
