@@ -813,10 +813,6 @@ file = "mods/IDA-v2.0.5.jar"
 hash = "4935eed910173c1abcac9819d6f7b3e16b6aca9d44cc8270e2e04930d0905a15"
 
 [[files]]
-file = "mods/SilentCompat-forge-1.20.1-1.4.0.jar"
-hash = "739fb3f43c8e70985ce24eb8c8b03d75b2b088feabef14bfd572891756633fff"
-
-[[files]]
 file = "mods/ad-astra-structures-overhaul.pw.toml"
 hash = "421a7e78b70a3fae38a42cb21ff01ed0e3e3c415410a52cf550fd015df763f0b"
 metafile = true
@@ -1483,6 +1479,16 @@ hash = "3f9f51f44c9db9020e06788b8237de90fd25286b8bc6ceee2218d7e10b23e616"
 metafile = true
 
 [[files]]
+file = "mods/gregic-tinkering.pw.toml"
+hash = "21b79044f03f59e739aab5fab191edb24edfece9cbefe2802e25b3b7ea2e0b10"
+metafile = true
+
+[[files]]
+file = "mods/gregs-modern-construct.pw.toml"
+hash = "60171d7fbe668e16f732cf579799bacc55f9b18c804c983febca553921fddcdb"
+metafile = true
+
+[[files]]
 file = "mods/gregtech-modern-utilities.pw.toml"
 hash = "22f4c057bcea0ffbf21a90101cdc837cf288f0b62a74d1b1ea6e31520a4c8a75"
 metafile = true
@@ -1499,7 +1505,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtechceu-modern.pw.toml"
-hash = "5a139ba06b2de90815298a44f6ce4bfd6f251f5249d0761aed156f72090db38e"
+hash = "7ce907dafa5ddfd25353cbdd258559f04db20c152f5228f10486d1436c6634d4"
 metafile = true
 
 [[files]]
@@ -1520,6 +1526,11 @@ metafile = true
 [[files]]
 file = "mods/gtceu-terminals.pw.toml"
 hash = "b3af21535fc1658ccbcbfb54e4f3948827b44ccac587f13fc116005abe934149"
+metafile = true
+
+[[files]]
+file = "mods/gtconstruct.pw.toml"
+hash = "f773f11b59f95241b6152d204f713b6ef1ae170d9f3175207fa9a55d625a28e7"
 metafile = true
 
 [[files]]
@@ -2129,21 +2140,6 @@ metafile = true
 [[files]]
 file = "mods/servercore-forge-1.5.2+1.20.1.jar"
 hash = "d9ad4f456b6c36bac17a71cd12935fdccae69ca1e1fcd33857210758cb58e586"
-
-[[files]]
-file = "mods/silent-gear.pw.toml"
-hash = "15e0370f60f782909c94eabc3e9f79c7c716e8433988a0571847146391e89440"
-metafile = true
-
-[[files]]
-file = "mods/silent-lib.pw.toml"
-hash = "7f281333e1c573bc3673446c291d82f3137bfc7de6a5256d61417f67be7b40bc"
-metafile = true
-
-[[files]]
-file = "mods/silents-gems.pw.toml"
-hash = "8faa2fbbc50e6d5ef4e556b2059407b992e04f36267e0010102e57dd69b98dca"
-metafile = true
 
 [[files]]
 file = "mods/simple-clouds.pw.toml"
