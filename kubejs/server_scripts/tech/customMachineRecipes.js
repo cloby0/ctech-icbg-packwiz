@@ -1,0 +1,46 @@
+let machineTier = [
+    'lv',
+    'mv',
+    'hv',
+    'ev',
+    'iv',
+    'luv',
+    'zpm',
+    'uv'
+]
+let tierCable = [
+    'tin',
+    'copper',
+    'gold',
+    'aluminium',
+    'platinum',
+    'niobium_titanium',
+    'vanadium_gallium',
+    'yttrium_barium_cuprate'
+]
+let tierMagic = [
+    'gtceu:luminessence_dust',
+    'gtceu:source_plate',
+    'gtceu:holy_silver_plate',
+    'gtceu:prima_materia_plate',
+    'gtceu:manasteel_plate',
+    'gtceu:terrasteel_plate',
+    'gtceu:elementium_plate',
+    'gtceu:gaia_spirit_plate'
+]
+ServerEvents.recipes(event => {
+  machineTier.forEach((tier, index) => {
+    let cableType = tierCable[index]
+    event.shaped(`gtceu:${tier}_arms_manufacturer`, [
+        'ACA',
+        'BHB',
+        'WCW'
+      ], {
+        A: `gtceu:${tier}_robot_arm`,
+        C: `#gtceu:circuts/${tier}`,
+        B: `gtceu:${tier}_conveyor_module`,
+        H: `gtceu:${tier}_machine_hull`,
+        W: `gtceu:${cableType}_single_cable`
+      })
+  });
+})

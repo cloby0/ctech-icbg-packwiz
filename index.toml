@@ -765,6 +765,10 @@ file = "kubejs/server_scripts/magic/sorcerer.js"
 hash = "787c3d53561793564e9c9888750bc2ff2a05d8a7c384f18b12bb432330a5ae3e"
 
 [[files]]
+file = "kubejs/server_scripts/tech/customMachineRecipes.js"
+hash = "a45d094d10cb58eb3355bec6de4fb154f8db076a6f1f1970c20d3df1bdc69f0c"
+
+[[files]]
 file = "kubejs/server_scripts/tech/guns.js"
 hash = "bbe45a5a29e478386b24280d023c7c2613615148dc720e45598c6d5bf53ea215"
 
@@ -782,7 +786,7 @@ hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "2647bd89d654f0527664487b1b3f55a773d5f276e491f1d544c2a6b32567ef88"
+hash = "39c4734f2ce664b3161479a3d98f7e7b4b210707491ac4380f0ec8c98a2a14ba"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

@@ -91,6 +91,49 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
+
+    event.create('manasteel')
+        .color(0x67b9ee)
+        .ingot()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
+    
+    event.create('terrasteel')
+        .color(0x55f609)
+        .ingot()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
+
+    event.create('elementium')
+        .color(0xf472c6)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .ingot()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
+
+    event.create('gaia_spirit')
+        .color(0xf472c6)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .ingot()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
     
     event.create('abstract_metal')
         .ingot()
