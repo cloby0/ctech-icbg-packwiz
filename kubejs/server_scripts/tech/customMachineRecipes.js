@@ -32,11 +32,12 @@ ServerEvents.recipes(event => {
   machineTier.forEach((tier, index) => {
     let cableType = tierCable[index]
     event.shaped(`gtceu:${tier}_arms_manufacturer`, [
-        'ACA',
+        'ACM',
         'BHB',
         'WCW'
       ], {
         A: `gtceu:${tier}_robot_arm`,
+        M: `gtceu:${tier}_electric_motor`,
         C: `#gtceu:circuits/${tier}`,
         B: `gtceu:${tier}_conveyor_module`,
         H: `gtceu:${tier}_machine_hull`,

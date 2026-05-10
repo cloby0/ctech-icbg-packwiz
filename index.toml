@@ -766,7 +766,7 @@ hash = "787c3d53561793564e9c9888750bc2ff2a05d8a7c384f18b12bb432330a5ae3e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
-hash = "1c78ab397fe1d022dd2821d6f92fbfc83858e3eefca40a10dc63562a0b4a78b5"
+hash = "6bf7660f0aa687e53cfef4e8a5a028ac27ee37ea7593192f2bfa61eb08d31ff9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
