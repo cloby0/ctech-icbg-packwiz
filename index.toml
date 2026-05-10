@@ -2247,11 +2247,6 @@ hash = "bdf09ff8a5f8f1acbe5bff48e7cfe96f47f1643b9761abb3fce9f07348a7eb0c"
 metafile = true
 
 [[files]]
-file = "mods/tinkers-construct.pw.toml"
-hash = "74a64acbd2275c16e47fb17e74bcd431779674cefa1f54f67f15b4d9b955aec7"
-metafile = true
-
-[[files]]
 file = "mods/too-many-bows.pw.toml"
 hash = "4e06a09428dada1ab3237c6dc842c260a3c73fd614519fbd100668bef27b3dbd"
 metafile = true
