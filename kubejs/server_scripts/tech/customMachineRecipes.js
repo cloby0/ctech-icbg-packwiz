@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         'WCW'
       ], {
         A: `gtceu:${tier}_robot_arm`,
-        C: `#gtceu:circuts/${tier}`,
+        C: `#gtceu:circuits/${tier}`,
         B: `gtceu:${tier}_conveyor_module`,
         H: `gtceu:${tier}_machine_hull`,
         W: `gtceu:${cableType}_single_cable`
