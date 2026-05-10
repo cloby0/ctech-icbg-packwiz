@@ -1657,6 +1657,11 @@ hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
 metafile = true
 
 [[files]]
+file = "mods/kubejs-aisle-tool.pw.toml"
+hash = "4758eab730bf3c33bddef9756034801f45cf33b5f4b81d1bcedff24a1b2a94b9"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-ars-nouveau.pw.toml"
 hash = "94416feb86dc3a3e476e1c3d761111b0223426c92b9a2b0f388abca81b5b5a57"
 metafile = true
