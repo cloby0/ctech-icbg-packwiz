@@ -158,7 +158,7 @@ hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "81c25a3e6e49c7c53117932a067bbe965d892fb6994e6a1c0d3bce90743db1fe"
+hash = "2f375b29cab15a053be7860b5a57748ca008daacdb3b50e939f8122422468175"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -785,12 +785,8 @@ file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
 hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
-file = "kubejs/startup_scripts/gtceuElementRegistry.js"
-hash = "1237dfef921d937ebf0f0cdeb3ff02dee9fba419860f2873568514b998c5ce87"
-
-[[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "0b1cbc9effb1028566b4f93831e0dacc9e37a0cabb4458950fe2c3eae4678b51"
+hash = "39c4734f2ce664b3161479a3d98f7e7b4b210707491ac4380f0ec8c98a2a14ba"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

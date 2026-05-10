@@ -95,7 +95,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('manasteel')
         .color(0x67b9ee)
         .ingot()
-        .components('1x magic', '1x abstract_metal')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -106,7 +105,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('terrasteel')
         .color(0x55f609)
         .ingot()
-        .components('1x magic', '1x abstract_metal')
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
