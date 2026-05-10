@@ -8,6 +8,13 @@
 "material.gtceu.zanite": "Zanite",
 "material.gtceu.gravitite": "Gravitite",
 "material.gtceu.mithril": "Mithril",
+"material.gtceu.manasteel": "Manasteel",
+"material.gtceu.terrasteel": "Terrasteel",
+"material.gtceu.elementium": "Elementium",
+"material.gtceu.gaia_spirit": "Gaia Spirit",
+
+"material.gtceu.concepts": "Concepts",
+"material.gtceu.metal_form": "Form of Metal",
 
 "tagprefix.holystone": "Holystone %s Ore",
 "tagprefix.moon_stone": "Moon %s Ore",
