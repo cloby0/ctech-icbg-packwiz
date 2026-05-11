@@ -14,9 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['mana_pond'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
-        .noMaintenance()
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("xbbbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
+            .aisle("xbMbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
             .aisle("bbbbb", "xcccx", "xcccx", "xcccx", "bbbbb")
             .aisle("bbbbb", "xcacx", "xcacx", "xcacx", "bbbbb")
             .aisle("bbbbb", "xcccx", "xcKcx", "xcccx", "bbbbb")
@@ -27,6 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
+            .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(
             "gtceu:block/casings/solid/machine_casing_inert_ptfe",
