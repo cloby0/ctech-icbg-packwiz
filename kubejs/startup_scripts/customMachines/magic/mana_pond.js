@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('automated_mana_pond', 'multiblock')
-        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+        ["tooltips(java.util.List)"]([Component.literal("I am a multiblock")])
 
 
         .rotationState(RotationState.NON_Y_AXIS)
