@@ -749,6 +749,10 @@ file = "kubejs/server_scripts/magic/apprentice.js"
 hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/mana_pond.js"
+hash = "c0eab11b82bcf22ab3807c712ab51fe36ca41ded8ec372e8c8406b0977ab4085"
+
+[[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
 hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
@@ -783,6 +787,10 @@ hash = "6e33c3eae27292de445b0ce4e74168214a36bb8c1a2ae159ef382d1c1eddd4e9"
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
+hash = "595f690bb71e717120d3fb19a19170506517bbe6c257df5e7029b247903d041d"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
