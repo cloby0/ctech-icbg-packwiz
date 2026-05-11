@@ -1,4 +1,8 @@
-//priority: 9999
+//priority: 1
+function stripNamespace(str) {
+    const colon = str.indexOf(':')
+    return colon === -1 ? str : str.slice(colon + 1)
+}
 
 function manaRound(num) {
     if ((num / 100) > 20) {
@@ -17,6 +21,9 @@ function catalystify(str) {
         return 1;
     }
 }
+
+//one mana = how many source?
+let source_rate = 1
 
 ServerEvents.recipes(event => {
   let index = 1
@@ -46,15 +53,18 @@ ServerEvents.recipes(event => {
         index++
         return
       }
+      
+      let inputName = stripNamespace(itemInput)
+      let outputName = stripNamespace(outputId)
 
       console.log(`mana = ${mana}, input = ${itemInput}, output = ${outputId}, index = ${index}`)
 
       let isConjuration = catalystBlock === "botania:conjuration_catalyst"
 
-      let r = event.recipes.gtceu.mana_pond(`botania/recipe_number_${index}`)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+      let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}`)
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', (mana*source_rate)))
         .duration((manaRound(mana)*2))
-        .EUt(120)
+        .EUt(7680 + Math.round(mana/25))
         .circuit(catalystify(catalystBlock))
 
       if (isConjuration) {
@@ -68,4 +78,12 @@ ServerEvents.recipes(event => {
       index++
     })
   })
+
+  event.recipes.gtceu.mana_pond('botania/manasteel_from_abstract')
+    .inputFluids(Fluid.of('starbunclemania:source_fluid', 23500))
+    .duration(manaRound(23500) * 2)
+    .EUt(7680 + Math.round(23500 / 25))
+    .circuit(1)
+    .itemInputs('1x gtceu:abstract_metal_ingot')
+    .itemOutputs('1x botania:manasteel_ingot')
 })

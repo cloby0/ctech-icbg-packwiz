@@ -742,15 +742,15 @@ hash = "88406d331d1e73e8d4763955ee9d1bc94ccd947caa8039a0bf65c40fb78f9759"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "e55e596ecf79474de08b13d4dd5f27d018af0568494dd8b701926dc6ecaadd73"
+hash = "99994d10a028bd0b3ef41d2de31ad674f4ba2cab34d648bde76f97ddc0efdbf0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
 hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
-file = "kubejs/server_scripts/magic/customMachines/mana_pond.js"
-hash = "26690ecdc905649708ffdbea7bf03f0a3ced74a9575c6c46658b7ea8c9146baf"
+file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
+hash = "a3ef43e10523b53e1753db162d55fd87dfa65628f62e8bb66b293b4dec7615ff"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
@@ -786,7 +786,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "60ebdbc5c7ef837fd7bb2589893e11c5b706dbaed387cdef959031b77706255b"
+hash = "fe09dce69b0116c72a594e052d27f729d5374d4983bdeb12b10bd35cfa9adffa"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"

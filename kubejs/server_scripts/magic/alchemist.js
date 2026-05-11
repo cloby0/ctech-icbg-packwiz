@@ -1,3 +1,5 @@
+//priority: 9999
+
 ServerEvents.recipes(event => {
     //gear
     event.remove ({ id: 'reliquary:alkahestry_tome' })
@@ -91,4 +93,6 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: "botania:mana_infusion/manasteel" })
+    event.remove({ id: "botania:mana_infusion/manasteel_block" })
+
 })

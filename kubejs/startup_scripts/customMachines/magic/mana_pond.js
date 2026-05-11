@@ -22,15 +22,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("xbbbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
             .where("a", Predicates.blocks("minecraft:air"))
             .where("b", Predicates.blocks("botania:livingrock_bricks"))
-            .where("c", Predicates.blocks("botania:polished_livingrock"))
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+            .where("c", Predicates.blocks("botania:polished_livingrock")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
-        .build()
+        .build())
         .workableCasingModel(
-            "botania:textures/block/polished_livingrock",
+            "botania:block/polished_livingrock",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 })
