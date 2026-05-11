@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('automated_mana_pond', 'multiblock')
-        ["tooltips(java.util.List)"]([Component.literal("I am a multiblock")])
+        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Mana Pool recipes using Liquefied Source")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['mana_pond'])
@@ -24,12 +24,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("b", Predicates.blocks("botania:livingrock_bricks"))
             .where("c", Predicates.blocks("botania:polished_livingrock")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(
-            "botania/textures/block/polished_livingrock",
+            "botania:textures/block/polished_livingrock",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
-});
+})
