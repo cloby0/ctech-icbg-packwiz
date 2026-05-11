@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['mana_pond'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("xbMbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
             .aisle("bbbbb", "xcccx", "xcccx", "xcccx", "bbbbb")
@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(
-            "gtceu:block/casings/solid/machine_casing_inert_ptfe",
+            "botania/textures/block/polished_livingrock",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 });

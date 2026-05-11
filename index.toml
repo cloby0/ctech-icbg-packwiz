@@ -750,7 +750,7 @@ hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/mana_pond.js"
-hash = "c0eab11b82bcf22ab3807c712ab51fe36ca41ded8ec372e8c8406b0977ab4085"
+hash = "26690ecdc905649708ffdbea7bf03f0a3ced74a9575c6c46658b7ea8c9146baf"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
@@ -781,16 +781,12 @@ file = "kubejs/server_scripts/tech/nerf_unnerf.js"
 hash = "79df83bf2e7d660e58af6668f42cd9df2ae9ab3670b3520be971db40b3dac5a8"
 
 [[files]]
-file = "kubejs/server_scripts/tech/test.js"
-hash = "6e33c3eae27292de445b0ce4e74168214a36bb8c1a2ae159ef382d1c1eddd4e9"
-
-[[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "e616e62651f6f1d204ecf0fa8ef693ea3541321c681d0b34f8bfa993c14d018d"
+hash = "23ca45f83c5ce1d189cc86f3636f82c1d94dac4d1d93c335def8325542fcebde"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"

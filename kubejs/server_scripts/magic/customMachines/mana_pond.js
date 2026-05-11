@@ -1,3 +1,5 @@
+//priority: 9999
+
 function manaRound(num) {
     if ((num / 100) > 20) {
         return num / 100
@@ -51,7 +53,7 @@ ServerEvents.recipes(event => {
 
       let r = event.recipes.gtceu.mana_pond(`botania/recipe_number_${index}`)
         .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
-        .duration(manaRound(mana))
+        .duration((manaRound(mana)*2))
         .EUt(120)
         .circuit(catalystify(catalystBlock))
 
