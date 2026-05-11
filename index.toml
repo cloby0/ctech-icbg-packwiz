@@ -786,7 +786,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "99cbbb6b8782b04bd6ee16f040549a04c644ec93eff652a5b4c2a974edd9559c"
+hash = "60ebdbc5c7ef837fd7bb2589893e11c5b706dbaed387cdef959031b77706255b"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
