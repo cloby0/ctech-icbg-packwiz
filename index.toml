@@ -749,12 +749,16 @@ file = "kubejs/server_scripts/magic/apprentice.js"
 hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
-file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctum.js"
-hash = "23b3eb471a938d8728bef74c703530f9221e6110eebc09b103c6a6d4026df672"
+file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
+hash = "d5740725d1b597edbc64bbf7f0ef424db57f132cd5b703cfc3669f2f0a5500a9"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
+hash = "a932c0efac4dda3fdeeb123fd86f5b551a43272b49b910378c38128b6b79186d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "711a49687a6b11736cd3a0be2f28b1949ac8f58cbbe18af4df3bc78893ca15b7"
+hash = "53ae0c73b1250401ab31fd2dea6428abf16eb80f065ba4e129b8690e89e8c5d4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"

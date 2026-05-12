@@ -25,7 +25,6 @@ function catalystify(str) {
 let source_rate = 1
 
 ServerEvents.recipes(event => {
-  let index = 1
   event.forEachRecipe({ type: 'botania:mana_infusion' }, recipe => {
     const crecipe = JSON.parse(recipe.json.toString())
     let mana = crecipe.mana
@@ -48,8 +47,7 @@ ServerEvents.recipes(event => {
       } else if (itemId) {
         itemInput = `${inputCount}x ${itemId}`
       } else {
-        console.error(`Unknown input format at index ${index}: ${JSON.stringify(input)}`)
-        index++
+        console.error(`Unknown input format for mana pond!!: ${JSON.stringify(input)}`)
         return
       }
       
@@ -73,8 +71,6 @@ ServerEvents.recipes(event => {
         r.itemInputs(itemInput)
         .itemOutputs(`${outputCount}x ${outputId}`)
       }
-
-      index++
     })
   })
 
