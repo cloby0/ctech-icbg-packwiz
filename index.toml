@@ -1626,6 +1626,10 @@ hash = "f61d1835a5c388d7eb1bc9727e3a436d9e10bb806ee215ec0f72a8e36d7f5dd2"
 metafile = true
 
 [[files]]
+file = "mods/ironsbotany-1.6.0.jar"
+hash = "9e53b560438fd03da924ce8a3fab86b44ee7980fbc625ac8e741f8deec21c816"
+
+[[files]]
 file = "mods/it-takes-a-pillage.pw.toml"
 hash = "df7b7df68af83378b61168f2451154447d813001f4a46cfa2dcee69e6d87fd7f"
 metafile = true
