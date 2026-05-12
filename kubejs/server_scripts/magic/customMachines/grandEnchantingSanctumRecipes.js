@@ -55,6 +55,9 @@ function resolveItem(entry, debugLabel) {
 }
 
 ServerEvents.recipes(event => {
+    
+    event.remove({ mod: 'ars_n_spells' })
+
     let index = 1
 
     event.forEachRecipe({ type: 'ars_nouveau:enchanting_apparatus' }, recipe => {
