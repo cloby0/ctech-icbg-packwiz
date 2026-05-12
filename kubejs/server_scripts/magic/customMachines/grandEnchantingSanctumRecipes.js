@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         let outputCount = crecipe.output?.count || 1
 
         // source cost
-        let sourceCost = crecipe.sourceCost || 0
+        let sourceCost = Math.max(crecipe.sourceCost || 0, 100)
 
         // reagent
         let reagents = Array.isArray(crecipe.reagent) ? crecipe.reagent : [crecipe.reagent]
@@ -95,9 +95,9 @@ ServerEvents.recipes(event => {
         console.log(`[enchanting_apparatus] building index=${index} output=${outputId} source=${sourceCost} pedestals=${pedestalInputs.length} reagents=${reagentInputs.length}`)
         console.log(`[enchanting_apparatus] full recipe: ${JSON.stringify(crecipe)}`)
 
-        let r = event.recipes.gtceu.grand_enchanting_sanctum(recipeId)
+        let r = event.recipes.gtceu.enchanting_sanctum(recipeId)
             .duration(sourceRound(sourceCost) * 2)
-            .EUt(7680 + Math.round(sourceCost / 25))
+            .EUt(1920 + Math.round(sourceCost / 25))
             .itemOutputs(`${outputCount}x ${outputId}`)
 
         // only add fluid input if sourceCost is non-zero 

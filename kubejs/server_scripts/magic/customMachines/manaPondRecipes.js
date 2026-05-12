@@ -76,8 +76,8 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.mana_pond('botania/manasteel_from_abstract')
     .inputFluids(Fluid.of('starbunclemania:source_fluid', 23500))
-    .duration(manaRound(23500) * 2)
-    .EUt(7680 + Math.round(23500 / 25))
+    .duration(manaRound(3000) * 2)
+    .EUt(7680 + Math.round(3000 / 25))
     .circuit(1)
     .itemInputs('1x gtceu:abstract_metal_ingot')
     .itemOutputs('1x botania:manasteel_ingot')

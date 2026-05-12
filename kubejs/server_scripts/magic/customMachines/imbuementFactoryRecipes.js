@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         let outputCount = (typeof outputRaw === 'object' ? outputRaw.count : crecipe.count) || 1
 
         // source cost
-        let sourceCost = crecipe.source || 0
+        let sourceCost = Math.max(crecipe.sourceCost || 0, 100)
 
         // center input
         let centerInput = resolveItem(crecipe.input, `index ${index} input`)
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
             .itemInputs(centerInput)
             .itemOutputs(`${outputCount}x ${outputId}`)
             .duration(sourceRound(sourceCost) * 2)
-            .EUt(7680 + Math.round(sourceCost / 25))
+            .EUt(1920 + Math.round(sourceCost / 25))
 
         pedestalInputs.forEach(pedestal => r.notConsumable(pedestal))
 

@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Imbuement Chamber recipes using Liquefied Source")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeTypes(['enchanting_sanctum'])
+        .recipeTypes(['imbuement_factory'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("abbba", "bcjcb", "beaeb", "fgggf", "fgggf", "hgggh")
