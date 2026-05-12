@@ -1,4 +1,3 @@
-//priority: 1
 function stripNamespace(str) {
     const colon = str.indexOf(':')
     return colon === -1 ? str : str.slice(colon + 1)

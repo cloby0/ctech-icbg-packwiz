@@ -1,5 +1,3 @@
-//priority: 9999
-
 ServerEvents.recipes(event => {
     //gear
     event.remove ({ id: 'reliquary:alkahestry_tome' })
