@@ -793,6 +793,10 @@ file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
 hash = "010482c88df27abaa8f503f272ac6fba23aac57582bb530412c3f859f40e2757"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
+hash = "7bb09d4728d3dccfe63a973a757f172f1d58ff4559a692ec77be9be7dbf83ae4"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
 hash = "fe09dce69b0116c72a594e052d27f729d5374d4983bdeb12b10bd35cfa9adffa"
 
