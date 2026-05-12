@@ -758,7 +758,7 @@ hash = "a932c0efac4dda3fdeeb123fd86f5b551a43272b49b910378c38128b6b79186d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "53ae0c73b1250401ab31fd2dea6428abf16eb80f065ba4e129b8690e89e8c5d4"
+hash = "5c1e8f51745bbc12319c75cdb0836f21ad5b7e9ae010763b792d369a15506b62"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"

@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
       let inputName = stripNamespace(itemInput)
       let outputName = stripNamespace(outputId)
 
-      console.log(`mana = ${mana}, input = ${itemInput}, output = ${outputId}, index = ${index}`)
+      console.log(`mana = ${mana}, input = ${itemInput}, output = ${outputId}`)
 
       let isConjuration = catalystBlock === "botania:conjuration_catalyst"
 
