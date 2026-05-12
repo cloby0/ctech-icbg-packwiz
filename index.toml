@@ -790,7 +790,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "8dc00e90ee33e8271191e3fb58f82cc54ff7bcf932fb7a387a616b13c02a0e14"
+hash = "a3a120b4a0ba64f0a29df51b7627b7c83a838054a6de55afd00b40af799088e1"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
