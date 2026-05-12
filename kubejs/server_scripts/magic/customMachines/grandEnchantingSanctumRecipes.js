@@ -19,19 +19,19 @@ function resolveItem(entry, debugLabel) {
     }
 
     // pedestalItems entries wrap their content in an extra { item: ... } or { tag: ... }
-    // but reagent entries are already flat 
+    // but reagent entries are already flat
     // we handle both shapes B)
     let inner = (entry.item !== undefined || entry.tag !== undefined) ? entry : null
 
     // pedestalItems: { item: { item: "...", count?: N } } or { tag: "..." }
     // reagent:       { item: "..." } or { tag: "..." }
-    // Normalise to a flat object with .item or .tag
+    // normalise to a flat object with .item or .tag
     if (inner === null) {
         console.error(`[enchanting_apparatus] unrecognised entry shape at ${debugLabel}: ${JSON.stringify(entry)}`)
         return null
     }
 
-    // If .item is itself an object (pedestalItems nested form), unwrap it
+    // if .item is itself an object (pedestalItems nested form), unwrap it
     let resolved = inner
     if (typeof resolved.item === 'object' && resolved.item !== null) {
         resolved = resolved.item
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'ars_nouveau:enchanting_apparatus' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
 
-        // --- Output ---
+        // output
         let outputId = crecipe.output?.item ?? crecipe.output ?? null
         if (!outputId) {
             console.error(`[enchanting_apparatus] no output at index ${index}`)
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         // source cost
         let sourceCost = crecipe.sourceCost || 0
 
-        // reagent (center item, consumed)
+        // reagent
         let reagents = Array.isArray(crecipe.reagent) ? crecipe.reagent : [crecipe.reagent]
         let reagentInputs = []
         for (let i = 0; i < reagents.length; i++) {
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
             if (r) reagentInputs.push(r)
         }
 
-        // pedestal items (NOT consumed)
+        // pedestal
         let pedestalItems = crecipe.pedestalItems ?? []
         let pedestalInputs = []
         for (let i = 0; i < pedestalItems.length; i++) {
@@ -83,17 +83,33 @@ ServerEvents.recipes(event => {
             if (p) pedestalInputs.push(p)
         }
 
+        // skip if there are no consumed inputs
+        // gtm will throw a hissy fit
+        if (reagentInputs.length === 0) {
+            console.error(`[enchanting_apparatus] skipping index ${index} (${outputId}): no consumable reagent inputs`)
+            index++
+            return
+        }
+
         let recipeId = `ars_nouveau/enchanting_apparatus_${stripNamespace(outputId)}_${index}`
-        console.log(`[enchanting_apparatus] index=${index} output=${outputId} source=${sourceCost} pedestals=${pedestalInputs.length} reagents=${reagentInputs.length}`)
+        console.log(`[enchanting_apparatus] building index=${index} output=${outputId} source=${sourceCost} pedestals=${pedestalInputs.length} reagents=${reagentInputs.length}`)
+        console.log(`[enchanting_apparatus] full recipe: ${JSON.stringify(crecipe)}`)
 
         let r = event.recipes.gtceu.grand_enchanting_sanctum(recipeId)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', sourceCost))
-            .itemOutputs(`${outputCount}x ${outputId}`)
             .duration(sourceRound(sourceCost) * 2)
             .EUt(7680 + Math.round(sourceCost / 25))
-            
+            .itemOutputs(`${outputCount}x ${outputId}`)
+
+        // only add fluid input if sourceCost is non-zero 
+        // zero-amount fluids are rejected
+        if (sourceCost > 0) {
+            r.inputFluids(Fluid.of('starbunclemania:source_fluid', sourceCost))
+        }
+
+        // reagent is consumed
         reagentInputs.forEach(reagent => r.itemInputs(reagent))
 
+        // pedestal items are not consumed
         pedestalInputs.forEach(pedestal => r.notConsumable(pedestal))
 
         index++

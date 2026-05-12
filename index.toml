@@ -750,7 +750,7 @@ hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "d5740725d1b597edbc64bbf7f0ef424db57f132cd5b703cfc3669f2f0a5500a9"
+hash = "eb296763400ebcc46ad6e1e16c1e5d28d3679dda70569c057e52049346896e79"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
