@@ -1001,8 +1001,8 @@ hash = "f74d674d172fb27b93f1738f092a2d6b2d4cecc578656f9357886b8e13fecc35"
 metafile = true
 
 [[files]]
-file = "mods/ars_n_spells-1.8.9.jar"
-hash = "1c7581cdb3ccdb0d9b0b228c6538ad5fdc50d29ecdd21723431154b4266a0e4c"
+file = "mods/ars_n_spells-1.9.0.jar"
+hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 
 [[files]]
 file = "mods/artifacts.pw.toml"
@@ -1648,11 +1648,6 @@ metafile = true
 [[files]]
 file = "mods/journeymap.pw.toml"
 hash = "664a573384edf644e9b788c7c29fe32593917ac8283bb794cc46b471a0a6504a"
-metafile = true
-
-[[files]]
-file = "mods/json-things.pw.toml"
-hash = "87a44d6b5809a25d586f30c6a17f4a777194a582bd7c34e8504ae1abe4ba7c74"
 metafile = true
 
 [[files]]
