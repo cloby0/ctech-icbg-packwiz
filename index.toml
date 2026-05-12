@@ -749,6 +749,10 @@ file = "kubejs/server_scripts/magic/apprentice.js"
 hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctum.js"
+hash = "23b3eb471a938d8728bef74c703530f9221e6110eebc09b103c6a6d4026df672"
+
+[[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
 hash = "711a49687a6b11736cd3a0be2f28b1949ac8f58cbbe18af4df3bc78893ca15b7"
 
@@ -783,6 +787,10 @@ hash = "79df83bf2e7d660e58af6668f42cd9df2ae9ab3670b3520be971db40b3dac5a8"
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
+hash = "8dc00e90ee33e8271191e3fb58f82cc54ff7bcf932fb7a387a616b13c02a0e14"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
