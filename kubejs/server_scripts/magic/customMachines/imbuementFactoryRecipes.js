@@ -1,3 +1,5 @@
+let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
+
 function stripNamespace(str) {
     const colon = str.indexOf(':')
     return colon === -1 ? str : str.slice(colon + 1)
@@ -32,12 +34,18 @@ function resolveItem(entry, debugLabel) {
     if (resolved.tag) {
         return `${count}x #${resolved.tag}`
     } else if (typeof resolved.item === 'string') {
-        return `${count}x ${resolved.item}`
+        if ($ForgeRegistries.ITEMS.getValue('modid:whatever')) {
+            return `${count}x ${resolved.item}`
+        } else {
+            console.warn(`[enchanting_apparatus] skipping non-existent item '${resolved.item}' at ${debugLabel}`)
+            return null
+        }
     }
 
     console.error(`[imbuement] could not resolve item at ${debugLabel}: ${JSON.stringify(entry)}`)
     return null
 }
+
 
 ServerEvents.recipes(event => {
     let index = 1

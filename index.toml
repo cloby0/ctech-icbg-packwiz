@@ -754,7 +754,7 @@ hash = "4ea2140384899557738212469b066823aba1a699a85b4cd6cc1d8c76870adbc2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "cdd18a8aee655e6640769bf773eb07fbf0b62d299451aaf6b8d8cfbdb94b94ee"
+hash = "ebaa4466303e6e7b7c1b4907c32bda2db6ada58a5eff0e5371d81936397a7eba"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -794,7 +794,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "06283c03f5b8f361f24a11da9b9d9a03ee4b03d407d360a313954ca4e7d0bc93"
+hash = "5b47f094efed6cf45fe78937ceb364dcbb456988571fbcf92e165b62eaa01b3c"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
@@ -802,7 +802,7 @@ hash = "b03547c5f5d16c74b255bff92fdd4498a0e0e91192f08d5004b5d7766bdcbfa9"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "fe09dce69b0116c72a594e052d27f729d5374d4983bdeb12b10bd35cfa9adffa"
+hash = "8d03a753447a1a36a017dc2b6d872c5823f947aeeaea6d91dfa7d990af8c8611"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"

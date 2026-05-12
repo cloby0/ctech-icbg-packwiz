@@ -9,7 +9,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('automated_mana_pond', 'multiblock')
-        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Mana Pool recipes using Liquefied Source")])
+        ["tooltips(java.util.List)"]
+            ([Component.literal("Allows you to automate Mana Pool recipes using Liquefied Source")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['mana_pond'])

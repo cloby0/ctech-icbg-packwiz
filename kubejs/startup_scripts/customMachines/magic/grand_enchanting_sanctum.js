@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("accccccca", "aaadgdaaa", "aaadddaaa", "aaadddaaa", "accccccca", "aabbbbbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
             .aisle("bcccccccb", "aaefffeaa", "aaefffeaa", "aaefffeaa", "ccccccccc", "abcccccba", "aabcccbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
             .aisle("bcccccccb", "adfffffda", "adfffffda", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaabcbaaa", "aaaabaaaa", "aaaaaaaaa")
-            .aisle("bcccccccb", "adfffffda", "adfffffaa", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaacfcaaa", "aaabcbaaa", "aaaacaaaa")
+            .aisle("bcccccccb", "adfffffda", "adfffffda", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaacfcaaa", "aaabcbaaa", "aaaacaaaa")
             .aisle("bcccccccb", "adfffffda", "adfffffda", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaabcbaaa", "aaaabaaaa", "aaaaaaaaa")
             .aisle("bcccccccb", "aaefffeaa", "aaefffeaa", "aaefffeaa", "ccccccccc", "abcccccba", "aabcccbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
             .aisle("accccccca", "aaadddaaa", "aaadhdaaa", "aaadddaaa", "accccccca", "aabbbbbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
