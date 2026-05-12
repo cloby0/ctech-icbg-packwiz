@@ -21,10 +21,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("bcccccccb", "adfffffda", "adfffffda", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaabcbaaa", "aaaabaaaa", "aaaaaaaaa")
             .aisle("bcccccccb", "adfffffda", "adfffffaa", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaacfcaaa", "aaabcbaaa", "aaaacaaaa")
             .aisle("bcccccccb", "adfffffda", "adfffffda", "adfffffda", "cccfffccc", "abcfffcba", "aacfffcaa", "aaabcbaaa", "aaaabaaaa", "aaaaaaaaa")
-            .aisle("bcccccccb", "aaefffeaa", "aaefffeaa", "aaefffeaa", "ccccccccc", "abcccccba", "aabcccaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
+            .aisle("bcccccccb", "aaefffeaa", "aaefffeaa", "aaefffeaa", "ccccccccc", "abcccccba", "aabcccbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
             .aisle("accccccca", "aaadddaaa", "aaadhdaaa", "aaadddaaa", "accccccca", "aabbbbbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
             .aisle("aabbbbbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aacccccaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
-            .aisle("aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
 
             .where("a", Predicates.any())
             .where("b", Predicates.blocks("ars_nouveau:sourcestone_large_bricks_slab"))

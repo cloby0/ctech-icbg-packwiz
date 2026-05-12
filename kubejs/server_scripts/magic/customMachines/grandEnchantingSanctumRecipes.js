@@ -42,7 +42,12 @@ function resolveItem(entry, debugLabel) {
     if (resolved.tag) {
         return `${count}x #${resolved.tag}`
     } else if (typeof resolved.item === 'string') {
-        return `${count}x ${resolved.item}`
+    // skip items that don't exist in the registry
+    if (Item.of(resolved.item).isEmpty) {
+        console.warn(`[enchanting_apparatus] skipping non-existent item '${resolved.item}' at ${debugLabel}`)
+        return null
+    }
+    return `${count}x ${resolved.item}`
     }
 
     console.error(`[enchanting_apparatus] could not resolve item at ${debugLabel}: ${JSON.stringify(entry)}`)
@@ -92,8 +97,7 @@ ServerEvents.recipes(event => {
         }
 
         let recipeId = `ars_nouveau/enchanting_apparatus_${stripNamespace(outputId)}_${index}`
-        console.log(`[enchanting_apparatus] building index=${index} output=${outputId} source=${sourceCost} pedestals=${pedestalInputs.length} reagents=${reagentInputs.length}`)
-        console.log(`[enchanting_apparatus] full recipe: ${JSON.stringify(crecipe)}`)
+        console.log(`[enchanting_apparatus] building index=${index} output=${outputId} source=${sourceCost} pedestals=${toString(pedestalInputs)} reagents=${toString(reagentInputs)}`)
 
         let r = event.recipes.gtceu.enchanting_sanctum(recipeId)
             .duration(sourceRound(sourceCost) * 2)
@@ -109,8 +113,8 @@ ServerEvents.recipes(event => {
         // reagent is consumed
         reagentInputs.forEach(reagent => r.itemInputs(reagent))
 
-        // pedestal items are not consumed
-        pedestalInputs.forEach(pedestal => r.notConsumable(pedestal))
+        // pedestal items are also consumed
+        pedestalInputs.forEach(pedestal => r.itemInputs(pedestal))
 
         index++
     })
