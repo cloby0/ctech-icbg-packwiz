@@ -133,6 +133,10 @@ file = "config/ftbquests/quests/reward_tables/titanium.snbt"
 hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
 
 [[files]]
+file = "config/greate-recipes.yaml"
+hash = "3022e89e1c7fca4d9860cad623c33fb7d5411d103bcb4dee17cca8270d71e6c3"
+
+[[files]]
 file = "config/gtceu.yaml"
 hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
 
@@ -853,6 +857,11 @@ file = "mods/SilentCompat-forge-1.20.1-1.4.0.jar"
 hash = "739fb3f43c8e70985ce24eb8c8b03d75b2b088feabef14bfd572891756633fff"
 
 [[files]]
+file = "mods/accents.pw.toml"
+hash = "f635d5a2d8d3bdcc9a18810f02a7f67235ededb0b7b921ebbd420be1612f301c"
+metafile = true
+
+[[files]]
 file = "mods/ad-astra-structures-overhaul.pw.toml"
 hash = "421a7e78b70a3fae38a42cb21ff01ed0e3e3c415410a52cf550fd015df763f0b"
 metafile = true
@@ -930,6 +939,11 @@ metafile = true
 [[files]]
 file = "mods/almostunified.pw.toml"
 hash = "8e9376087852491eb52037279506fefc45e174303530630e8b8afa571b1bd697"
+metafile = true
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "73c8f00ddae69b929cfdc313b808ce547e610b8336dbe54660b62d258c5e3a01"
 metafile = true
 
 [[files]]
@@ -1132,8 +1146,18 @@ hash = "71a33fe41bead909b3e95643351ef8015def70d3cb083916469f492f66434b45"
 metafile = true
 
 [[files]]
+file = "mods/chloride.pw.toml"
+hash = "1706203beb5925ff51887b4b4c4c1f00e32b37f0af3d4a274544ed12a239c153"
+metafile = true
+
+[[files]]
 file = "mods/chunk-optimization.pw.toml"
 hash = "1a56c1a9836fb15a272be93bbd7e187aa816aad349a08f99a082cbf855d3d649"
+metafile = true
+
+[[files]]
+file = "mods/chunk-sending-forge-fabric.pw.toml"
+hash = "86252c4e6701b798dac5ddef4b0fa6b6f5bdb280e83945b5b98d7c0be4441a35"
 metafile = true
 
 [[files]]
@@ -1242,6 +1266,11 @@ hash = "9d7971a7af2ff4a96a0e5aede76f9cf8dc978da601e2754f79d6ec8631125bb9"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "44245e405666e878f41403e50d2a941b86b6db2aaef8ddb8fc2089fca5134483"
+metafile = true
+
+[[files]]
 file = "mods/cucumber.pw.toml"
 hash = "31b3ecd1317f2d2b9802592def351b5567196d726283530f72e33f5c827e5807"
 metafile = true
@@ -1301,7 +1330,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
-hash = "8f2270a50a633db681826cbfb691e6efdb25e1e0c4702125c13d525b52fe229f"
+hash = "00a06884a4f8854fad85f2456c1d6c53ee09cc5e545a35e41cad24e82907a1ab"
 metafile = true
 
 [[files]]
@@ -1316,7 +1345,7 @@ metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
-hash = "a1575677daaaf6ea6dac12e5a10073e34025e5ca2c35b6d36ad4a5a0edbc0e82"
+hash = "a74b2d65c286896335b454f61f18be630d0f13767626ebb118584907d1d37112"
 metafile = true
 
 [[files]]
@@ -1406,6 +1435,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "c70002269c061bf182dd1ae1814946157af673a7f8c226c3d564065769f9f8f5"
+metafile = true
+
+[[files]]
+file = "mods/fast-async-world-save-forge-fabric.pw.toml"
+hash = "e6362452d4834dc0919f89ea95b7242c3a5c4d61a0ebfc425ecfc6c71dc5afd0"
 metafile = true
 
 [[files]]
@@ -1678,6 +1712,11 @@ hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
 metafile = true
 
 [[files]]
+file = "mods/krypton-reforged.pw.toml"
+hash = "ba2f214504381c53f588e1a52d8be657b47ed53a256b45d623cea2c724748afa"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-aisle-tool.pw.toml"
 hash = "4758eab730bf3c33bddef9756034801f45cf33b5f4b81d1bcedff24a1b2a94b9"
 metafile = true
@@ -1773,6 +1812,11 @@ hash = "41a036a86db9c0cab20b9b8956b0749bdfea13942d6ca00668304e5d0731166f"
 metafile = true
 
 [[files]]
+file = "mods/loot-journal.pw.toml"
+hash = "a8df6af6afa2d82eb60b64ac9815628a7d9b0120414a8e404b920e21b2b8fcf0"
+metafile = true
+
+[[files]]
 file = "mods/lootjs.pw.toml"
 hash = "de2643b3bb36e6b5fd97540bd79619e0844293b43487ecce1613165a409ce8cc"
 metafile = true
@@ -1855,6 +1899,11 @@ metafile = true
 [[files]]
 file = "mods/mining-gadgets.pw.toml"
 hash = "d4a42351be29d476b540e810a2339b05f2f0cf789d62404da7c708b685c9ecda"
+metafile = true
+
+[[files]]
+file = "mods/mixintrace-resmithed.pw.toml"
+hash = "5197de5ea708b3618af42f2c3ff9b3857e8ff7fbd4780e8711d98e03d108429b"
 metafile = true
 
 [[files]]
@@ -2008,6 +2057,11 @@ hash = "e586ed7ece00777429172363892eb64d2dee76b41f5c5b84d0ac8e2bdcee7438"
 metafile = true
 
 [[files]]
+file = "mods/panoramica.pw.toml"
+hash = "4c677fdd54d8f812a4dd553e4252d9a04a0bc2fe9da4039c6998ec81b54397e0"
+metafile = true
+
+[[files]]
 file = "mods/parcool-compatibility-addon.pw.toml"
 hash = "a44f6ea5e0007aabb1c0706d83322ba08d826de9a5bc9f1f422a35a388632d6a"
 metafile = true
@@ -2070,6 +2124,16 @@ metafile = true
 [[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "e1fe69f03ebaaa29f48a61637613754bc0cacdd857c482eba6c7484717ce529b"
+metafile = true
+
+[[files]]
+file = "mods/recipe-essentials-forge-fabric.pw.toml"
+hash = "346314904e0a035d68514e7d9e332d4a63e288abc7fd7bdfaf6d655c511a5916"
+metafile = true
+
+[[files]]
+file = "mods/redirected.pw.toml"
+hash = "401fc0a78334b2e05b04d51309afb3b84f6820eea12058b34c8a4a89eaa43fb7"
 metafile = true
 
 [[files]]
@@ -2178,7 +2242,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-options-api.pw.toml"
-hash = "5240c62752415b5d66d4beffec4fe98c253eba8ebcbb2a5c1097fc3ad3de0b00"
+hash = "bec4fd7f9b90e9040786e31d14bf4af7fb42fce842b9f5acfdd0821c973ecb82"
 metafile = true
 
 [[files]]
@@ -2277,6 +2341,11 @@ hash = "171f4c4e48ec408e9bcc6f60751da7a549d04f8e0df2d9375b48ee84fe3387ef"
 metafile = true
 
 [[files]]
+file = "mods/txnilib.pw.toml"
+hash = "7149b1beafef2ce275da37dd5ca2e12f5527ad979420630ecdef5bcabd4fef32"
+metafile = true
+
+[[files]]
 file = "mods/vanilla-loot-addon-for-loot-integrations.pw.toml"
 hash = "2c55793a16d42dc2b10b5507c8799a41b42996e84f7be231341d1d79ecbe7881"
 metafile = true
@@ -2299,6 +2368,11 @@ metafile = true
 [[files]]
 file = "mods/xtones-reworked.pw.toml"
 hash = "ca2bee7b79e843414bdc00784d79beab6eef3bd3574915c16be6c8d6a3c238cc"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "c08817fe8025a9d62c8f7abd5f56a54b90673e5ab60f39ae8fa1d70d5ace529b"
 metafile = true
 
 [[files]]
