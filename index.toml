@@ -9,6 +9,10 @@ file = "config/almostunified/unify.json"
 hash = "a967750c89be8f8f0d6721f9781dc28f0f27f97bb6d9393e47a93592dd134766"
 
 [[files]]
+file = "config/appleskin-client.toml"
+hash = "7c48e51fe8b6d699629934e6431fccb12801d9566cee07f4b1e2557a90ff1861"
+
+[[files]]
 file = "config/ars_botania-common.toml"
 hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
 
@@ -135,6 +139,14 @@ hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
 [[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
+
+[[files]]
+file = "config/lootbeams-client.toml"
+hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
+
+[[files]]
+file = "config/obscure_tooltips-client.toml"
+hash = "cb94292192d00ec02479bb58d409195e224709e8823438d62fc4c666e8d4b7b3"
 
 [[files]]
 file = "config/quark-common.toml"
@@ -750,15 +762,15 @@ hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "56b9e7ba86226ec2bedfd6e5771fc7d2b00822547af0f28e3d684073d3f600bf"
+hash = "85af8dc9abe02ac1f0c926604ea013a13fc8703a6b3c25de5d6060e8682534cc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "ebaa4466303e6e7b7c1b4907c32bda2db6ada58a5eff0e5371d81936397a7eba"
+hash = "f57578db77023f2118e87609b7f5a5ea0ff21c9259b66b958b1fbee8951f5861"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "fbeb11309296ebc6224db4cc01b5c2bb97d7e5a426bce37f7d84173a535a4f9f"
+hash = "1f2956fd0eca3e04eebecc18fcd1cda4c00311c33df5cc020911a97e124aa118"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
