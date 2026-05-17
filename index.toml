@@ -1712,11 +1712,6 @@ hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
 metafile = true
 
 [[files]]
-file = "mods/krypton-reforged.pw.toml"
-hash = "ba2f214504381c53f588e1a52d8be657b47ed53a256b45d623cea2c724748afa"
-metafile = true
-
-[[files]]
 file = "mods/kubejs-aisle-tool.pw.toml"
 hash = "4758eab730bf3c33bddef9756034801f45cf33b5f4b81d1bcedff24a1b2a94b9"
 metafile = true
