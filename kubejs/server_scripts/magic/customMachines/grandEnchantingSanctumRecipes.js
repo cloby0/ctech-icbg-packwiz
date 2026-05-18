@@ -97,6 +97,10 @@ function addEnchantingRecipe(event, crecipe, index) {
 ServerEvents.recipes(event => {
     event.remove({ mod: 'ars_n_spells' })
 
+    event.remove({ id: 'ars_nouveau:imbuement_lapis'});
+    event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
+    event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});
+
     let index = 1
 
     event.forEachRecipe({ type: 'ars_nouveau:enchanting_apparatus' }, recipe => {
@@ -104,16 +108,6 @@ ServerEvents.recipes(event => {
         addEnchantingRecipe(event, crecipe, index)
         index++
     })
-
-    // manual recipes go here, same JSON shape as real ones
-    // addEnchantingRecipe(event, {
-    //     reagent: [{ item: 'minecraft:example' }],
-    //     output: { item: 'minecraft:example_output' },
-    //     sourceCost: 5000,
-    //     pedestalItems: [
-    //         { item: { item: 'minecraft:diamond' } },
-    //     ]
-    // }, index++)
 
     addEnchantingRecipe(event, {
         reagent: [{ item: 'minecraft:shears'}],
@@ -125,16 +119,103 @@ ServerEvents.recipes(event => {
             {item: { item: `minecraft:blue_ice`}},
             {item: { item: `minecraft:blue_ice`}},
         ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'ars_nouveau:magebloom_crop'}],
+        output: { item: 'botania:pure_daisy'},
+        sourceCost: 10000,
+        pedestalItems: [
+            {item: { item: `gtceu:holy_silver_dust`}},
+            {item: { item: `gtceu:prima_materia_rod`}},
+            {item: { item: `mysticalagriculture:earth_essence`}},
+            {item: { item: `mysticalagriculture:earth_essence`}},
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'minecraft:bucket'}],
+        output: { item: 'gtceu:concepts_bucket'},
+        sourceCost: 5000,
+        pedestalItems: [
+            {item: { item: `gtceu:prima_materia_block`}},
+            {item: { item: `minecraft:experience_bottle`}},
+            {item: { item: `minecraft:experience_bottle`}},
+            {item: { item: `hexcasting:charged_amethyst`}},
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'ars_nouveau:novice_spell_book'}],
+        output: { item: 'ars_nouveau:apprentice_spell_book'},
+        sourceCost: 3500,
+        pedestalItems: [
+            {item: { item: `gtceu:holy_silver_foil`}},
+            {item: { item: `ars_nouveau:magebloom_fiber`}},
+            {item: { item: `ars_nouveau:blank_parchment`}},
+            {item: { item: `ars_nouveau:blank_parchment`}},
+        ]
+    }, index++)
+
+    const elements = [
+        "air",
+        "earth",
+        "fire",
+        "water"
+    ]
+
+    elements.forEach(element => {
+        addEnchantingRecipe(event, {
+        reagent: [{ item: 'ars_nouveau:magebloom_crop'}],
+        output: { item: `mysticalagriculture:${element}_seeds`},
+        sourceCost: 5500,
+        pedestalItems: [
+            { item: { item: `ars_nouveau:${element}_essence`, count: 4 } },
+            { item: { item: `mysticalagriculture:${element}_agglomeratio`, count: 4 } }
+        ]
+    }, index++)
     })
-        event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "minecraft:blue_ice",
-            "#kubejs:water_essences",
-            "minecraft:snowball",
-            "minecraft:snowball",
-        ],
-        "minecraft:shears",
-        "reliquary:shears_of_winter",
-        2500,
-    );
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "gtceu:holy_silver_ingot" }],
+        output: { item: "kubejs:chaos_essence"},
+        sourceCost: 6000,
+        pedestalItems: [
+            {item: { item: 'mysticalagriculture:air_essence'}},
+            {item: { item: 'mysticalagriculture:earth_essence'}},
+            {item: { item: 'mysticalagriculture:water_essence'}},
+            {item: { item: 'mysticalagriculture:fire_essence'}},
+            {item: { item: "gtceu:source_block", count: 4 } }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "minecraft:fishing_rod" }],
+        output: { item: "reliquary:rod_of_lyssa"},
+        sourceCost: 2500,
+        pedestalItems: [
+            {item: { item: 'gtceu:source_gem'}},
+            {item: { item: 'ars_nouveau:magebloom_fiber'}},
+            {item: { item: "irons_spellbooks:nature_rune", count: 2 } }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "gtceu:silver_dust" }],
+        output: { item: "kubejs:holy_silver_blend"},
+        sourceCost: 2000,
+        pedestalItems: [
+            {item: { item: "gtceu:ambrosium_dust", count: 2 } },
+            {item: { item: "gtceu:luminessence_dust", count: 2 } }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "gtceu:holy_silver_dust" }],
+        output: { item: "gtceu:holy_silver_ingot"},
+        sourceCost: 3000,
+        pedestalItems: [
+            {item: { item: "ars_nouveau:fire_essence", count: 1 } }
+        ]
+    }, index++)
 })

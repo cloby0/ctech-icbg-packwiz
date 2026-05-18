@@ -46,17 +46,6 @@ ServerEvents.recipes(event => {
         "gtceu:concepts_bucket",
         5000,
     );
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "gtceu:prima_materia_block",
-            "minecraft:experience_bottle",
-            "minecraft:experience_bottle",
-            "hexcasting:charged_amethyst"
-        ],
-        "minecraft:bucket",
-        "gtceu:concepts_bucket",
-        5000,
-    );
 
     event.recipes.ars_nouveau.imbuement(
         "gtceu:concepts_bucket",

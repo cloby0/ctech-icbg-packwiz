@@ -17,14 +17,12 @@ ServerEvents.recipes(event => {
                  }
     );
 
-    event.remove({ id: 'ars_nouveau:imbuement_lapis'});
-    event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
-    event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});
+    //removed source gem creation recipes in grandEnchantingSanctumRecipes.js
 
     event.recipes.ars_nouveau.imbuement(
         "minecraft:amethyst_shard",
         "irons_spellbooks:arcane_essence",
-        5000,
+        750,
         []
     );
 

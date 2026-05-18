@@ -23,4 +23,10 @@ ServerEvents.recipes(event => {
         ]
         }
     );
+    
+    event.replaceInput(
+        { input: 'minecraft:tnt', not: { mod: 'gtceu' } },
+        'minecraft:tnt',
+        'gtceu:powderbarrel'
+    )
 })

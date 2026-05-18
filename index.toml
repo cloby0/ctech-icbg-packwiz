@@ -758,19 +758,19 @@ hash = "88406d331d1e73e8d4763955ee9d1bc94ccd947caa8039a0bf65c40fb78f9759"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "2a4d499d49b212b6176eb75272e128287f652a380c1c91f1cc15cb53f2c9e89e"
+hash = "2e3a99271165740f36eef45da39ce06b11a291fd4c869eabe44f05d1fb504ce5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "e313ef8920e0851a33216af00ad566af3c4d6bc046f45c98fa70dfe0606ba3a2"
+hash = "b3b8e667cb3acd19569cdef11227647f04eaad20c60858142de22add7387529d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "85af8dc9abe02ac1f0c926604ea013a13fc8703a6b3c25de5d6060e8682534cc"
+hash = "b9e18e5010be435ae62d89cf1e792b034e0c5dec188cc76300301387552ece7a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "f57578db77023f2118e87609b7f5a5ea0ff21c9259b66b958b1fbee8951f5861"
+hash = "f3e1cced0401102c927517f61557602bf5a56fa1baa99fcb5f3ba70bfafb3a52"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -802,7 +802,7 @@ hash = "ca6b933b10c80c42dcf3a9b1b806a434d5a1275e104b57039fcb4855cae9fec9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "79df83bf2e7d660e58af6668f42cd9df2ae9ab3670b3520be971db40b3dac5a8"
+hash = "7a0ef34d6e93480369967a7f34a0a6b7fc2886e8e7976ac08efe27dd0d1b15fc"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1702,11 +1702,6 @@ hash = "29b62d42548542296d9932bcbb8a93ffba0b75b7cc859a67e596aeb1e048ace2"
 metafile = true
 
 [[files]]
-file = "mods/journeymap.pw.toml"
-hash = "664a573384edf644e9b788c7c29fe32593917ac8283bb794cc46b471a0a6504a"
-metafile = true
-
-[[files]]
 file = "mods/just-enough-filtering-jef.pw.toml"
 hash = "2f2e5e8586bbec9f3e9a802833daa8188c018c26fc2f16d0e4026352358b37ba"
 metafile = true
@@ -2356,8 +2351,18 @@ hash = "a677dcc9bf0488c013f3e3420fc78af53c2bc7fe450ea85893615d4d1fd69c4b"
 metafile = true
 
 [[files]]
+file = "mods/tacz-immersive-ballistic.pw.toml"
+hash = "4f539e456bed02d1a4a39ace15d30354067304a535d5a33a97102cf10b4f64aa"
+metafile = true
+
+[[files]]
 file = "mods/tacz-presence.pw.toml"
 hash = "2efee7b4e5ffe1b14c48a453c3f4dde15cac7614b41c1a371284a6acfae39ec5"
+metafile = true
+
+[[files]]
+file = "mods/tacz-tweaks.pw.toml"
+hash = "4f47f5c692c7f84f12b48f006cd9a807c0b49351683e37a5bcb0285dd257a028"
 metafile = true
 
 [[files]]

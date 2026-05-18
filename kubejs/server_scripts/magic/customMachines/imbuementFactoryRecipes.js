@@ -102,6 +102,15 @@ ServerEvents.recipes(event => {
     }, index++)
 
     addImbuementRecipe(event, {
+        input: { item: "gtceu:metal_form_bucket" },
+        output: "kubejs:disorganized_metal_form",
+        source: 3000,
+        pedestalItems: [
+            { item: { item: 'mysticalagriculture:ice_essence', count: 4 } }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
         input: { item: "minecraft:amethyst_shard" },
         output: "irons_spellbooks:arcane_essence",
         source: 5000,
@@ -121,6 +130,60 @@ ServerEvents.recipes(event => {
         source: 1500,
         pedestalItems: [
             { item: { item: 'minecraft:crying_obsidian', count: 4 } }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:chaos_essence' },
+        output: 'gtceu:prima_materia_ingot',
+        source: 10000,
+        pedestalItems: [
+            { item: { item: 'kubejs:element_attunement_stone'} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'gtceu:source_dust' },
+        output: 'kubejs:pure_source_gem_dust',
+        source: 500,
+        pedestalItems: [
+            { item: { item: 'kubejs:magebloom_sieve'} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:pure_source_gem_dust' },
+        output: 'kubejs:rough_source_gem',
+        source: 2500,
+        pedestalItems: [
+            { item: { item: 'ars_nouveau:fire_essence'} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'minecraft:ender_pearl' },
+        output: 'irons_spellbooks:divine_pearl',
+        source: 3000,
+        pedestalItems: [
+            { item: { item: "gtceu:ambrosium_dust"} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:holy_silver_blend' },
+        output: 'gtceu:holy_silver_dust',
+        source: 2500,
+        pedestalItems: [
+            { item: { item: "reliquary:mercy_cross"} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'minecraft:amethyst_shard' },
+        output: 'irons_spellbooks:arcane_essence',
+        source: 750,
+        pedestalItems: [
+            { item: { item: "reliquary:mercy_cross"} }
         ]
     }, index++)
 })
