@@ -1538,6 +1538,11 @@ hash = "2a7944b951ebfaa4dcf963c3e2faf43eb8115d99a4390daa49dd8ea6676e8828"
 metafile = true
 
 [[files]]
+file = "mods/golem-magicka.pw.toml"
+hash = "6a05409773bbc8a0939975f9b594a0b9df881d86e51f8a1132bd40949ceed325"
+metafile = true
+
+[[files]]
 file = "mods/greate.pw.toml"
 hash = "3f9f51f44c9db9020e06788b8237de90fd25286b8bc6ceee2218d7e10b23e616"
 metafile = true
@@ -1737,6 +1742,11 @@ hash = "873d23ad2ce05e3e92a05e011f3f9a375a745a4ca6ed4c9fffb0518fc8255bf7"
 metafile = true
 
 [[files]]
+file = "mods/l2library.pw.toml"
+hash = "d41cc823d05623576125dcd40325a6b433bb99ced0d9452dde962e67ed33bb27"
+metafile = true
+
+[[files]]
 file = "mods/laserio-uel.pw.toml"
 hash = "a913cbfe5e8d38eb05d04708e13b8ac843457fce45d1960b941858bb53aa61ad"
 metafile = true
@@ -1919,6 +1929,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "f0d2394f2d9c3e7d25f744aabc26fbc806eb8694e239b333cfe56e4a6df07f17"
+metafile = true
+
+[[files]]
+file = "mods/modulargolems.pw.toml"
+hash = "76b517d06d0d2e9667336440aaceb1e4685b9188ca258505a157880d215ac629"
 metafile = true
 
 [[files]]
@@ -2301,8 +2316,23 @@ hash = "94a7bd3bfa20c2a95c9acff88253ff550548644467460da245d22ed8fae9056e"
 metafile = true
 
 [[files]]
+file = "mods/tacz-golem-compat.pw.toml"
+hash = "a677dcc9bf0488c013f3e3420fc78af53c2bc7fe450ea85893615d4d1fd69c4b"
+metafile = true
+
+[[files]]
+file = "mods/tacz-presence.pw.toml"
+hash = "2efee7b4e5ffe1b14c48a453c3f4dde15cac7614b41c1a371284a6acfae39ec5"
+metafile = true
+
+[[files]]
 file = "mods/tacz-x-gunslightsaddon-addon.pw.toml"
 hash = "dec8b70e5df37440fc78ba0723ffd8a4f3a1791f17433ea403e36cbfc0bceb89"
+metafile = true
+
+[[files]]
+file = "mods/taczeo.pw.toml"
+hash = "b13afb4bd468ef9be2cb8605dc7bfa907323021d87706af71f0a76c2174e2f2f"
 metafile = true
 
 [[files]]
@@ -2322,7 +2352,7 @@ metafile = true
 
 [[files]]
 file = "mods/timeless-and-classics-zero.pw.toml"
-hash = "bdf09ff8a5f8f1acbe5bff48e7cfe96f47f1643b9761abb3fce9f07348a7eb0c"
+hash = "14dfa617c4d1d656674e412dda1c7309c12bbce747d33804a6f8a3070c9cf0a1"
 metafile = true
 
 [[files]]

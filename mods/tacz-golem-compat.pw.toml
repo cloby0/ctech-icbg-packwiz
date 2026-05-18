@@ -1,0 +1,13 @@
+name = "TaCZ Golem Compat"
+filename = "taczgolemcompat-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6356df50f43fe34b41dde166a505cbebd9a0c234"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7085221
+project-id = 1361628
