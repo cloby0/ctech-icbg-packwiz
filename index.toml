@@ -1041,8 +1041,18 @@ hash = "9638d8a308563842fd989970919a51f37ed1bcc82372bff47fc5a5c2e6de738e"
 metafile = true
 
 [[files]]
+file = "mods/atomicstrykers-infernal-mobs.pw.toml"
+hash = "c8b7377ae2248a753f49132b12d1e137e3c19b6eac43b6cbe5d463200e3aeb2e"
+metafile = true
+
+[[files]]
 file = "mods/attributefix.pw.toml"
 hash = "828d571a91296e2ee3be1ec509619ea01f6a61a03958461fbe543bd377daa194"
+metafile = true
+
+[[files]]
+file = "mods/azurelib.pw.toml"
+hash = "75957ef78f1c6f24df9fe121def3ee18dbe264e8693454860ba75f08244a3cd5"
 metafile = true
 
 [[files]]
@@ -1108,6 +1118,11 @@ metafile = true
 [[files]]
 file = "mods/castlib.pw.toml"
 hash = "c0e801e563dd3ebe56ceeaa9c65f390178ea4a2abef10a0396527757e2d981f2"
+metafile = true
+
+[[files]]
+file = "mods/cataclysm-spellbooks.pw.toml"
+hash = "79f4d674fc199e86c962035ccbe89c9d5ba8c2cc087908b60a0cb4e2c3aa90d2"
 metafile = true
 
 [[files]]
@@ -1767,6 +1782,16 @@ hash = "3d308e7a55df90f4017cfc07a6667c10a9d095e04558080674f2aa9126f34338"
 metafile = true
 
 [[files]]
+file = "mods/legendary-monsters.pw.toml"
+hash = "295f146dcc31573cb053dde001ae2cb287f9464fbc517bfcd1363001a0bb7c6f"
+metafile = true
+
+[[files]]
+file = "mods/legendary-spellbooks.pw.toml"
+hash = "6c765dc2e41b21ceaa6f740a805799b393573d4ea5a74174f373dc663f29b3fb"
+metafile = true
+
+[[files]]
 file = "mods/legendary-survival-overhaul.pw.toml"
 hash = "bd54e1fb646a1a67225acf33311452b6b0cc9ba09eb8bdda95d9e11ca265d3ac"
 metafile = true
@@ -1969,6 +1994,11 @@ metafile = true
 [[files]]
 file = "mods/mowzies-mobs.pw.toml"
 hash = "69c100deb9011e828b3f11a0df754316829b751833ac30bc4726710c082f9808"
+metafile = true
+
+[[files]]
+file = "mods/mru.pw.toml"
+hash = "4c57149fc3fa0209482eeb3557d0b5baab6601cc5dec2292f82ed4ce5e3151ce"
 metafile = true
 
 [[files]]
@@ -2271,6 +2301,11 @@ hash = "ee2d9154be68ef20293596a3f65810111fd35a802f1e8292e9ba8872de463a14"
 metafile = true
 
 [[files]]
+file = "mods/sound.pw.toml"
+hash = "6f7a53e9d96b5afc1f256685c87ad5b951ea8eed1bd40d296fb42c65ebdbccce"
+metafile = true
+
+[[files]]
 file = "mods/spark.pw.toml"
 hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
 metafile = true
@@ -2368,6 +2403,11 @@ metafile = true
 [[files]]
 file = "mods/txnilib.pw.toml"
 hash = "7149b1beafef2ce275da37dd5ca2e12f5527ad979420630ecdef5bcabd4fef32"
+metafile = true
+
+[[files]]
+file = "mods/unique-accessories.pw.toml"
+hash = "eb46fa91cef10357c6040ae2f5d534842a0ac021a23c808cc0aab8e5154aa09b"
 metafile = true
 
 [[files]]
