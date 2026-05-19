@@ -802,7 +802,7 @@ hash = "ca6b933b10c80c42dcf3a9b1b806a434d5a1275e104b57039fcb4855cae9fec9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "7a0ef34d6e93480369967a7f34a0a6b7fc2886e8e7976ac08efe27dd0d1b15fc"
+hash = "04182740c479eef14c3d7613f9be331ae028e6ecdc64e3766574af69232b2dcc"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1652,10 +1652,6 @@ hash = "db1d8dfc5374fdfe515b40fda2cfc775160442e2cd63a1b8d083267065f824be"
 metafile = true
 
 [[files]]
-file = "mods/immersive_ballistic-1.3.jar"
-hash = "b1d037714bb106e02476b97976e5d8245b321b5541a97cc4c06f2d24b542539e"
-
-[[files]]
 file = "mods/inline.pw.toml"
 hash = "d92834912371593543ac5c2de473e438fcf831e6e7641634c5e95918b73c211a"
 metafile = true
@@ -2365,23 +2361,8 @@ hash = "a677dcc9bf0488c013f3e3420fc78af53c2bc7fe450ea85893615d4d1fd69c4b"
 metafile = true
 
 [[files]]
-file = "mods/tacz-presence.pw.toml"
-hash = "2efee7b4e5ffe1b14c48a453c3f4dde15cac7614b41c1a371284a6acfae39ec5"
-metafile = true
-
-[[files]]
-file = "mods/tacz-tweaks.pw.toml"
-hash = "4f47f5c692c7f84f12b48f006cd9a807c0b49351683e37a5bcb0285dd257a028"
-metafile = true
-
-[[files]]
 file = "mods/tacz-x-gunslightsaddon-addon.pw.toml"
 hash = "dec8b70e5df37440fc78ba0723ffd8a4f3a1791f17433ea403e36cbfc0bceb89"
-metafile = true
-
-[[files]]
-file = "mods/taczeo.pw.toml"
-hash = "b13afb4bd468ef9be2cb8605dc7bfa907323021d87706af71f0a76c2174e2f2f"
 metafile = true
 
 [[files]]
