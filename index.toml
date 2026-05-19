@@ -1056,6 +1056,11 @@ hash = "75957ef78f1c6f24df9fe121def3ee18dbe264e8693454860ba75f08244a3cd5"
 metafile = true
 
 [[files]]
+file = "mods/ballistix.pw.toml"
+hash = "60a9d6252ed7ba6f155517de0093e313677960b8f81c3a6d8fa7ab3d52e7918c"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
@@ -1078,6 +1083,11 @@ metafile = true
 [[files]]
 file = "mods/betterdays.pw.toml"
 hash = "7f1f331dfd9739c82ffcc4a40675370a3eaa623cc91c12d0d1de944afca1cd15"
+metafile = true
+
+[[files]]
+file = "mods/blast-craft.pw.toml"
+hash = "760508aeab5dc87fbe12faddd0d87612e480a7b9cdbc75b3492e416d1ce3e8a0"
 metafile = true
 
 [[files]]
@@ -2427,6 +2437,11 @@ metafile = true
 [[files]]
 file = "mods/vista.pw.toml"
 hash = "6d50a30e770d310b41b6bc7b72ad1a133fe9836132c7b5a90d9efbb5358500f2"
+metafile = true
+
+[[files]]
+file = "mods/voltaic-api.pw.toml"
+hash = "e2a0d097e297d8c881178291f716655cfe604d7412ab083fc5ac401da9d3a130"
 metafile = true
 
 [[files]]
