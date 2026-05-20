@@ -1255,11 +1255,6 @@ hash = "a263488ab5bea774cdefff0055206418ff776ef90ee7b9dc65fd6d215f3ccb6f"
 metafile = true
 
 [[files]]
-file = "mods/create-big-cannons-advanced-technologies.pw.toml"
-hash = "2d2e70a21ec14cb19a86d71923a54881fd48d428c92df231f82afc2bca0d9b47"
-metafile = true
-
-[[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "99570d052b207740d16257ad390fb5fb13b832928f846dd8f659247da60fd17d"
 metafile = true
