@@ -754,7 +754,7 @@ hash = "3d8ce56995bf8930449ca4d5a3cc0a2258740ecee3f20c87e0e1e8a7513951d6"
 
 [[files]]
 file = "kubejs/server_scripts/blockTags.js"
-hash = "674c3a8c0e30a2ca33e993d4f59e34ae259a11f6fb6f3cbc6f3d86a0f284e9ea"
+hash = "3952cb786040cf1dec53b9a9deb65431c435dab81d7b5d75fed8022d34270b73"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
