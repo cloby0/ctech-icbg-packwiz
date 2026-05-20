@@ -6,7 +6,7 @@ hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
 [[files]]
 file = "config/almostunified/unify.json"
-hash = "a967750c89be8f8f0d6721f9781dc28f0f27f97bb6d9393e47a93592dd134766"
+hash = "d26e11b64df653ffbe2df985d8be16f23e5c814e7e63edb440ebf56dc0e89560"
 
 [[files]]
 file = "config/appleskin-client.toml"
@@ -139,6 +139,10 @@ hash = "3022e89e1c7fca4d9860cad623c33fb7d5411d103bcb4dee17cca8270d71e6c3"
 [[files]]
 file = "config/gtceu.yaml"
 hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
+
+[[files]]
+file = "config/hc2nerf-common.toml"
+hash = "b03aca778b8dfffe14bc34b603f123269c891db0eabef2bdaaaaed2677df82a2"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -1824,6 +1828,11 @@ metafile = true
 [[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "60af8798dbf3e300a5af44125595afcd5d1e70072448444156364f222cc03e98"
+metafile = true
+
+[[files]]
+file = "mods/lmft.pw.toml"
+hash = "afca79f6ef3b857bfd147d4d7f9887ee433a73f8fcd1ec4476c49ac3349926d0"
 metafile = true
 
 [[files]]
