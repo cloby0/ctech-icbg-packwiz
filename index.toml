@@ -1374,12 +1374,12 @@ metafile = true
 
 [[files]]
 file = "mods/emi-backport.pw.toml"
-hash = "e2a140b6be9ae47a0930aea5690713bcee50ce70861332f8c15df7cc2c6fc00d"
+hash = "e3a9f04b9dbf3483801bae62906138bb88ea69cc106e5f1284b46b6af06ad48c"
 metafile = true
 
 [[files]]
 file = "mods/emi-enchanting.pw.toml"
-hash = "6d5b51a81ccf1a172c9d15461f6405d32f55fbd1b27b8ab6b272fca9fd817508"
+hash = "b19d339f288c78eaf30af8478596c18922ee1ee334b6b0296b96e2b537446e22"
 metafile = true
 
 [[files]]

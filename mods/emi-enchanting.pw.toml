@@ -2,6 +2,9 @@ name = "EMI Enchanting"
 filename = "emi_enchanting-0.1.2+1.20.1+forge.jar"
 side = "both"
 
+[option]
+optional = true
+
 [download]
 hash-format = "sha1"
 hash = "0374c5c3eb4dd361f89388cda84744dc70ae638d"
