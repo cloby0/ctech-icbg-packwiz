@@ -947,7 +947,7 @@ metafile = true
 
 [[files]]
 file = "mods/ambientsounds.pw.toml"
-hash = "f23952ea034ed8c017c57370c04e5bc67f7de52fe6c66fe0bfebc3df893798ff"
+hash = "e5ef463c0c732ae462a2d5ebc46e580056cecbb67a99ad12f23baff37fce2ea4"
 metafile = true
 
 [[files]]
@@ -1354,7 +1354,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
-hash = "4d5f1a5fa12ffea566dd12f509b6900e7b539aefe520b92efa2c61bdcf96beb9"
+hash = "02eaf8b9513ec46ff37cd919104f2780ba253c6e2184f38e4247e2af733b09c3"
 metafile = true
 
 [[files]]
@@ -1832,7 +1832,7 @@ metafile = true
 
 [[files]]
 file = "mods/loot-beams.pw.toml"
-hash = "9b4c6183408599abe045e078b737c46c5d34dcc1c374ff25cea05e1f9d9cc1ba"
+hash = "5ea336eb66139d27d89655349b6fc7ff7b8ef7d56e6b333b774b83e8fb26a031"
 metafile = true
 
 [[files]]
@@ -1852,7 +1852,7 @@ metafile = true
 
 [[files]]
 file = "mods/loot-journal.pw.toml"
-hash = "fea37a06f418d03b72cad997db82703fb02dceb38ca838695767986420fe2bba"
+hash = "3503d3fc1a105a101c2ad428051c960ae88f6554e443797ac5439948c10343f4"
 metafile = true
 
 [[files]]
@@ -1932,7 +1932,7 @@ metafile = true
 
 [[files]]
 file = "mods/minecraft-cursor.pw.toml"
-hash = "1c09e27f0a6e57478395c47999bbece86b378b09447cc7a4b010d555613d0f68"
+hash = "a90240086cebe46f2db222e7c72744b013e7c7bce97be46acd652eac838da889"
 metafile = true
 
 [[files]]
@@ -2047,7 +2047,7 @@ metafile = true
 
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
-hash = "9ba7916d7230342f56990b7a8d6dc11af2169d9ab1184bfc70eb958ca9ba8c89"
+hash = "09bc17ed6839461c7480369326b2ca61b27a64b2623f3b09d4914584a94f1bfb"
 metafile = true
 
 [[files]]
@@ -2311,7 +2311,7 @@ metafile = true
 
 [[files]]
 file = "mods/sound.pw.toml"
-hash = "dd780a0d0ade259eafe584aa09bf9d95bff1adae956441cbc57d08382e7be1c3"
+hash = "b938a821a8b255efb61341b5459772c1060ac61d228ec2ff65113e7a60907005"
 metafile = true
 
 [[files]]
