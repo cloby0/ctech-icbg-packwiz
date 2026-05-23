@@ -73,13 +73,9 @@ ServerEvents.recipes(event => {
         "input": {
             "item": "gtceu:abstract_metal_ingot"
         },
-        "mana": 23500,
+        "mana": 3500,
         "output": {
             "item": "botania:manasteel_ingot"
         }
     })
-
-    event.remove({ id: "botania:mana_infusion/manasteel" })
-    event.remove({ id: "botania:mana_infusion/manasteel_block" })
-
 })

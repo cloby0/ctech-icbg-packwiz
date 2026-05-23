@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'aether:skyroot_beehive' });
     event.remove({ id: 'aether:skyroot_crafting_table' });
     event.remove({ id: 'supplementaries:bed_from_feather_block' });
+    event.remove({ id: 'silentgear:bronze_ingot' });
+    event.remove({ id: 'createbigcannons:bronze_ingot_from_nuggets' });
 
 
     //unnerf

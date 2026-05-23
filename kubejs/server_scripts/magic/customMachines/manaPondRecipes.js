@@ -81,6 +81,9 @@ function addManaPondRecipe(event, crecipe) {
 }
 
 ServerEvents.recipes(event => {
+    event.remove({ id: "botania:mana_infusion/manasteel" })
+    event.remove({ id: "botania:mana_infusion/manasteel_block" })
+    
     event.forEachRecipe({ type: 'botania:mana_infusion' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
         addManaPondRecipe(event, crecipe)
@@ -88,7 +91,7 @@ ServerEvents.recipes(event => {
 
     // manual recipes — same JSON shape as botania:mana_infusion
     addManaPondRecipe(event, {
-        mana: 23500,
+        mana: 3500,
         input: { item: 'gtceu:abstract_metal_ingot' },
         output: { item: 'botania:manasteel_ingot' }
     })

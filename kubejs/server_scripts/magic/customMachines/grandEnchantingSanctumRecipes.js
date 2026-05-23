@@ -218,4 +218,16 @@ ServerEvents.recipes(event => {
             {item: { item: "ars_nouveau:fire_essence", count: 1 } }
         ]
     }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "kubejs:florid_compound" }],
+        output: { item: "kubejs:living_metalloid"},
+        sourceCost: 30000,
+        pedestalItems: [
+            {item: { item: 'minecraft:clock'}},
+            {item: { item: 'mysticalagriculture:nature_essence'}},
+            {item: { item: 'mysticalagriculture:water_essence'}},
+            {item: { item: 'reliquary:fertile_essence'}}
+        ]
+    }, index++)
 })
