@@ -1,13 +1,13 @@
 name = "Woot Revived"
-filename = "woot-revived-20.1.1.8.jar"
+filename = "woot-revived-20.1.1.9.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "61c0a91664a7538cda91f67585a04d96583c5cc3"
+hash = "cc3341a3904a12ae08fd783870b0b4ce5b962eb6"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7678365
+file-id = 8068412
 project-id = 1337238

@@ -1,13 +1,13 @@
 name = "Legendary Spellbooks"
-filename = "legendary_spellbooks-1.20.1+forge-0.2.1-hotfix.jar"
+filename = "legendary_spellbooks-1.20.1+forge-0.2.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "8a0e124be3fc20d2db9e1a4e4359bc463fb70af3"
+hash = "2c205f60bb542e4871bb66e4c9b2cc0a9cd28203"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8101050
+file-id = 8106962
 project-id = 1478875

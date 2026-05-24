@@ -1,13 +1,13 @@
 name = "Cyberware: Reforged"
-filename = "cyber_ware_port-1.20.1-1.6.6.jar"
+filename = "cyber_ware_port-1.20.1-1.6.7.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "ee8dc29dd2183f59f6cf7340a658dd350bccefb5"
+hash = "ef3b7d6ebb2ba5f3209201f547e49674b812d502"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7849082
+file-id = 8039057
 project-id = 1401640

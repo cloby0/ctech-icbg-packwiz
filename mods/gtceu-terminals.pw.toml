@@ -1,13 +1,13 @@
 name = "GTCEu Terminals"
-filename = "gtceuterminal-4.6.1.jar"
+filename = "gtceuterminal-5.6.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1a60994dae6be7311225b90974d56ea586802cb1"
+hash = "65e66a64d5c88a305da46787e9520863cd5a55d5"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7857101
+file-id = 8130132
 project-id = 1423461
