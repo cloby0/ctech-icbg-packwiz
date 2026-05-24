@@ -1,13 +1,13 @@
 name = "Create: Sentry Mechanical Arm"
-filename = "sentrymechanicalarm-0.3.3-1.20.1-Forge.jar"
+filename = "sentrymechanicalarm-0.3.2-1.20.1-Forge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "41ffa15c9747cd4c6ef712344a6e794bc92104da"
+hash = "7c87de0367ac4ee3cf586720dc90a3a2be0d6a3f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8032077
+file-id = 7667512
 project-id = 1411575
