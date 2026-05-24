@@ -165,6 +165,10 @@ file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
+file = "config/test.txt"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
 file = "defaultconfigs/aether-server.toml"
 hash = "b0396c1d80a73a716b99c9702ff4cb139cf7d7126a70dfbd8b1b8405b5db78a1"
 
