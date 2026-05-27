@@ -51,6 +51,8 @@ ServerEvents.recipes(event => {
         "kubejs:living_metalloid",
         30000,
     );
+
+    event.remove({ id: "botania:terra_plate/terrasteel_ingot" })
     event.custom({
         "type": "botania:terra_plate",
         "ingredients": [

@@ -25,4 +25,6 @@ StartupEvents.registry('item', event => {
     event.create('vengeful_gaia_spirit')
     event.create('soul_of_gaia')
     event.create('boundless_gaia_spirit_ingot')
+
+    event.create('matter_energy_circuit')
 })

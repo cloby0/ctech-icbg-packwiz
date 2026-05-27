@@ -21,5 +21,10 @@
 "tagprefix.mars_stone": "Mars %s Ore",
 "tagprefix.venus_stone": "Venus %s Ore",
 "tagprefix.mercury_stone": "Mercury %s Ore",
-"tagprefix.glacio_stone": "Glacio %s Ore"
+"tagprefix.glacio_stone": "Glacio %s Ore",
+
+"block.gtceu.grand_enchanting_sanctum": "Grand Enchanting Sanctum",
+"block.gtceu.automated_mana_pond": "Mana Pond",
+"block.gtceu.imbuement_factory": "Imbuement Factory"
+
 }

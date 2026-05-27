@@ -24,6 +24,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'supplementaries:bed_from_feather_block' });
     event.remove({ id: 'silentgear:bronze_ingot' });
     event.remove({ id: 'createbigcannons:bronze_ingot_from_nuggets' });
+        
+    event.remove({ id: 'quark:building/crafting/furnaces/blackstone_smoker' });
+    event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
 
 
     //unnerf
