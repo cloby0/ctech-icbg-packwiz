@@ -166,7 +166,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .flags(TMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
     event.create("enderium")
         .ingot().fluid()
