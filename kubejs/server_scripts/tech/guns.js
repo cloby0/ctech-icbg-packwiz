@@ -36,4 +36,19 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
         .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('trapdoor_rifle')
+        .itemInputs('4x gtceu:wrought_iron_bolt', '2x gtceu:wrought_iron_bolt', 'gtceu:long_wrought_iron_rod', '5x gtceu:treated_wood_plate')
+        .inputFluids()
+        .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:springfield1873",HasBulletInBarrel:1b}'))
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.arms_manufacturer('4570')
+        .itemInputs('24x gtceu:iron_bolt', '3x minecraft:gunpowder', '16x create:copper_nugget')
+        .inputFluids()
+        .itemOutputs(Item.of('tacz:ammo', 48, '{AmmoId:"tacz:45_70"}'))
+        .duration(100)
+        .EUt(30)
+        .circuit(1)
 });
