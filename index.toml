@@ -889,6 +889,10 @@ file = "mods/CyberSpells-1.1.jar"
 hash = "b912cf2b8f80ce9b13059e0fc26c40b6ee5aaad967c86b392c676fec4e023d41"
 
 [[files]]
+file = "mods/EmptyNbtFix-1.20.1-1.0.0.jar"
+hash = "54fa04e65a5508447469cc451725ccf1189b3770fc56e3a50fb356edc7076a44"
+
+[[files]]
 file = "mods/IDA-v2.0.5.jar"
 hash = "4935eed910173c1abcac9819d6f7b3e16b6aca9d44cc8270e2e04930d0905a15"
 
