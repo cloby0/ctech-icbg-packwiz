@@ -1,0 +1,13 @@
+name = "Epic Knights: Dark Ages addon"
+filename = "epic-knights-dark-ages-1.20.x-forge-1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39e7141f63a61220942a11887eb67a487d8afd6b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7107406
+project-id = 1361923

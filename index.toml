@@ -1447,6 +1447,26 @@ file = "mods/entityculling-forge-1.10.1-mc1.20.1.jar"
 hash = "1231bb17e3db1a7d4e98800bb070ec1e7e7c016b934e1eb11c1cc63d11d0aa2d"
 
 [[files]]
+file = "mods/epic-knights-addon.pw.toml"
+hash = "0b20f0a6f005800adc5790581aee19480539a41086e47093a0112ffa1d18c6a7"
+metafile = true
+
+[[files]]
+file = "mods/epic-knights-armor-and-weapons.pw.toml"
+hash = "06151f990d05964418cb61595b80c90afeb1d6285fbe789564f274b21780fc03"
+metafile = true
+
+[[files]]
+file = "mods/epic-knights-dark-ages-addon.pw.toml"
+hash = "5b2e5f053ae90a5cb9d05b3ab5cdb6af0ad0dac9f0a098a39b7dc112ac20663f"
+metafile = true
+
+[[files]]
+file = "mods/epic-knights-slavic-armory.pw.toml"
+hash = "6953f6383017997d7d2436a0b2334af46368b261cd51ebc6f9245fa5631fe6bc"
+metafile = true
+
+[[files]]
 file = "mods/etched.pw.toml"
 hash = "c9f73e2b93b64fb0c44fbbde6245a5d5934143d6c4b9cc9829e3ba62c02ead4e"
 metafile = true
