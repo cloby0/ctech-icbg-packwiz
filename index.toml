@@ -842,7 +842,7 @@ hash = "1123f75fe0596c58fff6bf7dd57a2c6b9fcebb989af9443bea7f7d659d709e9a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "b262eb82a526aef3e3b01ce2b5b1ac9aaf3613cb313aa3c3378473b68fb104a1"
+hash = "316cae7d00af38eb454afb4d128fc9e56c0e43f944f40998b25bbd2ec77aa8f4"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"

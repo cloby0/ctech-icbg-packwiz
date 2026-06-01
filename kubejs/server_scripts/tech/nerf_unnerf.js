@@ -24,6 +24,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'supplementaries:bed_from_feather_block' });
     event.remove({ id: 'silentgear:bronze_ingot' });
     event.remove({ id: 'createbigcannons:bronze_ingot_from_nuggets' });
+    event.remove({ id: 'magistuarmory:furnace/steel_ingot_blasting' });
+    event.remove({ id: 'ad_astra:etrionic_blast_furnace' });
+    event.remove({ id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals' });
         
     event.remove({ id: 'quark:building/crafting/furnaces/blackstone_smoker' });
     event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
