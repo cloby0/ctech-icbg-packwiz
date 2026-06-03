@@ -1,0 +1,25 @@
+
+#Pam's HarvestCraft 2 food rebalancing. Requires restart to take effect.
+[foodNerf]
+	#rebalance Pam's HarvestCraft 2 food values to 1.12.2 baseline (Thanks Pixel1011!).
+	nerfPams = true
+	#strip food properties from ingredient items (butter, spices, fresh water, etc.) so they cannot be eaten.
+	inedibleIngredients = true
+	#Rebalance vanilla Minecraft food values to Pam's 1.12.2 baseline.
+	nerfMinecraft = true
+
+#Bakeware cooking flow in the CFB cooking table.
+[bakeware]
+	#enable use cooldown on bakeware recipes. when false, bakeware recipes craft instantly.
+	enabled = true
+	#bake duration in ticks.
+	#Range: 0 ~ 600
+	durationTicks = 30
+	#refund ingredients if the player closes the cooking table menu while a bake is in progress.
+	refundOnCancel = true
+
+#Cutting board behavior.
+[cuttingBoard]
+	#OP Netherite knife! Farmer's Delight netherite knife takes no durability damage when used on the cutting board.
+	opNetheriteKnife = false
+

@@ -17,6 +17,10 @@ file = "config/ars_botania-common.toml"
 hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
 
 [[files]]
+file = "config/culinarycompat-common.toml"
+hash = "99254b565ed0feb38b8dd1866cece075669d1afb9170a3163f27797195eab785"
+
+[[files]]
 file = "config/cumulus_menus-client.toml"
 hash = "ed577a5f879d797bac579fc0a558ba985b465bb492dab9411ead2939fe51ca73"
 
@@ -205,12 +209,12 @@ file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/example_item.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
+hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
 
 [[files]]
-file = "kubejs/client_scripts/example.js"
-hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
+file = "kubejs/client_scripts/tooltips.js"
+hash = "d53df54c1535f16b127f35a5520ae2f38bd85efef529658dd20aff9f90673e1a"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -830,7 +834,7 @@ hash = "e1953a97bcaa0b3fb98be8733bbb942ec478d83626fdf96f0d52168aee43f52a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
-hash = "3e9fd505b154d3a5514cc151df3ef27027d72a8298e8deeef4b32d148acd44b6"
+hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -1008,11 +1012,6 @@ metafile = true
 [[files]]
 file = "mods/applied-botanics-addon.pw.toml"
 hash = "64ad6dacf8e6d1c70567b2119054ab358ff0556feea8037d51379727cef641db"
-metafile = true
-
-[[files]]
-file = "mods/applied-cooking.pw.toml"
-hash = "426446bc043d83e2463ab4bae4ba86f4c2fc9c2ed3b28a96101ccb1d977b920e"
 metafile = true
 
 [[files]]
