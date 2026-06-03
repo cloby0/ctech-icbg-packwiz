@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             'gtceu:phosphorus_boule'
         )
         .duration(600)
-        .EUt(VA['HV'])
+        .EUt(VA('HV'))
         .dimension("ad_astra:moon")
 
 
