@@ -43,5 +43,19 @@ ServerEvents.recipes(event => {
         H: `gtceu:${tier}_machine_hull`,
         W: `gtceu:${cableType}_single_cable`
       })
+    
+    event.shaped(`gtceu:${tier}_me_fabricator`, [
+        'ACM',
+        'BHZ',
+        'WCW'
+      ], {
+        A: `gtceu:${tier}_robot_arm`,
+        M: `gtceu:${tier}_emitter`,
+        C: `#gtceu:circuits/${tier}`,
+        B: `gtceu:${tier}_conveyor_module`,
+        H: `gtceu:${tier}_machine_hull`,
+        W: `gtceu:${cableType}_single_cable`,
+        Z: `kubejs:matter_energy_circuit`
+      })
   });
 })
