@@ -886,7 +886,7 @@ hash = "00c7d0975b25b2ee8db9f1da7a37ccdefe16b773a019dae1df9f07bfc2beaa39"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
-hash = "df6c03f2415b3a298a1ea474e1c2e4dcaeecc51143776645e6b4fd7a3d9ce6d3"
+hash = "e0e998624747f8c9f95f1062fac62060b9b80306908451fd3cb1ceaa21db8e22"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"
