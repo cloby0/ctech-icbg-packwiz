@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .EUt(VA['EV'])
         .dimension("ad_astra:moon")
 
-    event.recipes.gtceu.epitaxial_growth_chamber('naquadah_boule')
+    event.recipes.gtceu.epitaxial_growth_chamber('neutrnoium_boule')
         .itemInputs(
             '32x #forge:storage_blocks/silicon',
             'gtceu:neutronium_ingot',
