@@ -818,7 +818,7 @@ hash = "fe1c1f3da37a4fe800a4555a3cdfd38c0278718026cd691edb7d5301d8ac4021"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "478ff2ffc5efb198181f2556ed519ff285e242557b9a9e3db197bfa2adbc08d6"
+hash = "3cb7a62219a4f00ea4f1dc3259a016c607c0ac79b3ac2b7526ed81c39b2cffa3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -838,7 +838,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxial_growth_chamber.js"
-hash = "effd4b0ea8b5054e00113ec84c672d32a0037b7bdb6c1af5f9dad1b0d25b8625"
+hash = "55ecf0c42cb907c103588c58b47d2ab6cc8a157af5b2512f254bb3aa792673c5"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"

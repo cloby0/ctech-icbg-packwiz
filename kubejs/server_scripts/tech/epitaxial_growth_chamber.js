@@ -1,4 +1,4 @@
-jsServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/phosphorus_boule" })
     event.remove({ id: "gtceu:electric_blast_furnace/naquadah_boule" })
     event.remove({ id: "gtceu:electric_blast_furnace/neutronium_boule" })

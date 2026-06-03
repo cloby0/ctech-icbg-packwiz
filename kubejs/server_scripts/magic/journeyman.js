@@ -217,14 +217,15 @@ ServerEvents.recipes(event => {
         ]
     );
 
-    event.shaped(`gtceu:source_gem_plate`, [
-        'H', 
-        'I', 
-        'I'
+    event.shaped(
+        Item.of("gtceu:source_gem_plate", 1), 
+        [
+            'H', 
+            'I', 
+            'I'
         ], 
         {
-            I: `gtceu:source_gem`,
+            I: "gtceu:source_gem",
             H: '#forge:tools/hammers',
-        })
-        .damageIngredient(Ingredient.of('#forge:tools/hammers'))
+        }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 });
