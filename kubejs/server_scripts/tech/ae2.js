@@ -5,18 +5,18 @@ ServerEvents.recipes(event => {
     //logic = signalum
     event.replaceInput(
         { input: 'ae2:logic_processor' },
-        'kubejs:matter_energy_circuit',
-        'ae2:logic_processor'
+        'ae2:logic_processor',
+        'kubejs:matter_energy_circuit'
     )
     event.replaceInput(
         { input: 'ae2:engineering_processor' },
-        'kubejs:matter_energy_circuit',
-        'ae2:engineering_processor'
+        'ae2:engineering_processor',
+        'kubejs:matter_energy_circuit'
     )
     event.replaceInput(
         { input: 'ae2:calculation_processor' },
-        'kubejs:matter_energy_circuit',
-        'ae2:calculation_processor'
+        'ae2:calculation_processor',
+        'kubejs:matter_energy_circuit'
     )
     event.recipes.gtceu.circuit_assembler('me_circuit')
         .itemInputs(
