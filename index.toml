@@ -18,7 +18,7 @@ hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
 
 [[files]]
 file = "config/culinarycompat-common.toml"
-hash = "99254b565ed0feb38b8dd1866cece075669d1afb9170a3163f27797195eab785"
+hash = "59cf59f1544e790292649a77a6528d86fc71dc69e0c34acfdc2ba3e189c028fa"
 
 [[files]]
 file = "config/cumulus_menus-client.toml"
@@ -838,7 +838,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxial_growth_chamber.js"
-hash = "dbbfc432a4bbe67d3ec0c58aac0183c5de25fbfab6aba3a66c4543e01434ef17"
+hash = "c1d9dc78df35097db4fefd19234a2de5339885b7ba07cf51f47ac4d62e651e20"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -886,7 +886,7 @@ hash = "00c7d0975b25b2ee8db9f1da7a37ccdefe16b773a019dae1df9f07bfc2beaa39"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
-hash = "e0e998624747f8c9f95f1062fac62060b9b80306908451fd3cb1ceaa21db8e22"
+hash = "e04748171b5d8542c94fc00928c4bae87f218f8c833d84eecf5ecc5215aac4c9"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"

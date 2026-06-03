@@ -14,7 +14,7 @@
 	enabled = true
 	#bake duration in ticks.
 	#Range: 0 ~ 600
-	durationTicks = 30
+	durationTicks = 5
 	#refund ingredients if the player closes the cooking table menu while a bake is in progress.
 	refundOnCancel = true
 
