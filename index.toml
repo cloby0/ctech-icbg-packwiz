@@ -141,10 +141,6 @@ file = "config/gtceu.yaml"
 hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
 
 [[files]]
-file = "config/hc2nerf-common.toml"
-hash = "b03aca778b8dfffe14bc34b603f123269c891db0eabef2bdaaaaed2677df82a2"
-
-[[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
@@ -1344,6 +1340,11 @@ hash = "31b3ecd1317f2d2b9802592def351b5567196d726283530f72e33f5c827e5807"
 metafile = true
 
 [[files]]
+file = "mods/culinary-compat.pw.toml"
+hash = "4cd7ac390002900fe47e800551c990ab219f56ec7c5d3eace644b7285eec4c19"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 hash = "7e58c4b66225f8719153ab8dbafd5973a04a0ec5bb400027cb1d6c482010d08a"
 metafile = true
@@ -2157,11 +2158,6 @@ metafile = true
 [[files]]
 file = "mods/pams-harvestcraft-2-food-extended.pw.toml"
 hash = "a710d790426a1a8c087a08524ad6ef69a9132e9b13f79722c18a984f35e7026f"
-metafile = true
-
-[[files]]
-file = "mods/pams-harvestcraft-2-nerf.pw.toml"
-hash = "842048640c5e94899b7b01b15e72766a8d69553752214e3218c63b32ea7c5ca8"
 metafile = true
 
 [[files]]
