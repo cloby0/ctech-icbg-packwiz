@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('epitaxial_growth_chamber')
         .category('space')
         .setEUIO('in')
-        .setMaxIOSize(2, 2, 2, 0)
+        .setMaxIOSize(3, 2, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 })
@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel(
-            "gtceu:block/solid_machine_casing",
+            "gtceu:block/machines/casings/machine_casing_solid_steel",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 })

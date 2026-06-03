@@ -838,7 +838,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxial_growth_chamber.js"
-hash = "cbb19bbbf178b5daec83e57f418576fa593f50826e3de77a89bb0e205beb2e4e"
+hash = "effd4b0ea8b5054e00113ec84c672d32a0037b7bdb6c1af5f9dad1b0d25b8625"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -870,7 +870,7 @@ hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "4198ca9749b52d0497473219202cb28589188900c05d7aa5e1cfcde89abaa587"
+hash = "48016f0a4b70cd86ff025dd17ca949a86853a25d1463abde2fc5ae7b8f6a73c8"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
