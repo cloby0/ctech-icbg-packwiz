@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             'gtceu:phosphorus_boule'
         )
         .duration(600)
-        .EUt(VA('HV'))
+        .EUt(GTValues.VA[GTValues.HV])
         .dimension("ad_astra:moon")
 
 
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             'gtceu:naquadah_boule'
         )
         .duration(750)
-        .EUt(VA['EV'])
+        .EUt(GTValues.VA[GTValues.EV])
         .dimension("ad_astra:moon")
 
     event.recipes.gtceu.epitaxial_growth_chamber('neutrnoium_boule')
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
             'gtceu:neutronium_boule'
         )
         .duration(900)
-        .EUt(VA['IV'])
+        .EUt(GTValues.VA[GTValues.IV])
         .dimension("ad_astra:moon")
 
 })

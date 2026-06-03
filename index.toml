@@ -838,7 +838,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxial_growth_chamber.js"
-hash = "d7ec39981913f57a7de3189dac3dd2f607ff9c27512f7330ac3a5523de4d3a3c"
+hash = "dbbfc432a4bbe67d3ec0c58aac0183c5de25fbfab6aba3a66c4543e01434ef17"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
