@@ -870,7 +870,7 @@ hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "3238c89fdccf5d83be417d5c4910f7a6750829894b7d6c752ef925d3963fc77f"
+hash = "4198ca9749b52d0497473219202cb28589188900c05d7aa5e1cfcde89abaa587"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
