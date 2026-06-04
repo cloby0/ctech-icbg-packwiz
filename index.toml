@@ -1425,7 +1425,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "d48a1ea93de8cd5febb95ba52989d8d9ab4e998cfbdf9c1076a9f2e571d2fcbe"
+hash = "bdcbcea23065e5b55defab083ebbae3963972d9ee57d8b5bf4ece2f67228bdb0"
 metafile = true
 
 [[files]]
@@ -1769,6 +1769,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "29b62d42548542296d9932bcbb8a93ffba0b75b7cc859a67e596aeb1e048ace2"
 metafile = true
 
 [[files]]
@@ -2423,11 +2428,6 @@ metafile = true
 [[files]]
 file = "mods/timeless-and-classics-zero.pw.toml"
 hash = "14dfa617c4d1d656674e412dda1c7309c12bbce747d33804a6f8a3070c9cf0a1"
-metafile = true
-
-[[files]]
-file = "mods/tmrv.pw.toml"
-hash = "506f8e89a51cfa30f274fa9f53f347c4418b0460f24d1f96bc8a22c4e777becb"
 metafile = true
 
 [[files]]
