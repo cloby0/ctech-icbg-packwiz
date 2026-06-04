@@ -1,3 +1,11 @@
+GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('mithril', 28, 178, -1, null, 'Mi', false) 
+    event.create('desh', 32, 182, -1, null, 'De', false)
+    event.create('ostrum', 33, 183, -1, null, 'Ot', false)
+    event.create('calorite', 34, 184, -1, null, 'Ct', false)
+
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //aether gregitizing
@@ -24,6 +32,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('mithril')
         .ingot()
         .ore()
+        .element('mithril')
         .color(0xc7ebec)
         .secondaryColor(0x486b82)
         .iconSet(GTMaterialIconSet.SHINY)
@@ -173,4 +182,40 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x1f6b62).secondaryColor(0x16455f)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
+
+    event.create('desh')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0xF2A057).secondaryColor(0x2E2F04)
+        .element('desh')
+        .iconSet(METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_FINE_WIRE)
+
+    event.create('ostrum')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0xE5939B).secondaryColor(0x2F0425)
+        .element('ostrum')
+        .iconSet(METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_FINE_WIRE)
+
+    event.create('calorite')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0xE65757).secondaryColor(0x2F0506)
+        .element('calorite')
+        .iconSet(METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_FINE_WIRE)
 })
