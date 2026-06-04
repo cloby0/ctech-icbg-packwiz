@@ -1352,7 +1352,7 @@ metafile = true
 
 [[files]]
 file = "mods/culinary-compat.pw.toml"
-hash = "4cd7ac390002900fe47e800551c990ab219f56ec7c5d3eace644b7285eec4c19"
+hash = "3196cd49760c64c2025e23f1b8e139caa52617bd7c4370587bb4a5b234ee7680"
 metafile = true
 
 [[files]]
