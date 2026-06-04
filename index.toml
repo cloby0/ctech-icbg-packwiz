@@ -829,6 +829,10 @@ file = "kubejs/server_scripts/magic/thaumaturge.js"
 hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
+file = "kubejs/server_scripts/tech/HV_and_space.js"
+hash = "bd53785bb4ab21e946330825ae57755b919d3e0afb0fde27d405f52ecd54763b"
+
+[[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
 hash = "e1953a97bcaa0b3fb98be8733bbb942ec478d83626fdf96f0d52168aee43f52a"
 
@@ -843,6 +847,10 @@ hash = "c1d9dc78df35097db4fefd19234a2de5339885b7ba07cf51f47ac4d62e651e20"
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
 hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
+
+[[files]]
+file = "kubejs/server_scripts/tech/hv_and_space.js"
+hash = "6375ddae0c14857087c93892476891a68310a2be208f037b3564435eaa47ecbe"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
@@ -870,7 +878,7 @@ hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "48016f0a4b70cd86ff025dd17ca949a86853a25d1463abde2fc5ae7b8f6a73c8"
+hash = "27bad30a239522a21e553321235c9da72075cd7b12dc2da6acdef7c0784b0d01"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
