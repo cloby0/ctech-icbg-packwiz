@@ -858,7 +858,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
-hash = "0e2a1a75ad0d20606e150b40d5f892759ff2e0e0fd26ae823d65261214e25869"
+hash = "e210ce2c8cecc016cec04176d97e15d25c5f7fc87bbeba5e845dbee6b0b2bb07"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
@@ -885,6 +885,10 @@ file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
 hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
+file = "kubejs/startup_scripts/gtceuMaterialModification.js"
+hash = "92bda4d77825a1e3a34c2939fb52cfa35a3b51f2e3a0af9b7c501483d7929a26"
+
+[[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
 hash = "71b9595e194dd6c59b98c6cf4346d4f6a6b012b053cb599f96c950a25d294cb3"
 
@@ -894,11 +898,11 @@ hash = "00c7d0975b25b2ee8db9f1da7a37ccdefe16b773a019dae1df9f07bfc2beaa39"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
-hash = "ce7398a5192e2a367196223279a9bf0d3b2924550f97cb0fde43f74502fdb4c6"
+hash = "4c507025dfbbad1df689692ef599acb91cf7a32ad0df767628d781f455d913d4"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"
-hash = "01964c3f216d60e80dfcf0f800792001b8f0315f0d41b658ecd6e0874dea2152"
+hash = "c1b2c12af7b3f7da07c3ce64d611583d56099ac9da3be34ebf1385a045332d4e"
 
 [[files]]
 file = "kubejs/startup_scripts/oreRegistry.js"

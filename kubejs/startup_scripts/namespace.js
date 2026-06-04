@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'Intercontinental Ballistic Greg'
+Platform.mods.kubejs.name = 'C-Tech: Intercontinental Ballistic Greg'
