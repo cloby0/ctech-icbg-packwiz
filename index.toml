@@ -1440,7 +1440,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "bdcbcea23065e5b55defab083ebbae3963972d9ee57d8b5bf4ece2f67228bdb0"
+hash = "0bb0de824b7d63a75dea2b8a7fd6b859c2dd12bfef95741ced24415ca00c4d95"
 metafile = true
 
 [[files]]
@@ -1722,6 +1722,11 @@ hash = "56e2d042f5d49a155e38b8d6a29cc621044c50fa82a4bd322396272c0deac223"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "2621dfb5b3ad17a3adf927cc92a3bc6b0dd982c32f0265f920b29a61b34d182e"
+metafile = true
+
+[[files]]
 file = "mods/immersive-optimization.pw.toml"
 hash = "db1d8dfc5374fdfe515b40fda2cfc775160442e2cd63a1b8d083267065f824be"
 metafile = true
@@ -1779,21 +1784,6 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
-metafile = true
-
-[[files]]
-file = "mods/jei.pw.toml"
-hash = "29b62d42548542296d9932bcbb8a93ffba0b75b7cc859a67e596aeb1e048ace2"
-metafile = true
-
-[[files]]
-file = "mods/just-enough-filtering-jef.pw.toml"
-hash = "2f2e5e8586bbec9f3e9a802833daa8188c018c26fc2f16d0e4026352358b37ba"
-metafile = true
-
-[[files]]
-file = "mods/just-enough-resources-jer.pw.toml"
-hash = "2f4dd47f2ac99a55c332638116596bbdc38a06ac86336bb662e42c604c3a96e6"
 metafile = true
 
 [[files]]
@@ -2458,6 +2448,11 @@ metafile = true
 [[files]]
 file = "mods/timeless-and-classics-zero.pw.toml"
 hash = "14dfa617c4d1d656674e412dda1c7309c12bbce747d33804a6f8a3070c9cf0a1"
+metafile = true
+
+[[files]]
+file = "mods/tmrv.pw.toml"
+hash = "506f8e89a51cfa30f274fa9f53f347c4418b0460f24d1f96bc8a22c4e777becb"
 metafile = true
 
 [[files]]
