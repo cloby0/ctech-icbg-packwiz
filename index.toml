@@ -837,7 +837,7 @@ file = "kubejs/server_scripts/tech/customMachineRecipes.js"
 hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
-file = "kubejs/server_scripts/tech/epitaxial_growth_chamber.js"
+file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
 hash = "c1d9dc78df35097db4fefd19234a2de5339885b7ba07cf51f47ac4d62e651e20"
 
 [[files]]
@@ -849,7 +849,7 @@ file = "kubejs/server_scripts/tech/hvAndSpace.js"
 hash = "bd53785bb4ab21e946330825ae57755b919d3e0afb0fde27d405f52ecd54763b"
 
 [[files]]
-file = "kubejs/server_scripts/tech/nerf_unnerf.js"
+file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
@@ -883,10 +883,6 @@ hash = "27bad30a239522a21e553321235c9da72075cd7b12dc2da6acdef7c0784b0d01"
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
 hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
-
-[[files]]
-file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "aff39a0ec32db293698a7cda5b34030cfefd26cabe05ad0802a454726f8d2496"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
