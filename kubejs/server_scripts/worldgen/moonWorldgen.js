@@ -1,75 +1,3 @@
-WorldgenEvents.remove(event => {
-    event.removeFeatureById("underground_ores", [
-        "ad_astra:moon_iron_ore",
-        "ad_astra:deepslate_desh_ore",
-        "ad_astra:moon_desh_ore",
-        "ad_astra:moon_cheese_ore",
-        "ad_astra:moon_ice_shard_ore",
-        "ad_astra:mars_diamond_ore",
-        "ad_astra:mars_ice_shard_ore",
-        "ad_astra:mars_iron_ore",
-        "ad_astra:mars_ostrum_ore",
-        "ad_astra:mercury_iron_ore",
-        "ad_astra:glacio_ice_shard_ore",
-        "ad_astra:glacio_coal_ore",
-        "ad_astra:glacio_copper_ore",
-        "ad_astra:glacio_iron_ore",
-        "ad_astra:glacio_lapis_ore",
-        "ad_astra:venus_coal_ore",
-        "ad_astra:venus_gold_ore",
-        "ad_astra:venus_diamond_ore",
-        "ad_astra:venus_calorite_ore"
-    ])
-})
-
-WorldgenEvents.remove(event => {
-    event.removeOres(props => {
-        props.blocks = [
-            "ad_astra:mars_diamond_ore",
-            "ad_astra:mars_ice_shard_ore",
-            "ad_astra:mars_iron_ore",
-            "ad_astra:mars_ostrum_ore",
-            "ad_astra:mercury_iron_ore",
-            "ad_astra:glacio_ice_shard_ore",
-            "ad_astra:glacio_coal_ore",
-            "ad_astra:glacio_copper_ore",
-            "ad_astra:glacio_iron_ore",
-            "ad_astra:glacio_lapis_ore",
-            "ad_astra:venus_coal_ore",
-            "ad_astra:venus_gold_ore",
-            "ad_astra:venus_diamond_ore",
-            "ad_astra:venus_calorite_ore"
-        ]
-    })
-})
-
-WorldgenEvents.remove(event => {
-    event.removeOres(props => {
-        props.blocks = [
-            "ad_astra:moon_iron_ore",
-            "ad_astra:deepslate_desh_ore",
-            "ad_astra:moon_desh_ore",
-            "ad_astra:moon_cheese_ore",
-            "ad_astra:moon_ice_shard_ore",
-            "ad_astra:mars_diamond_ore",
-            "ad_astra:mars_ice_shard_ore",
-            "ad_astra:mars_iron_ore",
-            "ad_astra:mars_ostrum_ore",
-            "ad_astra:mars_ostrum_ore",
-            "ad_astra:mercury_iron_ore",
-            "ad_astra:glacio_ice_shard_ore",
-            "ad_astra:glacio_coal_ore",
-            "ad_astra:glacio_copper_ore",
-            "ad_astra:glacio_iron_ore",
-            "ad_astra:glacio_lapis_ore",
-            "ad_astra:venus_coal_ore",
-            "ad_astra:venus_gold_ore",
-            "ad_astra:venus_diamond_ore",
-            "ad_astra:venus_calorite_ore"
-        ]
-    })
-})
-
 GTCEuServerEvents.oreVeins(event => {
 //Desh
     event.add("kubejs:desh_vein_mn", vein => {
@@ -79,7 +7,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.8)
         vein.discardChanceOnAirExposure(0)
     // Define where the vein can generate
-        vein.layer("moon_stone")
+        vein.layer("moon")
         vein.dimensions("ad_astra:moon")
         vein.biomes("ad_astra:lunar_wastelands")
     // Define a height range:
@@ -106,7 +34,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(34)
         vein.density(0.8)
         vein.discardChanceOnAirExposure(0)
-        vein.layer("moon_stone")
+        vein.layer("moon")
         vein.dimensions("ad_astra:moon")
         vein.biomes("ad_astra:lunar_wastelands")
         vein.heightRangeUniform(20, 40)

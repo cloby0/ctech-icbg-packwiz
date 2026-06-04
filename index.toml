@@ -858,7 +858,11 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
-hash = "e210ce2c8cecc016cec04176d97e15d25c5f7fc87bbeba5e845dbee6b0b2bb07"
+hash = "967f4b40b564e8c3d566e1a480eb9b16f66a73ce6036021927e06407f489fff5"
+
+[[files]]
+file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"
+hash = "9dfa5844e4f1f6d9b64f6b0be4bceaf05decb3e27c786acf15f155724bd0ba47"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
