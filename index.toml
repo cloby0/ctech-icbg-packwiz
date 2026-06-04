@@ -1077,11 +1077,6 @@ hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
 
 [[files]]
-file = "mods/ars-technica.pw.toml"
-hash = "f74d674d172fb27b93f1738f092a2d6b2d4cecc578656f9357886b8e13fecc35"
-metafile = true
-
-[[files]]
 file = "mods/ars_n_spells-1.9.0.jar"
 hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 
@@ -1430,7 +1425,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi-backport.pw.toml"
-hash = "e3a9f04b9dbf3483801bae62906138bb88ea69cc106e5f1284b46b6af06ad48c"
+hash = "10217a8814255565c0ef63465798014ab56108776b179f4a4cc4de7afd021527"
 metafile = true
 
 [[files]]
@@ -1440,7 +1435,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "0bb0de824b7d63a75dea2b8a7fd6b859c2dd12bfef95741ced24415ca00c4d95"
+hash = "09455e81afb0af9383c906f8b48854c1a037ccd26cf7edcecc9685ebb8233e39"
 metafile = true
 
 [[files]]
