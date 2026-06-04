@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
     );
 
     event.shaped(
-        Item.of("gtceu:source_gem_plate", 1), 
+        Item.of("gtceu:source_plate", 1), 
         [
             'H', 
             'I', 

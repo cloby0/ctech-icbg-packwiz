@@ -30,7 +30,12 @@ ServerEvents.recipes(event => {
         
     event.remove({ id: 'quark:building/crafting/furnaces/blackstone_smoker' });
     event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
-
+    event.remove({ output: "create:electron_tube"});
+    event.replaceInput(
+        { input: 'create:electron_tube' },
+        'create:electron_tube',
+        '#gtceu:circuits/ulv'
+        );
 
     //unnerf
     event.custom(

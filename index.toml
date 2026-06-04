@@ -818,7 +818,7 @@ hash = "fe1c1f3da37a4fe800a4555a3cdfd38c0278718026cd691edb7d5301d8ac4021"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "3cb7a62219a4f00ea4f1dc3259a016c607c0ac79b3ac2b7526ed81c39b2cffa3"
+hash = "a939d18688787cc656d8160b08679f6a46e31c9865b2fb3cea8e39cd4ef37a62"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -827,10 +827,6 @@ hash = "787c3d53561793564e9c9888750bc2ff2a05d8a7c384f18b12bb432330a5ae3e"
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
 hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
-
-[[files]]
-file = "kubejs/server_scripts/tech/HV_and_space.js"
-hash = "bd53785bb4ab21e946330825ae57755b919d3e0afb0fde27d405f52ecd54763b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
@@ -849,12 +845,12 @@ file = "kubejs/server_scripts/tech/guns.js"
 hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
-file = "kubejs/server_scripts/tech/hv_and_space.js"
-hash = "6375ddae0c14857087c93892476891a68310a2be208f037b3564435eaa47ecbe"
+file = "kubejs/server_scripts/tech/hvAndSpace.js"
+hash = "bd53785bb4ab21e946330825ae57755b919d3e0afb0fde27d405f52ecd54763b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerf_unnerf.js"
-hash = "316cae7d00af38eb454afb4d128fc9e56c0e43f944f40998b25bbd2ec77aa8f4"
+hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
