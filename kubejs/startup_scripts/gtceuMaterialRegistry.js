@@ -1,8 +1,35 @@
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('mithril', 28, 178, -1, null, 'Mi', false) 
-    event.create('desh', 32, 182, -1, null, 'De', false)
-    event.create('ostrum', 33, 183, -1, null, 'Ot', false)
-    event.create('calorite', 34, 184, -1, null, 'Ct', false)
+    event.create('mithril')
+        .protons(28)
+        .neutrons(177)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Mi')
+        .isIsotope(false)
+
+    event.create('desh')
+        .protons(32)
+        .neutrons(182)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('De')
+        .isIsotope(false)
+
+    event.create('ostrum')
+        .protons(33)
+        .neutrons(183)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Ot')
+        .isIsotope(false)
+
+    event.create('calorite')
+        .protons(34)
+        .neutrons(184)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Ct')
+        .isIsotope(false)
 
 })
 
@@ -189,7 +216,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xF2A057).secondaryColor(0x2E2F04)
         .element('desh')
-        .iconSet(METALLIC)
+        .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
@@ -201,7 +228,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xE5939B).secondaryColor(0x2F0425)
         .element('ostrum')
-        .iconSet(METALLIC)
+        .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
@@ -213,7 +240,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xE65757).secondaryColor(0x2F0506)
         .element('calorite')
-        .iconSet(METALLIC)
+        .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
