@@ -858,7 +858,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
-hash = "967f4b40b564e8c3d566e1a480eb9b16f66a73ce6036021927e06407f489fff5"
+hash = "b89b4a101c9fa7ebb3ee320360aae6f1301ec26b0eec460575b6b5a31f8c3e64"
 
 [[files]]
 file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"
