@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     //replaces electrum wire in micro-flavored ev circuit recipe with desh wire
-    event.replaceInput({ output: 'gtceu:micro_processor_supercomputer' }, 'gtceu:fine_electrum_wire', 'gtceu:fine_desh_wire')
+    event.replaceInput({ output: 'gtceu:micro_processor_computer' }, 'gtceu:fine_electrum_wire', 'gtceu:fine_desh_wire')
 
     //adds moon sand to the plascrete and cleanroom glass recipes
     //so that the cleanroom cant be made until you go to the #moon

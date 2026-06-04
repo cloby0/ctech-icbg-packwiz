@@ -846,7 +846,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "15f8d2907d4652dad7267b94bd44da3f58716fe71ef90bc9e6f23164862802b5"
+hash = "fbdf6ae00c0dd8936a40c579e14232999d2b36b3acaf2768b0a0052af912336d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -858,7 +858,7 @@ hash = "dea6a9253953e18e14b449a9180456d6ff7a14cd878ded6850de8306bf436753"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
-hash = "b89b4a101c9fa7ebb3ee320360aae6f1301ec26b0eec460575b6b5a31f8c3e64"
+hash = "dae65c6820aea52773be2ddca90b75b9f5f190612643904ed55f2102acce4bf9"
 
 [[files]]
 file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"
