@@ -26,8 +26,31 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
         () => Item.getItem(item))
     }
 
-//Ingots
-    ingot('desh', 'ad_astra:desh_ingot')
-    ingot('ostrum', 'ad_astra:ostrum_ingot')
-    ingot('calorite', 'ad_astra:calorite_ingot')
+
+    //just like doing it normally but makes some assumptions abt the namespace
+    function assumptionator(material, namespace) {
+        ingot(material, `${namespace}:${material}_ingot`);
+        nugget(material, `${namespace}:${material}_nugget`);
+        block(material, `${namespace}:${material}_block`);
+    }
+    function adAstraFixer(material) {
+        ingot(material, `ad_astra:${material}_ingot`)
+        nugget(material, `ad_astra:${material}_nugget`)
+        plate(material, `ad_astra:${material}_plate`)
+        block(material, `ad_astra:${material}_block`)
+    }
+
+    adAstraFixer('desh')
+    adAstraFixer('ostrum')
+    adAstraFixer('calorite')
+
+    assumptionator('manasteel', 'botania')
+    assumptionator('terrasteel', 'botania')
+    assumptionator('elementium', 'botania')
+
+    ingot('mithril', `irons_spellbooks:mithril_ingot`);
+
+    
+    
+
 })
