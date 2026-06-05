@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         output: { item: "reliquary:rod_of_lyssa"},
         sourceCost: 2500,
         pedestalItems: [
-            {item: { item: 'gtceu:source_gem'}},
+            {item: { item: 'ars_nouveau:source_gem'}},
             {item: { item: 'ars_nouveau:magebloom_fiber'}},
             {item: { item: "irons_spellbooks:nature_rune", count: 2 } }
         ]

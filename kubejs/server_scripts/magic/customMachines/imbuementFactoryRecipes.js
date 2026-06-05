@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
     }, index++)
 
     addImbuementRecipe(event, {
-        input: { item: 'gtceu:source_gem' },
+        input: { item: 'ars_nouveau:source_gem' },
         output: 'reliquary:void_tear',
         source: 1500,
         pedestalItems: [
