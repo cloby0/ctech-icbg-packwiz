@@ -230,7 +230,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .ore()
         .color(0xE5939B).secondaryColor(0x2F0425)
-        .blastTemp(3600, "medium", GTValues.VA[GTValues.EV], 1000)
+        .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1000)
         .element('ostrum')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(

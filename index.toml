@@ -894,7 +894,7 @@ hash = "32a4d797ef8f80eb0f41ac9d904d1524d5bdee8b62ef0b979f76b84a5311059c"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "0d02e7b5c3f05a1be1e7c22db5d35d512d6734b7963c0a9e9682a8fe41717819"
+hash = "d98bb139b31fa6bc42c351f75006f7152d43df6ca9e98862473a8a89e70b601a"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
