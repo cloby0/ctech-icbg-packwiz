@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
                 'ABA'
             ],
             {
-                A: 'gtceu:ambrosium_gem',
+                A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
                 C: 'gtceu:luminessence_dust'
             }
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
                 'ABA'
             ],
             {
-                A: 'gtceu:ambrosium_gem',
+                A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
                 C: 'gtceu:luminessence_dust',
                 D: 'minecraft:glass'
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
             {
                 A: 'ars_nouveau:archwood_slab',
                 B: 'minecraft:glass',
-                C: 'gtceu:ambrosium_gem',
+                C: 'aether:ambrosium_shard',
                 D: '#forge:plates/gold'
             }
         );
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
             {
                 A: '#forge:plates/silver',
                 B: 'ars_nouveau:repository',
-                C: 'gtceu:ambrosium_gem',
+                C: 'aether:ambrosium_shard',
                 D: 'minecraft:lectern',
                 E: 'irons_spellbooks:iron_spell_book'
             }

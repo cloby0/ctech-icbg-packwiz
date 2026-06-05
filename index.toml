@@ -818,7 +818,7 @@ hash = "f518696b64787432dc4ebd07614b4db80ee230f7c12a67748de9499694428811"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "9aa0d83026427107d697b6cc8d8ffc9e5c0076146ff5e62a3e5350b3a832ad0d"
+hash = "b695d5749ee7cbbc7dc9a8430177aec7aab9a4828b390387ebe3810893f57e41"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -890,11 +890,11 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "849ada96cca7f7939950b96f191d27abf2affa4b1d03e47773be1de25fc2f5ed"
+hash = "32a4d797ef8f80eb0f41ac9d904d1524d5bdee8b62ef0b979f76b84a5311059c"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "71b9595e194dd6c59b98c6cf4346d4f6a6b012b053cb599f96c950a25d294cb3"
+hash = "0d02e7b5c3f05a1be1e7c22db5d35d512d6734b7963c0a9e9682a8fe41717819"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
@@ -1651,7 +1651,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtech-molecule-drawings.pw.toml"
-hash = "8a23ef3b18820ddfb0325ce1b5f8c606a76b93753c8d2aa73f413e1d35ab037a"
+hash = "0b913c35515eb1236f756ba6e77e060c47ee92cf8823e01f5c2ac8645c3a8f45"
 metafile = true
 
 [[files]]

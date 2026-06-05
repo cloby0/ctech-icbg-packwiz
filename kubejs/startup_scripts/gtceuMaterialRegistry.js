@@ -214,35 +214,44 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .fluid()
         .ore()
-        .color(0xF2A057).secondaryColor(0x2E2F04)
+        .color(0xd38b4c).secondaryColor(0xb05a3c)
+        .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1000)
         .element('desh')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
-            GTMaterialFlags.GENERATE_FINE_WIRE)
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+            )
 
     event.create('ostrum')
         .ingot()
         .fluid()
         .ore()
         .color(0xE5939B).secondaryColor(0x2F0425)
+        .blastTemp(3600, "medium", GTValues.VA[GTValues.EV], 1000)
         .element('ostrum')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
-            GTMaterialFlags.GENERATE_FINE_WIRE)
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        )
 
     event.create('calorite')
         .ingot()
         .fluid()
         .ore()
         .color(0xE65757).secondaryColor(0x2F0506)
+        .blastTemp(4500, "high", GTValues.VA[GTValues.IV], 1000)
         .element('calorite')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
-            GTMaterialFlags.GENERATE_FINE_WIRE)
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        )
 })
