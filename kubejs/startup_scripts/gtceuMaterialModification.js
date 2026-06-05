@@ -50,6 +50,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     ingot('mithril', `irons_spellbooks:mithril_ingot`);
 
+    gem ('source', 'ars_nouveau:source_gem')
     
     
 

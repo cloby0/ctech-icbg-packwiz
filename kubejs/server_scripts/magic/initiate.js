@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     )
 
     event.recipes.ars_nouveau.imbuement(
-        "gtceu:source_gem",
+        "ars_nouveau:source_gem",
         "reliquary:void_tear",
         1500,
         [
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         {
             A: 'reliquary:fortune_coin',
             B: 'gtceu:wrought_iron_plate',
-            C: 'gtceu:source_gem'
+            C: 'ars_nouveau:source_gem'
         }
     )
 
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
             "irons_spellbooks:nature_rune",
             "irons_spellbooks:nature_rune",
             "ars_nouveau:magebloom_fiber",
-            "gtceu:source_gem"
+            "ars_nouveau:source_gem"
         ],
         "minecraft:fishing_rod",
         "reliquary:rod_of_lyssa",
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_iron_rod',
             B: 'irons_spellbooks:evocation_rune',
             C: 'constructionwand:diamond_wand',
-            D: 'gtceu:source_gem'
+            D: 'ars_nouveau:source_gem'
         }
     )
 
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
         {
             A: '#forge:bolts/gold',
             B: 'ars_nouveau:archwood_fence',
-            C: 'gtceu:source_gem',
+            C: 'ars_nouveau:source_gem',
             D: 'gtceu:source_plate'
     });
 

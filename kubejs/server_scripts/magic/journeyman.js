@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
             {
-            "item": "gtceu:source_gem"
+            "item": "ars_nouveau:source_gem"
             }
         ]
         }
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
             'I'
         ], 
         {
-            I: "gtceu:source_gem",
+            I: "ars_nouveau:source_gem",
             H: '#forge:tools/hammers',
         }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 });

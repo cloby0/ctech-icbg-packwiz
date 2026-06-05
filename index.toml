@@ -814,11 +814,11 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "fe1c1f3da37a4fe800a4555a3cdfd38c0278718026cd691edb7d5301d8ac4021"
+hash = "82afb7dfdd9f5f396586ac62bad0c1a5b1a34a4c566eecfb01d2ffbd1520b4eb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "a939d18688787cc656d8160b08679f6a46e31c9865b2fb3cea8e39cd4ef37a62"
+hash = "9aa0d83026427107d697b6cc8d8ffc9e5c0076146ff5e62a3e5350b3a832ad0d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -890,7 +890,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "ad6e99d73a7c0ef46a8315d85b14e3890daff749274d12966f7a539576311e43"
+hash = "849ada96cca7f7939950b96f191d27abf2affa4b1d03e47773be1de25fc2f5ed"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
