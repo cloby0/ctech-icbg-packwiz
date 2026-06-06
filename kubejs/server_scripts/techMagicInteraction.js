@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 
     event.forEachRecipe({ type: 'gtceu:circuit_assembler' }, recipe => {
         const jsonStr = recipe.json.toString()
-        if (!jsonStr.includes('soldering_alloy')) return
+        if (!jsonStr.includes('"tag":"forge:soldering_alloy"')) return
         // skip kubejs-added recipes (safety — they should not appear here but guard anyway)
         if (recipe.id.toString().startsWith('kubejs:')) return
         toAdd.push(JSON.parse(jsonStr))
@@ -189,6 +189,9 @@ ServerEvents.recipes(event => {
         // event.custom() passes directly to GTCEu's codec which expects fields at top level
         // so unwrap "data" and re-add "type"
         const source = rawJson.data !== undefined ? rawJson.data : rawJson
+        if (rawJson.data !== undefined && source.EUt === undefined && rawJson.EUt !== undefined) {
+            source.EUt = rawJson.EUt
+        }
 
         // fluid is serialized as {"tag":"forge:soldering_alloy"} inside value array
         // replace key+value pair so result is {"fluid":"kubejs:arcane_solder"}
