@@ -115,9 +115,9 @@ ServerEvents.recipes(event => {
     // hv circuit core with emitter/sensor telemetry pair and glass lens array
     // pattern: L E L / G C G / L S L
     event.shaped('kubejs:rocket_guidance_module', [
-        'L E L',
-        'G C G',
-        'L S L'
+        'LEL',
+        'GCG',
+        'LSL'
     ], {
         L: 'gtceu:lunar_rocket_alloy_plate',
         E: 'gtceu:hv_emitter',

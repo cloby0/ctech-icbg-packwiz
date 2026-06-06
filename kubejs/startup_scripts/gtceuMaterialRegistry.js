@@ -78,9 +78,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
-        .addOreByproducts('lithium', 'chrome') // lightest metal (levitation); exotic aerospace alloy
+        .addOreByproducts('lithium', 'chromium') // lightest metal (levitation); exotic aerospace alloy
         .washedIn('gtceu:sodium_persulfate')
-        .separatedInto('chrome', 'manganese')
+        .separatedInto('chromium', 'manganese')
 
     event.create('skyjade')
         .gem()
@@ -97,9 +97,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x446AAC)
         .secondaryColor(0x25366A)
         .iconSet(GTMaterialIconSet.METALLIC)
-        .addOreByproducts('cobalt', 'chrome') // cobalt blue; viridian chrome green
+        .addOreByproducts('cobalt', 'chromium') // cobalt blue; viridian chromium green
         .washedIn('gtceu:mercury')
-        .separatedInto('cobalt', 'chrome')
+        .separatedInto('cobalt', 'chromium')
 
     // --- Progression materials (no ore) ---
 
@@ -281,12 +281,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
-        .addOreByproducts('chrome', 'vanadium', 'magnesium') // refractory heat metals; echoes Kroll process
+        .addOreByproducts('chromium', 'vanadium', 'magnesium') // refractory heat metals; echoes Kroll process
         .washedIn('gtceu:mercury')                            // Mercury planet = Mercury element washing
-        .separatedInto('chrome', 'vanadium')
+        .separatedInto('chromium', 'vanadium')
 
     // --- Lunar Rocket Alloy ---
-    // ultimet base (cobalt-chrome superalloy) alloyed with aluminium for low-weight aerospace plate
+    // ultimet base (cobalt-chromium superalloy) alloyed with aluminium for low-weight aerospace plate
     // two EBF steps: first make ultimet from constituents, then alloy into this
     // only HV-accessible inputs — overworld-only so the rocket can be made before the first moon trip
 

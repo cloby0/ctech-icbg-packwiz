@@ -49,6 +49,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     assumptionator('terrasteel', 'botania')
     assumptionator('elementium', 'botania')
 
+    ingot('gaia_spirit', 'botania:gaia_ingot')
+
     ingot('mithril', `irons_spellbooks:mithril_ingot`);
 
     gem('source', 'ars_nouveau:source_gem')
@@ -65,5 +67,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     
     ingot('moon_cheese', 'ad_astra:cheese')
     block('moon_cheese', 'ad_astra:cheese_block')
+
 
 })
