@@ -169,9 +169,11 @@ ServerEvents.recipes(event => {
     })
 
     toAdd.forEach(json => {
-        // replace soldering_alloy → arcane_solder in serialized JSON
+        // fluid is serialized as {"tag":"forge:soldering_alloy"} — replace key+value pair
+        // so the result becomes {"fluid":"kubejs:arcane_solder"} in the same value array
+        // Rhino has no String.replaceAll — use regex with /g flag instead
         const modified = JSON.parse(
-            JSON.stringify(json).replaceAll('"gtceu:soldering_alloy"', '"kubejs:arcane_solder"')
+            JSON.stringify(json).replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
         )
 
         // recursively double all "count" fields inside the outputs subtree
