@@ -866,7 +866,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "4cb65f9ff1bd76538f186000a2194d01b2d8de34140e56423e0626c1fa7c0cdd"
+hash = "2fb80a1fd0d73754a97a576a4ddca6c43697c0a604783de8a5ac710e35228a90"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -914,7 +914,7 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "8aac7159ee3ef1cd706ef34f61c79a9b721afa4e583b8d7b876cefa189d24fff"
+hash = "f876c857339948f50d6dd74c75a4df753009fd9ab5bda39a833784bcd2edc1bb"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

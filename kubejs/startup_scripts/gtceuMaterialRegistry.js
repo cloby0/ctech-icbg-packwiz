@@ -51,7 +51,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
-    // --- Aether ---
+    // aether
 
     event.create('ambrosium')
         .gem()
@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LENS
         )
         .ore()
-        .addOreByproducts('gold', 'sulfur')   // holy light → gold; brimstone contrast
+        .addOreByproducts('gold', 'sulfur')
         .washedIn('gtceu:mercury')
 
     event.create('zanite')
@@ -74,7 +74,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LENS,
             GTMaterialFlags.GENERATE_ROD
         )
-        .addOreByproducts('silicon', 'vanadium') // crystalline sharpness; hardening metal
+        .addOreByproducts('silicon', 'vanadium')
         .washedIn('gtceu:mercury')
 
     event.create('mithril')
@@ -84,8 +84,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc7ebec)
         .secondaryColor(0x486b82)
         .iconSet(GTMaterialIconSet.SHINY)
-        .addOreByproducts('silver', 'platinum') // silver-like appearance; legendary rarity → PGMs
-        .washedIn('gtceu:mercury')              // silver amalgam process
+        .addOreByproducts('silver', 'platinum')
+        .washedIn('gtceu:mercury')
         .separatedInto('platinum', 'palladium')
 
     event.create('gravitite')
@@ -94,7 +94,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
-        .addOreByproducts('lithium', 'chromium') // lightest metal (levitation); exotic aerospace alloy
+        .addOreByproducts('lithium', 'chromium')
         .washedIn('gtceu:sodium_persulfate')
         .separatedInto('chromium', 'manganese')
 
@@ -104,7 +104,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xCFF095)
         .secondaryColor(0x7d9f66)
         .iconSet(GTMaterialIconSet.DIAMOND)
-        .addOreByproducts('silicon', 'calcium', 'beryllium') // jade = silicate; beryl family (emerald is beryl)
+        .addOreByproducts('silicon', 'calcium', 'beryllium')
         .washedIn('gtceu:mercury')
 
     event.create('veridium')
@@ -113,11 +113,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x446AAC)
         .secondaryColor(0x25366A)
         .iconSet(GTMaterialIconSet.METALLIC)
-        .addOreByproducts('cobalt', 'chromium') // cobalt blue; viridian chromium green
+        .addOreByproducts('cobalt', 'chromium')
         .washedIn('gtceu:mercury')
         .separatedInto('cobalt', 'chromium')
 
-    // --- Progression materials (no ore) ---
+    // progression materials
 
     event.create('luminessence')
         .dust()
@@ -136,8 +136,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_ORE_SMELTING,
             GTMaterialFlags.GENERATE_ROD
         )
-        .addOreByproducts('amethyst', 'lapis', 'luminessence') // magical residue survives tech processing
-        .washedIn('gtceu:mercury')                             // quicksilver = alchemical symbol
+        .addOreByproducts('amethyst', 'lapis', 'luminessence')
+        .washedIn('gtceu:mercury')
 
     event.create('holy_silver')
         .ingot()
@@ -231,7 +231,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.STICKY)
         .flags(GTMaterialFlags.PHOSPHORESCENT)
 
-    // --- Thermal Expansion alloys ---
+    // thermal expansion alloys
 
     event.create("lumium")
         .ingot()
@@ -253,7 +253,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
 
-    // --- Ad Astra space metals ---
+    // ad astra space metals
 
     event.create('desh')
         .ingot()
@@ -269,7 +269,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
-        .addOreByproducts('iron', 'sulfur', 'nickel') // lunar regolith iron; volcanic sulfur; nickel-iron meteorite
+        .addOreByproducts('iron', 'sulfur', 'nickel')
         .washedIn('gtceu:mercury')
         .separatedInto('iron', 'nickel')
 
@@ -287,8 +287,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
-        .addOreByproducts('sulfur', 'copper', 'lead') // Venusian sulfuric atmosphere; rose copper; dense lead
-        .washedIn('gtceu:sulfuric_acid')               // Venus = sulfuric acid clouds
+        .addOreByproducts('sulfur', 'copper', 'lead')
+        .washedIn('gtceu:sulfuric_acid')
         .separatedInto('copper', 'lead')
 
     event.create('calorite')
@@ -305,14 +305,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
-        .addOreByproducts('chromium', 'vanadium', 'magnesium') // refractory heat metals; echoes Kroll process
-        .washedIn('gtceu:mercury')                            // Mercury planet = Mercury element washing
+        .addOreByproducts('chromium', 'vanadium', 'magnesium')
+        .washedIn('gtceu:mercury')
         .separatedInto('chromium', 'vanadium')
 
-    // --- Lunar Rocket Alloy ---
-    // ultimet base (cobalt-chromium superalloy) alloyed with aluminium for low-weight aerospace plate
-    // two EBF steps: first make ultimet from constituents, then alloy into this
-    // only HV-accessible inputs — overworld-only so the rocket can be made before the first moon trip
+    // lunar rocket alloy
+    // ultimet + aluminium
+    // all overworld HV inputs so rocket builds before first moon trip
 
     event.create('lunar_rocket_alloy')
         .ingot()
@@ -326,15 +325,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD
         )
 
-    // --- Desh Mond process intermediate ---
+    // mond process intermediate
 
     event.create('desh_carbonyl')
         .fluid()
-        .color(0xc49060) // pale orange, slightly toxic-looking
+        .color(0xc49060)
 
-    // --- Moon cheese ---
-    // Novelty ore found in shallow Moon veins. Nugget form renamed to "Curd" via lang key.
-    // Byproducts: sodium (salt) and calcium — accurate cheese mineral content.
+    // moon cheese
+    // nugget form renamed to curd via lang key
 
     event.create('moon_cheese')
         .ingot()
@@ -344,13 +342,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.DULL)
         .addOreByproducts('sodium', 'calcium')
 
-    // --- Magic-Tech Superconductor Alloys ---
-    // Cheaper alternative path to superconductors; tradeoff is lower amperage vs vanilla tier.
-    // EBF recipes auto-generated from components(). Verify GTCEu material names for ruridit,
-    // hss_g, enriched_naquadah, americium, naquadria if any fail on load.
-    // Blast temps for LuV+ (6000K–9000K) require Naquadah-tier or higher coils — adjust if needed.
+    // magic-tech superconductor alloys
+    // lower amperage tradeoff vs vanilla tier superconductors
+    // EBF recipes auto-generated from components
+    // verify gtceu names for ruridit hss_g enriched_naquadah americium naquadria on load
+    // LuV+ blast temps require naquadah tier coils or higher
 
-    // MV: Lead Sourcite — lead base + source crystalline lattice (1A, alloy smelter)
+    // MV lead sourcite 1A alloy smelter
     event.create('lead_sourcite')
         .ingot()
         .fluid()
@@ -365,7 +363,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // HV: Hallowed Nickelate — holy silver-nickel superconducting compound (2A)
+    // HV hallowed nickelate 2A
     event.create('hallowed_nickelate')
         .ingot()
         .fluid()
@@ -381,7 +379,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // EV: Prima Ruridite — prima materia embedded in ruridit matrix (4A)
+    // EV prima ruridite 4A
     event.create('prima_ruridite')
         .ingot()
         .fluid()
@@ -397,7 +395,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // IV: HSS-G Manaferrite — mana-infused high-speed steel grade G compound (4A)
+    // IV hssg manaferrite 4A
     event.create('hssg_manaferrite')
         .ingot()
         .fluid()
@@ -413,7 +411,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // LuV: Terranaquadite — terrasteel anchored in enriched naquadah matrix (8A)
+    // LuV terranaquadite 8A
     event.create('terranaquadite')
         .ingot()
         .fluid()
@@ -429,7 +427,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // ZPM: Elven Americate — elementium + americium exotic compound (8A)
+    // ZPM elven americate 8A
     event.create('elven_americate')
         .ingot()
         .fluid()
@@ -445,7 +443,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UV: Boundless Naquadrite — gaia spirit stabilized in naquadria matrix (16A)
+    // UV boundless naquadrite 16A
     event.create('boundless_naquadrite')
         .ingot()
         .fluid()

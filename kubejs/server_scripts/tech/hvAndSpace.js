@@ -3,16 +3,16 @@ zServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_raw_desh' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_moon_desh_ore' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_deepslate_desh_ore' })
-    // --- Desh Mond process (Moon/HV tier) ---
-    // Desh ore spawns on the Moon. Can't smelt (NO_SMELTING flag). EBF auto-recipe removed below.
-    // Mond is the ONLY path to desh ingot — functions as an infrastructure check
-    // player must build HV chemical reactors and establish CO production before using desh
-    // net CO loss ~50 mB/cycle; manganese and cobalt are byproduct rewards
+    // desh mond process
+    // no smelting flag set
+    // mond is only path to desh ingot
+    // requires HV chemical reactors and CO production
+    // ~50 mB CO net loss per cycle
 
-    // removes auto-generated gtceu ebf recipe so mond is mandatory
+    // removes auto ebf so mond is mandatory
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
 
-    // Step 1: carbonyl formation (low temp, CO atmosphere)
+    // step 1 carbonyl formation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
         .itemInputs('1x gtceu:desh_dust')
         .inputFluids(Fluid.of('gtceu:carbon_monoxide', 400))
@@ -20,18 +20,17 @@ zServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Step 2: carbonyl condensation — gas cooled to solid, impurities expelled as byproducts
-    // condensed form is mond-exclusive; raw desh dust has no ebf route (removed above)
+    // step 2 condensation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_condensation')
         .inputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
         .itemOutputs('1x kubejs:condensed_desh_carbonyl')
-        .chancedOutput('gtceu:manganese_dust', 7500, 500)    // lunar regolith inclusion
-        .chancedOutput('gtceu:small_cobalt_dust', 2500, 250) // nickel-iron meteorite trace
+        .chancedOutput('gtceu:manganese_dust', 7500, 500)
+        .chancedOutput('gtceu:small_cobalt_dust', 2500, 250)
         .outputFluids(Fluid.of('gtceu:carbon_monoxide', 350))
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Step 3: EBF decomposition — heat drives off remaining CO, leaves pure desh ingot
+    // step 3 EBF decomposition
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
         .itemOutputs('1x ad_astra:desh_ingot')
@@ -39,9 +38,7 @@ zServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Moon sand centrifuge → silicon
-    // Lunar regolith is SiO2-rich anorthosite. Primary source of Silicon at HV
-    // before cleanroom silicon boule process is online.
+    // moon sand to silicon
     event.recipes.gtceu.centrifuge('moon_sand_silicon')
         .itemInputs('4x ad_astra:moon_sand')
         .itemOutputs('2x gtceu:silicon_dust')
@@ -51,18 +48,18 @@ zServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    //replaces electrum wire in micro-flavored ev circuit recipe with desh wire
+    // replace electrum wire in micro processor recipe with desh wire
     event.replaceInput({ output: 'gtceu:micro_processor_computer' }, 'gtceu:fine_electrum_wire', 'gtceu:fine_desh_wire')
 
-    // --- Tier 1 Rocket (HV/Moon gate) ---
-    // three layers of recipe depth
-    // layer 1: ebf alloy + gt assembler sub-components, all from overworld hv materials
-    // layer 2: lunar rocket alloy upgrades to vanilla nose cone and fins
-    // layer 3: nasa workbench final assembly consuming all of the above
+    // tier 1 rocket
+    // three layers
+    // layer 1 ebf alloy and assembler sub-components
+    // layer 2 lunar rocket alloy nose cone and fins
+    // layer 3 nasa workbench assembly
 
-    // lunar rocket alloy: ultimet (cobalt-chrome superalloy) + aluminium, blasted at hv ebf
-    // ultimet itself requires a prior ebf step from cobalt/chrome/molybdenum/tungsten constituents
-    // intentionally overworld-only so this can be built before the first moon trip
+    // ultimet + aluminium at HV EBF
+    // ultimet requires prior EBF from Co Cr Mo W
+    // overworld only so rocket builds before first moon trip
     event.recipes.gtceu.electric_blast_furnace('lunar_rocket_alloy_ebf')
         .itemInputs(
             '4x gtceu:ultimet_dust',
@@ -75,7 +72,6 @@ zServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // hull sections
-    // lunar rocket alloy outer skin over stainless steel inner frame, rubber-sealed at joints
     event.recipes.gtceu.assembler('rocket_hull_section')
         .itemInputs(
             '2x gtceu:lunar_rocket_alloy_plate',
@@ -87,8 +83,6 @@ zServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // combustion engine
-    // alloy long rods form the combustion chamber walls
-    // hv motor drives the turbine, hv pump feeds propellant
     event.recipes.gtceu.assembler('rocket_combustion_engine')
         .itemInputs(
             '2x gtceu:long_lunar_rocket_alloy_rod',
@@ -100,9 +94,7 @@ zServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // pressurized fuel tank
-    // aluminium body for low weight, stainless collar at attach points
-    // hv pump maintains operating pressure, rubber seals prevent blow-by
+    // fuel tank
     event.recipes.gtceu.assembler('pressurized_rocket_tank')
         .itemInputs(
             '4x gtceu:aluminium_plate',
@@ -115,8 +107,6 @@ zServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // guidance module
-    // hv circuit core with emitter/sensor telemetry pair and glass lens array
-    // pattern: L E L / G C G / L S L
     event.shaped('kubejs:rocket_guidance_module', [
         'LEL',
         'GCG',
@@ -129,8 +119,7 @@ zServerEvents.recipes(event => {
         S: 'gtceu:hv_sensor'
     })
 
-    // layer 2 — nose cone and fins now require lunar rocket alloy instead of steel
-
+    // layer 2 nose cone and fins
     event.remove({ id: 'ad_astra:rocket_nose_cone' })
     event.shaped('ad_astra:rocket_nose_cone', [
         ' R ',
@@ -150,15 +139,7 @@ zServerEvents.recipes(event => {
         L: 'gtceu:lunar_rocket_alloy_plate'
     })
 
-    // layer 3 — nasa workbench final assembly
-    // slot layout mirrors vanilla tier 1 rocket structure:
-    //   slot 1: nose cone
-    //   slots 2-6: hull sections (5)
-    //   slot 7: guidance module
-    //   slots 8 11 12 14: fins (4)
-    //   slots 9 10: pressurized tanks (2)
-    //   slot 13: combustion engine
-
+    // layer 3 nasa workbench
     event.remove({ id: 'ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench' })
     event.custom({
         "type": "ad_astra:nasa_workbench",
@@ -181,8 +162,7 @@ zServerEvents.recipes(event => {
         "result": {"count": 1, "id": "ad_astra:tier_1_rocket"}
     }).id('kubejs:gt_tier_1_rocket')
 
-    //adds moon sand to the plascrete and cleanroom glass recipes
-    //so that the cleanroom cant be made until you go to the #moon
+    // gate cleanroom behind moon
     event.remove({ id: 'gtceu:assembler/plascrete' })
     event.remove({ id: 'gtceu:assembler/cleanroom_glass' })
     event.recipes.gtceu.assembler('moon_plascrete')
