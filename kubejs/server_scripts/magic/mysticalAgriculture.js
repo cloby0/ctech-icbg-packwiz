@@ -7,10 +7,10 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mysticalagriculture:inferium_essence' })
     event.remove({ output: 'mysticalagriculture:prosperity_shard' })
 
-    const F = 'ars_nouveau:fire_essence'
-    const E = 'ars_nouveau:earth_essence'
-    const W = 'ars_nouveau:water_essence'
-    const A = 'ars_nouveau:air_essence'
+    const F = '#kubejs:fire_essences'
+    const E = '#kubejs:earth_essences'
+    const W = '#kubejs:water_essences'
+    const A = '#kubejs:air_essences'
     const ma = n => `mysticalagriculture:${n}_essence`
 
     function sourceRound(n) { return (n / 100) > 20 ? n / 100 : 20 }
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
         [ma('manasteel'),       ma('silver'),    [ma('mithril'), ma('mithril'), 'botania:manasteel_ingot'],               10000],
         [ma('terrasteel'),      ma('manasteel'), [ma('manasteel'), ma('manasteel'), 'botania:terrasteel_ingot'],           12000],
         [ma('elementium'),      ma('terrasteel'),[ma('terrasteel'), ma('terrasteel'), 'botania:elementium_ingot'],         15000],
-        [ma('gaia_spirit'),     ma('elementium'),[ma('elementium'), ma('elementium'), 'botania:gaia_spirit_ingot'],        20000],
+        [ma('gaia_spirit'),     ma('elementium'),[ma('elementium'), ma('elementium'), 'botania:gaia_ingot'],        20000],
 
         // tier 6 - boss drops; drop consumed in manual chamber, reusable in GT machine
         [ma('nether_star'),     ma('soulium'),   [ma('soulium'), ma('soulium'), ma('soulium'), 'minecraft:nether_star'],   15000],

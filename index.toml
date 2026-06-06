@@ -826,7 +826,7 @@ hash = "b695d5749ee7cbbc7dc9a8430177aec7aab9a4828b390387ebe3810893f57e41"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "1e1a1408b8b15bcbb8f34d0231c8877efa04515e7b2569d9dfadb1a164d55e9d"
+hash = "46539ed2868d12744e65742819e6cdd574e14494932b87da1973b26ba5a526e1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
