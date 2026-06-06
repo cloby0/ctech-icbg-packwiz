@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     })
 
     // Abstract Metal elemental synthesis — single element (shapeless crafting)
-    event.shapeless('gtceu:gold_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
+    event.shapeless('minecraft:gold_ingot',   ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
     event.shapeless('gtceu:tin_ingot',       ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'])
     event.shapeless('gtceu:lead_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'])
     event.shapeless('gtceu:aluminium_ingot', ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'])

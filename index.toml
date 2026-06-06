@@ -794,7 +794,7 @@ hash = "88406d331d1e73e8d4763955ee9d1bc94ccd947caa8039a0bf65c40fb78f9759"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "64f925e708005e76310908eb1d91fdbdb3194034251fa54c9ea469a348f07989"
+hash = "782f10ae82299393dd8fbd829d07db8aa00e5840d6f357dfb4f7140f29e50238"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -1453,7 +1453,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "bdcbcea23065e5b55defab083ebbae3963972d9ee57d8b5bf4ece2f67228bdb0"
+hash = "0bb0de824b7d63a75dea2b8a7fd6b859c2dd12bfef95741ced24415ca00c4d95"
 metafile = true
 
 [[files]]
