@@ -1,6 +1,6 @@
 GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
-//Functions
+// setIgnored tells GT "don't generate your own item for this material form, use this mod's item instead"
     function ingot (mat, item){
         TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get(mat), 
         () => Item.getItem(item))
@@ -27,12 +27,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     }
 
 
-    //just like doing it normally but makes some assumptions abt the namespace
+    // assumptionator: ingot/nugget/block only (botania doesn't ship plates)
     function assumptionator(material, namespace) {
         ingot(material, `${namespace}:${material}_ingot`);
         nugget(material, `${namespace}:${material}_nugget`);
         block(material, `${namespace}:${material}_block`);
     }
+    // adAstraFixer: includes plate because Ad Astra ships plate items unlike most magic mods
     function adAstraFixer(material) {
         ingot(material, `ad_astra:${material}_ingot`)
         nugget(material, `ad_astra:${material}_nugget`)
@@ -52,7 +53,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     gem('source', 'ars_nouveau:source_gem')
 
-    gem('source', 'ars_nouveau:source_gem')
+    gem('source', 'ars_nouveau:source_gem') // duplicate, harmless
 
     gem('gravitite', 'aether_redux:gravitite_ingot')
 

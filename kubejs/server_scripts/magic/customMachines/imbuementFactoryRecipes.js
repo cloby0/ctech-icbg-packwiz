@@ -1,4 +1,6 @@
 //priority: 1
+// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla/mod-added imbuement recipes.
+// any ars_nouveau:imbuement recipe added by a tier script needs a manual addImbuementRecipe call below.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -92,6 +94,7 @@ ServerEvents.recipes(event => {
     })
 
 
+    // manual mirrors for recipes defined in tier scripts (not caught by forEachRecipe above)
     addImbuementRecipe(event, {
         input: { item: "gtceu:concepts_bucket" },
         output: "gtceu:metal_form_bucket",
@@ -184,6 +187,27 @@ ServerEvents.recipes(event => {
         source: 750,
         pedestalItems: [
             { item: { item: "reliquary:mercy_cross"} }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:elven_concentrate' },
+        output: 'kubejs:elementite_dust',
+        source: 8000,
+        pedestalItems: [
+            { item: { item: 'ars_nouveau:water_essence' } },
+            { item: { item: 'ars_nouveau:air_essence' } },
+            { item: { item: 'gtceu:luminessence_dust' } }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:vengeful_gaia_spirit' },
+        output: 'kubejs:soul_of_gaia',
+        source: 20000,
+        pedestalItems: [
+            { item: { item: 'mysticalagriculture:wither_skeleton_essence', count: 2 } },
+            { item: { item: 'mysticalagriculture:enderman_essence', count: 2 } }
         ]
     }, index++)
 })

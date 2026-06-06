@@ -19,6 +19,7 @@ StartupEvents.registry('item', event => {
     event.create('living_metalloid')
 
     event.create('weak_elementium_dust')
+    event.create('elven_concentrate')
     event.create('raw_elementite')
     event.create('elementite_dust')
 

@@ -1,4 +1,6 @@
 //priority: 1
+// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla/mod-added recipes.
+// any ars_nouveau:enchanting_apparatus recipe added by a tier script needs a manual addEnchantingRecipe call below.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -109,6 +111,7 @@ ServerEvents.recipes(event => {
         index++
     })
 
+    // manual mirrors for recipes defined in tier scripts (not caught by forEachRecipe above)
     addEnchantingRecipe(event, {
         reagent: [{ item: 'minecraft:shears'}],
         output: { item: 'reliquary:shears_of_winter'},
@@ -228,6 +231,83 @@ ServerEvents.recipes(event => {
             {item: { item: 'mysticalagriculture:nature_essence'}},
             {item: { item: 'mysticalagriculture:water_essence'}},
             {item: { item: 'reliquary:fertile_essence'}}
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "kubejs:elementite_dust" }],
+        output: { item: "kubejs:raw_elementite"},
+        sourceCost: 15000,
+        pedestalItems: [
+            {item: { item: 'gtceu:abstract_metal_ingot' }}
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: "kubejs:soul_of_gaia" }],
+        output: { item: "kubejs:boundless_gaia_spirit_ingot"},
+        sourceCost: 20000,
+        pedestalItems: [
+            {item: { item: 'botania:elementium_block', count: 8 }}
+        ]
+    }, index++)
+
+    // Abstract Metal multi-element synthesis
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:bismuth_ingot' },
+        sourceCost: 3000,
+        pedestalItems: [
+            { tag: 'kubejs:fire_essences' },
+            { tag: 'kubejs:water_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:copper_ingot' },
+        sourceCost: 3000,
+        pedestalItems: [
+            { tag: 'kubejs:fire_essences' },
+            { tag: 'kubejs:earth_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:silver_ingot' },
+        sourceCost: 3000,
+        pedestalItems: [
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:air_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:magnesium_ingot' },
+        sourceCost: 3000,
+        pedestalItems: [
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:air_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:holy_silver_ingot' },
+        sourceCost: 4000,
+        pedestalItems: [
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:air_essences' },
+            { tag: 'forge:gems/ambrosium' }
+        ]
+    }, index++)
+
+    // Sorcerer QoL: raw source ore -> source gem
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:raw_source' }],
+        output: { item: 'ars_nouveau:source_gem' },
+        sourceCost: 3000,
+        pedestalItems: [
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:fire_essences' }
         ]
     }, index++)
 })

@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         [ma('graphite'),        ma('coal'),      [F, F, F, F],                  4000],
         [ma('apatite'),         ma('limestone'), [W, E],                        2500],
         [ma('amethyst'),        ma('deepslate'), [W, W, W],                     3000],
-        [ma('prismarine'),      ma('limestone'), [W, W, W, W],                  3500],
+        [ma('prismarine'),      ma('limestone'), [W, W, W, A],                  3500],
         [ma('lapis_lazuli'),    ma('deepslate'), [W, W, A],                     3000],
         [ma('sky_stone'),       ma('deepslate'), [A, A, A, F],                  4000],
         [ma('certus_quartz'),   ma('nether_quartz'), [W, W, A],                 3000],
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         [ma('rabbit'),          ma('dirt'),      [A, A],                        2000],
         [ma('slime'),           ma('dirt'),      [W, W, W],                     2500],
         [ma('zombie'),          ma('dirt'),      [W, W],                        2500],
-        [ma('skeleton'),        ma('coal'),      [A, A, A],                     2500],
+        [ma('skeleton'),        ma('coal'),      [A, A, A, A],                  2500],
         [ma('creeper'),         ma('nature'),    [F, F],                        2500],
         [ma('spider'),          ma('coal'),      [E, E],                        2500],
         [ma('blaze'),           ma('glowstone'), [F, F],                        3000],
@@ -157,11 +157,12 @@ ServerEvents.recipes(event => {
 
     seedEssences.forEach(essence => {
         const seedId = essence.replace('_essence', '_seeds')
-        const ingredients = [{ item: 'minecraft:wheat_seeds' }]
+        const ingredients = []
         for (let i = 0; i < 16; i++) ingredients.push({ item: essence })
         event.custom({
             type: 'botania:petal_apothecary',
             ingredients: ingredients,
+            reagent: { item: 'minecraft:wheat_seeds' },
             output: { item: seedId }
         })
     })

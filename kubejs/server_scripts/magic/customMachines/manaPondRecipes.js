@@ -1,4 +1,6 @@
 //priority: 1
+// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla botania:mana_infusion recipes.
+// any mana_infusion recipe added by a tier script needs a manual addManaPondRecipe call below.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -15,6 +17,7 @@ function manaRound(num) {
     }
 }
 
+// maps catalyst block to GT circuit number: 1=no catalyst, 2=alchemy, 3=conjuration
 function catalystify(str) {
     if (str === "botania:alchemy_catalyst") {
         return 2;
@@ -25,7 +28,7 @@ function catalystify(str) {
     }
 }
 
-// one mana = how many source?
+// conversion ratio: 1 mana = this many source fluid units (tweak to change GT machine cost relative to botania)
 let source_rate = 1
 
 function addManaPondRecipe(event, crecipe) {
@@ -70,6 +73,7 @@ function addManaPondRecipe(event, crecipe) {
             .EUt(7680 + Math.round(mana / 25))
             .circuit(catalystify(catalystBlock))
 
+        // conjuration duplicates (input stays in, output added); alchemy transforms (input consumed)
         if (isConjuration) {
             r.notConsumable(itemInput)
             .itemOutputs(`1x ${outputId}`)
@@ -94,5 +98,20 @@ ServerEvents.recipes(event => {
         mana: 3500,
         input: { item: 'gtceu:abstract_metal_ingot' },
         output: { item: 'botania:manasteel_ingot' }
+    })
+
+    // Alchemist QoL: glowstone block -> 4x luminessence dust
+    addManaPondRecipe(event, {
+        mana: 2000,
+        input: { item: 'minecraft:glowstone' },
+        output: { count: 4, item: 'gtceu:luminessence_dust' }
+    })
+
+    // Alchemist QoL: silver [alchemy catalyst] -> holy silver ingot
+    addManaPondRecipe(event, {
+        mana: 3000,
+        input: { tag: 'forge:ingots/silver' },
+        catalyst: { block: 'botania:alchemy_catalyst' },
+        output: { item: 'gtceu:holy_silver_ingot' }
     })
 })
