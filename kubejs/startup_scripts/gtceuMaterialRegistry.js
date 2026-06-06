@@ -75,6 +75,12 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
+    // components() dispatches to eager GTMaterials.get() and fails for custom materials
+    // MaterialStackWrapper.fromString dispatches to kjs$components which stores a lazy Supplier
+    // that resolves after the full event so custom materials are in the registry
+    const MSW = Java.type('com.gregtechceu.gtceu.integration.kjs.helpers.MaterialStackWrapper')
+    function c(str) { return MSW.fromString(str) }
+
     // aether
 
     event.create('ambrosium')
@@ -201,7 +207,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('manasteel')
         .color(0x67b9ee)
         .ingot()
-        .components('1x prima_materia', '2x source')
+        .components(c('1x prima_materia'), c('2x source'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -215,7 +221,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x55f609)
         .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
-        .components('3x manasteel', '2x source')
+        .components(c('3x manasteel'), c('2x source'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -228,7 +234,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
-        .components('2x terrasteel', '1x luminessence')
+        .components(c('2x terrasteel'), c('1x luminessence'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -379,8 +385,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // magic-tech superconductor alloys
     // lower amperage tradeoff vs vanilla tier superconductors
-    // EBF recipes auto-generated from components
-    // verify gtceu names for ruridit hss_g enriched_naquadah americium naquadria on load
+    // uses MaterialStackWrapper.fromString via c() helper for lazy resolution of custom materials
     // LuV+ blast temps require naquadah tier coils or higher
 
     // MV lead sourcite 1A alloy smelter
@@ -390,7 +395,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x9E7FC0)
         .secondaryColor(0x5C4A80)
         .iconSet(GTMaterialIconSet.SHINY)
-        .components('2x lead', '1x source')
+        .components(c('2x lead'), c('1x source'))
         .cableProperties(GTValues.VA[GTValues.MV], 1, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -406,7 +411,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x8AAA70)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1200)
-        .components('1x holy_silver', '2x nickel')
+        .components(c('1x holy_silver'), c('2x nickel'))
         .cableProperties(GTValues.VA[GTValues.HV], 2, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -422,7 +427,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x4A7830)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1400)
-        .components('1x prima_materia', '2x ruridit')
+        .components(c('1x prima_materia'), c('2x ruridit'))
         .cableProperties(GTValues.VA[GTValues.EV], 4, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -438,7 +443,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x255472)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(4500, "high", GTValues.VA[GTValues.IV], 1600)
-        .components('3x manasteel', '1x hss_g')
+        .components(c('3x manasteel'), c('1x hssg'))
         .cableProperties(GTValues.VA[GTValues.IV], 4, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -454,7 +459,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x1A5C20)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(6000, "high", GTValues.VA[GTValues.LuV], 1800)
-        .components('2x terrasteel', '1x enriched_naquadah')
+        .components(c('2x terrasteel'), c('1x enriched_naquadah'))
         .cableProperties(GTValues.VA[GTValues.LuV], 8, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -470,7 +475,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x7A3070)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(7500, "high", GTValues.VA[GTValues.ZPM], 2000)
-        .components('2x elementium', '1x americium')
+        .components(c('2x elementium'), c('1x americium'))
         .cableProperties(GTValues.VA[GTValues.ZPM], 8, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -486,7 +491,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x5A1880)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 2400)
-        .components('1x gaia_spirit', '2x naquadria')
+        .components(c('1x gaia_spirit'), c('2x naquadria'))
         .cableProperties(GTValues.VA[GTValues.UV], 16, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
