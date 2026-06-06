@@ -242,7 +242,7 @@ hash = "0cb93003b0d433b20d3bb6ac647b547175a227a4e323f224a5640f7742b79de4"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rocket_hull_section.png"
-hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
+hash = "3c3efca8f9e290a9011abb03abe142feb9b7906676b8fac0c2bbc93400b448e3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
@@ -898,7 +898,7 @@ hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "7cb2f5f3f8aa00088cbdd1f5ed4e2fcf8eea7371ca82b7069b9823c65082ea6a"
+hash = "fd741d734e57262b83dab78917c2e11d64e37263142432b8b0329689d65ee625"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -937,6 +937,10 @@ file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
 hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
+file = "kubejs/startup_scripts/fluidRegistry.js"
+hash = "58338fffc2fbc400127c24b24c27e2ae833ec4cada6d5b0919d08f56a615f7ec"
+
+[[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
 hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
@@ -946,7 +950,7 @@ hash = "98fedbe0af7bf6eafc53b5cc1356c1e7365c8c5470bcf0a63164f0383206aaa9"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "cbb7483e345703819c7a6850020661ad299d3033cb973374fe824bfc0288fe68"
+hash = "a31435bf057798fcb7994cc0abad37379a154a6cf8cb8d68b6f40740f46c2015"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

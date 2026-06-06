@@ -37,4 +37,10 @@ StartupEvents.registry('item', event => {
     event.create('rocket_combustion_engine')
     event.create('pressurized_rocket_tank')
     event.create('rocket_guidance_module')
+
+    //magic-enchanted boules (tech-magic interop)
+    event.create('hallowed_silicon_boule')
+    event.create('primal_phosphorus_boule')
+    event.create('verdant_naquadah_boule')
+    event.create('gaian_neutronium_boule')
 })
