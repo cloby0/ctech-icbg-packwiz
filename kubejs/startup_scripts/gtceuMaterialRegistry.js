@@ -78,7 +78,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // components() dispatches to eager GTMaterials.get() and fails for custom materials
     // MaterialStackWrapper.fromString dispatches to kjs$components which stores a lazy Supplier
     // that resolves after the full event so custom materials are in the registry
-    const MSW = Java.type('com.gregtechceu.gtceu.integration.kjs.helpers.MaterialStackWrapper')
+    const MSW = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.helpers.MaterialStackWrapper')
     function c(str) { return MSW.fromString(str) }
 
     // aether
