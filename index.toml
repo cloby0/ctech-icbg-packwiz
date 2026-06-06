@@ -866,7 +866,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "1964cb6be13ceb9eac0e4e9817b690520625df6e2fca240967eceb85e80bb92b"
+hash = "4cb65f9ff1bd76538f186000a2194d01b2d8de34140e56423e0626c1fa7c0cdd"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -914,7 +914,7 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "dd0e60eebc4d0fed719e0b1f3920639b5b1e3606043025b4c1067bd462220e38"
+hash = "8aac7159ee3ef1cd706ef34f61c79a9b721afa4e583b8d7b876cefa189d24fff"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
@@ -2350,6 +2350,11 @@ metafile = true
 [[files]]
 file = "mods/simple-clouds.pw.toml"
 hash = "5b8e9b68de4791fc875de20080977ea4103f5da72adc3a4ff9e541992b24826a"
+metafile = true
+
+[[files]]
+file = "mods/simple-structure-ad-astra.pw.toml"
+hash = "1cd239ae255da1d564d2e46851d08eb693f7bfec44f765d624421749f673aaea"
 metafile = true
 
 [[files]]

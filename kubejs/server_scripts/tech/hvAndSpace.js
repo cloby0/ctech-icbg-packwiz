@@ -1,5 +1,8 @@
-ServerEvents.recipes(event => {
+zServerEvents.recipes(event => {
 
+    event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_raw_desh' })
+    event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_moon_desh_ore' })
+    event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_deepslate_desh_ore' })
     // --- Desh Mond process (Moon/HV tier) ---
     // Desh ore spawns on the Moon. Can't smelt (NO_SMELTING flag). EBF auto-recipe removed below.
     // Mond is the ONLY path to desh ingot — functions as an infrastructure check
