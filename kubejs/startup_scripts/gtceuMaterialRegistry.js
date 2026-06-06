@@ -102,7 +102,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x9455F2)
         .secondaryColor(0x431686)
         .iconSet(GTMaterialIconSet.EMERALD)
-        .components('2x silicon', '1x vanadium')
+        .components('1x silicon', '2x oxygen', '1x vanadium')
         .flags(
             GTMaterialFlags.GENERATE_LENS,
             GTMaterialFlags.GENERATE_ROD,
@@ -164,6 +164,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xfafa5d)
         .iconSet(GTMaterialIconSet.SHINY)
+        .components(c('2x gold'), c('1x redstone'), c('1x source'))
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
     event.create('source')
         .gem()
@@ -184,12 +186,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xe7f79e)
         .iconSet(GTMaterialIconSet.BRIGHT)
+        .components(c('1x silver'), c('2x luminessence'), c('1x ambrosium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.GENERATE_FOIL
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
     event.create('prima_materia')
