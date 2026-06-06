@@ -206,7 +206,7 @@ hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "6bc57c8797ce995023ba20f91b7e4acb1e6ca4a77973b92902a27f7885c779f3"
+hash = "ae5d4cd70cd6532afa9fb8e9a22540705f65d6a875bc1d4c1d6781c09f8b5864"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
@@ -914,7 +914,7 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "f876c857339948f50d6dd74c75a4df753009fd9ab5bda39a833784bcd2edc1bb"
+hash = "df835b21cccfa11cbd829126dafc67bbd52fd1acfd10d3b5d8f38c15beffd9af"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

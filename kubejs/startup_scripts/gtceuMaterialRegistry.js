@@ -47,6 +47,30 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Ma')
         .isIsotope(false)
 
+    event.create('ambrosium')
+        .protons(40)
+        .neutrons(155)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Ab')
+        .isIsotope(false)
+
+    event.create('gravitite')
+        .protons(42)
+        .neutrons(160)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Gv')
+        .isIsotope(false)
+
+    event.create('veridium')
+        .protons(44)
+        .neutrons(165)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Vd')
+        .isIsotope(false)
+
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -55,6 +79,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('ambrosium')
         .gem()
+        .element('ambrosium')
         .color(0xf1ef5f)
         .iconSet(GTMaterialIconSet.RUBY)
         .flags(
@@ -64,17 +89,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('gold', 'sulfur')
         .washedIn('gtceu:mercury')
 
+    // zanite: purple vanadium silicate gem (SiO2 + V chromophore)
     event.create('zanite')
         .gem()
         .ore()
         .color(0x9455F2)
         .secondaryColor(0x431686)
         .iconSet(GTMaterialIconSet.EMERALD)
+        .components('2x silicon', '1x vanadium')
         .flags(
             GTMaterialFlags.GENERATE_LENS,
-            GTMaterialFlags.GENERATE_ROD
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
-        .addOreByproducts('silicon', 'vanadium')
+        .addOreByproducts('silicon', 'vanadium', 'source')
         .washedIn('gtceu:mercury')
 
     event.create('mithril')
@@ -91,6 +119,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('gravitite')
         .ingot()
         .ore()
+        .element('gravitite')
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
@@ -98,18 +127,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .washedIn('gtceu:sodium_persulfate')
         .separatedInto('chromium', 'manganese')
 
+    // skyjade: beryl-family silicate (Be-Ca silicate, like emerald/aquamarine family)
     event.create('skyjade')
         .gem()
         .ore()
         .color(0xCFF095)
         .secondaryColor(0x7d9f66)
         .iconSet(GTMaterialIconSet.DIAMOND)
+        .components('2x silicon', '1x beryllium', '1x calcium')
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        )
         .addOreByproducts('silicon', 'calcium', 'beryllium')
         .washedIn('gtceu:mercury')
 
     event.create('veridium')
         .ingot()
         .ore()
+        .element('veridium')
         .color(0x446AAC)
         .secondaryColor(0x25366A)
         .iconSet(GTMaterialIconSet.METALLIC)
@@ -166,7 +201,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('manasteel')
         .color(0x67b9ee)
         .ingot()
-        .components('4x iron', '1x source')
+        .components('1x prima_materia', '2x source')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -180,7 +215,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x55f609)
         .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
-        .components('3x manasteel', '1x prima_materia')
+        .components('3x manasteel', '2x source')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -193,7 +228,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
-        .components('2x terrasteel', '1x prima_materia', '1x source')
+        .components('2x terrasteel', '1x luminessence')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
