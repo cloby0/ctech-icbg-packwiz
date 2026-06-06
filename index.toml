@@ -949,13 +949,12 @@ file = "mods/SilentCompat-forge-1.20.1-1.4.0.jar"
 hash = "739fb3f43c8e70985ce24eb8c8b03d75b2b088feabef14bfd572891756633fff"
 
 [[files]]
-file = "mods/accents.pw.toml"
-hash = "f635d5a2d8d3bdcc9a18810f02a7f67235ededb0b7b921ebbd420be1612f301c"
-metafile = true
+file = "mods/Simple Structure Ad Astra 1.20.4 1.2.jar"
+hash = "79ddce120f20c48f5c7de72efdbbd20440e23487cfc30d30fd073dff36572a2a"
 
 [[files]]
-file = "mods/ad-astra-structures-overhaul.pw.toml"
-hash = "421a7e78b70a3fae38a42cb21ff01ed0e3e3c415410a52cf550fd015df763f0b"
+file = "mods/accents.pw.toml"
+hash = "f635d5a2d8d3bdcc9a18810f02a7f67235ededb0b7b921ebbd420be1612f301c"
 metafile = true
 
 [[files]]
@@ -2350,11 +2349,6 @@ metafile = true
 [[files]]
 file = "mods/simple-clouds.pw.toml"
 hash = "5b8e9b68de4791fc875de20080977ea4103f5da72adc3a4ff9e541992b24826a"
-metafile = true
-
-[[files]]
-file = "mods/simple-structure-ad-astra.pw.toml"
-hash = "1cd239ae255da1d564d2e46851d08eb693f7bfec44f765d624421749f673aaea"
 metafile = true
 
 [[files]]
