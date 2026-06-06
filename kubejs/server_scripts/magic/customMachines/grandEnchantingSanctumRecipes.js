@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
     }, index++)
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:magnesium_ingot' },
+        output: { item: 'gtceu:magnesium_dust' },
         sourceCost: 3000,
         pedestalItems: [
             { tag: 'kubejs:earth_essences' },

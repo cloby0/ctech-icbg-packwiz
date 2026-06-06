@@ -133,7 +133,7 @@ GTCEuServerEvents.oreVeins(event => {
 
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.Amethyst, 4, 40, 95)
-            .withBlock(GTMaterials.Fluorite, 3, 20, 55)
+            .withBlock(GTMaterials.Calcite, 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Amethyst)

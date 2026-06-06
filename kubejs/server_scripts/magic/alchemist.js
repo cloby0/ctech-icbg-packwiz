@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         'gtceu:abstract_metal_ingot', 'gtceu:silver_ingot', 3000)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:earth_essences', '#kubejs:air_essences'],
-        'gtceu:abstract_metal_ingot', 'gtceu:magnesium_ingot', 3000)
+        'gtceu:abstract_metal_ingot', 'gtceu:magnesium_dust', 3000)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
         'gtceu:abstract_metal_ingot', 'gtceu:holy_silver_ingot', 4000)
