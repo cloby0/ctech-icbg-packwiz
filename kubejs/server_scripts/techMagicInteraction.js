@@ -168,35 +168,38 @@ ServerEvents.recipes(event => {
         toAdd.push(JSON.parse(jsonStr))
     })
 
-    toAdd.forEach(json => {
-        // fluid is serialized as {"tag":"forge:soldering_alloy"} — replace key+value pair
-        // so the result becomes {"fluid":"kubejs:arcane_solder"} in the same value array
-        // Rhino has no String.replaceAll — use regex with /g flag instead
-        const modified = JSON.parse(
-            JSON.stringify(json).replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
-        )
-
-        // recursively double all "count" fields inside the outputs subtree
-        // uses for..in to avoid Object.fromEntries/Object.entries (not in Rhino)
-        const doubleOutputCounts = function(obj) {
-            if (!obj || typeof obj !== 'object') return obj
-            if (Array.isArray(obj)) return obj.map(doubleOutputCounts)
-            const result = {}
-            for (const k in obj) {
-                if (k === 'count' && typeof obj[k] === 'number') {
-                    result[k] = obj[k] * 2
-                } else {
-                    result[k] = doubleOutputCounts(obj[k])
-                }
+    // recursively double all "count" fields inside the outputs subtree
+    // uses for..in to avoid Object.fromEntries/Object.entries (not in Rhino)
+    const doubleOutputCounts = function(obj) {
+        if (!obj || typeof obj !== 'object') return obj
+        if (Array.isArray(obj)) return obj.map(doubleOutputCounts)
+        const result = {}
+        for (const k in obj) {
+            if (k === 'count' && typeof obj[k] === 'number') {
+                result[k] = obj[k] * 2
+            } else {
+                result[k] = doubleOutputCounts(obj[k])
             }
-            return result
         }
+        return result
+    }
+
+    toAdd.forEach(function(rawJson) {
+        // recipe.json wraps all recipe fields under "data" key (KubeJS internal format)
+        // event.custom() passes directly to GTCEu's codec which expects fields at top level
+        // so unwrap "data" and re-add "type"
+        const source = rawJson.data !== undefined ? rawJson.data : rawJson
+
+        // fluid is serialized as {"tag":"forge:soldering_alloy"} inside value array
+        // replace key+value pair so result is {"fluid":"kubejs:arcane_solder"}
+        const modified = JSON.parse(
+            JSON.stringify(source).replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
+        )
+        modified.type = rawJson.type
 
         if (modified.outputs) modified.outputs = doubleOutputCounts(modified.outputs)
 
-        // drop original id — KubeJS assigns a new one in kubejs namespace
         delete modified.id
-
         event.custom(modified)
     })
 })

@@ -145,6 +145,10 @@ file = "config/gtceu.yaml"
 hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
 
 [[files]]
+file = "config/infernalmobs.cfg"
+hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
+
+[[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
@@ -898,7 +902,7 @@ hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "2e2c3f432bfd6989277d42aaf91d2920448a21b87a6e974a09ad9fe1613e9cc4"
+hash = "da309d9f858f20a3006fcefba9330990f633b692914760db43e08af4f60299c2"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
