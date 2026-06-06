@@ -153,6 +153,10 @@ file = "config/lootbeams-client.toml"
 hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
 
 [[files]]
+file = "config/mysticalcustomization/crops/luminessence.json"
+hash = "2da69bf75831c26c1f3eba075e56ea2d43293e61de667e22711f92d33aec183c"
+
+[[files]]
 file = "config/obscure_tooltips-client.toml"
 hash = "cb94292192d00ec02479bb58d409195e224709e8823438d62fc4c666e8d4b7b3"
 
@@ -819,6 +823,10 @@ hash = "f518696b64787432dc4ebd07614b4db80ee230f7c12a67748de9499694428811"
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
 hash = "b695d5749ee7cbbc7dc9a8430177aec7aab9a4828b390387ebe3810893f57e41"
+
+[[files]]
+file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
+hash = "1e1a1408b8b15bcbb8f34d0231c8877efa04515e7b2569d9dfadb1a164d55e9d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -2081,6 +2089,11 @@ metafile = true
 [[files]]
 file = "mods/mystical-agriculture.pw.toml"
 hash = "4be34dcd45b7d0260dcf6ab18e6cb96f17d65561a28941768c8181027611e081"
+metafile = true
+
+[[files]]
+file = "mods/mystical-customization.pw.toml"
+hash = "a1d0da80738a375d6a23ef806a8c076a3ba08b223df276be96c51645e3fc46c7"
 metafile = true
 
 [[files]]

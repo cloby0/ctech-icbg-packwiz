@@ -1,0 +1,13 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:5",
+  "ingredient": {
+    "item": "gtceu:luminessence_dust"
+  },
+  "color": "fafa5d",
+  "recipes": {
+    "crafting": false,
+    "infusion": false,
+    "reprocessor": false
+  }
+}
