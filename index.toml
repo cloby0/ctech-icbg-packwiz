@@ -210,7 +210,7 @@ hash = "6bc57c8797ce995023ba20f91b7e4acb1e6ca4a77973b92902a27f7885c779f3"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "229a24fb3c6e2db5ecec3667a76f826f9750b4bd76a516a0edfa23c806e63cfa"
+hash = "428f8c47c85d79fc8ebd6418ac84ba2e7520b208eb2ec978598399a342f91e46"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -866,7 +866,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "0a39591e13b10ba227697351473b9cbe043ecdcd46f1800490ea2154eb488df0"
+hash = "6634477f2bc5679acfa53146ed9e1dab853569a965509046a581941e16aace7e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -918,7 +918,7 @@ hash = "91cb9c2d80b42a673885b9b89f53d776bd967e71517dcb20198660769c981792"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "cbd13131309665adc57e59fbe8350f752614ddd2a1124f5843ed333a7b402263"
+hash = "cbb7483e345703819c7a6850020661ad299d3033cb973374fe824bfc0288fe68"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

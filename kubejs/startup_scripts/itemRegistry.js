@@ -29,6 +29,9 @@ StartupEvents.registry('item', event => {
 
     event.create('matter_energy_circuit')
 
+    //desh mond process intermediate
+    event.create('condensed_desh_carbonyl')
+
     //rocket components
     event.create('rocket_hull_section')
     event.create('rocket_combustion_engine')

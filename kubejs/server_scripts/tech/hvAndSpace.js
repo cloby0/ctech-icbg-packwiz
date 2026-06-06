@@ -1,9 +1,13 @@
 ServerEvents.recipes(event => {
 
     // --- Desh Mond process (Moon/HV tier) ---
-    // Desh ore spawns on the Moon. Can't smelt (NO_SMELTING). Standard path: macerate → EBF.
-    // Mond path adds CO-cycle purification that yields Manganese and Cobalt from lunar regolith.
-    // Net CO loss ~50 mB/cycle; byproducts are the reward for running the loop.
+    // Desh ore spawns on the Moon. Can't smelt (NO_SMELTING flag). EBF auto-recipe removed below.
+    // Mond is the ONLY path to desh ingot — functions as an infrastructure check
+    // player must build HV chemical reactors and establish CO production before using desh
+    // net CO loss ~50 mB/cycle; manganese and cobalt are byproduct rewards
+
+    // removes auto-generated gtceu ebf recipe so mond is mandatory
+    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
 
     // Step 1: carbonyl formation (low temp, CO atmosphere)
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
@@ -13,14 +17,23 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Step 2: carbonyl decomposition (higher temp, decomposes back to metal)
-    event.recipes.gtceu.chemical_reactor('desh_carbonyl_decomposition')
+    // Step 2: carbonyl condensation — gas cooled to solid, impurities expelled as byproducts
+    // condensed form is mond-exclusive; raw desh dust has no ebf route (removed above)
+    event.recipes.gtceu.chemical_reactor('desh_carbonyl_condensation')
         .inputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
-        .itemOutputs('1x gtceu:desh_dust')
-        .chancedOutput('gtceu:small_manganese_dust', 7500, 500) // lunar regolith inclusion
-        .chancedOutput('gtceu:small_cobalt_dust', 2500, 250)    // nickel-iron meteorite trace
-        .outputFluids(Fluid.of('gtceu:carbon_monoxide', 350))   // partial CO recovery
+        .itemOutputs('1x kubejs:condensed_desh_carbonyl')
+        .chancedOutput('gtceu:manganese_dust', 7500, 500)    // lunar regolith inclusion
+        .chancedOutput('gtceu:small_cobalt_dust', 2500, 250) // nickel-iron meteorite trace
+        .outputFluids(Fluid.of('gtceu:carbon_monoxide', 350))
         .duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Step 3: EBF decomposition — heat drives off remaining CO, leaves pure desh ingot
+    event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
+        .itemInputs('1x kubejs:condensed_desh_carbonyl')
+        .itemOutputs('1x gtceu:desh_ingot')
+        .blastFurnaceTemp(2700)
+        .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     // Moon sand centrifuge → silicon
@@ -75,7 +88,7 @@ ServerEvents.recipes(event => {
     // hv motor drives the turbine, hv pump feeds propellant
     event.recipes.gtceu.assembler('rocket_combustion_engine')
         .itemInputs(
-            '2x gtceu:lunar_rocket_alloy_long_rod',
+            '2x gtceu:long_lunar_rocket_alloy_rod',
             '4x gtceu:stainless_steel_plate',
             '1x gtceu:hv_electric_motor',
             '1x gtceu:hv_electric_pump'
