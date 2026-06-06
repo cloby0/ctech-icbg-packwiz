@@ -217,8 +217,32 @@ file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/element_attunement_stone.png"
+hash = "8fc2096dad962db29d83c66b32e7d6adef064a71bbc9e75d4201512994266f15"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
+hash = "58cd831e178a7c8c93940b522d1795d592d4b49eacbfc2531cc3cdd6f0c9d38a"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
 hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
+hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/rocket_combustion_engine.png"
+hash = "ef16a0aafc2478c275d526fcbd5afab399ecae163f1872ff6b4b25c13a3df4c8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/rocket_guidance_module.png"
+hash = "0cb93003b0d433b20d3bb6ac647b547175a227a4e323f224a5640f7742b79de4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/rocket_hull_section.png"
+hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
@@ -822,7 +846,7 @@ hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "f518696b64787432dc4ebd07614b4db80ee230f7c12a67748de9499694428811"
+hash = "f5229a2287531f56d50c9b59504c694e1c21cba4012b4eb73edde64e2d54c403"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -918,7 +942,7 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "761e5e4202fe47b6c0c6bac0550796c3f7071d450cdd8c8143e996fd238cbbf6"
+hash = "98fedbe0af7bf6eafc53b5cc1356c1e7365c8c5470bcf0a63164f0383206aaa9"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

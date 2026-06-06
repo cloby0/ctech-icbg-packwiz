@@ -140,7 +140,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xCFF095)
         .secondaryColor(0x7d9f66)
         .iconSet(GTMaterialIconSet.DIAMOND)
-        .components('2x silicon', '1x beryllium', '1x calcium')
+        .components('1x silicon', '2x oxygen', '1x beryllium', '1x calcium')
         .flags(
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )

@@ -16,18 +16,6 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "constructionwand:infinity_wand" });
 
-    event.replaceInput(
-        { input: 'aether_redux:gravitite_ingot' },
-        'aether_redux:gravitite_ingot',
-        'gtceu:gravitite_ingot'
-    )
-
-    event.replaceOutput(
-        { output: 'aether_redux:gravitite_ingot' },
-        'aether_redux:gravitite_ingot',
-        'gtceu:gravitite_ingot'
-    )
-
     event.recipes.ars_nouveau.imbuement(
         "#forge:gems/source",
         "reliquary:void_tear",
