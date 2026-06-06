@@ -1,4 +1,4 @@
-zServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
 
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_raw_desh' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_moon_desh_ore' })

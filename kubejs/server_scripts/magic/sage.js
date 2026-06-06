@@ -56,6 +56,6 @@ ServerEvents.recipes(event => {
             { "item": "botania:terrasteel_block" }
         ],
         "mana": 1000000,
-        "result": { "item": "gtceu:gaia_spirit_ingot" }
+        "result": { "item": "botania:gaia_ingot" }
     })
 })

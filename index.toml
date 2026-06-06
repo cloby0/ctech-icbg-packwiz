@@ -834,7 +834,7 @@ hash = "fc5836b5db66a60792a84f5feeb10a5988f91b7762719d6a693abb7df3c5ffcc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "2be31b3e37b7e057be67f3caa34066df995be27b5cabf2df0bea7b81ef273258"
+hash = "958be59ca50dad31856283f1dadd7b55c91eecbad5354878bafc0bc2954537f2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -866,7 +866,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "2fb80a1fd0d73754a97a576a4ddca6c43697c0a604783de8a5ac710e35228a90"
+hash = "a070eae518c1e90d90dafddce29016beb968351cecd487a80054567c5138d653"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
