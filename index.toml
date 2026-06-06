@@ -206,7 +206,11 @@ hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "d6c0b968cc35df3ea8a59a89a6cd39ecd5b9e36edf92143416039225c7def33d"
+hash = "1577c3065caefa775ded3307c040d47c73cdc93fcb8d92553c36c6d6809aeb59"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "c51c390ae7f21d6f22660ffb506bc721c96937ebd125dc7e34886a2e49419851"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -790,7 +794,7 @@ hash = "88406d331d1e73e8d4763955ee9d1bc94ccd947caa8039a0bf65c40fb78f9759"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "a957a9dbae95e8003c0035274503dc7330cce58226f78d293d7b2a9fdbd83f6a"
+hash = "420db0b64208a7b9f84dafee13315bd5edb11663a1a2b914c9a1637ad90552ef"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -802,7 +806,7 @@ hash = "a1ec00b7657733e487267c9fd26fc489f68f0541aa16f4a95df5b1306c5b56c2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "fef4d008b99d79cfa19bda3a21c984418252be60a5aa83ae5ebccd1638a46c68"
+hash = "592e389e6139e2ccdc2376aa5ec3d954eb84c6258ffb9b43be683e694e1770bf"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
@@ -866,7 +870,7 @@ hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "802a3d2a2e4bf873e1cb0f0af45865e958cc26db2a4237994c764b78d9d5daaf"
+hash = "4fb9966bd0c7eaba07f080c82b913d67139b9edc9c086d5cbd4b14e63e9d1c7a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"

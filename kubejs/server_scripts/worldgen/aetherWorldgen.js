@@ -112,7 +112,7 @@ GTCEuServerEvents.oreVeins(event => {
             .withBlock(GTMaterials.Sulfur, 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Glowstone)
+            .surfaceRock(GTMaterials.Sulfur)
             .placement("above")
             .density(0.4)
             .radius(5)

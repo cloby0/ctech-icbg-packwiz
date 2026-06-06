@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         'gtceu:abstract_metal_ingot', 'gtceu:bismuth_ingot', 3000)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:fire_essences', '#kubejs:earth_essences'],
-        'gtceu:abstract_metal_ingot', 'gtceu:copper_ingot', 3000)
+        'gtceu:abstract_metal_ingot', 'minecraft:copper_ingot', 3000)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:water_essences', '#kubejs:air_essences'],
         'gtceu:abstract_metal_ingot', 'gtceu:silver_ingot', 3000)

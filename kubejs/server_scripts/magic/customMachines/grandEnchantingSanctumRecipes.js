@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
     }, index++)
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:copper_ingot' },
+        output: { item: 'minecraft:copper_ingot' },
         sourceCost: 3000,
         pedestalItems: [
             { tag: 'kubejs:fire_essences' },
