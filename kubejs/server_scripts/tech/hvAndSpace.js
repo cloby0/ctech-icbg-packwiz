@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     // Step 3: EBF decomposition — heat drives off remaining CO, leaves pure desh ingot
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
-        .itemOutputs('1x gtceu:desh_ingot')
+        .itemOutputs('1x ad_astra:desh_ingot')
         .blastFurnaceTemp(2700)
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])

@@ -866,7 +866,7 @@ hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "6634477f2bc5679acfa53146ed9e1dab853569a965509046a581941e16aace7e"
+hash = "27b0d869b9945a86f559b031dcc7e61f3f369cf1e523a88d130bc75ac71f72e7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
