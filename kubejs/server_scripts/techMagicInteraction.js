@@ -177,16 +177,19 @@ ServerEvents.recipes(event => {
         )
 
         // recursively double all "count" fields inside the outputs subtree
-        const doubleOutputCounts = obj => {
+        // uses for..in to avoid Object.fromEntries/Object.entries (not in Rhino)
+        const doubleOutputCounts = function(obj) {
             if (!obj || typeof obj !== 'object') return obj
             if (Array.isArray(obj)) return obj.map(doubleOutputCounts)
-            return Object.fromEntries(
-                Object.entries(obj).map(([k, v]) =>
-                    k === 'count' && typeof v === 'number'
-                        ? [k, v * 2]
-                        : [k, doubleOutputCounts(v)]
-                )
-            )
+            const result = {}
+            for (const k in obj) {
+                if (k === 'count' && typeof obj[k] === 'number') {
+                    result[k] = obj[k] * 2
+                } else {
+                    result[k] = doubleOutputCounts(obj[k])
+                }
+            }
+            return result
         }
 
         if (modified.outputs) modified.outputs = doubleOutputCounts(modified.outputs)
