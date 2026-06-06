@@ -53,7 +53,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     gem('source', 'ars_nouveau:source_gem')
 
-    gem('gravitite', 'aether_redux:gravitite_ingot')
+    ingot('gravitite', 'aether_redux:gravitite_ingot')
 
     gem('zanite', 'aether:zanite_gemstone')
     
@@ -63,6 +63,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     ingot('veridium', 'aether_redux:veridium_ingot')
     
-    
+    ingot('moon_cheese', 'ad_astra:cheese')
+    block('moon_cheese', 'ad_astra:cheese_block')
 
 })

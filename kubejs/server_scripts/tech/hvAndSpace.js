@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '4x gtceu:ultimet_dust',
             '2x gtceu:aluminium_dust',
-            '1x gtceu:chrome_dust'
+            '1x gtceu:chromium_dust'
         )
         .itemOutputs('4x gtceu:lunar_rocket_alloy_ingot')
         .blastFurnaceTemp(2700)
