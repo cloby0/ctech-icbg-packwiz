@@ -220,6 +220,30 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+//Moon Cheese — rare shallow vein, a geological mystery
+    event.add("kubejs:moon_cheese_vein_mn", vein => {
+        vein.weight(12)
+        vein.clusterSize(18)
+        vein.density(0.5)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.biomes("ad_astra:lunar_wastelands")
+        vein.heightRangeUniform(30, 80)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(4).mat(GTMaterials.get("moon_cheese")).size(2, 5))
+                .layer(l => l.weight(1).mat(GTMaterials.Calcite).size(1, 2))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get("moon_cheese"))
+            .placement("surface")
+            .density(0.15)
+            .radius(3)
+        )
+    })
+
 //Iron
     event.add("kubejs:iron_vein_mn", vein => {
         vein.weight(80)

@@ -28,4 +28,10 @@ StartupEvents.registry('item', event => {
     event.create('boundless_gaia_spirit_ingot')
 
     event.create('matter_energy_circuit')
+
+    //rocket components
+    event.create('rocket_hull_section')
+    event.create('rocket_combustion_engine')
+    event.create('pressurized_rocket_tank')
+    event.create('rocket_guidance_module')
 })

@@ -24,5 +24,10 @@
   "item.kubejs.soul_of_gaia": "Soul of Gaia",
   "item.kubejs.boundless_gaia_spirit_ingot": "Boundless Gaia Spirit Ingot",
 
-  "item.kubejs.matter_energy_circuit": "Matter-Energy Circuit"
+  "item.kubejs.matter_energy_circuit": "Matter-Energy Circuit",
+
+  "item.kubejs.rocket_hull_section": "Rocket Hull Section",
+  "item.kubejs.rocket_combustion_engine": "Rocket Combustion Engine",
+  "item.kubejs.pressurized_rocket_tank": "Pressurized Rocket Tank",
+  "item.kubejs.rocket_guidance_module": "Rocket Guidance Module"
 }

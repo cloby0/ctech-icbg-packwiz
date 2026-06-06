@@ -35,7 +35,8 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
-    //aether gregitizing
+    // --- Aether ---
+
     event.create('ambrosium')
         .gem()
         .color(0xf1ef5f)
@@ -44,6 +45,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LENS
         )
         .ore()
+        .addOreByproducts('gold', 'sulfur')   // holy light → gold; brimstone contrast
+        .washedIn('gtceu:mercury')
 
     event.create('zanite')
         .gem()
@@ -52,9 +55,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x431686)
         .iconSet(GTMaterialIconSet.EMERALD)
         .flags(
-            GTMaterialFlags.GENERATE_LENS, 
+            GTMaterialFlags.GENERATE_LENS,
             GTMaterialFlags.GENERATE_ROD
         )
+        .addOreByproducts('silicon', 'vanadium') // crystalline sharpness; hardening metal
+        .washedIn('gtceu:mercury')
 
     event.create('mithril')
         .ingot()
@@ -63,6 +68,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc7ebec)
         .secondaryColor(0x486b82)
         .iconSet(GTMaterialIconSet.SHINY)
+        .addOreByproducts('silver', 'platinum') // silver-like appearance; legendary rarity → PGMs
+        .washedIn('gtceu:mercury')              // silver amalgam process
+        .separatedInto('platinum', 'palladium')
 
     event.create('gravitite')
         .ingot()
@@ -70,24 +78,31 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
+        .addOreByproducts('lithium', 'chrome') // lightest metal (levitation); exotic aerospace alloy
+        .washedIn('gtceu:sodium_persulfate')
+        .separatedInto('chrome', 'manganese')
 
-    
     event.create('skyjade')
         .gem()
         .ore()
         .color(0xCFF095)
         .secondaryColor(0x7d9f66)
         .iconSet(GTMaterialIconSet.DIAMOND)
+        .addOreByproducts('silicon', 'calcium', 'beryllium') // jade = silicate; beryl family (emerald is beryl)
+        .washedIn('gtceu:mercury')
 
-    
     event.create('veridium')
         .ingot()
         .ore()
         .color(0x446AAC)
         .secondaryColor(0x25366A)
         .iconSet(GTMaterialIconSet.METALLIC)
+        .addOreByproducts('cobalt', 'chrome') // cobalt blue; viridian chrome green
+        .washedIn('gtceu:mercury')
+        .separatedInto('cobalt', 'chrome')
 
-    //progression materials
+    // --- Progression materials (no ore) ---
+
     event.create('luminessence')
         .dust()
         .color(0xfafa5d)
@@ -100,11 +115,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xE244C8)
         .iconSet(GTMaterialIconSet.QUARTZ)
         .flags(
-            GTMaterialFlags.GENERATE_LENS, 
-            GTMaterialFlags.NO_ORE_SMELTING, 
+            GTMaterialFlags.GENERATE_LENS,
+            GTMaterialFlags.NO_ORE_SMELTING,
             GTMaterialFlags.GENERATE_ROD
         )
-    
+        .addOreByproducts('amethyst', 'lapis', 'luminessence') // magical residue survives tech processing
+        .washedIn('gtceu:mercury')                             // quicksilver = alchemical symbol
+
     event.create('holy_silver')
         .ingot()
         .color(0xe7f79e)
@@ -116,7 +133,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL
         )
-    
+
     event.create('prima_materia')
         .ingot()
         .color(0xAEF76D)
@@ -138,7 +155,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FRAME
         )
-    
+
     event.create('terrasteel')
         .color(0x55f609)
         .ingot()
@@ -171,7 +188,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
-    
+
     event.create('abstract_metal')
         .ingot()
         .color(0xA2A6A2)
@@ -189,6 +206,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xA2A6A2)
         .flags(GTMaterialFlags.STICKY)
         .flags(GTMaterialFlags.PHOSPHORESCENT)
+
+    // --- Thermal Expansion alloys ---
 
     event.create("lumium")
         .ingot()
@@ -210,6 +229,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
 
+    // --- Ad Astra space metals ---
+
     event.create('desh')
         .ingot()
         .fluid()
@@ -219,11 +240,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element('desh')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
-            GTMaterialFlags.GENERATE_PLATE, 
-            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
-            )
+        )
+        .addOreByproducts('iron', 'sulfur', 'nickel') // lunar regolith iron; volcanic sulfur; nickel-iron meteorite
+        .washedIn('gtceu:mercury')
+        .separatedInto('iron', 'nickel')
 
     event.create('ostrum')
         .ingot()
@@ -234,11 +258,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element('ostrum')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
-            GTMaterialFlags.GENERATE_PLATE, 
-            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
+        .addOreByproducts('sulfur', 'copper', 'lead') // Venusian sulfuric atmosphere; rose copper; dense lead
+        .washedIn('gtceu:sulfuric_acid')               // Venus = sulfuric acid clouds
+        .separatedInto('copper', 'lead')
 
     event.create('calorite')
         .ingot()
@@ -249,9 +276,47 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element('calorite')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(
-            GTMaterialFlags.GENERATE_PLATE, 
-            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
+        .addOreByproducts('chrome', 'vanadium', 'magnesium') // refractory heat metals; echoes Kroll process
+        .washedIn('gtceu:mercury')                            // Mercury planet = Mercury element washing
+        .separatedInto('chrome', 'vanadium')
+
+    // --- Lunar Rocket Alloy ---
+    // ultimet base (cobalt-chrome superalloy) alloyed with aluminium for low-weight aerospace plate
+    // two EBF steps: first make ultimet from constituents, then alloy into this
+    // only HV-accessible inputs — overworld-only so the rocket can be made before the first moon trip
+
+    event.create('lunar_rocket_alloy')
+        .ingot()
+        .fluid()
+        .color(0x8BAFD6).secondaryColor(0x4A6E8C)
+        .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1000)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
+
+    // --- Desh Mond process intermediate ---
+
+    event.create('desh_carbonyl')
+        .fluid()
+        .color(0xc49060) // pale orange, slightly toxic-looking
+
+    // --- Moon cheese ---
+    // Novelty ore found in shallow Moon veins. Nugget form renamed to "Curd" via lang key.
+    // Byproducts: sodium (salt) and calcium — accurate cheese mineral content.
+
+    event.create('moon_cheese')
+        .ingot()
+        .ore()
+        .color(0xf5e870)
+        .secondaryColor(0xc8b842)
+        .iconSet(GTMaterialIconSet.DULL)
+        .addOreByproducts('sodium', 'calcium')
 })

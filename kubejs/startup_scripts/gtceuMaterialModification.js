@@ -53,12 +53,15 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     gem('source', 'ars_nouveau:source_gem')
 
-    gem('source', 'ars_nouveau:source_gem') // duplicate, harmless
-
     gem('gravitite', 'aether_redux:gravitite_ingot')
 
     gem('zanite', 'aether:zanite_gemstone')
+    
     gem('ambrosium', 'aether:ambrosium_shard')
+
+    gem('skyjade', 'deep_aether:skyjade')
+
+    ingot('veridium', 'aether_redux:veridium_ingot')
     
     
 
