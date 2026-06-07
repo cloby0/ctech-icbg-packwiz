@@ -886,7 +886,7 @@ hash = "c1d9dc78df35097db4fefd19234a2de5339885b7ba07cf51f47ac4d62e651e20"
 
 [[files]]
 file = "kubejs/server_scripts/tech/evAndMars.js"
-hash = "eb532eeb4ec7fe8d9bbbddf6babf13ad12d807dbcf59731ca9c4b921106883f5"
+hash = "5093ce36101dfda9947e8ba0a15a1db4985b87507180e46659f023ca565a1acc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -901,16 +901,32 @@ file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
+file = "kubejs/server_scripts/tech/zz_arcane_solder.js"
+hash = "d1b90da9256283374f9f6dbecb5cb69030986cfb319a8b32b88ece3d626fd716"
+
+[[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "a1409a4fae90246af3bf1ddb4675b8a05e002802a8069b3d35fcc759baafb28f"
+hash = "d12903037c1ea2d77020347533ea78115c7c39a8778f45b61d706bb46404ff0c"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
+file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
+hash = "423959bd57814289f9cabd210b31212698e5ae5ffad7f3b914f471f3dcbfdaae"
+
+[[files]]
+file = "kubejs/server_scripts/worldgen/marsWorldgen.js"
+hash = "018e77c53feaf4396dd285fc6cc85009fd85f5b792d755291ac1ee0d7f955937"
+
+[[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
 hash = "354850e48ac93c2504ddd8ff4d97dde82dbb8619c800d15fb9845acce6219961"
+
+[[files]]
+file = "kubejs/server_scripts/worldgen/venusAndMercuryWorldgen.js"
+hash = "ca11dccceb874bef656dd77fc7ba4aa3bb06cd75475286beebb822a48514edbd"
 
 [[files]]
 file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"

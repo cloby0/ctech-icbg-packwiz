@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:sulfur_dust', 6000, 0)
         .chancedOutput('gtceu:small_magnesium_dust', 2000, 200) // Martian crust is magnesium-rich
         .chancedOutput('gtceu:silicon_dust', 1500, 0)
+        .chancedOutput('gtceu:small_tungsten_dust', 500, 100)
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 

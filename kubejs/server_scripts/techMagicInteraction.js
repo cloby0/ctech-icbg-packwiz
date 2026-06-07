@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // me circuit arcane solder variant: 3x output vs normal 2x (manually specified — ae2.js recipe is kubejs-added, not caught by forEachRecipe below)
+    // me circuit arcane solder variant: 3x output vs normal 2x (manually specified — see zz_arcane_solder.js which pre-seeds seen='me_circuit' to skip auto-gen)
     event.recipes.gtceu.circuit_assembler('me_circuit_arcane_solder')
         .itemInputs(
             'ae2:engineering_processor',
@@ -151,72 +151,4 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-})
-
-// Auto-generate arcane solder variants for all GT circuit_assembler recipes that use soldering_alloy.
-// Replaces soldering_alloy with arcane_solder and doubles all item output counts.
-// kubejs-namespace recipes (like the me_circuit above) are not visible to forEachRecipe here
-// because they are added during the same event — those are handled manually above.
-ServerEvents.recipes(event => {
-    const toAdd = []
-    const seen = new Set()
-
-    event.forEachRecipe({ type: 'gtceu:circuit_assembler' }, recipe => {
-        const jsonStr = recipe.json.toString()
-        const hasSolderTag = jsonStr.includes('"tag":"forge:soldering_alloy"')
-        const hasSolderFluid = jsonStr.includes('"gtceu:soldering_alloy"')
-        if (!hasSolderTag && !hasSolderFluid) return
-        const id = recipe.id.toString()
-        if (id.startsWith('kubejs:')) return
-        // deduplicate — same recipe may appear under multiple prefixes in some GTCEu versions
-        const baseName = id.replace(/^[^:]+:[^\/]+\//, '')
-        if (seen.has(baseName)) return
-        seen.add(baseName)
-        console.log('[arcane-solder] id=' + id + ' | json=' + jsonStr.substring(0, 400))
-        toAdd.push({ json: JSON.parse(jsonStr), baseName: baseName })
-    })
-
-    // double all "count" fields inside the outputs subtree only
-    // uses for..in — Object.fromEntries/Object.entries not available in Rhino
-    const doubleOutputCounts = function(obj) {
-        if (!obj || typeof obj !== 'object') return obj
-        if (Array.isArray(obj)) return obj.map(doubleOutputCounts)
-        const result = {}
-        for (const k in obj) {
-            if (k === 'count' && typeof obj[k] === 'number') {
-                result[k] = obj[k] * 2
-            } else {
-                result[k] = doubleOutputCounts(obj[k])
-            }
-        }
-        return result
-    }
-
-    toAdd.forEach(function(entry) {
-        const rawJson = entry.json
-        const baseName = entry.baseName
-
-        // recipe.json may wrap fields under "data" (KubeJS internal) — unwrap
-        const source = rawJson.data !== undefined ? rawJson.data : rawJson
-
-        const modified = JSON.parse(
-            JSON.stringify(source)
-                .replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
-                .replace(/"fluid":"gtceu:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
-        )
-        modified.type = rawJson.type
-
-        // GTCEu codec: outputs key contains {"item":[...]} per capability
-        if (modified.outputs && modified.outputs.item && modified.outputs.item.length > 0) {
-            modified.outputs = doubleOutputCounts(modified.outputs)
-        } else {
-            console.log('[arcane-solder] SKIP no item outputs for ' + baseName + ' | outputs=' + JSON.stringify(modified.outputs))
-            return
-        }
-
-        // strip kubejs:actions — avoid carrying over any KJS ingredient rewrites
-        delete modified['kubejs:actions']
-        delete modified.id
-        event.custom(modified)
-    })
 })
