@@ -172,11 +172,12 @@ ServerEvents.recipes(event => {
         const baseName = id.replace(/^[^:]+:[^\/]+\//, '')
         if (seen.has(baseName)) return
         seen.add(baseName)
-        toAdd.push(JSON.parse(jsonStr))
+        console.log('[arcane-solder] id=' + id + ' | json=' + jsonStr.substring(0, 400))
+        toAdd.push({ json: JSON.parse(jsonStr), baseName: baseName })
     })
 
-    // recursively double all "count" fields inside the outputs subtree
-    // uses for..in to avoid Object.fromEntries/Object.entries (not in Rhino)
+    // double all "count" fields inside the outputs subtree only
+    // uses for..in — Object.fromEntries/Object.entries not available in Rhino
     const doubleOutputCounts = function(obj) {
         if (!obj || typeof obj !== 'object') return obj
         if (Array.isArray(obj)) return obj.map(doubleOutputCounts)
@@ -191,14 +192,12 @@ ServerEvents.recipes(event => {
         return result
     }
 
-    toAdd.forEach(function(rawJson) {
-        // recipe.json wraps all recipe fields under "data" key (KubeJS internal format)
-        // event.custom() passes directly to GTCEu's codec which expects fields at top level
-        // so unwrap "data" and re-add "type"
+    toAdd.forEach(function(entry) {
+        const rawJson = entry.json
+        const baseName = entry.baseName
+
+        // recipe.json may wrap fields under "data" (KubeJS internal) — unwrap
         const source = rawJson.data !== undefined ? rawJson.data : rawJson
-        if (rawJson.data !== undefined && source.EUt === undefined && rawJson.EUt !== undefined) {
-            source.EUt = rawJson.EUt
-        }
 
         const modified = JSON.parse(
             JSON.stringify(source)
@@ -207,8 +206,16 @@ ServerEvents.recipes(event => {
         )
         modified.type = rawJson.type
 
-        if (modified.outputs) modified.outputs = doubleOutputCounts(modified.outputs)
+        // GTCEu codec: outputs key contains {"item":[...]} per capability
+        if (modified.outputs && modified.outputs.item && modified.outputs.item.length > 0) {
+            modified.outputs = doubleOutputCounts(modified.outputs)
+        } else {
+            console.log('[arcane-solder] SKIP no item outputs for ' + baseName + ' | outputs=' + JSON.stringify(modified.outputs))
+            return
+        }
 
+        // strip kubejs:actions — avoid carrying over any KJS ingredient rewrites
+        delete modified['kubejs:actions']
         delete modified.id
         event.custom(modified)
     })
