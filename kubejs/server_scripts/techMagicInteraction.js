@@ -163,6 +163,9 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'gtceu:circuit_assembler' }, recipe => {
         const jsonStr = recipe.json.toString()
         if (!jsonStr.includes('"tag":"forge:soldering_alloy"')) return
+        // skip original GTCEu datapack recipes — GTCEu re-registers all of them as gtceu:kjs/* during
+        // KubeJS event processing, so both forms exist simultaneously; kjs/ has correct EUt, circuit_assembler/ does not
+        if (recipe.id.toString().startsWith('gtceu:circuit_assembler/')) return
         // skip kubejs-added recipes (safety — they should not appear here but guard anyway)
         if (recipe.id.toString().startsWith('kubejs:')) return
         toAdd.push(JSON.parse(jsonStr))
