@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     // neutronium boule + gaia spirit -> 48 neutronium wafers
     // gate: sage (UV)
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ['botania:gaia_spirit_ingot'],
+        ['botania:gaia_ingot'],
         'gtceu:neutronium_boule',
         'kubejs:gaian_neutronium_boule',
         10000
@@ -123,14 +123,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')
         .itemInputs('kubejs:hallowed_silicon_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 500))
-        .itemOutputs('48x gtceu:silicon_wafer')
+        .itemOutputs('32x gtceu:silicon_wafer')
         .duration(900)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.cutter('cut_primal_phosphorus_boule')
         .itemInputs('kubejs:primal_phosphorus_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 750))
-        .itemOutputs('48x gtceu:phosphorus_wafer')
+        .itemOutputs('64x gtceu:phosphorus_wafer')
         .duration(1200)
         .EUt(GTValues.VA[GTValues.HV])
         .cleanroom(CleanroomType.CLEANROOM)
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter('cut_verdant_naquadah_boule')
         .itemInputs('kubejs:verdant_naquadah_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 1000))
-        .itemOutputs('48x gtceu:naquadah_wafer')
+        .itemOutputs('128x gtceu:naquadah_wafer')
         .duration(1600)
         .EUt(GTValues.VA[GTValues.EV])
         .cleanroom(CleanroomType.CLEANROOM)
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter('cut_gaian_neutronium_boule')
         .itemInputs('kubejs:gaian_neutronium_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 1500))
-        .itemOutputs('48x gtceu:neutronium_wafer')
+        .itemOutputs('256x gtceu:neutronium_wafer')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
@@ -159,15 +159,19 @@ ServerEvents.recipes(event => {
 // because they are added during the same event — those are handled manually above.
 ServerEvents.recipes(event => {
     const toAdd = []
+    const seen = new Set()
 
     event.forEachRecipe({ type: 'gtceu:circuit_assembler' }, recipe => {
         const jsonStr = recipe.json.toString()
-        if (!jsonStr.includes('"tag":"forge:soldering_alloy"')) return
-        // skip original GTCEu datapack recipes — GTCEu re-registers all of them as gtceu:kjs/* during
-        // KubeJS event processing, so both forms exist simultaneously; kjs/ has correct EUt, circuit_assembler/ does not
-        if (recipe.id.toString().startsWith('gtceu:circuit_assembler/')) return
-        // skip kubejs-added recipes (safety — they should not appear here but guard anyway)
-        if (recipe.id.toString().startsWith('kubejs:')) return
+        const hasSolderTag = jsonStr.includes('"tag":"forge:soldering_alloy"')
+        const hasSolderFluid = jsonStr.includes('"gtceu:soldering_alloy"')
+        if (!hasSolderTag && !hasSolderFluid) return
+        const id = recipe.id.toString()
+        if (id.startsWith('kubejs:')) return
+        // deduplicate — same recipe may appear under multiple prefixes in some GTCEu versions
+        const baseName = id.replace(/^[^:]+:[^\/]+\//, '')
+        if (seen.has(baseName)) return
+        seen.add(baseName)
         toAdd.push(JSON.parse(jsonStr))
     })
 
@@ -196,10 +200,10 @@ ServerEvents.recipes(event => {
             source.EUt = rawJson.EUt
         }
 
-        // fluid is serialized as {"tag":"forge:soldering_alloy"} inside value array
-        // replace key+value pair so result is {"fluid":"kubejs:arcane_solder"}
         const modified = JSON.parse(
-            JSON.stringify(source).replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
+            JSON.stringify(source)
+                .replace(/"tag":"forge:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
+                .replace(/"fluid":"gtceu:soldering_alloy"/g, '"fluid":"kubejs:arcane_solder"')
         )
         modified.type = rawJson.type
 

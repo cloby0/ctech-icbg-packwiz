@@ -902,7 +902,7 @@ hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "cf0cebf00daa6fd458a996b2a6862cf3eb630b73a35d1c34481d73bb3f7bcdb3"
+hash = "4219db895e3416c67841251266865c8c83f21b4f5a4880ef4a5a7ff8982dee5f"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -950,7 +950,7 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "98fedbe0af7bf6eafc53b5cc1356c1e7365c8c5470bcf0a63164f0383206aaa9"
+hash = "6537cde289628cf28697cc0bf8c2e6e5195ab531b6dad213955e38188be535fd"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

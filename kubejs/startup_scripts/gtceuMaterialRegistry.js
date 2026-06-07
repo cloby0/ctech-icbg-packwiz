@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(177)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Mi')
+        .symbol('Lc')
         .isIsotope(false)
 
     event.create('desh')
@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(182)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('De')
+        .symbol('Sl')
         .isIsotope(false)
 
     event.create('ostrum')
@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(183)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Ot')
+        .symbol('Py')
         .isIsotope(false)
 
     event.create('calorite')
@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(184)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Ct')
+        .symbol('Ig')
         .isIsotope(false)
 
     event.create('source')
@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(142)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('So')
+        .symbol('Vs')
         .isIsotope(false)
 
     event.create('prima_materia')
@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(148)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Ma')
+        .symbol('Hy')
         .isIsotope(false)
 
     event.create('ambrosium')
@@ -52,7 +52,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(155)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Ab')
+        .symbol('Ae')
         .isIsotope(false)
 
     event.create('gravitite')
@@ -60,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(160)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Gv')
+        .symbol('Iv')
         .isIsotope(false)
 
     event.create('veridium')
@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(165)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Vd')
+        .symbol('Vr')
         .isIsotope(false)
 
 })
