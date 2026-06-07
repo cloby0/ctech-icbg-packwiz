@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.arms_manufacturer('chemical_thrower')
-        .itemInputs('6x gtceu:stainless_steel_plate', '4x gtceu:aluminium_bolt', '4x gtceu:stainless_steel_ring', '2x gtceu:stainless_steel_fluid_pipe', '2x gtceu:rubber_plate')
+        .itemInputs('6x gtceu:stainless_steel_plate', '4x gtceu:aluminium_bolt', '4x gtceu:stainless_steel_ring', '2x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:rubber_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"immersive_armorer:chemical_thrower",HasBulletInBarrel:0b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])
