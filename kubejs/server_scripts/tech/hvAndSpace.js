@@ -8,29 +8,45 @@ ServerEvents.recipes(event => {
     // mond is only path to desh ingot
     // requires HV chemical reactors and CO production
     // ~50 mB CO net loss per cycle
+    // input is crushed_desh not desh_dust
+    // crushed_desh_ore only comes from ore block maceration, not ingot recycling
+    // this prevents the ingot → dust → mond → ingot infinite byproduct loop
 
     // removes auto ebf so mond is mandatory
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
 
-    // step 1 carbonyl formation
-    event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
-        .itemInputs('1x gtceu:desh_dust')
-        .inputFluids(Fluid.of('gtceu:carbon_monoxide', 400))
-        .outputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
+    // step 1 acid leach
+    // removes sulfide/iron impurities, converts to sulfate slurry for carbonylation
+    event.recipes.gtceu.chemical_reactor('desh_acid_leach')
+        .itemInputs('1x gtceu:crushed_desh_ore')
+        .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
+        .itemOutputs('1x kubejs:desh_sulfate_slurry')
+        .chancedOutput('gtceu:small_iron_dust', 4000, 300)
+        .chancedOutput('gtceu:small_sulfur_dust', 5000, 400)
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 2 condensation
+    // step 2 carbonyl formation
+    event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
+        .itemInputs('1x kubejs:desh_sulfate_slurry')
+        .inputFluids(Fluid.of('gtceu:carbon_monoxide', 400))
+        .outputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
+        .chancedOutput('gtceu:small_manganese_dust', 3000, 200)
+        .duration(8 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // step 3 condensation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_condensation')
         .inputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
         .itemOutputs('1x kubejs:condensed_desh_carbonyl')
-        .chancedOutput('gtceu:manganese_dust', 7500, 500)
+        .chancedOutput('gtceu:manganese_dust', 6000, 500)
         .chancedOutput('gtceu:small_cobalt_dust', 2500, 250)
+        .chancedOutput('gtceu:small_nickel_dust', 4000, 300)
         .outputFluids(Fluid.of('gtceu:carbon_monoxide', 350))
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 3 EBF decomposition
+    // step 4 EBF decomposition
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
         .itemOutputs('1x ad_astra:desh_ingot')

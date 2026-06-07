@@ -890,11 +890,11 @@ hash = "5093ce36101dfda9947e8ba0a15a1db4985b87507180e46659f023ca565a1acc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "c3c0b6f2448b7d56934c174043698b76fbaa3b6a529588481c5c1170462dbab3"
+hash = "bcac00a062d9abe2aa55a303ff90eef7ecfc371c3cb82663c29a246484bf04fe"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "a070eae518c1e90d90dafddce29016beb968351cecd487a80054567c5138d653"
+hash = "60bd9bee4320bd3dcd1247f3da2b542a9879fc9a4d6143bd726fa9832561233d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -914,11 +914,11 @@ hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
-hash = "423959bd57814289f9cabd210b31212698e5ae5ffad7f3b914f471f3dcbfdaae"
+hash = "311aa7899144102f7168b8d446145e2755782053af80f42f1af762642d2f1935"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/marsWorldgen.js"
-hash = "018e77c53feaf4396dd285fc6cc85009fd85f5b792d755291ac1ee0d7f955937"
+hash = "ac7b5cd99411e278684cd3d23603c65d1f7ac4c5b6b25f5a08788237ac51ea84"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
@@ -926,7 +926,7 @@ hash = "354850e48ac93c2504ddd8ff4d97dde82dbb8619c800d15fb9845acce6219961"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/venusAndMercuryWorldgen.js"
-hash = "ca11dccceb874bef656dd77fc7ba4aa3bb06cd75475286beebb822a48514edbd"
+hash = "5e8b4f05a3bd9a798e6cc3aa991042417e80129b6e005e41a3bb66de41e54ff5"
 
 [[files]]
 file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"
@@ -970,11 +970,11 @@ hash = "6537cde289628cf28697cc0bf8c2e6e5195ab531b6dad213955e38188be535fd"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "a31435bf057798fcb7994cc0abad37379a154a6cf8cb8d68b6f40740f46c2015"
+hash = "acce4173576f5b04f842b91880744444673581d09a02c9f4262cfe9405b5f4d3"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
-hash = "4c507025dfbbad1df689692ef599acb91cf7a32ad0df767628d781f455d913d4"
+hash = "fb63a446397924d35bdcfafae1106a1504a3636166289ffb2545ffde38cb8ef1"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"

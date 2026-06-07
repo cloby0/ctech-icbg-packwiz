@@ -74,7 +74,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.Stibnite).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Arsenic).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Realgar).size(1, 2))
                 .layer(l => l.weight(1).mat(GTMaterials.Bismuth).size(1, 1))
             )
         )
@@ -129,7 +129,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.Galena).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Bismuth).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Sphalerite).size(1, 2))
                 .layer(l => l.weight(1).mat(GTMaterials.Lead).size(1, 1))
             )
         )
@@ -188,7 +188,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.Graphite).size(3, 5))
-                .layer(l => l.weight(2).mat(GTMaterials.Carbon).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Coal).size(1, 2))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator

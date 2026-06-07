@@ -20,7 +20,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(4).mat(GTMaterials.Naquadah).size(6, 12))
-                .layer(l => l.weight(1).mat(GTMaterials.NaquadahEnriched).size(1, 2))
+                .layer(l => l.weight(1).mat(GTMaterials.Plutonium239).size(1, 2))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
@@ -58,7 +58,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Borax/Carbonate Evaporite
+//Borax/Trona Evaporite
 //Na2B4O7·10H2O; borax and trona are classic cold-dry evaporite minerals
 //Borax main + Trona + Calcite; fits Glacio's cold evaporite theme; boron useful for fiberglass and fluxes
     event.add("kubejs:borax_vein_gl", vein => {
@@ -72,13 +72,13 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(25, 75)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Borax).size(3, 5))
+                .layer(l => l.weight(3).mat(GTMaterials.Trona).size(3, 5))
                 .layer(l => l.weight(2).mat(GTMaterials.Trona).size(1, 3))
                 .layer(l => l.weight(1).mat(GTMaterials.Calcite).size(1, 2))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Borax)
+            .surfaceRock(GTMaterials.Calcite)
             .placement("surface")
             .density(0.25)
             .radius(5)
@@ -101,7 +101,7 @@ GTCEuServerEvents.oreVeins(event => {
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.Ilmenite).size(2, 4))
                 .layer(l => l.weight(2).mat(GTMaterials.Rutile).size(1, 2))
-                .layer(l => l.weight(1).mat(GTMaterials.Titanium).size(1, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.Magnetite).size(1, 1))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator

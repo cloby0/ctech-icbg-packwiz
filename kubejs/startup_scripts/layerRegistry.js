@@ -19,6 +19,10 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .iconSupplier(() => Item.of("ad_astra:glacio_globe").getItem())
         .tier(0)
         .overrideName("Glacio")
+    event.create("aether:the_aether")
+        .iconSupplier(() => Item.of("aether:aether_portal_frame").getItem())
+        .tier(0)
+        .overrideName("The Aether")
 })
 
 GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {

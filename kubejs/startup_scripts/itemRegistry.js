@@ -29,7 +29,8 @@ StartupEvents.registry('item', event => {
 
     event.create('matter_energy_circuit')
 
-    //desh mond process intermediate
+    //desh mond process intermediates
+    event.create('desh_sulfate_slurry')
     event.create('condensed_desh_carbonyl')
 
     //rocket components
