@@ -818,7 +818,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "88406d331d1e73e8d4763955ee9d1bc94ccd947caa8039a0bf65c40fb78f9759"
+hash = "ad52434e79eed071b59c7d0b4accd9828fb1fbf9c6a92eebed55c18043898c00"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
@@ -874,7 +874,7 @@ hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "fe8059c76e1ff239fab0ff79db81dea09504aaf4b6c49160142aea5ffe0f4449"
+hash = "afd1b1ee5013ba25a88949d243c01ed758af3a017371f61198fe1ba609bc4cdc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -894,7 +894,7 @@ hash = "15a8d3b9eb59f67481a384e829f313c8e68d3a25652a64406925575b66130d01"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "50d127738deb137b5272a752181ca59e41a9d2594d88459e1f2c32ca9adedc96"
+hash = "2a6d04da565407c48b0603d1bfbcac26d616bffbea29d4375d0bfd0d0abb9eb0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
