@@ -60,10 +60,10 @@ ServerEvents.recipes(event => {
     // EV electrolyzer; 8 inferium -> 25% chance each crude elemental essence
     event.recipes.gtceu.electrolyzer('inferium_electrolysis')
         .itemInputs('8x mysticalagriculture:inferium_essence')
-        .chancedOutput('ars_nouveau:fire_essence', 2500, 0)
-        .chancedOutput('ars_nouveau:water_essence', 2500, 0)
-        .chancedOutput('ars_nouveau:earth_essence', 2500, 0)
-        .chancedOutput('ars_nouveau:air_essence', 2500, 0)
+        .chancedOutput('mysticalagriculture:fire_essence', 2500, 0)
+        .chancedOutput('mysticalagriculture:water_essence', 2500, 0)
+        .chancedOutput('mysticalagriculture:earth_essence', 2500, 0)
+        .chancedOutput('mysticalagriculture:air_essence', 2500, 0)
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     // base recipe unchanged; these are optional alternatives consuming 1 crude essence
     // fire  -> bias toward rarest metals (iridium/osmium path)
     event.recipes.gtceu.centrifuge('pgs_fire_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:fire_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:fire_essence')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '2x gtceu:platinum_raw_dust',
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 
     // water -> bias toward platinum/palladium
     event.recipes.gtceu.centrifuge('pgs_water_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:water_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:water_essence')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '5x gtceu:platinum_raw_dust',
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
 
     // earth -> bias toward inert metals (rhodium/ruthenium path)
     event.recipes.gtceu.centrifuge('pgs_earth_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:earth_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:earth_essence')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '2x gtceu:platinum_raw_dust',
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
 
     // air -> balanced improvement, less sludge waste
     event.recipes.gtceu.centrifuge('pgs_air_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:air_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:air_essence')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '4x gtceu:platinum_raw_dust',
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
     // phlogiston line
     // fire_essence -> phlogiston (crystallized combustion catalyst)
     event.recipes.gtceu.chemical_reactor('phlogiston_extraction')
-        .itemInputs('2x ars_nouveau:fire_essence')
+        .itemInputs('2x mysticalagriculture:fire_essence')
         .itemOutputs('1x kubejs:phlogiston', '1x gtceu:ash_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
 
     // optional: add water essence at mix stage for 33% more phlogisticated fuel
     event.recipes.gtceu.mixer('phlogisticated_fuel_stabilized')
-        .itemInputs('1x kubejs:phlogiston', '1x ars_nouveau:water_essence')
+        .itemInputs('1x kubejs:phlogiston', '1x mysticalagriculture:water_essence')
         .inputFluids(Fluid.of('gtceu:heavy_fuel', 1000))
         .outputFluids(Fluid.of('kubejs:phlogisticated_fuel', 2000))
         .duration(20 * 20)
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
     // designed as a dense portable fuel for planetary power transport, not peak generation
     // elven concentrate + air essence -> faefire aerosol (elven combustion catalyst)
     event.recipes.gtceu.chemical_reactor('faefire_aerosol_synthesis')
-        .itemInputs('1x kubejs:elven_concentrate', '2x ars_nouveau:air_essence')
+        .itemInputs('1x kubejs:elven_concentrate', '2x mysticalagriculture:air_essence')
         .itemOutputs('1x kubejs:faefire_aerosol')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])

@@ -68,5 +68,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('moon_cheese', 'ad_astra:cheese')
     block('moon_cheese', 'ad_astra:cheese_block')
 
+    ingot('sky_steel', 'megacells:sky_steel_ingot')
+    block('sky_steel', 'megacells:sky_steel_block')
+
 
 })

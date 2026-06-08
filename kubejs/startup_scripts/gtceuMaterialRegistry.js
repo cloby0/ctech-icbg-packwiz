@@ -283,8 +283,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sky_steel')
         .ingot()
         .fluid()
-        .color(0x2ED3DC)
-        .secondaryColor(0x1A7078)
+        .color(0x161616)
+        .secondaryColor(0x2d2d2d)
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
