@@ -177,7 +177,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_LENS,
             GTMaterialFlags.NO_ORE_SMELTING,
-            GTMaterialFlags.GENERATE_ROD
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_PLATE
         )
         .addOreByproducts('amethyst', 'lapis', 'luminessence')
         .washedIn('gtceu:mercury')
@@ -276,27 +277,70 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.STICKY)
         .flags(GTMaterialFlags.PHOSPHORESCENT)
 
+    // ae2 sky steel
+    // meteoritic sky stone (ae2) + steel + fluix crystal → quantum-conductive structural alloy
+    // blast temp 3600 = EV coils required (same tier as ostrum/mars gate)
+    event.create('sky_steel')
+        .ingot()
+        .fluid()
+        .color(0x2ED3DC)
+        .secondaryColor(0x1A7078)
+        .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.NO_SMELTING
+        )
+
     // thermal expansion alloys
 
+    // lumium: tin base + silver brightness + glowstone luminescence
+    // calculation processor substrate; optical signal processing
     event.create("lumium")
         .ingot()
         .fluid()
         .color(0xf6ff99).secondaryColor(0xff7400)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .components('4x tin', '2x silver', '2x glowstone')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
 
+    // signalum: copper conductor + silver quality + redstone signal amplification
+    // logic processor substrate; control signal transmission
     event.create("signalum")
         .ingot()
         .fluid()
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .components('4x copper', '2x silver', '2x redstone')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
 
+    // enderium: tin base + platinum catalyst + ender pearl dimensional energy
+    // engineering processor substrate; spatial wiring and entanglement
     event.create("enderium")
         .ingot().fluid()
         .color(0x1f6b62).secondaryColor(0x16455f)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .components('4x tin', '2x platinum', '2x ender_pearl')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
 
     // ad astra space metals
 

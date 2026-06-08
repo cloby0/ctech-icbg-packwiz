@@ -44,4 +44,8 @@ StartupEvents.registry('item', event => {
     event.create('primal_phosphorus_boule')
     event.create('verdant_naquadah_boule')
     event.create('gaian_neutronium_boule')
+
+    //phlogiston line
+    event.create('phlogiston')
+    event.create('faefire_aerosol')
 })

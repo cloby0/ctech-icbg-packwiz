@@ -834,7 +834,7 @@ hash = "a1ec00b7657733e487267c9fd26fc489f68f0541aa16f4a95df5b1306c5b56c2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "c87916597da8b6d97fcc9f8529f05d81ccb92440f5d8883f043a36388b7c2e24"
+hash = "502a71b6b29ab8eff21eceddf81d4bcb49700441762efd423a5fd3d969c23760"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
@@ -874,7 +874,7 @@ hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "e1953a97bcaa0b3fb98be8733bbb942ec478d83626fdf96f0d52168aee43f52a"
+hash = "fe8059c76e1ff239fab0ff79db81dea09504aaf4b6c49160142aea5ffe0f4449"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -882,7 +882,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
-hash = "c1d9dc78df35097db4fefd19234a2de5339885b7ba07cf51f47ac4d62e651e20"
+hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 
 [[files]]
 file = "kubejs/server_scripts/tech/evAndMars.js"
@@ -894,19 +894,15 @@ hash = "15a8d3b9eb59f67481a384e829f313c8e68d3a25652a64406925575b66130d01"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "60bd9bee4320bd3dcd1247f3da2b542a9879fc9a4d6143bd726fa9832561233d"
+hash = "50d127738deb137b5272a752181ca59e41a9d2594d88459e1f2c32ca9adedc96"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "15e25b40ef10f3ab4a9b40727aab9c5c284bd4b7f1680646849428a31972e512"
 
 [[files]]
-file = "kubejs/server_scripts/tech/zz_arcane_solder.js"
-hash = "d1b90da9256283374f9f6dbecb5cb69030986cfb319a8b32b88ece3d626fd716"
-
-[[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "d12903037c1ea2d77020347533ea78115c7c39a8778f45b61d706bb46404ff0c"
+hash = "20c501ee2c89824b2f589711fe4fcb703eb493ecf97b29f26577baf317204cfc"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -958,7 +954,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
-hash = "58338fffc2fbc400127c24b24c27e2ae833ec4cada6d5b0919d08f56a615f7ec"
+hash = "7b34b4783e34f2c9067163cecece7752d904353587f0b36120d6677f66a5bb9c"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
@@ -966,11 +962,11 @@ hash = "2be80fbc0a9f395203b2d6df9f537cb69c0330f23bcf348c128a9ba410ce92e1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "6537cde289628cf28697cc0bf8c2e6e5195ab531b6dad213955e38188be535fd"
+hash = "d7920c7778ff88613c7bce5872dac8b1e841254e208401cb546c5dcc206a9a7d"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "acce4173576f5b04f842b91880744444673581d09a02c9f4262cfe9405b5f4d3"
+hash = "488aaa698058db238d2b9121fa1aad5a915c652bf4ebae46965b96532a717ed9"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

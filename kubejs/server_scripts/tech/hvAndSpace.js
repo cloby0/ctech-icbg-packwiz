@@ -46,13 +46,20 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 4 EBF decomposition
+    // step 4 EBF decomposition → hot ingot (vacuum freezer required)
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
-        .itemOutputs('1x ad_astra:desh_ingot')
+        .itemOutputs('1x gtceu:hot_desh_ingot')
         .blastFurnaceTemp(2700)
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // step 5 vacuum freeze
+    event.recipes.gtceu.vacuum_freezer('desh_carbonyl_cool')
+        .itemInputs('1x gtceu:hot_desh_ingot')
+        .itemOutputs('1x ad_astra:desh_ingot')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // moon sand to silicon
     event.recipes.gtceu.centrifuge('moon_sand_silicon')
@@ -194,7 +201,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:plascrete'
         )
         .duration(10*20)
-        .EUt(48)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('moon_cleanroom_glass')
         .itemInputs(
@@ -209,6 +216,6 @@ ServerEvents.recipes(event => {
             '2x gtceu:cleanroom_glass'
         )
         .duration(10*20)
-        .EUt(48)
+        .EUt(GTValues.VA[GTValues.MV])
 
 });

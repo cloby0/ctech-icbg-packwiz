@@ -252,6 +252,40 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
+    // Abstract Metal single-element conversions
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'minecraft:gold_ingot' },
+        sourceCost: 2000,
+        pedestalItems: [
+            { tag: 'kubejs:fire_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:mercury_bucket' },
+        sourceCost: 2000,
+        pedestalItems: [
+            { tag: 'kubejs:water_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:lead_ingot' },
+        sourceCost: 2000,
+        pedestalItems: [
+            { tag: 'kubejs:earth_essences' }
+        ]
+    }, index++)
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
+        output: { item: 'gtceu:aluminium_ingot' },
+        sourceCost: 2000,
+        pedestalItems: [
+            { tag: 'kubejs:air_essences' }
+        ]
+    }, index++)
+
     // Abstract Metal multi-element synthesis
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:abstract_metal_ingot' }],

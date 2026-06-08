@@ -56,31 +56,140 @@ ServerEvents.recipes(event => {
         .duration(120 * 20)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // arcane solder
-    // lead sourcite + soldering alloy -> arcane solder (MV mixer)
-    // use in circuit assembler for bonus output
-    event.recipes.gtceu.mixer('arcane_solder_mixing')
-        .itemInputs('2x gtceu:lead_sourcite_dust')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .outputFluids(Fluid.of('kubejs:arcane_solder', 144))
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
+    // inferium electrolysis
+    // EV electrolyzer; 8 inferium -> 25% chance each crude elemental essence
+    event.recipes.gtceu.electrolyzer('inferium_electrolysis')
+        .itemInputs('8x mysticalagriculture:inferium_essence')
+        .chancedOutput('ars_nouveau:fire_essence', 2500, 0)
+        .chancedOutput('ars_nouveau:water_essence', 2500, 0)
+        .chancedOutput('ars_nouveau:earth_essence', 2500, 0)
+        .chancedOutput('ars_nouveau:air_essence', 2500, 0)
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
 
-    // me circuit arcane solder variant: 3x output vs normal 2x (manually specified — see zz_arcane_solder.js which pre-seeds seen='me_circuit' to skip auto-gen)
-    event.recipes.gtceu.circuit_assembler('me_circuit_arcane_solder')
-        .itemInputs(
-            'ae2:engineering_processor',
-            'ae2:calculation_processor',
-            'ae2:logic_processor',
-            '#gtceu:circuits/ev'
+    // platinum group sludge separation with essence tilting
+    // base recipe unchanged; these are optional alternatives consuming 1 crude essence
+    // fire  -> bias toward rarest metals (iridium/osmium path)
+    event.recipes.gtceu.centrifuge('pgs_fire_bias')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:fire_essence')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
+        .itemOutputs(
+            '2x gtceu:platinum_raw_dust',
+            '2x gtceu:palladium_raw_dust',
+            '2x gtceu:inert_metal_mixture_dust',
+            '3x gtceu:rarest_metal_mixture_dust',
+            '2x gtceu:platinum_sludge_residue_dust'
         )
-        .inputFluids(Fluid.of('kubejs:arcane_solder', 144))
-        .itemOutputs('3x kubejs:matter_energy_circuit')
-        .duration(120)
-        .EUt(1920)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // water -> bias toward platinum/palladium
+    event.recipes.gtceu.centrifuge('pgs_water_bias')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:water_essence')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
+        .itemOutputs(
+            '5x gtceu:platinum_raw_dust',
+            '5x gtceu:palladium_raw_dust',
+            '1x gtceu:inert_metal_mixture_dust',
+            '1x gtceu:platinum_sludge_residue_dust'
+        )
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // earth -> bias toward inert metals (rhodium/ruthenium path)
+    event.recipes.gtceu.centrifuge('pgs_earth_bias')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:earth_essence')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
+        .itemOutputs(
+            '2x gtceu:platinum_raw_dust',
+            '2x gtceu:palladium_raw_dust',
+            '5x gtceu:inert_metal_mixture_dust',
+            '1x gtceu:rarest_metal_mixture_dust',
+            '2x gtceu:platinum_sludge_residue_dust'
+        )
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // air -> balanced improvement, less sludge waste
+    event.recipes.gtceu.centrifuge('pgs_air_bias')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x ars_nouveau:air_essence')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
+        .itemOutputs(
+            '4x gtceu:platinum_raw_dust',
+            '3x gtceu:palladium_raw_dust',
+            '3x gtceu:inert_metal_mixture_dust',
+            '2x gtceu:rarest_metal_mixture_dust',
+            '1x gtceu:platinum_sludge_residue_dust'
+        )
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // phlogiston line
+    // fire_essence -> phlogiston (crystallized combustion catalyst)
+    event.recipes.gtceu.chemical_reactor('phlogiston_extraction')
+        .itemInputs('2x ars_nouveau:fire_essence')
+        .itemOutputs('1x kubejs:phlogiston', '1x gtceu:ash_dust')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // phlogiston + heavy fuel -> phlogisticated fuel
+    event.recipes.gtceu.mixer('phlogisticated_fuel_base')
+        .itemInputs('1x kubejs:phlogiston')
+        .inputFluids(Fluid.of('gtceu:heavy_fuel', 1000))
+        .outputFluids(Fluid.of('kubejs:phlogisticated_fuel', 1500))
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // optional: add water essence at mix stage for 33% more phlogisticated fuel
+    event.recipes.gtceu.mixer('phlogisticated_fuel_stabilized')
+        .itemInputs('1x kubejs:phlogiston', '1x ars_nouveau:water_essence')
+        .inputFluids(Fluid.of('gtceu:heavy_fuel', 1000))
+        .outputFluids(Fluid.of('kubejs:phlogisticated_fuel', 2000))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // phlogisticated fuel -> infernal diesel via distillation tower
+    // byproducts: naphtha and light fuel (feed back into normal petrochem)
+    event.recipes.gtceu.distillation_tower('infernal_diesel_refine')
+        .inputFluids(Fluid.of('kubejs:phlogisticated_fuel', 1500))
+        .outputFluids(Fluid.of('kubejs:infernal_diesel', 750))
+        .outputFluids(Fluid.of('gtceu:naphtha', 400))
+        .outputFluids(Fluid.of('gtceu:light_fuel', 100))
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // infernal diesel fuel value: 4x normal diesel (diesel=15 ticks/mB, this=60)
+    event.recipes.gtceu.combustion_generator('infernal_diesel_fuel')
+        .inputFluids(Fluid.of('kubejs:infernal_diesel', 1))
+        .duration(60)
+        .EUt(-32)
+
+    // faefire phlog-fuel (ZPM extension of phlogiston line)
+    // designed as a dense portable fuel for planetary power transport, not peak generation
+    // elven concentrate + air essence -> faefire aerosol (elven combustion catalyst)
+    event.recipes.gtceu.chemical_reactor('faefire_aerosol_synthesis')
+        .itemInputs('1x kubejs:elven_concentrate', '2x ars_nouveau:air_essence')
+        .itemOutputs('1x kubejs:faefire_aerosol')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    // faefire aerosol + infernal diesel -> faefire phlog-fuel
+    event.recipes.gtceu.mixer('faefire_phlog_fuel_mix')
+        .itemInputs('1x kubejs:faefire_aerosol')
+        .inputFluids(Fluid.of('kubejs:infernal_diesel', 1000))
+        .outputFluids(Fluid.of('kubejs:faefire_phlog_fuel', 1500))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    // fuel value: 500 ticks/mB = ~8x infernal diesel, ~33x base diesel
+    // high energy density per mB makes it worth shipping to remote/planetary setups
+    event.recipes.gtceu.combustion_generator('faefire_phlog_fuel_burn')
+        .inputFluids(Fluid.of('kubejs:faefire_phlog_fuel', 1))
+        .duration(500)
+        .EUt(-32)
 
     // hallowed silicon boule
-    // silicon boule + holy silver -> 48 silicon wafers (vs normal 32)
+    // silicon boule + holy silver -> 32 silicon wafers (vs vanilla 16)
     // gate: initiate (HV) — requires holy silver
     event.recipes.ars_nouveau.imbuement(
         'gtceu:silicon_boule',
@@ -90,7 +199,7 @@ ServerEvents.recipes(event => {
     )
 
     // primal phosphorus boule
-    // phosphorus boule + prima materia -> 48 phosphorus wafers
+    // phosphorus boule + prima materia -> 64 phosphorus wafers (vs vanilla 32)
     // gate: sorcerer (EV)
     event.recipes.ars_nouveau.imbuement(
         'gtceu:phosphorus_boule',
@@ -100,7 +209,7 @@ ServerEvents.recipes(event => {
     )
 
     // verdant naquadah boule
-    // naquadah boule + terrasteel -> 48 naquadah wafers
+    // naquadah boule + terrasteel -> 128 naquadah wafers (vs vanilla 64)
     // gate: thaumaturge (LuV)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['botania:terrasteel_ingot', 'botania:terrasteel_ingot'],
@@ -110,7 +219,7 @@ ServerEvents.recipes(event => {
     )
 
     // gaian neutronium boule
-    // neutronium boule + gaia spirit -> 48 neutronium wafers
+    // neutronium boule + gaia spirit -> 192 neutronium wafers (vs vanilla 96)
     // gate: sage (UV)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['botania:gaia_ingot'],
@@ -146,7 +255,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter('cut_gaian_neutronium_boule')
         .itemInputs('kubejs:gaian_neutronium_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 1500))
-        .itemOutputs('256x gtceu:neutronium_wafer')
+        .itemOutputs('192x gtceu:neutronium_wafer')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
