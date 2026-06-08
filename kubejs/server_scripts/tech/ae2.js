@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('ae2_fluix_crystal')
         .itemInputs(
             '1x ae2:charged_certus_quartz_crystal',
-            '1x minecraft:nether_quartz',
+            '1x minecraft:quartz',
             '1x minecraft:redstone'
         )
         .itemOutputs('2x ae2:fluix_crystal')
