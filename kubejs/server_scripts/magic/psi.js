@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('psi_cad_assembler_block')
-        .itemInputs('4x create:iron_sheet', '2x gtceu:electric_piston_hv', '#gtceu:circuits/hv')
+        .itemInputs('4x create:iron_sheet', '2x gtceu:hv_electric_piston', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x psi:cad_assembler')
         .duration(15 * 20)

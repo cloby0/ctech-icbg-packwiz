@@ -1470,7 +1470,7 @@ hash = "fc5836b5db66a60792a84f5feeb10a5988f91b7762719d6a693abb7df3c5ffcc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "e51033d4690ae2e35861194e30b1749dd4e37e7ae6c8d906561a2f7dbea36829"
+hash = "578b8ecf24765f53fc0f557e8db94b0dbbb75116e00bf457a7aecfd6940b8872"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
