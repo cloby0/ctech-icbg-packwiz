@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     // --- iron CAD assembly: dual HV + Initiate gate ---
     // holy silver foil = magic component embedded in tech recipe
     event.recipes.gtceu.assembler('psi_iron_cad_assembly')
-        .itemInputs('4x gtceu:iron_plate', '4x psi:psidust', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
+        .itemInputs('4x create:iron_sheet', '4x psi:psidust', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x psi:cad_assembly_iron')
         .duration(15 * 20)
@@ -69,14 +69,14 @@ ServerEvents.recipes(event => {
 
     // --- CAD components (all gated by psidust = gated by above) ---
     event.recipes.gtceu.assembler('psi_cad_core_basic')
-        .itemInputs('4x gtceu:iron_plate', '2x psi:psidust', '#gtceu:circuits/hv')
+        .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x psi:cad_core_basic')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('psi_cad_socket_basic')
-        .itemInputs('2x gtceu:iron_plate', '1x psi:psidust', '#gtceu:circuits/mv')
+        .itemInputs('2x create:iron_sheet', '1x psi:psidust', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x psi:cad_socket_basic')
         .duration(10 * 20)
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
     // lv_battery_hull provides the capacitor housing
     event.recipes.gtceu.assembler('psi_cad_battery_basic')
-        .itemInputs('2x gtceu:iron_plate', '1x psi:psidust', 'gtceu:lv_battery_hull')
+        .itemInputs('2x create:iron_sheet', '1x psi:psidust', 'gtceu:lv_battery_hull')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x psi:cad_battery_basic')
         .duration(10 * 20)
@@ -137,14 +137,14 @@ ServerEvents.recipes(event => {
 
     // --- PSI blocks ---
     event.recipes.gtceu.assembler('psi_programmer_block')
-        .itemInputs('4x gtceu:iron_plate', '2x psi:psidust', '#gtceu:circuits/hv', '2x minecraft:glass_pane')
+        .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv', '2x minecraft:glass_pane')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x psi:programmer')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('psi_cad_assembler_block')
-        .itemInputs('4x gtceu:iron_plate', '2x gtceu:electric_piston_hv', '#gtceu:circuits/hv')
+        .itemInputs('4x create:iron_sheet', '2x gtceu:electric_piston_hv', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x psi:cad_assembler')
         .duration(15 * 20)
@@ -152,49 +152,49 @@ ServerEvents.recipes(event => {
 
     // --- spell bullets: GT assembler, output 2x ---
     event.recipes.gtceu.assembler('psi_spell_bullet_basic')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_projectile')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:arrow')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:arrow')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_projectile')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_grenade')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:gunpowder')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:gunpowder')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_grenade')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_loop')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:string')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:string')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_loop')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_charge')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:redstone')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:redstone')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_charge')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_circle')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:slime_ball')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:slime_ball')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_circle')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('psi_spell_bullet_mine')
-        .itemInputs('1x gtceu:iron_plate', '1x psi:psidust', '1x minecraft:stone_button')
+        .itemInputs('1x create:iron_sheet', '1x psi:psidust', '1x minecraft:stone_button')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('2x psi:spell_bullet_mine')
         .duration(5 * 20)
