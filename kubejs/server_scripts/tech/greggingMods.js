@@ -77,11 +77,11 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // normal monitor: aluminium + glass lens + MV circuit
+    // normal monitor: aluminium + glass plate + MV circuit
     event.recipes.gtceu.assembler('cc_monitor_normal')
         .itemInputs(
             '2x gtceu:aluminium_plate',
-            '1x gtceu:glass_lens',
+            '1x gtceu:glass_plate',
             '2x gtceu:copper_single_wire',
             '1x #gtceu:circuits/mv'
         )
@@ -127,12 +127,12 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // pocket computer: smaller aluminium chassis + glass lens + MV circuit
+    // pocket computer: smaller aluminium chassis + glass plate + MV circuit
     event.recipes.gtceu.circuit_assembler('cc_pocket_computer_normal')
         .itemInputs(
             '2x gtceu:aluminium_plate',
             '2x gtceu:silicon_ingot',
-            '1x gtceu:glass_lens',
+            '1x gtceu:glass_plate',
             '1x #gtceu:circuits/mv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     // advanced computer: gold chassis (HV) + silicon + SMD components + HV circuit
     event.recipes.gtceu.circuit_assembler('cc_computer_advanced')
         .itemInputs(
-            '4x gtceu:gold_plate',
+            '4x create:gold_sheet',
             '2x gtceu:silicon_ingot',
             '2x gtceu:smd_transistor',
             '1x #gtceu:circuits/hv'
@@ -153,11 +153,11 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // advanced monitor: gold + glass lens + HV circuit (4x output mirrors vanilla)
+    // advanced monitor: gold + glass plate + HV circuit (4x output mirrors vanilla)
     event.recipes.gtceu.assembler('cc_monitor_advanced')
         .itemInputs(
-            '2x gtceu:gold_plate',
-            '1x gtceu:glass_lens',
+            '2x create:gold_sheet',
+            '1x gtceu:glass_plate',
             '2x gtceu:copper_single_wire',
             '1x #gtceu:circuits/hv'
         )
@@ -166,12 +166,12 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // advanced pocket computer: gold + glass lens + HV circuit
+    // advanced pocket computer: gold + glass plate + HV circuit
     event.recipes.gtceu.circuit_assembler('cc_pocket_computer_advanced')
         .itemInputs(
-            '2x gtceu:gold_plate',
+            '2x create:gold_sheet',
             '2x gtceu:silicon_ingot',
-            '1x gtceu:glass_lens',
+            '1x gtceu:glass_plate',
             '1x #gtceu:circuits/hv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cc_turtle_normal')
         .itemInputs(
             '1x computercraft:computer_normal',
-            '4x gtceu:iron_plate',
+            '4x create:iron_sheet',
             '1x gtceu:mv_electric_motor',
             '1x gtceu:mv_robot_arm'
         )
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cc_turtle_advanced')
         .itemInputs(
             '1x computercraft:computer_advanced',
-            '4x gtceu:gold_plate',
+            '4x create:gold_sheet',
             '1x gtceu:hv_electric_motor',
             '1x gtceu:hv_robot_arm'
         )
@@ -449,11 +449,11 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // television: aluminium chassis + glass lens display + HV emitter for broadcast + HV circuit
+    // television: aluminium chassis + glass plate display + HV emitter for broadcast + HV circuit
     event.recipes.gtceu.assembler('vista_television')
         .itemInputs(
             '4x gtceu:aluminium_plate',
-            '2x gtceu:glass_lens',
+            '2x gtceu:glass_plate',
             '1x gtceu:hv_emitter',
             '1x #gtceu:circuits/hv'
         )
