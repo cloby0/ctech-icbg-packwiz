@@ -286,7 +286,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x2d2d2d)
         .secondaryColor(0x161616)
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
-        .iconSet(GTMaterialIconSet.SHINY)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,

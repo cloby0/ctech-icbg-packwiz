@@ -874,11 +874,15 @@ hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "a41239bb2bbb5f6e62fa9a194b9637b36cfeb6721fa073bc537e546c94e6391c"
+hash = "0c036b71e9dd8e8ed9b2f485d7076909dd78e25728e3a43c9bbffcbe92a86787"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
 hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
+
+[[files]]
+file = "kubejs/server_scripts/tech/cyberware.js"
+hash = "9e1563e04fe67f2539e795f09de07cb01091363dc4dc0f3f730a3e242398e270"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -887,6 +891,10 @@ hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 [[files]]
 file = "kubejs/server_scripts/tech/evAndMars.js"
 hash = "5093ce36101dfda9947e8ba0a15a1db4985b87507180e46659f023ca565a1acc"
+
+[[files]]
+file = "kubejs/server_scripts/tech/greggingMods.js"
+hash = "d4775d2470030f49b88b49b96514b1befce6b236838146499c8c08c140dc5c25"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -945,6 +953,10 @@ file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
 hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
+hash = "1d6578c3fd8ca9d70abc29696b5a1df5287a6d0d7f2133e7db623f7ac9ced75d"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
 hash = "27bad30a239522a21e553321235c9da72075cd7b12dc2da6acdef7c0784b0d01"
 
@@ -962,7 +974,7 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "c9d1af7ecc125d0325150674a9ad314168033b147e3ff337b4b2b5013e3818cb"
+hash = "ecbbb29cc40a17d2184b5d0255b6fbc376a6b06d128f18bf39facb317eb21f0c"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

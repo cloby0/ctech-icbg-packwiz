@@ -368,31 +368,31 @@ ServerEvents.recipes(event => {
     // storage cells: cell component + housing
     event.recipes.gtceu.me_fabricator('ae2_1k_me_storage_cell')
         .itemInputs('1x ae2:cell_component_1k', '1x ae2:item_cell_housing')
-        .itemOutputs('1x ae2:cell_component_1k')
+        .itemOutputs('1x ae2:item_storage_cell_1k')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.me_fabricator('ae2_4k_me_storage_cell')
         .itemInputs('1x ae2:cell_component_4k', '1x ae2:item_cell_housing')
-        .itemOutputs('1x ae2:cell_component_4k')
+        .itemOutputs('1x ae2:item_storage_cell_4k')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.me_fabricator('ae2_16k_me_storage_cell')
         .itemInputs('1x ae2:cell_component_16k', '1x ae2:item_cell_housing')
-        .itemOutputs('1x ae2:cell_component_16k')
+        .itemOutputs('1x ae2:item_storage_cell_16k')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.me_fabricator('ae2_64k_me_storage_cell')
         .itemInputs('1x ae2:cell_component_64k', '1x ae2:item_cell_housing')
-        .itemOutputs('1x ae2:cell_component_64k')
+        .itemOutputs('1x ae2:item_storage_cell_64k')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.me_fabricator('ae2_256k_me_storage_cell')
         .itemInputs('1x ae2:cell_component_256k', '1x ae2:item_cell_housing')
-        .itemOutputs('1x ae2:cell_component_256k')
+        .itemOutputs('1x ae2:item_storage_cell_256k')
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
