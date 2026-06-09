@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:lunar_rocket_alloy_plate',
             '2x gtceu:stainless_steel_plate',
-            '1x gtceu:rubber_plate'
+            '1x gtceu:silicone_rubber_plate'
         )
         .itemOutputs('2x kubejs:rocket_hull_section')
         .duration(20 * 20)
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '4x gtceu:aluminium_plate',
             '2x gtceu:stainless_steel_plate',
-            '1x gtceu:rubber_plate',
+            '1x gtceu:silicone_rubber_plate',
             '1x gtceu:hv_electric_pump'
         )
         .itemOutputs('1x kubejs:pressurized_rocket_tank')

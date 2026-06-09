@@ -78,14 +78,6 @@ ServerEvents.recipes(event => {
 
     // --- ae2 components ---
 
-    // silicon wafer → silicon ingot in circuit_assembler
-    event.recipes.gtceu.circuit_assembler('ae2_silicon')
-        .itemInputs('1x gtceu:silicon_wafer')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
-        .itemOutputs('4x gtceu:silicon_ingot')
-        .duration(5 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
-
     // fluix crystal via mixer (parallel path alongside create mixing)
     event.recipes.gtceu.mixer('ae2_fluix_crystal')
         .itemInputs(
@@ -101,7 +93,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('ae2_formation_core')
         .itemInputs(
             '2x ae2:certus_quartz_crystal',
-            '2x gtceu:silicon_ingot',
+            '2x gtceu:ilc_chip',
             '1x minecraft:redstone'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -113,7 +105,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('ae2_annihilation_core')
         .itemInputs(
             '2x ae2:fluix_crystal',
-            '2x gtceu:silicon_ingot',
+            '2x gtceu:ilc_chip',
             '1x minecraft:redstone'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -126,7 +118,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.me_fabricator('ae2_logic_processor')
         .itemInputs(
             '2x gtceu:signalum_plate',
-            '1x gtceu:silicon_ingot',
+            '2x gtceu:cpu_chip',
             '2x ae2:certus_quartz_dust'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -138,7 +130,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.me_fabricator('ae2_engineering_processor')
         .itemInputs(
             '2x gtceu:enderium_plate',
-            '1x gtceu:silicon_ingot',
+            '2x gtceu:cpu_chip',
             '2x ae2:certus_quartz_dust'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -150,7 +142,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.me_fabricator('ae2_calculation_processor')
         .itemInputs(
             '2x gtceu:lumium_plate',
-            '1x gtceu:silicon_ingot',
+            '2x gtceu:cpu_chip',
             '2x ae2:certus_quartz_crystal'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -309,7 +301,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x gtceu:sky_steel_plate',
             '4x ae2:certus_quartz_crystal',
-            '2x gtceu:silicon_ingot'
+            '2x gtceu:ram_chip'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x ae2:cell_component_1k')
@@ -320,7 +312,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:sky_steel_plate',
             '4x ae2:certus_quartz_crystal',
-            '2x gtceu:silicon_ingot',
+            '4x gtceu:ram_chip',
             '2x ae2:cell_component_1k'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -332,7 +324,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:sky_steel_plate',
             '4x ae2:certus_quartz_crystal',
-            '2x gtceu:silicon_ingot',
+            '4x gtceu:ram_chip',
             '2x ae2:cell_component_4k'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -344,7 +336,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:sky_steel_plate',
             '4x ae2:fluix_crystal',
-            '2x gtceu:silicon_ingot',
+            '4x gtceu:ram_chip',
             '2x ae2:cell_component_16k'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -356,7 +348,8 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:sky_steel_plate',
             '4x ae2:fluix_crystal',
-            '2x gtceu:silicon_ingot',
+            '4x gtceu:ram_chip',
+            '2x gtceu:cpu_chip',
             '2x ae2:cell_component_64k',
             '1x kubejs:matter_energy_circuit'
         )

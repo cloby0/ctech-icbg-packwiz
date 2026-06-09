@@ -25,17 +25,17 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // fiberoptics: glass lenses threaded onto copper wiring
+    // fiberoptics: borosilicate glass fibers with copper signal wiring
     event.recipes.gtceu.circuit_assembler('cw_component_fiberoptics')
-        .itemInputs('2x gtceu:glass_lens', '2x gtceu:copper_single_wire')
+        .itemInputs('2x gtceu:fine_borosilicate_glass_wire', '2x gtceu:copper_single_wire')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_fiberoptics')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ssc: solid state chip (silicon + HV logic)
+    // ssc: solid state chip (silicon wafer + HV logic)
     event.recipes.gtceu.circuit_assembler('cw_component_ssc')
-        .itemInputs('2x gtceu:silicon_ingot', '1x #gtceu:circuits/hv')
+        .itemInputs('2x gtceu:silicon_wafer', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('2x cyber_ware_port:component_ssc')
         .duration(15 * 20)
@@ -71,9 +71,9 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // storage: energy storage cell
+    // storage: NAND-based storage cell
     event.recipes.gtceu.circuit_assembler('cw_component_storage')
-        .itemInputs('2x gtceu:silicon_ingot', '1x gtceu:stainless_steel_plate', '1x #gtceu:circuits/hv')
+        .itemInputs('2x gtceu:nand_chip', '1x gtceu:stainless_steel_plate', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_storage')
         .duration(10 * 20)
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
 
     // neuropozyne: anti-rejection drug (MV chemical_reactor)
     event.recipes.gtceu.chemical_reactor('cw_neuropozyne')
-        .itemInputs('1x minecraft:spider_eye', '1x minecraft:sugar', '1x gtceu:small_iron_dust')
+        .itemInputs('1x minecraft:spider_eye', '1x gtceu:small_sulfur_dust', '1x gtceu:small_iron_dust')
         .itemOutputs('2x cyber_ware_port:neuropozyne')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cyberware_constructor('cw_dense_battery')
         .itemInputs(
             '2x gtceu:stainless_steel_plate',
-            '2x gtceu:silicon_ingot',
+            '2x gtceu:silicon_wafer',
             '1x gtceu:hv_field_generator',
             '1x #gtceu:circuits/hv'
         )
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x gtceu:stainless_steel_plate',
             '2x gtceu:glass_lens',
-            '1x gtceu:silicon_ingot',
+            '1x gtceu:silicon_wafer',
             '1x gtceu:hv_sensor',
             '1x #gtceu:circuits/hv'
         )
@@ -218,6 +218,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x cyber_ware_port:cyberlimbs_cyberarm_left')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.cyberware_constructor('cw_cyberarm_right')
         .itemInputs(
@@ -230,6 +231,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x cyber_ware_port:cyberlimbs_cyberarm_right')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
 
     // --- cyberlegs (EV) ---
 
@@ -244,6 +246,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x cyber_ware_port:cyberlimbs_cyberleg_left')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.cyberware_constructor('cw_cyberleg_right')
         .itemInputs(
@@ -256,6 +259,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x cyber_ware_port:cyberlimbs_cyberleg_right')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
 
     // --- eye upgrades (HV) ---
 
@@ -281,14 +285,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.cyberware_constructor('cw_eye_underwater_vision')
-        .itemInputs('1x gtceu:glass_lens', '1x minecraft:prismarine_shard', '1x #gtceu:circuits/hv')
+        .itemInputs('1x gtceu:glass_lens', '2x gtceu:smd_capacitor', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:cybereye_upgrades_underwater_vision')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.cyberware_constructor('cw_eye_hudjack')
-        .itemInputs('2x gtceu:smd_transistor', '1x gtceu:silicon_ingot', '1x #gtceu:circuits/hv')
+        .itemInputs('2x gtceu:smd_transistor', '1x gtceu:ram_chip', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:cybereye_upgrades_hudjack')
         .duration(20 * 20)
@@ -306,7 +310,7 @@ ServerEvents.recipes(event => {
 
     // neural contextualizer: enhanced data processing overlay (EV)
     event.recipes.gtceu.cyberware_constructor('cw_brain_neural_contextualizer')
-        .itemInputs('2x gtceu:silicon_ingot', '1x gtceu:ev_emitter', '1x #gtceu:circuits/ev')
+        .itemInputs('2x gtceu:cpu_chip', '1x gtceu:ev_emitter', '1x #gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cyber_ware_port:brain_upgrades_neural_contextualizer')
         .duration(25 * 20)
@@ -314,15 +318,15 @@ ServerEvents.recipes(event => {
 
     // cortical stack: consciousness backup storage (EV)
     event.recipes.gtceu.cyberware_constructor('cw_brain_cortical_stack')
-        .itemInputs('2x gtceu:silicon_ingot', '1x gtceu:ev_field_generator', '1x #gtceu:circuits/ev')
+        .itemInputs('4x gtceu:nand_chip', '1x gtceu:ev_field_generator', '1x #gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x cyber_ware_port:brain_upgrades_cortical_stack')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ender jammer: blocks teleportation within range (EV)
+    // ender jammer: tungsten-shielded field disruptor (EV)
     event.recipes.gtceu.cyberware_constructor('cw_brain_ender_jammer')
-        .itemInputs('1x minecraft:ender_pearl', '1x minecraft:obsidian', '1x gtceu:ev_field_generator', '1x #gtceu:circuits/ev')
+        .itemInputs('1x minecraft:ender_pearl', '1x gtceu:tungsten_steel_plate', '1x gtceu:ev_field_generator', '1x #gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cyber_ware_port:brain_upgrades_ender_jammer')
         .duration(25 * 20)
@@ -332,7 +336,7 @@ ServerEvents.recipes(event => {
     // spider_eye kept: thematic for sensory input mesh
     event.recipes.gtceu.cyberware_constructor('cw_brain_matrix')
         .itemInputs(
-            '4x gtceu:silicon_ingot',
+            '2x gtceu:nano_cpu_chip',
             '1x gtceu:iv_field_generator',
             '1x minecraft:spider_eye',
             '1x #gtceu:circuits/iv'
@@ -361,19 +365,17 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // medkit: healing fluid injector (HV)
-    // ghast_tear kept: thematic for regenerative reagent
+    // medkit: stem cell implant synthesizer (LuV)
     event.recipes.gtceu.cyberware_constructor('cw_heart_medkit')
-        .itemInputs('1x gtceu:hv_electric_pump', '1x minecraft:ghast_tear', '1x #gtceu:circuits/hv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemInputs('1x gtceu:luv_electric_pump', '2x gtceu:stem_cells', '1x #gtceu:circuits/luv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cyber_ware_port:heart_upgrades_medkit')
-        .duration(20 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
 
-    // platelets: clotting agent dispenser (HV)
-    // slime_ball kept: thematic for viscous clotting fluid
+    // platelets: timed clotting agent dispenser (HV)
     event.recipes.gtceu.cyberware_constructor('cw_heart_platelets')
-        .itemInputs('1x gtceu:hv_electric_pump', '1x minecraft:slime_ball', '1x #gtceu:circuits/hv')
+        .itemInputs('1x gtceu:hv_electric_pump', '2x gtceu:smd_capacitor', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:heart_upgrades_platelets')
         .duration(20 * 20)
@@ -389,9 +391,9 @@ ServerEvents.recipes(event => {
 
     // --- arm upgrades ---
 
-    // bow: integrated compound launcher (HV)
+    // bow: energy-storing flywheel draw assist (HV)
     event.recipes.gtceu.cyberware_constructor('cw_arm_bow')
-        .itemInputs('1x minecraft:bow', '2x gtceu:stainless_steel_plate', '1x gtceu:hv_electric_piston', '1x #gtceu:circuits/hv')
+        .itemInputs('2x gtceu:stainless_steel_plate', '1x gtceu:stainless_steel_gear', '1x gtceu:hv_electric_piston', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:arm_upgrades_bow')
         .duration(20 * 20)
@@ -435,12 +437,12 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // rubber_plate kept: thematic for shock-absorbing pads
+    // fall bracers: silicone shock-absorbing pad assembly (HV)
     event.recipes.gtceu.cyberware_constructor('cw_leg_fall_damage')
         .itemInputs(
             '2x gtceu:stainless_steel_plate',
             '1x gtceu:hv_electric_piston',
-            '2x gtceu:rubber_plate',
+            '2x gtceu:silicone_rubber_plate',
             '1x #gtceu:circuits/hv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -481,9 +483,9 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // boneflex: flexible carbon-rubber reinforcement (HV)
+    // boneflex: silicone-dampened titanium flexion layer (HV)
     event.recipes.gtceu.cyberware_constructor('cw_bone_boneflex')
-        .itemInputs('1x gtceu:titanium_plate', '1x gtceu:rubber_plate', '1x #gtceu:circuits/hv')
+        .itemInputs('1x gtceu:titanium_plate', '1x gtceu:silicone_rubber_plate', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
         .itemOutputs('1x cyber_ware_port:bone_upgrades_boneflex')
         .duration(15 * 20)
@@ -512,9 +514,9 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // wired reflexes: neural fiber speed-mesh
+    // wired reflexes: gold neural fiber speed-mesh (EV)
     event.recipes.gtceu.cyberware_constructor('cw_muscle_wired_reflexes')
-        .itemInputs('4x gtceu:fine_copper_wire', '1x gtceu:ev_emitter', '1x #gtceu:circuits/ev')
+        .itemInputs('4x gtceu:fine_gold_wire', '1x gtceu:ev_emitter', '1x #gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cyber_ware_port:muscle_upgrades_wired_reflexes')
         .duration(25 * 20)
@@ -530,9 +532,9 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // fake skin: synthetic camouflage layer (HV)
+    // fake skin: silicone skin layer with pump-driven pigment matching (HV)
     event.recipes.gtceu.cyberware_constructor('cw_skin_fake_skin')
-        .itemInputs('2x minecraft:leather', '2x gtceu:rubber_plate', '1x gtceu:hv_electric_pump', '1x #gtceu:circuits/hv')
+        .itemInputs('4x gtceu:silicone_rubber_plate', '1x gtceu:hv_electric_pump', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:skin_upgrades_fake_skin')
         .duration(20 * 20)
@@ -549,8 +551,7 @@ ServerEvents.recipes(event => {
     // solar skin: photovoltaic subdermal cells (EV)
     event.recipes.gtceu.cyberware_constructor('cw_skin_solar_skin')
         .itemInputs(
-            '2x gtceu:silicon_ingot',
-            '2x gtceu:glass_lens',
+            '2x gtceu:ev_solar_panel',
             '1x gtceu:ev_emitter',
             '1x #gtceu:circuits/ev'
         )
@@ -561,10 +562,9 @@ ServerEvents.recipes(event => {
 
     // --- lower organ upgrades ---
 
-    // adrenaline: synthetic adrenaline injector (HV)
-    // sugar kept: thematic for glucose precursor
+    // adrenaline: surge-triggered catecholamine injector (HV)
     event.recipes.gtceu.cyberware_constructor('cw_lower_adrenaline')
-        .itemInputs('1x gtceu:hv_electric_pump', '1x minecraft:sugar', '1x #gtceu:circuits/hv')
+        .itemInputs('1x gtceu:hv_electric_pump', '2x gtceu:smd_transistor', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:lower_organs_upgrades_adrenaline')
         .duration(20 * 20)
@@ -574,7 +574,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cyberware_constructor('cw_lower_battery')
         .itemInputs(
             '2x gtceu:titanium_plate',
-            '2x gtceu:silicon_ingot',
+            '2x gtceu:silicon_wafer',
             '1x gtceu:ev_field_generator',
             '1x #gtceu:circuits/ev'
         )
@@ -584,12 +584,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // liver filter: activated carbon toxin scrubber (HV)
-    // charcoal kept: thematic for activated carbon filtration
     event.recipes.gtceu.cyberware_constructor('cw_lower_liver_filter')
         .itemInputs(
             '2x gtceu:stainless_steel_plate',
             '1x gtceu:hv_electric_pump',
-            '1x minecraft:charcoal',
+            '1x gtceu:carbon_dust',
             '1x #gtceu:circuits/hv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -607,9 +606,9 @@ ServerEvents.recipes(event => {
 
     // --- lung upgrades ---
 
-    // oxygen: integrated O2 microtank (HV)
+    // oxygen: integrated O2 microtank with delivery lines (HV)
     event.recipes.gtceu.cyberware_constructor('cw_lungs_oxygen')
-        .itemInputs('2x gtceu:stainless_steel_plate', '1x gtceu:hv_electric_pump', '1x #gtceu:circuits/hv')
+        .itemInputs('2x gtceu:stainless_steel_plate', '1x gtceu:hv_electric_pump', '1x gtceu:stainless_steel_small_fluid_pipe', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x cyber_ware_port:lungs_upgrades_oxygen')
         .duration(20 * 20)

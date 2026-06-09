@@ -181,6 +181,174 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/assets/advancedperipherals/models/block/block_reader.json"
+hash = "fd66fa0ce1ef1368f620ed26104f55d3c614dea557c52bec5ffa862163764d24"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/chat_box.json"
+hash = "e1a3a5ef8851d875c56eaf97cedd401a6293a6a518cb7b47f424f759414daff4"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/energy_detector.json"
+hash = "4147e40b7baedadd8e55ad99b2f27a7be8e4c6a99bead8eaa2c6bb599e1438a7"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/environment_detector.json"
+hash = "f5084a1c7cd57c4990e17a645ce0398df4392415fd993ef9b5310d5a75e5fe30"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/geo_scanner.json"
+hash = "edfbc6f2395e1ded5d9f9ad20a936ba420496321c46ac9cf0aada643cd89a2a0"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/inventory_manager.json"
+hash = "06f64444279827d6765c511ad02f2cd94a92417cbd86a5c88c838577e7eb0568"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/me_bridge.json"
+hash = "dc3c69b1359edaf474b59b7534dfd5a0bdfc2a8795e637bfdc5e80fe6ca0f70d"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/nbt_storage.json"
+hash = "8115ad0fe11fef35a4c347428f6fa341ac61bb4058dfd8f2f56c87b5284eb130"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/player_detector.json"
+hash = "e7355c25c7a9acef908c1052552affbbe18c32000e789c4b247d67fdd84475e2"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/redstone_integrator.json"
+hash = "843ea1d922bbf66815f7594cab4df5aa6b1ba0cf52166de37e996380664c2b08"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/models/block/rs_bridge.json"
+hash = "96579d0d4cda8cd8f8684919ab861d4a7493e86271353e8322c541f0e175ce7f"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/block_reader.png"
+hash = "5823221702ccf101c65eba5a24440c2104d561f6a453966d6bb805ac2489c3ca"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/block_reader.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/block_reader_front.png"
+hash = "9aeccedacccd8126c325652b456f6128d727e309b1728fbeae78e338256abb99"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/block_reader_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/chat_box_front.png"
+hash = "851a18ee9b2a2ab6fc2c1926c0bb64697ca38ee0087208e15c47b71c34aaf299"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/chat_box_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/energy_detector.png"
+hash = "cbf357072d6e940dd8c7df0d3ad599502f4bd8b7da42565503df57fee14a4da4"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/energy_detector.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/energy_detector_front.png"
+hash = "98cb891f09f38b11c6f5b3970edca3dc84c94c10bef1e11691f0baee7bf36986"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/energy_detector_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/environment_detector_front.png"
+hash = "2f2466fd0e2b49fe260a24ffd0e78e521c055fc27a5143480d18f10a5bbf4b81"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/environment_detector_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/geo_scanner_front.png"
+hash = "28f163660e90a5e62da643c4471f9f83cc6f37e5604f239ce450e9fd744ba81d"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/inventory_manager_front.png"
+hash = "c9bc360a25bd624086bcbacbb1cc781bc6f39f368ba50ceb41e1bf554dbc302c"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/inventory_manager_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/me_bridge.png"
+hash = "65b0797eb8fb5f38eb477c3b7fbb725b061c2c3c6ab1b9dccda358e38273a1e7"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/me_bridge.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/me_bridge_front.png"
+hash = "28fbcad6a9d51a786bc85a6d95f9de69bc4de096d76077c772066071f5b01cc4"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/me_bridge_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/nbt_storage_front.png"
+hash = "404bc22a122be0f13761a5c3b8dfca1eb550227afe0cf6070d0dff982017701d"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/nbt_storage_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/player_detector_front.png"
+hash = "a8970546418e9bad7d11e511db138982e0aab3f3a6d7767c358c8f2e1df53413"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/redstone_integrator.png"
+hash = "f0dae239ab2cdffc5d587857d7341a5f2ab12a8c26e6f56a42b4d715d9d1881f"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/redstone_integrator.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/redstone_integrator_front.png"
+hash = "9108a51d86efdceb2e40d2650396da78df3b5c6d6aff9d8aa8a3cf968df4115a"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/redstone_integrator_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/rs_bridge.png"
+hash = "ee5dfe3d97a865adf0d4ad6202fd499dc32ea3fba6470eef646f44af043516fa"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/rs_bridge.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/rs_bridge_front.png"
+hash = "cecaaaeb22e827747e48fb1f64f1c8d222ec143366342e84a12a04eae5c387d0"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/block/rs_bridge_front.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/advancedperipherals/textures/item/memory_card.png"
+hash = "5ca63668057361db434688d45ad0b7b2333de8887af88187f6b9b651e3f3e682"
+
+[[files]]
 file = "kubejs/assets/ae2/textures/item/calculation_processor.png"
 hash = "7e9a87b1a3fb2f21f6e09a0eec381ee5ce996f74ebaee31f2c1186242b79f65d"
 
@@ -207,6 +375,442 @@ hash = "cbd3a34061cc1414f3b2054995adbc33c0589e6504d44328e8cfd23644d09b4b"
 [[files]]
 file = "kubejs/assets/ars_nouveau/lang/en_us.json"
 hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/block_front_back.json"
+hash = "d9444476fd444935a86b6dc49cfa24edc1bdccd77ae801c1f33e9a380717622e"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/cable_arm.json"
+hash = "c6780460f9d4db21b00199ba27900bc02ae44b695a137c7a447ef9e94338a4cc"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/cable_core_any.json"
+hash = "13c0b4a7385ef10e354009186237abd79f31265cc41f64c48745a8d1b9226414"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/cable_core_facing.json"
+hash = "ccaeb3ad742791d523f0be6e8323c50f3337622617fa69866de9015bd32cbe69"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/cable_item.json"
+hash = "adb50686b06dd2e7dc9964d3f715366182f17af591c20bee2bbfe07e7985301a"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_advanced_blinking.json"
+hash = "06204341f69e19b2400608839173c8c78582a184e39047a2203f0a3a755dbda9"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_advanced_off.json"
+hash = "ad1d6a0395955319752f21cb0ff4d5b2ffb7cfbe5f856be7a0b83e9b64e805f5"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_advanced_on.json"
+hash = "01a4170df88f17d40a01fcee9e010c2e8a87de8fad35742942a1f41f3860aedd"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_command_blinking.json"
+hash = "246e1c3ef399fc78b3e0e177b83d4180669094f0166a8102507719497bb28748"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_command_off.json"
+hash = "87401f146a6092294580772791e836287c791c20796085117eee4cf873e31c91"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_command_on.json"
+hash = "ce3bec29b3ca0c53a5253ebdc285b5ffc8d57fb1914b89c83f67f8ce139974d6"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_normal_blinking.json"
+hash = "47511c3ef15d0b51d0c6e35b27cebe89ca5a1dfeb80660dd78d0bf2eab6e390f"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_normal_off.json"
+hash = "686895eccf001fc109d7cc317a6cee852b78862ff63317673ebee7e6783b4f45"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/computer_normal_on.json"
+hash = "5fbf6477ba494cea4b52e612143d93314017f43af47c9ccd7ba20d42a0264b35"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/disk_drive_empty.json"
+hash = "a2b05830b7154941a505bd450de3fc5069af5441751a95274a128be8a3c19182"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/disk_drive_full.json"
+hash = "824368ab2610df03a791d03671080d375e75f07e0e96549a950942b58dcde940"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/disk_drive_invalid.json"
+hash = "2ea8feb64d021e19cf8738cd61b6e56286c9723188e6809baa5395be8df759a3"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/modem.json"
+hash = "276f0a6460e35efe9de8ece09f8a659a633e5f319634a878d3a7051b33730dd8"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced.json"
+hash = "66883e8497c002ffaa2017bcf95b8e00970495357ad9eafba6b4d6465ca4c22c"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_base.json"
+hash = "b30f7ee26bec7b918431061c6d003222998403cfed66c4ccdabfd0a560913e55"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_d.json"
+hash = "deebf216c880df04532105ebb8726e7ca3ad11c83e02e29da484bab8c4f225d6"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_item.json"
+hash = "78110365643f3a9971227d0160736e4a31ceffb8a30d9a0153c54a5fb4339199"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_l.json"
+hash = "29fec9832177419a6ba688cc22b8288c7a6d153c54a7a2e46c5576877acce9e0"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_ld.json"
+hash = "de990bc9492bf869888f9018bdd4431f14b2d10dbfa3428fabb664ea34211066"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lr.json"
+hash = "8a5d147d7106d3b6dfa16f791cbe4ea9607ff34bbff33a4e5b7daa51295375b7"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lrd.json"
+hash = "61611ccd8419d22a5c82dd301585a72c0843f032862d711b3c41c3ec92af3631"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lru.json"
+hash = "aaa148d75666c1eb20d945327803094bcda685a74987f9823382ef81ca03c15d"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lrud.json"
+hash = "25c0b861ad756dfb7d5bf989e9855af21862403b7d6163d57f90953a3edce213"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lu.json"
+hash = "d1037b2a524814e3a2a7b621510331907013da99cce58a85b0075c1adeef1f86"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_lud.json"
+hash = "1f11906487c8a42f55051938ef404fd877961bbf1142c03b9052f7e4b44311ae"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_r.json"
+hash = "1cfd229306ad7e4b546959bbd52a3de16e9925ba7d999379118e040fc3898e51"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_rd.json"
+hash = "f8c800239c02664927cacc3cd498f49f3625ed10901f8eb0551eab50159bce59"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_ru.json"
+hash = "3652aff21ec3226085ea03d041c4bbbbf951f7b63de36121ea5fef1649c410b9"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_rud.json"
+hash = "92033bdd8a9d258463f03cbd6c96ee4c407b89585126a3352b86d74384c00d21"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_u.json"
+hash = "4df50c1d91f7d6fdf785d7ff75c893828e6c76949385c128c6794e3e905b8637"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_advanced_ud.json"
+hash = "10ef790f2d3c55f5537f3e647e2084d296553fb1b3305d694fb0b1a80fbcf4dd"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/monitor_base.json"
+hash = "8111a5f6e1525cf3afb58698252e6b2656a2336325214a78713a3522fd558b5e"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/printer_both_full.json"
+hash = "8030818750ed3846874e96b0414869820537bc89ae32c2ec81bbe89c30ed59d4"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/printer_bottom_full.json"
+hash = "0cbc9debd1da8aab072c4890a04b179e5e07f634cf8d5bd5d723fd8e0ee6d64c"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/printer_empty.json"
+hash = "4674f7bcea2f3b5d0aab76dd7a2077f82d7a2ded8650584bb902a14b87cc843c"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/printer_top_full.json"
+hash = "7ae3913755e96f6b53e4d8ed4166b8d117610e7d8e1197eb7931add2206293cc"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/speaker.json"
+hash = "fbe92aa74a0a2c75e99f30205c5b3777e98f1d62c9fe9f0aa7020a78c6147e90"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_full_off.json"
+hash = "feacb83f9f8ec421e2cff387901a34699a0949493585b510fa3a5b4102abac44"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_full_off_peripheral.json"
+hash = "45fc98e662706bb1bbb52ff466fc82d49a3c884bdd6c9cb1b73aca19dafb5fe3"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_full_on.json"
+hash = "45fc98e662706bb1bbb52ff466fc82d49a3c884bdd6c9cb1b73aca19dafb5fe3"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_full_on_peripheral.json"
+hash = "45fc98e662706bb1bbb52ff466fc82d49a3c884bdd6c9cb1b73aca19dafb5fe3"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_off.json"
+hash = "7bd5f485d1c550d023d9a33ddeecc6324bea90426a6c4595eed126fca37a05d0"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_off_peripheral.json"
+hash = "77c1e7620339b849c369a52e79cf49deb56d527eb96b3e123689a156ece3c556"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_on.json"
+hash = "77c1e7620339b849c369a52e79cf49deb56d527eb96b3e123689a156ece3c556"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wired_modem_on_peripheral.json"
+hash = "77c1e7620339b849c369a52e79cf49deb56d527eb96b3e123689a156ece3c556"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wireless_modem_advanced_off.json"
+hash = "996c1f0495c6879add9728700f5b01b0edb02f040b7a71ca860e6ffd04697837"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wireless_modem_advanced_on.json"
+hash = "399cd30bf7344a79e3bed16e6082466af6fd8fcce37e56fbf1142f8333caccd5"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wireless_modem_normal_off.json"
+hash = "6f9d43bda6a0f6066aafefe76675729ddca774579614c640de8d6c4b7eecc7ae"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/block/wireless_modem_normal_on.json"
+hash = "9736916c03c032925fe379ab38ed73c75bc5c0860d2ba320fb8b48985ae2fb27"
+
+[[files]]
+file = "kubejs/assets/computercraft/models/item/cable.json"
+hash = "b968e219edda1ebd03bf310777fe23eac5d8df3775133a02c1d9fab4b07add85"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/blank.png"
+hash = "38be5a9fb712cb81d81245d38f669df298b6e8490018f0617986489249ce0494"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/cable_core.png"
+hash = "b6fd145d54f1a970d4b85d99d4295fca6521e1c0a04b1044481235ffe22142df"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/cable_core_glow.png"
+hash = "763d5ceea1436421459a42b54d9d33ed9389a751ae42dc82905dbcc5154a6745"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/cable_core_glow.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/cable_side.png"
+hash = "5d38db2bf41920a9b0d84746b3844b8a783488cb0aa86c8ed00c91acc6de8ad4"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/computer_front_blink.png"
+hash = "d7fbff88354bd865c767cbb3366b14efabed99098a617be841841aba464e536b"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/computer_front_blink.png.mcmeta"
+hash = "656053145d63a47cfe87280bcb5771a8aaefa2d797e3736456025cf551368cc3"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/computer_front_static.png"
+hash = "845f2a11c77c5bd522dd4dcf7aee80182c569828896ba23687d627eb5e6cd71a"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/computer_front_static.png.mcmeta"
+hash = "656053145d63a47cfe87280bcb5771a8aaefa2d797e3736456025cf551368cc3"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/computer_normal_front.png"
+hash = "8744d55abbec94ba8640044b2c294e3ba3618db807ded73727b95fac2c0f7aca"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/disk_drive_front.png"
+hash = "f5a77fd079d58daa4e3d5eee0ee99af13d6e2a41b311910add7cd5ca655a5080"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/disk_drive_front_accepted.png"
+hash = "c39977c06db83b82cd960efeb29f5925dd776c296539c4034b9985987623f73d"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/disk_drive_front_accepted.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/disk_drive_front_rejected.png"
+hash = "7d645b5051034554852ecce826487fc763d14c6287e23206d50c09ba695430d0"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/disk_drive_front_rejected.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/hv_case.png"
+hash = "ea333a8440746fd694b0266ef5dde68333f2e426001ba1ac0484b158c1e8cb0f"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/hv_case_pattern.png"
+hash = "cd479a44c4cb5a979ccb394217d51f7bd0b23128d4de0ced0c1c4056353274d4"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/monitor_normal_front.png"
+hash = "55ae3dbcc539d2ef282376a5534c0d1a05ed478931ba95b02c5e2fb1537ba006"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/mv_case.png"
+hash = "7249618487da01c7051e9b978fb5180f1fee0a86f0fa43cd3feb1b66d43878e4"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/mv_case_pattern.png"
+hash = "7249618487da01c7051e9b978fb5180f1fee0a86f0fa43cd3feb1b66d43878e4"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/printer_front_bottom_tray.png"
+hash = "27a9ab0a5aa3bb1760a7d4a29705128d2a898c74acadeaba74dc8c38320a23d4"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/printer_front_empty.png"
+hash = "aea2d3a89bb04b53c1e1d411e0a52cd2ab888e3d9110d32928961839c961e308"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/printer_front_light.png"
+hash = "63a65c5ff0096ff2170ed74d932b5e4bc55e4c884760747ef38fc86cd5d1ee71"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/printer_front_light.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/printer_front_top_tray.png"
+hash = "c7e55c9668cfd522764a7b431b26d092000896b7196da17147b7f85cb5c0290a"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/speaker_front.png"
+hash = "089f5b87c2d20eda5d857fc37bdfabe8668fa18f0c42d87cd12d43e2ae0854ba"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/uxv_case.png"
+hash = "bc7ce80fe896549f4a2ec7cdd3a8df7d27cb1a55bf71d2ac9e1b069d5aaaeb66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/uxv_case_pattern.png"
+hash = "1f0f22260ab0b8e51658a635253f5d202a8ecc0bbfec7a394585cb115c22202a"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wired_modem_face.png"
+hash = "4778ca1334378d834ad0dfd449930d8f8ee88420d74e23978c555b45dfc9c6a0"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wired_modem_face_on.png"
+hash = "bd4277df182f758b948c97dfc2ad1d9ad9ba29f00adce7f0f068551ec2a56d8c"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wired_modem_face_on.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wireless_modem_advanced_face.png"
+hash = "a44443d5c4db342bc8f2b043e822df3d99bf5901a72800cbaa9784c3c22ef3c3"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wireless_modem_face_on.png"
+hash = "e44136cf22e1385d80584dcc093f32226a5b23d5b45c807ab31f9f9b20557bfb"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wireless_modem_face_on.png.mcmeta"
+hash = "493830eb3ee13972194c3a74b2f46bc486643912ba2d6f1d386fccb8ab459e66"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/block/wireless_modem_normal_face.png"
+hash = "cf82a70856ad99190dc30625a9fad72ee42727228bb0980554aa33db1d835f20"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/border_advanced.png"
+hash = "ef2cb2698de3a6ea9ca28cf6e374cdce4d5d84134039758ac59122c2f7449bfb"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/border_command.png"
+hash = "1127cef0018432dd4499e6925b47235cf5475ef0edf5239440fe13abc4945834"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/border_normal.png"
+hash = "a1d7527779f298ef8bdcb3cdb949a6ed22a2a8f1ec8f5f32121379b54c0db151"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/pocket_bottom_advanced.png"
+hash = "7dead2b747157998f30f1d1ce7123303128419ee098d39bab33cedf540b8dd1d"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/pocket_bottom_normal.png"
+hash = "2516f46c8fb750fbd55ad1ee445cc26d9def9f12dd43a0b32d2b97936d20a65f"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/sidebar_advanced.png"
+hash = "53990f2fe2ce0aacebb1ff102165d1e1222b1f3134191f0fad731d990c2daf7b"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/sidebar_command.png"
+hash = "8866329ad0c8a8b9769fbef6a7914ef4f44f292a75de121820977ab5b30448e1"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/sidebar_normal.png"
+hash = "d6fe1239392a1c650d36d393e9919e5c98774e3acf475d1cb398b3f8d95ce2b0"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/term_font.png"
+hash = "d57618d97acef14601cb5e0b278b5b2fdbc94b13f6f720fb55b3708cba19894e"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/turtle_advanced.png"
+hash = "1b1a6741132d6439270c0814c89f97c6387b0b6939b0501e74e464513eacd144"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/gui/turtle_normal.png"
+hash = "afaa74902233268ab2bb9ec534086ee0f5c4a71375d9ae029ec377db85cc457c"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_advanced.png"
+hash = "6ff043c3d52fd4f54003696d088eb6b02d6150207dde3d821b14ff314b071b0b"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_blink.png"
+hash = "3622f7ffad0797f36f238924f0239fa7dc5b5f55cf6ecd712a74b178ac84e49d"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_blink.png.mcmeta"
+hash = "cedb1e67aa152a161a26b225b5787021757e12d0ba0f5a2964632095cd801d19"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_colour.png"
+hash = "b7be9fd9e9ee9ba0d620d8d5d9118b304adc6f03ec14694240b234342a05db42"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_frame.png"
+hash = "f50125641528dbe0c24ed00db7506bddc0423ffe5d590439091742c92a31e116"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_light.png"
+hash = "5016a323018f09e292165ad5392d82dcbad5e79c2b6b93aff3322dffff80b309"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_normal.png"
+hash = "33a35823773bdb0e2f8d437d2178c6a9955035389c5a5c56d55f3dfb23b6fe48"
+
+[[files]]
+file = "kubejs/assets/computercraft/textures/item/pocket_computer_on.png"
+hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
@@ -247,6 +851,10 @@ hash = "0cb93003b0d433b20d3bb6ac647b547175a227a4e323f224a5640f7742b79de4"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rocket_hull_section.png"
 hash = "3c3efca8f9e290a9011abb03abe142feb9b7906676b8fac0c2bbc93400b448e3"
+
+[[files]]
+file = "kubejs/client_scripts/cc_jei_hide.js"
+hash = "17f75e7178999c86f19c476ad49e2b7bfd61769451dc9da61a4165fe5c0392b3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
@@ -874,7 +1482,7 @@ hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "0c036b71e9dd8e8ed9b2f485d7076909dd78e25728e3a43c9bbffcbe92a86787"
+hash = "b99c6f33e697cd9c7b324ec05bb4adb9c6ffe63abb2e43b86f1661003b4757a6"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -882,7 +1490,7 @@ hash = "165cf751d3fac8e82a349f1d703d97524ff0bf3a9ea5e6efd3e8a2befd0ed6cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cyberware.js"
-hash = "9e1563e04fe67f2539e795f09de07cb01091363dc4dc0f3f730a3e242398e270"
+hash = "33d3a198db3599925fa27bda700addb6f12c6b03227c929c5bfd9c6648f7e55c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -894,15 +1502,15 @@ hash = "5093ce36101dfda9947e8ba0a15a1db4985b87507180e46659f023ca565a1acc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
-hash = "92414fad8f905869c6100e5d8fb19df11f50a0e47d56f44d07095291d0300000"
+hash = "0d2abc0013669b36640c3fe7998a3bceb794733cbd748769dad1453a4b226987"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "15a8d3b9eb59f67481a384e829f313c8e68d3a25652a64406925575b66130d01"
+hash = "3d13a1eac9f6deef49e1d4ba8a63c1c267ac9a65c41a070a359d5b2245e65bc7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "2a6d04da565407c48b0603d1bfbcac26d616bffbea29d4375d0bfd0d0abb9eb0"
+hash = "3907cd7691d556d3829a9a01269a0944b8f35bae611538a293e8b79116b01a77"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
