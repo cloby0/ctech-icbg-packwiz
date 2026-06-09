@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:steel_dust',
             '1x ae2:fluix_crystal'
         )
-        .itemOutputs('4x gtceu:sky_steel_ingot')
+        .itemOutputs('4x megacells:sky_steel_ingot')
         .blastFurnaceTemp(3600)
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])

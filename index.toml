@@ -874,7 +874,7 @@ hash = "1313d0e220c8fd6e4145c168cba2ff0d2f93c2c20a27f8251f0cbd661e4b9dfc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "e56c760774bf21a387112b95b1db6d5a31f07251a5ca6a3aea240f749f1ee99c"
+hash = "a41239bb2bbb5f6e62fa9a194b9637b36cfeb6721fa073bc537e546c94e6391c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -962,7 +962,7 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "c66ed1b44964765d86243e1383407c7c242980bb2beb0b2cc2cece0d817eecde"
+hash = "c9d1af7ecc125d0325150674a9ad314168033b147e3ff337b4b2b5013e3818cb"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
