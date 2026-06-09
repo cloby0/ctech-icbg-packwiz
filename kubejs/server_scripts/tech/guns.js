@@ -916,7 +916,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.arms_manufacturer('deagle_golden')
-        .itemInputs('4x gtceu:titanium_plate', '3x gtceu:titanium_bolt', '3x gtceu:titanium_ring', '4x gtceu:gold_plate', '2x gtceu:silicone_rubber_plate')
+        .itemInputs('4x gtceu:titanium_plate', '3x gtceu:titanium_bolt', '3x gtceu:titanium_ring', '4x create:golden_sheet', '2x gtceu:silicone_rubber_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:deagle_golden",HasBulletInBarrel:0b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV])
