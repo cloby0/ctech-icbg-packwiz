@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('cc_wired_modem')
         .itemInputs(
             '2x computercraft:cable',
-            '2x gtceu:copper_plate',
+            '2x create:copper_sheet',
             '1x #gtceu:circuits/mv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))

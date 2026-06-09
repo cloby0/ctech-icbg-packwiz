@@ -894,7 +894,7 @@ hash = "5093ce36101dfda9947e8ba0a15a1db4985b87507180e46659f023ca565a1acc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
-hash = "d4775d2470030f49b88b49b96514b1befce6b236838146499c8c08c140dc5c25"
+hash = "83def8d6a986c8b353103b613a4000edfeea13464fff253a03078c24c2480cfd"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
