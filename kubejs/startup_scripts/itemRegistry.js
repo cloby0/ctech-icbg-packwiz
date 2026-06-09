@@ -48,4 +48,18 @@ StartupEvents.registry('item', event => {
     //phlogiston line
     event.create('phlogiston')
     event.create('faefire_aerosol')
+
+    //aether material processing intermediates
+    event.create('enchanted_zanite_gem')
+    event.create('resonant_zanite_crystal')
+    event.create('sanctified_ambrosium_bloom')
+    event.create('sacred_ambrosium_shard')
+    event.create('frozen_raw_gravitite')
+    event.create('altar_charged_gravitite')
+
+    //psi processing intermediates
+    event.create('latent_psi_crystal')
+
+    //hex casting intermediates
+    event.create('hexed_amethyst_core')
 })

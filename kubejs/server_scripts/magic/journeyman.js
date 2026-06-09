@@ -13,6 +13,26 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:source_jar'})
     event.remove({ id: 'ars_nouveau:storage_lectern'})
     event.remove({ id: 'ars_nouveau:repository'})
+    event.remove({ id: 'starbunclemania:source_condenser' })
+    event.remove({ id: 'starbunclemania:fluid_sourcelink' })
+
+    // source_condenser: pumps ambient source out as starbunclemania:source_fluid
+    // pump handles fluid output; glass contains the condensing chamber; source gems interface with source
+    event.recipes.gtceu.assembler('starbuncle_source_condenser')
+        .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '4x minecraft:glass_pane', '#gtceu:circuits/mv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x starbunclemania:source_condenser')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // fluid_sourcelink: takes starbunclemania:source_fluid back in and injects to source network
+    // inverse of source_condenser; gold housing matches vanilla recipe's gold cost
+    event.recipes.gtceu.assembler('starbuncle_fluid_sourcelink')
+        .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '2x create:golden_sheet', '#gtceu:circuits/mv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x starbunclemania:fluid_sourcelink')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.shaped(
             Item.of('kubejs:magebloom_sieve', 1),
@@ -218,14 +238,58 @@ ServerEvents.recipes(event => {
     );
 
     event.shaped(
-        Item.of("gtceu:source_plate", 1), 
+        Item.of("gtceu:source_plate", 1),
         [
-            'H', 
-            'I', 
+            'H',
+            'I',
             'I'
-        ], 
+        ],
         {
             I: "ars_nouveau:source_gem",
             H: '#forge:tools/hammers',
         }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    // --- zanite processing ---
+    // altar charges zanite gemstone with sky-resonance
+    event.custom({
+        "type": "aether:enchanting",
+        "ingredient": { "item": "aether:zanite_gemstone" },
+        "result": { "item": "kubejs:enchanted_zanite_gem" },
+        "cookingtime": 250,
+        "experience": 0.5
+    })
+
+    // source synchronizes altar-charged zanite into coherent resonance state
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": { "item": "kubejs:enchanted_zanite_gem" },
+        "output": "kubejs:resonant_zanite_crystal",
+        "pedestalItems": [
+            { "item": { "item": "ars_nouveau:source_gem" } },
+            { "item": { "item": "ars_nouveau:source_gem" } }
+        ],
+        "source": 1500
+    })
+
+    // --- ambrosium processing step 1 ---
+    // heated water + ambrosium shards + glowstone: dissolves mineral matrix, frees divine energy
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:water" },
+        "ingredients": [
+            { "item": "aether:ambrosium_shard" },
+            { "item": "minecraft:glowstone_dust" },
+            { "item": "aether:ambrosium_shard" },
+            { "item": "minecraft:glowstone_dust" },
+            { "item": "aether:ambrosium_shard" },
+            { "item": "minecraft:glowstone_dust" },
+            { "item": "aether:ambrosium_shard" },
+            { "item": "minecraft:glowstone_dust" }
+        ],
+        "output": { "item": "kubejs:sanctified_ambrosium_bloom" },
+        "liquidOutput": { "fluid": "minecraft:water" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    })
 });

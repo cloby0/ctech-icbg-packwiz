@@ -47,7 +47,40 @@ ServerEvents.recipes(event => {
 
     //tbd magic gun recipes
 
-    
+    // --- gravitite processing ---
+    // freezer arrests anti-gravitational buoyancy, makes ore stable
+    event.custom({
+        "type": "aether:freezing",
+        "ingredient": { "item": "aether_redux:raw_gravitite" },
+        "result": { "item": "kubejs:frozen_raw_gravitite" },
+        "cookingtime": 400,
+        "experience": 0.0
+    })
+
+    // altar energizes frozen ore, aligns graviton matrix into precursor
+    event.custom({
+        "type": "aether:enchanting",
+        "ingredient": { "item": "kubejs:frozen_raw_gravitite" },
+        "result": { "item": "kubejs:altar_charged_gravitite" },
+        "cookingtime": 600,
+        "experience": 0.8
+    })
+
+    // holy silver + zanite resonance lock graviton matrix into stable ingot
+    // requires Initiate (holy_silver_ingot) + Journeyman zanite chain (resonant_zanite_crystal)
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": { "item": "kubejs:altar_charged_gravitite" },
+        "output": "aether_redux:gravitite_ingot",
+        "pedestalItems": [
+            { "item": { "item": "gtceu:holy_silver_ingot" } },
+            { "item": { "item": "gtceu:holy_silver_ingot" } },
+            { "item": { "item": "kubejs:resonant_zanite_crystal" } },
+            { "item": { "item": "kubejs:resonant_zanite_crystal" } }
+        ],
+        "source": 5000
+    })
 
     //beyond this lies progression
     const elements = [

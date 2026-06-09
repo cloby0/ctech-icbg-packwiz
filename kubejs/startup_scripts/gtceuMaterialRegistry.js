@@ -129,6 +129,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xE072D7)
         .secondaryColor(0x871F7E)
         .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
         .addOreByproducts('lithium', 'chromium')
         .washedIn('gtceu:sodium_persulfate')
         .separatedInto('chromium', 'manganese')

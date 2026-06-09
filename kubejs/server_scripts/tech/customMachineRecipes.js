@@ -44,6 +44,19 @@ ServerEvents.recipes(event => {
         W: `gtceu:${cableType}_single_cable`
       })
     
+    event.shaped(`gtceu:${tier}_cyberware_constructor`, [
+        'ACM',
+        'PHP',
+        'WCW'
+      ], {
+        A: `gtceu:${tier}_robot_arm`,
+        M: `gtceu:${tier}_electric_motor`,
+        C: `#gtceu:circuits/${tier}`,
+        P: `gtceu:${tier}_electric_pump`,
+        H: `gtceu:${tier}_machine_hull`,
+        W: `gtceu:${cableType}_single_cable`
+      })
+
     if (index > 2) {
       event.shaped(`gtceu:${tier}_me_fabricator`, [
           'ACM',

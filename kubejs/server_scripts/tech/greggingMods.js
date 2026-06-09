@@ -49,6 +49,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'vista:viewfinder' })
     event.remove({ output: 'vista:hollow_cassette' })
 
+    // etched
+    event.remove({ output: 'etched:etching_table' })
+    event.remove({ output: 'etched:radio' })
+    event.remove({ output: 'etched:boombox' })
+    event.remove({ output: 'etched:album_jukebox' })
+    event.remove({ output: 'etched:blank_music_disc' })
+
     // --- cc: tweaked ---
 
     // data cable: 4 copper cables compressed into CC networking cable
@@ -297,13 +304,13 @@ ServerEvents.recipes(event => {
 
     // --- vista ---
 
-    // cassette: aluminium + polyethylene housing + motor for tape drive (MV)
-    // no vanilla recipe exists; viewfinder and hollow_cassette both need cassette as input
+    // cassette: polyethylene housing + tape film, CrO2 magnetic coating, tin reel axles (MV)
+    // motor removed: that is in the deck, not the tape
     event.recipes.gtceu.assembler('vista_cassette')
         .itemInputs(
-            '2x gtceu:aluminium_plate',
             '2x gtceu:polyethylene_plate',
-            '1x gtceu:mv_electric_motor'
+            '2x gtceu:tin_rod',
+            '1x gtceu:chromium_dust'
         )
         .itemOutputs('2x vista:cassette')
         .duration(10 * 20)
@@ -347,6 +354,67 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x vista:television')
         .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // --- etched ---
+
+    // blank_music_disc: PVC pressed into vinyl disc under heat (MV forming press)
+    event.recipes.gtceu.forming_press('etched_blank_music_disc')
+        .itemInputs('2x gtceu:polyvinyl_chloride_plate')
+        .itemOutputs('4x etched:blank_music_disc')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // etching_table: diamond-tipped engraving head on steel frame, motor-driven (MV)
+    event.recipes.gtceu.assembler('etched_etching_table')
+        .itemInputs(
+            '2x gtceu:steel_plate',
+            '2x minecraft:diamond',
+            '1x gtceu:mv_electric_motor',
+            '1x #gtceu:circuits/mv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x etched:etching_table')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // radio: aluminium chassis, copper antenna coil, MV emitter receiver, MV circuit (MV)
+    event.recipes.gtceu.circuit_assembler('etched_radio')
+        .itemInputs(
+            '2x gtceu:aluminium_plate',
+            '4x gtceu:copper_single_wire',
+            '1x gtceu:mv_emitter',
+            '1x #gtceu:circuits/mv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x etched:radio')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // boombox: steel chassis, HV motor as speaker driver, HV battery, HV circuit (HV)
+    event.recipes.gtceu.assembler('etched_boombox')
+        .itemInputs(
+            '4x gtceu:steel_plate',
+            '1x gtceu:hv_electric_motor',
+            '#gtceu:batteries/hv',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x etched:boombox')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // album_jukebox: HV hull, robot arm for disc selection, conveyor for disc feed, HV circuits (HV)
+    event.recipes.gtceu.assembler('etched_album_jukebox')
+        .itemInputs(
+            'gtceu:hv_machine_hull',
+            'gtceu:hv_robot_arm',
+            'gtceu:hv_conveyor_module',
+            '2x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x etched:album_jukebox')
+        .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
 })

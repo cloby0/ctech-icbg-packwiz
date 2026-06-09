@@ -167,11 +167,19 @@ ServerEvents.recipes(event => {
             D: 'gtceu:source_plate'
     });
 
+    // ambrosium processing step 2: source + luminessence purify the bloom into sacred shard
+    event.recipes.ars_nouveau.imbuement(
+        "kubejs:sanctified_ambrosium_bloom",
+        "kubejs:sacred_ambrosium_shard",
+        1500,
+        ["gtceu:luminessence_dust", "gtceu:luminessence_dust"]
+    );
+
     event.recipes.ars_nouveau.imbuement(
         "minecraft:ender_pearl",
         "irons_spellbooks:divine_pearl",
         3000,
-        ["gtceu:ambrosium_dust"]
+        ["kubejs:sacred_ambrosium_shard"]
     );
 
     event.shaped(
@@ -190,8 +198,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            "gtceu:ambrosium_dust",
-            "gtceu:ambrosium_dust",
+            "kubejs:sacred_ambrosium_shard",
+            "kubejs:sacred_ambrosium_shard",
             "gtceu:luminessence_dust",
             "gtceu:luminessence_dust"
         ],
