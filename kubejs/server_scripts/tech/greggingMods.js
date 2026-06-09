@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     // advanced computer: gold chassis (HV) + silicon + SMD components + HV circuit
     event.recipes.gtceu.circuit_assembler('cc_computer_advanced')
         .itemInputs(
-            '4x create:gold_sheet',
+            '4x create:golden_sheet',
             '2x gtceu:silicon_ingot',
             '2x gtceu:smd_transistor',
             '1x #gtceu:circuits/hv'
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
     // advanced monitor: gold + glass plate + HV circuit (4x output mirrors vanilla)
     event.recipes.gtceu.assembler('cc_monitor_advanced')
         .itemInputs(
-            '2x create:gold_sheet',
+            '2x create:golden_sheet',
             '1x gtceu:glass_plate',
             '2x gtceu:copper_single_wire',
             '1x #gtceu:circuits/hv'
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
     // advanced pocket computer: gold + glass plate + HV circuit
     event.recipes.gtceu.circuit_assembler('cc_pocket_computer_advanced')
         .itemInputs(
-            '2x create:gold_sheet',
+            '2x create:golden_sheet',
             '2x gtceu:silicon_ingot',
             '1x gtceu:glass_plate',
             '1x #gtceu:circuits/hv'
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cc_turtle_advanced')
         .itemInputs(
             '1x computercraft:computer_advanced',
-            '4x create:gold_sheet',
+            '4x create:golden_sheet',
             '1x gtceu:hv_electric_motor',
             '1x gtceu:hv_robot_arm'
         )
