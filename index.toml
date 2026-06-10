@@ -1517,6 +1517,14 @@ file = "kubejs/server_scripts/tech/evAndMars.js"
 hash = "157521114f5a28f5c043e89b0213a6845083d901d8d9aa637c1e235c0f672ace"
 
 [[files]]
+file = "kubejs/server_scripts/tech/ftech.js"
+hash = "e26098fadab7fcc62933d620afcb350e1de7672b0613a6106ee72d40b880defe"
+
+[[files]]
+file = "kubejs/server_scripts/tech/gadgets.js"
+hash = "9891f2aad10c2bf6e1fa870e153a01431ea2e6d9f397c120541766d2a1739a10"
+
+[[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
 hash = "3181fb809cc5225fc9511b344c57530b2c515c3fe461686229724a4693274fde"
 
