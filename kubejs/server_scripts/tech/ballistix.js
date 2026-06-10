@@ -770,7 +770,7 @@ ServerEvents.recipes(event => {
 
     // support frame tier 3: naquadah enriched structural skeleton — true ICBM infrastructure
     event.recipes.gtceu.assembler('ballistix_launchersupportframetier3')
-        .itemInputs('ballistix:launchersupportframetier2', '8x gtceu:enriched_naquadah_plate', '4x gtceu:naquadah_enriched_rod', '2x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:launchersupportframetier2', '8x gtceu:enriched_naquadah_plate', '4x gtceu:enriched_naquadah_rod', '2x #gtceu:circuits/zpm')
         .itemOutputs('2x ballistix:launchersupportframetier3')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
