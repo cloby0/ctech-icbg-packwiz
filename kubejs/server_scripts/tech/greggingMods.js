@@ -732,14 +732,14 @@ ServerEvents.recipes(event => {
 
     // configurator_iron: iron-tier armor config tool
     event.recipes.gtceu.assembler('cclink_configurator_iron')
-        .itemInputs('2x gtceu:iron_plate', 'gtceu:iron_rod', '#gtceu:circuits/mv')
+        .itemInputs('2x create:iron_sheet', 'gtceu:iron_rod', '#gtceu:circuits/mv')
         .itemOutputs('1x cclink:configurator_iron')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
     // configurator_gold: gold-tier armor config tool — finer tolerances
     event.recipes.gtceu.assembler('cclink_configurator_gold')
-        .itemInputs('2x gtceu:gold_plate', 'gtceu:gold_rod', '#gtceu:circuits/hv', 'cclink:link_plating')
+        .itemInputs('2x create:golden_sheet', 'gtceu:gold_rod', '#gtceu:circuits/hv', 'cclink:link_plating')
         .itemOutputs('1x cclink:configurator_gold')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
