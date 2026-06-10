@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     // hull sections
     event.recipes.gtceu.assembler('mars_hull_section')
         .itemInputs(
-            '2x gtceu:desh_plate',
+            '2x ad_astra:desh_plate',
             '2x gtceu:stainless_steel_plate',
             '1x gtceu:silicone_rubber_plate'
         )
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('mars_rocket_engine')
         .itemInputs(
             '2x gtceu:long_desh_rod',
-            '4x gtceu:desh_plate',
+            '4x ad_astra:desh_plate',
             '1x gtceu:ev_electric_motor',
             '1x gtceu:ev_electric_pump'
         )
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
     // propellant tank
     event.recipes.gtceu.assembler('mars_propellant_tank')
         .itemInputs(
-            '4x gtceu:desh_plate',
+            '4x ad_astra:desh_plate',
             '2x gtceu:stainless_steel_plate',
             '1x gtceu:silicone_rubber_plate',
             '1x gtceu:ev_electric_pump'
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         'GCG',
         'LSL'
     ], {
-        L: 'gtceu:desh_plate',
+        L: 'ad_astra:desh_plate',
         E: 'gtceu:ev_emitter',
         G: 'gtceu:glass_lens',
         C: '#gtceu:circuits/ev',
