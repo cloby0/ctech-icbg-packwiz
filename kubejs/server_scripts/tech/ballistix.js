@@ -140,13 +140,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // tracker: long-range tracking transponder
-    event.recipes.gtceu.assembler('ballistix_tracker')
-        .itemInputs('gtceu:ev_sensor', '2x gtceu:aluminium_plate', '#gtceu:circuits/ev', '2x gtceu:copper_single_cable')
-        .itemOutputs('1x ballistix:tracker')
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
     // scanner: area scanner — sensor array in steel housing
     event.recipes.gtceu.assembler('ballistix_scanner')
         .itemInputs('gtceu:ev_sensor', 'gtceu:ev_emitter', '2x gtceu:aluminium_plate', '2x #gtceu:circuits/ev')
@@ -580,7 +573,7 @@ ServerEvents.recipes(event => {
 
     // EMP: copper coil matrix + redstone resonators — fries electronics in radius
     event.recipes.gtceu.arms_manufacturer('ballistix_emp')
-        .itemInputs('8x gtceu:copper_coil_block', '4x gtceu:naquadah_plate', 'ballistix:condensive', '4x #gtceu:circuits/luv')
+        .itemInputs('8x gtceu:cupronickel_coil_block', '4x gtceu:naquadah_plate', 'ballistix:condensive', '4x #gtceu:circuits/luv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
         .itemOutputs('1x ballistix:emp')
         .duration(40 * 20)
@@ -603,7 +596,7 @@ ServerEvents.recipes(event => {
 
     // exothermic: thermite-core thermobaric — extreme heat incinerates everything
     event.recipes.gtceu.arms_manufacturer('ballistix_exothermic')
-        .itemInputs('ballistix:thermobaric', '4x gtceu:naquadah_plate', '2x #gtceu:circuits/luv', '4x gtceu:thermite_dust')
+        .itemInputs('ballistix:thermobaric', '4x gtceu:naquadah_plate', '2x #gtceu:circuits/luv', '4x gtceu:magnesium_dust')
         .itemOutputs('1x ballistix:exothermic')
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
