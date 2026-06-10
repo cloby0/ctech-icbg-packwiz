@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     // ~50 mB CO net loss per cycle
     // input is crushed_desh not desh_dust
     // crushed_desh_ore only comes from ore block maceration, not ingot recycling
-    // this prevents the ingot → dust → mond → ingot infinite byproduct loop
+    // prevents ingot -> dust -> mond -> ingot infinite byproduct loop
 
     // removes auto ebf so mond is mandatory
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 4 EBF decomposition → hot ingot (vacuum freezer required)
+    // step 4 EBF decomposition; produces hot ingot, vacuum freezer required
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
         .itemOutputs('1x gtceu:hot_desh_ingot')

@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // --- removals ---
+    // removals
 
     // all assembly station recipes replaced by cyberware_constructor
     event.remove({ type: 'cyber_ware_port:assembly' })
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cyber_ware_port:neuropozyne' })
     event.remove({ output: 'cyber_ware_port:katana' })
 
-    // --- components ---
+    // components
     // still used by radio_tower_core and robo_surgeon vanilla recipes
     // provided via GT machines so they're obtainable without loot grinding
 
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- infrastructure ---
+    // infrastructure
 
     // scanner: medical diagnostic tool (MV)
     event.recipes.gtceu.assembler('cw_scanner')
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- cybereyes base (HV) ---
+    // cybereyes base (HV)
 
     event.recipes.gtceu.cyberware_constructor('cw_cybereyes')
         .itemInputs(
@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- cyberheart (EV) ---
+    // cyberheart (EV)
 
     event.recipes.gtceu.cyberware_constructor('cw_cyberheart')
         .itemInputs(
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- cyberarms (EV) ---
+    // cyberarms (EV)
 
     event.recipes.gtceu.cyberware_constructor('cw_cyberarm_left')
         .itemInputs(
@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .circuit(2)
 
-    // --- cyberlegs (EV) ---
+    // cyberlegs (EV)
 
     event.recipes.gtceu.cyberware_constructor('cw_cyberleg_left')
         .itemInputs(
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .circuit(2)
 
-    // --- eye upgrades (HV) ---
+    // eye upgrades (HV)
 
     event.recipes.gtceu.cyberware_constructor('cw_eye_night_vision')
         .itemInputs('1x gtceu:glass_lens', '2x gtceu:smd_transistor', '1x gtceu:hv_emitter', '1x #gtceu:circuits/hv')
@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- brain upgrades ---
+    // brain upgrades
 
     // radio: neural wireless antenna (HV)
     event.recipes.gtceu.cyberware_constructor('cw_brain_radio')
@@ -355,7 +355,7 @@ ServerEvents.recipes(event => {
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // --- heart upgrades ---
+    // heart upgrades
 
     // defibrillator: auto shock-revive (HV)
     event.recipes.gtceu.cyberware_constructor('cw_heart_defibrillator')
@@ -389,7 +389,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- arm upgrades ---
+    // arm upgrades
 
     // bow: energy-storing flywheel draw assist (HV)
     event.recipes.gtceu.cyberware_constructor('cw_arm_bow')
@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- leg upgrades (HV) ---
+    // leg upgrades (HV)
 
     event.recipes.gtceu.cyberware_constructor('cw_leg_jump_boost')
         .itemInputs('2x gtceu:hv_electric_piston', '1x gtceu:stainless_steel_plate', '1x #gtceu:circuits/hv')
@@ -450,7 +450,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- foot upgrades (HV) ---
+    // foot upgrades (HV)
 
     event.recipes.gtceu.cyberware_constructor('cw_foot_aqua')
         .itemInputs('2x gtceu:stainless_steel_plate', '2x gtceu:hv_electric_pump', '1x #gtceu:circuits/hv')
@@ -473,7 +473,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- bone upgrades ---
+    // bone upgrades
 
     // bonelacing: titanium skeletal reinforcement (HV)
     event.recipes.gtceu.cyberware_constructor('cw_bone_bonelacing')
@@ -499,7 +499,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- muscle upgrades (EV) ---
+    // muscle upgrades (EV)
 
     // muscle replacements: full titanium servomuscle
     event.recipes.gtceu.cyberware_constructor('cw_muscle_replacements')
@@ -522,7 +522,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- skin upgrades ---
+    // skin upgrades
 
     // subdermal spikes: retractable combat rods (HV)
     event.recipes.gtceu.cyberware_constructor('cw_skin_subdermal_spikes')
@@ -560,7 +560,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- lower organ upgrades ---
+    // lower organ upgrades
 
     // adrenaline: surge-triggered catecholamine injector (HV)
     event.recipes.gtceu.cyberware_constructor('cw_lower_adrenaline')
@@ -604,7 +604,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- lung upgrades ---
+    // lung upgrades
 
     // oxygen: integrated O2 microtank with delivery lines (HV)
     event.recipes.gtceu.cyberware_constructor('cw_lungs_oxygen')

@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // --- removals ---
+    // removals
 
     // all inscriber recipes: processors, silicon, formation/annihilation cores, presses
     event.remove({ type: 'ae2:inscriber' })
@@ -156,9 +156,9 @@ ServerEvents.recipes(event => {
         'kubejs:matter_energy_circuit'
     )
 
-    // --- sky steel processing ---
+    // sky steel processing
 
-    // sky stone → sky dust via macerator
+    // sky stone -> sky dust via macerator
     event.recipes.gtceu.macerator('sky_stone_macerator')
         .itemInputs('1x ae2:sky_stone_block')
         .itemOutputs('4x ae2:sky_dust')
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // sky dust + steel + fluix crystal → sky steel ingot
+    // sky dust + steel + fluix crystal -> sky steel ingot
     // blastTemp 3600 requires EV coils (same tier as ostrum)
     event.recipes.gtceu.electric_blast_furnace('sky_steel_ebf')
         .itemInputs(
@@ -179,7 +179,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- ae2 components ---
+    // ae2 components
 
     // fluix crystal via mixer (parallel path alongside create mixing)
     event.recipes.gtceu.mixer('ae2_fluix_crystal')
@@ -216,8 +216,8 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // --- processors (replacing inscriber) ---
-    // signalum = signal-conducting alloy → logic (control signals)
+    // processors (replacing inscriber)
+    // signalum = signal-conducting alloy -> logic (control signals)
     event.recipes.gtceu.me_fabricator('ae2_logic_processor')
         .itemInputs(
             '2x gtceu:signalum_plate',
@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // enderium = ender-infused alloy → engineering (spatial wiring)
+    // enderium = ender-infused alloy -> engineering (spatial wiring)
     event.recipes.gtceu.me_fabricator('ae2_engineering_processor')
         .itemInputs(
             '2x gtceu:enderium_plate',
@@ -241,7 +241,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // lumium = light-conducting alloy → calculation (optical processing)
+    // lumium = light-conducting alloy -> calculation (optical processing)
     event.recipes.gtceu.me_fabricator('ae2_calculation_processor')
         .itemInputs(
             '2x gtceu:lumium_plate',
@@ -266,7 +266,7 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- network cables ---
+    // network cables
 
     // basic ME glass cable: fluix crystal + sky_steel rod + quartz glass
     event.recipes.gtceu.me_fabricator('ae2_me_cable_glass')
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- network machines ---
+    // network machines
 
     // ME controller: 4 sky_steel plate, 4 matter_energy_circuit, 1 EV circuit
     event.recipes.gtceu.me_fabricator('ae2_controller')
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- storage ---
+    // storage
 
     // item cell housing: sky_steel + quartz glass
     event.recipes.gtceu.me_fabricator('ae2_item_cell_housing')
@@ -535,7 +535,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- additional base ae2 infrastructure ---
+    // additional base ae2 infrastructure
 
     // charger: MV, early crystal charging setup
     event.recipes.gtceu.circuit_assembler('ae2_charger')
@@ -620,7 +620,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- buses, parts, cards ---
+    // buses, parts, cards
 
     // basic_card: MV, base for all upgrade cards
     event.recipes.gtceu.circuit_assembler('ae2_basic_card')
@@ -772,7 +772,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- wireless ---
+    // wireless
 
     // wireless receiver: quantum-entangled for wireless network access
     event.recipes.gtceu.circuit_assembler('ae2_wireless_receiver')
@@ -824,7 +824,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- quantum network bridge (IV, cross-dimensional) ---
+    // quantum network bridge (IV, cross-dimensional)
 
     // quantum_link: core of quantum bridge multiblock
     event.recipes.gtceu.me_fabricator('ae2_quantum_link')
@@ -853,7 +853,7 @@ ServerEvents.recipes(event => {
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // --- spatial storage (LuV) ---
+    // spatial storage (LuV)
 
     // spatial_pylon: pylon for spatial IO field
     event.recipes.gtceu.me_fabricator('ae2_spatial_pylon')
@@ -895,7 +895,7 @@ ServerEvents.recipes(event => {
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // --- fluid storage cells ---
+    // fluid storage cells
 
     // fluid_cell_housing: copper-based housing for fluid storage
     event.recipes.gtceu.me_fabricator('ae2_fluid_cell_housing')
@@ -939,7 +939,7 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- portable cells ---
+    // portable cells
 
     event.recipes.gtceu.me_fabricator('ae2_portable_item_cell_1k')
         .itemInputs('1x ae2:chest', '1x ae2:cell_component_1k', '1x ae2:energy_cell', '1x ae2:item_cell_housing')
@@ -1001,9 +1001,9 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ===================== ADDON RECIPES =====================
+    // addon recipes
 
-    // --- ae2things: floppy disk form factor storage ---
+    // ae2things: floppy disk form factor storage
 
     // disk_housing: netherite-reinforced compact housing
     event.recipes.gtceu.me_fabricator('ae2things_disk_housing')
@@ -1049,7 +1049,7 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- ae2wtlib: wireless terminals ---
+    // ae2wtlib: wireless terminals
 
     // magnet_card: pulls nearby items into inventory via annihilation field
     event.recipes.gtceu.me_fabricator('ae2wtlib_magnet_card')
@@ -1113,7 +1113,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- appbot: mana ME storage (Alchemist tier, requires manasteel) ---
+    // appbot: mana ME storage (Alchemist tier, requires manasteel)
 
     // mana_cell_housing: manasteel housing with life essence resonance
     event.recipes.gtceu.me_fabricator('appbot_mana_cell_housing')
@@ -1201,7 +1201,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- crazyae2addonslite: advanced AE2 automation utilities ---
+    // crazyae2addonslite: advanced AE2 automation utilities
 
     // ampere_meter: measures EU/AE power flow
     event.recipes.gtceu.circuit_assembler('caae2_ampere_meter')
@@ -1412,7 +1412,7 @@ ServerEvents.recipes(event => {
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // --- ae2insertexportcard: high-bandwidth import/export cards ---
+    // ae2insertexportcard: high-bandwidth import/export cards
 
     // export_card: high-bandwidth configurable ME export
     event.recipes.gtceu.me_fabricator('ae2iec_export_card')
@@ -1440,7 +1440,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- ae2netanalyser: network inspection tool ---
+    // ae2netanalyser: network inspection tool
 
     // network_analyser: handheld tool to inspect ME network topology
     event.recipes.gtceu.circuit_assembler('ae2_network_analyser')
@@ -1455,7 +1455,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // --- mae2: modern ae2 additions ---
+    // mae2: modern ae2 additions
 
     // eu_p2p_tunnel: GTCEu EU power point-to-point tunnel
     event.recipes.gtceu.me_fabricator('mae2_eu_p2p_tunnel')

@@ -284,7 +284,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.PHOSPHORESCENT)
 
     // ae2 sky steel
-    // meteoritic sky stone (ae2) + steel + fluix crystal → quantum-conductive structural alloy
+    // meteoritic sky stone (ae2) + steel + fluix crystal -> quantum-conductive structural alloy
     // blast temp 3600 = EV coils required (same tier as ostrum/mars gate)
     event.create('sky_steel')
         .ingot()

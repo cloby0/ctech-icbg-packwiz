@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
 
     // hallowed silicon boule
     // silicon boule + holy silver -> 32 silicon wafers (vs vanilla 16)
-    // gate: initiate (HV) — requires holy silver
+    // gate: initiate (HV) requires holy silver
     event.recipes.ars_nouveau.imbuement(
         'gtceu:silicon_boule',
         'kubejs:hallowed_silicon_boule',

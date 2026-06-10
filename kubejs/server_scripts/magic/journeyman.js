@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
         }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
-    // --- zanite processing ---
+    // zanite processing
     // altar charges zanite gemstone with sky-resonance
     event.custom({
         "type": "aether:enchanting",
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
         "source": 1500
     })
 
-    // --- ambrosium processing step 1 ---
+    // ambrosium processing step 1
     // heated water + ambrosium shards + glowstone: dissolves mineral matrix, frees divine energy
     event.custom({
         "type": "hexerei:mixingcauldron",

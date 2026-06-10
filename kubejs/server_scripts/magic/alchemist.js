@@ -80,13 +80,13 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // Abstract Metal elemental synthesis — single element (shapeless crafting)
+    // Abstract Metal elemental synthesis single element (shapeless crafting)
     event.shapeless('minecraft:gold_ingot',   ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
     event.shapeless('gtceu:tin_ingot',       ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'])
     event.shapeless('gtceu:lead_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'])
     event.shapeless('gtceu:aluminium_ingot', ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'])
 
-    // Abstract Metal elemental synthesis — multi element (enchanting apparatus)
+    // Abstract Metal elemental synthesis multi element (enchanting apparatus)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:fire_essences', '#kubejs:water_essences'],
         'gtceu:abstract_metal_ingot', 'gtceu:bismuth_ingot', 3000)
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         ['#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
         'gtceu:abstract_metal_ingot', 'gtceu:holy_silver_ingot', 4000)
 
-    // Mana pool QoL — glowstone block -> 4x luminessence dust (bypasses cauldron chain)
+    // Mana pool QoL glowstone block -> 4x luminessence dust (bypasses cauldron chain)
     event.custom({
         "type": "botania:mana_infusion",
         "input": { "item": "minecraft:glowstone" },
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
         "output": { "count": 4, "item": "gtceu:luminessence_dust" }
     })
 
-    // Mana pool QoL — silver [alchemy catalyst] -> holy silver (skips multi-step chain)
+    // Mana pool QoL silver [alchemy catalyst] -> holy silver (skips multi-step chain)
     event.custom({
         "type": "botania:mana_infusion",
         "input": { "tag": "forge:ingots/silver" },
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         "output": { "item": "gtceu:holy_silver_ingot" }
     })
 
-    // Hex Casting — ALL functional items gated behind hexed_amethyst_core (Alchemist gate)
+    // Hex Casting ALL functional items gated behind hexed_amethyst_core (Alchemist gate)
     // charged_amethyst drops from geodes freely; core requires Manasteel imbuement
     // decorative blocks (amethyst bricks, edified wood) and amethyst_dust packing stay vanilla
     // hex_callback naturally gated by focus+artifact dep
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // staves — all 14 variants require hexed_amethyst_core instead of charged_amethyst
+    // staves all 14 variants require hexed_amethyst_core instead of charged_amethyst
     event.remove({ output: /hexcasting:staff\// })
     const staffPattern = [' SA', ' WS', 'S  ']
     const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w })
@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
         S: 'minecraft:stick',
     })
 
-    // akashic bookshelf — no amethyst in original; add core to gate it
+    // akashic bookshelf no amethyst in original; add core to gate it
     event.remove({ id: 'hexcasting:akashic_bookshelf' })
     event.shaped('hexcasting:akashic_bookshelf', ['LPL', 'CAC', 'LPL'], {
         L: '#hexcasting:edified_logs',
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // akashic connector — replace charged_amethyst with hexed_amethyst_core
+    // akashic connector replace charged_amethyst with hexed_amethyst_core
     event.remove({ id: 'hexcasting:akashic_connector' })
     event.shaped('4x hexcasting:akashic_connector', ['LPL', '12A', 'LPL'], {
         L: '#hexcasting:edified_logs',
@@ -289,7 +289,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // hex_ars_link linker_base — bump from cheap gold+amethyst to Alchemist cost
+    // hex_ars_link linker_base bump from cheap gold+amethyst to Alchemist cost
     event.remove({ output: 'hex_ars_link:linker_base' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [

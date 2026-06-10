@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:runic_altar' })
+    event.remove({ id: 'botania:gaia_ingot' })
     event.remove({ id: 'botania:runic_altar_alt' })
     event.shaped(
         Item.of('botania:runic_altar', 1),

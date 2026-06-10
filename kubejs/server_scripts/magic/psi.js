@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    // --- removals ---
+    // removals
     // vanilla CAD assembly recipes (replacing with GT assembler)
     event.remove({ id: 'psi:cad_assembly_iron' })
     event.remove({ id: 'psi:cad_assembly_psimetal' })
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'psi:detonator' })
 
-    // --- psidust chain: HV mixer → Initiate imbuement ---
+    // psidust chain: HV mixer then Initiate imbuement
     // silicon + redstone at HV energy crystallizes latent psionic potential
     event.recipes.gtceu.mixer('latent_psi_crystal')
         .itemInputs('2x gtceu:silicon_dust', '2x minecraft:redstone')
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
     )
 
-    // --- iron CAD assembly: dual HV + Initiate gate ---
+    // iron CAD assembly: dual HV + Initiate gate
     // holy silver foil = magic component embedded in tech recipe
     event.recipes.gtceu.assembler('psi_iron_cad_assembly')
         .itemInputs('4x create:iron_sheet', '4x psi:psidust', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- CAD components (all gated by psidust = gated by above) ---
+    // CAD components (all gated by psidust = gated by above)
     event.recipes.gtceu.assembler('psi_cad_core_basic')
         .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -104,12 +104,12 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- psimetal: keep vanilla trick_infusion path ---
+    // psimetal: keep vanilla trick_infusion path
     // gated naturally: trick requires iron CAD (now HV/Initiate gated)
     // teaches PSI spell system before advancing to psimetal CAD
 
-    // --- psimetal CAD assembly: gravitite spring = late HV / EV gate ---
-    // gravitite spring requires: gravitite_ingot → needs holy_silver_ingot + resonant_zanite_crystal
+    // psimetal CAD assembly: gravitite spring = late HV / EV gate
+    // gravitite spring requires: gravitite_ingot -> needs holy_silver_ingot + resonant_zanite_crystal
     event.recipes.gtceu.assembler('psi_psimetal_cad_assembly')
         .itemInputs('4x #forge:ingots/psimetal', 'gtceu:gravitite_spring', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- psigem: enchanting apparatus replaces trick_greater_infusion ---
+    // psigem: enchanting apparatus replaces trick_greater_infusion
     // resonant_zanite_crystal = Journeyman Aether chain component; 6000 source = substantial infra
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         6000
     )
 
-    // --- PSI blocks ---
+    // PSI blocks
     event.recipes.gtceu.assembler('psi_programmer_block')
         .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv', '2x minecraft:glass_pane')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- spell bullets: GT assembler, output 2x ---
+    // spell bullets: GT assembler, output 2x
     event.recipes.gtceu.assembler('psi_spell_bullet_basic')
         .itemInputs('1x create:iron_sheet', '1x psi:psidust')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // --- exosuit: GT assembler, gravitite plate as anti-grav accent ---
+    // exosuit: GT assembler, gravitite plate as anti-grav accent
     event.recipes.gtceu.assembler('psi_exosuit_helmet')
         .itemInputs('4x #forge:ingots/psimetal', '1x psi:psigem', '#gtceu:circuits/hv', '1x gtceu:gravitite_plate')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))

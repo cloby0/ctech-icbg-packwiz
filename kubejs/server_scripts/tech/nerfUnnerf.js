@@ -1,9 +1,7 @@
-//this files name doesn't necessarily make sense by itself but
-//this is for "unnerfing" some gregtech nerfs to allow them to
-//be craftable by magic players, with a slight amount of difficulty
+//adds magic-player crafting paths for GT-nerfed items
 
 ServerEvents.recipes(event => {
-    //this is just removing recipes that get around nerfs
+    //remove recipes that bypass nerfs
     event.remove({ id: 'terralith:piston_alt' });
     event.remove({ id: 'aether:skyroot_piston' });
     event.remove({ id: 'aether:gravitite_jukebox' });

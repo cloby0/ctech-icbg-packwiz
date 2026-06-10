@@ -39,6 +39,18 @@ StartupEvents.registry('item', event => {
     event.create('pressurized_rocket_tank')
     event.create('rocket_guidance_module')
 
+    //ostrum processing intermediates
+    event.create('ostrum_perchlorate_mass')
+    event.create('ostrum_carbonate_precipitate')
+    event.create('crude_ostrum_fluoride')
+    event.create('raw_ostrum_sponge')
+
+    //mars rocket components
+    event.create('desh_hull_section')
+    event.create('mars_rocket_engine')
+    event.create('mars_propellant_tank')
+    event.create('mars_guidance_module')
+
     //magic-enchanted boules (tech-magic interop)
     event.create('hallowed_silicon_boule')
     event.create('primal_phosphorus_boule')

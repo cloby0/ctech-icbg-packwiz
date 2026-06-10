@@ -1,12 +1,8 @@
 GTCEuServerEvents.oreVeins(event => {
 
-// === VENUS ===
-// sulfuric volcanic world; CO2/H2SO4 atmosphere; basaltic surface; key material is Calorite (IV gate)
-// sulfide mineralogy dominates; no water-bearing minerals
+// venus; calorite is the IV gate material
 
-//Calorite
-//key Venus material; high-temp volcanic sulfide deposit
-//Sulfur and Pyrite co-occur in volcanic zones
+//calorite
     event.add("kubejs:calorite_vein_vn", vein => {
         vein.weight(80)
         vein.clusterSize(35)
@@ -31,10 +27,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Cooperite
-//platinum sulfide PtS; volcanic high-temp sulfide systems concentrate PGMs
-//Cooperite main + Chalcopyrite gangue + Nickel trace
-//rare and deep; platinum/palladium from processing are critical for IV circuits
+//cooperite; platinum/palladium for IV circuits, rare and deep
     event.add("kubejs:cooperite_vein_vn", vein => {
         vein.weight(12)
         vein.clusterSize(24)
@@ -59,9 +52,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Stibnite
-//antimony sulfide Sb2S3; high-temp volcanic hydrothermal deposits
-//Arsenic and Bismuth co-occur in volcanic sulfide systems; antimony for IV alloys and diodes
+//stibnite; antimony for IV alloys
     event.add("kubejs:stibnite_vein_vn", vein => {
         vein.weight(20)
         vein.clusterSize(26)
@@ -86,9 +77,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Chalcopyrite
-//bulk copper sulfide; Venus sulfuric chemistry makes this the dominant ore deposit type
-//Bornite Cu5FeS4 co-occurs; Pyrite iron sulfide in matrix; Sulfur trace
+//chalcopyrite
     event.add("kubejs:chalcopyrite_vein_vn", vein => {
         vein.weight(45)
         vein.clusterSize(38)
@@ -114,9 +103,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Galena/Lead-Bismuth
-//Venus surface temperature 465C; lead and bismuth sulfides deposited deep below
-//Galena PbS main + Bismuth + Lead trace; bismuth for bismuth-bronze at IV
+//galena; bismuth for IV bismuth-bronze
     event.add("kubejs:galena_bismuth_vein_vn", vein => {
         vein.weight(22)
         vein.clusterSize(28)
@@ -142,13 +129,9 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
 
-// === MERCURY ===
-// iron-rich world; no magnetosphere; extreme radiation; MESSENGER confirmed graphite-rich regolith
-// radiation-altered minerals for IV circuits/alloys; key thematic mineral is Cinnabar
+// mercury
 
-//Cinnabar
-//HgS; Mercury named after the element; natural mercury sulfide in volcanic hydrothermal zones
-//Cinnabar main + Redstone trace + Sulfur; mercury dust from processing used in IV chemical chains
+//cinnabar; mercury dust for IV chemical chains
     event.add("kubejs:cinnabar_vein_mc", vein => {
         vein.weight(50)
         vein.clusterSize(30)
@@ -173,9 +156,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Graphite
-//MESSENGER spacecraft confirmed graphite-rich dark layer in Mercury regolith
-//Graphite main + Carbon secondary; carbon electrodes critical for IV arc furnaces and EBF
+//graphite; carbon electrodes for IV arc furnaces and EBF
     event.add("kubejs:graphite_vein_mc", vein => {
         vein.weight(40)
         vein.clusterSize(32)
@@ -199,10 +180,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Pitchblende
-//radiation minerals; no magnetosphere means surface concentration of radioactive minerals
-//Pitchblende + Uraninite + Thorium; thorium naturally co-occurs with uranium in pitchblende deposits
-//uranium for power generation; plutonium via breeder at ZPM
+//pitchblende; uranium for power gen, plutonium via breeder at ZPM
     event.add("kubejs:pitchblende_vein_mc", vein => {
         vein.weight(12)
         vein.clusterSize(24)
@@ -227,9 +205,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Tetrahedrite/Complex Sulfide
-//Cu12Sb4S13 complex sulfide; volcanic hydrothermal systems on Mercury concentrate polymetallic sulfosalts
-//Tetrahedrite main + Sphalerite ZnS + Realgar As4S4; copper/zinc/arsenic sulfide suite
+//tetrahedrite
     event.add("kubejs:tetrahedrite_vein_mc", vein => {
         vein.weight(18)
         vein.clusterSize(22)
@@ -254,9 +230,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Cobaltite
-//CoAsS cobalt arsenide sulfide; co-occurs with radiation-proximate geology
-//Cobaltite main + Cobalt + Arsenic; cobalt for IV superalloys and high-speed steel
+//cobaltite; cobalt for IV superalloys
     event.add("kubejs:cobaltite_vein_mc", vein => {
         vein.weight(20)
         vein.clusterSize(28)

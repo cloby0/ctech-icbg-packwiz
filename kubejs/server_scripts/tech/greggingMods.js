@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // --- removals ---
+    // removals
 
     // cc: tweaked
     event.remove({ output: 'computercraft:cable' })
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'etched:album_jukebox' })
     event.remove({ output: 'etched:blank_music_disc' })
 
-    // --- cc: tweaked ---
+    // cc: tweaked
 
     // data cable: 4 copper cables compressed into CC networking cable
     event.recipes.gtceu.wiremill('cc_cable')
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // --- advanced peripherals ---
+    // advanced peripherals
 
     // environment_detector: MV hull + MV sensor + daylight detector + MV circuits + cable
     event.recipes.gtceu.circuit_assembler('ap_environment_detector')
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- vista ---
+    // vista
 
     // cassette: polyethylene housing + tape film, CrO2 magnetic coating, tin reel axles (MV)
     // motor removed: that is in the deck, not the tape
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // --- etched ---
+    // etched
 
     // blank_music_disc: PVC pressed into vinyl disc under heat (MV forming press)
     event.recipes.gtceu.forming_press('etched_blank_music_disc')

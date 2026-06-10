@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         addManaPondRecipe(event, crecipe)
     })
 
-    // manual recipes — same JSON shape as botania:mana_infusion
+    // manual recipes same JSON shape as botania:mana_infusion
     addManaPondRecipe(event, {
         mana: 3500,
         input: { item: 'gtceu:abstract_metal_ingot' },

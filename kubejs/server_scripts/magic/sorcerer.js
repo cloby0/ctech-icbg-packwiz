@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
     //tbd magic gun recipes
 
-    // --- gravitite processing ---
+    // gravitite processing
     // freezer arrests anti-gravitational buoyancy, makes ore stable
     event.custom({
         "type": "aether:freezing",

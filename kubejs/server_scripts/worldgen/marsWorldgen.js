@@ -26,10 +26,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Tungsten
-//only spawns on Mars per progression design; intentionally rare and deep
-//Scheelite (CaWO4) and Wolframite ((Fe,Mn)WO4) are the realistic tungsten ore minerals
-//Molybdenite co-occurs with tungsten deposits in real geology
+//tungsten; Mars-only per design, rare and deep
     event.add("kubejs:tungsten_vein_ms", vein => {
         vein.weight(8)
         vein.clusterSize(28)
@@ -54,9 +51,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Chromite
-//chromium for stainless steel (EV standard alloy); vanadium magnetite for vanadium steel
-//both realistic in Martian basaltic crust; chromite found in Martian meteorites
+//chromite; chromium for stainless steel
     event.add("kubejs:chromite_vein_ms", vein => {
         vein.weight(25)
         vein.clusterSize(30)
@@ -81,8 +76,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Iron
-//Mars is iron-oxide dominant; supports the bulk ore recovery loop; heavy hematite/goethite matrix
+//iron
     event.add("kubejs:iron_vein_ms", vein => {
         vein.weight(90)
         vein.clusterSize(50)
@@ -108,9 +102,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Phosphate
-//NASA confirmed phosphate-rich Martian geology; Apatite for fertilizer/chemical chains
-//TricalciumPhosphate and sulfur co-occurring is realistic in evaporite-bearing basalt
+//phosphate; apatite for fertilizer/chemical chains
     event.add("kubejs:phosphate_vein_ms", vein => {
         vein.weight(30)
         vein.clusterSize(28)
@@ -135,9 +127,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Nickel Sulfide
-//nickel for EV alloys; pyrite gives sulfur for sulfuric acid lines
-//Pentlandite (Fe,Ni)9S8 is the primary nickel sulfide ore mineral
+//nickel sulfide; nickel for EV alloys
     event.add("kubejs:nickel_vein_ms", vein => {
         vein.weight(30)
         vein.clusterSize(32)

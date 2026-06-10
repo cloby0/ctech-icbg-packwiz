@@ -1,13 +1,8 @@
 GTCEuServerEvents.oreVeins(event => {
 
-// === GLACIO ===
-// icy frozen world; LuV tier; Naquadah is the gate material
-// no native Ad Astra ores; all ore gen from GTCEu
-// geological character: evaporite deposits beneath ice; serpentinized silicate crust; iron-nickel core
-// primary value on Glacio is atmospheric distillation and cryo fuel chains; veins are secondary
+// glacio; LuV tier; no native Ad Astra ores, all ore gen from GTCEu
 
-//Naquadah
-//no natural co-occurrence; deep only; enriched naquadah trace represents partially-decayed ore pockets
+//naquadah; LuV gate material
     event.add("kubejs:naquadah_vein_gl", vein => {
         vein.weight(80)
         vein.clusterSize(35)
@@ -31,9 +26,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Saltpeter/Evaporite
-//KNO3 evaporite deposit beneath ice; nitrogen-rich Glacio atmosphere settles as subsurface brine
-//Saltpeter main + Halite NaCl + Calcite; ties to nitrogen chemistry and atmosphere distillation theme
+//saltpeter evaporite; ties to atmosphere distillation
     event.add("kubejs:saltpeter_vein_gl", vein => {
         vein.weight(40)
         vein.clusterSize(34)
@@ -58,9 +51,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Borax/Trona Evaporite
-//Na2B4O7·10H2O; borax and trona are classic cold-dry evaporite minerals
-//Borax main + Trona + Calcite; fits Glacio's cold evaporite theme; boron useful for fiberglass and fluxes
+//borax evaporite; boron for fiberglass and fluxes
     event.add("kubejs:borax_vein_gl", vein => {
         vein.weight(35)
         vein.clusterSize(32)
@@ -85,9 +76,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Ilmenite/Rutile
-//titanium ores in the silicate rock layer beneath the ice shell
-//Ilmenite FeTiO3 + Rutile TiO2; realistic for icy silicate bodies
+//ilmenite/rutile; titanium ores
     event.add("kubejs:ilmenite_vein_gl", vein => {
         vein.weight(25)
         vein.clusterSize(28)
@@ -112,9 +101,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Pentlandite
-//iron-nickel sulfide; icy body cores are iron-nickel dominant; Pentlandite (Fe,Ni)9S8 is the primary ore
-//Cobalt trace; realistic for undifferentiated icy silicate bodies
+//pentlandite; iron-nickel sulfide
     event.add("kubejs:pentlandite_vein_gl", vein => {
         vein.weight(40)
         vein.clusterSize(34)
@@ -139,9 +126,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Talc/Magnesite
-//serpentinization products; water-rock interaction at the ice-silicate boundary produces talc and magnesite
-//Mg3Si4O10(OH)2 + MgCO3; thematic for subsurface hydrothermal activity on an icy moon
+//talc/magnesite
     event.add("kubejs:talc_vein_gl", vein => {
         vein.weight(30)
         vein.clusterSize(28)
