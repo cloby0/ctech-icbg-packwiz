@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // basic computer: MV hull + monitor cover + copper cables + MV circuits
-    event.recipes.gtceu.circuit_assembler('cc_computer_normal')
+    event.recipes.gtceu.assembler('cc_computer_normal')
         .itemInputs('gtceu:mv_machine_hull', 'gtceu:computer_monitor_cover', '4x gtceu:copper_single_cable', '4x #gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x computercraft:computer_normal')
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // disk drive: MV hull + magnetic steel rods + motor + voltage coil + MV circuits
-    event.recipes.gtceu.circuit_assembler('cc_disk_drive')
+    event.recipes.gtceu.assembler('cc_disk_drive')
         .itemInputs('gtceu:mv_machine_hull', '2x gtceu:magnetic_steel_rod', 'gtceu:mv_electric_motor', 'gtceu:mv_voltage_coil', '2x #gtceu:circuits/mv', '2x gtceu:copper_single_cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x computercraft:disk_drive')
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // speaker: MV hull + motor + emitter + copper cables + MV circuits
-    event.recipes.gtceu.circuit_assembler('cc_speaker')
+    event.recipes.gtceu.assembler('cc_speaker')
         .itemInputs('gtceu:mv_machine_hull', 'gtceu:mv_electric_motor', 'gtceu:mv_emitter', '4x gtceu:copper_single_cable', '2x #gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x computercraft:speaker')
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // advanced computer: HV hull + monitor cover + gold cables + HV circuits
-    event.recipes.gtceu.circuit_assembler('cc_computer_advanced')
+    event.recipes.gtceu.assembler('cc_computer_advanced')
         .itemInputs('gtceu:hv_machine_hull', 'gtceu:computer_monitor_cover', '4x gtceu:gold_single_cable', '4x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x computercraft:computer_advanced')
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
     // advanced peripherals
 
     // environment_detector: MV hull + MV sensor + daylight detector + MV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_environment_detector')
+    event.recipes.gtceu.assembler('ap_environment_detector')
         .itemInputs('gtceu:mv_machine_hull', 'gtceu:mv_sensor', 'minecraft:daylight_detector', '2x #gtceu:circuits/mv', 'computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x advancedperipherals:environment_detector')
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // redstone_integrator: MV hull + redstone + redstone block + MV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_redstone_integrator')
+    event.recipes.gtceu.assembler('ap_redstone_integrator')
         .itemInputs('gtceu:mv_machine_hull', '4x minecraft:redstone', 'minecraft:redstone_block', '2x #gtceu:circuits/mv', 'computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x advancedperipherals:redstone_integrator')
@@ -235,7 +235,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // chat_box: MV hull + MV emitter + MV sensor + paper + MV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_chat_box')
+    event.recipes.gtceu.assembler('ap_chat_box')
         .itemInputs('gtceu:mv_machine_hull', 'gtceu:mv_emitter', 'gtceu:mv_sensor', '2x minecraft:paper', '2x #gtceu:circuits/mv', 'computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x advancedperipherals:chat_box')
@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // memory_card: RAM chips + quantum eye + HV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_memory_card')
+    event.recipes.gtceu.assembler('ap_memory_card')
         .itemInputs('4x gtceu:ram_chip', 'gtceu:quantum_eye', '2x #gtceu:circuits/hv', '2x computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:memory_card')
@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // player_detector: HV hull + HV sensor + stone buttons + HV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_player_detector')
+    event.recipes.gtceu.assembler('ap_player_detector')
         .itemInputs('gtceu:hv_machine_hull', 'gtceu:hv_sensor', '2x minecraft:stone_button', '2x #gtceu:circuits/hv', 'computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:player_detector')
@@ -266,7 +266,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // inventory_manager: HV hull + quantum eyes + HV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_inventory_manager')
+    event.recipes.gtceu.assembler('ap_inventory_manager')
         .itemInputs('gtceu:hv_machine_hull', '3x gtceu:quantum_eye', '3x #gtceu:circuits/hv', '2x computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:inventory_manager')
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // block_reader: MV hull + diodes + MV sensor + MV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_block_reader')
+    event.recipes.gtceu.assembler('ap_block_reader')
         .itemInputs('gtceu:mv_machine_hull', '2x gtceu:diode', 'gtceu:mv_sensor', '3x #gtceu:circuits/mv', '2x computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:block_reader')
@@ -289,7 +289,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // chunk_controller: steel + ender eye for chunk loading (HV)
-    event.recipes.gtceu.circuit_assembler('ap_chunk_controller')
+    event.recipes.gtceu.assembler('ap_chunk_controller')
         .itemInputs(
             '2x gtceu:steel_plate',
             '1x minecraft:ender_eye',
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // weak_automata_core: HV hull + HV emitters + soul lantern + HV circuit
-    event.recipes.gtceu.circuit_assembler('ap_weak_automata_core')
+    event.recipes.gtceu.assembler('ap_weak_automata_core')
         .itemInputs(
             'gtceu:hv_machine_hull',
             '2x gtceu:hv_emitter',
@@ -314,7 +314,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // geo_scanner: MV hull + MV sensors + MV emitter + MV circuits + cable
-    event.recipes.gtceu.circuit_assembler('ap_geo_scanner')
+    event.recipes.gtceu.assembler('ap_geo_scanner')
         .itemInputs('gtceu:mv_machine_hull', '2x gtceu:mv_sensor', 'gtceu:mv_emitter', '3x #gtceu:circuits/mv', '2x computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:geo_scanner')
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // me_bridge: HV hull + fluix cables + HV robot arm + HV circuits + cable (requires AE2)
-    event.recipes.gtceu.circuit_assembler('ap_me_bridge')
+    event.recipes.gtceu.assembler('ap_me_bridge')
         .itemInputs('gtceu:hv_machine_hull', '3x ae2:fluix_glass_cable', 'gtceu:hv_robot_arm', '2x #gtceu:circuits/hv', '2x computercraft:cable')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x advancedperipherals:me_bridge')
@@ -358,7 +358,7 @@ ServerEvents.recipes(event => {
 
     // hollow_cassette: links viewfinder to TV for live camera feed
     // echo_shard kept: thematic for "echoing" the view wirelessly
-    event.recipes.gtceu.circuit_assembler('vista_hollow_cassette')
+    event.recipes.gtceu.assembler('vista_hollow_cassette')
         .itemInputs(
             '1x vista:cassette',
             '1x minecraft:echo_shard',
@@ -406,7 +406,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // radio: aluminium chassis, copper antenna coil, MV emitter receiver, MV circuit (MV)
-    event.recipes.gtceu.circuit_assembler('etched_radio')
+    event.recipes.gtceu.assembler('etched_radio')
         .itemInputs(
             '2x gtceu:aluminium_plate',
             '4x gtceu:copper_single_wire',
@@ -447,7 +447,7 @@ ServerEvents.recipes(event => {
     // scannable
 
     // scanner: steel housing + glass lens + sensor/emitter pair + MV circuit
-    event.recipes.gtceu.circuit_assembler('scannable_scanner')
+    event.recipes.gtceu.assembler('scannable_scanner')
         .itemInputs(
             '2x gtceu:steel_plate',
             '1x gtceu:glass_lens',
@@ -538,7 +538,7 @@ ServerEvents.recipes(event => {
     // cc: link
 
     // link_plating: electrum circuit board — base component for all link armor and cores
-    event.recipes.gtceu.circuit_assembler('cclink_link_plating')
+    event.recipes.gtceu.assembler('cclink_link_plating')
         .itemInputs('4x gtceu:electrum_plate', '4x gtceu:copper_single_wire')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('4x cclink:link_plating')
@@ -546,7 +546,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // link_power_core: HV battery wrapped in link circuitry — powers wearable computer
-    event.recipes.gtceu.circuit_assembler('cclink_link_power_core')
+    event.recipes.gtceu.assembler('cclink_link_power_core')
         .itemInputs('#gtceu:batteries/hv', '2x #gtceu:circuits/hv', '2x cclink:link_plating')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cclink:link_power_core')
@@ -554,7 +554,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // link_core: wearable computer — advanced computer embedded in link-plated housing
-    event.recipes.gtceu.circuit_assembler('cclink_link_core')
+    event.recipes.gtceu.assembler('cclink_link_core')
         .itemInputs('computercraft:computer_advanced', 'cclink:link_power_core', '4x cclink:link_plating', '2x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x cclink:link_core')
@@ -585,7 +585,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // integrated_link_core: link core with built-in modem and speaker — EV upgrade
-    event.recipes.gtceu.circuit_assembler('cclink_integrated_link_core')
+    event.recipes.gtceu.assembler('cclink_integrated_link_core')
         .itemInputs('cclink:link_core', '2x cclink:link_power_core', '4x #gtceu:circuits/ev', 'computercraft:speaker')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
         .itemOutputs('1x cclink:integrated_link_core')
@@ -691,7 +691,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     // shield_controller_upgrade: active shield management — EV sensor coordination circuit
-    event.recipes.gtceu.circuit_assembler('cclink_shield_controller_upgrade')
+    event.recipes.gtceu.assembler('cclink_shield_controller_upgrade')
         .itemInputs('gtceu:ev_sensor', '2x #gtceu:circuits/ev', '2x cclink:link_plating')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cclink:shield_controller_upgrade')
@@ -752,7 +752,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // link_armor_manager: manages armor upgrade loadouts via memory card
-    event.recipes.gtceu.circuit_assembler('cclink_link_armor_manager')
+    event.recipes.gtceu.assembler('cclink_link_armor_manager')
         .itemInputs('2x #gtceu:circuits/ev', '2x cclink:link_plating', 'advancedperipherals:memory_card')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cclink:link_armor_manager')

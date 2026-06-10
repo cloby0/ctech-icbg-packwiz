@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // formation core: creation/output aspect; certus quartz base
-    event.recipes.gtceu.circuit_assembler('ae2_formation_core')
+    event.recipes.gtceu.assembler('ae2_formation_core')
         .itemInputs(
             '2x ae2:certus_quartz_crystal',
             '2x gtceu:ilc_chip',
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // annihilation core: input/destruction aspect; fluix base
-    event.recipes.gtceu.circuit_assembler('ae2_annihilation_core')
+    event.recipes.gtceu.assembler('ae2_annihilation_core')
         .itemInputs(
             '2x ae2:fluix_crystal',
             '2x gtceu:ilc_chip',
@@ -538,7 +538,7 @@ ServerEvents.recipes(event => {
     // additional base ae2 infrastructure
 
     // charger: MV, early crystal charging setup
-    event.recipes.gtceu.circuit_assembler('ae2_charger')
+    event.recipes.gtceu.assembler('ae2_charger')
         .itemInputs(
             '4x gtceu:sky_steel_plate',
             '4x create:copper_sheet',
@@ -550,7 +550,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // growth accelerator: MV, speeds crystal growth
-    event.recipes.gtceu.circuit_assembler('ae2_growth_accelerator')
+    event.recipes.gtceu.assembler('ae2_growth_accelerator')
         .itemInputs(
             '4x gtceu:sky_steel_plate',
             '2x ae2:fluix_glass_cable',
@@ -563,7 +563,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // condenser: EV, compresses items into matter balls and singularities
-    event.recipes.gtceu.circuit_assembler('ae2_condenser')
+    event.recipes.gtceu.assembler('ae2_condenser')
         .itemInputs(
             '4x gtceu:sky_steel_plate',
             '2x ae2:quartz_glass',
@@ -623,7 +623,7 @@ ServerEvents.recipes(event => {
     // buses, parts, cards
 
     // basic_card: MV, base for all upgrade cards
-    event.recipes.gtceu.circuit_assembler('ae2_basic_card')
+    event.recipes.gtceu.assembler('ae2_basic_card')
         .itemInputs(
             '2x create:golden_sheet',
             '1x gtceu:ilc_chip',
@@ -636,7 +636,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // advanced_card: EV, required for high-tier upgrades
-    event.recipes.gtceu.circuit_assembler('ae2_advanced_card')
+    event.recipes.gtceu.assembler('ae2_advanced_card')
         .itemInputs(
             '2x gtceu:sky_steel_plate',
             '1x gtceu:cpu_chip',
@@ -649,7 +649,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // export_bus: pushes items from network into world
-    event.recipes.gtceu.circuit_assembler('ae2_export_bus')
+    event.recipes.gtceu.assembler('ae2_export_bus')
         .itemInputs(
             '2x ae2:formation_core',
             '2x gtceu:sky_steel_plate',
@@ -661,7 +661,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // import_bus: pulls items from world into network
-    event.recipes.gtceu.circuit_assembler('ae2_import_bus')
+    event.recipes.gtceu.assembler('ae2_import_bus')
         .itemInputs(
             '2x ae2:annihilation_core',
             '2x gtceu:sky_steel_plate',
@@ -673,7 +673,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // storage_bus: exposes external inventory to network
-    event.recipes.gtceu.circuit_assembler('ae2_storage_bus')
+    event.recipes.gtceu.assembler('ae2_storage_bus')
         .itemInputs(
             '1x ae2:formation_core',
             '1x ae2:annihilation_core',
@@ -686,7 +686,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // annihilation_plane: destroys blocks and pulls into network
-    event.recipes.gtceu.circuit_assembler('ae2_annihilation_plane')
+    event.recipes.gtceu.assembler('ae2_annihilation_plane')
         .itemInputs(
             '2x ae2:annihilation_core',
             '4x ae2:fluix_crystal',
@@ -698,7 +698,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // formation_plane: places items from network into world
-    event.recipes.gtceu.circuit_assembler('ae2_formation_plane')
+    event.recipes.gtceu.assembler('ae2_formation_plane')
         .itemInputs(
             '2x ae2:formation_core',
             '4x ae2:fluix_crystal',
@@ -710,7 +710,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // semi_dark_monitor: low-power display panel
-    event.recipes.gtceu.circuit_assembler('ae2_semi_dark_monitor')
+    event.recipes.gtceu.assembler('ae2_semi_dark_monitor')
         .itemInputs(
             '2x ae2:quartz_glass',
             '2x gtceu:sky_steel_plate',
@@ -775,7 +775,7 @@ ServerEvents.recipes(event => {
     // wireless
 
     // wireless receiver: quantum-entangled for wireless network access
-    event.recipes.gtceu.circuit_assembler('ae2_wireless_receiver')
+    event.recipes.gtceu.assembler('ae2_wireless_receiver')
         .itemInputs(
             '1x ae2:fluix_pearl',
             '2x gtceu:sky_steel_plate',
@@ -1188,7 +1188,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // fluix_mana_pool: AE2 interface integrated into a Botania mana pool
-    event.recipes.gtceu.circuit_assembler('appbot_fluix_mana_pool')
+    event.recipes.gtceu.assembler('appbot_fluix_mana_pool')
         .itemInputs(
             '1x botania:fabulous_pool',
             '1x ae2:interface',
@@ -1204,7 +1204,7 @@ ServerEvents.recipes(event => {
     // crazyae2addonslite: advanced AE2 automation utilities
 
     // ampere_meter: measures EU/AE power flow
-    event.recipes.gtceu.circuit_assembler('caae2_ampere_meter')
+    event.recipes.gtceu.assembler('caae2_ampere_meter')
         .itemInputs(
             '1x ae2:import_bus',
             '1x ae2:interface',
@@ -1217,7 +1217,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // crafting_scheduler: triggers scheduled crafting jobs
-    event.recipes.gtceu.circuit_assembler('caae2_crafting_scheduler')
+    event.recipes.gtceu.assembler('caae2_crafting_scheduler')
         .itemInputs(
             '1x ae2:pattern_provider',
             '1x ae2:level_emitter',
@@ -1242,7 +1242,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // crazy_emitter_multiplier: scales level emitter threshold values
-    event.recipes.gtceu.circuit_assembler('caae2_crazy_emitter_multiplier')
+    event.recipes.gtceu.assembler('caae2_crazy_emitter_multiplier')
         .itemInputs(
             '1x ae2:level_emitter',
             '1x gtceu:cpu_chip',
@@ -1254,7 +1254,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // display_monitor: semi_dark_monitor with network text display
-    event.recipes.gtceu.circuit_assembler('caae2_display_monitor')
+    event.recipes.gtceu.assembler('caae2_display_monitor')
         .itemInputs(
             '1x ae2:semi_dark_monitor',
             '1x ae2:advanced_card',
@@ -1266,7 +1266,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // nbt_export_bus: export bus filtered by NBT data
-    event.recipes.gtceu.circuit_assembler('caae2_nbt_export_bus')
+    event.recipes.gtceu.assembler('caae2_nbt_export_bus')
         .itemInputs(
             '1x ae2:export_bus',
             '1x gtceu:cpu_chip',
@@ -1278,7 +1278,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // nbt_storage_bus: storage bus filtered by NBT data
-    event.recipes.gtceu.circuit_assembler('caae2_nbt_storage_bus')
+    event.recipes.gtceu.assembler('caae2_nbt_storage_bus')
         .itemInputs(
             '1x ae2:storage_bus',
             '1x gtceu:cpu_chip',
@@ -1290,7 +1290,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // nbt_view_cell: view cell filtered by NBT
-    event.recipes.gtceu.circuit_assembler('caae2_nbt_view_cell')
+    event.recipes.gtceu.assembler('caae2_nbt_view_cell')
         .itemInputs(
             '1x ae2:view_cell',
             '1x minecraft:name_tag',
@@ -1302,7 +1302,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // tag_view_cell: view cell filtered by item tag
-    event.recipes.gtceu.circuit_assembler('caae2_tag_view_cell')
+    event.recipes.gtceu.assembler('caae2_tag_view_cell')
         .itemInputs(
             '1x ae2:view_cell',
             '1x minecraft:book',
@@ -1314,7 +1314,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // redstone_emitter: named redstone signal level emitter
-    event.recipes.gtceu.circuit_assembler('caae2_redstone_emitter')
+    event.recipes.gtceu.assembler('caae2_redstone_emitter')
         .itemInputs(
             '1x ae2:level_emitter',
             '2x gtceu:small_redstone_dust',
@@ -1326,7 +1326,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // redstone_terminal: terminal with redstone channel status view
-    event.recipes.gtceu.circuit_assembler('caae2_redstone_terminal')
+    event.recipes.gtceu.assembler('caae2_redstone_terminal')
         .itemInputs(
             '1x ae2:terminal',
             '2x gtceu:small_redstone_dust',
@@ -1362,7 +1362,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // round_robin_item_p2p_tunnel: distributes items evenly across outputs
-    event.recipes.gtceu.circuit_assembler('caae2_round_robin_item_p2p_tunnel')
+    event.recipes.gtceu.assembler('caae2_round_robin_item_p2p_tunnel')
         .itemInputs(
             '1x ae2:me_p2p_tunnel',
             '1x ae2:equal_distribution_card',
@@ -1374,7 +1374,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // automation_upgrade_card: enables automation of wireless terminal actions
-    event.recipes.gtceu.circuit_assembler('caae2_automation_upgrade_card')
+    event.recipes.gtceu.assembler('caae2_automation_upgrade_card')
         .itemInputs(
             '1x ae2:advanced_card',
             '1x ae2:crafting_unit',
@@ -1386,7 +1386,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // player_upgrade_card: grants player-level permissions to automation
-    event.recipes.gtceu.circuit_assembler('caae2_player_upgrade_card')
+    event.recipes.gtceu.assembler('caae2_player_upgrade_card')
         .itemInputs(
             '1x ae2:advanced_card',
             '1x gtceu:ev_robot_arm',
@@ -1443,7 +1443,7 @@ ServerEvents.recipes(event => {
     // ae2netanalyser: network inspection tool
 
     // network_analyser: handheld tool to inspect ME network topology
-    event.recipes.gtceu.circuit_assembler('ae2_network_analyser')
+    event.recipes.gtceu.assembler('ae2_network_analyser')
         .itemInputs(
             '2x create:copper_sheet',
             '2x gtceu:sky_steel_plate',
@@ -1500,28 +1500,28 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.circuit_assembler('mae2_fe_multi_p2p_tunnel')
+    event.recipes.gtceu.assembler('mae2_fe_multi_p2p_tunnel')
         .itemInputs('1x ae2:fe_p2p_tunnel', '1x kubejs:matter_energy_circuit', '1x gtceu:cpu_chip')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x mae2:fe_multi_p2p_tunnel')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.circuit_assembler('mae2_fluid_multi_p2p_tunnel')
+    event.recipes.gtceu.assembler('mae2_fluid_multi_p2p_tunnel')
         .itemInputs('1x ae2:fluid_p2p_tunnel', '1x kubejs:matter_energy_circuit', '1x gtceu:cpu_chip')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x mae2:fluid_multi_p2p_tunnel')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.circuit_assembler('mae2_item_multi_p2p_tunnel')
+    event.recipes.gtceu.assembler('mae2_item_multi_p2p_tunnel')
         .itemInputs('1x ae2:item_p2p_tunnel', '1x kubejs:matter_energy_circuit', '1x gtceu:cpu_chip')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x mae2:item_multi_p2p_tunnel')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.circuit_assembler('mae2_redstone_multi_p2p_tunnel')
+    event.recipes.gtceu.assembler('mae2_redstone_multi_p2p_tunnel')
         .itemInputs('1x ae2:redstone_p2p_tunnel', '1x kubejs:matter_energy_circuit', '1x gtceu:cpu_chip')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x mae2:redstone_multi_p2p_tunnel')

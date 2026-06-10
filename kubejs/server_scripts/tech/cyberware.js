@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // fiberoptics: borosilicate glass fibers with copper signal wiring
-    event.recipes.gtceu.circuit_assembler('cw_component_fiberoptics')
+    event.recipes.gtceu.assembler('cw_component_fiberoptics')
         .itemInputs('2x gtceu:fine_borosilicate_glass_wire', '2x gtceu:copper_single_wire')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_fiberoptics')
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // ssc: solid state chip (silicon wafer + HV logic)
-    event.recipes.gtceu.circuit_assembler('cw_component_ssc')
+    event.recipes.gtceu.assembler('cw_component_ssc')
         .itemInputs('2x gtceu:silicon_wafer', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('2x cyber_ware_port:component_ssc')
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // microelectric: SMD substrate
-    event.recipes.gtceu.circuit_assembler('cw_component_microelectric')
+    event.recipes.gtceu.assembler('cw_component_microelectric')
         .itemInputs('1x gtceu:smd_transistor', '1x gtceu:smd_capacitor', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_microelectric')
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // storage: NAND-based storage cell
-    event.recipes.gtceu.circuit_assembler('cw_component_storage')
+    event.recipes.gtceu.assembler('cw_component_storage')
         .itemInputs('2x gtceu:nand_chip', '1x gtceu:stainless_steel_plate', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_storage')
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // synthnerves: fine-wire neural simulation bundle
-    event.recipes.gtceu.circuit_assembler('cw_component_synthnerves')
+    event.recipes.gtceu.assembler('cw_component_synthnerves')
         .itemInputs('4x gtceu:fine_copper_wire', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('2x cyber_ware_port:component_synthnerves')
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // reactor: miniature field emitter cell
-    event.recipes.gtceu.circuit_assembler('cw_component_reactor')
+    event.recipes.gtceu.assembler('cw_component_reactor')
         .itemInputs('1x gtceu:hv_field_generator', '1x gtceu:stainless_steel_plate', '1x #gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('2x cyber_ware_port:component_reactor')

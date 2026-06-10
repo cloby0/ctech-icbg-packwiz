@@ -1486,7 +1486,7 @@ hash = "b9ca24b62fd998dc3de2484b71bcc916f4c4d8612d9c31edb93f3f7835e9bd1e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "2514c58c55f8fe388bda3019a1bc3641e3e246f1122be1928da9cfdb65d5d27b"
+hash = "c2d57eb1843c0f24a1f393dfb87f389da25c92e511f81264f1d89369c5cea248"
 
 [[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
@@ -1494,7 +1494,7 @@ hash = "8dafce612e705cc66b3d2afe85a7986ac17ac110dc5596b2d6343c6b03818066"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
-hash = "596986fb5c528b08e348d84f0bceab9738c8b2ac32fdee62325414148c8ff28e"
+hash = "23cb0aade6a5d2a1bd81c7247f12fe08e091ef3da3397f202e99cc5fe0b14fad"
 
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"
@@ -1506,7 +1506,7 @@ hash = "8c677a07377f331632419e39304ccedb41e1e602ed98cf55fabea523f7d5e510"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cyberware.js"
-hash = "f3e1c1684d72123b6a3a71aa397180c7a0160527b3b01472bb327ec2ca22cfdb"
+hash = "ad79f072b82756ff53eef966ca61945e9c51c33468159b5e89e59e6e9dc1e9d0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -1518,7 +1518,7 @@ hash = "157521114f5a28f5c043e89b0213a6845083d901d8d9aa637c1e235c0f672ace"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
-hash = "4f8e2e0b35599818c7216a15b71608b940fdf7266fc2ba044bdd4bd16a7e1350"
+hash = "a38487cca13e26ea1eaeec045d173f95fed0bb93ae2c33c79973b3d7db0aaceb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
