@@ -1804,6 +1804,11 @@ hash = "828d571a91296e2ee3be1ec509619ea01f6a61a03958461fbe543bd377daa194"
 metafile = true
 
 [[files]]
+file = "mods/automated-materials-index-ami.pw.toml"
+hash = "9641ba5eb32857ca01a73198b31ef86a3ff5772ac47c99236c1276b9931eb5e9"
+metafile = true
+
+[[files]]
 file = "mods/azurelib.pw.toml"
 hash = "75957ef78f1c6f24df9fe121def3ee18dbe264e8693454860ba75f08244a3cd5"
 metafile = true

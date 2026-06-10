@@ -1,0 +1,16 @@
+name = "Automated Materials Index (AMI)"
+filename = "ami-forge-1.20.1-1.4.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8671028a3ccb3d664671cdc4e3f2c143eb3f539b"
+mode = "metadata:curseforge"
+
+[option]
+optional = true
+
+[update]
+[update.curseforge]
+file-id = 8216251
+project-id = 1558643
