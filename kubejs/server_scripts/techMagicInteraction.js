@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('phlogisticated_fuel_base')
         .itemInputs('1x kubejs:phlogiston')
         .inputFluids(Fluid.of('gtceu:heavy_fuel', 1000))
-        .outputFluids(Fluid.of('kubejs:phlogisticated_fuel', 1500))
+        .outputFluids(Fluid.of('gtceu:phlogisticated_fuel', 1500))
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -144,15 +144,15 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('phlogisticated_fuel_stabilized')
         .itemInputs('1x kubejs:phlogiston', '1x mysticalagriculture:water_essence')
         .inputFluids(Fluid.of('gtceu:heavy_fuel', 1000))
-        .outputFluids(Fluid.of('kubejs:phlogisticated_fuel', 2000))
+        .outputFluids(Fluid.of('gtceu:phlogisticated_fuel', 2000))
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     // phlogisticated fuel -> infernal diesel via distillation tower
     // byproducts: naphtha and light fuel (feed back into normal petrochem)
     event.recipes.gtceu.distillation_tower('infernal_diesel_refine')
-        .inputFluids(Fluid.of('kubejs:phlogisticated_fuel', 1500))
-        .outputFluids(Fluid.of('kubejs:infernal_diesel', 750))
+        .inputFluids(Fluid.of('gtceu:phlogisticated_fuel', 1500))
+        .outputFluids(Fluid.of('gtceu:infernal_diesel', 750))
         .outputFluids(Fluid.of('gtceu:naphtha', 400))
         .outputFluids(Fluid.of('gtceu:light_fuel', 100))
         .duration(30 * 20)
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
 
     // infernal diesel fuel value: 4x normal diesel (diesel=15 ticks/mB, this=60)
     event.recipes.gtceu.combustion_generator('infernal_diesel_fuel')
-        .inputFluids(Fluid.of('kubejs:infernal_diesel', 1))
+        .inputFluids(Fluid.of('gtceu:infernal_diesel', 1))
         .duration(60)
         .EUt(-32)
 
@@ -176,15 +176,15 @@ ServerEvents.recipes(event => {
     // faefire aerosol + infernal diesel -> faefire phlog-fuel
     event.recipes.gtceu.mixer('faefire_phlog_fuel_mix')
         .itemInputs('1x kubejs:faefire_aerosol')
-        .inputFluids(Fluid.of('kubejs:infernal_diesel', 1000))
-        .outputFluids(Fluid.of('kubejs:faefire_phlog_fuel', 1500))
+        .inputFluids(Fluid.of('gtceu:infernal_diesel', 1000))
+        .outputFluids(Fluid.of('gtceu:faefire_phlog_fuel', 1500))
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
 
     // fuel value: 500 ticks/mB = ~8x infernal diesel, ~33x base diesel
     // high energy density per mB makes it worth shipping to remote/planetary setups
     event.recipes.gtceu.combustion_generator('faefire_phlog_fuel_burn')
-        .inputFluids(Fluid.of('kubejs:faefire_phlog_fuel', 1))
+        .inputFluids(Fluid.of('gtceu:faefire_phlog_fuel', 1))
         .duration(500)
         .EUt(-32)
 

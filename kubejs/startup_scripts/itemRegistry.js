@@ -69,9 +69,30 @@ StartupEvents.registry('item', event => {
     event.create('frozen_raw_gravitite')
     event.create('altar_charged_gravitite')
 
+    //calorite thermal extraction process intermediates
+    event.create('calorite_sulfate_slag')
+    event.create('calorite_chloride_melt')
+    event.create('calorite_fluoride_precipitate')
+    event.create('raw_calorite_sponge')
+
+    //venus rocket components
+    event.create('calorite_hull_section')
+    event.create('venus_rocket_engine')
+    event.create('venus_propellant_tank')
+    event.create('venus_guidance_module')
+
     //psi processing intermediates
     event.create('latent_psi_crystal')
 
     //hex casting intermediates
     event.create('hexed_amethyst_core')
+
+    //glacio magic-tech
+    event.create('rune_of_frost')
+
+    //glacio rocket components
+    event.create('naquadah_hull_section')
+    event.create('glacio_rocket_engine')
+    event.create('glacio_propellant_tank')
+    event.create('glacio_guidance_module')
 })

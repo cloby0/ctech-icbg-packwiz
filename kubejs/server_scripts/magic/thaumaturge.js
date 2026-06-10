@@ -57,18 +57,52 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "botania:terra_plate",
         "ingredients": [
-            {
-            "item": "kubejs:living_metalloid"
-            },
-            {
-            "item": "botania:mana_pearl"
-            },
-            {
-            "item": "botania:mana_diamond"
-            }
+            {"item": "kubejs:living_metalloid"},
+            {"item": "botania:mana_pearl"},
+            {"item": "botania:mana_diamond"}
         ],
         "mana": 500000,
         "result": {
+            "item": "botania:terrasteel_ingot"
+        }
+    })
+
+    // rune_of_frost: glacio-forged runic catalyst
+    // requires manasteel (Alchemist), naquadah (Glacio), ice shard (Glacio), source gem (Journeyman)
+    // higher mana cost reflects cryo-crystallization process
+    event.custom({
+        "type": "botania:runic_altar",
+        "ingredients": [
+            {"item": "botania:manasteel_ingot"},
+            {"item": "ad_astra:ice_shard"},
+            {"item": "ad_astra:ice_shard"},
+            {"item": "ad_astra:ice_shard"},
+            {"item": "ad_astra:ice_shard"},
+            {"item": "gtceu:naquadah_dust"},
+            {"item": "gtceu:naquadah_dust"},
+            {"item": "ars_nouveau:source_gem"}
+        ],
+        "mana": 25000,
+        "output": {
+            "count": 1,
+            "item": "kubejs:rune_of_frost"
+        }
+    })
+
+    // frost-enhanced terrasteel; rune_of_frost added to TAP alongside normal inputs
+    // cryo resonance concentrates the mana field; 3x yield for 3x mana cost
+    // requires Glacio access to craft the rune — hybridized player reward
+    event.custom({
+        "type": "botania:terra_plate",
+        "ingredients": [
+            {"item": "kubejs:living_metalloid"},
+            {"item": "botania:mana_pearl"},
+            {"item": "botania:mana_diamond"},
+            {"item": "kubejs:rune_of_frost"}
+        ],
+        "mana": 1500000,
+        "result": {
+            "count": 3,
             "item": "botania:terrasteel_ingot"
         }
     })

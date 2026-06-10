@@ -398,6 +398,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
@@ -420,6 +421,32 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
+
+    // phlogiston fuel line
+
+    event.create('phlogisticated_fuel')
+        .fluid()
+        .color(0xFF6B1A)
+
+    event.create('infernal_diesel')
+        .fluid()
+        .color(0xCC1500)
+
+    event.create('faefire_phlog_fuel')
+        .fluid()
+        .color(0xFFEE44)
+
+    // dimensional air fluids
+
+    // aether_air: He/O2/magical source gas mixture; Aether atmosphere
+    event.create('aether_air')
+        .fluid()
+        .color(0xA8D4F5)
+
+    // glacio_air: N2-rich cryogenic atmosphere; higher nitrogen than overworld air
+    event.create('glacio_air')
+        .fluid()
+        .color(0xB8E8F0)
 
     // mond process intermediate
 

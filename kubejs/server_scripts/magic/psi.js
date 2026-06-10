@@ -42,6 +42,42 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'psi:detonator' })
 
+    // gold CAD assembly
+    event.remove({ id: 'psi:cad_assembly_gold' })
+
+    // ebony/ivory CAD assemblies (cosmetic end-game variants)
+    event.remove({ id: 'psi:cad_assembly_ebony' })
+    event.remove({ id: 'psi:cad_assembly_ivory' })
+
+    // psimetal-tier CAD cores
+    event.remove({ id: 'psi:cad_core_conductive' })
+    event.remove({ id: 'psi:cad_core_overclocked' })
+    event.remove({ id: 'psi:cad_core_hyperclocked' })
+    event.remove({ id: 'psi:cad_core_radiative' })
+
+    // psimetal-tier CAD sockets
+    event.remove({ id: 'psi:cad_socket_large' })
+    event.remove({ id: 'psi:cad_socket_signaling' })
+    event.remove({ id: 'psi:cad_socket_huge' })
+    event.remove({ id: 'psi:cad_socket_transmissive' })
+
+    // exosuit sensors
+    event.remove({ id: 'psi:exosuit_sensor_heat' })
+    event.remove({ id: 'psi:exosuit_sensor_light' })
+    event.remove({ id: 'psi:exosuit_sensor_stress' })
+    event.remove({ id: 'psi:exosuit_sensor_trigger' })
+    event.remove({ id: 'psi:exosuit_sensor_water' })
+
+    // utility items
+    event.remove({ id: 'psi:spell_drive' })
+    event.remove({ id: 'psi:vector_ruler' })
+
+    // psimetal tools
+    event.remove({ id: 'psi:psimetal_sword' })
+    event.remove({ id: 'psi:psimetal_pickaxe' })
+    event.remove({ id: 'psi:psimetal_axe' })
+    event.remove({ id: 'psi:psimetal_shovel' })
+
     // psidust chain: HV mixer then Initiate imbuement
     // silicon + redstone at HV energy crystallizes latent psionic potential
     event.recipes.gtceu.mixer('latent_psi_crystal')
@@ -249,4 +285,167 @@ ServerEvents.recipes(event => {
             P: 'psi:psidust'
         }
     )
+
+    // gold CAD: intermediate between iron and psimetal, no magic component needed
+    event.recipes.gtceu.assembler('psi_gold_cad_assembly')
+        .itemInputs('4x create:golden_sheet', '2x psi:psidust', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:cad_assembly_gold')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // ebony/ivory CAD: cosmetic variants of psimetal CAD; substance from The End gates both
+    event.recipes.gtceu.assembler('psi_ebony_cad_assembly')
+        .itemInputs('4x psi:ebony_psimetal', '1x psi:psigem', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x psi:cad_assembly_ebony_psimetal')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_ivory_cad_assembly')
+        .itemInputs('4x psi:ivory_psimetal', '1x psi:psigem', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x psi:cad_assembly_ivory_psimetal')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // CAD cores (all require psimetal + HV circuits)
+    event.recipes.gtceu.assembler('psi_cad_core_conductive')
+        .itemInputs('4x #forge:ingots/psimetal', '2x #forge:dusts/glowstone', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:cad_core_conductive')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_cad_core_overclocked')
+        .itemInputs('4x #forge:ingots/psimetal', '2x minecraft:redstone', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:cad_core_overclocked')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // hyperclocked/radiative require psigem; gated behind trick_greater_infusion chain
+    event.recipes.gtceu.assembler('psi_cad_core_hyperclocked')
+        .itemInputs('4x #forge:ingots/psimetal', '2x minecraft:redstone', '1x psi:psigem', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x psi:cad_core_hyperclocked')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_cad_core_radiative')
+        .itemInputs('4x #forge:ingots/psimetal', '2x #forge:dusts/glowstone', '1x psi:psigem', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x psi:cad_core_radiative')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // CAD sockets
+    event.recipes.gtceu.assembler('psi_cad_socket_large')
+        .itemInputs('2x #forge:ingots/psimetal', '1x #forge:dusts/glowstone', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:cad_socket_large')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_cad_socket_signaling')
+        .itemInputs('2x #forge:ingots/psimetal', '1x minecraft:redstone', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:cad_socket_signaling')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_cad_socket_huge')
+        .itemInputs('2x #forge:ingots/psimetal', '1x #forge:dusts/glowstone', '1x psi:psigem', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:cad_socket_huge')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_cad_socket_transmissive')
+        .itemInputs('2x #forge:ingots/psimetal', '1x minecraft:redstone', '1x psi:psigem', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:cad_socket_transmissive')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // exosuit sensors: psimetal frame + iron plate + sensing material
+    event.recipes.gtceu.assembler('psi_exosuit_sensor_heat')
+        .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x minecraft:fire_charge')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:exosuit_sensor_heat')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_exosuit_sensor_light')
+        .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x #forge:dusts/glowstone')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:exosuit_sensor_light')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_exosuit_sensor_stress')
+        .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x minecraft:glistering_melon_slice')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:exosuit_sensor_stress')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_exosuit_sensor_trigger')
+        .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x minecraft:gunpowder')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:exosuit_sensor_trigger')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_exosuit_sensor_water')
+        .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x minecraft:prismarine_crystals')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x psi:exosuit_sensor_water')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // spell drive: psimetal + redstone data storage
+    event.recipes.gtceu.assembler('psi_spell_drive')
+        .itemInputs('2x #forge:ingots/psimetal', '2x minecraft:redstone', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:spell_drive')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // vector ruler: iron rods + psidust; MV since it's a measurement tool not a weapon
+    event.recipes.gtceu.assembler('psi_vector_ruler')
+        .itemInputs('2x #forge:rods/iron', '1x psi:psidust')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
+        .itemOutputs('1x psi:vector_ruler')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // psimetal tools: counts match vanilla patterns (sword 1+1+1, pickaxe 2+1+2, axe 2+1+2, shovel 1+1+2)
+    event.recipes.gtceu.assembler('psi_psimetal_sword')
+        .itemInputs('1x #forge:ingots/psimetal', '1x psi:psigem', '1x #forge:rods/iron')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:psimetal_sword')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_psimetal_pickaxe')
+        .itemInputs('2x #forge:ingots/psimetal', '1x psi:psigem', '2x #forge:rods/iron')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:psimetal_pickaxe')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_psimetal_axe')
+        .itemInputs('2x #forge:ingots/psimetal', '1x psi:psigem', '2x #forge:rods/iron')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:psimetal_axe')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('psi_psimetal_shovel')
+        .itemInputs('1x #forge:ingots/psimetal', '1x psi:psigem', '2x #forge:rods/iron')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x psi:psimetal_shovel')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 })
