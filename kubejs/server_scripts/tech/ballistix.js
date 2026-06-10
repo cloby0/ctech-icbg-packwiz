@@ -572,7 +572,7 @@ ServerEvents.recipes(event => {
 
     // nuclear: uranium-235 core + plutonium implosion lenses + thermobaric trigger + naquadah shell
     event.recipes.gtceu.arms_manufacturer('ballistix_nuclear')
-        .itemInputs('8x gtceu:uranium_235_dust', '4x gtceu:plutonium_239_dust', '4x ballistix:thermobaric', '4x gtceu:naquadah_plate', '2x #gtceu:circuits/luv')
+        .itemInputs('8x gtceu:uranium_235_dust', '4x gtceu:plutonium_dust', '4x ballistix:thermobaric', '4x gtceu:naquadah_plate', '2x #gtceu:circuits/luv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
         .itemOutputs('1x ballistix:nuclear')
         .duration(60 * 20)
