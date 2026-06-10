@@ -722,7 +722,7 @@ ServerEvents.recipes(event => {
 
     // railgun turret: tungsten rail + LuV motor + capacitor bank — kinetic penetrator
     event.recipes.gtceu.assembler('ballistix_railgunturret')
-        .itemInputs('4x gtceu:tungstensteel_plate', '2x gtceu:luv_electric_motor', '4x #gtceu:circuits/luv', '2x gtceu:luv_emitter', 'gtceu:luv_machine_hull')
+        .itemInputs('4x gtceu:tungsten_steel_plate', '2x gtceu:luv_electric_motor', '4x #gtceu:circuits/luv', '2x gtceu:luv_emitter', 'gtceu:luv_machine_hull')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
         .itemOutputs('1x ballistix:railgunturret')
         .duration(60 * 20)
