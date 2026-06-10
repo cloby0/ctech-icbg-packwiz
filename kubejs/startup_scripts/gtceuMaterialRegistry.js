@@ -362,7 +362,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_LONG_ROD
         )
         .addOreByproducts('iron', 'sulfur', 'nickel')
         .washedIn('gtceu:mercury')
