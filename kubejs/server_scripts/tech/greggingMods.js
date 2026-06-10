@@ -2,6 +2,19 @@ ServerEvents.recipes(event => {
 
     // removals
 
+    // scannable
+    event.remove({ output: 'scannable:scanner' })
+    event.remove({ output: 'scannable:blank_module' })
+    event.remove({ output: 'scannable:block_module' })
+    event.remove({ output: 'scannable:common_ores_module' })
+    event.remove({ output: 'scannable:rare_ores_module' })
+    event.remove({ output: 'scannable:entity_module' })
+    event.remove({ output: 'scannable:friendly_entity_module' })
+    event.remove({ output: 'scannable:hostile_entity_module' })
+    event.remove({ output: 'scannable:fluid_module' })
+    event.remove({ output: 'scannable:range_module' })
+    event.remove({ output: 'scannable:chest_module' })
+
     // cc: tweaked
     event.remove({ output: 'computercraft:cable' })
     event.remove({ output: 'computercraft:wired_modem' })
@@ -43,6 +56,20 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'advancedperipherals:overpowered_husbandry_automata_core' })
     event.remove({ output: 'advancedperipherals:overpowered_end_automata_core' })
     event.remove({ output: 'advancedperipherals:overpowered_weak_automata_core' })
+
+    // cc: link
+    event.remove({ output: 'cclink:link_core' })
+    event.remove({ output: 'cclink:link_interface' })
+    event.remove({ output: 'cclink:link_key' })
+    event.remove({ output: 'cclink:link_turtle_advanced' })
+    event.remove({ output: 'cclink:integrated_link_core' })
+    event.remove({ output: 'cclink:scanner_upgrade' })
+    event.remove({ output: 'cclink:sensor_upgrade' })
+    event.remove({ output: 'cclink:kinetic_upgrade' })
+    event.remove({ output: 'cclink:chatty_upgrade' })
+    event.remove({ output: 'cclink:overlay_upgrade' })
+    event.remove({ output: 'cclink:introspection_upgrade' })
+    event.remove({ output: 'cclink:world_upgrade' })
 
     // vista
     event.remove({ output: 'vista:television' })
@@ -416,5 +443,320 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x etched:album_jukebox')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // scannable
+
+    // scanner: steel housing + glass lens + sensor/emitter pair + MV circuit
+    event.recipes.gtceu.circuit_assembler('scannable_scanner')
+        .itemInputs(
+            '2x gtceu:steel_plate',
+            '1x gtceu:glass_lens',
+            '1x gtceu:mv_sensor',
+            '1x gtceu:mv_emitter',
+            '1x #gtceu:circuits/mv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x scannable:scanner')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // blank module: aluminium plate + red alloy substrate + copper wire connections (2 output)
+    event.recipes.gtceu.assembler('scannable_blank_module')
+        .itemInputs(
+            '1x gtceu:aluminium_plate',
+            '1x gtceu:red_alloy_plate',
+            '4x gtceu:copper_single_wire'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('2x scannable:blank_module')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // block_module: program blank with stone (block detection)
+    event.recipes.gtceu.assembler('scannable_block_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:stone')
+        .itemOutputs('1x scannable:block_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // common_ores_module: program blank with coal dust (common ore signature)
+    event.recipes.gtceu.assembler('scannable_common_ores_module')
+        .itemInputs('1x scannable:blank_module', '1x gtceu:coal_dust')
+        .itemOutputs('1x scannable:common_ores_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // rare_ores_module: program blank with diamond (rare ore signature)
+    event.recipes.gtceu.assembler('scannable_rare_ores_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:diamond')
+        .itemOutputs('1x scannable:rare_ores_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // entity_module: program blank with ender pearl (long-range entity detection)
+    event.recipes.gtceu.assembler('scannable_entity_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:ender_pearl')
+        .itemOutputs('1x scannable:entity_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // friendly_entity_module: program blank with wheat (passive mob lure material)
+    event.recipes.gtceu.assembler('scannable_friendly_entity_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:wheat')
+        .itemOutputs('1x scannable:friendly_entity_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // hostile_entity_module: program blank with gunpowder (aggressive mob signature)
+    event.recipes.gtceu.assembler('scannable_hostile_entity_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:gunpowder')
+        .itemOutputs('1x scannable:hostile_entity_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // fluid_module: program blank with water bucket (fluid detection)
+    event.recipes.gtceu.assembler('scannable_fluid_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:water_bucket')
+        .itemOutputs('1x scannable:fluid_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // range_module: program blank with long aluminium rod (antenna extension)
+    event.recipes.gtceu.assembler('scannable_range_module')
+        .itemInputs('1x scannable:blank_module', '1x gtceu:long_aluminium_rod')
+        .itemOutputs('1x scannable:range_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // chest_module: program blank with chest (storage detection)
+    event.recipes.gtceu.assembler('scannable_chest_module')
+        .itemInputs('1x scannable:blank_module', '1x minecraft:chest')
+        .itemOutputs('1x scannable:chest_module')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // cc: link
+
+    // link_plating: electrum circuit board — base component for all link armor and cores
+    event.recipes.gtceu.circuit_assembler('cclink_link_plating')
+        .itemInputs('4x gtceu:electrum_plate', '4x gtceu:copper_single_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('4x cclink:link_plating')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // link_power_core: HV battery wrapped in link circuitry — powers wearable computer
+    event.recipes.gtceu.circuit_assembler('cclink_link_power_core')
+        .itemInputs('#gtceu:batteries/hv', '2x #gtceu:circuits/hv', '2x cclink:link_plating')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:link_power_core')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // link_core: wearable computer — advanced computer embedded in link-plated housing
+    event.recipes.gtceu.circuit_assembler('cclink_link_core')
+        .itemInputs('computercraft:computer_advanced', 'cclink:link_power_core', '4x cclink:link_plating', '2x #gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x cclink:link_core')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // link_interface: helmet that pairs with link_core — rubber-padded display visor
+    event.recipes.gtceu.assembler('cclink_link_interface')
+        .itemInputs('cclink:link_core', '4x gtceu:rubber_plate', '2x gtceu:glass_plate', '2x cclink:link_plating', '#gtceu:circuits/hv')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:link_interface')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // link_key: authentication key for linking computers — emitter/sensor pair
+    event.recipes.gtceu.assembler('cclink_link_key')
+        .itemInputs('gtceu:hv_emitter', 'gtceu:hv_sensor', 'cclink:link_plating', '#gtceu:circuits/hv')
+        .itemOutputs('1x cclink:link_key')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // link_turtle_advanced: turtle with wireless link capability — builds on HV turtle
+    event.recipes.gtceu.assembler('cclink_link_turtle_advanced')
+        .itemInputs('computercraft:turtle_advanced', 'cclink:link_core', 'gtceu:ev_emitter', 'gtceu:ev_robot_arm', '2x gtceu:aluminium_single_cable')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x cclink:link_turtle_advanced')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // integrated_link_core: link core with built-in modem and speaker — EV upgrade
+    event.recipes.gtceu.circuit_assembler('cclink_integrated_link_core')
+        .itemInputs('cclink:link_core', '2x cclink:link_power_core', '4x #gtceu:circuits/ev', 'computercraft:speaker')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
+        .itemOutputs('1x cclink:integrated_link_core')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // scanner_upgrade: block scanner module — HV sensor reads block signatures
+    event.recipes.gtceu.assembler('cclink_scanner_upgrade')
+        .itemInputs('gtceu:hv_sensor', '2x gtceu:steel_plate', '#gtceu:circuits/mv', 'cclink:link_plating')
+        .itemOutputs('1x cclink:scanner_upgrade')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // sensor_upgrade: entity sensor module — emitter/sensor pair detects living entities
+    event.recipes.gtceu.assembler('cclink_sensor_upgrade')
+        .itemInputs('gtceu:hv_sensor', 'gtceu:hv_emitter', '2x gtceu:steel_plate', 'cclink:link_plating')
+        .itemOutputs('1x cclink:sensor_upgrade')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // kinetic_upgrade: kinetic module — motor + springs for enhanced mobility
+    event.recipes.gtceu.assembler('cclink_kinetic_upgrade')
+        .itemInputs('gtceu:hv_electric_motor', '2x gtceu:steel_spring', '2x gtceu:steel_plate', '#gtceu:circuits/hv')
+        .itemOutputs('1x cclink:kinetic_upgrade')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // chatty_upgrade: chat module — speaker + emitter for voice/text relay
+    event.recipes.gtceu.assembler('cclink_chatty_upgrade')
+        .itemInputs('computercraft:speaker', 'gtceu:hv_emitter', 'cclink:link_plating', '#gtceu:circuits/hv')
+        .itemOutputs('1x cclink:chatty_upgrade')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // overlay_upgrade: overlay module — glass display plates + sensor for HUD projection
+    event.recipes.gtceu.assembler('cclink_overlay_upgrade')
+        .itemInputs('2x gtceu:glass_plate', 'gtceu:hv_sensor', '2x cclink:link_plating', '#gtceu:circuits/hv')
+        .itemOutputs('1x cclink:overlay_upgrade')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // introspection_upgrade: inventory access module — ender chest for remote storage link
+    event.recipes.gtceu.assembler('cclink_introspection_upgrade')
+        .itemInputs('minecraft:ender_chest', '2x #gtceu:circuits/hv', '2x cclink:link_plating')
+        .itemOutputs('1x cclink:introspection_upgrade')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // world_upgrade: world detector — combines scanner + sensor with higher-tier circuits
+    event.recipes.gtceu.assembler('cclink_world_upgrade')
+        .itemInputs('cclink:scanner_upgrade', 'cclink:sensor_upgrade', '2x #gtceu:circuits/hv', '2x cclink:link_plating')
+        .itemOutputs('1x cclink:world_upgrade')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // laser_upgrade: laser gun module — EV emitter focused through glass lens
+    event.recipes.gtceu.assembler('cclink_laser_upgrade')
+        .itemInputs('gtceu:ev_emitter', 'gtceu:glass_lens', '2x cclink:link_plating', '#gtceu:circuits/ev')
+        .itemOutputs('1x cclink:laser_upgrade')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // battery_upgrade_tier1: HV battery mounted in link armor slot
+    event.recipes.gtceu.assembler('cclink_battery_upgrade_tier1')
+        .itemInputs('#gtceu:batteries/hv', '2x cclink:link_plating')
+        .itemOutputs('1x cclink:battery_upgrade_tier1')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // battery_upgrade_tier2: EV battery mounted in link armor slot
+    event.recipes.gtceu.assembler('cclink_battery_upgrade_tier2')
+        .itemInputs('#gtceu:batteries/ev', '3x cclink:link_plating')
+        .itemOutputs('1x cclink:battery_upgrade_tier2')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // battery_upgrade_tier3: IV battery mounted in link armor slot
+    event.recipes.gtceu.assembler('cclink_battery_upgrade_tier3')
+        .itemInputs('#gtceu:batteries/iv', '4x cclink:link_plating')
+        .itemOutputs('1x cclink:battery_upgrade_tier3')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // shield_upgrade_tier1: steel plate deflection layer for link armor
+    event.recipes.gtceu.assembler('cclink_shield_upgrade_tier1')
+        .itemInputs('4x gtceu:steel_plate', '#gtceu:circuits/hv', '2x cclink:link_plating')
+        .itemOutputs('1x cclink:shield_upgrade_tier1')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // shield_upgrade_tier2: titanium plate deflection layer
+    event.recipes.gtceu.assembler('cclink_shield_upgrade_tier2')
+        .itemInputs('4x gtceu:titanium_plate', '#gtceu:circuits/ev', '3x cclink:link_plating')
+        .itemOutputs('1x cclink:shield_upgrade_tier2')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // shield_upgrade_tier3: tungsten steel plate deflection layer
+    event.recipes.gtceu.assembler('cclink_shield_upgrade_tier3')
+        .itemInputs('4x gtceu:tungstensteel_plate', '#gtceu:circuits/iv', '4x cclink:link_plating')
+        .itemOutputs('1x cclink:shield_upgrade_tier3')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // shield_controller_upgrade: active shield management — EV sensor coordination circuit
+    event.recipes.gtceu.circuit_assembler('cclink_shield_controller_upgrade')
+        .itemInputs('gtceu:ev_sensor', '2x #gtceu:circuits/ev', '2x cclink:link_plating')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:shield_controller_upgrade')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // link_helmet: link visor — lightweight plating with EV circuits
+    event.recipes.gtceu.assembler('cclink_link_helmet')
+        .itemInputs('4x cclink:link_plating', '2x gtceu:rubber_plate', '2x #gtceu:circuits/ev')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:link_helmet')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // link_chestplate: link harness — heavier plating for upgrade slot housing
+    event.recipes.gtceu.assembler('cclink_link_chestplate')
+        .itemInputs('8x cclink:link_plating', '4x gtceu:rubber_plate', '2x #gtceu:circuits/ev')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x cclink:link_chestplate')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // link_leggings: link leggings — mid-weight plating
+    event.recipes.gtceu.assembler('cclink_link_leggings')
+        .itemInputs('6x cclink:link_plating', '3x gtceu:rubber_plate', '2x #gtceu:circuits/ev')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 216))
+        .itemOutputs('1x cclink:link_leggings')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // link_boots: link boots — lightweight plating for mobility
+    event.recipes.gtceu.assembler('cclink_link_boots')
+        .itemInputs('4x cclink:link_plating', '2x gtceu:rubber_plate', '#gtceu:circuits/ev')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:link_boots')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // configurator_iron: iron-tier armor config tool
+    event.recipes.gtceu.assembler('cclink_configurator_iron')
+        .itemInputs('2x gtceu:iron_plate', 'gtceu:iron_rod', '#gtceu:circuits/mv')
+        .itemOutputs('1x cclink:configurator_iron')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // configurator_gold: gold-tier armor config tool — finer tolerances
+    event.recipes.gtceu.assembler('cclink_configurator_gold')
+        .itemInputs('2x gtceu:gold_plate', 'gtceu:gold_rod', '#gtceu:circuits/hv', 'cclink:link_plating')
+        .itemOutputs('1x cclink:configurator_gold')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // configurator_diamond: diamond-tier armor config tool — precision EV-grade tool
+    event.recipes.gtceu.assembler('cclink_configurator_diamond')
+        .itemInputs('2x minecraft:diamond', 'gtceu:platinum_rod', '#gtceu:circuits/ev', 'cclink:link_plating')
+        .itemOutputs('1x cclink:configurator_diamond')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // link_armor_manager: manages armor upgrade loadouts via memory card
+    event.recipes.gtceu.circuit_assembler('cclink_link_armor_manager')
+        .itemInputs('2x #gtceu:circuits/ev', '2x cclink:link_plating', 'advancedperipherals:memory_card')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x cclink:link_armor_manager')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
 
 })

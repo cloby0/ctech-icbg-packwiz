@@ -16,6 +16,10 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "constructionwand:infinity_wand" });
 
+    event.remove({ id: 'magnumtorch:amethyst_magnum_torch' });
+    event.remove({ id: 'magnumtorch:diamond_magnum_torch' });
+    event.remove({ id: 'magnumtorch:emerald_magnum_torch' });
+
     event.recipes.ars_nouveau.imbuement(
         "#forge:gems/source",
         "reliquary:void_tear",
@@ -125,6 +129,42 @@ ServerEvents.recipes(event => {
             D: '#forge:gems/source'
         }
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "gtceu:holy_silver_rod",
+            "gtceu:luminessence_dust",
+            "gtceu:luminessence_dust",
+            "aether:ambrosium_shard"
+        ],
+        "minecraft:amethyst_shard",
+        "magnumtorch:amethyst_magnum_torch",
+        1500,
+    );
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "gtceu:holy_silver_rod",
+            "#forge:gems/source",
+            "gtceu:luminessence_dust",
+            "aether:ambrosium_shard"
+        ],
+        "minecraft:emerald",
+        "magnumtorch:emerald_magnum_torch",
+        2000,
+    );
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "gtceu:holy_silver_plate",
+            "#forge:gems/source",
+            "#forge:gems/source",
+            "gtceu:luminessence_dust"
+        ],
+        "minecraft:diamond",
+        "magnumtorch:diamond_magnum_torch",
+        2500,
+    );
 
     //after here lies only progression related recipes
     event.shaped(

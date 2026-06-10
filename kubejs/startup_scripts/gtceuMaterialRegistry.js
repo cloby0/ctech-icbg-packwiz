@@ -443,10 +443,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xA8D4F5)
 
+    // liquid_aether_air: vacuum-frozen aether_air; distillation input
+    event.create('liquid_aether_air')
+        .fluid()
+        .color(0x6AABDF)
+
     // glacio_air: N2-rich cryogenic atmosphere; higher nitrogen than overworld air
     event.create('glacio_air')
         .fluid()
         .color(0xB8E8F0)
+
+    // liquid_glacio_air: vacuum-frozen glacio_air; distillation input
+    event.create('liquid_glacio_air')
+        .fluid()
+        .color(0x7AC8E0)
 
     // mond process intermediate
 
