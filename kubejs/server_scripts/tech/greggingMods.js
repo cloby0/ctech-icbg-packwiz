@@ -685,7 +685,7 @@ ServerEvents.recipes(event => {
 
     // shield_upgrade_tier3: tungsten steel plate deflection layer
     event.recipes.gtceu.assembler('cclink_shield_upgrade_tier3')
-        .itemInputs('4x gtceu:tungstensteel_plate', '#gtceu:circuits/iv', '4x cclink:link_plating')
+        .itemInputs('4x gtceu:tungsten_steel_plate', '#gtceu:circuits/iv', '4x cclink:link_plating')
         .itemOutputs('1x cclink:shield_upgrade_tier3')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.IV])

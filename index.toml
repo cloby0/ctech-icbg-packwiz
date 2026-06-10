@@ -1518,7 +1518,7 @@ hash = "157521114f5a28f5c043e89b0213a6845083d901d8d9aa637c1e235c0f672ace"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
-hash = "a38487cca13e26ea1eaeec045d173f95fed0bb93ae2c33c79973b3d7db0aaceb"
+hash = "e9bf646284cc1deb8d42519d98b342d7b3f63c24f87d671f9f3f6a9c06051e74"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
