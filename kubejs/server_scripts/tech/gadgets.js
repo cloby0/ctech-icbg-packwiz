@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
     // freezing upgrade: liquid nitrogen cryo emitter locks drops in place post-extract
     event.recipes.gtceu.assembler('mg_upgrade_freezing')
         .itemInputs('mininggadgets:upgrade_empty', '2x gtceu:stainless_steel_plate', 'gtceu:hv_field_generator', '#gtceu:circuits/hv')
-        .inputFluids(Fluid.of('gtceu:liquid_nitrogen', 2000))
+        .inputFluids(Fluid.of('gtceu:nitrogen', 2000))
         .itemOutputs('1x mininggadgets:upgrade_freezing')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
