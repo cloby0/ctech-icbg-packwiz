@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
     // aether air collection; gas collector in aether:the_aether dimension
     event.recipes.gtceu.gas_collector('aether_air_collection')
-        .circuitMeta(4)
+        .circuit(4)
         .outputFluids(Fluid.of('gtceu:aether_air', 10000))
         .dimension('aether:the_aether')
         .duration(200)
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 
     // glacio air collection; gas collector in ad_astra:glacio dimension
     event.recipes.gtceu.gas_collector('glacio_air_collection')
-        .circuitMeta(5)
+        .circuit(5)
         .outputFluids(Fluid.of('gtceu:glacio_air', 10000))
         .dimension('ad_astra:glacio')
         .duration(200)

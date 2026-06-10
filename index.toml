@@ -1490,7 +1490,7 @@ hash = "2514c58c55f8fe388bda3019a1bc3641e3e246f1122be1928da9cfdb65d5d27b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
-hash = "b0c5365b658ebbb8037b9113021efabdf689aafc6233221052b6c20a281490c3"
+hash = "cf96f3aa6a6bd3c3c4b952ecea83362c645f391a4407566fd35090b5b8713e5a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
