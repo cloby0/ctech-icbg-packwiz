@@ -240,9 +240,10 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // repulsive: condensive with compressed air cells — shockwave push field
+    // repulsive: condensive with compressed air — shockwave push field
     event.recipes.gtceu.assembler('ballistix_repulsive')
-        .itemInputs('2x ballistix:condensive', '4x gtceu:air_cell', '2x gtceu:steel_spring')
+        .itemInputs('2x ballistix:condensive', '2x gtceu:steel_spring')
+        .inputFluids('4000 gtceu:air')
         .itemOutputs('2x ballistix:repulsive')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
