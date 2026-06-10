@@ -734,7 +734,7 @@ ServerEvents.recipes(event => {
 
     // antimatter: nuclear core surrounded by nether star annihilators + naquadah enriched casing
     event.recipes.gtceu.arms_manufacturer('ballistix_antimatter')
-        .itemInputs('ballistix:nuclear', '8x minecraft:nether_star', '4x gtceu:naquadah_enriched_plate', '4x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:nuclear', '8x minecraft:nether_star', '4x gtceu:enriched_naquadah_plate', '4x #gtceu:circuits/zpm')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 2304))
         .itemOutputs('1x ballistix:antimatter')
         .duration(120 * 20)
@@ -742,7 +742,7 @@ ServerEvents.recipes(event => {
 
     // large antimatter: stacked antimatter charges — continental-scale destruction
     event.recipes.gtceu.arms_manufacturer('ballistix_largeantimatter')
-        .itemInputs('ballistix:antimatter', '8x minecraft:nether_star', '4x gtceu:naquadah_enriched_plate', '4x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:antimatter', '8x minecraft:nether_star', '4x gtceu:enriched_naquadah_plate', '4x #gtceu:circuits/zpm')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 4608))
         .itemOutputs('1x ballistix:largeantimatter')
         .duration(180 * 20)
@@ -770,14 +770,14 @@ ServerEvents.recipes(event => {
 
     // support frame tier 3: naquadah enriched structural skeleton — true ICBM infrastructure
     event.recipes.gtceu.assembler('ballistix_launchersupportframetier3')
-        .itemInputs('ballistix:launchersupportframetier2', '8x gtceu:naquadah_enriched_plate', '4x gtceu:naquadah_enriched_rod', '2x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:launchersupportframetier2', '8x gtceu:enriched_naquadah_plate', '4x gtceu:naquadah_enriched_rod', '2x #gtceu:circuits/zpm')
         .itemOutputs('2x ballistix:launchersupportframetier3')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
 
     // launcher platform tier 3: ZPM motor + naquadah enriched deck
     event.recipes.gtceu.assembler('ballistix_launcherplatformtier3')
-        .itemInputs('ballistix:launchersupportframetier3', 'ballistix:launcherplatformtier2', '4x gtceu:naquadah_enriched_plate', 'gtceu:zpm_electric_motor', '2x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:launchersupportframetier3', 'ballistix:launcherplatformtier2', '4x gtceu:enriched_naquadah_plate', 'gtceu:zpm_electric_motor', '2x #gtceu:circuits/zpm')
         .itemOutputs('1x ballistix:launcherplatformtier3')
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -796,7 +796,7 @@ ServerEvents.recipes(event => {
 
     // missile tier 3: naquadah enriched hull + antimatter warhead — true ICBM
     event.recipes.gtceu.assembler('ballistix_missiletier3')
-        .itemInputs('4x gtceu:naquadah_enriched_plate', 'ballistix:antimatter', '2x #gtceu:circuits/zpm', '2x gtceu:zpm_sensor')
+        .itemInputs('4x gtceu:enriched_naquadah_plate', 'ballistix:antimatter', '2x #gtceu:circuits/zpm', '2x gtceu:zpm_sensor')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 16000))
         .itemOutputs('1x ballistix:missiletier3')
         .duration(120 * 20)
@@ -804,7 +804,7 @@ ServerEvents.recipes(event => {
 
     // AA missile mk2: ZPM guidance + tier 3 chassis — kills anything airborne
     event.recipes.gtceu.assembler('ballistix_aamissilemk2')
-        .itemInputs('ballistix:missiletier3', '4x gtceu:zpm_sensor', '4x gtceu:naquadah_enriched_plate', '4x #gtceu:circuits/zpm')
+        .itemInputs('ballistix:missiletier3', '4x gtceu:zpm_sensor', '4x gtceu:enriched_naquadah_plate', '4x #gtceu:circuits/zpm')
         .itemOutputs('1x ballistix:aamissilemk2')
         .duration(80 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
