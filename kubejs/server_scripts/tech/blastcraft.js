@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     // blastproofwallbase has a custom blast_compressor recipe type — that stays; GT forming_press added as alternative path
 
     event.remove({ output: 'blastcraft:concretemix' })
-    event.remove({ output: 'blastcraft:hardenedbrickbase' })
+    event.remove({ output: 'blastcraft:hardenedbricksbase' })
     event.remove({ output: 'blastcraft:rawblastproofwallbase' })
     event.remove({ output: 'blastcraft:blastproofwallbase' })
     event.remove({ output: 'blastcraft:carbonplatedwallbase' })
@@ -52,13 +52,13 @@ ServerEvents.recipes(event => {
     // hardened bricks: obsidian aggregate cast into brick form with chrome binder
     event.recipes.gtceu.assembler('blastcraft_hardenedbrickbase')
         .itemInputs('4x minecraft:obsidian', '4x minecraft:bricks', 'gtceu:chromium_plate', '2x #gtceu:circuits/hv')
-        .itemOutputs('4x blastcraft:hardenedbrickbase')
+        .itemOutputs('4x blastcraft:hardenedbricksbase')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     // raw blast-proof wall: hardened bricks compressed with steel — pre-treatment form
     event.recipes.gtceu.assembler('blastcraft_rawblastproofwallbase')
-        .itemInputs('4x blastcraft:hardenedbrickbase', '2x minecraft:obsidian', '2x gtceu:stainless_steel_plate', '#gtceu:circuits/hv')
+        .itemInputs('4x blastcraft:hardenedbricksbase', '2x minecraft:obsidian', '2x gtceu:stainless_steel_plate', '#gtceu:circuits/hv')
         .itemOutputs('4x blastcraft:rawblastproofwallbase')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])

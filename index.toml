@@ -1498,7 +1498,7 @@ hash = "3870f52265e585e7e93e0943d528477dcf50c546dc6731d368d9781e2be4a870"
 
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"
-hash = "2c6691fa6c084a2b37948e6ed1a3d1c59d373b46f1c7f2f073e0ef14ec3f3df8"
+hash = "20fdd9f13b7775ba4603586e8b56b9924c1b253ee16a9d52a6b9c33f01399933"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
