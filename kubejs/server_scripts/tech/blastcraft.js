@@ -79,7 +79,8 @@ ServerEvents.recipes(event => {
 
     // poison spike: spike tip loaded with sulfur dioxide chemical agent
     event.recipes.gtceu.assembler('blastcraft_spikepoison')
-        .itemInputs('blastcraft:spike', '2x gtceu:sulfur_dioxide_cell', '2x gtceu:glass_tube')
+        .itemInputs('blastcraft:spike', '2x gtceu:glass_tube')
+        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 2000))
         .itemOutputs('1x blastcraft:spikepoison')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])

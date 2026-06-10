@@ -1494,11 +1494,11 @@ hash = "8dafce612e705cc66b3d2afe85a7986ac17ac110dc5596b2d6343c6b03818066"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
-hash = "23cb0aade6a5d2a1bd81c7247f12fe08e091ef3da3397f202e99cc5fe0b14fad"
+hash = "85dc9f3102713049365089921b25c0a0d33491490b3f7f92f87ee5507410d011"
 
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"
-hash = "3eea8492493f343ce8114bffbe65fde376e271e81d777f8086a6b78311e9e257"
+hash = "2c6691fa6c084a2b37948e6ed1a3d1c59d373b46f1c7f2f073e0ef14ec3f3df8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"

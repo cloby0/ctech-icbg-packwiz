@@ -269,9 +269,10 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // chemical: condensive with sulfur dioxide cells and glass dispersal vials
+    // chemical: condensive with sulfur dioxide gas and glass dispersal vials
     event.recipes.gtceu.arms_manufacturer('ballistix_chemical')
-        .itemInputs('2x ballistix:condensive', '4x gtceu:sulfur_dioxide_cell', '2x gtceu:glass_tube', 'gtceu:stainless_steel_plate')
+        .itemInputs('2x ballistix:condensive', '2x gtceu:glass_tube', 'gtceu:stainless_steel_plate')
+        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 4000))
         .itemOutputs('2x ballistix:chemical')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
