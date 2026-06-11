@@ -2,10 +2,6 @@ ServerEvents.recipes(event => {
 
     // No vanilla removals — all relics items are loot drops only by default
 
-    // ============================================================
-    // JOURNEYMAN — shaped crafting, dubious_dust gate
-    // ============================================================
-
     event.shaped(Item.of('relics:leather_belt', 1), [
         'LLL', 'LDL', 'LLL'
     ], { 'L': 'minecraft:leather', 'D': 'nameless_trinkets:dubious_dust' })
@@ -45,10 +41,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('relics:relic_experience_bottle', 1), [
         'GDG', 'GRG', ' G '
     ], { 'G': 'minecraft:glass_bottle', 'D': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:redstone' })
-
-    // ============================================================
-    // INITIATE — enchanting apparatus, glowing_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:leather_boots", "minecraft:lily_pad", "minecraft:lily_pad", "minecraft:prismarine_shard", "minecraft:prismarine_shard", "gtceu:luminessence_dust"],
@@ -133,10 +125,6 @@ ServerEvents.recipes(event => {
         "relics:holy_locket",
         2500
     )
-
-    // ============================================================
-    // SORCERER — enchanting apparatus, ultimate_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:ender_pearl", "minecraft:ender_pearl", "minecraft:phantom_membrane", "minecraft:phantom_membrane", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],

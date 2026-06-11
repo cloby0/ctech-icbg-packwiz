@@ -1,15 +1,10 @@
 ServerEvents.recipes(event => {
 
-    // remove vanilla calorite smelting paths
     event.remove({ id: 'ad_astra:smelting/calorite_ingot_from_smelting_raw_calorite' })
     event.remove({ id: 'ad_astra:smelting/calorite_ingot_from_smelting_venus_calorite_ore' })
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:calorite_ingot' })
 
-    // Venus Thermal Extraction Process
-    // no smelting flag set; only path to calorite ingot
-    // exploits Venus sulfuric atmosphere chemistry; all steps IV chemical reactors
-
-    // step 1 sulfuric roast; sulfuric acid dissolves the ore matrix; sulfur sourced from Venus sand centrifuge
+    // step 1 sulfuric roast
     event.recipes.gtceu.chemical_reactor('calorite_sulfuric_roast')
         .itemInputs('1x gtceu:crushed_calorite_ore')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 500))
@@ -20,7 +15,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 2 chlorine leach; converts sulfate matrix to soluble chloride; SO2 byproduct recyclable
+    // step 2 chlorine leach
     event.recipes.gtceu.chemical_reactor('calorite_chlorine_leach')
         .itemInputs('1x kubejs:calorite_sulfate_slag')
         .inputFluids(Fluid.of('gtceu:chlorine', 500))
@@ -30,7 +25,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 3 HF fluorination; strips remaining chromium impurities; HCl byproduct feeds step 2 loop
+    // step 3 HF fluorination
     event.recipes.gtceu.chemical_reactor('calorite_hf_fluorination')
         .itemInputs('1x kubejs:calorite_chloride_melt')
         .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 400))
@@ -40,7 +35,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 4 electrolytic reduction; fluoride broken to metallic sponge; fluorine byproduct recyclable
+    // step 4 electrolytic reduction
     event.recipes.gtceu.electrolyzer('calorite_electrolytic_reduction')
         .itemInputs('1x kubejs:calorite_fluoride_precipitate')
         .itemOutputs('1x kubejs:raw_calorite_sponge')
@@ -49,7 +44,7 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 5 EBF consolidation; 4500K requires RTM alloy coils
+    // step 5 EBF consolidation
     event.recipes.gtceu.electric_blast_furnace('calorite_ebf_consolidation')
         .itemInputs('1x kubejs:raw_calorite_sponge')
         .itemOutputs('1x gtceu:hot_calorite_ingot')
@@ -64,7 +59,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // Venus sand centrifuge; sulfur-heavy volcanic soil
     event.recipes.gtceu.centrifuge('venus_sand_centrifuge')
         .itemInputs('4x ad_astra:venus_sand')
         .itemOutputs('2x gtceu:sulfur_dust')
@@ -75,18 +69,14 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // gate quantum_processor_assembly behind calorite fine wire
-    // nano_processor_assembly (EV) was gated behind ostrum wire in evAndMars.js
     event.replaceInput(
         { output: 'gtceu:quantum_processor_assembly' },
         'gtceu:fine_platinum_wire',
         'gtceu:fine_calorite_wire'
     )
 
-    // tier 3 rocket (Venus/Mercury); same structure as tier 1 (HV) and tier 2 (EV)
     event.remove({ id: 'ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench' })
 
-    // hull sections
     event.recipes.gtceu.assembler('venus_hull_section')
         .itemInputs(
             '2x ad_astra:calorite_plate',
@@ -97,7 +87,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // propulsion engine
     event.recipes.gtceu.assembler('venus_rocket_engine')
         .itemInputs(
             '2x gtceu:long_calorite_rod',
@@ -109,7 +98,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // propellant tank
     event.recipes.gtceu.assembler('venus_propellant_tank')
         .itemInputs(
             '4x ad_astra:calorite_plate',
@@ -121,7 +109,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // guidance module
     event.shaped('kubejs:venus_guidance_module', [
         'LEL',
         'GCG',
@@ -134,7 +121,6 @@ ServerEvents.recipes(event => {
         S: 'gtceu:iv_sensor'
     })
 
-    // NASA workbench tier 3 assembly
     event.custom({
         "type": "ad_astra:nasa_workbench",
         "ingredients": [

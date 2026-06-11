@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    // life_essence + sin runes + elementium gate -> vengeful_gaia_spirit
     event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
@@ -17,7 +16,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // vengeful_gaia_spirit + boss mob essences -> soul_of_gaia
     event.recipes.ars_nouveau.imbuement(
         "kubejs:vengeful_gaia_spirit",
         "kubejs:soul_of_gaia",
@@ -30,7 +28,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // soul_of_gaia + 8x elementium block -> boundless_gaia_spirit_ingot
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             "botania:elementium_block",
@@ -47,7 +44,6 @@ ServerEvents.recipes(event => {
         20000,
     )
 
-    // boundless_gaia_spirit_ingot + 2x terrasteel block -> gaia_spirit_ingot (Terrestrial Agglomeration)
     event.custom({
         "type": "botania:terra_plate",
         "ingredients": [

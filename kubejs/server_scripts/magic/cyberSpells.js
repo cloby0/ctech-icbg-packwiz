@@ -8,23 +8,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cyberspells:rune_heart' })
     event.remove({ output: 'cyberspells:rune_infuser' })
 
-    // ============================================================
-    // RUNE INFUSER BLOCK — GT assembler, EV
-    // robo_surgeon (EV tech) + arcane ingots + holy silver
-    // ============================================================
-
     event.recipes.gtceu.assembler('cs_rune_infuser')
         .itemInputs('1x cyber_ware_port:robo_surgeon', '4x irons_spellbooks:arcane_ingot', '2x gtceu:holy_silver_dust')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x cyberspells:rune_infuser')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
-
-    // ============================================================
-    // RUNE LIMBS — enchanting apparatus, Sorcerer tier
-    // cyberware limb (center, consumed) + arcane ingots + holy silver
-    // gates: HV tech (cyberware) + ISS progression (arcane ingot) + Sorcerer magic
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
@@ -53,11 +42,6 @@ ServerEvents.recipes(event => {
         "cyberspells:rune_leg_right",
         3000
     )
-
-    // ============================================================
-    // RUNE HEART — enchanting apparatus, Alchemist tier
-    // most critical organ — prima_materia required (deeper magical integration)
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],

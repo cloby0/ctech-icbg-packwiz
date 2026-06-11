@@ -81,8 +81,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const MSW = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.helpers.MaterialStackWrapper')
     function c(str) { return MSW.fromString(str) }
 
-    // aether
-
     event.create('ambrosium')
         .gem()
         .element('ambrosium')
@@ -95,7 +93,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('gold', 'sulfur')
         .washedIn('gtceu:mercury')
 
-    // zanite: purple vanadium silicate gem (SiO2 + V chromophore)
     event.create('zanite')
         .gem()
         .ore()
@@ -139,7 +136,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .washedIn('gtceu:sodium_persulfate')
         .separatedInto('chromium', 'manganese')
 
-    // skyjade: beryl-family silicate (Be-Ca silicate, like emerald/aquamarine family)
     event.create('skyjade')
         .gem()
         .ore()
@@ -163,8 +159,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('cobalt', 'chromium')
         .washedIn('gtceu:mercury')
         .separatedInto('cobalt', 'chromium')
-
-    // progression materials
 
     event.create('luminessence')
         .dust()
@@ -283,9 +277,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.STICKY)
         .flags(GTMaterialFlags.PHOSPHORESCENT)
 
-    // ae2 sky steel
-    // meteoritic sky stone (ae2) + steel + fluix crystal -> quantum-conductive structural alloy
-    // blast temp 3600 = EV coils required (same tier as ostrum/mars gate)
     event.create('sky_steel')
         .ingot()
         .fluid()
@@ -302,10 +293,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING
         )
 
-    // thermal expansion alloys
-
-    // lumium: tin base + silver brightness + glowstone luminescence
-    // calculation processor substrate; optical signal processing
     event.create("lumium")
         .ingot()
         .fluid()
@@ -319,8 +306,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // signalum: copper conductor + silver quality + redstone signal amplification
-    // logic processor substrate; control signal transmission
     event.create("signalum")
         .ingot()
         .fluid()
@@ -334,8 +319,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // enderium: tin base + platinum catalyst + ender pearl dimensional energy
-    // engineering processor substrate; spatial wiring and entanglement
     event.create("enderium")
         .ingot().fluid()
         .color(0x1f6b62).secondaryColor(0x16455f)
@@ -347,8 +330,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
-
-    // ad astra space metals
 
     event.create('desh')
         .ingot()
@@ -406,10 +387,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .washedIn('gtceu:mercury')
         .separatedInto('chromium', 'vanadium')
 
-    // lunar rocket alloy
-    // ultimet + aluminium
-    // all overworld HV inputs so rocket builds before first moon trip
-
     event.create('lunar_rocket_alloy')
         .ingot()
         .fluid()
@@ -421,8 +398,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
-
-    // phlogiston fuel line
 
     event.create('phlogisticated_fuel')
         .fluid()
@@ -436,37 +411,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xFFEE44)
 
-    // dimensional air fluids
-
-    // aether_air: He/O2/magical source gas mixture; Aether atmosphere
     event.create('aether_air')
         .fluid()
         .color(0xA8D4F5)
 
-    // liquid_aether_air: vacuum-frozen aether_air; distillation input
     event.create('liquid_aether_air')
         .fluid()
         .color(0x6AABDF)
 
-    // glacio_air: N2-rich cryogenic atmosphere; higher nitrogen than overworld air
     event.create('glacio_air')
         .fluid()
         .color(0xB8E8F0)
 
-    // liquid_glacio_air: vacuum-frozen glacio_air; distillation input
     event.create('liquid_glacio_air')
         .fluid()
         .color(0x7AC8E0)
-
-    // mond process intermediate
 
     event.create('desh_carbonyl')
         .fluid()
         .color(0xc49060)
 
-    // moon cheese
     // nugget form renamed to curd via lang key
-
     event.create('moon_cheese')
         .ingot()
         .ore()
@@ -480,7 +445,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // uses MaterialStackWrapper.fromString via c() helper for lazy resolution of custom materials
     // LuV+ blast temps require naquadah tier coils or higher
 
-    // MV lead sourcite 1A alloy smelter
     event.create('lead_sourcite')
         .ingot()
         .fluid()
@@ -495,7 +459,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // HV hallowed nickelate 2A
     event.create('hallowed_nickelate')
         .ingot()
         .fluid()
@@ -511,7 +474,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // EV prima ruridite 4A
     event.create('prima_ruridite')
         .ingot()
         .fluid()
@@ -527,7 +489,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // IV hssg manaferrite 4A
     event.create('hssg_manaferrite')
         .ingot()
         .fluid()
@@ -543,7 +504,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // LuV terranaquadite 8A
     event.create('terranaquadite')
         .ingot()
         .fluid()
@@ -559,7 +519,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    // ZPM elven americate 8A
     event.create('elven_americate')
         .ingot()
         .fluid()
@@ -575,7 +534,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UV boundless naquadrite 16A
     event.create('boundless_naquadrite')
         .ingot()
         .fluid()

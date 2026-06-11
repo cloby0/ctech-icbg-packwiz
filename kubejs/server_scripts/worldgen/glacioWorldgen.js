@@ -1,8 +1,5 @@
 GTCEuServerEvents.oreVeins(event => {
 
-// glacio; LuV tier; no native Ad Astra ores, all ore gen from GTCEu
-
-//naquadah; LuV gate material
     event.add("kubejs:naquadah_vein_gl", vein => {
         vein.weight(80)
         vein.clusterSize(35)
@@ -26,7 +23,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//saltpeter evaporite; ties to atmosphere distillation
     event.add("kubejs:saltpeter_vein_gl", vein => {
         vein.weight(40)
         vein.clusterSize(34)
@@ -51,7 +47,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//borax evaporite; boron for fiberglass and fluxes
     event.add("kubejs:borax_vein_gl", vein => {
         vein.weight(35)
         vein.clusterSize(32)
@@ -76,7 +71,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//ilmenite/rutile; titanium ores
     event.add("kubejs:ilmenite_vein_gl", vein => {
         vein.weight(25)
         vein.clusterSize(28)
@@ -101,7 +95,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//pentlandite; iron-nickel sulfide
     event.add("kubejs:pentlandite_vein_gl", vein => {
         vein.weight(40)
         vein.clusterSize(34)
@@ -126,7 +119,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//talc/magnesite
     event.add("kubejs:talc_vein_gl", vein => {
         vein.weight(30)
         vein.clusterSize(28)

@@ -2,7 +2,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/elementium' })
     event.remove({ id: 'botania:elven_trade/elementium_block' })
 
-    // 4x terrasteel + natural runes -> 3x terrestrial concentrate (weak_elementium_dust)
     event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
@@ -22,7 +21,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // 3x terrestrial concentrate -> 2x elven concentrate (through the portal)
     event.custom({
         "type": "botania:elven_trade",
         "ingredients": [
@@ -35,7 +33,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // elven concentrate + water/air essence + luminessence -> elementite dust
     event.recipes.ars_nouveau.imbuement(
         "kubejs:elven_concentrate",
         "kubejs:elementite_dust",
@@ -47,7 +44,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // elementite dust + abstract metal -> raw elementite
     event.recipes.ars_nouveau.enchanting_apparatus(
         [ "gtceu:abstract_metal_ingot" ],
         "kubejs:elementite_dust",
@@ -55,6 +51,5 @@ ServerEvents.recipes(event => {
         15000,
     )
 
-    // smelt raw elementite -> elementium ingot
     event.smelting("botania:elementium_ingot", "kubejs:raw_elementite")
 })

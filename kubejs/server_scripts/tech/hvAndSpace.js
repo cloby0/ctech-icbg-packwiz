@@ -3,12 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_raw_desh' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_moon_desh_ore' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_deepslate_desh_ore' })
-    // desh mond process
-    // no smelting flag set
     // mond is only path to desh ingot
-    // requires HV chemical reactors and CO production
-    // ~50 mB CO net loss per cycle
-    // input is crushed_desh not desh_dust
     // crushed_desh_ore only comes from ore block maceration, not ingot recycling
     // prevents ingot -> dust -> mond -> ingot infinite byproduct loop
 
@@ -16,7 +11,6 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
 
     // step 1 acid leach
-    // removes sulfide/iron impurities, converts to sulfate slurry for carbonylation
     event.recipes.gtceu.chemical_reactor('desh_acid_leach')
         .itemInputs('1x gtceu:crushed_desh_ore')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
@@ -46,7 +40,7 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 4 EBF decomposition; produces hot ingot, vacuum freezer required
+    // step 4 EBF decomposition
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
         .itemOutputs('1x gtceu:hot_desh_ingot')
@@ -61,7 +55,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // moon sand to silicon
     event.recipes.gtceu.centrifuge('moon_sand_silicon')
         .itemInputs('4x ad_astra:moon_sand')
         .itemOutputs('2x gtceu:silicon_dust')
@@ -71,18 +64,8 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // replace electrum wire in micro processor recipe with desh wire
     event.replaceInput({ output: 'gtceu:micro_processor_computer' }, 'gtceu:fine_electrum_wire', 'gtceu:fine_desh_wire')
 
-    // tier 1 rocket
-    // three layers
-    // layer 1 ebf alloy and assembler sub-components
-    // layer 2 lunar rocket alloy nose cone and fins
-    // layer 3 nasa workbench assembly
-
-    // ultimet + aluminium at HV EBF
-    // ultimet requires prior EBF from Co Cr Mo W
-    // overworld only so rocket builds before first moon trip
     event.recipes.gtceu.electric_blast_furnace('lunar_rocket_alloy_ebf')
         .itemInputs(
             '4x gtceu:ultimet_dust',
@@ -94,7 +77,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // hull sections
     event.recipes.gtceu.assembler('rocket_hull_section')
         .itemInputs(
             '2x gtceu:lunar_rocket_alloy_plate',
@@ -105,7 +87,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // combustion engine
     event.recipes.gtceu.assembler('rocket_combustion_engine')
         .itemInputs(
             '2x gtceu:long_lunar_rocket_alloy_rod',
@@ -117,7 +98,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // fuel tank
     event.recipes.gtceu.assembler('pressurized_rocket_tank')
         .itemInputs(
             '4x gtceu:aluminium_plate',
@@ -129,7 +109,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // guidance module
     event.shaped('kubejs:rocket_guidance_module', [
         'LEL',
         'GCG',
@@ -142,7 +121,6 @@ ServerEvents.recipes(event => {
         S: 'gtceu:hv_sensor'
     })
 
-    // layer 2 nose cone and fins
     event.remove({ id: 'ad_astra:rocket_nose_cone' })
     event.shaped('ad_astra:rocket_nose_cone', [
         ' R ',
@@ -162,7 +140,6 @@ ServerEvents.recipes(event => {
         L: 'gtceu:lunar_rocket_alloy_plate'
     })
 
-    // layer 3 nasa workbench
     event.remove({ id: 'ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench' })
     event.custom({
         "type": "ad_astra:nasa_workbench",
@@ -185,7 +162,6 @@ ServerEvents.recipes(event => {
         "result": {"count": 1, "id": "ad_astra:tier_1_rocket"}
     }).id('kubejs:gt_tier_1_rocket')
 
-    // gate cleanroom behind moon
     event.remove({ id: 'gtceu:assembler/plascrete' })
     event.remove({ id: 'gtceu:assembler/cleanroom_glass' })
     event.recipes.gtceu.assembler('moon_plascrete')

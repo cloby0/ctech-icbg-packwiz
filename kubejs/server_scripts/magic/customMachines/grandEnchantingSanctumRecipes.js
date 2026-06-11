@@ -252,7 +252,6 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
-    // Abstract Metal single-element conversions
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
         output: { item: 'minecraft:gold_ingot' },
@@ -286,7 +285,6 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
-    // Abstract Metal multi-element synthesis
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
         output: { item: 'gtceu:bismuth_ingot' },
@@ -334,7 +332,6 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
-    // Sorcerer QoL: raw source ore -> source gem
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:raw_source' }],
         output: { item: 'ars_nouveau:source_gem' },

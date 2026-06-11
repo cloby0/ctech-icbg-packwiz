@@ -155,8 +155,6 @@ ServerEvents.recipes(event => {
             }
         );
 
-
-    //here be progression
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
             [
@@ -249,8 +247,6 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
         }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
-    // zanite processing
-    // altar charges zanite gemstone with sky-resonance
     event.custom({
         "type": "aether:enchanting",
         "ingredient": { "item": "aether:zanite_gemstone" },
@@ -259,7 +255,6 @@ ServerEvents.recipes(event => {
         "experience": 0.5
     })
 
-    // source synchronizes altar-charged zanite into coherent resonance state
     event.custom({
         "type": "ars_nouveau:imbuement",
         "count": 1,
@@ -272,8 +267,6 @@ ServerEvents.recipes(event => {
         "source": 1500
     })
 
-    // ambrosium processing step 1
-    // heated water + ambrosium shards + glowstone: dissolves mineral matrix, frees divine energy
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:water" },

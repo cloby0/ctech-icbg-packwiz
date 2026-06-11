@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // martian soil centrifuge
     event.recipes.gtceu.centrifuge('martian_soil_centrifuge')
         .itemInputs('4x ad_astra:mars_sand')
         .itemOutputs('2x gtceu:iron_dust')
@@ -11,7 +10,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ostrum processing; no smelting path, 6-step perchlorate-carbonate-fluoride route
     // crushed_ostrum_ore only from maceration; prevents ingot recycling bypass
 
     event.remove({ id: 'ad_astra:smelting/ostrum_ingot_from_smelting_raw_ostrum' })
@@ -20,7 +18,6 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:ostrum_ingot' })
 
     // step 1 perchlorate activation
-    // HCl ionizes the Martian perchlorate matrix, releasing impurities into solution
     event.recipes.gtceu.chemical_reactor('ostrum_perchlorate_activation')
         .itemInputs('1x gtceu:crushed_ostrum_ore')
         .inputFluids(Fluid.of('gtceu:hydrochloric_acid', 250))
@@ -31,7 +28,7 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // step 2 CO2 carbonation; chlorine byproduct can be recycled
+    // step 2 CO2 carbonation
     event.recipes.gtceu.chemical_reactor('ostrum_co2_carbonation')
         .itemInputs('1x kubejs:ostrum_perchlorate_mass')
         .inputFluids(Fluid.of('gtceu:carbon_dioxide', 500))
@@ -41,7 +38,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // step 3 HF calcination; CO2 released feeds step 2 in a loop
+    // step 3 HF calcination
     event.recipes.gtceu.chemical_reactor('ostrum_hf_calcination')
         .itemInputs('1x kubejs:ostrum_carbonate_precipitate')
         .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 300))
@@ -51,7 +48,7 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // step 4 electrolytic reduction; fluorine byproduct for IV fluorine chemistry
+    // step 4 electrolytic reduction
     event.recipes.gtceu.electrolyzer('ostrum_electrolytic_reduction')
         .itemInputs('1x kubejs:crude_ostrum_fluoride')
         .itemOutputs('1x kubejs:raw_ostrum_sponge')
@@ -60,7 +57,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // step 5 EBF consolidation; produces hot ingot, vacuum freezer required, 3600K needs EV nichrome coils
+    // step 5 EBF consolidation
     event.recipes.gtceu.electric_blast_furnace('ostrum_ebf_consolidation')
         .itemInputs('1x kubejs:raw_ostrum_sponge')
         .itemOutputs('1x gtceu:hot_ostrum_ingot')
@@ -76,20 +73,16 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // gate nano processor assembly behind ostrum fine wire
-    // micro_processor_computer (WORKSTATION_EV) is already desh-gated in hvAndSpace.js
-    // nano_processor_assembly is the higher EV nano circuit needed for IV-tier infrastructure
+    // micro_processor_computer (EV) is already desh-gated in hvAndSpace.js
     event.replaceInput(
         { output: 'gtceu:nano_processor_assembly' },
         'gtceu:fine_electrum_wire',
         'gtceu:fine_ostrum_wire'
     )
 
-    // tier 2 rocket (Mars); mirrors hvAndSpace.js tier 1 structure
-
     event.remove({ id: 'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench' })
     // vanilla desh_engine and desh_tank left intact; needed for tier 3 ostrum_engine/ostrum_tank
 
-    // hull sections
     event.recipes.gtceu.assembler('mars_hull_section')
         .itemInputs(
             '2x ad_astra:desh_plate',
@@ -100,7 +93,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // propulsion engine
     event.recipes.gtceu.assembler('mars_rocket_engine')
         .itemInputs(
             '2x gtceu:long_desh_rod',
@@ -112,7 +104,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // propellant tank
     event.recipes.gtceu.assembler('mars_propellant_tank')
         .itemInputs(
             '4x ad_astra:desh_plate',
@@ -124,7 +115,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // guidance module (EV nav computer)
     event.shaped('kubejs:mars_guidance_module', [
         'LEL',
         'GCG',
@@ -137,7 +127,6 @@ ServerEvents.recipes(event => {
         S: 'gtceu:ev_sensor'
     })
 
-    // NASA workbench tier 2 assembly
     event.custom({
         "type": "ad_astra:nasa_workbench",
         "ingredients": [

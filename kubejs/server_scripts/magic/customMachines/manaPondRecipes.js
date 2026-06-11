@@ -100,14 +100,12 @@ ServerEvents.recipes(event => {
         output: { item: 'botania:manasteel_ingot' }
     })
 
-    // Alchemist QoL: glowstone block -> 4x luminessence dust
     addManaPondRecipe(event, {
         mana: 2000,
         input: { item: 'minecraft:glowstone' },
         output: { count: 4, item: 'gtceu:luminessence_dust' }
     })
 
-    // Alchemist QoL: silver [alchemy catalyst] -> holy silver ingot
     addManaPondRecipe(event, {
         mana: 3000,
         input: { tag: 'forge:ingots/silver' },

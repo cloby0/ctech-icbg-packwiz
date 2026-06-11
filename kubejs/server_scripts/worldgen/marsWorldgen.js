@@ -1,6 +1,4 @@
 GTCEuServerEvents.oreVeins(event => {
-//Ostrum
-//key Mars material, EV blast temp 3600; nickel + sulfur byproducts match ostrum ore config
     event.add("kubejs:ostrum_vein_ms", vein => {
         vein.weight(80)
         vein.clusterSize(35)
@@ -26,7 +24,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//tungsten; Mars-only per design, rare and deep
     event.add("kubejs:tungsten_vein_ms", vein => {
         vein.weight(8)
         vein.clusterSize(28)
@@ -51,7 +48,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//chromite; chromium for stainless steel
     event.add("kubejs:chromite_vein_ms", vein => {
         vein.weight(25)
         vein.clusterSize(30)
@@ -76,7 +72,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//iron
     event.add("kubejs:iron_vein_ms", vein => {
         vein.weight(90)
         vein.clusterSize(50)
@@ -102,7 +97,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//phosphate; apatite for fertilizer/chemical chains
     event.add("kubejs:phosphate_vein_ms", vein => {
         vein.weight(30)
         vein.clusterSize(28)
@@ -127,7 +121,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//nickel sulfide; nickel for EV alloys
     event.add("kubejs:nickel_vein_ms", vein => {
         vein.weight(30)
         vein.clusterSize(32)

@@ -18,14 +18,12 @@ ServerEvents.recipes(event => {
     // [output, catalyst, [pedestal items], source cost]
     const chains = [
 
-        // tier 1
         [ma('stone'),           E,               [A],                           1000],
         [ma('ice'),             W,               [A],                           1000],
         [ma('nature'),          E,               [W, W],                        1500],
         [ma('nether'),          F,               [E, E],                        2000],
         [ma('obsidian'),        F,               [W, W],                        1500],
 
-        // tier 2
         [ma('dirt'),            ma('nature'),    [E],                           1500],
         [ma('wood'),            ma('nature'),    [E, E, E],                     2000],
         [ma('rubber'),          ma('nature'),    [W, W],                        1500],
@@ -41,7 +39,6 @@ ServerEvents.recipes(event => {
         [ma('soulium'),         ma('nether'),    [E, E, E],                     2500],
         [ma('dye'),             ma('nature'),    [F, W, A],                     2500],
 
-        // tier 3
         [ma('iron'),            ma('coal'),      [ma('stone'), F, F],           3500],
         [ma('copper'),          ma('limestone'), [W, W, W, W],                  3500],
         [ma('tin'),             ma('limestone'), [E, E, A],                     3000],
@@ -76,7 +73,6 @@ ServerEvents.recipes(event => {
         [ma('enderman'),        ma('obsidian'),  [A, A, A, A],                  3500],
         [ma('wither_skeleton'), ma('soulium'),   [ma('coal'), F, A],            3500],
 
-        // tier 4
         [ma('redstone'),        ma('iron'),      [F, F],                        3500],
         [ma('nickel'),          ma('iron'),      [E, E],                        3500],
         [ma('lead'),            ma('iron'),      [E, E, E],                     3500],
@@ -94,7 +90,6 @@ ServerEvents.recipes(event => {
         [ma('emerald'),         ma('deepslate'), [ma('nature'), ma('nature'), W, W], 4000],
         [ma('diamond'),         ma('graphite'),  [F, F, F, F, F, F],           6000],
 
-        // tier 5
         [ma('chrome'),          ma('steel'),     [F, F, F, F],                  5000],
         [ma('titanium'),        ma('steel'),     [A, A, A, A, F, F],            6000],
         [ma('tungsten'),        ma('steel'),     [F, F, F, F, E, E],            6000],
@@ -104,13 +99,11 @@ ServerEvents.recipes(event => {
         [ma('netherite'),       ma('diamond'),   [ma('soulium'), ma('soulium'), ma('nether_quartz'), ma('nether_quartz')], 8000],
         [ma('iridium'),         ma('platinum'),  [F, F, F, F, F, F],           8000],
 
-        // tier 6 - magic materials; actual ingot on pedestal gates the recipe
         [ma('manasteel'),       ma('silver'),    [ma('mithril'), ma('mithril'), 'botania:manasteel_ingot'],               10000],
         [ma('terrasteel'),      ma('manasteel'), [ma('manasteel'), ma('manasteel'), 'botania:terrasteel_ingot'],           12000],
         [ma('elementium'),      ma('terrasteel'),[ma('terrasteel'), ma('terrasteel'), 'botania:elementium_ingot'],         15000],
         [ma('gaia_spirit'),     ma('elementium'),[ma('elementium'), ma('elementium'), 'botania:gaia_ingot'],        20000],
 
-        // tier 6 - boss drops; drop consumed in manual chamber, reusable in GT machine
         [ma('nether_star'),     ma('soulium'),   [ma('soulium'), ma('soulium'), ma('soulium'), 'minecraft:nether_star'],   15000],
         [ma('dragon_egg'),      ma('end'),       [ma('end'), ma('end'), ma('end'), 'minecraft:dragon_egg'],                20000],
 

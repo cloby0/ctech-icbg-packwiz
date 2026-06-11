@@ -166,7 +166,6 @@ ServerEvents.recipes(event => {
         2500,
     );
 
-    //after here lies only progression related recipes
     event.shaped(
         Item.of('ars_nouveau:enchanting_apparatus', 1),
         [

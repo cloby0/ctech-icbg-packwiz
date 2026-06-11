@@ -1,11 +1,8 @@
 ServerEvents.recipes(event => {
-    // removals
-    // vanilla CAD assembly recipes (replacing with GT assembler)
     event.remove({ id: 'psi:cad_assembly_iron' })
     event.remove({ id: 'psi:cad_assembly_psimetal' })
     event.remove({ id: 'psi:gold_to_psimetal_assembly_upgrade' })
 
-    // vanilla CAD component recipes
     event.remove({ id: 'psi:cad_core_basic' })
     event.remove({ id: 'psi:cad_socket_basic' })
     event.remove({ id: 'psi:cad_battery_basic' })
@@ -17,21 +14,17 @@ ServerEvents.recipes(event => {
     // if this fails silently, CAD gate alone prevents bypass
     event.remove({ id: 'psi:psidust' })
 
-    // psigem trick crafting: replace with enchanting apparatus
     event.remove({ id: 'psi:psigem' })
 
-    // vanilla programmer and CAD assembler block
     event.remove({ id: 'psi:programmer' })
     event.remove({ id: 'psi:assembler' })
 
-    // exosuit pieces
     event.remove({ id: 'psi:psimetal_exosuit_helmet' })
     event.remove({ id: 'psi:psimetal_exosuit_chestplate' })
     event.remove({ id: 'psi:psimetal_exosuit_leggings' })
     event.remove({ id: 'psi:psimetal_exosuit_boots' })
     event.remove({ id: 'psi:exosuit_controller' })
 
-    // spell bullets (vanilla iron + psidust shaped)
     event.remove({ id: 'psi:spell_bullet_basic' })
     event.remove({ id: 'psi:spell_bullet_projectile' })
     event.remove({ id: 'psi:spell_bullet_grenade' })
@@ -42,37 +35,30 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'psi:detonator' })
 
-    // gold CAD assembly
     event.remove({ id: 'psi:cad_assembly_gold' })
 
-    // ebony/ivory CAD assemblies (cosmetic end-game variants)
     event.remove({ id: 'psi:cad_assembly_ebony' })
     event.remove({ id: 'psi:cad_assembly_ivory' })
 
-    // psimetal-tier CAD cores
     event.remove({ id: 'psi:cad_core_conductive' })
     event.remove({ id: 'psi:cad_core_overclocked' })
     event.remove({ id: 'psi:cad_core_hyperclocked' })
     event.remove({ id: 'psi:cad_core_radiative' })
 
-    // psimetal-tier CAD sockets
     event.remove({ id: 'psi:cad_socket_large' })
     event.remove({ id: 'psi:cad_socket_signaling' })
     event.remove({ id: 'psi:cad_socket_huge' })
     event.remove({ id: 'psi:cad_socket_transmissive' })
 
-    // exosuit sensors
     event.remove({ id: 'psi:exosuit_sensor_heat' })
     event.remove({ id: 'psi:exosuit_sensor_light' })
     event.remove({ id: 'psi:exosuit_sensor_stress' })
     event.remove({ id: 'psi:exosuit_sensor_trigger' })
     event.remove({ id: 'psi:exosuit_sensor_water' })
 
-    // utility items
     event.remove({ id: 'psi:spell_drive' })
     event.remove({ id: 'psi:vector_ruler' })
 
-    // psimetal tools
     event.remove({ id: 'psi:psimetal_sword' })
     event.remove({ id: 'psi:psimetal_pickaxe' })
     event.remove({ id: 'psi:psimetal_axe' })
@@ -103,7 +89,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // CAD components (all gated by psidust = gated by above)
     event.recipes.gtceu.assembler('psi_cad_core_basic')
         .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -118,7 +103,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // lv_battery_hull provides the capacitor housing
     event.recipes.gtceu.assembler('psi_cad_battery_basic')
         .itemInputs('2x create:iron_sheet', '1x psi:psidust', 'gtceu:lv_battery_hull')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -171,7 +155,6 @@ ServerEvents.recipes(event => {
         6000
     )
 
-    // PSI blocks
     event.recipes.gtceu.assembler('psi_programmer_block')
         .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv', '2x minecraft:glass_pane')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -186,7 +169,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // spell bullets: GT assembler, output 2x
     event.recipes.gtceu.assembler('psi_spell_bullet_basic')
         .itemInputs('1x create:iron_sheet', '1x psi:psidust')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))
@@ -236,7 +218,6 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // exosuit: GT assembler, gravitite plate as anti-grav accent
     event.recipes.gtceu.assembler('psi_exosuit_helmet')
         .itemInputs('4x #forge:ingots/psimetal', '1x psi:psigem', '#gtceu:circuits/hv', '1x gtceu:gravitite_plate')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -272,7 +253,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // detonator: steel rods replace iron; psidust gate sufficient
     event.shaped(
         Item.of('psi:detonator', 1),
         [
@@ -286,7 +266,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // gold CAD: intermediate between iron and psimetal, no magic component needed
     event.recipes.gtceu.assembler('psi_gold_cad_assembly')
         .itemInputs('4x create:golden_sheet', '2x psi:psidust', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -294,7 +273,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ebony/ivory CAD: cosmetic variants of psimetal CAD; substance from The End gates both
     event.recipes.gtceu.assembler('psi_ebony_cad_assembly')
         .itemInputs('4x psi:ebony_psimetal', '1x psi:psigem', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -309,7 +287,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // CAD cores (all require psimetal + HV circuits)
     event.recipes.gtceu.assembler('psi_cad_core_conductive')
         .itemInputs('4x #forge:ingots/psimetal', '2x #forge:dusts/glowstone', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -339,7 +316,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // CAD sockets
     event.recipes.gtceu.assembler('psi_cad_socket_large')
         .itemInputs('2x #forge:ingots/psimetal', '1x #forge:dusts/glowstone', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -368,7 +344,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // exosuit sensors: psimetal frame + iron plate + sensing material
     event.recipes.gtceu.assembler('psi_exosuit_sensor_heat')
         .itemInputs('2x #forge:ingots/psimetal', '2x create:iron_sheet', '1x minecraft:fire_charge')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -404,7 +379,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // spell drive: psimetal + redstone data storage
     event.recipes.gtceu.assembler('psi_spell_drive')
         .itemInputs('2x #forge:ingots/psimetal', '2x minecraft:redstone', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -412,7 +386,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // vector ruler: iron rods + psidust; MV since it's a measurement tool not a weapon
     event.recipes.gtceu.assembler('psi_vector_ruler')
         .itemInputs('2x #forge:rods/iron', '1x psi:psidust')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 36))

@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // ── CANNON MECHANISM ──────────────────────────────────────────────────────
     // Tiered assembler recipes: higher voltage → more output per craft.
     // MV: 4x | HV: 8x | EV: 16x
 
@@ -40,7 +39,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── CANNON INFRASTRUCTURE BLOCKS ─────────────────────────────────────────
     // All vanilla recipes use andesite_casing as center; replace with cannon_mechanism.
 
     event.remove({ id: 'createbigcannons:cannon_builder' })
@@ -126,10 +124,8 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // ── MATERIAL ALLOYS ───────────────────────────────────────────────────────
     // Remove Create basin alloy recipes; replace with GT mixer / EBF.
 
-    // steel: iron+coal basin → GT mixer (iron dust + carbon dust)
     event.remove({ id: 'createbigcannons:mixing/alloy_steel' })
     event.recipes.gtceu.mixer('cbc_steel_alloy')
         .itemInputs('2x gtceu:iron_dust', '1x gtceu:carbon_dust')
@@ -137,7 +133,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // bronze: both tin-route and brass-route removed → single GT mixer
     event.remove({ id: 'createbigcannons:mixing/alloy_bronze_tin' })
     event.remove({ id: 'createbigcannons:mixing/alloy_bronze_brass' })
     event.recipes.gtceu.mixer('cbc_bronze_alloy')
@@ -146,7 +141,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // nethersteel: superheated basin (both steel and cast_iron routes) → GT EBF
     // 3000K requires kanthal coils; appropriate for nether-infused alloy
     event.remove({ id: 'createbigcannons:mixing/alloy_nethersteel_steel' })
     event.remove({ id: 'createbigcannons:mixing/alloy_nethersteel_cast_iron' })
@@ -156,9 +150,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(3000)
         .duration(20 * 20)
 
-    // ── CAST MOULDS ───────────────────────────────────────────────────────────
     // Remove Create saw (log → mould); replace with GT lathe (steel ingot → mould).
-    // Precision-machined steel molds instead of rough log templates.
     const castMoulds = [
         'very_small_cast_mould',
         'small_cast_mould',
@@ -181,7 +173,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.MV])
     })
 
-    // ── SPRING WIRE ───────────────────────────────────────────────────────────
     // Remove Create saw (plate → wire); replace with GT cutter (steel only — iron too weak)
     event.remove({ id: 'createbigcannons:cutting/spring_wire_steel' })
     event.remove({ id: 'createbigcannons:cutting/spring_wire_iron' })
@@ -192,7 +183,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── RECOIL SPRING ─────────────────────────────────────────────────────────
     // Remove sequenced assembly (press 3×); replace with GT bender
     event.remove({ id: 'createbigcannons:sequenced_assembly/recoil_spring' })
     event.recipes.gtceu.bender('cbc_recoil_spring')
@@ -201,7 +191,6 @@ ServerEvents.recipes(event => {
         .duration(6 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── AUTOCANNON BREECH EXTRACTORS ──────────────────────────────────────────
     // Remove sequenced assembly (cut 3×); replace with GT cutter
     event.remove({ id: 'createbigcannons:sequenced_assembly/bronze_autocannon_breech_extractor' })
     event.remove({ id: 'createbigcannons:sequenced_assembly/cast_iron_autocannon_breech_extractor' })
@@ -226,7 +215,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── AUTOCANNON CARTRIDGES ─────────────────────────────────────────────────
     // Remove sequenced assembly (press 6×); replace with GT bender
     event.remove({ id: 'createbigcannons:sequenced_assembly/pressing_autocannon_cartridge' })
     event.recipes.gtceu.bender('cbc_autocannon_cartridge')
@@ -235,7 +223,6 @@ ServerEvents.recipes(event => {
         .duration(4 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── BIG CARTRIDGE ─────────────────────────────────────────────────────────
     // Remove sequenced assembly (press 5×); replace with GT bender
     event.remove({ id: 'createbigcannons:sequenced_assembly/pressing_big_cartridge' })
     event.recipes.gtceu.bender('cbc_big_cartridge')
@@ -244,7 +231,6 @@ ServerEvents.recipes(event => {
         .duration(6 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── MACHINE GUN ROUND ─────────────────────────────────────────────────────
     // Remove sequenced assembly (deploy 2×) and trivial shaped recipe; replace with GT assembler
     event.remove({ id: 'createbigcannons:sequenced_assembly/assembling_machine_gun_round' })
     event.remove({ id: 'createbigcannons:machine_gun_round' })
@@ -259,7 +245,6 @@ ServerEvents.recipes(event => {
         .duration(4 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ── SHELLS (MECHANICAL CRAFTING → GT ASSEMBLER) ───────────────────────────
     // All four shells used create:mechanical_crafting (requires dedicated Create machine room).
     // Replaced with GT assembler at MV.
 

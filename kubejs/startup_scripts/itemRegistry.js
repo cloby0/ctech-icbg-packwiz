@@ -1,6 +1,5 @@
 StartupEvents.registry('item', event => {
 
-    //all items declared here are used in progression
     event.create('glowing_compound_dust')
     event.create('impure_glimmering_dust')
 
@@ -29,39 +28,32 @@ StartupEvents.registry('item', event => {
 
     event.create('matter_energy_circuit')
 
-    //desh mond process intermediates
     event.create('desh_sulfate_slurry')
     event.create('condensed_desh_carbonyl')
 
-    //rocket components
     event.create('rocket_hull_section')
     event.create('rocket_combustion_engine')
     event.create('pressurized_rocket_tank')
     event.create('rocket_guidance_module')
 
-    //ostrum processing intermediates
     event.create('ostrum_perchlorate_mass')
     event.create('ostrum_carbonate_precipitate')
     event.create('crude_ostrum_fluoride')
     event.create('raw_ostrum_sponge')
 
-    //mars rocket components
     event.create('desh_hull_section')
     event.create('mars_rocket_engine')
     event.create('mars_propellant_tank')
     event.create('mars_guidance_module')
 
-    //magic-enchanted boules (tech-magic interop)
     event.create('hallowed_silicon_boule')
     event.create('primal_phosphorus_boule')
     event.create('verdant_naquadah_boule')
     event.create('gaian_neutronium_boule')
 
-    //phlogiston line
     event.create('phlogiston')
     event.create('faefire_aerosol')
 
-    //aether material processing intermediates
     event.create('enchanted_zanite_gem')
     event.create('resonant_zanite_crystal')
     event.create('sanctified_ambrosium_bloom')
@@ -69,33 +61,26 @@ StartupEvents.registry('item', event => {
     event.create('frozen_raw_gravitite')
     event.create('altar_charged_gravitite')
 
-    //calorite thermal extraction process intermediates
     event.create('calorite_sulfate_slag')
     event.create('calorite_chloride_melt')
     event.create('calorite_fluoride_precipitate')
     event.create('raw_calorite_sponge')
 
-    //venus rocket components
     event.create('calorite_hull_section')
     event.create('venus_rocket_engine')
     event.create('venus_propellant_tank')
     event.create('venus_guidance_module')
 
-    //psi processing intermediates
     event.create('latent_psi_crystal')
 
-    //hex casting intermediates
     event.create('hexed_amethyst_core')
 
-    //glacio magic-tech
     event.create('rune_of_frost')
 
-    //glacio rocket components
     event.create('naquadah_hull_section')
     event.create('glacio_rocket_engine')
     event.create('glacio_propellant_tank')
     event.create('glacio_guidance_module')
 
-    //create big cannons
     event.create('cannon_mechanism')
 })

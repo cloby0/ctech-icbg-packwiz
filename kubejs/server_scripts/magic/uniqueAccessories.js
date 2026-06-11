@@ -3,10 +3,6 @@ ServerEvents.recipes(event => {
     // No vanilla removals — all UA items are loot/drop only by default
     // hero_emblem (ender dragon) and burning_soul (warden) kept as drops only
 
-    // ============================================================
-    // JOURNEYMAN — shaped crafting, dubious_dust gate
-    // ============================================================
-
     event.shaped(Item.of('uniqueaccessories:waist_warmer', 1), [
         'AAA', 'ASA', 'AAA'
     ], { 'A': 'minecraft:white_wool', 'S': 'nameless_trinkets:dubious_dust' })
@@ -42,10 +38,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('uniqueaccessories:ninjutsu_manual', 1), [
         'PPP', 'LSL', 'PIP'
     ], { 'P': 'minecraft:paper', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'I': 'minecraft:ink_sac' })
-
-    // ============================================================
-    // INITIATE — enchanting apparatus, glowing_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:leather", "minecraft:leather", "minecraft:iron_ingot", "minecraft:iron_ingot", "gtceu:luminessence_dust"],
@@ -270,10 +262,6 @@ ServerEvents.recipes(event => {
         "uniqueaccessories:cursed_doll_head",
         2000
     )
-
-    // ============================================================
-    // SORCERER — enchanting apparatus, ultimate_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:gold_block", "minecraft:glowstone", "minecraft:glowstone", "minecraft:blaze_rod", "minecraft:blaze_rod", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],

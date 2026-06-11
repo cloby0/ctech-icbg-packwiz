@@ -4,10 +4,6 @@ ServerEvents.recipes(event => {
     // eternal_steak furnace/smoker/campfire recipes kept (everlasting_beef → eternal_steak)
     // mimic_spawn_egg skipped — creative-only item
 
-    // ============================================================
-    // JOURNEYMAN — shaped crafting, dubious_dust gate
-    // ============================================================
-
     event.shaped(Item.of('artifacts:lucky_scarf', 1), [
         'GGG', 'GSG', 'GRG'
     ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:rabbit_foot' })
@@ -43,10 +39,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('artifacts:onion_ring', 1), [
         ' G ', 'GSG', ' G '
     ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust' })
-
-    // ============================================================
-    // INITIATE — enchanting apparatus, glowing_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:leather_boots", "minecraft:leather_boots", "minecraft:packed_ice", "minecraft:packed_ice", "gtceu:luminessence_dust"],
@@ -209,10 +201,6 @@ ServerEvents.recipes(event => {
         1000
     )
 
-    // ============================================================
-    // SORCERER — enchanting apparatus, ultimate_dust catalyst
-    // ============================================================
-
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:glass_bottle", "minecraft:white_wool", "minecraft:white_wool", "minecraft:feather", "minecraft:feather", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
         "nameless_trinkets:ultimate_dust",
@@ -275,10 +263,6 @@ ServerEvents.recipes(event => {
         "artifacts:panic_necklace",
         3000
     )
-
-    // ============================================================
-    // ALCHEMIST — enchanting apparatus, ultimate_dust catalyst + prima_materia
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:totem_of_undying", "minecraft:chorus_fruit", "minecraft:chorus_fruit", "minecraft:ender_pearl", "minecraft:ender_pearl", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],

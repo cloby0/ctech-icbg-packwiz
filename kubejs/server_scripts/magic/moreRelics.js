@@ -2,10 +2,6 @@ ServerEvents.recipes(event => {
 
     // No vanilla removals — all more relics items are loot drops only by default
 
-    // ============================================================
-    // JOURNEYMAN — shaped crafting, dubious_dust gate
-    // ============================================================
-
     event.shaped(Item.of('morerelics:moodworm', 1), [
         'WBW', 'BDB', 'WBW'
     ], { 'W': 'minecraft:white_wool', 'B': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
@@ -29,10 +25,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('morerelics:whispering_amulett', 1), [
         'FGF', 'GDG', 'FGF'
     ], { 'F': 'minecraft:feather', 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust' })
-
-    // ============================================================
-    // INITIATE — enchanting apparatus, glowing_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:golden_apple", "minecraft:golden_apple", "minecraft:obsidian", "minecraft:obsidian", "gtceu:luminessence_dust"],
@@ -83,10 +75,6 @@ ServerEvents.recipes(event => {
         "morerelics:weavers_spool",
         2000
     )
-
-    // ============================================================
-    // SORCERER — enchanting apparatus, ultimate_dust catalyst
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:shield", "minecraft:shield", "minecraft:iron_block", "minecraft:iron_block", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
@@ -150,10 +138,6 @@ ServerEvents.recipes(event => {
         "morerelics:epoch_apple",
         4000
     )
-
-    // ============================================================
-    // ALCHEMIST — enchanting apparatus, ultimate_dust catalyst + prima_materia
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:diamond_block", "minecraft:diamond", "minecraft:diamond", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],

@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // glacio stone centrifuge; cryogenic silicate matrix, nitrogen-rich atmosphere
     // outputs glacio_air instead of raw nitrogen; distill glacio_air for nitrogen/helium/argon
     event.recipes.gtceu.centrifuge('glacio_stone_centrifuge')
         .itemInputs('4x ad_astra:glacio_stone')
@@ -13,9 +12,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // cryo fuel synthesis; nitrogen from glacio stone + ice shard
     // 500 mB cryo_fuel per shard vs 25 mB per shard in vanilla cryo freezer
-    // closes the cryo fuel loop for large combustion generator supply
     event.recipes.gtceu.chemical_reactor('glacio_cryo_fuel_synthesis')
         .itemInputs('4x ad_astra:ice_shard')
         .inputFluids(Fluid.of('gtceu:nitrogen', 500))
@@ -23,18 +20,15 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // gate crystal_processor_assembly behind naquadah fine wire
-    // vanilla recipe uses fine_niobium_titanium_wire; replaced to require Glacio access
+    // vanilla crystal_processor_assembly uses fine_niobium_titanium_wire; replaced to require Glacio access
     event.replaceInput(
         { output: 'gtceu:crystal_processor_assembly' },
         'gtceu:fine_niobium_titanium_wire',
         'gtceu:fine_naquadah_wire'
     )
 
-    // tier 4 rocket (Glacio); same structure as tier 1-3
     event.remove({ id: 'ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench' })
 
-    // hull sections
     event.recipes.gtceu.assembler('glacio_hull_section')
         .itemInputs(
             '2x gtceu:naquadah_plate',
@@ -45,7 +39,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // propulsion engine
     event.recipes.gtceu.assembler('glacio_rocket_engine')
         .itemInputs(
             '2x gtceu:long_naquadah_rod',
@@ -57,7 +50,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // propellant tank
     event.recipes.gtceu.assembler('glacio_propellant_tank')
         .itemInputs(
             '4x gtceu:naquadah_plate',
@@ -69,7 +61,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // guidance module
     event.shaped('kubejs:glacio_guidance_module', [
         'LEL',
         'GCG',
@@ -82,7 +73,6 @@ ServerEvents.recipes(event => {
         S: 'gtceu:luv_sensor'
     })
 
-    // NASA workbench tier 4 assembly
     event.custom({
         "type": "ad_astra:nasa_workbench",
         "ingredients": [

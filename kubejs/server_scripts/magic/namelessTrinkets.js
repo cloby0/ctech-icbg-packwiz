@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // REMOVALS
     event.remove({ output: 'nameless_trinkets:dubious_dust' })
     event.remove({ output: 'nameless_trinkets:glowing_dust' })
     event.remove({ output: 'nameless_trinkets:ultimate_dust' })
@@ -51,12 +50,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'nameless_trinkets:what_magnet' })
     event.remove({ output: 'nameless_trinkets:wooden_stick' })
 
-    // ============================================================
-    // DUST SYNTHESIS — magic progression gates
-    // ============================================================
-
-    // dubious_dust — Hexerei lava cauldron (Hobbyist)
-    // iron + gold + redstone + gunpowder cooked in lava = reactive chaotic compound
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
@@ -72,8 +65,6 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     })
 
-    // glowing_dust — imbuement chamber, 500 source (Journeyman)
-    // dubious compound excited by nether light energy into luminous reactive form
     event.recipes.ars_nouveau.imbuement(
         "nameless_trinkets:dubious_dust",
         "nameless_trinkets:glowing_dust",
@@ -81,19 +72,12 @@ ServerEvents.recipes(event => {
         ["minecraft:glowstone_dust", "minecraft:blaze_rod", "minecraft:glowstone_dust", "minecraft:quartz"]
     )
 
-    // ultimate_dust — enchanting apparatus, 2000 source (Initiate)
-    // glowing compound resonated with ender and luminessence into highest-potency form
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:ender_eye", "gtceu:luminessence_dust", "minecraft:ender_eye", "gtceu:luminessence_dust"],
         "nameless_trinkets:glowing_dust",
         "nameless_trinkets:ultimate_dust",
         2000
     )
-
-    // ============================================================
-    // SHAPED TRINKETS — dubious_dust tier (Apprentice/Journeyman)
-    // vanilla ingredient shapes kept; dust is the progression gate
-    // ============================================================
 
     event.shaped(Item.of('nameless_trinkets:amphibious_hands', 1), [
         '###', '#S#', '###'
@@ -170,11 +154,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('nameless_trinkets:wooden_stick', 1), [
         'g/g', '/S/', 'g/g'
     ], { 'g': 'minecraft:gold_ingot', '/': 'minecraft:stick', 'S': 'nameless_trinkets:dubious_dust' })
-
-    // ============================================================
-    // IMBUEMENT TRINKETS — glowing_dust tier (Journeyman/Initiate)
-    // glowing_dust = center input; thematic ingredients on pedestals
-    // ============================================================
 
     event.recipes.ars_nouveau.imbuement(
         "nameless_trinkets:glowing_dust", "nameless_trinkets:callus", 750,
@@ -256,11 +235,6 @@ ServerEvents.recipes(event => {
         "nameless_trinkets:glowing_dust", "nameless_trinkets:what_magnet", 750,
         ["minecraft:rotten_flesh", "minecraft:leather", "minecraft:porkchop", "minecraft:bone"]
     )
-
-    // ============================================================
-    // ENCHANTING APPARATUS TRINKETS — ultimate_dust tier (Initiate+)
-    // ultimate_dust = catalyst on apparatus; thematic + magic pedestals
-    // ============================================================
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:bone", "minecraft:wither_skeleton_skull", "minecraft:bone", "gtceu:luminessence_dust"],

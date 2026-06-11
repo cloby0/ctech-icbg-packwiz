@@ -1,7 +1,4 @@
-//adds magic-player crafting paths for GT-nerfed items
-
 ServerEvents.recipes(event => {
-    //remove recipes that bypass nerfs
     event.remove({ id: 'terralith:piston_alt' });
     event.remove({ id: 'aether:skyroot_piston' });
     event.remove({ id: 'aether:gravitite_jukebox' });
@@ -35,7 +32,6 @@ ServerEvents.recipes(event => {
         '#gtceu:circuits/ulv'
         );
 
-    //unnerf
     event.custom(
         {
         "type": "create:sandpaper_polishing",

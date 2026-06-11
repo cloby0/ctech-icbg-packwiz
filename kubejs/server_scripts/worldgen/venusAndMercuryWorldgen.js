@@ -1,8 +1,5 @@
 GTCEuServerEvents.oreVeins(event => {
 
-// venus; calorite is the IV gate material
-
-//calorite
     event.add("kubejs:calorite_vein_vn", vein => {
         vein.weight(80)
         vein.clusterSize(35)
@@ -27,7 +24,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//cooperite; platinum/palladium for IV circuits, rare and deep
     event.add("kubejs:cooperite_vein_vn", vein => {
         vein.weight(12)
         vein.clusterSize(24)
@@ -52,7 +48,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//stibnite; antimony for IV alloys
     event.add("kubejs:stibnite_vein_vn", vein => {
         vein.weight(20)
         vein.clusterSize(26)
@@ -77,7 +72,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//chalcopyrite
     event.add("kubejs:chalcopyrite_vein_vn", vein => {
         vein.weight(45)
         vein.clusterSize(38)
@@ -103,7 +97,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//galena; bismuth for IV bismuth-bronze
     event.add("kubejs:galena_bismuth_vein_vn", vein => {
         vein.weight(22)
         vein.clusterSize(28)
@@ -128,10 +121,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-
-// mercury
-
-//cinnabar; mercury dust for IV chemical chains
     event.add("kubejs:cinnabar_vein_mc", vein => {
         vein.weight(50)
         vein.clusterSize(30)
@@ -156,7 +145,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//graphite; carbon electrodes for IV arc furnaces and EBF
     event.add("kubejs:graphite_vein_mc", vein => {
         vein.weight(40)
         vein.clusterSize(32)
@@ -180,7 +168,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//pitchblende; uranium for power gen, plutonium via breeder at ZPM
     event.add("kubejs:pitchblende_vein_mc", vein => {
         vein.weight(12)
         vein.clusterSize(24)
@@ -205,7 +192,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//tetrahedrite
     event.add("kubejs:tetrahedrite_vein_mc", vein => {
         vein.weight(18)
         vein.clusterSize(22)
@@ -230,7 +216,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//cobaltite; cobalt for IV superalloys
     event.add("kubejs:cobaltite_vein_mc", vein => {
         vein.weight(20)
         vein.clusterSize(28)

@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // ── STYGIAN DUST ──────────────────────────────────────────────────────────
-    // Vanilla: shapeless (soul_soil + amethyst + iron + fire_charge) — trivially cheap
-    // Replace with GT Mixer at EV: titanium powder + netherite scrap + soul soil
     event.remove({ id: 'woot_revived:stygian_dust' })
     event.recipes.gtceu.mixer('woot_stygian_dust')
         .itemInputs(
@@ -14,7 +11,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── FACTORY BASE ──────────────────────────────────────────────────────────
     // Chokepoint: every useful Woot block (pylon, plinth, magmator, cell, dye_liquifier,
     // fluid_infuser, item_infuser, factory_ctr_base, layout, export, import, etc.) requires
     // factory_base. Gating this single recipe gates the entire system at EV.
@@ -31,9 +27,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── STYGIAN ANVIL ─────────────────────────────────────────────────────────
-    // Primary crafting station; prerequisite for stygian_plate and mob_shard.
-    // Needs HV circuits since it processes soul-infused material.
     event.remove({ id: 'woot_revived:stygian_anvil' })
     event.recipes.gtceu.assembler('woot_stygian_anvil')
         .itemInputs(
@@ -47,8 +40,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ── DYE LIQUIFIER ─────────────────────────────────────────────────────────
-    // Mixes 4 primary dye colors → pure_dye_fluid (used for dye_plates and prism).
     // Vanilla: 8 different dyes arranged around factory_base — no GT component.
     event.remove({ id: 'woot_revived:dye_liquifier' })
     event.recipes.gtceu.assembler('woot_dye_liquifier')
@@ -65,9 +56,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── ENCHANTED LIQUIFIER ───────────────────────────────────────────────────
-    // Accepts enchanted books → outputs enchanted_fluid (used by item_infuser for enchanted plates).
-    // EV piston compresses the enchantment energy out of the book.
     event.remove({ id: 'woot_revived:enchanted_liquifier' })
     event.recipes.gtceu.assembler('woot_enchanted_liquifier')
         .itemInputs(
@@ -81,9 +69,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── FLUID INFUSER ─────────────────────────────────────────────────────────
-    // Converts mob_tears → vitality_fuel_fluid ("Say hello to your fuel").
-    // HV pump drives the fluid conversion pipeline.
     event.remove({ id: 'woot_revived:fluid_infuser' })
     event.recipes.gtceu.assembler('woot_fluid_infuser')
         .itemInputs(
@@ -97,9 +82,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ── ITEM INFUSER ──────────────────────────────────────────────────────────
-    // Infuses stygian_plates with enchanted_fluid + shards → enchanted_plates; also makes prism.
-    // Robot arm handles the precise item-and-fluid manipulation.
     event.remove({ id: 'woot_revived:item_infuser' })
     event.recipes.gtceu.assembler('woot_item_infuser')
         .itemInputs(
@@ -113,9 +95,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── FACTORY CONNECTOR ─────────────────────────────────────────────────────
-    // Links multiblock sections; carries redstone and energy between factory segments.
-    // HV circuits handle the multi-segment coordination logic.
     event.remove({ id: 'woot_revived:factory_connect' })
     event.recipes.gtceu.assembler('woot_factory_connect')
         .itemInputs(
@@ -129,9 +108,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── FACTORY HEART ─────────────────────────────────────────────────────────
-    // The control block: monitors farm state, enforces tier requirements, manages vitality cells.
-    // EV circuits gate the embedded farm-management logic.
     event.remove({ id: 'woot_revived:heart' })
     event.recipes.gtceu.assembler('woot_heart')
         .itemInputs(
@@ -145,10 +121,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // ── MAGMATORS ─────────────────────────────────────────────────────────────
-    // Power source for the factory (also required under the stygian_anvil for heat).
-    // Vanilla: magma_block center. New: GT electric pump — the magmator is a thermal pump
-    // unit that drives vitality fuel through the multiblock.
     // Note: iron/gold/diamond/netherite shards are factory DROPS, not craftable.
 
     event.remove({ id: 'woot_revived:copper_magmator' })
@@ -171,7 +143,6 @@ ServerEvents.recipes(event => {
         c: 'woot_revived:diamond_shard', b: 'woot_revived:stygian_plate', P: 'gtceu:ev_electric_pump'
     })
 
-    // Netherite magmator: full IV gate — factory_base + IV pump.
     event.remove({ id: 'woot_revived:netherite_magmator' })
     event.recipes.gtceu.assembler('woot_netherite_magmator')
         .itemInputs(
@@ -185,12 +156,10 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // ── UPGRADE TIER REBALANCING ───────────────────────────────────────────────
     // Vanilla uses iron/gold/diamond/netherite ingots — inconsistent with GT voltage tiers.
     // New materials: iron→steel(LV) | gold→aluminium(MV) | diamond→stainless_steel(HV) | netherite→titanium(EV)
     // Display names updated in client_scripts/wootLang.js.
 
-    // ── Looting chain (each tier wraps the previous upgrade) ──
     event.remove({ id: 'woot_revived:iron_looting_upgrade' })
     event.shaped(Item.of('woot_revived:iron_looting_upgrade'), ['bab', 'aca', 'bab'], {
         a: '#forge:ingots/steel', b: 'minecraft:stick', c: 'woot_revived:copper_looting_upgrade'
@@ -208,7 +177,6 @@ ServerEvents.recipes(event => {
         a: '#forge:ingots/titanium', b: 'minecraft:stick', c: 'woot_revived:diamond_looting_upgrade'
     })
 
-    // ── Rate chain ──
     event.remove({ id: 'woot_revived:iron_rate_upgrade' })
     event.shaped(Item.of('woot_revived:iron_rate_upgrade'), ['aba', 'bcb', 'aba'], {
         a: '#forge:ingots/steel', b: '#forge:dusts/redstone', c: 'woot_revived:copper_rate_upgrade'
@@ -226,7 +194,6 @@ ServerEvents.recipes(event => {
         a: '#forge:ingots/titanium', b: '#forge:dusts/redstone', c: 'woot_revived:diamond_rate_upgrade'
     })
 
-    // ── Efficiency chain ──
     event.remove({ id: 'woot_revived:iron_efficiency_upgrade' })
     event.shaped(Item.of('woot_revived:iron_efficiency_upgrade'), ['bab', 'aca', 'bab'], {
         a: 'woot_revived:vitality_fuel_fluid_bucket', b: '#forge:ingots/steel', c: 'woot_revived:copper_efficiency_upgrade'
@@ -244,7 +211,6 @@ ServerEvents.recipes(event => {
         a: 'woot_revived:vitality_fuel_fluid_bucket', b: '#forge:ingots/titanium', c: 'woot_revived:diamond_efficiency_upgrade'
     })
 
-    // ── Mass chain ──
     event.remove({ id: 'woot_revived:iron_mass_upgrade' })
     event.shaped(Item.of('woot_revived:iron_mass_upgrade'), ['aaa', 'aba', 'aaa'], {
         a: '#forge:ingots/steel', b: 'woot_revived:copper_mass_upgrade'
@@ -262,7 +228,6 @@ ServerEvents.recipes(event => {
         a: '#forge:ingots/titanium', b: 'woot_revived:diamond_mass_upgrade'
     })
 
-    // ── XP chain ──
     event.remove({ id: 'woot_revived:iron_xp_upgrade' })
     event.shaped(Item.of('woot_revived:iron_xp_upgrade'), ['bab', 'aca', 'bab'], {
         a: 'minecraft:experience_bottle', b: '#forge:ingots/steel', c: 'woot_revived:copper_xp_upgrade'
@@ -280,7 +245,6 @@ ServerEvents.recipes(event => {
         a: 'minecraft:experience_bottle', b: '#forge:ingots/titanium', c: 'woot_revived:diamond_xp_upgrade'
     })
 
-    // ── Decapitate chain (corner material c, skull a, prev upgrade b) ──
     event.remove({ id: 'woot_revived:iron_decapitate_upgrade' })
     event.shaped(Item.of('woot_revived:iron_decapitate_upgrade'), ['cac', 'aba', 'cac'], {
         a: 'minecraft:skeleton_skull', b: 'woot_revived:copper_decapitate_upgrade', c: '#forge:ingots/steel'
@@ -298,7 +262,6 @@ ServerEvents.recipes(event => {
         a: 'minecraft:dragon_head', b: 'woot_revived:diamond_decapitate_upgrade', c: '#forge:ingots/titanium'
     })
 
-    // ── Shard Drop chain (metal b changes; shard a identifies which shard drops) ──
     event.remove({ id: 'woot_revived:iron_shard_drop_upgrade' })
     event.shaped(Item.of('woot_revived:iron_shard_drop_upgrade'), ['bab', 'aca', 'bab'], {
         a: 'woot_revived:copper_shard', b: '#forge:ingots/steel', c: 'woot_revived:upgrade_base'

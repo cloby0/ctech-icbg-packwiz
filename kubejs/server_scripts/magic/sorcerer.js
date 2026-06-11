@@ -45,9 +45,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //tbd magic gun recipes
-
-    // gravitite processing
     // freezer arrests anti-gravitational buoyancy, makes ore stable
     event.custom({
         "type": "aether:freezing",
@@ -57,7 +54,6 @@ ServerEvents.recipes(event => {
         "experience": 0.0
     })
 
-    // altar energizes frozen ore, aligns graviton matrix into precursor
     event.custom({
         "type": "aether:enchanting",
         "ingredient": { "item": "kubejs:frozen_raw_gravitite" },
@@ -82,7 +78,6 @@ ServerEvents.recipes(event => {
         "source": 5000
     })
 
-    //beyond this lies progression
     const elements = [
         "air",
         "earth",

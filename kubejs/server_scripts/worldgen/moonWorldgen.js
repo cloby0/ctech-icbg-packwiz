@@ -14,7 +14,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.layer("moon")
         vein.biomes("ad_astra:lunar_wastelands")
     })
-//Desh
     event.add("kubejs:desh_vein_mn", vein => {
         vein.weight(80)
         vein.clusterSize(30)
@@ -38,7 +37,6 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(5)
         ) 
     })
-//Molybdenum
     event.add("kubejs:molybdenum_vein_mn", vein => {
         vein.weight(5)
         vein.clusterSize(27)
@@ -64,7 +62,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Quartzite
     event.add("kubejs:quartz_vein_mn", vein => {
         vein.weight(20)
         vein.clusterSize(29)
@@ -89,7 +86,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Monazite
     event.add("kubejs:monazite_vein_mn", vein => {
         vein.weight(30)
         vein.clusterSize(36)
@@ -114,7 +110,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Ilmenite
     event.add("kubejs:ilmenite_vein_mn", vein => {
         vein.weight(30)
         vein.clusterSize(34)
@@ -140,7 +135,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Copper
     event.add("kubejs:copper_vein_mn", vein => {
         vein.weight(80)
         vein.clusterSize(40)
@@ -166,7 +160,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Galena
     event.add("kubejs:galena_vein_mn", vein => {
         vein.weight(40)
         vein.clusterSize(36)
@@ -191,7 +184,6 @@ GTCEuServerEvents.oreVeins(event => {
         ) 
     })
 
-//Cassiterite
     event.add("kubejs:cassiterite_vein_mn", vein => {
         vein.weight(50)
         vein.clusterSize(44)
@@ -215,7 +207,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//moon_cheese; rare, shallow
     event.add("kubejs:moon_cheese_vein_mn", vein => {
         vein.weight(12)
         vein.clusterSize(18)
@@ -239,7 +230,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-//Iron
     event.add("kubejs:iron_vein_mn", vein => {
         vein.weight(80)
         vein.clusterSize(44)

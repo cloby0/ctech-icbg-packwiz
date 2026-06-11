@@ -57,7 +57,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_epic_ink' })
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_legendary_ink' })
 
-    // common → uncommon: Journeyman gate (source_gem)
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:common_ink" },
@@ -65,7 +64,6 @@ ServerEvents.recipes(event => {
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:uncommon_ink" }]
     })
 
-    // uncommon → rare: Initiate gate (divine_pearl)
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:uncommon_ink" },
@@ -73,7 +71,6 @@ ServerEvents.recipes(event => {
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:rare_ink" }]
     })
 
-    // rare → epic: Sorcerer gate (prima_materia_ingot — obtained via magic imbuement)
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:rare_ink" },
@@ -81,7 +78,6 @@ ServerEvents.recipes(event => {
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:epic_ink" }]
     })
 
-    // epic → legendary: Alchemist gate (manasteel_ingot)
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:epic_ink" },
@@ -89,9 +85,6 @@ ServerEvents.recipes(event => {
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:legendary_ink" }]
     })
 
-    // LEGENDARY SPELLBOOKS — Arcanist/ZPM tier (enchanting apparatus, 40000 source)
-
-    // Annihilator's Protocol: ender-school, annihilation magic
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'irons_spellbooks:ender_rune',
@@ -108,7 +101,6 @@ ServerEvents.recipes(event => {
         40000,
     )
 
-    // Stormbound Grimoire: lightning-school, storm magic
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'irons_spellbooks:lightning_rune',

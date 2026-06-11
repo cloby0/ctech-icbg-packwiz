@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
-    //gear
     event.remove ({ id: 'reliquary:alkahestry_tome' })
-
 
     // swap petals -> mana_pearl in all apothecary recipes; gates the apothecary behind mana pool
     // pure_daisy is removed here and re-gated behind the enchanting apparatus recipe below
@@ -80,13 +78,11 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // Abstract Metal elemental synthesis single element (shapeless crafting)
     event.shapeless('minecraft:gold_ingot',   ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
     event.shapeless('gtceu:tin_ingot',       ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'])
     event.shapeless('gtceu:lead_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'])
     event.shapeless('gtceu:aluminium_ingot', ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'])
 
-    // Abstract Metal elemental synthesis multi element (enchanting apparatus)
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['#kubejs:fire_essences', '#kubejs:water_essences'],
         'gtceu:abstract_metal_ingot', 'gtceu:bismuth_ingot', 3000)
@@ -138,7 +134,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // staves all 14 variants require hexed_amethyst_core instead of charged_amethyst
     event.remove({ output: /hexcasting:staff\// })
     const staffPattern = [' SA', ' WS', 'S  ']
     const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w })
@@ -159,32 +154,27 @@ ServerEvents.recipes(event => {
         ['#hexcasting:brainswept_circle_components', 'hexcasting:staff/mindsplice'],
     ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)))
 
-    // lens
     event.remove({ id: 'hexcasting:lens' })
     event.shaped('hexcasting:lens', [' C ', 'CAC', ' C '], {
         C: 'minecraft:glass',
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // thought_knot
     event.remove({ id: 'hexcasting:thought_knot' })
     event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string'])
 
-    // slate
     event.remove({ id: 'hexcasting:slate' })
     event.shaped('6x hexcasting:slate', [' A ', 'SSS'], {
         A: 'kubejs:hexed_amethyst_core',
         S: 'minecraft:deepslate',
     })
 
-    // cypher
     event.remove({ id: 'hexcasting:cypher' })
     event.shaped('hexcasting:cypher', [' C ', 'CAC', ' C '], {
         C: '#forge:ingots/copper',
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // scrolls (all sizes) and scroll_paper
     event.remove({ id: 'hexcasting:scroll_small' })
     event.shaped('hexcasting:scroll_small', [' A', 'P '], {
         A: 'kubejs:hexed_amethyst_core',
@@ -209,7 +199,6 @@ ServerEvents.recipes(event => {
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // abacus
     event.remove({ id: 'hexcasting:abacus' })
     event.shaped('hexcasting:abacus', ['WAW', 'SAS', 'WAW'], {
         W: '#minecraft:planks',
@@ -217,7 +206,6 @@ ServerEvents.recipes(event => {
         S: 'minecraft:stick',
     })
 
-    // akashic bookshelf no amethyst in original; add core to gate it
     event.remove({ id: 'hexcasting:akashic_bookshelf' })
     event.shaped('hexcasting:akashic_bookshelf', ['LPL', 'CAC', 'LPL'], {
         L: '#hexcasting:edified_logs',
@@ -226,7 +214,6 @@ ServerEvents.recipes(event => {
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // akashic connector replace charged_amethyst with hexed_amethyst_core
     event.remove({ id: 'hexcasting:akashic_connector' })
     event.shaped('4x hexcasting:akashic_connector', ['LPL', '12A', 'LPL'], {
         L: '#hexcasting:edified_logs',
@@ -236,7 +223,6 @@ ServerEvents.recipes(event => {
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // focus
     event.remove({ id: 'hexcasting:focus' })
     event.remove({ id: 'hexcasting:focus_rotated' })
     event.recipes.ars_nouveau.enchanting_apparatus(
@@ -252,7 +238,6 @@ ServerEvents.recipes(event => {
         3000
     )
 
-    // spellbook
     event.remove({ id: 'hexcasting:spellbook' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
@@ -267,7 +252,6 @@ ServerEvents.recipes(event => {
         5000
     )
 
-    // artifact
     event.remove({ id: 'hexcasting:artifact' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
@@ -282,14 +266,12 @@ ServerEvents.recipes(event => {
         4000
     )
 
-    // trinket
     event.remove({ id: 'hexcasting:trinket' })
     event.shaped('hexcasting:trinket', [' M ', 'MAM', ' M '], {
         M: 'botania:manasteel_ingot',
         A: 'kubejs:hexed_amethyst_core',
     })
 
-    // hex_ars_link linker_base bump from cheap gold+amethyst to Alchemist cost
     event.remove({ output: 'hex_ars_link:linker_base' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
