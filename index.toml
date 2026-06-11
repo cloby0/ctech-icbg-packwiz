@@ -1558,7 +1558,7 @@ hash = "5a3df9db87a8600040296e00f427470b154a0ea0b54c29aaa9dfc3b5438e3e9d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
-hash = "676953edf96dc8dd034a2a18215e8e7b980c8f8bf8719584c731baac194fb8bd"
+hash = "6974834beb31d5f859a32c1a73c1856b65aa6d916121406a87ecb1289bf19120"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"

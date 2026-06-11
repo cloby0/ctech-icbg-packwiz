@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cna_basic_energiser')
         .itemInputs(
             'create:andesite_casing',
-            '4x gtceu:copper_plate',
+            '4x create:copper_sheet',
             'minecraft:lightning_rod',
             '1x #gtceu:circuits/mv',
         )
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'create_new_age:advanced_energiser',
             '2x create_new_age:overcharged_diamond',
-            '4x gtceu:copper_plate',
+            '4x create:copper_sheet',
             '2x gtceu:stainless_steel_plate',
             '1x gtceu:hv_field_generator',
             '1x #gtceu:circuits/ev',
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cna_basic_motor')
         .itemInputs(
             'gtceu:mv_electric_motor',
-            '4x gtceu:copper_plate',
+            '4x create:copper_sheet',
             '2x gtceu:steel_plate',
             'create:shaft',
             '1x #gtceu:circuits/mv',
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'gtceu:hv_electric_motor',
             'create_new_age:overcharged_iron',
-            '4x gtceu:gold_plate',
+            '4x create:golden_sheet',
             'create:brass_casing',
             'create:shaft',
             '1x #gtceu:circuits/hv',
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
     // GENERATOR COIL — precision copper winding, needs MV circuit for wound-layer control
     event.recipes.gtceu.assembler('cna_generator_coil')
         .itemInputs(
-            '8x gtceu:copper_plate',
+            '8x create:copper_sheet',
             'create:andesite_alloy_block',
             '1x #gtceu:circuits/mv',
         )
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
     // ELECTRICAL CONNECTOR — pure conductor, no circuit
     event.recipes.gtceu.assembler('cna_electrical_connector')
         .itemInputs(
-            '4x gtceu:copper_plate',
+            '4x create:copper_sheet',
             '2x create:andesite_alloy',
         )
         .itemOutputs('4x create_new_age:electrical_connector')
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
     // heat_pipe: pure thermal conductor, no circuit
     event.recipes.gtceu.assembler('cna_heat_pipe')
         .itemInputs(
-            '2x gtceu:copper_plate',
+            '2x create:copper_sheet',
             '2x gtceu:zinc_plate',
             'minecraft:terracotta',
         )
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('cna_stirling_engine')
         .itemInputs(
             '2x create_new_age:heat_pipe',
-            '4x gtceu:copper_plate',
+            '4x create:copper_sheet',
             'create:shaft',
             '1x #gtceu:circuits/mv',
         )
