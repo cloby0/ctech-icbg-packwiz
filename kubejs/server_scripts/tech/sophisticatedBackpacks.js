@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
 
     // utility upgrades (LV)
     event.recipes.gtceu.assembler('sb_pickup_upgrade')
-        .itemInputs('sophisticatedbackpacks:upgrade_base', '2x gtceu:steel_rod', 'gtceu:conveyor_module_lv', '2x minecraft:redstone')
+        .itemInputs('sophisticatedbackpacks:upgrade_base', '2x gtceu:steel_rod', 'gtceu:lv_conveyor_module', '2x minecraft:redstone')
         .itemOutputs('sophisticatedbackpacks:pickup_upgrade')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
@@ -181,13 +181,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('sb_deposit_upgrade')
-        .itemInputs('sophisticatedbackpacks:upgrade_base', 'gtceu:conveyor_module_lv', '2x gtceu:steel_ingot', 'minecraft:chest', 'minecraft:redstone')
+        .itemInputs('sophisticatedbackpacks:upgrade_base', 'gtceu:lv_conveyor_module', '2x gtceu:steel_ingot', 'minecraft:chest', 'minecraft:redstone')
         .itemOutputs('sophisticatedbackpacks:deposit_upgrade')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('sb_restock_upgrade')
-        .itemInputs('sophisticatedbackpacks:upgrade_base', 'gtceu:conveyor_module_lv', '2x gtceu:steel_ingot', 'minecraft:chest', 'minecraft:sticky_piston')
+        .itemInputs('sophisticatedbackpacks:upgrade_base', 'gtceu:lv_conveyor_module', '2x gtceu:steel_ingot', 'minecraft:chest', 'minecraft:sticky_piston')
         .itemOutputs('sophisticatedbackpacks:restock_upgrade')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])

@@ -1618,7 +1618,7 @@ hash = "79c2e24585ff3685ac62aeda82d8eef479888369c4f8f58db839ad45a5de7ed1"
 
 [[files]]
 file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
-hash = "6cbb5082713c0e2a835379c7febad0bd918fe055d4be04479d29df6b78577020"
+hash = "41dd90aa0820ea751f37edc6c67c6d95f04f8a786683b583a9a02847f22e8cf5"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
