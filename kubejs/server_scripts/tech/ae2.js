@@ -1434,4 +1434,15 @@ ServerEvents.recipes(event => {
         .duration(120 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    // PackagedAuto: gate package_component behind basic AE2 + HV assembler.
+    // All downstream items (encoder, recipe_holder, crafting_proxy, distributor,
+    // fluid_package_filler) require package_component so they gate transitively.
+    event.remove({ output: 'packagedauto:package_component' })
+    event.recipes.gtceu.assembler('packagedauto_package_component')
+        .itemInputs('2x ae2:fluix_crystal', '2x create:golden_sheet', '1x minecraft:ender_eye')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+        .itemOutputs('1x packagedauto:package_component')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
 })

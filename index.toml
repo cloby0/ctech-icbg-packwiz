@@ -822,7 +822,7 @@ hash = "ae5d4cd70cd6532afa9fb8e9a22540705f65d6a875bc1d4c1d6781c09f8b5864"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "428f8c47c85d79fc8ebd6418ac84ba2e7520b208eb2ec978598399a342f91e46"
+hash = "376146eb9d9b634fe69f5ec4e489898cfc9a1fb4eaac820c9b00f82f1068b2f9"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -862,11 +862,7 @@ hash = "17f75e7178999c86f19c476ad49e2b7bfd61769451dc9da61a4165fe5c0392b3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "297df68302887654480412628c6ca5ed387dd61eeb119c1b6bd941e5b74467cb"
-
-[[files]]
-file = "kubejs/client_scripts/wootLang.js"
-hash = "829b8d03bbd9b4b2b45a9372887fcdd0317d54d6f3a434754922c551bd900b9e"
+hash = "16f52412b92b7f7768e194d6f039dd247636379e88c4cfeac462ce6deff52e9d"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1434,7 +1430,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "ad52434e79eed071b59c7d0b4accd9828fb1fbf9c6a92eebed55c18043898c00"
+hash = "1ae68c09958f84feb3a0be2c846ca470c2fc71593db6173d24956ce709444a41"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
@@ -1538,7 +1534,7 @@ hash = "1fb742bbf0cf258ba0bbb1a35afb728dba038c3459356c99f4c5599fb3049d58"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "8830ff4a292b2ad58b9047f476636be65df71969668bb4d60eae22d8e0863848"
+hash = "0efed48aa8f6547f2357d0fe5d1153d82562c70eb83be8421d8e071c7b88ba15"
 
 [[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
@@ -1557,12 +1553,20 @@ file = "kubejs/server_scripts/tech/cbc.js"
 hash = "5a3df9db87a8600040296e00f427470b154a0ea0b54c29aaa9dfc3b5438e3e9d"
 
 [[files]]
+file = "kubejs/server_scripts/tech/createNewAge.js"
+hash = "676953edf96dc8dd034a2a18215e8e7b980c8f8bf8719584c731baac194fb8bd"
+
+[[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
 hash = "8c677a07377f331632419e39304ccedb41e1e602ed98cf55fabea523f7d5e510"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cyberware.js"
 hash = "7ad46f1b888c5bd5c168a2d10668ea63d930dc687a92a61506e5ad69ef901148"
+
+[[files]]
+file = "kubejs/server_scripts/tech/epicKnights.js"
+hash = "d2ed6ba3e4f95a3e15a35fec2a638f44c30953ac2f82c559c1acd8ad2a53b214"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -1574,7 +1578,7 @@ hash = "33a0cbeb895b98148d3ba0570951ce5f4c134de7e791f9f25032b29942c1aebc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/fracturepoint.js"
-hash = "a104a1bd06d82087ffe504a001403401a3b71bea1b4977d25556d21d2f5e1a1a"
+hash = "0fd314d47e5a245ace92654ce1ec942bb41a1615a67a5a5244d6118f699539cf"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ftech.js"
@@ -1601,12 +1605,20 @@ file = "kubejs/server_scripts/tech/ivAndVenus.js"
 hash = "2af2fef6ebd65085805a5f79e964c2b2b49341275a79e6929c15566585259942"
 
 [[files]]
+file = "kubejs/server_scripts/tech/laserio.js"
+hash = "257baaf730da41cbbce753c22dbd78792f9bd03de1a58d71ae2c82a0a33b8adb"
+
+[[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
 hash = "40a87831066a9ff8425ed31597da2bf774119d6fb4a4350682b2a9483fc797cc"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "79c2e24585ff3685ac62aeda82d8eef479888369c4f8f58db839ad45a5de7ed1"
+
+[[files]]
+file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
+hash = "6cbb5082713c0e2a835379c7febad0bd918fe055d4be04479d29df6b78577020"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -2544,11 +2556,6 @@ metafile = true
 [[files]]
 file = "mods/integrated-villages.pw.toml"
 hash = "e0a3b7580b34a1788d5b7b9350862f89ab35c833b689579173b821e57bea4b60"
-metafile = true
-
-[[files]]
-file = "mods/iron-jetpacks.pw.toml"
-hash = "c3265a04984be048307745587dab58deb0466efd99a40d335f23696fb4f9947e"
 metafile = true
 
 [[files]]

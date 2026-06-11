@@ -184,8 +184,6 @@ ServerEvents.recipes(event => {
         'fracturepoint:squad_lider_ru_backpack',
         'fracturepoint:shturmovik_ru_backpack',
         'fracturepoint:nato_sqad_leader_backpack',
-        'fracturepoint:nato_ukr_backpack',
-        'fracturepoint:nato_mg_backpack',
         'fracturepoint:nato_sqad_leader_backpack_woodland',
         'fracturepoint:soviet_soldier_backpack',
         'fracturepoint:insurgency_shturmovik_backpack',
