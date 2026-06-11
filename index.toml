@@ -829,8 +829,44 @@ file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/chaos_essence.png"
+hash = "9392011174bfd39278334ae74b33b18f8e3d43559d60b17f3060758abe3fe9a8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form/disorganized_metal_form.png"
+hash = "19c928c0a259c23967663c2c4289d65bbc88c92347c6c10d2126f6352e6f0318"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form/elven_concentrate.png"
+hash = "b54db6d210a35da8d42db5eb5d452f3896ad0e2b62d88f38151d0433818c3ee4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form/florid_compound.png"
+hash = "1bb20bb53d87d769ce2c883fe5dab98f88ec6c41187b91a2d7359fd4c6d3a83b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form/living_metalloid.png"
+hash = "d2660686baab2670a4f5fff8dda3945173e5c214e84220775e022be7dc94e293"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form/weak_elementium_dust.png"
+hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/element_attunement_stone.png"
 hash = "8fc2096dad962db29d83c66b32e7d6adef064a71bbc9e75d4201512994266f15"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/glowing_compound_dust.png"
+hash = "f4f4a7e067f07df0c52929a1a8cf8d6b1c9982eed9e694df690fb720324a6437"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/holy_silver_blend.png"
+hash = "4fd2108e6714529349a9f69cc59c1926254d537af2875a41eaafdbebc0510e28"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/impure_glimmering_dust.png"
+hash = "094f3039a4934fd5d2aca7dc3d7d734574d652fe583ce5ee04682a7cc5619408"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
@@ -843,6 +879,10 @@ hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
 hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/pure_source_gem_dust.png"
+hash = "d7e4ce16f8802d029adb5fe9f7fbc94bbd88bd56d1ad2a23448f33b7ee15b133"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rocket_combustion_engine.png"
@@ -866,7 +906,7 @@ hash = "68c63cdaa9baacd4ab0dbb5fe8e719ef844257711f469c24c4f4bbc72352ffe3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "bcc9ebc26459d5fba3edaddeeacf51ad1a2906f95aaddaf5b3730741be3a2923"
+hash = "f53476dddf75135a7c512ae32483781e43c8dcb287c9e50c129e200704354909"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1618,7 +1658,7 @@ hash = "257baaf730da41cbbce753c22dbd78792f9bd03de1a58d71ae2c82a0a33b8adb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
-hash = "40a87831066a9ff8425ed31597da2bf774119d6fb4a4350682b2a9483fc797cc"
+hash = "db076667db1373d8943943580742d97cf00b249123e2030c001bf4348b01c05f"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -1702,7 +1742,7 @@ hash = "37523cc3f28c0aa9631c13a0c0d0e253fca4b41ce07e24db8f82077ae13d0165"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "364c91bda022674ee6348fa8d1ce3e121fd19d671e1c7ce57bb8035550b4bf2b"
+hash = "d8321b4cb6e34821b5a796629fbcaba73e5461a1609b5200f5489c75b16991a8"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -3024,6 +3064,11 @@ metafile = true
 [[files]]
 file = "mods/quark.pw.toml"
 hash = "4eb683644ee4e38e00b06df946b71ad8fedaa860fcabbd91ec6ceb71c65b8d81"
+metafile = true
+
+[[files]]
+file = "mods/realistic-nametag.pw.toml"
+hash = "91d1ad66e79003551c377c8ed31f3c3ed7519ed95e8115d0f9b955d245545963"
 metafile = true
 
 [[files]]

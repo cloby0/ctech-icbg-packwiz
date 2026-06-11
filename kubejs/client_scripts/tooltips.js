@@ -23,14 +23,14 @@ ItemEvents.tooltip(event => {
     ]
 
     const TIER_LABELS = {
-        'kubejs:magic/apprentice':  '§7Apprentice',
-        'kubejs:magic/journeyman':  '§aJourneyman',
-        'kubejs:magic/initiate':    '§6Initiate',
-        'kubejs:magic/sorcerer':    '§5Sorcerer',
-        'kubejs:magic/alchemist':   '§bAlchemist',
-        'kubejs:magic/thaumaturge': '§dThaumaturge',
-        'kubejs:magic/arcanist':    '§9Arcanist',
-        'kubejs:magic/sage':        '§eSage'
+        'kubejs:magic/apprentice':  'Magic Tier: §7Apprentice',
+        'kubejs:magic/journeyman':  'Magic Tier: §aJourneyman',
+        'kubejs:magic/initiate':    'Magic Tier: §6Initiate',
+        'kubejs:magic/sorcerer':    'Magic Tier: §5Sorcerer',
+        'kubejs:magic/alchemist':   'Magic Tier: §bAlchemist',
+        'kubejs:magic/thaumaturge': 'Magic Tier: §dThaumaturge',
+        'kubejs:magic/arcanist':    'Magic Tier: §9Arcanist',
+        'kubejs:magic/sage':        'Magic Tier: §eSage'
     }
 
     event.addAdvanced(TIER_ITEMS, (item, advanced, tooltip) => {

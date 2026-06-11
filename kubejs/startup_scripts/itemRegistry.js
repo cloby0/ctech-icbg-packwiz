@@ -77,7 +77,7 @@ StartupEvents.registry('item', event => {
 
     event.create('rune_of_frost')
 
-    event.create('naquadah_hull_section')
+    event.create('ostrum_hull_section')
     event.create('glacio_rocket_engine')
     event.create('glacio_propellant_tank')
     event.create('glacio_guidance_module')
