@@ -377,6 +377,10 @@ file = "kubejs/assets/ars_nouveau/lang/en_us.json"
 hash = "05d320e9063abbae08d9eb4dc766d6fead3318c8f60ec56bbbb8023d7d8b209e"
 
 [[files]]
+file = "kubejs/assets/celestial_core/lang/en_us.json"
+hash = "fa0e745ade46362f572a412eb5391a5cc21f990c3cd177333b19f303bd446905"
+
+[[files]]
 file = "kubejs/assets/computercraft/models/block/block_front_back.json"
 hash = "d9444476fd444935a86b6dc49cfa24edc1bdccd77ae801c1f33e9a380717622e"
 
@@ -859,6 +863,10 @@ hash = "17f75e7178999c86f19c476ad49e2b7bfd61769451dc9da61a4165fe5c0392b3"
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
 hash = "297df68302887654480412628c6ca5ed387dd61eeb119c1b6bd941e5b74467cb"
+
+[[files]]
+file = "kubejs/client_scripts/wootLang.js"
+hash = "829b8d03bbd9b4b2b45a9372887fcdd0317d54d6f3a434754922c551bd900b9e"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1445,6 +1453,14 @@ file = "kubejs/server_scripts/magic/artifacts.js"
 hash = "0dc5ce84de33968b3ae75f87d8bb8addfba063156237c9753221f3a255d45cd8"
 
 [[files]]
+file = "kubejs/server_scripts/magic/celestialEnchantments.js"
+hash = "e2df9b4595057bb3504e61924aa4480c04383a0ed12ddb0da6edd17f6b327984"
+
+[[files]]
+file = "kubejs/server_scripts/magic/celestisynth.js"
+hash = "795d379ff68a5d69f8690be8f27fd158e56f53e42d5712c9320ce3df6f0c6e2c"
+
+[[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
 hash = "502a71b6b29ab8eff21eceddf81d4bcb49700441762efd423a5fd3d969c23760"
 
@@ -1457,6 +1473,10 @@ file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
 hash = "dc5dd4f4e5137386e298818a1f92c217d4db54f702e62155154e04940ef9c00b"
 
 [[files]]
+file = "kubejs/server_scripts/magic/cyberSpells.js"
+hash = "ef464ee5503c64f8b8020c465cf4931ab250186bb72ba4e6632b183210a0a1cd"
+
+[[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
 hash = "987cabdf48116410cb95d08cbe8b4c2679522efd9e6c94ad5d8fbcd32a82d43d"
 
@@ -1465,8 +1485,20 @@ file = "kubejs/server_scripts/magic/initiate.js"
 hash = "925a18c976dc85e399cf6f90d308a34309a5deb4bc30c14f1f9e411ee360b7c6"
 
 [[files]]
+file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
+hash = "0f42cc9f42d012f8b306d2964670e5450e6553b648db651bdc169cb8a0fcf5bd"
+
+[[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
 hash = "c03d478c84cd0b34ef4f28381ecc290bf9c65fd00856beb6a1a16f595cdab9c1"
+
+[[files]]
+file = "kubejs/server_scripts/magic/modularGolems.js"
+hash = "55c3e90c37cf494a1373c0ed2a22c9da0a97974c46ec2dd9d9e4e1ead928b843"
+
+[[files]]
+file = "kubejs/server_scripts/magic/moreRelics.js"
+hash = "81d2ee92f8cbc8ad3f8d090d9bf3be4b217c19a0541516b59aebfede5cf9665b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
@@ -1481,6 +1513,10 @@ file = "kubejs/server_scripts/magic/psi.js"
 hash = "07b65e5f67532972083870c4cdb45b8e0768d833d2193222be5e92e03cbc1040"
 
 [[files]]
+file = "kubejs/server_scripts/magic/relics.js"
+hash = "bded24a84d6f6f75a9dac04d2f76b53fd0812129d3ad61e2efdebc951feb0487"
+
+[[files]]
 file = "kubejs/server_scripts/magic/sage.js"
 hash = "958be59ca50dad31856283f1dadd7b55c91eecbad5354878bafc0bc2954537f2"
 
@@ -1491,6 +1527,10 @@ hash = "a3dfa98ef38b75b605b5f52513021ea520c5c5624fa18e33a2b8d356ba7d4da7"
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
 hash = "b9ca24b62fd998dc3de2484b71bcc916f4c4d8612d9c31edb93f3f7835e9bd1e"
+
+[[files]]
+file = "kubejs/server_scripts/magic/tooManyBows.js"
+hash = "85b38ab517f494d089693b6d1d368cd8839df8b65513569ef04a6d7b95915ff9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/uniqueAccessories.js"
@@ -1511,6 +1551,10 @@ hash = "3870f52265e585e7e93e0943d528477dcf50c546dc6731d368d9781e2be4a870"
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"
 hash = "20fdd9f13b7775ba4603586e8b56b9924c1b253ee16a9d52a6b9c33f01399933"
+
+[[files]]
+file = "kubejs/server_scripts/tech/cbc.js"
+hash = "b2142a187865ac1bb707597c510f8a2e50b98a59a15461ab32df3d12b344a4c9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -1559,6 +1603,10 @@ hash = "2c7bd84a2f96db4a6d74d589d3c93b3ca003ce27e80d40e6e3403ffb4916764e"
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "b286abad6670b7debd2c8a0374e3253fa7951cd07e085fddd8539eb27c84d495"
+
+[[files]]
+file = "kubejs/server_scripts/tech/woot.js"
+hash = "83ef431dd213d0533982cf02acb9b3020e095a47d36c1d172b5508b006a9aba9"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
@@ -1630,7 +1678,7 @@ hash = "653b6b27b300d221ea5fffddbd91645731bdb72f0f2d5453f6971c2579dc57cf"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "0b5a252460afb6e3fca327cddf0cdebd939df4a16b139e5626f222a63e88d42a"
+hash = "d9ecbb450fdb85add673bed4cf82c2242c3edd1336982ff2cc2f9934e1dc5cc4"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -2288,6 +2336,11 @@ metafile = true
 [[files]]
 file = "mods/fix-pams-harvestcraft2-trees-compact-for-new-versions-of-serene-seasons.pw.toml"
 hash = "45968023493afe339280f44382e082188c8f413f37d37c362dc16366135bb974"
+metafile = true
+
+[[files]]
+file = "mods/fracture-point.pw.toml"
+hash = "10979f68137e1820900ff35e09c127f4ed33e589c62827d504f0fbc489a3258b"
 metafile = true
 
 [[files]]

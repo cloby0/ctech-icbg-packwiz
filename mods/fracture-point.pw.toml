@@ -1,0 +1,13 @@
+name = "Fracture Point (Tactical Military Armory)"
+filename = "fracturepoint-1.20.1-3.0.0-prerelease-fix-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2abd24de97101a7b9d3f0f9ee985a82fd2d74f44"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8187842
+project-id = 1207137

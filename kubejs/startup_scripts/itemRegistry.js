@@ -95,4 +95,7 @@ StartupEvents.registry('item', event => {
     event.create('glacio_rocket_engine')
     event.create('glacio_propellant_tank')
     event.create('glacio_guidance_module')
+
+    //create big cannons
+    event.create('cannon_mechanism')
 })
