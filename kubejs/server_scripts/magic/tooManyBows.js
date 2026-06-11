@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     ], { 'K': 'minecraft:kelp', 'P': 'minecraft:prismarine_shard', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
 
     // fire arrows + places torches on hit
-    event.shaped(Item.of('too_many_bows:torchbearer_bow', 1), [
+    event.shaped(Item.of('too_many_bows:torchbearer', 1), [
         'TBT', 'TDT', ' T '
     ], { 'T': 'minecraft:torch', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
 
@@ -48,11 +48,6 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('too_many_bows:scatter_bow', 1), [
         'A A', 'DBD', 'A A'
     ], { 'A': 'minecraft:arrow', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
-
-    // 5-arrow spread, applies slowness
-    event.shaped(Item.of('too_many_bows:webstring_volley', 1), [
-        'CSC', 'DBD', 'CSC'
-    ], { 'C': 'too_many_bows:webstring', 'S': 'minecraft:string', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
 
     // ============================================================
     // INITIATE — enchanting apparatus, glowing_dust catalyst
@@ -155,14 +150,6 @@ ServerEvents.recipes(event => {
         2000
     )
 
-    // spectral (no detailed desc — generic glowing spectral)
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:spectral_arrow", "minecraft:spectral_arrow", "minecraft:glowstone", "minecraft:glowstone", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:spectral_bow",
-        1500
-    )
-
     // ============================================================
     // SORCERER — enchanting apparatus, ultimate_dust catalyst
     // powerful elemental / dimensional / high-concept effects
@@ -224,14 +211,6 @@ ServerEvents.recipes(event => {
         3500
     )
 
-    // linking burst of light on impact
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:prismarine_crystals", "minecraft:prismarine_crystals", "minecraft:diamond", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:beacon_beam_bow",
-        3000
-    )
-
     // ricochet arrows
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:bow", "minecraft:ender_pearl", "minecraft:ender_pearl", "minecraft:amethyst_shard", "minecraft:amethyst_shard", "gtceu:holy_silver_dust"],
@@ -254,14 +233,6 @@ ServerEvents.recipes(event => {
         "nameless_trinkets:ultimate_dust",
         "too_many_bows:demons_grasp",
         3500
-    )
-
-    // forged arc-magic bow
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "create:iron_sheet", "create:iron_sheet", "minecraft:diamond", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:arcforge",
-        3000
     )
 
     // ============================================================
@@ -309,28 +280,12 @@ ServerEvents.recipes(event => {
         5500
     )
 
-    // cursed fire: blocks regen, can't be extinguished, 1 heart/tick
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:blaze_rod", "minecraft:blaze_rod", "minecraft:wither_rose", "minecraft:wither_rose", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:cursed_flame_bow",
-        5000
-    )
-
     // necro + cursed stone + wither skulls
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:bow", "too_many_bows:cursed_stone", "too_many_bows:cursed_stone", "minecraft:wither_skeleton_skull", "minecraft:wither_skeleton_skull", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
         "nameless_trinkets:ultimate_dust",
         "too_many_bows:necro_flame_bow",
         5000
-    )
-
-    // warden shockwave, deep dark devastation
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:echo_shard", "minecraft:echo_shard", "minecraft:sculk", "minecraft:sculk", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:sonic_bow",
-        5500
     )
 
     // infinite arrows + enhanced damage (ancient relic)

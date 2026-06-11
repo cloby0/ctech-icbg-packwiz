@@ -1458,7 +1458,7 @@ hash = "e2df9b4595057bb3504e61924aa4480c04383a0ed12ddb0da6edd17f6b327984"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestisynth.js"
-hash = "795d379ff68a5d69f8690be8f27fd158e56f53e42d5712c9320ce3df6f0c6e2c"
+hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
@@ -1530,7 +1530,7 @@ hash = "b9ca24b62fd998dc3de2484b71bcc916f4c4d8612d9c31edb93f3f7835e9bd1e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/tooManyBows.js"
-hash = "85b38ab517f494d089693b6d1d368cd8839df8b65513569ef04a6d7b95915ff9"
+hash = "03ad024cc285e02b5675c1a9c85942f978aeba64dbed5dfcc95211f5219ae80e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/uniqueAccessories.js"

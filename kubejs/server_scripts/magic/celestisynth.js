@@ -65,7 +65,10 @@ ServerEvents.recipes(event => {
         }
     ]
 
-    armorData.forEach(({ set, mat, pieces }) => {
+    armorData.forEach(entry => {
+        const set = entry.set
+        const mat = entry.mat
+        const pieces = entry.pieces
         Object.entries(pieces).forEach(([piece, pattern]) => {
             event.remove({ id: `celestisynth:${set}_${piece}` })
             event.shaped(
