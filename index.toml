@@ -861,8 +861,12 @@ file = "kubejs/client_scripts/cc_jei_hide.js"
 hash = "17f75e7178999c86f19c476ad49e2b7bfd61769451dc9da61a4165fe5c0392b3"
 
 [[files]]
+file = "kubejs/client_scripts/ec_emi_hide.js"
+hash = "68c63cdaa9baacd4ab0dbb5fe8e719ef844257711f469c24c4f4bbc72352ffe3"
+
+[[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "16f52412b92b7f7768e194d6f039dd247636379e88c4cfeac462ce6deff52e9d"
+hash = "bcc9ebc26459d5fba3edaddeeacf51ad1a2906f95aaddaf5b3730741be3a2923"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1430,7 +1434,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "1ae68c09958f84feb3a0be2c846ca470c2fc71593db6173d24956ce709444a41"
+hash = "2e83146fc7f4e5579dd2b9ae8293c84e74e54a6ed633b905b40b20f9ed737540"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
@@ -1577,6 +1581,10 @@ file = "kubejs/server_scripts/tech/evAndMars.js"
 hash = "33a0cbeb895b98148d3ba0570951ce5f4c134de7e791f9f25032b29942c1aebc"
 
 [[files]]
+file = "kubejs/server_scripts/tech/extendedCrafting.js"
+hash = "7a8811a23f92be100876361001978fcec5c7ee9425ddc382db52d4dc797a8e2e"
+
+[[files]]
 file = "kubejs/server_scripts/tech/fracturepoint.js"
 hash = "0fd314d47e5a245ace92654ce1ec942bb41a1615a67a5a5244d6118f699539cf"
 
@@ -1618,7 +1626,7 @@ hash = "79c2e24585ff3685ac62aeda82d8eef479888369c4f8f58db839ad45a5de7ed1"
 
 [[files]]
 file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
-hash = "41dd90aa0820ea751f37edc6c67c6d95f04f8a786683b583a9a02847f22e8cf5"
+hash = "05f56caabbc114a6088bb13c026423dadcedee5e84c66df001bc709e8ae295aa"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"

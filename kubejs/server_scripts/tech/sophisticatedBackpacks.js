@@ -29,7 +29,6 @@ ServerEvents.recipes(event => {
         'sophisticatedbackpacks:stack_upgrade_tier_3',
         'sophisticatedbackpacks:stack_upgrade_tier_4',
         'sophisticatedbackpacks:stack_upgrade_omega_tier',
-        'sophisticatedbackpacks:sorting_upgrade',
         'sophisticatedbackpacks:advanced_compacting_upgrade',
         'sophisticatedbackpacks:advanced_deposit_upgrade',
         'sophisticatedbackpacks:advanced_feeding_upgrade',
@@ -215,12 +214,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('sophisticatedbackpacks:tool_swapper_upgrade')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.assembler('sb_sorting_upgrade')
-        .itemInputs('sophisticatedbackpacks:upgrade_base', '2x gtceu:steel_plate', '2x minecraft:hopper', '2x minecraft:redstone')
-        .itemOutputs('sophisticatedbackpacks:sorting_upgrade')
-        .duration(12 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
 
     // inception and everlasting are EV-tier (nether star + end materials)
     event.recipes.gtceu.assembler('sb_inception_upgrade')
