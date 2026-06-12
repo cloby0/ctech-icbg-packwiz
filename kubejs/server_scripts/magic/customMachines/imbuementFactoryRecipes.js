@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: { item: "minecraft:amethyst_shard" },
         output: "irons_spellbooks:arcane_essence",
-        source: 5000,
+        source: 750,
         pedestalItems: []
     }, index++)
 
@@ -176,15 +176,6 @@ ServerEvents.recipes(event => {
         input: { item: 'kubejs:holy_silver_blend' },
         output: 'gtceu:holy_silver_dust',
         source: 2500,
-        pedestalItems: [
-            { item: { item: "reliquary:mercy_cross"} }
-        ]
-    }, index++)
-
-    addImbuementRecipe(event, {
-        input: { item: 'minecraft:amethyst_shard' },
-        output: 'irons_spellbooks:arcane_essence',
-        source: 750,
         pedestalItems: [
             { item: { item: "reliquary:mercy_cross"} }
         ]

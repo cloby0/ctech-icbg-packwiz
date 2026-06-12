@@ -1,5 +1,5 @@
 ItemEvents.tooltip(event => {
-    event.add('kubejs:matter_energy_circuit', 'A chip that comes with the firmware to think in ME')
+    event.add('kubejs:matter_energy_circuit', '§7A chip that comes with the firmware to think in ME')
 
     // Magic tier labels — mirrors GTCEu voltage tier display.
     // Tags defined in itemTags.js; add items there to extend a tier's tooltip.
