@@ -67,6 +67,21 @@ ServerEvents.recipes(event => {
         }
     })
 
+    // synthesis alt for reliquary:fertile_essence — avoids 2% rare mob drop grind
+    // skeleton/slime/creeper MA essences replace rib_bone/slime_pearl/catalyzing_gland
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "mysticalagriculture:skeleton_essence",
+            "mysticalagriculture:slime_essence",
+            "mysticalagriculture:creeper_essence",
+            "#kubejs:earth_essences",
+            "#kubejs:water_essences",
+        ],
+        "mysticalagriculture:nature_essence",
+        "reliquary:fertile_essence",
+        15000,
+    )
+
     // rune_of_frost: glacio-forged runic catalyst
     // requires manasteel (Alchemist), naquadah (Glacio), ice shard (Glacio), source gem (Journeyman)
     // higher mana cost reflects cryo-crystallization process
@@ -105,5 +120,49 @@ ServerEvents.recipes(event => {
             "count": 3,
             "item": "botania:terrasteel_ingot"
         }
+    })
+
+    // 4x source gem per raw at Thaumaturge tier
+    // rune_spring + rune_water: the Runic Altar's output, renewal and flow — enhance source crystallization
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "gtceu:raw_source" }],
+        "pedestalItems": [
+            { "item": "botania:rune_spring" },
+            { "item": "botania:rune_water" },
+            { "tag": "kubejs:water_essences" },
+            { "item": "mysticalagriculture:nature_essence" }
+        ],
+        "output": { "item": "ars_nouveau:source_gem", "count": 4 },
+        "sourceCost": 10000
+    })
+
+    // mana_diamond conjuration — sin runes each eat 2; this makes scaling them viable
+    // costs more mana per diamond than fresh alchemy route but requires no diamonds after initial stock
+    event.custom({
+        "type": "botania:mana_infusion",
+        "input": { "item": "botania:mana_diamond" },
+        "mana": 25000,
+        "catalyst": { "type": "block", "block": "botania:conjuration_catalyst" },
+        "output": { "item": "botania:mana_diamond" }
+    })
+
+    // mana_pearl conjuration — terra plate + pixie_dust trade both consume them
+    event.custom({
+        "type": "botania:mana_infusion",
+        "input": { "item": "botania:mana_pearl" },
+        "mana": 15000,
+        "catalyst": { "type": "block", "block": "botania:conjuration_catalyst" },
+        "output": { "item": "botania:mana_pearl" }
+    })
+
+    // late-game shortcut: terrasteel alchemy → 4x abstract_metal
+    // at LuV+ terrasteel is renewable via TAP; removes permanent dependency on HV/EV material blocks per ingot
+    event.custom({
+        "type": "botania:mana_infusion",
+        "input": { "tag": "forge:ingots/terrasteel" },
+        "mana": 20000,
+        "catalyst": { "type": "block", "block": "botania:alchemy_catalyst" },
+        "output": { "count": 4, "item": "gtceu:abstract_metal_ingot" }
     })
 })

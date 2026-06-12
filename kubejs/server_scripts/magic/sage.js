@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'mysticalagradditions:essence/gaia_spirit' })
+
     event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
@@ -42,6 +44,24 @@ ServerEvents.recipes(event => {
         "kubejs:soul_of_gaia",
         "kubejs:boundless_gaia_spirit_ingot",
         20000,
+    )
+
+    // renewable life_essence after first Guardian of Gaia kill
+    // gaia_spirit_essence (farmed via MA once you have first gaia_ingot) distilled through elementium
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "mysticalagriculture:gaia_spirit_essence",
+            "mysticalagriculture:gaia_spirit_essence",
+            "mysticalagriculture:gaia_spirit_essence",
+            "mysticalagriculture:gaia_spirit_essence",
+            "botania:terrasteel_ingot",
+            "botania:terrasteel_ingot",
+            "#kubejs:fire_essences",
+            "#kubejs:air_essences",
+        ],
+        "botania:elementium_ingot",
+        "botania:life_essence",
+        40000,
     )
 
     event.custom({

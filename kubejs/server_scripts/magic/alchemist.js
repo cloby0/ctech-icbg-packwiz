@@ -99,6 +99,19 @@ ServerEvents.recipes(event => {
         ['#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
         'gtceu:abstract_metal_ingot', 'gtceu:holy_silver_ingot', 4000)
 
+    // 2x source gem per raw at Alchemist tier
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "gtceu:raw_source" }],
+        "pedestalItems": [
+            { "item": "gtceu:prima_materia_ingot" },
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:earth_essences" }
+        ],
+        "output": { "item": "ars_nouveau:source_gem", "count": 3 },
+        "sourceCost": 6000
+    })
+
     // Mana pool QoL glowstone block -> 4x luminessence dust (bypasses cauldron chain)
     event.custom({
         "type": "botania:mana_infusion",

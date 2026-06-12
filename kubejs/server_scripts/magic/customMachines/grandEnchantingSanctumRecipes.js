@@ -235,6 +235,41 @@ ServerEvents.recipes(event => {
     }, index++)
 
     addEnchantingRecipe(event, {
+        reagent: [{ item: 'mysticalagriculture:nature_essence' }],
+        output: { item: 'reliquary:fertile_essence' },
+        sourceCost: 15000,
+        pedestalItems: [
+            {item: { item: 'mysticalagriculture:skeleton_essence' }},
+            {item: { item: 'mysticalagriculture:slime_essence' }},
+            {item: { item: 'mysticalagriculture:creeper_essence' }},
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:water_essences' }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'botania:mana_pearl' }],
+        output: { item: 'botania:pixie_dust', count: 3 },
+        sourceCost: 15000,
+        pedestalItems: [
+            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
+            { tag: 'kubejs:air_essences' },
+            { tag: 'kubejs:air_essences' }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'botania:mana_diamond' }],
+        output: { item: 'botania:dragonstone', count: 2 },
+        sourceCost: 20000,
+        pedestalItems: [
+            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:water_essences' }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
         reagent: [{ item: "kubejs:elementite_dust" }],
         output: { item: "kubejs:raw_elementite"},
         sourceCost: 15000,
@@ -249,6 +284,18 @@ ServerEvents.recipes(event => {
         sourceCost: 20000,
         pedestalItems: [
             {item: { item: 'botania:elementium_block', count: 8 }}
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'botania:elementium_ingot' }],
+        output: { item: 'botania:life_essence' },
+        sourceCost: 40000,
+        pedestalItems: [
+            {item: { item: 'mysticalagriculture:gaia_spirit_essence', count: 4 }},
+            {item: { item: 'botania:terrasteel_ingot', count: 2 }},
+            { tag: 'kubejs:fire_essences' },
+            { tag: 'kubejs:air_essences' }
         ]
     }, index++)
 
@@ -334,11 +381,45 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: [{ item: 'gtceu:raw_source' }],
-        output: { item: 'ars_nouveau:source_gem' },
+        output: { item: 'ars_nouveau:source_gem', count: 2 },
         sourceCost: 3000,
         pedestalItems: [
             { tag: 'kubejs:water_essences' },
             { tag: 'kubejs:fire_essences' }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:raw_source' }],
+        output: { item: 'ars_nouveau:source_gem', count: 3 },
+        sourceCost: 6000,
+        pedestalItems: [
+            {item: { item: 'gtceu:prima_materia_ingot' }},
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:earth_essences' }
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:raw_source' }],
+        output: { item: 'ars_nouveau:source_gem', count: 4 },
+        sourceCost: 10000,
+        pedestalItems: [
+            {item: { item: 'botania:rune_spring' }},
+            {item: { item: 'botania:rune_water' }},
+            { tag: 'kubejs:water_essences' },
+            {item: { item: 'mysticalagriculture:nature_essence' }}
+        ]
+    }, index++)
+
+    addEnchantingRecipe(event, {
+        reagent: [{ item: 'gtceu:raw_source' }],
+        output: { item: 'ars_nouveau:source_gem', count: 5 },
+        sourceCost: 15000,
+        pedestalItems: [
+            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:air_essences' }
         ]
     }, index++)
 

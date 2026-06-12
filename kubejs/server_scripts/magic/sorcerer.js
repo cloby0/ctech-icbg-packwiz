@@ -132,11 +132,15 @@ ServerEvents.recipes(event => {
         ["kubejs:element_attunement_stone"]
     )
 
-    // QoL: raw source ore -> source gem directly (bypasses crush glyph + sieve + imbuement chain)
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ['#kubejs:water_essences', '#kubejs:fire_essences'],
-        'gtceu:raw_source',
-        'ars_nouveau:source_gem',
-        3000,
-    )
+    // QoL: raw source ore -> 2x source gem directly (bypasses crush glyph + sieve + imbuement chain)
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "gtceu:raw_source" }],
+        "pedestalItems": [
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:fire_essences" }
+        ],
+        "output": { "item": "ars_nouveau:source_gem", "count": 2 },
+        "sourceCost": 3000
+    })
 });

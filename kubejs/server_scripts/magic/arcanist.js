@@ -51,5 +51,50 @@ ServerEvents.recipes(event => {
         15000,
     )
 
+    // 5x source gem per raw at Arcanist tier
+    // elven_concentrate: condensed elven realm magic, uniquely attuned to source energy
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "gtceu:raw_source" }],
+        "pedestalItems": [
+            { "item": "kubejs:elven_concentrate" },
+            { "item": "kubejs:elven_concentrate" },
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:air_essences" }
+        ],
+        "output": { "item": "ars_nouveau:source_gem", "count": 5 },
+        "sourceCost": 15000
+    })
+
+    // pixie_dust: currently 1:1 elven trade only (mana_pearl → pixie_dust)
+    // 3x yield via EA; elven concentrate supplies the elven attunement
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "botania:mana_pearl" }],
+        "pedestalItems": [
+            { "item": "kubejs:elven_concentrate" },
+            { "item": "kubejs:elven_concentrate" },
+            { "tag": "kubejs:air_essences" },
+            { "tag": "kubejs:air_essences" }
+        ],
+        "output": { "item": "botania:pixie_dust", "count": 3 },
+        "sourceCost": 15000
+    })
+
+    // dragonstone: currently 1:1 elven trade only (mana_diamond → dragonstone)
+    // 2x yield via EA
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "botania:mana_diamond" }],
+        "pedestalItems": [
+            { "item": "kubejs:elven_concentrate" },
+            { "item": "kubejs:elven_concentrate" },
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:water_essences" }
+        ],
+        "output": { "item": "botania:dragonstone", "count": 2 },
+        "sourceCost": 20000
+    })
+
     event.smelting("botania:elementium_ingot", "kubejs:raw_elementite")
 })

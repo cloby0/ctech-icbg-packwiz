@@ -112,4 +112,25 @@ ServerEvents.recipes(event => {
         catalyst: { block: 'botania:alchemy_catalyst' },
         output: { item: 'gtceu:holy_silver_ingot' }
     })
+
+    addManaPondRecipe(event, {
+        mana: 20000,
+        input: { tag: 'forge:ingots/terrasteel' },
+        catalyst: { block: 'botania:alchemy_catalyst' },
+        output: { count: 4, item: 'gtceu:abstract_metal_ingot' }
+    })
+
+    addManaPondRecipe(event, {
+        mana: 25000,
+        input: { item: 'botania:mana_diamond' },
+        catalyst: { block: 'botania:conjuration_catalyst' },
+        output: { item: 'botania:mana_diamond' }
+    })
+
+    addManaPondRecipe(event, {
+        mana: 15000,
+        input: { item: 'botania:mana_pearl' },
+        catalyst: { block: 'botania:conjuration_catalyst' },
+        output: { item: 'botania:mana_pearl' }
+    })
 })
