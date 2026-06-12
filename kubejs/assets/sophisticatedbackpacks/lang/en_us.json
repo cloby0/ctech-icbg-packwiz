@@ -1,0 +1,19 @@
+{
+  "item.sophisticatedbackpacks.copper_backpack": "Bronze Backpack",
+  "block.sophisticatedbackpacks.copper_backpack": "Bronze Backpack",
+  "item.sophisticatedbackpacks.iron_backpack": "Steel Backpack",
+  "block.sophisticatedbackpacks.iron_backpack": "Steel Backpack",
+  "item.sophisticatedbackpacks.gold_backpack": "Aluminium Backpack",
+  "block.sophisticatedbackpacks.gold_backpack": "Aluminium Backpack",
+  "item.sophisticatedbackpacks.diamond_backpack": "Stainless Steel Backpack",
+  "block.sophisticatedbackpacks.diamond_backpack": "Stainless Steel Backpack",
+  "item.sophisticatedbackpacks.netherite_backpack": "Titanium Backpack",
+  "block.sophisticatedbackpacks.netherite_backpack": "Titanium Backpack",
+
+  "item.sophisticatedbackpacks.stack_upgrade_starter_tier": "Bronze Stack Upgrade",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_1": "Steel Stack Upgrade",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_2": "Aluminium Stack Upgrade",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_3": "Stainless Steel Stack Upgrade",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_4": "Titanium Stack Upgrade",
+  "item.sophisticatedbackpacks.stack_upgrade_omega_tier": "Naquadah Stack Upgrade"
+}

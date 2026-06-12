@@ -822,7 +822,7 @@ hash = "ae5d4cd70cd6532afa9fb8e9a22540705f65d6a875bc1d4c1d6781c09f8b5864"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "376146eb9d9b634fe69f5ec4e489898cfc9a1fb4eaac820c9b00f82f1068b2f9"
+hash = "ff6a6619061ebb230c437e452fffb1b193c28a2dd5c38da6e47fc08e0db789a7"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -907,6 +907,14 @@ hash = "3c3efca8f9e290a9011abb03abe142feb9b7906676b8fac0c2bbc93400b448e3"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
 hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
+hash = "5644e49879e219ad3a1d7a4607240f717a76ffafd831ff5aba5bb2e9e6616003"
+
+[[files]]
+file = "kubejs/assets/woot_revived/lang/en_us.json"
+hash = "de8687d41e45aac48ea1cf3fedaa6e40bc380c083d12c14ed08f5a05be7bfeb5"
 
 [[files]]
 file = "kubejs/client_scripts/cc_jei_hide.js"
