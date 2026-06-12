@@ -91,10 +91,10 @@ ServerEvents.recipes(event => {
         { id: 'cataclysm_spellbooks:technomancy_rune',   themeItem: '#gtceu:circuits/lv'                 },
     ]
 
-    runeRecipes.forEach(({ id, themeItem }) => {
-        event.remove({ id })
-        event.shaped(Item.of(id, 1), ['EFE', 'FBF', 'EFE'], {
-            E: themeItem,
+    runeRecipes.forEach(r => {
+        event.remove({ id: r.id })
+        event.shaped(Item.of(r.id, 1), ['EFE', 'FBF', 'EFE'], {
+            E: r.themeItem,
             F: 'ars_nouveau:source_gem',
             B: 'irons_spellbooks:blank_rune'
         })
@@ -117,11 +117,11 @@ ServerEvents.recipes(event => {
         { id: 'cataclysm_spellbooks:technomancy_upgrade_orb',   rune: 'cataclysm_spellbooks:technomancy_rune',  theme: '#gtceu:circuits/lv'                 },
     ]
 
-    orbRecipes.forEach(({ id, rune, theme }) => {
-        event.remove({ id })
-        event.shaped(Item.of(id, 1), ['RTR', 'TUT', 'RTR'], {
-            R: rune,
-            T: theme,
+    orbRecipes.forEach(r => {
+        event.remove({ id: r.id })
+        event.shaped(Item.of(r.id, 1), ['RTR', 'TUT', 'RTR'], {
+            R: r.rune,
+            T: r.theme,
             U: 'irons_spellbooks:upgrade_orb'
         })
     })

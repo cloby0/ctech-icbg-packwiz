@@ -1538,7 +1538,7 @@ hash = "d6d4a4d50ed9aa9cd15da78fa63e21ee10b7b5f5cf7fd057082f84946ac835e0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "f4893043722e0a9af4ac87d4164a62f7dedb5f977ecb69a68580f39f347b7752"
+hash = "19acca6908cbc9fe311f8312f8267c46fb930ec2c8da5a78adda77a25442daa2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
