@@ -36,20 +36,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // pyrium ingot: no vanilla crafting recipe (structure loot only)
-    // imbuement chamber: netherite + cinder essence surge → pyrium (Sorcerer tier)
-    event.recipes.ars_nouveau.imbuement(
-        'minecraft:netherite_ingot',
-        'irons_spellbooks:pyrium_ingot',
-        5000,
-        [
-            'irons_spellbooks:cinder_essence',
-            'irons_spellbooks:cinder_essence',
-            'irons_spellbooks:cinder_essence',
-            'irons_spellbooks:cinder_essence'
-        ]
-    )
-
     // INK UPGRADES — gate each tier behind a magic progression key item
     // vanilla used copper/iron/gold/amethyst (no magic gating at all)
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_uncommon_ink' })
@@ -83,6 +69,61 @@ ServerEvents.recipes(event => {
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:epic_ink" },
         "input": { "item": "botania:manasteel_ingot" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:legendary_ink" }]
+    })
+
+    // all runes: 4x school-theme item + 4x source_gem + blank_rune — uniform Journeyman gate
+    // no school above another; source_gem bridges ISS into Ars system
+    event.replaceInput({ output: 'irons_spellbooks:arcane_ingot' }, '#irons_spellbooks:arcane_ingot_base', 'aether_redux:veridium_ingot')
+
+    const runeRecipes = [
+        { id: 'irons_spellbooks:arcane_rune',            themeItem: 'irons_spellbooks:arcane_essence'    },
+        { id: 'irons_spellbooks:blood_rune',             themeItem: 'irons_spellbooks:blood_vial'        },
+        { id: 'irons_spellbooks:cooldown_rune',          themeItem: 'minecraft:phantom_membrane'         },
+        { id: 'irons_spellbooks:ender_rune',             themeItem: 'minecraft:ender_pearl'              },
+        { id: 'irons_spellbooks:evocation_rune',         themeItem: 'minecraft:emerald'                  },
+        { id: 'irons_spellbooks:fire_rune',              themeItem: 'minecraft:blaze_rod'                },
+        { id: 'irons_spellbooks:holy_rune',              themeItem: 'minecraft:golden_apple'             },
+        { id: 'irons_spellbooks:ice_rune',               themeItem: 'irons_spellbooks:frozen_bone'       },
+        { id: 'irons_spellbooks:lightning_rune',         themeItem: 'irons_spellbooks:lightning_bottle'  },
+        { id: 'irons_spellbooks:nature_rune',            themeItem: 'minecraft:poisonous_potato'         },
+        { id: 'irons_spellbooks:protection_rune',        themeItem: 'minecraft:pufferfish'               },
+        { id: 'cataclysm_spellbooks:abyssal_rune',       themeItem: 'cataclysm:crystallized_coral'       },
+        { id: 'cataclysm_spellbooks:technomancy_rune',   themeItem: '#gtceu:circuits/lv'                 },
+    ]
+
+    runeRecipes.forEach(({ id, themeItem }) => {
+        event.remove({ id })
+        event.shaped(Item.of(id, 1), ['EFE', 'FBF', 'EFE'], {
+            E: themeItem,
+            F: 'ars_nouveau:source_gem',
+            B: 'irons_spellbooks:blank_rune'
+        })
+    })
+
+    // upgrade orbs: 4x rune (corners) + 4x school-theme item (edges) + upgrade_orb (center)
+    const orbRecipes = [
+        { id: 'irons_spellbooks:mana_upgrade_orb',              rune: 'irons_spellbooks:arcane_rune',           theme: 'irons_spellbooks:arcane_essence'    },
+        { id: 'irons_spellbooks:blood_upgrade_orb',             rune: 'irons_spellbooks:blood_rune',            theme: 'irons_spellbooks:blood_vial'        },
+        { id: 'irons_spellbooks:cooldown_upgrade_orb',          rune: 'irons_spellbooks:cooldown_rune',         theme: 'minecraft:phantom_membrane'         },
+        { id: 'irons_spellbooks:ender_upgrade_orb',             rune: 'irons_spellbooks:ender_rune',            theme: 'minecraft:ender_pearl'              },
+        { id: 'irons_spellbooks:evocation_upgrade_orb',         rune: 'irons_spellbooks:evocation_rune',        theme: 'minecraft:emerald'                  },
+        { id: 'irons_spellbooks:fire_upgrade_orb',              rune: 'irons_spellbooks:fire_rune',             theme: 'minecraft:blaze_rod'                },
+        { id: 'irons_spellbooks:holy_upgrade_orb',              rune: 'irons_spellbooks:holy_rune',             theme: 'minecraft:golden_apple'             },
+        { id: 'irons_spellbooks:ice_upgrade_orb',               rune: 'irons_spellbooks:ice_rune',              theme: 'irons_spellbooks:frozen_bone'       },
+        { id: 'irons_spellbooks:lightning_upgrade_orb',         rune: 'irons_spellbooks:lightning_rune',        theme: 'irons_spellbooks:lightning_bottle'  },
+        { id: 'irons_spellbooks:nature_upgrade_orb',            rune: 'irons_spellbooks:nature_rune',           theme: 'minecraft:poisonous_potato'         },
+        { id: 'irons_spellbooks:protection_upgrade_orb',        rune: 'irons_spellbooks:protection_rune',       theme: 'minecraft:pufferfish'               },
+        { id: 'cataclysm_spellbooks:abyssal_upgrade_orb',       rune: 'cataclysm_spellbooks:abyssal_rune',      theme: 'cataclysm:crystallized_coral'       },
+        { id: 'cataclysm_spellbooks:technomancy_upgrade_orb',   rune: 'cataclysm_spellbooks:technomancy_rune',  theme: '#gtceu:circuits/lv'                 },
+    ]
+
+    orbRecipes.forEach(({ id, rune, theme }) => {
+        event.remove({ id })
+        event.shaped(Item.of(id, 1), ['RTR', 'TUT', 'RTR'], {
+            R: rune,
+            T: theme,
+            U: 'irons_spellbooks:upgrade_orb'
+        })
     })
 
     event.recipes.ars_nouveau.enchanting_apparatus(

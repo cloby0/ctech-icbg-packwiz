@@ -114,4 +114,31 @@ ServerEvents.recipes(event => {
     );
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
+
+    // side material: luminessence → experience bottles via fire
+    // exp bottles needed later for abstract_metal chain; fire essence channels luminessence into experience energy
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 4,
+        "input": { "item": "gtceu:luminessence_dust" },
+        "output": "minecraft:experience_bottle",
+        "pedestalItems": [
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" }
+        ],
+        "source": 500
+    })
+
+    // side material: luminessence → charged amethyst via air
+    // charged amethyst needed for hexed_amethyst_core at Alchemist; air essence charges the crystal
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 2,
+        "input": { "item": "gtceu:luminessence_dust" },
+        "output": "hexcasting:charged_amethyst",
+        "pedestalItems": [
+            { "tag": "kubejs:air_essences" }
+        ],
+        "source": 500
+    })
 })

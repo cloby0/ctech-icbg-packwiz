@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('desh_acid_leach')
         .itemInputs('1x gtceu:crushed_desh_ore')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
-        .itemOutputs('1x kubejs:desh_sulfate_slurry')
+        .outputFluids(Fluid.of('gtceu:desh_sulfate_slurry', 500))
         .chancedOutput('gtceu:small_iron_dust', 4000, 300)
         .chancedOutput('gtceu:small_sulfur_dust', 5000, 400)
         .duration(8 * 20)
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 
     // step 2 carbonyl formation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
-        .itemInputs('1x kubejs:desh_sulfate_slurry')
+        .inputFluids(Fluid.of('gtceu:desh_sulfate_slurry', 500))
         .inputFluids(Fluid.of('gtceu:carbon_monoxide', 400))
         .outputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
         .chancedOutput('gtceu:small_manganese_dust', 3000, 200)

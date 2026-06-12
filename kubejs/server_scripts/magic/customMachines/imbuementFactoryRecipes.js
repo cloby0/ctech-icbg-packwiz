@@ -259,15 +259,6 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
-    // pyrium_ingot — ironsSpellbooks.js
-    addImbuementRecipe(event, {
-        input: { item: 'minecraft:netherite_ingot' },
-        output: 'irons_spellbooks:pyrium_ingot',
-        source: 5000,
-        pedestalItems: [
-            { item: { item: 'irons_spellbooks:cinder_essence', count: 4 } }
-        ]
-    }, index++)
 
     // nameless trinkets imbuement chain — namelessTrinkets.js
     addImbuementRecipe(event, {
@@ -298,4 +289,12 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:tick', source: 750, pedestalItems: [{ item: { item: 'minecraft:brown_mushroom' } }, { item: { item: 'minecraft:red_mushroom' } }, { item: { item: 'minecraft:hay_block' } }, { item: { item: 'minecraft:hay_block' } }] }, index++)
     addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:vampire_blood', source: 1000, pedestalItems: [{ item: { item: 'minecraft:crying_obsidian' } }, { item: { item: 'minecraft:blaze_powder' } }, { item: { item: 'minecraft:blaze_powder' } }, { item: { item: 'minecraft:clock' } }] }, index++)
     addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:what_magnet', source: 750, pedestalItems: [{ item: { item: 'minecraft:rotten_flesh' } }, { item: { item: 'minecraft:leather' } }, { item: { item: 'minecraft:porkchop' } }, { item: { item: 'minecraft:bone' } }] }, index++)
+
+    // apprentice.js side materials
+    addImbuementRecipe(event, { input: { item: 'gtceu:luminessence_dust' }, output: { item: 'minecraft:experience_bottle', count: 4 }, source: 500, pedestalItems: [{ tag: 'kubejs:fire_essences' }, { tag: 'kubejs:fire_essences' }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'gtceu:luminessence_dust' }, output: { item: 'hexcasting:charged_amethyst', count: 2 }, source: 500, pedestalItems: [{ tag: 'kubejs:air_essences' }] }, index++)
+
+    // journeyman.js side materials
+    addImbuementRecipe(event, { input: { item: 'kubejs:resonant_zanite_crystal' }, output: { item: 'irons_spellbooks:cinder_essence', count: 3 }, source: 1500, pedestalItems: [{ tag: 'kubejs:fire_essences' }, { tag: 'kubejs:fire_essences' }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'kubejs:resonant_zanite_crystal' }, output: { item: 'irons_spellbooks:arcane_ingot', count: 4 }, source: 1500, pedestalItems: [{ tag: 'kubejs:air_essences' }, { tag: 'kubejs:air_essences' }] }, index++)
 })

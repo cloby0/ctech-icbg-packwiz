@@ -28,7 +28,6 @@ StartupEvents.registry('item', event => {
 
     event.create('matter_energy_circuit')
 
-    event.create('desh_sulfate_slurry')
     event.create('condensed_desh_carbonyl')
 
     event.create('rocket_hull_section')
@@ -51,8 +50,6 @@ StartupEvents.registry('item', event => {
     event.create('verdant_naquadah_boule')
     event.create('gaian_neutronium_boule')
 
-    event.create('phlogiston')
-    event.create('faefire_aerosol')
 
     event.create('enchanted_zanite_gem')
     event.create('resonant_zanite_crystal')

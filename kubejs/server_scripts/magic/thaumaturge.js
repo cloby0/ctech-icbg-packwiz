@@ -139,12 +139,13 @@ ServerEvents.recipes(event => {
 
     // mana_diamond conjuration — sin runes each eat 2; this makes scaling them viable
     // costs more mana per diamond than fresh alchemy route but requires no diamonds after initial stock
+    // vanilla Mana Pool consumes input + outputs 2; GT Mana Pond does not consume + outputs 1; net +1 both ways
     event.custom({
         "type": "botania:mana_infusion",
         "input": { "item": "botania:mana_diamond" },
         "mana": 25000,
         "catalyst": { "type": "block", "block": "botania:conjuration_catalyst" },
-        "output": { "item": "botania:mana_diamond" }
+        "output": { "item": "botania:mana_diamond", "count": 2 }
     })
 
     // mana_pearl conjuration — terra plate + pixie_dust trade both consume them
@@ -153,7 +154,7 @@ ServerEvents.recipes(event => {
         "input": { "item": "botania:mana_pearl" },
         "mana": 15000,
         "catalyst": { "type": "block", "block": "botania:conjuration_catalyst" },
-        "output": { "item": "botania:mana_pearl" }
+        "output": { "item": "botania:mana_pearl", "count": 2 }
     })
 
     // late-game shortcut: terrasteel alchemy → 4x abstract_metal

@@ -143,4 +143,32 @@ ServerEvents.recipes(event => {
         "output": { "item": "ars_nouveau:source_gem", "count": 2 },
         "sourceCost": 3000
     })
+
+    // side material: chaos_essence → pyrium_ingot via fire + air
+    // alternative to netherite+cinder route; chaos energy directed through elemental tension
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "kubejs:chaos_essence" }],
+        "pedestalItems": [
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:air_essences" },
+            { "tag": "kubejs:air_essences" }
+        ],
+        "output": { "item": "irons_spellbooks:pyrium_ingot", "count": 4 },
+        "sourceCost": 6000
+    })
+
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "kubejs:chaos_essence" }],
+        "pedestalItems": [
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:earth_essences" }
+        ],
+        "output": { "item": "minecraft:experience_bottle", "count": 8 },
+        "sourceCost": 4000
+    })
 });

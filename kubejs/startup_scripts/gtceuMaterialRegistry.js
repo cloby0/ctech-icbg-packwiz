@@ -399,6 +399,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD
         )
 
+    event.create('phlogiston')
+        .fluid()
+        .color(0xFF5500)
+
     event.create('phlogisticated_fuel')
         .fluid()
         .color(0xFF6B1A)
@@ -406,6 +410,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('infernal_diesel')
         .fluid()
         .color(0xCC1500)
+
+    event.create('faefire_aerosol')
+        .fluid()
+        .color(0x66FFBB)
 
     event.create('faefire_phlog_fuel')
         .fluid()
@@ -426,6 +434,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('liquid_glacio_air')
         .fluid()
         .color(0x7AC8E0)
+
+    event.create('desh_sulfate_slurry')
+        .fluid()
+        .color(0xC49A2C)
 
     event.create('desh_carbonyl')
         .fluid()

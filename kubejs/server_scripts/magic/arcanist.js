@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/elementium' })
     event.remove({ id: 'botania:elven_trade/elementium_block' })
+    event.remove({ id: 'botania:elven_trade/pixie_dust' })
+    event.remove({ id: 'botania:elven_trade/dragonstone' })
 
     event.custom({
         "type": "botania:runic_altar",

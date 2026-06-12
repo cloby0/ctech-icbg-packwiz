@@ -285,4 +285,28 @@ ServerEvents.recipes(event => {
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"
     })
+
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 3,
+        "input": { "item": "kubejs:resonant_zanite_crystal" },
+        "output": "irons_spellbooks:cinder_essence",
+        "pedestalItems": [
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" }
+        ],
+        "source": 1500
+    })
+
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 4,
+        "input": { "item": "kubejs:resonant_zanite_crystal" },
+        "output": "irons_spellbooks:arcane_ingot",
+        "pedestalItems": [
+            { "tag": "kubejs:air_essences" },
+            { "tag": "kubejs:air_essences" }
+        ],
+        "source": 1500
+    })
 });

@@ -263,4 +263,29 @@ ServerEvents.recipes(event => {
         "gtceu:holy_silver_ingot", // output
         3000,
     );
+
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "kubejs:sacred_ambrosium_shard" }],
+        "pedestalItems": [
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:earth_essences" }
+        ],
+        "output": { "item": "minecraft:ender_pearl", "count": 4 },
+        "sourceCost": 2500
+    })
+
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "reagent": [{ "item": "kubejs:sacred_ambrosium_shard" }],
+        "pedestalItems": [
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:earth_essences" },
+            { "tag": "kubejs:water_essences" },
+            { "tag": "kubejs:water_essences" }
+        ],
+        "output": { "item": "reliquary:fortune_coin", "count": 4 },
+        "sourceCost": 3000
+    })
 });
