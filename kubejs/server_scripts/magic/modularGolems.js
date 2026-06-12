@@ -1,50 +1,50 @@
 ServerEvents.recipes(event => {
 
-    // metal_golem_template: vanilla uses copper_ingot center, no magic gate
+    // metal_golem_template: gated at Initiate (HV) — divine_pearl + holy_silver
     // all wands require the template, so gating this gates the whole wand system
     event.remove({ id: 'modulargolems:metal_golem_template' })
     event.shaped(
         Item.of('modulargolems:metal_golem_template', 1),
         [
-            'CBC',
-            'BSB',
-            'CBC'
+            'CHC',
+            'HSH',
+            'CHC'
         ],
         {
             C: 'minecraft:clay_ball',
-            B: 'minecraft:stick',
-            S: 'ars_nouveau:source_gem'
+            H: 'gtceu:holy_silver_ingot',
+            S: 'irons_spellbooks:divine_pearl'
         }
     )
 
-    // empty_upgrade: vanilla uses amethyst_shard center, no real magic gate
+    // empty_upgrade: gated at Initiate (HV) — holy_silver center, output reduced 4→2
     // all upgrades require this, so gating here gates every upgrade
     event.remove({ id: 'modulargolems:empty_upgrade' })
     event.shaped(
-        Item.of('modulargolems:empty_upgrade', 4),
+        Item.of('modulargolems:empty_upgrade', 2),
         [
-            'CBC',
-            'BSB',
-            'CBC'
+            'CSC',
+            'SHS',
+            'CSC'
         ],
         {
             C: 'minecraft:clay_ball',
-            B: 'minecraft:iron_ingot',
-            S: 'ars_nouveau:source_gem'
+            S: 'ars_nouveau:source_gem',
+            H: 'gtceu:holy_silver_ingot'
         }
     )
 
-    // golem_workbench: vanilla uses amethyst_shard corners, no magic gate
+    // golem_workbench: gated at Alchemist (IV) — manasteel corners
     event.remove({ id: 'modulargolems:golem_workbench' })
     event.shaped(
         Item.of('modulargolems:golem_workbench', 1),
         [
-            'SgS',
+            'MgM',
             'RTR',
             'EIE'
         ],
         {
-            S: 'ars_nouveau:source_gem',
+            M: 'botania:manasteel_ingot',
             g: 'modulargolems:golem_slicing_axe',
             R: 'minecraft:redstone',
             T: 'minecraft:smithing_table',
@@ -53,71 +53,71 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // diamond_expansion_template: vanilla uses netherite_smithing_template as connector
-    // gate with divine_pearl (Initiate tier)
+    // diamond_expansion_template: gated at Alchemist (IV) — manasteel center, 2x divine_pearl
     event.remove({ id: 'modulargolems:diamond_expansion_template' })
     event.shaped(
         Item.of('modulargolems:diamond_expansion_template', 1),
         [
             'ACA',
-            'CPC',
+            'DPD',
             'ACA'
         ],
         {
             A: 'modulargolems:empty_upgrade',
             C: 'minecraft:diamond',
-            P: 'irons_spellbooks:divine_pearl'
+            D: 'irons_spellbooks:divine_pearl',
+            P: 'botania:manasteel_ingot'
         }
     )
 
-    // netherite_expansion_template: vanilla uses netherite_smithing_template as connector
-    // gate with prima_materia (Sorcerer tier — produced by magic imbuement in sorcerer.js)
+    // netherite_expansion_template: gated at Sorcerer (EV) + Alchemist (IV) — prima_materia + manasteel
     event.remove({ id: 'modulargolems:netherite_expansion_template' })
     event.shaped(
         Item.of('modulargolems:netherite_expansion_template', 1),
         [
             'ADA',
             'CPC',
-            'ACA'
+            'AMA'
         ],
         {
             A: 'modulargolems:empty_upgrade',
             D: 'minecraft:nether_star',
             C: 'minecraft:netherite_ingot',
-            P: 'gtceu:prima_materia_ingot'
+            P: 'gtceu:prima_materia_ingot',
+            M: 'botania:manasteel_ingot'
         }
     )
 
-    // harbinger_upgrade_template: cataclysm boss-drop gate, replace smithing_template with terrasteel
+    // harbinger_upgrade_template: gated at Arcanist (ZPM) — elementium replaces terrasteel
     event.remove({ id: 'modulargolems:harbinger_upgrade_template' })
     event.shaped(
         Item.of('modulargolems:harbinger_upgrade_template', 1),
         [
             'ASA',
-            'ATA',
+            'AEA',
             'ACA'
         ],
         {
             A: 'minecraft:redstone_block',
             S: 'minecraft:nether_star',
-            T: 'botania:terrasteel_ingot',
+            E: 'botania:elementium_ingot',
             C: 'cataclysm:witherite_ingot'
         }
     )
 
-    // monstrosity_upgrade_template: cataclysm boss-drop gate, replace smithing_template with terrasteel
+    // monstrosity_upgrade_template: gated at Arcanist (ZPM) — elementium replaces terrasteel, manasteel replaces gold
     event.remove({ id: 'modulargolems:monstrosity_upgrade_template' })
     event.shaped(
         Item.of('modulargolems:monstrosity_upgrade_template', 1),
         [
-            'AGA',
-            'ATA',
+            'AMA',
+            'AEA',
             'ACA'
         ],
         {
             A: 'minecraft:blackstone',
-            G: 'minecraft:gold_ingot',
-            T: 'botania:terrasteel_ingot',
+            M: 'botania:manasteel_ingot',
+            E: 'botania:elementium_ingot',
             C: 'cataclysm:lava_power_cell'
         }
     )

@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor('phlogiston_extraction')
-        .itemInputs('2x mysticalagriculture:fire_essence')
+        .itemInputs('2x mysticalagriculture:fire_essence', '1x gtceu:sulfur_dust')
         .itemOutputs('1x kubejs:phlogiston', '1x gtceu:ash_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])

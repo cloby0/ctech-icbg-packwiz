@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
         output: 'irons_spellbooks:divine_pearl',
         source: 3000,
         pedestalItems: [
-            { item: { item: "gtceu:ambrosium_dust"} }
+            { item: { item: "kubejs:sacred_ambrosium_shard"} }
         ]
     }, index++)
 
@@ -210,4 +210,92 @@ ServerEvents.recipes(event => {
             { item: { item: 'mysticalagriculture:enderman_essence', count: 2 } }
         ]
     }, index++)
+
+    // resonant_zanite_crystal — journeyman.js
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:enchanted_zanite_gem' },
+        output: 'kubejs:resonant_zanite_crystal',
+        source: 1500,
+        pedestalItems: [
+            { item: { item: 'ars_nouveau:source_gem' } },
+            { item: { item: 'ars_nouveau:source_gem' } }
+        ]
+    }, index++)
+
+    // sacred_ambrosium_shard — initiate.js
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:sanctified_ambrosium_bloom' },
+        output: 'kubejs:sacred_ambrosium_shard',
+        source: 1500,
+        pedestalItems: [
+            { item: { item: 'gtceu:luminessence_dust' } },
+            { item: { item: 'gtceu:luminessence_dust' } }
+        ]
+    }, index++)
+
+    // gravitite_ingot — sorcerer.js
+    addImbuementRecipe(event, {
+        input: { item: 'kubejs:altar_charged_gravitite' },
+        output: 'aether_redux:gravitite_ingot',
+        source: 5000,
+        pedestalItems: [
+            { item: { item: 'gtceu:holy_silver_ingot' } },
+            { item: { item: 'gtceu:holy_silver_ingot' } },
+            { item: { item: 'kubejs:resonant_zanite_crystal' } },
+            { item: { item: 'kubejs:resonant_zanite_crystal' } }
+        ]
+    }, index++)
+
+    // hexed_amethyst_core — alchemist.js
+    addImbuementRecipe(event, {
+        input: { item: 'hexcasting:charged_amethyst' },
+        output: 'kubejs:hexed_amethyst_core',
+        source: 5000,
+        pedestalItems: [
+            { item: { item: 'botania:manasteel_ingot' } },
+            { item: { item: 'botania:manasteel_ingot' } },
+            { item: { item: 'gtceu:abstract_metal_ingot' } },
+            { item: { item: 'minecraft:glowstone' } }
+        ]
+    }, index++)
+
+    // pyrium_ingot — ironsSpellbooks.js
+    addImbuementRecipe(event, {
+        input: { item: 'minecraft:netherite_ingot' },
+        output: 'irons_spellbooks:pyrium_ingot',
+        source: 5000,
+        pedestalItems: [
+            { item: { item: 'irons_spellbooks:cinder_essence', count: 4 } }
+        ]
+    }, index++)
+
+    // nameless trinkets imbuement chain — namelessTrinkets.js
+    addImbuementRecipe(event, {
+        input: { item: 'nameless_trinkets:dubious_dust' },
+        output: 'nameless_trinkets:glowing_dust',
+        source: 500,
+        pedestalItems: [
+            { item: { item: 'minecraft:glowstone_dust' } },
+            { item: { item: 'minecraft:blaze_rod' } },
+            { item: { item: 'minecraft:glowstone_dust' } },
+            { item: { item: 'minecraft:quartz' } }
+        ]
+    }, index++)
+
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:callus', source: 750, pedestalItems: [{ item: { item: 'minecraft:rotten_flesh' } }, { item: { item: 'minecraft:cobblestone' } }, { item: { item: 'minecraft:hay_block' } }, { item: { item: 'minecraft:rotten_flesh' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:electric_paddle', source: 750, pedestalItems: [{ item: { item: 'minecraft:oak_boat' } }, { item: { item: 'minecraft:redstone' } }, { item: { item: 'minecraft:oak_boat' } }, { item: { item: 'minecraft:redstone' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:ethereal_wings', source: 1000, pedestalItems: [{ item: { item: 'minecraft:feather' } }, { item: { item: 'minecraft:phantom_membrane' } }, { item: { item: 'minecraft:feather' } }, { item: { item: 'minecraft:glass_pane' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:experience_battery', source: 750, pedestalItems: [{ item: { item: 'minecraft:glass_bottle' } }, { item: { item: 'minecraft:redstone' } }, { item: { item: 'minecraft:glass_bottle' } }, { item: { item: 'minecraft:iron_ingot' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:fertilizer', source: 750, pedestalItems: [{ item: { item: 'minecraft:bone_block' } }, { item: { item: 'minecraft:dirt' } }, { item: { item: 'minecraft:bone_block' } }, { item: { item: 'minecraft:leather' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:fractured_nullstone', source: 1000, pedestalItems: [{ item: { item: 'minecraft:glowstone' } }, { item: { item: 'minecraft:lapis_block' } }, { item: { item: 'minecraft:glowstone' } }, { item: { item: 'minecraft:lapis_block' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:fragile_cloud', source: 750, pedestalItems: [{ item: { item: 'minecraft:white_wool', count: 4 } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:ghast_eye', source: 1000, pedestalItems: [{ item: { item: 'minecraft:ghast_tear' } }, { item: { item: 'minecraft:redstone_block' } }, { item: { item: 'minecraft:ghast_tear' } }, { item: { item: 'minecraft:redstone_block' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:missing_page', source: 1000, pedestalItems: [{ item: { item: 'minecraft:rotten_flesh' } }, { item: { item: 'minecraft:paper' } }, { item: { item: 'minecraft:bone' } }, { item: { item: 'minecraft:paper' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:scarab_amulet', source: 750, pedestalItems: [{ item: { item: 'minecraft:chiseled_sandstone', count: 4 } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:speed_force', source: 1000, pedestalItems: [{ item: { item: 'minecraft:sugar' } }, { item: { item: 'minecraft:rabbit_foot' } }, { item: { item: 'minecraft:sugar' } }, { item: { item: 'minecraft:feather' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:super_magnet', source: 1500, pedestalItems: [{ item: { item: 'nameless_trinkets:experience_magnet' } }, { item: { item: 'nameless_trinkets:broken_magnet' } }, { item: { item: 'minecraft:iron_block' } }, { item: { item: 'minecraft:iron_block' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:tear_of_the_sea', source: 1000, pedestalItems: [{ item: { item: 'minecraft:cod' } }, { item: { item: 'minecraft:salmon' } }, { item: { item: 'minecraft:tropical_fish' } }, { item: { item: 'minecraft:pufferfish' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:tick', source: 750, pedestalItems: [{ item: { item: 'minecraft:brown_mushroom' } }, { item: { item: 'minecraft:red_mushroom' } }, { item: { item: 'minecraft:hay_block' } }, { item: { item: 'minecraft:hay_block' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:vampire_blood', source: 1000, pedestalItems: [{ item: { item: 'minecraft:crying_obsidian' } }, { item: { item: 'minecraft:blaze_powder' } }, { item: { item: 'minecraft:blaze_powder' } }, { item: { item: 'minecraft:clock' } }] }, index++)
+    addImbuementRecipe(event, { input: { item: 'nameless_trinkets:glowing_dust' }, output: 'nameless_trinkets:what_magnet', source: 750, pedestalItems: [{ item: { item: 'minecraft:rotten_flesh' } }, { item: { item: 'minecraft:leather' } }, { item: { item: 'minecraft:porkchop' } }, { item: { item: 'minecraft:bone' } }] }, index++)
 })
