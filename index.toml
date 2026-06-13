@@ -842,7 +842,7 @@ hash = "19c928c0a259c23967663c2c4289d65bbc88c92347c6c10d2126f6352e6f0318"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/element_attunement_stone.png"
-hash = "8fc2096dad962db29d83c66b32e7d6adef064a71bbc9e75d4201512994266f15"
+hash = "eaed50f29e4b30ac30bbf87f5cf3783c0b897a277144ff1fe44aa033d612d12a"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/elementite_dust.png"
@@ -905,6 +905,10 @@ file = "kubejs/assets/kubejs/textures/item/rocket_hull_section.png"
 hash = "3c3efca8f9e290a9011abb03abe142feb9b7906676b8fac0c2bbc93400b448e3"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/rough_source_gem.png"
+hash = "7b77e2d12c0c729a9c1fad53fc59e5a21e4cabfa309f2ce50f0baf816c47ec8c"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
 hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
 
@@ -926,7 +930,7 @@ hash = "68c63cdaa9baacd4ab0dbb5fe8e719ef844257711f469c24c4f4bbc72352ffe3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "f7cc43a4dec75fe403b0be63a62cdc4969ed2dbdea1842b124a68f4bcb536364"
+hash = "f8fdb523173583baf724d5fe9e5cca489b23f045b73a6cf3199da596f7c48810"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1495,6 +1499,10 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
 hash = "bc31286fe60059f4f9f5436019a945f1f1d7e27bbb3e8dba2e577692c376d060"
+
+[[files]]
+file = "kubejs/server_scripts/lootTables.js"
+hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"

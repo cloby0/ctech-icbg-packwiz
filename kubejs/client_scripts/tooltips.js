@@ -5,13 +5,20 @@ ItemEvents.tooltip(event => {
     // Tags defined in itemTags.js; add items there to extend a tier's tooltip.
     const TIER_ITEMS = [
         // apprentice
-        'gtceu:luminessence_dust',
+        'gtceu:luminessence_dust', 'hexcasting:charged_amethyst', 'irons_spellbooks:magic_cloth',
         // journeyman
-        'ars_nouveau:source_gem', 'kubejs:resonant_zanite_crystal',
+        'ars_nouveau:source_gem', 'kubejs:resonant_zanite_crystal', 'aether_redux:veridium_ingot',
+        'irons_spellbooks:arcane_ingot', 'irons_spellbooks:cinder_essence',
+        'irons_spellbooks:arcane_rune', 'irons_spellbooks:blood_rune', 'irons_spellbooks:cooldown_rune',
+        'irons_spellbooks:ender_rune', 'irons_spellbooks:evocation_rune', 'irons_spellbooks:fire_rune',
+        'irons_spellbooks:holy_rune', 'irons_spellbooks:ice_rune', 'irons_spellbooks:lightning_rune',
+        'irons_spellbooks:nature_rune', 'irons_spellbooks:protection_rune',
+        'cataclysm_spellbooks:abyssal_rune', 'cataclysm_spellbooks:technomancy_rune',
         // initiate
         'gtceu:holy_silver_ingot', 'kubejs:sacred_ambrosium_shard', 'irons_spellbooks:divine_pearl',
         // sorcerer
-        'gtceu:prima_materia_ingot', 'aether_redux:gravitite_ingot', 'kubejs:element_attunement_stone', 'kubejs:chaos_essence',
+        'gtceu:prima_materia_ingot', 'aether_redux:gravitite_ingot', 'kubejs:element_attunement_stone',
+        'kubejs:chaos_essence', 'irons_spellbooks:pyrium_ingot',
         // alchemist
         'botania:manasteel_ingot', 'gtceu:abstract_metal_ingot', 'kubejs:hexed_amethyst_core',
         // thaumaturge
@@ -41,4 +48,7 @@ ItemEvents.tooltip(event => {
             }
         }
     })
+
+    event.add('kubejs:element_attunement_stone', '§7Obtained from killing the Sun Spirit')
+
 })
