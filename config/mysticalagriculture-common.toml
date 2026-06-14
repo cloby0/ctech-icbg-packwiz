@@ -1,4 +1,12 @@
 
+#General configuration options.
+[General]
+	#The amount of uses the basic Infusion Crystal should have.
+	#Range: > 10
+	infusionCrystalUses = 1000
+	#Should the Wither drop Cognizant Dust when killed with a Mystical Enlightenment enchanted essence weapon?
+	witherDropsCognizant = true
+	#Should vanilla crafting recipes for seeds be generated?
 	seedCraftingRecipes = false
 	#Should the Wither drop essence when killed with an essence weapon?
 	witherDropsEssence = true

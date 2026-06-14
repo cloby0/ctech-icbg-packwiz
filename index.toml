@@ -50,7 +50,7 @@ hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
 
 [[files]]
 file = "config/mysticalagriculture-common.toml"
-hash = "3e2377a94dfc7b85030a3d524e75f67d53b8e84b5b49f180a001761aeb27a4d3"
+hash = "d95ea351ec5784f2c0cd3bee151d81ac746fb139d35f7101db48b1a79f5e6098"
 
 [[files]]
 file = "config/mysticalcustomization/crops/ambrosium.json"
