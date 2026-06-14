@@ -1441,7 +1441,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_enderium_ingot' })
 
     event.recipes.gtceu.mixer('ctech:lumium_dust_mix')
-        .itemInputs('4x gtceu:tin_dust', '2x gtceu:aluminium_dust', '2x gtceu:glowstone_dust')
+        .itemInputs('4x gtceu:tin_dust', '2x gtceu:aluminium_dust', '2x minecraft:glowstone_dust')
         .itemOutputs('8x gtceu:lumium_dust')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
