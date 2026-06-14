@@ -1726,7 +1726,7 @@ hash = "9dfa5844e4f1f6d9b64f6b0be4bceaf05decb3e27c786acf15f155724bd0ba47"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/kiln.js"
-hash = "9319cee23b31baf38c9ee33e4e5856b26026182b91bd05cda753b99747de7dd3"
+hash = "d78b7c8c604898be485813fbb0b90fac2f5fdf8f8a0c571014de23a2d79dcb12"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"

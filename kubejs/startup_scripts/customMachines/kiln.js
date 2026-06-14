@@ -1,3 +1,5 @@
+const BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('kiln')
 		.category('primitive')
@@ -6,14 +8,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-	event.create('gtceu:kiln', 'primitive')
+	event.create('kiln', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('kiln')
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('BBB', 'BBB', 'BBB', '#B#', '#A#')
 			.aisle('BBB', 'BCB', 'B#B', 'B#B', 'A#A')
 			.aisle('BBB', 'BDB', 'BBB', '#B#', '#A#')
-			.where('A', Predicates.blockTag('#minecraft:logs'))
+			.where('A', Predicates.blockTag(BlockTags.LOGS))
 			.where('B', Predicates.blocks('minecraft:mud_bricks'))
 			.where('#', Predicates.any())
 			.where('C', Predicates.blocks('minecraft:campfire'))
