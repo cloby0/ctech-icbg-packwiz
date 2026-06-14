@@ -914,7 +914,7 @@ hash = "de8687d41e45aac48ea1cf3fedaa6e40bc380c083d12c14ed08f5a05be7bfeb5"
 
 [[files]]
 file = "kubejs/client_scripts/cc_jei_hide.js"
-hash = "17f75e7178999c86f19c476ad49e2b7bfd61769451dc9da61a4165fe5c0392b3"
+hash = "84bbea45e1008aaeb6d4515760766e627d35100eb06baf07a9e90bc03fd2e016"
 
 [[files]]
 file = "kubejs/client_scripts/ec_emi_hide.js"
@@ -2797,11 +2797,6 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a"
-metafile = true
-
-[[files]]
-file = "mods/lychee.pw.toml"
-hash = "71ca7c8a43d0dcbc52b73039e0b1e344e8f5d941eaa8decb4f4828b4a11c8204"
 metafile = true
 
 [[files]]
