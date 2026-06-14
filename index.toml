@@ -901,6 +901,10 @@ file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
 hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
 
 [[files]]
+file = "kubejs/assets/mysticalagriculture/lang/en_us.json"
+hash = "9140ad7cfd06d5971ce8b4f69bd7f00e4171de6c2a78f219a2b94d9eceba22de"
+
+[[files]]
 file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
 hash = "5644e49879e219ad3a1d7a4607240f717a76ffafd831ff5aba5bb2e9e6616003"
 
@@ -1562,7 +1566,7 @@ hash = "aa5f01876cacdc2eecf18cce9badf77062c1edf18187769bd1a0a63d6aa3ba1e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "2d193e81efa3b2b4d23003fb20ca23df9244ed3ee7a82ad979521d17108f8c54"
+hash = "43f512570188a7f89dae50993fc72300c652ab80525efa1d92e4d991da277175"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
