@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.arms_manufacturer('pistol_auto_stress')
-        .itemInputs('2x gtceu:steel_plate', '4x gtceu:brass_bolt', '2x gtceu:steel_ring', 'create:electron_tube', 'gtceu:treated_wood_plate')
+        .itemInputs('2x gtceu:steel_plate', '4x gtceu:brass_bolt', '2x gtceu:steel_ring', '#gtceu:circuits/ulv', 'gtceu:treated_wood_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:pistol_auto_stress",HasBulletInBarrel:0b}'))
         .duration(150)
         .EUt(GTValues.VA[GTValues.MV])

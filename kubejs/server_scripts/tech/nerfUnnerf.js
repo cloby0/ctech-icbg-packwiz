@@ -22,10 +22,26 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'magistuarmory:furnace/steel_ingot_blasting' });
     event.remove({ id: 'ad_astra:etrionic_blast_furnace' });
     event.remove({ id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals' });
+    event.remove({ id: 'ancient_aether:enchanting_table_from_gravitite'})
+    event.remove({ id: 'deep_aether:crystal_brewing_stand'})
         
     event.remove({ id: 'quark:building/crafting/furnaces/blackstone_smoker' });
     event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
     event.remove({ output: "create:electron_tube"});
+    event.shaped(
+        Item.of('minecraft:stone', 3),
+        [
+            'ABA',
+            'CDC',
+            'ACA'
+        ],
+        {
+            A: 'aether_redux:gravitite_ingot',
+            B: 'minecraft:red_carpet',
+            C: '#forge:plates/obsidian',
+            D: 'minecraft:bookshelf'
+        }
+        )
     event.replaceInput(
         { input: 'create:electron_tube' },
         'create:electron_tube',
