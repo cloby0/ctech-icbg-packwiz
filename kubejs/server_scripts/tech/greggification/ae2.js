@@ -1434,6 +1434,54 @@ ServerEvents.recipes(event => {
         .duration(120 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    // thermal alloys: remove auto-generated AlloyBlastRecipes (component dusts → hot ingot directly)
+    // replace with explicit Mixer → EBF chain; VF hot ingot → ingot auto-generated from blastTemp
+    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_lumium_ingot' })
+    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_signalum_ingot' })
+    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_enderium_ingot' })
+
+    event.recipes.gtceu.mixer('ctech:lumium_dust_mix')
+        .itemInputs('4x gtceu:tin_dust', '2x gtceu:aluminium_dust', '2x gtceu:glowstone_dust')
+        .itemOutputs('8x gtceu:lumium_dust')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.electric_blast_furnace('ctech:lumium_ebf')
+        .itemInputs('8x gtceu:lumium_dust')
+        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
+        .itemOutputs('8x gtceu:hot_lumium_ingot')
+        .blastFurnaceTemp(4500)
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.mixer('ctech:signalum_dust_mix')
+        .itemInputs('4x gtceu:copper_dust', '2x gtceu:chrome_dust', '2x gtceu:redstone_dust')
+        .itemOutputs('8x gtceu:signalum_dust')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.electric_blast_furnace('ctech:signalum_ebf')
+        .itemInputs('8x gtceu:signalum_dust')
+        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
+        .itemOutputs('8x gtceu:hot_signalum_ingot')
+        .blastFurnaceTemp(4500)
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.mixer('ctech:enderium_dust_mix')
+        .itemInputs('4x gtceu:titanium_dust', '2x gtceu:platinum_dust', '2x gtceu:ender_pearl_dust')
+        .itemOutputs('8x gtceu:enderium_dust')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.electric_blast_furnace('ctech:enderium_ebf')
+        .itemInputs('8x gtceu:enderium_dust')
+        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
+        .itemOutputs('8x gtceu:hot_enderium_ingot')
+        .blastFurnaceTemp(4500)
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
     // PackagedAuto: gate package_component behind basic AE2 + HV assembler.
     // All downstream items (encoder, recipe_holder, crafting_proxy, distributor,
     // fluid_package_filler) require package_component so they gate transitively.

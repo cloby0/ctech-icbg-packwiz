@@ -1,0 +1,13 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "ars_nouveau:source_gem"
+  },
+  "color": "AE44E2",
+  "recipes": {
+    "crafting": false,
+    "infusion": false,
+    "reprocessor": false
+  }
+}

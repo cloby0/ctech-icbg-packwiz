@@ -1,0 +1,13 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "gtceu:palladium_ingot"
+  },
+  "color": "D0D0D8",
+  "recipes": {
+    "crafting": false,
+    "infusion": false,
+    "reprocessor": false
+  }
+}

@@ -202,6 +202,19 @@ ServerEvents.recipes(event => {
         ]
     }, index++)
 
+    // magebloom_crop — journeyman.js
+    addImbuementRecipe(event, {
+        input: { item: 'minecraft:wheat_seeds' },
+        output: 'ars_nouveau:magebloom_crop',
+        source: 2500,
+        pedestalItems: [
+            { item: { item: 'ars_nouveau:archwood_planks' } },
+            { item: { item: 'ars_nouveau:archwood_planks' } },
+            { item: { item: 'gtceu:luminessence_dust' } },
+            { item: { item: 'gtceu:luminessence_dust' } }
+        ]
+    }, index++)
+
     // resonant_zanite_crystal — journeyman.js
     addImbuementRecipe(event, {
         input: { item: 'kubejs:enchanted_zanite_gem' },

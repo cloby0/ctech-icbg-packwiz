@@ -29,114 +29,6 @@ file = "config/enigmaticlegacy-common.omniconf"
 hash = "e35be4bc71078233ea1e9f245ccafaa7dcad900adfed06ef583ce53b845051be"
 
 [[files]]
-file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "cc7b7524a1409711280d59e9af31b93d161cb654981abb0b2ea945111734fd3d"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ev__extreme_voltage.snbt"
-hash = "d0c6552030a59ae11105d9de2e75e393ab8a589afb4610019705483a6144ae25"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/gtceu.snbt"
-hash = "bd24a9ab8ee710861a5c63dbed317c243e28d92d8c716a69e9eb4a1b3ef7348e"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/heating_coils.snbt"
-hash = "3de3b8987fbd6652079f9a6f8ff7f0d140753eb94563b31554648a09990d89e1"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/hv__high_voltage.snbt"
-hash = "5c2fe63f75cc01610eeef47184f35b6d1438295dd02a27b0a9bc894e61735ec8"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/iv__insane_voltage.snbt"
-hash = "3e8d67a0e489ad0c423fa452dc7cc5c7f7b2033e737cd9a841d79964856c28af"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/luv__ludicrous_voltage.snbt"
-hash = "833e906ad614f3e1c3ea7e589e0db89c23c8021b2e8c4b867a91c955fb3015bf"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/lv__low_voltage.snbt"
-hash = "f3c1fddd173769681ab70af459a53398775ddd7ae006f2a2a5588d91eb0a9c50"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/multiblock_dilemma.snbt"
-hash = "c597f716bb540288bd909925586087298edabb66bf5b65b8f353631f05e295ce"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/mv__medium_voltage.snbt"
-hash = "a56548786776759e435b6e7a77a4da2ac285c2fe7fae7886a74d19140f9ff217"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ore_generation.snbt"
-hash = "a240a1cdcc31c0706814218f057a7a2e6850606eba8d439cdb0268b83d8437e6"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ore_processing.snbt"
-hash = "e2886320cfea51d89a07db5c82e4553a79456d1fca8d2ccbe803af1c77e8c509"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/progression.snbt"
-hash = "99e172d2b42de5bdad9b4002906ace25d4a1c6f49e775529278cf3b0f86f8375"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/renewability_and_you.snbt"
-hash = "070e4c59640dc3014745eb4f2b83f918342a92c7dbec9a44c7e003500de90904"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/steam_age.snbt"
-hash = "77232cec33203139fb43919eccdb092da49d10875094453644d41ccadb7a932a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/tips_and_tricks_2.snbt"
-hash = "efa0f2b09438b9ccd5bc7ac1629f9ee21d6bb24db62ebcc1c365335ff6305576"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
-hash = "29cbbea672860c7c190eecdcfe8d9b183017a1c68b517b84c02675c0f8380f30"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/zpm__zero_point_module.snbt"
-hash = "7fb0ab7a9aadbad7563ecfac1cedf3204a70761abb5b93df84f77f3a7504ceba"
-
-[[files]]
-file = "config/ftbquests/quests/data.snbt"
-hash = "f09e044050912b32b625c79a70916c35497aa989cdf852d08b847110a4c23ed7"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/bronze_age.snbt"
-hash = "2f244ef5e65a15f5b901c66994ad7b05f02424eed022c6a54f28cd751c1f43b3"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/distillation_tower.snbt"
-hash = "47b752f245fee5edfc8e7e3cfab1bca120e4f2a5b17440059d1758428f557a6c"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/gallium_arsenide.snbt"
-hash = "1f4af73a601ba1141e59fef434a151c842b3c6b538e427e7a8cec62f4ee31c28"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/hv.snbt"
-hash = "30aba890142a543fdcb40c8755578fe7e3fc105e43d8f9bfe7916e3f3ce16678"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/hv_components.snbt"
-hash = "9b642be66ea1dfe0ec06781642f33038d0cd8f7cf0a7d14089696c98427398b1"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/platinum_group_processing.snbt"
-hash = "200df4c6786fbc39eba413b02852d119bc6504d2aa69e81190a3315ad4235925"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/polyethylene.snbt"
-hash = "eabe28ddac2199f5214206746cf61a607988105a7baabde195d9c38f71db78ac"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/titanium.snbt"
-hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
-
-[[files]]
 file = "config/greate-recipes.yaml"
 hash = "3022e89e1c7fca4d9860cad623c33fb7d5411d103bcb4dee17cca8270d71e6c3"
 
@@ -157,8 +49,92 @@ file = "config/lootbeams-client.toml"
 hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
 
 [[files]]
+file = "config/mysticalcustomization/crops/ambrosium.json"
+hash = "7dfe0d7fa171c79fc6fbd69f323339876498537f89a0b404cff257d649b7e6b3"
+
+[[files]]
+file = "config/mysticalcustomization/crops/antimony.json"
+hash = "f625e812c999075fae7c76194bd6ff6748bf60f0de6ad21fb333b956a4a46704"
+
+[[files]]
+file = "config/mysticalcustomization/crops/beryllium.json"
+hash = "9f1c4db5a0c7ffdf9243b87c0cc6f4fb5149388ee00ef8743cdbd60d7c8ba7c5"
+
+[[files]]
+file = "config/mysticalcustomization/crops/bismuth.json"
+hash = "8ec9c70130f5435021266e0528730a773baff9da74c43e3f9792e71171f0865f"
+
+[[files]]
+file = "config/mysticalcustomization/crops/calorite.json"
+hash = "c7b3ff65ff0dd009ee06377fe37bc9191a6907bd29bcfdf22dec9648724c049c"
+
+[[files]]
+file = "config/mysticalcustomization/crops/cobalt.json"
+hash = "5caba6de439d31c5aa047964941e9546acd7003d94755efea47577b9c080165a"
+
+[[files]]
+file = "config/mysticalcustomization/crops/desh.json"
+hash = "bab1387d8fd30d654cfd1612a36aa60bcf7b5bd22585de3b02c51ba8ebadd0e7"
+
+[[files]]
+file = "config/mysticalcustomization/crops/gravitite.json"
+hash = "07d72b0c2bba9ab56f2b96291d2e0553694a5e8332a63b8ecd8b776835252164"
+
+[[files]]
+file = "config/mysticalcustomization/crops/lithium.json"
+hash = "5a53fc8021d268afd64973731e49b0a0d6c6c9fdf67ee0277d6af43be160ee67"
+
+[[files]]
 file = "config/mysticalcustomization/crops/luminessence.json"
 hash = "2da69bf75831c26c1f3eba075e56ea2d43293e61de667e22711f92d33aec183c"
+
+[[files]]
+file = "config/mysticalcustomization/crops/manganese.json"
+hash = "ea940f1a0c3dc2057d1d4a1ec844c51e771b3dfef69730cecaf63aac55a080e1"
+
+[[files]]
+file = "config/mysticalcustomization/crops/molybdenum.json"
+hash = "4a2e7287f8b4add5c2c4ff5f67c2347039a3b3184d96da30d4cc6e82553dd3e4"
+
+[[files]]
+file = "config/mysticalcustomization/crops/naquadah.json"
+hash = "6c59813211ca97e7aff55686e03dac02d211d376047ddcdb5781f43ce4948151"
+
+[[files]]
+file = "config/mysticalcustomization/crops/neodymium.json"
+hash = "09510ab7bd5d3711912eeee608957a1be3309aa71422248f4f2d4d1b6888555a"
+
+[[files]]
+file = "config/mysticalcustomization/crops/ostrum.json"
+hash = "d9441ee89e398e4b1054800309bce145b74e66d8e5b8c658483fade312335992"
+
+[[files]]
+file = "config/mysticalcustomization/crops/palladium.json"
+hash = "fea05ae2930f1d18ce63b0a7c4ba7870c659df4540a3505035e2e01badaaf9dc"
+
+[[files]]
+file = "config/mysticalcustomization/crops/skyjade.json"
+hash = "8474dac59172aae6c346677f5c99d420fe96b3b839a28f5ead3eb31c6099e83b"
+
+[[files]]
+file = "config/mysticalcustomization/crops/source.json"
+hash = "7ccb15691fcf3e60d78df0da2e37dc11415ccc1dd6a38a4a91df62ce7cdfcd48"
+
+[[files]]
+file = "config/mysticalcustomization/crops/thorium.json"
+hash = "316cc983200328406dc1373f8776b708f0e15dd5c522da4d8c0d09d4e170bbac"
+
+[[files]]
+file = "config/mysticalcustomization/crops/vanadium.json"
+hash = "ee93231d785d4c4e5575d688c581458f7aac316ca4a35b11f56e28d565ce44dc"
+
+[[files]]
+file = "config/mysticalcustomization/crops/veridium.json"
+hash = "9ceef118776288509707dd0eac8ef5d90309dcccc04d8111fbf306552abdda56"
+
+[[files]]
+file = "config/mysticalcustomization/crops/zanite.json"
+hash = "8299f4fdca56ffa47c29a8057c2d460d6c968ccffb838b184aeb646ac932c8c0"
 
 [[files]]
 file = "config/obscure_tooltips-client.toml"
@@ -1550,7 +1526,7 @@ hash = "3322509881f3b90e54b87322653d1572d3167dc735f167c4f1e1dff085e82c76"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "c758de3091e0b3e979bad70fb0ffa814a66abd53ba0074d89ea5d7734311b8bf"
+hash = "114b5bb8a1ec09dedc378378fb670530d6f2c9bdd36aac7a7950445c08b89cdf"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -1574,7 +1550,7 @@ hash = "19acca6908cbc9fe311f8312f8267c46fb930ec2c8da5a78adda77a25442daa2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "cb831e0108253b6cd6a16865814b08cbcb28279f54f10f30821ddb7fbe02bd86"
+hash = "8c4a0ef0d91c0f5195309b14edd1383b7b47da9656f16ba8ee6b22f8629f65ca"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
@@ -1586,7 +1562,7 @@ hash = "aa5f01876cacdc2eecf18cce9badf77062c1edf18187769bd1a0a63d6aa3ba1e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "295c7c932c704a054ec5dd5fc2a5d740de98982f3bf0ea981f154b02a3fcef4e"
+hash = "2d193e81efa3b2b4d23003fb20ca23df9244ed3ee7a82ad979521d17108f8c54"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -1638,7 +1614,7 @@ hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggification/ae2.js"
-hash = "0efed48aa8f6547f2357d0fe5d1153d82562c70eb83be8421d8e071c7b88ba15"
+hash = "f2d5d1cc8bdecdb06779c53513698deceff72c0183fe1565309bc7e5583780d3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggification/ballistix.js"
@@ -1786,7 +1762,7 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "00315bd6aba7244416c01ecdffe5bc2771a699599e28a4e061d52c3f1ee98b40"
+hash = "f14d8707086f229b91f971e86872e9d17d65999a81eaf85664903dada96a08bc"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"

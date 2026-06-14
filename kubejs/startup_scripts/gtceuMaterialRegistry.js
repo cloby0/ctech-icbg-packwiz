@@ -298,7 +298,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xf6ff99).secondaryColor(0xff7400)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .components('4x tin', '2x silver', '2x glowstone')
+        .components('4x tin', '2x aluminium', '2x glowstone')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_GEAR,
@@ -311,7 +311,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .components('4x copper', '2x silver', '2x redstone')
+        .components('4x copper', '2x chrome', '2x redstone')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -323,7 +323,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0x1f6b62).secondaryColor(0x16455f)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .components('4x tin', '2x platinum', '2x ender_pearl')
+        .components('4x titanium', '2x platinum', '2x ender_pearl')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,

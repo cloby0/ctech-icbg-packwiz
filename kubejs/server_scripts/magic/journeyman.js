@@ -34,6 +34,22 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // magebloom_crop bootstrap: vanilla recipe requires enchanting apparatus (HV), but fiber is needed here at MV
+    // imbuement with archwood planks + luminessence breaks the circular dependency
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": { "item": "minecraft:wheat_seeds" },
+        "output": "ars_nouveau:magebloom_crop",
+        "pedestalItems": [
+            { "item": { "item": "ars_nouveau:archwood_planks" } },
+            { "item": { "item": "ars_nouveau:archwood_planks" } },
+            { "item": { "item": "gtceu:luminessence_dust" } },
+            { "item": { "item": "gtceu:luminessence_dust" } }
+        ],
+        "source": 2500
+    });
+
     event.shaped(
             Item.of('kubejs:magebloom_sieve', 1),
             [

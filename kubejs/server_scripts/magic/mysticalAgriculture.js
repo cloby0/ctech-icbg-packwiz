@@ -107,6 +107,33 @@ ServerEvents.recipes(event => {
         [ma('nether_star'),     ma('soulium'),   [ma('soulium'), ma('soulium'), ma('soulium'), 'minecraft:nether_star'],   15000],
         [ma('dragon_egg'),      ma('end'),       [ma('end'), ma('end'), ma('end'), 'minecraft:dragon_egg'],                20000],
 
+        // Standard GT metals missing from MA
+        [ma('cobalt'),          ma('nickel'),    [ma('iron'), E, E],                                                      3500],
+        [ma('bismuth'),         ma('lead'),      [E, E, W],                                                               3000],
+        [ma('antimony'),        ma('lead'),      [F, E, E],                                                               3500],
+        [ma('manganese'),       ma('iron'),      [E, E, A],                                                               3000],
+        [ma('beryllium'),       ma('emerald'),   [A, A, A],                                                               3500],
+        [ma('vanadium'),        ma('iron'),      [E, E, E, F],                                                            4000],
+        [ma('thorium'),         ma('beryllium'), [E, E, F],                                                               4000],
+        [ma('neodymium'),       ma('iron'),      [A, A, A, A, ma('stone')],                                               5000],
+        [ma('palladium'),       ma('platinum'),  [F, F, F, ma('gold')],                                                   6000],
+        [ma('molybdenum'),      ma('steel'),     [F, F, F, F],                                                            5000],
+        [ma('lithium'),         ma('end'),       [A, A, W],                                                               4000],
+
+        // Aether ores
+        [ma('ambrosium'),       ma('glowstone'), [A, A, W, ma('limestone')],                                              3500],
+        [ma('zanite'),          ma('amethyst'),  [A, A, A, ma('stone')],                                                  3500],
+        [ma('source'),          ma('amethyst'),  [W, W, A, A, ma('lapis_lazuli')],                                        4500],
+        [ma('gravitite'),       ma('iron'),      [A, A, A, A, ma('chrome')],                                              4500],
+        [ma('skyjade'),         ma('amethyst'),  [W, A, A, E, ma('zanite')],                                              4500],
+        [ma('veridium'),        ma('iron'),      [W, W, E, E, ma('cobalt')],                                              4500],
+
+        // Space metals
+        [ma('desh'),            ma('nickel'),    [ma('steel'), ma('steel'), F, F],                                        5500],
+        [ma('ostrum'),          ma('steel'),     [ma('nickel'), ma('nickel'), F, F, F],                                   6000],
+        [ma('calorite'),        ma('titanium'),  [F, F, F, F, F, F],                                                     7500],
+        [ma('naquadah'),        ma('iridium'),   [ma('iridium'), ma('platinum'), F, F, F, F],                             10000],
+
     ]
 
     chains.forEach(([output, center, pedestals, source], i) => {
@@ -146,7 +173,46 @@ ServerEvents.recipes(event => {
         ma('diamond'),        ma('emerald'),         ma('netherite'),      ma('wither_skeleton'),
         ma('platinum'),       ma('iridium'),         ma('terrasteel'),     ma('nether_star'),
         ma('dragon_egg'),     ma('gaia_spirit'),
+        // New GT ore metals
+        ma('cobalt'),         ma('bismuth'),         ma('antimony'),       ma('manganese'),
+        ma('beryllium'),      ma('vanadium'),        ma('thorium'),        ma('neodymium'),
+        ma('palladium'),      ma('molybdenum'),      ma('lithium'),
+        // Aether ores
+        ma('ambrosium'),      ma('zanite'),          ma('source'),         ma('gravitite'),
+        ma('skyjade'),        ma('veridium'),
+        // Space metals
+        ma('desh'),           ma('ostrum'),          ma('calorite'),       ma('naquadah'),
     ]
+
+    // Essence -> material conversion (1:1, crafting table)
+    const essenceConversions = [
+        [ma('cobalt'),     'gtceu:cobalt_ingot'],
+        [ma('bismuth'),    'gtceu:bismuth_ingot'],
+        [ma('antimony'),   'gtceu:antimony_ingot'],
+        [ma('manganese'),  'gtceu:manganese_dust'],
+        [ma('beryllium'),  'gtceu:beryllium_ingot'],
+        [ma('vanadium'),   'gtceu:vanadium_ingot'],
+        [ma('thorium'),    'gtceu:thorium_ingot'],
+        [ma('neodymium'),  'gtceu:neodymium_ingot'],
+        [ma('palladium'),  'gtceu:palladium_ingot'],
+        [ma('molybdenum'), 'gtceu:molybdenum_ingot'],
+        [ma('lithium'),    'gtceu:lithium_ingot'],
+        [ma('ambrosium'),  'aether:ambrosium_shard'],
+        [ma('zanite'),     'aether:zanite_gemstone'],
+        [ma('source'),     'ars_nouveau:source_gem'],
+        [ma('gravitite'),  'aether_redux:gravitite_ingot'],
+        [ma('skyjade'),    'deep_aether:skyjade'],
+        [ma('veridium'),   'aether_redux:veridium_ingot'],
+        [ma('desh'),       'ad_astra:desh_ingot'],
+        [ma('ostrum'),     'ad_astra:ostrum_ingot'],
+        [ma('calorite'),   'ad_astra:calorite_ingot'],
+        [ma('naquadah'),   'gtceu:naquadah_ingot'],
+    ]
+    essenceConversions.forEach(([essence, material]) => {
+        const inputs = []
+        for (let i = 0; i < 8; i++) inputs.push(essence)
+        event.shapeless(`3x ${material}`, inputs)
+    })
 
     seedEssences.forEach(essence => {
         const seedId = essence.replace('_essence', '_seeds')
