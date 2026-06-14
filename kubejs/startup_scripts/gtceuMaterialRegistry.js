@@ -311,7 +311,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .components('4x copper', '2x chrome', '2x redstone')
+        .components('4x copper', '2x chromium', '2x redstone')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,

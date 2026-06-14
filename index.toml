@@ -1614,7 +1614,7 @@ hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggification/ae2.js"
-hash = "1d28651a43a0ded36f8d5984470c53ce850856b4e698e3f3ad742d2ab0592d7e"
+hash = "203c301c14fa6254f060f6bcebf70fa04e4a836e700d123fa42110ee4cc5965a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggification/ballistix.js"
@@ -1762,7 +1762,7 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "f14d8707086f229b91f971e86872e9d17d65999a81eaf85664903dada96a08bc"
+hash = "c6e4ae847ba010fdf4816ef915696237401baa695fd5d9e83c4c39c045e770ed"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
