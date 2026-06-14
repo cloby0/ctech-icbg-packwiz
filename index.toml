@@ -50,7 +50,7 @@ hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
 
 [[files]]
 file = "config/mysticalagriculture-common.toml"
-hash = "d95ea351ec5784f2c0cd3bee151d81ac746fb139d35f7101db48b1a79f5e6098"
+hash = "3e2377a94dfc7b85030a3d524e75f67d53b8e84b5b49f180a001761aeb27a4d3"
 
 [[files]]
 file = "config/mysticalcustomization/crops/ambrosium.json"
@@ -1602,7 +1602,7 @@ hash = "d6d4a4d50ed9aa9cd15da78fa63e21ee10b7b5f5cf7fd057082f84946ac835e0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "24a099ae40f69f4663bdf354734a3399ab752aa1a8501aaf92c3dc429f2cd9e6"
+hash = "5070e0928dce183d13802e4e4c679c097673d611f559ea0f100b2617dab84b51"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"

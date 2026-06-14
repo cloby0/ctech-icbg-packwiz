@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
 
     // all runes: 4x school-theme item + 4x source_gem + blank_rune — uniform Journeyman gate
     // no school above another; source_gem bridges ISS into Ars system
-    event.replaceInput({ output: 'irons_spellbooks:arcane_ingot' }, '#irons_spellbooks:arcane_ingot_base', 'aether_redux:veridium_ingot')
+    event.remove({ output: 'irons_spellbooks:arcane_ingot' })
 
     const runeRecipes = [
         { id: 'irons_spellbooks:arcane_rune',            themeItem: 'irons_spellbooks:arcane_essence'    },
