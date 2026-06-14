@@ -1814,7 +1814,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
-hash = "e98ba491ac192f01aae145fd5ce7a7218bc8bf2a2dff6aab999d89bbf50214bb"
+hash = "3c6c63ae4ac15baac385132b4579c8644e65fbf8bbd612959ae8a02289a9644d"
 
 [[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
