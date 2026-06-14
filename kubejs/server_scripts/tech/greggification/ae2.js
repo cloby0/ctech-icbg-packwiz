@@ -1455,7 +1455,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer('ctech:signalum_dust_mix')
-        .itemInputs('4x gtceu:copper_dust', '2x gtceu:chrome_dust', '2x gtceu:redstone_dust')
+        .itemInputs('4x gtceu:copper_dust', '2x gtceu:chrome_dust', '2x minecraft:redstone')
         .itemOutputs('8x gtceu:signalum_dust')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
