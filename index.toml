@@ -901,8 +901,8 @@ file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
 hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
 
 [[files]]
-file = "kubejs/assets/mysticalagriculture/lang/en_us.json"
-hash = "9140ad7cfd06d5971ce8b4f69bd7f00e4171de6c2a78f219a2b94d9eceba22de"
+file = "kubejs/assets/mysticalcustomization/lang/en_us.json"
+hash = "15ae6b12f59b3b8ed0c4bf93b2182c28befc579e76b794b848febadc4e285431"
 
 [[files]]
 file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
@@ -1506,7 +1506,7 @@ hash = "3491312ec80cab5572b308cd80d6856b6b2392c849072ff871b5af504388dd27"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "bd3d44efd4c86dc42c856dc06a14e0372911c2b8a8f8a49e18a164abf91e798c"
+hash = "1695fd44a29fe897012ee4f3aade13fcd51dd20ef53933dcc2a404b7c9549eea"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
@@ -1554,7 +1554,7 @@ hash = "19acca6908cbc9fe311f8312f8267c46fb930ec2c8da5a78adda77a25442daa2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "8c4a0ef0d91c0f5195309b14edd1383b7b47da9656f16ba8ee6b22f8629f65ca"
+hash = "7174216ba73a6b26b7cf0682b05340359835539a488b984a3261f4edf5690882"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
@@ -1601,12 +1601,36 @@ file = "kubejs/server_scripts/magic/uniqueAccessories.js"
 hash = "1fb742bbf0cf258ba0bbb1a35afb728dba038c3459356c99f4c5599fb3049d58"
 
 [[files]]
+file = "kubejs/server_scripts/tech/ae2.js"
+hash = "203c301c14fa6254f060f6bcebf70fa04e4a836e700d123fa42110ee4cc5965a"
+
+[[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
 hash = "6a5ebb41c945ce4dd27a61f1543b78939e9b82beab6e426c4cbc012a24a98c2f"
 
 [[files]]
+file = "kubejs/server_scripts/tech/ballistix.js"
+hash = "b69d7016700f36d6ba2426e905108b729d5d5c0b471592f91a4452092e6c3775"
+
+[[files]]
+file = "kubejs/server_scripts/tech/blastcraft.js"
+hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
+
+[[files]]
+file = "kubejs/server_scripts/tech/cbc.js"
+hash = "5a3df9db87a8600040296e00f427470b154a0ea0b54c29aaa9dfc3b5438e3e9d"
+
+[[files]]
+file = "kubejs/server_scripts/tech/createNewAge.js"
+hash = "6974834beb31d5f859a32c1a73c1856b65aa6d916121406a87ecb1289bf19120"
+
+[[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
 hash = "8c677a07377f331632419e39304ccedb41e1e602ed98cf55fabea523f7d5e510"
+
+[[files]]
+file = "kubejs/server_scripts/tech/cyberware.js"
+hash = "7ad46f1b888c5bd5c168a2d10668ea63d930dc687a92a61506e5ad69ef901148"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
@@ -1617,84 +1641,60 @@ file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
 hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 
 [[files]]
-file = "kubejs/server_scripts/tech/greggification/ae2.js"
-hash = "203c301c14fa6254f060f6bcebf70fa04e4a836e700d123fa42110ee4cc5965a"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/ballistix.js"
-hash = "b69d7016700f36d6ba2426e905108b729d5d5c0b471592f91a4452092e6c3775"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/blastcraft.js"
-hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/cbc.js"
-hash = "5a3df9db87a8600040296e00f427470b154a0ea0b54c29aaa9dfc3b5438e3e9d"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/createNewAge.js"
-hash = "6974834beb31d5f859a32c1a73c1856b65aa6d916121406a87ecb1289bf19120"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/cyberware.js"
-hash = "7ad46f1b888c5bd5c168a2d10668ea63d930dc687a92a61506e5ad69ef901148"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/extendedCrafting.js"
-hash = "7a8811a23f92be100876361001978fcec5c7ee9425ddc382db52d4dc797a8e2e"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/fracturepoint.js"
-hash = "0fd314d47e5a245ace92654ce1ec942bb41a1615a67a5a5244d6118f699539cf"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/ftech.js"
-hash = "e7800847d7c7588ae0719bfe1e0503bcc96613c8b19f0f8e25c7e7d3c0eb5bde"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/gadgets.js"
-hash = "b9ea8c02f13498cc6c0c608f89b884dcf8d56b2d0406e54445f3d6766571be60"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/greggingMods.js"
-hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/guns.js"
-hash = "a56d80e26ab917f70c4dc8fbdef78faf83a7c9db585dd7702e950826710a6570"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/laserio.js"
-hash = "257baaf730da41cbbce753c22dbd78792f9bd03de1a58d71ae2c82a0a33b8adb"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/sophisticatedBackpacks.js"
-hash = "05f56caabbc114a6088bb13c026423dadcedee5e84c66df001bc709e8ae295aa"
-
-[[files]]
-file = "kubejs/server_scripts/tech/greggification/woot.js"
-hash = "e734aac3ee0dbde911909bc227a8ee4b909e4d63fbe9686a7a80e98dd41af85a"
-
-[[files]]
-file = "kubejs/server_scripts/tech/nerfUnnerf.js"
-hash = "43cb01284b961ac6d50e647e3da7c7b9ec27f915817a8cafeb52845f699d9094"
-
-[[files]]
-file = "kubejs/server_scripts/tech/progression/evAndMars.js"
+file = "kubejs/server_scripts/tech/evAndMars.js"
 hash = "33a0cbeb895b98148d3ba0570951ce5f4c134de7e791f9f25032b29942c1aebc"
 
 [[files]]
-file = "kubejs/server_scripts/tech/progression/hvAndSpace.js"
+file = "kubejs/server_scripts/tech/extendedCrafting.js"
+hash = "7a8811a23f92be100876361001978fcec5c7ee9425ddc382db52d4dc797a8e2e"
+
+[[files]]
+file = "kubejs/server_scripts/tech/fracturepoint.js"
+hash = "0fd314d47e5a245ace92654ce1ec942bb41a1615a67a5a5244d6118f699539cf"
+
+[[files]]
+file = "kubejs/server_scripts/tech/ftech.js"
+hash = "e7800847d7c7588ae0719bfe1e0503bcc96613c8b19f0f8e25c7e7d3c0eb5bde"
+
+[[files]]
+file = "kubejs/server_scripts/tech/gadgets.js"
+hash = "b9ea8c02f13498cc6c0c608f89b884dcf8d56b2d0406e54445f3d6766571be60"
+
+[[files]]
+file = "kubejs/server_scripts/tech/greggingMods.js"
+hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
+
+[[files]]
+file = "kubejs/server_scripts/tech/guns.js"
+hash = "a56d80e26ab917f70c4dc8fbdef78faf83a7c9db585dd7702e950826710a6570"
+
+[[files]]
+file = "kubejs/server_scripts/tech/hvAndSpace.js"
 hash = "a86b2784eae70deac10f205215ee6b264166b47e452f901f921466c006045b28"
 
 [[files]]
-file = "kubejs/server_scripts/tech/progression/ivAndVenus.js"
+file = "kubejs/server_scripts/tech/ivAndVenus.js"
 hash = "2af2fef6ebd65085805a5f79e964c2b2b49341275a79e6929c15566585259942"
 
 [[files]]
-file = "kubejs/server_scripts/tech/progression/luvAndGlacio.js"
+file = "kubejs/server_scripts/tech/laserio.js"
+hash = "257baaf730da41cbbce753c22dbd78792f9bd03de1a58d71ae2c82a0a33b8adb"
+
+[[files]]
+file = "kubejs/server_scripts/tech/luvAndGlacio.js"
 hash = "db076667db1373d8943943580742d97cf00b249123e2030c001bf4348b01c05f"
+
+[[files]]
+file = "kubejs/server_scripts/tech/nerfUnnerf.js"
+hash = "1c6a3e9a17e61fa60e569bd4b7ad184a19168ee8c4367a54ff57db1856ded78c"
+
+[[files]]
+file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
+hash = "05f56caabbc114a6088bb13c026423dadcedee5e84c66df001bc709e8ae295aa"
+
+[[files]]
+file = "kubejs/server_scripts/tech/woot.js"
+hash = "e734aac3ee0dbde911909bc227a8ee4b909e4d63fbe9686a7a80e98dd41af85a"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"

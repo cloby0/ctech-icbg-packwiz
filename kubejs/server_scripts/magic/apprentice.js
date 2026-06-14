@@ -123,8 +123,8 @@ ServerEvents.recipes(event => {
         "input": { "item": "gtceu:luminessence_dust" },
         "output": "minecraft:experience_bottle",
         "pedestalItems": [
-            { "tag": "kubejs:fire_essences" },
-            { "tag": "kubejs:fire_essences" }
+            { "item": { "tag": "kubejs:fire_essences" } },
+            { "item": { "tag": "kubejs:fire_essences" } }
         ],
         "source": 500
     })
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         "input": { "item": "gtceu:luminessence_dust" },
         "output": "hexcasting:charged_amethyst",
         "pedestalItems": [
-            { "tag": "kubejs:air_essences" }
+            { "item": { "tag": "kubejs:air_essences" } }
         ],
         "source": 500
     })

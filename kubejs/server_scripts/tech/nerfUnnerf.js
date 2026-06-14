@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
     event.remove({ output: "create:electron_tube"});
     event.shaped(
-        Item.of('minecraft:stone', 3),
+        Item.of('minecraft:enchanting_table', 1),
         [
             'ABA',
             'CDC',

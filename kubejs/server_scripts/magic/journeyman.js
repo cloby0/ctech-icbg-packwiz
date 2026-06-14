@@ -240,16 +240,18 @@ ServerEvents.recipes(event => {
         }
     );
 
-    event.recipes.ars_nouveau.crush(
-        "gtceu:raw_source",
-        [
+    event.custom({
+        "type": "ars_nouveau:crush",
+        "input": { "item": "gtceu:raw_source" },
+        "output": [
             {
-                stack: Item.of("gtceu:source_dust"),
-                chance: 1.0,
-                maxRange: 10
+                "item": "gtceu:source_dust",
+                "chance": 1.0,
+                "count": 1,
+                "maxRange": 10
             }
         ]
-    );
+    });
 
     event.shaped(
         Item.of("gtceu:source_plate", 1),
@@ -308,8 +310,8 @@ ServerEvents.recipes(event => {
         "input": { "item": "kubejs:resonant_zanite_crystal" },
         "output": "irons_spellbooks:cinder_essence",
         "pedestalItems": [
-            { "tag": "kubejs:fire_essences" },
-            { "tag": "kubejs:fire_essences" }
+            { "item": { "tag": "kubejs:fire_essences" } },
+            { "item": { "tag": "kubejs:fire_essences" } }
         ],
         "source": 1500
     })
@@ -320,8 +322,8 @@ ServerEvents.recipes(event => {
         "input": { "item": "kubejs:resonant_zanite_crystal" },
         "output": "irons_spellbooks:arcane_ingot",
         "pedestalItems": [
-            { "tag": "kubejs:air_essences" },
-            { "tag": "kubejs:air_essences" }
+            { "item": { "tag": "kubejs:air_essences" } },
+            { "item": { "tag": "kubejs:air_essences" } }
         ],
         "source": 1500
     })
