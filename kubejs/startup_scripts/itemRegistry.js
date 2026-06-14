@@ -26,6 +26,11 @@ StartupEvents.registry('item', event => {
     event.create('soul_of_gaia')
     event.create('boundless_gaia_spirit_ingot')
 
+    event.create('gaian_blood_core')
+    event.create('gaian_holy_core')
+    event.create('gaian_void_core')
+    event.create('gaian_annihilation_core')
+
     event.create('matter_energy_circuit')
 
     event.create('condensed_desh_carbonyl')

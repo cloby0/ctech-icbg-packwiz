@@ -126,6 +126,69 @@ ServerEvents.recipes(event => {
         })
     })
 
+    // Sorcerer (EV) custom spellbooks
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'irons_spellbooks:pyrium_ingot',
+            'irons_spellbooks:pyrium_ingot',
+            'irons_spellbooks:pyrium_ingot',
+            'irons_spellbooks:pyrium_ingot',
+            'kubejs:chaos_essence',
+            'irons_spellbooks:fire_rune',
+            'irons_spellbooks:fire_rune'
+        ],
+        'irons_spellbooks:netherite_spell_book',
+        'kubejs:pyromatic_codex',
+        30000,
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'gtceu:prima_materia_ingot',
+            'gtceu:prima_materia_ingot',
+            'kubejs:chaos_essence',
+            'irons_spellbooks:evocation_rune',
+            'irons_spellbooks:evocation_rune',
+            'minecraft:nether_star'
+        ],
+        'irons_spellbooks:netherite_spell_book',
+        'kubejs:evocation_folio',
+        30000,
+    )
+
+    // Arcanist (ZPM) custom spellbooks
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            'kubejs:elven_concentrate',
+            'kubejs:elven_concentrate',
+            'irons_spellbooks:ice_rune',
+            'irons_spellbooks:ice_rune'
+        ],
+        'irons_spellbooks:netherite_spell_book',
+        'kubejs:glacial_grimoire',
+        40000,
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            '#forge:ingots/elementium',
+            'kubejs:elven_concentrate',
+            'kubejs:elven_concentrate',
+            'irons_spellbooks:nature_rune',
+            'irons_spellbooks:nature_rune'
+        ],
+        'irons_spellbooks:netherite_spell_book',
+        'kubejs:verdant_chronicle',
+        40000,
+    )
+
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'irons_spellbooks:ender_rune',

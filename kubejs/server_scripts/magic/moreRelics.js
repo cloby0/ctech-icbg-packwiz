@@ -139,32 +139,33 @@ ServerEvents.recipes(event => {
         4000
     )
 
+    // Sage tier (UV) — moved from Sorcerer; gaia_ingot gates all four
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:diamond_block", "minecraft:diamond", "minecraft:diamond", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
+        ["botania:gaia_ingot", "botania:gaia_ingot", "botania:terrasteel_ingot", "botania:terrasteel_ingot", "minecraft:nether_star", "#forge:ingots/elementium"],
         "nameless_trinkets:ultimate_dust",
         "morerelics:crown_of_the_legend",
-        6000
+        25000
     )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:diamond_block", "minecraft:netherite_ingot", "minecraft:netherite_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:holy_silver_dust"],
+        ["botania:gaia_ingot", "botania:gaia_ingot", "botania:gaia_ingot", "minecraft:nether_star", "minecraft:nether_star", "minecraft:netherite_block"],
         "nameless_trinkets:ultimate_dust",
         "morerelics:king_crimson",
-        7000
+        30000
     )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:elytra", "minecraft:diamond_block", "minecraft:diamond_block", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
+        ["botania:gaia_ingot", "botania:gaia_ingot", "botania:gaia_ingot", "minecraft:nether_star", "minecraft:nether_star", "minecraft:elytra", "botania:elementium_block"],
         "nameless_trinkets:ultimate_dust",
         "morerelics:made_in_heaven",
-        8000
+        35000
     )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:netherite_block", "minecraft:netherite_block", "minecraft:wither_skeleton_skull", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
+        ["botania:gaia_ingot", "botania:gaia_ingot", "botania:gaia_ingot", "botania:gaia_ingot", "minecraft:nether_star", "minecraft:nether_star", "minecraft:netherite_block", "botania:elementium_block"],
         "nameless_trinkets:ultimate_dust",
         "morerelics:wonder_of_u",
-        10000
+        40000
     )
 
 })
