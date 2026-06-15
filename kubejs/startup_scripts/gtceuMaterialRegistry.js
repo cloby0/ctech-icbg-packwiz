@@ -210,7 +210,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
 
     event.create('manasteel')
-        .color(0x67b9ee)
+        .color(0xb5fffc)
+        .secondaryColor(0x1d1eb0)
         .ingot()
         .components(c('1x prima_materia'), c('2x source'))
         .flags(

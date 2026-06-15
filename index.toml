@@ -1605,6 +1605,10 @@ file = "kubejs/server_scripts/magic/initiate.js"
 hash = "d6d4a4d50ed9aa9cd15da78fa63e21ee10b7b5f5cf7fd057082f84946ac835e0"
 
 [[files]]
+file = "kubejs/server_scripts/magic/inventoryPets.js"
+hash = "7e9f31057c9c1bb88e2cbae8568cf89ad4e3cb2209fe2d8c0afce28aef786755"
+
+[[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
 hash = "8adb534f34f39440e1c6cca4a6905140b0e3016a1bd07213334ce1cc3ebeba56"
 
@@ -1830,7 +1834,7 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "c6e4ae847ba010fdf4816ef915696237401baa695fd5d9e83c4c39c045e770ed"
+hash = "3abea63b5d08a519566945f833c5a85c1594a322d775ee39cb780fd0165cdfbb"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
@@ -1981,6 +1985,11 @@ metafile = true
 [[files]]
 file = "mods/applied-energistics-2.pw.toml"
 hash = "0f4c2198603cd84a14dc6741729d0b0dcf509574776e620c36c3e7180082db32"
+metafile = true
+
+[[files]]
+file = "mods/apprentices-codex.pw.toml"
+hash = "a3178c09a365809cc66f3d95aaa27063a47fa3212b699cbcbd9c02a6d4742be8"
 metafile = true
 
 [[files]]
@@ -2425,6 +2434,11 @@ hash = "c9f73e2b93b64fb0c44fbbde6245a5d5934143d6c4b9cc9829e3ba62c02ead4e"
 metafile = true
 
 [[files]]
+file = "mods/event-wrapper.pw.toml"
+hash = "a2ddef6f0b77cbdd5ce7460459a4cf4b8d667925b35ce184f558904ba5a8ca84"
+metafile = true
+
+[[files]]
 file = "mods/every-compat.pw.toml"
 hash = "426df5fa044bc79dbb09a2b403276189e69da4255731bd8622a61dd1cf070ab9"
 metafile = true
@@ -2447,6 +2461,11 @@ metafile = true
 [[files]]
 file = "mods/extended-terminal.pw.toml"
 hash = "cefcb3c94319ed4f385fe9a7a557f5e1a578d34427eb8daa58e0d139f7622ad4"
+metafile = true
+
+[[files]]
+file = "mods/extrabotany-reburn.pw.toml"
+hash = "2712ed38c1af5fcda0879eef5772c81d44fb9ce5be987543e240bc1eae61dc10"
 metafile = true
 
 [[files]]
