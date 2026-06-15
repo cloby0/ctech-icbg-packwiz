@@ -1542,7 +1542,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "9e702d58152b074f32c46189bb9988584ad2afd65f153f354cf392462c53c916"
+hash = "c39c97d71f1d9e0bb17fd51efaddd53e4c028571190d57c1d51beb9859d15a45"
 
 [[files]]
 file = "kubejs/server_scripts/kiln.js"
@@ -1554,7 +1554,7 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "3491312ec80cab5572b308cd80d6856b6b2392c849072ff871b5af504388dd27"
+hash = "50db1b58d3615e4ebc4303c38f88decc33f29794d96d8008f6ef2001e132b384"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -1562,7 +1562,7 @@ hash = "1695fd44a29fe897012ee4f3aade13fcd51dd20ef53933dcc2a404b7c9549eea"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
-hash = "7cd29e97f1f8d22272413d48b4fd9e53be460470fc57404f4c2d864c3e6e213d"
+hash = "00a070ddb8afdde04af44525324e3231fe66b8a94be49f705ee450b50f79832e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/artifacts.js"
@@ -1578,11 +1578,11 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "0b81dd7a0b518595a189b38d301b95e91d775eb0ebde3b59bdfcfc942f8348e7"
+hash = "1a591c1db03b8619a95e7e6f2943b8bb711f30bd92c7727936cc49830b3a2fb6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "114b5bb8a1ec09dedc378378fb670530d6f2c9bdd36aac7a7950445c08b89cdf"
+hash = "5dc6ba2cbc4044822e33b1679ef4fffa5a6683fde1f33c834f62ccca9e3930f9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -1591,6 +1591,10 @@ hash = "9f1af97aa99716462600528cbf87c22ddc64cc81e4faeecfec0bf123c0ba5d6d"
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
 hash = "45f015b2845e1c5450f6ba631b540a16d3fcf4c6756bff9f6190f168173d1cbc"
+
+[[files]]
+file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
+hash = "e63bf51033a574d6cb155828fc91ea813aceadfd0e9bf167de303f7aee1ad1a0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
@@ -1602,15 +1606,15 @@ hash = "d6d4a4d50ed9aa9cd15da78fa63e21ee10b7b5f5cf7fd057082f84946ac835e0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "5070e0928dce183d13802e4e4c679c097673d611f559ea0f100b2617dab84b51"
+hash = "8adb534f34f39440e1c6cca4a6905140b0e3016a1bd07213334ce1cc3ebeba56"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "7174216ba73a6b26b7cf0682b05340359835539a488b984a3261f4edf5690882"
+hash = "efebad506bd76cf63b016138ca49278de1821f0f7b954e58811882a55b52c3d8"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
-hash = "d6e541d7d5f9a2320f10f918f682af09b6a31c3d67eee9463288736ef67e6c93"
+hash = "ae70f2a66de42475225850f989c0b14600f54708b24a1f627833aad3faefa897"
 
 [[files]]
 file = "kubejs/server_scripts/magic/moreRelics.js"
@@ -1618,7 +1622,7 @@ hash = "28cd08039f1bd8f2f8dad92685930904ee7e91e26b5929cfd79a1931bb849b72"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "43f512570188a7f89dae50993fc72300c652ab80525efa1d92e4d991da277175"
+hash = "09d2504bff1400afcccc720e03069c66198009e6305126aebda7605c0dbbc22e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -1634,15 +1638,15 @@ hash = "0a26efdc6c61f58d0675f1d6f4c1a32535b6b61c5a52363dd5990fe5757e8c15"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "e9e75f262bf540fd85e59119155e99cb0f090ba608df4518f4baec64918c6c70"
+hash = "6b0a5bc349ea8055e3caab9668b946335c99388daa5fc83e0a4cf7b63d1bf0b5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "903ac3265058dc24b81b8bc636656ca56688a0c703f61ed0a6247c8ed9b8ec2e"
+hash = "e84b350d76371d91f0acd55ea93278ca7f0234d30cf0e4c224bab7e36be69bd4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
-hash = "095e7bd36438f595baaf7a5c4cbf0410344ddd6b2544255d2e8280125f51a664"
+hash = "7ff566e61a09b5bf63235c0b076db00dbe3aaf993429f95292c2cf36cce8dc7c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/tooManyBows.js"
@@ -1754,7 +1758,7 @@ hash = "e734aac3ee0dbde911909bc227a8ee4b909e4d63fbe9686a7a80e98dd41af85a"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "c1de4ece11bfa587435cdbd47c4621727fbc03ec4a0e58d18ac149220eb429ec"
+hash = "f0e3443ea365700bbfcd5f1b1fda4bc508729ea71406800196ee5b3449709a1a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1814,7 +1818,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
-hash = "3c6c63ae4ac15baac385132b4579c8644e65fbf8bbd612959ae8a02289a9644d"
+hash = "01d8dd72b45545807432e567527b5ad4de7dad0d91245031f659ce4ff15847f0"
 
 [[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
@@ -1830,7 +1834,7 @@ hash = "c6e4ae847ba010fdf4816ef915696237401baa695fd5d9e83c4c39c045e770ed"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "9392aa524a0d385b20e9a5d0c1b3c85bfe26ece34a11431555a585e7178c64e3"
+hash = "5c965632474d8439d241a97525afcdce8987b32e3fd17f261dafcbecdf6488b4"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

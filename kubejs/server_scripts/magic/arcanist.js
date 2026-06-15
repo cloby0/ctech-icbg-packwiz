@@ -7,10 +7,10 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
-            { "tag": "forge:ingots/terrasteel" },
-            { "tag": "forge:ingots/terrasteel" },
-            { "tag": "forge:ingots/terrasteel" },
-            { "tag": "forge:ingots/terrasteel" },
+            { "item": "gtceu:terrasteel_bolt" },
+            { "item": "gtceu:terrasteel_bolt" },
+            { "item": "gtceu:terrasteel_bolt" },
+            { "item": "gtceu:terrasteel_bolt" },
             { "item": "botania:rune_air" },
             { "item": "botania:rune_spring" },
             { "item": "botania:rune_summer" },
@@ -51,6 +51,20 @@ ServerEvents.recipes(event => {
         "kubejs:elementite_dust",
         "kubejs:raw_elementite",
         15000,
+    )
+
+    // elven_source_lattice: second Arcanist gate item alongside elven_concentrate
+    // zanite crystal (Hobbyist) + elven realm energy → attuned lattice for ice/nature/storm spellbooks
+    event.recipes.ars_nouveau.imbuement(
+        'kubejs:elven_concentrate',
+        'kubejs:elven_source_lattice',
+        12000,
+        [
+            'kubejs:resonant_zanite_crystal',
+            'kubejs:resonant_zanite_crystal',
+            'ars_nouveau:source_gem',
+            'ars_nouveau:source_gem',
+        ]
     )
 
     // 5x source gem per raw at Arcanist tier

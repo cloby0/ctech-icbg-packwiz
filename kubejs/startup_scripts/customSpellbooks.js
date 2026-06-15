@@ -8,6 +8,8 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:blaze_storm', 7)
         .addSpell('irons_spellbooks:fireball', 7)
         .addSpell('irons_spellbooks:wall_of_fire', 7)
+        .addAttribute('irons_spellbooks:fire_spell_power', 0.10, 'ADDITION')
+        .addAttribute('irons_spellbooks:cooldown_reduction', 0.10, 'ADDITION')
 
     event.create('evocation_folio', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(6)
@@ -16,6 +18,8 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:fang_strike', 7)
         .addSpell('irons_spellbooks:spectral_hammer', 7)
         .addSpell('irons_spellbooks:shield', 7)
+        .addAttribute('irons_spellbooks:evocation_spell_power', 0.10, 'ADDITION')
+        .addAttribute('irons_spellbooks:summon_damage', 0.15, 'ADDITION')
 
     // Arcanist (ZPM) tier spellbooks
     event.create('glacial_grimoire', 'irons_spells_js:spellbook')
@@ -25,6 +29,8 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:ice_tomb', 9)
         .addSpell('irons_spellbooks:cone_of_cold', 9)
         .addSpell('irons_spellbooks:frost_step', 9)
+        .addAttribute('irons_spellbooks:ice_spell_power', 0.15, 'ADDITION')
+        .addAttribute('irons_spellbooks:mana_regen', 5.0, 'ADDITION')
 
     event.create('verdant_chronicle', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(8)
@@ -33,6 +39,19 @@ StartupEvents.registry('item', event => {
         .addSpell('legendary_spellbooks:overgrown_shockwave', 9)
         .addSpell('irons_spellbooks:earthquake', 9)
         .addSpell('irons_spellbooks:oakskin', 9)
+        .addAttribute('irons_spellbooks:nature_spell_power', 0.15, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 50.0, 'ADDITION')
+
+    // Technomancy (GT + magic hybrid) Arcanist tier — requires elven_americate + ZPM circuits
+    event.create('technomatic_folio', 'irons_spells_js:spellbook')
+        .setMaxSpellSlots(8)
+        .addSpell('cataclysm_spellbooks:laserbolt', 9)
+        .addSpell('cataclysm_spellbooks:emp_blast', 9)
+        .addSpell('cataclysm_spellbooks:lock_on', 9)
+        .addSpell('cataclysm_spellbooks:surveillance_drone', 9)
+        .addSpell('cataclysm_spellbooks:gear_shift', 9)
+        .addAttribute('cataclysm_spellbooks:technomancy_spell_power', 0.15, 'ADDITION')
+        .addAttribute('irons_spellbooks:cooldown_reduction', 0.10, 'ADDITION')
 
     // Sage (UV) tier spellbooks — each gated behind a gaian resonance core
     event.create('blood_grimoire', 'irons_spells_js:spellbook')
@@ -42,22 +61,30 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:ray_of_siphoning', 10)
         .addSpell('irons_spellbooks:blood_step', 10)
         .addSpell('irons_spellbooks:devour', 10)
+        .addAttribute('irons_spellbooks:blood_spell_power', 0.25, 'ADDITION')
+        .addAttribute('irons_spellbooks:mana_regen', 10.0, 'ADDITION')
 
-    event.create('gaian_sanctum', 'irons_spells_js:spellbook')
+    // gaian_sanctum → radiant_sanctum: spells are holy school, not gaian/nature
+    event.create('radiant_sanctum', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(12)
         .addSpell('irons_spellbooks:greater_heal', 10)
         .addSpell('irons_spellbooks:divine_smite', 10)
         .addSpell('irons_spellbooks:healing_circle', 10)
         .addSpell('irons_spellbooks:sunbeam', 10)
         .addSpell('irons_spellbooks:angel_wings', 10)
+        .addAttribute('irons_spellbooks:holy_spell_power', 0.25, 'ADDITION')
+        .addAttribute('irons_spellbooks:cast_time_reduction', 0.15, 'ADDITION')
 
-    event.create('abyssal_codex', 'irons_spells_js:spellbook')
+    // abyssal_codex → eldritch_codex: these are eldritch school spells; abyssal is a separate cataclysm_spellbooks school
+    event.create('eldritch_codex', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(12)
         .addSpell('irons_spellbooks:eldritch_blast', 10)
         .addSpell('irons_spellbooks:pocket_dimension', 10)
         .addSpell('irons_spellbooks:abyssal_shroud', 10)
         .addSpell('irons_spellbooks:telekinesis', 10)
         .addSpell('irons_spellbooks:sonic_boom', 10)
+        .addAttribute('irons_spellbooks:eldritch_spell_power', 0.25, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 75.0, 'ADDITION')
 
     event.create('obliteration_chronicle', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(12)
@@ -65,5 +92,19 @@ StartupEvents.registry('item', event => {
         .addSpell('legendary_spellbooks:annihilation_shockwave', 10)
         .addSpell('legendary_spellbooks:annihilation_resonance', 10)
         .addSpell('legendary_spellbooks:release_riftwalker_predator', 8)
+        .addAttribute('irons_spellbooks:ender_spell_power', 0.25, 'ADDITION')
+        .addAttribute('irons_spellbooks:spell_power', 0.10, 'ADDITION')
+
+    // Technomancy (GT + magic hybrid) Sage tier — requires boundless_naquadrite (gaia_spirit + naquadria) + UV circuits
+    event.create('harbinger_codex', 'irons_spells_js:spellbook')
+        .setMaxSpellSlots(12)
+        .addSpell('cataclysm_spellbooks:atomic_laser', 10)
+        .addSpell('cataclysm_spellbooks:missile_launch', 10)
+        .addSpell('cataclysm_spellbooks:ddos', 10)
+        .addSpell('cataclysm_spellbooks:construct_prowler', 10)
+        .addSpell('cataclysm_spellbooks:aerial_assault', 10)
+        .addAttribute('cataclysm_spellbooks:technomancy_spell_power', 0.35, 'ADDITION')
+        .addAttribute('irons_spellbooks:cooldown_reduction', 0.15, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 75.0, 'ADDITION')
 
 })

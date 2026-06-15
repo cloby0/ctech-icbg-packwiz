@@ -243,8 +243,8 @@ ServerEvents.recipes(event => {
         output: 'aether_redux:gravitite_ingot',
         source: 5000,
         pedestalItems: [
-            { item: { item: 'gtceu:holy_silver_ingot' } },
-            { item: { item: 'gtceu:holy_silver_ingot' } },
+            { item: { item: 'gtceu:holy_silver_rod' } },
+            { item: { item: 'gtceu:holy_silver_rod' } },
             { item: { item: 'kubejs:resonant_zanite_crystal' } },
             { item: { item: 'kubejs:resonant_zanite_crystal' } }
         ]
@@ -256,8 +256,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:hexed_amethyst_core',
         source: 5000,
         pedestalItems: [
-            { item: { item: 'botania:manasteel_ingot' } },
-            { item: { item: 'botania:manasteel_ingot' } },
+            { item: { item: 'gtceu:manasteel_rod' } },
+            { item: { item: 'gtceu:manasteel_rod' } },
             { item: { item: 'gtceu:abstract_metal_ingot' } },
             { item: { item: 'minecraft:glowstone' } }
         ]
@@ -301,4 +301,7 @@ ServerEvents.recipes(event => {
     // journeyman.js side materials
     addImbuementRecipe(event, { input: { item: 'kubejs:resonant_zanite_crystal' }, output: { item: 'irons_spellbooks:cinder_essence', count: 3 }, source: 1500, pedestalItems: [{ tag: 'kubejs:fire_essences' }, { tag: 'kubejs:fire_essences' }] }, index++)
     addImbuementRecipe(event, { input: { item: 'kubejs:resonant_zanite_crystal' }, output: { item: 'irons_spellbooks:arcane_ingot', count: 4 }, source: 1500, pedestalItems: [{ tag: 'kubejs:air_essences' }, { tag: 'kubejs:air_essences' }] }, index++)
+
+    // arcanist.js
+    addImbuementRecipe(event, { input: { item: 'kubejs:elven_concentrate' }, output: 'kubejs:elven_source_lattice', source: 12000, pedestalItems: [{ item: { item: 'kubejs:resonant_zanite_crystal' } }, { item: { item: 'kubejs:resonant_zanite_crystal' } }, { item: { item: 'ars_nouveau:source_gem' } }, { item: { item: 'ars_nouveau:source_gem' } }] }, index++)
 })

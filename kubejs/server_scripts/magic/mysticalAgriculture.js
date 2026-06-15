@@ -100,10 +100,10 @@ ServerEvents.recipes(event => {
         [ma('netherite'),       ma('diamond'),   [ma('soulium'), ma('soulium'), ma('nether_quartz'), ma('nether_quartz')], 8000],
         [ma('iridium'),         ma('platinum'),  [F, F, F, F, F, F],           8000],
 
-        [ma('manasteel'),       ma('silver'),    [ma('mithril'), ma('mithril'), 'botania:manasteel_ingot'],               10000],
-        [ma('terrasteel'),      ma('manasteel'), [ma('manasteel'), ma('manasteel'), 'botania:terrasteel_ingot'],           12000],
-        [ma('elementium'),      ma('terrasteel'),[ma('terrasteel'), ma('terrasteel'), 'botania:elementium_ingot'],         15000],
-        [ma('gaia_spirit'),     ma('elementium'),[ma('elementium'), ma('elementium'), 'botania:gaia_ingot'],        20000],
+        [ma('manasteel'),       ma('silver'),    [ma('mithril'), ma('mithril'), 'gtceu:manasteel_plate'],                 10000],
+        [ma('terrasteel'),      ma('manasteel'), [ma('manasteel'), ma('manasteel'), 'gtceu:terrasteel_plate'],             12000],
+        [ma('elementium'),      ma('terrasteel'),[ma('terrasteel'), ma('terrasteel'), 'gtceu:elementium_plate'],           15000],
+        [ma('gaia_spirit'),     ma('elementium'),[ma('elementium'), ma('elementium'), 'gtceu:gaia_spirit_plate'],   20000],
 
         [ma('nether_star'),     ma('soulium'),   [ma('soulium'), ma('soulium'), ma('soulium'), 'minecraft:nether_star'],   15000],
         [ma('dragon_egg'),      ma('end'),       [ma('end'), ma('end'), ma('end'), 'minecraft:dragon_egg'],                20000],
@@ -216,10 +216,68 @@ ServerEvents.recipes(event => {
         event.shapeless(`3x ${material}`, inputs)
     })
 
+    // GT material required to craft the seed — prevents farming a material to skip its GT processing gate
+    const seedGates = {
+        // Basic metals (Steam/LV) — furnace-smelted, gate ensures you have the material first
+        'iron':       'minecraft:iron_ingot',
+        'copper':     'minecraft:copper_ingot',
+        'gold':       'minecraft:gold_ingot',
+        'tin':        'gtceu:tin_ingot',
+        'zinc':       'gtceu:zinc_ingot',
+        'lead':       'gtceu:lead_ingot',
+        'silver':     'gtceu:silver_ingot',
+        'nickel':     'gtceu:nickel_ingot',
+        'cobalt':     'gtceu:cobalt_ingot',
+        'bismuth':    'gtceu:bismuth_ingot',
+        'antimony':   'gtceu:antimony_ingot',
+        // LV alloys (alloy smelter)
+        'bronze':     'gtceu:bronze_ingot',
+        'brass':      'gtceu:brass_ingot',
+        'electrum':   'gtceu:electrum_ingot',
+        'invar':      'gtceu:invar_ingot',
+        'constantan': 'gtceu:constantan_ingot',
+        // MV EBF (cupronickel coils)
+        'steel':      'gtceu:steel_ingot',
+        'aluminum':   'gtceu:aluminium_ingot',  // MA uses 'aluminum', GT uses 'aluminium'
+        'chrome':     'gtceu:chromium_ingot',   // MA uses 'chrome', GT uses 'chromium'
+        'neodymium':  'gtceu:neodymium_ingot',
+        'manganese':  'gtceu:manganese_dust',   // dust-only material
+        // HV EBF (kanthal coils)
+        'titanium':   'gtceu:titanium_ingot',
+        'silicon':    'gtceu:silicon_ingot',
+        'palladium':  'gtceu:palladium_ingot',
+        'vanadium':   'gtceu:vanadium_ingot',
+        // EV EBF (nichrome coils)
+        'tungsten':   'gtceu:tungsten_ingot',
+        'molybdenum': 'gtceu:molybdenum_ingot',
+        // IV EBF (RTM coils)
+        'iridium':    'gtceu:iridium_ingot',
+        'platinum':   'gtceu:platinum_ingot',
+        'uranium':    'gtceu:uranium_ingot',
+        // Custom GT metals added by this pack
+        'beryllium':  'gtceu:beryllium_ingot',
+        'thorium':    'gtceu:thorium_ingot',
+        'lithium':    'gtceu:lithium_dust',     // dust-only material
+        // Aether materials (dimension-gated + GT processing)
+        'ambrosium':  'aether:ambrosium_shard',
+        'zanite':     'aether:zanite_gemstone',
+        'gravitite':  'aether_redux:gravitite_ingot',
+        'skyjade':    'deep_aether:skyjade',
+        'veridium':   'aether_redux:veridium_ingot',
+        // Space metals (planet-gated + GT processing)
+        'desh':       'ad_astra:desh_ingot',
+        'ostrum':     'ad_astra:ostrum_ingot',
+        'calorite':   'ad_astra:calorite_ingot',
+        'naquadah':   'gtceu:naquadah_ingot',
+    }
+
     seedEssences.forEach(essence => {
         const seedId = essence.replace('_essence', '_seeds')
+        const essenceName = essence.replace('mysticalagriculture:', '').replace('_essence', '')
         const ingredients = []
         for (let i = 0; i < 16; i++) ingredients.push({ item: essence })
+        const gate = seedGates[essenceName]
+        if (gate) ingredients.push({ item: gate })
         event.custom({
             type: 'botania:petal_apothecary',
             ingredients: ingredients,

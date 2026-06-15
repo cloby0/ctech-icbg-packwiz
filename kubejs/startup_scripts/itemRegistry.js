@@ -76,6 +76,9 @@ StartupEvents.registry('item', event => {
     event.create('latent_psi_crystal')
 
     event.create('hexed_amethyst_core')
+    event.create('hexed_mana_matrix')
+
+    event.create('elven_source_lattice')
 
     event.create('rune_of_frost')
 

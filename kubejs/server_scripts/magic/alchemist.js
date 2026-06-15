@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:enchanting_apparatus",
         "reagent": [{ "item": "gtceu:raw_source" }],
         "pedestalItems": [
-            { "item": "gtceu:prima_materia_ingot" },
+            { "item": "gtceu:prima_materia_rod" },
             { "tag": "kubejs:water_essences" },
             { "tag": "kubejs:earth_essences" }
         ],
@@ -134,17 +134,33 @@ ServerEvents.recipes(event => {
     // decorative blocks (amethyst bricks, edified wood) and amethyst_dust packing stay vanilla
     // hex_callback naturally gated by focus+artifact dep
 
-    // hexed_amethyst_core: single entry point for all of Hex Casting
+    // hexed_amethyst_core: entry point for basic Hex Casting (staffs, scrolls, slate, utility)
     event.recipes.ars_nouveau.imbuement(
         'hexcasting:charged_amethyst',
         'kubejs:hexed_amethyst_core',
         5000,
         [
-            'botania:manasteel_ingot',
-            'botania:manasteel_ingot',
+            'gtceu:manasteel_rod',
+            'gtceu:manasteel_rod',
             'gtceu:abstract_metal_ingot',
             'minecraft:glowstone',
         ]
+    )
+
+    // hexed_mana_matrix: second gate for advanced Hex tools (focus, spellbook, artifact, akashic)
+    // upgrades the core with mana attunement; gates tools that actually hold/cast spells
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'gtceu:manasteel_plate',
+            'gtceu:manasteel_plate',
+            'botania:mana_pearl',
+            'botania:mana_pearl',
+            'ars_nouveau:source_gem',
+            'ars_nouveau:source_gem',
+        ],
+        'kubejs:hexed_amethyst_core',
+        'kubejs:hexed_mana_matrix',
+        10000,
     )
 
     event.remove({ output: /hexcasting:staff\// })
@@ -224,7 +240,7 @@ ServerEvents.recipes(event => {
         L: '#hexcasting:edified_logs',
         P: '#hexcasting:edified_planks',
         C: 'minecraft:book',
-        A: 'kubejs:hexed_amethyst_core',
+        A: 'kubejs:hexed_mana_matrix',
     })
 
     event.remove({ id: 'hexcasting:akashic_connector' })
@@ -233,16 +249,16 @@ ServerEvents.recipes(event => {
         P: '#hexcasting:edified_planks',
         '1': 'hexcasting:amethyst_dust',
         '2': 'minecraft:amethyst_shard',
-        A: 'kubejs:hexed_amethyst_core',
+        A: 'kubejs:hexed_mana_matrix',
     })
 
     event.remove({ id: 'hexcasting:focus' })
     event.remove({ id: 'hexcasting:focus_rotated' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'botania:manasteel_ingot',
-            'botania:manasteel_ingot',
-            'kubejs:hexed_amethyst_core',
+            'gtceu:manasteel_rod',
+            'gtceu:manasteel_rod',
+            'kubejs:hexed_mana_matrix',
             'minecraft:glowstone',
             'minecraft:glowstone',
         ],
@@ -254,9 +270,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'hexcasting:spellbook' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'botania:manasteel_ingot',
-            'botania:manasteel_ingot',
-            'kubejs:hexed_amethyst_core',
+            'gtceu:manasteel_plate',
+            'gtceu:manasteel_plate',
+            'kubejs:hexed_mana_matrix',
             'gtceu:abstract_metal_ingot',
             'minecraft:chorus_fruit',
         ],
@@ -268,10 +284,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'hexcasting:artifact' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'botania:manasteel_ingot',
-            'botania:manasteel_ingot',
-            'kubejs:hexed_amethyst_core',
-            'kubejs:hexed_amethyst_core',
+            'gtceu:manasteel_plate',
+            'gtceu:manasteel_plate',
+            'kubejs:hexed_mana_matrix',
+            'kubejs:hexed_mana_matrix',
             'gtceu:abstract_metal_ingot',
         ],
         '#minecraft:music_discs',
@@ -281,17 +297,17 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'hexcasting:trinket' })
     event.shaped('hexcasting:trinket', [' M ', 'MAM', ' M '], {
-        M: 'botania:manasteel_ingot',
-        A: 'kubejs:hexed_amethyst_core',
+        M: 'gtceu:manasteel_plate',
+        A: 'kubejs:hexed_mana_matrix',
     })
 
     event.remove({ output: 'hex_ars_link:linker_base' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'botania:manasteel_ingot',
-            'botania:manasteel_ingot',
-            'kubejs:hexed_amethyst_core',
-            'kubejs:hexed_amethyst_core',
+            'gtceu:manasteel_plate',
+            'gtceu:manasteel_plate',
+            'kubejs:hexed_mana_matrix',
+            'kubejs:hexed_mana_matrix',
         ],
         'minecraft:amethyst_shard',
         'hex_ars_link:linker_base',

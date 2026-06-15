@@ -70,8 +70,8 @@ ServerEvents.recipes(event => {
         "input": { "item": "kubejs:altar_charged_gravitite" },
         "output": "aether_redux:gravitite_ingot",
         "pedestalItems": [
-            { "item": { "item": "gtceu:holy_silver_ingot" } },
-            { "item": { "item": "gtceu:holy_silver_ingot" } },
+            { "item": { "item": "gtceu:holy_silver_rod" } },
+            { "item": { "item": "gtceu:holy_silver_rod" } },
             { "item": { "item": "kubejs:resonant_zanite_crystal" } },
             { "item": { "item": "kubejs:resonant_zanite_crystal" } }
         ],

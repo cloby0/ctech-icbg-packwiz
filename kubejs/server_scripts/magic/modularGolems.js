@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         ],
         {
             C: 'minecraft:clay_ball',
-            H: 'gtceu:holy_silver_ingot',
+            H: 'gtceu:holy_silver_plate',
             S: 'irons_spellbooks:divine_pearl'
         }
     )
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         {
             C: 'minecraft:clay_ball',
             S: 'ars_nouveau:source_gem',
-            H: 'gtceu:holy_silver_ingot'
+            H: 'gtceu:holy_silver_plate'
         }
     )
 
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             'EIE'
         ],
         {
-            M: 'botania:manasteel_ingot',
+            M: 'gtceu:manasteel_plate',
             g: 'modulargolems:golem_slicing_axe',
             R: 'minecraft:redstone',
             T: 'minecraft:smithing_table',
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             A: 'modulargolems:empty_upgrade',
             C: 'minecraft:diamond',
             D: 'irons_spellbooks:divine_pearl',
-            P: 'botania:manasteel_ingot'
+            P: 'gtceu:manasteel_plate'
         }
     )
 
@@ -83,8 +83,8 @@ ServerEvents.recipes(event => {
             A: 'modulargolems:empty_upgrade',
             D: 'minecraft:nether_star',
             C: 'minecraft:netherite_ingot',
-            P: 'gtceu:prima_materia_ingot',
-            M: 'botania:manasteel_ingot'
+            P: 'gtceu:prima_materia_plate',
+            M: 'gtceu:manasteel_plate'
         }
     )
 
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
         {
             A: 'minecraft:redstone_block',
             S: 'minecraft:nether_star',
-            E: 'botania:elementium_ingot',
+            E: 'gtceu:elementium_plate',
             C: 'cataclysm:witherite_ingot'
         }
     )
@@ -116,8 +116,8 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:blackstone',
-            M: 'botania:manasteel_ingot',
-            E: 'botania:elementium_ingot',
+            M: 'gtceu:manasteel_plate',
+            E: 'gtceu:elementium_plate',
             C: 'cataclysm:lava_power_cell'
         }
     )

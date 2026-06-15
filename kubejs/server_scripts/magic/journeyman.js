@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:source_gem_block'})
+    event.remove({ output: 'ars_nouveau:source_gem', type: 'gtceu:sifter' })
     
     event.remove({ id: 'reliquary:lantern_of_paranoia' })
     event.remove({ id: 'reliquary:interdiction_torch' })

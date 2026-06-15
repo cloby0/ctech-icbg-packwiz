@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         "type": "botania:runic_altar",
         "ingredients": [
             {
-            "tag": "forge:ingots/manasteel"
+            "item": "gtceu:manasteel_bolt"
             },
             {
             "item": "botania:rune_earth"
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
-            {"item": "botania:manasteel_ingot"},
+            {"item": "gtceu:manasteel_bolt"},
             {"item": "ad_astra:ice_shard"},
             {"item": "ad_astra:ice_shard"},
             {"item": "ad_astra:ice_shard"},

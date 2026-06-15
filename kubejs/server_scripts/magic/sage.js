@@ -7,10 +7,10 @@ ServerEvents.recipes(event => {
             { "item": "botania:life_essence" },
             { "item": "botania:rune_wrath" },
             { "item": "botania:rune_pride" },
-            { "tag": "forge:ingots/elementium" },
-            { "tag": "forge:ingots/elementium" },
-            { "tag": "forge:ingots/elementium" },
-            { "tag": "forge:ingots/elementium" }
+            { "item": "gtceu:elementium_bolt" },
+            { "item": "gtceu:elementium_bolt" },
+            { "item": "gtceu:elementium_bolt" },
+            { "item": "gtceu:elementium_bolt" }
         ],
         "mana": 8000,
         "output": {
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
             "minecraft:golden_apple"
         ],
         "kubejs:gaian_holy_core",
-        "kubejs:gaian_sanctum",
+        "kubejs:radiant_sanctum",
         50000
     )
 
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
             "minecraft:ender_eye"
         ],
         "kubejs:gaian_void_core",
-        "kubejs:abyssal_codex",
+        "kubejs:eldritch_codex",
         50000
     )
 
@@ -174,6 +174,23 @@ ServerEvents.recipes(event => {
         50000
     )
 
+    // Harbinger Codex — UV technomancy book, requires boundless_naquadrite (gaia_spirit + naquadria) + UV circuits
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "botania:gaia_ingot",
+            "botania:gaia_ingot",
+            "cataclysm_spellbooks:technomancy_rune",
+            "cataclysm_spellbooks:technomancy_rune",
+            "cataclysm_spellbooks:technomancy_rune",
+            "cataclysm_spellbooks:technomancy_rune",
+            "#gtceu:circuits/uv",
+            "#gtceu:circuits/uv"
+        ],
+        "gtceu:boundless_naquadrite_ingot",
+        "kubejs:harbinger_codex",
+        55000
+    )
+
     // renewable life_essence after first Guardian of Gaia kill
     // gaia_spirit_essence (farmed via MA once you have first gaia_ingot) distilled through elementium
     event.recipes.ars_nouveau.enchanting_apparatus(
@@ -182,8 +199,8 @@ ServerEvents.recipes(event => {
             "mysticalagriculture:gaia_spirit_essence",
             "mysticalagriculture:gaia_spirit_essence",
             "mysticalagriculture:gaia_spirit_essence",
-            "botania:terrasteel_ingot",
-            "botania:terrasteel_ingot",
+            "gtceu:terrasteel_plate",
+            "gtceu:terrasteel_plate",
             "#kubejs:fire_essences",
             "#kubejs:air_essences",
         ],

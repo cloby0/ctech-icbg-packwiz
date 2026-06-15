@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         {
             A: 'minecraft:amethyst_block',
             S: 'ars_nouveau:source_gem',
-            M: '#forge:ingots/mithril',
+            M: 'gtceu:mithril_plate',
             V: 'minecraft:anvil'
         }
     )
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             'OSO'
         ],
         {
-            M: '#forge:ingots/mithril',
+            M: 'gtceu:mithril_plate',
             D: 'minecraft:polished_deepslate',
             O: 'minecraft:crying_obsidian',
             S: 'ars_nouveau:source_gem'
@@ -60,14 +60,14 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:rare_ink" },
-        "input": { "item": "gtceu:prima_materia_ingot" },
+        "input": { "item": "gtceu:prima_materia_plate" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:epic_ink" }]
     })
 
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:epic_ink" },
-        "input": { "item": "botania:manasteel_ingot" },
+        "input": { "item": "kubejs:elven_source_lattice" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:legendary_ink" }]
     })
 
@@ -144,8 +144,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'gtceu:prima_materia_ingot',
-            'gtceu:prima_materia_ingot',
+            'gtceu:prima_materia_rod',
+            'gtceu:prima_materia_rod',
             'kubejs:chaos_essence',
             'irons_spellbooks:evocation_rune',
             'irons_spellbooks:evocation_rune',
@@ -157,14 +157,31 @@ ServerEvents.recipes(event => {
     )
 
     // Arcanist (ZPM) custom spellbooks
+    // Technomatic Folio — requires elven_americate (elementium + americium) + ZPM circuits
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
+            'gtceu:elven_americate_ingot',
+            'gtceu:elven_americate_ingot',
+            'cataclysm_spellbooks:technomancy_rune',
+            'cataclysm_spellbooks:technomancy_rune',
             'kubejs:elven_concentrate',
             'kubejs:elven_concentrate',
+            '#gtceu:circuits/zpm',
+            '#gtceu:circuits/zpm'
+        ],
+        'irons_spellbooks:netherite_spell_book',
+        'kubejs:technomatic_folio',
+        42000,
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'kubejs:elven_source_lattice',
+            'kubejs:elven_source_lattice',
             'irons_spellbooks:ice_rune',
             'irons_spellbooks:ice_rune'
         ],
@@ -175,12 +192,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
-            '#forge:ingots/elementium',
-            'kubejs:elven_concentrate',
-            'kubejs:elven_concentrate',
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'gtceu:elementium_plate',
+            'kubejs:elven_source_lattice',
+            'kubejs:elven_source_lattice',
             'irons_spellbooks:nature_rune',
             'irons_spellbooks:nature_rune'
         ],
@@ -195,8 +212,8 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:ender_rune',
             'irons_spellbooks:portal_frame',
             'irons_spellbooks:portal_frame',
-            'botania:terrasteel_ingot',
-            '#forge:ingots/elementium',
+            'gtceu:terrasteel_plate',
+            'gtceu:elementium_plate',
             'minecraft:ender_eye',
             'minecraft:ender_eye'
         ],
@@ -211,8 +228,8 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:lightning_rune',
             'irons_spellbooks:energized_core',
             'irons_spellbooks:energized_core',
-            'botania:manasteel_ingot',
-            '#forge:ingots/elementium',
+            'kubejs:elven_source_lattice',
+            'gtceu:elementium_plate',
             'irons_spellbooks:lightning_bottle',
             'irons_spellbooks:lightning_bottle'
         ],
