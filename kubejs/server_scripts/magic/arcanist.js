@@ -40,8 +40,8 @@ ServerEvents.recipes(event => {
         "kubejs:elementite_dust",
         8000,
         [
-            "ars_nouveau:water_essence",
-            "ars_nouveau:air_essence",
+            "#kubejs:water_essences",
+            "#kubejs:air_essences",
             "gtceu:luminessence_dust"
         ]
     )

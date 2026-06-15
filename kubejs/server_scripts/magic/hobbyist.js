@@ -34,25 +34,25 @@ ServerEvents.recipes(event => {
                 "tag": "minecraft:coals"
             },
             {
-                "item": "minecraft:gold_ingot"
+                "item": "minecraft:flint"
             },
             {
                 "tag": "minecraft:coals"
             },
             {
-                "item": "minecraft:gold_ingot"
+                "item": "minecraft:flint"
             },
             {
                 "tag": "minecraft:coals"
             },
             {
-                "item": "minecraft:gold_ingot"
+                "item": "minecraft:flint"
             },
             {
                 "tag": "minecraft:coals"
             },
             {
-                "item": "minecraft:gold_ingot"
+                "item": "minecraft:flint"
             }
         ],
         "output": {
@@ -187,6 +187,26 @@ ServerEvents.recipes(event => {
         "liquidOutput": {
             "fluid": "minecraft:lava"
         },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    // oil synthesis step 1: marine biomass accumulation
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:water" },
+        "ingredients": [
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" },
+            { "tag": "forge:corals/alive" }
+        ],
+        "output": { "item": "kubejs:primordial_organic_muck" },
+        "liquidOutput": { "fluid": "minecraft:water" },
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"
     });

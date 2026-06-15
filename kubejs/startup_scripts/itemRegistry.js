@@ -88,4 +88,8 @@ StartupEvents.registry('item', event => {
     event.create('glacio_guidance_module')
 
     event.create('cannon_mechanism')
+
+    event.create('primordial_organic_muck')
+    event.create('kerogen')
+    event.create('crude_petroleum_mass')
 })

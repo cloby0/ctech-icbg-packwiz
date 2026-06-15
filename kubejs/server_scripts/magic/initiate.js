@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            "ars_nouveau:fire_essence"
+            "#kubejs:fire_essences"
         ],
         "gtceu:holy_silver_dust",
         "gtceu:holy_silver_ingot", // output

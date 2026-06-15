@@ -1,14 +1,9 @@
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 
-    // swap petals -> mana_pearl in all apothecary recipes; gates the apothecary behind mana pool
-    // pure_daisy is removed here and re-gated behind the enchanting apparatus recipe below
+    // pure_daisy removed here and re-gated behind the enchanting apparatus recipe below
+    // petal apothecary block itself requires livingrock (EV gate via pure_daisy) — no ingredient swap needed
     event.remove({ id: "botania:petal_apothecary/pure_daisy" })
-    event.replaceInput(
-        { id: 'botania:apothecary_default' },
-        '#botania:petals',
-        'botania:mana_pearl'
-    )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
@@ -22,18 +17,6 @@ ServerEvents.recipes(event => {
         10000,
     );
 
-    event.replaceInput(
-        { id: 'botania:apothecary_deepslate' },
-        '#botania:petals',
-        'botania:mana_pearl'
-    )
-
-    event.replaceInput(
-        { id: 'botania:apothecary_mossy' },
-        '#botania:petals',
-        'botania:mana_pearl'
-    )
-    
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             "gtceu:prima_materia_block",
@@ -99,7 +82,7 @@ ServerEvents.recipes(event => {
         ['#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
         'gtceu:abstract_metal_ingot', 'gtceu:holy_silver_ingot', 4000)
 
-    // 2x source gem per raw at Alchemist tier
+    // 3x source gem per raw at Alchemist tier
     event.custom({
         "type": "ars_nouveau:enchanting_apparatus",
         "reagent": [{ "item": "gtceu:raw_source" }],

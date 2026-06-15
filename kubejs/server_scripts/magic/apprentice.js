@@ -60,11 +60,6 @@ ServerEvents.recipes(event => {
                  }
     );
 
-    event.remove({ id: 'ars_nouveau:imbuement_fire_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
-
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -114,6 +109,45 @@ ServerEvents.recipes(event => {
     );
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
+
+    // oil synthesis step 2: kerogen formation (burial pressure via earth essence)
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 4,
+        "input": { "item": "kubejs:primordial_organic_muck" },
+        "output": "kubejs:kerogen",
+        "pedestalItems": [
+            { "item": { "tag": "kubejs:earth_essences" } }
+        ],
+        "source": 1000
+    })
+
+    // oil synthesis step 3: thermal cracking (lava = high heat, fire essence = catalyst)
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:lava" },
+        "ingredients": [
+            { "item": "kubejs:kerogen" },
+            { "item": "kubejs:kerogen" },
+            { "item": "kubejs:kerogen" },
+            { "item": "kubejs:kerogen" },
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" },
+            { "tag": "kubejs:fire_essences" }
+        ],
+        "output": { "item": "kubejs:crude_petroleum_mass" },
+        "liquidOutput": { "fluid": "minecraft:lava" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    })
+
+    // oil synthesis step 4: fluid extraction (LV extractor)
+    event.recipes.gtceu.extractor('crude_petroleum_mass_extraction')
+        .itemInputs('1x kubejs:crude_petroleum_mass')
+        .outputFluids(Fluid.of('gtceu:oil_heavy', 4000))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // side material: luminessence → experience bottles via fire
     // exp bottles needed later for abstract_metal chain; fire essence channels luminessence into experience energy

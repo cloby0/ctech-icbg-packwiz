@@ -25,19 +25,23 @@ ItemEvents.tooltip(event => {
         'botania:terrasteel_ingot', 'kubejs:florid_compound', 'kubejs:living_metalloid', 'kubejs:rune_of_frost',
         // arcanist
         'botania:elementium_ingot', 'kubejs:weak_elementium_dust', 'kubejs:elven_concentrate', 'kubejs:elementite_dust',
+        'extrabotany:aerialite_ingot', 'extrabotany:photonium_ingot', 'extrabotany:shadowium_ingot',
         // sage
-        'botania:gaia_ingot', 'kubejs:vengeful_gaia_spirit', 'kubejs:soul_of_gaia', 'kubejs:boundless_gaia_spirit_ingot'
+        'botania:gaia_ingot', 'kubejs:vengeful_gaia_spirit', 'kubejs:soul_of_gaia', 'kubejs:boundless_gaia_spirit_ingot',
+        // transcendent
+        'extrabotany:orichalcos_ingot', 'extrabotany:hero_medal'
     ]
 
     const TIER_LABELS = {
-        'kubejs:magic/apprentice':  'Magic Tier: §7Apprentice',
-        'kubejs:magic/journeyman':  'Magic Tier: §aJourneyman',
-        'kubejs:magic/initiate':    'Magic Tier: §6Initiate',
-        'kubejs:magic/sorcerer':    'Magic Tier: §5Sorcerer',
-        'kubejs:magic/alchemist':   'Magic Tier: §bAlchemist',
-        'kubejs:magic/thaumaturge': 'Magic Tier: §dThaumaturge',
-        'kubejs:magic/arcanist':    'Magic Tier: §9Arcanist',
-        'kubejs:magic/sage':        'Magic Tier: §eSage'
+        'kubejs:magic/apprentice':    'Magic Tier: §7Apprentice',
+        'kubejs:magic/journeyman':    'Magic Tier: §aJourneyman',
+        'kubejs:magic/initiate':      'Magic Tier: §6Initiate',
+        'kubejs:magic/sorcerer':      'Magic Tier: §5Sorcerer',
+        'kubejs:magic/alchemist':     'Magic Tier: §bAlchemist',
+        'kubejs:magic/thaumaturge':   'Magic Tier: §dThaumaturge',
+        'kubejs:magic/arcanist':      'Magic Tier: §9Arcanist',
+        'kubejs:magic/sage':          'Magic Tier: §eSage',
+        'kubejs:magic/transcendent':  'Magic Tier: §4Transcendent'
     }
 
     event.addAdvanced(TIER_ITEMS, (item, advanced, tooltip) => {

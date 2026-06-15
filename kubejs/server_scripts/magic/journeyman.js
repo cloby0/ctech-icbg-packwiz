@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
         "pedestalItems": [
             {
             "item": {
-                "item": "ars_nouveau:fire_essence"
+                "tag": "kubejs:fire_essences"
             }
             }
         ],
