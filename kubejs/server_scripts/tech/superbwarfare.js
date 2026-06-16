@@ -185,9 +185,9 @@ ServerEvents.recipes(event => {
     // way the vehicle that fires it does. AP rounds get a tungsten penetrator (real APFSDS
     // material), guided missiles get a circuit standing in for the seeker electronics.
     function ammo(id, output, count, tier, inputs) {
-        event.recipes.gtceu.arms_manufacturer(`superbwarfare_${id}`)
-            .itemInputs(...inputs)
-            .itemOutputs(`${count}x superbwarfare:${output}`)
+        let recipe = event.recipes.gtceu.arms_manufacturer(`superbwarfare_${id}`)
+        recipe.itemInputs.apply(recipe, inputs)
+        recipe.itemOutputs(`${count}x superbwarfare:${output}`)
             .EUt(GTValues.VA[GTValues[tier]])
             .duration(tier === 'LV' ? 200 : tier === 'MV' ? 300 : tier === 'HV' ? 400 : 500)
             .circuit(tier === 'LV' ? 1 : tier === 'MV' ? 2 : tier === 'HV' ? 3 : 4)
@@ -228,9 +228,9 @@ ServerEvents.recipes(event => {
     function vehicle(entityId, tier, inputs) {
         const circuitNo = { LV: 1, MV: 2, HV: 3, EV: 4, LuV: 6, ZPM: 7 }[tier]
         const duration = { LV: 200, MV: 300, HV: 400, EV: 500, LuV: 600, ZPM: 700 }[tier]
-        event.recipes.gtceu.vehicle_assembler(`superbwarfare_${entityId}`)
-            .itemInputs(...inputs)
-            .itemOutputs(crateOutput(entityId))
+        let recipe = event.recipes.gtceu.vehicle_assembler(`superbwarfare_${entityId}`)
+        recipe.itemInputs.apply(recipe, inputs)
+        recipe.itemOutputs(crateOutput(entityId))
             .EUt(GTValues.VA[GTValues[tier]])
             .duration(duration)
             .circuit(circuitNo)
