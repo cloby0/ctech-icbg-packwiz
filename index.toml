@@ -2306,11 +2306,6 @@ hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
 metafile = true
 
 [[files]]
-file = "mods/create-energy-cannons.pw.toml"
-hash = "570b08c4fc82895d9fe862f7dbe9e76105078816a75ce1861dc1399d7e79889f"
-metafile = true
-
-[[files]]
 file = "mods/create-new-age.pw.toml"
 hash = "af254a9e26ed280c6078e2d02aa9f511d5b3f0ae43767e6a35a87583014e5e6e"
 metafile = true
@@ -2329,6 +2324,10 @@ metafile = true
 file = "mods/create.pw.toml"
 hash = "9d7971a7af2ff4a96a0e5aede76f9cf8dc978da601e2754f79d6ec8631125bb9"
 metafile = true
+
+[[files]]
+file = "mods/createenergycannons-forge-0.2.jar"
+hash = "162ff964e8dd44e2cde26466c571217c0db9a64d09295ada0ef9b3648eed95de"
 
 [[files]]
 file = "mods/creativecore.pw.toml"
