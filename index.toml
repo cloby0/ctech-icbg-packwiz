@@ -1773,6 +1773,10 @@ file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
 hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
+file = "kubejs/server_scripts/tech/superbwarfare.js"
+hash = "749524e2f6a5f75664bc0c1df360855c06a3fa6d339417b6b7e868ccc1f69276"
+
+[[files]]
 file = "kubejs/server_scripts/tech/woot.js"
 hash = "e734aac3ee0dbde911909bc227a8ee4b909e4d63fbe9686a7a80e98dd41af85a"
 
@@ -1830,11 +1834,15 @@ hash = "1d6578c3fd8ca9d70abc29696b5a1df5287a6d0d7f2133e7db623f7ac9ced75d"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "27bad30a239522a21e553321235c9da72075cd7b12dc2da6acdef7c0784b0d01"
+hash = "aa4c29ad0ac9f4625458970af806170fe003cca0228736cb661a204829f0f629"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
 hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
+hash = "1cab87ea1636451f06233e4c38988a30dd389120732c310196cfab753f6e7e1a"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
