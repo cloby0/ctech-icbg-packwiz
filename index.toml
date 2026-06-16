@@ -3393,6 +3393,16 @@ hash = "5dfd5e42573659ad84a5d870082aae38aaa8469aba2655e5b2cb14de4ca4cbdd"
 metafile = true
 
 [[files]]
+file = "mods/superb-horizons.pw.toml"
+hash = "103e51e10d5dabd1b3b85c71a15e3ece07605a0d243c90a3e0dff3646b1a4126"
+metafile = true
+
+[[files]]
+file = "mods/superb-warfare.pw.toml"
+hash = "42b6ba778eedb22ecf1d9926862c002d920202aeba79542f049a860cbf3ac008"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 hash = "3eede8a7ebafb69840153ff51dbc879b0232799e90a834ab6d71274b1316179f"
 metafile = true
