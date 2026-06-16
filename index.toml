@@ -1842,7 +1842,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
-hash = "1cab87ea1636451f06233e4c38988a30dd389120732c310196cfab753f6e7e1a"
+hash = "352bcfaa06b18e09882cda1129523bd1d6ce5f62e2fb178d06f3119c020d383f"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"

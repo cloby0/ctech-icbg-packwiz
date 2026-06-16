@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('epitaxial_growth_chamber', 'multiblock')
+    event.create('vehicle_assembler', 'multiblock')
         ["tooltips(java.util.List)"]([Component.literal("Can't we just do this on Earth? Maybe... but that's lame.")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
