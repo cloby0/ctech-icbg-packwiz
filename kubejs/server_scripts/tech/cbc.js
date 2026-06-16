@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x createbigcannons:empty_machine_gun_round',
             '1x minecraft:gunpowder',
-            '1x #forge:nuggets/copper'
+            '1x create:copper_nugget'
         )
         .inputFluids(Fluid.of('gtceu:lubricant', 50))
         .itemOutputs('1x createbigcannons:machine_gun_round')

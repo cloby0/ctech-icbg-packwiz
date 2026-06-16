@@ -288,4 +288,158 @@ ServerEvents.recipes(event => {
         "output": { "item": "reliquary:fortune_coin", "count": 4 },
         "sourceCost": 3000
     })
+
+    // magical_receiver: spell turret core + holy silver + source gems
+    // gate component for all ars_armorer guns
+    event.shaped(
+        Item.of('kubejs:magical_receiver', 1),
+        [
+            'HRH',
+            'STS',
+            'HRH'
+        ],
+        {
+            H: 'gtceu:holy_silver_ingot',
+            R: 'gtceu:holy_silver_rod',
+            S: 'ars_nouveau:source_gem',
+            T: 'ars_nouveau:basic_spell_turret'
+        }
+    )
+
+    // pistol: compact, lightest
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:pistol_source_ejector",HasBulletInBarrel:0b}'),
+        [
+            'GPG',
+            'FMR',
+            'GPG'
+        ],
+        {
+            G: 'ars_nouveau:source_gem',
+            P: 'gtceu:holy_silver_plate',
+            F: 'ars_nouveau:magebloom_fiber',
+            M: 'kubejs:magical_receiver',
+            R: 'gtceu:holy_silver_rod'
+        }
+    )
+
+    // shotgun jet: bolt-choke spread
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_jet_ejector",HasBulletInBarrel:0b}'),
+        [
+            'BPB',
+            'GMG',
+            'BFB'
+        ],
+        {
+            B: 'gtceu:holy_silver_bolt',
+            P: 'gtceu:holy_silver_plate',
+            G: 'ars_nouveau:source_gem',
+            M: 'kubejs:magical_receiver',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // shotgun splash: source-burst, gem-heavy
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_splash_ejector",HasBulletInBarrel:0b}'),
+        [
+            'GPG',
+            'PMG',
+            'GFG'
+        ],
+        {
+            G: 'ars_nouveau:source_gem',
+            P: 'gtceu:holy_silver_plate',
+            M: 'kubejs:magical_receiver',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // auto rifle: bolt cycling + extra rods
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"ars_armorer:auto_rifle_stream_ejector",HasBulletInBarrel:0b}'),
+        [
+            'GPG',
+            'BMB',
+            'RFR'
+        ],
+        {
+            G: 'ars_nouveau:source_gem',
+            P: 'gtceu:holy_silver_plate',
+            B: 'gtceu:holy_silver_bolt',
+            M: 'kubejs:magical_receiver',
+            R: 'gtceu:holy_silver_rod',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // sniper: long barrel + foil optics
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:sniper_distance_ejector",HasBulletInBarrel:0b}'),
+        [
+            'GPO',
+            'LMG',
+            'PFP'
+        ],
+        {
+            G: 'ars_nouveau:source_gem',
+            P: 'gtceu:holy_silver_plate',
+            O: 'gtceu:holy_silver_foil',
+            L: 'gtceu:long_holy_silver_rod',
+            M: 'kubejs:magical_receiver',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // mortar: heavy launcher, wide barrel
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:mortar_source_thrower",HasBulletInBarrel:0b}'),
+        [
+            'PGP',
+            'GMG',
+            'LFL'
+        ],
+        {
+            P: 'gtceu:holy_silver_plate',
+            G: 'ars_nouveau:source_gem',
+            M: 'kubejs:magical_receiver',
+            L: 'gtceu:long_holy_silver_rod',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // miner drill: drill body, rod-dominant
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_miner_drill",HasBulletInBarrel:0b}'),
+        [
+            'BGB',
+            'LML',
+            'BFB'
+        ],
+        {
+            B: 'gtceu:holy_silver_bolt',
+            G: 'ars_nouveau:source_gem',
+            L: 'gtceu:long_holy_silver_rod',
+            M: 'kubejs:magical_receiver',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
+
+    // flying blade: foil blade edges + source
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_source_flying_blade",HasBulletInBarrel:0b}'),
+        [
+            'OPO',
+            'GMF',
+            'OPO'
+        ],
+        {
+            O: 'gtceu:holy_silver_foil',
+            P: 'gtceu:holy_silver_plate',
+            G: 'ars_nouveau:source_gem',
+            M: 'kubejs:magical_receiver',
+            F: 'ars_nouveau:magebloom_fiber'
+        }
+    )
 });

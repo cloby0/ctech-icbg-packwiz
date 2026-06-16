@@ -8,14 +8,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.arms_manufacturer('10mm_pistol')
         .itemInputs('2x gtceu:double_wrought_iron_plate', '2x gtceu:wrought_iron_bolt', '3x gtceu:wrought_iron_ring', 'gtceu:treated_wood_plate')
-        .inputFluids()
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"fallout:10mm_pistol",HasBulletInBarrel:0b}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.arms_manufacturer('10mm_bullet')
         .itemInputs('32x gtceu:bronze_bolt', '8x minecraft:gunpowder', '32x create:copper_nugget')
-        .inputFluids()
         .itemOutputs(Item.of('tacz:ammo', 60, '{AmmoId:"fallout:10mm"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
@@ -31,7 +29,6 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.arms_manufacturer('556')
         .itemInputs('24x gtceu:brass_bolt', '6x minecraft:gunpowder', '16x create:copper_nugget')
-        .inputFluids()
         .itemOutputs(Item.of('tacz:ammo', 60, '{AmmoId:"tacz:556x45"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
@@ -39,14 +36,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.arms_manufacturer('trapdoor_rifle')
         .itemInputs('4x gtceu:wrought_iron_bolt', '2x gtceu:wrought_iron_ring', 'gtceu:long_wrought_iron_rod', '5x gtceu:treated_wood_plate')
-        .inputFluids()
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:springfield1873",HasBulletInBarrel:1b}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.arms_manufacturer('4570')
         .itemInputs('24x gtceu:iron_bolt', '3x minecraft:gunpowder', '16x create:copper_nugget')
-        .inputFluids()
         .itemOutputs(Item.of('tacz:ammo', 48, '{AmmoId:"tacz:45_70"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
@@ -72,7 +67,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.arms_manufacturer('pistol_auto_stress')
-        .itemInputs('2x gtceu:steel_plate', '4x gtceu:brass_bolt', '2x gtceu:steel_ring', '#gtceu:circuits/ulv', 'gtceu:treated_wood_plate')
+        .itemInputs('2x gtceu:steel_plate', '4x gtceu:brass_bolt', '2x gtceu:steel_ring', '#gtceu:circuits/lv', 'gtceu:treated_wood_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:pistol_auto_stress",HasBulletInBarrel:0b}'))
         .duration(150)
         .EUt(GTValues.VA[GTValues.MV])
@@ -487,7 +482,7 @@ ServerEvents.recipes(event => {
         .circuit(12)
 
     event.recipes.gtceu.arms_manufacturer('glock_17')
-        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', '3x gtceu:silicone_rubber_plate')
+        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', '3x gtceu:silicone_rubber_plate', 'gtceu:chromium_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:glock_17",HasBulletInBarrel:0b}'))
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
@@ -598,25 +593,25 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.arms_manufacturer('cz75')
-        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate')
+        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate', 'gtceu:chromium_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:cz75",HasBulletInBarrel:0b}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.arms_manufacturer('m9a4')
-        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate')
+        .itemInputs('3x gtceu:stainless_steel_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate', 'gtceu:long_stainless_steel_rod', 'gtceu:chromium_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:m9a4",HasBulletInBarrel:0b}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.arms_manufacturer('p320')
-        .itemInputs('3x gtceu:aluminium_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', '2x gtceu:silicone_rubber_plate')
+        .itemInputs('3x gtceu:aluminium_plate', '2x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', '2x gtceu:silicone_rubber_plate', 'gtceu:chromium_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:p320",HasBulletInBarrel:0b}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.arms_manufacturer('hk_mk23')
-        .itemInputs('4x gtceu:stainless_steel_plate', '3x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate')
+        .itemInputs('4x gtceu:stainless_steel_plate', '3x gtceu:aluminium_bolt', '2x gtceu:stainless_steel_ring', 'gtceu:silicone_rubber_plate', 'gtceu:chromium_plate')
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:hk_mk23",HasBulletInBarrel:0b}'))
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
@@ -837,7 +832,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
 
     event.recipes.gtceu.arms_manufacturer('cluster_quartz_bullet')
-        .itemInputs('16x ae2:certus_quartz_crystal', '8x ae2:fluix_crystal', '8x minecraft:gunpowder')
+        .itemInputs('16x ae2:certus_quartz_crystal', '8x ae2:fluix_crystal', '8x minecraft:gunpowder', '16x gtceu:titanium_bolt')
         .itemOutputs(Item.of('tacz:ammo', 32, '{AmmoId:"applied_armorer:cluster_quartz_bullet"}'))
         .duration(150)
         .EUt(GTValues.VA[GTValues.IV])
@@ -910,7 +905,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.arms_manufacturer('fusion_cell_ammo')
-        .itemInputs('8x gtceu:naquadah_plate', '4x gtceu:osmium_dust', '4x gtceu:iridium_plate')
+        .itemInputs('8x gtceu:naquadah_plate', '4x gtceu:osmium_plate', '4x gtceu:iridium_plate')
         .inputFluids(Fluid.of('gtceu:deuterium', 4000))
         .itemOutputs(Item.of('tacz:ammo', 8, '{AmmoId:"fallout:fusion_cell"}'))
         .duration(400)

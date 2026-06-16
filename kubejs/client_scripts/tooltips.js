@@ -28,7 +28,7 @@ ItemEvents.tooltip(event => {
         'extrabotany:aerialite_ingot', 'extrabotany:photonium_ingot', 'extrabotany:shadowium_ingot',
         // sage
         'botania:gaia_ingot', 'kubejs:vengeful_gaia_spirit', 'kubejs:soul_of_gaia', 'kubejs:boundless_gaia_spirit_ingot',
-        // transcendent
+        // sage+
         'extrabotany:orichalcos_ingot', 'extrabotany:hero_medal'
     ]
 
@@ -41,7 +41,7 @@ ItemEvents.tooltip(event => {
         'kubejs:magic/thaumaturge':   'Magic Tier: §dThaumaturge',
         'kubejs:magic/arcanist':      'Magic Tier: §9Arcanist',
         'kubejs:magic/sage':          'Magic Tier: §eSage',
-        'kubejs:magic/transcendent':  'Magic Tier: §4Transcendent'
+        'kubejs:magic/sage_plus':     'Magic Tier: §4Sage+'
     }
 
     event.addAdvanced(TIER_ITEMS, (item, advanced, tooltip) => {

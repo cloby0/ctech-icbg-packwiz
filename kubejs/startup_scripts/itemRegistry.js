@@ -31,6 +31,8 @@ StartupEvents.registry('item', event => {
     event.create('gaian_void_core')
     event.create('gaian_annihilation_core')
 
+    event.create('magical_receiver')
+
     event.create('matter_energy_circuit')
 
     event.create('condensed_desh_carbonyl')

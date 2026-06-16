@@ -38,5 +38,5 @@ ServerEvents.tags('item', event => {
   event.add('kubejs:magic/thaumaturge',['botania:terrasteel_ingot', 'kubejs:florid_compound', 'kubejs:living_metalloid', 'kubejs:rune_of_frost'])
   event.add('kubejs:magic/arcanist',   ['botania:elementium_ingot', 'kubejs:weak_elementium_dust', 'kubejs:elven_concentrate', 'kubejs:elementite_dust', 'kubejs:glacial_grimoire', 'kubejs:verdant_chronicle', 'kubejs:technomatic_folio', 'extrabotany:aerialite_ingot', 'extrabotany:photonium_ingot', 'extrabotany:shadowium_ingot'])
   event.add('kubejs:magic/sage',       ['botania:gaia_ingot', 'kubejs:vengeful_gaia_spirit', 'kubejs:soul_of_gaia', 'kubejs:boundless_gaia_spirit_ingot', 'kubejs:gaian_blood_core', 'kubejs:gaian_holy_core', 'kubejs:gaian_void_core', 'kubejs:gaian_annihilation_core', 'kubejs:blood_grimoire', 'kubejs:radiant_sanctum', 'kubejs:eldritch_codex', 'kubejs:obliteration_chronicle', 'kubejs:harbinger_codex'])
-  event.add('kubejs:magic/transcendent', ['extrabotany:orichalcos_ingot', 'extrabotany:hero_medal'])
+  event.add('kubejs:magic/sage_plus', ['extrabotany:orichalcos_ingot', 'extrabotany:hero_medal'])
 });
