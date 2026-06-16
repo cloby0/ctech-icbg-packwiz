@@ -46,6 +46,25 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
+    // magic-machine structural alloys — same dust-mix-then-auto-EBF-then-auto-freezer pipeline as above
+    event.recipes.gtceu.mixer('consecrated_chromite_dust_mix')
+        .itemInputs('2x gtceu:holy_silver_dust', '1x gtceu:chromium_dust')
+        .itemOutputs('3x gtceu:consecrated_chromite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('ambrotungstite_dust_mix')
+        .itemInputs('1x gtceu:holy_silver_dust', '2x gtceu:tungsten_dust')
+        .itemOutputs('3x gtceu:ambrotungstite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('manaplatinite_dust_mix')
+        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:platinum_dust')
+        .itemOutputs('3x gtceu:manaplatinite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
+
     event.recipes.gtceu.electrolyzer('inferium_electrolysis')
         .itemInputs('8x mysticalagriculture:inferium_essence')
         .chancedOutput('mysticalagriculture:fire_essence', 2500, 0)
@@ -188,6 +207,30 @@ ServerEvents.recipes(event => {
         'kubejs:gaian_neutronium_boule',
         10000
     )
+
+    // vitalized growth medium — magic intermediate feeding the real Wetware Board growth medium chain
+    // rotten flesh vitalized into a culture catalyst; Mixer alt-recipe below uses it for a yield bonus
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ['mysticalagriculture:earth_essence', 'mysticalagriculture:water_essence'],
+        'minecraft:rotten_flesh',
+        'kubejs:vitalized_culture_medium',
+        3000
+    )
+
+    // alt to vanilla raw_growth_medium mixer recipe — same real inputs plus the magic catalyst, more output
+    event.recipes.gtceu.mixer('vitalized_raw_growth_medium')
+        .itemInputs(
+            '4x gtceu:meat_dust',
+            '4x gtceu:salt_dust',
+            '4x gtceu:calcium_dust',
+            '4x gtceu:agar_dust',
+            '1x kubejs:vitalized_culture_medium'
+        )
+        .inputFluids(Fluid.of('gtceu:mutagen', 4000))
+        .outputFluids(Fluid.of('gtceu:raw_growth_medium', 5000))
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     // blessed boule cutting recipes (all -> 48 wafers vs normal 32)
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')

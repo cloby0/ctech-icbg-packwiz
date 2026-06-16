@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("d", Predicates.controller(Predicates.blocks(definition.get())))
             .where("e", Predicates.blocks("aether:holystone_brick_slab"))
-            .where("f", Predicates.blocks("quark:raw_gold_bricks"))
+            .where("f", Predicates.blocks("gtceu:ambrotungstite_block"))
             .where("g", Predicates.blocks("minecraft:air"))
             .where("h", Predicates.blocks("gtceu:source_block"))
             .where("i", Predicates.blocks("gtceu:holy_silver_block"))

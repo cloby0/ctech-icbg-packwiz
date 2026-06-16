@@ -304,4 +304,19 @@ ServerEvents.recipes(event => {
 
     // arcanist.js
     addImbuementRecipe(event, { input: { item: 'kubejs:elven_concentrate' }, output: 'kubejs:elven_source_lattice', source: 12000, pedestalItems: [{ item: { item: 'kubejs:resonant_zanite_crystal' } }, { item: { item: 'kubejs:resonant_zanite_crystal' } }, { item: { item: 'ars_nouveau:source_gem' } }, { item: { item: 'ars_nouveau:source_gem' } }] }, index++)
+
+    // controller block crafting recipe
+    event.recipes.gtceu.assembler('imbuement_factory_controller')
+        .itemInputs(
+            '4x gtceu:ambrotungstite_plate',
+            '2x gtceu:ambrotungstite_frame',
+            '1x ars_nouveau:source_gem',
+            '1x gtceu:hv_electric_pump',
+            '1x gtceu:hv_emitter',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x gtceu:imbuement_factory')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.HV])
 })

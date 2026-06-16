@@ -133,4 +133,19 @@ ServerEvents.recipes(event => {
         catalyst: { block: 'botania:conjuration_catalyst' },
         output: { item: 'botania:mana_pearl' }
     })
+
+    // controller block crafting recipe
+    event.recipes.gtceu.assembler('automated_mana_pond_controller')
+        .itemInputs(
+            '4x gtceu:manaplatinite_plate',
+            '1x gtceu:manaplatinite_frame',
+            '1x botania:mana_pool',
+            '1x gtceu:iv_electric_pump',
+            '1x gtceu:iv_sensor',
+            '1x #gtceu:circuits/iv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x gtceu:automated_mana_pond')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.IV])
 })

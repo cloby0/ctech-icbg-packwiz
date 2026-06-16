@@ -612,4 +612,19 @@ ServerEvents.recipes(event => {
     addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:gaian_annihilation_core' }], output: { item: 'kubejs:obliteration_chronicle' }, sourceCost: 50000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}}] }, index++)
     addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:technomatic_folio' }, sourceCost: 42000, pedestalItems: [{item:{item:'gtceu:elven_americate_ingot'}},{item:{item:'gtceu:elven_americate_ingot'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'kubejs:elven_concentrate'}},{item:{item:'kubejs:elven_concentrate'}},{tag:'gtceu:circuits/zpm'},{tag:'gtceu:circuits/zpm'}] }, index++)
     addEnchantingRecipe(event, { reagent: [{ item: 'gtceu:boundless_naquadrite_ingot' }], output: { item: 'kubejs:harbinger_codex' }, sourceCost: 55000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{tag:'gtceu:circuits/uv'},{tag:'gtceu:circuits/uv'}] }, index++)
+
+    // controller block crafting recipe
+    event.recipes.gtceu.assembler('grand_enchanting_sanctum_controller')
+        .itemInputs(
+            '4x gtceu:consecrated_chromite_plate',
+            '2x gtceu:consecrated_chromite_frame',
+            '1x ars_nouveau:source_gem',
+            '1x gtceu:hv_electric_pump',
+            '1x gtceu:hv_sensor',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x gtceu:grand_enchanting_sanctum')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.HV])
 })

@@ -1586,15 +1586,15 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "1a591c1db03b8619a95e7e6f2943b8bb711f30bd92c7727936cc49830b3a2fb6"
+hash = "aa28fff868805f42a9a20ba210dd8752a9f9a3747622ff7faffa77d1efdb08cc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "5dc6ba2cbc4044822e33b1679ef4fffa5a6683fde1f33c834f62ccca9e3930f9"
+hash = "df7c88172c4736eba8017ecb14eb4f2e1e48523d5be365b5c8589a1c6f93fc07"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "9f1af97aa99716462600528cbf87c22ddc64cc81e4faeecfec0bf123c0ba5d6d"
+hash = "7b061b26eec84fe53bb7a25e2984f15f5d6c233cb3bc9c09371ac4d867624f62"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
@@ -1778,7 +1778,7 @@ hash = "e734aac3ee0dbde911909bc227a8ee4b909e4d63fbe9686a7a80e98dd41af85a"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "f0e3443ea365700bbfcd5f1b1fda4bc508729ea71406800196ee5b3449709a1a"
+hash = "e51dd0dce86ec1d33304f101aa7944eb13880a84a989558ff64db9827d70a234"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1810,15 +1810,15 @@ hash = "d78b7c8c604898be485813fbb0b90fac2f5fdf8f8a0c571014de23a2d79dcb12"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "5b47f094efed6cf45fe78937ceb364dcbb456988571fbcf92e165b62eaa01b3c"
+hash = "059c4f9d89843ea7349d495ce3caa7ffe75983401347b1969f57e010fff2a64a"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
-hash = "b03547c5f5d16c74b255bff92fdd4498a0e0e91192f08d5004b5d7766bdcbfa9"
+hash = "9eaaf1c2c220520c3940a28a1ab536d3190b68e171d14ad137c9e6769f1a43c7"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "8d03a753447a1a36a017dc2b6d872c5823f947aeeaea6d91dfa7d990af8c8611"
+hash = "1253f619b80abe95ac5eb4b5f1fb22d62e61b3db8cc8a68fc547e4d7a036307e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -1850,11 +1850,11 @@ hash = "57e9492b72cebbe6a1c236d256b4187fe29a8dd8a07230723840943e3a41e7a7"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "3abea63b5d08a519566945f833c5a85c1594a322d775ee39cb780fd0165cdfbb"
+hash = "2cefff42f9820445ec7db045c5f25543a2d7f66baa911701bb763f3867f95547"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "fdf538ef2b2e763fedc2d9eed607fcc0387f228811152757899e35abec461ca0"
+hash = "7ffb1f4c9129f23ed8a10b9f4cedd67198da0eac05f3cb0e628e4fd67321605e"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -2046,6 +2046,11 @@ metafile = true
 [[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
+metafile = true
+
+[[files]]
+file = "mods/ars-zero.pw.toml"
+hash = "cb42d6f7beb8a357ea0f432eb1d88445a078cf2ca4400b15921d505a03e43e41"
 metafile = true
 
 [[files]]

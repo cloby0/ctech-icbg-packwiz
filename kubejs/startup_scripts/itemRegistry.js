@@ -57,6 +57,8 @@ StartupEvents.registry('item', event => {
     event.create('verdant_naquadah_boule')
     event.create('gaian_neutronium_boule')
 
+    event.create('vitalized_culture_medium')
+
 
     event.create('enchanted_zanite_gem')
     event.create('resonant_zanite_crystal')

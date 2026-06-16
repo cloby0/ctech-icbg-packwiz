@@ -562,4 +562,52 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
+    // magic-machine structural alloys
+    // used as multiblock casing blocks and controller crafting components, not wires
+
+    event.create('consecrated_chromite')
+        .ingot()
+        .fluid()
+        .color(0xD8CCA0)
+        .secondaryColor(0x8C7840)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(2800, "low", GTValues.VA[GTValues.HV], 1200)
+        .components(c('2x holy_silver'), c('1x chromium'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+
+    event.create('ambrotungstite')
+        .ingot()
+        .fluid()
+        .color(0xB8B0C0)
+        .secondaryColor(0x5A5260)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(3200, "mid", GTValues.VA[GTValues.HV], 1300)
+        .components(c('1x holy_silver'), c('2x tungsten'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+
+    event.create('manaplatinite')
+        .ingot()
+        .fluid()
+        .color(0xC8D8E8)
+        .secondaryColor(0x7890A8)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(4200, "mid", GTValues.VA[GTValues.IV], 1500)
+        .components(c('2x manasteel'), c('1x platinum'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+
 })
