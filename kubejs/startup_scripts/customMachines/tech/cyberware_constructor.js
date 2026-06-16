@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel(
-            "gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 

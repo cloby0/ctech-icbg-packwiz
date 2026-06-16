@@ -798,7 +798,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "ae5d4cd70cd6532afa9fb8e9a22540705f65d6a875bc1d4c1d6781c09f8b5864"
+hash = "bd46cead444d95f2679fef5ed4cb678d880f072236fa248b56636ea5e29c2fa1"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
@@ -807,6 +807,18 @@ hash = "ff6a6619061ebb230c437e452fffb1b193c28a2dd5c38da6e47fc08e0db789a7"
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/imbuement_holystone_casing.png"
+hash = "283c0c9b076aaa85f1518dc0c2f711f463fcb90fea826ea8918fd1deb7775877"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/mana_livingrock_casing.png"
+hash = "205f00225be34ba90c8e3dbb0da019cab613eb9170c4416d59fc3b588e73ea76"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/sanctum_sourcestone_casing.png"
+hash = "ce67c0f13db5a7516a48acfb08bf4e7b4a1a25d01809c4ab9c2f2f5a1da53546"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/abyssal_codex.png"
@@ -1586,15 +1598,15 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "aa28fff868805f42a9a20ba210dd8752a9f9a3747622ff7faffa77d1efdb08cc"
+hash = "d899895554269e6687f0790af4effcb9b3ff902aa424a4e4c8c74667810af9c9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "df7c88172c4736eba8017ecb14eb4f2e1e48523d5be365b5c8589a1c6f93fc07"
+hash = "1b99c608c3de4560bdf2254622c1a16273a09235c89a2267157b8eeb429189dc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "7b061b26eec84fe53bb7a25e2984f15f5d6c233cb3bc9c09371ac4d867624f62"
+hash = "ba6d0829b1f90c796825877a78e29e3907e2ad487647ed8ba42e17509f37f40f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
@@ -1741,8 +1753,12 @@ file = "kubejs/server_scripts/tech/greggingMods.js"
 hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
 
 [[files]]
+file = "kubejs/server_scripts/tech/gunComponentRecipes.js"
+hash = "d6e9773eca24cd2407314bd29fcfb0516de66dab1bc13711046f801ce4527230"
+
+[[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "94ed545388dadb3ba07ad7d07a403ecadd385f2064d61d5e74cc08b5a428db68"
+hash = "a0398f0085b349bac2ef16e69a40e8d811e1c965b163c45929f140029b4591f6"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
@@ -1814,23 +1830,27 @@ hash = "d78b7c8c604898be485813fbb0b90fac2f5fdf8f8a0c571014de23a2d79dcb12"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "059c4f9d89843ea7349d495ce3caa7ffe75983401347b1969f57e010fff2a64a"
+hash = "33f6805eb96f6106e4147db7119868206e40873eb68637514a40fc7320de0459"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
-hash = "9eaaf1c2c220520c3940a28a1ab536d3190b68e171d14ad137c9e6769f1a43c7"
+hash = "cfbda9c4474edcff1c9dfb1bb957f5ac09a73098edf1c7f76a70eb07dfb1623b"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
+hash = "d2c25170158a85ef27a3dea065eb078b77f994c934127daf09fa9e545fffbdf1"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "1253f619b80abe95ac5eb4b5f1fb22d62e61b3db8cc8a68fc547e4d7a036307e"
+hash = "faa5d81a7497fffd97d2aa519e03776369d175975bc1bf2cc3f69db93f2eb263"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "d8f9dfed1d8d90f66658e6d3b5c4081fd0fe3f0974d2a1beb48376c04e037312"
+hash = "c8f3d73bf66114ed2887ccfb67574f54619ea9333db3f823835b02ef4e13b628"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
-hash = "e00de4070c1738eea46d38b4ee6af96009ec69df9592693d360677d503cb755e"
+hash = "f955775c34aa029429862ce96fe85fc3b490c649519a17b0edcc752b0d51701b"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
@@ -1861,8 +1881,12 @@ file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
 hash = "2cefff42f9820445ec7db045c5f25543a2d7f66baa911701bb763f3867f95547"
 
 [[files]]
+file = "kubejs/startup_scripts/gunCraftingComponents.js"
+hash = "79f240991c6d35a61f41457aa39dad1cfef9a42e0d0bf36749ef8d47470d1f53"
+
+[[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "7ffb1f4c9129f23ed8a10b9f4cedd67198da0eac05f3cb0e628e4fd67321605e"
+hash = "68438cad47d893b0c6d138c7be29be2cf1124d7fa67321ee8ca00bc77ab2e0e3"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -2969,11 +2993,6 @@ metafile = true
 [[files]]
 file = "mods/mantle.pw.toml"
 hash = "6164ce697ea02e49911afd5666dcb1d5f83ed0fff9b290def0a7a7c440c1c39b"
-metafile = true
-
-[[files]]
-file = "mods/mcsp-military-vehicle.pw.toml"
-hash = "a4f9d006e53ae615dcf078477a8d68b5507aed8d99bc3ec97ac74c316aa5c06b"
 metafile = true
 
 [[files]]

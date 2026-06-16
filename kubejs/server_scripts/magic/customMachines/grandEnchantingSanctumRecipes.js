@@ -627,4 +627,27 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:grand_enchanting_sanctum')
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // casing block crafting recipe
+    event.shaped('4x kubejs:sanctum_sourcestone_casing', [
+        'PRP',
+        'RBR',
+        'PRP'
+    ], {
+        P: 'gtceu:consecrated_chromite_plate',
+        R: 'gtceu:consecrated_chromite_rod',
+        B: 'ars_nouveau:sourcestone_large_bricks'
+    })
+
+    event.recipes.gtceu.assembler('sanctum_sourcestone_casing_assembly')
+        .itemInputs(
+            '4x gtceu:consecrated_chromite_plate',
+            '4x gtceu:consecrated_chromite_rod',
+            '1x ars_nouveau:sourcestone_large_bricks',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:lubricant', 50))
+        .itemOutputs('8x kubejs:sanctum_sourcestone_casing')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })

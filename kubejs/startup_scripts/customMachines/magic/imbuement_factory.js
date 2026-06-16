@@ -21,13 +21,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("bbbbb", "cgggc", "eabae", "ggggg", "ggggg", "ggggg")
             .aisle("abbba", "bcdcb", "beaeb", "fgggf", "fgggf", "hgggh")
 
-            .where("a", Predicates.blocks("aether:holystone_brick_stairs"))
-            .where("b", Predicates.blocks("aether:holystone_bricks"))
-            .where("c", Predicates.blocks("aether:holystone_bricks")                
+            .where("a", Predicates.blocks("kubejs:imbuement_holystone_casing"))
+            .where("b", Predicates.blocks("kubejs:imbuement_holystone_casing"))
+            .where("c", Predicates.blocks("kubejs:imbuement_holystone_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("d", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("e", Predicates.blocks("aether:holystone_brick_slab"))
+            .where("e", Predicates.blocks("kubejs:imbuement_holystone_casing"))
             .where("f", Predicates.blocks("gtceu:ambrotungstite_block"))
             .where("g", Predicates.blocks("minecraft:air"))
             .where("h", Predicates.blocks("gtceu:source_block"))
@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("j", Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(
-            "aether:block/construction/holystone_bricks",
+            "kubejs:block/imbuement_holystone_casing",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 })

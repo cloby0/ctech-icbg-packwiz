@@ -26,9 +26,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("aabbbbbaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aacccccaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
 
             .where("a", Predicates.any())
-            .where("b", Predicates.blocks("ars_nouveau:sourcestone_large_bricks_slab"))
-            .where("c", Predicates.blocks("ars_nouveau:sourcestone_large_bricks"))
-            .where("d", Predicates.blocks("ars_nouveau:smooth_sourcestone_large_bricks")
+            .where("b", Predicates.blocks("kubejs:sanctum_sourcestone_casing"))
+            .where("c", Predicates.blocks("kubejs:sanctum_sourcestone_casing"))
+            .where("d", Predicates.blocks("kubejs:sanctum_sourcestone_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("e", Predicates.blocks("gtceu:consecrated_chromite_block"))
@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("h", Predicates.controller(Predicates.blocks(definition.get())))
         .build())
         .workableCasingModel(
-            "ars_nouveau:block/smooth_sourcestone_large_bricks",
+            "kubejs:block/sanctum_sourcestone_casing",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 })

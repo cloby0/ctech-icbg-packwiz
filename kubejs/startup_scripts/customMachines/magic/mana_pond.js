@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("bbbbb", "xcccx", "xcKcx", "xcccx", "bbbbb")
             .aisle("xbbbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
             .where("a", Predicates.blocks("minecraft:air"))
-            .where("b", Predicates.blocks("botania:livingrock_bricks"))
+            .where("b", Predicates.blocks("kubejs:mana_livingrock_casing"))
             .where("c", Predicates.blocks("gtceu:manaplatinite_block")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(
-            "botania:block/polished_livingrock",
+            "kubejs:block/mana_livingrock_casing",
             "gtceu:block/multiblock/large_chemical_reactor"
         )
 })

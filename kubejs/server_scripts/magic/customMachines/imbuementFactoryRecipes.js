@@ -319,4 +319,27 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:imbuement_factory')
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // casing block crafting recipe
+    event.shaped('4x kubejs:imbuement_holystone_casing', [
+        'PRP',
+        'RBR',
+        'PRP'
+    ], {
+        P: 'gtceu:ambrotungstite_plate',
+        R: 'gtceu:ambrotungstite_rod',
+        B: 'aether:holystone_bricks'
+    })
+
+    event.recipes.gtceu.assembler('imbuement_holystone_casing_assembly')
+        .itemInputs(
+            '4x gtceu:ambrotungstite_plate',
+            '4x gtceu:ambrotungstite_rod',
+            '1x aether:holystone_bricks',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:lubricant', 50))
+        .itemOutputs('8x kubejs:imbuement_holystone_casing')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })

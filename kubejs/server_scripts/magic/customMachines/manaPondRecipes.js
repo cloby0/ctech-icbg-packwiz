@@ -148,4 +148,27 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:automated_mana_pond')
         .duration(400)
         .EUt(GTValues.VA[GTValues.IV])
+
+    // casing block crafting recipe
+    event.shaped('4x kubejs:mana_livingrock_casing', [
+        'PRP',
+        'RBR',
+        'PRP'
+    ], {
+        P: 'gtceu:manaplatinite_plate',
+        R: 'gtceu:manaplatinite_rod',
+        B: 'botania:livingrock_bricks'
+    })
+
+    event.recipes.gtceu.assembler('mana_livingrock_casing_assembly')
+        .itemInputs(
+            '4x gtceu:manaplatinite_plate',
+            '4x gtceu:manaplatinite_rod',
+            '1x botania:livingrock_bricks',
+            '1x #gtceu:circuits/iv'
+        )
+        .inputFluids(Fluid.of('gtceu:lubricant', 50))
+        .itemOutputs('8x kubejs:mana_livingrock_casing')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
 })
