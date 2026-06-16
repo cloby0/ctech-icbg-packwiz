@@ -1826,11 +1826,11 @@ hash = "1253f619b80abe95ac5eb4b5f1fb22d62e61b3db8cc8a68fc547e4d7a036307e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "010ceffc041ac1e8ba4c167fe7354405ad390150da8775b4292889b17c368437"
+hash = "d8f9dfed1d8d90f66658e6d3b5c4081fd0fe3f0974d2a1beb48376c04e037312"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
-hash = "ec7e28e3e607fa936b7e4f279ff75a76fb019f9dcfd7681fa1221c7883b4d1f0"
+hash = "e00de4070c1738eea46d38b4ee6af96009ec69df9592693d360677d503cb755e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"

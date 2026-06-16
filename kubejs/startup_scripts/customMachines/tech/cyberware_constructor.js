@@ -28,9 +28,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("aaa", "aca", "aaa")
             .aisle("aaa", "aba", "aaa")
 
-            .where("a", Predicates.blocks("gtceu:clean_machine_casing"))
+            .where("a", Predicates.blocks("gtceu:clean_machine_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("b", Predicates.controller(Predicates.blocks(definition.get())))
             .where("c", Predicates.blocks("gtceu:stainless_steel_frame"))
 
