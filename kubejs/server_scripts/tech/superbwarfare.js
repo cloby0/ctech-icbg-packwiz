@@ -209,13 +209,10 @@ ServerEvents.recipes(event => {
     ammo('medium_rocket_he', 'medium_rocket_he', 4, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:fusee', 'superbwarfare:grain', 'superbwarfare:he_head'])
     ammo('medium_rocket_cm', 'medium_rocket_cm', 4, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:fusee', 'superbwarfare:grain', 'superbwarfare:cm_head'])
     ammo('medium_anti_air_missile', 'medium_anti_air_missile', 2, 'EV', ['gtceu:aluminium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
-    ammo('large_anti_air_missile', 'large_anti_air_missile', 1, 'EV', ['gtceu:titanium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
     ammo('medium_anti_ground_missile', 'medium_anti_ground_missile', 2, 'EV', ['gtceu:aluminium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
     ammo('large_anti_ground_missile', 'large_anti_ground_missile', 1, 'EV', ['gtceu:titanium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
-    ammo('extra_large_anti_ground_missile', 'extra_large_anti_ground_missile', 1, 'EV', ['2x gtceu:titanium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
     ammo('small_aerial_bomb', 'small_aerial_bomb', 4, 'LV', ['gtceu:steel_plate', 'superbwarfare:high_energy_explosives', 'superbwarfare:fusee'])
     ammo('medium_aerial_bomb', 'medium_aerial_bomb', 2, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:high_energy_explosives', 'superbwarfare:fusee'])
-    ammo('large_aerial_bomb', 'large_aerial_bomb', 1, 'HV', ['gtceu:titanium_plate', 'superbwarfare:high_energy_explosives', 'superbwarfare:fusee'])
 
     // vehicle crates. output is the shared container block item with the vehicle baked
     // into NBT (ContainerBlockItem.createInstance only ever sets EntityType, no Entity tag
@@ -280,8 +277,5 @@ ServerEvents.recipes(event => {
     // Glacio-tier endgame item in this pack
     vehicle('annihilator', 'LuV', ['6x gtceu:naquadah_plate', '3x minecraft:netherite_block', '32x superbwarfare:laser_unit', 'superbwarfare:large_battery_pack', '24x superbwarfare:steel_block'])
     vehicle('prism_tank', 'LuV', ['4x gtceu:naquadah_plate', '2x gtceu:naquadah_ingot', '16x superbwarfare:laser_unit', 'superbwarfare:large_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor'])
-    // kirov has no recipe in the base mod at all (creative/whimsical only) - added here since
-    // it's container-capable in the mod's own registry, gated at the very top of the pack
-    vehicle('kirov', 'ZPM', ['12x gtceu:naquadah_plate', '8x gtceu:naquadah_ingot', '16x superbwarfare:laser_unit', '4x superbwarfare:large_battery_pack', '4x superbwarfare:large_motor', '4x superbwarfare:large_propeller'])
 
 })

@@ -1774,7 +1774,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "6a8822897981ab370607c591559e4c2a96fb249fcaa1754e42eed5ceca521bc5"
+hash = "cd3b54d05676212da9c8bd632526b93bc88cabb8f3a284b13d7ceadd91927296"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -1826,11 +1826,11 @@ hash = "1253f619b80abe95ac5eb4b5f1fb22d62e61b3db8cc8a68fc547e4d7a036307e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "b931f3ac81d199372b71970aaf250fdd45101d10f17c9643bc297b50d78e1199"
+hash = "010ceffc041ac1e8ba4c167fe7354405ad390150da8775b4292889b17c368437"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
-hash = "1d6578c3fd8ca9d70abc29696b5a1df5287a6d0d7f2133e7db623f7ac9ced75d"
+hash = "ec7e28e3e607fa936b7e4f279ff75a76fb019f9dcfd7681fa1221c7883b4d1f0"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
@@ -1842,7 +1842,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
-hash = "352bcfaa06b18e09882cda1129523bd1d6ce5f62e2fb178d06f3119c020d383f"
+hash = "a8398f51bf914cae73c18d6b8b38da0ba0fdfe4616922eda18f3ce104eae948d"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"

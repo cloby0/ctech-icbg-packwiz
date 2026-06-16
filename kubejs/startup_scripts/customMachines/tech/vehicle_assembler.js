@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('vehicle_assembler', 'multiblock')
-        ["tooltips(java.util.List)"]([Component.literal("Can't we just do this on Earth? Maybe... but that's lame.")])
+        ["tooltips(java.util.List)"]([Component.literal("Vroom")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['vehicle_assembler'])
@@ -28,7 +28,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("aaaaa", "bdddb", "aeeea", "ceeec", "ceeec", "aaaaa")
             .aisle("aaaaa", "bdddb", "aeeea", "ceeec", "ceeec", "aaaaa")
             .aisle("aaaaa", "abbba", "aaaaa", "accca", "accca", "aaaaa")
-
             .where("a", Predicates.blocks("gtceu:solid_machine_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
