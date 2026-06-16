@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         'insidious', 'mk_14', 'ql_1031', 'marlin', 'k_98', 'mosin_nagant', 'svd', 'awm',
         'm_98b', 'sentinel', 'hunting_rifle', 'ntw_20', 'm_870', 'aa_12', 'devotion', 'rpk',
         'm_60', 'm_2_hb', 'minigun', 'm_79', 'secondary_cataclysm', 'rpg', 'javelin',
-        'igla_9k38', 'bocek', 'super_star_shooter'
+        'igla_9k38', 'bocek', 'super_star_shooter', 'aurelia_sceptre'
     ]
     removedGuns.forEach(id => event.remove({ output: `superbwarfare:${id}` }))
 
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         'm_1911_blueprint', 'qbz_95_blueprint', 'qbz_191_blueprint', 'k_98_blueprint',
         'mosin_nagant_blueprint', 'igla_9k38_blueprint', 'javelin_blueprint', 'm_2_hb_blueprint',
         'secondary_cataclysm_blueprint', 'insidious_blueprint', 'ql_1031_blueprint',
-        'super_star_shooter_blueprint',
+        'super_star_shooter_blueprint', 'aurelia_sceptre_blueprint',
         // vehicle blueprints - crates are crafted directly now, no unlock RNG
         'mk_42_blueprint', 'mle_1934_blueprint', 'bl_132_blueprint', 'hpj_11_blueprint',
         'annihilator_blueprint'
@@ -193,17 +193,19 @@ ServerEvents.recipes(event => {
             .circuit(tier === 'LV' ? 1 : tier === 'MV' ? 2 : tier === 'HV' ? 3 : 4)
     }
 
+    // pinned to 0.8.8: that version has no AP/HE/GS/AA split for small caliber (one generic
+    // small_shell item, all four recipes below converge on it) and names large shells
+    // ap/he/gs/cm_5_inches instead of large_shell_*. wp_head and the WP shell lines plus
+    // small_aerial_bomb don't exist pre-0.8.9 at all, dropped outright.
     ammo('mortar_shell', 'mortar_shell', 4, 'LV', ['2x gtceu:steel_plate', 'minecraft:gunpowder', 'superbwarfare:high_energy_explosives', 'superbwarfare:primer'])
-    ammo('mortar_shell_wp', 'mortar_shell_wp', 4, 'LV', ['2x gtceu:steel_plate', 'superbwarfare:wp_head', 'superbwarfare:primer'])
-    ammo('small_shell_ap', 'small_shell_ap', 8, 'MV', ['2x gtceu:steel_plate', 'gtceu:tungsten_dust', 'superbwarfare:ap_head', 'superbwarfare:primer'])
-    ammo('small_shell_he', 'small_shell_he', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:he_head', 'minecraft:gunpowder', 'superbwarfare:primer'])
-    ammo('small_shell_gs', 'small_shell_gs', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:gs_head', 'superbwarfare:primer'])
-    ammo('small_shell_aa', 'small_shell_aa', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:gs_head', 'minecraft:redstone', 'superbwarfare:primer'])
-    ammo('large_shell_ap', 'large_shell_ap', 4, 'HV', ['2x gtceu:titanium_plate', 'gtceu:tungsten_rod', 'superbwarfare:ap_head', 'superbwarfare:primer'])
-    ammo('large_shell_he', 'large_shell_he', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:he_head', 'superbwarfare:high_energy_explosives', 'superbwarfare:primer'])
-    ammo('large_shell_cm', 'large_shell_cm', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:cm_head', 'superbwarfare:primer'])
-    ammo('large_shell_gs', 'large_shell_gs', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:gs_head', 'superbwarfare:primer'])
-    ammo('large_shell_wp', 'large_shell_wp', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:wp_head', 'superbwarfare:primer'])
+    ammo('small_shell_ap', 'small_shell', 8, 'MV', ['2x gtceu:steel_plate', 'gtceu:tungsten_dust', 'superbwarfare:ap_head', 'superbwarfare:primer'])
+    ammo('small_shell_he', 'small_shell', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:he_head', 'minecraft:gunpowder', 'superbwarfare:primer'])
+    ammo('small_shell_gs', 'small_shell', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:gs_head', 'superbwarfare:primer'])
+    ammo('small_shell_aa', 'small_shell', 8, 'MV', ['2x gtceu:steel_plate', 'superbwarfare:gs_head', 'minecraft:redstone', 'superbwarfare:primer'])
+    ammo('large_shell_ap', 'ap_5_inches', 4, 'HV', ['2x gtceu:titanium_plate', 'gtceu:tungsten_rod', 'superbwarfare:ap_head', 'superbwarfare:primer'])
+    ammo('large_shell_he', 'he_5_inches', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:he_head', 'superbwarfare:high_energy_explosives', 'superbwarfare:primer'])
+    ammo('large_shell_cm', 'cm_5_inches', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:cm_head', 'superbwarfare:primer'])
+    ammo('large_shell_gs', 'gs_5_inches', 4, 'HV', ['2x gtceu:titanium_plate', 'superbwarfare:gs_head', 'superbwarfare:primer'])
     ammo('small_rocket', 'small_rocket', 8, 'LV', ['gtceu:steel_plate', 'superbwarfare:fusee', 'superbwarfare:grain'])
     ammo('medium_rocket_ap', 'medium_rocket_ap', 4, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:fusee', 'superbwarfare:grain', 'superbwarfare:ap_head'])
     ammo('medium_rocket_he', 'medium_rocket_he', 4, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:fusee', 'superbwarfare:grain', 'superbwarfare:he_head'])
@@ -211,7 +213,6 @@ ServerEvents.recipes(event => {
     ammo('medium_anti_air_missile', 'medium_anti_air_missile', 2, 'EV', ['gtceu:aluminium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
     ammo('medium_anti_ground_missile', 'medium_anti_ground_missile', 2, 'EV', ['gtceu:aluminium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
     ammo('large_anti_ground_missile', 'large_anti_ground_missile', 1, 'EV', ['gtceu:titanium_plate', 'superbwarfare:missile_engine', 'superbwarfare:seeker', '#gtceu:circuits/ev'])
-    ammo('small_aerial_bomb', 'small_aerial_bomb', 4, 'LV', ['gtceu:steel_plate', 'superbwarfare:high_energy_explosives', 'superbwarfare:fusee'])
     ammo('medium_aerial_bomb', 'medium_aerial_bomb', 2, 'MV', ['gtceu:aluminium_plate', 'superbwarfare:high_energy_explosives', 'superbwarfare:fusee'])
 
     // vehicle crates. output is the shared container block item with the vehicle baked
@@ -234,24 +235,16 @@ ServerEvents.recipes(event => {
     }
 
     // LV-MV: civilian and light vehicles, plain steel construction
+    // sodayo_pick_up*, tiny_speedboat and kv_16 don't exist pre-0.8.9, dropped on downgrade
     vehicle('wheel_chair', 'LV', ['2x superbwarfare:wheel', 'superbwarfare:cell', 'superbwarfare:motor', '2x gtceu:steel_plate'])
     vehicle('truck', 'LV', ['6x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_battery_pack', '6x superbwarfare:wheel', 'superbwarfare:large_motor'])
-    vehicle('sodayo_pick_up', 'LV', ['4x gtceu:steel_plate', 'gtceu:steel_rod', 'superbwarfare:medium_battery_pack', '4x superbwarfare:wheel', 'superbwarfare:large_motor'])
-    vehicle('sodayo_pick_up_hmg', 'LV', ['4x gtceu:steel_plate', 'gtceu:steel_rod', 'superbwarfare:medium_battery_pack', '4x superbwarfare:wheel', 'superbwarfare:large_motor', 'superbwarfare:light_armament_module'])
-    vehicle('sodayo_pick_up_rocket', 'MV', ['5x gtceu:steel_plate', 'gtceu:steel_rod', 'superbwarfare:medium_battery_pack', '4x superbwarfare:wheel', 'superbwarfare:large_motor', '12x superbwarfare:mortar_barrel'])
-    vehicle('sodayo_pick_up_tow', 'MV', ['5x gtceu:steel_plate', 'gtceu:steel_rod', 'superbwarfare:medium_battery_pack', '4x superbwarfare:wheel', 'superbwarfare:large_motor', 'superbwarfare:mortar_barrel', 'superbwarfare:artillery_indicator', 'superbwarfare:mortar_bipod'])
-    vehicle('tiny_speedboat', 'LV', ['2x gtceu:steel_plate', 'gtceu:steel_rod', 'superbwarfare:battery', 'superbwarfare:propeller', 'superbwarfare:motor'])
     vehicle('speedboat', 'MV', ['4x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:light_armament_module', 'superbwarfare:small_battery_pack', 'superbwarfare:large_propeller', 'superbwarfare:large_motor'])
     vehicle('tom_6', 'LV', ['2x gtceu:aluminium_plate', 'gtceu:steel_rod', 'superbwarfare:battery', 'minecraft:minecart'])
-    vehicle('kv_16', 'MV', ['3x gtceu:aluminium_plate', 'gtceu:steel_rod', 'superbwarfare:light_armament_module', 'superbwarfare:small_battery_pack', 'superbwarfare:propeller', 'superbwarfare:large_motor'])
 
     // MV-HV: armored personnel carriers, light tanks, WWII era aircraft, naval/field guns
-    vehicle('ju_87', 'MV', ['6x gtceu:aluminium_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_armament_module', 'superbwarfare:medium_battery_pack', 'superbwarfare:large_propeller', '2x superbwarfare:propeller', 'superbwarfare:large_motor'])
+    // ju_87, lav_25, lav_ad and bradley don't exist pre-0.8.9, dropped on downgrade
     vehicle('lav_150', 'MV', ['6x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:light_armament_module', 'superbwarfare:medium_battery_pack', '4x superbwarfare:wheel', 'superbwarfare:large_motor'])
-    vehicle('lav_25', 'MV', ['7x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_armament_module', 'superbwarfare:medium_battery_pack', '8x superbwarfare:wheel', 'superbwarfare:large_motor'])
-    vehicle('lav_ad', 'MV', ['7x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_armament_module', 'superbwarfare:medium_battery_pack', '8x superbwarfare:wheel', 'superbwarfare:large_motor'])
     vehicle('bmp_2', 'MV', ['8x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_armament_module', 'superbwarfare:medium_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor'])
-    vehicle('bradley', 'MV', ['8x gtceu:steel_plate', '2x gtceu:steel_rod', 'superbwarfare:medium_armament_module', 'superbwarfare:medium_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor'])
     vehicle('type_63', 'MV', ['2x gtceu:steel_plate', '12x superbwarfare:mortar_barrel', '2x superbwarfare:wheel'])
     vehicle('mk_42', 'HV', ['4x gtceu:titanium_plate', '4x gtceu:steel_rod', 'superbwarfare:cannon_core', '4x gtceu:steel_bolt'])
     vehicle('mle_1934', 'HV', ['6x gtceu:titanium_plate', '4x gtceu:steel_rod', '2x superbwarfare:cannon_core', '4x gtceu:steel_bolt'])
@@ -260,9 +253,7 @@ ServerEvents.recipes(event => {
 
     // HV: titanium era. modern composite armor MBTs, titanium airframe helicopters, the
     // A-10's famous titanium cockpit bathtub
-    vehicle('t_90a', 'HV', ['6x gtceu:titanium_plate', '2x gtceu:titanium_rod', 'superbwarfare:heavy_armament_module', '2x superbwarfare:medium_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor', 'minecraft:green_dye'])
-    vehicle('ztz_99a', 'HV', ['6x gtceu:titanium_plate', '2x gtceu:titanium_rod', 'superbwarfare:heavy_armament_module', '2x superbwarfare:medium_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor', 'minecraft:red_dye'])
-    vehicle('m_1a_2', 'HV', ['6x gtceu:titanium_plate', '2x gtceu:titanium_rod', 'superbwarfare:heavy_armament_module', '2x superbwarfare:medium_battery_pack', '2x superbwarfare:track', 'superbwarfare:large_motor', 'minecraft:sand'])
+    // t_90a, ztz_99a and m_1a_2 don't exist pre-0.8.9, dropped on downgrade
     vehicle('ah_6', 'HV', ['3x gtceu:titanium_plate', 'gtceu:titanium_rod', 'superbwarfare:light_armament_module', 'superbwarfare:medium_battery_pack', 'superbwarfare:large_propeller', 'superbwarfare:propeller', 'superbwarfare:large_motor'])
     vehicle('mi_28', 'HV', ['5x gtceu:titanium_plate', '2x gtceu:titanium_rod', 'superbwarfare:heavy_armament_module', '2x superbwarfare:medium_battery_pack', '3x superbwarfare:wheel', 'superbwarfare:large_propeller', 'superbwarfare:propeller', 'superbwarfare:large_motor'])
     vehicle('a_10a', 'HV', ['6x gtceu:titanium_plate', '2x gtceu:titanium_rod', 'superbwarfare:heavy_armament_module', 'superbwarfare:large_battery_pack', '2x superbwarfare:large_propeller', '2x superbwarfare:large_motor', '3x superbwarfare:wheel'])

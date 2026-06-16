@@ -1774,7 +1774,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "cd3b54d05676212da9c8bd632526b93bc88cabb8f3a284b13d7ceadd91927296"
+hash = "61b8ee33b00fab4744613e770f24e02b4b11bdabc5ff9b297902748f68cf021d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -2303,6 +2303,11 @@ metafile = true
 [[files]]
 file = "mods/create-blocks-bogies.pw.toml"
 hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
+metafile = true
+
+[[files]]
+file = "mods/create-energy-cannons.pw.toml"
+hash = "570b08c4fc82895d9fe862f7dbe9e76105078816a75ce1861dc1399d7e79889f"
 metafile = true
 
 [[files]]
@@ -3422,7 +3427,7 @@ metafile = true
 
 [[files]]
 file = "mods/superb-warfare.pw.toml"
-hash = "42b6ba778eedb22ecf1d9926862c002d920202aeba79542f049a860cbf3ac008"
+hash = "318508586bcc781c6405b1c64f22612840aeb00a0148e5d6d4320553756736be"
 metafile = true
 
 [[files]]
