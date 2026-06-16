@@ -1842,7 +1842,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
-hash = "a8398f51bf914cae73c18d6b8b38da0ba0fdfe4616922eda18f3ce104eae948d"
+hash = "44409d338287817385c106a063acfa9472b17d92bb5d781438678b5e69531622"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
@@ -2063,6 +2063,11 @@ hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 [[files]]
 file = "mods/artifacts.pw.toml"
 hash = "9224b29b7fc388a0a030f8a6e87b26b24ec73dbc853bcdd531a144ed8e59ccea"
+metafile = true
+
+[[files]]
+file = "mods/ashvehicle.pw.toml"
+hash = "76ca01d608690bfa4b61ae96360558766eaa7a4e60be28872adfc37690634eed"
 metafile = true
 
 [[files]]
@@ -2967,6 +2972,11 @@ hash = "6164ce697ea02e49911afd5666dcb1d5f83ed0fff9b290def0a7a7c440c1c39b"
 metafile = true
 
 [[files]]
+file = "mods/mcsp-military-vehicle.pw.toml"
+hash = "a4f9d006e53ae615dcf078477a8d68b5507aed8d99bc3ec97ac74c316aa5c06b"
+metafile = true
+
+[[files]]
 file = "mods/mega-cells.pw.toml"
 hash = "10f1b6b632db719ee2da37deb6899ed42e78251a3aba52e75446c74096779e65"
 metafile = true
@@ -3284,6 +3294,11 @@ metafile = true
 [[files]]
 file = "mods/ritchies-projectile-library.pw.toml"
 hash = "ad017c00411e9b3cd8564d913e568636270ffd50bc822c919ce1db5ba0dbe126"
+metafile = true
+
+[[files]]
+file = "mods/sbw-vintage-vehicle-pack.pw.toml"
+hash = "af4e682df7b56ad75b607194a760fefb2cdaf160a57c2765c201926615966c5d"
 metafile = true
 
 [[files]]
