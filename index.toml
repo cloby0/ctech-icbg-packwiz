@@ -2049,11 +2049,6 @@ hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
 
 [[files]]
-file = "mods/ars-zero.pw.toml"
-hash = "cb42d6f7beb8a357ea0f432eb1d88445a078cf2ca4400b15921d505a03e43e41"
-metafile = true
-
-[[files]]
 file = "mods/ars_n_spells-1.9.0.jar"
 hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 
@@ -2744,6 +2739,11 @@ hash = "19fb3ad96188fe0536085f9694e52cb76ef2b0e0ae65bd3f6fd37320a8f0b8ee"
 metafile = true
 
 [[files]]
+file = "mods/ioticspellbooks.pw.toml"
+hash = "705de546efcaf92d271566d3c2fa563e5595990872702f76811ca3b03d246bcf"
+metafile = true
+
+[[files]]
 file = "mods/irons-lib.pw.toml"
 hash = "72a8ce5ebe4af779de8996545200c48e863798d352dc454abb7eab8773a9ca15"
 metafile = true
@@ -2766,6 +2766,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+metafile = true
+
+[[files]]
+file = "mods/jinxedlib.pw.toml"
+hash = "4729ea0f81112833449f27ce03cb9f308e5bd7b54cc6853444f97a43b555ff3f"
 metafile = true
 
 [[files]]
@@ -3360,6 +3365,11 @@ metafile = true
 [[files]]
 file = "mods/spark.pw.toml"
 hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
+metafile = true
+
+[[files]]
+file = "mods/spells-gone-wrong.pw.toml"
+hash = "5838f3888353bd92a8afdafd31347c48b4357e89232068e86d399a8ccd6917ef"
 metafile = true
 
 [[files]]
