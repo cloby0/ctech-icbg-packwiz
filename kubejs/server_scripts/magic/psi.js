@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
             'psi:psimetal', 'psi:psimetal',
             'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal',
             'minecraft:diamond', 'minecraft:diamond',
-            'gtceu:source_gem', 'gtceu:source_gem'
+            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'psi:psigem',
         sourceCost: 6000

@@ -1658,7 +1658,7 @@ hash = "4a60463c42e66073a1f82ea4061d23f346217d5057dbf541e5608ea0375cdd73"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "a23110789c9b49ada7b4c81c5865b23300b2712f9e34fa22d5332c5a999567da"
+hash = "ea02efc7d43aee450e0e674b94e317e6834a89615851ce2c4ef8043af93551d4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
