@@ -3435,11 +3435,6 @@ hash = "5dfd5e42573659ad84a5d870082aae38aaa8469aba2655e5b2cb14de4ca4cbdd"
 metafile = true
 
 [[files]]
-file = "mods/superb-horizons.pw.toml"
-hash = "103e51e10d5dabd1b3b85c71a15e3ece07605a0d243c90a3e0dff3646b1a4126"
-metafile = true
-
-[[files]]
 file = "mods/superb-warfare.pw.toml"
 hash = "318508586bcc781c6405b1c64f22612840aeb00a0148e5d6d4320553756736be"
 metafile = true
