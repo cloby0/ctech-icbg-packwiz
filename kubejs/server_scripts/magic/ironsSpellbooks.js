@@ -127,114 +127,87 @@ ServerEvents.recipes(event => {
     })
 
     // Sorcerer (EV) custom spellbooks
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'irons_spellbooks:pyrium_ingot',
-            'irons_spellbooks:pyrium_ingot',
-            'irons_spellbooks:pyrium_ingot',
-            'irons_spellbooks:pyrium_ingot',
-            'kubejs:chaos_essence',
-            'irons_spellbooks:fire_rune',
-            'irons_spellbooks:fire_rune'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot',
+            'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot',
+            'kubejs:chaos_essence', 'irons_spellbooks:fire_rune', 'irons_spellbooks:fire_rune'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'kubejs:pyromatic_codex',
-        30000,
-    )
+        output: 'kubejs:pyromatic_codex',
+        sourceCost: 30000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'gtceu:prima_materia_rod',
-            'gtceu:prima_materia_rod',
-            'kubejs:chaos_essence',
-            'irons_spellbooks:evocation_rune',
-            'irons_spellbooks:evocation_rune',
-            'minecraft:nether_star'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'gtceu:prima_materia_rod', 'gtceu:prima_materia_rod',
+            'kubejs:chaos_essence', 'irons_spellbooks:evocation_rune',
+            'irons_spellbooks:evocation_rune', 'minecraft:nether_star'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'kubejs:evocation_folio',
-        30000,
-    )
+        output: 'kubejs:evocation_folio',
+        sourceCost: 30000
+    })
 
     // Arcanist (ZPM) custom spellbooks
     // Technomatic Folio — requires elven_americate (elementium + americium) + ZPM circuits
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'gtceu:elven_americate_ingot',
-            'gtceu:elven_americate_ingot',
-            'cataclysm_spellbooks:technomancy_rune',
-            'cataclysm_spellbooks:technomancy_rune',
-            'kubejs:elven_concentrate',
-            'kubejs:elven_concentrate',
-            '#gtceu:circuits/zpm',
-            '#gtceu:circuits/zpm'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'gtceu:elven_americate_ingot', 'gtceu:elven_americate_ingot',
+            'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
+            'kubejs:elven_concentrate', 'kubejs:elven_concentrate',
+            '#gtceu:circuits/zpm', '#gtceu:circuits/zpm'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'kubejs:technomatic_folio',
-        42000,
-    )
+        output: 'kubejs:technomatic_folio',
+        sourceCost: 42000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'kubejs:elven_source_lattice',
-            'kubejs:elven_source_lattice',
-            'irons_spellbooks:ice_rune',
-            'irons_spellbooks:ice_rune'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'gtceu:elementium_plate', 'gtceu:elementium_plate',
+            'gtceu:elementium_plate', 'gtceu:elementium_plate',
+            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
+            'irons_spellbooks:ice_rune', 'irons_spellbooks:ice_rune'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'kubejs:glacial_grimoire',
-        40000,
-    )
+        output: 'kubejs:glacial_grimoire',
+        sourceCost: 40000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'gtceu:elementium_plate',
-            'kubejs:elven_source_lattice',
-            'kubejs:elven_source_lattice',
-            'irons_spellbooks:nature_rune',
-            'irons_spellbooks:nature_rune'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'gtceu:elementium_plate', 'gtceu:elementium_plate',
+            'gtceu:elementium_plate', 'gtceu:elementium_plate',
+            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
+            'irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'kubejs:verdant_chronicle',
-        40000,
-    )
+        output: 'kubejs:verdant_chronicle',
+        sourceCost: 40000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'irons_spellbooks:ender_rune',
-            'irons_spellbooks:ender_rune',
-            'irons_spellbooks:portal_frame',
-            'irons_spellbooks:portal_frame',
-            'gtceu:terrasteel_plate',
-            'gtceu:elementium_plate',
-            'minecraft:ender_eye',
-            'minecraft:ender_eye'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
+            'irons_spellbooks:portal_frame', 'irons_spellbooks:portal_frame',
+            'gtceu:terrasteel_plate', 'gtceu:elementium_plate',
+            'minecraft:ender_eye', 'minecraft:ender_eye'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'legendary_spellbooks:annihilators_protocol',
-        40000,
-    )
+        output: 'legendary_spellbooks:annihilators_protocol',
+        sourceCost: 40000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'irons_spellbooks:lightning_rune',
-            'irons_spellbooks:lightning_rune',
-            'irons_spellbooks:energized_core',
-            'irons_spellbooks:energized_core',
-            'kubejs:elven_source_lattice',
-            'gtceu:elementium_plate',
-            'irons_spellbooks:lightning_bottle',
-            'irons_spellbooks:lightning_bottle'
+    addEnchantingRecipe(event, {
+        reagent: 'irons_spellbooks:netherite_spell_book',
+        pedestalItems: [
+            'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune',
+            'irons_spellbooks:energized_core', 'irons_spellbooks:energized_core',
+            'kubejs:elven_source_lattice', 'gtceu:elementium_plate',
+            'irons_spellbooks:lightning_bottle', 'irons_spellbooks:lightning_bottle'
         ],
-        'irons_spellbooks:netherite_spell_book',
-        'legendary_spellbooks:stormbound_grimoire',
-        40000,
-    )
+        output: 'legendary_spellbooks:stormbound_grimoire',
+        sourceCost: 40000
+    })
 })

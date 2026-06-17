@@ -23,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("xbbbx", "xxxxx", "xxxxx", "xxxxx", "abbba")
             .where("a", Predicates.blocks("minecraft:air"))
             .where("b", Predicates.blocks("kubejs:mana_livingrock_casing"))
-            .where("c", Predicates.blocks("gtceu:manaplatinite_block")
+            .where("c", Predicates.blocks("kubejs:mana_livingrock_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("x", Predicates.any())

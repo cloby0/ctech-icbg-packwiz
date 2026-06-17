@@ -20,17 +20,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'magnumtorch:diamond_magnum_torch' });
     event.remove({ id: 'magnumtorch:emerald_magnum_torch' });
 
-    event.recipes.ars_nouveau.imbuement(
-        "#forge:gems/source",
-        "reliquary:void_tear",
-        1500,
-        [
-            "minecraft:crying_obsidian", 
-            "minecraft:crying_obsidian", 
-            "minecraft:crying_obsidian", 
-            "minecraft:crying_obsidian"
-        ]
-    );
+    addImbuementRecipe(event, {
+        input: '#forge:gems/source',
+        output: 'reliquary:void_tear',
+        source: 1500,
+        pedestalItems: ['minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian']
+    });
 
     event.shaped(
         Item.of('reliquary:ender_staff', 1),
@@ -47,17 +42,12 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "minecraft:blue_ice",
-            "#kubejs:water_essences",
-            "minecraft:snowball",
-            "minecraft:snowball",
-        ],
-        "minecraft:shears",
-        "reliquary:shears_of_winter",
-        2500,
-    );
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:shears',
+        pedestalItems: ['minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'minecraft:snowball'],
+        output: 'reliquary:shears_of_winter',
+        sourceCost: 2500
+    })
 
     event.shaped(
         Item.of('reliquary:sojourner_staff', 1),
@@ -103,17 +93,12 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "irons_spellbooks:nature_rune",
-            "irons_spellbooks:nature_rune",
-            "ars_nouveau:magebloom_fiber",
-            "#forge:gems/source"
-        ],
-        "minecraft:fishing_rod",
-        "reliquary:rod_of_lyssa",
-        2500,
-    );
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:fishing_rod',
+        pedestalItems: ['irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune', 'ars_nouveau:magebloom_fiber', '#forge:gems/source'],
+        output: 'reliquary:rod_of_lyssa',
+        sourceCost: 2500
+    })
 
     event.shaped(
         Item.of('constructionwand:infinity_wand', 1),
@@ -130,41 +115,26 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "gtceu:holy_silver_rod",
-            "gtceu:luminessence_dust",
-            "gtceu:luminessence_dust",
-            "aether:ambrosium_shard"
-        ],
-        "minecraft:amethyst_shard",
-        "magnumtorch:amethyst_magnum_torch",
-        1500,
-    );
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:amethyst_shard',
+        pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
+        output: 'magnumtorch:amethyst_magnum_torch',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "gtceu:holy_silver_rod",
-            "#forge:gems/source",
-            "gtceu:luminessence_dust",
-            "aether:ambrosium_shard"
-        ],
-        "minecraft:emerald",
-        "magnumtorch:emerald_magnum_torch",
-        2000,
-    );
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:emerald',
+        pedestalItems: ['gtceu:holy_silver_rod', '#forge:gems/source', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
+        output: 'magnumtorch:emerald_magnum_torch',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "gtceu:holy_silver_plate",
-            "#forge:gems/source",
-            "#forge:gems/source",
-            "gtceu:luminessence_dust"
-        ],
-        "minecraft:diamond",
-        "magnumtorch:diamond_magnum_torch",
-        2500,
-    );
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:diamond',
+        pedestalItems: ['gtceu:holy_silver_plate', '#forge:gems/source', '#forge:gems/source', 'gtceu:luminessence_dust'],
+        output: 'magnumtorch:diamond_magnum_torch',
+        sourceCost: 2500
+    })
 
     event.shaped(
         Item.of('ars_nouveau:enchanting_apparatus', 1),
@@ -207,19 +177,19 @@ ServerEvents.recipes(event => {
     });
 
     // ambrosium processing step 2: source + luminessence purify the bloom into sacred shard
-    event.recipes.ars_nouveau.imbuement(
-        "kubejs:sanctified_ambrosium_bloom",
-        "kubejs:sacred_ambrosium_shard",
-        1500,
-        ["gtceu:luminessence_dust", "gtceu:luminessence_dust"]
-    );
+    addImbuementRecipe(event, {
+        input: 'kubejs:sanctified_ambrosium_bloom',
+        output: 'kubejs:sacred_ambrosium_shard',
+        source: 1500,
+        pedestalItems: ['gtceu:luminessence_dust', 'gtceu:luminessence_dust']
+    });
 
-    event.recipes.ars_nouveau.imbuement(
-        "minecraft:ender_pearl",
-        "irons_spellbooks:divine_pearl",
-        3000,
-        ["kubejs:sacred_ambrosium_shard"]
-    );
+    addImbuementRecipe(event, {
+        input: 'minecraft:ender_pearl',
+        output: 'irons_spellbooks:divine_pearl',
+        source: 3000,
+        pedestalItems: ['kubejs:sacred_ambrosium_shard']
+    });
 
     event.shaped(
         Item.of('reliquary:mercy_cross', '{Damage:0}'),
@@ -235,58 +205,49 @@ ServerEvents.recipes(event => {
         }
     );
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "kubejs:sacred_ambrosium_shard",
-            "kubejs:sacred_ambrosium_shard",
-            "gtceu:luminessence_dust",
-            "gtceu:luminessence_dust"
-        ],
-        "gtceu:silver_dust",
-        "kubejs:holy_silver_blend",
-        2000,
-    );
-
-    event.recipes.ars_nouveau.imbuement(
-        "kubejs:holy_silver_blend",
-        "gtceu:holy_silver_dust",
-        2500,
-        ["reliquary:mercy_cross"]
-    );
-
-    event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "#kubejs:fire_essences"
-        ],
-        "gtceu:holy_silver_dust",
-        "gtceu:holy_silver_ingot", // output
-        3000,
-    );
-
-    event.custom({
-        "type": "ars_nouveau:enchanting_apparatus",
-        "reagent": [{ "item": "kubejs:sacred_ambrosium_shard" }],
-        "pedestalItems": [
-            { "tag": "kubejs:earth_essences" },
-            { "tag": "kubejs:earth_essences" },
-            { "tag": "kubejs:earth_essences" }
-        ],
-        "output": { "item": "minecraft:ender_pearl", "count": 4 },
-        "sourceCost": 2500
+    addEnchantingRecipe(event, {
+        reagent: 'gtceu:silver_dust',
+        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust'],
+        output: 'kubejs:holy_silver_blend',
+        sourceCost: 2000
     })
 
-    event.custom({
-        "type": "ars_nouveau:enchanting_apparatus",
-        "reagent": [{ "item": "kubejs:sacred_ambrosium_shard" }],
-        "pedestalItems": [
-            { "tag": "kubejs:earth_essences" },
-            { "tag": "kubejs:earth_essences" },
-            { "tag": "kubejs:water_essences" },
-            { "tag": "kubejs:water_essences" }
+    addImbuementRecipe(event, {
+        input: 'kubejs:holy_silver_blend',
+        output: 'gtceu:holy_silver_dust',
+        source: 2500,
+        pedestalItems: ['reliquary:mercy_cross']
+    });
+
+    event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})
+    addEnchantingRecipe(event, {
+        reagent: 'gtceu:holy_silver_dust',
+        pedestalItems: ['#kubejs:fire_essences'],
+        output: 'gtceu:holy_silver_ingot',
+        sourceCost: 3000
+    })
+
+    addEnchantingRecipe(event, {
+        reagent: { item: 'kubejs:sacred_ambrosium_shard' },
+        pedestalItems: [
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:earth_essences' }
         ],
-        "output": { "item": "reliquary:fortune_coin", "count": 4 },
-        "sourceCost": 3000
+        output: { item: 'minecraft:ender_pearl', count: 4 },
+        sourceCost: 2500
+    })
+
+    addEnchantingRecipe(event, {
+        reagent: { item: 'kubejs:sacred_ambrosium_shard' },
+        pedestalItems: [
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:earth_essences' },
+            { tag: 'kubejs:water_essences' },
+            { tag: 'kubejs:water_essences' }
+        ],
+        output: { item: 'reliquary:fortune_coin', count: 4 },
+        sourceCost: 3000
     })
 
     // magical_receiver: spell turret core + holy silver + source gems

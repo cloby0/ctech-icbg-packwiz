@@ -13,8 +13,6 @@ ServerEvents.recipes(event => {
     const A = '#kubejs:air_essences'
     const ma = n => `mysticalagriculture:${n}_essence`
 
-    function sourceRound(n) { return (n / 100) > 20 ? n / 100 : 20 }
-
     // [output, catalyst, [pedestal items], source cost]
     const chains = [
 
@@ -137,17 +135,13 @@ ServerEvents.recipes(event => {
 
     ]
 
-    chains.forEach(([output, center, pedestals, source], i) => {
-        event.recipes.ars_nouveau.enchanting_apparatus(pedestals, center, output, source)
-
-        const recipeId = `kubejs/ma_essence_chain_${i + 1}`
-        let r = event.recipes.gtceu.enchanting_sanctum(recipeId)
-            .duration(sourceRound(source) * 2)
-            .EUt(1920 + Math.round(source / 25))
-            .itemOutputs(`1x ${output}`)
-            .itemInputs(`1x ${center}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', source))
-        pedestals.forEach(p => r.itemInputs(`1x ${p}`))
+    chains.forEach(([output, center, pedestals, source]) => {
+        addEnchantingRecipe(event, {
+            reagent: center,
+            pedestalItems: pedestals,
+            output: output,
+            sourceCost: source
+        })
     })
 
     // 16x essence + 1 wheat seed -> 1 seed in the Petal Apothecary

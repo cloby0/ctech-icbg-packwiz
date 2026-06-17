@@ -42,145 +42,145 @@ ServerEvents.recipes(event => {
         'GDG', 'GRG', ' G '
     ], { 'G': 'minecraft:glass_bottle', 'D': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:redstone' })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather_boots", "minecraft:lily_pad", "minecraft:lily_pad", "minecraft:prismarine_shard", "minecraft:prismarine_shard", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:aqua_walker",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:lily_pad', 'minecraft:lily_pad', 'minecraft:prismarine_shard', 'minecraft:prismarine_shard', 'gtceu:luminessence_dust'],
+        output: 'relics:aqua_walker',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:nautilus_shell", "minecraft:nautilus_shell", "minecraft:kelp", "minecraft:kelp", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:amphibian_boot",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather', 'minecraft:nautilus_shell', 'minecraft:nautilus_shell', 'minecraft:kelp', 'minecraft:kelp', 'gtceu:luminessence_dust'],
+        output: 'relics:amphibian_boot',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:prismarine", "minecraft:prismarine", "minecraft:rotten_flesh", "minecraft:kelp", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:drowned_belt",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather', 'minecraft:prismarine', 'minecraft:prismarine', 'minecraft:rotten_flesh', 'minecraft:kelp', 'gtceu:luminessence_dust'],
+        output: 'relics:drowned_belt',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:slime_ball", "minecraft:slime_ball", "minecraft:feather", "minecraft:feather", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:jellyfish_necklace",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:feather', 'minecraft:feather', 'gtceu:luminessence_dust'],
+        output: 'relics:jellyfish_necklace',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:packed_ice", "minecraft:packed_ice", "minecraft:iron_ingot", "minecraft:iron_ingot", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:ice_breaker",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+        output: 'relics:ice_breaker',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather_boots", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:blaze_powder", "minecraft:blaze_powder", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:magma_walker",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'gtceu:luminessence_dust'],
+        output: 'relics:magma_walker',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:feather", "minecraft:feather", "minecraft:bone", "minecraft:bone", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:hunter_belt",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather', 'minecraft:feather', 'minecraft:feather', 'minecraft:bone', 'minecraft:bone', 'gtceu:luminessence_dust'],
+        output: 'relics:hunter_belt',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["create:iron_sheet", "minecraft:iron_ingot", "minecraft:iron_ingot", "minecraft:spider_eye", "minecraft:spider_eye", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:rage_glove",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:spider_eye', 'minecraft:spider_eye', 'gtceu:luminessence_dust'],
+        output: 'relics:rage_glove',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_ingot", "minecraft:gold_ingot", "minecraft:blackstone", "minecraft:blackstone", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:bastion_ring",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:blackstone', 'minecraft:blackstone', 'gtceu:luminessence_dust'],
+        output: 'relics:bastion_ring',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:glass_bottle", "minecraft:blaze_powder", "minecraft:blaze_powder", "minecraft:fire_charge", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:blazing_flask",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:glass_bottle', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:fire_charge', 'gtceu:luminessence_dust'],
+        output: 'relics:blazing_flask',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:black_dye", "minecraft:black_dye", "minecraft:ender_pearl", "minecraft:obsidian", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:midnight_robe",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'minecraft:black_dye', 'minecraft:ender_pearl', 'minecraft:obsidian', 'gtceu:luminessence_dust'],
+        output: 'relics:midnight_robe',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_ingot", "minecraft:gold_ingot", "minecraft:diamond", "minecraft:golden_apple", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "relics:holy_locket",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:diamond', 'minecraft:golden_apple', 'gtceu:luminessence_dust'],
+        output: 'relics:holy_locket',
+        sourceCost: 2500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:ender_pearl", "minecraft:ender_pearl", "minecraft:phantom_membrane", "minecraft:phantom_membrane", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:enders_hand",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:ender_pearl', 'minecraft:ender_pearl', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:enders_hand',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:prismarine_crystals", "minecraft:prismarine_crystals", "minecraft:iron_block", "minecraft:iron_block", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:reflection_necklace",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:prismarine_crystals', 'minecraft:prismarine_crystals', 'minecraft:iron_block', 'minecraft:iron_block', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:reflection_necklace',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:blaze_rod", "minecraft:obsidian", "minecraft:obsidian", "minecraft:iron_ingot", "minecraft:iron_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:shadow_glaive",
-        4000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:blaze_rod', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:shadow_glaive',
+        sourceCost: 4000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:glass", "minecraft:glass", "minecraft:gold_block", "minecraft:gold_block", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:magic_mirror",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:glass', 'minecraft:glass', 'minecraft:gold_block', 'minecraft:gold_block', 'gtceu:holy_silver_dust'],
+        output: 'relics:magic_mirror',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:obsidian", "minecraft:obsidian", "minecraft:ender_eye", "minecraft:ender_eye", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:spatial_sign",
-        4000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:obsidian', 'minecraft:obsidian', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:spatial_sign',
+        sourceCost: 4000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:diamond", "minecraft:diamond", "minecraft:crying_obsidian", "minecraft:crying_obsidian", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:space_dissector",
-        4500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:space_dissector',
+        sourceCost: 4500
+    })
 
     // elytra consumed as primary component
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:elytra", "minecraft:phantom_membrane", "minecraft:phantom_membrane", "create:golden_sheet", "create:golden_sheet", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:elytra_booster",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:elytra', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'create:golden_sheet', 'create:golden_sheet', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:elytra_booster',
+        sourceCost: 5000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:cooked_porkchop", "minecraft:cooked_porkchop", "minecraft:golden_apple", "minecraft:golden_apple", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "relics:infinity_ham",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:cooked_porkchop', 'minecraft:cooked_porkchop', 'minecraft:golden_apple', 'minecraft:golden_apple', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'relics:infinity_ham',
+        sourceCost: 5000
+    })
 
 })

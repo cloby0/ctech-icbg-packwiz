@@ -36,208 +36,208 @@ ServerEvents.recipes(event => {
         'A A', 'DBD', 'A A'
     ], { 'A': 'minecraft:arrow', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:lapis_lazuli", "minecraft:lapis_lazuli", "minecraft:amethyst_shard", "minecraft:amethyst_shard", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:arcane_bow",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:lapis_lazuli', 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:arcane_bow',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:feather", "minecraft:feather", "minecraft:feather", "minecraft:feather", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:wind_bow",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:feather', 'minecraft:feather', 'minecraft:feather', 'minecraft:feather', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:wind_bow',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:packed_ice", "minecraft:packed_ice", "minecraft:ice", "minecraft:ice", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:frostbite",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:ice', 'minecraft:ice', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:frostbite',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:spider_eye", "minecraft:spider_eye", "minecraft:fermented_spider_eye", "minecraft:vine", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:verdant_viper",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:spider_eye', 'minecraft:spider_eye', 'minecraft:fermented_spider_eye', 'minecraft:vine', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:verdant_viper',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:crimson_planks", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:nether_brick", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:crimson_nexus",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:crimson_planks', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:nether_brick', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:crimson_nexus',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:iron_ingot", "minecraft:iron_ingot", "minecraft:emerald", "minecraft:emerald", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:sentinels_wrath",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:emerald', 'minecraft:emerald', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:sentinels_wrath',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:emerald", "minecraft:emerald", "minecraft:vine", "minecraft:vine", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:verdant_vigor",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:emerald', 'minecraft:emerald', 'minecraft:vine', 'minecraft:vine', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:verdant_vigor',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:emerald", "minecraft:emerald", "minecraft:experience_bottle", "minecraft:experience_bottle", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:emerald_sage_bow",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:emerald', 'minecraft:emerald', 'minecraft:experience_bottle', 'minecraft:experience_bottle', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:emerald_sage_bow',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:blue_ice", "minecraft:blue_ice", "minecraft:heart_of_the_sea", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:cyroheart_bow",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:blue_ice', 'minecraft:blue_ice', 'minecraft:heart_of_the_sea', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:cyroheart_bow',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:obsidian", "minecraft:obsidian", "minecraft:ink_sac", "minecraft:ink_sac", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:dark_bow",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:ink_sac', 'minecraft:ink_sac', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:dark_bow',
+        sourceCost: 1500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:iron_block", "minecraft:iron_block", "minecraft:iron_ingot", "minecraft:iron_ingot", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:ironclad_bow",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:ironclad_bow',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:golden_apple", "minecraft:golden_apple", "minecraft:rotten_flesh", "minecraft:rotten_flesh", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:vitality_weaver",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:golden_apple', 'minecraft:golden_apple', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:vitality_weaver',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:lightning_rod", "minecraft:lightning_rod", "minecraft:amethyst_shard", "minecraft:amethyst_shard", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:arc_heavens",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:lightning_rod', 'minecraft:lightning_rod', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:arc_heavens',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:blaze_rod", "minecraft:blaze_rod", "minecraft:fire_charge", "minecraft:fire_charge", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:solar_bow",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:blaze_rod', 'minecraft:blaze_rod', 'minecraft:fire_charge', 'minecraft:fire_charge', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:solar_bow',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:blaze_rod", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:fire_charge", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:flame_bow",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:blaze_rod', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:fire_charge', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:flame_bow',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:phantom_membrane", "minecraft:phantom_membrane", "minecraft:obsidian", "minecraft:obsidian", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:spectral_whisper",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:spectral_whisper',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:obsidian", "minecraft:obsidian", "minecraft:quartz", "minecraft:quartz", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:twin_shadows",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:quartz', 'minecraft:quartz', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:twin_shadows',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "too_many_bows:power_crystal", "too_many_bows:power_crystal", "minecraft:blaze_powder", "minecraft:blaze_powder", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:ethereal_hunter",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'too_many_bows:power_crystal', 'too_many_bows:power_crystal', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:ethereal_hunter',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:glowstone", "minecraft:glowstone", "minecraft:gold_block", "minecraft:gold_block", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:radiance",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:glowstone', 'minecraft:glowstone', 'minecraft:gold_block', 'minecraft:gold_block', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:radiance',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:ender_pearl", "minecraft:ender_pearl", "minecraft:amethyst_shard", "minecraft:amethyst_shard", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:astral_bound",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:astral_bound',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "aether:zanite_gemstone", "aether:zanite_gemstone", "minecraft:feather", "minecraft:feather", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:aethers_call",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:aethers_call',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:blaze_rod", "minecraft:wither_skeleton_skull", "minecraft:soul_sand", "minecraft:soul_sand", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:demons_grasp",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:blaze_rod', 'minecraft:wither_skeleton_skull', 'minecraft:soul_sand', 'minecraft:soul_sand', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        output: 'too_many_bows:demons_grasp',
+        sourceCost: 3500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:emerald_block", "minecraft:emerald_block", "too_many_bows:power_crystal", "too_many_bows:power_crystal", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:ancient_sage_bow",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:emerald_block', 'minecraft:emerald_block', 'too_many_bows:power_crystal', 'too_many_bows:power_crystal', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:ancient_sage_bow',
+        sourceCost: 5000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "too_many_bows:soul_fragment", "too_many_bows:soul_fragment", "minecraft:phantom_membrane", "minecraft:phantom_membrane", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:dusk_reaper",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'too_many_bows:soul_fragment', 'too_many_bows:soul_fragment', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:dusk_reaper',
+        sourceCost: 5000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:shulker_shell", "minecraft:shulker_shell", "minecraft:ender_pearl", "minecraft:ender_pearl", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:shulker_blast",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:shulker_shell', 'minecraft:shulker_shell', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:shulker_blast',
+        sourceCost: 5000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:dragon_breath", "minecraft:dragon_breath", "minecraft:end_stone", "minecraft:end_stone", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:dragons_breath",
-        5500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:dragons_breath',
+        sourceCost: 5500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "too_many_bows:rift_shard", "too_many_bows:rift_shard", "minecraft:ender_eye", "minecraft:ender_eye", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:auroras_grace",
-        5500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'too_many_bows:rift_shard', 'too_many_bows:rift_shard', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:auroras_grace',
+        sourceCost: 5500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "too_many_bows:cursed_stone", "too_many_bows:cursed_stone", "minecraft:wither_skeleton_skull", "minecraft:wither_skeleton_skull", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:necro_flame_bow",
-        5000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'too_many_bows:cursed_stone', 'too_many_bows:cursed_stone', 'minecraft:wither_skeleton_skull', 'minecraft:wither_skeleton_skull', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:necro_flame_bow',
+        sourceCost: 5000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bow", "minecraft:ancient_debris", "minecraft:ancient_debris", "minecraft:netherite_ingot", "minecraft:netherite_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "nameless_trinkets:ultimate_dust",
-        "too_many_bows:burnt_relic",
-        6000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:ultimate_dust',
+        pedestalItems: ['minecraft:bow', 'minecraft:ancient_debris', 'minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_ingot', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        output: 'too_many_bows:burnt_relic',
+        sourceCost: 6000
+    })
 
     event.shaped(Item.of('too_many_bows:sharpshot_ring', 1), [
         'GDG', 'GAG', 'GDG'
@@ -247,25 +247,25 @@ ServerEvents.recipes(event => {
         'FSF', 'SDS', 'FSF'
     ], { 'F': 'minecraft:feather', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_block", "minecraft:gold_block", "minecraft:lightning_rod", "minecraft:lightning_rod", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:stormbound_signet",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:gold_block', 'minecraft:gold_block', 'minecraft:lightning_rod', 'minecraft:lightning_rod', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:stormbound_signet',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:obsidian", "minecraft:obsidian", "minecraft:diamond", "minecraft:diamond", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:dead_eyes_pendant",
-        2000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:obsidian', 'minecraft:obsidian', 'minecraft:diamond', 'minecraft:diamond', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:dead_eyes_pendant',
+        sourceCost: 2000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:leather", "minecraft:feather", "minecraft:feather", "gtceu:luminessence_dust"],
-        "nameless_trinkets:glowing_dust",
-        "too_many_bows:wind_glove",
-        1500
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'nameless_trinkets:glowing_dust',
+        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:feather', 'minecraft:feather', 'gtceu:luminessence_dust'],
+        output: 'too_many_bows:wind_glove',
+        sourceCost: 1500
+    })
 
 })

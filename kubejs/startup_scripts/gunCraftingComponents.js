@@ -1,22 +1,46 @@
-// Tiered lookup table for gun sub-assemblies, same pattern GTCEu uses internally for HULL/CABLE.
-// Used in guns.js via CraftingComponent.get('gun_receiver').get(tier).
+// Tiered lookup tables for gun sub-assemblies, same pattern GTCEu uses for HULL/CABLE.
+// Used in guns.js via e.g. PISTOL_FRAME.get(tier).
 GTCEuStartupEvents.craftingComponents(event => {
 
-    event.createItem('gun_receiver', Item.of('kubejs:lv_gun_receiver'))
-        .addItem(GTValues.LV, Item.of('kubejs:lv_gun_receiver'))
-        .addItem(GTValues.MV, Item.of('kubejs:mv_gun_receiver'))
-        .addItem(GTValues.HV, Item.of('kubejs:hv_gun_receiver'))
-        .addItem(GTValues.EV, Item.of('kubejs:ev_gun_receiver'))
-        .addItem(GTValues.IV, Item.of('kubejs:iv_gun_receiver'))
-        .addItem(GTValues.LuV, Item.of('kubejs:luv_gun_receiver'))
+    event.createItem('pistol_frame', Item.of('kubejs:lv_pistol_frame'))
+        .addItem(GTValues.LV, Item.of('kubejs:lv_pistol_frame'))
+        .addItem(GTValues.MV, Item.of('kubejs:mv_pistol_frame'))
+        .addItem(GTValues.HV, Item.of('kubejs:hv_pistol_frame'))
+        .addItem(GTValues.EV, Item.of('kubejs:ev_pistol_frame'))
+        .addItem(GTValues.IV, Item.of('kubejs:iv_pistol_frame'))
+        .addItem(GTValues.LuV, Item.of('kubejs:luv_pistol_frame'))
 
-    event.createItem('gun_barrel', Item.of('kubejs:lv_gun_barrel'))
-        .addItem(GTValues.LV, Item.of('kubejs:lv_gun_barrel'))
-        .addItem(GTValues.MV, Item.of('kubejs:mv_gun_barrel'))
-        .addItem(GTValues.HV, Item.of('kubejs:hv_gun_barrel'))
-        .addItem(GTValues.EV, Item.of('kubejs:ev_gun_barrel'))
-        .addItem(GTValues.IV, Item.of('kubejs:iv_gun_barrel'))
-        .addItem(GTValues.LuV, Item.of('kubejs:luv_gun_barrel'))
+    event.createItem('rifle_receiver', Item.of('kubejs:lv_rifle_receiver'))
+        .addItem(GTValues.LV, Item.of('kubejs:lv_rifle_receiver'))
+        .addItem(GTValues.MV, Item.of('kubejs:mv_rifle_receiver'))
+        .addItem(GTValues.HV, Item.of('kubejs:hv_rifle_receiver'))
+        .addItem(GTValues.EV, Item.of('kubejs:ev_rifle_receiver'))
+        .addItem(GTValues.IV, Item.of('kubejs:iv_rifle_receiver'))
+        .addItem(GTValues.LuV, Item.of('kubejs:luv_rifle_receiver'))
+
+    event.createItem('heavy_frame', Item.of('kubejs:lv_heavy_frame'))
+        .addItem(GTValues.LV, Item.of('kubejs:lv_heavy_frame'))
+        .addItem(GTValues.MV, Item.of('kubejs:mv_heavy_frame'))
+        .addItem(GTValues.HV, Item.of('kubejs:hv_heavy_frame'))
+        .addItem(GTValues.EV, Item.of('kubejs:ev_heavy_frame'))
+        .addItem(GTValues.IV, Item.of('kubejs:iv_heavy_frame'))
+        .addItem(GTValues.LuV, Item.of('kubejs:luv_heavy_frame'))
+
+    event.createItem('short_barrel', Item.of('kubejs:lv_short_barrel'))
+        .addItem(GTValues.LV, Item.of('kubejs:lv_short_barrel'))
+        .addItem(GTValues.MV, Item.of('kubejs:mv_short_barrel'))
+        .addItem(GTValues.HV, Item.of('kubejs:hv_short_barrel'))
+        .addItem(GTValues.EV, Item.of('kubejs:ev_short_barrel'))
+        .addItem(GTValues.IV, Item.of('kubejs:iv_short_barrel'))
+        .addItem(GTValues.LuV, Item.of('kubejs:luv_short_barrel'))
+
+    event.createItem('long_barrel', Item.of('kubejs:lv_long_barrel'))
+        .addItem(GTValues.LV, Item.of('kubejs:lv_long_barrel'))
+        .addItem(GTValues.MV, Item.of('kubejs:mv_long_barrel'))
+        .addItem(GTValues.HV, Item.of('kubejs:hv_long_barrel'))
+        .addItem(GTValues.EV, Item.of('kubejs:ev_long_barrel'))
+        .addItem(GTValues.IV, Item.of('kubejs:iv_long_barrel'))
+        .addItem(GTValues.LuV, Item.of('kubejs:luv_long_barrel'))
 
     event.createItem('gun_fire_control', Item.of('kubejs:lv_gun_fire_control'))
         .addItem(GTValues.LV, Item.of('kubejs:lv_gun_fire_control'))

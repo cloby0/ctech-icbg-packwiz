@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("d", Predicates.blocks("kubejs:sanctum_sourcestone_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-            .where("e", Predicates.blocks("gtceu:consecrated_chromite_block"))
+            .where("e", Predicates.blocks("kubejs:sanctum_sourcestone_casing"))
             .where("f", Predicates.blocks("minecraft:air"))
             .where("g", Predicates.abilities(PartAbility.MAINTENANCE))
             .where("h", Predicates.controller(Predicates.blocks(definition.get())))

@@ -33,4 +33,60 @@
   "item.kubejs.pressurized_rocket_tank": "Pressurized Rocket Tank",
   "item.kubejs.rocket_guidance_module": "Rocket Guidance Module",
 
+  "item.kubejs.lv_pistol_frame": "LV Pistol Frame",
+  "item.kubejs.mv_pistol_frame": "MV Pistol Frame",
+  "item.kubejs.hv_pistol_frame": "HV Pistol Frame",
+  "item.kubejs.ev_pistol_frame": "EV Pistol Frame",
+  "item.kubejs.iv_pistol_frame": "IV Pistol Frame",
+  "item.kubejs.luv_pistol_frame": "LuV Pistol Frame",
+
+  "item.kubejs.lv_rifle_receiver": "LV Rifle Receiver",
+  "item.kubejs.mv_rifle_receiver": "MV Rifle Receiver",
+  "item.kubejs.hv_rifle_receiver": "HV Rifle Receiver",
+  "item.kubejs.ev_rifle_receiver": "EV Rifle Receiver",
+  "item.kubejs.iv_rifle_receiver": "IV Rifle Receiver",
+  "item.kubejs.luv_rifle_receiver": "LuV Rifle Receiver",
+
+  "item.kubejs.lv_heavy_frame": "LV Heavy Frame",
+  "item.kubejs.mv_heavy_frame": "MV Heavy Frame",
+  "item.kubejs.hv_heavy_frame": "HV Heavy Frame",
+  "item.kubejs.ev_heavy_frame": "EV Heavy Frame",
+  "item.kubejs.iv_heavy_frame": "IV Heavy Frame",
+  "item.kubejs.luv_heavy_frame": "LuV Heavy Frame",
+
+  "item.kubejs.lv_short_barrel_blank": "LV Short Barrel Blank",
+  "item.kubejs.mv_short_barrel_blank": "MV Short Barrel Blank",
+  "item.kubejs.hv_short_barrel_blank": "HV Short Barrel Blank",
+  "item.kubejs.ev_short_barrel_blank": "EV Short Barrel Blank",
+  "item.kubejs.iv_short_barrel_blank": "IV Short Barrel Blank",
+  "item.kubejs.luv_short_barrel_blank": "LuV Short Barrel Blank",
+
+  "item.kubejs.lv_short_barrel": "LV Short Barrel",
+  "item.kubejs.mv_short_barrel": "MV Short Barrel",
+  "item.kubejs.hv_short_barrel": "HV Short Barrel",
+  "item.kubejs.ev_short_barrel": "EV Short Barrel",
+  "item.kubejs.iv_short_barrel": "IV Short Barrel",
+  "item.kubejs.luv_short_barrel": "LuV Short Barrel",
+
+  "item.kubejs.lv_long_barrel_blank": "LV Long Barrel Blank",
+  "item.kubejs.mv_long_barrel_blank": "MV Long Barrel Blank",
+  "item.kubejs.hv_long_barrel_blank": "HV Long Barrel Blank",
+  "item.kubejs.ev_long_barrel_blank": "EV Long Barrel Blank",
+  "item.kubejs.iv_long_barrel_blank": "IV Long Barrel Blank",
+  "item.kubejs.luv_long_barrel_blank": "LuV Long Barrel Blank",
+
+  "item.kubejs.lv_long_barrel": "LV Long Barrel",
+  "item.kubejs.mv_long_barrel": "MV Long Barrel",
+  "item.kubejs.hv_long_barrel": "HV Long Barrel",
+  "item.kubejs.ev_long_barrel": "EV Long Barrel",
+  "item.kubejs.iv_long_barrel": "IV Long Barrel",
+  "item.kubejs.luv_long_barrel": "LuV Long Barrel",
+
+  "item.kubejs.lv_gun_fire_control": "LV Gun Fire Control",
+  "item.kubejs.mv_gun_fire_control": "MV Gun Fire Control",
+  "item.kubejs.hv_gun_fire_control": "HV Gun Fire Control",
+  "item.kubejs.ev_gun_fire_control": "EV Gun Fire Control",
+  "item.kubejs.iv_gun_fire_control": "IV Gun Fire Control",
+  "item.kubejs.luv_gun_fire_control": "LuV Gun Fire Control"
+
 }

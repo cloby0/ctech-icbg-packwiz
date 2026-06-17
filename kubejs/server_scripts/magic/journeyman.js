@@ -37,18 +37,11 @@ ServerEvents.recipes(event => {
 
     // magebloom_crop bootstrap: vanilla recipe requires enchanting apparatus (HV), but fiber is needed here at MV
     // imbuement with archwood planks + luminessence breaks the circular dependency
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": { "item": "minecraft:wheat_seeds" },
-        "output": "ars_nouveau:magebloom_crop",
-        "pedestalItems": [
-            { "item": { "item": "ars_nouveau:archwood_planks" } },
-            { "item": { "item": "ars_nouveau:archwood_planks" } },
-            { "item": { "item": "gtceu:luminessence_dust" } },
-            { "item": { "item": "gtceu:luminessence_dust" } }
-        ],
-        "source": 2500
+    addImbuementRecipe(event, {
+        input: 'minecraft:wheat_seeds',
+        output: 'ars_nouveau:magebloom_crop',
+        source: 2500,
+        pedestalItems: ['ars_nouveau:archwood_planks', 'ars_nouveau:archwood_planks', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust']
     });
 
     event.shaped(
@@ -187,43 +180,19 @@ ServerEvents.recipes(event => {
             }
         );
 
-    event.custom(
-        {
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": {
-            "item": "gtceu:source_dust"
-        },
-        "output": "kubejs:pure_source_gem_dust",
-        "pedestalItems": [
-            {
-            "item": {
-                "item": "kubejs:magebloom_sieve"
-            }
-            }
-        ],
-        "source": 500
-        }
-    );
+    addImbuementRecipe(event, {
+        input: 'gtceu:source_dust',
+        output: 'kubejs:pure_source_gem_dust',
+        source: 500,
+        pedestalItems: ['kubejs:magebloom_sieve']
+    });
 
-    event.custom(
-        {
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": {
-            "item": "kubejs:pure_source_gem_dust"
-        },
-        "output": "kubejs:rough_source_gem",
-        "pedestalItems": [
-            {
-            "item": {
-                "tag": "kubejs:fire_essences"
-            }
-            }
-        ],
-        "source": 2500
-        }
-    );
+    addImbuementRecipe(event, {
+        input: 'kubejs:pure_source_gem_dust',
+        output: 'kubejs:rough_source_gem',
+        source: 2500,
+        pedestalItems: ['#kubejs:fire_essences']
+    });
 
     event.custom(
         {
@@ -274,16 +243,11 @@ ServerEvents.recipes(event => {
         "experience": 0.5
     })
 
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 1,
-        "input": { "item": "kubejs:enchanted_zanite_gem" },
-        "output": "kubejs:resonant_zanite_crystal",
-        "pedestalItems": [
-            { "item": { "item": "ars_nouveau:source_gem" } },
-            { "item": { "item": "ars_nouveau:source_gem" } }
-        ],
-        "source": 1500
+    addImbuementRecipe(event, {
+        input: 'kubejs:enchanted_zanite_gem',
+        output: 'kubejs:resonant_zanite_crystal',
+        source: 1500,
+        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem']
     })
 
     event.custom({
@@ -305,27 +269,19 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     })
 
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 3,
-        "input": { "item": "kubejs:resonant_zanite_crystal" },
-        "output": "irons_spellbooks:cinder_essence",
-        "pedestalItems": [
-            { "item": { "tag": "kubejs:fire_essences" } },
-            { "item": { "tag": "kubejs:fire_essences" } }
-        ],
-        "source": 1500
+    addImbuementRecipe(event, {
+        input: 'kubejs:resonant_zanite_crystal',
+        output: 'irons_spellbooks:cinder_essence',
+        count: 3,
+        source: 1500,
+        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 4,
-        "input": { "item": "kubejs:resonant_zanite_crystal" },
-        "output": "irons_spellbooks:arcane_ingot",
-        "pedestalItems": [
-            { "item": { "tag": "kubejs:air_essences" } },
-            { "item": { "tag": "kubejs:air_essences" } }
-        ],
-        "source": 1500
+    addImbuementRecipe(event, {
+        input: 'kubejs:resonant_zanite_crystal',
+        output: 'irons_spellbooks:arcane_ingot',
+        count: 4,
+        source: 1500,
+        pedestalItems: ['#kubejs:air_essences', '#kubejs:air_essences']
     })
 });

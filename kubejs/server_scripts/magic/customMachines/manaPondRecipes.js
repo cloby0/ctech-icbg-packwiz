@@ -1,6 +1,6 @@
 //priority: 1
 // runs before tier scripts (priority 0), so forEachRecipe only sees vanilla botania:mana_infusion recipes.
-// any mana_infusion recipe added by a tier script needs a manual addManaPondRecipe call below.
+// tier scripts call addManaPondRecipe directly to add both pool and factory recipes.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -31,7 +31,10 @@ function catalystify(str) {
 // conversion ratio: 1 mana = this many source fluid units (tweak to change GT machine cost relative to botania)
 let source_rate = 1
 
+let _nextManaPondIndex = 1
+
 function addManaPondRecipe(event, crecipe) {
+    let index = _nextManaPondIndex++
     let mana = crecipe.mana
     let inputs = Array.isArray(crecipe.input) ? crecipe.input : [crecipe.input]
     let output = crecipe.output
@@ -43,6 +46,31 @@ function addManaPondRecipe(event, crecipe) {
     let outputId = output.item ?? 'minecraft:barrier'
 
     let isConjuration = catalystBlock === "botania:conjuration_catalyst"
+
+    if (!crecipe.skipPool) {
+        inputs.forEach((input, i) => {
+            let poolInput = {}
+            if (input.tag) {
+                poolInput = { tag: input.tag }
+            } else {
+                let itemId = input.item ?? input.id ?? null
+                if (itemId) poolInput = { item: itemId }
+            }
+            let poolRecipeObj = {
+                type: 'botania:mana_infusion',
+                input: poolInput,
+                mana: mana,
+                output: output
+            }
+            if (catalystBlock !== 'minecraft:barrier') {
+                poolRecipeObj.catalyst = { type: 'block', block: catalystBlock }
+            }
+            let inputKey = input.tag
+                ? `tag_${stripNamespace(input.tag)}`
+                : stripNamespace(input.item ?? input.id ?? 'unknown')
+            event.custom(poolRecipeObj).id(`kubejs:mana_pool_${inputKey}_to_${stripNamespace(outputId)}_${index}_${i}`)
+        })
+    }
 
     inputs.forEach(input => {
         let inputCount = input.count || 1
@@ -67,7 +95,7 @@ function addManaPondRecipe(event, crecipe) {
 
         console.log(`[mana_pond] mana=${mana} input=${itemInput} output=${outputId}`)
 
-        let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}`)
+        let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
             .inputFluids(Fluid.of('starbunclemania:source_fluid', (mana * source_rate)))
             .duration((manaRound(mana) * 2))
             .EUt(7680 + Math.round(mana / 25))
@@ -87,51 +115,10 @@ function addManaPondRecipe(event, crecipe) {
 ServerEvents.recipes(event => {
     event.remove({ id: "botania:mana_infusion/manasteel" })
     event.remove({ id: "botania:mana_infusion/manasteel_block" })
-    
+
     event.forEachRecipe({ type: 'botania:mana_infusion' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
-        addManaPondRecipe(event, crecipe)
-    })
-
-    // manual recipes same JSON shape as botania:mana_infusion
-    addManaPondRecipe(event, {
-        mana: 3500,
-        input: { item: 'gtceu:abstract_metal_ingot' },
-        output: { item: 'botania:manasteel_ingot' }
-    })
-
-    addManaPondRecipe(event, {
-        mana: 2000,
-        input: { item: 'minecraft:glowstone' },
-        output: { count: 4, item: 'gtceu:luminessence_dust' }
-    })
-
-    addManaPondRecipe(event, {
-        mana: 3000,
-        input: { tag: 'forge:ingots/silver' },
-        catalyst: { block: 'botania:alchemy_catalyst' },
-        output: { item: 'gtceu:holy_silver_ingot' }
-    })
-
-    addManaPondRecipe(event, {
-        mana: 20000,
-        input: { tag: 'forge:ingots/terrasteel' },
-        catalyst: { block: 'botania:alchemy_catalyst' },
-        output: { count: 4, item: 'gtceu:abstract_metal_ingot' }
-    })
-
-    addManaPondRecipe(event, {
-        mana: 25000,
-        input: { item: 'botania:mana_diamond' },
-        catalyst: { block: 'botania:conjuration_catalyst' },
-        output: { item: 'botania:mana_diamond' }
-    })
-
-    addManaPondRecipe(event, {
-        mana: 15000,
-        input: { item: 'botania:mana_pearl' },
-        catalyst: { block: 'botania:conjuration_catalyst' },
-        output: { item: 'botania:mana_pearl' }
+        addManaPondRecipe(event, { ...crecipe, skipPool: true })
     })
 
     // controller block crafting recipe
@@ -148,17 +135,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:automated_mana_pond')
         .duration(400)
         .EUt(GTValues.VA[GTValues.IV])
-
-    // casing block crafting recipe
-    event.shaped('4x kubejs:mana_livingrock_casing', [
-        'PRP',
-        'RBR',
-        'PRP'
-    ], {
-        P: 'gtceu:manaplatinite_plate',
-        R: 'gtceu:manaplatinite_rod',
-        B: 'botania:livingrock_bricks'
-    })
 
     event.recipes.gtceu.assembler('mana_livingrock_casing_assembly')
         .itemInputs(

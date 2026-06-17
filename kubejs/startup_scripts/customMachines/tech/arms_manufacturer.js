@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('war_industrial_complex', 'multiblock')
+    event.create('military_industrial_complex', 'multiblock')
         ["tooltips(java.util.List)"]([Component.literal("War never changes.")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)

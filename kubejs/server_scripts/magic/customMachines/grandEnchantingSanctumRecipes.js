@@ -1,8 +1,10 @@
 //priority: 1
 // runs before tier scripts (priority 0), so forEachRecipe only sees vanilla/mod-added recipes.
-// any ars_nouveau:enchanting_apparatus recipe added by a tier script needs a manual addEnchantingRecipe call below.
+// tier scripts call addEnchantingRecipe directly to add both apparatus and sanctum recipes.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
+
+let _nextEnchantingIndex = 1
 
 function stripNamespace(str) {
     const colon = str.indexOf(':')
@@ -21,6 +23,15 @@ function resolveItem(entry, debugLabel) {
     if (!entry) {
         console.error(`[enchanting_apparatus] null entry at ${debugLabel}`)
         return null
+    }
+
+    if (typeof entry === 'string') {
+        if (entry.startsWith('#')) return `1x #${entry.slice(1)}`
+        if (!$ForgeRegistries.ITEMS.getValue(entry)) {
+            console.warn(`[enchanting_apparatus] skipping non-existent item '${entry}' at ${debugLabel}`)
+            return null
+        }
+        return `1x ${entry}`
     }
 
     let inner = (entry.item !== undefined || entry.tag !== undefined) ? entry : null
@@ -51,7 +62,24 @@ function resolveItem(entry, debugLabel) {
     return null
 }
 
-function addEnchantingRecipe(event, crecipe, index) {
+function normalizeForApparatus(p) {
+    if (typeof p === 'string') return p.startsWith('#') ? { tag: p.slice(1) } : { item: p }
+    if (p.tag !== undefined) return { tag: p.tag }
+    if (p.item !== undefined) {
+        if (typeof p.item === 'object' && p.item !== null) {
+            let inner = p.item
+            if (inner.tag) return { tag: inner.tag }
+            let result = { item: inner.item }
+            if (inner.count && inner.count > 1) result.count = inner.count
+            return result
+        }
+        return { item: p.item }
+    }
+    return p
+}
+
+function addEnchantingRecipe(event, crecipe) {
+    let index = _nextEnchantingIndex++
     let outputId = crecipe.output?.item ?? crecipe.output ?? null
     if (!outputId) {
         console.error(`[enchanting_apparatus] no output at index ${index}`)
@@ -80,6 +108,20 @@ function addEnchantingRecipe(event, crecipe, index) {
         return
     }
 
+    if (!crecipe.skipApparatus) {
+        let apparatusReagents = reagents.map(r => normalizeForApparatus(r))
+        let apparatusPedestals = pedestalItems.map(p => normalizeForApparatus(p))
+        let outputObj = { item: outputId }
+        if (outputCount > 1) outputObj.count = outputCount
+        event.custom({
+            type: 'ars_nouveau:enchanting_apparatus',
+            reagent: apparatusReagents,
+            pedestalItems: apparatusPedestals,
+            output: outputObj,
+            sourceCost: sourceCost
+        }).id(`kubejs:apparatus_${stripNamespace(outputId)}_${index}`)
+    }
+
     let recipeId = `ars_nouveau/enchanting_apparatus_${stripNamespace(outputId)}_${index}`
     console.log(`[enchanting_apparatus] building index=${index} output=${outputId} source=${sourceCost}`)
 
@@ -102,518 +144,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_lapis'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});
-
-    let index = 1
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:source_gem' });
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:source_gem_block' });
 
     event.forEachRecipe({ type: 'ars_nouveau:enchanting_apparatus' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
-        addEnchantingRecipe(event, crecipe, index)
-        index++
+        addEnchantingRecipe(event, { ...crecipe, skipApparatus: true })
     })
 
-    // manual mirrors for recipes defined in tier scripts (not caught by forEachRecipe above)
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'minecraft:shears'}],
-        output: { item: 'reliquary:shears_of_winter'},
-        sourceCost: 2500,
-        pedestalItems: [
-            {item: { item: `minecraft:blue_ice`}},
-            {tag: 'kubejs:water_essences'},
-            {item: { item: `minecraft:snowball`}},
-            {item: { item: `minecraft:snowball`}},
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'ars_nouveau:magebloom_crop'}],
-        output: { item: 'botania:pure_daisy'},
-        sourceCost: 10000,
-        pedestalItems: [
-            {item: { item: `gtceu:holy_silver_dust`}},
-            {item: { item: `gtceu:prima_materia_rod`}},
-            {item: { item: `mysticalagriculture:earth_essence`}},
-            {item: { item: `mysticalagriculture:earth_essence`}},
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'minecraft:bucket'}],
-        output: { item: 'gtceu:concepts_bucket'},
-        sourceCost: 5000,
-        pedestalItems: [
-            {item: { item: `gtceu:prima_materia_block`}},
-            {item: { item: `minecraft:experience_bottle`}},
-            {item: { item: `minecraft:experience_bottle`}},
-            {item: { item: `hexcasting:charged_amethyst`}},
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'ars_nouveau:novice_spell_book'}],
-        output: { item: 'ars_nouveau:apprentice_spell_book'},
-        sourceCost: 3500,
-        pedestalItems: [
-            {item: { item: `gtceu:holy_silver_foil`}},
-            {item: { item: `ars_nouveau:magebloom_fiber`}},
-            {item: { item: `ars_nouveau:blank_parchment`}},
-            {item: { item: `ars_nouveau:blank_parchment`}},
-        ]
-    }, index++)
-
-    const elements = [
-        "air",
-        "earth",
-        "fire",
-        "water"
-    ]
-
-    elements.forEach(element => {
-        addEnchantingRecipe(event, {
-        reagent: [{ item: 'ars_nouveau:magebloom_crop'}],
-        output: { item: `mysticalagriculture:${element}_seeds`},
-        sourceCost: 5500,
-        pedestalItems: [
-            { item: { item: `ars_nouveau:${element}_essence`, count: 4 } },
-            { item: { item: `mysticalagriculture:${element}_agglomeratio`, count: 4 } }
-        ]
-    }, index++)
-    })
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "gtceu:holy_silver_ingot" }],
-        output: { item: "kubejs:chaos_essence"},
-        sourceCost: 6000,
-        pedestalItems: [
-            {item: { item: 'mysticalagriculture:air_essence'}},
-            {item: { item: 'mysticalagriculture:earth_essence'}},
-            {item: { item: 'mysticalagriculture:water_essence'}},
-            {item: { item: 'mysticalagriculture:fire_essence'}},
-            {item: { item: "gtceu:source_block", count: 4 } }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "minecraft:fishing_rod" }],
-        output: { item: "reliquary:rod_of_lyssa"},
-        sourceCost: 2500,
-        pedestalItems: [
-            {item: { item: 'ars_nouveau:source_gem'}},
-            {item: { item: 'ars_nouveau:magebloom_fiber'}},
-            {item: { item: "irons_spellbooks:nature_rune", count: 2 } }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "gtceu:silver_dust" }],
-        output: { item: "kubejs:holy_silver_blend"},
-        sourceCost: 2000,
-        pedestalItems: [
-            {item: { item: "kubejs:sacred_ambrosium_shard", count: 2 } },
-            {item: { item: "gtceu:luminessence_dust", count: 2 } }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "gtceu:holy_silver_dust" }],
-        output: { item: "gtceu:holy_silver_ingot"},
-        sourceCost: 3000,
-        pedestalItems: [
-            {item: { item: "ars_nouveau:fire_essence", count: 1 } }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "kubejs:florid_compound" }],
-        output: { item: "kubejs:living_metalloid"},
-        sourceCost: 30000,
-        pedestalItems: [
-            {item: { item: 'minecraft:clock'}},
-            {item: { item: 'mysticalagriculture:nature_essence'}},
-            {item: { item: 'mysticalagriculture:water_essence'}},
-            {item: { item: 'reliquary:fertile_essence'}}
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'mysticalagriculture:nature_essence' }],
-        output: { item: 'reliquary:fertile_essence' },
-        sourceCost: 15000,
-        pedestalItems: [
-            {item: { item: 'mysticalagriculture:skeleton_essence' }},
-            {item: { item: 'mysticalagriculture:slime_essence' }},
-            {item: { item: 'mysticalagriculture:creeper_essence' }},
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:water_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'botania:mana_pearl' }],
-        output: { item: 'botania:pixie_dust', count: 3 },
-        sourceCost: 15000,
-        pedestalItems: [
-            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
-            { tag: 'kubejs:air_essences' },
-            { tag: 'kubejs:air_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'botania:mana_diamond' }],
-        output: { item: 'botania:dragonstone', count: 2 },
-        sourceCost: 20000,
-        pedestalItems: [
-            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:water_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "kubejs:elementite_dust" }],
-        output: { item: "kubejs:raw_elementite"},
-        sourceCost: 15000,
-        pedestalItems: [
-            {item: { item: 'gtceu:abstract_metal_ingot' }}
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: "kubejs:soul_of_gaia" }],
-        output: { item: "kubejs:boundless_gaia_spirit_ingot"},
-        sourceCost: 20000,
-        pedestalItems: [
-            {item: { item: 'botania:elementium_block', count: 8 }}
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'botania:elementium_ingot' }],
-        output: { item: 'botania:life_essence' },
-        sourceCost: 40000,
-        pedestalItems: [
-            {item: { item: 'mysticalagriculture:gaia_spirit_essence', count: 4 }},
-            {item: { item: 'gtceu:terrasteel_plate', count: 2 }},
-            { tag: 'kubejs:fire_essences' },
-            { tag: 'kubejs:air_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:bismuth_ingot' },
-        sourceCost: 3000,
-        pedestalItems: [
-            { tag: 'kubejs:fire_essences' },
-            { tag: 'kubejs:water_essences' }
-        ]
-    }, index++)
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'minecraft:copper_ingot' },
-        sourceCost: 3000,
-        pedestalItems: [
-            { tag: 'kubejs:fire_essences' },
-            { tag: 'kubejs:earth_essences' }
-        ]
-    }, index++)
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:silver_ingot' },
-        sourceCost: 3000,
-        pedestalItems: [
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:air_essences' }
-        ]
-    }, index++)
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:magnesium_dust' },
-        sourceCost: 3000,
-        pedestalItems: [
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:air_essences' }
-        ]
-    }, index++)
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:abstract_metal_ingot' }],
-        output: { item: 'gtceu:holy_silver_ingot' },
-        sourceCost: 4000,
-        pedestalItems: [
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:air_essences' },
-            { tag: 'forge:gems/ambrosium' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:raw_source' }],
-        output: { item: 'ars_nouveau:source_gem', count: 2 },
-        sourceCost: 3000,
-        pedestalItems: [
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:fire_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:raw_source' }],
-        output: { item: 'ars_nouveau:source_gem', count: 3 },
-        sourceCost: 6000,
-        pedestalItems: [
-            {item: { item: 'gtceu:prima_materia_rod' }},
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:earth_essences' }
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:raw_source' }],
-        output: { item: 'ars_nouveau:source_gem', count: 4 },
-        sourceCost: 10000,
-        pedestalItems: [
-            {item: { item: 'botania:rune_spring' }},
-            {item: { item: 'botania:rune_water' }},
-            { tag: 'kubejs:water_essences' },
-            {item: { item: 'mysticalagriculture:nature_essence' }}
-        ]
-    }, index++)
-
-    addEnchantingRecipe(event, {
-        reagent: [{ item: 'gtceu:raw_source' }],
-        output: { item: 'ars_nouveau:source_gem', count: 5 },
-        sourceCost: 15000,
-        pedestalItems: [
-            {item: { item: 'kubejs:elven_concentrate', count: 2 }},
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:air_essences' }
-        ]
-    }, index++)
-
-    // magnum torches — initiate.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:amethyst_shard' }], output: { item: 'magnumtorch:amethyst_magnum_torch' }, sourceCost: 1500, pedestalItems: [{item:{item:'gtceu:holy_silver_rod'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'aether:ambrosium_shard'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:emerald' }], output: { item: 'magnumtorch:emerald_magnum_torch' }, sourceCost: 2000, pedestalItems: [{item:{item:'gtceu:holy_silver_rod'}},{tag:'forge:gems/source'},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'aether:ambrosium_shard'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:diamond' }], output: { item: 'magnumtorch:diamond_magnum_torch' }, sourceCost: 2500, pedestalItems: [{item:{item:'gtceu:holy_silver_plate'}},{tag:'forge:gems/source'},{tag:'forge:gems/source'},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-
-    // hexcasting — alchemist.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:hexed_amethyst_core' }], output: { item: 'kubejs:hexed_mana_matrix' }, sourceCost: 10000, pedestalItems: [{item:{item:'gtceu:manasteel_plate'}},{item:{item:'gtceu:manasteel_plate'}},{item:{item:'botania:mana_pearl'}},{item:{item:'botania:mana_pearl'}},{item:{item:'ars_nouveau:source_gem'}},{item:{item:'ars_nouveau:source_gem'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:leather' }], output: { item: 'hexcasting:focus' }, sourceCost: 3000, pedestalItems: [{item:{item:'gtceu:manasteel_rod'}},{item:{item:'gtceu:manasteel_rod'}},{item:{item:'kubejs:hexed_mana_matrix'}},{item:{item:'minecraft:glowstone'}},{item:{item:'minecraft:glowstone'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:writable_book' }], output: { item: 'hexcasting:spellbook' }, sourceCost: 5000, pedestalItems: [{item:{item:'gtceu:manasteel_plate'}},{item:{item:'gtceu:manasteel_plate'}},{item:{item:'kubejs:hexed_mana_matrix'}},{item:{item:'gtceu:abstract_metal_ingot'}},{item:{item:'minecraft:chorus_fruit'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ tag: 'minecraft:music_discs' }], output: { item: 'hexcasting:artifact' }, sourceCost: 4000, pedestalItems: [{item:{item:'gtceu:manasteel_plate'}},{item:{item:'gtceu:manasteel_plate'}},{item:{item:'kubejs:hexed_mana_matrix'}},{item:{item:'kubejs:hexed_mana_matrix'}},{item:{item:'gtceu:abstract_metal_ingot'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'minecraft:amethyst_shard' }], output: { item: 'hex_ars_link:linker_base' }, sourceCost: 3000, pedestalItems: [{item:{item:'gtceu:manasteel_plate'}},{item:{item:'gtceu:manasteel_plate'}},{item:{item:'kubejs:hexed_mana_matrix'}},{item:{item:'kubejs:hexed_mana_matrix'}}] }, index++)
-
-    // legendary spellbooks — ironsSpellbooks.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'legendary_spellbooks:annihilators_protocol' }, sourceCost: 40000, pedestalItems: [{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:portal_frame'}},{item:{item:'irons_spellbooks:portal_frame'}},{item:{item:'gtceu:terrasteel_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'legendary_spellbooks:stormbound_grimoire' }, sourceCost: 40000, pedestalItems: [{item:{item:'irons_spellbooks:lightning_rune'}},{item:{item:'irons_spellbooks:lightning_rune'}},{item:{item:'irons_spellbooks:energized_core'}},{item:{item:'irons_spellbooks:energized_core'}},{item:{item:'kubejs:elven_source_lattice'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'irons_spellbooks:lightning_bottle'}},{item:{item:'irons_spellbooks:lightning_bottle'}}] }, index++)
-
-    // cyberspells — cyberSpells.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'cyber_ware_port:cyberlimbs_cyberarm_left' }], output: { item: 'cyberspells:rune_arm_left' }, sourceCost: 3000, pedestalItems: [{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'cyber_ware_port:cyberlimbs_cyberarm_right' }], output: { item: 'cyberspells:rune_arm_right' }, sourceCost: 3000, pedestalItems: [{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'cyber_ware_port:cyberlimbs_cyberleg_left' }], output: { item: 'cyberspells:rune_leg_left' }, sourceCost: 3000, pedestalItems: [{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'cyber_ware_port:cyberlimbs_cyberleg_right' }], output: { item: 'cyberspells:rune_leg_right' }, sourceCost: 3000, pedestalItems: [{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'cyber_ware_port:cyberheart' }], output: { item: 'cyberspells:rune_heart' }, sourceCost: 4000, pedestalItems: [{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'irons_spellbooks:arcane_ingot'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-
-    // celestial enchantment catalysts — celestialEnchantments.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'celestial_enchantments:basic_celestial_catalyst' }, sourceCost: 3000, pedestalItems: [{item:{item:'celestial_core:fire_essence'}},{item:{item:'minecraft:lapis_lazuli'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:redstone'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'celestial_enchantments:advanced_celestial_catalyst' }, sourceCost: 5000, pedestalItems: [{item:{item:'celestial_enchantments:basic_celestial_catalyst'}},{item:{item:'celestial_enchantments:basic_celestial_catalyst'}},{item:{item:'celestial_core:midnight_fragment'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'celestial_enchantments:legendary_celestial_catalyst' }, sourceCost: 7000, pedestalItems: [{item:{item:'celestial_enchantments:advanced_celestial_catalyst'}},{item:{item:'celestial_enchantments:advanced_celestial_catalyst'}},{item:{item:'celestial_core:pure_nether_star'}},{item:{item:'minecraft:netherite_scrap'}},{item:{item:'gtceu:terrasteel_plate'}},{item:{item:'gtceu:terrasteel_plate'}}] }, index++)
-
-    // nameless trinkets apparatus recipes — namelessTrinkets.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'nameless_trinkets:ultimate_dust' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:ender_eye'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:broken_ankh' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:bone'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'minecraft:bone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:cracked_crown' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:netherite_scrap'}},{item:{item:'minecraft:gold_block'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:fate_emerald' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:emerald_block'}},{item:{item:'minecraft:bell'}},{item:{item:'minecraft:emerald_block'}},{item:{item:'minecraft:bell'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:four_leaf_clover' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:diamond_block'}},{item:{item:'minecraft:grass_block'}},{item:{item:'minecraft:diamond_block'}},{item:{item:'minecraft:grass_block'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:light_gloves' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:miners_soul' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:blackstone'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:lapis_lazuli'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:rage_mind' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:crying_obsidian'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:magma_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:reforger' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:reverse_card' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:shield'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:shield'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:sigil_of_baphomet' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:netherite_scrap'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'nameless_trinkets:true_heart_of_the_sea' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:heart_of_the_sea'}},{item:{item:'nameless_trinkets:gills'}},{item:{item:'nameless_trinkets:tear_of_the_sea'}},{item:{item:'nameless_trinkets:amphibious_hands'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-
-    // artifacts — artifacts.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:aqua_dashers' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:bunny_hoppers' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:digging_claws' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:flint'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:feral_claws' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:fire_gauntlet' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:fire_charge'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:pocket_piston' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:piston'}},{item:{item:'minecraft:piston'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:power_glove' }, sourceCost: 2500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:scarf_of_invisibility' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:black_dye'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:shock_pendant' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'minecraft:quartz'}},{item:{item:'minecraft:redstone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:thorn_pendant' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:cactus'}},{item:{item:'minecraft:cactus'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:flame_pendant' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:fire_charge'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:cross_necklace' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:totem_of_undying'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:golden_hook' }, sourceCost: 2000, pedestalItems: [{item:{item:'create:golden_sheet'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:umbrella' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:stick'}},{item:{item:'minecraft:stick'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:antidote_vessel' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:honey_bottle'}},{item:{item:'minecraft:honey_bottle'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:pickaxe_heater' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:netherrack'}},{item:{item:'minecraft:flint_and_steel'}},{item:{item:'minecraft:iron_pickaxe'}},{item:{item:'minecraft:coal'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:anglers_hat' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:cod'}},{item:{item:'minecraft:salmon'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:lily_pad'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:cowboy_hat' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:novelty_drinking_hat' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:sugar'}},{item:{item:'minecraft:cactus'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:plastic_drinking_hat' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:sugar'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:superstitious_hat' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:black_dye'}},{item:{item:'minecraft:black_dye'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:villager_hat' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:wheat'}},{item:{item:'minecraft:wheat'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'artifacts:whoopee_cushion' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:tnt'}},{item:{item:'minecraft:gunpowder'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:cloud_in_a_bottle' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:white_wool'}},{item:{item:'minecraft:white_wool'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:crystal_heart' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:diamond_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:crying_obsidian'}},{item:{item:'minecraft:totem_of_undying'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:helium_flamingo' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:night_vision_goggles' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:spider_eye'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:obsidian_skull' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:steadfast_spikes' }, sourceCost: 3500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:flint'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:universal_attractor' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:vampiric_glove' }, sourceCost: 4000, pedestalItems: [{item:{item:'create:golden_sheet'}},{item:{item:'minecraft:redstone_block'}},{item:{item:'minecraft:rotten_flesh'}},{item:{item:'minecraft:fermented_spider_eye'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:panic_necklace' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:rabbit_foot'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:chorus_totem' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:totem_of_undying'}},{item:{item:'minecraft:chorus_fruit'}},{item:{item:'minecraft:chorus_fruit'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'artifacts:everlasting_beef' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:cooked_beef'}},{item:{item:'minecraft:cooked_porkchop'}},{item:{item:'minecraft:cooked_chicken'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-
-    // relics — relics.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:aqua_walker' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:lily_pad'}},{item:{item:'minecraft:lily_pad'}},{item:{item:'minecraft:prismarine_shard'}},{item:{item:'minecraft:prismarine_shard'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:amphibian_boot' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:nautilus_shell'}},{item:{item:'minecraft:nautilus_shell'}},{item:{item:'minecraft:kelp'}},{item:{item:'minecraft:kelp'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:drowned_belt' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:prismarine'}},{item:{item:'minecraft:prismarine'}},{item:{item:'minecraft:rotten_flesh'}},{item:{item:'minecraft:kelp'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:jellyfish_necklace' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:ice_breaker' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:magma_walker' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:hunter_belt' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:bone'}},{item:{item:'minecraft:bone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:rage_glove' }, sourceCost: 2000, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:spider_eye'}},{item:{item:'minecraft:spider_eye'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:bastion_ring' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:blackstone'}},{item:{item:'minecraft:blackstone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:blazing_flask' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:glass_bottle'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:fire_charge'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:midnight_robe' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:black_dye'}},{item:{item:'minecraft:black_dye'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'relics:holy_locket' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:enders_hand' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:reflection_necklace' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:prismarine_crystals'}},{item:{item:'minecraft:prismarine_crystals'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:shadow_glaive' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:magic_mirror' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:glass'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:spatial_sign' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:space_dissector' }, sourceCost: 4500, pedestalItems: [{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:crying_obsidian'}},{item:{item:'minecraft:crying_obsidian'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:elytra_booster' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:elytra'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'create:golden_sheet'}},{item:{item:'create:golden_sheet'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'relics:infinity_ham' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:cooked_porkchop'}},{item:{item:'minecraft:cooked_porkchop'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-
-    // more relics — moreRelics.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:guts_orb' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:opal_necklace' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:bionic_eye' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:redstone'}},{item:{item:'minecraft:redstone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:biojoint' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:vertebrax' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:bone'}},{item:{item:'minecraft:bone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:sentient_rust' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:flint'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'morerelics:weavers_spool' }, sourceCost: 2000, pedestalItems: [{item:{item:'morerelics:depleted_spool'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:shieldweave_cape' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:shield'}},{item:{item:'minecraft:shield'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:thermoseismic_heart' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:ice'}},{item:{item:'minecraft:ice'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:gravitum_glove' }, sourceCost: 4000, pedestalItems: [{item:{item:'create:golden_sheet'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:gravitum_strider' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:mass_gauntlet' }, sourceCost: 4500, pedestalItems: [{item:{item:'create:golden_sheet'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:netherite_scrap'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:tyrant_mask' }, sourceCost: 4500, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:whims_of_fate' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:rabbit_foot'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:rabbit_foot'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:converging_orb' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:crying_obsidian'}},{item:{item:'minecraft:crying_obsidian'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:epoch_apple' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:chorus_fruit'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:chorus_fruit'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:crown_of_the_legend' }, sourceCost: 25000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'gtceu:terrasteel_plate'}},{item:{item:'gtceu:terrasteel_plate'}},{item:{item:'minecraft:nether_star'}},{item:{item:'gtceu:elementium_plate'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:king_crimson' }, sourceCost: 30000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:netherite_block'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:made_in_heaven' }, sourceCost: 35000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:elytra'}},{item:{item:'botania:elementium_block'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'morerelics:wonder_of_u' }, sourceCost: 40000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:netherite_block'}},{item:{item:'botania:elementium_block'}}] }, index++)
-
-    // too many bows — tooManyBows.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:arcane_bow' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:lapis_lazuli'}},{item:{item:'minecraft:lapis_lazuli'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:wind_bow' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:frostbite' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:ice'}},{item:{item:'minecraft:ice'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:verdant_viper' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:spider_eye'}},{item:{item:'minecraft:spider_eye'}},{item:{item:'minecraft:fermented_spider_eye'}},{item:{item:'minecraft:vine'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:crimson_nexus' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:crimson_planks'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:nether_brick'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:sentinels_wrath' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:emerald'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:verdant_vigor' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:vine'}},{item:{item:'minecraft:vine'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:emerald_sage_bow' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:emerald'}},{item:{item:'minecraft:experience_bottle'}},{item:{item:'minecraft:experience_bottle'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:cyroheart_bow' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:blue_ice'}},{item:{item:'minecraft:blue_ice'}},{item:{item:'minecraft:heart_of_the_sea'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:dark_bow' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:ink_sac'}},{item:{item:'minecraft:ink_sac'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:ironclad_bow' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_block'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:vitality_weaver' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:rotten_flesh'}},{item:{item:'minecraft:rotten_flesh'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:stormbound_signet' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:dead_eyes_pendant' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'too_many_bows:wind_glove' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:arc_heavens' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'minecraft:lightning_rod'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:solar_bow' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:fire_charge'}},{item:{item:'minecraft:fire_charge'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:flame_bow' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:magma_cream'}},{item:{item:'minecraft:fire_charge'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:spectral_whisper' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:twin_shadows' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:quartz'}},{item:{item:'minecraft:quartz'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:ethereal_hunter' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'too_many_bows:power_crystal'}},{item:{item:'too_many_bows:power_crystal'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'minecraft:blaze_powder'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:radiance' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:glowstone'}},{item:{item:'minecraft:glowstone'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:astral_bound' }, sourceCost: 3000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:aethers_call' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'aether:zanite_gemstone'}},{item:{item:'aether:zanite_gemstone'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:demons_grasp' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'minecraft:soul_sand'}},{item:{item:'minecraft:soul_sand'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:ancient_sage_bow' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:emerald_block'}},{item:{item:'minecraft:emerald_block'}},{item:{item:'too_many_bows:power_crystal'}},{item:{item:'too_many_bows:power_crystal'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:dusk_reaper' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'too_many_bows:soul_fragment'}},{item:{item:'too_many_bows:soul_fragment'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:shulker_blast' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:shulker_shell'}},{item:{item:'minecraft:shulker_shell'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:dragons_breath' }, sourceCost: 5500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:dragon_breath'}},{item:{item:'minecraft:dragon_breath'}},{item:{item:'minecraft:end_stone'}},{item:{item:'minecraft:end_stone'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:auroras_grace' }, sourceCost: 5500, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'too_many_bows:rift_shard'}},{item:{item:'too_many_bows:rift_shard'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:necro_flame_bow' }, sourceCost: 5000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'too_many_bows:cursed_stone'}},{item:{item:'too_many_bows:cursed_stone'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'minecraft:wither_skeleton_skull'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'too_many_bows:burnt_relic' }, sourceCost: 6000, pedestalItems: [{item:{item:'minecraft:bow'}},{item:{item:'minecraft:ancient_debris'}},{item:{item:'minecraft:ancient_debris'}},{item:{item:'minecraft:netherite_ingot'}},{item:{item:'minecraft:netherite_ingot'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}}] }, index++)
-
-    // unique accessories — uniqueAccessories.js
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:tool_belt' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:survival_belt' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:cooked_beef'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:leather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:small_propulsion_device' }, sourceCost: 2000, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:blade_shoes' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:flint'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:strong_sticky_slime_ball' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:slime_ball'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:amplifier_stone' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:quartz'}},{item:{item:'minecraft:redstone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:snow_golem_doll' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:carved_pumpkin'}},{item:{item:'minecraft:snow_block'}},{item:{item:'minecraft:snow_block'}},{item:{item:'minecraft:ice'}},{item:{item:'minecraft:ice'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:ancient_chisel' }, sourceCost: 1500, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:copper_ingot'}},{item:{item:'minecraft:copper_ingot'}},{item:{item:'minecraft:flint'}},{item:{item:'minecraft:flint'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:fossil_shark_tooth' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bone'}},{item:{item:'minecraft:bone'}},{item:{item:'minecraft:gravel'}},{item:{item:'minecraft:gravel'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:starved_wolf_skull' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:bone'}},{item:{item:'minecraft:bone'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:bloody_knife' }, sourceCost: 2000, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:redstone'}},{item:{item:'minecraft:redstone'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:golden_egg' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:egg'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:accessory_box' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:chest'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:diamond'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:black_belt' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:coal'}},{item:{item:'minecraft:coal'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:tabi' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:white_wool'}},{item:{item:'minecraft:white_wool'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:golden_egg_charm' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:egg'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:rabbit_foot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:royal_honeycomb' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:honeycomb'}},{item:{item:'minecraft:honeycomb'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:soul_gem' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:devils_eyeball' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:fermented_spider_eye'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:magick_quiver' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:arrow'}},{item:{item:'minecraft:arrow'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:string'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:shiny_stone' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:prismarine_crystals'}},{item:{item:'minecraft:prismarine_crystals'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:championship_belt' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:iron_block'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:silver_cat_tail' }, sourceCost: 1500, pedestalItems: [{item:{item:'minecraft:string'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:feather'}},{item:{item:'minecraft:feather'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:rocket_shoes' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:leather_boots'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:power_crystal' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:amethyst_shard'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:diamond'}},{item:{item:'minecraft:redstone_block'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:rusty_guillotine_blade' }, sourceCost: 2000, pedestalItems: [{item:{item:'create:iron_sheet'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:iron_ingot'}},{item:{item:'minecraft:gold_ingot'}},{item:{item:'minecraft:gravel'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:still_beating_heart' }, sourceCost: 2500, pedestalItems: [{item:{item:'minecraft:redstone'}},{item:{item:'minecraft:redstone_block'}},{item:{item:'minecraft:redstone_block'}},{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:quartz'}},{item:{item:'gtceu:luminessence_dust'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:withered_heart' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:wither_rose'}},{item:{item:'minecraft:red_dye'}},{item:{item:'minecraft:red_dye'}},{item:{item:'minecraft:ink_sac'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:suspicious_mushroom' }, sourceCost: 1000, pedestalItems: [{item:{item:'minecraft:suspicious_stew'}},{item:{item:'minecraft:red_mushroom'}},{item:{item:'minecraft:red_mushroom'}},{item:{item:'minecraft:brown_mushroom'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:supreme_meat' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:cooked_porkchop'}},{item:{item:'minecraft:cooked_porkchop'}},{item:{item:'minecraft:honey_bottle'}},{item:{item:'minecraft:honey_bottle'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:glowing_dust' }], output: { item: 'uniqueaccessories:cursed_doll_head' }, sourceCost: 2000, pedestalItems: [{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:string'}},{item:{item:'minecraft:fermented_spider_eye'}},{item:{item:'gtceu:luminessence_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'uniqueaccessories:sun_stone' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:gold_block'}},{item:{item:'minecraft:glowstone'}},{item:{item:'minecraft:glowstone'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'minecraft:blaze_rod'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'uniqueaccessories:moon_stone' }, sourceCost: 3500, pedestalItems: [{item:{item:'minecraft:obsidian'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:packed_ice'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'minecraft:ender_pearl'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'uniqueaccessories:master_ninja_tabi' }, sourceCost: 4000, pedestalItems: [{item:{item:'uniqueaccessories:tabi'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:leather'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'minecraft:phantom_membrane'}},{item:{item:'gtceu:holy_silver_dust'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'nameless_trinkets:ultimate_dust' }], output: { item: 'uniqueaccessories:ender_lens' }, sourceCost: 4000, pedestalItems: [{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:glass'}},{item:{item:'minecraft:obsidian'}},{item:{item:'gtceu:holy_silver_dust'}}] }, index++)
-
-    // initiate.js side materials
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:sacred_ambrosium_shard' }], output: { item: 'minecraft:ender_pearl', count: 4 }, sourceCost: 2500, pedestalItems: [{ tag: 'kubejs:earth_essences' },{ tag: 'kubejs:earth_essences' },{ tag: 'kubejs:earth_essences' }] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:sacred_ambrosium_shard' }], output: { item: 'reliquary:fortune_coin', count: 4 }, sourceCost: 3000, pedestalItems: [{ tag: 'kubejs:earth_essences' },{ tag: 'kubejs:earth_essences' },{ tag: 'kubejs:water_essences' },{ tag: 'kubejs:water_essences' }] }, index++)
-
-    // sorcerer.js side materials
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:chaos_essence' }], output: { item: 'irons_spellbooks:pyrium_ingot', count: 4 }, sourceCost: 6000, pedestalItems: [{ tag: 'kubejs:fire_essences' },{ tag: 'kubejs:fire_essences' },{ tag: 'kubejs:air_essences' },{ tag: 'kubejs:air_essences' }] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:chaos_essence' }], output: { item: 'minecraft:experience_bottle', count: 8 }, sourceCost: 4000, pedestalItems: [{ tag: 'kubejs:water_essences' },{ tag: 'kubejs:water_essences' },{ tag: 'kubejs:earth_essences' },{ tag: 'kubejs:earth_essences' }] }, index++)
-
-    // ironsSpellbooks.js — Sorcerer spellbooks
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:pyromatic_codex' }, sourceCost: 30000, pedestalItems: [{item:{item:'irons_spellbooks:pyrium_ingot'}},{item:{item:'irons_spellbooks:pyrium_ingot'}},{item:{item:'irons_spellbooks:pyrium_ingot'}},{item:{item:'irons_spellbooks:pyrium_ingot'}},{item:{item:'kubejs:chaos_essence'}},{item:{item:'irons_spellbooks:fire_rune'}},{item:{item:'irons_spellbooks:fire_rune'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:evocation_folio' }, sourceCost: 30000, pedestalItems: [{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'gtceu:prima_materia_rod'}},{item:{item:'kubejs:chaos_essence'}},{item:{item:'irons_spellbooks:evocation_rune'}},{item:{item:'irons_spellbooks:evocation_rune'}},{item:{item:'minecraft:nether_star'}}] }, index++)
-
-    // ironsSpellbooks.js — Arcanist spellbooks
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:glacial_grimoire' }, sourceCost: 40000, pedestalItems: [{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'kubejs:elven_source_lattice'}},{item:{item:'kubejs:elven_source_lattice'}},{item:{item:'irons_spellbooks:ice_rune'}},{item:{item:'irons_spellbooks:ice_rune'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:verdant_chronicle' }, sourceCost: 40000, pedestalItems: [{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'gtceu:elementium_plate'}},{item:{item:'kubejs:elven_source_lattice'}},{item:{item:'kubejs:elven_source_lattice'}},{item:{item:'irons_spellbooks:nature_rune'}},{item:{item:'irons_spellbooks:nature_rune'}}] }, index++)
-
-    // sage.js — gaian resonance cores
-    addEnchantingRecipe(event, { reagent: [{ item: 'botania:life_essence' }], output: { item: 'kubejs:gaian_blood_core' }, sourceCost: 25000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_rune'}},{item:{item:'irons_spellbooks:blood_rune'}},{item:{item:'minecraft:netherite_ingot'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'botania:life_essence' }], output: { item: 'kubejs:gaian_holy_core' }, sourceCost: 25000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'irons_spellbooks:holy_rune'}},{item:{item:'irons_spellbooks:holy_rune'}},{item:{item:'kubejs:sacred_ambrosium_shard'}},{item:{item:'kubejs:sacred_ambrosium_shard'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'botania:life_essence' }], output: { item: 'kubejs:gaian_void_core' }, sourceCost: 25000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'minecraft:nether_star'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'botania:life_essence' }], output: { item: 'kubejs:gaian_annihilation_core' }, sourceCost: 30000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'legendary_spellbooks:annihilators_protocol'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'irons_spellbooks:ender_rune'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}}] }, index++)
-
-    // sage.js — Sage spellbooks
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:gaian_blood_core' }], output: { item: 'kubejs:blood_grimoire' }, sourceCost: 50000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'irons_spellbooks:blood_vial'}},{item:{item:'minecraft:netherite_ingot'}},{item:{item:'minecraft:netherite_ingot'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:gaian_holy_core' }], output: { item: 'kubejs:radiant_sanctum' }, sourceCost: 50000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'irons_spellbooks:divine_pearl'}},{item:{item:'minecraft:golden_apple'}},{item:{item:'minecraft:golden_apple'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:gaian_void_core' }], output: { item: 'kubejs:eldritch_codex' }, sourceCost: 50000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'kubejs:gaian_annihilation_core' }], output: { item: 'kubejs:obliteration_chronicle' }, sourceCost: 50000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'minecraft:nether_star'}},{item:{item:'minecraft:nether_star'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'mysticalagriculture:enderman_essence'}},{item:{item:'minecraft:ender_eye'}},{item:{item:'minecraft:ender_eye'}}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'irons_spellbooks:netherite_spell_book' }], output: { item: 'kubejs:technomatic_folio' }, sourceCost: 42000, pedestalItems: [{item:{item:'gtceu:elven_americate_ingot'}},{item:{item:'gtceu:elven_americate_ingot'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'kubejs:elven_concentrate'}},{item:{item:'kubejs:elven_concentrate'}},{tag:'gtceu:circuits/zpm'},{tag:'gtceu:circuits/zpm'}] }, index++)
-    addEnchantingRecipe(event, { reagent: [{ item: 'gtceu:boundless_naquadrite_ingot' }], output: { item: 'kubejs:harbinger_codex' }, sourceCost: 55000, pedestalItems: [{item:{item:'botania:gaia_ingot'}},{item:{item:'botania:gaia_ingot'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{item:{item:'cataclysm_spellbooks:technomancy_rune'}},{tag:'gtceu:circuits/uv'},{tag:'gtceu:circuits/uv'}] }, index++)
-
-    // controller block crafting recipe
     event.recipes.gtceu.assembler('grand_enchanting_sanctum_controller')
         .itemInputs(
             '4x gtceu:consecrated_chromite_plate',
@@ -627,17 +165,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:grand_enchanting_sanctum')
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
-
-    // casing block crafting recipe
-    event.shaped('4x kubejs:sanctum_sourcestone_casing', [
-        'PRP',
-        'RBR',
-        'PRP'
-    ], {
-        P: 'gtceu:consecrated_chromite_plate',
-        R: 'gtceu:consecrated_chromite_rod',
-        B: 'ars_nouveau:sourcestone_large_bricks'
-    })
 
     event.recipes.gtceu.assembler('sanctum_sourcestone_casing_assembly')
         .itemInputs(

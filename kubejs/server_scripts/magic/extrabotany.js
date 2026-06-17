@@ -15,17 +15,12 @@ ServerEvents.recipes(event => {
     // === SPIRIT FUEL (Thaumaturge gate) ===
     // No vanilla recipe exists; synthesized via terrasteel imbuement
     // gates spirit_fragment (via pedestal_smash) and downstream photonium behind Thaumaturge
-    event.recipes.ars_nouveau.imbuement(
-        'botania:terrasteel_ingot',
-        'extrabotany:spirit_fuel',
-        5000,
-        [
-            'botania:mana_pearl',
-            'botania:mana_pearl',
-            'botania:mana_diamond',
-            'botania:mana_diamond',
-        ]
-    )
+    addImbuementRecipe(event, {
+        input: 'botania:terrasteel_ingot',
+        output: 'extrabotany:spirit_fuel',
+        source: 5000,
+        pedestalItems: ['botania:mana_pearl', 'botania:mana_pearl', 'botania:mana_diamond', 'botania:mana_diamond']
+    })
 
     // === ALCHEMIST TIER FLOWERS (manasteel gate) ===
     // petal_apothecary recipes removed; re-added via EA to ensure consistent gating
@@ -36,12 +31,12 @@ ServerEvents.recipes(event => {
     ]
     alchemistFlowers.forEach(flower => {
         event.remove({ output: flower })
-        event.recipes.ars_nouveau.enchanting_apparatus(
-            ['botania:manasteel_ingot', 'botania:mana_pearl'],
-            'botania:mana_pearl',
-            flower,
-            9000,
-        )
+        addEnchantingRecipe(event, {
+            reagent: 'botania:mana_pearl',
+            pedestalItems: ['botania:manasteel_ingot', 'botania:mana_pearl'],
+            output: flower,
+            sourceCost: 9000
+        })
     })
 
     // === THAUMATURGE TIER FLOWERS (terrasteel gate) ===
@@ -61,17 +56,15 @@ ServerEvents.recipes(event => {
     ]
     thaumaturgeFlowers.forEach(flower => {
         event.remove({ output: flower })
-        event.recipes.ars_nouveau.enchanting_apparatus(
-            [
-                'botania:terrasteel_ingot',
-                'botania:mana_pearl',
-                'botania:mana_pearl',
-                'botania:mana_pearl',
+        addEnchantingRecipe(event, {
+            reagent: 'botania:manasteel_ingot',
+            pedestalItems: [
+                'botania:terrasteel_ingot', 'botania:mana_pearl',
+                'botania:mana_pearl', 'botania:mana_pearl'
             ],
-            'botania:manasteel_ingot',
-            flower,
-            15000,
-        )
+            output: flower,
+            sourceCost: 15000
+        })
     })
 
     // === ARCANIST TIER FLOWERS (elementium gate) ===
@@ -81,17 +74,15 @@ ServerEvents.recipes(event => {
     ]
     arcanistFlowers.forEach(flower => {
         event.remove({ output: flower })
-        event.recipes.ars_nouveau.enchanting_apparatus(
-            [
-                'botania:elementium_ingot',
-                'botania:terrasteel_ingot',
-                'botania:mana_pearl',
-                'botania:mana_pearl',
+        addEnchantingRecipe(event, {
+            reagent: 'botania:manasteel_ingot',
+            pedestalItems: [
+                'botania:elementium_ingot', 'botania:terrasteel_ingot',
+                'botania:mana_pearl', 'botania:mana_pearl'
             ],
-            'botania:manasteel_ingot',
-            flower,
-            20000,
-        )
+            output: flower,
+            sourceCost: 20000
+        })
     })
 
     // serenitian, manalink, enchanter keep vanilla petal_apothecary recipes

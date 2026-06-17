@@ -22,6 +22,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
+    // imbuementFactoryRecipes.js forEachRecipe ran at priority 1 and mirrored these before this removal
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:fire_essence' });
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:earth_essence' });
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:air_essence' });
+    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:water_essence' });
 
     //crude fire essence recipe
     event.custom({

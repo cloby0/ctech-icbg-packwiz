@@ -73,12 +73,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // holy silver pedestals lock psidust behind Initiate magic
-    event.recipes.ars_nouveau.imbuement(
-        'kubejs:latent_psi_crystal',
-        'psi:psidust',
-        2000,
-        ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
-    )
+    addImbuementRecipe(event, {
+        input: 'kubejs:latent_psi_crystal',
+        output: 'psi:psidust',
+        source: 2000,
+        pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
+    })
 
     // iron CAD assembly: dual HV + Initiate gate
     // holy silver foil = magic component embedded in tech recipe
@@ -139,21 +139,17 @@ ServerEvents.recipes(event => {
 
     // psigem: enchanting apparatus replaces trick_greater_infusion
     // resonant_zanite_crystal = Journeyman Aether chain component; 6000 source = substantial infra
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'psi:psimetal',
-            'psi:psimetal',
-            'kubejs:resonant_zanite_crystal',
-            'kubejs:resonant_zanite_crystal',
-            'minecraft:diamond',
-            'minecraft:diamond',
-            'gtceu:source_gem',
-            'gtceu:source_gem'
+    addEnchantingRecipe(event, {
+        reagent: 'psi:psimetal',
+        pedestalItems: [
+            'psi:psimetal', 'psi:psimetal',
+            'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal',
+            'minecraft:diamond', 'minecraft:diamond',
+            'gtceu:source_gem', 'gtceu:source_gem'
         ],
-        'psi:psimetal',
-        'psi:psigem',
-        6000
-    )
+        output: 'psi:psigem',
+        sourceCost: 6000
+    })
 
     event.recipes.gtceu.assembler('psi_programmer_block')
         .itemInputs('4x create:iron_sheet', '2x psi:psidust', '#gtceu:circuits/hv', '2x minecraft:glass_pane')

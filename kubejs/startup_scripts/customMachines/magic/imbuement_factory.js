@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("d", Predicates.controller(Predicates.blocks(definition.get())))
             .where("e", Predicates.blocks("kubejs:imbuement_holystone_casing"))
-            .where("f", Predicates.blocks("gtceu:ambrotungstite_block"))
+            .where("f", Predicates.blocks("kubejs:imbuement_holystone_casing"))
             .where("g", Predicates.blocks("minecraft:air"))
             .where("h", Predicates.blocks("gtceu:source_block"))
             .where("i", Predicates.blocks("gtceu:holy_silver_block"))

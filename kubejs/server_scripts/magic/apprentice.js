@@ -19,12 +19,12 @@ ServerEvents.recipes(event => {
 
     //removed source gem creation recipes in grandEnchantingSanctumRecipes.js
 
-    event.recipes.ars_nouveau.imbuement(
-        "minecraft:amethyst_shard",
-        "irons_spellbooks:arcane_essence",
-        750,
-        []
-    );
+    addImbuementRecipe(event, {
+        input: 'minecraft:amethyst_shard',
+        output: 'irons_spellbooks:arcane_essence',
+        source: 750,
+        pedestalItems: []
+    });
 
     event.remove({ id: 'ars_nouveau:scribes_table' });
     event.shaped(
@@ -101,25 +101,22 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    event.recipes.ars_nouveau.imbuement(
-        "kubejs:glowing_compound_dust",
-        "kubejs:impure_glimmering_dust",
-        100,
-        []
-    );
+    addImbuementRecipe(event, {
+        input: 'kubejs:glowing_compound_dust',
+        output: 'kubejs:impure_glimmering_dust',
+        source: 100,
+        pedestalItems: []
+    });
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
 
     // oil synthesis step 2: kerogen formation (burial pressure via earth essence)
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 4,
-        "input": { "item": "kubejs:primordial_organic_muck" },
-        "output": "kubejs:kerogen",
-        "pedestalItems": [
-            { "item": { "tag": "kubejs:earth_essences" } }
-        ],
-        "source": 1000
+    addImbuementRecipe(event, {
+        input: 'kubejs:primordial_organic_muck',
+        output: 'kubejs:kerogen',
+        count: 4,
+        source: 1000,
+        pedestalItems: ['#kubejs:earth_essences']
     })
 
     // oil synthesis step 3: thermal cracking (lava = high heat, fire essence = catalyst)
@@ -151,28 +148,21 @@ ServerEvents.recipes(event => {
 
     // side material: luminessence → experience bottles via fire
     // exp bottles needed later for abstract_metal chain; fire essence channels luminessence into experience energy
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 4,
-        "input": { "item": "gtceu:luminessence_dust" },
-        "output": "minecraft:experience_bottle",
-        "pedestalItems": [
-            { "item": { "tag": "kubejs:fire_essences" } },
-            { "item": { "tag": "kubejs:fire_essences" } }
-        ],
-        "source": 500
+    addImbuementRecipe(event, {
+        input: 'gtceu:luminessence_dust',
+        output: 'minecraft:experience_bottle',
+        count: 4,
+        source: 500,
+        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
     // side material: luminessence → charged amethyst via air
     // charged amethyst needed for hexed_amethyst_core at Alchemist; air essence charges the crystal
-    event.custom({
-        "type": "ars_nouveau:imbuement",
-        "count": 2,
-        "input": { "item": "gtceu:luminessence_dust" },
-        "output": "hexcasting:charged_amethyst",
-        "pedestalItems": [
-            { "item": { "tag": "kubejs:air_essences" } }
-        ],
-        "source": 500
+    addImbuementRecipe(event, {
+        input: 'gtceu:luminessence_dust',
+        output: 'hexcasting:charged_amethyst',
+        count: 2,
+        source: 500,
+        pedestalItems: ['#kubejs:air_essences']
     })
 })

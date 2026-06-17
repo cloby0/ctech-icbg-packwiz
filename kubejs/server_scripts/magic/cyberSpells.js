@@ -15,39 +15,59 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "cyber_ware_port:cyberlimbs_cyberarm_left",
-        "cyberspells:rune_arm_left",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'cyber_ware_port:cyberlimbs_cyberarm_left',
+        pedestalItems: [
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+        ],
+        output: 'cyberspells:rune_arm_left',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "cyber_ware_port:cyberlimbs_cyberarm_right",
-        "cyberspells:rune_arm_right",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'cyber_ware_port:cyberlimbs_cyberarm_right',
+        pedestalItems: [
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+        ],
+        output: 'cyberspells:rune_arm_right',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "cyber_ware_port:cyberlimbs_cyberleg_left",
-        "cyberspells:rune_leg_left",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'cyber_ware_port:cyberlimbs_cyberleg_left',
+        pedestalItems: [
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+        ],
+        output: 'cyberspells:rune_leg_left',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:holy_silver_dust", "gtceu:holy_silver_dust"],
-        "cyber_ware_port:cyberlimbs_cyberleg_right",
-        "cyberspells:rune_leg_right",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'cyber_ware_port:cyberlimbs_cyberleg_right',
+        pedestalItems: [
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+        ],
+        output: 'cyberspells:rune_leg_right',
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "irons_spellbooks:arcane_ingot", "gtceu:prima_materia_ingot", "gtceu:prima_materia_ingot"],
-        "cyber_ware_port:cyberheart",
-        "cyberspells:rune_heart",
-        4000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'cyber_ware_port:cyberheart',
+        pedestalItems: [
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'irons_spellbooks:arcane_ingot', 'irons_spellbooks:arcane_ingot',
+            'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
+        ],
+        output: 'cyberspells:rune_heart',
+        sourceCost: 4000
+    })
 
 })
