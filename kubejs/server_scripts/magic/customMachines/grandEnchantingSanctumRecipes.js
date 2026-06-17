@@ -19,7 +19,7 @@ function sourceRound(num) {
     }
 }
 
-function resolveItem(entry, debugLabel) {
+function _resolveEnchantingItem(entry, debugLabel) {
     if (!entry) {
         console.error(`[enchanting_apparatus] null entry at ${debugLabel}`)
         return null
@@ -96,14 +96,14 @@ function addEnchantingRecipe(event, crecipe) {
     let reagents = Array.isArray(crecipe.reagent) ? crecipe.reagent : [crecipe.reagent]
     let reagentInputs = []
     for (let i = 0; i < reagents.length; i++) {
-        let r = resolveItem(reagents[i], `index ${index} reagent[${i}]`)
+        let r = _resolveEnchantingItem(reagents[i], `index ${index} reagent[${i}]`)
         if (r) reagentInputs.push(r)
     }
 
     let pedestalItems = crecipe.pedestalItems ?? []
     let pedestalInputs = []
     for (let i = 0; i < pedestalItems.length; i++) {
-        let p = resolveItem(pedestalItems[i], `index ${index} pedestal[${i}]`)
+        let p = _resolveEnchantingItem(pedestalItems[i], `index ${index} pedestal[${i}]`)
         if (p) pedestalInputs.push(p)
     }
 

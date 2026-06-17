@@ -22,10 +22,19 @@ function sourceRound(num) {
     }
 }
 
-function resolveItem(entry, debugLabel) {
+function _resolveImbuementItem(entry, debugLabel) {
     if (!entry) {
         console.error(`[imbuement] null entry at ${debugLabel}`)
         return null
+    }
+
+    if (typeof entry === 'string') {
+        if (entry.startsWith('#')) return `1x #${entry.slice(1)}`
+        if (!$ForgeRegistries.ITEMS.getValue(entry)) {
+            console.warn(`[imbuement] skipping non-existent item '${entry}' at ${debugLabel}`)
+            return null
+        }
+        return `1x ${entry}`
     }
 
     let resolved = entry
@@ -100,7 +109,7 @@ function addImbuementRecipe(event, crecipe) {
     let sourceCost = Math.max(crecipe.source || 0, 100)
 
     let rawInput = normalizeInput(crecipe.input)
-    let centerInput = resolveItem(rawInput, `index ${index} input`)
+    let centerInput = _resolveImbuementItem(rawInput, `index ${index} input`)
     if (!centerInput) {
         console.error(`[imbuement] skipping index ${index}, could not resolve center input`)
         return
@@ -112,7 +121,7 @@ function addImbuementRecipe(event, crecipe) {
     let pedestalInputs = []
     for (let i = 0; i < normalizedPedestals.length; i++) {
         let inner = normalizedPedestals[i].item ?? normalizedPedestals[i]
-        let p = resolveItem(inner, `index ${index} pedestal[${i}]`)
+        let p = _resolveImbuementItem(inner, `index ${index} pedestal[${i}]`)
         if (p) pedestalInputs.push(p)
     }
 

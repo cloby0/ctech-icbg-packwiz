@@ -1598,11 +1598,11 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "ab67ac42113cc4ecf580ed504a1924efc455b7124976b22fd42a3f67e7e749fb"
+hash = "e1fdd470d56bcad64148a45c664420bc519683f4e54de364c5e8ffcd8451c75c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "80d189b421f6e2c028b48a26975b0e813c6e750d522da04e7488c96485dc39e2"
+hash = "b8d6d10516e3508605c678bc6e0ac3475bad707e3d67af553e3a016bc84a6314"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
