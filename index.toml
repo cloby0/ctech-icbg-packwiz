@@ -1754,7 +1754,7 @@ hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/gunComponentRecipes.js"
-hash = "87ff5b7fac29f8dcf96bc8584d32770327cc1e2b98e05d73f2a1ed80ba58323f"
+hash = "92ace42e50ef4da262204516fac0d15f84372ccc2bffe3cadd26f30b5ee83787"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
