@@ -81,11 +81,11 @@ function normalizeForApparatus(p) {
 function addEnchantingRecipe(event, crecipe) {
     let index = _nextEnchantingIndex++
     let outputId = crecipe.output?.item ?? crecipe.output ?? null
-    if (!outputId) {
-        console.error(`[enchanting_apparatus] no output at index ${index}`)
+    if (!outputId || typeof outputId !== 'string') {
+        console.warn(`[enchanting_apparatus] skipping recipe at index ${index} with null/non-string output '${outputId}'`)
         return
     }
-    if (typeof outputId === 'string' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
+    if (!$ForgeRegistries.ITEMS.getValue(outputId)) {
         console.warn(`[enchanting_apparatus] skipping recipe with non-existent output '${outputId}'`)
         return
     }
@@ -141,6 +141,8 @@ function addEnchantingRecipe(event, crecipe) {
     reagentInputs.forEach(reagent => r.itemInputs(reagent))
     pedestalInputs.forEach(pedestal => r.itemInputs(pedestal))
 }
+
+global.addEnchantingRecipe = addEnchantingRecipe
 
 ServerEvents.recipes(event => {
     event.remove({ mod: 'ars_n_spells' })

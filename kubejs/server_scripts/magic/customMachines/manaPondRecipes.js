@@ -42,8 +42,12 @@ function addManaPondRecipe(event, crecipe) {
     let catalyst = crecipe.catalyst ?? "minecraft:barrier"
     let catalystBlock = catalyst === "minecraft:barrier" ? "minecraft:barrier" : catalyst.block
 
+    if (!output) {
+        console.warn(`[mana_pond] skipping recipe at index ${index} with no output`)
+        return
+    }
     let outputCount = output.count || 1
-    let outputId = output.item ?? 'minecraft:barrier'
+    let outputId = typeof output.item === 'string' ? output.item : 'minecraft:barrier'
 
     if (outputId !== 'minecraft:barrier' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
         console.warn(`[mana_pond] skipping recipe with non-existent output '${outputId}'`)
@@ -116,6 +120,8 @@ function addManaPondRecipe(event, crecipe) {
         }
     })
 }
+
+global.addManaPondRecipe = addManaPondRecipe
 
 ServerEvents.recipes(event => {
     event.remove({ id: "botania:mana_infusion/manasteel" })

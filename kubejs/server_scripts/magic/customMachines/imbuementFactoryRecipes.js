@@ -87,7 +87,11 @@ function addImbuementRecipe(event, crecipe) {
         return
     }
     let outputId = typeof outputRaw === 'object' ? (outputRaw.item ?? null) : outputRaw
-    if (typeof outputId === 'string' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
+    if (!outputId || typeof outputId !== 'string') {
+        console.warn(`[imbuement] skipping recipe at index ${index} with null/non-string output '${outputId}'`)
+        return
+    }
+    if (!$ForgeRegistries.ITEMS.getValue(outputId)) {
         console.warn(`[imbuement] skipping recipe with non-existent output '${outputId}'`)
         return
     }
@@ -134,6 +138,8 @@ function addImbuementRecipe(event, crecipe) {
         }).id(`kubejs:chamber_imbuement_${stripNamespace(outputId)}_${index}`)
     }
 }
+
+global.addImbuementRecipe = addImbuementRecipe
 
 ServerEvents.recipes(event => {
     // mirror all vanilla/mod ars_nouveau:imbuement recipes to the factory (skipChamber: they already exist)
