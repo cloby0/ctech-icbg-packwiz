@@ -150,14 +150,9 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.electric_blast_furnace('sky_steel_ebf')
-        .itemInputs(
-            '4x ae2:sky_dust',
-            '2x gtceu:steel_dust',
-            '1x ae2:fluix_crystal'
-        )
-        .itemOutputs('4x megacells:sky_steel_ingot')
-        .blastFurnaceTemp(3600)
+    event.recipes.gtceu.mixer('ctech:sky_steel_dust_mix')
+        .itemInputs('4x ae2:sky_dust', '2x gtceu:steel_dust', '1x ae2:fluix_crystal')
+        .itemOutputs('4x gtceu:sky_steel_dust')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 

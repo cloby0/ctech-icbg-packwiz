@@ -144,11 +144,11 @@ ServerEvents.recipes(event => {
     // 3000K requires kanthal coils; appropriate for nether-infused alloy
     event.remove({ id: 'createbigcannons:mixing/alloy_nethersteel_steel' })
     event.remove({ id: 'createbigcannons:mixing/alloy_nethersteel_cast_iron' })
-    event.recipes.gtceu.electric_blast_furnace('cbc_nethersteel_alloy')
-        .itemInputs('1x minecraft:netherite_scrap', '4x #forge:ingots/steel')
-        .itemOutputs('8x createbigcannons:nethersteel_ingot')
-        .blastFurnaceTemp(3000)
+    event.recipes.gtceu.mixer('cbc_nethersteel_dust_mix')
+        .itemInputs('1x gtceu:netherite_dust', '4x gtceu:steel_dust')
+        .itemOutputs('5x gtceu:nethersteel_dust')
         .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Remove Create saw (log → mould); replace with GT lathe (steel ingot → mould).
     const castMoulds = [

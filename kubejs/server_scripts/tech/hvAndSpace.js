@@ -66,15 +66,10 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ output: 'gtceu:micro_processor_computer' }, 'gtceu:fine_electrum_wire', 'gtceu:fine_desh_wire')
 
-    event.recipes.gtceu.electric_blast_furnace('lunar_rocket_alloy_ebf')
-        .itemInputs(
-            '4x gtceu:ultimet_dust',
-            '2x gtceu:aluminium_dust',
-            '1x gtceu:chromium_dust'
-        )
-        .itemOutputs('4x gtceu:lunar_rocket_alloy_ingot')
-        .blastFurnaceTemp(2700)
-        .duration(30 * 20)
+    event.recipes.gtceu.mixer('ctech:lunar_rocket_alloy_dust_mix')
+        .itemInputs('4x gtceu:ultimet_dust', '2x gtceu:aluminium_dust', '1x gtceu:chromium_dust')
+        .itemOutputs('7x gtceu:lunar_rocket_alloy_dust')
+        .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('rocket_hull_section')

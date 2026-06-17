@@ -23,8 +23,21 @@
 "material.gtceu.enderium": "Enderium",
 
 "material.gtceu.lunar_rocket_alloy": "Lunar Rocket Alloy",
+"material.gtceu.sky_steel": "Sky Steel",
+
+"material.gtceu.phlogiston": "Phlogiston",
+"material.gtceu.phlogisticated_fuel": "Phlogisticated Fuel",
+"material.gtceu.infernal_diesel": "Infernal Diesel",
+"material.gtceu.faefire_aerosol": "Faefire Aerosol",
+"material.gtceu.faefire_phlog_fuel": "Faefire Phlogiston Fuel",
+
+"material.gtceu.aether_air": "Aether Air",
+"material.gtceu.liquid_aether_air": "Liquid Aether Air",
+"material.gtceu.glacio_air": "Glacio Air",
+"material.gtceu.liquid_glacio_air": "Liquid Glacio Air",
 
 "material.gtceu.desh": "Desh",
+"material.gtceu.desh_sulfate_slurry": "Desh Sulfate Slurry",
 "material.gtceu.desh_carbonyl": "Desh Tetracarbonyl",
 "material.gtceu.moon_cheese": "Moon Cheese",
 "item.gtceu.moon_cheese_nugget": "Moon Cheese Curd",
@@ -48,6 +61,10 @@
 "material.gtceu.terranaquadite": "Terranaquadite",
 "material.gtceu.elven_americate": "Elven Americate",
 "material.gtceu.boundless_naquadrite": "Boundless Naquadrite",
+
+"material.gtceu.consecrated_chromite": "Consecrated Chromite",
+"material.gtceu.ambrotungstite": "Ambrotungstite",
+"material.gtceu.manaplatinite": "Manaplatinite",
 
 "tagprefix.holystone": "Holystone %s Ore",
 "tagprefix.moon_stone": "Moon %s Ore",

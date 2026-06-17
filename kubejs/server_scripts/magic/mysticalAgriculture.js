@@ -180,34 +180,106 @@ ServerEvents.recipes(event => {
         ma('desh'),           ma('ostrum'),          ma('calorite'),       ma('naquadah'),
     ]
 
-    // Essence -> material conversion (1:1, crafting table)
-    const essenceConversions = [
-        [ma('cobalt'),     'gtceu:cobalt_ingot'],
-        [ma('bismuth'),    'gtceu:bismuth_ingot'],
-        [ma('antimony'),   'gtceu:antimony_ingot'],
-        [ma('manganese'),  'gtceu:manganese_dust'],
-        [ma('beryllium'),  'gtceu:beryllium_ingot'],
-        [ma('vanadium'),   'gtceu:vanadium_ingot'],
-        [ma('thorium'),    'gtceu:thorium_ingot'],
-        [ma('neodymium'),  'gtceu:neodymium_ingot'],
-        [ma('palladium'),  'gtceu:palladium_ingot'],
-        [ma('molybdenum'), 'gtceu:molybdenum_ingot'],
-        [ma('lithium'),    'gtceu:lithium_dust'],
-        [ma('ambrosium'),  'aether:ambrosium_shard'],
-        [ma('zanite'),     'aether:zanite_gemstone'],
-        [ma('source'),     'ars_nouveau:source_gem'],
-        [ma('gravitite'),  'aether_redux:gravitite_ingot'],
-        [ma('skyjade'),    'deep_aether:skyjade'],
-        [ma('veridium'),   'aether_redux:veridium_ingot'],
-        [ma('desh'),       'ad_astra:desh_ingot'],
-        [ma('ostrum'),     'ad_astra:ostrum_ingot'],
-        [ma('calorite'),   'ad_astra:calorite_ingot'],
-        [ma('naquadah'),   'gtceu:naquadah_ingot'],
-    ]
-    essenceConversions.forEach(([essence, material]) => {
+    // Remove vanilla MA shaped essence->ingot recipes for metals we gate behind EA
+    ;[
+        'mysticalagriculture:essence/minecraft/iron_ingot',
+        'mysticalagriculture:essence/minecraft/gold_ingot',
+        'mysticalagriculture:essence/minecraft/copper_ingot',
+        'mysticalagriculture:essence/minecraft/netherite_ingot',
+        'mysticalagriculture:essence/botania/manasteel_ingot',
+        'mysticalagriculture:essence/botania/elementium_ingot',
+        'mysticalagriculture:essence/botania/terrasteel_ingot',
+    ].forEach(id => event.remove({ id }))
+
+    // Non-metal custom essence -> material: shapeless, no abstract metal
+    ;[
+        [ma('ambrosium'), 'aether:ambrosium_shard',     3],
+        [ma('zanite'),    'aether:zanite_gemstone',     3],
+        [ma('source'),    'ars_nouveau:source_gem',     3],
+        [ma('skyjade'),   'deep_aether:skyjade',        3],
+    ].forEach(([essence, material, count]) => {
         const inputs = []
         for (let i = 0; i < 8; i++) inputs.push(essence)
-        event.shapeless(`3x ${material}`, inputs)
+        event.shapeless(`${count}x ${material}`, inputs)
+    })
+
+    // Metal essence -> ingot via Enchanting Apparatus
+    // reagent (center): abstract_metal_ingot consumed; 8x essence on pedestals
+    // [essence, output item, output count, source cost]
+    const metalEssenceToIngot = [
+        // Vanilla MC metals — counts match vanilla MA recipe
+        [ma('iron'),       'minecraft:iron_ingot',          6,  1500],
+        [ma('gold'),       'minecraft:gold_ingot',           4,  1500],
+        [ma('copper'),     'minecraft:copper_ingot',         6,  1500],
+        [ma('netherite'),  'minecraft:netherite_ingot',      1,  5000],
+
+        // GT base metals — MA has crops but no auto-recipe for GT items
+        [ma('tin'),        'gtceu:tin_ingot',                5,  1500],
+        [ma('silver'),     'gtceu:silver_ingot',             4,  1500],
+        [ma('nickel'),     'gtceu:nickel_ingot',             5,  1500],
+        [ma('lead'),       'gtceu:lead_ingot',               5,  1500],
+        [ma('zinc'),       'gtceu:zinc_ingot',               5,  1500],
+
+        // GT LV alloys
+        [ma('bronze'),     'gtceu:bronze_ingot',             4,  2000],
+        [ma('brass'),      'gtceu:brass_ingot',              4,  2000],
+        [ma('electrum'),   'gtceu:electrum_ingot',           4,  2000],
+        [ma('invar'),      'gtceu:invar_ingot',              4,  2000],
+        [ma('constantan'), 'gtceu:constantan_ingot',         4,  2000],
+
+        // GT MV EBF metals
+        [ma('steel'),      'gtceu:steel_ingot',              3,  2500],
+        [ma('aluminum'),   'gtceu:aluminium_ingot',          4,  2500],
+        [ma('chrome'),     'gtceu:chromium_ingot',           3,  2500],
+        [ma('silicon'),    'gtceu:silicon_ingot',            4,  2500],
+
+        // GT HV EBF
+        [ma('titanium'),   'gtceu:titanium_ingot',           2,  3500],
+
+        // GT EV EBF
+        [ma('tungsten'),   'gtceu:tungsten_ingot',           2,  4000],
+
+        // GT IV metals
+        [ma('platinum'),   'gtceu:platinum_ingot',           2,  5000],
+        [ma('iridium'),    'gtceu:iridium_ingot',            1,  6000],
+        [ma('uranium'),    'gtceu:uranium_ingot',            2,  5000],
+
+        // Botania metals — counts match vanilla MA recipe
+        [ma('manasteel'),  'botania:manasteel_ingot',        5,  4000],
+        [ma('terrasteel'), 'botania:terrasteel_ingot',       2,  6500],
+        [ma('elementium'), 'botania:elementium_ingot',       4,  6000],
+
+        // Custom GT metals added by this pack
+        [ma('cobalt'),     'gtceu:cobalt_ingot',             4,  2000],
+        [ma('bismuth'),    'gtceu:bismuth_ingot',            4,  2000],
+        [ma('antimony'),   'gtceu:antimony_ingot',           4,  2000],
+        [ma('manganese'),  'gtceu:manganese_dust',           4,  2000],
+        [ma('beryllium'),  'gtceu:beryllium_ingot',          3,  2500],
+        [ma('vanadium'),   'gtceu:vanadium_ingot',           3,  3000],
+        [ma('thorium'),    'gtceu:thorium_ingot',            3,  3000],
+        [ma('neodymium'),  'gtceu:neodymium_ingot',          3,  3000],
+        [ma('palladium'),  'gtceu:palladium_ingot',          2,  4000],
+        [ma('molybdenum'), 'gtceu:molybdenum_ingot',         3,  3000],
+        [ma('lithium'),    'gtceu:lithium_dust',             4,  2000],
+
+        // Aether metals
+        [ma('gravitite'),  'aether_redux:gravitite_ingot',   2,  4500],
+        [ma('veridium'),   'aether_redux:veridium_ingot',    3,  3500],
+
+        // Space metals
+        [ma('desh'),       'ad_astra:desh_ingot',            3,  5000],
+        [ma('ostrum'),     'ad_astra:ostrum_ingot',          2,  6000],
+        [ma('calorite'),   'ad_astra:calorite_ingot',        2,  7500],
+        [ma('naquadah'),   'gtceu:naquadah_ingot',           1,  9000],
+    ]
+
+    metalEssenceToIngot.forEach(([essence, material, count, sourceCost]) => {
+        addEnchantingRecipe(event, {
+            reagent: 'gtceu:abstract_metal_ingot',
+            pedestalItems: [essence, essence, essence, essence, essence, essence, essence, essence],
+            output: { item: material, count: count },
+            sourceCost: sourceCost
+        })
     })
 
     // GT material required to craft the seed — prevents farming a material to skip its GT processing gate

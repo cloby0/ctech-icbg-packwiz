@@ -71,5 +71,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('sky_steel', 'megacells:sky_steel_ingot')
     block('sky_steel', 'megacells:sky_steel_block')
 
+    ingot('nethersteel', 'createbigcannons:nethersteel_ingot')
+    block('nethersteel', 'createbigcannons:nethersteel_block')
+
 
 })

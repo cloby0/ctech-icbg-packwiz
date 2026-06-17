@@ -393,12 +393,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x8BAFD6).secondaryColor(0x4A6E8C)
         .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1000)
+        .components('4x ultimet', '2x aluminium', '1x chromium')
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
+
+    event.create('nethersteel')
+        .ingot()
+        .fluid()
+        .color(0x4A2A24).secondaryColor(0x1E1010)
+        .blastTemp(3000, "low", GTValues.VA[GTValues.HV], 800)
+        .components('1x netherite', '4x steel')
+        .iconSet(GTMaterialIconSet.DULL)
+        .flags(GTMaterialFlags.NO_SMELTING)
 
     event.create('phlogiston')
         .fluid()

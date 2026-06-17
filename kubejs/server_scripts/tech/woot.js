@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    const DYE_COLORS = ['black', 'blue', 'brown', 'cyan', 'gray', 'green', 'light_blue', 'light_gray', 'lime', 'magenta', 'orange', 'pink', 'purple', 'red', 'white', 'yellow']
+
     event.remove({ id: 'woot_revived:stygian_dust' })
     event.recipes.gtceu.mixer('woot_stygian_dust')
         .itemInputs(
@@ -10,6 +12,48 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x woot_revived:stygian_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+
+    event.remove({ id: 'woot_revived:stygian_ingot_cook' })
+    event.recipes.gtceu.electric_blast_furnace('woot_stygian_ingot')
+        .itemInputs('1x woot_revived:stygian_dust')
+        .itemOutputs('1x woot_revived:stygian_ingot')
+        .blastFurnaceTemp(3600)
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.bender('woot_stygian_plate')
+        .itemInputs('1x woot_revived:stygian_ingot')
+        .circuitMeta(1)
+        .itemOutputs('1x woot_revived:stygian_plate')
+        .duration(2 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.assembler('woot_copper_shard')
+        .itemInputs('4x #forge:ingots/copper')
+        .inputFluids(Fluid.of('gtceu:lubricant', 100))
+        .itemOutputs('1x woot_revived:copper_shard')
+        .duration(5 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.assembler('woot_mob_shard')
+        .itemInputs('2x woot_revived:stygian_ingot')
+        .inputFluids(Fluid.of('gtceu:lubricant', 100))
+        .itemOutputs('1x woot_revived:mob_shard')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // stygian_anvil block and hammer eliminated; molds (plate_mold, shard_mold, dye_casing_mold) become obsolete
+    event.remove({ type: 'woot_revived:stygian_anvil' })
+    event.remove({ id: 'woot_revived:stygian_anvil' })
+    event.remove({ id: 'woot_revived:stygian_hammer' })
+
+    DYE_COLORS.forEach(color => {
+        event.recipes.gtceu.mixer(`woot_${color}_dye_casing`)
+            .itemInputs('1x woot_revived:stygian_ingot', `1x #forge:dyes/${color}`)
+            .itemOutputs(`1x woot_revived:${color}_dye_casing`)
+            .duration(3 * 20)
+            .EUt(GTValues.VA[GTValues.HV])
+    })
 
     // Chokepoint: every useful Woot block (pylon, plinth, magmator, cell, dye_liquifier,
     // fluid_infuser, item_infuser, factory_ctr_base, layout, export, import, etc.) requires
@@ -27,18 +71,16 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.remove({ id: 'woot_revived:stygian_anvil' })
-    event.recipes.gtceu.assembler('woot_stygian_anvil')
+    event.recipes.gtceu.assembler('woot_fake_spawner')
         .itemInputs(
-            '3x woot_revived:stygian_block',
-            '1x woot_revived:stygian_ingot',
-            '2x minecraft:crying_obsidian',
-            '2x #gtceu:circuits/hv'
+            '1x woot_revived:mob_shard',
+            '1x woot_revived:prism',
+            '1x woot_revived:factory_base'
         )
         .inputFluids(Fluid.of('gtceu:lubricant', 250))
-        .itemOutputs('1x woot_revived:stygian_anvil')
+        .itemOutputs('1x woot_revived:fake_spawner')
         .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Vanilla: 8 different dyes arranged around factory_base — no GT component.
     event.remove({ id: 'woot_revived:dye_liquifier' })
@@ -156,9 +198,9 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // Vanilla uses iron/gold/diamond/netherite ingots — inconsistent with GT voltage tiers.
+    // Vanilla: iron/gold/diamond/netherite ingots — inconsistent with GT voltage tiers.
     // New materials: iron→steel(LV) | gold→aluminium(MV) | diamond→stainless_steel(HV) | netherite→titanium(EV)
-    // Display names updated in client_scripts/wootLang.js.
+    // Display names updated in kubejs/assets/woot_revived/lang/en_us.json.
 
     event.remove({ id: 'woot_revived:iron_looting_upgrade' })
     event.shaped(Item.of('woot_revived:iron_looting_upgrade'), ['bab', 'aca', 'bab'], {

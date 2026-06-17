@@ -13,6 +13,8 @@ ServerEvents.tags('item', event => {
     event.add(`kubejs:${element}_essences`, `mysticalagriculture:${element}_essence`);
   })
 
+  event.add('forge:cheese', 'ad_astra:cheese');
+
   event.add('forge:gems/ambrosium', 'aether:ambrosium_shard');
   event.add('forge:gems/zanite', 'aether:zanite_gemstone');
 

@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
     // side material: luminessence → charged amethyst via air
     // charged amethyst needed for hexed_amethyst_core at Alchemist; air essence charges the crystal
     addImbuementRecipe(event, {
-        input: 'gtceu:luminessence_dust',
+        input: 'gtceu:amethyst_dust',
         output: 'hexcasting:charged_amethyst',
         count: 2,
         source: 500,
