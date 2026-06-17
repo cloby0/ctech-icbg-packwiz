@@ -7,10 +7,10 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mysticalagriculture:inferium_essence' })
     event.remove({ output: 'mysticalagriculture:prosperity_shard' })
 
-    const F = '#kubejs:fire_essences'
-    const E = '#kubejs:earth_essences'
-    const W = '#kubejs:water_essences'
-    const A = '#kubejs:air_essences'
+    const F = 'mysticalagriculture:fire_essence'
+    const E = 'mysticalagriculture:earth_essence'
+    const W = 'mysticalagriculture:water_essence'
+    const A = 'mysticalagriculture:air_essence'
     const ma = n => `mysticalagriculture:${n}_essence`
 
     // [output, catalyst, [pedestal items], source cost]
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
 
     // 16x essence + 1 wheat seed -> 1 seed in the Petal Apothecary
     // Elemental seeds (fire/water/earth/air) excluded; first acquisition is gated in sorcerer.js
-    const seedEssences = [
+    const seedessence = [
         ma('stone'),          ma('dirt'),           ma('wood'),           ma('ice'),
         ma('deepslate'),      ma('nature'),          ma('dye'),           ma('nether'),
         ma('coal'),           ma('coral'),           ma('honey'),          ma('amethyst'),
@@ -265,7 +265,7 @@ ServerEvents.recipes(event => {
         'naquadah':   'gtceu:naquadah_ingot',
     }
 
-    seedEssences.forEach(essence => {
+    seedessence.forEach(essence => {
         const seedId = essence.replace('_essence', '_seeds')
         const essenceName = essence.replace('mysticalagriculture:', '').replace('_essence', '')
         const ingredients = []

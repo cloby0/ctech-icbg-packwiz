@@ -2567,6 +2567,11 @@ hash = "45968023493afe339280f44382e082188c8f413f37d37c362dc16366135bb974"
 metafile = true
 
 [[files]]
+file = "mods/fps-reducer.pw.toml"
+hash = "8e4615ae5f9c5e2573545c74bbd6d540164ba4af804bafa417901b349a806680"
+metafile = true
+
+[[files]]
 file = "mods/fracture-point.pw.toml"
 hash = "10979f68137e1820900ff35e09c127f4ed33e589c62827d504f0fbc489a3258b"
 metafile = true
