@@ -145,7 +145,8 @@ ServerEvents.recipes(event => {
     // mirror all vanilla/mod ars_nouveau:imbuement recipes to the factory (skipChamber: they already exist)
     event.forEachRecipe({ type: 'ars_nouveau:imbuement' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
-        addImbuementRecipe(event, { ...crecipe, skipChamber: true })
+        crecipe.skipChamber = true
+        addImbuementRecipe(event, crecipe)
     })
 
     // controller block crafting recipe

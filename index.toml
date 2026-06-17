@@ -1598,15 +1598,15 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "441be47eec375d12f15cbd9b39d77b74229e38571d7e69b05e563ae8604e6cf0"
+hash = "ab67ac42113cc4ecf580ed504a1924efc455b7124976b22fd42a3f67e7e749fb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "f57214f4ce7dad9eb8311823668137958e3d45e1426c54419e11f77d2efaf7b9"
+hash = "80d189b421f6e2c028b48a26975b0e813c6e750d522da04e7488c96485dc39e2"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "d311eefe92193225d8116df3009b7ac95c705c7cb5242f455b5f19883d2d8949"
+hash = "00da35e5c7cbdda8576b30e245f69de40bce2634cd55b19dfbaea721044abb6c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"

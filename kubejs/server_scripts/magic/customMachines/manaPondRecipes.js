@@ -129,7 +129,8 @@ ServerEvents.recipes(event => {
 
     event.forEachRecipe({ type: 'botania:mana_infusion' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
-        addManaPondRecipe(event, { ...crecipe, skipPool: true })
+        crecipe.skipPool = true
+        addManaPondRecipe(event, crecipe)
     })
 
     // controller block crafting recipe

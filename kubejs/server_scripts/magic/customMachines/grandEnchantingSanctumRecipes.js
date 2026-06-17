@@ -155,7 +155,8 @@ ServerEvents.recipes(event => {
 
     event.forEachRecipe({ type: 'ars_nouveau:enchanting_apparatus' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
-        addEnchantingRecipe(event, { ...crecipe, skipApparatus: true })
+        crecipe.skipApparatus = true
+        addEnchantingRecipe(event, crecipe)
     })
 
     event.recipes.gtceu.assembler('grand_enchanting_sanctum_controller')
