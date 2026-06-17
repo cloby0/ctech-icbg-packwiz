@@ -1650,7 +1650,7 @@ hash = "b994f624f266fe2d306eac100f8138c5564f4c0d3ac98d4cde4f68e761c41f9b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "e95ea0f39c38f9f4886f94f13a9b15a114622841a00d70c0dbcd31aa9904c349"
+hash = "37c51b6f887edde08f45dcf10d4a938774bccd46257bcae9b105d31c224590a1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -1794,7 +1794,7 @@ hash = "61b8ee33b00fab4744613e770f24e02b4b11bdabc5ff9b297902748f68cf021d"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
-hash = "4505124ec57f838a7df6e4b85042b7afd7572810f40a83b291241f4304cb63a3"
+hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"

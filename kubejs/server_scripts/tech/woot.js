@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.bender('woot_stygian_plate')
         .itemInputs('1x woot_revived:stygian_ingot')
-        .circuitMeta(1)
+        .circuit(1)
         .itemOutputs('1x woot_revived:stygian_plate')
         .duration(2 * 20)
         .EUt(GTValues.VA[GTValues.HV])

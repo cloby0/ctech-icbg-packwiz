@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:essence/botania/manasteel_ingot',
         'mysticalagriculture:essence/botania/elementium_ingot',
         'mysticalagriculture:essence/botania/terrasteel_ingot',
-    ].forEach(id => event.remove({ id }))
+    ].forEach(id => event.remove({ id: id }))
 
     // Non-metal custom essence -> material: shapeless, no abstract metal
     ;[
