@@ -1598,15 +1598,15 @@ hash = "b71c20098c12d370ddeac64bdd894094e211db8dfaec32a0d5f35939de683db5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "ac69d90c9ef652701f0ed1cc2fad2ec7db25e3abce2108e9a11de7e3104ba931"
+hash = "4847fa7d865d06ac00d82c15e075362cfa0c03def60098eae0e58b19dd6e52fc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "007dc81a46966d0c24c9f36064da75a93f5a6990eea0ad1dec56c83bc455f735"
+hash = "9a376675dd993de1e07ba8394ebc2f6db0841adb126517fe2c6d0c8502f69349"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "360accb29344f9679345eef1ffa73b6713ecd8f35d9aa871ed3fbca175c3cb5a"
+hash = "99e4223596f186623cd5fe276ecbe5db2868e3a89354235065a236233744342d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
@@ -1754,7 +1754,7 @@ hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/gunComponentRecipes.js"
-hash = "a3cd33f74ff76c499dda19750e297b39ba3184678e1ccc58a60fcde6fbe85d2f"
+hash = "87ff5b7fac29f8dcf96bc8584d32770327cc1e2b98e05d73f2a1ed80ba58323f"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"

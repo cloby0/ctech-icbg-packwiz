@@ -45,6 +45,11 @@ function addManaPondRecipe(event, crecipe) {
     let outputCount = output.count || 1
     let outputId = output.item ?? 'minecraft:barrier'
 
+    if (outputId !== 'minecraft:barrier' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
+        console.warn(`[mana_pond] skipping recipe with non-existent output '${outputId}'`)
+        return
+    }
+
     let isConjuration = catalystBlock === "botania:conjuration_catalyst"
 
     if (!crecipe.skipPool) {

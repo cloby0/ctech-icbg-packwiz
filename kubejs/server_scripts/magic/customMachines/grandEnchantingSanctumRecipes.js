@@ -85,6 +85,10 @@ function addEnchantingRecipe(event, crecipe) {
         console.error(`[enchanting_apparatus] no output at index ${index}`)
         return
     }
+    if (typeof outputId === 'string' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
+        console.warn(`[enchanting_apparatus] skipping recipe with non-existent output '${outputId}'`)
+        return
+    }
     let outputCount = crecipe.output?.count || 1
 
     let sourceCost = Math.max(crecipe.sourceCost || 0, 100)

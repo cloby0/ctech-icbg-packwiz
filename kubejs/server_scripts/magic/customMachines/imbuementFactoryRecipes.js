@@ -87,6 +87,10 @@ function addImbuementRecipe(event, crecipe) {
         return
     }
     let outputId = typeof outputRaw === 'object' ? (outputRaw.item ?? null) : outputRaw
+    if (typeof outputId === 'string' && !$ForgeRegistries.ITEMS.getValue(outputId)) {
+        console.warn(`[imbuement] skipping recipe with non-existent output '${outputId}'`)
+        return
+    }
     let outputCount = (typeof outputRaw === 'object' ? outputRaw.count : crecipe.count) || 1
 
     let sourceCost = Math.max(crecipe.source || 0, 100)
