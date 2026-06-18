@@ -1630,7 +1630,7 @@ hash = "00da35e5c7cbdda8576b30e245f69de40bce2634cd55b19dfbaea721044abb6c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "8ddd2d5b6ef1349ca0979f513d2ddb332f5af561a1a190db4bb72e8ce6c54e04"
+hash = "c993580f906256436c9fe6585e6825da04732457d1095a395a50493364e3628f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"

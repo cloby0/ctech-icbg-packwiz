@@ -63,14 +63,13 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'botania:runic_altar' }, recipe => {
         const index = _nextRunicIndex++
         const crecipe = JSON.parse(recipe.json.toString())
-        const recipeId = recipe.id.toString()
 
         const output = crecipe.output
-        if (!output) { console.warn(`[runic_forge] skipping ${recipeId}: no output`); return }
+        if (!output) { console.warn('[runic_forge] skipping entry ' + index + ': no output'); return }
         const outputId = typeof output === 'string' ? output : output.item
-        if (!outputId) { console.warn(`[runic_forge] skipping ${recipeId}: no output item`); return }
+        if (!outputId) { console.warn('[runic_forge] skipping entry ' + index + ': no output item'); return }
         if (!$ForgeRegistries.ITEMS.getValue(outputId)) {
-            console.warn(`[runic_forge] skipping ${recipeId}: non-existent output '${outputId}'`)
+            console.warn('[runic_forge] skipping entry ' + index + ': non-existent output \'' + outputId + '\'')
             return
         }
         const outputCount = output.count || 1
@@ -80,14 +79,14 @@ ServerEvents.recipes(event => {
         const itemInputs = []
         let skip = false
         for (let i = 0; i < ingredients.length; i++) {
-            let resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
+            let resolved = resolveRunicIngredient(ingredients[i], outputId + '[' + i + ']')
             if (!resolved) { skip = true; break }
             itemInputs.push(resolved)
         }
         if (skip || itemInputs.length === 0) return
 
-        const safeId = stripNamespace(recipeId).replace(/\//g, '_')
-        console.log(`[runic_forge] cloning ${recipeId} → ${outputCount}x ${outputId}, mana=${mana}`)
+        const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
+        console.log('[runic_forge] cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.runic_forge(`runic_forge/clone_${safeId}_${index}`)
             .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
@@ -101,15 +100,14 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'botania:terra_plate' }, recipe => {
         const index = _nextRunicIndex++
         const crecipe = JSON.parse(recipe.json.toString())
-        const recipeId = recipe.id.toString()
 
         // terra_plate uses "result" not "output"
         const result = crecipe.result
-        if (!result) { console.warn(`[runic_forge] skipping terra_plate ${recipeId}: no result`); return }
+        if (!result) { console.warn('[runic_forge] skipping terra_plate entry ' + index + ': no result'); return }
         const outputId = typeof result === 'string' ? result : result.item
-        if (!outputId) { console.warn(`[runic_forge] skipping terra_plate ${recipeId}: no result item`); return }
+        if (!outputId) { console.warn('[runic_forge] skipping terra_plate entry ' + index + ': no result item'); return }
         if (!$ForgeRegistries.ITEMS.getValue(outputId)) {
-            console.warn(`[runic_forge] skipping terra_plate ${recipeId}: non-existent output '${outputId}'`)
+            console.warn('[runic_forge] skipping terra_plate entry ' + index + ': non-existent output \'' + outputId + '\'')
             return
         }
         const outputCount = result.count || 1
@@ -119,15 +117,15 @@ ServerEvents.recipes(event => {
         const itemInputs = []
         let skip = false
         for (let i = 0; i < ingredients.length; i++) {
-            let resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
+            let resolved = resolveRunicIngredient(ingredients[i], outputId + '[' + i + ']')
             if (!resolved) { skip = true; break }
             itemInputs.push(resolved)
         }
         if (skip || itemInputs.length === 0) return
 
-        const safeId = stripNamespace(recipeId).replace(/\//g, '_')
+        const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
         const duration = mana >= 1000000 ? 1200 : 600
-        console.log(`[runic_forge] terra_agglomeration cloning ${recipeId} → ${outputCount}x ${outputId}, mana=${mana}`)
+        console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
             .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
