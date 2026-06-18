@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
 
         // GT LV alloys
         [ma('bronze'),     'gtceu:bronze_ingot',             4,  2000],
-        [ma('brass'),      'gtceu:brass_ingot',              4,  2000],
+        [ma('brass'),      'create:brass_ingot',              4,  2000],
         [ma('electrum'),   'gtceu:electrum_ingot',           4,  2000],
         [ma('invar'),      'gtceu:invar_ingot',              4,  2000],
         [ma('constantan'), 'gtceu:constantan_ingot',         4,  2000],
@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
         'antimony':   'gtceu:antimony_ingot',
         // LV alloys (alloy smelter)
         'bronze':     'gtceu:bronze_ingot',
-        'brass':      'gtceu:brass_ingot',
+        'brass':      'create:brass_ingot',
         'electrum':   'gtceu:electrum_ingot',
         'invar':      'gtceu:invar_ingot',
         'constantan': 'gtceu:constantan_ingot',
