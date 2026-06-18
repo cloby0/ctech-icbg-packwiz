@@ -1682,7 +1682,7 @@ hash = "4a60463c42e66073a1f82ea4061d23f346217d5057dbf541e5608ea0375cdd73"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "1b63d1dcd08a475f814bcdfcdbbc3988be46e0fc86e5f8675068e21792f725ac"
+hash = "8e17cfd970ea3717dcf4618eea39dc62bc549b1051255083099789982dccff9f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
@@ -1718,7 +1718,7 @@ hash = "9dcfa55c959bb73675f386e7d0c4a930c524cab25fb351d7675cbd2bf28e2e28"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
-hash = "e068901449de48ad3d4090dd641108ff473df6912460954e6478fa25bf6b6de2"
+hash = "52c7e65fd1a67fc558726d5c043989e1c85c544c6d0d6c85b491e1c1081d2c90"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
@@ -1730,11 +1730,11 @@ hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
-hash = "501c08c93f8c1a90ab4a49c720af254292a88a7e0c7060c66e4dab4bd8093abb"
+hash = "b6ecbc752aa68ea1f29b744aa9b478fa0447b0fb4a4ca51fe6427af25d43b42c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
-hash = "6974834beb31d5f859a32c1a73c1856b65aa6d916121406a87ecb1289bf19120"
+hash = "86843bd740b707cb9b08426137176e825debe76fd809a42b38200f741bdc786c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -1782,7 +1782,7 @@ hash = "4def4dfee14d324e0dab43f60c56fbdfdbdef3fc5e5ddfebe83b381762a9a2f4"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "0302dd702492513a0490857eeb9185b4fbd8b66c1cc9d0018f2f1e542ad3c5c5"
+hash = "b65c9530a99c48cd0d729e38531728636ddf5125717b3f452fdbc16bdea62c59"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"

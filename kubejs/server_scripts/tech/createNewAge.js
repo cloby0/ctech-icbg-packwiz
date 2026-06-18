@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
             'gtceu:mv_electric_motor',
             '4x create:copper_sheet',
             '2x gtceu:steel_plate',
-            'create:shaft',
+            'greate:steel_shaft',
             '1x #gtceu:circuits/mv',
         )
         .itemOutputs('create_new_age:basic_motor')
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
             'create_new_age:overcharged_iron',
             '4x create:golden_sheet',
             'create:brass_casing',
-            'create:shaft',
+            'greate:stainless_steel_shaft',
             '1x #gtceu:circuits/hv',
         )
         .itemOutputs('create_new_age:advanced_motor')
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '4x create:andesite_alloy',
             '2x minecraft:coal',
-            'create:shaft',
+            'greate:steel_shaft',
         )
         .itemOutputs('create_new_age:carbon_brushes')
         .duration(8 * 20)
@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x create_new_age:heat_pipe',
             '4x create:copper_sheet',
-            'create:shaft',
+            'greate:steel_shaft',
             '1x #gtceu:circuits/mv',
         )
         .itemOutputs('create_new_age:stirling_engine')

@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_shaft"}'),
         ['WSW', 'SBS', 'WSW'],
-        { W: 'gtceu:treated_wood_plate', S: 'create:shaft', B: 'gtceu:steel_bolt' })
+        { W: 'gtceu:treated_wood_plate', S: 'greate:steel_shaft', B: 'gtceu:steel_bolt' })
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_gantry_shaft"}'),
         ['IGI', 'GBG', 'IGI'],

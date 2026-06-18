@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
 
     // ivory psimetal: aether-blessed psi alloy; holy silver = Initiate magic gate + ambrosium purity
     event.recipes.gtceu.mixer('ivory_psimetal_alloy')
-        .itemInputs('2x psi:psimetal', '4x psi:ivory_substance', '2x gtceu:holy_silver_dust', '1x gtceu:ambrosium_gem')
+        .itemInputs('2x psi:psimetal', '4x psi:ivory_substance', '2x gtceu:holy_silver_dust', '1x #forge:gems/ambrosium')
         .itemOutputs('1x psi:ivory_psimetal')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])

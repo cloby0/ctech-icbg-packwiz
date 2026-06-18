@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         ['ISI', 'SMS', 'GSG'],
         {
             I: '#forge:plates/iron',
-            S: 'create:shaft',
+            S: 'greate:steel_shaft',
             M: 'kubejs:cannon_mechanism',
             G: '#createbigcannons:gunpowder'
         }
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         Item.of('createbigcannons:cannon_mount_extension', 1),
         [' S ', 'GMG', ' S '],
         {
-            S: 'create:shaft',
+            S: 'greate:steel_shaft',
             G: '#createbigcannons:gunpowder',
             M: 'kubejs:cannon_mechanism'
         }
