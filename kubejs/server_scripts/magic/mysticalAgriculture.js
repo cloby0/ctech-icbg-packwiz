@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
         [ma('silver'),     'gtceu:silver_ingot',             4,  1500],
         [ma('nickel'),     'gtceu:nickel_ingot',             5,  1500],
         [ma('lead'),       'gtceu:lead_ingot',               5,  1500],
-        [ma('zinc'),       'gtceu:zinc_ingot',               5,  1500],
+        [ma('zinc'),       'create:zinc_ingot',               5,  1500],
 
         // GT LV alloys
         [ma('bronze'),     'gtceu:bronze_ingot',             4,  2000],
@@ -289,7 +289,7 @@ ServerEvents.recipes(event => {
         'copper':     'minecraft:copper_ingot',
         'gold':       'minecraft:gold_ingot',
         'tin':        'gtceu:tin_ingot',
-        'zinc':       'gtceu:zinc_ingot',
+        'zinc':       'create:zinc_ingot',
         'lead':       'gtceu:lead_ingot',
         'silver':     'gtceu:silver_ingot',
         'nickel':     'gtceu:nickel_ingot',
