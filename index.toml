@@ -1730,7 +1730,7 @@ hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
-hash = "c99f0c398fb51f08db839193a660ef3aa624f94561639d19e8d8c34bd2a02cf5"
+hash = "501c08c93f8c1a90ab4a49c720af254292a88a7e0c7060c66e4dab4bd8093abb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
@@ -1778,7 +1778,7 @@ hash = "a177f374db820afa195aecc3df7cd78c6e40be9066ad9e38d7a10fe0fa7eb1e7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/gunComponentRecipes.js"
-hash = "92ace42e50ef4da262204516fac0d15f84372ccc2bffe3cadd26f30b5ee83787"
+hash = "4def4dfee14d324e0dab43f60c56fbdfdbdef3fc5e5ddfebe83b381762a9a2f4"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
@@ -1814,7 +1814,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "fdbb9097ff75ee7faaeba6d4704c222164f5744832d7af059e86d31e25aece52"
+hash = "df552e914a94b5c4e2de0347de6b20ef27dbfc6718f722c18979c8678246a470"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
