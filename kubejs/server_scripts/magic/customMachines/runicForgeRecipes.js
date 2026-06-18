@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'botania:runic_altar' }, recipe => {
         const index = _nextRunicIndex++
         const crecipe = JSON.parse(recipe.json.toString())
-        const recipeId = recipe.id
+        const recipeId = recipe.id.toString()
 
         const output = crecipe.output
         if (!output) { console.warn(`[runic_forge] skipping ${recipeId}: no output`); return }
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'botania:terra_plate' }, recipe => {
         const index = _nextRunicIndex++
         const crecipe = JSON.parse(recipe.json.toString())
-        const recipeId = recipe.id
+        const recipeId = recipe.id.toString()
 
         // terra_plate uses "result" not "output"
         const result = crecipe.result
