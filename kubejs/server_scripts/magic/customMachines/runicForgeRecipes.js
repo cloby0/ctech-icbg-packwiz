@@ -20,7 +20,7 @@ function manaToTicks(mana) {
 function resolveRunicIngredient(ing, debugLabel) {
     if (Array.isArray(ing)) {
         for (let i = 0; i < ing.length; i++) {
-            const resolved = resolveRunicIngredient(ing[i], `${debugLabel}[${i}]`)
+            let resolved = resolveRunicIngredient(ing[i], `${debugLabel}[${i}]`)
             if (resolved) return resolved
         }
         console.warn(`[runic_forge] no valid item in alternation at ${debugLabel}`)
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         const itemInputs = []
         let skip = false
         for (let i = 0; i < ingredients.length; i++) {
-            const resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
+            let resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
             if (!resolved) { skip = true; break }
             itemInputs.push(resolved)
         }
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         const itemInputs = []
         let skip = false
         for (let i = 0; i < ingredients.length; i++) {
-            const resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
+            let resolved = resolveRunicIngredient(ingredients[i], `${recipeId}[${i}]`)
             if (!resolved) { skip = true; break }
             itemInputs.push(resolved)
         }
