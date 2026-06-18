@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
         [ma('brass'),      'create:brass_ingot',              4,  2000],
         [ma('electrum'),   'gtceu:electrum_ingot',           4,  2000],
         [ma('invar'),      'gtceu:invar_ingot',              4,  2000],
-        [ma('constantan'), 'gtceu:constantan_ingot',         4,  2000],
+        [ma('constantan'), 'gtceu:cupronickel_ingot',         4,  2000],
 
         // GT MV EBF metals
         [ma('steel'),      'gtceu:steel_ingot',              3,  2500],
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
         'brass':      'create:brass_ingot',
         'electrum':   'gtceu:electrum_ingot',
         'invar':      'gtceu:invar_ingot',
-        'constantan': 'gtceu:constantan_ingot',
+        'constantan': 'gtceu:cupronickel_ingot',
         // MV EBF (cupronickel coils)
         'steel':      'gtceu:steel_ingot',
         'aluminum':   'gtceu:aluminium_ingot',  // MA uses 'aluminum', GT uses 'aluminium'
