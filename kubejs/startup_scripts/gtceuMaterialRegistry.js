@@ -620,4 +620,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FRAME
         )
 
+    event.create('terra_iridite')
+        .ingot()
+        .fluid()
+        .color(0x6EC4A0)
+        .secondaryColor(0x3A7862)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(5200, "high", GTValues.VA[GTValues.LuV], 1600)
+        .components(c('2x terrasteel'), c('1x iridium'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+
+    // Cemented carbide (WC-Co sintered composite). HV EBF material.
+    // Replaces superbwarfare:cemented_carbide_ingot entirely — SW supply chain is killed.
+    event.create('cemented_carbide')
+        .ingot()
+        .fluid()
+        .color(0x7A7A6E)
+        .secondaryColor(0x4A4A40)
+        .blastTemp(2900, "low", GTValues.VA[GTValues.HV], 1000)
+        .components('3x tungsten_carbide', '1x cobalt')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
 })

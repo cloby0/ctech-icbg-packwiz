@@ -1,0 +1,13 @@
+name = "Villager Recruits: Claim and Siege Update!"
+filename = "recruits-1.20.1-1.15.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b9897cda02c221dcd951bb8be6067502c436948f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8253342
+project-id = 523860

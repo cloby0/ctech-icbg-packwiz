@@ -180,17 +180,6 @@ ServerEvents.recipes(event => {
         ma('desh'),           ma('ostrum'),          ma('calorite'),       ma('naquadah'),
     ]
 
-    // Remove vanilla MA shaped essence->ingot recipes for metals we gate behind EA
-    ;[
-        'mysticalagriculture:essence/minecraft/iron_ingot',
-        'mysticalagriculture:essence/minecraft/gold_ingot',
-        'mysticalagriculture:essence/minecraft/copper_ingot',
-        'mysticalagriculture:essence/minecraft/netherite_ingot',
-        'mysticalagriculture:essence/botania/manasteel_ingot',
-        'mysticalagriculture:essence/botania/elementium_ingot',
-        'mysticalagriculture:essence/botania/terrasteel_ingot',
-    ].forEach(id => event.remove({ id: id }))
-
     // Non-metal custom essence -> material: shapeless, no abstract metal
     ;[
         [ma('ambrosium'), 'aether:ambrosium_shard',     3],
@@ -272,6 +261,12 @@ ServerEvents.recipes(event => {
         [ma('calorite'),   'ad_astra:calorite_ingot',        2,  7500],
         [ma('naquadah'),   'gtceu:naquadah_ingot',           1,  9000],
     ]
+
+    // Remove MA auto-generated essence->material recipes for everything we re-gate via EA
+    metalEssenceToIngot.forEach(([_essence, material]) => {
+        const [ns, item] = material.split(':')
+        event.remove({ id: `mysticalagriculture:essence/${ns}/${item}` })
+    })
 
     metalEssenceToIngot.forEach(([essence, material, count, sourceCost]) => {
         addEnchantingRecipe(event, {

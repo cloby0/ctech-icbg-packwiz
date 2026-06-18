@@ -153,6 +153,22 @@ file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
+file = "data/psi/recipes/ebony_psimetal.json"
+hash = "49365362f151457388329854c362eaf86f03288933ae1e3198001f4fb1b27c51"
+
+[[files]]
+file = "data/psi/recipes/ebony_substance.json"
+hash = "b537f1b5c7521c728858589c2b0b86c59d19812bfe3ae0b78bdcab0aeb7693b5"
+
+[[files]]
+file = "data/psi/recipes/ivory_psimetal.json"
+hash = "322a4d30c5360e94d51fdd868ad838e0f25ebc64f8adf6333b98a8563e0f6be9"
+
+[[files]]
+file = "data/psi/recipes/ivory_substance.json"
+hash = "9c2f2e9f5664effce622052ea978932f1406b716d82a52c4e0b5638d4eb871ef"
+
+[[files]]
 file = "defaultconfigs/aether-server.toml"
 hash = "b0396c1d80a73a716b99c9702ff4cb139cf7d7126a70dfbd8b1b8405b5db78a1"
 
@@ -814,6 +830,10 @@ hash = "283c0c9b076aaa85f1518dc0c2f711f463fcb90fea826ea8918fd1deb7775877"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/mana_livingrock_casing.png"
+hash = "205f00225be34ba90c8e3dbb0da019cab613eb9170c4416d59fc3b588e73ea76"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/runic_forge_casing.png"
 hash = "205f00225be34ba90c8e3dbb0da019cab613eb9170c4416d59fc3b588e73ea76"
 
 [[files]]
@@ -1609,6 +1629,10 @@ file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
 hash = "00da35e5c7cbdda8576b30e245f69de40bce2634cd55b19dfbaea721044abb6c"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
+hash = "d916b68ea112a4f5cbae7304b4b02eb4bd23cb2541b84f1ac2af53128337f42c"
+
+[[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
 hash = "9a3b9e24b009040f0e0139120e7ef6407dbd272a13212d2a88a0c57df4831801"
 
@@ -1650,7 +1674,7 @@ hash = "b994f624f266fe2d306eac100f8138c5564f4c0d3ac98d4cde4f68e761c41f9b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "bcd1a037e5b2500d7480a5087965a11926da1b84ced94e9be6c31ac6cb7b5c24"
+hash = "b3aa34e27889d14c7384fbe9b30f7bb44648188e1a2ab07bdbfc02c3f53e2fe6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -1658,7 +1682,7 @@ hash = "4a60463c42e66073a1f82ea4061d23f346217d5057dbf541e5608ea0375cdd73"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "ea02efc7d43aee450e0e674b94e317e6834a89615851ce2c4ef8043af93551d4"
+hash = "1b63d1dcd08a475f814bcdfcdbbc3988be46e0fc86e5f8675068e21792f725ac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
@@ -1706,7 +1730,7 @@ hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
-hash = "eb7f6b3baf30d498821d77cf7c200ad549f3400352f30ee7470aeb3c4bfbac23"
+hash = "c99f0c398fb51f08db839193a660ef3aa624f94561639d19e8d8c34bd2a02cf5"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
@@ -1790,7 +1814,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "61b8ee33b00fab4744613e770f24e02b4b11bdabc5ff9b297902748f68cf021d"
+hash = "fdbb9097ff75ee7faaeba6d4704c222164f5744832d7af059e86d31e25aece52"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -1798,7 +1822,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "e51dd0dce86ec1d33304f101aa7944eb13880a84a989558ff64db9827d70a234"
+hash = "5ec8afeb911e6f0906918a8415bd9556863058ce21022c4ee6f27385f33c7f2d"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1838,11 +1862,15 @@ hash = "b9f0529a3f0b7fd8b9e071bf47353b942e040f41ef294d8878b108a83e068e2c"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
-hash = "d2c25170158a85ef27a3dea065eb078b77f994c934127daf09fa9e545fffbdf1"
+hash = "aa45f6fc40c3d697fe3edbfb4f2f1907f9297c9c3b562fbef99258496c84bb0b"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
 hash = "a45cb68e4799c29c08978c76eaa58f642ed5a087046fea7a108b83a077d96763"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
+hash = "cfb2c45e9164188770280696fb48d68f20fbc1267df886af35de2a4897b1c9b2"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -1878,7 +1906,7 @@ hash = "a8be40db4ee3eca1dee3659d238bbd97c831a2849a2d182431d3d21a31681679"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "6d99ada23b8f06d456fed145586a1f2716ed036e47780684a3872ab16106476c"
+hash = "6aeff817ca902a83161b3ef9c391de63da8fdf18cb11f1cf2cc11449ce92e635"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -3046,6 +3074,11 @@ hash = "9653aa00a74c2223f416b2846e04017d8b6a45f8b38c2e6b5f0c9e66a9a91eb7"
 metafile = true
 
 [[files]]
+file = "mods/mob-player-animator.pw.toml"
+hash = "6c3571b3d62c673d575e654edab9ab17f70049811e168b4d070e12e5d9fb7b5f"
+metafile = true
+
+[[files]]
 file = "mods/modern-ae2-additions.pw.toml"
 hash = "b8b547d9d06d90eaf9e3d48d08fabe87b23a247e9f53384038b6c7be1d0457bc"
 metafile = true
@@ -3268,6 +3301,16 @@ metafile = true
 [[files]]
 file = "mods/recipe-essentials-forge-fabric.pw.toml"
 hash = "346314904e0a035d68514e7d9e332d4a63e288abc7fd7bdfaf6d655c511a5916"
+metafile = true
+
+[[files]]
+file = "mods/recruits-tacz.pw.toml"
+hash = "7609627bb5d7b81179cd61eaa3a1f0059cf07b7b9c65465c5b617e242d5d93e0"
+metafile = true
+
+[[files]]
+file = "mods/recruits.pw.toml"
+hash = "7b5ae542c5e801fd23f6ae52353a3351861f20436aa36024e7bc3b036b77b15b"
 metafile = true
 
 [[files]]
@@ -3541,6 +3584,11 @@ metafile = true
 [[files]]
 file = "mods/woot-revived.pw.toml"
 hash = "4b70eb25ec673d9f6af6c88b80b887e112d7b1a26974c656e4b12cdaa25222f6"
+metafile = true
+
+[[files]]
+file = "mods/workers.pw.toml"
+hash = "8b39a5f607e8c740dbe9da597ac5be0ad637dd71f1b68a2116a1ccfdfa2d204c"
 metafile = true
 
 [[files]]

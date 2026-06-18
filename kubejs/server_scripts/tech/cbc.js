@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // Tiered assembler recipes: higher voltage → more output per craft.
+    // Tiered assembler recipes: higher voltage -> more output per craft.
     // MV: 4x | HV: 8x | EV: 16x
 
     event.recipes.gtceu.assembler('cbc_cannon_mechanism_mv')
@@ -127,19 +127,8 @@ ServerEvents.recipes(event => {
     // Remove Create basin alloy recipes; replace with GT mixer / EBF.
 
     event.remove({ id: 'createbigcannons:mixing/alloy_steel' })
-    event.recipes.gtceu.mixer('cbc_steel_alloy')
-        .itemInputs('2x gtceu:iron_dust', '1x gtceu:carbon_dust')
-        .itemOutputs('2x createbigcannons:steel_ingot')
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
-
     event.remove({ id: 'createbigcannons:mixing/alloy_bronze_tin' })
     event.remove({ id: 'createbigcannons:mixing/alloy_bronze_brass' })
-    event.recipes.gtceu.mixer('cbc_bronze_alloy')
-        .itemInputs('3x gtceu:copper_dust', '1x gtceu:tin_dust')
-        .itemOutputs('4x createbigcannons:bronze_ingot')
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
 
     // 3000K requires kanthal coils; appropriate for nether-infused alloy
     event.remove({ id: 'createbigcannons:mixing/alloy_nethersteel_steel' })
@@ -150,7 +139,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Remove Create saw (log → mould); replace with GT lathe (steel ingot → mould).
+    // Remove Create saw (log -> mould); replace with GT lathe (steel ingot -> mould).
     const castMoulds = [
         'very_small_cast_mould',
         'small_cast_mould',
@@ -173,7 +162,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.MV])
     })
 
-    // Remove Create saw (plate → wire); replace with GT cutter (steel only — iron too weak)
+    // Remove Create saw (plate -> wire); replace with GT cutter (steel only — iron too weak)
     event.remove({ id: 'createbigcannons:cutting/spring_wire_steel' })
     event.remove({ id: 'createbigcannons:cutting/spring_wire_iron' })
     event.recipes.gtceu.cutter('cbc_spring_wire')

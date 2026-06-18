@@ -28,6 +28,12 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
+    event.recipes.gtceu.mixer('terra_iridite_dust_mix')
+        .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:iridium_dust')
+        .itemOutputs('3x gtceu:terra_iridite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LuV])
+
     event.recipes.gtceu.mixer('terranaquadite_dust_mix')
         .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:enriched_naquadah_dust')
         .itemOutputs('3x gtceu:terranaquadite_dust')
@@ -151,6 +157,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:infernal_diesel', 750))
         .outputFluids(Fluid.of('gtceu:naphtha', 400))
         .outputFluids(Fluid.of('gtceu:light_fuel', 100))
+        .outputFluids(Fluid.of('starbunclemania:source_fluid', 250))
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -158,6 +165,13 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:infernal_diesel', 1))
         .duration(60)
         .EUt(-32)
+
+    event.recipes.gtceu.chemical_reactor('elven_concentrate_synthesis')
+        .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_source')
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
+        .itemOutputs('2x kubejs:elven_concentrate')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.chemical_reactor('faefire_aerosol_synthesis')
         .itemInputs('1x kubejs:elven_concentrate', '2x mysticalagriculture:air_essence')

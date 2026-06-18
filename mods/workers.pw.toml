@@ -1,0 +1,13 @@
+name = "Villager Workers 2"
+filename = "workers-1.20.1-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fe9d014ed6d99d4a562b55180700139b7b5ff1ba"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8168381
+project-id = 567450

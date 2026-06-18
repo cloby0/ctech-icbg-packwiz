@@ -40,6 +40,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'psi:cad_assembly_ebony' })
     event.remove({ id: 'psi:cad_assembly_ivory' })
 
+    event.remove({ id: 'psi:ebony_psimetal' })
+    event.remove({ id: 'psi:ivory_psimetal' })
+
     event.remove({ id: 'psi:cad_core_conductive' })
     event.remove({ id: 'psi:cad_core_overclocked' })
     event.remove({ id: 'psi:cad_core_hyperclocked' })
@@ -267,6 +270,20 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('1x psi:cad_assembly_gold')
         .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // ebony psimetal: void-quenched psi alloy; tungsten density + ender resonance + end-sourced substance
+    event.recipes.gtceu.mixer('ebony_psimetal_alloy')
+        .itemInputs('2x psi:psimetal', '4x psi:ebony_substance', '2x gtceu:tungsten_dust', '1x minecraft:ender_pearl')
+        .itemOutputs('1x psi:ebony_psimetal')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // ivory psimetal: aether-blessed psi alloy; holy silver = Initiate magic gate + ambrosium purity
+    event.recipes.gtceu.mixer('ivory_psimetal_alloy')
+        .itemInputs('2x psi:psimetal', '4x psi:ivory_substance', '2x gtceu:holy_silver_dust', '1x gtceu:ambrosium_gem')
+        .itemOutputs('1x psi:ivory_psimetal')
+        .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('psi_ebony_cad_assembly')
