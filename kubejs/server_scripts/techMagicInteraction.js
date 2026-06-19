@@ -71,14 +71,152 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.electrolyzer('inferium_electrolysis')
-        .itemInputs('8x mysticalagriculture:inferium_essence')
-        .chancedOutput('mysticalagriculture:fire_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:water_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:earth_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:air_essence', 2500, 0)
-        .duration(20 * 20)
+    // source fluid distillation → four elemental fluids
+    // total output 6000 mB from 10000 mB; remainder consumed in separation
+    event.recipes.gtceu.distillation_tower('source_fluid_distillation')
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', 10000))
+        .outputFluids(Fluid.of('gtceu:phlogiston', 500))
+        .outputFluids(Fluid.of('gtceu:aqua_vitae', 1000))
+        .outputFluids(Fluid.of('gtceu:mineral_ichor', 1500))
+        .outputFluids(Fluid.of('gtceu:pneuma', 3000))
+        .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
+
+    // elemental fluid → essence recovery
+    // phlogiston: 50% roundtrip efficiency (2 fire_essence → 500 mB phlogiston → 1 fire_essence)
+    event.recipes.gtceu.chemical_reactor('phlogiston_to_fire_essence')
+        .inputFluids(Fluid.of('gtceu:phlogiston', 500))
+        .itemOutputs('1x mysticalagriculture:fire_essence')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.chemical_reactor('aqua_vitae_to_water_essence')
+        .itemInputs('1x minecraft:prismarine_shard')
+        .inputFluids(Fluid.of('gtceu:aqua_vitae', 1000))
+        .itemOutputs('1x mysticalagriculture:water_essence')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.chemical_reactor('mineral_ichor_to_earth_essence')
+        .itemInputs('1x minecraft:clay_ball')
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 1500))
+        .itemOutputs('1x mysticalagriculture:earth_essence')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // pneuma centrifuge: separates essence component from atmospheric gases as byproducts
+    event.recipes.gtceu.centrifuge('pneuma_to_air_essence')
+        .inputFluids(Fluid.of('gtceu:pneuma', 3000))
+        .itemOutputs('1x mysticalagriculture:air_essence')
+        .outputFluids(Fluid.of('gtceu:helium', 1000))
+        .outputFluids(Fluid.of('gtceu:oxygen', 500))
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // inferium → source fluid: MA farms become a source supplement without any Ars infrastructure
+    event.recipes.gtceu.chemical_reactor('inferium_to_source_fluid')
+        .itemInputs('4x mysticalagriculture:inferium_essence')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
+        .outputFluids(Fluid.of('starbunclemania:source_fluid', 500))
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // pneuma → source fluid: more efficient than inferium path, requires distillation chain
+    event.recipes.gtceu.chemical_reactor('pneuma_to_source_fluid')
+        .inputFluids(Fluid.of('gtceu:pneuma', 1000))
+        .outputFluids(Fluid.of('starbunclemania:source_fluid', 500))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // mineral ichor alloy byproduct: alt mixer recipes with ichor produce chanced mineral_flux_crystal
+    // original recipes unchanged; these are new recipe IDs alongside them
+    event.recipes.gtceu.mixer('consecrated_chromite_with_ichor')
+        .itemInputs('2x gtceu:holy_silver_dust', '1x gtceu:chromium_dust')
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
+        .itemOutputs('3x gtceu:consecrated_chromite_dust')
+        .chancedOutput('kubejs:mineral_flux_crystal', 3000, 0)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('ambrotungstite_with_ichor')
+        .itemInputs('1x gtceu:holy_silver_dust', '2x gtceu:tungsten_dust')
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
+        .itemOutputs('3x gtceu:ambrotungstite_dust')
+        .chancedOutput('kubejs:mineral_flux_crystal', 3000, 0)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('manaplatinite_with_ichor')
+        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:platinum_dust')
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
+        .itemOutputs('3x gtceu:manaplatinite_dust')
+        .chancedOutput('kubejs:mineral_flux_crystal', 3000, 0)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // mineral flux crystal partial ichor recovery: dissolve back into fluid at loss
+    event.recipes.gtceu.chemical_reactor('mineral_flux_crystal_to_ichor')
+        .itemInputs('1x kubejs:mineral_flux_crystal')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
+        .outputFluids(Fluid.of('gtceu:mineral_ichor', 250))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // crush crystal into traces of the four elemental bias ores
+    event.recipes.gtceu.macerator('mineral_flux_crystal_crush')
+        .itemInputs('1x kubejs:mineral_flux_crystal')
+        .chancedOutput('gtceu:chromite_dust', 2500, 0)
+        .chancedOutput('gtceu:bauxite_dust', 2500, 0)
+        .chancedOutput('gtceu:ilmenite_dust', 2500, 0)
+        .chancedOutput('gtceu:scheelite_dust', 2500, 0)
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // elemental fluid ore processing routes
+    // phlogiston biases existing chromite centrifuge: auto-gen gives 1 iron + 2 chromium + 4000 mB oxygen
+    // bias adds 1 guaranteed chromium for 250 mB phlogiston
+    event.recipes.gtceu.centrifuge('chromite_dust_phlogiston_bias')
+        .itemInputs('1x gtceu:chromite_dust')
+        .inputFluids(Fluid.of('gtceu:phlogiston', 250))
+        .itemOutputs('1x gtceu:iron_dust', '3x gtceu:chromium_dust')
+        .outputFluids(Fluid.of('gtceu:oxygen', 4000))
+        .duration(18 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // bauxite has DISABLE_DECOMPOSITION so no auto centrifuge; mineral ichor enables new centrifuge route
+    // vs electrolyzer (15 bauxite → 6 aluminium + 1 rutile + 9000 O2, LV):
+    // centrifuge+ichor trades higher EU and ichor cost for gallium chance and centrifuge machine type
+    event.recipes.gtceu.centrifuge('bauxite_dust_ichor_processing')
+        .itemInputs('5x gtceu:bauxite_dust')
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
+        .itemOutputs('2x gtceu:aluminium_dust')
+        .chancedOutput('gtceu:rutile_dust', 3000, 0)
+        .chancedOutput('gtceu:gallium_dust', 2000, 0)
+        .outputFluids(Fluid.of('gtceu:oxygen', 3000))
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // ilmenite has DISABLE_DECOMPOSITION; aqua vitae enables centrifuge alternative to EBF path
+    // vs EBF (5 ilmenite + carbon → iron + 3 rutile, HV 1700K):
+    // centrifuge+vitae skips blast furnace requirement but gives less rutile (2 vs 3)
+    event.recipes.gtceu.centrifuge('ilmenite_dust_aqua_vitae_processing')
+        .itemInputs('5x gtceu:ilmenite_dust')
+        .inputFluids(Fluid.of('gtceu:aqua_vitae', 500))
+        .itemOutputs('2x gtceu:iron_dust', '2x gtceu:rutile_dust')
+        .chancedOutput('gtceu:ilmenite_slag_dust', 4000, 0)
+        .outputFluids(Fluid.of('gtceu:oxygen', 3000))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // scheelite has DISABLE_DECOMPOSITION; pneuma creates direct centrifuge shortcut to tungsten
+    // bypasses the normal scheelite → tungstic acid → electrolyzer chain
+    // gated at IV to match tungsten's tier; requires EV distillation chain to have pneuma
+    event.recipes.gtceu.centrifuge('scheelite_dust_pneuma_processing')
+        .itemInputs('1x gtceu:scheelite_dust')
+        .inputFluids(Fluid.of('gtceu:pneuma', 250))
+        .itemOutputs('1x gtceu:calcium_dust', '1x gtceu:tungsten_dust')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
 
     // base recipe unchanged; these are optional alternatives consuming 1 crude essence
     event.recipes.gtceu.centrifuge('pgs_fire_bias')
@@ -222,25 +360,16 @@ ServerEvents.recipes(event => {
         10000
     )
 
-    // vitalized growth medium — magic intermediate feeding the real Wetware Board growth medium chain
-    // rotten flesh vitalized into a culture catalyst; Mixer alt-recipe below uses it for a yield bonus
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ['mysticalagriculture:earth_essence', 'mysticalagriculture:water_essence'],
-        'minecraft:rotten_flesh',
-        'kubejs:vitalized_culture_medium',
-        3000
-    )
-
-    // alt to vanilla raw_growth_medium mixer recipe — same real inputs plus the magic catalyst, more output
-    event.recipes.gtceu.mixer('vitalized_raw_growth_medium')
+    // aqua vitae growth medium: replaces vitalized_culture_medium synergy with direct fluid input
+    // same +25% output vs vanilla recipe (4000 mB → 5000 mB); aqua vitae replaces the magic intermediate
+    event.recipes.gtceu.mixer('aqua_vitae_growth_medium')
         .itemInputs(
             '4x gtceu:meat_dust',
             '4x gtceu:salt_dust',
             '4x gtceu:calcium_dust',
-            '4x gtceu:agar_dust',
-            '1x kubejs:vitalized_culture_medium'
+            '4x gtceu:agar_dust'
         )
-        .inputFluids(Fluid.of('gtceu:mutagen', 4000))
+        .inputFluids(Fluid.of('gtceu:mutagen', 4000), Fluid.of('gtceu:aqua_vitae', 1000))
         .outputFluids(Fluid.of('gtceu:raw_growth_medium', 5000))
         .duration(1200)
         .EUt(GTValues.VA[GTValues.IV])

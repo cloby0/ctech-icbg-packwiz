@@ -1682,7 +1682,7 @@ hash = "4a60463c42e66073a1f82ea4061d23f346217d5057dbf541e5608ea0375cdd73"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "8e17cfd970ea3717dcf4618eea39dc62bc549b1051255083099789982dccff9f"
+hash = "12320e9c7acc517ff8cf65fb451acc03936d9349068a8485c2599a2348cb90a8"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
@@ -1722,7 +1722,7 @@ hash = "52c7e65fd1a67fc558726d5c043989e1c85c544c6d0d6c85b491e1c1081d2c90"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
-hash = "84e2e6a3a9a47240080e340a0b13804a76fb94d5910187d62af5fcfd22f5abf4"
+hash = "1361b03b7ec5d3ed961b276a574cb1ba2ac1403e2f915b8bbe715ec518061935"
 
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"
@@ -1822,7 +1822,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "5ec8afeb911e6f0906918a8415bd9556863058ce21022c4ee6f27385f33c7f2d"
+hash = "595c8201415889453cb1e35b6dc2ea9b219cb6117107a1520bb1692e51a8dd89"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1906,7 +1906,7 @@ hash = "a8be40db4ee3eca1dee3659d238bbd97c831a2849a2d182431d3d21a31681679"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "6aeff817ca902a83161b3ef9c391de63da8fdf18cb11f1cf2cc11449ce92e635"
+hash = "ba3b72bdcb1ae7c3b65955d577c2a39c6ac369f93c85b4fc8e4666724d38ee8a"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -1914,7 +1914,7 @@ hash = "dbd25518bbeac9d11b85f1a030a0893f96c1b40a7f22e560b375a01cfb303475"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "c1e188b51e7dd6528df4983bbf1392b6b92e16e7a514c2b8af317bd722df45c6"
+hash = "4ac80792ed8e40984bf1781acc87be523b2436c0e769c4677faf5151e1a49d8c"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

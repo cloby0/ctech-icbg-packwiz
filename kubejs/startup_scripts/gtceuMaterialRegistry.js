@@ -430,6 +430,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xFFEE44)
 
+    event.create('aqua_vitae')
+        .fluid()
+        .color(0xAAD4F0)
+
+    event.create('mineral_ichor')
+        .fluid()
+        .color(0xB08030)
+
+    event.create('pneuma')
+        .fluid()
+        .color(0xD8F0FF)
+
     event.create('aether_air')
         .fluid()
         .color(0xA8D4F5)

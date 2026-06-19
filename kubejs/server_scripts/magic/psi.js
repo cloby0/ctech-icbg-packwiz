@@ -67,6 +67,16 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'psi:psimetal_axe' })
     event.remove({ id: 'psi:psimetal_shovel' })
 
+    // pneuma attuned psimetal: gates all late PSI behind EV distillation chain
+    // psigem (and via it: hyperclocked/radiative cores, huge/transmissive sockets, exosuit, tools)
+    // requires pneuma_attuned_psimetal on pedestals
+    event.recipes.gtceu.chemical_reactor('pneuma_attune_psimetal')
+        .itemInputs('1x psi:psimetal')
+        .inputFluids(Fluid.of('gtceu:pneuma', 500))
+        .itemOutputs('1x kubejs:pneuma_attuned_psimetal')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
     // psidust chain: HV mixer then Initiate imbuement
     // silicon + redstone at HV energy crystallizes latent psionic potential
     event.recipes.gtceu.mixer('latent_psi_crystal')
@@ -140,12 +150,12 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // psigem: enchanting apparatus replaces trick_greater_infusion
-    // resonant_zanite_crystal = Journeyman Aether chain component; 6000 source = substantial infra
+    // psigem: pedestals now require pneuma_attuned_psimetal instead of plain psimetal
+    // gates psigem (and all items requiring it) behind EV distillation chain
     addEnchantingRecipe(event, {
         reagent: 'psi:psimetal',
         pedestalItems: [
-            'psi:psimetal', 'psi:psimetal',
+            'kubejs:pneuma_attuned_psimetal', 'kubejs:pneuma_attuned_psimetal',
             'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal',
             'minecraft:diamond', 'minecraft:diamond',
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
@@ -273,8 +283,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     // ebony psimetal: void-quenched psi alloy; tungsten density + ender resonance + end-sourced substance
+    // pneuma required: animating breath-force gives the void alloy its psychokinetic coherence
     event.recipes.gtceu.mixer('ebony_psimetal_alloy')
         .itemInputs('2x psi:psimetal', '4x psi:ebony_substance', '2x gtceu:tungsten_dust', '1x minecraft:ender_pearl')
+        .inputFluids(Fluid.of('gtceu:pneuma', 500))
         .itemOutputs('1x psi:ebony_psimetal')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
@@ -282,6 +294,7 @@ ServerEvents.recipes(event => {
     // ivory psimetal: aether-blessed psi alloy; holy silver = Initiate magic gate + ambrosium purity
     event.recipes.gtceu.mixer('ivory_psimetal_alloy')
         .itemInputs('2x psi:psimetal', '4x psi:ivory_substance', '2x gtceu:holy_silver_dust', '1x #forge:gems/ambrosium')
+        .inputFluids(Fluid.of('gtceu:pneuma', 500))
         .itemOutputs('1x psi:ivory_psimetal')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])

@@ -456,7 +456,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.assembler('ballistix_missiletier1')
-        .itemInputs('4x gtceu:titanium_plate', 'ballistix:thermobaric', '2x #gtceu:circuits/iv', '2x gtceu:iv_sensor')
+        .itemInputs('4x gtceu:titanium_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_sensor')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 1000))
         .itemOutputs('1x ballistix:missiletier1')
         .duration(40 * 20)
@@ -581,14 +581,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.assembler('ballistix_missiletier2')
-        .itemInputs('4x gtceu:naquadah_plate', 'ballistix:nuclear', '2x #gtceu:circuits/luv', '2x gtceu:luv_sensor')
+        .itemInputs('4x gtceu:naquadah_plate', '2x #gtceu:circuits/luv', '2x gtceu:luv_sensor')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 4000))
         .itemOutputs('1x ballistix:missiletier2')
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.assembler('ballistix_missilecluster')
-        .itemInputs('ballistix:missiletier2', '4x ballistix:fragmentation', '4x gtceu:titanium_plate', '2x #gtceu:circuits/luv')
+        .itemInputs('ballistix:missiletier2', '4x gtceu:titanium_plate', '2x #gtceu:circuits/luv')
         .itemOutputs('1x ballistix:missilecluster')
         .duration(50 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
