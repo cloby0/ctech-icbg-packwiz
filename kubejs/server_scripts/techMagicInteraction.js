@@ -594,7 +594,7 @@ ServerEvents.recipes(event => {
     // parallel branches — four elemental nuclei, each uses a DIFFERENT machine and a boss drop
     // all four required as convergence pedestals at gestated_cumium_crystal (step 3)
 
-    // fire nucleus — GT Alloy Smelter; boss gate: ignitium_ingot (from Ignis boss, Legendary Monsters)
+    // fire nucleus — GT Alloy Smelter; boss gate: ignitium_ingot (from Ignis boss, Cataclysm)
     // ember_crystal: existing MV fire crystal from chromite + phlogiston processing
     event.recipes.gtceu.alloy_smelter('fire_nucleus_synthesis')
         .itemInputs('2x cataclysm:ignitium_ingot', '2x kubejs:ember_crystal')
@@ -612,11 +612,11 @@ ServerEvents.recipes(event => {
         "catalyst": { "type": "block", "block": "botania:alchemy_catalyst" }
     })
 
-    // earth nucleus — GT Mixer; boss gate: ancient_metal_ingot (Ancient Remnant boss, Legendary Monsters)
+    // earth nucleus — GT Mixer; boss gate: ancient_metal_ingot (Ancient Remnant boss, Cataclysm)
     // mineral_flux_crystal: existing HV earth crystal (chanced byproduct of ichor alloy processing)
     event.recipes.gtceu.mixer('earth_nucleus_synthesis')
         .itemInputs(
-            '2x legendarymonsters:ancient_metal_ingot',
+            '2x cataclysm:ancient_metal_ingot',
             '2x kubejs:mineral_flux_crystal',
             '4x mysticalagriculture:earth_essence'
         )
@@ -625,10 +625,10 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // air nucleus — Ars Nouveau Imbuement Chamber; boss gate: essence_of_the_storm (Storm boss, Legendary Monsters)
+    // air nucleus — Ars Nouveau Imbuement Chamber; boss gate: essence_of_the_storm (Storm boss, Cataclysm)
     // aether_crystal: existing IV air crystal from scheelite + pneuma; naquadah: Glacio gate
     event.recipes.ars_nouveau.imbuement(
-        'legendarymonsters:essence_of_the_storm',
+        'cataclysm:essence_of_the_storm',
         'kubejs:air_nucleus',
         12000,
         [
@@ -740,7 +740,7 @@ ServerEvents.recipes(event => {
             '1x kubejs:unforged_cumium_matrix',
             '4x gtceu:stem_cells',
             '2x gtceu:neutronium_dust',
-            '1x legendarymonsters:void_core',
+            '1x cataclysm:void_core',
             '4x #gtceu:circuits/uv'
         )
         .inputFluids(
