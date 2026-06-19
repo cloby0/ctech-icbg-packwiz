@@ -597,7 +597,7 @@ ServerEvents.recipes(event => {
     // fire nucleus — GT Alloy Smelter; boss gate: ignitium_ingot (from Ignis boss, Legendary Monsters)
     // ember_crystal: existing MV fire crystal from chromite + phlogiston processing
     event.recipes.gtceu.alloy_smelter('fire_nucleus_synthesis')
-        .itemInputs('2x legendarymonsters:ignitium_ingot', '2x kubejs:ember_crystal')
+        .itemInputs('2x cataclysm:ignitium_ingot', '2x kubejs:ember_crystal')
         .itemOutputs('2x kubejs:fire_nucleus')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
