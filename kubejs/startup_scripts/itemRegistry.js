@@ -58,6 +58,15 @@ StartupEvents.registry('item', event => {
     event.create('gaian_neutronium_boule')
 
     event.create('gaia_flux_dust')
+    event.create('void_flux_amalgam')
+    event.create('seminal_void_precursor')
+    event.create('fire_nucleus')
+    event.create('water_nucleus')
+    event.create('earth_nucleus')
+    event.create('air_nucleus')
+    event.create('gestated_cumium_crystal')
+    event.create('awakened_cumium_embryo')
+    event.create('unforged_cumium_matrix')
 
     event.create('pneuma_attuned_psimetal')
     event.create('mineral_flux_crystal')

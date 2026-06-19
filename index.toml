@@ -826,11 +826,11 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "0ee7ecd97402b05e47db138487820e3de2e13fb92567ddd6c09582c48e19b7a2"
+hash = "acd90fe0c3377c47f08c8ff76e62d4ab1507e9171de629269da2f38389bfa747"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "6f2a034d599fec7aa81e2fdf79f291996ea811f9442ff633a86e3068960d5be6"
+hash = "3037fc0808de7f1ce553ead66d4c56f9fb82c9da82ffe1d6b76fcffb4f2ca102"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -1834,7 +1834,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "5bb0943c23527d574b3500ac10ffe793b78bdba80a49bf3c1fc24f83b8257c02"
+hash = "368d0f9700648d03a749d7d0881b5afb578af3a30ff4650cf74472a34e96d64f"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1918,7 +1918,7 @@ hash = "a8be40db4ee3eca1dee3659d238bbd97c831a2849a2d182431d3d21a31681679"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "227f9a3e3d2b714c6d2801c526283c719b13c391131316928989a03c03293f2c"
+hash = "a6ec277c5fdfd979bd0056d9d5a8675b44bd0483c5877d89c03116a2f9b79926"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -1926,7 +1926,7 @@ hash = "dbd25518bbeac9d11b85f1a030a0893f96c1b40a7f22e560b375a01cfb303475"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "ccd81ee27ea3deb7c5a97f6844563c751734653dec351570872df3ebe17d78dc"
+hash = "1b12e1ed223dfbfa50ebf9180a64a7aef9cc25e2c1e34a5a2437d0c04032d7d8"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

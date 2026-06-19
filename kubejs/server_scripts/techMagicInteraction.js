@@ -541,7 +541,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     // step 3: void stellite dust — gaia flux as magic binder, cobalt+chromium as real stellite base
-    // auto-gen EBF (9000K) and vacuum freezer handled by GT material system from blastTemp definition
+    // EBF (9000K) and vacuum freezer auto-gen from blastTemp; NO_SMELTING must NOT be set or it blocks both
     event.recipes.gtceu.mixer('void_stellite_dust_mix')
         .itemInputs('4x kubejs:gaia_flux_dust', '2x gtceu:cobalt_dust', '2x gtceu:chromium_dust', '1x gtceu:neutronium_dust')
         .itemOutputs('8x gtceu:void_stellite_dust')
@@ -565,10 +565,192 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     // step 6: plasma generator fuel — 1000 duration/mB vs americium 320, justifies the long chain
+    // cooled plasma outputs celestial_concentrate — partial loop closure, void_stellite is the net fuel sink
     event.recipes.gtceu.plasma_generator('refined_stellar_plasma_fuel')
         .inputFluids(Fluid.of('gtceu:refined_stellar_plasma', 1))
+        .outputFluids(Fluid.of('gtceu:celestial_concentrate', 1))
         .duration(1000)
         .EUt(-512)
+
+    // CUMIUM INGOT LINE — C-Tech apex material, 6 player-visible steps before EBF
+    //
+    // step 1: cum (fluid) — biologically grounded approximation
+    //   zinc: highest mineral in real semen (~150mg/L)
+    //   stem_cells: sperm (LuV bioprocessing: osmiridium + bacteria + sterilized_growth_medium)
+    //   sugar: fructose proxy (primary motility energy source)
+    //   sterilized_growth_medium: seminal plasma protein base
+    event.recipes.gtceu.chemical_reactor('cum_synthesis')
+        .itemInputs(
+            '2x gtceu:zinc_dust',
+            '4x gtceu:stem_cells',
+            '1x minecraft:sugar'
+        )
+        .inputFluids(Fluid.of('gtceu:sterilized_growth_medium', 1000))
+        .outputFluids(Fluid.of('gtceu:cum', 1000))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // parallel branches — four elemental nuclei, each uses a DIFFERENT machine and a boss drop
+    // all four required as convergence pedestals at gestated_cumium_crystal (step 3)
+
+    // fire nucleus — GT Alloy Smelter; boss gate: ignitium_ingot (from Ignis boss, Legendary Monsters)
+    // ember_crystal: existing MV fire crystal from chromite + phlogiston processing
+    event.recipes.gtceu.alloy_smelter('fire_nucleus_synthesis')
+        .itemInputs('2x legendarymonsters:ignitium_ingot', '2x kubejs:ember_crystal')
+        .itemOutputs('2x kubejs:fire_nucleus')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // water nucleus — Botania Mana Pool (alchemy catalyst); boss gate: lacrima (Cataclysm ocean boss)
+    // 50000 mana: requires serious mana infrastructure even before the 15M TAP
+    event.custom({
+        "type": "botania:mana_infusion",
+        "input": { "item": "cataclysm:lacrima" },
+        "mana": 50000,
+        "output": { "item": "kubejs:water_nucleus" },
+        "catalyst": { "type": "block", "block": "botania:alchemy_catalyst" }
+    })
+
+    // earth nucleus — GT Mixer; boss gate: ancient_metal_ingot (Ancient Remnant boss, Legendary Monsters)
+    // mineral_flux_crystal: existing HV earth crystal (chanced byproduct of ichor alloy processing)
+    event.recipes.gtceu.mixer('earth_nucleus_synthesis')
+        .itemInputs(
+            '2x legendarymonsters:ancient_metal_ingot',
+            '2x kubejs:mineral_flux_crystal',
+            '4x mysticalagriculture:earth_essence'
+        )
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 1000))
+        .itemOutputs('4x kubejs:earth_nucleus')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // air nucleus — Ars Nouveau Imbuement Chamber; boss gate: essence_of_the_storm (Storm boss, Legendary Monsters)
+    // aether_crystal: existing IV air crystal from scheelite + pneuma; naquadah: Glacio gate
+    event.recipes.ars_nouveau.imbuement(
+        'legendarymonsters:essence_of_the_storm',
+        'kubejs:air_nucleus',
+        12000,
+        [
+            'kubejs:aether_crystal',
+            'kubejs:aether_crystal',
+            'mysticalagriculture:air_essence',
+            'mysticalagriculture:air_essence',
+            'gtceu:naquadah_dust',
+            'gtceu:naquadah_dust'
+        ]
+    )
+
+    // step 2: seminal void precursor — cum carries void stellite and naquadria as a biological vector
+    event.recipes.gtceu.chemical_reactor('seminal_void_precursor_synthesis')
+        .itemInputs(
+            '2x gtceu:void_stellite_dust',
+            '1x gtceu:naquadria_dust'
+        )
+        .inputFluids(Fluid.of('gtceu:cum', 2000))
+        .itemOutputs('3x kubejs:seminal_void_precursor')
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 3: gestated cumium crystal — all four elemental nuclei converge with the precursor
+    //   four nuclei: elemental completeness (fire/water/earth/air; IV/EV/HV/LuV planet gates)
+    //   stem_cells x2: biological anchor — the living scaffold that holds the convergence
+    //   40000 source: demands serious source infrastructure
+    event.recipes.ars_nouveau.imbuement(
+        'kubejs:seminal_void_precursor',
+        'kubejs:gestated_cumium_crystal',
+        40000,
+        [
+            'kubejs:fire_nucleus',
+            'kubejs:water_nucleus',
+            'kubejs:earth_nucleus',
+            'kubejs:air_nucleus',
+            'gtceu:stem_cells',
+            'gtceu:stem_cells'
+        ]
+    )
+
+    // step 4: awakened cumium embryo — sage-tier awakening via Enchanting Apparatus
+    //   gaia_ingot x2: two Guardian of Gaia kills (or MA gaia_spirit_essence farm)
+    //   elementium_ingot x4: elven portal endgame
+    //   neutronium_dust x2: UV tech ceiling
+    //   60000 source: Grand Enchanting Sanctum + major source generation required
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'botania:gaia_ingot',
+            'botania:gaia_ingot',
+            'botania:elementium_ingot',
+            'botania:elementium_ingot',
+            'botania:elementium_ingot',
+            'botania:elementium_ingot',
+            'gtceu:neutronium_dust',
+            'gtceu:neutronium_dust'
+        ],
+        'kubejs:gestated_cumium_crystal',
+        'kubejs:awakened_cumium_embryo',
+        60000
+    )
+
+    // step 5: void flux amalgam — embryo fuses with stellar plasma and more cum (second cum gate)
+    //   awakened_cumium_embryo: carries all prior chain value
+    //   gaia_spirit_dust: binds the magic component
+    //   refined_stellar_plasma: UV energy channel
+    //   cum: second appearance — biological resonance locks the fusion
+    event.recipes.gtceu.chemical_reactor('void_flux_amalgam_synthesis')
+        .itemInputs(
+            '1x kubejs:awakened_cumium_embryo',
+            '1x gtceu:gaia_spirit_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:refined_stellar_plasma', 1000),
+            Fluid.of('gtceu:cum', 500)
+        )
+        .itemOutputs('3x kubejs:void_flux_amalgam')
+        .duration(60 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 6: terrestrial agglomeration plate (15,000,000 mana) — mana condensation locks the matrix
+    //   gaia_ingot: third gaia gate in the chain
+    //   neutronium_dust: UV tech ceiling
+    //   outputs unforged_cumium_matrix — not dust yet, needs forging
+    event.custom({
+        "type": "botania:terra_plate",
+        "ingredients": [
+            { "item": "kubejs:void_flux_amalgam" },
+            { "item": "kubejs:void_flux_amalgam" },
+            { "item": "botania:gaia_ingot" },
+            { "item": "gtceu:neutronium_dust" }
+        ],
+        "mana": 15000000,
+        "result": {
+            "item": "kubejs:unforged_cumium_matrix"
+        }
+    })
+
+    // step 7: GT Assembly Line — UV multiblock finale
+    //   void_core: boss gate from void-type legendary monster
+    //   neutronium_dust x2: UV tech ceiling
+    //   stem_cells x4: third biological anchor — cum's foundation returns
+    //   UV circuits x4: requires UV circuit production
+    //   cum 2000mB: third cum gate — the assembly line runs on it
+    //   soldering_alloy: standard assembly fluid
+    //   4 minute runtime — you wait
+    event.recipes.gtceu.assembly_line('cumium_matrix_forging')
+        .itemInputs(
+            '1x kubejs:unforged_cumium_matrix',
+            '4x gtceu:stem_cells',
+            '2x gtceu:neutronium_dust',
+            '1x legendarymonsters:void_core',
+            '4x #gtceu:circuits/uv'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:cum', 2000),
+            Fluid.of('gtceu:soldering_alloy', 576)
+        )
+        .itemOutputs('1x gtceu:cumium_dust')
+        .duration(200 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+    // step 8 (auto): EBF (9000K, UV coils, 3600 ticks) → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
 
     // blessed boule cutting recipes (all -> 48 wafers vs normal 32)
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')

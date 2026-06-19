@@ -63,6 +63,14 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Iv')
         .isIsotope(false)
 
+    event.create('cumium')
+        .protons(128)
+        .neutrons(382)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Ct')
+        .isIsotope(false)
+
     event.create('veridium')
         .protons(44)
         .neutrons(165)
@@ -417,8 +425,30 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 2400)
         .flags(
-            GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_SMASHING
+        )
+
+    // real composition: ~96% water, zinc (high), fructose, proteins, sperm cells
+    // approximated in GT terms: zinc_dust + stem_cells + sugar + sterilized_growth_medium
+    event.create('cum')
+        .fluid()
+        .color(0xFCFCEC)
+
+    // C-Tech apex material — requires full UV tech + Sage magic + stellar plasma chain + 5M mana TAP
+    event.create('cumium')
+        .ingot()
+        .fluid()
+        .element('cumium')
+        .color(0xFAF5E4)
+        .secondaryColor(0xC8C060)
+        .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 3600)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.NO_SMELTING
         )
 
     event.create('stellar_plasma')

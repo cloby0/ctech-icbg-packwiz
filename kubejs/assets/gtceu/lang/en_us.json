@@ -64,6 +64,7 @@
 
 "material.gtceu.void_stellite": "Void Stellite",
 "material.gtceu.stellar_plasma": "Stellar Plasma",
+"fluid.gtceu.stellar_plasma_plasma": "Stellar Plasma",
 "material.gtceu.celestial_concentrate": "Celestial Concentrate",
 "material.gtceu.refined_stellar_plasma": "Refined Stellar Plasma",
 
@@ -73,6 +74,9 @@
 "material.gtceu.aqua_vitae": "Aqua Vitae",
 "material.gtceu.mineral_ichor": "Mineral Ichor",
 "material.gtceu.pneuma": "Pneuma",
+
+"material.gtceu.cum": "Cum",
+"material.gtceu.cumium": "Cumium",
 
 "material.gtceu.terra_iridite": "Terra Iridite",
 "material.gtceu.consecrated_chromite": "Consecrated Chromite",
