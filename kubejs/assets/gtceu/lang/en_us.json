@@ -62,6 +62,19 @@
 "material.gtceu.elven_americate": "Elven Americate",
 "material.gtceu.boundless_naquadrite": "Boundless Naquadrite",
 
+"material.gtceu.void_stellite": "Void Stellite",
+"material.gtceu.stellar_plasma": "Stellar Plasma",
+"material.gtceu.celestial_concentrate": "Celestial Concentrate",
+"material.gtceu.refined_stellar_plasma": "Refined Stellar Plasma",
+
+"material.gtceu.nethersteel": "Nethersteel",
+"material.gtceu.cemented_carbide": "Cemented Carbide",
+
+"material.gtceu.aqua_vitae": "Aqua Vitae",
+"material.gtceu.mineral_ichor": "Mineral Ichor",
+"material.gtceu.pneuma": "Pneuma",
+
+"material.gtceu.terra_iridite": "Terra Iridite",
 "material.gtceu.consecrated_chromite": "Consecrated Chromite",
 "material.gtceu.ambrotungstite": "Ambrotungstite",
 "material.gtceu.manaplatinite": "Manaplatinite",
@@ -73,6 +86,7 @@
 "tagprefix.mercury_stone": "Mercury %s Ore",
 "tagprefix.glacio_stone": "Glacio %s Ore",
 
+"block.gtceu.runic_forge": "Runic Forge",
 "block.gtceu.grand_enchanting_sanctum": "Grand Enchanting Sanctum",
 "block.gtceu.automated_mana_pond": "Mana Pond",
 "block.gtceu.imbuement_factory": "Imbuement Factory",

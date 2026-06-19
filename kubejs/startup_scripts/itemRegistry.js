@@ -57,8 +57,13 @@ StartupEvents.registry('item', event => {
     event.create('verdant_naquadah_boule')
     event.create('gaian_neutronium_boule')
 
+    event.create('gaia_flux_dust')
+
     event.create('pneuma_attuned_psimetal')
     event.create('mineral_flux_crystal')
+    event.create('ember_crystal')
+    event.create('hyaline_crystal')
+    event.create('aether_crystal')
 
     event.create('enchanted_zanite_gem')
     event.create('resonant_zanite_crystal')

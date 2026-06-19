@@ -22,6 +22,11 @@ ServerEvents.recipes(event => {
         [ma('nether'),          F,               [E, E],                        2000],
         [ma('obsidian'),        F,               [W, W],                        1500],
 
+        // Dimensional perception intermediates (synthesis-only, no seeds)
+        [ma('aether'),          A,               [A, A, A, ma('sky_stone')],                                              4000],
+        [ma('space'),           ma('end'),       [ma('aether'), ma('end'), A, A],                                         6000],
+        [ma('mana'),            ma('mystical_flower'), [ma('nature'), ma('nature'), 'botania:mana_pearl', 'botania:mana_pearl'], 5000],
+
         [ma('dirt'),            ma('nature'),    [E],                           1500],
         [ma('wood'),            ma('nature'),    [E, E, E],                     2000],
         [ma('rubber'),          ma('nature'),    [W, W],                        1500],
@@ -87,16 +92,16 @@ ServerEvents.recipes(event => {
         [ma('fluix'),           ma('certus_quartz'), [ma('nether_quartz'), W, W], 4000],
         [ma('uranium'),         ma('iron'),      [E, E, E, F, F, F],           5000],
         [ma('emerald'),         ma('deepslate'), [ma('nature'), ma('nature'), W, W], 4000],
-        [ma('diamond'),         ma('graphite'),  [F, F, F, F, F, F],           6000],
+        [ma('diamond'),         ma('graphite'),  [ma('graphite'), ma('graphite'), ma('coal'), ma('coal'), F, F],  6000],
 
-        [ma('chrome'),          ma('steel'),     [F, F, F, F],                  5000],
-        [ma('titanium'),        ma('steel'),     [A, A, A, A, F, F],            6000],
-        [ma('tungsten'),        ma('steel'),     [F, F, F, F, E, E],            6000],
-        [ma('platinum'),        ma('gold'),      [F, F, F, F, F],               6000],
-        [ma('mithril'),         ma('silver'),    [W, W, A, A],                  5000],
+        [ma('chrome'),          ma('steel'),     [ma('steel'), ma('steel'), F, F],                                        5000],
+        [ma('titanium'),        ma('steel'),     [ma('chrome'), ma('chrome'), A, A],                                      6000],
+        [ma('tungsten'),        ma('steel'),     [ma('titanium'), ma('titanium'), F, E],                                  6000],
+        [ma('platinum'),        ma('gold'),      [ma('tungsten'), ma('tungsten'), F, F],                                  6000],
+        [ma('mithril'),         ma('silver'),    [ma('mana'), ma('mana'), 'botania:mana_pearl', A],                       6000],
         [ma('experience'),      ma('diamond'),   [F, W, E, A, A, A],           8000],
         [ma('netherite'),       ma('diamond'),   [ma('soulium'), ma('soulium'), ma('nether_quartz'), ma('nether_quartz')], 8000],
-        [ma('iridium'),         ma('platinum'),  [F, F, F, F, F, F],           8000],
+        [ma('iridium'),         ma('platinum'),  [ma('platinum'), ma('platinum'), F, F, F],                               8000],
 
         [ma('manasteel'),       ma('silver'),    [ma('mithril'), ma('mithril'), 'gtceu:manasteel_plate'],                 10000],
         [ma('terrasteel'),      ma('manasteel'), [ma('manasteel'), ma('manasteel'), 'gtceu:terrasteel_plate'],             12000],
@@ -114,24 +119,24 @@ ServerEvents.recipes(event => {
         [ma('beryllium'),       ma('emerald'),   [A, A, A],                                                               3500],
         [ma('vanadium'),        ma('iron'),      [E, E, E, F],                                                            4000],
         [ma('thorium'),         ma('beryllium'), [E, E, F],                                                               4000],
-        [ma('neodymium'),       ma('iron'),      [A, A, A, A, ma('stone')],                                               5000],
-        [ma('palladium'),       ma('platinum'),  [F, F, F, ma('gold')],                                                   6000],
-        [ma('molybdenum'),      ma('steel'),     [F, F, F, F],                                                            5000],
+        [ma('neodymium'),       ma('iron'),      [A, A, A, A, ma('deepslate')],                                           5000],
+        [ma('palladium'),       ma('platinum'),  [ma('platinum'), F, F, ma('gold')],                                      6000],
+        [ma('molybdenum'),      ma('steel'),     [ma('titanium'), ma('titanium'), F, F],                                  5000],
         [ma('lithium'),         ma('end'),       [A, A, W],                                                               4000],
 
         // Aether ores
-        [ma('ambrosium'),       ma('glowstone'), [A, A, W, ma('limestone')],                                              3500],
-        [ma('zanite'),          ma('amethyst'),  [A, A, A, ma('stone')],                                                  3500],
+        [ma('ambrosium'),       ma('glowstone'), [ma('aether'), A, W, ma('limestone')],                                   3500],
+        [ma('zanite'),          ma('amethyst'),  [ma('aether'), A, A, A],                                                 3500],
         [ma('source'),          ma('amethyst'),  [W, W, A, A, ma('lapis_lazuli')],                                        4500],
-        [ma('gravitite'),       ma('iron'),      [A, A, A, A, ma('chrome')],                                              4500],
-        [ma('skyjade'),         ma('amethyst'),  [W, A, A, E, ma('zanite')],                                              4500],
-        [ma('veridium'),        ma('iron'),      [W, W, E, E, ma('cobalt')],                                              4500],
+        [ma('gravitite'),       ma('iron'),      [ma('aether'), ma('aether'), A, A, ma('chrome')],                        4500],
+        [ma('skyjade'),         ma('amethyst'),  [ma('aether'), W, A, E, ma('zanite')],                                   4500],
+        [ma('veridium'),        ma('iron'),      [ma('aether'), W, W, E, ma('cobalt')],                                   4500],
 
         // Space metals
-        [ma('desh'),            ma('nickel'),    [ma('steel'), ma('steel'), F, F],                                        5500],
-        [ma('ostrum'),          ma('steel'),     [ma('nickel'), ma('nickel'), F, F, F],                                   6000],
-        [ma('calorite'),        ma('titanium'),  [F, F, F, F, F, F],                                                     7500],
-        [ma('naquadah'),        ma('iridium'),   [ma('iridium'), ma('platinum'), F, F, F, F],                             10000],
+        [ma('desh'),            ma('nickel'),    [ma('space'), ma('steel'), F, F],                                        5500],
+        [ma('ostrum'),          ma('steel'),     [ma('space'), ma('space'), F, F],                                        6000],
+        [ma('calorite'),        ma('titanium'),  [ma('space'), ma('space'), F, F, F, F],                                  7500],
+        [ma('naquadah'),        ma('iridium'),   [ma('space'), ma('space'), ma('iridium'), ma('platinum'), F, F],          10000],
 
     ]
 
@@ -264,8 +269,7 @@ ServerEvents.recipes(event => {
 
     // Remove MA auto-generated essence->material recipes for everything we re-gate via EA
     metalEssenceToIngot.forEach(([_essence, material]) => {
-        const [ns, item] = material.split(':')
-        event.remove({ id: `mysticalagriculture:essence/${ns}/${item}` })
+        event.remove({ mod: 'mysticalagriculture', output: material })
     })
 
     metalEssenceToIngot.forEach(([essence, material, count, sourceCost]) => {
@@ -276,6 +280,24 @@ ServerEvents.recipes(event => {
             sourceCost: sourceCost
         })
     })
+
+    // Aether essence -> Aether blocks (mirrors nether/end essence pattern from base MA)
+    const AE = ma('aether')
+    const SP = ma('space')
+    event.shaped('24x aether:aether_dirt',        ['EEE', 'E E', 'EEE'], { E: AE })
+    event.shaped('20x aether:holystone',          ['EEE', 'EEE'],        { E: AE })
+    event.shaped('20x aether:aether_grass_block', ['EEE', 'ENE', 'EEE'], { E: AE, N: ma('nature') })
+    event.shaped('16x aether:icestone',           ['EEE', 'EIE', 'EEE'], { E: AE, I: ma('ice') })
+    event.shaped('12x aether:skyroot_log',        [' E ', ' W ', ' E '], { E: AE, W: ma('wood') })
+
+    // Space essence -> planet surface blocks
+    event.shaped('24x ad_astra:moon_stone',    ['EEE', 'E E', 'EEE'], { E: SP })
+    event.shaped('20x ad_astra:mars_stone',    ['EEE', 'EEE'],        { E: SP })
+    event.shaped('20x ad_astra:venus_stone',   ['EEE', 'EFE', 'EEE'], { E: SP, F: F })
+    event.shaped('20x ad_astra:glacio_stone',  ['EEE', 'EIE', 'EEE'], { E: SP, I: ma('ice') })
+    event.shaped('20x ad_astra:mercury_stone', ['EEE', 'ESE', 'EEE'], { E: SP, S: ma('stone') })
+    event.shaped('12x ad_astra:moon_sand',     ['EEE'],               { E: SP })
+    event.shaped('12x ad_astra:mars_sand',     [' E ', ' E ', ' E '], { E: SP })
 
     // GT material required to craft the seed — prevents farming a material to skip its GT processing gate
     const seedGates = {
@@ -335,9 +357,10 @@ ServerEvents.recipes(event => {
     seedessence.forEach(essence => {
         const seedId = essence.replace('_essence', '_seeds')
         const essenceName = essence.replace('mysticalagriculture:', '').replace('_essence', '')
-        const ingredients = []
-        for (let i = 0; i < 16; i++) ingredients.push({ item: essence })
         const gate = seedGates[essenceName]
+        const essenceCount = gate ? 15 : 16
+        const ingredients = []
+        for (let i = 0; i < essenceCount; i++) ingredients.push({ item: essence })
         if (gate) ingredients.push({ item: gate })
         event.custom({
             type: 'botania:petal_apothecary',

@@ -75,16 +75,16 @@ ServerEvents.recipes(event => {
     // total output 6000 mB from 10000 mB; remainder consumed in separation
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
         .inputFluids(Fluid.of('starbunclemania:source_fluid', 10000))
-        .outputFluids(Fluid.of('gtceu:phlogiston', 500))
-        .outputFluids(Fluid.of('gtceu:aqua_vitae', 1000))
-        .outputFluids(Fluid.of('gtceu:mineral_ichor', 1500))
-        .outputFluids(Fluid.of('gtceu:pneuma', 3000))
+        .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
+        .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
+        .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
+        .outputFluids(Fluid.of('gtceu:pneuma', 2000))
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     // elemental fluid → essence recovery
     // phlogiston: 50% roundtrip efficiency (2 fire_essence → 500 mB phlogiston → 1 fire_essence)
-    event.recipes.gtceu.chemical_reactor('phlogiston_to_fire_essence')
+    event.recipes.gtceu.centrifuge('phlogiston_to_fire_essence')
         .inputFluids(Fluid.of('gtceu:phlogiston', 500))
         .itemOutputs('1x mysticalagriculture:fire_essence')
         .duration(10 * 20)
@@ -104,12 +104,11 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // pneuma centrifuge: separates essence component from atmospheric gases as byproducts
+    // pneuma centrifuge: air essence separated from pneuma; remainder collapses back to air
     event.recipes.gtceu.centrifuge('pneuma_to_air_essence')
         .inputFluids(Fluid.of('gtceu:pneuma', 3000))
         .itemOutputs('1x mysticalagriculture:air_essence')
-        .outputFluids(Fluid.of('gtceu:helium', 1000))
-        .outputFluids(Fluid.of('gtceu:oxygen', 500))
+        .outputFluids(Fluid.of('gtceu:air', 1000))
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -123,14 +122,15 @@ ServerEvents.recipes(event => {
 
     // pneuma → source fluid: more efficient than inferium path, requires distillation chain
     event.recipes.gtceu.chemical_reactor('pneuma_to_source_fluid')
+        .itemInputs('4x mysticalagriculture:inferium_essence')
         .inputFluids(Fluid.of('gtceu:pneuma', 1000))
-        .outputFluids(Fluid.of('starbunclemania:source_fluid', 500))
+        .outputFluids(Fluid.of('starbunclemania:source_fluid', 2500))
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // mineral ichor alloy byproduct: alt mixer recipes with ichor produce chanced mineral_flux_crystal
-    // original recipes unchanged; these are new recipe IDs alongside them
-    event.recipes.gtceu.mixer('consecrated_chromite_with_ichor')
+    // mineral ichor alloy byproduct: chemical reactor (2 item output slots) instead of mixer
+    // original mixer recipes unchanged; these are new recipe IDs alongside them
+    event.recipes.gtceu.chemical_reactor('consecrated_chromite_with_ichor')
         .itemInputs('2x gtceu:holy_silver_dust', '1x gtceu:chromium_dust')
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
         .itemOutputs('3x gtceu:consecrated_chromite_dust')
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.mixer('ambrotungstite_with_ichor')
+    event.recipes.gtceu.chemical_reactor('ambrotungstite_with_ichor')
         .itemInputs('1x gtceu:holy_silver_dust', '2x gtceu:tungsten_dust')
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
         .itemOutputs('3x gtceu:ambrotungstite_dust')
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.mixer('manaplatinite_with_ichor')
+    event.recipes.gtceu.chemical_reactor('manaplatinite_with_ichor')
         .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:platinum_dust')
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
         .itemOutputs('3x gtceu:manaplatinite_dust')
@@ -171,6 +171,100 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:scheelite_dust', 2500, 0)
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // elemental crystal system — one crystallized form per elemental fluid (extends mineral_flux_crystal)
+    // production: chemical_reactor alternatives to centrifuge ore routes, chanced crystal byproduct
+
+    event.recipes.gtceu.chemical_reactor('chromite_phlogiston_crystal')
+        .itemInputs('1x gtceu:chromite_dust')
+        .inputFluids(Fluid.of('gtceu:phlogiston', 250))
+        .itemOutputs('1x gtceu:iron_dust', '3x gtceu:chromium_dust')
+        .chancedOutput('kubejs:ember_crystal', 3000, 0)
+        .duration(18 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor('ilmenite_aqua_vitae_crystal')
+        .itemInputs('5x gtceu:ilmenite_dust')
+        .inputFluids(Fluid.of('gtceu:aqua_vitae', 500))
+        .itemOutputs('2x gtceu:iron_dust', '2x gtceu:rutile_dust')
+        .chancedOutput('kubejs:hyaline_crystal', 3000, 0)
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('scheelite_pneuma_crystal')
+        .itemInputs('1x gtceu:scheelite_dust')
+        .inputFluids(Fluid.of('gtceu:pneuma', 250))
+        .itemOutputs('1x gtceu:calcium_dust', '1x gtceu:tungsten_dust')
+        .chancedOutput('kubejs:aether_crystal', 3000, 0)
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // fluid recovery at 50% loss (125 mB from 250 mB used in production)
+    event.recipes.gtceu.chemical_reactor('ember_crystal_to_phlogiston')
+        .itemInputs('1x kubejs:ember_crystal')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
+        .outputFluids(Fluid.of('gtceu:phlogiston', 125))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor('hyaline_crystal_to_aqua_vitae')
+        .itemInputs('1x kubejs:hyaline_crystal')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
+        .outputFluids(Fluid.of('gtceu:aqua_vitae', 125))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('aether_crystal_to_pneuma')
+        .itemInputs('1x kubejs:aether_crystal')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
+        .outputFluids(Fluid.of('gtceu:pneuma', 125))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // macerator crush for trace ore dusts (fire/water/air-adjacent minerals)
+    event.recipes.gtceu.macerator('ember_crystal_crush')
+        .itemInputs('1x kubejs:ember_crystal')
+        .chancedOutput('gtceu:chromite_dust', 2500, 0)
+        .chancedOutput('gtceu:pyrolusite_dust', 2500, 0)
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.macerator('hyaline_crystal_crush')
+        .itemInputs('1x kubejs:hyaline_crystal')
+        .chancedOutput('gtceu:calcium_dust', 2500, 0)
+        .chancedOutput('gtceu:calcite_dust', 2500, 0)
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.macerator('aether_crystal_crush')
+        .itemInputs('1x kubejs:aether_crystal')
+        .chancedOutput('gtceu:scheelite_dust', 2500, 0)
+        .chancedOutput('gtceu:tungsten_dust', 1000, 0)
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // bonus: ember crystal boosts phlogisticated fuel yield (1500 mB base → 2500 mB)
+    event.recipes.gtceu.mixer('phlogisticated_fuel_ember_boost')
+        .itemInputs('1x kubejs:ember_crystal')
+        .inputFluids(Fluid.of('gtceu:phlogiston', 500), Fluid.of('gtceu:heavy_fuel', 1000))
+        .outputFluids(Fluid.of('gtceu:phlogisticated_fuel', 2500))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // bonus: hyaline crystal boosts growth medium batch (5000 mB base → 6250 mB)
+    event.recipes.gtceu.mixer('aqua_vitae_growth_medium_hyaline')
+        .itemInputs(
+            '4x gtceu:meat_dust',
+            '4x gtceu:salt_dust',
+            '4x gtceu:calcium_dust',
+            '4x gtceu:agar_dust',
+            '1x kubejs:hyaline_crystal'
+        )
+        .inputFluids(Fluid.of('gtceu:mutagen', 4000), Fluid.of('gtceu:aqua_vitae', 1000))
+        .outputFluids(Fluid.of('gtceu:raw_growth_medium', 6250))
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     // elemental fluid ore processing routes
     // phlogiston biases existing chromite centrifuge: auto-gen gives 1 iron + 2 chromium + 4000 mB oxygen
@@ -277,6 +371,30 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
+    // prismarine shard mirrors the aqua_vitae_to_water_essence catalyst; salt is the ocean byproduct
+    event.recipes.gtceu.chemical_reactor('aqua_vitae_extraction')
+        .itemInputs('2x mysticalagriculture:water_essence', '1x minecraft:prismarine_shard')
+        .outputFluids(Fluid.of('gtceu:aqua_vitae', 500))
+        .itemOutputs('1x gtceu:salt_dust')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // clay mirrors the mineral_ichor_to_earth_essence catalyst; calcite is the mineral residue
+    event.recipes.gtceu.chemical_reactor('mineral_ichor_extraction')
+        .itemInputs('2x mysticalagriculture:earth_essence', '1x minecraft:clay_ball')
+        .outputFluids(Fluid.of('gtceu:mineral_ichor', 500))
+        .itemOutputs('1x gtceu:calcite_dust')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // feather as air-associated organic; ash mirrors phlogiston pattern
+    event.recipes.gtceu.chemical_reactor('pneuma_extraction')
+        .itemInputs('2x mysticalagriculture:air_essence', '1x minecraft:feather')
+        .outputFluids(Fluid.of('gtceu:pneuma', 500))
+        .itemOutputs('1x gtceu:ash_dust')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
     event.recipes.gtceu.mixer('phlogisticated_fuel_base')
         .inputFluids(Fluid.of('gtceu:phlogiston', 500), Fluid.of('gtceu:heavy_fuel', 1000))
         .outputFluids(Fluid.of('gtceu:phlogisticated_fuel', 1500))
@@ -374,6 +492,83 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // prima materia transmutation: philosopher's stone shortcut at EV tier
+    // each recipe is suboptimal vs the normal chain; worth it only for one-off bootstrapping
+    event.recipes.gtceu.chemical_reactor('prima_materia_to_osmium')
+        .itemInputs('1x gtceu:prima_materia_dust', '3x gtceu:platinum_dust')
+        .itemOutputs('1x gtceu:osmium_dust')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // ~70% of electrolyzer route but skips LV electrolyzer gate entirely
+    event.recipes.gtceu.chemical_reactor('prima_materia_to_aluminium')
+        .itemInputs('1x gtceu:prima_materia_dust', '5x gtceu:bauxite_dust')
+        .itemOutputs('2x gtceu:aluminium_dust')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // ~60% vs phlogiston-biased centrifuge; skips EBF chromium gate
+    event.recipes.gtceu.chemical_reactor('prima_materia_to_chromium')
+        .itemInputs('1x gtceu:prima_materia_dust', '2x gtceu:chromite_dust')
+        .itemOutputs('1x gtceu:chromium_dust')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // terrible ratio; useful only to bootstrap enriched naquadah before the processing line is built
+    event.recipes.gtceu.chemical_reactor('prima_materia_to_enriched_naquadah')
+        .itemInputs('1x gtceu:prima_materia_dust', '3x gtceu:naquadah_dust')
+        .itemOutputs('1x gtceu:enriched_naquadah_dust')
+        .duration(60 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // UV plasma line — stellar plasma fuel chain
+    // gates: gaia_spirit (UV/Sage) + boundless_naquadrite (UV superconductor) + full faefire/pneuma infrastructure
+
+    // step 1: gaia flux dust — double-gates the entire line behind UV tech and UV magic
+    event.recipes.gtceu.chemical_reactor('gaia_flux_dust_synthesis')
+        .itemInputs('1x gtceu:gaia_spirit_dust', '1x gtceu:boundless_naquadrite_dust', '1x gtceu:naquadria_dust')
+        .itemOutputs('3x kubejs:gaia_flux_dust')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 2: celestial concentrate — consumes faefire aerosol (ZPM chain output) and pneuma (EV chain output)
+    event.recipes.gtceu.chemical_reactor('celestial_concentrate_synthesis')
+        .itemInputs('1x kubejs:gaia_flux_dust')
+        .inputFluids(Fluid.of('gtceu:faefire_aerosol', 500), Fluid.of('gtceu:pneuma', 1000))
+        .outputFluids(Fluid.of('gtceu:celestial_concentrate', 1500))
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 3: void stellite dust — gaia flux as magic binder, cobalt+chromium as real stellite base
+    // auto-gen EBF (9000K) and vacuum freezer handled by GT material system from blastTemp definition
+    event.recipes.gtceu.mixer('void_stellite_dust_mix')
+        .itemInputs('4x kubejs:gaia_flux_dust', '2x gtceu:cobalt_dust', '2x gtceu:chromium_dust', '1x gtceu:neutronium_dust')
+        .itemOutputs('8x gtceu:void_stellite_dust')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 4: plasma agitation — void stellite dissolves into celestial concentrate to form plasma
+    event.recipes.gtceu.chemical_reactor('stellar_plasma_agitation')
+        .itemInputs('1x gtceu:void_stellite_ingot')
+        .inputFluids(Fluid.of('gtceu:celestial_concentrate', 1000))
+        .outputFluids(Fluid.of('gtceu:stellar_plasma_plasma', 2000))
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 5: purification — small gaia spirit dust recovery closes the loop slightly
+    event.recipes.gtceu.centrifuge('stellar_plasma_purification')
+        .inputFluids(Fluid.of('gtceu:stellar_plasma_plasma', 2000))
+        .outputFluids(Fluid.of('gtceu:refined_stellar_plasma', 1800))
+        .chancedOutput('gtceu:gaia_spirit_dust', 1000, 0)
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // step 6: plasma generator fuel — 1000 duration/mB vs americium 320, justifies the long chain
+    event.recipes.gtceu.plasma_generator('refined_stellar_plasma_fuel')
+        .inputFluids(Fluid.of('gtceu:refined_stellar_plasma', 1))
+        .duration(1000)
+        .EUt(-512)
 
     // blessed boule cutting recipes (all -> 48 wafers vs normal 32)
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')

@@ -410,6 +410,29 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.DULL)
         .flags(GTMaterialFlags.NO_SMELTING)
 
+    event.create('void_stellite')
+        .ingot()
+        .color(0x8B7FC8)
+        .secondaryColor(0x3A2A7A)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 2400)
+        .flags(
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_SMASHING
+        )
+
+    event.create('stellar_plasma')
+        .plasma()
+        .color(0xFFCF40)
+
+    event.create('celestial_concentrate')
+        .fluid()
+        .color(0x8844AA)
+
+    event.create('refined_stellar_plasma')
+        .fluid()
+        .color(0xFFE8A0)
+
     event.create('phlogiston')
         .fluid()
         .color(0xFF5500)

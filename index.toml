@@ -53,6 +53,10 @@ file = "config/mysticalagriculture-common.toml"
 hash = "d95ea351ec5784f2c0cd3bee151d81ac746fb139d35f7101db48b1a79f5e6098"
 
 [[files]]
+file = "config/mysticalcustomization/crops/aether.json"
+hash = "36eb15c8d4c23639b1f2c082b0e721c518ffa2c78dd7d0e9b808d0b8ca9e0cbd"
+
+[[files]]
 file = "config/mysticalcustomization/crops/ambrosium.json"
 hash = "7dfe0d7fa171c79fc6fbd69f323339876498537f89a0b404cff257d649b7e6b3"
 
@@ -93,6 +97,10 @@ file = "config/mysticalcustomization/crops/luminessence.json"
 hash = "2da69bf75831c26c1f3eba075e56ea2d43293e61de667e22711f92d33aec183c"
 
 [[files]]
+file = "config/mysticalcustomization/crops/mana.json"
+hash = "9f9613fc65509c1020bb7149ebf7afc0ae98808801a3aba5ba37e27f909478da"
+
+[[files]]
 file = "config/mysticalcustomization/crops/manganese.json"
 hash = "ea940f1a0c3dc2057d1d4a1ec844c51e771b3dfef69730cecaf63aac55a080e1"
 
@@ -123,6 +131,10 @@ hash = "8474dac59172aae6c346677f5c99d420fe96b3b839a28f5ead3eb31c6099e83b"
 [[files]]
 file = "config/mysticalcustomization/crops/source.json"
 hash = "7ccb15691fcf3e60d78df0da2e37dc11415ccc1dd6a38a4a91df62ce7cdfcd48"
+
+[[files]]
+file = "config/mysticalcustomization/crops/space.json"
+hash = "2d690189d6bbead3f3eb10b6330fe5f8464e99e8002a96aea7ee9aca6a612f8a"
 
 [[files]]
 file = "config/mysticalcustomization/crops/thorium.json"
@@ -814,11 +826,11 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "22293bb4139faa49ecec40b22f91cc5478778fd269a4081c94d8da8da181ba0e"
+hash = "0ee7ecd97402b05e47db138487820e3de2e13fb92567ddd6c09582c48e19b7a2"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "3728a77f26e823b1ecb66d35ef1e6e01ae0589c3e6a376da070855b23ac7e72f"
+hash = "6f2a034d599fec7aa81e2fdf79f291996ea811f9442ff633a86e3068960d5be6"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -1674,7 +1686,7 @@ hash = "b994f624f266fe2d306eac100f8138c5564f4c0d3ac98d4cde4f68e761c41f9b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "b3aa34e27889d14c7384fbe9b30f7bb44648188e1a2ab07bdbfc02c3f53e2fe6"
+hash = "514c5a4bd7ea658248498d9a3f2b077bf327f7ce5a6af594ebaaa68fb79d935d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -1822,7 +1834,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "595c8201415889453cb1e35b6dc2ea9b219cb6117107a1520bb1692e51a8dd89"
+hash = "5bb0943c23527d574b3500ac10ffe793b78bdba80a49bf3c1fc24f83b8257c02"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1906,7 +1918,7 @@ hash = "a8be40db4ee3eca1dee3659d238bbd97c831a2849a2d182431d3d21a31681679"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "ba3b72bdcb1ae7c3b65955d577c2a39c6ac369f93c85b4fc8e4666724d38ee8a"
+hash = "227f9a3e3d2b714c6d2801c526283c719b13c391131316928989a03c03293f2c"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -1914,7 +1926,7 @@ hash = "dbd25518bbeac9d11b85f1a030a0893f96c1b40a7f22e560b375a01cfb303475"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "4ac80792ed8e40984bf1781acc87be523b2436c0e769c4677faf5151e1a49d8c"
+hash = "ccd81ee27ea3deb7c5a97f6844563c751734653dec351570872df3ebe17d78dc"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

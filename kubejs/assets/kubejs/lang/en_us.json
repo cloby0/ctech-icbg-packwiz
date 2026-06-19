@@ -24,7 +24,40 @@
   "item.kubejs.soul_of_gaia": "Soul of Gaia",
   "item.kubejs.boundless_gaia_spirit_ingot": "Boundless Gaia Spirit Ingot",
 
+  "item.kubejs.gaian_blood_core": "Gaian Blood Core",
+  "item.kubejs.gaian_holy_core": "Gaian Holy Core",
+  "item.kubejs.gaian_void_core": "Gaian Void Core",
+  "item.kubejs.gaian_annihilation_core": "Gaian Annihilation Core",
+
+  "item.kubejs.magical_receiver": "Magical Receiver",
   "item.kubejs.matter_energy_circuit": "Matter-Energy Circuit",
+
+  "item.kubejs.hallowed_silicon_boule": "Hallowed Silicon Boule",
+  "item.kubejs.primal_phosphorus_boule": "Primal Phosphorus Boule",
+  "item.kubejs.verdant_naquadah_boule": "Verdant Naquadah Boule",
+  "item.kubejs.gaian_neutronium_boule": "Gaian Neutronium Boule",
+
+  "item.kubejs.pneuma_attuned_psimetal": "Pneuma-Attuned Psimetal",
+  "item.kubejs.mineral_flux_crystal": "Mineral Flux Crystal",
+
+  "item.kubejs.enchanted_zanite_gem": "Enchanted Zanite Gem",
+  "item.kubejs.resonant_zanite_crystal": "Resonant Zanite Crystal",
+  "item.kubejs.sanctified_ambrosium_bloom": "Sanctified Ambrosium Bloom",
+  "item.kubejs.sacred_ambrosium_shard": "Sacred Ambrosium Shard",
+  "item.kubejs.frozen_raw_gravitite": "Frozen Raw Gravitite",
+  "item.kubejs.altar_charged_gravitite": "Altar-Charged Gravitite",
+
+  "item.kubejs.latent_psi_crystal": "Latent Psi Crystal",
+  "item.kubejs.hexed_amethyst_core": "Hexed Amethyst Core",
+  "item.kubejs.hexed_mana_matrix": "Hexed Mana Matrix",
+  "item.kubejs.elven_source_lattice": "Elven Source Lattice",
+  "item.kubejs.rune_of_frost": "Rune of Frost",
+
+  "item.kubejs.cannon_mechanism": "Cannon Mechanism",
+
+  "item.kubejs.primordial_organic_muck": "Primordial Organic Muck",
+  "item.kubejs.kerogen": "Kerogen",
+  "item.kubejs.crude_petroleum_mass": "Crude Petroleum Mass",
 
   "item.kubejs.condensed_desh_carbonyl": "Condensed Desh Carbonyl",
 
@@ -32,6 +65,29 @@
   "item.kubejs.rocket_combustion_engine": "Rocket Combustion Engine",
   "item.kubejs.pressurized_rocket_tank": "Pressurized Rocket Tank",
   "item.kubejs.rocket_guidance_module": "Rocket Guidance Module",
+
+  "item.kubejs.desh_hull_section": "Desh Hull Section",
+  "item.kubejs.mars_rocket_engine": "Mars Rocket Engine",
+  "item.kubejs.mars_propellant_tank": "Mars Propellant Tank",
+  "item.kubejs.mars_guidance_module": "Mars Guidance Module",
+
+  "item.kubejs.ostrum_perchlorate_mass": "Ostrum Perchlorate Mass",
+  "item.kubejs.ostrum_carbonate_precipitate": "Ostrum Carbonate Precipitate",
+  "item.kubejs.crude_ostrum_fluoride": "Crude Ostrum Fluoride",
+  "item.kubejs.raw_ostrum_sponge": "Raw Ostrum Sponge",
+  "item.kubejs.ostrum_hull_section": "Ostrum Hull Section",
+  "item.kubejs.glacio_rocket_engine": "Glacio Rocket Engine",
+  "item.kubejs.glacio_propellant_tank": "Glacio Propellant Tank",
+  "item.kubejs.glacio_guidance_module": "Glacio Guidance Module",
+
+  "item.kubejs.calorite_sulfate_slag": "Calorite Sulfate Slag",
+  "item.kubejs.calorite_chloride_melt": "Calorite Chloride Melt",
+  "item.kubejs.calorite_fluoride_precipitate": "Calorite Fluoride Precipitate",
+  "item.kubejs.raw_calorite_sponge": "Raw Calorite Sponge",
+  "item.kubejs.calorite_hull_section": "Calorite Hull Section",
+  "item.kubejs.venus_rocket_engine": "Venus Rocket Engine",
+  "item.kubejs.venus_propellant_tank": "Venus Propellant Tank",
+  "item.kubejs.venus_guidance_module": "Venus Guidance Module",
 
   "item.kubejs.lv_pistol_frame": "LV Pistol Frame",
   "item.kubejs.mv_pistol_frame": "MV Pistol Frame",
@@ -81,6 +137,11 @@
   "item.kubejs.ev_long_barrel": "EV Long Barrel",
   "item.kubejs.iv_long_barrel": "IV Long Barrel",
   "item.kubejs.luv_long_barrel": "LuV Long Barrel",
+
+  "item.kubejs.gaia_flux_dust": "Gaia Flux Dust",
+  "item.kubejs.ember_crystal": "Ember Crystal",
+  "item.kubejs.hyaline_crystal": "Hyaline Crystal",
+  "item.kubejs.aether_crystal": "Aether Crystal",
 
   "item.kubejs.lv_gun_fire_control": "LV Gun Fire Control",
   "item.kubejs.mv_gun_fire_control": "MV Gun Fire Control",
