@@ -34,7 +34,7 @@ hash = "3022e89e1c7fca4d9860cad623c33fb7d5411d103bcb4dee17cca8270d71e6c3"
 
 [[files]]
 file = "config/gtceu.yaml"
-hash = "6218a0e4b0232560511478652b6841b5779d4cf87c3970d6b515f57bd5c8d864"
+hash = "9df8863f067bd40adfccdc06b75143d3b6b8f81c73d497296ef194b3d06f9a61"
 
 [[files]]
 file = "config/infernalmobs.cfg"
@@ -1610,7 +1610,7 @@ hash = "8afc35bceb9f4ff51de6acbecfa592ff598a9e15a7630b44b0cfa49aacd6a862"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
-hash = "0b82fd4d42104d6fcd33bae72cf02474201b05494a13bfe395aaa33f20b7677a"
+hash = "3243cfe0ae15aa589cf5e84fa252d4bdeb59bdbdb096a539641b85bcafc37058"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arsArmorer.js"
@@ -1642,7 +1642,7 @@ hash = "00da35e5c7cbdda8576b30e245f69de40bce2634cd55b19dfbaea721044abb6c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "c993580f906256436c9fe6585e6825da04732457d1095a395a50493364e3628f"
+hash = "871748e4fb4a7144b7c7677aa231823d3dd41915f322dce8441ca33ccdfb6b78"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
@@ -1690,7 +1690,7 @@ hash = "514c5a4bd7ea658248498d9a3f2b077bf327f7ce5a6af594ebaaa68fb79d935d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
-hash = "4a60463c42e66073a1f82ea4061d23f346217d5057dbf541e5608ea0375cdd73"
+hash = "09010f81f398aa4ef9efc8c856d8b6c46662f1af6e6b6e03d89dbcd10677d52f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
@@ -1702,7 +1702,7 @@ hash = "a84f2d4718409e534002938d2f95b9ac5731758018d634e92712ecc854fb5f93"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "809f93cdd338517c98f4e37716eba69cee0eda8fd145a06cac04a8cb9856064a"
+hash = "034cbf002127cb77c7e96e89940d936c31b577bb69524de74050cb2bd6c9b03e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -1710,7 +1710,7 @@ hash = "48b48d6f9387562e287e0bd3ef8c30fcab98b5f0c66d43c3d1c140d1d21747fd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
-hash = "7cb36239b862033d16d970e918739f20843bda85755ea7663659b5bf803bad92"
+hash = "1338346800a1d72722438c3ee095309f06daae1869d7986c75e1066ef546c3ed"
 
 [[files]]
 file = "kubejs/server_scripts/magic/tooManyBows.js"
@@ -1742,7 +1742,7 @@ hash = "ba8175657211c5ffe766aa7fe71c054da11e1daeb0267aa7180d461ce496d14c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
-hash = "b6ecbc752aa68ea1f29b744aa9b478fa0447b0fb4a4ca51fe6427af25d43b42c"
+hash = "14d13bc30e61f92a0a532aa5ccf316aeca426581126f4eb1d088bef495b7a3d9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
@@ -1802,7 +1802,7 @@ hash = "70ac518116c722fe3c741ac2d9ad72377eacc3251d799fa96683a42d29918b3a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ivAndVenus.js"
-hash = "2af2fef6ebd65085805a5f79e964c2b2b49341275a79e6929c15566585259942"
+hash = "e5e398fb62fabf4ea74dcb0b53c7fdc582872184d08489f5dd51b8b7d2c1d1fe"
 
 [[files]]
 file = "kubejs/server_scripts/tech/laserio.js"
@@ -1810,7 +1810,7 @@ hash = "257baaf730da41cbbce753c22dbd78792f9bd03de1a58d71ae2c82a0a33b8adb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/legendarySurvivalOverhaul.js"
-hash = "ff82368c318fddde03ffb20c5a8ba4ecfef1451c9f7fccd60ec78fcad9d38f8c"
+hash = "88b6a0fe22f38ca8459779f6f5581c5ed4704489b61e7d1b621398f78eec60d0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
@@ -1826,7 +1826,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "df552e914a94b5c4e2de0347de6b20ef27dbfc6718f722c18979c8678246a470"
+hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -1834,7 +1834,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "d2867097c7a00b4a0168b3d1611efe47cda1a6de15832a4adc45e216817ab81d"
+hash = "e42ce6960d69b97f5eae9a83f2c9bbaf2da0f5b3b6793df73f7f2a5b5cab2985"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1882,7 +1882,7 @@ hash = "a45cb68e4799c29c08978c76eaa58f642ed5a087046fea7a108b83a077d96763"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "cfb2c45e9164188770280696fb48d68f20fbc1267df886af35de2a4897b1c9b2"
+hash = "33e58ee57c8c5b04c694027b8790301e9db317e46fc866afb36bdcbf8eb56ca9"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -1910,7 +1910,7 @@ hash = "01d8dd72b45545807432e567527b5ad4de7dad0d91245031f659ce4ff15847f0"
 
 [[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
-hash = "79cff4c7fbaa6196dc4a05877cc7324976f2cc6a1aadb36844d6d3c9b25686d0"
+hash = "153e1198f2ed839060c7de4423e21f496e0c8819cb67816c5f5b11da4493ba9a"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
@@ -2210,6 +2210,11 @@ hash = "008c942efc2e2ec221dd1a760b4a50e2f24ede37747731ba794f5e845554adcb"
 metafile = true
 
 [[files]]
+file = "mods/brandons-core.pw.toml"
+hash = "dcfcb5a0d4132f1baa0f66e824531d1bbcb77c1b7ca2b5d3497514e233564dd8"
+metafile = true
+
+[[files]]
 file = "mods/building-gadgets.pw.toml"
 hash = "528a5c2d50126e1b2906b47449b40a996fce3b4a50b9a0460533f2b7b74f5c99"
 metafile = true
@@ -2445,6 +2450,11 @@ metafile = true
 [[files]]
 file = "mods/doespotatotick.pw.toml"
 hash = "b1c17405d4c3cf5b461cc9b71ae7436c1e2d313c59ee5f1a9c2a9e220158f3f7"
+metafile = true
+
+[[files]]
+file = "mods/draconic-evolution.pw.toml"
+hash = "2ded5af656d072e9d4f33fa02687639b7fe3d3bcd289cd0d161299d7c6d117df"
 metafile = true
 
 [[files]]

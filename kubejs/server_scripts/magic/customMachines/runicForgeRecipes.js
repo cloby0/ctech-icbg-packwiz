@@ -1,6 +1,6 @@
 //priority: -1
-// runs after tier scripts (priority 0) so forEachRecipe catches vanilla AND custom runic_altar/terra_plate recipes
-// (thaumaturge.js removes vanilla terrasteel and adds living_metalloid variants before this runs)
+// forEachRecipe only sees vanilla/mod recipes — KubeJS-added recipes are invisible regardless of priority.
+// tier scripts must call addRunicAltarRecipe / addTerraPlateRecipe to get both the altar and the forge mirror.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
 
@@ -55,6 +55,70 @@ function resolveRunicIngredient(ing, debugLabel) {
     console.warn(`[runic_forge] unrecognised ingredient shape at ${debugLabel}: ${JSON.stringify(ing)}`)
     return null
 }
+
+function addRunicAltarRecipe(event, crecipe) {
+    const LuV_EU = GTValues.VA[GTValues.LuV]
+    const index = _nextRunicIndex++
+    const output = crecipe.output
+    const outputId = typeof output === 'string' ? output : output.item
+    const outputCount = output.count || 1
+    const mana = crecipe.mana || 0
+    const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
+
+    event.custom({
+        type: 'botania:runic_altar',
+        ingredients: crecipe.ingredients,
+        mana: mana,
+        output: output
+    }).id('kubejs:runic_altar_' + safeId + '_' + index)
+
+    const itemInputs = []
+    for (let i = 0; i < crecipe.ingredients.length; i++) {
+        let resolved = resolveRunicIngredient(crecipe.ingredients[i], outputId + '[' + i + ']')
+        if (resolved) itemInputs.push(resolved)
+    }
+
+    const gt = event.recipes.gtceu.runic_forge('runic_forge/' + safeId + '_' + index)
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+        .itemOutputs(outputCount + 'x ' + outputId)
+        .duration(manaToTicks(mana))
+        .EUt(LuV_EU)
+    itemInputs.forEach(input => gt.itemInputs(input))
+}
+
+function addTerraPlateRecipe(event, crecipe) {
+    const LuV_EU = GTValues.VA[GTValues.LuV]
+    const index = _nextRunicIndex++
+    const result = crecipe.result
+    const outputId = typeof result === 'string' ? result : result.item
+    const outputCount = result.count || 1
+    const mana = crecipe.mana || 0
+    const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
+
+    event.custom({
+        type: 'botania:terra_plate',
+        ingredients: crecipe.ingredients,
+        mana: mana,
+        result: result
+    }).id('kubejs:terra_plate_' + safeId + '_' + index)
+
+    const itemInputs = []
+    for (let i = 0; i < crecipe.ingredients.length; i++) {
+        let resolved = resolveRunicIngredient(crecipe.ingredients[i], outputId + '[' + i + ']')
+        if (resolved) itemInputs.push(resolved)
+    }
+
+    const duration = mana >= 1000000 ? 1200 : 600
+    const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+        .itemOutputs(outputCount + 'x ' + outputId)
+        .duration(duration)
+        .EUt(LuV_EU)
+    itemInputs.forEach(input => gt.itemInputs(input))
+}
+
+global.addRunicAltarRecipe = addRunicAltarRecipe
+global.addTerraPlateRecipe = addTerraPlateRecipe
 
 ServerEvents.recipes(event => {
 

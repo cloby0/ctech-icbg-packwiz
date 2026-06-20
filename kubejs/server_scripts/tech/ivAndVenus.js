@@ -10,8 +10,6 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 500))
         .itemOutputs('1x kubejs:calorite_sulfate_slag')
         .chancedOutput('gtceu:small_chromium_dust', 5000, 0)
-        .chancedOutput('gtceu:small_vanadium_dust', 3500, 200)
-        .chancedOutput('gtceu:small_magnesium_dust', 2000, 150)
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 

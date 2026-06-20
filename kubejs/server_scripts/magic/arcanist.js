@@ -4,23 +4,19 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/pixie_dust' })
     event.remove({ id: 'botania:elven_trade/dragonstone' })
 
-    event.custom({
-        "type": "botania:runic_altar",
-        "ingredients": [
-            { "item": "gtceu:terrasteel_bolt" },
-            { "item": "gtceu:terrasteel_bolt" },
-            { "item": "gtceu:terrasteel_bolt" },
-            { "item": "gtceu:terrasteel_bolt" },
-            { "item": "botania:rune_air" },
-            { "item": "botania:rune_spring" },
-            { "item": "botania:rune_summer" },
-            { "item": "botania:rune_autumn" }
-        ],
-        "mana": 8000,
-        "output": {
-            "count": 3,
-            "item": "kubejs:weak_elementium_dust"
-        }
+    addRunicAltarRecipe(event, {
+        output: { count: 3, item: 'kubejs:weak_elementium_dust' },
+        mana: 8000,
+        ingredients: [
+            { item: 'gtceu:terrasteel_bolt' },
+            { item: 'gtceu:terrasteel_bolt' },
+            { item: 'gtceu:terrasteel_bolt' },
+            { item: 'gtceu:terrasteel_bolt' },
+            { item: 'botania:rune_air' },
+            { item: 'botania:rune_spring' },
+            { item: 'botania:rune_summer' },
+            { item: 'botania:rune_autumn' }
+        ]
     })
 
     event.custom({

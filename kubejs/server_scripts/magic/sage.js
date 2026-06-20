@@ -1,21 +1,18 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'mysticalagradditions:essence/gaia_spirit' })
 
-    event.custom({
-        "type": "botania:runic_altar",
-        "ingredients": [
-            { "item": "botania:life_essence" },
-            { "item": "botania:rune_wrath" },
-            { "item": "botania:rune_pride" },
-            { "item": "gtceu:elementium_bolt" },
-            { "item": "gtceu:elementium_bolt" },
-            { "item": "gtceu:elementium_bolt" },
-            { "item": "gtceu:elementium_bolt" }
-        ],
-        "mana": 8000,
-        "output": {
-            "item": "kubejs:vengeful_gaia_spirit"
-        }
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:vengeful_gaia_spirit' },
+        mana: 8000,
+        ingredients: [
+            { item: 'botania:life_essence' },
+            { item: 'botania:rune_wrath' },
+            { item: 'botania:rune_pride' },
+            { item: 'gtceu:elementium_bolt' },
+            { item: 'gtceu:elementium_bolt' },
+            { item: 'gtceu:elementium_bolt' },
+            { item: 'gtceu:elementium_bolt' }
+        ]
     })
 
     addImbuementRecipe(event, {
@@ -159,14 +156,13 @@ ServerEvents.recipes(event => {
         sourceCost: 40000
     })
 
-    event.custom({
-        "type": "botania:terra_plate",
-        "ingredients": [
-            { "item": "kubejs:boundless_gaia_spirit_ingot" },
-            { "item": "botania:terrasteel_block" },
-            { "item": "botania:terrasteel_block" }
-        ],
-        "mana": 1000000,
-        "result": { "item": "botania:gaia_ingot" }
+    addTerraPlateRecipe(event, {
+        result: { item: 'botania:gaia_ingot' },
+        mana: 1000000,
+        ingredients: [
+            { item: 'kubejs:boundless_gaia_spirit_ingot' },
+            { item: 'botania:terrasteel_block' },
+            { item: 'botania:terrasteel_block' }
+        ]
     })
 })

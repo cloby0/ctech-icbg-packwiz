@@ -16,30 +16,16 @@ ServerEvents.recipes(event => {
             D: 'gtceu:manasteel_bolt'
         }
     )
-    event.custom({
-        "type": "botania:runic_altar",
-        "ingredients": [
-            {
-            "item": "gtceu:manasteel_bolt"
-            },
-            {
-            "item": "botania:rune_earth"
-            },
-            {
-            "item": "botania:rune_water"
-            },
-            {
-            "item": "botania:rune_mana"
-            },
-            {
-            "item": "botania:rune_spring"
-            }
-        ],
-        "mana": 5200,
-        "output": {
-            "count": 1,
-            "item": "kubejs:florid_compound"
-        }
+    addRunicAltarRecipe(event, {
+        output: { count: 1, item: 'kubejs:florid_compound' },
+        mana: 5200,
+        ingredients: [
+            { item: 'gtceu:manasteel_bolt' },
+            { item: 'botania:rune_earth' },
+            { item: 'botania:rune_water' },
+            { item: 'botania:rune_mana' },
+            { item: 'botania:rune_spring' }
+        ]
     })
     addEnchantingRecipe(event, {
         reagent: 'kubejs:florid_compound',
@@ -49,17 +35,14 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: "botania:terra_plate/terrasteel_ingot" })
-    event.custom({
-        "type": "botania:terra_plate",
-        "ingredients": [
-            {"item": "kubejs:living_metalloid"},
-            {"item": "botania:mana_pearl"},
-            {"item": "botania:mana_diamond"}
-        ],
-        "mana": 500000,
-        "result": {
-            "item": "botania:terrasteel_ingot"
-        }
+    addTerraPlateRecipe(event, {
+        result: { item: 'botania:terrasteel_ingot' },
+        mana: 500000,
+        ingredients: [
+            { item: 'kubejs:living_metalloid' },
+            { item: 'botania:mana_pearl' },
+            { item: 'botania:mana_diamond' }
+        ]
     })
 
     // synthesis alt for reliquary:fertile_essence — avoids 2% rare mob drop grind
@@ -77,41 +60,33 @@ ServerEvents.recipes(event => {
     // rune_of_frost: glacio-forged runic catalyst
     // requires manasteel (Alchemist), naquadah (Glacio), ice shard (Glacio), source gem (Journeyman)
     // higher mana cost reflects cryo-crystallization process
-    event.custom({
-        "type": "botania:runic_altar",
-        "ingredients": [
-            {"item": "gtceu:manasteel_bolt"},
-            {"item": "ad_astra:ice_shard"},
-            {"item": "ad_astra:ice_shard"},
-            {"item": "ad_astra:ice_shard"},
-            {"item": "ad_astra:ice_shard"},
-            {"item": "gtceu:naquadah_dust"},
-            {"item": "gtceu:naquadah_dust"},
-            {"item": "ars_nouveau:source_gem"}
-        ],
-        "mana": 25000,
-        "output": {
-            "count": 1,
-            "item": "kubejs:rune_of_frost"
-        }
+    addRunicAltarRecipe(event, {
+        output: { count: 1, item: 'kubejs:rune_of_frost' },
+        mana: 25000,
+        ingredients: [
+            { item: 'gtceu:manasteel_bolt' },
+            { item: 'ad_astra:ice_shard' },
+            { item: 'ad_astra:ice_shard' },
+            { item: 'ad_astra:ice_shard' },
+            { item: 'ad_astra:ice_shard' },
+            { item: 'gtceu:naquadah_dust' },
+            { item: 'gtceu:naquadah_dust' },
+            { item: 'ars_nouveau:source_gem' }
+        ]
     })
 
     // frost-enhanced terrasteel; rune_of_frost added to TAP alongside normal inputs
     // cryo resonance concentrates the mana field; 3x yield for 3x mana cost
     // requires Glacio access to craft the rune — hybridized player reward
-    event.custom({
-        "type": "botania:terra_plate",
-        "ingredients": [
-            {"item": "kubejs:living_metalloid"},
-            {"item": "botania:mana_pearl"},
-            {"item": "botania:mana_diamond"},
-            {"item": "kubejs:rune_of_frost"}
-        ],
-        "mana": 1500000,
-        "result": {
-            "count": 3,
-            "item": "botania:terrasteel_ingot"
-        }
+    addTerraPlateRecipe(event, {
+        result: { count: 3, item: 'botania:terrasteel_ingot' },
+        mana: 1500000,
+        ingredients: [
+            { item: 'kubejs:living_metalloid' },
+            { item: 'botania:mana_pearl' },
+            { item: 'botania:mana_diamond' },
+            { item: 'kubejs:rune_of_frost' }
+        ]
     })
 
     // 4x source gem per raw at Thaumaturge tier

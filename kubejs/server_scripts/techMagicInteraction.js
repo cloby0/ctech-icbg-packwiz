@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('chromite_phlogiston_crystal')
         .itemInputs('1x gtceu:chromite_dust')
         .inputFluids(Fluid.of('gtceu:phlogiston', 250))
-        .itemOutputs('1x gtceu:iron_dust', '3x gtceu:chromium_dust')
+        .itemOutputs('3x gtceu:chromium_dust')
         .chancedOutput('kubejs:ember_crystal', 3000, 0)
         .duration(18 * 20)
         .EUt(GTValues.VA[GTValues.MV])
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('ilmenite_aqua_vitae_crystal')
         .itemInputs('5x gtceu:ilmenite_dust')
         .inputFluids(Fluid.of('gtceu:aqua_vitae', 500))
-        .itemOutputs('2x gtceu:iron_dust', '2x gtceu:rutile_dust')
+        .itemOutputs('2x gtceu:rutile_dust')
         .chancedOutput('kubejs:hyaline_crystal', 3000, 0)
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('scheelite_pneuma_crystal')
         .itemInputs('1x gtceu:scheelite_dust')
         .inputFluids(Fluid.of('gtceu:pneuma', 250))
-        .itemOutputs('1x gtceu:calcium_dust', '1x gtceu:tungsten_dust')
+        .itemOutputs('1x gtceu:tungsten_dust')
         .chancedOutput('kubejs:aether_crystal', 3000, 0)
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
@@ -447,36 +447,36 @@ ServerEvents.recipes(event => {
         .EUt(-32)
 
     // silicon boule + holy silver -> 32 silicon wafers (vs vanilla 16)
-    event.recipes.ars_nouveau.imbuement(
-        'gtceu:silicon_boule',
-        'kubejs:hallowed_silicon_boule',
-        2000,
-        ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
-    )
+    addImbuementRecipe(event, {
+        input: 'gtceu:silicon_boule',
+        output: 'kubejs:hallowed_silicon_boule',
+        source: 2000,
+        pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
+    })
 
     // phosphorus boule + prima materia -> 64 phosphorus wafers (vs vanilla 32)
-    event.recipes.ars_nouveau.imbuement(
-        'gtceu:phosphorus_boule',
-        'kubejs:primal_phosphorus_boule',
-        4000,
-        ['gtceu:prima_materia_dust']
-    )
+    addImbuementRecipe(event, {
+        input: 'gtceu:phosphorus_boule',
+        output: 'kubejs:primal_phosphorus_boule',
+        source: 4000,
+        pedestalItems: ['gtceu:prima_materia_dust']
+    })
 
     // naquadah boule + terrasteel -> 128 naquadah wafers (vs vanilla 64)
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ['botania:terrasteel_ingot', 'botania:terrasteel_ingot'],
-        'gtceu:naquadah_boule',
-        'kubejs:verdant_naquadah_boule',
-        6000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'gtceu:naquadah_boule',
+        pedestalItems: ['botania:terrasteel_ingot', 'botania:terrasteel_ingot'],
+        output: 'kubejs:verdant_naquadah_boule',
+        sourceCost: 6000
+    })
 
     // neutronium boule + gaia spirit -> 192 neutronium wafers (vs vanilla 96)
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ['botania:gaia_ingot'],
-        'gtceu:neutronium_boule',
-        'kubejs:gaian_neutronium_boule',
-        10000
-    )
+    addEnchantingRecipe(event, {
+        reagent: 'gtceu:neutronium_boule',
+        pedestalItems: ['botania:gaia_ingot'],
+        output: 'kubejs:gaian_neutronium_boule',
+        sourceCost: 10000
+    })
 
     // aqua vitae growth medium: replaces vitalized_culture_medium synergy with direct fluid input
     // same +25% output vs vanilla recipe (4000 mB → 5000 mB); aqua vitae replaces the magic intermediate
@@ -604,12 +604,11 @@ ServerEvents.recipes(event => {
 
     // water nucleus — Botania Mana Pool (alchemy catalyst); boss gate: lacrima (Cataclysm ocean boss)
     // 50000 mana: requires serious mana infrastructure even before the 15M TAP
-    event.custom({
-        "type": "botania:mana_infusion",
-        "input": { "item": "cataclysm:lacrima" },
-        "mana": 50000,
-        "output": { "item": "kubejs:water_nucleus" },
-        "catalyst": { "type": "block", "block": "botania:alchemy_catalyst" }
+    addManaPondRecipe(event, {
+        mana: 50000,
+        input: { item: 'cataclysm:lacrima' },
+        output: { item: 'kubejs:water_nucleus' },
+        catalyst: { block: 'botania:alchemy_catalyst' }
     })
 
     // earth nucleus — GT Mixer; boss gate: ancient_metal_ingot (Ancient Remnant boss, Cataclysm)
@@ -627,11 +626,11 @@ ServerEvents.recipes(event => {
 
     // air nucleus — Ars Nouveau Imbuement Chamber; boss gate: essence_of_the_storm (Storm boss, Cataclysm)
     // aether_crystal: existing IV air crystal from scheelite + pneuma; naquadah: Glacio gate
-    event.recipes.ars_nouveau.imbuement(
-        'cataclysm:essence_of_the_storm',
-        'kubejs:air_nucleus',
-        12000,
-        [
+    addImbuementRecipe(event, {
+        input: 'cataclysm:essence_of_the_storm',
+        output: 'kubejs:air_nucleus',
+        source: 12000,
+        pedestalItems: [
             'kubejs:aether_crystal',
             'kubejs:aether_crystal',
             'mysticalagriculture:air_essence',
@@ -639,7 +638,7 @@ ServerEvents.recipes(event => {
             'gtceu:naquadah_dust',
             'gtceu:naquadah_dust'
         ]
-    )
+    })
 
     // step 2: seminal void precursor — cum carries void stellite and naquadria as a biological vector
     event.recipes.gtceu.chemical_reactor('seminal_void_precursor_synthesis')
@@ -656,11 +655,11 @@ ServerEvents.recipes(event => {
     //   four nuclei: elemental completeness (fire/water/earth/air; IV/EV/HV/LuV planet gates)
     //   stem_cells x2: biological anchor — the living scaffold that holds the convergence
     //   40000 source: demands serious source infrastructure
-    event.recipes.ars_nouveau.imbuement(
-        'kubejs:seminal_void_precursor',
-        'kubejs:gestated_cumium_crystal',
-        40000,
-        [
+    addImbuementRecipe(event, {
+        input: 'kubejs:seminal_void_precursor',
+        output: 'kubejs:gestated_cumium_crystal',
+        source: 40000,
+        pedestalItems: [
             'kubejs:fire_nucleus',
             'kubejs:water_nucleus',
             'kubejs:earth_nucleus',
@@ -668,15 +667,16 @@ ServerEvents.recipes(event => {
             'gtceu:stem_cells',
             'gtceu:stem_cells'
         ]
-    )
+    })
 
     // step 4: awakened cumium embryo — sage-tier awakening via Enchanting Apparatus
     //   gaia_ingot x2: two Guardian of Gaia kills (or MA gaia_spirit_essence farm)
     //   elementium_ingot x4: elven portal endgame
     //   neutronium_dust x2: UV tech ceiling
     //   60000 source: Grand Enchanting Sanctum + major source generation required
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
+    addEnchantingRecipe(event, {
+        reagent: 'kubejs:gestated_cumium_crystal',
+        pedestalItems: [
             'botania:gaia_ingot',
             'botania:gaia_ingot',
             'botania:elementium_ingot',
@@ -686,10 +686,9 @@ ServerEvents.recipes(event => {
             'gtceu:neutronium_dust',
             'gtceu:neutronium_dust'
         ],
-        'kubejs:gestated_cumium_crystal',
-        'kubejs:awakened_cumium_embryo',
-        60000
-    )
+        output: 'kubejs:awakened_cumium_embryo',
+        sourceCost: 60000
+    })
 
     // step 5: void flux amalgam — embryo fuses with stellar plasma and more cum (second cum gate)
     //   awakened_cumium_embryo: carries all prior chain value
@@ -713,27 +712,37 @@ ServerEvents.recipes(event => {
     //   gaia_ingot: third gaia gate in the chain
     //   neutronium_dust: UV tech ceiling
     //   outputs unforged_cumium_matrix — not dust yet, needs forging
-    event.custom({
-        "type": "botania:terra_plate",
-        "ingredients": [
-            { "item": "kubejs:void_flux_amalgam" },
-            { "item": "kubejs:void_flux_amalgam" },
-            { "item": "botania:gaia_ingot" },
-            { "item": "gtceu:neutronium_dust" }
-        ],
-        "mana": 15000000,
-        "result": {
-            "item": "kubejs:unforged_cumium_matrix"
-        }
+    addTerraPlateRecipe(event, {
+        result: { item: 'kubejs:unforged_cumium_matrix' },
+        mana: 15000000,
+        ingredients: [
+            { item: 'kubejs:void_flux_amalgam' },
+            { item: 'kubejs:void_flux_amalgam' },
+            { item: 'botania:gaia_ingot' },
+            { item: 'gtceu:neutronium_dust' }
+        ]
     })
 
+    // step 6.5: liquid computation — UV circuits dissolved in aqua regia + naquadria
+    //   the assembly line doesn't run on soldering alloy; it runs on distilled cognition
+    //   4x UV circuits per batch; 8000mB consumed by the forging = 4 circuits worth of computation
+    event.recipes.gtceu.chemical_reactor('uv_circuit_dissolution')
+        .itemInputs('4x #gtceu:circuits/uv', '1x gtceu:naquadria_dust')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
+        .outputFluids(Fluid.of('kubejs:liquid_computation', 8000))
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.UV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // step 7: GT Assembly Line — UV multiblock finale
-    //   void_core: boss gate from void-type legendary monster
-    //   neutronium_dust x2: UV tech ceiling
+    //   unforged_cumium_matrix: the vessel
     //   stem_cells x4: third biological anchor — cum's foundation returns
-    //   UV circuits x4: requires UV circuit production
-    //   cum 2000mB: third cum gate — the assembly line runs on it
-    //   soldering_alloy: standard assembly fluid
+    //   neutronium_dust x2: UV tech ceiling
+    //   void_core: Cataclysm void boss gate
+    //   gaia_ingot: Sage-tier magic apex — Guardian of Gaia gate
+    //   uv_sensor x2 + uv_emitter x2 + uv_field_generator x2: apex UV components
+    //   cum 2000mB: third cum gate
+    //   liquid_computation 8000mB: 4 dissolved UV circuits — the forge runs on cognition
     //   4 minute runtime — you wait
     event.recipes.gtceu.assembly_line('cumium_matrix_forging')
         .itemInputs(
@@ -741,11 +750,14 @@ ServerEvents.recipes(event => {
             '4x gtceu:stem_cells',
             '2x gtceu:neutronium_dust',
             '1x cataclysm:void_core',
-            '4x #gtceu:circuits/uv'
+            '1x botania:gaia_ingot',
+            '2x gtceu:uv_sensor',
+            '2x gtceu:uv_emitter',
+            '2x gtceu:uv_field_generator'
         )
         .inputFluids(
             Fluid.of('gtceu:cum', 2000),
-            Fluid.of('gtceu:soldering_alloy', 576)
+            Fluid.of('kubejs:liquid_computation', 8000)
         )
         .itemOutputs('1x gtceu:cumium_dust')
         .duration(200 * 20)

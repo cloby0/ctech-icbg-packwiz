@@ -213,7 +213,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x superbwarfare:mortar_barrel')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(100)
-        .circuit(1)
 
     // Cemented carbide barrel: GT cemented_carbide long rod on lathe (replaces 3x CC ingot crafting)
     event.recipes.gtceu.lathe('sw_cemented_carbide_barrel')
@@ -221,7 +220,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('superbwarfare:cemented_carbide_barrel')
         .EUt(GTValues.VA[GTValues.MV])
         .duration(200)
-        .circuit(1)
 
     // armament modules: only swap is the rarity material pack -> a GT circuit, standing
     // in for the fire control system. everything else (barrel, cannon_core, escalating

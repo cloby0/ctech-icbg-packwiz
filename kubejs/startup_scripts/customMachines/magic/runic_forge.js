@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('terra_agglomeration')
         .category('magic')
         .setEUIO('in')
-        .setMaxIOSize(4, 1, 1, 0)
+        .setMaxIOSize(9, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER)
 })

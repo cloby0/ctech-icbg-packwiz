@@ -160,7 +160,6 @@ ServerEvents.recipes(event => {
             .itemOutputs(`1x createbigcannons:${mould}`)
             .duration(8 * 20)
             .EUt(GTValues.VA[GTValues.MV])
-            .circuit(1)
     })
 
     // Remove Create saw (plate -> wire); replace with GT cutter (steel only — iron too weak)

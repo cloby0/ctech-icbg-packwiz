@@ -173,85 +173,85 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:vampire_blood', source: 1000, pedestalItems: ['minecraft:crying_obsidian', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:clock'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:what_magnet', source: 750, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:leather', 'minecraft:porkchop', 'minecraft:bone'] })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:bone", "minecraft:wither_skeleton_skull", "minecraft:bone", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:broken_ankh",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:bone", "minecraft:wither_skeleton_skull", "minecraft:bone", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:broken_ankh",
+        sourceCost: 2500
+    })
 
     // cracked_crown upgrades to gods_crown via vanilla smithing transform
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:gold_block", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:cracked_crown",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:gold_block", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:cracked_crown",
+        sourceCost: 2500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:emerald_block", "minecraft:bell", "minecraft:emerald_block", "minecraft:bell", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:fate_emerald",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:emerald_block", "minecraft:bell", "minecraft:emerald_block", "minecraft:bell", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:fate_emerald",
+        sourceCost: 2500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:diamond_block", "minecraft:grass", "minecraft:diamond_block", "minecraft:grass", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:four_leaf_clover",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:diamond_block", "minecraft:grass", "minecraft:diamond_block", "minecraft:grass", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:four_leaf_clover",
+        sourceCost: 3000
+    })
 
     // holy_silver pedestal gates light_gloves at Initiate
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_block", "minecraft:diamond", "minecraft:gold_block", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:light_gloves",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:gold_block", "minecraft:diamond", "minecraft:gold_block", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:light_gloves",
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:blackstone", "minecraft:emerald", "minecraft:diamond", "minecraft:lapis_lazuli", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:miners_soul",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:blackstone", "minecraft:emerald", "minecraft:diamond", "minecraft:lapis_lazuli", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:miners_soul",
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:crying_obsidian", "minecraft:diamond", "minecraft:magma_block", "minecraft:diamond", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:rage_mind",
-        3000
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:crying_obsidian", "minecraft:diamond", "minecraft:magma_block", "minecraft:diamond", "gtceu:holy_silver_dust"],
+        output: "nameless_trinkets:rage_mind",
+        sourceCost: 3000
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:gold_block", "minecraft:iron_block", "minecraft:gold_block", "minecraft:iron_block", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:reforger",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:gold_block", "minecraft:iron_block", "minecraft:gold_block", "minecraft:iron_block", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:reforger",
+        sourceCost: 2500
+    })
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:shield", "minecraft:iron_block", "minecraft:shield", "minecraft:iron_block", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:reverse_card",
-        2500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:shield", "minecraft:iron_block", "minecraft:shield", "minecraft:iron_block", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:reverse_card",
+        sourceCost: 2500
+    })
 
     // sigil requires wither skull + netherite + holy_silver — Initiate dark ritual
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:obsidian", "minecraft:wither_skeleton_skull", "minecraft:obsidian", "minecraft:netherite_scrap", "gtceu:luminessence_dust", "gtceu:holy_silver_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:sigil_of_baphomet",
-        3500
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:obsidian", "minecraft:wither_skeleton_skull", "minecraft:obsidian", "minecraft:netherite_scrap", "gtceu:luminessence_dust", "gtceu:holy_silver_dust"],
+        output: "nameless_trinkets:sigil_of_baphomet",
+        sourceCost: 3500
+    })
 
     // consumes gills + tear + amphibious_hands as the three sea sub-trinkets
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:heart_of_the_sea", "nameless_trinkets:gills", "nameless_trinkets:tear_of_the_sea", "nameless_trinkets:amphibious_hands", "gtceu:luminessence_dust"],
-        "nameless_trinkets:ultimate_dust",
-        "nameless_trinkets:true_heart_of_the_sea",
-        4000
-    )
+    addEnchantingRecipe(event, {
+        reagent: "nameless_trinkets:ultimate_dust",
+        pedestalItems: ["minecraft:heart_of_the_sea", "nameless_trinkets:gills", "nameless_trinkets:tear_of_the_sea", "nameless_trinkets:amphibious_hands", "gtceu:luminessence_dust"],
+        output: "nameless_trinkets:true_heart_of_the_sea",
+        sourceCost: 4000
+    })
 
 })
