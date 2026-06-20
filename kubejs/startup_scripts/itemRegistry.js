@@ -167,4 +167,30 @@ StartupEvents.registry('item', event => {
     event.create('ev_gun_fire_control')
     event.create('iv_gun_fire_control')
     event.create('luv_gun_fire_control')
+
+    // UHV/UEV chain intermediates
+    event.create('dragon_heart_crystal')
+    event.create('draconic_boule')
+    event.create('draconic_resonance_board')
+    event.create('stabilized_chaos_crystal')
+    event.create('chaos_harmonic_board')
+
+    // Custom circuit items — replaces GT-generated mainframes for UHV+
+    // Tagged into #gtceu:circuits/{tier} in server_scripts/circuitTags.js
+    event.create('draconic_resonance_assembly')   // UHV
+    event.create('chaos_harmonic_mainframe')       // UEV
+    event.create('cumium_singularity_core')        // UIV
+
+    // Prophet tier (UHV magic) spellbooks
+    event.create('draconic_sanguinary')
+    event.create('draconic_sanctum')
+    event.create('dracontine_codex')
+    event.create('chronicle_of_dominion')
+
+    // Ascendant tier (UEV magic) spellbooks
+    event.create('ascendant_initiation_core')
+    event.create('chaotic_sanguinary')
+    event.create('shattered_sanctum')
+    event.create('codex_of_entropy')
+    event.create('chronicle_of_unraveling')
 })

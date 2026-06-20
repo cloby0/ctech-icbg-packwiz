@@ -435,6 +435,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xFCFCEC)
 
     // C-Tech apex material — requires full UV tech + Sage magic + stellar plasma chain + 5M mana TAP
+    // UIV superconductor cable (64A, 0 loss)
     event.create('cumium')
         .ingot()
         .fluid()
@@ -443,12 +444,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xC8C060)
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 3600)
         .iconSet(GTMaterialIconSet.BRIGHT)
+        .cableProperties(GTValues.VA[GTValues.UIV], 64, 0, true)
         .flags(
+            GTMaterialFlags.GENERATE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.GENERATE_LONG_ROD
         )
 
     event.create('stellar_plasma')
@@ -715,6 +719,115 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
+    // UHV/UEV draconic tier materials
+
+    // Processed GT form of DE draconium_ingot — smelted in UV EBF at 9000K
+    // Provides: coil springs (Draconium coil at 12600K), fine wire/foil for draconic cables
+    event.create('draconic_matrix')
+        .ingot()
+        .fluid()
+        .color(0x7B35D9)
+        .secondaryColor(0x3D0F7A)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+
+    // Processed GT form of DE awakened_draconium_ingot — requires Draconic Infusion Chamber
+    // Provides: coil springs (Awakened Draconium coil at 14400K), superconductor components
+    event.create('awakened_matrix')
+        .ingot()
+        .fluid()
+        .color(0xFF8C00)
+        .secondaryColor(0xCC5500)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+
+    // Powdered chaos energy — macerating DE chaos_shard
+    // Used in: Chaotic Singulite alloy, Chaos Harmonic Board (UEV)
+    event.create('chaos_substrate')
+        .dust()
+        .color(0xFF2020)
+        .secondaryColor(0x8B0000)
+        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+
+    // UHV structural alloy — casing for Draconic Infusion Chamber
+    // Mixer gate: dragon_heart_crystal added to mixer recipe in uhvAndDraconic.js (auto-mixer replaced)
+    event.create('draconic_framework')
+        .ingot()
+        .fluid()
+        .color(0x4A1A8C)
+        .secondaryColor(0x200A40)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .components('2x draconic_matrix', '1x neutronium', '1x gaia_spirit')
+        .blastTemp(12000, "high", GTValues.VA[GTValues.UHV], 800)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
+    // UEV structural alloy — casing for UEV chaos multiblock (TBD)
+    event.create('awakened_framework')
+        .ingot()
+        .fluid()
+        .color(0xCC6600)
+        .secondaryColor(0x7A3300)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .components('2x awakened_matrix', '1x neutronium', '1x chaos_substrate', '1x gaia_spirit')
+        .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 1000)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
+    // UHV magic-tech superconductor cable — EBF 12000K
+    event.create('draconic_fluxite')
+        .ingot()
+        .fluid()
+        .color(0x8844FF)
+        .secondaryColor(0x4400CC)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .components('1x awakened_matrix', '1x naquadria', '1x gaia_spirit')
+        .blastTemp(12000, "high", GTValues.VA[GTValues.UHV], 800)
+        .cableProperties(GTValues.VA[GTValues.UHV], 16, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
+    // UEV magic-tech superconductor cable — EBF 14400K
+    event.create('chaotic_singulite')
+        .ingot()
+        .fluid()
+        .color(0xFF4400)
+        .secondaryColor(0xAA2200)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .components('1x awakened_matrix', '1x chaos_substrate', '1x gaia_spirit')
+        .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 800)
+        .cableProperties(GTValues.VA[GTValues.UEV], 32, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
