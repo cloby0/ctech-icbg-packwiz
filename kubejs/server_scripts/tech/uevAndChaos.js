@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
             '1x gtceu:gaia_spirit_dust'
         )
         .inputFluids(
-            Fluid.of('gtceu:stellar_plasma', 2000),
+            Fluid.of('gtceu:stellar_plasma_plasma', 2000),
             Fluid.of('kubejs:draconic_computation', 4000)
         )
         .outputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))

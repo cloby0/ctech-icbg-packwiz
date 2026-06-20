@@ -1842,7 +1842,7 @@ hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"
-hash = "665dcd56d76b38ef083aedfc2a48d61504cb925273e41261ceff3fda4b030dbf"
+hash = "f06e44e2c9661ef9c57d62f99fc5cea7abe8a1d2ee7e3fc74eb48c104f73164b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
