@@ -1,20 +1,18 @@
 ServerEvents.recipes(event => {
 
-    // draconic_matrix — UV EBF at 9000K (Trinium coils, no new infrastructure needed)
-    event.recipes.gtceu.electric_blast_furnace('draconic_matrix_smelting')
-        .itemInputs('1x draconicevolution:draconium_ingot')
-        .itemOutputs('1x gtceu:draconic_matrix_ingot')
-        .blastFurnaceTemp(9000)
-        .circuit(1)
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.UV])
+    // draconium EBF is auto-generated from blastTemp(9000) in gtceuMaterialRegistry.js
+    // ingot setIgnored → draconicevolution:draconium_ingot; vanilla smelt removed below
 
-    // awakened_matrix — Draconic Infusion Chamber
-    // Requires UHV energy hatch; gates draconic_fluxite and awakened coil springs
-    event.recipes.gtceu.draconic_infusion_chamber('awakened_matrix_infusion')
-        .itemInputs('1x draconicevolution:awakened_draconium_ingot')
+    // Remove DE's own vanilla smelting for draconium so EBF is the only path
+    event.remove({ type: 'minecraft:smelting', output: 'draconicevolution:draconium_ingot' })
+    event.remove({ type: 'minecraft:blasting', output: 'draconicevolution:draconium_ingot' })
+
+    // awakened_draconium — Draconic Infusion Chamber (UHV gate)
+    // draconium_ingot + draconic_computation → awakened_draconium_ingot
+    event.recipes.gtceu.draconic_infusion_chamber('awakened_draconium_infusion')
+        .itemInputs('1x draconicevolution:draconium_ingot')
         .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
-        .itemOutputs('1x gtceu:awakened_matrix_ingot')
+        .itemOutputs('1x draconicevolution:awakened_draconium_ingot')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
@@ -23,7 +21,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'gtceu:mixer', output: 'gtceu:draconic_framework_dust' })
     event.recipes.gtceu.mixer('draconic_framework_dust_mixing')
         .itemInputs(
-            '2x gtceu:draconic_matrix_dust',
+            '2x gtceu:draconium_dust',
             '1x gtceu:neutronium_dust',
             '1x gtceu:gaia_spirit_dust',
             '1x kubejs:dragon_heart_crystal'
@@ -57,9 +55,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('draconic_resonance_board_assembly')
         .itemInputs(
             '4x gtceu:neutronium_wafer',
-            '2x gtceu:draconic_matrix_foil',
+            '2x gtceu:draconium_foil',
             '1x kubejs:dragon_heart_crystal',
-            '1x gtceu:awakened_matrix_foil'
+            '1x gtceu:awakened_draconium_foil'
         )
         .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
         .itemOutputs('kubejs:draconic_resonance_board')

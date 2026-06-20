@@ -74,5 +74,12 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('nethersteel', 'createbigcannons:nethersteel_ingot')
     block('nethersteel', 'createbigcannons:nethersteel_block')
 
+    ingot('draconium', 'draconicevolution:draconium_ingot')
+    nugget('draconium', 'draconicevolution:draconium_nugget')
+    block('draconium', 'draconicevolution:draconium_block')
+
+    ingot('awakened_draconium', 'draconicevolution:awakened_draconium_ingot')
+    nugget('awakened_draconium', 'draconicevolution:awakened_draconium_nugget')
+    block('awakened_draconium', 'draconicevolution:awakened_draconium_block')
 
 })

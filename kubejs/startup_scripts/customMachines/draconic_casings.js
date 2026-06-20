@@ -13,20 +13,20 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/pickaxe')
 
     // 12600K / level 16 / energy discount 16 / tier 9
-    // Springs auto-generated from draconic_matrix GENERATE_SPRING flag
+    // Springs auto-generated from draconium GENERATE_SPRING flag
     event.create('draconium_wire_coil', 'gtceu:coil')
         .temperature(12600)
         .level(16)
         .energyDiscount(16)
         .tier(9)
-        .coilMaterial(() => GTMaterials.get('draconic_matrix'))
+        .coilMaterial(() => GTMaterials.get('draconium'))
 
     // 14400K / level 32 / energy discount 16 / tier 10
-    // Springs auto-generated from awakened_matrix GENERATE_SPRING flag
+    // Springs auto-generated from awakened_draconium GENERATE_SPRING flag
     event.create('awakened_draconium_wire_coil', 'gtceu:coil')
         .temperature(14400)
         .level(32)
         .energyDiscount(16)
         .tier(10)
-        .coilMaterial(() => GTMaterials.get('awakened_matrix'))
+        .coilMaterial(() => GTMaterials.get('awakened_draconium'))
 })

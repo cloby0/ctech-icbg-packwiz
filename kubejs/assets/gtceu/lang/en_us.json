@@ -77,11 +77,20 @@
 
 "material.gtceu.cum": "Cum",
 "material.gtceu.cumium": "Cumium",
+"element.gtceu.cumium": "Cumium",
 
 "material.gtceu.terra_iridite": "Terra Iridite",
 "material.gtceu.consecrated_chromite": "Consecrated Chromite",
 "material.gtceu.ambrotungstite": "Ambrotungstite",
 "material.gtceu.manaplatinite": "Manaplatinite",
+
+"material.gtceu.draconium": "Draconium",
+"material.gtceu.awakened_draconium": "Awakened Draconium",
+"material.gtceu.chaos_substrate": "Chaos Substrate",
+"material.gtceu.draconic_framework": "Draconic Framework",
+"material.gtceu.awakened_framework": "Awakened Framework",
+"material.gtceu.draconic_fluxite": "Draconic Fluxite",
+"material.gtceu.chaotic_singulite": "Chaotic Singulite",
 
 "tagprefix.holystone": "Holystone %s Ore",
 "tagprefix.moon_stone": "Moon %s Ore",

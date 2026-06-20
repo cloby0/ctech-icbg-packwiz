@@ -159,6 +159,26 @@
   "item.kubejs.hv_gun_fire_control": "HV Gun Fire Control",
   "item.kubejs.ev_gun_fire_control": "EV Gun Fire Control",
   "item.kubejs.iv_gun_fire_control": "IV Gun Fire Control",
-  "item.kubejs.luv_gun_fire_control": "LuV Gun Fire Control"
+  "item.kubejs.luv_gun_fire_control": "LuV Gun Fire Control",
+
+  "item.kubejs.dragon_heart_crystal": "Dragon Heart Crystal",
+  "item.kubejs.draconic_boule": "Draconic Boule",
+  "item.kubejs.draconic_resonance_board": "Draconic Resonance Board",
+  "item.kubejs.stabilized_chaos_crystal": "Stabilized Chaos Crystal",
+  "item.kubejs.chaos_harmonic_board": "Chaos Harmonic Board",
+  "item.kubejs.draconic_resonance_assembly": "Draconic Resonance Assembly",
+  "item.kubejs.chaos_harmonic_mainframe": "Chaos Harmonic Mainframe",
+  "item.kubejs.cumium_singularity_core": "Cumium Singularity Core",
+
+  "item.kubejs.draconic_sanguinary": "Draconic Sanguinary",
+  "item.kubejs.draconic_sanctum": "Draconic Sanctum",
+  "item.kubejs.dracontine_codex": "Dracontine Codex",
+  "item.kubejs.chronicle_of_dominion": "Chronicle of Dominion",
+
+  "item.kubejs.ascendant_initiation_core": "Ascendant Initiation Core",
+  "item.kubejs.chaotic_sanguinary": "Chaotic Sanguinary",
+  "item.kubejs.shattered_sanctum": "Shattered Sanctum",
+  "item.kubejs.codex_of_entropy": "Codex of Entropy",
+  "item.kubejs.chronicle_of_unraveling": "Chronicle of Unraveling"
 
 }

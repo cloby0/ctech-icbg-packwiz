@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('chaos_harmonic_board_assembly')
         .itemInputs(
             '4x gtceu:neutronium_wafer',
-            '2x gtceu:awakened_matrix_foil',
+            '2x gtceu:awakened_draconium_foil',
             '1x kubejs:stabilized_chaos_crystal',
             '1x gtceu:chaos_substrate_dust'
         )
@@ -37,10 +37,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:advanced_smd_transistor',
             '32x gtceu:advanced_smd_resistor',
             '32x gtceu:advanced_smd_inductor',
-            '64x gtceu:awakened_matrix_foil',
+            '64x gtceu:awakened_draconium_foil',
             '32x gtceu:ram_chip',
             '16x gtceu:draconic_fluxite_double_wire',
-            '8x gtceu:awakened_matrix_plate',
+            '8x gtceu:awakened_draconium_plate',
             '2x draconicevolution:awakened_core'
         )
         .inputFluids(
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
             '32x gtceu:advanced_smd_transistor',
             '32x gtceu:advanced_smd_resistor',
             '32x gtceu:advanced_smd_inductor',
-            '64x gtceu:awakened_matrix_foil',
+            '64x gtceu:awakened_draconium_foil',
             '32x gtceu:ram_chip',
             '16x gtceu:chaotic_singulite_double_wire',
             '8x gtceu:cumium_plate',

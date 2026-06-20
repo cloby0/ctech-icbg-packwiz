@@ -1,6 +1,10 @@
 ItemEvents.tooltip(event => {
     event.add('kubejs:matter_energy_circuit', '§7A chip that comes with the firmware to think in ME')
 
+    event.add('kubejs:draconic_resonance_assembly', '§4UHV-Tier Circuit')
+    event.add('kubejs:chaos_harmonic_mainframe', '§aUEV-Tier Circuit')
+    event.add('kubejs:cumium_singularity_core', '§2UIV-Tier Circuit')
+
     // Magic tier labels — mirrors GTCEu voltage tier display.
     // Tags defined in itemTags.js; add items there to extend a tier's tooltip.
     const TIER_ITEMS = [

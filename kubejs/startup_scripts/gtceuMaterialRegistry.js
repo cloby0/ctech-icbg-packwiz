@@ -723,30 +723,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // UHV/UEV draconic tier materials
 
-    // Processed GT form of DE draconium_ingot — smelted in UV EBF at 9000K
-    // Provides: coil springs (Draconium coil at 12600K), fine wire/foil for draconic cables
-    event.create('draconic_matrix')
+    // GT integration of DE draconium — ingot/nugget/block setIgnored to DE items
+    // EBF at 9000K (UV) gates ingot from dust; NO_SMELTING removes vanilla smelt bypass
+    event.create('draconium')
         .ingot()
-        .fluid()
         .color(0x7B35D9)
         .secondaryColor(0x3D0F7A)
         .iconSet(GTMaterialIconSet.BRIGHT)
+        .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 1200)
         .flags(
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
 
-    // Processed GT form of DE awakened_draconium_ingot — requires Draconic Infusion Chamber
-    // Provides: coil springs (Awakened Draconium coil at 14400K), superconductor components
-    event.create('awakened_matrix')
+    // GT integration of DE awakened_draconium — ingot/nugget/block setIgnored to DE items
+    // Ingot gated by Draconic Infusion Chamber (draconium_ingot + draconic_computation); NO_SMELTING removes vanilla bypass
+    event.create('awakened_draconium')
         .ingot()
-        .fluid()
         .color(0xFF8C00)
         .secondaryColor(0xCC5500)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .flags(
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL,
@@ -769,7 +776,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4A1A8C)
         .secondaryColor(0x200A40)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('2x draconic_matrix', '1x neutronium', '1x gaia_spirit')
+        .components('2x draconium', '1x neutronium', '1x gaia_spirit')
         .blastTemp(12000, "high", GTValues.VA[GTValues.UHV], 800)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -786,7 +793,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xCC6600)
         .secondaryColor(0x7A3300)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('2x awakened_matrix', '1x neutronium', '1x chaos_substrate', '1x gaia_spirit')
+        .components('2x awakened_draconium', '1x neutronium', '1x chaos_substrate', '1x gaia_spirit')
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 1000)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -803,7 +810,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x8844FF)
         .secondaryColor(0x4400CC)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('1x awakened_matrix', '1x naquadria', '1x gaia_spirit')
+        .components('1x awakened_draconium', '1x naquadria', '1x gaia_spirit')
         .blastTemp(12000, "high", GTValues.VA[GTValues.UHV], 800)
         .cableProperties(GTValues.VA[GTValues.UHV], 16, 0, true)
         .flags(
@@ -819,7 +826,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xFF4400)
         .secondaryColor(0xAA2200)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('1x awakened_matrix', '1x chaos_substrate', '1x gaia_spirit')
+        .components('1x awakened_draconium', '1x chaos_substrate', '1x gaia_spirit')
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 800)
         .cableProperties(GTValues.VA[GTValues.UEV], 32, 0, true)
         .flags(
