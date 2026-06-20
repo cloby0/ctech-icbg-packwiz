@@ -1946,7 +1946,7 @@ hash = "a8be40db4ee3eca1dee3659d238bbd97c831a2849a2d182431d3d21a31681679"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "e132a548af801cc86c6adcd8508d1e91df2c1d8ac5fe0375b2dbfab2120cf306"
+hash = "f506d51258ed8a32fed47e1cb9908eaf1d0fe882fba8a9e61ddf6f847380795e"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"

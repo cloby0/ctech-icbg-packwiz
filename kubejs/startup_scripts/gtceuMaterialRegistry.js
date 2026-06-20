@@ -446,7 +446,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
         .cableProperties(GTValues.VA[GTValues.UIV], 64, 0, true)
         .flags(
-            GTMaterialFlags.GENERATE_WIRE,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
@@ -808,7 +807,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(12000, "high", GTValues.VA[GTValues.UHV], 800)
         .cableProperties(GTValues.VA[GTValues.UHV], 16, 0, true)
         .flags(
-            GTMaterialFlags.GENERATE_WIRE,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
@@ -825,7 +823,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 800)
         .cableProperties(GTValues.VA[GTValues.UEV], 32, 0, true)
         .flags(
-            GTMaterialFlags.GENERATE_WIRE,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
