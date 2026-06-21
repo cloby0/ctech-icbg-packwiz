@@ -1770,7 +1770,7 @@ hash = "c40129d114ec671e507e7735994396b212b2e812139b239a492630c2bdd40d01"
 
 [[files]]
 file = "kubejs/server_scripts/tech/deDraconicRecipes.js"
-hash = "a13bea62b7b81307a8ea5f5fcd888099591b737249cca3c04c3431fca6ee8908"
+hash = "3d1370d4ece388e363e8ef9ea6d64494079cf15786a72428498cc57df60395c3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"

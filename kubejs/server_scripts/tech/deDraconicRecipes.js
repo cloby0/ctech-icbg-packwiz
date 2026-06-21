@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '8x gtceu:awakened_draconium_plate',
             '4x gtceu:awakened_draconium_rod',
-            '4x gtceu:awakened_draconium_fine_wire',
+            '4x gtceu:fine_awakened_draconium_wire',
             '2x draconicevolution:awakened_core',
             '2x minecraft:netherite_ingot',
             '1x draconicevolution:wyvern_bow'
@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_bow')
         .itemInputs(
             '8x gtceu:awakened_draconium_plate',
-            '4x gtceu:awakened_draconium_fine_wire',
+            '4x gtceu:fine_awakened_draconium_wire',
             '4x draconicevolution:chaotic_core',
             '2x draconicevolution:chaos_shard',
             '4x gtceu:chaos_crystal_dust',
