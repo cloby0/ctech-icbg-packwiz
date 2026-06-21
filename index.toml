@@ -2593,11 +2593,6 @@ hash = "a9c35b5265445218f14be7bce6c01bcaf7f6c3e456e8ef675ae41b3d0298e3a5"
 metafile = true
 
 [[files]]
-file = "mods/extended-terminal.pw.toml"
-hash = "cefcb3c94319ed4f385fe9a7a557f5e1a578d34427eb8daa58e0d139f7622ad4"
-metafile = true
-
-[[files]]
 file = "mods/extrabotany-reburn.pw.toml"
 hash = "2712ed38c1af5fcda0879eef5772c81d44fb9ce5be987543e240bc1eae61dc10"
 metafile = true
@@ -3244,11 +3239,6 @@ metafile = true
 [[files]]
 file = "mods/packagedauto.pw.toml"
 hash = "1ad3425de5982cb89cf1c20d9c8bf0310bb8be1c489a917f3e4ad2e9ec56e107"
-metafile = true
-
-[[files]]
-file = "mods/packagedexcrafting.pw.toml"
-hash = "0866601075de9d01e56c078d6f80c0981d9653cf287178243acc0a9798de4355"
 metafile = true
 
 [[files]]
