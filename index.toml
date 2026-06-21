@@ -1013,12 +1013,8 @@ file = "kubejs/client_scripts/cc_jei_hide.js"
 hash = "84bbea45e1008aaeb6d4515760766e627d35100eb06baf07a9e90bc03fd2e016"
 
 [[files]]
-file = "kubejs/client_scripts/ec_emi_hide.js"
-hash = "68c63cdaa9baacd4ab0dbb5fe8e719ef844257711f469c24c4f4bbc72352ffe3"
-
-[[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "bb89159a58ac55ad1678e3dedc0b266ac2e065d4aa4c5714cf7662cb9c956c3d"
+hash = "70fc0bf356ac9b104bfd9a0d3cbf5eed2eef33b4c06111a35863453602fdae64"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1762,15 +1758,19 @@ hash = "86843bd740b707cb9b08426137176e825debe76fd809a42b38200f741bdc786c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
-hash = "8c677a07377f331632419e39304ccedb41e1e602ed98cf55fabea523f7d5e510"
+hash = "bd25cd1a746b3808286e700f65a85a3449360c42042304c0da94d2cbaef0e938"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cyberware.js"
 hash = "7ad46f1b888c5bd5c168a2d10668ea63d930dc687a92a61506e5ad69ef901148"
 
 [[files]]
+file = "kubejs/server_scripts/tech/deDraconicModules.js"
+hash = "c40129d114ec671e507e7735994396b212b2e812139b239a492630c2bdd40d01"
+
+[[files]]
 file = "kubejs/server_scripts/tech/deDraconicRecipes.js"
-hash = "92f979c999e31c54480242c4362fe7d96d8b116d8249c3e35e64971926f6cb3e"
+hash = "c035805aa20321ba2beb398f21366a24db455617aa917c085adcd90e429a0ed3"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
@@ -1783,10 +1783,6 @@ hash = "24c8a30ecd73cc1d3768c1987468e7f2b25ca0b2da4741775d5340081e22a952"
 [[files]]
 file = "kubejs/server_scripts/tech/evAndMars.js"
 hash = "33a0cbeb895b98148d3ba0570951ce5f4c134de7e791f9f25032b29942c1aebc"
-
-[[files]]
-file = "kubejs/server_scripts/tech/extendedCrafting.js"
-hash = "7a8811a23f92be100876361001978fcec5c7ee9425ddc382db52d4dc797a8e2e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/fracturepoint.js"
@@ -1811,6 +1807,10 @@ hash = "4def4dfee14d324e0dab43f60c56fbdfdbdef3fc5e5ddfebe83b381762a9a2f4"
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
 hash = "b65c9530a99c48cd0d729e38531728636ddf5125717b3f452fdbc16bdea62c59"
+
+[[files]]
+file = "kubejs/server_scripts/tech/highTierComponents.js"
+hash = "738ddc47397afa747e0e3aceba6141a574945570a2542ac1af567e572da6f4cb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
@@ -1846,7 +1846,7 @@ hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"
-hash = "bae0bc5e8dbbbb109ff55c7d6d1ebee2009a974d328ed7712d4bc02f02d42684"
+hash = "a5d1be4c69c8b69318db5b47bf636c39bd254098118b178b6d0c836225b09f8a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
@@ -1858,7 +1858,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "e42ce6960d69b97f5eae9a83f2c9bbaf2da0f5b3b6793df73f7f2a5b5cab2985"
+hash = "5555f6e38708a68a0b85066f26fc86ad5007036a1a911680f66e2f006ec78281"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1866,7 +1866,7 @@ hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
-hash = "d04a99ea01b14eb771d486e86e582cbbc97e9063ae1dbb3b2ab36adfe7275676"
+hash = "466d9b24e221300a3ed1af73c9d07cc3116a6c829f76456aa51400d2e22ce3f7"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/marsWorldgen.js"
@@ -1886,7 +1886,7 @@ hash = "9dfa5844e4f1f6d9b64f6b0be4bceaf05decb3e27c786acf15f155724bd0ba47"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
-hash = "ee0698c7276718f28f04fd417d9b6ead50923a7091c5c317f77d3c778dc34f50"
+hash = "fbfc8dc76e10fb170c90657bfc537869293dc364e1616bb36febd6bf7d35d78c"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/kiln.js"
@@ -1935,6 +1935,10 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
 hash = "44409d338287817385c106a063acfa9472b17d92bb5d781438678b5e69531622"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/tech/void_crucible.js"
+hash = "cbfab137a71bada5bf524a2f8f1d80501bcb52e3be27344bb0eb45df42c0e562"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
@@ -2586,11 +2590,6 @@ metafile = true
 [[files]]
 file = "mods/expandability.pw.toml"
 hash = "a9c35b5265445218f14be7bce6c01bcaf7f6c3e456e8ef675ae41b3d0298e3a5"
-metafile = true
-
-[[files]]
-file = "mods/extended-crafting.pw.toml"
-hash = "8fe5f4760379d967b02b397b30a61ca27357d896ad4a1aac1f3c8fcee203bf11"
 metafile = true
 
 [[files]]

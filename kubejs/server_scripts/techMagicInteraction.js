@@ -734,17 +734,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // step 7: GT Assembly Line — UV multiblock finale
-    //   unforged_cumium_matrix: the vessel
-    //   stem_cells x4: third biological anchor — cum's foundation returns
+    // step 7: Void Crucible — crystallizes the matrix into cumium dust with apex gate items
+    //   stem_cells x4: biological anchor — cum's foundation returns a third time
     //   neutronium_dust x2: UV tech ceiling
     //   void_core: Cataclysm void boss gate
     //   gaia_ingot: Sage-tier magic apex — Guardian of Gaia gate
     //   uv_sensor x2 + uv_emitter x2 + uv_field_generator x2: apex UV components
     //   cum 2000mB: third cum gate
-    //   liquid_computation 8000mB: 4 dissolved UV circuits — the forge runs on cognition
-    //   4 minute runtime — you wait
-    event.recipes.gtceu.assembly_line('cumium_matrix_forging')
+    //   liquid_computation 8000mB: the crucible runs on cognition
+    event.recipes.gtceu.void_crucible('cumium_void_crucible')
         .itemInputs(
             '1x kubejs:unforged_cumium_matrix',
             '4x gtceu:stem_cells',

@@ -106,507 +106,363 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // ── Extended Crafting: Wyvern gear (UV tier, 9×9 ultimate table) ──────────
-    // Key convention: W=wyvern_core, E=wyvern_energy_core, P=draconium_plate,
-    //                 R=draconium_rod, F=draconium_fine_wire, C=basic_relay_crystal,
-    //                 N=nether_star
-    // Each pattern row = exactly 9 chars. Space = empty slot.
+    // ── Assembly Line: Wyvern gear (UV) ─────────────────────────────────────────
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_chestpiece', [
-        'PPPPPPPPP',
-        'PWPPPPPWP',
-        'PPPEPEPPP',
-        'PWPPPPPWP',
-        'PPPCNPPPP',
-        'PWPPPPPWP',
-        'PPPEPEPPP',
-        'PWPPPPPWP',
-        'CPPPPPPPC'
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_chestpiece')
+        .itemInputs(
+            '16x gtceu:draconium_plate',
+            '4x draconicevolution:wyvern_core',
+            '2x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_chestpiece')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_sword', [
-        '    P    ',
-        '   PRP   ',
-        '  PWRWP  ',
-        '   PRP   ',
-        '    R    ',
-        '    R    ',
-        '   CRC   ',
-        '  CNRNC  ',
-        '    E    '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_sword')
+        .itemInputs(
+            '8x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_sword')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_axe', [
-        '  PPPPP  ',
-        ' PPWPPPP ',
-        ' PPPPNPP ',
-        ' PPWPPPP ',
-        '  PPRP   ',
-        '   PRR   ',
-        '   CRR   ',
-        '   CRE   ',
-        '    C    '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_axe')
+        .itemInputs(
+            '10x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_axe')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_pickaxe', [
-        'PPPWPPNPP',
-        'PPPPPPPPP',
-        'PPPWPPPPP',
-        '   PRRP  ',
-        '   WRPP  ',
-        '   PCRP  ',
-        '   PCRP  ',
-        '   PCRP  ',
-        '    E    '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_pickaxe')
+        .itemInputs(
+            '10x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_pickaxe')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_shovel', [
-        '   PRP   ',
-        '  PWRWP  ',
-        '   PNP   ',
-        '  PWRWP  ',
-        '    R    ',
-        '    R    ',
-        '   CRC   ',
-        '  CPRPC  ',
-        '    E    '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_shovel')
+        .itemInputs(
+            '8x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_shovel')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_hoe', [
-        'PPPWPPNPP',
-        'PPPPPPPPP',
-        'PPPWPPPPP',
-        '   PPRP  ',
-        '   WPRP  ',
-        '   PCRP  ',
-        '   PCRP  ',
-        '   PCRP  ',
-        '    E    '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_hoe')
+        .itemInputs(
+            '8x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_hoe')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_bow', [
-        '  PFRRFP ',
-        ' PFWRRFW ',
-        'PFRWRRFFP',
-        'PFRRNRFFP',
-        'PFRWRRFFP',
-        ' PFWRRFW ',
-        '  PFRRFP ',
-        '   PCNC  ',
-        '    CE   '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        F: 'gtceu:draconium_fine_wire',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_bow')
+        .itemInputs(
+            '8x gtceu:draconium_plate',
+            '4x gtceu:draconium_rod',
+            '4x gtceu:draconium_fine_wire',
+            '2x draconicevolution:wyvern_core',
+            '1x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_bow')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:wyvern_capacitor', [
-        ' PPPPPPP ',
-        'PPEPPPEP ',
-        'PPEPPPEP ',
-        'PPPWWWPPP',
-        'PPPRNRPPP',
-        'PPPWWWPPP',
-        'PPEPPPEP ',
-        'PPEPPPEP ',
-        ' PCCCCCP '
-    ], {
-        W: 'draconicevolution:wyvern_core',
-        E: 'draconicevolution:wyvern_energy_core',
-        P: 'gtceu:draconium_plate',
-        R: 'gtceu:draconium_rod',
-        N: 'minecraft:nether_star',
-        C: 'draconicevolution:basic_relay_crystal'
-    })
+    event.recipes.gtceu.assembly_line('de_wyvern_capacitor')
+        .itemInputs(
+            '12x gtceu:draconium_plate',
+            '2x gtceu:draconium_rod',
+            '4x draconicevolution:wyvern_core',
+            '4x draconicevolution:wyvern_energy_core',
+            '1x gtceu:quantum_star',
+            '2x draconicevolution:basic_relay_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('draconicevolution:wyvern_capacitor')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    // ── Extended Crafting: Draconic gear (UHV tier, 9×9 ultimate table) ────────
-    // Upgrade theme: consumes the wyvern version (U key).
-    // Key: G=awakened_core, D=draconic_energy_core, A=awakened_draconium_plate,
-    //      K=awakened_draconium_rod, N=netherite_ingot, U=wyvern_[item]
+    // ── Draconic Infusion Chamber: Draconic gear (UHV) ──────────────────────────
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_chestpiece', [
-        'AAAAAAAAA',
-        'AGAAAAGAA',
-        'AAADAAAAA',
-        'AGAAAAAAA',
-        'AAAUNAAUA',
-        'AGAAAAAAA',
-        'AAADAAAAA',
-        'AGAAAAGAA',
-        'AAAAAAAAA'
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_chestpiece'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_chestpiece')
+        .itemInputs(
+            '16x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:awakened_core',
+            '2x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_chestpiece'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_chestpiece')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_sword', [
-        '    A    ',
-        '   AKA   ',
-        '  AGKGA  ',
-        '   AKA   ',
-        '    K    ',
-        '    K    ',
-        '   NKN   ',
-        '  DUKUD  ',
-        '    G    '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_sword'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_sword')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '2x draconicevolution:awakened_core',
+            '1x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_sword'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_sword')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_axe', [
-        '  AAAAA  ',
-        ' AAGAAAA ',
-        ' AAAANAA ',
-        ' AAGAAAA ',
-        '  AAUKA  ',
-        '   AKK   ',
-        '   DKK   ',
-        '   DKG   ',
-        '    D    '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_axe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_axe')
+        .itemInputs(
+            '10x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '2x draconicevolution:awakened_core',
+            '1x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_axe'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_axe')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_pickaxe', [
-        'AAAGAANAA',
-        'AAAAAAAAA',
-        'AAAGAAAAA',
-        '   AAKK  ',
-        '   GAKK  ',
-        '   ADKK  ',
-        '   ADKK  ',
-        '   ADKU  ',
-        '    G    '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_pickaxe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_pickaxe')
+        .itemInputs(
+            '10x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '2x draconicevolution:awakened_core',
+            '1x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_pickaxe'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_pickaxe')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_shovel', [
-        '   AKA   ',
-        '  AGKGA  ',
-        '   ANA   ',
-        '  AGKGA  ',
-        '    K    ',
-        '    K    ',
-        '   DKD   ',
-        '  DUKUD  ',
-        '    G    '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_shovel'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_shovel')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '2x draconicevolution:awakened_core',
+            '1x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_shovel'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_shovel')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_hoe', [
-        'AAAGAANAA',
-        'AAAAAAAAA',
-        'AAAGAAAAA',
-        '   AAKK  ',
-        '   GAKK  ',
-        '   ADKK  ',
-        '   ADKK  ',
-        '   ADKK  ',
-        '   GUAG  '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_hoe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_hoe')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '2x draconicevolution:awakened_core',
+            '1x draconicevolution:draconic_energy_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_hoe'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_hoe')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_bow', [
-        '  AFKKFA ',
-        ' AFUKKFA ',
-        'AFGGKKFFA',
-        'AFGGNKFFA',
-        'AFGGKKFFA',
-        ' AFUKKFA ',
-        '  AFKKFA ',
-        '   ADNDA ',
-        '    GAG  '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        F: 'gtceu:awakened_draconium_fine_wire',
-        N: 'minecraft:netherite_ingot',
-        U: 'draconicevolution:wyvern_bow'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_bow')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '4x gtceu:awakened_draconium_fine_wire',
+            '2x draconicevolution:awakened_core',
+            '2x minecraft:netherite_ingot',
+            '1x draconicevolution:wyvern_bow'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_bow')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_capacitor', [
-        ' AAAAAAA ',
-        'AAGAAAGAA',
-        'AAGAAAGAA',
-        'AAADDDAAA',
-        'AAAUKUAAA',
-        'AAADDDAAA',
-        'AAGAAAGAA',
-        'AAGAAAGAA',
-        ' AAAAAAA '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        U: 'draconicevolution:wyvern_capacitor'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_capacitor')
+        .itemInputs(
+            '12x gtceu:awakened_draconium_plate',
+            '2x gtceu:awakened_draconium_rod',
+            '4x draconicevolution:awakened_core',
+            '2x draconicevolution:draconic_energy_core',
+            '1x draconicevolution:wyvern_capacitor'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_capacitor')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    // draconic_staff gated behind dragon_heart_crystal (Prophet tier)
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:draconic_staff', [
-        '   AKA   ',
-        '  AGGGA  ',
-        ' AGDKDGA ',
-        ' AKDDDKA ',
-        ' AGDHDGA ',
-        ' AKDDDKA ',
-        ' AGDKDGA ',
-        '  AGGGA  ',
-        '   AKA   '
-    ], {
-        G: 'draconicevolution:awakened_core',
-        D: 'draconicevolution:draconic_energy_core',
-        A: 'gtceu:awakened_draconium_plate',
-        K: 'gtceu:awakened_draconium_rod',
-        H: 'kubejs:dragon_heart_crystal'
-    })
+    // draconic_staff — no wyvern version; gated behind dragon_heart_crystal (Prophet tier)
+    event.recipes.gtceu.draconic_infusion_chamber('de_draconic_staff')
+        .itemInputs(
+            '12x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '4x draconicevolution:awakened_core',
+            '2x draconicevolution:draconic_energy_core',
+            '1x kubejs:dragon_heart_crystal'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 4000))
+        .itemOutputs('draconicevolution:draconic_staff')
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    // ── Extended Crafting: Chaotic gear (UEV tier, 9×9 ultimate table) ─────────
-    // Upgrade theme: consumes the draconic version (U key).
-    // Key: C=chaotic_core, S=chaos_shard, L=large_chaos_frag, X=chaos_crystal_dust,
-    //      A=awakened_draconium_plate, U=draconic_[item]
+    // ── Draconic Infusion Chamber: Chaotic gear (UEV) ────────────────────────────
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_chestpiece', [
-        'AAAAAAAAA',
-        'ACAAAACAA',
-        'AAASXSAAA',
-        'ACAAAAAAA',
-        'AAAXUXAAA',
-        'ACAAAAAAA',
-        'AAASXSAAA',
-        'ACAAAACAA',
-        'AAAAAAAAA'
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_chestpiece'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_chestpiece')
+        .itemInputs(
+            '16x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '4x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_chestpiece'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_chestpiece')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_sword', [
-        '    A    ',
-        '   AXA   ',
-        '  ACXCA  ',
-        '   AXA   ',
-        '    X    ',
-        '    X    ',
-        '   SXS   ',
-        '  CUXUC  ',
-        '    C    '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_sword'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_sword')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_sword'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_sword')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_axe', [
-        '  AAAAA  ',
-        ' AACAAAA ',
-        ' AAAASAA ',
-        ' AACAAAA ',
-        '  AAUXA  ',
-        '   AXX   ',
-        '   CXX   ',
-        '   CXC   ',
-        '    C    '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_axe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_axe')
+        .itemInputs(
+            '10x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_axe'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_axe')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_pickaxe', [
-        'AAACAASAA',
-        'AAAAAAAAA',
-        'AAACAAAAA',
-        '   AAXX  ',
-        '   CAXX  ',
-        '   ACXX  ',
-        '   ACXX  ',
-        '   ACXU  ',
-        '    C    '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_pickaxe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_pickaxe')
+        .itemInputs(
+            '10x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_pickaxe'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_pickaxe')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_shovel', [
-        '   AXA   ',
-        '  ACXCA  ',
-        '   ASA   ',
-        '  ACXCA  ',
-        '    X    ',
-        '    X    ',
-        '   CXC   ',
-        '  CUXUC  ',
-        '    C    '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_shovel'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_shovel')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_shovel'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_shovel')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_hoe', [
-        'AAACAASAA',
-        'AAAAAAAAA',
-        'AAACAAAAA',
-        '   AAXX  ',
-        '   CAXX  ',
-        '   ACXX  ',
-        '   ACXX  ',
-        '   ACXX  ',
-        '   CUAC  '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_hoe'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_hoe')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_hoe'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_hoe')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_bow', [
-        '  AFXXFA ',
-        ' AFUXXFA ',
-        'AFCCXXFFA',
-        'AFCCSXFFA',
-        'AFCCXXFFA',
-        ' AFUXXFA ',
-        '  AFXXFA ',
-        '   ACSCA ',
-        '    CAC  '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        F: 'gtceu:awakened_draconium_fine_wire',
-        U: 'draconicevolution:draconic_bow'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_bow')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_fine_wire',
+            '4x draconicevolution:chaotic_core',
+            '2x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_bow'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_bow')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_capacitor', [
-        ' AAAAAAA ',
-        'AACAAACAA',
-        'AACAAACAA',
-        'AAASSSAAA',
-        'AAAXUXAAA',
-        'AAASSSAAA',
-        'AACAAACAA',
-        'AACAAACAA',
-        ' AAAAAAA '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_capacitor'
-    })
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_capacitor')
+        .itemInputs(
+            '12x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '4x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_capacitor'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_capacitor')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
-    // chaotic_staff — primary path (draconic_staff upgrade)
-    event.recipes.extendedcrafting.shaped_table('draconicevolution:chaotic_staff', [
-        '   AXA   ',
-        '  ACCCA  ',
-        ' ACCXCCA ',
-        ' ACXXXCA ',
-        ' ACCUCCA ',
-        ' ACXXXCA ',
-        ' ACCXCCA ',
-        '  ACCCA  ',
-        '   ASA   '
-    ], {
-        C: 'draconicevolution:chaotic_core',
-        S: 'draconicevolution:chaos_shard',
-        X: 'gtceu:chaos_crystal_dust',
-        A: 'gtceu:awakened_draconium_plate',
-        U: 'draconicevolution:draconic_staff'
-    })
-
+    event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_staff')
+        .itemInputs(
+            '12x gtceu:awakened_draconium_plate',
+            '4x draconicevolution:chaotic_core',
+            '4x draconicevolution:chaos_shard',
+            '4x gtceu:chaos_crystal_dust',
+            '1x draconicevolution:draconic_staff'
+        )
+        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .itemOutputs('draconicevolution:chaotic_staff')
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
 })

@@ -117,6 +117,19 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UIV])
 
+    // Void Crucible Casing — UEV assembler, awakened_draconium structure
+    event.recipes.gtceu.assembler('void_crucible_casing_assembly')
+        .itemInputs(
+            '4x gtceu:awakened_draconium_plate',
+            '4x gtceu:awakened_draconium_rod',
+            '1x draconicevolution:awakened_core',
+            '1x #gtceu:circuits/uev'
+        )
+        .inputFluids(Fluid.of('gtceu:lubricant', 100))
+        .itemOutputs('8x kubejs:void_crucible_casing')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+
     // chaos_matrix_fluid — UHV chemical reactor
     // Requires: chaos_shard + gaia_spirit_dust + stellar plasma + draconic_computation
     event.recipes.gtceu.chemical_reactor('chaos_matrix_fluid_synthesis')

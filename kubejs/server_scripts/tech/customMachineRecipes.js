@@ -6,7 +6,10 @@ let machineTier = [
     'iv',
     'luv',
     'zpm',
-    'uv'
+    'uv',
+    'uhv',
+    'uev',
+    'uiv'
 ]
 let tierCable = [
     'tin',
@@ -16,7 +19,10 @@ let tierCable = [
     'platinum',
     'niobium_titanium',
     'vanadium_gallium',
-    'yttrium_barium_cuprate'
+    'yttrium_barium_cuprate',
+    'draconic_fluxite',
+    'chaotic_singulite',
+    'cumium'
 ]
 let tierMagic = [
     'gtceu:luminessence_dust',
@@ -26,7 +32,10 @@ let tierMagic = [
     'gtceu:manasteel_plate',
     'gtceu:terrasteel_plate',
     'gtceu:elementium_plate',
-    'gtceu:gaia_spirit_plate'
+    'gtceu:gaia_spirit_plate',
+    'gtceu:quantum_star',
+    'draconicevolution:chaos_shard',
+    'draconicevolution:large_chaos_frag'
 ]
 ServerEvents.recipes(event => {
   machineTier.forEach((tier, index) => {

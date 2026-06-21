@@ -12,6 +12,12 @@ StartupEvents.registry('block', event => {
         .hardness(6).resistance(15)
         .tagBlock('mineable/pickaxe')
 
+    event.create('void_crucible_casing')
+        .textureAll('kubejs:block/void_crucible_casing')
+        .displayName('Void Crucible Casing')
+        .hardness(7).resistance(18)
+        .tagBlock('mineable/pickaxe')
+
     // 12600K / level 16 / energy discount 16 / tier 9
     // Springs auto-generated from draconium GENERATE_SPRING flag
     event.create('draconium_wire_coil', 'gtceu:coil')
