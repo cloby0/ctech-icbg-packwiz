@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('electric_motor_uhv')
         .itemInputs(
-            '1x gtceu:magnetic_samarium_long_rod',
+            '1x gtceu:long_magnetic_samarium_rod',
             '4x gtceu:draconium_long_rod',
             '4x gtceu:draconium_bolt',
             '8x gtceu:draconium_screw',
@@ -103,12 +103,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('electric_motor_uev')
         .itemInputs(
-            '1x gtceu:magnetic_samarium_long_rod',
-            '4x gtceu:awakened_draconium_long_rod',
+            '1x gtceu:long_magnetic_samarium_rod',
+            '4x gtceu:long_awakened_draconium_rod',
             '4x gtceu:awakened_draconium_bolt',
             '8x gtceu:awakened_draconium_screw',
-            '64x gtceu:awakened_draconium_fine_wire',
-            '32x gtceu:chaotic_singulite_fine_wire',
+            '64x gtceu:fine_awakened_draconium_wire',
+            '32x gtceu:fine_chaotic_singulite_wire',
             '2x gtceu:chaotic_singulite_single_wire'
         )
         .inputFluids(
@@ -121,12 +121,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('electric_motor_uiv')
         .itemInputs(
-            '1x gtceu:magnetic_samarium_long_rod',
-            '4x gtceu:cumium_long_rod',
+            '1x gtceu:long_magnetic_samarium_rod',
+            '4x gtceu:long_cumium_rod',
             '4x gtceu:cumium_bolt',
             '8x gtceu:cumium_screw',
-            '64x gtceu:cumium_fine_wire',
-            '32x gtceu:cumium_fine_wire',
+            '64x gtceu:fine_cumium_wire',
+            '32x gtceu:fine_cumium_wire',
             '2x gtceu:cumium_single_wire'
         )
         .inputFluids(
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('electric_pump_uev')
         .itemInputs(
             '1x gtceu:uev_electric_motor',
-            '2x gtceu:awakened_draconium_long_rod',
+            '2x gtceu:long_awakened_draconium_rod',
             '2x gtceu:awakened_draconium_bolt',
             '4x gtceu:awakened_draconium_screw',
             '1x gtceu:awakened_draconium_spring',
@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('robot_arm_uev')
         .itemInputs(
-            '4x gtceu:awakened_draconium_long_rod',
+            '4x gtceu:long_awakened_draconium_rod',
             '2x gtceu:awakened_draconium_plate',
             '4x gtceu:awakened_draconium_bolt',
             '2x gtceu:uev_electric_motor',
@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x gtceu:awakened_framework_frame',
             '1x gtceu:uev_electric_motor',
-            '4x gtceu:awakened_draconium_long_rod',
+            '4x gtceu:long_awakened_draconium_rod',
             '1x draconicevolution:chaos_shard',
             '2x #gtceu:circuits/uev',
             '64x gtceu:chaotic_singulite_foil',
