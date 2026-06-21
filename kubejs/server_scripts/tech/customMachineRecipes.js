@@ -6,10 +6,7 @@ let machineTier = [
     'iv',
     'luv',
     'zpm',
-    'uv',
-    'uhv',
-    'uev',
-    'uiv'
+    'uv'
 ]
 let tierCable = [
     'tin',

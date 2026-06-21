@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '8x gtceu:draconium_plate',
             '4x gtceu:draconium_rod',
-            '4x gtceu:draconium_fine_wire',
+            '4x gtceu:fine_draconium_wire',
             '2x draconicevolution:wyvern_core',
             '1x draconicevolution:wyvern_energy_core',
             '1x gtceu:quantum_star'

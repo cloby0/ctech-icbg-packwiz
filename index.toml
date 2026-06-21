@@ -1758,7 +1758,7 @@ hash = "86843bd740b707cb9b08426137176e825debe76fd809a42b38200f741bdc786c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
-hash = "bd25cd1a746b3808286e700f65a85a3449360c42042304c0da94d2cbaef0e938"
+hash = "649f45666c8fbc530786164d38cbb0ca0e50c9ef41d688199538efc182999ec5"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cyberware.js"
@@ -1770,7 +1770,7 @@ hash = "c40129d114ec671e507e7735994396b212b2e812139b239a492630c2bdd40d01"
 
 [[files]]
 file = "kubejs/server_scripts/tech/deDraconicRecipes.js"
-hash = "c035805aa20321ba2beb398f21366a24db455617aa917c085adcd90e429a0ed3"
+hash = "a13bea62b7b81307a8ea5f5fcd888099591b737249cca3c04c3431fca6ee8908"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
