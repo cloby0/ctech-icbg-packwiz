@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '4x draconicevolution:awakened_draconium_ingot',
             '4x draconicevolution:wyvern_core',
-            '1x gtceu:gaia_spirit_ingot'
+            '1x botania:gaia_ingot'
         )
         .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
         .itemOutputs('draconicevolution:awakened_core')
