@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('electric_motor_uhv')
         .itemInputs(
             '1x gtceu:long_magnetic_samarium_rod',
-            '4x gtceu:draconium_long_rod',
+            '4x gtceu:long_draconium_rod',
             '4x gtceu:draconium_bolt',
             '8x gtceu:draconium_screw',
             '64x gtceu:fine_draconium_wire',
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:cumium_bolt',
             '8x gtceu:cumium_screw',
             '4x gtceu:cumium_rod',
-            '2x gtceu:cumium_long_rod',
+            '2x gtceu:long_cumium_rod',
             '2x gtceu:cumium_single_wire'
         )
         .inputFluids(
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('electric_pump_uhv')
         .itemInputs(
             '1x gtceu:uhv_electric_motor',
-            '2x gtceu:draconium_long_rod',
+            '2x gtceu:long_draconium_rod',
             '2x gtceu:draconium_bolt',
             '4x gtceu:draconium_screw',
             '1x gtceu:draconium_spring',
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('electric_pump_uiv')
         .itemInputs(
             '1x gtceu:uiv_electric_motor',
-            '2x gtceu:cumium_long_rod',
+            '2x gtceu:long_cumium_rod',
             '2x gtceu:cumium_bolt',
             '4x gtceu:cumium_screw',
             '2x gtceu:cumium_rod',
@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('robot_arm_uhv')
         .itemInputs(
-            '4x gtceu:draconium_long_rod',
+            '4x gtceu:long_draconium_rod',
             '2x gtceu:draconium_plate',
             '4x gtceu:draconium_bolt',
             '2x gtceu:uhv_electric_motor',
@@ -340,7 +340,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('robot_arm_uiv')
         .itemInputs(
-            '4x gtceu:cumium_long_rod',
+            '4x gtceu:long_cumium_rod',
             '2x gtceu:cumium_plate',
             '4x gtceu:cumium_bolt',
             '2x gtceu:uiv_electric_motor',
@@ -423,7 +423,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x gtceu:draconic_framework_frame',
             '1x gtceu:uhv_electric_motor',
-            '4x gtceu:draconium_long_rod',
+            '4x gtceu:long_draconium_rod',
             '1x kubejs:dragon_heart_crystal',
             '2x #gtceu:circuits/uhv',
             '64x gtceu:draconic_fluxite_foil',
@@ -455,7 +455,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x gtceu:awakened_framework_frame',
             '1x gtceu:uiv_electric_motor',
-            '4x gtceu:cumium_long_rod',
+            '4x gtceu:long_cumium_rod',
             '1x draconicevolution:large_chaos_frag',
             '2x #gtceu:circuits/uiv',
             '64x gtceu:cumium_foil',
