@@ -89,8 +89,8 @@ ServerEvents.recipes(event => {
             '4x gtceu:draconium_long_rod',
             '4x gtceu:draconium_bolt',
             '8x gtceu:draconium_screw',
-            '64x gtceu:draconium_fine_wire',
-            '32x gtceu:draconic_fluxite_fine_wire',
+            '64x gtceu:fine_draconium_wire',
+            '32x gtceu:fine_draconic_fluxite_wire',
             '2x gtceu:draconic_fluxite_single_wire'
         )
         .inputFluids(
@@ -481,8 +481,8 @@ ServerEvents.recipes(event => {
             '1x kubejs:dragon_heart_crystal',
             '2x gtceu:uhv_emitter',
             '2x #gtceu:circuits/uhv',
-            '64x gtceu:draconium_fine_wire',
-            '64x gtceu:draconic_fluxite_fine_wire',
+            '64x gtceu:fine_draconium_wire',
+            '64x gtceu:fine_draconic_fluxite_wire',
             '4x gtceu:draconic_fluxite_single_wire'
         )
         .inputFluids(
@@ -500,8 +500,8 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:chaos_shard',
             '2x gtceu:uev_emitter',
             '2x #gtceu:circuits/uev',
-            '64x gtceu:awakened_draconium_fine_wire',
-            '64x gtceu:chaotic_singulite_fine_wire',
+            '64x gtceu:fine_awakened_draconium_wire',
+            '64x gtceu:fine_chaotic_singulite_wire',
             '4x gtceu:chaotic_singulite_single_wire'
         )
         .inputFluids(
@@ -519,7 +519,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:large_chaos_frag',
             '2x gtceu:uiv_emitter',
             '2x #gtceu:circuits/uiv',
-            '64x gtceu:cumium_fine_wire',
+            '64x gtceu:fine_cumium_wire',
             '64x gtceu:cumium_foil',
             '4x gtceu:cumium_single_wire'
         )
