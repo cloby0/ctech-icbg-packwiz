@@ -31,8 +31,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',
             'botania:gaia_ingot',
-            'gtceu:chaos_substrate_dust',
-            'gtceu:chaos_substrate_dust'
+            'gtceu:chaos_crystal_dust',
+            'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:chaotic_sanguinary',
         sourceCost: 90000
@@ -47,8 +47,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',
             'botania:gaia_ingot',
-            'gtceu:chaos_substrate_dust',
-            'gtceu:chaos_substrate_dust'
+            'gtceu:chaos_crystal_dust',
+            'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:shattered_sanctum',
         sourceCost: 90000
@@ -63,8 +63,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',
             'botania:gaia_ingot',
-            'gtceu:chaos_substrate_dust',
-            'gtceu:chaos_substrate_dust'
+            'gtceu:chaos_crystal_dust',
+            'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:codex_of_entropy',
         sourceCost: 90000
@@ -79,8 +79,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',
             'botania:gaia_ingot',
-            'gtceu:chaos_substrate_dust',
-            'gtceu:chaos_substrate_dust'
+            'gtceu:chaos_crystal_dust',
+            'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:chronicle_of_unraveling',
         sourceCost: 90000

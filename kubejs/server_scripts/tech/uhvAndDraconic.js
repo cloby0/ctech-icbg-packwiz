@@ -3,9 +3,11 @@ ServerEvents.recipes(event => {
     // draconium EBF is auto-generated from blastTemp(9000) in gtceuMaterialRegistry.js
     // ingot setIgnored → draconicevolution:draconium_ingot; vanilla smelt removed below
 
-    // Remove DE's own vanilla smelting for draconium so EBF is the only path
+    // Remove DE vanilla smelting — EBF is the only path for draconium,
+    // Draconic Infusion Chamber is the only path for awakened_draconium
     event.remove({ type: 'minecraft:smelting', output: 'draconicevolution:draconium_ingot' })
     event.remove({ type: 'minecraft:blasting', output: 'draconicevolution:draconium_ingot' })
+    event.remove({ type: 'minecraft:smelting', output: 'draconicevolution:awakened_draconium_ingot' })
 
     // awakened_draconium — Draconic Infusion Chamber (UHV gate)
     // draconium_ingot + draconic_computation → awakened_draconium_ingot

@@ -3,10 +3,10 @@ ServerEvents.recipes(event => {
     // chaotic_singulite and awakened_framework EBF recipes are auto-generated from
     // components + blastTemp defined in gtceuMaterialRegistry.js
 
-    // chaos_substrate_dust — UV macerator, from Chaos Guardian drop
+    // chaos_crystal_dust — UV macerator, from Chaos Guardian drop
     event.recipes.gtceu.macerator('chaos_shard_maceration')
         .itemInputs('1x draconicevolution:chaos_shard')
-        .itemOutputs('4x gtceu:chaos_substrate_dust')
+        .itemOutputs('4x gtceu:chaos_crystal_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:neutronium_wafer',
             '2x gtceu:awakened_draconium_foil',
             '1x kubejs:stabilized_chaos_crystal',
-            '1x gtceu:chaos_substrate_dust'
+            '1x gtceu:chaos_crystal_dust'
         )
         .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
         .itemOutputs('kubejs:chaos_harmonic_board')

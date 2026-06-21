@@ -59,4 +59,13 @@ ItemEvents.tooltip(event => {
 
     event.add('kubejs:element_attunement_stone', '§7Obtained from killing the Sun Spirit')
 
+    event.add('draconicevolution:draconium_ingot', [
+        '§5UV-Tier Material',
+        '§7Element: §5Draconium (Dc-216)'
+    ])
+    event.add('draconicevolution:awakened_draconium_ingot', [
+        '§6UHV-Tier Material',
+        '§7Element: §6Draconium-248 (Dc-248, isotope)'
+    ])
+
 })

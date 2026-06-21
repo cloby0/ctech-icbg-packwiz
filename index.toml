@@ -1018,7 +1018,7 @@ hash = "68c63cdaa9baacd4ab0dbb5fe8e719ef844257711f469c24c4f4bbc72352ffe3"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "b6e06f26a22fbc719d9ba74e65da364c04629cdd0cd26385326d6e6fcec52dd6"
+hash = "bb89159a58ac55ad1678e3dedc0b266ac2e065d4aa4c5714cf7662cb9c956c3d"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1626,7 +1626,7 @@ hash = "4ac85b520a23f391df4da37de8d32b793b9e62e95a73d3218ed548b63f4370cd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
-hash = "22a48e864dc82f9713a937bcdea7ad1cadeff402fcdb0f49f6aaaf357f36b7c6"
+hash = "39589bb0395c1963f31240f090685af06d4b9739a80f6d01598fb82c9c73bcac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestialEnchantments.js"
@@ -1769,6 +1769,10 @@ file = "kubejs/server_scripts/tech/cyberware.js"
 hash = "7ad46f1b888c5bd5c168a2d10668ea63d930dc687a92a61506e5ad69ef901148"
 
 [[files]]
+file = "kubejs/server_scripts/tech/deDraconicRecipes.js"
+hash = "34dc1abd72a3e707843fa2cb3e21450d8a38cd8ca4f2849c16eef3ee5712a073"
+
+[[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
 hash = "d2ed6ba3e4f95a3e15a35fec2a638f44c30953ac2f82c559c1acd8ad2a53b214"
 
@@ -1842,11 +1846,11 @@ hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"
-hash = "5683b02f5e635bf588ee0bbb2663035905edcc6f99d35f0d65c99a05ace8ebfa"
+hash = "bae0bc5e8dbbbb109ff55c7d6d1ebee2009a974d328ed7712d4bc02f02d42684"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
-hash = "a2decd2f100e79d25783a0b2aee8395d6d002a5ff736971e03fc7d94c2a2f7fa"
+hash = "8beddb251e8e632049b3650203655b84b0b623fb30cbcf13f8c31bdfe5cc7f49"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -1942,11 +1946,11 @@ hash = "4f32b457fd02d92d8fa6b3dbb9fa7fdcfa5f3bd1cb04fe23fe0f68096c9e7383"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "88c0f42bdd147d2621b228357ac9c824f91c9704d61a60e2ad7f034829284766"
+hash = "7a55647062c09527e7337475d7fa1786473ec5abbdca34bdb9516fc61ab485d5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "002d1b1ca34a6440fcc9cdca0e4b9d30f5e8081c73c795debbb6e06a93137b4e"
+hash = "0dfda5fb20b66d36dad4f8e662bd09462ac1b5619f9d4fc3231a4dbe51fd59b9"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"

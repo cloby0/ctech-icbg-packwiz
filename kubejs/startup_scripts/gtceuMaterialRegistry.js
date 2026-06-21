@@ -71,12 +71,45 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Ct')
         .isIsotope(false)
 
+    event.create('draconium')
+        .protons(56)
+        .neutrons(160)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Dc')
+        .isIsotope(false)
+
+    // awakened draconium is an energized isotope of draconium (same element, higher mass)
+    event.create('awakened_draconium')
+        .protons(56)
+        .neutrons(192)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Dc')
+        .isIsotope(true)
+
     event.create('veridium')
         .protons(44)
         .neutrons(165)
         .halfLifeSeconds(-1)
         .decayTo(null)
         .symbol('Vr')
+        .isIsotope(false)
+
+    event.create('gaia_spirit')
+        .protons(48)
+        .neutrons(180)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Gs')
+        .isIsotope(false)
+
+    event.create('chaos_crystal')
+        .protons(108)
+        .neutrons(222)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Cx')
         .isIsotope(false)
 
 })
@@ -260,6 +293,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('gaia_spirit')
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
+        .element('gaia_spirit')
         .ingot()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -727,6 +761,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // EBF at 9000K (UV) gates ingot from dust; NO_SMELTING removes vanilla smelt bypass
     event.create('draconium')
         .ingot()
+        .element('draconium')
         .color(0x7B35D9)
         .secondaryColor(0x3D0F7A)
         .iconSet(GTMaterialIconSet.BRIGHT)
@@ -746,6 +781,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Ingot gated by Draconic Infusion Chamber (draconium_ingot + draconic_computation); NO_SMELTING removes vanilla bypass
     event.create('awakened_draconium')
         .ingot()
+        .element('awakened_draconium')
         .color(0xFF8C00)
         .secondaryColor(0xCC5500)
         .iconSet(GTMaterialIconSet.BRIGHT)
@@ -760,13 +796,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
 
-    // Powdered chaos energy — macerating DE chaos_shard
-    // Used in: Chaotic Singulite alloy, Chaos Harmonic Board (UEV)
-    event.create('chaos_substrate')
+    // GT gem material for the DE chaos crystal family — 5 tiers map to 5 DE items via setIgnored
+    // chipped=small_frag, flawed=medium_frag, gem=chaos_shard, flawless=large_frag, exquisite=chaos_crystal
+    // dust form (chaos_crystal_dust) used in alloy components and EC recipes
+    event.create('chaos_crystal')
+        .element('chaos_crystal')
+        .gem()
         .dust()
         .color(0xFF2020)
         .secondaryColor(0x8B0000)
-        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(GTMaterialFlags.GENERATE_LENS)
 
     // UHV structural alloy — casing for Draconic Infusion Chamber
     // Mixer gate: dragon_heart_crystal added to mixer recipe in uhvAndDraconic.js (auto-mixer replaced)
@@ -793,7 +833,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xCC6600)
         .secondaryColor(0x7A3300)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('2x awakened_draconium', '1x neutronium', '1x chaos_substrate', '1x gaia_spirit')
+        .components('2x awakened_draconium', '1x neutronium', '1x chaos_crystal', '1x gaia_spirit')
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 1000)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -826,7 +866,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xFF4400)
         .secondaryColor(0xAA2200)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('1x awakened_draconium', '1x chaos_substrate', '1x gaia_spirit')
+        .components('1x awakened_draconium', '1x chaos_crystal', '1x gaia_spirit')
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 800)
         .cableProperties(GTValues.VA[GTValues.UEV], 32, 0, true)
         .flags(
