@@ -1810,7 +1810,7 @@ hash = "b65c9530a99c48cd0d729e38531728636ddf5125717b3f452fdbc16bdea62c59"
 
 [[files]]
 file = "kubejs/server_scripts/tech/highTierComponents.js"
-hash = "738ddc47397afa747e0e3aceba6141a574945570a2542ac1af567e572da6f4cb"
+hash = "23957a8e8d5bbe0441d126b6c65f5f1241db9e4b1a3775c14e96fbf308b21fce"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
