@@ -35,4 +35,13 @@ StartupEvents.registry('block', event => {
         .energyDiscount(16)
         .tier(10)
         .coilMaterial(() => GTMaterials.get('awakened_draconium'))
+
+    // 16200K / level 64 / energy discount 16 / tier 11
+    // cumium has no spring flag — recipe uses long_cumium_rod as substitute
+    event.create('cumium_wire_coil', 'gtceu:coil')
+        .temperature(16200)
+        .level(64)
+        .energyDiscount(16)
+        .tier(11)
+        .coilMaterial(() => GTMaterials.get('cumium'))
 })

@@ -476,7 +476,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element('cumium')
         .color(0xCFD2D5)
         .secondaryColor(0x8FB1AF)
-        .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 3600)
+        .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 3600)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .cableProperties(GTValues.VA[GTValues.UIV], 64, 0, true)
         .flags(
@@ -761,11 +761,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // EBF at 9000K (UV) gates ingot from dust; NO_SMELTING removes vanilla smelt bypass
     event.create('draconium')
         .ingot()
+        .fluid()
+        .ore()
         .element('draconium')
         .color(0x7B35D9)
         .secondaryColor(0x3D0F7A)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 1200)
+        .cableProperties(GTValues.VA[GTValues.UHV], 1, 16, false)
         .flags(
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_PLATE,
@@ -781,10 +784,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Ingot gated by Draconic Infusion Chamber (draconium_ingot + draconic_computation); NO_SMELTING removes vanilla bypass
     event.create('awakened_draconium')
         .ingot()
+        .fluid()
         .element('awakened_draconium')
         .color(0xFF8C00)
         .secondaryColor(0xCC5500)
         .iconSet(GTMaterialIconSet.BRIGHT)
+        .cableProperties(GTValues.VA[GTValues.UEV], 1, 32, false)
         .flags(
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_PLATE,

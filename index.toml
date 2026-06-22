@@ -829,14 +829,6 @@ file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "7ca148110e11b5a346863dda612be73ef1fc599aecfff9edcb0da3bfe828e046"
 
 [[files]]
-file = "kubejs/assets/gtceu/textures/item/cumium_ingot.png"
-hash = "5ec67536439fa25ddb4cdb295ee3ae6234d585259c7c0347fce431e83098f304"
-
-[[files]]
-file = "kubejs/assets/gtceu/textures/item/cumium_nugget.png"
-hash = "b9d1718132c06dd730afa836711250b1fcc39934661773ac0451c739bd46cc51"
-
-[[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
 hash = "1e2c4d84b307fbefc75a8227ddcc90deaa7d1add8e2657c779f561d86f7d984f"
 
@@ -1095,6 +1087,18 @@ hash = "614f131be6b7a4392af3a1b8059d476bd750d3f6f13b0743beb6f6aef4f80a36"
 [[files]]
 file = "kubejs/data/deep_aether/worldgen/biome/yagroot_swamp.json"
 hash = "b3bf3df719f70dd8bdcab291f95cc282535c12333ec1fd966937a7ccc620e6aa"
+
+[[files]]
+file = "kubejs/data/draconicevolution/forge/biome_modifier/end_draconium_ore.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/draconicevolution/forge/biome_modifier/nether_draconium_ore.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/draconicevolution/forge/biome_modifier/overworld_draconium_ore.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/aluminium_ingot.json"
@@ -1718,7 +1722,7 @@ hash = "8a65e28931cb39a6883f14587a3b30efb5213c3365a76d45c3162749ac702f70"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ae2.js"
-hash = "f29b530f159d6f90452d8056f6338389114e9580dad894c07d21fb5c6108016a"
+hash = "cfdfa57f784d2192fd5cc9f439c841208b784ce457770968df9dc3927ad3fa08"
 
 [[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
@@ -1798,7 +1802,7 @@ hash = "b65c9530a99c48cd0d729e38531728636ddf5125717b3f452fdbc16bdea62c59"
 
 [[files]]
 file = "kubejs/server_scripts/tech/highTierComponents.js"
-hash = "6fae7a121b7e08fd3d0bc8256bb33a781a2b087d1d8b9805b1acba88f1ede739"
+hash = "3ad1d8bf8d3d339805ce874d4827956192f0fe04a5b5d3e1d2cb3b8278f2250c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
@@ -1846,11 +1850,15 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "5555f6e38708a68a0b85066f26fc86ad5007036a1a911680f66e2f006ec78281"
+hash = "b7da274e971e419d371a779c1b9aa2342cbaa4d19ec8012962015d2c2ee9663a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
 hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
+
+[[files]]
+file = "kubejs/server_scripts/worldgen/endWorldgen.js"
+hash = "6851920f51c3079623853eaa8037017ae29c39f369c786c07824a848272874a9"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
@@ -1874,7 +1882,7 @@ hash = "9dfa5844e4f1f6d9b64f6b0be4bceaf05decb3e27c786acf15f155724bd0ba47"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
-hash = "fbfc8dc76e10fb170c90657bfc537869293dc364e1616bb36febd6bf7d35d78c"
+hash = "2329800d5009b4f630f8bab4419a8d7a80fdd16dfcf51056b17d66b70641cf13"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/kiln.js"
@@ -1937,12 +1945,16 @@ file = "kubejs/startup_scripts/fluidRegistry.js"
 hash = "4f32b457fd02d92d8fa6b3dbb9fa7fdcfa5f3bd1cb04fe23fe0f68096c9e7383"
 
 [[files]]
+file = "kubejs/startup_scripts/gtCraftingComponentExtensions.js"
+hash = "6068115604afbdb2d2df7b18d462b1738c393a75eb78fede8a3740e6f0518e9f"
+
+[[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
 hash = "7a55647062c09527e7337475d7fa1786473ec5abbdca34bdb9516fc61ab485d5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "593dc26155d934ebed53c96924ff5c7f55ec16d262768bbaf5201da26dd6739b"
+hash = "1769abaeb1b34de5c6e0ee9517ae82e3a35ae4c493094965cf8115c7e4d6e9bc"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -2870,6 +2882,11 @@ hash = "1be8443ff17db60170347dd46ab54bd809508030e5dc050e230b49c15ec3e850"
 metafile = true
 
 [[files]]
+file = "mods/item-obliterator.pw.toml"
+hash = "07fc40541ee106402ce9eb26888d7d078e5fd28cd01a00cbc04dd57839c6aeeb"
+metafile = true
+
+[[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
 metafile = true
@@ -3187,6 +3204,11 @@ metafile = true
 [[files]]
 file = "mods/nameless-trinkets.pw.toml"
 hash = "200c786fa79062b05dee983ea88deb97d12a00e4de237fe85a35ab4e02b8cb5d"
+metafile = true
+
+[[files]]
+file = "mods/necronomicon.pw.toml"
+hash = "318a137293d0919ddeb5e25c3facd5bc83de60366ac6cd5707d28ee650330f62"
 metafile = true
 
 [[files]]

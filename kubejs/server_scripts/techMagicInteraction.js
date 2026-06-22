@@ -672,7 +672,7 @@ ServerEvents.recipes(event => {
     // step 4: awakened cumium embryo — sage-tier awakening via Enchanting Apparatus
     //   gaia_ingot x2: two Guardian of Gaia kills (or MA gaia_spirit_essence farm)
     //   elementium_ingot x4: elven portal endgame
-    //   neutronium_dust x2: UV tech ceiling
+    //   chaotic_singulite_dust x2: UEV tech ceiling
     //   60000 source: Grand Enchanting Sanctum + major source generation required
     addEnchantingRecipe(event, {
         reagent: 'kubejs:gestated_cumium_crystal',
@@ -683,8 +683,8 @@ ServerEvents.recipes(event => {
             'botania:elementium_ingot',
             'botania:elementium_ingot',
             'botania:elementium_ingot',
-            'gtceu:neutronium_dust',
-            'gtceu:neutronium_dust'
+            'gtceu:chaotic_singulite_dust',
+            'gtceu:chaotic_singulite_dust'
         ],
         output: 'kubejs:awakened_cumium_embryo',
         sourceCost: 60000
@@ -693,7 +693,7 @@ ServerEvents.recipes(event => {
     // step 5: void flux amalgam — embryo fuses with stellar plasma and more cum (second cum gate)
     //   awakened_cumium_embryo: carries all prior chain value
     //   gaia_spirit_dust: binds the magic component
-    //   refined_stellar_plasma: UV energy channel
+    //   refined_stellar_plasma: energy channel
     //   cum: second appearance — biological resonance locks the fusion
     event.recipes.gtceu.chemical_reactor('void_flux_amalgam_synthesis')
         .itemInputs(
@@ -706,11 +706,11 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('3x kubejs:void_flux_amalgam')
         .duration(60 * 20)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     // step 6: terrestrial agglomeration plate (15,000,000 mana) — mana condensation locks the matrix
     //   gaia_ingot: third gaia gate in the chain
-    //   neutronium_dust: UV tech ceiling
+    //   chaotic_singulite_dust: UEV tech ceiling
     //   outputs unforged_cumium_matrix — not dust yet, needs forging
     addTerraPlateRecipe(event, {
         result: { item: 'kubejs:unforged_cumium_matrix' },
@@ -719,19 +719,19 @@ ServerEvents.recipes(event => {
             { item: 'kubejs:void_flux_amalgam' },
             { item: 'kubejs:void_flux_amalgam' },
             { item: 'botania:gaia_ingot' },
-            { item: 'gtceu:neutronium_dust' }
+            { item: 'gtceu:chaotic_singulite_dust' }
         ]
     })
 
-    // step 6.5: liquid computation — UV circuits dissolved in aqua regia + naquadria
+    // step 6.5: liquid computation — UEV circuits dissolved in aqua regia + naquadria
     //   the assembly line doesn't run on soldering alloy; it runs on distilled cognition
-    //   4x UV circuits per batch; 8000mB consumed by the forging = 4 circuits worth of computation
-    event.recipes.gtceu.chemical_reactor('uv_circuit_dissolution')
-        .itemInputs('4x #gtceu:circuits/uv', '1x gtceu:naquadria_dust')
+    //   4x UEV circuits per batch; 8000mB consumed by the forging = 4 circuits worth of computation
+    event.recipes.gtceu.chemical_reactor('uev_circuit_dissolution')
+        .itemInputs('4x #gtceu:circuits/uev', '1x gtceu:naquadria_dust')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
         .outputFluids(Fluid.of('kubejs:liquid_computation', 8000))
         .duration(20 * 20)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UEV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     // step 7: Void Crucible — crystallizes the matrix into cumium dust with apex gate items
@@ -739,19 +739,19 @@ ServerEvents.recipes(event => {
     //   neutronium_dust x2: UV tech ceiling
     //   void_core: Cataclysm void boss gate
     //   gaia_ingot: Sage-tier magic apex — Guardian of Gaia gate
-    //   uv_sensor x2 + uv_emitter x2 + uv_field_generator x2: apex UV components
+    //   uev_sensor x2 + uev_emitter x2 + uev_field_generator x2: apex UEV components
     //   cum 2000mB: third cum gate
     //   liquid_computation 8000mB: the crucible runs on cognition
     event.recipes.gtceu.void_crucible('cumium_void_crucible')
         .itemInputs(
             '1x kubejs:unforged_cumium_matrix',
             '4x gtceu:stem_cells',
-            '2x gtceu:neutronium_dust',
+            '2x gtceu:chaotic_singulite_dust',
             '1x cataclysm:void_core',
             '1x botania:gaia_ingot',
-            '2x gtceu:uv_sensor',
-            '2x gtceu:uv_emitter',
-            '2x gtceu:uv_field_generator'
+            '2x gtceu:uev_sensor',
+            '2x gtceu:uev_emitter',
+            '2x gtceu:uev_field_generator'
         )
         .inputFluids(
             Fluid.of('gtceu:cum', 2000),
@@ -759,8 +759,8 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('1x gtceu:cumium_dust')
         .duration(200 * 20)
-        .EUt(GTValues.VA[GTValues.UV])
-    // step 8 (auto): EBF (9000K, UV coils, 3600 ticks) → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
+        .EUt(GTValues.VA[GTValues.UEV])
+    // step 8 (auto): EBF (14400K, UEV coils, 3600 ticks) → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
 
     // blessed boule cutting recipes (all -> 48 wafers vs normal 32)
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')

@@ -12,23 +12,34 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('draconium_wire_coil_recipe')
         .itemInputs(
-            '8x gtceu:draconium_spring',
+            '8x gtceu:draconium_double_wire',
             '8x gtceu:draconic_fluxite_foil'
         )
-        .inputFluids(Fluid.of('gtceu:draconic_fluxite', 144))
+        .inputFluids(Fluid.of('gtceu:tritanium', 144))
         .itemOutputs('1x kubejs:draconium_wire_coil')
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.assembler('awakened_draconium_wire_coil_recipe')
         .itemInputs(
-            '8x gtceu:awakened_draconium_spring',
+            '8x gtceu:awakened_draconium_double_wire',
             '8x gtceu:chaotic_singulite_foil'
         )
-        .inputFluids(Fluid.of('gtceu:chaotic_singulite', 144))
+        .inputFluids(Fluid.of('gtceu:draconium', 144))
         .itemOutputs('1x kubejs:awakened_draconium_wire_coil')
         .duration(1100)
         .EUt(GTValues.VA[GTValues.UHV])
+
+    // cumium is SC — use awakened_draconium (non-SC) double wire for heat generation
+    event.recipes.gtceu.assembler('cumium_wire_coil_recipe')
+        .itemInputs(
+            '8x gtceu:awakened_draconium_double_wire',
+            '8x gtceu:cumium_foil'
+        )
+        .inputFluids(Fluid.of('gtceu:awakened_draconium', 144))
+        .itemOutputs('1x kubejs:cumium_wire_coil')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
 
     // =========================================================
     // MACHINE CASINGS
@@ -376,7 +387,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:draconic_fluxite_foil',
             '4x gtceu:draconic_fluxite_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 2304),
+            Fluid.of('gtceu:draconic_fluxite', 576)
+        )
         .itemOutputs('1x gtceu:uhv_sensor')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -392,7 +406,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:chaotic_singulite_foil',
             '4x gtceu:chaotic_singulite_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 2304))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 4608),
+            Fluid.of('gtceu:chaotic_singulite', 576)
+        )
         .itemOutputs('1x gtceu:uev_sensor')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -408,7 +425,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:cumium_foil',
             '4x gtceu:cumium_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 4608))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 9216),
+            Fluid.of('gtceu:cumium', 576)
+        )
         .itemOutputs('1x gtceu:uiv_sensor')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
@@ -430,7 +450,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:draconic_fluxite_foil',
             '4x gtceu:draconic_fluxite_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 2304),
+            Fluid.of('gtceu:draconic_fluxite', 576)
+        )
         .itemOutputs('1x gtceu:uhv_emitter')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -446,7 +469,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:chaotic_singulite_foil',
             '4x gtceu:chaotic_singulite_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 2304))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 4608),
+            Fluid.of('gtceu:chaotic_singulite', 576)
+        )
         .itemOutputs('1x gtceu:uev_emitter')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -462,7 +488,10 @@ ServerEvents.recipes(event => {
             '32x gtceu:cumium_foil',
             '4x gtceu:cumium_single_wire'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 4608))
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 9216),
+            Fluid.of('gtceu:cumium', 576)
+        )
         .itemOutputs('1x gtceu:uiv_emitter')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
@@ -486,7 +515,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:draconic_fluxite_single_wire'
         )
         .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 1728),
+            Fluid.of('gtceu:soldering_alloy', 3456),
             Fluid.of('kubejs:draconic_computation', 2000)
         )
         .itemOutputs('1x gtceu:uhv_field_generator')
@@ -505,7 +534,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:chaotic_singulite_single_wire'
         )
         .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 3456),
+            Fluid.of('gtceu:soldering_alloy', 6912),
             Fluid.of('kubejs:chaos_matrix_fluid', 2000)
         )
         .itemOutputs('1x gtceu:uev_field_generator')
@@ -519,12 +548,12 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:large_chaos_frag',
             '2x gtceu:uiv_emitter',
             '2x #gtceu:circuits/uiv',
+            '64x gtceu:fine_awakened_draconium_wire',
             '64x gtceu:fine_cumium_wire',
-            '64x gtceu:cumium_foil',
             '4x gtceu:cumium_single_wire'
         )
         .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 6912),
+            Fluid.of('gtceu:soldering_alloy', 13824),
             Fluid.of('kubejs:chaos_matrix_fluid', 4000)
         )
         .itemOutputs('1x gtceu:uiv_field_generator')

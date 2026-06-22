@@ -1429,54 +1429,6 @@ ServerEvents.recipes(event => {
         .duration(120 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // thermal alloys: remove auto-generated AlloyBlastRecipes (component dusts → hot ingot directly)
-    // replace with explicit Mixer → EBF chain; VF hot ingot → ingot auto-generated from blastTemp
-    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_lumium_ingot' })
-    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_signalum_ingot' })
-    event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:hot_enderium_ingot' })
-
-    event.recipes.gtceu.mixer('ctech:lumium_dust_mix')
-        .itemInputs('4x gtceu:tin_dust', '2x gtceu:aluminium_dust', '2x minecraft:glowstone_dust')
-        .itemOutputs('8x gtceu:lumium_dust')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.electric_blast_furnace('ctech:lumium_ebf')
-        .itemInputs('8x gtceu:lumium_dust')
-        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
-        .itemOutputs('8x gtceu:hot_lumium_ingot')
-        .blastFurnaceTemp(4500)
-        .duration(40 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.mixer('ctech:signalum_dust_mix')
-        .itemInputs('4x gtceu:copper_dust', '2x gtceu:chromium_dust', '2x minecraft:redstone')
-        .itemOutputs('8x gtceu:signalum_dust')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.electric_blast_furnace('ctech:signalum_ebf')
-        .itemInputs('8x gtceu:signalum_dust')
-        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
-        .itemOutputs('8x gtceu:hot_signalum_ingot')
-        .blastFurnaceTemp(4500)
-        .duration(40 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.mixer('ctech:enderium_dust_mix')
-        .itemInputs('4x gtceu:titanium_dust', '2x gtceu:platinum_dust', '2x gtceu:ender_pearl_dust')
-        .itemOutputs('8x gtceu:enderium_dust')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.electric_blast_furnace('ctech:enderium_ebf')
-        .itemInputs('8x gtceu:enderium_dust')
-        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
-        .itemOutputs('8x gtceu:hot_enderium_ingot')
-        .blastFurnaceTemp(4500)
-        .duration(40 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
     // PackagedAuto: gate package_component behind basic AE2 + HV assembler.
     // All downstream items (encoder, recipe_holder, crafting_proxy, distributor,
     // fluid_package_filler) require package_component so they gate transitively.
@@ -1487,5 +1439,56 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x packagedauto:package_component')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Advanced AE reaction chamber: remove machine crafting recipe and all processing recipes
+    event.remove({ output: 'advanced_ae:reaction_chamber' })
+    event.remove({ type: 'advanced_ae:reaction' })
+
+    // shattered_singularity: only made in reaction chamber; GT mixer alternative
+    event.recipes.gtceu.mixer('advanced_ae_shattered_singularity')
+        .itemInputs('1x ae2:singularity', '2x gtceu:ender_pearl_dust', '2x ae2:sky_dust')
+        .itemOutputs('2x advanced_ae:shattered_singularity')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // quantum_alloy: only made in reaction chamber; GT chemical reactor alternative
+    event.recipes.gtceu.chemical_reactor('advanced_ae_quantum_alloy')
+        .itemInputs('4x minecraft:copper_ingot', '4x advanced_ae:shattered_singularity', '4x ae2:singularity')
+        .inputFluids(Fluid.of('gtceu:oxygen', 1000))
+        .itemOutputs('4x advanced_ae:quantum_alloy')
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // quantum_alloy_plate: only made in reaction chamber; GT assembler alternative
+    event.recipes.gtceu.assembler('advanced_ae_quantum_alloy_plate')
+        .itemInputs('8x advanced_ae:quantum_alloy', '2x minecraft:netherite_ingot', '1x minecraft:nether_star')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x advanced_ae:quantum_alloy_plate')
+        .duration(60 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // quantum_processor: inscriber chain removed + reaction chamber removed; me_fabricator bypass
+    event.recipes.gtceu.me_fabricator('advanced_ae_quantum_processor')
+        .itemInputs(
+            '2x advanced_ae:quantum_alloy',
+            '2x gtceu:cpu_chip',
+            '2x ae2:certus_quartz_crystal'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('4x advanced_ae:quantum_processor')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // megacells accumulation_processor: inscriber chain removed + reaction chamber removed; me_fabricator bypass
+    event.recipes.gtceu.me_fabricator('megacells_accumulation_processor')
+        .itemInputs(
+            '2x gtceu:sky_steel_plate',
+            '2x gtceu:cpu_chip',
+            '2x ae2:certus_quartz_crystal'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('2x megacells:accumulation_processor')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
 
 })
