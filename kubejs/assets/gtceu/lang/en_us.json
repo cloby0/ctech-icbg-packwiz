@@ -106,6 +106,20 @@
 "block.gtceu.vehicle_assembler": "Vehicle Assembler",
 "block.gtceu.epitaxial_growth_chamber": "Epitaxial Growth Chamber",
 "block.gtceu.human_augmentation_plant": "Human Augmentation Plant",
-"block.gtceu.military_industrial_complex": "Military Industrial Complex"
+"block.gtceu.military_industrial_complex": "Military Industrial Complex",
+
+"gtceu.arms_manufacturer": "Arms Manufacturer",
+"gtceu.cyberware_constructor": "Cyberware Constructor",
+"gtceu.epitaxial_growth_chamber": "Epitaxial Growth Chamber",
+"gtceu.me_fabricator": "ME Fabricator",
+"gtceu.vehicle_assembler": "Vehicle Assembler",
+"gtceu.void_crucible": "Void Crucible",
+"gtceu.draconic_infusion_chamber": "Draconic Infusion Chamber",
+"gtceu.mana_pond": "Mana Pond",
+"gtceu.imbuement_factory": "Imbuement Factory",
+"gtceu.enchanting_sanctum": "Grand Enchanting Sanctum",
+"gtceu.runic_forge": "Runic Forge",
+"gtceu.terra_agglomeration": "Terra Agglomeration",
+"gtceu.kiln": "Kiln"
 
 }

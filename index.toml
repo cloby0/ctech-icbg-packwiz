@@ -826,7 +826,15 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "d27ea0e0c78e073dccaf42ec59fa3682986a958252d5bee8f367aff2c9d58d17"
+hash = "7ca148110e11b5a346863dda612be73ef1fc599aecfff9edcb0da3bfe828e046"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/item/cumium_ingot.png"
+hash = "5ec67536439fa25ddb4cdb295ee3ae6234d585259c7c0347fce431e83098f304"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/item/cumium_nugget.png"
+hash = "b9d1718132c06dd730afa836711250b1fcc39934661773ac0451c739bd46cc51"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
@@ -895,26 +903,6 @@ hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/florid_compound.png"
 hash = "a0b3888299da34ad52b7818f594f45e323bde242b1d1efe5da3545aee6ed9bc5"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/gaian_annihilation_core.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/gaian_blood_core.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/gaian_holy_core.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/gaian_sanctum.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/gaian_void_core.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/glacial_grimoire.png"
@@ -1582,7 +1570,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/circuitTags.js"
-hash = "f69ccca01e5cfe692601113e9e8d0c1a39746278698ac6552797886652df6cc8"
+hash = "6d0d0f1aa81b2a31567d9516d1ac5127ccfd563642e7257cec7378c7b0825178"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
@@ -1922,7 +1910,7 @@ hash = "f955775c34aa029429862ce96fe85fc3b490c649519a17b0edcc752b0d51701b"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/draconic_infusion_chamber.js"
-hash = "8eb98f116dbf41a525593c75a965f4467ac8788715f13408e3453b09aea92065"
+hash = "f71245d64f7c7d7cd045f44eb6d6234961e329435d01647003c4cd9dc1359bd3"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
@@ -1938,7 +1926,7 @@ hash = "44409d338287817385c106a063acfa9472b17d92bb5d781438678b5e69531622"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/void_crucible.js"
-hash = "cbfab137a71bada5bf524a2f8f1d80501bcb52e3be27344bb0eb45df42c0e562"
+hash = "d1eb166333733813ed1d43a3c079e164e882f2da9004bd1e66b71ce3f5588661"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
@@ -1954,7 +1942,7 @@ hash = "7a55647062c09527e7337475d7fa1786473ec5abbdca34bdb9516fc61ab485d5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "0dfda5fb20b66d36dad4f8e662bd09462ac1b5619f9d4fc3231a4dbe51fd59b9"
+hash = "593dc26155d934ebed53c96924ff5c7f55ec16d262768bbaf5201da26dd6739b"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
