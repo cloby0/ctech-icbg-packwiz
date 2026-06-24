@@ -81,12 +81,26 @@
             {
                 "name": "silentgear:malleable",
                 "level": 1
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1
+            },
+            {
+                "name": "silentgear:rustic",
+                "level": 1
             }
         ],
         "rod": [
             {
-                "name": "silentgear:flexible",
-                "level": 1
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
             }
         ],
         "tip": [

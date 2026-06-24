@@ -79,21 +79,19 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
-                "level": 2
+                "name": "silentcompat:irradiating",
+                "level": 1
             },
             {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
+                "name": "silentcompat:withering",
+                "level": 1
             },
             {
-                "name": "silentgear:hard",
+                "name": "silentgear:heavy",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:volatile",
                 "level": 1,
                 "conditions": [
                     {
@@ -103,22 +101,7 @@
                 ]
             }
         ],
-        "rod": [
-            {
-                "name": "silentgear:flexible",
-                "level": 2
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 2,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.5
-                    }
-                ]
-            }
-        ],
+        "rod": [],
         "tip": [
             {
                 "name": "silentgear:malleable",

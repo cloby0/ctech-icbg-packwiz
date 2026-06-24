@@ -79,23 +79,25 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
-                "level": 4
+                "name": "silentgear:hard",
+                "level": 2
             },
             {
-                "name": "silentgear:magnetic",
-                "level": 3,
+                "name": "silentcompat:irradiating",
+                "level": 1
+            },
+            {
+                "name": "silentgear:heavy",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:withering",
+                "level": 1,
                 "conditions": [
                     {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
-            },
-            {
-                "name": "silentgear:hard",
-                "level": 3,
-                "conditions": [
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
                     {
                         "type": "silentgear:material_ratio",
                         "ratio": 0.5
@@ -105,18 +107,8 @@
         ],
         "rod": [
             {
-                "name": "silentgear:flexible",
-                "level": 4
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 4,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.5
-                    }
-                ]
+                "name": "silentgear:hard",
+                "level": 1
             }
         ],
         "tip": [

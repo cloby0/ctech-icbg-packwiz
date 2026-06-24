@@ -81,6 +81,10 @@
             {
                 "name": "silentgear:malleable",
                 "level": 1
+            },
+            {
+                "name": "silentgear:lustrous",
+                "level": 1
             }
         ],
         "rod": [

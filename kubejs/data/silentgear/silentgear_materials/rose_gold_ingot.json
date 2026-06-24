@@ -26,7 +26,7 @@
             "enchantment_value": 22.0,
             "rarity": 12.4533,
             "charging_value": 0.5804,
-            "harvest_speed": 9.0,
+            "harvest_speed": 5.0,
             "melee_damage": 1.4587,
             "magic_damage": 0.5907,
             "attack_speed": -0.1258,
@@ -80,6 +80,10 @@
         "main": [
             {
                 "name": "silentgear:malleable",
+                "level": 1
+            },
+            {
+                "name": "silentgear:lustrous",
                 "level": 1
             }
         ],

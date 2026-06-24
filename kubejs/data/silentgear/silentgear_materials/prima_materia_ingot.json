@@ -1,0 +1,83 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 5,
+        "categories": ["metal"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "kubejs:prima_materia_ingot" }
+    },
+    "name": { "text": "Prima Materia" },
+    "stats": {
+        "main": {
+            "durability": 1350.0,
+            "armor_durability": 21.0,
+            "enchantment_value": 26.0,
+            "rarity": 35.0,
+            "charging_value": 1.3,
+            "harvest_speed": 6.5,
+            "melee_damage": 4.5,
+            "magic_damage": 6.0,
+            "attack_speed": -0.1,
+            "attack_speed/axe": -0.1,
+            "ranged_damage": 1.5,
+            "ranged_speed": 0.15,
+            "armor": 18.0,
+            "armor/helmet": 3.0,
+            "armor/chestplate": 7.0,
+            "armor/leggings": 6.0,
+            "armor/boots": 2.0,
+            "armor_toughness": 7.0,
+            "magic_armor": 15.0
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.025 },
+            "melee_damage": { "mul2": 0.02 },
+            "ranged_damage": { "mul2": 0.018 }
+        },
+        "tip": {
+            "durability": { "add": 160.0 },
+            "armor_durability": { "add": 6.0 },
+            "harvest_speed": { "add": 1.1 },
+            "melee_damage": { "add": 1.4 },
+            "rarity": { "add": 12.0 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentcompat:mana_boost", "level": 2 },
+            {
+                "name": "silentcompat:spell_damage",
+                "level": 1,
+                "conditions": [{ "type": "silentgear:material_ratio", "ratio": 0.5 }]
+            }
+        ],
+        "rod": [
+            { "name": "silentgear:brilliant", "level": 1 }
+        ],
+        "tip": [
+            { "name": "silentcompat:spell_damage", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#AEF76D" },
+            { "texture": "silentgear:_highlight", "color": "#AEF76D" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#AEF76D" },
+            { "texture": "silentgear:_highlight", "color": "#AEF76D" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#AEF76D" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_iron" }
+        ]
+    }
+}

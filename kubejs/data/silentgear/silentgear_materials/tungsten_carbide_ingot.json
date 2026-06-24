@@ -21,12 +21,12 @@
     },
     "stats": {
         "main": {
-            "durability": 3000.0,
+            "durability": 2400.0,
             "armor_durability": 28.9352,
             "enchantment_value": 0.0405,
             "rarity": 31.9352,
             "charging_value": 0.9322,
-            "harvest_speed": 20.0,
+            "harvest_speed": 12.5,
             "melee_damage": 5.6527,
             "magic_damage": 1.8624,
             "attack_speed": 0.1989,
@@ -79,44 +79,22 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
+                "name": "silentgear:hard",
                 "level": 2
             },
             {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
+                "name": "silentgear:sharp",
+                "level": 1
             },
             {
-                "name": "silentgear:hard",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.5
-                    }
-                ]
+                "name": "silentgear:heavy",
+                "level": 1
             }
         ],
         "rod": [
             {
-                "name": "silentgear:flexible",
-                "level": 2
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 2,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.5
-                    }
-                ]
+                "name": "silentgear:hard",
+                "level": 1
             }
         ],
         "tip": [

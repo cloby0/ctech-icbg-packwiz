@@ -81,6 +81,16 @@
             {
                 "name": "silentgear:malleable",
                 "level": 1
+            },
+            {
+                "name": "silentgear:swift_swim",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
             }
         ],
         "rod": [

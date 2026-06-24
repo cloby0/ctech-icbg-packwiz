@@ -80,17 +80,15 @@
         "main": [
             {
                 "name": "silentgear:malleable",
-                "level": 2
+                "level": 1
             },
             {
                 "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
+                "level": 1
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 1
             }
         ],
         "rod": [
@@ -100,7 +98,7 @@
             },
             {
                 "name": "silentgear:magnetic",
-                "level": 2,
+                "level": 1,
                 "conditions": [
                     {
                         "type": "silentgear:material_ratio",

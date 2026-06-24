@@ -80,28 +80,16 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
-                "level": 2
+                "name": "silentgear:hard",
+                "level": 1
             },
             {
-                "name": "silentgear:magnetic",
+                "name": "silentcompat:explosive_resistance",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:projectile_resistance",
                 "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
-            }
-        ],
-        "rod": [
-            {
-                "name": "silentgear:flexible",
-                "level": 2
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 2,
                 "conditions": [
                     {
                         "type": "silentgear:material_ratio",
@@ -110,6 +98,7 @@
                 ]
             }
         ],
+        "rod": [],
         "tip": [
             {
                 "name": "silentgear:malleable",

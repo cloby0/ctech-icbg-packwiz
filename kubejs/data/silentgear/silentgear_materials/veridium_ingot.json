@@ -1,0 +1,80 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 3,
+        "categories": ["metal"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "aether_redux:veridium_ingot" }
+    },
+    "name": { "text": "Veridium" },
+    "stats": {
+        "main": {
+            "durability": 580.0,
+            "armor_durability": 12.0,
+            "enchantment_value": 14.0,
+            "rarity": 16.0,
+            "charging_value": 1.0,
+            "harvest_speed": 4.5,
+            "melee_damage": 2.2,
+            "magic_damage": 0.8,
+            "attack_speed": -0.1,
+            "attack_speed/axe": -0.1,
+            "ranged_damage": 1.1,
+            "ranged_speed": 0.1,
+            "armor": 11.5,
+            "armor/helmet": 2.0,
+            "armor/chestplate": 4.5,
+            "armor/leggings": 3.5,
+            "armor/boots": 1.5,
+            "armor_toughness": 1.5,
+            "magic_armor": 3.5
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.03 },
+            "melee_damage": { "mul2": 0.025 },
+            "ranged_damage": { "mul2": 0.02 }
+        },
+        "tip": {
+            "durability": { "add": 70.0 },
+            "armor_durability": { "add": 3.0 },
+            "harvest_speed": { "add": 0.8 },
+            "melee_damage": { "add": 0.7 },
+            "rarity": { "add": 6.0 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:malleable", "level": 2 },
+            {
+                "name": "silentcompat:purifying",
+                "level": 1,
+                "conditions": [{ "type": "silentgear:material_ratio", "ratio": 0.5 }]
+            }
+        ],
+        "rod": [
+            { "name": "silentgear:flexible", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#446AAC" },
+            { "texture": "silentgear:_highlight", "color": "#446AAC" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#446AAC" },
+            { "texture": "silentgear:_highlight", "color": "#446AAC" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#446AAC" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_iron" }
+        ]
+    }
+}

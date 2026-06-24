@@ -79,25 +79,19 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
+                "name": "silentgear:magnetic",
+                "level": 2
+            },
+            {
+                "name": "silentgear:brilliant",
                 "level": 1
             },
             {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
-                    }
-                ]
+                "name": "silentgear:malleable",
+                "level": 1
             }
         ],
         "rod": [
-            {
-                "name": "silentgear:flexible",
-                "level": 1
-            },
             {
                 "name": "silentgear:magnetic",
                 "level": 2,

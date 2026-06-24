@@ -79,28 +79,28 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
-                "level": 2
+                "name": "silentgear:magnetic",
+                "level": 1
             },
             {
-                "name": "silentgear:magnetic",
+                "name": "silentcompat:scorching",
                 "level": 1,
                 "conditions": [
                     {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0.66
+                        "type": "silentgear:gear_type",
+                        "gear_type": "tool"
                     }
                 ]
+            },
+            {
+                "name": "silentgear:fireproof",
+                "level": 1
             }
         ],
         "rod": [
             {
-                "name": "silentgear:flexible",
-                "level": 2
-            },
-            {
                 "name": "silentgear:magnetic",
-                "level": 2,
+                "level": 1,
                 "conditions": [
                     {
                         "type": "silentgear:material_ratio",

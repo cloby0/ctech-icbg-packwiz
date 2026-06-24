@@ -1,0 +1,88 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 4,
+        "categories": ["metal"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "kubejs:holy_silver_ingot" }
+    },
+    "name": { "text": "Holy Silver" },
+    "stats": {
+        "main": {
+            "durability": 1050.0,
+            "armor_durability": 17.0,
+            "enchantment_value": 22.0,
+            "rarity": 28.0,
+            "charging_value": 1.2,
+            "harvest_speed": 7.5,
+            "melee_damage": 3.5,
+            "magic_damage": 3.0,
+            "attack_speed": -0.1,
+            "attack_speed/axe": -0.1,
+            "ranged_damage": 1.6,
+            "ranged_speed": 0.15,
+            "armor": 16.0,
+            "armor/helmet": 2.5,
+            "armor/chestplate": 6.0,
+            "armor/leggings": 5.0,
+            "armor/boots": 2.5,
+            "armor_toughness": 6.0,
+            "magic_armor": 10.0
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.03 },
+            "melee_damage": { "mul2": 0.025 },
+            "ranged_damage": { "mul2": 0.02 }
+        },
+        "tip": {
+            "durability": { "add": 140.0 },
+            "armor_durability": { "add": 5.5 },
+            "harvest_speed": { "add": 1.3 },
+            "melee_damage": { "add": 1.1 },
+            "rarity": { "add": 10.0 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:holy", "level": 2 },
+            {
+                "name": "silentcompat:purifying",
+                "level": 1,
+                "conditions": [{ "type": "silentgear:material_ratio", "ratio": 0.5 }]
+            },
+            {
+                "name": "silentgear:cure_poison",
+                "level": 1,
+                "conditions": [{ "type": "silentgear:material_ratio", "ratio": 0.66 }]
+            }
+        ],
+        "rod": [
+            { "name": "silentgear:malleable", "level": 1 }
+        ],
+        "tip": [
+            { "name": "silentgear:holy", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E7F79E" },
+            { "texture": "silentgear:_highlight", "color": "#E7F79E" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E7F79E" },
+            { "texture": "silentgear:_highlight", "color": "#E7F79E" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#E7F79E" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_iron" }
+        ]
+    }
+}

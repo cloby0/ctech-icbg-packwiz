@@ -81,6 +81,24 @@
             {
                 "name": "silentgear:malleable",
                 "level": 1
+            },
+            {
+                "name": "silentgear:lustrous",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:purifying",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "armor"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
             }
         ],
         "rod": [

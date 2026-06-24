@@ -79,16 +79,15 @@
     "traits": {
         "main": [
             {
-                "name": "silentgear:malleable",
+                "name": "silentgear:brittle",
                 "level": 1
-            }
-        ],
-        "rod": [
+            },
             {
-                "name": "silentgear:flexible",
+                "name": "silentgear:hard",
                 "level": 1
             }
         ],
+        "rod": [],
         "tip": [
             {
                 "name": "silentgear:malleable",

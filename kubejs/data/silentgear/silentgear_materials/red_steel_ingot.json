@@ -80,12 +80,20 @@
         "main": [
             {
                 "name": "silentgear:malleable",
-                "level": 2
+                "level": 1
             },
             {
                 "name": "silentgear:magnetic",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:jolt_hit",
                 "level": 1,
                 "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
                     {
                         "type": "silentgear:material_ratio",
                         "ratio": 0.66
@@ -95,12 +103,8 @@
         ],
         "rod": [
             {
-                "name": "silentgear:flexible",
-                "level": 2
-            },
-            {
                 "name": "silentgear:magnetic",
-                "level": 2,
+                "level": 1,
                 "conditions": [
                     {
                         "type": "silentgear:material_ratio",
