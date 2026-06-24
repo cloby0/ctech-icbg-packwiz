@@ -144,15 +144,39 @@
   "item.kubejs.aether_crystal": "Aether Crystal",
   "item.kubejs.mineral_flux_crystal": "Mineral Flux Crystal",
 
+  "item.kubejs.raw_ignitium_seed": "Raw Ignitium Seed",
+  "item.kubejs.raw_ancient_metal_compound": "Raw Ancient Metal Compound",
+  "item.kubejs.storm_quintessence": "Storm Quintessence",
+  "item.kubejs.resonant_void_lattice": "Resonant Void Lattice",
+
   "item.kubejs.fire_nucleus": "Fire Nucleus",
   "item.kubejs.water_nucleus": "Water Nucleus",
   "item.kubejs.earth_nucleus": "Earth Nucleus",
   "item.kubejs.air_nucleus": "Air Nucleus",
-  "item.kubejs.seminal_void_precursor": "Seminal Void Precursor",
+  "item.kubejs.void_nucleus": "Void Nucleus",
+  "item.kubejs.elemental_convergence_matrix": "Elemental Convergence Matrix",
+
+  "item.kubejs.sperm_cell_pellet": "Sperm Cell Pellet",
+  "item.kubejs.living_cell_matrix": "Living Cell Matrix",
+  "item.kubejs.mana_seeded_cell_matrix": "Mana-Seeded Cell Matrix",
+  "item.kubejs.activated_bio_matrix": "Activated Bio-Matrix",
+  "item.kubejs.runic_growth_catalyst": "Runic Growth Catalyst",
+  "item.kubejs.runic_bio_catalyst": "Runic Bio-Catalyst",
+  "item.kubejs.elemental_life_reagent": "Elemental Life Reagent",
+  "item.kubejs.source_crystal_lattice": "Source Crystal Lattice",
+  "item.kubejs.vitalized_source_fragment": "Vitalized Source Fragment",
+  "item.kubejs.source_bio_matrix": "Source Bio-Matrix",
+
   "item.kubejs.gestated_cumium_crystal": "Gestated Cumium Crystal",
   "item.kubejs.awakened_cumium_embryo": "Awakened Cumium Embryo",
-  "item.kubejs.void_flux_amalgam": "Void Flux Amalgam",
   "item.kubejs.unforged_cumium_matrix": "Unforged Cumium Matrix",
+
+  "item.kubejs.primal_latex_billet": "Primal Latex Billet",
+  "item.kubejs.elemental_latex_compound": "Elemental Latex Compound",
+
+  "item.kubejs.uhv_voltage_coil": "UHV Voltage Coil",
+  "item.kubejs.uev_voltage_coil": "UEV Voltage Coil",
+  "item.kubejs.uiv_voltage_coil": "UIV Voltage Coil",
 
   "item.kubejs.lv_gun_fire_control": "LV Gun Fire Control",
   "item.kubejs.mv_gun_fire_control": "MV Gun Fire Control",

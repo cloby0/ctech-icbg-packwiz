@@ -12,9 +12,9 @@ StartupEvents.registry('block', event => {
         .hardness(6).resistance(15)
         .tagBlock('mineable/pickaxe')
 
-    event.create('void_crucible_casing')
-        .textureAll('kubejs:block/void_crucible_casing')
-        .displayName('Void Crucible Casing')
+    event.create('biogenic_synthesis_casing')
+        .textureAll('kubejs:block/biogenic_synthesis_casing')
+        .displayName('Biogenic Synthesis Casing')
         .hardness(7).resistance(18)
         .tagBlock('mineable/pickaxe')
 

@@ -5,7 +5,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.5)
         vein.discardChanceOnAirExposure(0)
 
-        vein.layer("end_stone")
+        vein.layer("endstone")
         vein.dimensions("minecraft:the_end")
 
         vein.heightRangeUniform(10, 60)

@@ -640,92 +640,216 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // step 2: seminal void precursor — cum carries void stellite and naquadria as a biological vector
-    event.recipes.gtceu.chemical_reactor('seminal_void_precursor_synthesis')
-        .itemInputs(
-            '2x gtceu:void_stellite_dust',
-            '1x gtceu:naquadria_dust'
-        )
-        .inputFluids(Fluid.of('gtceu:cum', 2000))
-        .itemOutputs('3x kubejs:seminal_void_precursor')
-        .duration(40 * 20)
-        .EUt(GTValues.VA[GTValues.UV])
+    // ============================================================
+    // BRANCH A: BIOLOGICAL APOTHEOSIS CHAIN
+    // C-Tech apex material synthesis — 13 steps before EBF
+    // Three parallel leaves converge at gestated_cumium_crystal
+    // ============================================================
 
-    // step 3: gestated cumium crystal — all four elemental nuclei converge with the precursor
-    //   four nuclei: elemental completeness (fire/water/earth/air; IV/EV/HV/LuV planet gates)
-    //   stem_cells x2: biological anchor — the living scaffold that holds the convergence
-    //   40000 source: demands serious source infrastructure
-    addImbuementRecipe(event, {
-        input: 'kubejs:seminal_void_precursor',
-        output: 'kubejs:gestated_cumium_crystal',
-        source: 40000,
-        pedestalItems: [
-            'kubejs:fire_nucleus',
-            'kubejs:water_nucleus',
-            'kubejs:earth_nucleus',
-            'kubejs:air_nucleus',
-            'gtceu:stem_cells',
-            'gtceu:stem_cells'
+    // --- LEAF 1: BIOLOGICAL PROCESSING (4 steps) ---
+
+    // L1a: cum centrifugation — separates sperm cell pellet and acellular seminal plasma
+    event.recipes.gtceu.centrifuge('ctech:cum_centrifugation')
+        .inputFluids(Fluid.of('gtceu:cum', 5000))
+        .itemOutputs('2x kubejs:sperm_cell_pellet', '1x gtceu:zinc_dust')
+        .outputFluids(Fluid.of('kubejs:seminal_plasma', 1000))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // L1b: cell culture — large cum gate on bootstrap; loop route substitutes liquid cumium
+    //   bootstrap: 50000mB cum as the biological culture medium (significant farm required)
+    //   loop:      1296mB liquid cumium (144*9) — crystallized life force seeds replication
+    //   all other inputs identical; magic infrastructure does not get cheaper in loop
+    event.recipes.gtceu.chemical_reactor('ctech:cell_culture_bootstrap')
+        .itemInputs('2x kubejs:sperm_cell_pellet', '4x gtceu:stem_cells')
+        .inputFluids(Fluid.of('gtceu:cum', 50000))
+        .itemOutputs('1x kubejs:living_cell_matrix')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.chemical_reactor('ctech:cell_culture_loop')
+        .itemInputs('2x kubejs:sperm_cell_pellet', '4x gtceu:stem_cells')
+        .inputFluids(Fluid.of('gtceu:cumium', 1296))
+        .itemOutputs('1x kubejs:living_cell_matrix')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // L1c: mana pond — single-item mana seeding; requires serious mana infrastructure
+    addManaPondRecipe(event, {
+        mana: 25000,
+        input: { item: 'kubejs:living_cell_matrix' },
+        output: { item: 'kubejs:mana_seeded_cell_matrix' }
+    })
+
+    // L1d: pressurized autoclave activation
+    //   darmstadtium_dust: radioactive ZPM-tier catalyst that activates cellular replication
+    //   phosphorus + calcium: membrane and signaling chemistry
+    //   aqua_regia: aggressive solvent that fuses the compounds under pressure
+    event.recipes.gtceu.autoclave('ctech:bio_matrix_pressurized_activation')
+        .itemInputs(
+            '1x kubejs:mana_seeded_cell_matrix',
+            '2x gtceu:phosphorus_dust',
+            '2x gtceu:calcium_dust',
+            '1x gtceu:darmstadtium_dust'
+        )
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 500))
+        .itemOutputs('1x kubejs:activated_bio_matrix')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // --- LEAF 2: RUNIC ALIGNMENT (3 steps) ---
+
+    // L2a: runic altar — seasonal and elemental runes align the growth medium into a living catalyst
+    //   rune_spring + rune_summer: growth cycle
+    //   rune_earth + rune_mana: elemental anchor and magical resonance
+    //   life_essence x2: Botania life gate (requires Guardian of Gaia access)
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:runic_growth_catalyst' },
+        mana: 25000,
+        ingredients: [
+            { item: 'botania:rune_spring' },
+            { item: 'botania:rune_summer' },
+            { item: 'botania:rune_earth' },
+            { item: 'botania:rune_mana' },
+            { item: 'botania:life_essence' },
+            { item: 'botania:life_essence' }
         ]
     })
 
-    // step 4: awakened cumium embryo — sage-tier awakening via Enchanting Apparatus
-    //   gaia_ingot x2: two Guardian of Gaia kills (or MA gaia_spirit_essence farm)
-    //   elementium_ingot x4: elven portal endgame
-    //   chaotic_singulite_dust x2: UEV tech ceiling
-    //   60000 source: Grand Enchanting Sanctum + major source generation required
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:gestated_cumium_crystal',
+    // L2b: IV mixer — MA essences and mineral ichor diffuse through the runic catalyst
+    event.recipes.gtceu.mixer('ctech:runic_bio_catalyst_mix')
+        .itemInputs(
+            '1x kubejs:runic_growth_catalyst',
+            '4x mysticalagriculture:earth_essence',
+            '4x mysticalagriculture:water_essence'
+        )
+        .inputFluids(Fluid.of('gtceu:mineral_ichor', 1000))
+        .itemOutputs('1x kubejs:runic_bio_catalyst')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // L2c: LuV chemical reactor — draconium dust binds the elemental life force
+    //   draconium is UHV exotic material; its crystalline structure locks the bio-runic matrix
+    //   life_essence x2: second life gate; seminal_plasma as bio-solvent from Leaf 1 centrifuge
+    event.recipes.gtceu.chemical_reactor('ctech:elemental_life_reagent_synthesis')
+        .itemInputs(
+            '1x kubejs:runic_bio_catalyst',
+            '2x botania:life_essence',
+            '1x gtceu:draconium_dust'
+        )
+        .inputFluids(Fluid.of('kubejs:seminal_plasma', 1000))
+        .itemOutputs('1x kubejs:elemental_life_reagent')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // --- LEAF 3: SOURCE CRYSTALLIZATION (3 steps) ---
+
+    // L3a: imbuement factory — source gems crystallized by wilden drops and air essence
+    //   wilden_horn + wilden_spike + wilden_tribute: full Sage-tier wilden drop set
+    //   naquadah_dust: exotic stabilizer
+    addImbuementRecipe(event, {
+        input: 'ars_nouveau:source_gem',
+        output: 'kubejs:source_crystal_lattice',
+        source: 35000,
         pedestalItems: [
-            'botania:gaia_ingot',
-            'botania:gaia_ingot',
-            'botania:elementium_ingot',
-            'botania:elementium_ingot',
-            'botania:elementium_ingot',
-            'botania:elementium_ingot',
-            'gtceu:chaotic_singulite_dust',
-            'gtceu:chaotic_singulite_dust'
-        ],
-        output: 'kubejs:awakened_cumium_embryo',
-        sourceCost: 60000
+            'ars_nouveau:source_gem',
+            'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_spike',
+            'ars_nouveau:wilden_tribute',
+            'mysticalagriculture:air_essence',
+            'gtceu:naquadah_dust'
+        ]
     })
 
-    // step 5: void flux amalgam — embryo fuses with stellar plasma and more cum (second cum gate)
-    //   awakened_cumium_embryo: carries all prior chain value
-    //   gaia_spirit_dust: binds the magic component
-    //   refined_stellar_plasma: energy channel
-    //   cum: second appearance — biological resonance locks the fusion
-    event.recipes.gtceu.chemical_reactor('void_flux_amalgam_synthesis')
+    // L3b: UV chemical reactor — fire and water essences charge the lattice; seminal plasma as carrier
+    event.recipes.gtceu.chemical_reactor('ctech:vitalized_source_fragment_synthesis')
         .itemInputs(
-            '1x kubejs:awakened_cumium_embryo',
-            '1x gtceu:gaia_spirit_dust'
+            '1x kubejs:source_crystal_lattice',
+            '2x mysticalagriculture:fire_essence',
+            '2x mysticalagriculture:water_essence'
         )
-        .inputFluids(
-            Fluid.of('gtceu:refined_stellar_plasma', 1000),
-            Fluid.of('gtceu:cum', 500)
-        )
-        .itemOutputs('3x kubejs:void_flux_amalgam')
-        .duration(60 * 20)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .inputFluids(Fluid.of('kubejs:seminal_plasma', 1000))
+        .itemOutputs('1x kubejs:vitalized_source_fragment')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    // step 6: terrestrial agglomeration plate (15,000,000 mana) — mana condensation locks the matrix
-    //   gaia_ingot: third gaia gate in the chain
-    //   chaotic_singulite_dust: UEV tech ceiling
-    //   outputs unforged_cumium_matrix — not dust yet, needs forging
+    // L3c: IV mixer — air and earth essences complete elemental symmetry; naquadah locks the matrix
+    event.recipes.gtceu.mixer('ctech:source_bio_matrix_mix')
+        .itemInputs(
+            '1x kubejs:vitalized_source_fragment',
+            '2x mysticalagriculture:air_essence',
+            '2x mysticalagriculture:earth_essence',
+            '1x gtceu:naquadah_dust'
+        )
+        .itemOutputs('1x kubejs:source_bio_matrix')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // --- CONVERGENCE 1: GESTATED CUMIUM CRYSTAL (Enchanting Sanctum, 75000 source) ---
+    // All three leaves converge here.
+    // draconium_ingot x2: UHV-tier amplifier; their crystalline lattice channels the convergence energy
+    // elementium_ingot x2: Elven portal endgame
+    // life_essence x2: sustaining biological resonance through the convergence
+    addEnchantingRecipe(event, {
+        reagent: 'kubejs:activated_bio_matrix',
+        pedestalItems: [
+            'kubejs:elemental_life_reagent',
+            'kubejs:source_bio_matrix',
+            'gtceu:draconium_ingot',
+            'gtceu:draconium_ingot',
+            'botania:elementium_ingot',
+            'botania:elementium_ingot',
+            'botania:life_essence',
+            'botania:life_essence'
+        ],
+        output: 'kubejs:gestated_cumium_crystal',
+        sourceCost: 75000
+    })
+
+    // --- M1: AWAKENED CUMIUM EMBRYO (Runic Altar, 50000 mana) ---
+    // gaia_ingot x2: two Guardian of Gaia kills; their ingots are the ritual anchors
+    // rune_wrath + rune_pride: violent and sovereign runes — the embryo is fierce and complete
+    // wilden_tribute x2: Sage-tier wilden drops bind Ars energy into the gestated form
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:awakened_cumium_embryo' },
+        mana: 50000,
+        ingredients: [
+            { item: 'kubejs:gestated_cumium_crystal' },
+            { item: 'botania:gaia_ingot' },
+            { item: 'botania:gaia_ingot' },
+            { item: 'ars_nouveau:wilden_tribute' },
+            { item: 'ars_nouveau:wilden_tribute' },
+            { item: 'botania:rune_wrath' },
+            { item: 'botania:rune_pride' }
+        ]
+    })
+
+    // --- M2: UNFORGED CUMIUM MATRIX (Terra Plate, 15,000,000 mana) ---
+    // awakened_draconium_ingot x2: UEV-tier material; the condensation ritual needs apex structural energy
+    // chaotic_singulite_dust x2: UEV tech ceiling — contains the crystallization at collapse pressure
+    // gaia_ingot x2: third gaia gate in Branch A
     addTerraPlateRecipe(event, {
         result: { item: 'kubejs:unforged_cumium_matrix' },
         mana: 15000000,
         ingredients: [
-            { item: 'kubejs:void_flux_amalgam' },
-            { item: 'kubejs:void_flux_amalgam' },
+            { item: 'kubejs:awakened_cumium_embryo' },
+            { item: 'gtceu:awakened_draconium_ingot' },
+            { item: 'gtceu:awakened_draconium_ingot' },
+            { item: 'botania:gaia_ingot' },
             { item: 'botania:gaia_ingot' },
             { item: 'gtceu:chaotic_singulite_dust' }
         ]
     })
 
-    // step 6.5: liquid computation — UEV circuits dissolved in aqua regia + naquadria
-    //   the assembly line doesn't run on soldering alloy; it runs on distilled cognition
-    //   4x UEV circuits per batch; 8000mB consumed by the forging = 4 circuits worth of computation
+    // --- FINAL SYNTHESIS: Biogenic Synthesis Chamber (stub — full recipe pending Branch B design) ---
+    // unforged_cumium_matrix + Branch B boss essence aggregate + GT apex materials → cumium_dust
+    // Recipe added when Branch B is designed.
+    // EBF (auto): 14400K, UEV coils, 3600t → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
+
+    // liquid computation — still used by uhvAndDraconic; keeping production recipe
+    //   4x UEV circuits per batch; 8000mB consumed by UHV assembly recipes
     event.recipes.gtceu.chemical_reactor('uev_circuit_dissolution')
         .itemInputs('4x #gtceu:circuits/uev', '1x gtceu:naquadria_dust')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
@@ -733,34 +857,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.UEV])
         .cleanroom(CleanroomType.CLEANROOM)
-
-    // step 7: Void Crucible — crystallizes the matrix into cumium dust with apex gate items
-    //   stem_cells x4: biological anchor — cum's foundation returns a third time
-    //   neutronium_dust x2: UV tech ceiling
-    //   void_core: Cataclysm void boss gate
-    //   gaia_ingot: Sage-tier magic apex — Guardian of Gaia gate
-    //   uev_sensor x2 + uev_emitter x2 + uev_field_generator x2: apex UEV components
-    //   cum 2000mB: third cum gate
-    //   liquid_computation 8000mB: the crucible runs on cognition
-    event.recipes.gtceu.void_crucible('cumium_void_crucible')
-        .itemInputs(
-            '1x kubejs:unforged_cumium_matrix',
-            '4x gtceu:stem_cells',
-            '2x gtceu:chaotic_singulite_dust',
-            '1x cataclysm:void_core',
-            '1x botania:gaia_ingot',
-            '2x gtceu:uev_sensor',
-            '2x gtceu:uev_emitter',
-            '2x gtceu:uev_field_generator'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:cum', 2000),
-            Fluid.of('kubejs:liquid_computation', 8000)
-        )
-        .itemOutputs('1x gtceu:cumium_dust')
-        .duration(200 * 20)
-        .EUt(GTValues.VA[GTValues.UEV])
-    // step 8 (auto): EBF (14400K, UEV coils, 3600 ticks) → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
 
     // blessed boule cutting recipes (all -> 48 wafers vs normal 32)
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')
@@ -793,5 +889,27 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
+
+    // Biogenic Synthesis Chamber: Branch A (unforged_cumium_matrix) + Branch B (elemental_convergence_matrix) -> cumium_dust
+    // cum fluid closes the loop thematically: biological medium required even at UIV
+    event.recipes.gtceu.biogenic_synthesis('ctech:cumium_synthesis')
+        .itemInputs(
+            '1x kubejs:unforged_cumium_matrix',
+            '1x kubejs:elemental_convergence_matrix',
+            '4x gtceu:darmstadtium_dust',
+            '2x gtceu:uev_field_generator',
+            '2x gtceu:awakened_draconium_ingot',
+            '1x botania:gaia_ingot',
+            '2x ars_nouveau:wilden_tribute',
+            '1x #gtceu:circuits/uiv'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:cum', 16000),
+            Fluid.of('kubejs:seminal_plasma', 4000),
+            Fluid.of('kubejs:chaos_matrix_fluid', 4000)
+        )
+        .itemOutputs('2x gtceu:cumium_dust')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.UIV])
 
 })

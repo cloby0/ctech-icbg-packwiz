@@ -13,4 +13,14 @@ StartupEvents.registry('fluid', event => {
         .displayName('Chaos Matrix Fluid')
         .color(0xFF3300)
         .viscosity(600)
+
+    event.create('kubejs:dissolved_lacrima')
+        .displayName('Dissolved Lacrima')
+        .color(0x44AAEE)
+        .viscosity(300)
+
+    event.create('kubejs:seminal_plasma')
+        .displayName('Seminal Plasma')
+        .color(0xF5F0DC)
+        .viscosity(200)
 })

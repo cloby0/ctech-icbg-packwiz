@@ -117,16 +117,19 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // Void Crucible Casing — UEV assembler, awakened_draconium structure
-    event.recipes.gtceu.assembler('void_crucible_casing_assembly')
+    // Biogenic Synthesis Casing — UEV assembler, life-sealed crystallization vessel wall
+    // abstract_elastomer_ingot seals the chamber against biological material escape
+    event.recipes.gtceu.assembler('biogenic_synthesis_casing_assembly')
         .itemInputs(
             '4x gtceu:awakened_draconium_plate',
-            '4x gtceu:awakened_draconium_rod',
-            '1x draconicevolution:awakened_core',
+            '2x botania:terrasteel_ingot',
+            '2x ars_nouveau:wilden_tribute',
+            '1x botania:gaia_ingot',
+            '1x gtceu:abstract_elastomer_ingot',
             '1x #gtceu:circuits/uev'
         )
         .inputFluids(Fluid.of('gtceu:lubricant', 100))
-        .itemOutputs('8x kubejs:void_crucible_casing')
+        .itemOutputs('4x kubejs:biogenic_synthesis_casing')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 

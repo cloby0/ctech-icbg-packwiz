@@ -113,6 +113,8 @@
 "gtceu.epitaxial_growth_chamber": "Epitaxial Growth Chamber",
 "gtceu.me_fabricator": "ME Fabricator",
 "gtceu.vehicle_assembler": "Vehicle Assembler",
+"block.gtceu.biogenic_synthesis_chamber": "Biogenic Synthesis Chamber",
+"gtceu.biogenic_synthesis": "Biogenic Synthesis",
 "gtceu.void_crucible": "Void Crucible",
 "gtceu.draconic_infusion_chamber": "Draconic Infusion Chamber",
 "gtceu.mana_pond": "Mana Pond",

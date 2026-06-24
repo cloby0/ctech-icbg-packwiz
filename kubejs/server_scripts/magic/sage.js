@@ -165,4 +165,47 @@ ServerEvents.recipes(event => {
             { item: 'botania:terrasteel_block' }
         ]
     })
+
+    // abstract_elastomer chain — elemental imbuement → UV mixer → Gaia binding
+    // Step 1: elemental essences + drygmy shards imbue slime with living magic
+    addImbuementRecipe(event, {
+        input: 'minecraft:slime_ball',
+        output: 'kubejs:primal_latex_billet',
+        source: 25000,
+        pedestalItems: [
+            'mysticalagriculture:fire_essence',
+            'mysticalagriculture:water_essence',
+            'mysticalagriculture:earth_essence',
+            'mysticalagriculture:air_essence',
+            'ars_nouveau:drygmy_shard',
+            'ars_nouveau:drygmy_shard'
+        ]
+    })
+
+    // Step 2 (tech): UV Mixer — source gems and wilden horn catalyze billet into elemental compound
+    event.recipes.gtceu.mixer('abstract_elastomer_compound_mix')
+        .itemInputs(
+            '1x kubejs:primal_latex_billet',
+            '4x ars_nouveau:source_gem',
+            '1x ars_nouveau:wilden_horn'
+        )
+        .itemOutputs('1x kubejs:elemental_latex_compound')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    // Step 3: Gaia binding — wilden tribute + gaia ingots lock compound into abstract concept
+    // Melt abstract_elastomer_ingot in arc furnace or fluid extractor to get the fluid
+    addEnchantingRecipe(event, {
+        reagent: 'kubejs:elemental_latex_compound',
+        pedestalItems: [
+            'botania:gaia_ingot', 'botania:gaia_ingot',
+            'botania:gaia_ingot', 'botania:gaia_ingot',
+            'ars_nouveau:wilden_tribute',
+            'ars_nouveau:wilden_tribute',
+            'ars_nouveau:wilden_spike',
+            'ars_nouveau:wilden_spike'
+        ],
+        output: 'gtceu:abstract_elastomer_ingot',
+        sourceCost: 40000
+    })
 })

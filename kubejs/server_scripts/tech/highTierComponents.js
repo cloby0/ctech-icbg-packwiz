@@ -560,4 +560,41 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
+    // =========================================================
+    // VOLTAGE COILS
+    // GT auto-generates ULV-UV. UHV/UEV/UIV need manual recipes.
+    // Pattern matches GT: magnetic_samarium rod + 16x fine wire (tier material)
+    // =========================================================
+
+    event.recipes.gtceu.assembler('voltage_coil_uhv')
+        .itemInputs(
+            '1x gtceu:magnetic_samarium_rod',
+            '16x gtceu:fine_draconium_wire'
+        )
+        .itemOutputs('1x kubejs:uhv_voltage_coil')
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.assembler('voltage_coil_uev')
+        .itemInputs(
+            '1x gtceu:magnetic_samarium_rod',
+            '16x gtceu:fine_awakened_draconium_wire'
+        )
+        .itemOutputs('1x kubejs:uev_voltage_coil')
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    event.recipes.gtceu.assembler('voltage_coil_uiv')
+        .itemInputs(
+            '1x gtceu:magnetic_samarium_rod',
+            '16x gtceu:fine_cumium_wire'
+        )
+        .itemOutputs('1x kubejs:uiv_voltage_coil')
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+
 })

@@ -479,13 +479,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(14400, "high", GTValues.VA[GTValues.UEV], 3600)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .cableProperties(GTValues.VA[GTValues.UIV], 64, 0, true)
+        .fluidPipeProperties(20000, 40000, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_LONG_ROD
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROTOR
         )
 
     event.create('stellar_plasma')
@@ -790,12 +793,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xCC5500)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .cableProperties(GTValues.VA[GTValues.UEV], 1, 32, false)
+        .fluidPipeProperties(16000, 20000, true)
         .flags(
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROTOR,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE
@@ -878,6 +885,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+        )
+
+    // UEV/UIV polymer: the platonic concept of rubber, parallel to abstract_metal
+    // Used as hull plate and reactor pipe insulator beyond PBI tier
+    event.create('abstract_elastomer')
+        .ingot()
+        .fluid()
+        .color(0x1A0A2E)
+        .secondaryColor(0x6030AA)
+        .iconSet(GTMaterialIconSet.DULL)
+        .fluidPipeProperties(7000, 2000, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL
         )
 
 })

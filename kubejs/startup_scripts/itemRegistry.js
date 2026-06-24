@@ -58,8 +58,22 @@ StartupEvents.registry('item', event => {
     event.create('gaian_neutronium_boule')
 
     event.create('gaia_flux_dust')
-    event.create('void_flux_amalgam')
-    event.create('seminal_void_precursor')
+    // Branch A biological apotheosis chain intermediates (leaf 1 — bio processing)
+    event.create('sperm_cell_pellet')
+    event.create('living_cell_matrix')
+    event.create('mana_seeded_cell_matrix')
+    event.create('activated_bio_matrix')
+
+    // Branch A leaf 2 — runic alignment
+    event.create('runic_growth_catalyst')
+    event.create('runic_bio_catalyst')
+    event.create('elemental_life_reagent')
+
+    // Branch A leaf 3 — source crystallization
+    event.create('source_crystal_lattice')
+    event.create('vitalized_source_fragment')
+    event.create('source_bio_matrix')
+
     event.create('fire_nucleus')
     event.create('water_nucleus')
     event.create('earth_nucleus')
@@ -168,6 +182,15 @@ StartupEvents.registry('item', event => {
     event.create('iv_gun_fire_control')
     event.create('luv_gun_fire_control')
 
+    // abstract_elastomer chain intermediates: imbuement → primal billet → UV mixer → elemental compound → enchanting → ingot
+    event.create('primal_latex_billet')
+    event.create('elemental_latex_compound')
+
+    // Voltage coils — GT stops at UV, UHV/UEV/UIV need manual items
+    event.create('uhv_voltage_coil')
+    event.create('uev_voltage_coil')
+    event.create('uiv_voltage_coil')
+
     // UHV/UEV chain intermediates
     event.create('dragon_heart_crystal')
     event.create('draconic_boule')
@@ -193,4 +216,13 @@ StartupEvents.registry('item', event => {
     event.create('shattered_sanctum')
     event.create('codex_of_entropy')
     event.create('chronicle_of_unraveling')
+
+    // Boss drop duplication intermediates (one per Cataclysm boss)
+    event.create('raw_ignitium_seed')
+    event.create('raw_ancient_metal_compound')
+    event.create('storm_quintessence')
+    event.create('resonant_void_lattice')
+
+    event.create('void_nucleus')
+    event.create('elemental_convergence_matrix')
 })
