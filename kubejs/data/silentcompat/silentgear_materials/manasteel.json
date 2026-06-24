@@ -1,0 +1,128 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/manasteel"
+        }
+    },
+    "name": {
+        "text": "Manasteel"
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#68AFEE"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#68AFEE"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#68AFEE"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#68AFEE"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#68AFEE"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_iron"
+            }
+        ]
+    },
+    "stats": {
+        "main": {
+            "durability": 1800,
+            "armor_durability": 28,
+            "enchantment_value": 24,
+            "harvest_speed": 9,
+            "melee_damage": 5,
+            "magic_damage": 2,
+            "attack_speed": 0,
+            "armor": 22,
+            "armor/helmet": 3,
+            "armor/chestplate": 8,
+            "armor/leggings": 7,
+            "armor/boots": 4,
+            "armor_toughness": 6,
+            "ranged_damage": 2,
+            "ranged_speed": 0,
+            "rarity": 30,
+            "charging_value": 1,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "magic_armor": 10
+        },
+        "rod": {
+            "melee_damage": {
+                "mul2": 0.15
+            },
+            "ranged_damage": {
+                "mul2": 0.12
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 280
+            },
+            "armor_durability": {
+                "add": 7
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 15
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            },
+            {
+                "name": "silentcompat:mana_repair",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0.5
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentcompat:mana_repair",
+                "level": 1
+            }
+        ]
+    }
+}

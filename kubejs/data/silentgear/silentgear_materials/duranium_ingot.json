@@ -21,28 +21,28 @@
     },
     "stats": {
         "main": {
-            "durability": 3854.5418,
-            "armor_durability": 55.2259,
-            "enchantment_value": -16.3912,
-            "rarity": 58.2259,
-            "charging_value": 1.4069,
-            "harvest_speed": 17.742,
-            "melee_damage": 11.3125,
-            "magic_damage": 3.5786,
-            "attack_speed": 0.6371,
-            "attack_speed/axe": 0.6069,
-            "attack_speed/hoe": 0.5464,
-            "ranged_damage": 4.3367,
-            "ranged_speed": 0.6976,
-            "projectile_speed": 1.6371,
-            "projectile_accuracy": 1.2767,
-            "armor": 37.7863,
-            "armor_toughness": 20.2299,
-            "magic_armor": 11.0686,
-            "armor/helmet": 6.046,
-            "armor/chestplate": 14.359,
-            "armor/leggings": 11.336,
-            "armor/boots": 6.046
+            "durability": 7324,
+            "armor_durability": 105,
+            "enchantment_value": -16,
+            "rarity": 58,
+            "charging_value": 1,
+            "harvest_speed": 34,
+            "melee_damage": 21,
+            "magic_damage": 7,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 8,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 56,
+            "armor_toughness": 30,
+            "magic_armor": 17,
+            "armor/helmet": 9,
+            "armor/chestplate": 21,
+            "armor/leggings": 17,
+            "armor/boots": 9
         },
         "rod": {
             "harvest_speed": {
@@ -57,22 +57,22 @@
         },
         "tip": {
             "durability": {
-                "add": 437.34
+                "add": 831
             },
             "armor_durability": {
-                "add": 15.65
+                "add": 30
             },
             "harvest_speed": {
-                "add": 3.93
+                "add": 7
             },
             "melee_damage": {
-                "add": 3.23
+                "add": 6
             },
             "ranged_damage": {
-                "add": 1.26
+                "add": 2
             },
             "rarity": {
-                "add": 20.44
+                "add": 20
             }
         }
     },

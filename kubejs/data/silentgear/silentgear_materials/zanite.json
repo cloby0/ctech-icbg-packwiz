@@ -4,73 +4,119 @@
     "harvest_tier": "minecraft:iron",
     "availability": {
         "tier": 2,
-        "categories": ["gem"],
+        "categories": [
+            "gem"
+        ],
         "visible": true,
         "gear_blacklist": [],
         "can_salvage": true
     },
     "crafting_items": {
-        "main": { "item": "aether:zanite_gemstone" }
+        "main": {
+            "item": "aether:zanite_gemstone"
+        }
     },
-    "name": { "text": "Zanite" },
+    "name": {
+        "text": "Zanite"
+    },
     "stats": {
         "main": {
-            "durability": 360.0,
-            "armor_durability": 9.0,
-            "enchantment_value": 18.0,
-            "rarity": 12.0,
-            "charging_value": 1.0,
-            "harvest_speed": 4.0,
-            "melee_damage": 1.8,
-            "magic_damage": 0.8,
-            "attack_speed": 0.0,
-            "attack_speed/axe": -0.1,
-            "ranged_damage": 1.0,
-            "ranged_speed": 0.15,
-            "armor": 10.0,
-            "armor/helmet": 1.0,
-            "armor/chestplate": 4.0,
-            "armor/leggings": 4.0,
-            "armor/boots": 1.0,
-            "armor_toughness": 0.0,
-            "magic_armor": 3.0
+            "durability": 522,
+            "armor_durability": 13,
+            "enchantment_value": 18,
+            "rarity": 12,
+            "charging_value": 1,
+            "harvest_speed": 6,
+            "melee_damage": 3,
+            "magic_damage": 1,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "ranged_damage": 1,
+            "ranged_speed": 0,
+            "armor": 12,
+            "armor/helmet": 1,
+            "armor/chestplate": 5,
+            "armor/leggings": 5,
+            "armor/boots": 1,
+            "armor_toughness": 0,
+            "magic_armor": 4
         },
         "tip": {
-            "durability": { "add": 55.0 },
-            "harvest_speed": { "add": 0.8 },
-            "melee_damage": { "add": 0.5 },
-            "ranged_damage": { "add": 0.3 },
-            "rarity": { "add": 5.0 }
+            "durability": {
+                "add": 80
+            },
+            "harvest_speed": {
+                "add": 1
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 5
+            }
         }
     },
     "traits": {
         "main": [
-            { "name": "silentgear:synergistic", "level": 2 },
+            {
+                "name": "silentgear:synergistic",
+                "level": 2
+            },
             {
                 "name": "silentgear:lucky",
                 "level": 1,
-                "conditions": [{ "type": "silentgear:material_ratio", "ratio": 0.66 }]
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
             }
         ],
         "tip": [
-            { "name": "silentgear:synergistic", "level": 1 }
+            {
+                "name": "silentgear:synergistic",
+                "level": 1
+            }
         ]
     },
     "model": {
         "main/all": [
-            { "texture": "silentgear:main_generic_hc", "color": "#9455F2" },
-            { "texture": "silentgear:_highlight" }
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#9455F2"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
         ],
         "main/fragment": [
-            { "texture": "silentgear:metal", "color": "#9455F2" }
+            {
+                "texture": "silentgear:metal",
+                "color": "#9455F2"
+            }
         ],
         "tip/all": [
-            { "texture": "silentgear:tip_sharp", "color": "#9455F2" }
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#9455F2"
+            }
         ],
         "tip/part": [
-            { "texture": "silentgear:tip_base", "color": "#9455F2" },
-            { "texture": "silentgear:tip", "color": "#9455F2" },
-            { "texture": "silentgear:tip_shine" }
+            {
+                "texture": "silentgear:tip_base",
+                "color": "#9455F2"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#9455F2"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
         ]
     }
 }

@@ -1,13 +1,13 @@
 name = "Culinary Compat!"
-filename = "culinarycompat-1.0.10-beta.jar"
+filename = "culinarycompat-1.0.12-beta.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "cdaebbabcdd11012b3cee4cc1b1e1d48dfc34f16"
+hash = "8f82c9c3f6993d4ab014e3e023c4e94a00fbac04"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8194517
+file-id = 8298169
 project-id = 1516050
