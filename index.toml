@@ -1198,7 +1198,7 @@ hash = "6dda39024ad031ee477ebead5ab376f315f2481c333a844b83fd49fe84e729e2"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/holy_silver_ingot.json"
-hash = "d9b77fd30fa673a2f3f58269128b65c315f53734dbbdde4c444200102d38cdbb"
+hash = "420e05759cc7a4ebc9d856c3f421404ff3e6124fed6edd274d3cdc4a3c8a7826"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsla_steel_ingot.json"
@@ -1294,7 +1294,7 @@ hash = "3beb4ab9150f231671edbf4e8a3f22775bcade570952b7d6a85d0ad02125b703"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/prima_materia_ingot.json"
-hash = "efcc436c14c7e4660704ab24da83721d29bc8e8e4ba87ae0edda872c33af8deb"
+hash = "c2d8757cfef709ca21577d49e144fb6a39e668f1021315f6ae46b2be284d6626"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/red_steel_ingot.json"

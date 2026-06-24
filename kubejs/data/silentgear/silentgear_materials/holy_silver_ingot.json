@@ -10,7 +10,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "main": { "item": "kubejs:holy_silver_ingot" }
+        "main": { "item": "gtceu:holy_silver_ingot" }
     },
     "name": { "text": "Holy Silver" },
     "stats": {
