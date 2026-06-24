@@ -797,8 +797,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'kubejs:elemental_life_reagent',
             'kubejs:source_bio_matrix',
-            'gtceu:draconium_ingot',
-            'gtceu:draconium_ingot',
+            'draconicevolution:draconium_ingot',
+            'draconicevolution:draconium_ingot',
             'botania:elementium_ingot',
             'botania:elementium_ingot',
             'botania:life_essence',
@@ -835,8 +835,8 @@ ServerEvents.recipes(event => {
         mana: 15000000,
         ingredients: [
             { item: 'kubejs:awakened_cumium_embryo' },
-            { item: 'gtceu:awakened_draconium_ingot' },
-            { item: 'gtceu:awakened_draconium_ingot' },
+            { item: 'draconicevolution:awakened_draconium_ingot' },
+            { item: 'draconicevolution:awakened_draconium_ingot' },
             { item: 'botania:gaia_ingot' },
             { item: 'botania:gaia_ingot' },
             { item: 'gtceu:chaotic_singulite_dust' }
@@ -898,7 +898,7 @@ ServerEvents.recipes(event => {
             '1x kubejs:elemental_convergence_matrix',
             '4x gtceu:darmstadtium_dust',
             '2x gtceu:uev_field_generator',
-            '2x gtceu:awakened_draconium_ingot',
+            '2x draconicevolution:awakened_draconium_ingot',
             '1x botania:gaia_ingot',
             '2x ars_nouveau:wilden_tribute',
             '1x #gtceu:circuits/uiv'
