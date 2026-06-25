@@ -659,7 +659,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // Silent Gear: blueprint paper requires GT processing (cyanotype paper = iron salts + ferricyanide)
     event.remove({ output: 'silentgear:blueprint_paper' })
     event.shaped(
         Item.of('silentgear:blueprint_paper', 4),
@@ -668,8 +667,8 @@ ServerEvents.recipes(event => {
             'PPI'
         ],
         {
-            P: 'forge:paper',
-            L: 'gtceu:lapis_lazuli_dust',
+            P: 'minecraft:paper',
+            L: 'gtceu:lapis_dust',
             I: 'gtceu:iron_dust'
         }
     )

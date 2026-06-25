@@ -843,9 +843,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // --- FINAL SYNTHESIS: Biogenic Synthesis Chamber (stub — full recipe pending Branch B design) ---
-    // unforged_cumium_matrix + Branch B boss essence aggregate + GT apex materials → cumium_dust
-    // Recipe added when Branch B is designed.
     // EBF (auto): 14400K, UEV coils, 3600t → cumium_hot_ingot → Vacuum Freezer → cumium_ingot
 
     // liquid computation — still used by uhvAndDraconic; keeping production recipe

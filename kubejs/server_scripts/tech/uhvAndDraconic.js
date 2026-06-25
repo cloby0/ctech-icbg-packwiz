@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
 
+    // Liquid draconium — Fusion Reactor MK3 (primary source; ore removed from worldgen)
+    // Calibrated above neutronium recipe (128+128→32, EUt 98304, startEU 600M)
+    event.recipes.gtceu.fusion_reactor('draconium_fusion')
+        .inputFluids(
+            Fluid.of('gtceu:plutonium_241', 128),
+            Fluid.of('gtceu:naquadah', 128)
+        )
+        .outputFluids(Fluid.of('gtceu:draconium', 32))
+        .duration(300)
+        .EUt(98304)
+        .fusionStartEU(640000000)
+
     // draconium EBF is auto-generated from blastTemp(9000) in gtceuMaterialRegistry.js
     // ingot setIgnored → draconicevolution:draconium_ingot; vanilla smelt removed below
 

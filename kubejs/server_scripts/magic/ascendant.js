@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         sourceCost: 90000
     })
 
-    // Ascendant Initiation Core — used in UEV gate recipes (TBD)
+    // Ascendant Initiation Core — gates draconic_reactor_core (uevAndChaos.js)
     // Requires: all 4 Ascendant books + stabilized_chaos_crystal
     addEnchantingRecipe(event, {
         reagent: 'kubejs:stabilized_chaos_crystal',
