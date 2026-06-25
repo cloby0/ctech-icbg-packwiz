@@ -1915,9 +1915,8 @@ hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
 metafile = true
 
 [[files]]
-file = "mods/adaptive-performance-tweaks.pw.toml"
-hash = "050c12ac3d5846e1f9160c9307caec82371777de80ac92065fb336c11deee06a"
-metafile = true
+file = "mods/adaptive_performance_tweaks-forge-1.20.1-12.5.0.jar"
+hash = "4993a4b97b9ae8afa476e01fcb9438d6b5d35d7d1f69a6a76ddebed87735d5cc"
 
 [[files]]
 file = "mods/addonslib.pw.toml"
