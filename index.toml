@@ -6,7 +6,7 @@ hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
 [[files]]
 file = "config/almostunified/unify.json"
-hash = "d26e11b64df653ffbe2df985d8be16f23e5c814e7e63edb440ebf56dc0e89560"
+hash = "4ca01e7a74e15182e2a528a9f0cc3a5260a2cef172f8870bad13c843e7897211"
 
 [[files]]
 file = "config/appleskin-client.toml"
@@ -42,7 +42,7 @@ hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "b249a8e43933ffed22a2a5f998681bb955997ddec416fa7c16260a03582930a3"
+hash = "8abbd9c839533c9d415a12826d4a29d50f101bf05c2fa2bfdb63bb4f1a1235aa"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -1490,7 +1490,7 @@ hash = "24edee47b54d5bc3a2cbf0321c72ab5fe38f7d2f9b57fcf4c9694196d7875cf9"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "53fba80822204cc85946306c4de1001dd22bd7a779a5bd68ebe68846726889b0"
+hash = "c7c79e9e716871ed808d939553dd5c79b4e431854d66c969a06d0e38a9927f06"
 
 [[files]]
 file = "kubejs/server_scripts/kiln.js"
@@ -1618,7 +1618,7 @@ hash = "a84f2d4718409e534002938d2f95b9ac5731758018d634e92712ecc854fb5f93"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "03217ce4aaad92cb2f468b64b6a65635c3cb0165f881724f33f97d0fbb093e64"
+hash = "b30e51ef82ffb70ba14be66aa45766b6bf9dac6bceac6f6782bc2947ab36d512"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -1754,7 +1754,7 @@ hash = "da5246d1544ad0e77941e8ceb300a47b4b483279184d176cdb2faddd0a4b9966"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
+hash = "2a92a7598641ce0ca379eb66a6ff6cde372db44260d11c8f148458ea223ecb03"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"

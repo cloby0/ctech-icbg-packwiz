@@ -166,6 +166,22 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // renewable wilden_tribute — wilden essence (horn + spike x2 each) + Gaia-tier power invoke another tribute
+    // gaia_ingot gates this at Sage tier; in the factory these are notConsumable (setup items only)
+    addImbuementRecipe(event, {
+        input: 'ars_nouveau:wilden_tribute',
+        output: { item: 'ars_nouveau:wilden_tribute', count: 2 },
+        source: 50000,
+        pedestalItems: [
+            'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_spike',
+            'ars_nouveau:wilden_spike',
+            'botania:gaia_ingot',
+            'botania:gaia_ingot'
+        ]
+    })
+
     // abstract_elastomer chain — elemental imbuement → UV mixer → Gaia binding
     // Step 1: elemental essences + drygmy shards imbue GT rubber dust with living magic
     // rubber_dust grounds the chain in its GT lineage — this is rubber, transcended

@@ -44,6 +44,11 @@
     "superbwarfare:raw_cemented_carbide_powder",
     "superbwarfare:cemented_carbide_ingot",
 
+    // superbwarfare: SW battery packs replaced by GT battery hulls (lv/mv/hv/luv)
+    "superbwarfare:small_battery_pack",
+    "superbwarfare:medium_battery_pack",
+    "superbwarfare:large_battery_pack",
+
     // superbwarfare: handheld guns (tacz guns via GT arms_manufacturer replace these)
     "superbwarfare:taser",
     "superbwarfare:glock_17",

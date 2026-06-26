@@ -18,6 +18,9 @@ ServerEvents.tags('item', event => {
   event.add('forge:gems/ambrosium', 'aether:ambrosium_shard');
   event.add('forge:gems/zanite', 'aether:zanite_gemstone');
 
+  // Unify SW cemented carbide ingot into forge tag so AlmostUnified substitutes gtceu version
+  event.add('forge:ingots/cemented_carbide', 'superbwarfare:cemented_carbide_ingot');
+
   // technomancy focus: replace vanilla redstone with LV circuit
   event.remove('cataclysm_spellbooks:technomancy_focus', 'minecraft:redstone')
   event.add('cataclysm_spellbooks:technomancy_focus', '#gtceu:circuits/lv')
