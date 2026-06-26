@@ -198,11 +198,19 @@ StartupEvents.registry('item', event => {
     event.create('stabilized_chaos_crystal')
     event.create('chaos_harmonic_board')
 
-    // Custom circuit items — replaces GT-generated mainframes for UHV+
+    // Custom circuit items — three overlapping themes (draconic/chaos/cumium)
     // Tagged into #gtceu:circuits/{tier} in server_scripts/circuitTags.js
-    event.create('draconic_resonance_assembly')   // UHV
-    event.create('chaos_harmonic_mainframe')       // UEV
-    event.create('cumium_singularity_core')        // UIV
+    event.create('draconic_processor')                // ZPM
+    event.create('draconic_processor_assembly')       // UV
+    event.create('draconic_processor_supercomputer')  // UHV
+    event.create('draconic_processor_mainframe')      // UEV
+    event.create('chaos_processor')                   // UV
+    event.create('chaos_processor_assembly')          // UHV
+    event.create('chaos_processor_supercomputer')     // UEV
+    event.create('chaos_processor_mainframe')         // UIV
+    event.create('cumium_processor')                  // UEV
+    event.create('cumium_processor_assembly')         // UIV
+    event.create('artificial_cumium_brain')           // UXV
 
     // Prophet tier (UHV magic) spellbooks
     event.create('draconic_sanguinary')

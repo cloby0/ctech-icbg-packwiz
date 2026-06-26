@@ -591,55 +591,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    // parallel branches — four elemental nuclei, each uses a DIFFERENT machine and a boss drop
-    // all four required as convergence pedestals at gestated_cumium_crystal (step 3)
-
-    // fire nucleus — GT Alloy Smelter; boss gate: ignitium_ingot (from Ignis boss, Cataclysm)
-    // ember_crystal: existing MV fire crystal from chromite + phlogiston processing
-    event.recipes.gtceu.alloy_smelter('fire_nucleus_synthesis')
-        .itemInputs('2x cataclysm:ignitium_ingot', '2x kubejs:ember_crystal')
-        .itemOutputs('2x kubejs:fire_nucleus')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    // water nucleus — Botania Mana Pool (alchemy catalyst); boss gate: lacrima (Cataclysm ocean boss)
-    // 50000 mana: requires serious mana infrastructure even before the 15M TAP
-    addManaPondRecipe(event, {
-        mana: 50000,
-        input: { item: 'cataclysm:lacrima' },
-        output: { item: 'kubejs:water_nucleus' },
-        catalyst: { block: 'botania:alchemy_catalyst' }
-    })
-
-    // earth nucleus — GT Mixer; boss gate: ancient_metal_ingot (Ancient Remnant boss, Cataclysm)
-    // mineral_flux_crystal: existing HV earth crystal (chanced byproduct of ichor alloy processing)
-    event.recipes.gtceu.mixer('earth_nucleus_synthesis')
-        .itemInputs(
-            '2x cataclysm:ancient_metal_ingot',
-            '2x kubejs:mineral_flux_crystal',
-            '4x mysticalagriculture:earth_essence'
-        )
-        .inputFluids(Fluid.of('gtceu:mineral_ichor', 1000))
-        .itemOutputs('4x kubejs:earth_nucleus')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.IV])
-
-    // air nucleus — Ars Nouveau Imbuement Chamber; boss gate: essence_of_the_storm (Storm boss, Cataclysm)
-    // aether_crystal: existing IV air crystal from scheelite + pneuma; naquadah: Glacio gate
-    addImbuementRecipe(event, {
-        input: 'cataclysm:essence_of_the_storm',
-        output: 'kubejs:air_nucleus',
-        source: 12000,
-        pedestalItems: [
-            'kubejs:aether_crystal',
-            'kubejs:aether_crystal',
-            'mysticalagriculture:air_essence',
-            'mysticalagriculture:air_essence',
-            'gtceu:naquadah_dust',
-            'gtceu:naquadah_dust'
-        ]
-    })
-
     // ============================================================
     // BRANCH A: BIOLOGICAL APOTHEOSIS CHAIN
     // C-Tech apex material synthesis — 13 steps before EBF

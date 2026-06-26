@@ -97,11 +97,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('awakened_draconium', 'draconicevolution:awakened_draconium_ingot')
     nugget('awakened_draconium', 'draconicevolution:awakened_draconium_nugget')
     block('awakened_draconium', 'draconicevolution:awakened_draconium_block')
-
-    gemChipped('chaos_crystal', 'draconicevolution:small_chaos_frag')
-    gemFlawed('chaos_crystal', 'draconicevolution:medium_chaos_frag')
+    
     gem('chaos_crystal', 'draconicevolution:chaos_shard')
-    gemFlawless('chaos_crystal', 'draconicevolution:large_chaos_frag')
-    gemExquisite('chaos_crystal', 'draconicevolution:chaos_crystal')
-
 })

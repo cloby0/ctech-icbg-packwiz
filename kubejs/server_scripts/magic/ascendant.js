@@ -1,13 +1,13 @@
 ServerEvents.recipes(event => {
 
     // Stabilized Chaos Crystal — Ascendant magic gate
-    // Requires: Chaos Guardian fight (chaos_shard) + UHV circuit (draconic_resonance_assembly) + chaotic_core
+    // Requires: Chaos Guardian fight (chaos_shard) + UHV circuit (draconic_processor_supercomputer) + chaotic_core
     // sourceCost 100k — highest in pack
     addEnchantingRecipe(event, {
         reagent: 'draconicevolution:chaos_shard',
         pedestalItems: [
-            'kubejs:draconic_resonance_assembly',
-            'kubejs:draconic_resonance_assembly',
+            'kubejs:draconic_processor_supercomputer',
+            'kubejs:draconic_processor_supercomputer',
             'draconicevolution:chaotic_core',
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',

@@ -4,9 +4,22 @@ ItemEvents.tooltip((event) => {
     "§7A chip that comes with the firmware to think in ME",
   );
 
-  event.add("kubejs:draconic_resonance_assembly", "§4UHV-Tier Circuit");
-  event.add("kubejs:chaos_harmonic_mainframe", "§aUEV-Tier Circuit");
-  event.add("kubejs:cumium_singularity_core", "§2UIV-Tier Circuit");
+  // Draconic theme: ZPM → UEV
+  event.add("kubejs:draconic_processor", "§5ZPM-Tier Circuit");
+  event.add("kubejs:draconic_processor_assembly", "§5UV-Tier Circuit");
+  event.add("kubejs:draconic_processor_supercomputer", "§5UHV-Tier Circuit");
+  event.add("kubejs:draconic_processor_mainframe", "§5UEV-Tier Circuit");
+
+  // Chaos theme: UV → UIV
+  event.add("kubejs:chaos_processor", "§4UV-Tier Circuit");
+  event.add("kubejs:chaos_processor_assembly", "§4UHV-Tier Circuit");
+  event.add("kubejs:chaos_processor_supercomputer", "§4UEV-Tier Circuit");
+  event.add("kubejs:chaos_processor_mainframe", "§4UIV-Tier Circuit");
+
+  // Cumium theme: UEV → UXV
+  event.add("kubejs:cumium_processor", "§aUEV-Tier Circuit");
+  event.add("kubejs:cumium_processor_assembly", "§aUIV-Tier Circuit");
+  event.add("kubejs:artificial_cumium_brain", "§aUXV-Tier Circuit");
 
   // Magic tier labels — mirrors GTCEu voltage tier display.
   // Tags defined in itemTags.js; add items there to extend a tier's tooltip.

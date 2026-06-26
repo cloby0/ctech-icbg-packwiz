@@ -25,12 +25,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // Chaos Harmonic Mainframe — UEV circuit, primary assembly line recipe
-    // Requires: draconic_resonance_assembly (second UHV circuit), chaos content, Awakened Core
-    event.recipes.gtceu.assembly_line('chaos_harmonic_mainframe_recipe')
+    // Chaos Processor Supercomputer — UEV circuit, primary assembly line
+    event.recipes.gtceu.assembly_line('chaos_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:draconic_resonance_assembly',
+            '2x kubejs:draconic_processor_supercomputer',
             '4x kubejs:chaos_harmonic_board',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -48,13 +47,12 @@ ServerEvents.recipes(event => {
             Fluid.of('kubejs:draconic_computation', 8000),
             Fluid.of('kubejs:chaos_matrix_fluid', 2000)
         )
-        .itemOutputs('kubejs:chaos_harmonic_mainframe')
+        .itemOutputs('kubejs:chaos_processor_supercomputer')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Draconic Resonance Assembly — cheaper alternate at UEV (no assembly line needed)
-    // Follows gradient pattern: once at UEV, previous tier circuit becomes more accessible
-    event.recipes.gtceu.circuit_assembler('draconic_resonance_assembly_uev_alt')
+    // Draconic Processor Supercomputer — cheaper alternate at UEV (no assembly line needed)
+    event.recipes.gtceu.circuit_assembler('draconic_processor_supercomputer_uev_alt')
         .itemInputs(
             '1x gtceu:tritanium_frame',
             '1x gtceu:wetware_processor_computer',
@@ -68,16 +66,15 @@ ServerEvents.recipes(event => {
             '1x kubejs:dragon_heart_crystal'
         )
         .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
-        .itemOutputs('kubejs:draconic_resonance_assembly')
+        .itemOutputs('kubejs:draconic_processor_supercomputer')
         .duration(800)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Cumium Singularity Core — UIV circuit, primary assembly line recipe
-    // Pack namesake circuit — requires cumium ingot + full chaos + Chaotic Core
-    event.recipes.gtceu.assembly_line('cumium_singularity_core_recipe')
+    // Cumium Processor Assembly — UIV circuit, primary assembly line
+    event.recipes.gtceu.assembly_line('cumium_processor_assembly_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:chaos_harmonic_mainframe',
+            '2x kubejs:chaos_processor_supercomputer',
             '4x gtceu:cumium_ingot',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -94,15 +91,15 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:soldering_alloy', 2880),
             Fluid.of('kubejs:chaos_matrix_fluid', 8000)
         )
-        .itemOutputs('kubejs:cumium_singularity_core')
+        .itemOutputs('kubejs:cumium_processor_assembly')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // Chaos Harmonic Mainframe — cheaper alternate at UIV
-    event.recipes.gtceu.circuit_assembler('chaos_harmonic_mainframe_uiv_alt')
+    // Chaos Processor Supercomputer — cheaper alternate at UIV
+    event.recipes.gtceu.circuit_assembler('chaos_processor_supercomputer_uiv_alt')
         .itemInputs(
             '1x gtceu:awakened_framework_frame',
-            '1x kubejs:draconic_resonance_assembly',
+            '1x kubejs:draconic_processor_supercomputer',
             '2x kubejs:chaos_harmonic_board',
             '16x gtceu:advanced_smd_diode',
             '16x gtceu:advanced_smd_capacitor',
@@ -113,7 +110,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:awakened_core'
         )
         .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 2000))
-        .itemOutputs('kubejs:chaos_harmonic_mainframe')
+        .itemOutputs('kubejs:chaos_processor_supercomputer')
         .duration(800)
         .EUt(GTValues.VA[GTValues.UIV])
 
@@ -161,7 +158,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:awakened_draconium_ingot',
             '2x draconicevolution:large_chaos_frag',
             '1x draconicevolution:chaos_shard',
-            '1x kubejs:cumium_singularity_core',
+            '1x kubejs:cumium_processor_assembly',
             '1x kubejs:ascendant_initiation_core',
             '4x gtceu:awakened_framework_plate'
         )
@@ -199,5 +196,117 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x draconicevolution:reactor_injector')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
+
+    // =========================================================================
+    // CHAOS THEME: UV → UIV
+    // =========================================================================
+
+    // Chaos Processor — UV-level chaos theme entry, circuit_assembler at UEV
+    event.recipes.gtceu.circuit_assembler('chaos_processor_recipe')
+        .itemInputs(
+            '4x gtceu:chaos_crystal_dust',
+            '2x gtceu:awakened_draconium_foil',
+            '1x kubejs:chaos_harmonic_board',
+            '8x gtceu:advanced_smd_diode',
+            '8x gtceu:advanced_smd_capacitor',
+            '8x gtceu:advanced_smd_transistor',
+            '8x gtceu:advanced_smd_resistor'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .itemOutputs('1x kubejs:chaos_processor')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    // Chaos Processor Assembly — UHV-level, upcraft from chaos_processor
+    event.recipes.gtceu.circuit_assembler('chaos_processor_assembly_recipe')
+        .itemInputs(
+            '2x kubejs:chaos_processor',
+            '2x kubejs:chaos_harmonic_board',
+            '4x gtceu:awakened_draconium_foil',
+            '16x gtceu:advanced_smd_diode',
+            '16x gtceu:advanced_smd_capacitor',
+            '16x gtceu:advanced_smd_transistor',
+            '16x gtceu:advanced_smd_resistor',
+            '8x gtceu:ram_chip'
+        )
+        .inputFluids(
+            Fluid.of('kubejs:draconic_computation', 1000),
+            Fluid.of('kubejs:chaos_matrix_fluid', 500)
+        )
+        .itemOutputs('1x kubejs:chaos_processor_assembly')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    // Chaos Processor Mainframe — UIV-level, chaos theme terminus, assembly line
+    event.recipes.gtceu.assembly_line('chaos_processor_mainframe_recipe')
+        .itemInputs(
+            '2x gtceu:awakened_framework_frame',
+            '2x kubejs:chaos_processor_supercomputer',
+            '4x kubejs:chaos_harmonic_board',
+            '32x gtceu:advanced_smd_diode',
+            '32x gtceu:advanced_smd_capacitor',
+            '32x gtceu:advanced_smd_transistor',
+            '32x gtceu:advanced_smd_resistor',
+            '32x gtceu:advanced_smd_inductor',
+            '32x gtceu:ram_chip',
+            '16x gtceu:chaotic_singulite_double_wire',
+            '8x gtceu:awakened_draconium_plate',
+            '2x draconicevolution:chaotic_core'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 2880),
+            Fluid.of('kubejs:chaos_matrix_fluid', 8000)
+        )
+        .itemOutputs('1x kubejs:chaos_processor_mainframe')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+    // =========================================================================
+    // CUMIUM THEME: UEV → UXV
+    // =========================================================================
+
+    // Cumium Processor — UEV-level cumium theme entry, circuit_assembler at UIV
+    event.recipes.gtceu.circuit_assembler('cumium_processor_recipe')
+        .itemInputs(
+            '4x gtceu:cumium_foil',
+            '2x gtceu:awakened_draconium_foil',
+            '1x kubejs:chaos_harmonic_board',
+            '8x gtceu:advanced_smd_diode',
+            '8x gtceu:advanced_smd_capacitor',
+            '8x gtceu:advanced_smd_transistor',
+            '8x gtceu:advanced_smd_resistor'
+        )
+        .inputFluids(
+            Fluid.of('kubejs:chaos_matrix_fluid', 500),
+            Fluid.of('kubejs:draconic_computation', 1000)
+        )
+        .itemOutputs('1x kubejs:cumium_processor')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+    // Artificial Cumium Brain — UXV-level, cumium theme terminus, assembly line at UIV
+    event.recipes.gtceu.assembly_line('artificial_cumium_brain_recipe')
+        .itemInputs(
+            '2x gtceu:awakened_framework_frame',
+            '2x kubejs:cumium_processor_assembly',
+            '64x gtceu:advanced_smd_diode',
+            '64x gtceu:advanced_smd_capacitor',
+            '64x gtceu:advanced_smd_transistor',
+            '64x gtceu:advanced_smd_resistor',
+            '64x gtceu:advanced_smd_inductor',
+            '64x gtceu:ram_chip',
+            '16x gtceu:chaotic_singulite_double_wire',
+            '16x gtceu:cumium_plate',
+            '16x gtceu:cumium_foil',
+            '2x draconicevolution:chaotic_core'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 2880),
+            Fluid.of('kubejs:chaos_matrix_fluid', 12000),
+            Fluid.of('kubejs:draconic_computation', 4000)
+        )
+        .itemOutputs('1x kubejs:artificial_cumium_brain')
+        .duration(3000)
+        .EUt(GTValues.VA[GTValues.UIV])
 
 })

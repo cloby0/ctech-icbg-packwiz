@@ -95,9 +95,9 @@ ServerEvents.recipes(event => {
 
     // awakened_framework EBF auto-generated from components + blastTemp in startup
 
-    // Draconic Resonance Assembly (second UHV circuit, gated) — primary assembly line recipe
+    // Draconic Processor Supercomputer — UHV circuit, primary assembly line
     // Also tagged into #gtceu:circuits/uhv alongside wetware mainframe
-    event.recipes.gtceu.assembly_line('draconic_resonance_assembly_recipe')
+    event.recipes.gtceu.assembly_line('draconic_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:tritanium_frame',
             '2x gtceu:wetware_processor_computer',
@@ -118,8 +118,68 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:polybenzimidazole', 1152),
             Fluid.of('kubejs:draconic_computation', 4000)
         )
-        .itemOutputs('kubejs:draconic_resonance_assembly')
+        .itemOutputs('kubejs:draconic_processor_supercomputer')
         .duration(2000)
         .EUt(300000)
+
+    // Draconic Processor — ZPM-level entry circuit, circuit_assembler at UHV
+    event.recipes.gtceu.circuit_assembler('draconic_processor_recipe')
+        .itemInputs(
+            '1x gtceu:neutronium_wafer',
+            '4x gtceu:draconium_foil',
+            '1x kubejs:dragon_heart_crystal',
+            '8x gtceu:advanced_smd_diode',
+            '8x gtceu:advanced_smd_capacitor',
+            '8x gtceu:advanced_smd_transistor',
+            '8x gtceu:advanced_smd_resistor'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .itemOutputs('1x kubejs:draconic_processor')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    // Draconic Processor Assembly — UV-level, upcraft from draconic_processor
+    event.recipes.gtceu.circuit_assembler('draconic_processor_assembly_recipe')
+        .itemInputs(
+            '2x kubejs:draconic_processor',
+            '2x gtceu:neutronium_wafer',
+            '4x gtceu:draconium_foil',
+            '1x gtceu:awakened_draconium_foil',
+            '16x gtceu:advanced_smd_diode',
+            '16x gtceu:advanced_smd_capacitor',
+            '16x gtceu:advanced_smd_transistor',
+            '16x gtceu:advanced_smd_resistor',
+            '8x gtceu:ram_chip'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .itemOutputs('1x kubejs:draconic_processor_assembly')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    // Draconic Processor Mainframe — UEV-level, draconic theme terminus
+    // Requires chaos_crystal_dust crossover: pushing draconics to UEV needs chaos access
+    event.recipes.gtceu.assembly_line('draconic_processor_mainframe_recipe')
+        .itemInputs(
+            '2x gtceu:tritanium_frame',
+            '2x kubejs:draconic_processor_supercomputer',
+            '4x kubejs:draconic_resonance_board',
+            '32x gtceu:advanced_smd_diode',
+            '32x gtceu:advanced_smd_capacitor',
+            '32x gtceu:advanced_smd_transistor',
+            '32x gtceu:advanced_smd_resistor',
+            '32x gtceu:advanced_smd_inductor',
+            '32x gtceu:ram_chip',
+            '16x gtceu:draconic_fluxite_double_wire',
+            '8x gtceu:awakened_draconium_plate',
+            '4x gtceu:chaos_crystal_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:soldering_alloy', 2880),
+            Fluid.of('kubejs:draconic_computation', 6000),
+            Fluid.of('kubejs:chaos_matrix_fluid', 1000)
+        )
+        .itemOutputs('1x kubejs:draconic_processor_mainframe')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.UEV])
 
 })

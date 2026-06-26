@@ -326,14 +326,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x2d2d2d)
         .secondaryColor(0x161616)
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
-        .iconSet(GTMaterialIconSet.DULL)
+        .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.NO_SMELTING
         )
 
     event.create("lumium")
@@ -448,7 +447,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x4A2A24).secondaryColor(0x1E1010)
         .blastTemp(3000, "low", GTValues.VA[GTValues.HV], 800)
-        .components('1x netherite', '4x steel')
+        .components('1x netherite', '8x steel')
         .iconSet(GTMaterialIconSet.DULL)
         .flags(GTMaterialFlags.NO_SMELTING)
 
@@ -462,14 +461,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMASHING
         )
 
-    // real composition: ~96% water, zinc (high), fructose, proteins, sperm cells
-    // approximated in GT terms: zinc_dust + stem_cells + sugar + sterilized_growth_medium
     event.create('cum')
         .fluid()
         .color(0xFCFCEC)
 
-    // C-Tech apex material — requires full UV tech + Sage magic + stellar plasma chain + 5M mana TAP
-    // UIV superconductor cable (64A, 0 loss)
     event.create('cumium')
         .ingot()
         .fluid()
@@ -559,7 +554,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xc49060)
 
-    // nugget form renamed to curd via lang key
     event.create('moon_cheese')
         .ingot()
         .ore()
@@ -567,11 +561,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xc8b842)
         .iconSet(GTMaterialIconSet.DULL)
         .addOreByproducts('sodium', 'calcium')
-
-    // magic-tech superconductor alloys
-    // lower amperage tradeoff vs vanilla tier superconductors
-    // uses MaterialStackWrapper.fromString via c() helper for lazy resolution of custom materials
-    // LuV+ blast temps require naquadah tier coils or higher
 
     event.create('lead_sourcite')
         .ingot()
@@ -758,10 +747,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UHV/UEV draconic tier materials
-
-    // GT integration of DE draconium — ingot/nugget/block setIgnored to DE items
-    // EBF at 9000K (UV) gates ingot from dust; NO_SMELTING removes vanilla smelt bypass
     event.create('draconium')
         .ingot()
         .fluid()
@@ -773,7 +758,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 1200)
         .cableProperties(GTValues.VA[GTValues.UHV], 1, 16, false)
         .flags(
-            GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -781,10 +765,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE
-        )
-
-    // GT integration of DE awakened_draconium — ingot/nugget/block setIgnored to DE items
-    // Ingot gated by Draconic Infusion Chamber (draconium_ingot + draconic_computation); NO_SMELTING removes vanilla bypass
+    )
+    
     event.create('awakened_draconium')
         .ingot()
         .fluid()
@@ -795,7 +777,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .cableProperties(GTValues.VA[GTValues.UEV], 1, 32, false)
         .fluidPipeProperties(16000, 20000, true)
         .flags(
-            GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -895,7 +876,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x1A0A2E)
         .secondaryColor(0x6030AA)
         .iconSet(GTMaterialIconSet.DULL)
-        .fluidPipeProperties(7000, 2000, true)
+        .fluidPipeProperties(10000, 6000, true)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_FOIL

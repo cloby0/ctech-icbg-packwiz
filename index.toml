@@ -826,11 +826,11 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "a0b12862a409ab17ba027b92e54dd6307cabcb43155e50d0b8d515c79995fa22"
+hash = "95c361a1165c2895f4e9d7fd2966953d85f426a20a389ef2a3e1b133ca38e3fd"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "7e80ac32e0d0d6fb695466ebc17c14ce2dea5397fc7172a9c3edf67c1607d4ca"
+hash = "def30071a73421e830e117433e4d2274244d67ce4de3c9a2d297e23eb988d03c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -994,7 +994,7 @@ hash = "84bbea45e1008aaeb6d4515760766e627d35100eb06baf07a9e90bc03fd2e016"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "70fc0bf356ac9b104bfd9a0d3cbf5eed2eef33b4c06111a35863453602fdae64"
+hash = "5df5f440851a03d06b02156cf683f96ef75045d3baa8c02b7dc79c16e1cd170a"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1478,7 +1478,7 @@ hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
 [[files]]
 file = "kubejs/server_scripts/circuitTags.js"
-hash = "6d0d0f1aa81b2a31567d9516d1ac5127ccfd563642e7257cec7378c7b0825178"
+hash = "24edee47b54d5bc3a2cbf0321c72ab5fe38f7d2f9b57fcf4c9694196d7875cf9"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
@@ -1518,7 +1518,7 @@ hash = "4ac85b520a23f391df4da37de8d32b793b9e62e95a73d3218ed548b63f4370cd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
-hash = "d09dc0a590c745100b944e7278a5e74287117b8ea81190fcb58a9c9e10baa738"
+hash = "8252600e6c6c28fb8a56b839f1498faa59ffa98a568436f624d6359f0e588caf"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestialEnchantments.js"
@@ -1577,6 +1577,10 @@ file = "kubejs/server_scripts/magic/journeyman.js"
 hash = "156840b85426461a8725ab2283126c469bc384b990f4ba7341aecc721ef5b56a"
 
 [[files]]
+file = "kubejs/server_scripts/magic/l2hostility.js"
+hash = "bb0555719291efec05f2476762944346dea7846ba75c7f14125d8a1411382510"
+
+[[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
 hash = "ae70f2a66de42475225850f989c0b14600f54708b24a1f627833aad3faefa897"
 
@@ -1606,7 +1610,7 @@ hash = "a84f2d4718409e534002938d2f95b9ac5731758018d634e92712ecc854fb5f93"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "d3bc8fc908572adcf53a43199ed8d4b07e2f07407e33e5c32a24cd4fb7c11423"
+hash = "03217ce4aaad92cb2f468b64b6a65635c3cb0165f881724f33f97d0fbb093e64"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -1746,11 +1750,11 @@ hash = "b12c3dbb78daac4440b6da3db09608891c8864406aed796811ea5010cfd38c30"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"
-hash = "49e8b9335c2e493e6901b89554d8993756a85adf236a610c44a6dd314d9b868c"
+hash = "bf0aaaabe9c404755b8f716f35f7d3f8099ce8236435e07e1dc8becb75732aeb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
-hash = "b2202861f3c59d1366054b33373a8a5c6cf22dee671d9a532da695f1853ae3d2"
+hash = "b44b73b2ab873a014027002fe4c0ebcd0182310280bd90002f5e2fbf7bceabac"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -1758,7 +1762,7 @@ hash = "38370ff179ef026490b2d0c5c992a9096b962d62ed7c7f4b4b85be934d308d84"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "70b24c0b95026444474e61b53862be18a2fe1c888c991c3b1b2fa92e0467aba7"
+hash = "00a1f7c0cfb6e25b7da926df26f9b6755e368e01b6aaadcb7eb9a43bb11ba84a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -1858,11 +1862,11 @@ hash = "b17d8827dada918a76ef61bbe04a8d48b1404055444f51c80cdf666c33ab79de"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "7a55647062c09527e7337475d7fa1786473ec5abbdca34bdb9516fc61ab485d5"
+hash = "5101409ac04b8938e8f989ecfa7b3d344c1851be71ac84d71487af9b71ac96e3"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "0979f1f7cf95d2936f9925201f9e6955c6170108851b402649ae9767a6b0b2d3"
+hash = "0495e81a521be1b85460c0f96f0e5eeb9ebb02836e7e4a6b66e05c65ad337b63"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -1870,7 +1874,7 @@ hash = "dbd25518bbeac9d11b85f1a030a0893f96c1b40a7f22e560b375a01cfb303475"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "6e945422a7f64332e01707313c6cbf138a7dda44f60849611b7496be125236d8"
+hash = "580adbf04cd8afd025135d1dfa8974b0344b5e5238aaa8a8df9f82bb0125d541"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -2250,6 +2254,11 @@ metafile = true
 [[files]]
 file = "mods/citadel.pw.toml"
 hash = "5a4b03567f23fe0aac7806bd7cc9734138bf5fc098e98c1bb552d5b288bef258"
+metafile = true
+
+[[files]]
+file = "mods/cleanroom-covers.pw.toml"
+hash = "34fe83ddff1fae6908280291eb3158a2398f3f4a71f0cf194bd1f7ec43539fbe"
 metafile = true
 
 [[files]]

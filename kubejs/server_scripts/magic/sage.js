@@ -167,9 +167,10 @@ ServerEvents.recipes(event => {
     })
 
     // abstract_elastomer chain — elemental imbuement → UV mixer → Gaia binding
-    // Step 1: elemental essences + drygmy shards imbue slime with living magic
+    // Step 1: elemental essences + drygmy shards imbue GT rubber dust with living magic
+    // rubber_dust grounds the chain in its GT lineage — this is rubber, transcended
     addImbuementRecipe(event, {
-        input: 'minecraft:slime_ball',
+        input: '4x gtceu:rubber_dust',
         output: 'kubejs:primal_latex_billet',
         source: 25000,
         pedestalItems: [
@@ -182,18 +183,20 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // Step 2 (tech): UV Mixer — source gems and wilden horn catalyze billet into elemental compound
+    // Step 2 (tech): UV Mixer — source fluid + gems + wilden horn catalyze billet into elemental compound
+    // requires liquid source, not just crystallized gems
     event.recipes.gtceu.mixer('abstract_elastomer_compound_mix')
         .itemInputs(
             '1x kubejs:primal_latex_billet',
             '4x ars_nouveau:source_gem',
             '1x ars_nouveau:wilden_horn'
         )
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
         .itemOutputs('1x kubejs:elemental_latex_compound')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // Step 3: Gaia binding — wilden tribute + gaia ingots lock compound into abstract concept
+    // Step 3: Gaia binding — abstract_metal ingots anchor the sibling concept; platonic rubber needs platonic metal
     // Melt abstract_elastomer_ingot in arc furnace or fluid extractor to get the fluid
     addEnchantingRecipe(event, {
         reagent: 'kubejs:elemental_latex_compound',
@@ -202,8 +205,8 @@ ServerEvents.recipes(event => {
             'botania:gaia_ingot', 'botania:gaia_ingot',
             'ars_nouveau:wilden_tribute',
             'ars_nouveau:wilden_tribute',
-            'ars_nouveau:wilden_spike',
-            'ars_nouveau:wilden_spike'
+            'gtceu:abstract_metal_ingot',
+            'gtceu:abstract_metal_ingot'
         ],
         output: 'gtceu:abstract_elastomer_ingot',
         sourceCost: 40000

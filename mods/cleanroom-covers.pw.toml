@@ -1,0 +1,13 @@
+name = "Cleanroom Covers"
+filename = "cleanroomcovers-1.20.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2c9ac16f39d5c444c16701e613170699ed384af4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8294812
+project-id = 1580492
