@@ -1,0 +1,275 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_icbg"
+	group: ""
+	icon: "gtceu:nan_certificate"
+	id: "5F6A95946A7A833D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "39A552B41CABFCC0"
+			subtitle: "modp"
+			tasks: [{
+				id: "09A5EB2E592FCD54"
+				title: "Welcome to C-Tech!!!!1!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39A552B41CABFCC0"]
+			id: "6696AB28A0F974E0"
+			shape: "square"
+			size: 0.75d
+			subtitle: "This instance tainted by:"
+			tasks: [{
+				count: 16L
+				id: "5BD50F88E9997673"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "Check Logs"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6696AB28A0F974E0"]
+			id: "70898463C3BFDA3A"
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				count: 16L
+				id: "5A483F2A0683B229"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:raw_iron)item(gtceu:raw_yellow_limonite)item(gtceu:raw_magnetite)item(gtceu:raw_basaltic_mineral_sand)item(gtceu:raw_granitic_mineral_sand)item(gtceu:raw_pyrite)item(gtceu:raw_goethite)item(gtceu:raw_hematite))"
+					}
+				}
+				title: "Iron-bearing Ores"
+				type: "item"
+			}]
+			title: "Iron Man"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70898463C3BFDA3A"]
+			id: "047B3EB6DF0D600E"
+			size: 0.75d
+			subtitle: "i hardly kn"
+			tasks: [{
+				id: "374F41E1530B63BE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_hammers)"
+					}
+				}
+				title: "Any GTM hammer"
+				type: "item"
+			}]
+			title: "Hammer?"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["047B3EB6DF0D600E"]
+			id: "159977EC081BCE70"
+			size: 0.75d
+			subtitle: "haha i get it like tool"
+			tasks: [
+				{
+					id: "11906B9E743D2237"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wrenches)"
+						}
+					}
+					title: "Any GTM wrench"
+					type: "item"
+				}
+				{
+					id: "4A1D69E035818750"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_files)"
+						}
+					}
+					title: "Any GTM file"
+					type: "item"
+				}
+				{
+					id: "5A8C39382B5DE09C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_saws)"
+						}
+					}
+					title: "Any GTM saw"
+					type: "item"
+				}
+			]
+			title: "What a Tool!"
+			x: -1.125d
+			y: -3.0d
+		}
+		{
+			dependencies: ["159977EC081BCE70"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
+				}
+			}
+			id: "41825035148A2ED6"
+			size: 0.75d
+			subtitle: "why do you even need that many tools"
+			tasks: [
+				{
+					id: "403092F111182333"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_screwdrivers)"
+						}
+					}
+					title: "Any Screwdriver!"
+					type: "item"
+				}
+				{
+					id: "72855548B6DED1C0"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wire_cutters)"
+						}
+					}
+					title: "Any Wire Cutter!"
+					type: "item"
+				}
+				{
+					id: "5FF7B996D9677871"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_mortars)"
+						}
+					}
+					title: "Any Mortar!"
+					type: "item"
+				}
+				{
+					id: "18FC9B72CDD4FA5C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_knives)"
+						}
+					}
+					title: "Any Knife!"
+					type: "item"
+				}
+				{
+					id: "675971556DDF31EA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_mallets)"
+						}
+					}
+					title: "Any Soft Mallet!"
+					type: "item"
+				}
+			]
+			title: "okay this is getting ridiculous"
+			x: -2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F83308882B913E4"]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "6C717E17AD17FF7B"
+			shape: "diamond"
+			subtitle: "circuitry"
+			tasks: [{
+				id: "6EE4F60BF05581C1"
+				title: "Tech?"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F83308882B913E4"]
+			icon: "ars_nouveau:source_gem"
+			id: "42FBF65B12E36EC7"
+			shape: "diamond"
+			subtitle: "sorcery"
+			tasks: [{
+				id: "4C9CFDD9AD576366"
+				title: "Magic?"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["047B3EB6DF0D600E"]
+			description: [
+				"it's time for this modpack's exciting gimmick!"
+				""
+				"in c-tech: intercontinental ballistic greg, you are afforded an amazing choice:"
+				""
+				"choosing to not have to engage in gregtech at ALL!"
+				""
+				"that's right, there is an entirely alternate path you can choose to take, that being the pursuit of magic."
+				"now, notably, you can go ahead and just do BOTH. in fact, there's a lot of beneficial options that are afforded to you if you do."
+				""
+				"you can also just play pure gregtech and ignore ALL of the magic aspects."
+				""
+				"just check off the path you want to play, and new questbooks will open from there."
+			]
+			id: "2F83308882B913E4"
+			shape: "diamond"
+			size: 0.75d
+			subtitle: "time for the gimmick, everybody!"
+			tasks: [{
+				id: "25574905F9E84A1C"
+				title: "the crossroads..."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	title: "Welcome to ICBG!"
+}

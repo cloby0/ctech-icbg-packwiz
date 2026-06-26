@@ -156,6 +156,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc7ebec)
         .secondaryColor(0x486b82)
         .iconSet(GTMaterialIconSet.SHINY)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
         .addOreByproducts('silver', 'platinum')
         .washedIn('gtceu:mercury')
         .separatedInto('platinum', 'palladium')

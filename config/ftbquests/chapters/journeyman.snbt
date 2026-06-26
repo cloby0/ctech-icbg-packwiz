@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "journeyman"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "ars_nouveau:source_gem"
+	id: "678B455094A57005"
+	order_index: 2
+	quest_links: [{
+		id: "274881337E63AA77"
+		linked_quest: "68DAC01E93C6240E"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["33704DE3C564BD46"]
+			id: "74E79BEE176EA828"
+			size: 0.75d
+			tasks: [{
+				id: "2D021DD247072229"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			x: -0.375d
+			y: -1.875d
+		}
+		{
+			dependencies: ["33704DE3C564BD46"]
+			id: "42292FB8905CAE54"
+			size: 0.75d
+			subtitle: "nice argument senator"
+			tasks: [{
+				count: 8L
+				id: "39ACF8532ACB550A"
+				item: "gtceu:raw_source"
+				type: "item"
+			}]
+			title: "Vis a Vis"
+			x: 0.375d
+			y: -1.875d
+		}
+		{
+			dependencies: ["42292FB8905CAE54"]
+			id: "08A706FAA18260F5"
+			size: 0.75d
+			tasks: [{
+				id: "2178DEC9F9795184"
+				item: "kubejs:pure_source_gem_dust"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -2.625d
+		}
+		{
+			dependencies: [
+				"08A706FAA18260F5"
+				"6F0175765720EE51"
+			]
+			id: "02865F6285633253"
+			size: 0.75d
+			tasks: [{
+				id: "3AE6D13DDE3FE740"
+				item: "kubejs:pure_source_gem_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.125d
+		}
+		{
+			dependencies: ["02865F6285633253"]
+			id: "7363CD337C4652D8"
+			size: 0.75d
+			tasks: [{
+				id: "4879E5ABA7CFBCD2"
+				item: "kubejs:rough_source_gem"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["7363CD337C4652D8"]
+			id: "06C1B3D271B8BFCF"
+			size: 1.0d
+			tasks: [{
+				id: "0218DF052D48973B"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["557FF11A5C0306BC"]
+			id: "3AE23124DDE87034"
+			size: 0.75d
+			tasks: [{
+				id: "0666134470222C91"
+				item: "kubejs:sanctified_ambrosium_bloom"
+				type: "item"
+			}]
+			x: 2.625d
+			y: -1.125d
+		}
+		{
+			dependencies: ["33704DE3C564BD46"]
+			id: "557FF11A5C0306BC"
+			size: 0.75d
+			tasks: [{
+				count: 8L
+				id: "0C0ADD32747DC555"
+				item: "gtceu:raw_ambrosium"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -1.125d
+		}
+		{
+			dependencies: ["74E79BEE176EA828"]
+			id: "6F0175765720EE51"
+			size: 0.75d
+			tasks: [{
+				id: "723752AC62DE4355"
+				item: "kubejs:magebloom_sieve"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -2.625d
+		}
+		{
+			dependencies: ["3AE23124DDE87034"]
+			id: "532B8F3CF596352D"
+			size: 0.75d
+			tasks: [{
+				id: "7A6E829F60A5992F"
+				item: "kubejs:sacred_ambrosium_shard"
+				type: "item"
+			}]
+			x: 2.625d
+			y: -2.625d
+		}
+		{
+			dependencies: ["33704DE3C564BD46"]
+			id: "297B9B212C544AF0"
+			size: 0.75d
+			tasks: [{
+				id: "4D2AB6B81DCEEC99"
+				item: "gtceu:raw_zanite"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -1.125d
+		}
+		{
+			dependencies: ["297B9B212C544AF0"]
+			id: "08B0AB8D3C90EB10"
+			size: 0.75d
+			tasks: [{
+				id: "0A78B6122B82E6D6"
+				item: "kubejs:enchanted_zanite_gem"
+				type: "item"
+			}]
+			x: -2.625d
+			y: -1.125d
+		}
+		{
+			dependencies: ["08B0AB8D3C90EB10"]
+			id: "45BDF6BE6B2DD0CB"
+			size: 0.75d
+			tasks: [{
+				id: "245CF51C6A647EA1"
+				item: "kubejs:resonant_zanite_crystal"
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["532B8F3CF596352D"]
+			id: "205170FC8134DC8D"
+			size: 0.75d
+			tasks: [{
+				id: "1A1F67BED84E07AF"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["532B8F3CF596352D"]
+			id: "3A9BBD003CB49590"
+			size: 0.75d
+			tasks: [{
+				id: "523F223AF747D3CA"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: 3.375d
+			y: -3.0d
+		}
+		{
+			dependencies: ["532B8F3CF596352D"]
+			id: "7E85C70688BC511F"
+			size: 0.75d
+			tasks: [{
+				id: "3BC542FCDC05773B"
+				item: "enderstorage:ender_pouch"
+				type: "item"
+			}]
+			x: 2.25d
+			y: -3.75d
+		}
+		{
+			dependencies: ["532B8F3CF596352D"]
+			id: "7FBC73B3CE27E7BB"
+			size: 0.75d
+			tasks: [{
+				id: "44338EC6F52099DE"
+				item: "ars_nouveau:storage_lectern"
+				type: "item"
+			}]
+			x: 1.875d
+			y: -3.0d
+		}
+		{
+			dependencies: ["68DAC01E93C6240E"]
+			hide_dependency_lines: true
+			id: "2F9CF65DB439E571"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "0CE9CA0649212582"
+				item: "reliquary:lantern_of_paranoia"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["68DAC01E93C6240E"]
+			hide_dependency_lines: true
+			id: "60B898EA8C6DB0F5"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "3FFF00B98948C69F"
+				item: "reliquary:interdiction_torch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["68DAC01E93C6240E"]
+			hide_dependency_lines: true
+			id: "48823E5A5985391B"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "72DFD61331E7272A"
+				item: "reliquary:alkahestry_altar"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["68DAC01E93C6240E"]
+			icon: "aether:aether_portal_frame"
+			id: "33704DE3C564BD46"
+			size: 0.75d
+			subtitle: "excuse me, sir!"
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "1F578B2124CF8CBD"
+				title: "Head to the Aether"
+				type: "dimension"
+			}]
+			title: "Off to See the Man Upstairs"
+			x: 0.0d
+			y: -1.125d
+		}
+	]
+	subtitle: ["Venture to a hostile paradise for new boons"]
+	title: "III. Journeyman"
+}

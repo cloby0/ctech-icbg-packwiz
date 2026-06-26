@@ -1,0 +1,563 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sorcerer"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:prima_materia_ingot"
+	id: "137D785A44DC7E1D"
+	order_index: 4
+	quest_links: [
+		{
+			id: "5E60B50C46A8F7E1"
+			linked_quest: "51D5B5C004491077"
+			shape: "square"
+			size: 1.5d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6665F5949BE7244B"
+			linked_quest: "475DA94832CDDEB7"
+			size: 0.5d
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"475DA94832CDDEB7"
+				"51D5B5C004491077"
+			]
+			id: "46D6015549F81149"
+			size: 0.75d
+			tasks: [{
+				id: "06E45B1F0AC456B0"
+				item: "mysticalagriculture:air_seeds"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"475DA94832CDDEB7"
+				"51D5B5C004491077"
+			]
+			id: "6D67F9A2B676C7CA"
+			size: 0.75d
+			tasks: [{
+				id: "7B56C1923A8E9123"
+				item: "mysticalagriculture:earth_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"475DA94832CDDEB7"
+				"51D5B5C004491077"
+			]
+			id: "5645B3BFEB76C34A"
+			size: 0.75d
+			tasks: [{
+				id: "5428D8F946CFC23F"
+				item: "mysticalagriculture:water_seeds"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"475DA94832CDDEB7"
+				"51D5B5C004491077"
+			]
+			id: "48904FDBC23CD945"
+			size: 0.75d
+			tasks: [{
+				id: "32AA5130D51CDBA0"
+				item: "mysticalagriculture:fire_seeds"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["46D6015549F81149"]
+			id: "6F181FFA56989D01"
+			size: 0.75d
+			tasks: [{
+				id: "292D3CAA3A5BFC1B"
+				item: "mysticalagriculture:air_essence"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6D67F9A2B676C7CA"]
+			id: "5168FD0A21AE3B49"
+			size: 0.75d
+			tasks: [{
+				id: "465E928A2B317D45"
+				item: "mysticalagriculture:earth_essence"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5645B3BFEB76C34A"]
+			id: "5E9CB75348632373"
+			size: 0.75d
+			tasks: [{
+				id: "5B832A5646999CC7"
+				item: "mysticalagriculture:water_essence"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["48904FDBC23CD945"]
+			id: "18E8F3A1B08C0C04"
+			size: 0.75d
+			tasks: [{
+				id: "32F22F37E6082359"
+				item: "mysticalagriculture:fire_essence"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5E9CB75348632373"
+				"5168FD0A21AE3B49"
+				"6F181FFA56989D01"
+				"18E8F3A1B08C0C04"
+			]
+			id: "270F7BBFAA80139A"
+			tasks: [{
+				id: "1AE3507AD0CF9579"
+				item: "kubejs:chaos_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["270F7BBFAA80139A"]
+			id: "3C613081F4FE51B2"
+			size: 1.5d
+			tasks: [{
+				id: "0A2DE3E8C71654D5"
+				item: "gtceu:prima_materia_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.25d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "5093B986663EAF9E"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "578C295EE91F88AE"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			x: 1.875d
+			y: -1.125d
+		}
+		{
+			dependencies: ["5093B986663EAF9E"]
+			id: "040DF1F47AC5F4E3"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "7D260F09DE651E41"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"SEMI\",GunId:\"ars_armorer:pistol_source_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:280,GunFireMode:\"SEMI\",GunId:\"ars_armorer:sniper_distance_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"AUTO\",GunId:\"ars_armorer:auto_rifle_stream_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:250,GunFireMode:\"SEMI\",GunId:\"ars_armorer:shotgun_splash_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:350,GunFireMode:\"AUTO\",GunId:\"ars_armorer:shotgun_jet_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"BURST\",GunId:\"ars_armorer:special_miner_drill\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"SEMI\",GunId:\"ars_armorer:mortar_source_thrower\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:6,GunFireMode:\"SEMI\",GunId:\"ars_armorer:special_source_flying_blade\",HasBulletInBarrel:1b}))"
+					}
+				}
+				title: "Any Magic Gun"
+				type: "item"
+			}]
+			title: "Magic Guns!"
+			x: 1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "0DED4DF736A831B4"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "779EC72152CFF108"
+				item: "reliquary:glowing_water"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.125d
+		}
+		{
+			dependencies: ["0DED4DF736A831B4"]
+			id: "7D3CF0C46B40CAF1"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "55E56C1D279EA797"
+				item: "reliquary:holy_hand_grenade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "7D00D62B7AD615A6"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "241E90183177770E"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "1FF1B92CC5B8C283"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "22AAFB1314617990"
+				item: {
+					Count: 1
+					id: "relics:enders_hand"
+					tag: {
+						abilities: {
+							swap: {
+								points: 0
+								stats: {
+									distance: 17.07544d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.625d
+			y: -1.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "79584900C141FBA0"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "46BCF94081CF5909"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(magnumtorch:diamond_magnum_torch)item(magnumtorch:emerald_magnum_torch)item(magnumtorch:amethyst_magnum_torch))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Any Magnum Torch"
+			x: 1.125d
+			y: -1.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "1074384652CF1489"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "72AFBE014CA44FC2"
+				item: {
+					Count: 1
+					id: "relics:reflection_necklace"
+					tag: {
+						abilities: {
+							explode: {
+								points: 0
+								stats: {
+									capacity: 48.31926d
+									damage: 0.39788d
+									stun: 0.14664d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.125d
+			y: -1.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "5A9F425F74A7A52B"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "2EFBFEE05F8EBC36"
+				item: {
+					Count: 1
+					id: "relics:shadow_glaive"
+					tag: {
+						abilities: {
+							glaive: {
+								points: 0
+								stats: {
+									bounces: 3.49074d
+									damage: 4.49413d
+									radius: 2.76672d
+									recharge: 15.85544d
+								}
+							}
+							saw: {
+								points: 0
+								stats: {
+									damage: 1.39353d
+									speed: 19.6261d
+								}
+							}
+						}
+						charges: 8
+					}
+				}
+				type: "item"
+			}]
+			x: -1.125d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "4A8C585CA9F997BB"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "423B5461F5230125"
+				item: {
+					Count: 1
+					id: "relics:magic_mirror"
+					tag: {
+						abilities: {
+							teleport: {
+								points: 0
+								stats: {
+									cooldown: 110.79929d
+									distance: 952.0146d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "4471E5D89176B710"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "237CFCD1DA9FD0C0"
+				item: {
+					Count: 1
+					id: "relics:spatial_sign"
+					tag: {
+						abilities: {
+							seal: {
+								points: 0
+								stats: {
+									time: 2.18845d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "6ABEF9F555A0BD6E"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "42BF6C459FB86C8E"
+				item: {
+					Count: 1
+					id: "relics:space_dissector"
+					tag: {
+						abilities: {
+							dissection: {
+								points: 0
+								stats: {
+									distance: 17.76857d
+									time: 5.49754d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "2AC473C0C6832A84"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "7D07EA23600F86D9"
+				item: {
+					Count: 1
+					id: "relics:elytra_booster"
+					tag: {
+						abilities: {
+							boost: {
+								points: 0
+								stats: {
+									capacity: 52.09108d
+									speed: 1.15444d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.375d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			hide_dependency_lines: true
+			id: "37D0AC07A071D56D"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "56F9C04B6AD2F7B9"
+				item: {
+					Count: 1
+					id: "relics:infinity_ham"
+					tag: {
+						abilities: {
+							autophagy: {
+								points: 0
+								stats: {
+									feed: 1.05955d
+								}
+							}
+							infusion: {
+								points: 0
+								stats: {
+									duration: 2.75752d
+								}
+							}
+						}
+						pieces: 10
+					}
+				}
+				type: "item"
+			}]
+			x: -2.625d
+			y: -1.875d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			id: "50376974E4F14658"
+			size: 0.75d
+			tasks: [{
+				id: "1E6A37FA7C141667"
+				item: "kubejs:frozen_raw_gravitite"
+				type: "item"
+			}]
+			x: 1.875d
+			y: 0.375d
+		}
+		{
+			dependencies: ["50376974E4F14658"]
+			id: "1B9C0C6A43CB99C7"
+			size: 0.75d
+			tasks: [{
+				id: "48EBD5DF3AA8A14E"
+				item: "kubejs:altar_charged_gravitite"
+				type: "item"
+			}]
+			x: 2.625d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1B9C0C6A43CB99C7"]
+			id: "70103C694B3D2219"
+			size: 0.75d
+			tasks: [{
+				id: "396938C3DDEDBA04"
+				item: "aether_redux:gravitite_ingot"
+				type: "item"
+			}]
+			x: 3.375d
+			y: 1.125d
+		}
+		{
+			dependencies: ["270F7BBFAA80139A"]
+			id: "17D15E6418E8452E"
+			size: 0.75d
+			tasks: [{
+				id: "473C3A340A0D66C2"
+				item: "irons_spellbooks:pyrium_ingot"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 7.125d
+		}
+		{
+			dependencies: ["270F7BBFAA80139A"]
+			id: "7671BC8442421B72"
+			size: 0.75d
+			tasks: [{
+				id: "6D318A143E41B383"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 7.125d
+		}
+	]
+	subtitle: ["Tap into alchemy and discover the great work"]
+	title: "V. Sorcerer"
+}

@@ -1,0 +1,111 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arcanist"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "botania:elementium_ingot"
+	id: "7337FC0129A5752D"
+	order_index: 7
+	quest_links: [{
+		id: "71BE038EB1D9B1C3"
+		linked_quest: "278BE65F77B6BD8B"
+		shape: "square"
+		size: 1.5d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["278BE65F77B6BD8B"]
+			id: "7611918249B75923"
+			tasks: [
+				{
+					count: 8L
+					id: "3C7B69FE09B0B1A7"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "001E0B2EB1878615"
+					item: "botania:glimmering_livingwood_log"
+					type: "item"
+				}
+				{
+					id: "41AFFFDD052DB77F"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6CFB6D3E4742751D"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+			]
+			title: "Elven Trade Portal"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["51FA75C4A1E30685"]
+			id: "104D6BF6AA109EF4"
+			tasks: [{
+				id: "2B102D30E4922A3F"
+				item: "kubejs:raw_elementite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["36021729B91C1137"]
+			id: "51FA75C4A1E30685"
+			tasks: [{
+				id: "729FC4B59E51C137"
+				item: "kubejs:elementite_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7611918249B75923"]
+			id: "2764D29567727F6D"
+			tasks: [{
+				id: "4F18D9849B412CD9"
+				item: "kubejs:weak_elementium_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["104D6BF6AA109EF4"]
+			id: "1C1A082C60D3E432"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "1F6E48A31BBC3B91"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2764D29567727F6D"]
+			id: "36021729B91C1137"
+			tasks: [{
+				id: "0404B1F210000928"
+				item: "kubejs:elven_concentrate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	subtitle: ["Trade with interdimensional creatures for new materials"]
+	title: "VIII. Arcanist"
+}

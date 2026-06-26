@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv__medium_voltage_2"
+	group: "337107DE6FEF7850"
+	id: "7B24E46EFDA4B4E6"
+	order_index: 2
+	quest_links: [{
+		id: "1E0C2E35B9F8A1DD"
+		linked_quest: "08915E29376F4EE4"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [ ]
+	title: "MV - Medium Voltage"
+}

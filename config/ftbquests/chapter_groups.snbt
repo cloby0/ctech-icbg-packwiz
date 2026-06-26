@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "337107DE6FEF7850", title: "Technology" }
+		{ id: "5807E75CE9629B4E", title: "Magic" }
+		{ id: "4E26D6DB8DCDFE3E", title: "ref" }
+	]
+}

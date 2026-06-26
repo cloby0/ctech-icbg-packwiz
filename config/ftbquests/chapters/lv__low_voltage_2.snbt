@@ -1,0 +1,284 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv__low_voltage_2"
+	group: "337107DE6FEF7850"
+	id: "0E5D0341A856A09A"
+	order_index: 1
+	quest_links: [{
+		id: "15D7FEA607C6824E"
+		linked_quest: "083FB4B9F92803CB"
+		x: -0.25d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			description: [
+				"alright, a lot of people have opinions on create."
+				""
+				"some people like it, some people don't."
+				""
+				"the bad news (for h8rs): create and a couple addons &oare&r in this pack."
+				""
+				"the good news: it is entirely optional, and integrated with gregtech such that you pretty much aren't missing out on anything if you don't use it."
+				""
+				"IN FACT! it's very closely integrated with GT (see nxt page)"
+				""
+				"{@pagebreak}"
+				"this modpack utilizes a mod called Greate. greate is a mod that integrates create with GT very closely. what this means:"
+				"- machines in create use stress tiers (ULS, LS, MS, HS) which are analogous to GT's voltage tiers"
+				"- shafts of a given tier can only carry so much stress, and linking them up to setups using more than they can carry causes them to overstress"
+				"- applicable create machines mirror the recipes of corresponding GT recipe types (press/bender, saw/cutter, mixer/mixer, etc)"
+				""
+				"{@pagebreak}"
+				"this means that, if you really prefer create, you can get away with a LOT of using create over gregtech."
+				""
+				"it also means if you #fuckinghate create that you can literally just... not touch it"
+				""
+				"have it your way king"
+			]
+			icon: "create:cogwheel"
+			id: "2D130E154B94B575"
+			shape: "diamond"
+			size: 0.75d
+			subtitle: "and it's about Create."
+			tasks: [{
+				id: "7FCEEB0C85E1E77B"
+				title: "we need to talk"
+				type: "checkmark"
+			}]
+			title: "We Need to Talk,"
+			x: 0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "14F530F309200D8F"
+			size: 0.75d
+			tasks: [{
+				id: "7F7542F90E9C2AEE"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -0.25d
+			y: 1.0d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "6F83AF320ABC7C72"
+			size: 0.75d
+			tasks: [
+				{
+					id: "4F4F38C25BB1EA28"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(greate:steel_mechanical_press)item(gtceu:lv_bender))"
+						}
+					}
+					title: "Any Basic Bending Machine"
+					type: "item"
+				}
+				{
+					id: "6A87B02656AD2CCD"
+					item: "gtceu:lv_lathe"
+					type: "item"
+				}
+				{
+					id: "2ED26F0FDBFDCFB4"
+					item: "gtceu:lv_wiremill"
+					type: "item"
+				}
+			]
+			title: "some metal machines"
+			x: 0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "287B07920A5E47E3"
+			size: 0.75d
+			tasks: [{
+				id: "2CA296FE5D8B0E09"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "502CCA00C36FB4E7"
+			size: 0.75d
+			tasks: [{
+				id: "53CC1CF017EECFF6"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -0.75d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "361752BC59AD9AF9"
+			size: 0.85d
+			tasks: [{
+				id: "7B3B9ACD30332758"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "313C4D0C803834A0"
+			size: 0.75d
+			tasks: [{
+				id: "25FCC92B2C16E7F2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(greate:steel_mechanical_mixer)item(gtceu:lv_mixer))"
+					}
+				}
+				title: "Any LV Mixer"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "7683BB8F5EB1E476"
+			size: 0.5d
+			tasks: [{
+				id: "70ACECE7DA531749"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -0.25d
+			y: -1.75d
+		}
+		{
+			dependencies: ["083FB4B9F92803CB"]
+			id: "5183DD9277140B4A"
+			size: 0.85d
+			tasks: [{
+				id: "28DB44B50C8233B7"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -2.975d
+		}
+		{
+			dependencies: ["5183DD9277140B4A"]
+			id: "77900E48A910DB7E"
+			size: 0.5d
+			tasks: [{
+				count: 4L
+				id: "71CBBDEAFC97476B"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"77900E48A910DB7E"
+				"7702DA9BAA52C64C"
+			]
+			id: "6EDA1AB7893A9C86"
+			size: 0.75d
+			tasks: [{
+				count: 8L
+				id: "198622B52C94190E"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7683BB8F5EB1E476"]
+			id: "282E9E1A51A97349"
+			size: 0.5d
+			tasks: [{
+				id: "04EED058A886A0B3"
+				item: "gtceu:glue_bucket"
+				type: "item"
+			}]
+			x: -0.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["282E9E1A51A97349"]
+			id: "7702DA9BAA52C64C"
+			size: 0.75d
+			tasks: [{
+				count: 4L
+				id: "7A6ED0B945E59974"
+				item: "gtceu:phenolic_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["361752BC59AD9AF9"]
+			id: "375A3B8F7BD4F316"
+			size: 0.75d
+			tasks: [{
+				count: 16L
+				id: "7307F2DBA98E37ED"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -3.75d
+		}
+		{
+			dependencies: ["375A3B8F7BD4F316"]
+			id: "5D5378D16D2925BB"
+			size: 0.75d
+			tasks: [{
+				id: "670EE1080F8B907E"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5D5378D16D2925BB"
+				"6EDA1AB7893A9C86"
+			]
+			id: "08915E29376F4EE4"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2L
+					id: "6EECDCCCF657631E"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CB9638008A10614"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+			]
+			title: "Medium Voltage!"
+			x: -0.375d
+			y: -5.25d
+		}
+	]
+	title: "LV - Low Voltage"
+}

@@ -1,0 +1,87 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sage"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "botania:gaia_ingot"
+	id: "6B058364BA34F53C"
+	order_index: 8
+	quest_links: [{
+		id: "1E107863AA9AD9C7"
+		linked_quest: "1C1A082C60D3E432"
+		shape: "square"
+		size: 1.5d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["23D66F8D6CD53A68"]
+			id: "4E4F37F6AB877E5C"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "5B834F0AE04F354B"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E4F37F6AB877E5C"]
+			description: [""]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "ars_nouveau:dominion_wand"
+				tag: { }
+			}
+			id: "448A708579752294"
+			shape: "heart"
+			size: 4.0d
+			subtitle: "Is this... the end?"
+			title: "The Crescendo"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C1A082C60D3E432"]
+			id: "7A973CEE81B78C5C"
+			tasks: [{
+				id: "7E024FF9662AAD92"
+				item: "kubejs:vengeful_gaia_spirit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A973CEE81B78C5C"]
+			id: "57D3230B92DA91E0"
+			tasks: [{
+				id: "056989769411D5E0"
+				item: "kubejs:soul_of_gaia"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57D3230B92DA91E0"]
+			id: "23D66F8D6CD53A68"
+			tasks: [{
+				id: "36AA68C441D4A1CE"
+				item: "kubejs:boundless_gaia_spirit_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Finish what you started and become the master of the arcane"]
+	title: "IX. Sage"
+}

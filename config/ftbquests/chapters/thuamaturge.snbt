@@ -1,0 +1,280 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thuamaturge"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "botania:terrasteel_ingot"
+	id: "321C191A1AEEDAD8"
+	order_index: 6
+	quest_links: [{
+		id: "4813B934B8D4C8E5"
+		linked_quest: "56FCF9C63F27F60E"
+		shape: "rsquare"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["76080FE8160A0F71"]
+			id: "5188A30959FE9535"
+			tasks: [{
+				id: "2632A3C4FDDDF444"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5188A30959FE9535"
+				"202F55D0054B18FC"
+				"3D4DC3DA79713198"
+			]
+			id: "278BE65F77B6BD8B"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "2A5838F49D2DCDC0"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["56FCF9C63F27F60E"]
+			id: "4F76358C60F3FDE1"
+			size: 0.75d
+			tasks: [{
+				id: "1973AE35A207E52E"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C79439FDCE2173E"]
+			id: "2FE1A9BEA093B7B9"
+			tasks: [{
+				id: "1CA668C07422ACCB"
+				item: "kubejs:florid_compound"
+				type: "item"
+			}]
+			title: "Florid Compound"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2FE1A9BEA093B7B9"
+				"69AAC4FCAADE1F21"
+			]
+			id: "76080FE8160A0F71"
+			tasks: [{
+				id: "335F1FBFBC9C3955"
+				item: "kubejs:living_metalloid"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["138BA0CD22478ACF"]
+			id: "3D4DC3DA79713198"
+			tasks: [{
+				id: "4269C1CD1A25CF75"
+				item: "botania:mana_pearl"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["138BA0CD22478ACF"]
+			id: "202F55D0054B18FC"
+			tasks: [{
+				id: "33BC48D27EE86D77"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["56FCF9C63F27F60E"]
+			id: "578575F33D569EE2"
+			size: 0.75d
+			tasks: [{
+				id: "017002DE63E2B613"
+				item: "kubejs:hexed_amethyst_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["578575F33D569EE2"]
+			id: "22A18D1A3497D675"
+			size: 0.75d
+			tasks: [{
+				id: "5640147F484CCE9D"
+				item: "hexcasting:focus"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 1.5d
+		}
+		{
+			dependencies: ["578575F33D569EE2"]
+			id: "5D529521754924FA"
+			size: 0.75d
+			tasks: [{
+				id: "76C9DC1EBEB47BB8"
+				item: "hexcasting:spellbook"
+				type: "item"
+			}]
+			x: -0.375d
+			y: 1.875d
+		}
+		{
+			dependencies: ["578575F33D569EE2"]
+			id: "4FF741638D500FCF"
+			size: 0.75d
+			tasks: [{
+				id: "102B7093EAFBCBC4"
+				item: "hexcasting:artifact"
+				type: "item"
+			}]
+			x: 0.375d
+			y: 1.875d
+		}
+		{
+			dependencies: ["578575F33D569EE2"]
+			id: "08EEEC1E164C719E"
+			size: 0.75d
+			tasks: [{
+				id: "4DE4DF8844E4EA2C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(hexcasting:staves)"
+					}
+				}
+				title: "Any Hex Staff"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56FCF9C63F27F60E"]
+			id: "5F3CCA0806278FD9"
+			size: 0.75d
+			tasks: [{
+				id: "1896D95300FEBA47"
+				item: "irons_spellbooks:legendary_ink"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56FCF9C63F27F60E"]
+			id: "6FD05FDAA5532519"
+			size: 0.75d
+			tasks: [{
+				id: "55374A980BA4B130"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F76358C60F3FDE1"]
+			id: "0EFC49A84C9C3FBB"
+			size: 0.75d
+			tasks: [{
+				count: 4L
+				id: "35B2DD3C04A45D6E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(botania:rune_water)item(botania:rune_fire)item(botania:rune_earth)item(botania:rune_air)item(botania:rune_mana))"
+					}
+				}
+				title: "Any Element Runes"
+				type: "item"
+			}]
+			title: "Rune"
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			dependencies: ["0EFC49A84C9C3FBB"]
+			id: "1C79439FDCE2173E"
+			size: 0.75d
+			tasks: [{
+				count: 4L
+				id: "4DD65CF7E6E97AE3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(botania:rune_spring)item(botania:rune_summer)item(botania:rune_autumn)item(botania:rune_winter))"
+					}
+				}
+				title: "Any Season Runes"
+				type: "item"
+			}]
+			title: "Runee"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1C79439FDCE2173E"]
+			id: "5AF8A1AB9B552519"
+			size: 0.75d
+			tasks: [{
+				count: 4L
+				id: "0D800D5FB13E74AF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(botania:rune_lust)item(botania:rune_gluttony)item(botania:rune_greed)item(botania:rune_sloth)item(botania:rune_wrath)item(botania:rune_envy)item(botania:rune_pride))"
+					}
+				}
+				title: "Any Sinful Runes"
+				type: "item"
+			}]
+			title: "Runeee"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"18E8F3A1B08C0C04"
+				"5E9CB75348632373"
+				"5168FD0A21AE3B49"
+				"6F181FFA56989D01"
+			]
+			id: "69AAC4FCAADE1F21"
+			size: 0.75d
+			tasks: [{
+				id: "28D8A01D4B1312E4"
+				item: "reliquary:fertile_essence"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+	]
+	subtitle: ["Delve deeper into the wonders of plant-based magics"]
+	title: "VII. Thaumaturge"
+}

@@ -1,0 +1,300 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "initiate"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:holy_silver_ingot"
+	id: "0E6B7337C53337FB"
+	order_index: 3
+	quest_links: [
+		{
+			id: "07EFAF5ED307BC3A"
+			linked_quest: "06C1B3D271B8BFCF"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "1B29522BA8B5F41C"
+			linked_quest: "532B8F3CF596352D"
+			size: 0.75d
+			x: 0.75d
+			y: -1.125d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			hide_dependency_lines: true
+			id: "5281FFCFFE77EA24"
+			tasks: [
+				{
+					id: "47A718ADB391D54B"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2FABECC729E6DB99"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "515E5B3433FB7397"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2DFC564DDE9DDE82"]
+			id: "6598E24995416CFD"
+			tasks: [{
+				id: "6C02D0375522FFDC"
+				item: "kubejs:holy_silver_blend"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6598E24995416CFD"
+				"5281FFCFFE77EA24"
+			]
+			id: "0D62A4DC7559CA80"
+			tasks: [{
+				id: "0092B8C1D4B97700"
+				item: "gtceu:holy_silver_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0D62A4DC7559CA80"]
+			id: "51D5B5C004491077"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "351B5AC9A555B8AA"
+				item: "gtceu:holy_silver_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"6300D75BCC09AEF1"
+				"532B8F3CF596352D"
+				"06C1B3D271B8BFCF"
+			]
+			id: "2D1F7AFFE193EDE3"
+			tasks: [{
+				id: "5C0B76FCCF9776E5"
+				item: "irons_spellbooks:divine_pearl"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D1F7AFFE193EDE3"]
+			id: "2DFC564DDE9DDE82"
+			size: 0.75d
+			tasks: [{
+				id: "263AFC9691CBD4E1"
+				item: {
+					Count: 1
+					id: "reliquary:mercy_cross"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["28B20F274E486CDB"]
+			id: "0B8AA1EB97970DB4"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "406CC399D0C22A76"
+				item: "reliquary:sojourner_staff"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 3.375d
+		}
+		{
+			dependencies: ["28B20F274E486CDB"]
+			id: "0B3840C36E5D555F"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "3409A9D49B6C33C2"
+				item: "reliquary:glacial_staff"
+				type: "item"
+			}]
+			x: 0.375d
+			y: 3.375d
+		}
+		{
+			dependencies: ["2D1F7AFFE193EDE3"]
+			id: "7592A92943AC392E"
+			size: 0.75d
+			tasks: [{
+				id: "69DF3188A92DEC55"
+				item: "irons_spellbooks:rare_ink"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -2.25d
+		}
+		{
+			dependencies: ["28B20F274E486CDB"]
+			id: "383562436DCFD6B5"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "6FA4920ADBBCB71C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [{
+								amount: 0
+								filter: {
+									Count: 1b
+									id: "minecraft:ender_pearl"
+								}
+							}]
+						}
+					}
+					id: "reliquary:ender_staff"
+				}
+				type: "item"
+			}]
+			x: -0.375d
+			y: 3.375d
+		}
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			hide_dependency_lines: true
+			id: "7DB0088826AE5760"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "3938AAFF343374B4"
+				item: "reliquary:rod_of_lyssa"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			hide_dependency_lines: true
+			id: "362A4516582710E7"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "2A66D7B89C12968C"
+				item: "reliquary:hero_medallion"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["28B20F274E486CDB"]
+			id: "29C678486D003116"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "72A0A2B720C889FA"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -1.125d
+			y: 3.375d
+		}
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			id: "28B20F274E486CDB"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "1B4364F2D2872F97"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+						}
+					}
+					id: "reliquary:void_tear"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			hide_dependency_lines: true
+			id: "1C404D0B2D0F0DEF"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				count: 6L
+				id: "29BCE45DC3A2BCCF"
+				item: "irons_spellbooks:blank_rune"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			hide_dependency_lines: true
+			id: "4E06D62D4ADB57BB"
+			shape: "hexagon"
+			size: 0.75d
+			tasks: [{
+				id: "230985872D188756"
+				item: "irons_spellbooks:uncommon_ink"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["33704DE3C564BD46"]
+			id: "6300D75BCC09AEF1"
+			size: 0.75d
+			tasks: [{
+				advancement: "aether:silver_dungeon"
+				criterion: ""
+				id: "250C18732EF37828"
+				type: "advancement"
+			}]
+			x: -0.75d
+			y: -1.125d
+		}
+	]
+	subtitle: ["Continue capitalizing on your new resources"]
+	title: "IV. Initiate"
+}

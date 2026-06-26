@@ -1,0 +1,109 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_hobbyist"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:glowstone_dust"
+	id: "7CF2FD9D3493A9FF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1FA819FE418EBE16"]
+			id: "46F3E5D16CC665B8"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "18F0B637AAB71C9E"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "Double, Double!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["475DA94832CDDEB7"]
+			id: "7FDB6031A17DC65B"
+			subtitle: "\"i'll be damned if i have to touch *steel*\""
+			tasks: [{
+				id: "3AF5DEF6D2FCCE84"
+				item: "minecraft:fire_charge"
+				type: "item"
+			}]
+			title: "Evil Ass Progression Skip"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46F3E5D16CC665B8"]
+			id: "475DA94832CDDEB7"
+			subtitle: "man who even needs the periodic table"
+			tasks: [
+				{
+					id: "0B787DB01AADC412"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+				{
+					id: "47BEC2412B467A34"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(ars_nouveau:earth_essence)item(ars_nouveau:air_essence)item(ars_nouveau:water_essence))"
+						}
+					}
+					title: "Any Other Essence"
+					type: "item"
+				}
+			]
+			title: "Greek to Me"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDB6031A17DC65B"
+				"1ABD0854CB886DCF"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:netherrack"
+			id: "1BBC77A8493BB220"
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "welcome to hell! weather's great here.."
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "3FB55B635F060F2D"
+				title: "Take a trip to the Nether"
+				type: "dimension"
+			}]
+			title: "Nether Again"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42FBF65B12E36EC7"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_nouveau:wand"
+				tag: { }
+			}
+			id: "1FA819FE418EBE16"
+			shape: "diamond"
+			subtitle: "something something easy way out"
+			tasks: [{
+				id: "5CE2A909940AA9BB"
+				title: "Magic!"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Dip your toes into the arcane"]
+	title: "I. Hobbyist"
+}

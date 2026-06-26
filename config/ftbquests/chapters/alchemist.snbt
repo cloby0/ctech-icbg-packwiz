@@ -1,0 +1,181 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alchemist"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "botania:manasteel_ingot"
+	id: "726A09074A62FCF3"
+	order_index: 5
+	quest_links: [{
+		id: "0D9EB282C01F6BBD"
+		linked_quest: "3C613081F4FE51B2"
+		size: 1.5d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["3C48407D270C6942"]
+			id: "138BA0CD22478ACF"
+			size: 0.75d
+			tasks: [{
+				id: "2B744BA6473CBDBD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7BDD15A9F2B6BCDD"]
+			id: "5E61BE3584D271A8"
+			size: 0.75d
+			tasks: [{
+				id: "01EEE80DDFE70C38"
+				item: "gtceu:abstract_metal_ingot"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5E61BE3584D271A8"
+				"138BA0CD22478ACF"
+			]
+			id: "56FCF9C63F27F60E"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "07868ED1E5EEE0B7"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			id: "1F374C13B7A1C7A2"
+			size: 0.75d
+			tasks: [{
+				id: "68D9F5C25216864D"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -1.875d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			id: "3CFDB9C271774552"
+			size: 0.75d
+			tasks: [{
+				id: "386FECC40F4FE79E"
+				item: "irons_spellbooks:legendary_ink"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			id: "262FBCDEA658CDE8"
+			size: 0.75d
+			tasks: [{
+				id: "58A6F647DCE439F5"
+				item: {
+					Count: 1
+					id: "reliquary:alkahestry_tome"
+					tag: {
+						Damage: 1001
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			id: "3B405737C2EC2A85"
+			size: 0.75d
+			tasks: [{
+				id: "50F864927D5AA470"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3C613081F4FE51B2"
+				"5281FFCFFE77EA24"
+			]
+			id: "2C27B13A2CA65DEC"
+			size: 0.75d
+			tasks: [{
+				id: "65D66F5AB27EEF45"
+				item: "gtceu:concepts_bucket"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -1.875d
+		}
+		{
+			dependencies: ["2C27B13A2CA65DEC"]
+			id: "442B54C049E4C49E"
+			size: 0.75d
+			tasks: [{
+				id: "20D2CC7AEE2E2DE9"
+				item: "gtceu:metal_form_bucket"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -3.0d
+		}
+		{
+			dependencies: ["442B54C049E4C49E"]
+			id: "7BDD15A9F2B6BCDD"
+			size: 0.75d
+			tasks: [{
+				id: "06E9CA2754667DC0"
+				item: "kubejs:disorganized_metal_form"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -4.875d
+		}
+		{
+			dependencies: ["1F374C13B7A1C7A2"]
+			id: "3C48407D270C6942"
+			size: 0.75d
+			tasks: [{
+				id: "6B4DF27906811AA8"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"51D5B5C004491077"
+				"3C613081F4FE51B2"
+			]
+			id: "10BFE2CEB381C280"
+			size: 0.75d
+			tasks: [{
+				id: "5D51DAFB12AD3536"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	subtitle: ["Use your new materials to explore the world of flora"]
+	title: "VI. Alchemist"
+}

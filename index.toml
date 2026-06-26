@@ -929,16 +929,16 @@ file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
 hash = "58cd831e178a7c8c93940b522d1795d592d4b49eacbfc2531cc3cdd6f0c9d38a"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/mars_combustion_engine.png"
-hash = "5f803d2616baf3eb4437f6e6619a10dbf3a4931b438c47e0386f66da8e03c6c4"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/mars_guidance_module.png"
 hash = "a2b879dfea3985e677711f24d572ccd1e23fd8f06ca5a99e02c8a3ad123239eb"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/mars_propellant_tank.png"
 hash = "f4c75cafca767971a891942d246871f8e8d845cd6551c05628ffee31b0263a31"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mars_rocket_engine.png"
+hash = "5f803d2616baf3eb4437f6e6619a10dbf3a4931b438c47e0386f66da8e03c6c4"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
@@ -1874,7 +1874,7 @@ hash = "5101409ac04b8938e8f989ecfa7b3d344c1851be71ac84d71487af9b71ac96e3"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "0495e81a521be1b85460c0f96f0e5eeb9ebb02836e7e4a6b66e05c65ad337b63"
+hash = "df8da49fc79324360e0295a68b1e897b34193f8afd147fe65139d76a8f45b6f8"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
