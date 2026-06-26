@@ -75,8 +75,11 @@ function normalizePedestal(p) {
 }
 
 // normalizes input to { item: "..." } or { tag: "..." } for both factory resolveItem and chamber JSON
+// handles KubeJS count-prefixed strings like "4x gtceu:rubber_dust" serialized into recipe JSON
 function normalizeInput(i) {
     if (typeof i === 'string') {
+        const countMatch = i.match(/^(\d+)x (.+)$/)
+        if (countMatch) return { count: parseInt(countMatch[1]), item: countMatch[2] }
         return i.startsWith('#') ? { tag: i.slice(1) } : { item: i }
     }
     return i

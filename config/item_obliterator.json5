@@ -1,0 +1,257 @@
+{
+  // -----------------------------------------------------------
+  //              Item Obliterator by ElocinDev
+  // -----------------------------------------------------------
+  //
+  // How to add items?
+  //   - They are json strings, so you need to separate each
+  //     entry with a comma, except the last
+  //   - If you start an entry with !, it will be treated as a regular expression
+  //     Example: "!minecraft:.*_sword" to disable all swords
+  //
+  // -----------------------------------------------------------
+  // Do not touch this
+  "configVersion": 2,
+  // -----------------------------------------------------------
+  // Items here will be unusable completely
+  //    Example: minecraft:diamond
+  "blacklisted_items": [
+    // advancedperipherals: recipe removed in greggingMods.js, no GT replacement
+    "advancedperipherals:computer_tool",
+    "advancedperipherals:colony_integrator",
+    "advancedperipherals:rs_bridge",
+    "advancedperipherals:peripheral_casing",
+    "advancedperipherals:husbandry_automata_core",
+    "advancedperipherals:end_automata_core",
+    "advancedperipherals:overpowered_husbandry_automata_core",
+    "advancedperipherals:overpowered_end_automata_core",
+    "advancedperipherals:overpowered_weak_automata_core",
+
+    // advanced_ae: reaction_chamber machine removed entirely, no GT replacement
+    "advanced_ae:reaction_chamber",
+
+    // woot: stygian anvil + hammer removed, molds become useless without the anvil
+    "woot_revived:stygian_anvil",
+    "woot_revived:stygian_hammer",
+    "woot_revived:plate_mold",
+    "woot_revived:shard_mold",
+    "woot_revived:dye_casing_mold",
+
+    // superbwarfare: SW motor/cemented_carbide supply chain killed, replaced by GT equivalents
+    "superbwarfare:coal_iron_powder",
+    "superbwarfare:motor",
+    "superbwarfare:large_motor",
+    "superbwarfare:raw_cemented_carbide_powder",
+    "superbwarfare:cemented_carbide_ingot",
+
+    // superbwarfare: handheld guns (tacz guns via GT arms_manufacturer replace these)
+    "superbwarfare:taser",
+    "superbwarfare:glock_17",
+    "superbwarfare:glock_18",
+    "superbwarfare:mp_443",
+    "superbwarfare:m_1911",
+    "superbwarfare:homemade_shotgun",
+    "superbwarfare:trachelium",
+    "superbwarfare:mp_5",
+    "superbwarfare:vector",
+    "superbwarfare:ak_47",
+    "superbwarfare:ak_12",
+    "superbwarfare:sks",
+    "superbwarfare:m_4",
+    "superbwarfare:hk_416",
+    "superbwarfare:qbz_95",
+    "superbwarfare:qbz_191",
+    "superbwarfare:insidious",
+    "superbwarfare:mk_14",
+    "superbwarfare:ql_1031",
+    "superbwarfare:marlin",
+    "superbwarfare:k_98",
+    "superbwarfare:mosin_nagant",
+    "superbwarfare:svd",
+    "superbwarfare:awm",
+    "superbwarfare:m_98b",
+    "superbwarfare:sentinel",
+    "superbwarfare:hunting_rifle",
+    "superbwarfare:ntw_20",
+    "superbwarfare:m_870",
+    "superbwarfare:aa_12",
+    "superbwarfare:devotion",
+    "superbwarfare:rpk",
+    "superbwarfare:m_60",
+    "superbwarfare:m_2_hb",
+    "superbwarfare:minigun",
+    "superbwarfare:m_79",
+    "superbwarfare:secondary_cataclysm",
+    "superbwarfare:rpg",
+    "superbwarfare:javelin",
+    "superbwarfare:igla_9k38",
+    "superbwarfare:bocek",
+    "superbwarfare:super_star_shooter",
+    "superbwarfare:aurelia_sceptre",
+
+    // superbwarfare: handheld ammo (for removed guns + removed handheld explosives)
+    "superbwarfare:handgun_ammo",
+    "superbwarfare:rifle_ammo",
+    "superbwarfare:sniper_ammo",
+    "superbwarfare:shotgun_ammo",
+    "superbwarfare:heavy_ammo",
+    "superbwarfare:handgun_ammo_box",
+    "superbwarfare:rifle_ammo_box",
+    "superbwarfare:sniper_ammo_box",
+    "superbwarfare:shotgun_ammo_box",
+    "superbwarfare:creative_ammo_box",
+    "superbwarfare:ammo_box",
+    "superbwarfare:taser_electrode",
+    "superbwarfare:grenade_40mm",
+    "superbwarfare:mortar_shell_smoke",
+    "superbwarfare:potion_mortar_shell",
+    "superbwarfare:rpg_rocket_standard",
+    "superbwarfare:rpg_rocket_tbg",
+    "superbwarfare:javelin_missile",
+    "superbwarfare:lunge_mine",
+    "superbwarfare:hand_grenade",
+    "superbwarfare:rgo_grenade",
+    "superbwarfare:m18_smoke_grenade",
+    "superbwarfare:claymore_mine",
+    "superbwarfare:tm_62",
+    "superbwarfare:ptkm_1r",
+    "superbwarfare:c4_bomb",
+    "superbwarfare:blu_43_mine",
+    "superbwarfare:edd",
+    "superbwarfare:swarm_drone",
+
+    // superbwarfare: rarity/perk/loot meta system removed wholesale
+    "superbwarfare:common_material_pack",
+    "superbwarfare:rare_material_pack",
+    "superbwarfare:epic_material_pack",
+    "superbwarfare:legendary_material_pack",
+    "superbwarfare:superb_material_pack",
+    "superbwarfare:virtual_material_pack",
+    "superbwarfare:data_chip_substrate",
+    "superbwarfare:common_blueprint_data_chip",
+    "superbwarfare:rare_blueprint_data_chip",
+    "superbwarfare:epic_blueprint_data_chip",
+    "superbwarfare:legendary_blueprint_data_chip",
+    "superbwarfare:superb_blueprint_data_chip",
+    "superbwarfare:virtual_blueprint_data_chip",
+    "superbwarfare:ammo_perk_data_chip",
+    "superbwarfare:functional_perk_data_chip",
+    "superbwarfare:damage_perk_data_chip",
+    "superbwarfare:directional_research_module",
+    "superbwarfare:enlargement_research_module",
+    "superbwarfare:effective_research_module",
+    "superbwarfare:boost_research_module",
+    "superbwarfare:shortcut_pack",
+    "superbwarfare:reforging_table",
+
+    // superbwarfare: gun blueprints (guns removed, blueprints serve no purpose)
+    "superbwarfare:trachelium_blueprint",
+    "superbwarfare:glock_17_blueprint",
+    "superbwarfare:mp_443_blueprint",
+    "superbwarfare:glock_18_blueprint",
+    "superbwarfare:hunting_rifle_blueprint",
+    "superbwarfare:m_79_blueprint",
+    "superbwarfare:rpg_blueprint",
+    "superbwarfare:bocek_blueprint",
+    "superbwarfare:m_4_blueprint",
+    "superbwarfare:aa_12_blueprint",
+    "superbwarfare:hk_416_blueprint",
+    "superbwarfare:rpk_blueprint",
+    "superbwarfare:sks_blueprint",
+    "superbwarfare:ntw_20_blueprint",
+    "superbwarfare:mp_5_blueprint",
+    "superbwarfare:vector_blueprint",
+    "superbwarfare:minigun_blueprint",
+    "superbwarfare:mk_14_blueprint",
+    "superbwarfare:sentinel_blueprint",
+    "superbwarfare:m_60_blueprint",
+    "superbwarfare:svd_blueprint",
+    "superbwarfare:marlin_blueprint",
+    "superbwarfare:m_870_blueprint",
+    "superbwarfare:awm_blueprint",
+    "superbwarfare:m_98b_blueprint",
+    "superbwarfare:ak_47_blueprint",
+    "superbwarfare:ak_12_blueprint",
+    "superbwarfare:devotion_blueprint",
+    "superbwarfare:taser_blueprint",
+    "superbwarfare:m_1911_blueprint",
+    "superbwarfare:qbz_95_blueprint",
+    "superbwarfare:qbz_191_blueprint",
+    "superbwarfare:k_98_blueprint",
+    "superbwarfare:mosin_nagant_blueprint",
+    "superbwarfare:igla_9k38_blueprint",
+    "superbwarfare:javelin_blueprint",
+    "superbwarfare:m_2_hb_blueprint",
+    "superbwarfare:secondary_cataclysm_blueprint",
+    "superbwarfare:insidious_blueprint",
+    "superbwarfare:ql_1031_blueprint",
+    "superbwarfare:super_star_shooter_blueprint",
+    "superbwarfare:aurelia_sceptre_blueprint",
+
+    // superbwarfare: vehicle blueprints (vehicles crafted directly now, no unlock RNG)
+    "superbwarfare:mk_42_blueprint",
+    "superbwarfare:mle_1934_blueprint",
+    "superbwarfare:bl_132_blueprint",
+    "superbwarfare:hpj_11_blueprint",
+    "superbwarfare:annihilator_blueprint",
+
+    // superbwarfare: handheld gun parts (gun set removed; steel_barrel and cemented_carbide_barrel survive as vehicle sub-parts)
+    "superbwarfare:iron_action",
+    "superbwarfare:iron_spring",
+    "superbwarfare:iron_trigger",
+    "superbwarfare:iron_barrel",
+    "superbwarfare:steel_action",
+    "superbwarfare:steel_spring",
+    "superbwarfare:steel_trigger",
+    "superbwarfare:cemented_carbide_action",
+    "superbwarfare:cemented_carbide_spring",
+    "superbwarfare:cemented_carbide_trigger",
+    "superbwarfare:netherite_action",
+    "superbwarfare:netherite_spring",
+    "superbwarfare:netherite_trigger",
+    "superbwarfare:netherite_barrel",
+    "superbwarfare:crystal_action",
+    "superbwarfare:crystal_spring",
+    "superbwarfare:crystal_trigger",
+    "superbwarfare:crystal_barrel"
+  ],
+  // -----------------------------------------------------------
+  // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+  // Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+  //
+  // 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+  //
+  // 	 You can also use regular expressions by starting the value with !
+  "blacklisted_nbt": [
+    // pocket computers with colony_pocket upgrade (colony_integrator has no GT recipe)
+    "Upgrade:\"advancedperipherals:colony_pocket\"",
+    // pocket computers with geoscanner_pocket upgrade (no GT recipe for the pocket upgrade itself)
+    "Upgrade:\"advancedperipherals:geoscanner_pocket\""
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be right-clicked (Interact)
+  //    Example: minecraft:apple
+  "only_disable_interactions": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be used to attack
+  //    Example: minecraft:diamond_sword
+  "only_disable_attacks": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will get their recipes disabled
+  // Keep in mind this already is applied to blacklisted items
+  "only_disable_recipes": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // If true, the mod will use a hashset to handle the blacklisted items
+  // This is a more optimized approach only if you have a lot of items blacklisted (20 or more is recommended)
+  // If you just have a small amount of items blacklisted, keep this false
+  //
+  // [!] Enabling this will disable all regular expressions
+  // [!] Does not apply to NBT, only item blacklist / interaction / attack
+  "use_hashmap_optimizations": true
+}

@@ -41,6 +41,10 @@ file = "config/infernalmobs.cfg"
 hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
 [[files]]
+file = "config/item_obliterator.json5"
+hash = "b249a8e43933ffed22a2a5f998681bb955997ddec416fa7c16260a03582930a3"
+
+[[files]]
 file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
@@ -853,14 +857,6 @@ file = "kubejs/assets/kubejs/textures/block/sanctum_sourcestone_casing.png"
 hash = "ce67c0f13db5a7516a48acfb08bf4e7b4a1a25d01809c4ab9c2f2f5a1da53546"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/abyssal_codex.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/blood_grimoire.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/boundless_gaia_spirit_ingot.png"
 hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
 
@@ -871,6 +867,14 @@ hash = "be3ada9207a39b6e43675cf031f792f2b5bff6feb150cbb0960a1ddd6b4e4803"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/chaos_essence.png.mcmeta"
 hash = "ea59e41e331d5a9b3eba02b6a8c6a5efe83cbd4689f3e674378e69758edfc6b8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/condensed_desh_carbonyl.png"
+hash = "08594455c6b84ec96ba0ed2b96c3a2a22ff89fed8b05ed75e16c9a7eb24f5deb"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/desh_hull_section.png"
+hash = "d503f3dd7fd9d2174a3643536168b5568d6d23e9d6933d64a2a40cbcb13156a2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form.png"
@@ -889,16 +893,20 @@ file = "kubejs/assets/kubejs/textures/item/elven_concentrate.png"
 hash = "b54db6d210a35da8d42db5eb5d452f3896ad0e2b62d88f38151d0433818c3ee4"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/evocation_folio.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/florid_compound.png"
 hash = "a0b3888299da34ad52b7818f594f45e323bde242b1d1efe5da3545aee6ed9bc5"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/glacial_grimoire.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
+file = "kubejs/assets/kubejs/textures/item/gaian_annihilation_core.png"
+hash = "0b1853672da9aec8cd8bcb34add3725c1ab70f5bf92027c37de0ce1e61c008b1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gaian_blood_core.png"
+hash = "1158125dbca814b2ddb719f4e38b8deb797ae6cc002cd432b385215561e7ff3f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gaian_void_core.png"
+hash = "9a4ee784ed91cdb93692016034e4a346a49d39895e2332edd05830de72d771e3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/glowing_compound_dust.png"
@@ -921,12 +929,20 @@ file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
 hash = "58cd831e178a7c8c93940b522d1795d592d4b49eacbfc2531cc3cdd6f0c9d38a"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
-hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
+file = "kubejs/assets/kubejs/textures/item/mars_combustion_engine.png"
+hash = "5f803d2616baf3eb4437f6e6619a10dbf3a4931b438c47e0386f66da8e03c6c4"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/obliteration_chronicle.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
+file = "kubejs/assets/kubejs/textures/item/mars_guidance_module.png"
+hash = "a2b879dfea3985e677711f24d572ccd1e23fd8f06ca5a99e02c8a3ad123239eb"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mars_propellant_tank.png"
+hash = "f4c75cafca767971a891942d246871f8e8d845cd6551c05628ffee31b0263a31"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
+hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
@@ -935,10 +951,6 @@ hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pure_source_gem_dust.png"
 hash = "d7e4ce16f8802d029adb5fe9f7fbc94bbd88bd56d1ad2a23448f33b7ee15b133"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/pyromatic_codex.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/raw_elementite.png"
@@ -965,12 +977,12 @@ file = "kubejs/assets/kubejs/textures/item/soul_of_gaia.png"
 hash = "ba4b7646a729dc8b8f8b56df994b0c08d5e09c42a1c376cab325df6d17ca41c3"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/vengeful_gaia_spirit.png"
-hash = "701e949062e3f8ea5d1e004c61902a7b2bcd9d1d029e7ea1d5bb36a9478e2b73"
+file = "kubejs/assets/kubejs/textures/item/sperm_cell_pellet.png"
+hash = "f151d5a4c7c2f4bdbc14b36a503a506e2f4b8d26a7617952e228d6da86991192"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/verdant_chronicle.png"
-hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
+file = "kubejs/assets/kubejs/textures/item/vengeful_gaia_spirit.png"
+hash = "701e949062e3f8ea5d1e004c61902a7b2bcd9d1d029e7ea1d5bb36a9478e2b73"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
@@ -987,10 +999,6 @@ hash = "5644e49879e219ad3a1d7a4607240f717a76ffafd831ff5aba5bb2e9e6616003"
 [[files]]
 file = "kubejs/assets/woot_revived/lang/en_us.json"
 hash = "de8687d41e45aac48ea1cf3fedaa6e40bc380c083d12c14ed08f5a05be7bfeb5"
-
-[[files]]
-file = "kubejs/client_scripts/cc_jei_hide.js"
-hash = "84bbea45e1008aaeb6d4515760766e627d35100eb06baf07a9e90bc03fd2e016"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
@@ -1534,7 +1542,7 @@ hash = "e1fdd470d56bcad64148a45c664420bc519683f4e54de364c5e8ffcd8451c75c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "b8d6d10516e3508605c678bc6e0ac3475bad707e3d67af553e3a016bc84a6314"
+hash = "20e1f16e043587f22f3f441eaf4a3a5176c3aa1d2de447ed64c57a5b510965b7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -1874,7 +1882,7 @@ hash = "dbd25518bbeac9d11b85f1a030a0893f96c1b40a7f22e560b375a01cfb303475"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "580adbf04cd8afd025135d1dfa8974b0344b5e5238aaa8a8df9f82bb0125d541"
+hash = "39f300c9bbf44c38cd31a5e077c136d65c123ccc9b783c2e91cd32c86cab5368"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -2825,6 +2833,11 @@ metafile = true
 [[files]]
 file = "mods/just-parry.pw.toml"
 hash = "2aade2a28fbf8316db6c1d533988e0998681caabb1a37e2884aa289f754898f8"
+metafile = true
+
+[[files]]
+file = "mods/keybind-atlas.pw.toml"
+hash = "bcd046bc81bd353451b68396c65d1270cab90e35205bc2442a142177fdb0d324"
 metafile = true
 
 [[files]]

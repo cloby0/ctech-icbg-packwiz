@@ -52,10 +52,10 @@ StartupEvents.registry('item', event => {
     event.create('mars_propellant_tank')
     event.create('mars_guidance_module')
 
-    event.create('hallowed_silicon_boule')
-    event.create('primal_phosphorus_boule')
-    event.create('verdant_naquadah_boule')
-    event.create('gaian_neutronium_boule')
+    event.create('hallowed_silicon_boule').texture('gtceu:item/silicon_boule').glow(true)
+    event.create('primal_phosphorus_boule').texture('gtceu:item/phosphorus_boule').glow(true)
+    event.create('verdant_naquadah_boule').texture('gtceu:item/naquadah_boule').glow(true)
+    event.create('gaian_neutronium_boule').texture('gtceu:item/neutronium_boule').glow(true)
 
     event.create('gaia_flux_dust')
     // Branch A biological apotheosis chain intermediates (leaf 1 — bio processing)
@@ -193,7 +193,7 @@ StartupEvents.registry('item', event => {
 
     // UHV/UEV chain intermediates
     event.create('dragon_heart_crystal')
-    event.create('draconic_boule')
+    event.create('draconic_boule').texture('gtceu:item/neutronium_boule').glow(true)
     event.create('draconic_resonance_board')
     event.create('stabilized_chaos_crystal')
     event.create('chaos_harmonic_board')
