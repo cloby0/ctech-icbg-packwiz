@@ -2836,11 +2836,6 @@ hash = "2aade2a28fbf8316db6c1d533988e0998681caabb1a37e2884aa289f754898f8"
 metafile = true
 
 [[files]]
-file = "mods/keybind-atlas.pw.toml"
-hash = "bcd046bc81bd353451b68396c65d1270cab90e35205bc2442a142177fdb0d324"
-metafile = true
-
-[[files]]
 file = "mods/konkrete.pw.toml"
 hash = "143102be700d30cf68d0988bc9f1b523545e37b7074ee786faac56a388e6f0e9"
 metafile = true
