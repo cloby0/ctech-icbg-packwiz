@@ -314,7 +314,7 @@ ServerEvents.recipes(event => {
 
     // LuV+: explicitly fictional superweapons, naquadah gated same as every other
     // Glacio-tier endgame item in this pack
-    vehicle('annihilator', 'LuV', ['6x gtceu:naquadah_plate', '4x gtceu:naquadah_alloy_ingot', '32x superbwarfare:laser_unit', 'gtceu:luv_battery_hull', '4x gtceu:naquadah_frame'])
+    vehicle('annihilator', 'LuV', ['6x gtceu:naquadah_plate', '4x gtceu:naquadah_alloy_ingot', '32x superbwarfare:laser_unit', 'gtceu:luv_battery_hull', '4x gtceu:naquadah_alloy_frame'])
     vehicle('prism_tank', 'LuV', ['4x gtceu:naquadah_plate', '2x gtceu:naquadah_ingot', '16x superbwarfare:laser_unit', 'gtceu:luv_battery_hull', '2x superbwarfare:track', 'gtceu:luv_electric_motor'])
 
 })
