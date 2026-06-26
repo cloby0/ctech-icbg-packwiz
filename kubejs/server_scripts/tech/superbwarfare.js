@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
     // EV: ostrum era, exotic energy weapon platforms
     vehicle('laser_tower', 'EV', ['2x ad_astra:ostrum_plate', 'gtceu:ostrum_rod', 'superbwarfare:laser_unit', 'gtceu:hv_battery_hull', 'gtceu:ev_electric_motor'])
     // tungstensteel_frame replaces cemented_carbide_block — frames are the correct chassis analog
-    vehicle('waveforce_tower', 'EV', ['6x ad_astra:ostrum_plate', '4x gtceu:ostrum_rod', '2x gtceu:tungstensteel_frame', '8x minecraft:redstone_block', '9x superbwarfare:laser_unit', '2x gtceu:hv_battery_hull', 'gtceu:ev_electric_motor'])
+    vehicle('waveforce_tower', 'EV', ['6x ad_astra:ostrum_plate', '4x gtceu:ostrum_rod', '2x gtceu:tungsten_steel_frame', '8x minecraft:redstone_block', '9x superbwarfare:laser_unit', '2x gtceu:hv_battery_hull', 'gtceu:ev_electric_motor'])
 
     // LuV+: explicitly fictional superweapons, naquadah gated same as every other
     // Glacio-tier endgame item in this pack
