@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // === NATURE PEDESTAL ===
-    // Replace gold_nugget with manasteel; gates pedestal behind Alchemist tier
     event.remove({ id: 'extrabotany:pedestal_livingrock' })
     event.shaped('extrabotany:pedestal_livingrock', [
         'CPC',
@@ -12,9 +10,6 @@ ServerEvents.recipes(event => {
         P: 'botania:manasteel_ingot'
     })
 
-    // === SPIRIT FUEL (Thaumaturge gate) ===
-    // No vanilla recipe exists; synthesized via terrasteel imbuement
-    // gates spirit_fragment (via pedestal_smash) and downstream photonium behind Thaumaturge
     addImbuementRecipe(event, {
         input: 'botania:terrasteel_ingot',
         output: 'extrabotany:spirit_fuel',
@@ -22,8 +17,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['botania:mana_pearl', 'botania:mana_pearl', 'botania:mana_diamond', 'botania:mana_diamond']
     })
 
-    // === ALCHEMIST TIER FLOWERS (manasteel gate) ===
-    // petal_apothecary recipes removed; re-added via EA to ensure consistent gating
     const alchemistFlowers = [
         'extrabotany:sunshine_lily',
         'extrabotany:moonlight_lily',
@@ -39,8 +32,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // === THAUMATURGE TIER FLOWERS (terrasteel gate) ===
-    // stonesia overridden from its vanilla life_essence req to fit mid-game mana gen role
     const thaumaturgeFlowers = [
         'extrabotany:resoncund',
         'extrabotany:trade_orchid',
@@ -67,7 +58,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // === ARCANIST TIER FLOWERS (elementium gate) ===
     const arcanistFlowers = [
         'extrabotany:woodienia',
         'extrabotany:reikarlily',
@@ -85,11 +75,7 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // serenitian, manalink, enchanter keep vanilla petal_apothecary recipes
-    // all three require life_essence (Sage-gated) so no override needed
 
-    // === STONESIA custom recipes (extra GTCEu and dimensional stones) ===
-    // defaults (stone:20, dirt:10, various vanilla ores) are kept by the mod
     ;[
         ['#forge:ores_in_ground/deepslate',   80],
         ['ad_astra:moon_stone',               40],
@@ -101,8 +87,6 @@ ServerEvents.recipes(event => {
         ['#forge:storage_blocks/naquadah',   400],
     ].forEach(([block, mana]) => event.recipes.extrabotany.stonesia(mana, block))
 
-    // === EDELWEISS custom recipes (mob kills → mana) ===
-    // default (snow_golem:3200) kept by mod
     ;[
         ['minecraft:blaze',           2000],
         ['minecraft:enderman',        2500],
@@ -112,8 +96,6 @@ ServerEvents.recipes(event => {
         ['minecraft:shulker',         3500],
     ].forEach(([entity, mana]) => event.recipes.extrabotany.edelweiss(mana, entity))
 
-    // === OMNIVIOLET custom recipes (spell books → mana) ===
-    // defaults (book:50, written_book:65) kept by mod
     ;[
         ['irons_spellbooks:ruined_book',  80],
         ['hexcasting:slate',             100],

@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // No vanilla removals — all relics items are loot drops only by default
 
     event.shaped(Item.of('relics:leather_belt', 1), [
         'LLL', 'LDL', 'LLL'
@@ -168,7 +167,6 @@ ServerEvents.recipes(event => {
         sourceCost: 4500
     })
 
-    // elytra consumed as primary component
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: ['minecraft:elytra', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'create:golden_sheet', 'create:golden_sheet', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],

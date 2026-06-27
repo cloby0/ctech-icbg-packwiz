@@ -18,7 +18,6 @@ ServerEvents.recipes(event => {
     ]
     laserio_items.forEach(item => event.remove({ output: item }))
 
-    // logic_chip is the chokepoint; HV circuit gates it to late MV
     event.recipes.gtceu.assembler('laserio_logic_chip')
         .itemInputs('2x gtceu:aluminium_plate', '1x #gtceu:circuits/hv', '2x minecraft:redstone')
         .itemOutputs('4x laserio:logic_chip')
@@ -79,7 +78,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // filter_basic gated here; filter_tag/count/mod/nbt keep their shapeless recipes
     event.recipes.gtceu.assembler('laserio_filter_basic')
         .itemInputs('laserio:logic_chip', '2x minecraft:glass_pane', '2x gtceu:aluminium_plate')
         .itemOutputs('4x laserio:filter_basic')

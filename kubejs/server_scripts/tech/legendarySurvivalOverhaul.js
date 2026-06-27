@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 
     event.shaped('legendarysurvivaloverhaul:sewing_table', ['WCW', 'R W', 'PPP'], {
         W: 'gtceu:wrought_iron_ingot',
-        C: 'gtceu:copper_single_wire',
+        C: 'minecraft:string',
         R: 'minecraft:redstone',
         P: '#minecraft:planks'
     })
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
     event.shaped('legendarysurvivaloverhaul:canteen', [' W ', 'LCL', 'LLL'], {
         W: 'gtceu:wrought_iron_ingot',
         L: 'minecraft:leather',
-        C: 'gtceu:copper_single_wire'
+        C: 'gtceu:copper_plate'
     })
 
     event.recipes.gtceu.assembler('lso_thermometer')
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('lso_large_canteen')
-        .itemInputs('4x gtceu:steel_plate', '3x minecraft:leather', 'gtceu:steel_small_fluid_pipe', '#gtceu:circuits/mv')
+        .itemInputs('4x gtceu:steel_plate', '3x minecraft:leather', 'gtceu:steel_small_fluid_pipe')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('legendarysurvivaloverhaul:large_canteen')
         .duration(15 * 20)
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_1_tech')
-        .itemInputs('4x legendarysurvivaloverhaul:cold_string', '2x create:iron_sheet', 'gtceu:tin_single_wire', '#gtceu:circuits/lv')
+        .itemInputs('4x legendarysurvivaloverhaul:cold_string', '2x create:iron_sheet', 'gtceu:tin_single_wire')
         .itemOutputs('legendarysurvivaloverhaul:cooling_coat_1')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.LV])
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_2_tech')
-        .itemInputs('legendarysurvivaloverhaul:cooling_coat_1', 'gtceu:diamond_plate', 'minecraft:packed_ice', '#gtceu:circuits/mv')
+        .itemInputs('legendarysurvivaloverhaul:cooling_coat_1', 'gtceu:rubber_plate', 'minecraft:packed_ice', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:distilled_water', 500))
         .itemOutputs('legendarysurvivaloverhaul:cooling_coat_2')
         .duration(20 * 20)
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_3_tech')
-        .itemInputs('legendarysurvivaloverhaul:cooling_coat_2', '2x gtceu:titanium_plate', '2x minecraft:blue_ice', '#gtceu:circuits/hv')
+        .itemInputs('legendarysurvivaloverhaul:cooling_coat_2', '2x gtceu:aluminium_plate', '2x minecraft:blue_ice', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
         .itemOutputs('legendarysurvivaloverhaul:cooling_coat_3')
         .duration(25 * 20)
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_1_tech')
-        .itemInputs('4x legendarysurvivaloverhaul:warm_string', '2x create:iron_sheet', 'gtceu:tin_single_wire', '#gtceu:circuits/lv')
+        .itemInputs('4x legendarysurvivaloverhaul:warm_string', '2x create:iron_sheet', 'gtceu:tin_single_wire')
         .itemOutputs('legendarysurvivaloverhaul:heating_coat_1')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.LV])
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_3_tech')
-        .itemInputs('legendarysurvivaloverhaul:heating_coat_2', '2x gtceu:titanium_plate', '2x minecraft:blaze_rod', '#gtceu:circuits/hv')
+        .itemInputs('legendarysurvivaloverhaul:heating_coat_2', '2x gtceu:chrome_plate', '2x minecraft:blaze_rod', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('minecraft:lava', 1000))
         .itemOutputs('legendarysurvivaloverhaul:heating_coat_3')
         .duration(25 * 20)
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_thermal_coat_2_tech')
-        .itemInputs('legendarysurvivaloverhaul:cooling_coat_2', 'legendarysurvivaloverhaul:heating_coat_2', 'gtceu:titanium_plate', '#gtceu:circuits/hv')
+        .itemInputs('legendarysurvivaloverhaul:cooling_coat_2', 'legendarysurvivaloverhaul:heating_coat_2', 'gtceu:aluminium_plate', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
         .itemOutputs('legendarysurvivaloverhaul:thermal_coat_2')
         .duration(25 * 20)

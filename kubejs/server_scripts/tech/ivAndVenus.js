@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:smelting/calorite_ingot_from_smelting_venus_calorite_ore' })
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:calorite_ingot' })
 
-    // step 1 sulfuric roast
     event.recipes.gtceu.chemical_reactor('calorite_sulfuric_roast')
         .itemInputs('1x gtceu:crushed_calorite_ore')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 500))
@@ -13,7 +12,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 2 chlorine leach
     event.recipes.gtceu.chemical_reactor('calorite_chlorine_leach')
         .itemInputs('1x kubejs:calorite_sulfate_slag')
         .inputFluids(Fluid.of('gtceu:chlorine', 500))
@@ -23,7 +21,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 3 HF fluorination
     event.recipes.gtceu.chemical_reactor('calorite_hf_fluorination')
         .itemInputs('1x kubejs:calorite_chloride_melt')
         .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 400))
@@ -33,7 +30,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 4 electrolytic reduction
     event.recipes.gtceu.electrolyzer('calorite_electrolytic_reduction')
         .itemInputs('1x kubejs:calorite_fluoride_precipitate')
         .itemOutputs('1x kubejs:raw_calorite_sponge')
@@ -42,7 +38,6 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 5 EBF consolidation
     event.recipes.gtceu.electric_blast_furnace('calorite_ebf_consolidation')
         .itemInputs('1x kubejs:raw_calorite_sponge')
         .itemOutputs('1x gtceu:hot_calorite_ingot')
@@ -50,7 +45,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 6 vacuum freeze
     event.recipes.gtceu.vacuum_freezer('calorite_vacuum_freeze')
         .itemInputs('1x gtceu:hot_calorite_ingot')
         .itemOutputs('1x ad_astra:calorite_ingot')

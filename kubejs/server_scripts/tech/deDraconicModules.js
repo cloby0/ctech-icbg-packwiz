@@ -78,8 +78,6 @@ ServerEvents.recipes(event => {
         event.remove({ id: removeIds[i] })
     }
 
-    // DRACONIUM TIER — ZPM assembler
-    // draconium_core + module_core + plates + GT component + circuits
 
     event.recipes.gtceu.assembler('de_module_draconium_aoe')
         .itemInputs('1x draconicevolution:draconium_core', '1x draconicevolution:module_core',
@@ -123,8 +121,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconium_speed')
         .duration(200).EUt(GTValues.VA[GTValues.ZPM])
 
-    // WYVERN TIER — UV assembler
-    // upgrades from draconium where predecessor exists; new modules start from wyvern_core
 
     event.recipes.gtceu.assembler('de_module_wyvern_aoe')
         .itemInputs('1x draconicevolution:item_draconium_aoe', '2x draconicevolution:wyvern_core',
@@ -133,7 +129,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_aoe')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // heart_of_the_sea resonance projects oxygen bubble around suit
     event.recipes.gtceu.assembler('de_module_wyvern_aqua_adapt')
         .itemInputs('1x minecraft:heart_of_the_sea', '2x draconicevolution:wyvern_core',
             '4x gtceu:draconium_plate', '1x gtceu:uv_field_generator', '1x #gtceu:circuits/uv')
@@ -148,7 +143,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_auto_feed')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // bow provides trigger geometry template; motor drives mechanism
     event.recipes.gtceu.assembler('de_module_wyvern_auto_fire')
         .itemInputs('1x minecraft:bow', '2x draconicevolution:wyvern_core',
             '4x gtceu:draconium_plate', '2x gtceu:uv_electric_motor', '1x #gtceu:circuits/uv')
@@ -163,7 +157,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_damage')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // ender_eye seeds the teleportation retrieval field
     event.recipes.gtceu.assembler('de_module_wyvern_ender_collection')
         .itemInputs('1x minecraft:ender_eye', '2x draconicevolution:wyvern_core',
             '4x gtceu:draconium_plate', '1x gtceu:uv_field_generator', '1x #gtceu:circuits/uv')
@@ -178,7 +171,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_energy')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // end_crystal + wireless_crystal form the broadcast matrix; no circuit slot left
     event.recipes.gtceu.assembler('de_module_wyvern_energy_link')
         .itemInputs('1x minecraft:end_crystal', '1x draconicevolution:basic_wireless_crystal',
             '2x draconicevolution:wyvern_core', '4x gtceu:draconium_plate', '1x gtceu:uv_emitter')
@@ -186,7 +178,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_energy_link')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // elytra consumed as wing-pattern template; emitter replicates the field
     event.recipes.gtceu.assembler('de_module_wyvern_flight')
         .itemInputs('1x minecraft:elytra', '2x draconicevolution:wyvern_core',
             '4x gtceu:draconium_plate', '1x gtceu:uv_emitter', '1x #gtceu:circuits/uv')
@@ -271,7 +262,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_proj_velocity')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // netherite_scrap as structural reinforcement for the shield cell
     event.recipes.gtceu.assembler('de_module_wyvern_shield_capacity')
         .itemInputs('2x draconicevolution:wyvern_core', '4x gtceu:draconium_plate',
             '2x minecraft:netherite_scrap', '1x #gtceu:circuits/uv')
@@ -279,7 +269,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_shield_capacity')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // dragon_heart resonance pattern seeds the AI shield controller; particle_generator calibrates it
     event.recipes.gtceu.assembler('de_module_wyvern_shield_control')
         .itemInputs('1x draconicevolution:dragon_heart', '1x draconicevolution:particle_generator',
             '2x draconicevolution:wyvern_core', '4x gtceu:draconium_plate', '1x gtceu:uv_sensor')
@@ -308,7 +297,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_tree_harvest')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // totem provides the resurrection pattern; shield_capacity confirms life-support baseline
     event.recipes.gtceu.assembler('de_module_wyvern_undying')
         .itemInputs('1x minecraft:totem_of_undying', '1x draconicevolution:item_wyvern_shield_capacity',
             '2x draconicevolution:wyvern_core', '4x gtceu:draconium_plate', '1x gtceu:uv_robot_arm')
@@ -316,8 +304,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_wyvern_undying')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
-    // DRACONIC TIER — UHV assembler
-    // all upgrade from wyvern; awakened_core + awakened_draconium_plate
 
     event.recipes.gtceu.assembler('de_module_draconic_aoe')
         .itemInputs('1x draconicevolution:item_wyvern_aoe', '2x draconicevolution:awakened_core',
@@ -333,7 +319,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_auto_feed')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // dragon_breath energizes the strike amplifier at draconic tier
     event.recipes.gtceu.assembler('de_module_draconic_damage')
         .itemInputs('1x draconicevolution:item_wyvern_damage', '1x minecraft:dragon_breath',
             '2x draconicevolution:awakened_core', '4x gtceu:awakened_draconium_plate', '1x gtceu:uhv_emitter')
@@ -355,7 +340,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_energy')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // upgraded to wyvern_wireless_crystal for longer range; end_crystal anchors the link
     event.recipes.gtceu.assembler('de_module_draconic_energy_link')
         .itemInputs('1x draconicevolution:item_wyvern_energy_link', '1x draconicevolution:wyvern_wireless_crystal',
             '1x minecraft:end_crystal', '2x draconicevolution:awakened_core', '4x gtceu:awakened_draconium_plate')
@@ -391,7 +375,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_proj_accuracy')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // wither_skull resonance + ender_eye targeting allows bypassing mob immunity
     event.recipes.gtceu.assembler('de_module_draconic_proj_anti_immune')
         .itemInputs('1x minecraft:wither_skeleton_skull', '1x minecraft:ender_eye',
             '2x draconicevolution:awakened_core', '4x gtceu:awakened_draconium_plate', '1x gtceu:uhv_emitter')
@@ -427,7 +410,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_proj_velocity')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // netherite_ingot as structural anchor for the denser shield cell
     event.recipes.gtceu.assembler('de_module_draconic_shield_capacity')
         .itemInputs('1x draconicevolution:item_wyvern_shield_capacity', '2x draconicevolution:awakened_core',
             '4x gtceu:awakened_draconium_plate', '2x minecraft:netherite_ingot', '1x #gtceu:circuits/uhv')
@@ -463,7 +445,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_tree_harvest')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // shield_capacity proves life-support baseline exists before robot arm can sustain life
     event.recipes.gtceu.assembler('de_module_draconic_undying')
         .itemInputs('1x draconicevolution:item_wyvern_undying', '1x draconicevolution:item_draconic_shield_capacity',
             '2x draconicevolution:awakened_core', '4x gtceu:awakened_draconium_plate', '1x gtceu:uhv_robot_arm')
@@ -471,9 +452,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_draconic_undying')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
-    // CHAOTIC TIER — UEV assembler
-    // all upgrade from draconic; chaotic_core + awakened_draconium_plate + chaos_matrix_fluid
-    // _shield_capacity_uncraft shapeless recipes left as vanilla (utility reversals, not progression)
 
     event.recipes.gtceu.assembler('de_module_chaotic_aoe')
         .itemInputs('1x draconicevolution:item_draconic_aoe', '2x draconicevolution:chaotic_core',
@@ -496,7 +474,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_chaotic_energy')
         .duration(600).EUt(GTValues.VA[GTValues.UEV])
 
-    // draconic_wireless_crystal for maximum broadcast range
     event.recipes.gtceu.assembler('de_module_chaotic_energy_link')
         .itemInputs('1x draconicevolution:item_draconic_energy_link', '1x draconicevolution:draconic_wireless_crystal',
             '1x minecraft:end_crystal', '2x draconicevolution:chaotic_core', '4x gtceu:awakened_draconium_plate')
@@ -560,7 +537,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_chaotic_proj_velocity')
         .duration(600).EUt(GTValues.VA[GTValues.UEV])
 
-    // large_chaos_frag provides raw chaos energy infusion for the shield cell
     event.recipes.gtceu.assembler('de_module_chaotic_shield_capacity')
         .itemInputs('1x draconicevolution:item_draconic_shield_capacity', '2x draconicevolution:large_chaos_frag',
             '2x draconicevolution:chaotic_core', '4x gtceu:awakened_draconium_plate', '1x #gtceu:circuits/uev')
@@ -596,7 +572,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x draconicevolution:item_chaotic_tree_harvest')
         .duration(600).EUt(GTValues.VA[GTValues.UEV])
 
-    // enchanted_golden_apple is the irreversible death anchor — consumed to bind the resurrection matrix
     event.recipes.gtceu.assembler('de_module_chaotic_undying')
         .itemInputs('1x draconicevolution:item_draconic_undying', '1x minecraft:enchanted_golden_apple',
             '2x draconicevolution:chaotic_core', '4x gtceu:awakened_draconium_plate', '1x gtceu:uev_robot_arm')

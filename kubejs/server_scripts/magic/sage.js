@@ -34,7 +34,6 @@ ServerEvents.recipes(event => {
         sourceCost: 20000
     })
 
-    // Gaian Resonance Cores — each diverges from gaia_ingot into a spellbook school
     addEnchantingRecipe(event, {
         reagent: 'botania:life_essence',
         pedestalItems: [
@@ -67,7 +66,6 @@ ServerEvents.recipes(event => {
         sourceCost: 25000
     })
 
-    // consumes annihilators_protocol to upgrade into the escalated ender-school book
     addEnchantingRecipe(event, {
         reagent: 'botania:life_essence',
         pedestalItems: [
@@ -80,7 +78,6 @@ ServerEvents.recipes(event => {
         sourceCost: 30000
     })
 
-    // Sage spellbook recipes — core consumed as reagent
     addEnchantingRecipe(event, {
         reagent: 'kubejs:gaian_blood_core',
         pedestalItems: [
@@ -129,7 +126,6 @@ ServerEvents.recipes(event => {
         sourceCost: 50000
     })
 
-    // Harbinger Codex — UV technomancy book, requires boundless_naquadrite (gaia_spirit + naquadria) + UV circuits
     addEnchantingRecipe(event, {
         reagent: 'gtceu:boundless_naquadrite_ingot',
         pedestalItems: [
@@ -142,8 +138,6 @@ ServerEvents.recipes(event => {
         sourceCost: 55000
     })
 
-    // renewable life_essence after first Guardian of Gaia kill
-    // gaia_spirit_essence (farmed via MA once you have first gaia_ingot) distilled through elementium
     addEnchantingRecipe(event, {
         reagent: 'botania:elementium_ingot',
         pedestalItems: [
@@ -166,8 +160,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // renewable wilden_tribute — wilden essence (horn + spike x2 each) + Gaia-tier power invoke another tribute
-    // gaia_ingot gates this at Sage tier; in the factory these are notConsumable (setup items only)
     addImbuementRecipe(event, {
         input: 'ars_nouveau:wilden_tribute',
         output: { item: 'ars_nouveau:wilden_tribute', count: 2 },
@@ -182,9 +174,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // abstract_elastomer chain — elemental imbuement → UV mixer → Gaia binding
-    // Step 1: elemental essences + drygmy shards imbue GT rubber dust with living magic
-    // rubber_dust grounds the chain in its GT lineage — this is rubber, transcended
     addImbuementRecipe(event, {
         input: '4x gtceu:rubber_dust',
         output: 'kubejs:primal_latex_billet',
@@ -199,8 +188,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // Step 2 (tech): UV Mixer — source fluid + gems + wilden horn catalyze billet into elemental compound
-    // requires liquid source, not just crystallized gems
     event.recipes.gtceu.mixer('abstract_elastomer_compound_mix')
         .itemInputs(
             '1x kubejs:primal_latex_billet',
@@ -212,8 +199,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // Step 3: Gaia binding — abstract_metal ingots anchor the sibling concept; platonic rubber needs platonic metal
-    // Melt abstract_elastomer_ingot in arc furnace or fluid extractor to get the fluid
     addEnchantingRecipe(event, {
         reagent: 'kubejs:elemental_latex_compound',
         pedestalItems: [

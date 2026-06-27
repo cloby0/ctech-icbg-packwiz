@@ -1,9 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // === HV / INITIATE ===
 
-    // the_acknowledgment: vanilla is Book + Lantern (trivially free)
-    // gate at holy_silver (HV marker)
     event.remove({ output: 'enigmaticlegacy:the_acknowledgment' })
     event.shaped(
         Item.of('enigmaticlegacy:the_acknowledgment', 1),
@@ -19,8 +16,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // animal_guidebook / hunter_guidebook: sub-guidebooks for mod systems
-    // both are vanilla mats only — gate at holy_silver like the_acknowledgment
     event.remove({ output: 'enigmaticlegacy:animal_guidebook' })
     event.shaped(
         Item.of('enigmaticlegacy:animal_guidebook', 1),
@@ -54,9 +49,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // iron_ring: vanilla is pure iron_ingot + iron_nugget — trivially free, base for all rings
-    // add holy_silver_nugget to the empty center slot (ring forged around a holy core)
-    // gates: golden_ring, ender_ring, magnet_ring chains (all need iron_ring)
     event.remove({ output: 'enigmaticlegacy:iron_ring' })
     event.shaped(
         Item.of('enigmaticlegacy:iron_ring', 1),
@@ -72,8 +64,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // mega_sponge: vanilla mats only (heart_of_the_sea + nautilus + sponge + ender_eye + ghast_tear)
-    // swap ghast_tear (bottom-center) for holy_silver_plate
     event.remove({ output: 'enigmaticlegacy:mega_sponge' })
     event.shaped(
         Item.of('enigmaticlegacy:mega_sponge', 1),
@@ -91,8 +81,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // extradimensional_eye: vanilla mats only (ender_eye + gold + phantom_membrane + blaze_powder)
-    // swap blaze_powder (bottom-center) for holy_silver_nugget
     event.remove({ output: 'enigmaticlegacy:extradimensional_eye' })
     event.shaped(
         Item.of('enigmaticlegacy:extradimensional_eye', 1),
@@ -110,8 +98,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // insignia: vanilla mats only (ender_eye + gold + emerald + prismarine + name_tag)
-    // swap left gold_ingot for holy_silver_ingot
     event.remove({ output: 'enigmaticlegacy:insignia' })
     event.shaped(
         Item.of('enigmaticlegacy:insignia', 1),
@@ -130,9 +116,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // mending_mixture: vanilla mats only (dragon_breath + glistering_melon + prismarine + phantom_membrane + blaze_powder + ghast_tear)
-    // very powerful item (infinite mending without books) — add holy_silver_ingot
-    // uses custom no-return-craft type (ingredients not returned to inventory)
     event.remove({ output: 'enigmaticlegacy:mending_mixture', type: 'enigmaticlegacy:shapeless_no_return_craft' })
     event.custom({
         "type": "enigmaticlegacy:shapeless_no_return_craft",
@@ -148,8 +131,6 @@ ServerEvents.recipes(event => {
         "result": { "item": "enigmaticlegacy:mending_mixture" }
     })
 
-    // etherium_ingot: vanilla smelts/blasts etherium_ore in furnace — no GT gate
-    // remove all vanilla smelting paths, require EBF at 2700K (HV kanthal coils)
     event.remove({ output: 'enigmaticlegacy:etherium_ingot', type: 'minecraft:smelting' })
     event.remove({ output: 'enigmaticlegacy:etherium_ingot', type: 'minecraft:blasting' })
     event.remove({ output: 'enigmaticlegacy:etherium_ingot', type: 'minecraft:crafting_shapeless' })
@@ -160,10 +141,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // === EV / SORCERER ===
 
-    // super_magnet_ring: vanilla mats only (magnet_ring + gold + ender_eye + lapis)
-    // swap right gold_ingot for prima_materia_plate (Ring of Dislocation is very powerful)
     event.remove({ output: 'enigmaticlegacy:super_magnet_ring' })
     event.shaped(
         Item.of('enigmaticlegacy:super_magnet_ring', 1),
@@ -181,8 +159,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // enchantment_transposer: ALL vanilla mats (book + blaze + lapis + prismarine + gold_nugget + redstone)
-    // extremely powerful — swap gold_nugget (top-center) for prima_materia_plate
     event.remove({ output: 'enigmaticlegacy:enchantment_transposer' })
     event.shaped(
         Item.of('enigmaticlegacy:enchantment_transposer', 1),
@@ -201,8 +177,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // monster_charm: netherite + skeleton_skull + blaze + exp_bottle + soul_lantern
-    // netherite is hard but not a magic gate — swap netherite (bottom-center) for prima_materia_plate
     event.remove({ output: 'enigmaticlegacy:monster_charm' })
     event.shaped(
         Item.of('enigmaticlegacy:monster_charm', 1),
@@ -220,8 +194,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // xp_scroll: thicc_scroll + exp_bottle + ender_eye + ink_sac + feather + emerald — no magic gate
-    // swap emerald (bottom-center) for prima_materia_plate
     event.remove({ output: 'enigmaticlegacy:xp_scroll' })
     event.shaped(
         Item.of('enigmaticlegacy:xp_scroll', 1),
@@ -240,9 +212,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // evil_ingot: vanilla uses netherite center + evil_essence (loot) edges + ghast_tear corners
-    // swap top-center evil_essence for prima_materia_plate (EV marker)
-    // gates via evil_essence chain: the_twist, enchanter_pearl, infernal_shield, ender_slayer
     event.remove({ output: 'enigmaticlegacy:evil_ingot' })
     event.shaped(
         Item.of('enigmaticlegacy:evil_ingot', 1),
@@ -259,10 +228,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // === IV / ALCHEMIST ===
 
-    // forbidden_axe: diamond_axe + netherite + wither_skull + blaze — no magic gate
-    // fill empty bottom corners with botania:manasteel_ingot (IV marker — redirected to botania:)
     event.remove({ output: 'enigmaticlegacy:forbidden_axe' })
     event.shaped(
         Item.of('enigmaticlegacy:forbidden_axe', 1),
@@ -281,9 +247,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // cosmic_heart: vanilla uses nether_star + astral_dust + blaze_powder + heart_of_the_sea + ender_eye
-    // swap blaze_powder for manasteel_plate (IV marker — ingot redirects to botania: so use plate)
-    // gates: the_infinitum, desolation_ring, cosmic_cake
     event.remove({ output: 'enigmaticlegacy:cosmic_heart' })
     event.shaped(
         Item.of('enigmaticlegacy:cosmic_heart', 1),
@@ -301,10 +264,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // === LUV / THAUMATURGE ===
 
-    // enigmatic_elytra: vanilla uses elytra + dragon_breath + angel_blessing (loot) + etherium_ingot + astral_dust + eye_of_nebula
-    // swap dragon_breath for terrasteel_ingot (LuV marker — botania: namespace due to setIgnored)
     event.remove({ output: 'enigmaticlegacy:enigmatic_elytra' })
     event.shaped(
         Item.of('enigmaticlegacy:enigmatic_elytra', 1),
@@ -323,10 +283,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // === ZPM / ARCANIST ===
 
-    // the_infinitum: vanilla uses cosmic_heart + abyssal_heart + evil_essence + enchanter_pearl + the_twist + netherite
-    // swap netherite for elementium_ingot (ZPM marker — botania: namespace due to setIgnored)
     event.remove({ output: 'enigmaticlegacy:the_infinitum' })
     event.shaped(
         Item.of('enigmaticlegacy:the_infinitum', 1),
@@ -345,8 +302,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // desolation_ring: vanilla uses golden_ring + cosmic_heart + abyssal_heart + evil_essence + void_pearl + netherite
-    // swap netherite for elementium_plate (ZPM marker)
     event.remove({ output: 'enigmaticlegacy:desolation_ring' })
     event.shaped(
         Item.of('enigmaticlegacy:desolation_ring', 1),
@@ -365,11 +320,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // === CRAFTABLE LOOT ITEMS ===
-    // All originally loot-only — these block full crafting chains without a recipe
 
-    // astral_dust (HV): celestial dust used in many recipes (cosmic_heart, elytra, astral_breaker, etc.)
-    // source_gem + amethyst + holy_silver_dust + ender_eye → 4x astral_dust
     event.shaped(
         Item.of('enigmaticlegacy:astral_dust', 4),
         [
@@ -385,8 +336,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // recall_potion (HV): used in escape_scroll and twisted_mirror
-    // chorus_fruit (end teleport) + phantom_membrane + holy_silver_ingot + glass_bottle
     event.shaped(
         Item.of('enigmaticlegacy:recall_potion', 1),
         [
@@ -402,8 +351,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // eye_of_nebula (EV): used in end_anchor, escape_scroll, enigmatic_elytra
-    // etherium_ingot (HV gated) + astral_dust + prima_materia_plate + ender_eye + dragon_breath
     event.shaped(
         Item.of('enigmaticlegacy:eye_of_nebula', 1),
         [
@@ -420,8 +367,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // void_pearl (EV): used in desolation_ring
-    // ender_pearl surrounded by obsidian + prima_materia_plate
     event.shaped(
         Item.of('enigmaticlegacy:void_pearl', 1),
         [
@@ -436,8 +381,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // evil_essence (EV): used in 6+ recipes (evil_ingot, enchanter_pearl, the_twist, ender_slayer, etc.)
-    // wither_rose (death of mobs via wither) + prima_materia_plate (EV gate) → 2x
     event.shaped(
         Item.of('enigmaticlegacy:evil_essence', 2),
         [
@@ -451,8 +394,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // earth_heart (IV): used in mining_charm, infinimeal, twisted_heart (→ berserk_charm, soul_compass, cursed_stone, the_twist)
-    // moss_block (living earth) surrounding heart_of_the_sea, bound with manasteel (IV marker)
     event.shaped(
         Item.of('enigmaticlegacy:earth_heart', 1),
         [
@@ -467,8 +408,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // darkest_scroll (IV): used in cursed_scroll and avarice_scroll
-    // evil_essence (4x) + wither_rose (4x) + manasteel center (IV gate)
     event.shaped(
         Item.of('enigmaticlegacy:darkest_scroll', 1),
         [
@@ -483,8 +422,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // angel_blessing (LuV): used in enigmatic_elytra (2x) and heaven_scroll
-    // feathers + nether_star bound with terrasteel_ingot (LuV marker) → 2x
     event.shaped(
         Item.of('enigmaticlegacy:angel_blessing', 2),
         [
@@ -499,8 +436,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // abyssal_heart (LuV): used in the_infinitum and desolation_ring (both ZPM)
-    // crying_obsidian + wither_skeleton_skull (abyss themed) bound with terrasteel (LuV marker)
     event.shaped(
         Item.of('enigmaticlegacy:abyssal_heart', 1),
         [

@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    //mixing cauldron recipe
     event.remove({ id: 'hexerei:mixing_cauldron' });
 
     event.shaped(
@@ -22,13 +21,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
-    // imbuementFactoryRecipes.js forEachRecipe ran at priority 1 and mirrored these before this removal
     event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:fire_essence' });
     event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:earth_essence' });
     event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:air_essence' });
     event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:water_essence' });
 
-    //crude fire essence recipe
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -70,7 +67,6 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    //crude water essence recipe
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -112,7 +108,6 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    //crude air essence recipe
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -154,7 +149,6 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    //crude earth essence
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -196,7 +190,6 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    // oil synthesis step 1: marine biomass accumulation
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:water" },

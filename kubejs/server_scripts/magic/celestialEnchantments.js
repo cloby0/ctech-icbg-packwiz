@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Remove vanilla recipes — replaced with progression-gated versions below
     event.remove({ output: 'celestial_enchantments:basic_celestial_catalyst' })
     event.remove({ output: 'celestial_enchantments:advanced_celestial_catalyst' })
     event.remove({ output: 'celestial_enchantments:legendary_celestial_catalyst' })

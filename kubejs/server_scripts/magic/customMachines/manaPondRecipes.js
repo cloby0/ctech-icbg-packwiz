@@ -1,6 +1,3 @@
-//priority: 1
-// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla botania:mana_infusion recipes.
-// tier scripts call addManaPondRecipe directly to add both pool and factory recipes.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -17,7 +14,6 @@ function manaRound(num) {
     }
 }
 
-// maps catalyst block to GT circuit number: 1=no catalyst, 2=alchemy, 3=conjuration
 function catalystify(str) {
     if (str === "botania:alchemy_catalyst") {
         return 2;
@@ -28,7 +24,6 @@ function catalystify(str) {
     }
 }
 
-// conversion ratio: 1 mana = this many source fluid units (tweak to change GT machine cost relative to botania)
 let source_rate = 1
 
 let _nextManaPondIndex = 1
@@ -110,7 +105,6 @@ function addManaPondRecipe(event, crecipe) {
             .EUt(7680 + Math.round(mana / 25))
             .circuit(catalystify(catalystBlock))
 
-        // conjuration duplicates (input stays in, output added); alchemy transforms (input consumed)
         if (isConjuration) {
             r.notConsumable(itemInput)
             .itemOutputs(`1x ${outputId}`)
@@ -133,7 +127,6 @@ ServerEvents.recipes(event => {
         addManaPondRecipe(event, crecipe)
     })
 
-    // controller block crafting recipe
     event.recipes.gtceu.assembler('automated_mana_pond_controller')
         .itemInputs(
             '4x gtceu:manaplatinite_plate',

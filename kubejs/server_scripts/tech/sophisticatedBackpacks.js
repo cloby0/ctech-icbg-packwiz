@@ -43,28 +43,24 @@ ServerEvents.recipes(event => {
     ]
     sb_crafted.forEach(item => event.remove({ output: item }))
 
-    // base backpack (LV)
     event.recipes.gtceu.assembler('sb_backpack')
         .itemInputs('4x minecraft:leather', '2x gtceu:rubber_plate', '4x gtceu:tin_single_wire')
         .itemOutputs('sophisticatedbackpacks:backpack')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // bronze backpack (LV)
     event.recipes.gtceu.assembler('sb_copper_backpack')
         .itemInputs('sophisticatedbackpacks:backpack', '4x gtceu:bronze_ingot', '4x gtceu:bronze_plate')
         .itemOutputs('sophisticatedbackpacks:copper_backpack')
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // steel backpack (LV)
     event.recipes.gtceu.assembler('sb_iron_backpack')
         .itemInputs('sophisticatedbackpacks:copper_backpack', '4x gtceu:steel_ingot', '4x gtceu:steel_plate')
         .itemOutputs('sophisticatedbackpacks:iron_backpack')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // aluminium backpack (MV)
     event.recipes.gtceu.assembler('sb_gold_backpack')
         .itemInputs('sophisticatedbackpacks:iron_backpack', '4x gtceu:aluminium_ingot', '4x gtceu:aluminium_plate', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -72,7 +68,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // stainless steel backpack (HV)
     event.recipes.gtceu.assembler('sb_diamond_backpack')
         .itemInputs('sophisticatedbackpacks:gold_backpack', '4x gtceu:stainless_steel_ingot', '4x gtceu:stainless_steel_plate', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -80,7 +75,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // titanium backpack (EV)
     event.recipes.gtceu.assembler('sb_netherite_backpack')
         .itemInputs('sophisticatedbackpacks:diamond_backpack', '4x gtceu:titanium_ingot', '4x gtceu:titanium_plate', '#gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -88,14 +82,12 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // upgrade base (LV; x4 per craft)
     event.recipes.gtceu.assembler('sb_upgrade_base')
         .itemInputs('2x gtceu:steel_plate', 'gtceu:rubber_plate', '4x gtceu:tin_single_wire')
         .itemOutputs('4x sophisticatedbackpacks:upgrade_base')
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // stack upgrades
     event.recipes.gtceu.assembler('sb_stack_upgrade_starter')
         .itemInputs('sophisticatedbackpacks:upgrade_base', '8x gtceu:bronze_plate')
         .itemOutputs('sophisticatedbackpacks:stack_upgrade_starter_tier')
@@ -126,14 +118,12 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // naquadah stack upgrade requires LuV assembler
     event.recipes.gtceu.assembler('sb_stack_upgrade_omega')
         .itemInputs('sophisticatedbackpacks:stack_upgrade_tier_4', '4x gtceu:naquadah_plate')
         .itemOutputs('sophisticatedbackpacks:stack_upgrade_omega_tier')
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // utility upgrades (LV)
     event.recipes.gtceu.assembler('sb_pickup_upgrade')
         .itemInputs('sophisticatedbackpacks:upgrade_base', '2x gtceu:steel_rod', 'gtceu:lv_conveyor_module', '2x minecraft:redstone')
         .itemOutputs('sophisticatedbackpacks:pickup_upgrade')
@@ -164,7 +154,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // battery, void, magnet push into MV
     event.recipes.gtceu.assembler('sb_battery_upgrade')
         .itemInputs('sophisticatedbackpacks:upgrade_base', '2x gtceu:aluminium_plate', 'gtceu:mv_field_generator', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
@@ -222,7 +211,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // inception and everlasting are EV-tier (nether star + end materials)
     event.recipes.gtceu.assembler('sb_inception_upgrade')
         .itemInputs('sophisticatedbackpacks:upgrade_base', '4x minecraft:ender_eye', '2x minecraft:nether_star', '4x gtceu:titanium_plate', '#gtceu:circuits/ev')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -237,7 +225,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // advanced upgrades (HV)
     event.recipes.gtceu.assembler('sb_advanced_pickup_upgrade')
         .itemInputs('sophisticatedbackpacks:pickup_upgrade', '2x gtceu:stainless_steel_plate', '2x gtceu:aluminium_plate', '2x minecraft:redstone', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))

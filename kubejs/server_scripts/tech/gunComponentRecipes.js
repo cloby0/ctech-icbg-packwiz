@@ -1,10 +1,5 @@
-// Component prep chain for gun sub-assemblies (consumed by arms_manufacturer in guns.js).
-// Receivers/frames: Assembler + lubricant. Barrels: 2-step (Lathe blank → Assembler finish).
-// Fire control: Assembler; gains spring + wire + circuit at higher tiers.
 ServerEvents.recipes(event => {
 
-    // === PISTOL FRAME ===
-    // Compact receiver — handguns and revolvers. Fewer plates, no gear.
 
     event.recipes.gtceu.assembler('pistol_frame_lv')
         .itemInputs('2x gtceu:wrought_iron_plate', 'gtceu:wrought_iron_bolt', 'gtceu:wrought_iron_ring', 'gtceu:wrought_iron_screw', 'gtceu:steel_spring')
@@ -48,8 +43,6 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // === RIFLE RECEIVER ===
-    // Standard receiver — rifles, carbines, SMGs, shotguns. Extra plate + screws vs pistol frame.
 
     event.recipes.gtceu.assembler('rifle_receiver_lv')
         .itemInputs('3x gtceu:wrought_iron_plate', '2x gtceu:wrought_iron_bolt', 'gtceu:wrought_iron_ring', '2x gtceu:wrought_iron_screw', 'gtceu:steel_spring')
@@ -93,8 +86,6 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // === HEAVY FRAME ===
-    // Reinforced receiver — machine guns, sniper rifles, heavy weapons. Adds gear for action mechanism.
 
     event.recipes.gtceu.assembler('heavy_frame_lv')
         .itemInputs('4x gtceu:wrought_iron_plate', '2x gtceu:wrought_iron_bolt', 'gtceu:wrought_iron_ring', '2x gtceu:wrought_iron_screw', 'gtceu:steel_spring', 'gtceu:wrought_iron_gear')
@@ -138,9 +129,6 @@ ServerEvents.recipes(event => {
         .duration(150)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // === SHORT BARREL ===
-    // Step 1 (Lathe): Turn rod into rough blank.
-    // Step 2 (Assembler): Bore and chamber; ring seats the chamber mouth.
 
     event.recipes.gtceu.lathe('short_barrel_blank_lv')
         .itemInputs('gtceu:wrought_iron_rod')
@@ -226,9 +214,6 @@ ServerEvents.recipes(event => {
         .duration(150)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // === LONG BARREL ===
-    // Step 1 (Lathe): Turn rods into longer blank (2x rod vs 1x for short).
-    // Step 2 (Assembler): Rifle the bore and sleeve with precision pipe.
 
     event.recipes.gtceu.lathe('long_barrel_blank_lv')
         .itemInputs('2x gtceu:wrought_iron_rod')
@@ -314,8 +299,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // === GUN FIRE CONTROL ===
-    // Trigger group. LV = pure mechanical spring. MV+ gains wire and circuits for electronic triggers.
 
     event.recipes.gtceu.assembler('gun_fire_control_lv')
         .itemInputs('gtceu:wrought_iron_bolt', '2x gtceu:wrought_iron_ring', 'gtceu:steel_spring')

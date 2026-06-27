@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // No vanilla removals — no vanilla crafting recipes exist for artifacts items
-    // eternal_steak furnace/smoker/campfire recipes kept (everlasting_beef → eternal_steak)
-    // mimic_spawn_egg skipped — creative-only item
 
     event.shaped(Item.of('artifacts:lucky_scarf', 1), [
         'GGG', 'GSG', 'GRG'
@@ -271,7 +268,6 @@ ServerEvents.recipes(event => {
         sourceCost: 5000
     })
 
-    // cooked via furnace into eternal_steak
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: ['minecraft:golden_apple', 'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:cooked_chicken', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],

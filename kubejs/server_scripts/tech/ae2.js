@@ -126,7 +126,6 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'mae2:eu_multi_p2p_tunnel' })
 
-    // not: { output } excludes the circuit_assembler recipe itself
     event.replaceInput(
         { input: 'ae2:logic_processor', not: { output: 'kubejs:matter_energy_circuit' } },
         'ae2:logic_processor',
@@ -156,7 +155,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // fluix crystal via mixer (parallel path alongside create mixing)
     event.recipes.gtceu.mixer('ae2_fluix_crystal')
         .itemInputs(
             '1x ae2:charged_certus_quartz_crystal',
@@ -1429,9 +1427,6 @@ ServerEvents.recipes(event => {
         .duration(120 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // PackagedAuto: gate package_component behind basic AE2 + HV assembler.
-    // All downstream items (encoder, recipe_holder, crafting_proxy, distributor,
-    // fluid_package_filler) require package_component so they gate transitively.
     event.remove({ output: 'packagedauto:package_component' })
     event.recipes.gtceu.assembler('packagedauto_package_component')
         .itemInputs('2x ae2:fluix_crystal', '2x create:golden_sheet', '1x minecraft:ender_eye')
@@ -1440,18 +1435,15 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Advanced AE reaction chamber: remove machine crafting recipe and all processing recipes
     event.remove({ output: 'advanced_ae:reaction_chamber' })
     event.remove({ type: 'advanced_ae:reaction' })
 
-    // shattered_singularity: only made in reaction chamber; GT mixer alternative
     event.recipes.gtceu.mixer('advanced_ae_shattered_singularity')
         .itemInputs('1x ae2:singularity', '2x gtceu:ender_pearl_dust', '2x ae2:sky_dust')
         .itemOutputs('2x advanced_ae:shattered_singularity')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // quantum_alloy: only made in reaction chamber; GT chemical reactor alternative
     event.recipes.gtceu.chemical_reactor('advanced_ae_quantum_alloy')
         .itemInputs('4x minecraft:copper_ingot', '4x advanced_ae:shattered_singularity', '4x ae2:singularity')
         .inputFluids(Fluid.of('gtceu:oxygen', 1000))
@@ -1459,7 +1451,6 @@ ServerEvents.recipes(event => {
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // quantum_alloy_plate: only made in reaction chamber; GT assembler alternative
     event.recipes.gtceu.assembler('advanced_ae_quantum_alloy_plate')
         .itemInputs('8x advanced_ae:quantum_alloy', '2x minecraft:netherite_ingot', '1x minecraft:nether_star')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -1467,7 +1458,6 @@ ServerEvents.recipes(event => {
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // quantum_processor: inscriber chain removed + reaction chamber removed; me_fabricator bypass
     event.recipes.gtceu.me_fabricator('advanced_ae_quantum_processor')
         .itemInputs(
             '2x advanced_ae:quantum_alloy',
@@ -1479,7 +1469,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // megacells accumulation_processor: inscriber chain removed + reaction chamber removed; me_fabricator bypass
     event.recipes.gtceu.me_fabricator('megacells_accumulation_processor')
         .itemInputs(
             '2x gtceu:sky_steel_plate',

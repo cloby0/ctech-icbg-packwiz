@@ -18,22 +18,17 @@ ServerEvents.tags('item', event => {
   event.add('forge:gems/ambrosium', 'aether:ambrosium_shard');
   event.add('forge:gems/zanite', 'aether:zanite_gemstone');
 
-  // Unify SW cemented carbide ingot into forge tag so AlmostUnified substitutes gtceu version
   event.add('forge:ingots/cemented_carbide', 'superbwarfare:cemented_carbide_ingot');
 
-  // technomancy focus: replace vanilla redstone with LV circuit
   event.remove('cataclysm_spellbooks:technomancy_focus', 'minecraft:redstone')
   event.add('cataclysm_spellbooks:technomancy_focus', '#gtceu:circuits/lv')
 
-  // scroll_forge foci: add Ars crude essences where thematic, fix holy inconsistency
   event.add('irons_spellbooks:fire_focus',      'ars_nouveau:fire_essence')
   event.add('irons_spellbooks:ice_focus',       'ars_nouveau:water_essence')
   event.add('irons_spellbooks:nature_focus',    'ars_nouveau:earth_essence')
   event.add('irons_spellbooks:lightning_focus', 'ars_nouveau:air_essence')
-  // holy rune uses golden_apple; add it to holy_focus so both work
   event.add('irons_spellbooks:holy_focus',    'minecraft:golden_apple')
 
-  // Magic tier tooltip tags
   event.add('kubejs:magic/apprentice', ['gtceu:luminessence_dust', 'hexcasting:charged_amethyst', 'irons_spellbooks:magic_cloth'])
   event.add('kubejs:magic/journeyman', ['ars_nouveau:source_gem', 'kubejs:resonant_zanite_crystal', 'aether_redux:veridium_ingot', 'irons_spellbooks:arcane_ingot', 'irons_spellbooks:cinder_essence'])
   event.add('kubejs:magic/journeyman', ['irons_spellbooks:arcane_rune', 'irons_spellbooks:blood_rune', 'irons_spellbooks:cooldown_rune', 'irons_spellbooks:ender_rune', 'irons_spellbooks:evocation_rune', 'irons_spellbooks:fire_rune', 'irons_spellbooks:holy_rune', 'irons_spellbooks:ice_rune', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:nature_rune', 'irons_spellbooks:protection_rune', 'cataclysm_spellbooks:abyssal_rune', 'cataclysm_spellbooks:technomancy_rune'])

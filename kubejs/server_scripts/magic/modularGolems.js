@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // metal_golem_template: gated at Initiate (HV) — divine_pearl + holy_silver
-    // all wands require the template, so gating this gates the whole wand system
     event.remove({ id: 'modulargolems:metal_golem_template' })
     event.shaped(
         Item.of('modulargolems:metal_golem_template', 1),
@@ -17,8 +15,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // empty_upgrade: gated at Initiate (HV) — holy_silver center, output reduced 4→2
-    // all upgrades require this, so gating here gates every upgrade
     event.remove({ id: 'modulargolems:empty_upgrade' })
     event.shaped(
         Item.of('modulargolems:empty_upgrade', 2),
@@ -34,7 +30,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // golem_workbench: gated at Alchemist (IV) — manasteel corners
     event.remove({ id: 'modulargolems:golem_workbench' })
     event.shaped(
         Item.of('modulargolems:golem_workbench', 1),
@@ -53,7 +48,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // diamond_expansion_template: gated at Alchemist (IV) — manasteel center, 2x divine_pearl
     event.remove({ id: 'modulargolems:diamond_expansion_template' })
     event.shaped(
         Item.of('modulargolems:diamond_expansion_template', 1),
@@ -70,7 +64,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // netherite_expansion_template: gated at Sorcerer (EV) + Alchemist (IV) — prima_materia + manasteel
     event.remove({ id: 'modulargolems:netherite_expansion_template' })
     event.shaped(
         Item.of('modulargolems:netherite_expansion_template', 1),
@@ -88,7 +81,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // harbinger_upgrade_template: gated at Arcanist (ZPM) — elementium replaces terrasteel
     event.remove({ id: 'modulargolems:harbinger_upgrade_template' })
     event.shaped(
         Item.of('modulargolems:harbinger_upgrade_template', 1),
@@ -105,7 +97,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // monstrosity_upgrade_template: gated at Arcanist (ZPM) — elementium replaces terrasteel, manasteel replaces gold
     event.remove({ id: 'modulargolems:monstrosity_upgrade_template' })
     event.shaped(
         Item.of('modulargolems:monstrosity_upgrade_template', 1),

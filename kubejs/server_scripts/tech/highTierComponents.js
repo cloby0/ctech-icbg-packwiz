@@ -1,14 +1,6 @@
-// Machine casings/hulls, coils, and all components for UHV/UEV/UIV tiers.
-// GT only defines component recipes through UV. UHV/UEV/UIV need manual recipes.
-// Requires GTCEu high tier enabled in config.
 
 ServerEvents.recipes(event => {
 
-    // =========================================================
-    // COILS
-    // KubeJS-registered coils get no auto-gen recipes.
-    // Pattern: 8x spring (coiled rod) + 8x foil (insulation) + binding fluid
-    // =========================================================
 
     event.recipes.gtceu.assembler('draconium_wire_coil_recipe')
         .itemInputs(
@@ -30,7 +22,6 @@ ServerEvents.recipes(event => {
         .duration(1100)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // cumium is SC — use awakened_draconium (non-SC) double wire for heat generation
     event.recipes.gtceu.assembler('cumium_wire_coil_recipe')
         .itemInputs(
             '8x gtceu:awakened_draconium_double_wire',
@@ -41,10 +32,6 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // =========================================================
-    // MACHINE CASINGS
-    // GT defines casings to UHV (Neutronium). UEV/UIV need manual recipes.
-    // =========================================================
 
     event.recipes.gtceu.assembler('uev_machine_casing_recipe')
         .itemInputs('8x gtceu:awakened_draconium_plate')
@@ -62,11 +49,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
-    // =========================================================
-    // MACHINE HULLS
-    // GT defines hulls to UHV. UEV/UIV need manual recipes.
-    // Pattern: tier_casing + 2x tier_wire + Polybenzimidazole 288mB
-    // =========================================================
 
     event.recipes.gtceu.assembler('uev_machine_hull_recipe')
         .itemInputs(
@@ -88,11 +70,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
-    // =========================================================
-    // ELECTRIC MOTORS
-    // Assembly line. Pattern: magnetic_long_rod + metal_long_rod×4 + bolt×4 + screw×8
-    //   + base_fine_wire×64 + wire_fine_wire×32 + wire×2 + SA + Lubricant
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('electric_motor_uhv')
         .itemInputs(
@@ -148,11 +125,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // ELECTRIC PISTONS
-    // Assembly line. Pattern: motor + plate×4 + bolt×4 + screw×8 + rod×4 + spring×2 + wire×2
-    // UIV substitutes cumium_long_rod for spring (cumium has no spring flag)
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('electric_piston_uhv')
         .itemInputs(
@@ -208,10 +180,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // CONVEYOR MODULES
-    // Assembler. Pattern: wire + motor×2 + StyreneButadieneRubber 864mB + circuit(1)
-    // =========================================================
 
     event.recipes.gtceu.assembler('conveyor_module_uhv')
         .itemInputs(
@@ -246,11 +214,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // ELECTRIC PUMPS
-    // Assembly line. Pattern: motor + long_rod×2 + bolt×2 + screw×4 + spring (rotor) + wire×2 + SBR + SA
-    // UIV uses extra cumium_rod as rotor substitute (no spring)
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('electric_pump_uhv')
         .itemInputs(
@@ -303,11 +266,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // ROBOT ARMS
-    // Assembly line. Pattern: long_rod×4 + plate×2 + bolt×4 + motor×2 + piston
-    //   + circuits (tier + tier-1×2 + tier-2×4) + wire×4 + SA + Lubricant
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('robot_arm_uhv')
         .itemInputs(
@@ -369,12 +327,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // SENSORS
-    // Assembly line. Pattern: frame + motor + plate×4 + gem + circuits×2
-    //   + foil×64 + foil×32 + wire×4 + SA
-    // Pack gems: UHV=dragon_heart_crystal, UEV=chaos_shard, UIV=large_chaos_frag
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('sensor_uhv')
         .itemInputs(
@@ -433,11 +385,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // EMITTERS
-    // Assembly line. Pattern: frame + motor + long_rod×4 + gem + circuits×2
-    //   + foil×64 + foil×32 + wire×4 + SA
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('emitter_uhv')
         .itemInputs(
@@ -496,12 +443,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // FIELD GENERATORS
-    // Assembly line. Pattern: frame + plate×6 + special_item + emitter×2 + circuits×2
-    //   + fine_wire×64 + fine_wire×64 (wire_material) + wire×4 + SA + exotic_fluid
-    // Pack exotic fluid: UHV=draconic_computation, UEV/UIV=chaos_matrix_fluid
-    // =========================================================
 
     event.recipes.gtceu.assembly_line('field_generator_uhv')
         .itemInputs(
@@ -560,11 +501,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================
-    // VOLTAGE COILS
-    // GT auto-generates ULV-UV. UHV/UEV/UIV need manual recipes.
-    // Pattern matches GT: magnetic_samarium rod + 16x fine wire (tier material)
-    // =========================================================
 
     event.recipes.gtceu.assembler('voltage_coil_uhv')
         .itemInputs(

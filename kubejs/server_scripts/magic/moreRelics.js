@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // No vanilla removals — all more relics items are loot drops only by default
 
     event.shaped(Item.of('morerelics:moodworm', 1), [
         'WBW', 'BDB', 'WBW'
@@ -68,7 +67,6 @@ ServerEvents.recipes(event => {
         sourceCost: 1500
     })
 
-    // depleted_spool consumed as primary component
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['morerelics:depleted_spool', 'minecraft:string', 'minecraft:string', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
@@ -139,7 +137,6 @@ ServerEvents.recipes(event => {
         sourceCost: 4000
     })
 
-    // Sage tier (UV) — gaia_ingot gates all four
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: ['botania:gaia_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium'],

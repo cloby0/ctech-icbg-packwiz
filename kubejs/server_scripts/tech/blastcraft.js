@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // only replace primary crafting recipes; stair/slab/wall/polished/smooth variants kept vanilla
-    // blastproofwallbase has a custom blast_compressor recipe type — that stays; GT forming_press added as alternative path
 
     event.remove({ output: 'blastcraft:concretemix' })
     event.remove({ output: 'blastcraft:hardenedbricksbase' })
@@ -71,7 +69,6 @@ ServerEvents.recipes(event => {
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // vanilla blast_compressor machine recipe also still works
     event.recipes.gtceu.forming_press('blastcraft_blastproofwallbase')
         .itemInputs('2x blastcraft:rawblastproofwallbase', 'gtceu:stainless_steel_plate', '#gtceu:circuits/ev')
         .itemOutputs('4x blastcraft:blastproofwallbase')

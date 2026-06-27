@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Liquid draconium — Fusion Reactor MK3 (primary source; ore removed from worldgen)
-    // Calibrated above neutronium recipe (128+128→32, EUt 98304, startEU 600M)
     event.recipes.gtceu.fusion_reactor('draconium_fusion')
         .inputFluids(
             Fluid.of('gtceu:plutonium_241', 128),
@@ -12,17 +10,11 @@ ServerEvents.recipes(event => {
         .EUt(98304)
         .fusionStartEU(640000000)
 
-    // draconium EBF is auto-generated from blastTemp(9000) in gtceuMaterialRegistry.js
-    // ingot setIgnored → draconicevolution:draconium_ingot; vanilla smelt removed below
 
-    // Remove DE vanilla smelting — EBF is the only path for draconium,
-    // Draconic Infusion Chamber is the only path for awakened_draconium
     event.remove({ type: 'minecraft:smelting', output: 'draconicevolution:draconium_ingot' })
     event.remove({ type: 'minecraft:blasting', output: 'draconicevolution:draconium_ingot' })
     event.remove({ type: 'minecraft:smelting', output: 'draconicevolution:awakened_draconium_ingot' })
 
-    // awakened_draconium — Draconic Infusion Chamber (UHV gate)
-    // draconium_ingot + draconic_computation → awakened_draconium_ingot
     event.recipes.gtceu.draconic_infusion_chamber('awakened_draconium_infusion')
         .itemInputs('1x draconicevolution:draconium_ingot')
         .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
@@ -30,8 +22,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // draconic_framework mixer — replaces auto-generated mixer to add dragon_heart_crystal gate
-    // EBF at 12000K is auto-generated from components + blastTemp in startup
     event.remove({ type: 'gtceu:mixer', output: 'gtceu:draconic_framework_dust' })
     event.recipes.gtceu.mixer('draconic_framework_dust_mixing')
         .itemInputs(
@@ -44,7 +34,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // Draconic Computation fluid — UV Chemical Reactor
     event.recipes.gtceu.chemical_reactor('draconic_computation_synthesis')
         .itemInputs(
             '2x #gtceu:circuits/uv',
@@ -56,7 +45,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // Draconic Boule cutting — 384 neutronium wafers (vs 192 from gaian_neutronium_boule)
     event.recipes.gtceu.cutter('cut_draconic_boule')
         .itemInputs('kubejs:draconic_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 2000))
@@ -65,7 +53,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // Draconic Resonance Board — UHV cleanroom assembler
     event.recipes.gtceu.assembler('draconic_resonance_board_assembly')
         .itemInputs(
             '4x gtceu:neutronium_wafer',
@@ -79,8 +66,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // Draconic Framework Casing — UHV assembler
-    // #gtceu:circuits/uhv = gtceu:wetware_processor_mainframe (GTCEu native, unchanged)
     event.recipes.gtceu.assembler('draconic_framework_casing_assembly')
         .itemInputs(
             '4x gtceu:draconic_framework_plate',
@@ -93,10 +78,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // awakened_framework EBF auto-generated from components + blastTemp in startup
 
-    // Draconic Processor Supercomputer — UHV circuit, primary assembly line
-    // Also tagged into #gtceu:circuits/uhv alongside wetware mainframe
     event.recipes.gtceu.assembly_line('draconic_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:tritanium_frame',
@@ -122,7 +104,6 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(300000)
 
-    // Draconic Processor — ZPM-level entry circuit, circuit_assembler at UHV
     event.recipes.gtceu.circuit_assembler('draconic_processor_recipe')
         .itemInputs(
             '1x gtceu:neutronium_wafer',
@@ -138,7 +119,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // Draconic Processor Assembly — UV-level, upcraft from draconic_processor
     event.recipes.gtceu.circuit_assembler('draconic_processor_assembly_recipe')
         .itemInputs(
             '2x kubejs:draconic_processor',
@@ -156,8 +136,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // Draconic Processor Mainframe — UEV-level, draconic theme terminus
-    // Requires chaos_crystal_dust crossover: pushing draconics to UEV needs chaos access
     event.recipes.gtceu.assembly_line('draconic_processor_mainframe_recipe')
         .itemInputs(
             '2x gtceu:tritanium_frame',

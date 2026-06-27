@@ -1,17 +1,12 @@
 ServerEvents.recipes(event => {
 
-    // chaotic_singulite and awakened_framework EBF recipes are auto-generated from
-    // components + blastTemp defined in gtceuMaterialRegistry.js
 
-    // chaos_crystal_dust — UV macerator, from Chaos Guardian drop
     event.recipes.gtceu.macerator('chaos_shard_maceration')
         .itemInputs('1x draconicevolution:chaos_shard')
         .itemOutputs('4x gtceu:chaos_crystal_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // Chaos Harmonic Board — UHV cleanroom assembler
-    // stabilized_chaos_crystal recipe is in ascendant.js (Ascendant magic gate)
     event.recipes.gtceu.assembler('chaos_harmonic_board_assembly')
         .itemInputs(
             '4x gtceu:neutronium_wafer',
@@ -25,7 +20,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // Chaos Processor Supercomputer — UEV circuit, primary assembly line
     event.recipes.gtceu.assembly_line('chaos_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
@@ -51,7 +45,6 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Draconic Processor Supercomputer — cheaper alternate at UEV (no assembly line needed)
     event.recipes.gtceu.circuit_assembler('draconic_processor_supercomputer_uev_alt')
         .itemInputs(
             '1x gtceu:tritanium_frame',
@@ -70,7 +63,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Cumium Processor Assembly — UIV circuit, primary assembly line
     event.recipes.gtceu.assembly_line('cumium_processor_assembly_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
@@ -95,7 +87,6 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // Chaos Processor Supercomputer — cheaper alternate at UIV
     event.recipes.gtceu.circuit_assembler('chaos_processor_supercomputer_uiv_alt')
         .itemInputs(
             '1x gtceu:awakened_framework_frame',
@@ -114,8 +105,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // Biogenic Synthesis Casing — UEV assembler, life-sealed crystallization vessel wall
-    // abstract_elastomer_ingot seals the chamber against biological material escape
     event.recipes.gtceu.assembler('biogenic_synthesis_casing_assembly')
         .itemInputs(
             '4x gtceu:awakened_draconium_plate',
@@ -130,8 +119,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // chaos_matrix_fluid — UHV chemical reactor
-    // Requires: chaos_shard + gaia_spirit_dust + stellar plasma + draconic_computation
     event.recipes.gtceu.chemical_reactor('chaos_matrix_fluid_synthesis')
         .itemInputs(
             '1x draconicevolution:chaos_shard',
@@ -145,13 +132,10 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // Draconic Reactor gating — replaces all three DE Fusion Crafting reactor recipes
-    // Reactor is gated behind cumium (UIV) + Ascendant magic + full chaos progression
     event.remove({ id: 'draconicevolution:machines/reactor_core' })
     event.remove({ id: 'draconicevolution:machines/reactor_stabilizer' })
     event.remove({ id: 'draconicevolution:machines/reactor_injector' })
 
-    // reactor_core — hardest component, requires UIV circuit + Ascendant gate + cumium
     event.recipes.gtceu.assembly_line('draconic_reactor_core')
         .itemInputs(
             '2x gtceu:cumium_ingot',
@@ -170,7 +154,6 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // reactor_stabilizer — UEV assembler, cumium structural components
     event.recipes.gtceu.assembler('draconic_reactor_stabilizer')
         .itemInputs(
             '2x gtceu:cumium_plate',
@@ -184,7 +167,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // reactor_injector — UEV assembler, cumium rod conductors
     event.recipes.gtceu.assembler('draconic_reactor_injector')
         .itemInputs(
             '2x gtceu:cumium_rod',
@@ -197,11 +179,7 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // =========================================================================
-    // CHAOS THEME: UV → UIV
-    // =========================================================================
 
-    // Chaos Processor — UV-level chaos theme entry, circuit_assembler at UEV
     event.recipes.gtceu.circuit_assembler('chaos_processor_recipe')
         .itemInputs(
             '4x gtceu:chaos_crystal_dust',
@@ -217,7 +195,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Chaos Processor Assembly — UHV-level, upcraft from chaos_processor
     event.recipes.gtceu.circuit_assembler('chaos_processor_assembly_recipe')
         .itemInputs(
             '2x kubejs:chaos_processor',
@@ -237,7 +214,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Chaos Processor Mainframe — UIV-level, chaos theme terminus, assembly line
     event.recipes.gtceu.assembly_line('chaos_processor_mainframe_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
@@ -261,11 +237,7 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // =========================================================================
-    // CUMIUM THEME: UEV → UXV
-    // =========================================================================
 
-    // Cumium Processor — UEV-level cumium theme entry, circuit_assembler at UIV
     event.recipes.gtceu.circuit_assembler('cumium_processor_recipe')
         .itemInputs(
             '4x gtceu:cumium_foil',
@@ -284,7 +256,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // Artificial Cumium Brain — UXV-level, cumium theme terminus, assembly line at UIV
     event.recipes.gtceu.assembly_line('artificial_cumium_brain_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',

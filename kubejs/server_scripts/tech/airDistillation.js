@@ -40,7 +40,6 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // source_fluid is not separated by centrifuge; distillation tower required
     event.recipes.gtceu.distillation_tower('aether_air_distillation')
         .inputFluids(Fluid.of('gtceu:liquid_aether_air', 50000))
         .outputFluids(Fluid.of('gtceu:helium', 25000))

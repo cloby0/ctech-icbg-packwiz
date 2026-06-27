@@ -1,5 +1,3 @@
-// Tiered lookup tables for gun sub-assemblies, same pattern GTCEu uses for HULL/CABLE.
-// Used in guns.js via e.g. PISTOL_FRAME.get(tier).
 GTCEuStartupEvents.craftingComponents(event => {
 
     event.createItem('pistol_frame', Item.of('kubejs:lv_pistol_frame'))

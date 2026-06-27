@@ -84,7 +84,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // all three gadget variants are cosmetic — programmed circuit selects skin
     event.recipes.gtceu.assembler('mg_mininggadget_simple')
         .circuit(1)
         .itemInputs('4x gtceu:stainless_steel_plate', 'gtceu:hv_electric_motor', 'gtceu:hv_sensor', '#gtceu:circuits/hv')

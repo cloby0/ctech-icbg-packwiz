@@ -1,9 +1,7 @@
 ServerEvents.recipes(event => {
 
-    // all assembly station recipes replaced by cyberware_constructor
     event.remove({ type: 'cyber_ware_port:assembly' })
 
-    // vanilla crafting for infrastructure replaced by GT machines
     event.remove({ output: 'cyber_ware_port:surgery_chamber' })
     event.remove({ output: 'cyber_ware_port:charger' })
     event.remove({ output: 'cyber_ware_port:robo_surgeon' })
@@ -11,8 +9,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cyber_ware_port:neuropozyne' })
     event.remove({ output: 'cyber_ware_port:katana' })
 
-    // still used by radio_tower_core and robo_surgeon vanilla recipes
-    // provided via GT machines so they're obtainable without loot grinding
 
     event.recipes.gtceu.assembler('cw_component_plating')
         .itemInputs('2x gtceu:stainless_steel_plate')

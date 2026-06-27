@@ -79,7 +79,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Dc')
         .isIsotope(false)
 
-    // awakened draconium is an energized isotope of draconium (same element, higher mass)
     event.create('awakened_draconium')
         .protons(56)
         .neutrons(192)
@@ -116,9 +115,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
-    // components() dispatches to eager GTMaterials.get() and fails for custom materials
-    // MaterialStackWrapper.fromString dispatches to kjs$components which stores a lazy Supplier
-    // that resolves after the full event so custom materials are in the registry
     const MSW = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.helpers.MaterialStackWrapper')
     function c(str) { return MSW.fromString(str) }
 
@@ -667,8 +663,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // magic-machine structural alloys
-    // used as multiblock casing blocks and controller crafting components, not wires
 
     event.create('consecrated_chromite')
         .ingot()
@@ -730,8 +724,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FRAME
         )
 
-    // Cemented carbide (WC-Co sintered composite). HV EBF material.
-    // Replaces superbwarfare:cemented_carbide_ingot entirely — SW supply chain is killed.
     event.create('cemented_carbide')
         .ingot()
         .fluid()
@@ -790,9 +782,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
 
-    // GT gem material for the DE chaos crystal family — 5 tiers map to 5 DE items via setIgnored
-    // chipped=small_frag, flawed=medium_frag, gem=chaos_shard, flawless=large_frag, exquisite=chaos_crystal
-    // dust form (chaos_crystal_dust) used in alloy components and EC recipes
     event.create('chaos_crystal')
         .element('chaos_crystal')
         .gem()
@@ -802,8 +791,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.GEM_VERTICAL)
         .flags(GTMaterialFlags.GENERATE_LENS)
 
-    // UHV structural alloy — casing for Draconic Infusion Chamber
-    // Mixer gate: dragon_heart_crystal added to mixer recipe in uhvAndDraconic.js (auto-mixer replaced)
     event.create('draconic_framework')
         .ingot()
         .fluid()
@@ -820,7 +807,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UEV structural alloy — casing for UEV chaos multiblock (TBD)
     event.create('awakened_framework')
         .ingot()
         .fluid()
@@ -837,7 +823,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UHV magic-tech superconductor cable — EBF 12000K
     event.create('draconic_fluxite')
         .ingot()
         .fluid()
@@ -853,7 +838,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UEV magic-tech superconductor cable — EBF 14400K
     event.create('chaotic_singulite')
         .ingot()
         .fluid()
@@ -869,8 +853,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    // UEV/UIV polymer: the platonic concept of rubber, parallel to abstract_metal
-    // Used as hull plate and reactor pipe insulator beyond PBI tier
     event.create('abstract_elastomer')
         .ingot()
         .fluid()

@@ -18,8 +18,6 @@ StartupEvents.registry('block', event => {
         .hardness(7).resistance(18)
         .tagBlock('mineable/pickaxe')
 
-    // 12600K / level 16 / energy discount 16 / tier 9
-    // Springs auto-generated from draconium GENERATE_SPRING flag
     event.create('draconium_wire_coil', 'gtceu:coil')
         .temperature(12600)
         .level(16)
@@ -27,8 +25,6 @@ StartupEvents.registry('block', event => {
         .tier(9)
         .coilMaterial(() => GTMaterials.get('draconium'))
 
-    // 14400K / level 32 / energy discount 16 / tier 10
-    // Springs auto-generated from awakened_draconium GENERATE_SPRING flag
     event.create('awakened_draconium_wire_coil', 'gtceu:coil')
         .temperature(14400)
         .level(32)
@@ -36,8 +32,6 @@ StartupEvents.registry('block', event => {
         .tier(10)
         .coilMaterial(() => GTMaterials.get('awakened_draconium'))
 
-    // 16200K / level 64 / energy discount 16 / tier 11
-    // cumium has no spring flag — recipe uses long_cumium_rod as substitute
     event.create('cumium_wire_coil', 'gtceu:coil')
         .temperature(16200)
         .level(64)

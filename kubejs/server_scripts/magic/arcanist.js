@@ -45,8 +45,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // elven_source_lattice: second Arcanist gate item alongside elven_concentrate
-    // zanite crystal (Hobbyist) + elven realm energy → attuned lattice for ice/nature/storm spellbooks
     addImbuementRecipe(event, {
         input: 'kubejs:elven_concentrate',
         output: 'kubejs:elven_source_lattice',
@@ -54,8 +52,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem']
     })
 
-    // 5x source gem per raw at Arcanist tier
-    // elven_concentrate: condensed elven realm magic, uniquely attuned to source energy
     addEnchantingRecipe(event, {
         reagent: { item: 'gtceu:raw_source' },
         pedestalItems: [
@@ -68,8 +64,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // pixie_dust: currently 1:1 elven trade only (mana_pearl → pixie_dust)
-    // 3x yield via EA; elven concentrate supplies the elven attunement
     addEnchantingRecipe(event, {
         reagent: { item: 'botania:mana_pearl' },
         pedestalItems: [
@@ -82,8 +76,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // dragonstone: currently 1:1 elven trade only (mana_diamond → dragonstone)
-    // 2x yield via EA
     addEnchantingRecipe(event, {
         reagent: { item: 'botania:mana_diamond' },
         pedestalItems: [

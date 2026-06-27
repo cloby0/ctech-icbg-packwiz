@@ -1,16 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Leave alone (already gated by Create machines or CNA energising recipes):
-    // - overcharged_iron/gold/diamond (energising recipe type)
-    // - blank_circuit (Create superheated compacting)
-    // - copper_circuit (Create deploying blank_circuit)
-    // - copper_wire <-> copper_wire_block (circular conversion, wires come from CNA cutting)
-    // - overcharged_iron/golden/diamond wire + wire_blocks (Create cutting + sequenced)
-    // - reactor_casing, nuclear_fuel (Create sequenced assembly)
-    // - reactor_glass, reactor_fuel_acceptor, reactor_rod, reactor_heat_vent (sequenced/mech crafting)
-    // - reinforced_motor, advanced_motor_extension (Create mechanical crafting)
-    // - thorium, radioactive_thorium (Create mixing/crushing)
-    // - overcharged_iron/golden sheets (Create pressing)
 
     const cna_items = [
         'create_new_age:basic_energiser',
@@ -35,7 +24,6 @@ ServerEvents.recipes(event => {
     ]
     cna_items.forEach(item => event.remove({ output: item }))
 
-    // ENERGISERS
     event.recipes.gtceu.assembler('cna_basic_energiser')
         .itemInputs(
             'create:andesite_casing',
@@ -47,7 +35,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // advanced_energiser: field generator gates this to players who have built GT EBF (MV→HV bridge)
     event.recipes.gtceu.assembler('cna_advanced_energiser')
         .itemInputs(
             'create_new_age:basic_energiser',
@@ -73,7 +60,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // MOTORS (kinetic → electric generators)
     event.recipes.gtceu.assembler('cna_basic_motor')
         .itemInputs(
             'gtceu:mv_electric_motor',
@@ -99,7 +85,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // copper_circuit replaced with GT circuits — copper_circuit stays in CNA's own Create machine chain
     event.recipes.gtceu.assembler('cna_basic_motor_extension')
         .itemInputs(
             'create_new_age:basic_motor',
@@ -111,7 +96,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // GENERATOR COIL — precision copper winding, needs MV circuit for wound-layer control
     event.recipes.gtceu.assembler('cna_generator_coil')
         .itemInputs(
             '8x create:copper_sheet',
@@ -122,7 +106,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // CARBON BRUSHES — pure mechanical sliding contacts, no circuit
     event.recipes.gtceu.assembler('cna_carbon_brushes')
         .itemInputs(
             '4x create:andesite_alloy',
@@ -133,7 +116,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // ELECTRICAL CONNECTOR — pure conductor, no circuit
     event.recipes.gtceu.assembler('cna_electrical_connector')
         .itemInputs(
             '4x create:copper_sheet',
@@ -143,8 +125,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // HEAT SYSTEM
-    // heat_pipe: pure thermal conductor, no circuit
     event.recipes.gtceu.assembler('cna_heat_pipe')
         .itemInputs(
             '2x create:copper_sheet',
@@ -155,7 +135,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // heat_pump: active heat amplification — MV circuit for thermal regulation logic
     event.recipes.gtceu.assembler('cna_heat_pump')
         .itemInputs(
             '2x create_new_age:heat_pipe',
@@ -166,7 +145,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // heater: electricity-to-heat conversion — HV circuit for power conditioning
     event.recipes.gtceu.assembler('cna_heater')
         .itemInputs(
             'create:empty_blaze_burner',
@@ -179,7 +157,6 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // stirling_engine: heat-to-kinetic — MV circuit for governor/throttle
     event.recipes.gtceu.assembler('cna_stirling_engine')
         .itemInputs(
             '2x create_new_age:heat_pipe',
@@ -191,7 +168,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // basic_solar_heating_plate: passive absorption, no circuit
     event.recipes.gtceu.assembler('cna_basic_solar_heating_plate')
         .itemInputs(
             '4x minecraft:glass',
@@ -202,7 +178,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // advanced_solar_heating_plate: active sun-tracking — HV sensor + HV circuit
     event.recipes.gtceu.assembler('cna_advanced_solar_heating_plate')
         .itemInputs(
             '4x minecraft:glass',
@@ -215,7 +190,6 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // MAGNETS
     event.recipes.gtceu.assembler('cna_redstone_magnet')
         .itemInputs(
             '4x gtceu:steel_plate',

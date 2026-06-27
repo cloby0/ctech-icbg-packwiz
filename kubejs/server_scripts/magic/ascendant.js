@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Stabilized Chaos Crystal — Ascendant magic gate
-    // Requires: Chaos Guardian fight (chaos_shard) + UHV circuit (draconic_processor_supercomputer) + chaotic_core
-    // sourceCost 100k — highest in pack
     addEnchantingRecipe(event, {
         reagent: 'draconicevolution:chaos_shard',
         pedestalItems: [
@@ -19,8 +16,6 @@ ServerEvents.recipes(event => {
         sourceCost: 100000
     })
 
-    // Ascendant spellbook upgrades — Prophet tier books → Ascendant tier
-    // Each requires the corresponding Prophet book + stabilized_chaos_crystal + chaotic content
 
     addEnchantingRecipe(event, {
         reagent: 'kubejs:draconic_sanguinary',
@@ -86,8 +81,6 @@ ServerEvents.recipes(event => {
         sourceCost: 90000
     })
 
-    // Ascendant Initiation Core — gates draconic_reactor_core (uevAndChaos.js)
-    // Requires: all 4 Ascendant books + stabilized_chaos_crystal
     addEnchantingRecipe(event, {
         reagent: 'kubejs:stabilized_chaos_crystal',
         pedestalItems: [

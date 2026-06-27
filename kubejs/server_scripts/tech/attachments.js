@@ -1,9 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // ===== BASE TACZ =====
 
-    // extended mags
-    // pattern: P B P / B R B / P B P
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_1"}'),
         ['PBP', 'BRB', 'PBP'],
@@ -17,7 +14,6 @@ ServerEvents.recipes(event => {
         ['PBP', 'BCB', 'PBP'],
         { P: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt', C: '#gtceu:circuits/lv' })
 
-    // light extended mags - aluminium only, lighter pattern
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_1"}'),
         ['P P', 'PRP', 'P P'],
@@ -31,7 +27,6 @@ ServerEvents.recipes(event => {
         ['PBP', 'BCB', 'PBP'],
         { P: 'gtceu:titanium_plate', B: 'gtceu:aluminium_bolt', C: 'gtceu:aluminium_ring' })
 
-    // shotgun extended mags
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_1"}'),
         ['PRP', 'RRR', 'PRP'],
@@ -45,7 +40,6 @@ ServerEvents.recipes(event => {
         ['PBP', 'BRB', 'PBP'],
         { P: 'gtceu:stainless_steel_plate', B: 'gtceu:steel_bolt', R: 'gtceu:stainless_steel_ring' })
 
-    // sniper extended mags
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_1"}'),
         ['PBP', 'BRB', 'PBP'],
@@ -59,8 +53,6 @@ ServerEvents.recipes(event => {
         ['PBP', 'BCB', 'PBP'],
         { P: 'gtceu:titanium_plate', B: 'gtceu:titanium_bolt', C: '#gtceu:circuits/mv' })
 
-    // grips
-    // base pattern: R P R / P B P / R P R
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cobra"}'),
         ['RPR', 'PBP', 'RPR'],
@@ -106,13 +98,10 @@ ServerEvents.recipes(event => {
         [' S ', 'SBS', ' S '],
         { S: 'gtceu:stainless_steel_plate', B: 'gtceu:aluminium_bolt' })
 
-    // grip_cqr: no default recipe
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cqr"}'),
         ['P P', 'PBP', 'P P'],
         { P: 'gtceu:aluminium_plate', B: 'gtceu:rubber_plate' })
 
-    // stocks
-    // pattern: W R W / R B R / W R W
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_ak12"}'),
         ['WRW', 'RBR', 'WRW'],
@@ -170,7 +159,6 @@ ServerEvents.recipes(event => {
         ['SAS', 'AWA', 'SAS'],
         { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate', W: 'gtceu:treated_wood_plate' })
 
-    // bayonets
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:bayonet_6h3"}'),
         [' R ', 'PRP', ' B '],
@@ -180,14 +168,11 @@ ServerEvents.recipes(event => {
         ['PAP', 'RAR', 'RBR'],
         { P: 'gtceu:aluminium_plate', A: 'gtceu:aluminium_rod', R: 'gtceu:rubber_plate', B: 'gtceu:steel_bolt' })
 
-    // deagle golden long barrel
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:deagle_golden_long_barrel"}'),
         ['GHG', 'GHG', 'G G'],
         { G: 'create:golden_sheet', H: 'gtceu:steel_small_fluid_pipe' })
 
-    // muzzle brakes
-    // pattern: P H P / _ P _ / P H P
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_pioneer"}'),
         ['PHP', ' P ', 'PHP'],
@@ -221,8 +206,6 @@ ServerEvents.recipes(event => {
         ['HAH', 'PAP', 'HAH'],
         { H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate' })
 
-    // muzzle silencers
-    // all HV: stainless pipe + silicone rubber + bolt
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_knight_qd"}'),
         ['UHU', 'U U', 'PBP'],
@@ -256,12 +239,10 @@ ServerEvents.recipes(event => {
         ['UHU', 'PHU', 'PHP'],
         { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate' })
 
-    // muzzle_duckbill_sg: no default recipe, no index file
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_duckbill_sg"}'),
         ['P P', 'BPB', 'P P'],
         { P: 'gtceu:stainless_steel_plate', B: 'gtceu:steel_bolt' })
 
-    // scopes
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_98k"}'),
         ['PGP', 'PCR', 'PBP'],
@@ -283,7 +264,6 @@ ServerEvents.recipes(event => {
         ['PGP', 'GCG', 'PBP'],
         { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
 
-    // scope_aug_default: no default recipe
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_aug_default"}'),
         ['PGP', 'GCG', 'GBG'],
         { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
@@ -316,7 +296,6 @@ ServerEvents.recipes(event => {
         ['PGG', 'PCG', 'PBP'],
         { P: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
 
-    // sights
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_rmr_dot"}'),
         [' G ', 'PRP', ' B '],
@@ -394,7 +373,6 @@ ServerEvents.recipes(event => {
         ['SAS', 'GCG', 'SAS'],
         { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', A: 'gtceu:aluminium_bolt' })
 
-    // lasers
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_compact"}'),
         [' C ', 'PRP', ' B '],
@@ -412,12 +390,10 @@ ServerEvents.recipes(event => {
         ['ACA', 'ARA', 'ABA'],
         { A: 'gtceu:aluminium_plate', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
 
-    // laser_peq15: no default recipe
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_peq15"}'),
         ['SCS', 'SRS', 'SBS'],
         { S: 'gtceu:stainless_steel_plate', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
 
-    // ammo mods
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_fmj"}'),
         ['SLS', 'LBL', 'SLS'],
@@ -439,9 +415,7 @@ ServerEvents.recipes(event => {
         ['LRL', 'RBR', 'LRL'],
         { L: 'gtceu:lead_ingot', R: 'gtceu:steel_rod', B: 'gtceu:brass_bolt' })
 
-    // ===== CREATE ARMORER =====
 
-    // extended mags
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_1"}'),
         ['IAI', 'ARA', 'IAI'],
@@ -455,7 +429,6 @@ ServerEvents.recipes(event => {
         ['GBG', 'BCB', 'GBG'],
         { G: 'create:golden_sheet', B: 'gtceu:brass_bolt', C: '#gtceu:circuits/lv' })
 
-    // grips
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_wooden"}'),
         ['WIW', 'IBI', 'WIW'],
@@ -469,7 +442,6 @@ ServerEvents.recipes(event => {
         ['IGI', 'GBG', 'IGI'],
         { I: 'gtceu:steel_plate', G: 'create:gantry_shaft', B: 'gtceu:steel_bolt' })
 
-    // muzzle refits
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_iron_spike"}'),
         [' R ', 'IRI', ' B '],
@@ -499,7 +471,6 @@ ServerEvents.recipes(event => {
         ['BAB', 'AGA', 'BAB'],
         { B: 'gtceu:brass_plate', A: 'create:andesite_alloy', G: 'minecraft:gunpowder' })
 
-    // scopes and sights
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_simple"}'),
         [' C ', 'ICI', ' B '],
@@ -521,9 +492,7 @@ ServerEvents.recipes(event => {
         ['GGG', 'ACA', 'ABA'],
         { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
 
-    // ===== IMMERSIVE ARMORER =====
 
-    // extended capacitors (railgun/electric weapon energy storage)
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_1"}'),
         ['SCS', 'CGC', 'SCS'],
@@ -537,7 +506,6 @@ ServerEvents.recipes(event => {
         ['SES', 'ECE', 'SES'],
         { S: 'gtceu:stainless_steel_plate', E: 'gtceu:electrum_plate', C: '#gtceu:circuits/mv' })
 
-    // extended jars (chemical thrower fluid storage)
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_1"}'),
         ['IHI', 'H H', 'IHI'],
@@ -551,7 +519,6 @@ ServerEvents.recipes(event => {
         ['SHS', 'HAH', 'SHS'],
         { S: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', A: 'gtceu:aluminium_bolt' })
 
-    // grips
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood"}'),
         ['WIW', 'IBI', 'WIW'],
@@ -561,12 +528,10 @@ ServerEvents.recipes(event => {
         ['WAW', 'A A', 'WAW'],
         { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_bolt' })
 
-    // grip_twined: upgrade from treated_wood grip + fine wire
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_twined"}'),
         ['FGF', 'FGF', 'FGF'],
         { F: 'gtceu:copper_single_wire', G: Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood"}') })
 
-    // stocks
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_crude"}'),
         ['W W', 'WAW', 'W W'],
@@ -588,13 +553,11 @@ ServerEvents.recipes(event => {
         ['WUW', 'UAU', 'WUW'],
         { W: 'gtceu:treated_wood_plate', U: 'gtceu:silicone_rubber_plate', A: 'gtceu:aluminium_rod' })
 
-    // bayonet
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:bayonet_revolver"}'),
         ['GAP', 'AAP', 'GAP'],
         { G: 'create:golden_sheet', A: 'gtceu:aluminium_plate', P: 'gtceu:treated_wood_plate' })
 
-    // muzzles
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_extended_barrel"}'),
         ['HSH', 'S S', 'HSH'],
@@ -636,7 +599,6 @@ ServerEvents.recipes(event => {
         ['CAC', 'ABA', 'CAC'],
         { C: 'create:copper_sheet', A: 'gtceu:aluminium_plate', B: 'minecraft:gunpowder' })
 
-    // sights
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_simple_reflex"}'),
         ['IGI', 'GWG', ' B '],
@@ -654,9 +616,7 @@ ServerEvents.recipes(event => {
         ['GGG', 'ACA', 'ABA'],
         { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'create:golden_sheet' })
 
-    // ===== APPLIED ARMORER =====
 
-    // extended batteries
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_1"}'),
         ['TAT', 'ACA', 'TAT'],
@@ -670,7 +630,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'FCF', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', C: '#gtceu:circuits/ev' })
 
-    // extended mags
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_1"}'),
         ['TAT', 'ARA', 'TAT'],
@@ -684,7 +643,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'FRF', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', R: 'gtceu:titanium_ring' })
 
-    // extended mid mags
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_1"}'),
         ['TQT', 'QRQ', 'TQT'],
@@ -698,7 +656,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'TCT', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', C: '#gtceu:circuits/ev' })
 
-    // bayonets
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_er"}'),
         [' R ', 'TAT', ' B '],
@@ -708,7 +665,6 @@ ServerEvents.recipes(event => {
         ['TAT', 'TAT', ' B '],
         { T: 'gtceu:titanium_plate', A: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
 
-    // bracelets
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'),
         ['TAT', 'A A', 'TAT'],
@@ -738,7 +694,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'FBF', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'minecraft:blaze_powder' })
 
-    // bracelet_zenith: requires all 7 other bracelets + fluix crystal
     event.shapeless(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_zenith"}'),
         [
             Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'),
@@ -751,7 +706,6 @@ ServerEvents.recipes(event => {
             'ae2:fluix_crystal'
         ])
 
-    // grips
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_eazy"}'),
         ['TAT', 'ABA', 'TAT'],
@@ -785,7 +739,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'FAF', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', A: 'gtceu:aluminium_bolt' })
 
-    // muzzles
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_classic"}'),
         ['TBT', 'B B', 'TBT'],
@@ -803,7 +756,6 @@ ServerEvents.recipes(event => {
         ['TFT', 'TBT', 'TFT'],
         { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
 
-    // muzzle chips
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_pcs_x1"}'),
         ['LAL', 'ACA', 'LAL'],
@@ -813,8 +765,6 @@ ServerEvents.recipes(event => {
         ['LBL', 'BCB', 'LBL'],
         { L: 'ae2:logic_processor', B: 'minecraft:blaze_powder', C: 'gtceu:titanium_bolt' })
 
-    // firework chip: upgrade path from firefly chip
-    // firework chip: 1 firefly chip + fire charges + tnt
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firework"}'),
         [' F ', 'FTF', ' G '],
         { T: Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firefly"}'), F: 'minecraft:fire_charge', G: 'minecraft:tnt' })
@@ -823,7 +773,6 @@ ServerEvents.recipes(event => {
         ['LAL', 'ACA', 'LAL'],
         { L: 'ae2:logic_processor', A: 'minecraft:spider_eye', C: 'ae2:certus_quartz_crystal' })
 
-    // wither_sword chip: upgrade path from toxic_sword chip, 2 skulls + 1 chip
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_wither_sword"}'),
         [' W ', 'TST', ' W '],
         { W: 'minecraft:wither_skeleton_skull', S: Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_toxic_sword"}'), T: 'gtceu:titanium_plate' })
@@ -844,7 +793,6 @@ ServerEvents.recipes(event => {
         ['EWF', 'WFW', 'FWE'],
         { E: 'ae2:engineering_processor', W: 'minecraft:wither_skeleton_skull', F: 'ae2:fluix_crystal' })
 
-    // sights and scopes
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_simple_3"}'),
         ['TGT', 'GAG', ' B '],

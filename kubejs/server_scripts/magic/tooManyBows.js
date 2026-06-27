@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Remove vanilla bow recipes — too cheap, replaced below
-    // Intermediate material recipes (power_crystal, cursed_stone, soul_fragment, rift_shard) kept as-is
     event.remove({ output: 'too_many_bows:hunter_bow' })
     event.remove({ output: 'too_many_bows:frostbite' })
     event.remove({ output: 'too_many_bows:sentinels_wrath' })

@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // ignitium_ingot — Ignis (fire)
-    // step 1: phlogiston + fire essences dissolve the ingot into a culturable seed
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')
         .itemInputs(
             '1x cataclysm:ignitium_ingot',
@@ -12,7 +10,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // step 2: EBF recrystallizes the seed back into ignitium (3600K = Nichrome coils)
     event.recipes.gtceu.electric_blast_furnace('ctech:ignitium_recrystallization')
         .itemInputs(
             '1x kubejs:raw_ignitium_seed',
@@ -23,8 +20,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // lacrima — Leviathan (water)
-    // step 1: source fluid dissolves the crystallized tear into a fluid concentrate
     event.recipes.gtceu.chemical_reactor('ctech:lacrima_dissolution')
         .itemInputs(
             '1x cataclysm:lacrima',
@@ -35,7 +30,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // step 2: coral substrate recrystallizes the concentrate into two lacrima
     event.recipes.gtceu.chemical_reactor('ctech:lacrima_recrystallization')
         .itemInputs(
             '4x minecraft:prismarine_shard',
@@ -46,8 +40,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // ancient_metal_ingot — Ancient Remnant (earth)
-    // step 1: mineral_ichor + earth essences + mineral_flux_crystal break down the ingot
     event.recipes.gtceu.mixer('ctech:ancient_metal_dissolution')
         .itemInputs(
             '1x cataclysm:ancient_metal_ingot',
@@ -59,7 +51,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // step 2: EBF reforms the compound with naquadah stabilizer (4500K = HSSG coils)
     event.recipes.gtceu.electric_blast_furnace('ctech:ancient_metal_recrystallization')
         .itemInputs(
             '1x kubejs:raw_ancient_metal_compound',
@@ -70,8 +61,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // essence_of_the_storm — Storm boss (air)
-    // step 1: centrifuge separates storm essence into its elemental quintessence
     event.recipes.gtceu.centrifuge('ctech:storm_essence_separation')
         .itemInputs(
             '1x cataclysm:essence_of_the_storm',
@@ -83,7 +72,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // step 2: naquadah catalyzes the quintessence back into two storm essences
     event.recipes.gtceu.chemical_reactor('ctech:storm_essence_reconstitution')
         .itemInputs(
             '1x kubejs:storm_quintessence',
@@ -94,8 +82,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    // void_core — Void boss (hardest, UEV gate)
-    // step 1: chaos matrix fluid + naquadria destabilize the void core into a resonant lattice
     event.recipes.gtceu.chemical_reactor('ctech:void_core_dissolution')
         .itemInputs(
             '1x cataclysm:void_core',
@@ -107,7 +93,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // step 2: assembly line re-anchors the lattice into two void cores
     event.recipes.gtceu.assembly_line('ctech:void_core_reconstitution')
         .itemInputs(
             '1x kubejs:resonant_void_lattice',
@@ -123,9 +108,6 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // Branch B: calibrated nuclei via Research Station + Assembly Line
-    // Each nucleus requires scanning the boss drop at the Research Station (CWUt 64, data_module),
-    // then crafting in the Assembly Line with the researched data_module as a non-consumed key.
 
     event.recipes.gtceu.assembly_line('ctech:fire_nucleus_synthesis')
         .stationResearch(b => b

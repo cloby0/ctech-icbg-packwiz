@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // arcane_anvil: vanilla has no magic items in recipe at all
-    // add mithril + source_gem as gate
     event.remove({ id: 'irons_spellbooks:arcane_anvil' })
     event.shaped(
         Item.of('irons_spellbooks:arcane_anvil', 1),
@@ -18,8 +16,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // scroll_forge: vanilla has no magic items
-    // add mithril + source_gem as gate
     event.remove({ id: 'irons_spellbooks:scroll_forge' })
     event.shaped(
         Item.of('irons_spellbooks:scroll_forge', 1),
@@ -36,8 +32,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // INK UPGRADES — gate each tier behind a magic progression key item
-    // vanilla used copper/iron/gold/amethyst (no magic gating at all)
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_uncommon_ink' })
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_rare_ink' })
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_epic_ink' })
@@ -71,8 +65,6 @@ ServerEvents.recipes(event => {
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:legendary_ink" }]
     })
 
-    // all runes: 4x school-theme item + 4x source_gem + blank_rune — uniform Journeyman gate
-    // no school above another; source_gem bridges ISS into Ars system
     event.remove({ output: 'irons_spellbooks:arcane_ingot' })
 
     const runeRecipes = [
@@ -100,7 +92,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // upgrade orbs: 4x rune (corners) + 4x school-theme item (edges) + upgrade_orb (center)
     const orbRecipes = [
         { id: 'irons_spellbooks:mana_upgrade_orb',              rune: 'irons_spellbooks:arcane_rune',           theme: 'irons_spellbooks:arcane_essence'    },
         { id: 'irons_spellbooks:blood_upgrade_orb',             rune: 'irons_spellbooks:blood_rune',            theme: 'irons_spellbooks:blood_vial'        },
@@ -126,7 +117,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // Sorcerer (EV) custom spellbooks
     addEnchantingRecipe(event, {
         reagent: 'irons_spellbooks:netherite_spell_book',
         pedestalItems: [
@@ -149,8 +139,6 @@ ServerEvents.recipes(event => {
         sourceCost: 30000
     })
 
-    // Arcanist (ZPM) custom spellbooks
-    // Technomatic Folio — requires elven_americate (elementium + americium) + ZPM circuits
     addEnchantingRecipe(event, {
         reagent: 'irons_spellbooks:netherite_spell_book',
         pedestalItems: [

@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    //removes imbuement chamber recipe and adds cusotm ones
     event.remove({ id: 'ars_nouveau:imbuement_chamber' });
     event.shaped(
         Item.of('ars_nouveau:imbuement_chamber', 1),
@@ -17,7 +16,6 @@ ServerEvents.recipes(event => {
                  }
     );
 
-    //removed source gem creation recipes in grandEnchantingSanctumRecipes.js
 
     addImbuementRecipe(event, {
         input: 'minecraft:amethyst_shard',
@@ -110,7 +108,6 @@ ServerEvents.recipes(event => {
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
 
-    // oil synthesis step 2: kerogen formation (burial pressure via earth essence)
     addImbuementRecipe(event, {
         input: 'kubejs:primordial_organic_muck',
         output: 'kubejs:kerogen',
@@ -119,7 +116,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['#kubejs:earth_essences']
     })
 
-    // oil synthesis step 3: thermal cracking (lava = high heat, fire essence = catalyst)
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
@@ -139,15 +135,12 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     })
 
-    // oil synthesis step 4: fluid extraction (LV extractor)
     event.recipes.gtceu.extractor('crude_petroleum_mass_extraction')
         .itemInputs('1x kubejs:crude_petroleum_mass')
         .outputFluids(Fluid.of('gtceu:oil_heavy', 4000))
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // side material: luminessence → experience bottles via fire
-    // exp bottles needed later for abstract_metal chain; fire essence channels luminessence into experience energy
     addImbuementRecipe(event, {
         input: 'gtceu:luminessence_dust',
         output: 'minecraft:experience_bottle',
@@ -156,8 +149,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
-    // side material: luminessence → charged amethyst via air
-    // charged amethyst needed for hexed_amethyst_core at Alchemist; air essence charges the crystal
     addImbuementRecipe(event, {
         input: 'gtceu:amethyst_dust',
         output: 'hexcasting:charged_amethyst',

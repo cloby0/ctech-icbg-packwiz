@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Remove all remaining DE fusion_crafting recipes.
-    // reactor_core/stabilizer/injector already removed in uevAndChaos.js.
     const fusionRemove = [
         'draconicevolution:awakened_draconium_block',
         'draconicevolution:components/awakened_core',
@@ -42,9 +40,7 @@ ServerEvents.recipes(event => {
     ]
     fusionRemove.forEach(function(id) { event.remove({ id: id }) })
 
-    // GT Assembler replacements for core items
 
-    // awakened_core (UHV) — four wyvern_cores energized with awakened draconium
     event.recipes.gtceu.assembler('de_awakened_core')
         .itemInputs(
             '4x draconicevolution:awakened_draconium_ingot',
@@ -56,7 +52,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // chaotic_core (UEV) — awakened cores fused with chaos
     event.recipes.gtceu.assembler('de_chaotic_core')
         .itemInputs(
             '4x draconicevolution:awakened_draconium_ingot',
@@ -68,7 +63,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    // draconium_chest (UV) — draconium storage
     event.recipes.gtceu.assembler('de_draconium_chest')
         .itemInputs(
             '8x gtceu:draconium_plate',
@@ -81,7 +75,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // draconic_relay_crystal (UV) — energy relay
     event.recipes.gtceu.assembler('de_draconic_relay_crystal')
         .itemInputs(
             '4x draconicevolution:wyvern_core',
@@ -93,7 +86,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // advanced_dislocator (UV)
     event.recipes.gtceu.assembler('de_advanced_dislocator')
         .itemInputs(
             '2x draconicevolution:wyvern_core',
@@ -106,7 +98,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // ── Assembly Line: Wyvern gear (UV) ─────────────────────────────────────────
 
     event.recipes.gtceu.assembly_line('de_wyvern_chestpiece')
         .itemInputs(
@@ -219,7 +210,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UV])
 
-    // ── Draconic Infusion Chamber: Draconic gear (UHV) ──────────────────────────
 
     event.recipes.gtceu.draconic_infusion_chamber('de_draconic_chestpiece')
         .itemInputs(
@@ -331,7 +321,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // draconic_staff — no wyvern version; gated behind dragon_heart_crystal (Prophet tier)
     event.recipes.gtceu.draconic_infusion_chamber('de_draconic_staff')
         .itemInputs(
             '12x gtceu:awakened_draconium_plate',
@@ -345,7 +334,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // ── Draconic Infusion Chamber: Chaotic gear (UEV) ────────────────────────────
 
     event.recipes.gtceu.draconic_infusion_chamber('de_chaotic_chestpiece')
         .itemInputs(

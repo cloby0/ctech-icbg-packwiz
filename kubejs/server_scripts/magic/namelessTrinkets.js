@@ -166,7 +166,6 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:missing_page', source: 1000, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:paper', 'minecraft:bone', 'minecraft:paper'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:scarab_amulet', source: 750, pedestalItems: ['minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:speed_force', source: 1000, pedestalItems: ['minecraft:sugar', 'minecraft:rabbit_foot', 'minecraft:sugar', 'minecraft:feather'] })
-    // super_magnet requires both sub-magnets on pedestals
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:super_magnet', source: 1500, pedestalItems: ['nameless_trinkets:experience_magnet', 'nameless_trinkets:broken_magnet', 'minecraft:iron_block', 'minecraft:iron_block'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tear_of_the_sea', source: 1000, pedestalItems: ['minecraft:cod', 'minecraft:salmon', 'minecraft:tropical_fish', 'minecraft:pufferfish'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tick', source: 750, pedestalItems: ['minecraft:brown_mushroom', 'minecraft:red_mushroom', 'minecraft:hay_block', 'minecraft:hay_block'] })
@@ -180,7 +179,6 @@ ServerEvents.recipes(event => {
         sourceCost: 2500
     })
 
-    // cracked_crown upgrades to gods_crown via vanilla smithing transform
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:gold_block", "gtceu:luminessence_dust"],
@@ -202,7 +200,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3000
     })
 
-    // holy_silver pedestal gates light_gloves at Initiate
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:gold_block", "minecraft:diamond", "minecraft:gold_block", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:luminessence_dust"],
@@ -238,7 +235,6 @@ ServerEvents.recipes(event => {
         sourceCost: 2500
     })
 
-    // sigil requires wither skull + netherite + holy_silver — Initiate dark ritual
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:obsidian", "minecraft:wither_skeleton_skull", "minecraft:obsidian", "minecraft:netherite_scrap", "gtceu:luminessence_dust", "gtceu:holy_silver_dust"],
@@ -246,7 +242,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3500
     })
 
-    // consumes gills + tear + amphibious_hands as the three sea sub-trinkets
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:heart_of_the_sea", "nameless_trinkets:gills", "nameless_trinkets:tear_of_the_sea", "nameless_trinkets:amphibious_hands", "gtceu:luminessence_dust"],

@@ -42,7 +42,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // stygian_anvil block and hammer eliminated; molds (plate_mold, shard_mold, dye_casing_mold) become obsolete
     event.remove({ type: 'woot_revived:stygian_anvil' })
     event.remove({ id: 'woot_revived:stygian_anvil' })
     event.remove({ id: 'woot_revived:stygian_hammer' })
@@ -55,9 +54,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.HV])
     })
 
-    // Chokepoint: every useful Woot block (pylon, plinth, magmator, cell, dye_liquifier,
-    // fluid_infuser, item_infuser, factory_ctr_base, layout, export, import, etc.) requires
-    // factory_base. Gating this single recipe gates the entire system at EV.
     event.remove({ id: 'woot_revived:factory_base' })
     event.recipes.gtceu.assembler('woot_factory_base')
         .itemInputs(
@@ -82,7 +78,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // Vanilla: 8 different dyes arranged around factory_base — no GT component.
     event.remove({ id: 'woot_revived:dye_liquifier' })
     event.recipes.gtceu.assembler('woot_dye_liquifier')
         .itemInputs(
@@ -163,7 +158,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // Note: iron/gold/diamond/netherite shards are factory DROPS, not craftable.
 
     event.remove({ id: 'woot_revived:copper_magmator' })
     event.shaped(Item.of('woot_revived:copper_magmator'), ['cbc', 'bPb', 'cbc'], {
@@ -198,9 +192,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // Vanilla: iron/gold/diamond/netherite ingots — inconsistent with GT voltage tiers.
-    // New materials: iron→steel(LV) | gold→aluminium(MV) | diamond→stainless_steel(HV) | netherite→titanium(EV)
-    // Display names updated in kubejs/assets/woot_revived/lang/en_us.json.
 
     event.remove({ id: 'woot_revived:iron_looting_upgrade' })
     event.shaped(Item.of('woot_revived:iron_looting_upgrade'), ['bab', 'aca', 'bab'], {

@@ -1,6 +1,3 @@
-//priority: -1
-// forEachRecipe only sees vanilla/mod recipes — KubeJS-added recipes are invisible regardless of priority.
-// tier scripts must call addRunicAltarRecipe / addTerraPlateRecipe to get both the altar and the forge mirror.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
 
@@ -15,8 +12,6 @@ function manaToTicks(mana) {
     return Math.max(Math.round(mana / 100), 20) * 2
 }
 
-// resolves a single Botania ingredient entry to a GT itemInputs string
-// handles: {item}, {tag}, [{item},{item}] alternation arrays (picks first valid)
 function resolveRunicIngredient(ing, debugLabel) {
     if (Array.isArray(ing)) {
         for (let i = 0; i < ing.length; i++) {
@@ -27,7 +22,6 @@ function resolveRunicIngredient(ing, debugLabel) {
         return null
     }
 
-    // KubeJS may normalize ingredients to plain strings: "#tag" or "modid:item"
     if (typeof ing === 'string') {
         if (ing.startsWith('#')) return `1x #${ing.slice(1)}`
         if (!$ForgeRegistries.ITEMS.getValue(ing)) {
@@ -165,7 +159,6 @@ ServerEvents.recipes(event => {
         const index = _nextRunicIndex++
         const crecipe = JSON.parse(recipe.json.toString())
 
-        // terra_plate uses "result" not "output"
         const result = crecipe.result
         if (!result) { console.warn('[runic_forge] skipping terra_plate entry ' + index + ': no result'); return }
         const outputId = typeof result === 'string' ? result : result.item
@@ -200,7 +193,6 @@ ServerEvents.recipes(event => {
         itemInputs.forEach(input => gt.itemInputs(input))
     })
 
-    // controller block
     event.recipes.gtceu.assembler('runic_forge_controller')
         .itemInputs(
             '4x gtceu:terra_iridite_plate',

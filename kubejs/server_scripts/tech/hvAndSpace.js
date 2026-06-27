@@ -3,14 +3,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_raw_desh' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_moon_desh_ore' })
     event.remove({ id: 'ad_astra:smelting/desh_ingot_from_smelting_deepslate_desh_ore' })
-    // mond is only path to desh ingot
-    // crushed_desh_ore only comes from ore block maceration, not ingot recycling
-    // prevents ingot -> dust -> mond -> ingot infinite byproduct loop
 
-    // removes auto ebf so mond is mandatory
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:desh_ingot' })
 
-    // step 1 acid leach
     event.recipes.gtceu.chemical_reactor('desh_acid_leach')
         .itemInputs('1x gtceu:crushed_desh_ore')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
@@ -20,7 +15,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 2 carbonyl formation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_formation')
         .inputFluids(Fluid.of('gtceu:desh_sulfate_slurry', 500))
         .inputFluids(Fluid.of('gtceu:carbon_monoxide', 400))
@@ -29,7 +23,6 @@ ServerEvents.recipes(event => {
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 3 condensation
     event.recipes.gtceu.chemical_reactor('desh_carbonyl_condensation')
         .inputFluids(Fluid.of('gtceu:desh_carbonyl', 1000))
         .itemOutputs('1x kubejs:condensed_desh_carbonyl')
@@ -40,7 +33,6 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 4 EBF decomposition
     event.recipes.gtceu.electric_blast_furnace('desh_carbonyl_ebf')
         .itemInputs('1x kubejs:condensed_desh_carbonyl')
         .itemOutputs('1x gtceu:hot_desh_ingot')
@@ -48,7 +40,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // step 5 vacuum freeze
     event.recipes.gtceu.vacuum_freezer('desh_carbonyl_cool')
         .itemInputs('1x gtceu:hot_desh_ingot')
         .itemOutputs('1x ad_astra:desh_ingot')

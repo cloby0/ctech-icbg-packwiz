@@ -58,18 +58,15 @@ StartupEvents.registry('item', event => {
     event.create('gaian_neutronium_boule').texture('gtceu:item/neutronium_boule').glow(true)
 
     event.create('gaia_flux_dust')
-    // Branch A biological apotheosis chain intermediates (leaf 1 — bio processing)
     event.create('sperm_cell_pellet')
     event.create('living_cell_matrix')
     event.create('mana_seeded_cell_matrix')
     event.create('activated_bio_matrix')
 
-    // Branch A leaf 2 — runic alignment
     event.create('runic_growth_catalyst')
     event.create('runic_bio_catalyst')
     event.create('elemental_life_reagent')
 
-    // Branch A leaf 3 — source crystallization
     event.create('source_crystal_lattice')
     event.create('vitalized_source_fragment')
     event.create('source_bio_matrix')
@@ -125,7 +122,6 @@ StartupEvents.registry('item', event => {
     event.create('kerogen')
     event.create('crude_petroleum_mass')
 
-    // Gun sub-assemblies — 3 receiver types, 2 barrel types (+ blanks), 1 fire control
     event.create('lv_pistol_frame')
     event.create('mv_pistol_frame')
     event.create('hv_pistol_frame')
@@ -182,24 +178,19 @@ StartupEvents.registry('item', event => {
     event.create('iv_gun_fire_control')
     event.create('luv_gun_fire_control')
 
-    // abstract_elastomer chain intermediates: imbuement → primal billet → UV mixer → elemental compound → enchanting → ingot
     event.create('primal_latex_billet')
     event.create('elemental_latex_compound')
 
-    // Voltage coils — GT stops at UV, UHV/UEV/UIV need manual items
     event.create('uhv_voltage_coil')
     event.create('uev_voltage_coil')
     event.create('uiv_voltage_coil')
 
-    // UHV/UEV chain intermediates
     event.create('dragon_heart_crystal')
     event.create('draconic_boule').texture('gtceu:item/neutronium_boule').glow(true)
     event.create('draconic_resonance_board')
     event.create('stabilized_chaos_crystal')
     event.create('chaos_harmonic_board')
 
-    // Custom circuit items — three overlapping themes (draconic/chaos/cumium)
-    // Tagged into #gtceu:circuits/{tier} in server_scripts/circuitTags.js
     event.create('draconic_processor')                // ZPM
     event.create('draconic_processor_assembly')       // UV
     event.create('draconic_processor_supercomputer')  // UHV
@@ -212,20 +203,17 @@ StartupEvents.registry('item', event => {
     event.create('cumium_processor_assembly')         // UIV
     event.create('artificial_cumium_brain')           // UXV
 
-    // Prophet tier (UHV magic) spellbooks
     event.create('draconic_sanguinary')
     event.create('draconic_sanctum')
     event.create('dracontine_codex')
     event.create('chronicle_of_dominion')
 
-    // Ascendant tier (UEV magic) spellbooks
     event.create('ascendant_initiation_core')
     event.create('chaotic_sanguinary')
     event.create('shattered_sanctum')
     event.create('codex_of_entropy')
     event.create('chronicle_of_unraveling')
 
-    // Boss drop duplication intermediates (one per Cataclysm boss)
     event.create('raw_ignitium_seed')
     event.create('raw_ancient_metal_compound')
     event.create('storm_quintessence')

@@ -13,7 +13,6 @@ ServerEvents.recipes(event => {
     const LONG_BARREL = CraftingComponent.get('long_barrel')
     const GUN_FIRE_CONTROL = CraftingComponent.get('gun_fire_control')
 
-    // === LV ===
 
     event.recipes.gtceu.arms_manufacturer('10mm_pistol')
         .itemInputs(PISTOL_FRAME.get(GTValues.LV))
@@ -83,7 +82,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(2)
 
-    // === MV ===
 
     event.recipes.gtceu.arms_manufacturer('pistol_revolver_torque')
         .itemInputs(PISTOL_FRAME.get(GTValues.MV))
@@ -282,7 +280,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
         .circuit(6)
 
-    // === HV ===
 
     event.recipes.gtceu.arms_manufacturer('pistol_9mm')
         .itemInputs(PISTOL_FRAME.get(GTValues.HV))
@@ -544,7 +541,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(11)
 
-    // === EV ===
 
     event.recipes.gtceu.arms_manufacturer('dzj08')
         .itemInputs(HEAVY_FRAME.get(GTValues.EV))
@@ -1097,7 +1093,6 @@ ServerEvents.recipes(event => {
         .duration(350)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // === IV ===
 
     event.recipes.gtceu.arms_manufacturer('niklas_pistol_semi_union')
         .itemInputs(PISTOL_FRAME.get(GTValues.IV))
@@ -1296,7 +1291,6 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // === LuV ===
 
     event.recipes.gtceu.arms_manufacturer('x26')
         .itemInputs(PISTOL_FRAME.get(GTValues.LuV))

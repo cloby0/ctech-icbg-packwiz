@@ -17,8 +17,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'starbunclemania:source_condenser' })
     event.remove({ id: 'starbunclemania:fluid_sourcelink' })
 
-    // source_condenser: pumps ambient source out as starbunclemania:source_fluid
-    // pump handles fluid output; glass contains the condensing chamber; source gems interface with source
     event.recipes.gtceu.assembler('starbuncle_source_condenser')
         .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '4x minecraft:glass_pane', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -26,8 +24,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // fluid_sourcelink: takes starbunclemania:source_fluid back in and injects to source network
-    // inverse of source_condenser; gold housing matches vanilla recipe's gold cost
     event.recipes.gtceu.assembler('starbuncle_fluid_sourcelink')
         .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '2x create:golden_sheet', '#gtceu:circuits/mv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -35,8 +31,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // magebloom_crop bootstrap: vanilla recipe requires enchanting apparatus (HV), but fiber is needed here at MV
-    // imbuement with archwood planks + luminessence breaks the circular dependency
     addImbuementRecipe(event, {
         input: 'minecraft:wheat_seeds',
         output: 'ars_nouveau:magebloom_crop',

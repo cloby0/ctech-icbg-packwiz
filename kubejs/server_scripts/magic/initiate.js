@@ -176,7 +176,6 @@ ServerEvents.recipes(event => {
             D: 'gtceu:source_plate'
     });
 
-    // ambrosium processing step 2: source + luminessence purify the bloom into sacred shard
     addImbuementRecipe(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
         output: 'kubejs:sacred_ambrosium_shard',
@@ -250,8 +249,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3000
     })
 
-    // magical_receiver: spell turret core + holy silver + source gems
-    // gate component for all ars_armorer guns
     event.shaped(
         Item.of('kubejs:magical_receiver', 1),
         [
@@ -267,7 +264,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // pistol: compact, lightest
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:pistol_source_ejector",HasBulletInBarrel:0b}'),
         [
@@ -284,7 +280,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // shotgun jet: bolt-choke spread
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_jet_ejector",HasBulletInBarrel:0b}'),
         [
@@ -301,7 +296,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // shotgun splash: source-burst, gem-heavy
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_splash_ejector",HasBulletInBarrel:0b}'),
         [
@@ -317,7 +311,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // auto rifle: bolt cycling + extra rods
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"ars_armorer:auto_rifle_stream_ejector",HasBulletInBarrel:0b}'),
         [
@@ -335,7 +328,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // sniper: long barrel + foil optics
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:sniper_distance_ejector",HasBulletInBarrel:0b}'),
         [
@@ -353,7 +345,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // mortar: heavy launcher, wide barrel
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:mortar_source_thrower",HasBulletInBarrel:0b}'),
         [
@@ -370,7 +361,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // miner drill: drill body, rod-dominant
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_miner_drill",HasBulletInBarrel:0b}'),
         [
@@ -387,7 +377,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // flying blade: foil blade edges + source
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_source_flying_blade",HasBulletInBarrel:0b}'),
         [

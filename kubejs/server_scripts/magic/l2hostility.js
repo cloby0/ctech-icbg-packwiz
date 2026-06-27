@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // ═══════════════════════════════════════════════════════════════
-    // REMOVALS — strip vanilla recipes before adding gated ones
-    // ═══════════════════════════════════════════════════════════════
 
     ;['poseidite', 'totemic_gold', 'sculkium', 'shulkerate', 'eternium'].forEach(m =>
         event.remove({ output: `l2complements:${m}_ingot` }))
@@ -32,11 +29,7 @@ ServerEvents.recipes(event => {
         'blackstone_core', 'explosion_shard', 'hard_ice', 'soul_flame', 'guardian_eye'
     ].forEach(id => event.remove({ output: `l2complements:${id}` }))
 
-    // ═══════════════════════════════════════════════════════════════
-    // JOURNEYMAN (MV) — Source Gem tier
-    // ═══════════════════════════════════════════════════════════════
 
-    // Poseidite Ingot: ocean/water magic
     addEnchantingRecipe(event, {
         reagent: 'minecraft:prismarine_shard',
         pedestalItems: [
@@ -48,7 +41,6 @@ ServerEvents.recipes(event => {
         sourceCost: 4000
     })
 
-    // Utility items — shaped, no magic required
     event.shaped('l2complements:wind_capture_bottle', [
         'SLS',
         'LGL',
@@ -75,28 +67,24 @@ ServerEvents.recipes(event => {
 
     event.shapeless('l2complements:fragile_warp_stone', ['minecraft:chorus_fruit', 'minecraft:ender_pearl'])
 
-    // Witch Droplet — core L2Hostility ingredient
     event.shaped('l2hostility:witch_droplet', [
         ' S ',
         'FBF',
         ' S '
     ], { S: 'ars_nouveau:source_gem', F: 'minecraft:fermented_spider_eye', B: 'minecraft:glass_bottle' })
 
-    // Witch Wand
     event.shaped('l2hostility:witch_wand', [
         'D  ',
         ' B ',
         '  S'
     ], { D: 'l2hostility:witch_droplet', B: 'minecraft:blaze_rod', S: 'ars_nouveau:source_gem' })
 
-    // Hostility Detector (MV circuits = tech gate at Journeyman)
     event.shaped('l2hostility:hostility_detector', [
         ' S ',
         'MCM',
         ' S '
     ], { S: 'ars_nouveau:source_gem', M: '#gtceu:circuits/mv', C: 'minecraft:compass' })
 
-    // Unpolished Looting Charm (Tier 1)
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:dubious_dust',
         pedestalItems: [
@@ -109,7 +97,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3000
     })
 
-    // Bottle of Curse
     addImbuementRecipe(event, {
         input: 'minecraft:glass_bottle',
         pedestalItems: [
@@ -120,11 +107,7 @@ ServerEvents.recipes(event => {
         source: 2000
     })
 
-    // ═══════════════════════════════════════════════════════════════
-    // INITIATE (HV) — Holy Silver tier
-    // ═══════════════════════════════════════════════════════════════
 
-    // Totemic Gold Ingot: sacred gold, heals on use/hit
     addImbuementRecipe(event, {
         input: 'minecraft:golden_apple',
         pedestalItems: [
@@ -137,7 +120,6 @@ ServerEvents.recipes(event => {
         source: 8000,
     })
 
-    // Totemic foods (need nuggets from totemic_gold_ingot)
     event.shaped('l2complements:totemic_carrot', [
         'NGN',
         'GCG',
@@ -150,7 +132,6 @@ ServerEvents.recipes(event => {
         'NGN'
     ], { N: 'l2complements:totemic_gold_nugget', G: 'minecraft:gold_nugget', A: 'minecraft:apple' })
 
-    // Hard Ice: unliving ice
     addImbuementRecipe(event, {
         input: 'minecraft:blue_ice',
         pedestalItems: [
@@ -162,7 +143,6 @@ ServerEvents.recipes(event => {
         source: 5000,
     })
 
-    // Soul Flame
     addImbuementRecipe(event, {
         input: 'minecraft:soul_sand',
         pedestalItems: [
@@ -173,7 +153,6 @@ ServerEvents.recipes(event => {
         source: 6000
     })
 
-    // Guardian Eye: wizard fantasy craft (no lightning trick required)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:prismarine_crystals',
         pedestalItems: [
@@ -186,7 +165,6 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Guardian Rune: turn Guardian → Elder Guardian
     addEnchantingRecipe(event, {
         reagent: 'l2complements:guardian_eye',
         pedestalItems: [
@@ -198,7 +176,6 @@ ServerEvents.recipes(event => {
         sourceCost: 6000
     })
 
-    // Piglin Rune: turn Piglin → Piglin Brute
     addEnchantingRecipe(event, {
         reagent: 'minecraft:gold_ingot',
         pedestalItems: [
@@ -211,7 +188,6 @@ ServerEvents.recipes(event => {
         sourceCost: 6000
     })
 
-    // Reinforced Warp Stone: durable teleport (64 uses)
     addEnchantingRecipe(event, {
         reagent: 'l2complements:fragile_warp_stone',
         pedestalItems: [
@@ -224,7 +200,6 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Totem of the Sea: water breathing totem (stackable)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:totem_of_undying',
         pedestalItems: [
@@ -237,7 +212,6 @@ ServerEvents.recipes(event => {
         sourceCost: 10000
     })
 
-    // Enchanted Totemic Carrot
     addEnchantingRecipe(event, {
         reagent: 'l2complements:totemic_carrot',
         pedestalItems: [
@@ -249,7 +223,6 @@ ServerEvents.recipes(event => {
         sourceCost: 6000
     })
 
-    // Enchanted Totemic Apple
     addEnchantingRecipe(event, {
         reagent: 'l2complements:totemic_apple',
         pedestalItems: [
@@ -261,9 +234,7 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // === Pure magic Initiate L2Hostility items (no GT required) ===
 
-    // Curse of Sloth: disables difficulty gain from mob kills (weakest curse)
     addImbuementRecipe(event, {
         input: 'minecraft:feather',
         pedestalItems: [
@@ -275,7 +246,6 @@ ServerEvents.recipes(event => {
         source: 6000,
     })
 
-    // Curse of Gluttony: drops Bottles of Curse from leveled mobs
     addImbuementRecipe(event, {
         input: 'minecraft:golden_apple',
         pedestalItems: [
@@ -287,7 +257,6 @@ ServerEvents.recipes(event => {
         source: 8000,
     })
 
-    // Ring of Healing: continuous HP regen %/sec
     addEnchantingRecipe(event, {
         reagent: 'minecraft:glistering_melon_slice',
         pedestalItems: [
@@ -300,7 +269,6 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Ring of Ocean: always keep wet
     addEnchantingRecipe(event, {
         reagent: 'minecraft:nautilus_shell',
         pedestalItems: [
@@ -313,7 +281,6 @@ ServerEvents.recipes(event => {
         sourceCost: 7000
     })
 
-    // Bottle of Sanity: resets all base player difficulty to 0
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:bottle_of_curse',
         pedestalItems: [
@@ -326,16 +293,13 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Booster Potion: extends harmful effect durations
     event.shaped('l2hostility:booster_potion', [
         ' H ',
         'HWH',
         ' H '
     ], { H: 'gtceu:holy_silver_dust', W: 'l2hostility:witch_droplet' })
 
-    // === Hybrid Initiate items (need hostility_essence = HV GT machine) ===
 
-    // Hostility Essence: first GT gate (HV chemical_reactor)
     event.recipes.gtceu.chemical_reactor('l2hostility/hostility_essence')
         .itemInputs('4x l2hostility:witch_droplet', '2x gtceu:holy_silver_dust')
         .inputFluids(Fluid.of('starbunclemania:source_fluid', 500))
@@ -343,14 +307,12 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Witch Charge: throwable that extends harmful effect durations +50%
     event.shaped('l2hostility:witch_charge', [
         ' B ',
         'WEW',
         ' W '
     ], { B: 'minecraft:blaze_rod', W: 'l2hostility:witch_droplet', E: 'l2hostility:hostility_essence' })
 
-    // Eternal Witch Charge: makes harmful effects infinite duration
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:witch_charge',
         pedestalItems: [
@@ -362,7 +324,6 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Magical Looting Charm (Tier 2)
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: [
@@ -375,7 +336,6 @@ ServerEvents.recipes(event => {
         sourceCost: 8000
     })
 
-    // Detector Glasses: see invisible/hidden mobs, see through Blindness/Darkness
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:hostility_detector',
         pedestalItems: [
@@ -388,14 +348,12 @@ ServerEvents.recipes(event => {
         sourceCost: 10000
     })
 
-    // Book of Reprint: copy enchantments from one book to another
     event.shaped('l2hostility:book_of_reprint', [
         'GHG',
         'HBH',
         'GHG'
     ], { G: 'minecraft:gold_ingot', H: 'gtceu:holy_silver_dust', B: 'minecraft:book' })
 
-    // Book of Omniscience: rename to generate enchanted books (costs XP per use)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:book',
         pedestalItems: [
@@ -408,11 +366,7 @@ ServerEvents.recipes(event => {
         sourceCost: 12000
     })
 
-    // ═══════════════════════════════════════════════════════════════
-    // SORCERER (EV) — Prima Materia tier
-    // ═══════════════════════════════════════════════════════════════
 
-    // Sculkium Ingot: deep dark / warden territory, suppresses vibrations when wearing 4pc
     addImbuementRecipe(event, {
         input: 'minecraft:sculk',
         pedestalItems: [
@@ -425,7 +379,6 @@ ServerEvents.recipes(event => {
         source: 15000,
     })
 
-    // Warden Bone Shard: craft route (wizard fantasy — skip the kill+player combo condition)
     addImbuementRecipe(event, {
         input: 'l2complements:sculkium_ingot',
         pedestalItems: [
@@ -437,7 +390,6 @@ ServerEvents.recipes(event => {
         source: 12000,
     })
 
-    // Storm Core: crystal of storm (explosion kills phantom)
     addImbuementRecipe(event, {
         input: 'minecraft:phantom_membrane',
         pedestalItems: [
@@ -450,7 +402,6 @@ ServerEvents.recipes(event => {
         source: 12000,
     })
 
-    // Life Essence: fire resistant, edible
     addImbuementRecipe(event, {
         input: 'minecraft:glistering_melon_slice',
         pedestalItems: [
@@ -462,7 +413,6 @@ ServerEvents.recipes(event => {
         source: 15000,
     })
 
-    // Cursed Droplet: fire resistant
     addImbuementRecipe(event, {
         input: 'minecraft:fermented_spider_eye',
         pedestalItems: [
@@ -474,7 +424,6 @@ ServerEvents.recipes(event => {
         source: 10000,
     })
 
-    // Void Eye: obtained naturally by killing angry Enderman in void — craft route
     addEnchantingRecipe(event, {
         reagent: 'minecraft:ender_eye',
         pedestalItems: [
@@ -487,7 +436,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // Blackstone Core: kill Piglin Brute with Stone Cage — craft route
     addImbuementRecipe(event, {
         input: 'minecraft:blackstone',
         pedestalItems: [
@@ -500,7 +448,6 @@ ServerEvents.recipes(event => {
         source: 12000,
     })
 
-    // Explosion Shard: remnant of 80+ explosion damage — craft route
     addImbuementRecipe(event, {
         input: 'minecraft:crying_obsidian',
         pedestalItems: [
@@ -512,14 +459,12 @@ ServerEvents.recipes(event => {
         source: 12000,
     })
 
-    // Chaos Ingot: GT EV alloy_smelter — second GT gate, beacon payment material
     event.recipes.gtceu.alloy_smelter('l2hostility/chaos_ingot')
         .itemInputs('1x l2hostility:hostility_essence', '4x gtceu:prima_materia_dust')
         .itemOutputs('1x l2hostility:chaos_ingot')
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // Chaotic Looting Charm (Tier 3)
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: [
@@ -532,7 +477,6 @@ ServerEvents.recipes(event => {
         sourceCost: 20000
     })
 
-    // Curse of Wrath: +damage% against higher-level mobs
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
@@ -544,7 +488,6 @@ ServerEvents.recipes(event => {
         sourceCost: 18000
     })
 
-    // Curse of Lust: mobs drop all their equipment
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
@@ -557,7 +500,6 @@ ServerEvents.recipes(event => {
         sourceCost: 16000
     })
 
-    // Curse of Greed: multiplies hostility loot drop chance
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
@@ -569,7 +511,6 @@ ServerEvents.recipes(event => {
         sourceCost: 16000
     })
 
-    // Ring of Life: damage cap — won't lose more than X% HP at once
     addEnchantingRecipe(event, {
         reagent: 'minecraft:totem_of_undying',
         pedestalItems: [
@@ -582,7 +523,6 @@ ServerEvents.recipes(event => {
         sourceCost: 18000
     })
 
-    // Ring of Incarceration: sneak + apply Stone Cage to nearby hostiles
     addEnchantingRecipe(event, {
         reagent: 'l2complements:sculkium_ingot',
         pedestalItems: [
@@ -595,7 +535,6 @@ ServerEvents.recipes(event => {
         sourceCost: 16000
     })
 
-    // Ring of Corrosion: damage enemy equipment durability on hit
     addEnchantingRecipe(event, {
         reagent: 'minecraft:anvil',
         pedestalItems: [
@@ -608,7 +547,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // Flaming Thorn: inflicts Soul Flame based on target's status effects
     addEnchantingRecipe(event, {
         reagent: 'minecraft:blaze_rod',
         pedestalItems: [
@@ -621,7 +559,6 @@ ServerEvents.recipes(event => {
         sourceCost: 18000
     })
 
-    // Platinum Star: all melee bypasses damage cooldown (DPS multiplier)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:nether_star',
         pedestalItems: [
@@ -634,7 +571,6 @@ ServerEvents.recipes(event => {
         sourceCost: 22000
     })
 
-    // Hostility Orb: clears 3x3x3 chunk sections (stops level-based spawns)
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
@@ -647,11 +583,7 @@ ServerEvents.recipes(event => {
         sourceCost: 20000
     })
 
-    // ═══════════════════════════════════════════════════════════════
-    // ALCHEMIST (IV) — Manasteel tier
-    // ═══════════════════════════════════════════════════════════════
 
-    // Shulkerate Ingot: End/Shulker territory, extended reach + high durability
     addEnchantingRecipe(event, {
         reagent: 'minecraft:shulker_shell',
         pedestalItems: [
@@ -664,7 +596,6 @@ ServerEvents.recipes(event => {
         sourceCost: 25000
     })
 
-    // Totem of Dream: return to home, full heal on use (EPIC)
     addRunicAltarRecipe(event, {
         output: 'l2complements:totem_of_dream',
         ingredients: [
@@ -677,7 +608,6 @@ ServerEvents.recipes(event => {
         mana: 50000
     })
 
-    // Space Shard: creative-tier EPIC (500+ projectile damage craft route)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:echo_shard',
         pedestalItems: [
@@ -690,7 +620,6 @@ ServerEvents.recipes(event => {
         sourceCost: 28000
     })
 
-    // Resonant Feather: chicken survives sonic boom — craft route
     addEnchantingRecipe(event, {
         reagent: 'minecraft:feather',
         pedestalItems: [
@@ -703,7 +632,6 @@ ServerEvents.recipes(event => {
         sourceCost: 25000
     })
 
-    // Sun Membrane: solar-powered phantom membrane (200+ above max height — craft route)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:phantom_membrane',
         pedestalItems: [
@@ -716,7 +644,6 @@ ServerEvents.recipes(event => {
         sourceCost: 30000
     })
 
-    // Force Field: Wither Force Field (Wither bow-kill — wizard fantasy craft route)
     addRunicAltarRecipe(event, {
         output: 'l2complements:force_field',
         ingredients: [
@@ -729,8 +656,6 @@ ServerEvents.recipes(event => {
         mana: 60000
     })
 
-    // Miracle Ingot: GT IV assembler — THE tech gate for the three BEST items
-    // chaos_ingot (EV) + manasteel (IV magic) + source gems + source fluid
     event.recipes.gtceu.assembler('l2hostility/miracle_ingot')
         .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x ars_nouveau:source_gem')
         .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
@@ -739,14 +664,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(1)
 
-    // Miracle Powder: derived from Miracle Ingot via GT macerator
     event.recipes.gtceu.macerator('l2hostility/miracle_powder')
         .itemInputs('1x l2hostility:miracle_ingot')
         .itemOutputs('4x l2hostility:miracle_powder')
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
-    // Miraculous Looting Charm (Tier 4) — highest loot multiplier
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: [
@@ -759,7 +682,6 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // Curse of Envy: drops trait items when killing mobs with traits
     addEnchantingRecipe(event, {
         reagent: 'l2complements:resonant_feather',
         pedestalItems: [
@@ -772,7 +694,6 @@ ServerEvents.recipes(event => {
         sourceCost: 32000
     })
 
-    // Curse of Pride: +health% and +attack% per difficulty level (scales infinitely)
     addEnchantingRecipe(event, {
         reagent: 'minecraft:netherite_ingot',
         pedestalItems: [
@@ -785,7 +706,6 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // Ring of Divinity: magic immunity + permanent Cleanse
     addEnchantingRecipe(event, {
         reagent: 'minecraft:nether_star',
         pedestalItems: [
@@ -798,7 +718,6 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // Ring of Reflection: reflect negative trait effects back to enemies
     addEnchantingRecipe(event, {
         reagent: 'minecraft:spyglass',
         pedestalItems: [
@@ -811,7 +730,6 @@ ServerEvents.recipes(event => {
         sourceCost: 30000
     })
 
-    // Greed of Nidhoggur: extra loot multiplier scaling with mob level
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
@@ -824,7 +742,6 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // Abyssal Thorn: mobs get ALL possible traits but always drop trait items
     addEnchantingRecipe(event, {
         reagent: 'l2complements:warden_bone_shard',
         pedestalItems: [
@@ -837,7 +754,6 @@ ServerEvents.recipes(event => {
         sourceCost: 32000
     })
 
-    // Oddeyes Glasses: enhanced mob visibility (upgrades Detector Glasses)
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:detector_glasses',
         pedestalItems: [
@@ -850,7 +766,6 @@ ServerEvents.recipes(event => {
         sourceCost: 30000
     })
 
-    // Pocket of Restoration: auto-unseals sealed equipment when worn
     addEnchantingRecipe(event, {
         reagent: 'minecraft:ender_chest',
         pedestalItems: [
@@ -863,11 +778,7 @@ ServerEvents.recipes(event => {
         sourceCost: 28000
     })
 
-    // ═══════════════════════════════════════════════════════════════
-    // THAUMATURGE (LuV) — Terrasteel tier
-    // ═══════════════════════════════════════════════════════════════
 
-    // Eternium Ingot: top-tier eternal material, Runic Forge (LuV)
     addRunicAltarRecipe(event, {
         output: 'l2complements:eternium_ingot',
         ingredients: [
@@ -880,7 +791,6 @@ ServerEvents.recipes(event => {
         mana: 75000
     })
 
-    // Heirophant Green: fire immunity (EPIC — the premier fire protection accessory)
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -893,7 +803,6 @@ ServerEvents.recipes(event => {
         sourceCost: 42000
     })
 
-    // Divinity Cross: prevents Cleanse from removing Lv.1 beneficial effects
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -906,7 +815,6 @@ ServerEvents.recipes(event => {
         sourceCost: 40000
     })
 
-    // Divinity Light: adaptive level stays at 0 (prevents immunity stacking)
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -919,7 +827,6 @@ ServerEvents.recipes(event => {
         sourceCost: 42000
     })
 
-    // Triple Strip Cape: back-slot curio
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -932,7 +839,6 @@ ServerEvents.recipes(event => {
         sourceCost: 38000
     })
 
-    // Trait Adder Wand: add/modify traits on mobs (high-tier utility, PvP legal)
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -945,7 +851,6 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // Target Select Wand: make mobs fight each other (tactical PvP tool)
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
@@ -958,13 +863,7 @@ ServerEvents.recipes(event => {
         sourceCost: 35000
     })
 
-    // ═══════════════════════════════════════════════════════════════
-    // BEST — TECH + MAGIC (miracle_ingot = IV GT hard gate)
-    // All three require IV GT assembler access via miracle_ingot as reagent
-    // ═══════════════════════════════════════════════════════════════
 
-    // Abrahadabra: redirects ALL trait effects to surrounding enemies
-    // IV tech (miracle_ingot) + Alchemist magic (manasteel) + top L2Complements materials
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:miracle_ingot',
         pedestalItems: [
@@ -977,8 +876,6 @@ ServerEvents.recipes(event => {
         sourceCost: 60000
     })
 
-    // Imagine Breaker: all melee bypasses ALL magical protection
-    // IV tech (miracle_ingot) + mithril (anti-magic metal) + void sight
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:miracle_ingot',
         pedestalItems: [
@@ -991,8 +888,6 @@ ServerEvents.recipes(event => {
         sourceCost: 55000
     })
 
-    // Infinity Glove: adds 5 ring slots + 1 charm slot (massive accessory multiplier)
-    // LuV tech (hardest of the three) + Terrasteel (Thaumaturge) + divinity rings already crafted
     addEnchantingRecipe(event, {
         reagent: 'l2hostility:miracle_ingot',
         pedestalItems: [

@@ -9,9 +9,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'psi:cad_battery_extended' })
     event.remove({ id: 'psi:cad_battery_ultradense' })
 
-    // psidust trick crafting: circular (needs CAD that now needs psidust)
-    // try removal in case KubeJS can handle psi:trick_crafting type
-    // if this fails silently, CAD gate alone prevents bypass
     event.remove({ id: 'psi:psidust' })
 
     event.remove({ id: 'psi:psigem' })
@@ -67,9 +64,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'psi:psimetal_axe' })
     event.remove({ id: 'psi:psimetal_shovel' })
 
-    // pneuma attuned psimetal: gates all late PSI behind EV distillation chain
-    // psigem (and via it: hyperclocked/radiative cores, huge/transmissive sockets, exosuit, tools)
-    // requires pneuma_attuned_psimetal on pedestals
     event.recipes.gtceu.chemical_reactor('pneuma_attune_psimetal')
         .itemInputs('1x psi:psimetal')
         .inputFluids(Fluid.of('gtceu:pneuma', 500))
@@ -77,15 +71,12 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // psidust chain: HV mixer then Initiate imbuement
-    // silicon + redstone at HV energy crystallizes latent psionic potential
     event.recipes.gtceu.mixer('latent_psi_crystal')
         .itemInputs('2x gtceu:silicon_dust', '2x minecraft:redstone')
         .itemOutputs('1x kubejs:latent_psi_crystal')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // holy silver pedestals lock psidust behind Initiate magic
     addImbuementRecipe(event, {
         input: 'kubejs:latent_psi_crystal',
         output: 'psi:psidust',
@@ -93,8 +84,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
     })
 
-    // iron CAD assembly: dual HV + Initiate gate
-    // holy silver foil = magic component embedded in tech recipe
     event.recipes.gtceu.assembler('psi_iron_cad_assembly')
         .itemInputs('4x create:iron_sheet', '4x psi:psidust', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
@@ -137,12 +126,7 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // psimetal: keep vanilla trick_infusion path
-    // gated naturally: trick requires iron CAD (now HV/Initiate gated)
-    // teaches PSI spell system before advancing to psimetal CAD
 
-    // psimetal CAD assembly: gravitite spring = late HV / EV gate
-    // gravitite spring requires: gravitite_ingot -> needs holy_silver_ingot + resonant_zanite_crystal
     event.recipes.gtceu.assembler('psi_psimetal_cad_assembly')
         .itemInputs('4x #forge:ingots/psimetal', 'gtceu:gravitite_spring', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -150,8 +134,6 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // psigem: pedestals now require pneuma_attuned_psimetal instead of plain psimetal
-    // gates psigem (and all items requiring it) behind EV distillation chain
     addEnchantingRecipe(event, {
         reagent: 'psi:psimetal',
         pedestalItems: [
@@ -282,8 +264,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ebony psimetal: void-quenched psi alloy; tungsten density + ender resonance + end-sourced substance
-    // pneuma required: animating breath-force gives the void alloy its psychokinetic coherence
     event.recipes.gtceu.mixer('ebony_psimetal_alloy')
         .itemInputs('2x psi:psimetal', '4x psi:ebony_substance', '2x gtceu:tungsten_dust', '1x minecraft:ender_pearl')
         .inputFluids(Fluid.of('gtceu:pneuma', 500))
@@ -291,7 +271,6 @@ ServerEvents.recipes(event => {
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // ivory psimetal: aether-blessed psi alloy; holy silver = Initiate magic gate + ambrosium purity
     event.recipes.gtceu.mixer('ivory_psimetal_alloy')
         .itemInputs('2x psi:psimetal', '4x psi:ivory_substance', '2x gtceu:holy_silver_dust', '1x #forge:gems/ambrosium')
         .inputFluids(Fluid.of('gtceu:pneuma', 500))
@@ -327,7 +306,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // hyperclocked/radiative require psigem; gated behind trick_greater_infusion chain
     event.recipes.gtceu.assembler('psi_cad_core_hyperclocked')
         .itemInputs('4x #forge:ingots/psimetal', '2x minecraft:redstone', '1x psi:psigem', '#gtceu:circuits/hv')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
@@ -419,7 +397,6 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    // psimetal tools: counts match vanilla patterns (sword 1+1+1, pickaxe 2+1+2, axe 2+1+2, shovel 1+1+2)
     event.recipes.gtceu.assembler('psi_psimetal_sword')
         .itemInputs('1x #forge:ingots/psimetal', '1x psi:psigem', '1x #forge:rods/iron')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))

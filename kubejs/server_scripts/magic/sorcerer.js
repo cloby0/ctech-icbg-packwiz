@@ -40,7 +40,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // freezer arrests anti-gravitational buoyancy, makes ore stable
     event.custom({
         "type": "aether:freezing",
         "ingredient": { "item": "aether_redux:raw_gravitite" },
@@ -57,8 +56,6 @@ ServerEvents.recipes(event => {
         "experience": 0.8
     })
 
-    // holy silver + zanite resonance lock graviton matrix into stable ingot
-    // requires Initiate (holy_silver_ingot) + Journeyman zanite chain (resonant_zanite_crystal)
     addImbuementRecipe(event, {
         input: 'kubejs:altar_charged_gravitite',
         output: 'aether_redux:gravitite_ingot',
@@ -106,7 +103,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['kubejs:element_attunement_stone']
     })
 
-    // QoL: raw source ore -> 2x source gem directly (bypasses crush glyph + sieve + imbuement chain)
     addEnchantingRecipe(event, {
         reagent: { item: 'gtceu:raw_source' },
         pedestalItems: [
@@ -117,8 +113,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3000
     })
 
-    // side material: chaos_essence → pyrium_ingot via fire + air
-    // alternative to netherite+cinder route; chaos energy directed through elemental tension
     addEnchantingRecipe(event, {
         reagent: { item: 'kubejs:chaos_essence' },
         pedestalItems: [

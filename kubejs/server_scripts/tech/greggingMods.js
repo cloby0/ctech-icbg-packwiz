@@ -288,7 +288,6 @@ ServerEvents.recipes(event => {
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // motor removed: that is in the deck, not the tape
     event.recipes.gtceu.assembler('vista_cassette')
         .itemInputs(
             '2x gtceu:polyethylene_plate',

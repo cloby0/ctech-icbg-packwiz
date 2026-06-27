@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // outputs glacio_air instead of raw nitrogen; distill glacio_air for nitrogen/helium/argon
     event.recipes.gtceu.centrifuge('glacio_stone_centrifuge')
         .itemInputs('4x ad_astra:glacio_stone')
         .itemOutputs('2x gtceu:calcium_dust')
@@ -12,7 +11,6 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // 500 mB cryo_fuel per shard vs 25 mB per shard in vanilla cryo freezer
     event.recipes.gtceu.chemical_reactor('glacio_cryo_fuel_synthesis')
         .itemInputs('4x ad_astra:ice_shard')
         .inputFluids(Fluid.of('gtceu:nitrogen', 500))
@@ -20,7 +18,6 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
-    // vanilla crystal_processor_assembly uses fine_niobium_titanium_wire; replaced to require Glacio access
     event.replaceInput(
         { output: 'gtceu:crystal_processor_assembly' },
         'gtceu:fine_niobium_titanium_wire',

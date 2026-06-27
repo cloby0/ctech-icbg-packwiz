@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Remove vanilla recipes — replaced with GT+magic crossover recipes below
     event.remove({ output: 'cyberspells:rune_arm_left' })
     event.remove({ output: 'cyberspells:rune_arm_right' })
     event.remove({ output: 'cyberspells:rune_leg_left' })

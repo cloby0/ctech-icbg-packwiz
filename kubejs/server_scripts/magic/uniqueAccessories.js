@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // No vanilla removals — all UA items are loot/drop only by default
-    // hero_emblem (ender dragon) and burning_soul (warden) kept as drops only
 
     event.shaped(Item.of('uniqueaccessories:waist_warmer', 1), [
         'AAA', 'ASA', 'AAA'
@@ -109,7 +107,6 @@ ServerEvents.recipes(event => {
         sourceCost: 1500
     })
 
-    // zombie/husk exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:redstone', 'minecraft:redstone', 'gtceu:luminessence_dust'],
@@ -131,7 +128,6 @@ ServerEvents.recipes(event => {
         sourceCost: 1000
     })
 
-    // pillager/vindicator exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:coal', 'minecraft:coal', 'gtceu:luminessence_dust'],
@@ -139,7 +135,6 @@ ServerEvents.recipes(event => {
         sourceCost: 1500
     })
 
-    // pillager/vindicator exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:leather', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:string', 'gtceu:luminessence_dust'],
@@ -224,7 +219,6 @@ ServerEvents.recipes(event => {
         sourceCost: 2000
     })
 
-    // piglin_brute exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:redstone', 'minecraft:redstone_block', 'minecraft:redstone_block', 'minecraft:gold_block', 'minecraft:quartz', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust'],
@@ -239,7 +233,6 @@ ServerEvents.recipes(event => {
         sourceCost: 2000
     })
 
-    // mooshroom exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:suspicious_stew', 'minecraft:red_mushroom', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'gtceu:luminessence_dust'],
@@ -247,7 +240,6 @@ ServerEvents.recipes(event => {
         sourceCost: 1000
     })
 
-    // hoglin exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:cooked_porkchop', 'minecraft:cooked_porkchop', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'gtceu:luminessence_dust'],
@@ -255,7 +247,6 @@ ServerEvents.recipes(event => {
         sourceCost: 2000
     })
 
-    // witch exclusive normally
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:string', 'minecraft:string', 'minecraft:fermented_spider_eye', 'gtceu:luminessence_dust'],
@@ -277,7 +268,6 @@ ServerEvents.recipes(event => {
         sourceCost: 3500
     })
 
-    // tabi consumed into master version
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
         pedestalItems: ['uniqueaccessories:tabi', 'minecraft:leather', 'minecraft:leather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],

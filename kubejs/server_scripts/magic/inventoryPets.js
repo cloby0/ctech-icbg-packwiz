@@ -1,19 +1,14 @@
 ServerEvents.recipes(event => {
     const TMPL = 'modulargolems:metal_golem_template'
 
-    // remove all pet_* shaped recipes (catches primary + alt variants)
     event.remove({ output: /inventorypets:pet_.*/ })
-    // remove temp pet recipes that have diamond cost
     event.remove({ output: 'inventorypets:temp_chest' })
     event.remove({ output: 'inventorypets:temp_double_chest' })
     event.remove({ output: 'inventorypets:temp_feed_bag' })
-    // feed_bag accessories
     event.remove({ id: 'inventorypets:feed_bag' })
     event.remove({ id: 'inventorypets:feed_bag_temp' })
 
-    // X in every pattern below = metal_golem_template
 
-    // standard pets: template replaces diamond center
     event.shaped('inventorypets:pet_anvil', ['OOO', 'OXO', 'OGO'], {
         X: TMPL, G: 'minecraft:gold_block', O: 'minecraft:iron_ingot'
     })
@@ -30,13 +25,11 @@ ServerEvents.recipes(event => {
     event.shaped('inventorypets:pet_bed', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:white_wool', G: 'minecraft:gold_ingot', O: 'minecraft:redstone'
     })
-    // biome: all 9 slots unique — X replaces center D
     event.shaped('inventorypets:pet_biome', ['IFA', 'RXN', 'TGL'], {
         X: TMPL, I: 'minecraft:dirt', F: 'minecraft:grass_block', A: 'minecraft:sand',
         R: 'minecraft:gravel', N: 'minecraft:snowball',
         T: 'minecraft:cobblestone', G: 'minecraft:gold_ingot', L: 'minecraft:clay'
     })
-    // blaze: original used N key for diamond center, not D
     event.shaped('inventorypets:pet_blaze', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:quartz', G: 'minecraft:gold_ingot', O: 'minecraft:gold_nugget'
     })
@@ -125,7 +118,6 @@ ServerEvents.recipes(event => {
         X: TMPL, T: 'inventorypets:nugget_emerald', F: 'minecraft:gold_nugget',
         G: 'minecraft:gold_ingot', O: 'inventorypets:nugget_coal', U: 'minecraft:redstone'
     })
-    // mooshroom: two recipes (red + brown mushroom)
     event.shaped('inventorypets:pet_mooshroom', ['OFB', 'OXB', 'OGB'], {
         X: TMPL, B: 'minecraft:iron_nugget', F: 'minecraft:red_mushroom',
         G: 'minecraft:gold_ingot', O: 'minecraft:redstone'
@@ -149,7 +141,6 @@ ServerEvents.recipes(event => {
     event.shaped('inventorypets:pet_pingot', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'inventorypets:nugget_diamond', G: 'minecraft:gold_ingot', O: 'minecraft:lapis_lazuli'
     })
-    // pixie: emerald flanks center in middle row
     event.shaped('inventorypets:pet_pixie', ['OFO', 'EXE', 'OGO'], {
         X: TMPL, E: 'minecraft:emerald', F: 'inventorypets:nugget_emerald',
         G: 'minecraft:gold_ingot', O: 'minecraft:gold_ingot'
@@ -182,7 +173,6 @@ ServerEvents.recipes(event => {
     event.shaped('inventorypets:pet_snow_golem', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:pumpkin', G: 'minecraft:gold_ingot', O: 'minecraft:quartz'
     })
-    // spider: two recipes (raw_meats + raw_fishes)
     event.shaped('inventorypets:pet_spider', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: '#inventorypets:raw_meats', G: 'minecraft:gold_ingot', O: 'inventorypets:nugget_coal'
     })
@@ -198,7 +188,6 @@ ServerEvents.recipes(event => {
     event.shaped('inventorypets:pet_torch', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:coal', G: 'minecraft:gold_ingot', O: 'minecraft:stick'
     })
-    // wolf: two recipes (beef + raw chicken)
     event.shaped('inventorypets:pet_wolf', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:beef', G: 'minecraft:gold_ingot', O: 'minecraft:iron_nugget'
     })
@@ -206,7 +195,6 @@ ServerEvents.recipes(event => {
         X: TMPL, F: 'minecraft:chicken', G: 'minecraft:gold_ingot', O: 'minecraft:iron_nugget'
     })
 
-    // legendary pets: nether_star or emerald at center, diamond was in G slot → template replaces G
     event.shaped('inventorypets:pet_black_hole', ['OFO', 'ODO', 'OXO'], {
         X: TMPL, D: 'minecraft:nether_star', F: 'inventorypets:nugget_obsidian', O: 'inventorypets:nugget_coal'
     })
@@ -231,29 +219,23 @@ ServerEvents.recipes(event => {
     event.shaped('inventorypets:pet_slime', ['OFO', 'ODO', 'OXO'], {
         X: TMPL, D: 'minecraft:nether_star', F: 'minecraft:golden_apple', O: 'inventorypets:nugget_emerald'
     })
-    // sun: all surrounding slots are gold_ingot
     event.shaped('inventorypets:pet_sun', ['OOO', 'ODO', 'OXO'], {
         X: TMPL, D: 'minecraft:nether_star', O: 'minecraft:gold_ingot'
     })
 
-    // no-diamond pets: template added to one corner slot
-    // grave: no diamond, center is emerald
     event.shaped('inventorypets:pet_grave', ['XFO', 'ODO', 'OGO'], {
         X: TMPL, D: 'minecraft:emerald', F: 'minecraft:bone',
         G: 'minecraft:chest', O: 'minecraft:stone'
     })
-    // mickerson: center is nether_star, no diamond anywhere
     event.shaped('inventorypets:pet_mickerson', ['XFO', 'ODO', 'OGO'], {
         X: TMPL, D: 'minecraft:nether_star', F: 'inventorypets:nugget_diamond',
         G: 'minecraft:gold_ingot', O: 'inventorypets:nugget_lapis'
     })
-    // wither: center is nether_star, no diamond
     event.shaped('inventorypets:pet_wither', ['XFO', 'ONO', 'OGO'], {
         X: TMPL, N: 'minecraft:nether_star', F: 'minecraft:soul_sand',
         G: 'minecraft:gold_ingot', O: 'inventorypets:nugget_coal'
     })
 
-    // evolution recipes: gated indirectly (base pet already requires template)
     event.shaped('inventorypets:pet_dingot', ['OFO', 'ONO', 'OGO'], {
         O: 'minecraft:diamond', N: 'inventorypets:pet_biome',
         F: 'minecraft:copper_ingot', G: 'inventorypets:pet_pingot'
@@ -268,7 +250,6 @@ ServerEvents.recipes(event => {
         D: 'inventorypets:pet_double_chest', O: 'inventorypets:nugget_diamond'
     })
 
-    // temp variants (same gate as permanent versions)
     event.shaped('inventorypets:temp_chest', ['OFO', 'OXO', 'OGO'], {
         X: TMPL, F: 'minecraft:iron_nugget', G: 'minecraft:gold_ingot', O: '#minecraft:planks'
     })
@@ -282,7 +263,6 @@ ServerEvents.recipes(event => {
         X: TMPL, F: 'minecraft:string', G: '#forge:chests', O: 'minecraft:leather'
     })
 
-    // meta pets: shapeless combinations of existing pets (indirectly gated via base pets)
     event.shapeless('inventorypets:pet_meta', ['#inventorypets:all_pets', '#inventorypets:all_pets', '#inventorypets:all_pets'])
     event.shapeless('inventorypets:pet_meta_aoe', ['#inventorypets:aoe_pets', '#inventorypets:aoe_pets', '#inventorypets:aoe_pets', '#inventorypets:aoe_pets'])
     event.shapeless('inventorypets:pet_meta_fan', ['#inventorypets:fan_pets', '#inventorypets:fan_pets', '#inventorypets:fan_pets', '#inventorypets:fan_pets'])

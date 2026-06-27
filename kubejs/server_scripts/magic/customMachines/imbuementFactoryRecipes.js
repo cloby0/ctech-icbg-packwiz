@@ -1,9 +1,3 @@
-//priority: 1
-// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla/mod-added imbuement recipes.
-// tier scripts call addImbuementRecipe(event, {...}) directly — it adds both chamber and factory recipes.
-// if a tier script REMOVES a vanilla ars_nouveau:imbuement recipe, it must ALSO remove the factory mirror:
-//   event.remove({ type: 'gtceu:imbuement_factory', output: 'namespace:item' })
-// otherwise the factory will keep a recipe the chamber no longer has.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 
@@ -59,11 +53,6 @@ function _resolveImbuementItem(entry, debugLabel) {
     return null
 }
 
-// normalizes a pedestal entry to the double-nested format ars_nouveau:imbuement expects in raw JSON:
-//   string "item:id"         → { item: { item: "item:id" } }
-//   string "#tag:id"         → { item: { tag: "tag:id" } }
-//   { item: "item:id" }      → { item: { item: "item:id" } }  (single-nested)
-//   { item: { item: "..." } } or { item: { tag: "..." } } → pass through
 function normalizePedestal(p) {
     if (typeof p === 'string') {
         return p.startsWith('#') ? { item: { tag: p.slice(1) } } : { item: { item: p } }
@@ -74,8 +63,6 @@ function normalizePedestal(p) {
     return p
 }
 
-// normalizes input to { item: "..." } or { tag: "..." } for both factory resolveItem and chamber JSON
-// handles KubeJS count-prefixed strings like "4x gtceu:rubber_dust" serialized into recipe JSON
 function normalizeInput(i) {
     if (typeof i === 'string') {
         const countMatch = i.match(/^(\d+)x (.+)$/)
@@ -85,11 +72,6 @@ function normalizeInput(i) {
     return i
 }
 
-// adds both a gtceu:imbuement_factory recipe and an ars_nouveau:imbuement chamber recipe.
-// set crecipe.skipChamber = true to skip the chamber emit (used for vanilla recipe mirrors).
-// input accepts: "item:id", "#tag:id", { item: "..." }, or { tag: "..." }
-// pedestalItems accepts: strings, { item: "item:id" }, or { item: { item/tag: "..." } }
-// output accepts: "item:id" or { item: "item:id", count: N }; count also accepted as top-level crecipe.count
 function addImbuementRecipe(event, crecipe) {
     let index = _nextImbuementIndex++
 
@@ -154,14 +136,12 @@ function addImbuementRecipe(event, crecipe) {
 global.addImbuementRecipe = addImbuementRecipe
 
 ServerEvents.recipes(event => {
-    // mirror all vanilla/mod ars_nouveau:imbuement recipes to the factory (skipChamber: they already exist)
     event.forEachRecipe({ type: 'ars_nouveau:imbuement' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
         crecipe.skipChamber = true
         addImbuementRecipe(event, crecipe)
     })
 
-    // controller block crafting recipe
     event.recipes.gtceu.assembler('imbuement_factory_controller')
         .itemInputs(
             '4x gtceu:ambrotungstite_plate',

@@ -1,8 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 
-    // pure_daisy removed here and re-gated behind the enchanting apparatus recipe below
-    // petal apothecary block itself requires livingrock (EV gate via pure_daisy) — no ingredient swap needed
     event.remove({ id: "botania:petal_apothecary/pure_daisy" })
 
     addEnchantingRecipe(event, {
@@ -77,7 +75,6 @@ ServerEvents.recipes(event => {
         sourceCost: 4000
     })
 
-    // 3x source gem per raw at Alchemist tier
     addEnchantingRecipe(event, {
         reagent: { item: 'gtceu:raw_source' },
         pedestalItems: [
@@ -89,14 +86,12 @@ ServerEvents.recipes(event => {
         sourceCost: 6000
     })
 
-    // Mana pool QoL glowstone block -> 4x luminessence dust (bypasses cauldron chain)
     addManaPondRecipe(event, {
         input: { item: 'minecraft:glowstone' },
         mana: 2000,
         output: { count: 4, item: 'gtceu:luminessence_dust' }
     })
 
-    // Mana pool QoL silver [alchemy catalyst] -> holy silver (skips multi-step chain)
     addManaPondRecipe(event, {
         input: { tag: 'forge:ingots/silver' },
         mana: 3000,
@@ -104,12 +99,7 @@ ServerEvents.recipes(event => {
         output: { item: 'gtceu:holy_silver_ingot' }
     })
 
-    // Hex Casting ALL functional items gated behind hexed_amethyst_core (Alchemist gate)
-    // charged_amethyst drops from geodes freely; core requires Manasteel imbuement
-    // decorative blocks (amethyst bricks, edified wood) and amethyst_dust packing stay vanilla
-    // hex_callback naturally gated by focus+artifact dep
 
-    // hexed_amethyst_core: entry point for basic Hex Casting (staffs, scrolls, slate, utility)
     addImbuementRecipe(event, {
         input: 'hexcasting:charged_amethyst',
         output: 'kubejs:hexed_amethyst_core',
@@ -117,8 +107,6 @@ ServerEvents.recipes(event => {
         pedestalItems: ['gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'gtceu:abstract_metal_ingot', 'minecraft:glowstone']
     })
 
-    // hexed_mana_matrix: second gate for advanced Hex tools (focus, spellbook, artifact, akashic)
-    // upgrades the core with mana attunement; gates tools that actually hold/cast spells
     addEnchantingRecipe(event, {
         reagent: 'kubejs:hexed_amethyst_core',
         pedestalItems: [

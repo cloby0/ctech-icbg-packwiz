@@ -1,6 +1,3 @@
-//priority: 1
-// runs before tier scripts (priority 0), so forEachRecipe only sees vanilla/mod-added recipes.
-// tier scripts call addEnchantingRecipe directly to add both apparatus and sanctum recipes.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
 

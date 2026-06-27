@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // Dragon Heart Crystal — hard UHV gate
-    // Requires: DE dragon fight (dragon_heart) + Sage+ chain (all 4 gaian cores + boundless_gaia_spirit_ingot)
-    // This is the Prophet initiation item; gates ALL Prophet and UHV content
     addEnchantingRecipe(event, {
         reagent: 'draconicevolution:dragon_heart',
         pedestalItems: [
@@ -19,9 +16,6 @@ ServerEvents.recipes(event => {
         sourceCost: 70000
     })
 
-    // Draconic Boule — extends the gaian neutronium boule chain into UHV
-    // Output: 384 wafers (cut in precision laser engraver, see uhvAndDraconic.js)
-    // Requires: existing UV boule + dragon_heart_crystal + awakened draconium
     addEnchantingRecipe(event, {
         reagent: 'kubejs:gaian_neutronium_boule',
         pedestalItems: [
@@ -38,9 +32,6 @@ ServerEvents.recipes(event => {
         sourceCost: 60000
     })
 
-    // Prophet spellbook upgrades — Sage tier → Prophet tier
-    // Each consumes the corresponding Sage book + Dragon Heart Crystal + awakened draconium
-    // Sage books gate their Prophet equivalents; gaia_ingot confirms Sage completion
 
     addEnchantingRecipe(event, {
         reagent: 'kubejs:blood_grimoire',

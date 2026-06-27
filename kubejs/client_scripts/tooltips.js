@@ -4,31 +4,24 @@ ItemEvents.tooltip((event) => {
     "§7A chip that comes with the firmware to think in ME",
   );
 
-  // Draconic theme: ZPM → UEV
   event.add("kubejs:draconic_processor", "§5ZPM-Tier Circuit");
   event.add("kubejs:draconic_processor_assembly", "§5UV-Tier Circuit");
   event.add("kubejs:draconic_processor_supercomputer", "§5UHV-Tier Circuit");
   event.add("kubejs:draconic_processor_mainframe", "§5UEV-Tier Circuit");
 
-  // Chaos theme: UV → UIV
   event.add("kubejs:chaos_processor", "§4UV-Tier Circuit");
   event.add("kubejs:chaos_processor_assembly", "§4UHV-Tier Circuit");
   event.add("kubejs:chaos_processor_supercomputer", "§4UEV-Tier Circuit");
   event.add("kubejs:chaos_processor_mainframe", "§4UIV-Tier Circuit");
 
-  // Cumium theme: UEV → UXV
   event.add("kubejs:cumium_processor", "§aUEV-Tier Circuit");
   event.add("kubejs:cumium_processor_assembly", "§aUIV-Tier Circuit");
   event.add("kubejs:artificial_cumium_brain", "§aUXV-Tier Circuit");
 
-  // Magic tier labels — mirrors GTCEu voltage tier display.
-  // Tags defined in itemTags.js; add items there to extend a tier's tooltip.
   const TIER_ITEMS = [
-    // apprentice
     "gtceu:luminessence_dust",
     "hexcasting:charged_amethyst",
     "irons_spellbooks:magic_cloth",
-    // journeyman
     "ars_nouveau:source_gem",
     "kubejs:resonant_zanite_crystal",
     "aether_redux:veridium_ingot",
@@ -47,26 +40,21 @@ ItemEvents.tooltip((event) => {
     "irons_spellbooks:protection_rune",
     "cataclysm_spellbooks:abyssal_rune",
     "cataclysm_spellbooks:technomancy_rune",
-    // initiate
     "gtceu:holy_silver_ingot",
     "kubejs:sacred_ambrosium_shard",
     "irons_spellbooks:divine_pearl",
-    // sorcerer
     "gtceu:prima_materia_ingot",
     "aether_redux:gravitite_ingot",
     "kubejs:element_attunement_stone",
     "kubejs:chaos_essence",
     "irons_spellbooks:pyrium_ingot",
-    // alchemist
     "botania:manasteel_ingot",
     "gtceu:abstract_metal_ingot",
     "kubejs:hexed_amethyst_core",
-    // thaumaturge
     "botania:terrasteel_ingot",
     "kubejs:florid_compound",
     "kubejs:living_metalloid",
     "kubejs:rune_of_frost",
-    // arcanist
     "botania:elementium_ingot",
     "kubejs:weak_elementium_dust",
     "kubejs:elven_concentrate",
@@ -74,12 +62,10 @@ ItemEvents.tooltip((event) => {
     "extrabotany:aerialite_ingot",
     "extrabotany:photonium_ingot",
     "extrabotany:shadowium_ingot",
-    // sage
     "botania:gaia_ingot",
     "kubejs:vengeful_gaia_spirit",
     "kubejs:soul_of_gaia",
     "kubejs:boundless_gaia_spirit_ingot",
-    // sage+
     "extrabotany:orichalcos_ingot",
     "extrabotany:hero_medal",
   ];

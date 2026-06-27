@@ -1,4 +1,3 @@
-// Recipe type name matches machine name — GTCEu auto-binds by matching ID.
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('draconic_infusion_chamber')
         .category('draconic')

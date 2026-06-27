@@ -45,8 +45,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // synthesis alt for reliquary:fertile_essence — avoids 2% rare mob drop grind
-    // skeleton/slime/creeper MA essences replace rib_bone/slime_pearl/catalyzing_gland
     addEnchantingRecipe(event, {
         reagent: 'mysticalagriculture:nature_essence',
         pedestalItems: [
@@ -57,9 +55,6 @@ ServerEvents.recipes(event => {
         sourceCost: 15000
     })
 
-    // rune_of_frost: glacio-forged runic catalyst
-    // requires manasteel (Alchemist), naquadah (Glacio), ice shard (Glacio), source gem (Journeyman)
-    // higher mana cost reflects cryo-crystallization process
     addRunicAltarRecipe(event, {
         output: { count: 1, item: 'kubejs:rune_of_frost' },
         mana: 25000,
@@ -75,9 +70,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // frost-enhanced terrasteel; rune_of_frost added to TAP alongside normal inputs
-    // cryo resonance concentrates the mana field; 3x yield for 3x mana cost
-    // requires Glacio access to craft the rune — hybridized player reward
     addTerraPlateRecipe(event, {
         result: { count: 3, item: 'botania:terrasteel_ingot' },
         mana: 1500000,
@@ -89,8 +81,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // 4x source gem per raw at Thaumaturge tier
-    // rune_spring + rune_water: the Runic Altar's output, renewal and flow — enhance source crystallization
     addEnchantingRecipe(event, {
         reagent: { item: 'gtceu:raw_source' },
         pedestalItems: [
@@ -103,9 +93,6 @@ ServerEvents.recipes(event => {
         sourceCost: 10000
     })
 
-    // mana_diamond conjuration — sin runes each eat 2; this makes scaling them viable
-    // costs more mana per diamond than fresh alchemy route but requires no diamonds after initial stock
-    // vanilla Mana Pool consumes input + outputs 2; GT Mana Pond does not consume + outputs 1; net +1 both ways
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_diamond' },
         mana: 25000,
@@ -113,7 +100,6 @@ ServerEvents.recipes(event => {
         output: { item: 'botania:mana_diamond', count: 2 }
     })
 
-    // mana_pearl conjuration — terra plate + pixie_dust trade both consume them
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_pearl' },
         mana: 15000,
@@ -121,8 +107,6 @@ ServerEvents.recipes(event => {
         output: { item: 'botania:mana_pearl', count: 2 }
     })
 
-    // late-game shortcut: terrasteel alchemy → 4x abstract_metal
-    // at LuV+ terrasteel is renewable via TAP; removes permanent dependency on HV/EV material blocks per ingot
     addManaPondRecipe(event, {
         input: { tag: 'forge:ingots/terrasteel' },
         mana: 20000,
