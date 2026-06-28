@@ -83,12 +83,22 @@
                 "level": 1
             },
             {
-                "name": "silentcompat:irradiating",
+                "name": "silentgear:lustrous",
                 "level": 1
             },
             {
-                "name": "silentgear:lustrous",
-                "level": 1
+                "name": "silentcompat:withering",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
             }
         ],
         "rod": [],

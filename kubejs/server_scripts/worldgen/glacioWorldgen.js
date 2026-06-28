@@ -153,4 +153,31 @@ GTCEuServerEvents.oreVeins((event) => {
         .radius(4),
     );
   });
+
+  // arcmetal is UV-tier locked to Glacio — Tantalite companion signals rare-earth processing chain
+  event.add("kubejs:arcmetal_vein_gl", vein => {
+    vein.weight(8)
+    vein.clusterSize(14)
+    vein.density(0.4)
+    vein.discardChanceOnAirExposure(0)
+    vein.layer("glacio")
+    vein.dimensions("ad_astra:glacio")
+    vein.biomes("ad_astra:glacio_snowy_barrens")
+    vein.heightRangeUniform(-20, 30)
+    vein.layeredVeinGenerator(generator => generator
+        .buildLayerPattern(pattern => pattern
+            .layer(l => l.weight(3).mat(GTMaterials.get("arcmetal")).size(2, 4))
+            .layer(l => l.weight(2).mat(GTMaterials.Tantalite).size(2, 3))
+            .layer(l => l.weight(2).mat(GTMaterials.Lepidolite).size(1, 3))
+            .layer(l => l.weight(1).mat(GTMaterials.Monazite).size(1, 2))
+        )
+    )
+    vein.surfaceIndicatorGenerator(indicator => indicator
+        .surfaceRock(GTMaterials.Tantalite)
+        .placement("surface")
+        .density(0.15)
+        .radius(4)
+    )
+  })
+
 });

@@ -54,6 +54,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
         block(material, `ad_astra:${material}_block`)
     }
 
+    // silentcompat ships ingot+nugget+block but no plate — GT generates plate
+    function silentCompatFixer(material) {
+        ingot(material, `silentcompat:${material}_ingot`)
+        nugget(material, `silentcompat:${material}_nugget`)
+        block(material, `silentcompat:${material}_block`)
+    }
+
     adAstraFixer('desh')
     adAstraFixer('ostrum')
     adAstraFixer('calorite')
@@ -94,6 +101,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('awakened_draconium', 'draconicevolution:awakened_draconium_ingot')
     nugget('awakened_draconium', 'draconicevolution:awakened_draconium_nugget')
     block('awakened_draconium', 'draconicevolution:awakened_draconium_block')
-    
+
     gem('chaos_crystal', 'draconicevolution:chaos_shard')
+
+    silentCompatFixer('voidmetal')
+    silentCompatFixer('solarmetal')
+    silentCompatFixer('arcmetal')
 })

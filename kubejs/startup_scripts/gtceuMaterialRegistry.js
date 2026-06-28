@@ -111,6 +111,30 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Cx')
         .isIsotope(false)
 
+    event.create('voidmetal')
+        .protons(46)
+        .neutrons(186)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Vm')
+        .isIsotope(false)
+
+    event.create('solarmetal')
+        .protons(47)
+        .neutrons(188)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Sy')
+        .isIsotope(false)
+
+    event.create('arcmetal')
+        .protons(49)
+        .neutrons(192)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Az')
+        .isIsotope(false)
+
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -864,5 +888,59 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_FOIL
         )
+
+    event.create('voidmetal')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0x4B0082).secondaryColor(0x200040)
+        .blastTemp(4500, "high", GTValues.VA[GTValues.IV], 1000)
+        .element('voidmetal')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.NO_SMELTING
+        )
+        .addOreByproducts('osmium', 'iridium', 'platinum')
+        .washedIn('gtceu:mercury')
+        .separatedInto('osmium', 'iridium')
+
+    event.create('solarmetal')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0xFFD700).secondaryColor(0xB8860B)
+        .blastTemp(5400, "high", GTValues.VA[GTValues.LuV], 1000)
+        .element('solarmetal')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.NO_SMELTING
+        )
+        .addOreByproducts('platinum', 'palladium', 'iridium')
+        .washedIn('gtceu:mercury')
+        .separatedInto('platinum', 'palladium')
+
+    event.create('arcmetal')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0x00BFFF).secondaryColor(0x0050A0)
+        .blastTemp(7200, "high", GTValues.VA[GTValues.UV], 1000)
+        .element('arcmetal')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.NO_SMELTING
+        )
+        .addOreByproducts('europium', 'neodymium', 'cerium')
+        .washedIn('gtceu:mercury')
+        .separatedInto('europium', 'neodymium')
 
 })

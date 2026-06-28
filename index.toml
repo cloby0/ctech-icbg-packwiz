@@ -169,22 +169,6 @@ file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
-file = "data/psi/recipes/ebony_psimetal.json"
-hash = "49365362f151457388329854c362eaf86f03288933ae1e3198001f4fb1b27c51"
-
-[[files]]
-file = "data/psi/recipes/ebony_substance.json"
-hash = "b537f1b5c7521c728858589c2b0b86c59d19812bfe3ae0b78bdcab0aeb7693b5"
-
-[[files]]
-file = "data/psi/recipes/ivory_psimetal.json"
-hash = "322a4d30c5360e94d51fdd868ad838e0f25ebc64f8adf6333b98a8563e0f6be9"
-
-[[files]]
-file = "data/psi/recipes/ivory_substance.json"
-hash = "9c2f2e9f5664effce622052ea978932f1406b716d82a52c4e0b5638d4eb871ef"
-
-[[files]]
 file = "defaultconfigs/aether-server.toml"
 hash = "b0396c1d80a73a716b99c9702ff4cb139cf7d7126a70dfbd8b1b8405b5db78a1"
 
@@ -1190,7 +1174,7 @@ hash = "eb4400cc60659270604f9a6d81b9720d60c44ae9e655a7b558d1b1f066c1ae32"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/darmstadtium_ingot.json"
-hash = "7e87c41ba6c7851c59d7cacc8e772a8a2348a4fc6bbd7dd302e7015ebefb6309"
+hash = "e1d1b3e4250ea1f1a9a88938747e55f44fccec9d212424f8424d10bb35ff212c"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/duranium_ingot.json"
@@ -1198,11 +1182,11 @@ hash = "e80cf4e4ca07b88963a2e8c5117101003c4dc9448fee6a1a7981f6026350cdc3"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/enriched_naquadah_ingot.json"
-hash = "0cfa700378bad21fb06d71ab711a1c62ea2cdaba28d36aae3a258882ba58702f"
+hash = "001fdafc5b8b43d1144226ca4e098467f541b1e31ca9279503fe534386b4573e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/enriched_naquadah_trinium_europium_duranide_ingot.json"
-hash = "639009558c4e8bdadaceb012daefbc821aa1d6ad04292f7f3301c584cdb85a67"
+hash = "fd539665b0cd7ce045f1d2a496b2029752dbf2a46ecbd4cb2b4850e8cf98ba94"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/europium_ingot.json"
@@ -1278,15 +1262,15 @@ hash = "c0ce6ed082134ec6f16b9bc7ce9cc8d43ced28319b015c75678bc5588ab9dce9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_alloy_ingot.json"
-hash = "8682c14cc2b41081c23cc0e7577638c53d90508dd4e6b6f364ba611ed951e976"
+hash = "98af951067d9d8c11f0dfe9157df9679e78610089bfbc57a2fc0d5218ece5bd5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_ingot.json"
-hash = "9b1959e0a1c7690971e6ea27d51a91479ac8926894e2945a33b21d4416a84788"
+hash = "64e631c8c9ba7bc27f9f6f70dbe823ed2aff1c4c132a51f938ccb1681e803e42"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadria_ingot.json"
-hash = "900b3ac96beed739e7667b5e2492803072f4b83c80d03571563a127b1eea8dc0"
+hash = "d37711f64475980b91440caf339cc769b1b0bd1b64179d9c0ad3a86eff32583e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/neodymium_ingot.json"
@@ -1314,11 +1298,11 @@ hash = "34ac2c0f97af44f3171800c64c20a0d5647e2e2a919fbd89e4296521174ef155"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/plutonium_241_ingot.json"
-hash = "3011ac44f0fbd147aac1b41f8c18b0cd821e68e16979b911465e45da59947612"
+hash = "e3f95deba737380cdb883fbb18922a6d91d621054c967b7fe4cddf54e9f8adbc"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/plutonium_ingot.json"
-hash = "7b669df0ed6da9b7d8a48d9343c7aab2b28300cc185aec9b1b066f858f1d5c82"
+hash = "22f4db2b44635875e4ad29001783603f77886280065e342a5e04a43fbeb284e8"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/potin_ingot.json"
@@ -1362,7 +1346,7 @@ hash = "3377c4368bbc9e364b3d155ef35176c6f7b3209adf4731bb5d2e15aa851f3dd7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ruthenium_trinium_americium_neutronate_ingot.json"
-hash = "8b4e722a8cfdba7697bbee88424699df6269a1ca92b354d343bcbe802e408781"
+hash = "1a22a91297df71d77a48d251e9861534a5d47de6f4f0c7dcf2a58b2600165de7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/samarium_ingot.json"
@@ -1394,7 +1378,7 @@ hash = "e1158053e01b6cdcfc621f3200e6466b9c09d037e1bf43cc5cf3ad7bbead02e5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/thorium_ingot.json"
-hash = "86acdfe7ee12a5476d42df4ce6e5a4e3c4ff28cf5b9f994ad7a3df5160e196b8"
+hash = "432b87356286d5f63fd4dbb33e5ee29a20e3f17e79ea5e50386ff51af1de1250"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tin_alloy_ingot.json"
@@ -1438,15 +1422,15 @@ hash = "93cd69d8b9be3b86058b6b7f1afca94c2392523df506402cefb5a9c847bb6ad2"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_235_ingot.json"
-hash = "b840f3b1969a687a7ab3d1feb900ef144835fc709bb8702678c0a13a4b8bfa4c"
+hash = "7dc0561beb3c989de4d263f561ff64c1a67727fbc1cd18fda686bf86ab5d061d"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_rhodium_dinaquadide_ingot.json"
-hash = "d8ffbb6d74f731492e7c9c4d71d8fcea44e6b0a2174cda4449ad105654e92b41"
+hash = "80b5575e0485e963e1c45b216b6d56bf01f563263a8bbcda2b7a0243d4a0256b"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_triplatinum_ingot.json"
-hash = "4643400636745b0e99339691ec1d4a4fffd80021fc15750f67746f89ef366943"
+hash = "5fb30a37f440374a995682c473e11e36b41c5d417a14a287ae98451e415e67ac"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/vanadium_ingot.json"
@@ -1749,6 +1733,10 @@ file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "1c6a3e9a17e61fa60e569bd4b7ad184a19168ee8c4367a54ff57db1856ded78c"
 
 [[files]]
+file = "kubejs/server_scripts/tech/silentcompat.js"
+hash = "dbf9766fa291081c2960c15f7c548d8d928a260e5a22f02b77e751ef4b827882"
+
+[[files]]
 file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
 hash = "0d806e0a292ac225b7b7156dc06677f5814498f79a0216dd9fd0b865a438286c"
 
@@ -1778,11 +1766,11 @@ hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"
-hash = "c281d2dcb8848c875aa7a50dd846c2a03bd22e3d11f09bd9c337f1adee348b1a"
+hash = "94d558863adb0f8b2e3bfabc281283b69810049b83ecbda2ab384bb01b17e776"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
-hash = "466d9b24e221300a3ed1af73c9d07cc3116a6c829f76456aa51400d2e22ce3f7"
+hash = "d45cec649b917f6a17e34cbff2a3652c4d85a1f26fe604cdbc1df2ddebd77f4f"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/marsWorldgen.js"
@@ -1794,7 +1782,7 @@ hash = "5ed7299ec9c1ed24387a7981cd74987b972b3daa9c891f363ebd406dcb619136"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/venusAndMercuryWorldgen.js"
-hash = "51b6af1404230487c8d28238465e9d52768620a30bfe38fa0a03142e9c9b2586"
+hash = "fbad91119495fb9c34e6cdfdf89c49981dc28474eea0be01afbbada70de7d27e"
 
 [[files]]
 file = "kubejs/startup_scripts/adAstraRemoveWorldgen.js"
@@ -1870,11 +1858,11 @@ hash = "c256b59269c3e613b6aa07bef8591e5fd1a8affcbed591d88b5d99d76da66341"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "d67de3d81912520742c182519c33e25b1b96ef440fadbe01f69b597c153d2e5a"
+hash = "59452fe9996c533d1561c2456aa9876aa27a4a29a04c64d85e0ff73ed55c2af5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "c13613d0a556e8ebe5d2cedb34967b76175b33359d63c2e7fb67f47f3a99ee85"
+hash = "b2043120561c8e0b41fa98b5c296c36d209d43b057040492b451bc9f59005248"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -1895,6 +1883,10 @@ hash = "c1b2c12af7b3f7da07c3ce64d611583d56099ac9da3be34ebf1385a045332d4e"
 [[files]]
 file = "kubejs/startup_scripts/oreRegistry.js"
 hash = "23d6005a805d1e0eee30f22b41c4484de8ef5a24397130f0dc12bfb2a63c23a1"
+
+[[files]]
+file = "kubejs/startup_scripts/silentcompatRemoveWorldgen.js"
+hash = "5880dcc5802a8f262da0b4ed744a80e6dd9ee821b2eda932974b7a8552abc52a"
 
 [[files]]
 file = "mods/CyberSpells-1.1.jar"
