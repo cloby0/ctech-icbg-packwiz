@@ -877,6 +877,38 @@ file = "kubejs/assets/kubejs/textures/item/elven_concentrate.png"
 hash = "b54db6d210a35da8d42db5eb5d452f3896ad0e2b62d88f38151d0433818c3ee4"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_gun_fire_control.png"
+hash = "26a67c937b7fa99a23fbd91f7df3d6b79e5a1c244ace3fdb494fbf8072a89173"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_heavy_frame.png"
+hash = "71ffe0b0f37d1894ed8fd02d8eec4596e60296fe5c16aa2ff9b4127907d53c2d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_long_barrel.png"
+hash = "d03bd9a1be08abf2a9ecae8518849d8095a23cbdbc3c1118d9cf039bf31915bd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_long_barrel_blank.png"
+hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_pistol_frame.png"
+hash = "e557dc19dd30d3c61098ea299402e4cdc61f46f21ce122879ed8b1a4ec3935f6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_rifle_receiver.png"
+hash = "032636de6668b6e3303d5e13b61916eae53cb93d34abd94a69fb9eacdc19d075"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_short_barrel.png"
+hash = "03b2c2ce0a08c0e590764ba598d1424bb514e346d01857ae922e4216d3d154d6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ev_short_barrel_blank.png"
+hash = "064c0308dda53524b4422bb5f83155d500be5f838e8ff0268c68d3be9c94eb57"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/florid_compound.png"
 hash = "a0b3888299da34ad52b7818f594f45e323bde242b1d1efe5da3545aee6ed9bc5"
 
@@ -889,6 +921,10 @@ file = "kubejs/assets/kubejs/textures/item/gaian_blood_core.png"
 hash = "1158125dbca814b2ddb719f4e38b8deb797ae6cc002cd432b385215561e7ff3f"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/gaian_holy_core.png"
+hash = "a1bd777eae3e6b04c03e4141d436393b93f84d30b97ba364b0b2afde05bd35dc"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/gaian_void_core.png"
 hash = "9a4ee784ed91cdb93692016034e4a346a49d39895e2332edd05830de72d771e3"
 
@@ -897,16 +933,160 @@ file = "kubejs/assets/kubejs/textures/item/glowing_compound_dust.png"
 hash = "f4f4a7e067f07df0c52929a1a8cf8d6b1c9982eed9e694df690fb720324a6437"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/gun_fire_control.png"
+hash = "0d0958b6082a989ad64c4e238cb7c55f8444aeb502a84522c755c84bc01c6725"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/heavy_frame.png"
+hash = "e7ed14e08167528ae8e9447a022e1d790ad671ebe864f177691b00176ed8933e"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/holy_silver_blend.png"
 hash = "4fd2108e6714529349a9f69cc59c1926254d537af2875a41eaafdbebc0510e28"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_gun_fire_control.png"
+hash = "1741322f09e23bc9d5829c891e7a9c3aa17245f58b24df5ef762c319b4dd7f45"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_heavy_frame.png"
+hash = "3ed3df9ce7c3d37d8f1302a68759a40a21404594567076427a3af96c7dd7aef2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_long_barrel.png"
+hash = "0f99dd383d0d4f994150180702f4fcf9ac60b8d60249ef70b840e922bb383f22"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_long_barrel_blank.png"
+hash = "72a8126b01ec7c6623cd43df79970302da6f0c90b840a26358b765fda38bc9e3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_pistol_frame.png"
+hash = "99b795d27c8e77df0a94cc530c5f95ee6247a1f3718a9616b038f2131a599168"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_rifle_receiver.png"
+hash = "c14c1faccf76406491c033cd46b12232c5ab01f05315287e6926569dec4ee76d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_short_barrel.png"
+hash = "05134718ca4a13acce9cfd93ad6e7e1572377a3390942ed7617c8e4b890b7d79"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hv_short_barrel_blank.png"
+hash = "4baf390c4d83066040134f9e5e451ca14619f5ff2d62954991a7f62e7fcb516a"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/impure_glimmering_dust.png"
 hash = "094f3039a4934fd5d2aca7dc3d7d734574d652fe583ce5ee04682a7cc5619408"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_gun_fire_control.png"
+hash = "26a67c937b7fa99a23fbd91f7df3d6b79e5a1c244ace3fdb494fbf8072a89173"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_heavy_frame.png"
+hash = "71ffe0b0f37d1894ed8fd02d8eec4596e60296fe5c16aa2ff9b4127907d53c2d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_long_barrel.png"
+hash = "d03bd9a1be08abf2a9ecae8518849d8095a23cbdbc3c1118d9cf039bf31915bd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_long_barrel_blank.png"
+hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_pistol_frame.png"
+hash = "e557dc19dd30d3c61098ea299402e4cdc61f46f21ce122879ed8b1a4ec3935f6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_rifle_receiver.png"
+hash = "032636de6668b6e3303d5e13b61916eae53cb93d34abd94a69fb9eacdc19d075"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_short_barrel.png"
+hash = "03b2c2ce0a08c0e590764ba598d1424bb514e346d01857ae922e4216d3d154d6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iv_short_barrel_blank.png"
+hash = "064c0308dda53524b4422bb5f83155d500be5f838e8ff0268c68d3be9c94eb57"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/living_metalloid.png"
 hash = "d2660686baab2670a4f5fff8dda3945173e5c214e84220775e022be7dc94e293"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/long_barrel.png"
+hash = "b10abadfa5235b47ae439df2d9d7646629f82135a32865d5a00b150cd32fdfbc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/long_barrel_blank.png"
+hash = "2f164f96f978278e87da7a691f1a93090f8a97d4ccd7e45c7b9c1c0e843bac62"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_gun_fire_control.png"
+hash = "f5df79782fbb8c6b1437fe42864b885696623828a564f6705876a647a72f2305"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_heavy_frame.png"
+hash = "5c594e914d527f94696b9d3b928df34916272f20fc1780e245e21e1f23a610b2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_long_barrel.png"
+hash = "a55de008aee3eda9875cb4356bd08ddcce46ea6f097f06643aec699b6a1aed30"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_long_barrel_blank.png"
+hash = "59afcaec584cd68b75591039f21a427ad7bc6affd70d4e91f2949a6fd5a46916"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_pistol_frame.png"
+hash = "aa6b8e656e4ea2041e711d20166b246b32d765ba1f6413e0bde70e96b3421788"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_rifle_receiver.png"
+hash = "d28df8d362f135248241392d780ae5794d6bee083bbcf3d8825bbd57be88ffef"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_short_barrel.png"
+hash = "8842527a35c29f5bd2d07a31aa4fbabc599c36bc4e171d382186dc89d69eeebc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/luv_short_barrel_blank.png"
+hash = "4194483a2ab4d4b95bd358e16432135d32e35c8d15d7dc4f7d7aa131fdd92381"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_gun_fire_control.png"
+hash = "87440dd18b83c51e677a2f3df2d8562021fadcdafecf93396f536107acfcf0f5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_heavy_frame.png"
+hash = "df014e8429881c057c0c03d4e9cc60474469356e78720e167fa9016a715fb807"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_long_barrel.png"
+hash = "c611cbab306d7871f019fefe34340ace6ed501bb680c209bda2efd03e838cada"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_long_barrel_blank.png"
+hash = "0b5ce52bd193b4fc44e0c3c1093f61450d9a3c143f323e3b74c732ed32fedc36"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_pistol_frame.png"
+hash = "340d2c911357a6b701329f7d2125bbcfadb2ad4ed4ddd774c4f8ac5a7c35ff41"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_rifle_receiver.png"
+hash = "9e5fda7433279170515f8769166c8ae2587386635877ed267a5a5c76e85d6dc5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_short_barrel.png"
+hash = "10d1595dd4fd30db59b3aa0ad0d4068f22afd5c15b1f03cdec0a337d7421e62f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lv_short_barrel_blank.png"
+hash = "f5a37100fdf071d2c1f69f09732d9e974ba885082b1f94c57ad14c06b9ed52a4"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
@@ -929,6 +1109,42 @@ file = "kubejs/assets/kubejs/textures/item/matter_energy_circuit.png"
 hash = "8df120f37c154da60eff261d80d49c900e5cda8857f9cd5039d189a913e2957c"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_gun_fire_control.png"
+hash = "5de78e66b694cf28a5f5e3bb3ea7f376b80cf6aa677c52c24f0bb06e009f85d0"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_heavy_frame.png"
+hash = "69e0b4c47a53b362e500619896d950aed4c5fa9eb1436365ce0c2a04e2e2d94b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_long_barrel.png"
+hash = "e6104d539d355cb8638cd6e13ba2da55a59174cdf42e2c7347023e813fc23696"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_long_barrel_blank.png"
+hash = "f369276af2d2b03a71245759fbacca20b2327ef4a770278fac8a1ae2f24da213"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_pistol_frame.png"
+hash = "bdf0b4c4ec10824ab2cc87fc950587d257be719ea6c14f7ae6096f87b8317ee3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_rifle_receiver.png"
+hash = "d6918c6ef34656c4c4b021984a796843b589e3c7096401d5e930eb96bba6924a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_short_barrel.png"
+hash = "a055be8dd714cdb7c23b77d8bd548195f73237607d1fe68963afb772abc29ac2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mv_short_barrel_blank.png"
+hash = "87fae9dcc5980b76f616c6ca72a1a66b6ca5827960f6f76d4fa8bf8fdd9ac91b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/pistol_frame.png"
+hash = "17606eec729c478120f0824d87a05340fd4f8817dc6076d8e46a3c347f034912"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
 hash = "7aabb405827d9d05ca2ef1d6518bc9d5e9259b9776a0966e9f53b06271e3c934"
 
@@ -939,6 +1155,10 @@ hash = "d7e4ce16f8802d029adb5fe9f7fbc94bbd88bd56d1ad2a23448f33b7ee15b133"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/raw_elementite.png"
 hash = "ac34fc95a8d7db86e6fc9320ef49fc19d58ab84fccdb95cf113453ae13ff5f04"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/rifle_receiver.png"
+hash = "1462e8109950662cd4a3902662bb6c2280594c191bc6b72ffecb441e7cbc8076"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rocket_combustion_engine.png"
@@ -955,6 +1175,14 @@ hash = "3c3efca8f9e290a9011abb03abe142feb9b7906676b8fac0c2bbc93400b448e3"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rough_source_gem.png"
 hash = "7b77e2d12c0c729a9c1fad53fc59e5a21e4cabfa309f2ce50f0baf816c47ec8c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/short_barrel.png"
+hash = "34ed932675eaa710f26be8fdb47f6c633a27f1594c8527466b2c0b9bbc484809"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/short_barrel_blank.png"
+hash = "5a04d10c4b1a55a5c70ecbb30b0244084803ea8cded7b13dd79eb9efdc11cc06"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/soul_of_gaia.png"
@@ -1862,7 +2090,7 @@ hash = "59452fe9996c533d1561c2456aa9876aa27a4a29a04c64d85e0ff73ed55c2af5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "b2043120561c8e0b41fa98b5c296c36d209d43b057040492b451bc9f59005248"
+hash = "ec2ebae8bac8f3f3d4491a03036f9188f9c67099e06f73b49ccc41f2a4a6a620"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"

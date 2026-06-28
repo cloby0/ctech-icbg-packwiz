@@ -470,7 +470,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(3000, "low", GTValues.VA[GTValues.HV], 800)
         .components('1x netherite', '8x steel')
         .iconSet(GTMaterialIconSet.DULL)
-        .flags(GTMaterialFlags.NO_SMELTING)
 
     event.create('void_stellite')
         .ingot()
@@ -900,8 +899,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.GENERATE_GEAR
         )
         .addOreByproducts('osmium', 'iridium', 'platinum')
         .washedIn('gtceu:mercury')
@@ -918,8 +916,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.GENERATE_GEAR
         )
         .addOreByproducts('platinum', 'palladium', 'iridium')
         .washedIn('gtceu:mercury')
@@ -936,8 +933,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.GENERATE_GEAR
         )
         .addOreByproducts('europium', 'neodymium', 'cerium')
         .washedIn('gtceu:mercury')
