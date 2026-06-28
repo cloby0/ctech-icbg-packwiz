@@ -1117,6 +1117,10 @@ file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
 hash = "58cd831e178a7c8c93940b522d1795d592d4b49eacbfc2531cc3cdd6f0c9d38a"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/magical_reciever.png"
+hash = "36c6db576482973f31a3a0b3774e7adbe92dfc5daf862cb53af6e96d30c88059"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/mars_guidance_module.png"
 hash = "6c3b7b831acbba78bb0014b489d02f85eeae3456acc213dfe0ca8293558cae02"
 
@@ -2042,7 +2046,7 @@ hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"
-hash = "a3302f52092e00e2a037ca9932b3208a3048dc6a5826c02de449a0c78fbfef3a"
+hash = "d48f06a0a05393db74266cbf3417e063b9febcb5c7d29056b47955e1d18b7e49"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
@@ -3880,6 +3884,10 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "a9421a7a29ac8ee6e0598ea20025ad2c30e6198b796324184600621743437c91"
 metafile = true
+
+[[files]]
+file = "sprite_todo.txt"
+hash = "3c0b0225fc5f491b412d08a548ec055e29cb5b8f739850f278fb535f91ee6316"
 
 [[files]]
 file = "tacz/Applied Armorer-v1.1.4.1-for114+.zip"

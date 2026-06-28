@@ -11,6 +11,349 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["08915E29376F4EE4"]
+			id: "C7A4F1B8E3092D56"
+			size: 0.85d
+			tasks: [{
+				id: "D8B502C9F41A3E67"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["C7A4F1B8E3092D56"]
+			id: "8E5C0FA9B2D47361"
+			size: 0.75d
+			subtitle: "the biggest upgrade you'll make"
+			tasks: [{
+				id: "9F6D1AB0C3E58472"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			title: "Extruder"
+			x: 1.125d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08915E29376F4EE4"]
+			id: "F29D7E50B41A6C83"
+			size: 0.75d
+			tasks: [
+				{
+					id: "A30E8F61C52B7D94"
+					item: "gtceu:mv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "B41F9072D63C8EA5"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "C5209183E74D9FB6"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "D6310294F85EA0C7"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "E74213A5F9061BD8"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "some mv parts"
+			x: -1.125d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08915E29376F4EE4"]
+			id: "5B16AC93D7E0F428"
+			size: 0.75d
+			tasks: [{
+				id: "6C27BD04E8F10539"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08915E29376F4EE4"]
+			id: "4A07B8F2C36D1E95"
+			size: 0.75d
+			tasks: [{
+				id: "5B18C903D47E2FA6"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: -3.375d
+			y: 1.5d
+		}
+		{
+			dependencies: ["C7A4F1B8E3092D56"]
+			id: "D3C9160AF7B8E524"
+			size: 0.5d
+			tasks: [{
+				id: "E4DA271B08C9F635"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"D3C9160AF7B8E524"
+				"5B16AC93D7E0F428"
+			]
+			id: "02E5A8C3F1974B6D"
+			shape: "square"
+			size: 1.0d
+			subtitle: "is it getting hot in here"
+			tasks: [{
+				count: 16L
+				id: "13F6B9D402A85C7E"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "Kanthal Coils"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B16AC93D7E0F428"]
+			id: "B84F2D17C50A6E93"
+			size: 0.85d
+			subtitle: "the illusion of free choice"
+			tasks: [{
+				id: "C950A3E2D6F1B784"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_distillery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_distillery"
+							}
+						]
+					}
+				}
+				title: "any distillery"
+				type: "item"
+			}]
+			title: "Distillery"
+			x: -2.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["B84F2D17C50A6E93"]
+			id: "7C31B9A6D0E24F58"
+			size: 0.5d
+			tasks: [{
+				id: "8D42CA97E1F35069"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["B84F2D17C50A6E93"]
+			id: "6D20C8B5E9F13A47"
+			size: 0.5d
+			tasks: [{
+				id: "7E31D9C6FA024B58"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -3.375d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C31B9A6D0E24F58"]
+			id: "9F40D7C2B8E15A36"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "baby's first polymer"
+			tasks: [{
+				id: "A051E8D3C9F26B47"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			title: "Polyethylene"
+			x: -2.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02E5A8C3F1974B6D"]
+			id: "E15C4B9A3D780F62"
+			size: 0.75d
+			tasks: [
+				{
+					id: "F26D5CAB4E891073"
+					item: "gtceu:silicon_boule"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "037E6DBC5F9A2184"
+					item: "gtceu:silicon_wafer"
+					type: "item"
+				}
+			]
+			x: 1.125d
+			y: 4.5d
+		}
+		{
+			dependencies: ["E15C4B9A3D780F62"]
+			id: "3A8D06E2F1C59B74"
+			size: 0.75d
+			tasks: [{
+				id: "4B9E17F302D6AC85"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3A8D06E2F1C59B74"]
+			id: "D6B2E48F0C1935A7"
+			size: 0.5d
+			tasks: [
+				{
+					id: "E7A3B5C91D280F46"
+					item: "gtceu:ilc_chip"
+					type: "item"
+				}
+				{
+					id: "F8B4C6DA2E391057"
+					item: "gtceu:ulpic_chip"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"9F40D7C2B8E15A36"
+				"6D20C8B5E9F13A47"
+			]
+			id: "2A7F08D4C3B91E56"
+			size: 0.75d
+			tasks: [
+				{
+					id: "3B0019E5D4CA2F67"
+					item: "gtceu:plastic_circuit_board"
+					type: "item"
+				}
+				{
+					id: "4C112AF6E5DB3078"
+					item: "gtceu:plastic_printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: -2.25d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"D6B2E48F0C1935A7"
+				"9F40D7C2B8E15A36"
+			]
+			id: "5C0A19E5D4CB2F67"
+			size: 0.5d
+			tasks: [{
+				id: "6D1B2AF6E5DC3078"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["D6B2E48F0C1935A7"]
+			id: "8D1B4C7E2A9050F3"
+			size: 0.5d
+			tasks: [{
+				id: "9E2C5D8F3BA161A4"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2A7F08D4C3B91E56"
+				"5C0A19E5D4CB2F67"
+				"8D1B4C7E2A9050F3"
+			]
+			id: "6F3E9B0C7A4D2158"
+			size: 0.75d
+			subtitle: "finally, some actual circuits"
+			tasks: [{
+				id: "7041AC1D8B5E3269"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			title: "HV Circuits"
+			x: -1.125d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02E5A8C3F1974B6D"]
+			id: "A3C08F7E1B694D25"
+			size: 0.75d
+			subtitle: "take"
+			tasks: [{
+				id: "B4D19082C27A5E36"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			title: "Steal²"
+			x: 1.125d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6F3E9B0C7A4D2158"
+				"A3C08F7E1B694D25"
+			]
+			id: "1E8B4D95C2F63A70"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2L
+					id: "F13940BF01837A24"
+					item: "gtceu:advanced_integrated_circuit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "024A51C012948B35"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "High Voltage!"
+			x: 0.0d
+			y: 10.5d
+		}
+	]
 	title: "MV - Medium Voltage"
 }
