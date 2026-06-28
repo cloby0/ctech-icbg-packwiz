@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         'gtceu:fine_calorite_wire'
     )
 
-    event.remove({ id: 'ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench' })
+    event.remove({ id: 'ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench' })
 
     event.recipes.gtceu.assembler('venus_hull_section')
         .itemInputs(
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
             {"item": "kubejs:venus_rocket_engine"},
             {"item": "ad_astra:rocket_fin"}
         ],
-        "result": {"count": 1, "id": "ad_astra:tier_3_rocket"}
-    }).id('kubejs:gt_tier_3_rocket')
+        "result": {"count": 1, "id": "ad_astra:tier_4_rocket"}
+    }).id('kubejs:gt_tier_4_rocket')
 
 })

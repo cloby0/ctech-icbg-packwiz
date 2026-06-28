@@ -6,7 +6,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(20)
         vein.density(0.5)
         vein.discardChanceOnAirExposure(0)
-        vein.layer("end")
+        vein.layer("endstone")
         vein.dimensions("minecraft:the_end")
         vein.biomes("minecraft:the_end")
         vein.heightRangeUniform(-20, 60)

@@ -898,7 +898,7 @@ hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ev_pistol_frame.png"
-hash = "e557dc19dd30d3c61098ea299402e4cdc61f46f21ce122879ed8b1a4ec3935f6"
+hash = "1da70327350748d731fb35816b761300bff336b547ef8eb563a0350a49a57324"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ev_rifle_receiver.png"
@@ -986,7 +986,7 @@ hash = "72a8126b01ec7c6623cd43df79970302da6f0c90b840a26358b765fda38bc9e3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/hv_pistol_frame.png"
-hash = "99b795d27c8e77df0a94cc530c5f95ee6247a1f3718a9616b038f2131a599168"
+hash = "281745aee473f5c2a15c591f905bb5e311136ecb7eeae36550941c0029b26270"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/hv_rifle_receiver.png"
@@ -1022,7 +1022,7 @@ hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/iv_pistol_frame.png"
-hash = "e557dc19dd30d3c61098ea299402e4cdc61f46f21ce122879ed8b1a4ec3935f6"
+hash = "1da70327350748d731fb35816b761300bff336b547ef8eb563a0350a49a57324"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/iv_rifle_receiver.png"
@@ -1066,7 +1066,7 @@ hash = "59afcaec584cd68b75591039f21a427ad7bc6affd70d4e91f2949a6fd5a46916"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/luv_pistol_frame.png"
-hash = "aa6b8e656e4ea2041e711d20166b246b32d765ba1f6413e0bde70e96b3421788"
+hash = "f779e6a165905d967d8d1133cbd6ac9edfa5c2e099211c9bcbe08aa58684d77b"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/luv_rifle_receiver.png"
@@ -1098,7 +1098,7 @@ hash = "0b5ce52bd193b4fc44e0c3c1093f61450d9a3c143f323e3b74c732ed32fedc36"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/lv_pistol_frame.png"
-hash = "340d2c911357a6b701329f7d2125bbcfadb2ad4ed4ddd774c4f8ac5a7c35ff41"
+hash = "ebb862f719c78bca586fd1ab0c27854c68a4c17517ba40e0b586c2b5bebcd579"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/lv_rifle_receiver.png"
@@ -1150,7 +1150,7 @@ hash = "f369276af2d2b03a71245759fbacca20b2327ef4a770278fac8a1ae2f24da213"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/mv_pistol_frame.png"
-hash = "bdf0b4c4ec10824ab2cc87fc950587d257be719ea6c14f7ae6096f87b8317ee3"
+hash = "ad5faea32f81e4d1839d8f0e4490135b7c277a819eba5e20d9911fcd591a2946"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/mv_rifle_receiver.png"
@@ -1170,7 +1170,7 @@ hash = "a2ce501bb051e535eb4077834e94ce605bbb148476beff0ce9a16b048b8ed13e"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pistol_frame.png"
-hash = "17606eec729c478120f0824d87a05340fd4f8817dc6076d8e46a3c347f034912"
+hash = "2a6fb353fb9fddcaf627acd6bee6342263664194fc280bfc5aa91f880931abec"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
@@ -1990,7 +1990,7 @@ hash = "3a547d37109e64158c4279ce7b25adeaaaec3f8832cf4baadc1ed94ad4be9aaf"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ivAndVenus.js"
-hash = "9bef1ac63d398ad992dd7aab40922fdbd125223a89f238fd55ef18960282db8a"
+hash = "eecf36c1fbd7c29315e54c65e28dfbb19e856c682f37d5b0e3800658f5431f5c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/laserio.js"
@@ -2002,7 +2002,7 @@ hash = "8c719249df44eae37aa76a4616a62d187c5eb085c7106821dd52eff0d776f21c"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
-hash = "16213421fb046c1f083621b7b0f28b9c9bae74884c9648f4d86d6d47bdda0b1e"
+hash = "dd2a8c1f9bb50d78ce7a5a190862a74f846889a752e5e6451e7afa1d0e5a41d9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
@@ -2042,7 +2042,7 @@ hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"
-hash = "94d558863adb0f8b2e3bfabc281283b69810049b83ecbda2ab384bb01b17e776"
+hash = "a3302f52092e00e2a037ca9932b3208a3048dc6a5826c02de449a0c78fbfef3a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/glacioWorldgen.js"
