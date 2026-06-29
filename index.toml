@@ -898,7 +898,7 @@ hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ev_pistol_frame.png"
-hash = "1da70327350748d731fb35816b761300bff336b547ef8eb563a0350a49a57324"
+hash = "f622cb6d6f9fdedb30cb7479c9e515c998ce9e3dd4c176817b95e3f676f0acf3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ev_rifle_receiver.png"
@@ -986,7 +986,7 @@ hash = "72a8126b01ec7c6623cd43df79970302da6f0c90b840a26358b765fda38bc9e3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/hv_pistol_frame.png"
-hash = "281745aee473f5c2a15c591f905bb5e311136ecb7eeae36550941c0029b26270"
+hash = "fbd2b67e016ce844e52866dca26e2df7d89590e84e5fd57964dcc23210868175"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/hv_rifle_receiver.png"
@@ -1022,7 +1022,7 @@ hash = "7dcb9da78e99b4c7c7fec8a155ee2041f02736709c2c4787c4358a585a0c4dac"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/iv_pistol_frame.png"
-hash = "1da70327350748d731fb35816b761300bff336b547ef8eb563a0350a49a57324"
+hash = "f622cb6d6f9fdedb30cb7479c9e515c998ce9e3dd4c176817b95e3f676f0acf3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/iv_rifle_receiver.png"
@@ -1066,7 +1066,7 @@ hash = "59afcaec584cd68b75591039f21a427ad7bc6affd70d4e91f2949a6fd5a46916"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/luv_pistol_frame.png"
-hash = "f779e6a165905d967d8d1133cbd6ac9edfa5c2e099211c9bcbe08aa58684d77b"
+hash = "b005696f2955c812904f5880cd567f7679764b5c5f67fabe384296e9f8d3863c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/luv_rifle_receiver.png"
@@ -1098,7 +1098,7 @@ hash = "0b5ce52bd193b4fc44e0c3c1093f61450d9a3c143f323e3b74c732ed32fedc36"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/lv_pistol_frame.png"
-hash = "ebb862f719c78bca586fd1ab0c27854c68a4c17517ba40e0b586c2b5bebcd579"
+hash = "8e493da5fab22610a2c5263ef5612b9ffb3ae0b49dec55258ab0a66636ac5983"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/lv_rifle_receiver.png"
@@ -1117,7 +1117,7 @@ file = "kubejs/assets/kubejs/textures/item/magebloom_sieve.png"
 hash = "58cd831e178a7c8c93940b522d1795d592d4b49eacbfc2531cc3cdd6f0c9d38a"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/magical_reciever.png"
+file = "kubejs/assets/kubejs/textures/item/magical_receiver.png"
 hash = "36c6db576482973f31a3a0b3774e7adbe92dfc5daf862cb53af6e96d30c88059"
 
 [[files]]
@@ -1154,7 +1154,7 @@ hash = "f369276af2d2b03a71245759fbacca20b2327ef4a770278fac8a1ae2f24da213"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/mv_pistol_frame.png"
-hash = "ad5faea32f81e4d1839d8f0e4490135b7c277a819eba5e20d9911fcd591a2946"
+hash = "b1a5231f059938aedff23ef3ba143f22001284e057266f1332fdf98c08b8f784"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/mv_rifle_receiver.png"
@@ -1174,7 +1174,7 @@ hash = "a2ce501bb051e535eb4077834e94ce605bbb148476beff0ce9a16b048b8ed13e"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pistol_frame.png"
-hash = "2a6fb353fb9fddcaf627acd6bee6342263664194fc280bfc5aa91f880931abec"
+hash = "4d4ce5e33c7a77dcf82ab8730cbe5d9fc3fdead05285390d515b0814e2e9ad5d"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
