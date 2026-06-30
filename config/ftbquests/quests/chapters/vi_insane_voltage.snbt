@@ -1,0 +1,448 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "vi_insane_voltage"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:iridium_ingot"
+	id: "6F00F1C2E3D40000"
+	order_index: 5
+	quest_links: [{
+		id: "6F00F1C2E3D40001"
+		linked_quest: "5E00F1C2E3D4000D"
+		size: 1.2d
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["5E00F1C2E3D4000D"]
+			hide_until_deps_complete: true
+			id: "6F00F1C2E3D40002"
+			shape: "diamond"
+			subtitle: "IV: insanely expensive"
+			tasks: [{
+				id: "6F00F1C2E3D40003"
+				title: "Insane Voltage!"
+				type: "checkmark"
+			}]
+			title: "Insane Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40002"]
+			description: [
+				"The &7IV Machine Hull&r uses Tungstensteel frames and Aluminium cables at 8192 EU/t. Make several — every IV multiblock hatch needs one."
+				""
+				"IV is where automation earns its keep. If you're hand-crafting IV hulls, something has gone wrong upstream."
+			]
+			id: "6F00F1C2E3D40004"
+			rewards: [{
+				count: 4
+				id: "6F00F1C2E3D40005"
+				item: "gtceu:tungsten_steel_plate"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "tungstensteel wrapped in gold"
+			tasks: [{
+				count: 4L
+				id: "6F00F1C2E3D40006"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			title: "Insane Frame"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40004"]
+			description: [
+				"IV components require &3Nether Stars&r in emitters and sensors. Stars drop from Withers — and Wither Skeletons are easier to farm post-Cleanroom with Looting tools."
+				""
+				"&3Iridium&r goes in the motor frame. Make enough for both component types."
+			]
+			icon: "gtceu:iv_electric_motor"
+			id: "6F00F1C2E3D40007"
+			shape: "square"
+			size: 0.75d
+			subtitle: "stars required. literally."
+			tasks: [
+				{
+					id: "6F00F1C2E3D40008"
+					item: "gtceu:iv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40009"
+					item: "gtceu:iv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D4000A"
+					item: "gtceu:iv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D4000B"
+					item: "gtceu:iv_emitter"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D4000C"
+					item: "gtceu:iv_sensor"
+					type: "item"
+				}
+			]
+			title: "IV Components"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40007"]
+			description: [
+				"&3HSS-G Coils&r raise the EBF to 5400K — the threshold for Iridium and Osmium smelting."
+				""
+				"HSS-G requires &aHSS-G alloy&r (High Speed Steel Gamma): Tungsten, Molybdenum, Chromium, Vanadium, Manganese. Mix in an EV Mixer. You need 16 coil blocks."
+			]
+			id: "6F00F1C2E3D4000D"
+			rewards: [{
+				count: 4
+				id: "6F00F1C2E3D4000E"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "5400K for the real metals"
+			tasks: [{
+				count: 16L
+				id: "6F00F1C2E3D4000F"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "HSS-G Coils"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D4000D"]
+			description: [
+				"&aIridium&r and &aOsmium&r are extracted from the Platinum Group Sludge line via additional centrifuge steps with Aqua Regia."
+				""
+				"Both are required for the Assembly Line and for IV machine components. They're also the source for &3Iridium-plated Palladium&r — a conductor for LuV superconductors."
+			]
+			icon: "gtceu:iridium_ingot"
+			id: "6F00F1C2E3D40010"
+			rewards: [{
+				count: 4
+				id: "6F00F1C2E3D40011"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "the expensive metals"
+			tasks: [
+				{
+					id: "6F00F1C2E3D40012"
+					item: "gtceu:iridium_ingot"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40013"
+					item: "gtceu:osmium_ingot"
+					type: "item"
+				}
+			]
+			title: "Iridium & Osmium"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40010"]
+			description: [
+				"&3Advanced SMD Components&r are produced in the Cleanroom and replace standard SMDs in IV+ circuits."
+				""
+				"They require &3Palladium&r and &3Lithium&r and are used in the Quantum Processor line. Set up automated Advanced SMD production before hitting the circuit assembler."
+			]
+			id: "6F00F1C2E3D40014"
+			shape: "square"
+			size: 0.75d
+			subtitle: "smaller, more expensive"
+			tasks: [
+				{
+					id: "6F00F1C2E3D40015"
+					item: "gtceu:advanced_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40016"
+					item: "gtceu:advanced_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40017"
+					item: "gtceu:advanced_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40018"
+					item: "gtceu:advanced_smd_diode"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40019"
+					item: "gtceu:advanced_smd_inductor"
+					type: "item"
+				}
+			]
+			title: "Advanced SMDs"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40014"]
+			description: [
+				"&3Quantum Processors&r are the EV-tier circuit — first produced in IV. &3Quantum Processor Assembly&r is the IV-tier circuit."
+				""
+				"The quantum circuit line uses &3Fiber-Reinforced Epoxy Boards&r and &3Quantum CPUs&r (Cleanroom-processed). Gate your IV Assembler on completing this circuit line."
+			]
+			icon: "gtceu:quantum_processor_assembly"
+			id: "6F00F1C2E3D4001A"
+			rewards: [{
+				count: 4
+				id: "6F00F1C2E3D4001B"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "IV circuits. naturally."
+			tasks: [
+				{
+					id: "6F00F1C2E3D4001C"
+					item: "gtceu:quantum_processor"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D4001D"
+					item: "gtceu:quantum_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "Quantum Circuits"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D4001A"]
+			description: [
+				"The &3Assembly Line&r is the IV multiblock that enables large-scale component construction with more inputs than any single machine allows."
+				""
+				"Build it with 8 Assembly Line Casings, Research Stations on each slot, an Input Bus, Output Bus, and IV+ Energy Hatches. It's mandatory for LuV+ machine components."
+			]
+			icon: "gtceu:assembly_line"
+			id: "6F00F1C2E3D40020"
+			rewards: [
+				{
+					count: 8
+					id: "6F00F1C2E3D40021"
+					item: "gtceu:iridium_plate"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6F00F1C2E3D40022"
+					item: "gtceu:osmium_plate"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "the IV endgame machine"
+			tasks: [
+				{
+					id: "6F00F1C2E3D40023"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6F00F1C2E3D40024"
+					item: "gtceu:assembly_line_casing"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40025"
+					item: "gtceu:data_access_hatch"
+					type: "item"
+				}
+			]
+			title: "Assembly Line"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40004"]
+			description: [
+				"The &9AE2 Quantum Network Bridge&r links two separate ME networks — even across dimensions."
+				""
+				"It requires an &9IV Field Generator&r and &9IV Sensor&r in the ME Fabricator recipe. Once built, run the same AE system from your Overworld base to your Moon/Mars outpost."
+			]
+			icon: "ae2:quantum_link"
+			id: "6F00F1C2E3D40026"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "interdimensional networking"
+			tasks: [
+				{
+					id: "6F00F1C2E3D40027"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					id: "6F00F1C2E3D40028"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+			]
+			title: "Quantum Bridge"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D4000D"]
+			description: [
+				"&3HSS-S Coils&r unlock more throughput at 5400K. HSS-S (High Speed Steel Sigma) adds Yttrium to the HSS-G formula."
+				""
+				"Optional at IV — HSS-G is sufficient. HSS-S matters in LuV when Naquadah alloys require higher temperature processing and faster cycle times."
+			]
+			id: "6F00F1C2E3D40029"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "marginal improvement. still worth it."
+			tasks: [{
+				count: 8L
+				id: "6F00F1C2E3D4002A"
+				item: "gtceu:hsss_coil_block"
+				type: "item"
+			}]
+			title: "HSS-S Coils"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40007"]
+			description: [
+				"Venus and Mercury are the IV-tier planets. Venus has &3Calorite&r ore — gated to IV processing. Mercury has dense Tungstate and Platinum-bearing ore veins."
+				""
+				"Both require IV-tier rockets. The atmosphere demands more than Moon or Mars."
+			]
+			icon: "ad_astra:venus_surface_rock"
+			id: "6F00F1C2E3D4002B"
+			rewards: [{
+				count: 8
+				id: "6F00F1C2E3D4002C"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "a bit warm. and toxic."
+			tasks: [{
+				dimension: "ad_astra:venus"
+				id: "6F00F1C2E3D4002D"
+				title: "Head to Venus"
+				type: "dimension"
+			}]
+			title: "Venus"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F00F1C2E3D4001A"]
+			description: [
+				"&3Iridium-plated Palladium&r is the conductor used in LuV superconductors. It needs both &aIridium&r and &aPalladium&r in the Assembly Line."
+				""
+				"Start processing &3Europium&r in parallel — you'll need it for LuV emitters and sensors. Europium comes from Naquadah ore centrifugation in LuV."
+			]
+			id: "6F00F1C2E3D4002E"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the LuV gate material"
+			tasks: [{
+				id: "6F00F1C2E3D4002F"
+				item: "gtceu:iridium_plated_palladium_plate"
+				type: "item"
+			}]
+			title: "Iridium Palladium"
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40007"]
+			description: [
+				"The &3Power Substation&r stores vast amounts of power — up to UV tier with the right battery cases. A single UV battery case holds 40M EU."
+				""
+				"Build it early in IV with IV battery cases. It smooths power spikes from large multiblocks and prevents shutdowns when generators momentarily underdeliver."
+			]
+			id: "6F00F1C2E3D40030"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "infinite-ish power storage"
+			tasks: [{
+				id: "6F00F1C2E3D40031"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			title: "Power Substation"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40010"]
+			description: [
+				"The &3Epitaxial Growth Chamber&r is a custom multiblock for advanced semiconductor growth — producing boules and wafers beyond standard autoclave capacity."
+				""
+				"It becomes relevant here for Quantum CPU wafers and is critical for Optical circuits in UV. Build it before you need the wafer output."
+			]
+			id: "6F00F1C2E3D40032"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "custom wafer growth"
+			tasks: [{
+				id: "6F00F1C2E3D40033"
+				item: "gtceu:epitaxial_growth_chamber"
+				type: "item"
+			}]
+			title: "Epitaxial Growth Chamber"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F00F1C2E3D40004"]
+			description: [
+				"The &3IV Assembler&r handles IV+ component assembly with the throughput and input count that EV machines can't match."
+				""
+				"Run it in parallel with your EV Assembler for mid-tier components. The IV Assembler is required for Assembly Line structure pieces."
+			]
+			id: "6F00F1C2E3D40034"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "assembled at IV tier"
+			tasks: [{
+				id: "6F00F1C2E3D40035"
+				item: "gtceu:iv_assembler"
+				type: "item"
+			}]
+			title: "IV Assembler"
+			x: 2.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["Iridium. Osmium. Assembly."]
+	title: "VI. Insane Voltage"
+}

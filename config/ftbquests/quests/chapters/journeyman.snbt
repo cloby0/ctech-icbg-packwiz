@@ -18,11 +18,13 @@
 			dependencies: ["33704DE3C564BD46"]
 			id: "74E79BEE176EA828"
 			size: 0.75d
+			subtitle: "it blooms. magically. wow."
 			tasks: [{
 				id: "2D021DD247072229"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
+			title: "Magebloom"
 			x: -0.375d
 			y: -1.875d
 		}
@@ -45,11 +47,13 @@
 			dependencies: ["42292FB8905CAE54"]
 			id: "08A706FAA18260F5"
 			size: 0.75d
+			subtitle: "getting somewhere"
 			tasks: [{
 				id: "2178DEC9F9795184"
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
+			title: "Source Gem Dust, Attempt 1"
 			x: 0.75d
 			y: -2.625d
 		}
@@ -58,13 +62,20 @@
 				"08A706FAA18260F5"
 				"6F0175765720EE51"
 			]
+			description: [
+				"Run your &ePure Source Gem Dust&r through the &3Magebloom Sieve&r for another pass."
+				""
+				"You're almost at a proper &aSource Gem&r."
+			]
 			id: "02865F6285633253"
 			size: 0.75d
+			subtitle: "we're getting there (for real this time)"
 			tasks: [{
 				id: "3AE6D13DDE3FE740"
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
+			title: "Source Gem Dust, Attempt 2"
 			x: 0.0d
 			y: -4.125d
 		}
@@ -72,23 +83,32 @@
 			dependencies: ["02865F6285633253"]
 			id: "7363CD337C4652D8"
 			size: 0.75d
+			subtitle: "almost a gem"
 			tasks: [{
 				id: "4879E5ABA7CFBCD2"
 				item: "kubejs:rough_source_gem"
 				type: "item"
 			}]
+			title: "Rough Source Gem"
 			x: 0.0d
 			y: -5.25d
 		}
 		{
 			dependencies: ["7363CD337C4652D8"]
+			description: [
+				"&aSource Gems&r are the cornerstone of the magic line. They power the &3Enchanting Apparatus&r, fuel the &3Imbuement Chamber&r, and show up in most mid-to-late magic crafting."
+				""
+				"You'll be making a lot of these. Start automating early."
+			]
 			id: "06C1B3D271B8BFCF"
 			size: 1.0d
+			subtitle: "the cornerstone of arcane industry"
 			tasks: [{
 				id: "0218DF052D48973B"
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
+			title: "Source Gem"
 			x: 0.0d
 			y: -6.5d
 		}
@@ -96,11 +116,13 @@
 			dependencies: ["557FF11A5C0306BC"]
 			id: "3AE23124DDE87034"
 			size: 0.75d
+			subtitle: "give it a blessing. it deserves it."
 			tasks: [{
 				id: "0666134470222C91"
 				item: "kubejs:sanctified_ambrosium_bloom"
 				type: "item"
 			}]
+			title: "Sanctified Ambrosium Bloom"
 			x: 2.625d
 			y: -1.125d
 		}
@@ -108,12 +130,14 @@
 			dependencies: ["33704DE3C564BD46"]
 			id: "557FF11A5C0306BC"
 			size: 0.75d
+			subtitle: "the Aether's other thing"
 			tasks: [{
 				count: 8L
 				id: "0C0ADD32747DC555"
 				item: "gtceu:raw_ambrosium"
 				type: "item"
 			}]
+			title: "Raw Ambrosium"
 			x: 1.125d
 			y: -1.125d
 		}
@@ -121,23 +145,34 @@
 			dependencies: ["74E79BEE176EA828"]
 			id: "6F0175765720EE51"
 			size: 0.75d
+			subtitle: "yes, really, a sieve"
 			tasks: [{
 				id: "723752AC62DE4355"
 				item: "kubejs:magebloom_sieve"
 				type: "item"
 			}]
+			title: "Magebloom Sieve"
 			x: -0.75d
 			y: -2.625d
 		}
 		{
 			dependencies: ["3AE23124DDE87034"]
+			description: [
+				"The &aSacred Ambrosium Shard&r unlocks access to &3Ender Storage&r — cross-dimensional item and fluid storage."
+				""
+				"&3Ender Chests&r, &3Ender Tanks&r, and &3Ender Pouches&r all share inventory across any distance."
+				""
+				"Useful now. Essential later."
+			]
 			id: "532B8F3CF596352D"
 			size: 0.75d
+			subtitle: "the Aether's gift to the crafting table"
 			tasks: [{
 				id: "7A6E829F60A5992F"
 				item: "kubejs:sacred_ambrosium_shard"
 				type: "item"
 			}]
+			title: "Sacred Ambrosium Shard"
 			x: 2.625d
 			y: -2.625d
 		}
@@ -145,11 +180,13 @@
 			dependencies: ["33704DE3C564BD46"]
 			id: "297B9B212C544AF0"
 			size: 0.75d
+			subtitle: "the other other Aether ore"
 			tasks: [{
 				id: "4D2AB6B81DCEEC99"
 				item: "gtceu:raw_zanite"
 				type: "item"
 			}]
+			title: "Raw Zanite"
 			x: -1.125d
 			y: -1.125d
 		}
@@ -157,11 +194,13 @@
 			dependencies: ["297B9B212C544AF0"]
 			id: "08B0AB8D3C90EB10"
 			size: 0.75d
+			subtitle: "feeling more powerful already"
 			tasks: [{
 				id: "0A78B6122B82E6D6"
 				item: "kubejs:enchanted_zanite_gem"
 				type: "item"
 			}]
+			title: "Enchanted Zanite"
 			x: -2.625d
 			y: -1.125d
 		}
@@ -169,11 +208,13 @@
 			dependencies: ["08B0AB8D3C90EB10"]
 			id: "45BDF6BE6B2DD0CB"
 			size: 0.75d
+			subtitle: "it hums. don't stick your ear near it."
 			tasks: [{
 				id: "245CF51C6A647EA1"
 				item: "kubejs:resonant_zanite_crystal"
 				type: "item"
 			}]
+			title: "Resonant Zanite Crystal"
 			x: -1.875d
 			y: -1.875d
 		}
@@ -181,11 +222,13 @@
 			dependencies: ["532B8F3CF596352D"]
 			id: "205170FC8134DC8D"
 			size: 0.75d
+			subtitle: "shared. with yourself. from across the map."
 			tasks: [{
 				id: "1A1F67BED84E07AF"
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
+			title: "Ender Chest"
 			x: 3.0d
 			y: -3.75d
 		}
@@ -193,11 +236,13 @@
 			dependencies: ["532B8F3CF596352D"]
 			id: "3A9BBD003CB49590"
 			size: 0.75d
+			subtitle: "like an ender chest but wetter"
 			tasks: [{
 				id: "523F223AF747D3CA"
 				item: "enderstorage:ender_tank"
 				type: "item"
 			}]
+			title: "Ender Tank"
 			x: 3.375d
 			y: -3.0d
 		}
@@ -205,11 +250,13 @@
 			dependencies: ["532B8F3CF596352D"]
 			id: "7E85C70688BC511F"
 			size: 0.75d
+			subtitle: "pocket dimension, travel size"
 			tasks: [{
 				id: "3BC542FCDC05773B"
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
+			title: "Ender Pouch"
 			x: 2.25d
 			y: -3.75d
 		}
@@ -217,11 +264,13 @@
 			dependencies: ["532B8F3CF596352D"]
 			id: "7FBC73B3CE27E7BB"
 			size: 0.75d
+			subtitle: "the arcane equivalent of a filing cabinet"
 			tasks: [{
 				id: "44338EC6F52099DE"
 				item: "ars_nouveau:storage_lectern"
 				type: "item"
 			}]
+			title: "Storage Lectern"
 			x: 1.875d
 			y: -3.0d
 		}
@@ -231,11 +280,13 @@
 			id: "2F9CF65DB439E571"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "it sees you"
 			tasks: [{
 				id: "0CE9CA0649212582"
 				item: "reliquary:lantern_of_paranoia"
 				type: "item"
 			}]
+			title: "Lantern of Paranoia"
 			x: -0.75d
 			y: 1.125d
 		}
@@ -245,11 +296,13 @@
 			id: "60B898EA8C6DB0F5"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "get out of my house"
 			tasks: [{
 				id: "3FFF00B98948C69F"
 				item: "reliquary:interdiction_torch"
 				type: "item"
 			}]
+			title: "Interdiction Torch"
 			x: 0.0d
 			y: 1.125d
 		}
@@ -259,11 +312,13 @@
 			id: "48823E5A5985391B"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "alchemy by another name"
 			tasks: [{
 				id: "72DFD61331E7272A"
 				item: "reliquary:alkahestry_altar"
 				type: "item"
 			}]
+			title: "Alkahestry Altar"
 			x: 0.75d
 			y: 1.125d
 		}

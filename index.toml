@@ -841,12 +841,36 @@ file = "kubejs/assets/kubejs/textures/block/sanctum_sourcestone_casing.png"
 hash = "ce67c0f13db5a7516a48acfb08bf4e7b4a1a25d01809c4ab9c2f2f5a1da53546"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/activated_bio_matrix.png"
+hash = "11b6a71b23bf4af25463df702a14355b1a4c44ea8388b9967665b99d0d636029"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/air_nucleus.png"
+hash = "9ce20206690b7f85e32597762aa6d9f05ae9ba82cb81e1f67ede330fa8780716"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/awakened_cumium_embryo.png"
+hash = "b290fbe0d6bf9e1edeabdc0fc7b54ca61cea46bb35ea3653292866e08dadba03"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/boundless_gaia_spirit_ingot.png"
 hash = "df0594687c0b2bf3be24e8d8a58a730fcb9360a8f558c5bbc9523a2969d88ba2"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/calorite_chloride_melt.png"
+hash = "d8cdefdc69dc15ef73fb680e2aba560f77f3c68f5362340f24b9e8ec3d3ab01e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/calorite_fluoride_precipitate.png"
+hash = "972cfa9377af3982618d425652ed5732e5e92a58720ad6b73a026030785f8ddf"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/calorite_hull_section.png"
 hash = "c87e3d10b4be724e442256bb6aef9ce07aadbc340f03772366b66daed63f66ae"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/calorite_sulfate_slag.png"
+hash = "31c7df84ab0c5470a7a32c86926853a7f57d4d720ad2cbf5ab5df49ebdb225b6"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/chaos_essence.png"
@@ -861,6 +885,14 @@ file = "kubejs/assets/kubejs/textures/item/condensed_desh_carbonyl.png"
 hash = "08594455c6b84ec96ba0ed2b96c3a2a22ff89fed8b05ed75e16c9a7eb24f5deb"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/crude_ostrum_fluoride.png"
+hash = "a8f7b85e9c4a002921b46bf01a9d1b46283550bf5897e1b70fd715ed9ddd2c74"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/crude_petroleum_mass.png"
+hash = "b6b224695ed405538dc22f52335e63bde35d4205ced60f5550402d940bd479a5"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/desh_hull_section.png"
 hash = "d5c67eadffb4e6ea07694b505c00c6eedb77e38b375d91fa4d13683b950a6cf7"
 
@@ -869,8 +901,16 @@ file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form.png"
 hash = "19c928c0a259c23967663c2c4289d65bbc88c92347c6c10d2126f6352e6f0318"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/earth_nucleus.png"
+hash = "8b7aef712f3463b03acd32a345d8011793f60f1b4afafcaed3ef16c2dfe32a6b"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/element_attunement_stone.png"
 hash = "eaed50f29e4b30ac30bbf87f5cf3783c0b897a277144ff1fe44aa033d612d12a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elemental_latex_compound.png"
+hash = "91dfed302cc4cf60e67ff61d8e6af8765759a61c9d90b1838c976c37950ebcde"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/elementite_dust.png"
@@ -913,8 +953,16 @@ file = "kubejs/assets/kubejs/textures/item/ev_short_barrel_blank.png"
 hash = "064c0308dda53524b4422bb5f83155d500be5f838e8ff0268c68d3be9c94eb57"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/fire_nucleus.png"
+hash = "cb7c479d7cebe6badf6b45c18631283e7b43f24e0e9b58cf39170497c08e1992"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/florid_compound.png"
 hash = "a0b3888299da34ad52b7818f594f45e323bde242b1d1efe5da3545aee6ed9bc5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gaia_flux_dust.png"
+hash = "76d879f398f0b42dbed627cdadb50a36cc13fda4048c5775650b6d5f2ac1f668"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/gaian_annihilation_core.png"
@@ -931,6 +979,10 @@ hash = "a1bd777eae3e6b04c03e4141d436393b93f84d30b97ba364b0b2afde05bd35dc"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/gaian_void_core.png"
 hash = "9a4ee784ed91cdb93692016034e4a346a49d39895e2332edd05830de72d771e3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gestated_cumium_crystal.png"
+hash = "6fbefab4f9a79a84bff190f568fe53b20d027cea3503526808dce34ecedfa68a"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/glacio_guidance_module.png"
@@ -1037,6 +1089,14 @@ file = "kubejs/assets/kubejs/textures/item/iv_short_barrel_blank.png"
 hash = "064c0308dda53524b4422bb5f83155d500be5f838e8ff0268c68d3be9c94eb57"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/kerogen.png"
+hash = "8c17bb68ffc9289032fbfcc29e77100746b0675bdff4a0399579c343365a7f5c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/living_cell_matrix.png"
+hash = "719afe0a6f9c25933e5b7811bd3846c8eeea787682fdd628eaf69c0a29036a3a"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/living_metalloid.png"
 hash = "d2660686baab2670a4f5fff8dda3945173e5c214e84220775e022be7dc94e293"
 
@@ -1121,6 +1181,10 @@ file = "kubejs/assets/kubejs/textures/item/magical_receiver.png"
 hash = "36c6db576482973f31a3a0b3774e7adbe92dfc5daf862cb53af6e96d30c88059"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/mana_seeded_cell_matrix.png"
+hash = "f4d8fcb228e79f6a95763dcc48b2ab1bd14b440af1a000d65354118ee6bcc7d8"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/mars_guidance_module.png"
 hash = "6c3b7b831acbba78bb0014b489d02f85eeae3456acc213dfe0ca8293558cae02"
 
@@ -1169,8 +1233,16 @@ file = "kubejs/assets/kubejs/textures/item/mv_short_barrel_blank.png"
 hash = "87fae9dcc5980b76f616c6ca72a1a66b6ca5827960f6f76d4fa8bf8fdd9ac91b"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/ostrum_carbonate_precipitate.png"
+hash = "2ccc23ff207a2f67709794cbd466245ea877ae3fa3a4b541c6120ccfb238683b"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/ostrum_hull_section.png"
 hash = "a2ce501bb051e535eb4077834e94ce605bbb148476beff0ce9a16b048b8ed13e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ostrum_perchlorate_mass.png"
+hash = "401130f1d273b5739209e2ecadea4549c72a55f6ab920596f1463cb77c72bb0e"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pistol_frame.png"
@@ -1181,6 +1253,14 @@ file = "kubejs/assets/kubejs/textures/item/pressurized_rocket_tank.png"
 hash = "3f774c07c1cbd7bf4d78711f44cc29f1df34ecf2ceaab75fe8f3d66ae715f79a"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/primal_latex_billet.png"
+hash = "24ddbb4b7b4478bc7dfa72e89edfc16c0cabeffa8931fed330c2269f9f6a5bfd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/primordial_organic_muck.png"
+hash = "de0316b93f902762953eeae6a16e1bddff0c76d98ea311104ae86d3d1b8d6b3f"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/propellant_tank.png"
 hash = "56a86c47b4d3feaa51fcd900e2b5f034388122265ddea4190cf634f0f883dba5"
 
@@ -1189,8 +1269,24 @@ file = "kubejs/assets/kubejs/textures/item/pure_source_gem_dust.png"
 hash = "d7e4ce16f8802d029adb5fe9f7fbc94bbd88bd56d1ad2a23448f33b7ee15b133"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/raw_ancient_metal_compound.png"
+hash = "8aae1ebd26e029cc1ff8252d4576e60f6c8f5800d3e5b93bbc7282e5483f3917"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/raw_calorite_sponge.png"
+hash = "d9af15508cf580dcdc44b2c1fa45843870e68efe1f73b7b2fca4d5db30cbf9c1"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/raw_elementite.png"
 hash = "ac34fc95a8d7db86e6fc9320ef49fc19d58ab84fccdb95cf113453ae13ff5f04"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/raw_ignitium_seed.png"
+hash = "257421655e85bc324a2011f4faddfc5aec6bc3b5e2923a98c8b79d2a2157af42"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/raw_ostrum_sponge.png"
+hash = "d5029c5197d7d46b7c3dff33739dfb378aae9be51ca61cf2d83af80671eb1ada"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rifle_receiver.png"
@@ -1217,6 +1313,10 @@ file = "kubejs/assets/kubejs/textures/item/rough_source_gem.png"
 hash = "7b77e2d12c0c729a9c1fad53fc59e5a21e4cabfa309f2ce50f0baf816c47ec8c"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/rune_of_frost.png"
+hash = "eec876574ddf04ae017b99e0a6130efd94ff809cf19ffbaaec517b6118976309"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/short_barrel.png"
 hash = "34ed932675eaa710f26be8fdb47f6c633a27f1594c8527466b2c0b9bbc484809"
 
@@ -1233,6 +1333,22 @@ file = "kubejs/assets/kubejs/textures/item/sperm_cell_pellet.png"
 hash = "f151d5a4c7c2f4bdbc14b36a503a506e2f4b8d26a7617952e228d6da86991192"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/uev_voltage_coil.png"
+hash = "428dd9e384922d1f2ca19e9958dedc22e925ada69d321f2a4b1ae8754950bdd8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/uhv_voltage_coil.png"
+hash = "20057f1589a6fbf92ddb9fd4e0ba2c902aa76762f70cc5ac78d282450b600f01"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/uiv_voltage_coil.png"
+hash = "a766923687a45811ff544c21fab48b0af18f5d5e722059e2133137e13e6aa5bc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/unforged_cumium_matrix.png"
+hash = "182222e9bc0e00999624f417ddd1c0e12460a6839725a794c0e7b41f5d775d24"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/vengeful_gaia_spirit.png"
 hash = "701e949062e3f8ea5d1e004c61902a7b2bcd9d1d029e7ea1d5bb36a9478e2b73"
 
@@ -1247,6 +1363,14 @@ hash = "3b27580b0e371820ab51db1f3a07731e6f2fcc17230469e5b2b0ae3099fc7062"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/venus_rocket_engine.png"
 hash = "8645e24c9d1ac257190163a6702eb12ba2420f1c1f9038dcd5ed32b7abbcaa1c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/void_nucleus.png"
+hash = "34954517135b9448c57948497ed64a94176757fb3e1010f68cd660951953af9e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/water_nucleus.png"
+hash = "473dc0ee27ae0562e7947e2bb41ed7774e078b8855ed780a421a3e6956543576"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
@@ -1914,7 +2038,7 @@ hash = "772ada98c14c492c884371a750fad23bd8eba30ab71c33aee2209d0407e89695"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
-hash = "1361b03b7ec5d3ed961b276a574cb1ba2ac1403e2f915b8bbe715ec518061935"
+hash = "001e0a5a7ce84538d184455387197dce507ddcb629abb38f3c682aa5b07e6129"
 
 [[files]]
 file = "kubejs/server_scripts/tech/blastcraft.js"

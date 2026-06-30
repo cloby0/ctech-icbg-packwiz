@@ -652,7 +652,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.assembler('ballistix_missiletier3')
-        .itemInputs('4x gtceu:enriched_naquadah_plate', 'ballistix:antimatter', '2x #gtceu:circuits/zpm', '2x gtceu:zpm_sensor')
+        .itemInputs('4x gtceu:enriched_naquadah_plate', '2x #gtceu:circuits/zpm', '2x gtceu:zpm_sensor')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 16000))
         .itemOutputs('1x ballistix:missiletier3')
         .duration(120 * 20)

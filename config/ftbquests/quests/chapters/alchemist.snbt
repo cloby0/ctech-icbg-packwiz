@@ -17,13 +17,22 @@
 	quests: [
 		{
 			dependencies: ["3C48407D270C6942"]
+			description: [
+				"The &3Mana Pool&r is the central hub of &3Botania&r."
+				""
+				"Flowers generate &dMana&r and pipe it into the pool. From there it's used for pretty much everything Botania does — crafting, transformation, terraforming, you name it."
+				""
+				"&9Note:&r At this tier, reliable options include the &aEndoflame&r (coal/charcoal) and &aRosa Arcana&r (XP). Keep them fed."
+			]
 			id: "138BA0CD22478ACF"
 			size: 0.75d
+			subtitle: "the world's most expensive infinity pool"
 			tasks: [{
 				id: "2B744BA6473CBDBD"
 				item: "botania:mana_pool"
 				type: "item"
 			}]
+			title: "Mana Pool"
 			x: -1.125d
 			y: -6.0d
 		}
@@ -31,11 +40,13 @@
 			dependencies: ["7BDD15A9F2B6BCDD"]
 			id: "5E61BE3584D271A8"
 			size: 0.75d
+			subtitle: "look, don't ask. it's metal, it works."
 			tasks: [{
 				id: "01EEE80DDFE70C38"
 				item: "gtceu:abstract_metal_ingot"
 				type: "item"
 			}]
+			title: "Abstract Metal Ingot"
 			x: 1.125d
 			y: -6.0d
 		}
@@ -44,26 +55,44 @@
 				"5E61BE3584D271A8"
 				"138BA0CD22478ACF"
 			]
+			description: [
+				"&aManasteel&r is the capstone of the &8Alchemist&r tier — flower-powered metallurgy at its finest."
+				""
+				"It's produced by submerging &9Prima Materia-derived&r intermediates in a &3Mana Pool&r. The pool does the rest."
+				""
+				"&9Note:&r Automation becomes important here. A manual Mana Pool setup gets tedious fast."
+			]
 			id: "56FCF9C63F27F60E"
 			shape: "square"
 			size: 1.5d
+			subtitle: "flower-powered metallurgy"
 			tasks: [{
 				id: "07868ED1E5EEE0B7"
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
+			title: "Manasteel Ingot"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"The &3Pure Daisy&r is the foundation of Botania."
+				""
+				"Place &7Stone&r or &eLiving Wood&r next to it and wait. It slowly purifies them into their arcane equivalents."
+				""
+				"That's it. You're a botanist now."
+			]
 			id: "1F374C13B7A1C7A2"
 			size: 0.75d
+			subtitle: "it's literally just a flower"
 			tasks: [{
 				id: "68D9F5C25216864D"
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
+			title: "Pure Daisy"
 			x: -1.125d
 			y: -1.875d
 		}
@@ -71,11 +100,13 @@
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3CFDB9C271774552"
 			size: 0.75d
+			subtitle: "your spells just got significantly fancier"
 			tasks: [{
 				id: "386FECC40F4FE79E"
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
+			title: "Legendary Ink"
 			x: -0.5d
 			y: 1.5d
 		}
@@ -83,6 +114,7 @@
 			dependencies: ["3C613081F4FE51B2"]
 			id: "262FBCDEA658CDE8"
 			size: 0.75d
+			subtitle: "the art of transmutation, pocket edition"
 			tasks: [{
 				id: "58A6F647DCE439F5"
 				item: {
@@ -94,6 +126,7 @@
 				}
 				type: "item"
 			}]
+			title: "Alkahestry Tome"
 			x: 1.5d
 			y: 1.5d
 		}
@@ -101,11 +134,13 @@
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3B405737C2EC2A85"
 			size: 0.75d
+			subtitle: "you're basically a wizard now"
 			tasks: [{
 				id: "50F864927D5AA470"
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
+			title: "Archmage's Spell Book"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -114,13 +149,22 @@
 				"3C613081F4FE51B2"
 				"5281FFCFFE77EA24"
 			]
+			description: [
+				"The &3Abstract Metal&r line bridges &dPrima Materia&r and &aManasteel&r."
+				""
+				"&oCondensed Concepts&r and &oMetal Form&r are intermediate processing steps — don't think too hard about what they are."
+				""
+				"&l&3Lore:&r&o Who needs ingots when you can have abstract notions of metal?"
+			]
 			id: "2C27B13A2CA65DEC"
 			size: 0.75d
+			subtitle: "magic philosophy, compressed"
 			tasks: [{
 				id: "65D66F5AB27EEF45"
 				item: "gtceu:concepts_bucket"
 				type: "item"
 			}]
+			title: "Condensed Concepts"
 			x: 1.125d
 			y: -1.875d
 		}
@@ -128,11 +172,13 @@
 			dependencies: ["2C27B13A2CA65DEC"]
 			id: "442B54C049E4C49E"
 			size: 0.75d
+			subtitle: "it's almost an ingot"
 			tasks: [{
 				id: "20D2CC7AEE2E2DE9"
 				item: "gtceu:metal_form_bucket"
 				type: "item"
 			}]
+			title: "Metal Form"
 			x: 1.125d
 			y: -3.0d
 		}
@@ -140,11 +186,13 @@
 			dependencies: ["442B54C049E4C49E"]
 			id: "7BDD15A9F2B6BCDD"
 			size: 0.75d
+			subtitle: "like an ingot, but confused"
 			tasks: [{
 				id: "06E9CA2754667DC0"
 				item: "kubejs:disorganized_metal_form"
 				type: "item"
 			}]
+			title: "Disorganized Metal Form"
 			x: 1.125d
 			y: -4.875d
 		}
@@ -152,11 +200,13 @@
 			dependencies: ["1F374C13B7A1C7A2"]
 			id: "3C48407D270C6942"
 			size: 0.75d
+			subtitle: "stone, but alive. sort of."
 			tasks: [{
 				id: "6B4DF27906811AA8"
 				item: "botania:livingrock"
 				type: "item"
 			}]
+			title: "Livingrock"
 			x: -1.125d
 			y: -3.75d
 		}
@@ -167,11 +217,13 @@
 			]
 			id: "10BFE2CEB381C280"
 			size: 0.75d
+			subtitle: "for epic spells only"
 			tasks: [{
 				id: "5D51DAFB12AD3536"
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
+			title: "Epic Ink"
 			x: -1.5d
 			y: 1.5d
 		}

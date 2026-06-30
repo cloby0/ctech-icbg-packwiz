@@ -14,6 +14,7 @@
 			id: "46F3E5D16CC665B8"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "the cauldron awakens"
 			tasks: [{
 				id: "18F0B637AAB71C9E"
 				item: "hexerei:mixing_cauldron"
@@ -100,6 +101,7 @@
 				title: "Magic!"
 				type: "checkmark"
 			}]
+			title: "Magic!"
 			x: -1.5d
 			y: 0.0d
 		}

@@ -45,17 +45,20 @@
 					type: "item"
 				}
 			]
+			title: "Enchanting Apparatus"
 			x: -0.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["2DFC564DDE9DDE82"]
 			id: "6598E24995416CFD"
+			subtitle: "mix thoroughly, do NOT drink"
 			tasks: [{
 				id: "6C02D0375522FFDC"
 				item: "kubejs:holy_silver_blend"
 				type: "item"
 			}]
+			title: "Holy Silver Blend"
 			x: 0.5d
 			y: -4.0d
 		}
@@ -65,24 +68,35 @@
 				"5281FFCFFE77EA24"
 			]
 			id: "0D62A4DC7559CA80"
+			subtitle: "getting holier by the step"
 			tasks: [{
 				id: "0092B8C1D4B97700"
 				item: "gtceu:holy_silver_dust"
 				type: "item"
 			}]
+			title: "Holy Silver Dust"
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["0D62A4DC7559CA80"]
+			description: [
+				"&aHoly Silver&r is the defining material of the &8Initiate&r tier — the magic line's equivalent of &7Aluminium&r."
+				""
+				"It's made by pushing regular &7Silver&r through a gauntlet of &3Imbuements&r and &3Apparatus&r rituals until it gets with the program."
+				""
+				"&9Note:&r Holy Silver is not mined. It is &dprocessed&r. Plan accordingly."
+			]
 			id: "51D5B5C004491077"
 			shape: "square"
 			size: 1.5d
+			subtitle: "the arcane equivalent of aluminium"
 			tasks: [{
-				id: "351B5AC9A555B8AA"
+				id: "351B5AA9A555B8AA"
 				item: "gtceu:holy_silver_ingot"
 				type: "item"
 			}]
+			title: "Holy Silver Ingot"
 			x: 0.0d
 			y: -6.75d
 		}
@@ -93,11 +107,13 @@
 				"06C1B3D271B8BFCF"
 			]
 			id: "2D1F7AFFE193EDE3"
+			subtitle: "an Aether ender pearl. basically."
 			tasks: [{
 				id: "5C0B76FCCF9776E5"
 				item: "irons_spellbooks:divine_pearl"
 				type: "item"
 			}]
+			title: "Divine Pearl"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -105,6 +121,7 @@
 			dependencies: ["2D1F7AFFE193EDE3"]
 			id: "2DFC564DDE9DDE82"
 			size: 0.75d
+			subtitle: "slightly less violent than it sounds"
 			tasks: [{
 				id: "263AFC9691CBD4E1"
 				item: {
@@ -116,6 +133,7 @@
 				}
 				type: "item"
 			}]
+			title: "Mercy Cross"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -124,11 +142,13 @@
 			id: "0B8AA1EB97970DB4"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "teleportation, but classier"
 			tasks: [{
 				id: "406CC399D0C22A76"
 				item: "reliquary:sojourner_staff"
 				type: "item"
 			}]
+			title: "Sojourner's Staff"
 			x: 1.125d
 			y: 3.375d
 		}
@@ -137,11 +157,13 @@
 			id: "0B3840C36E5D555F"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "cryogenics for beginners"
 			tasks: [{
 				id: "3409A9D49B6C33C2"
 				item: "reliquary:glacial_staff"
 				type: "item"
 			}]
+			title: "Glacial Staff"
 			x: 0.375d
 			y: 3.375d
 		}
@@ -149,11 +171,13 @@
 			dependencies: ["2D1F7AFFE193EDE3"]
 			id: "7592A92943AC392E"
 			size: 0.75d
+			subtitle: "write better spells with better ink"
 			tasks: [{
 				id: "69DF3188A92DEC55"
 				item: "irons_spellbooks:rare_ink"
 				type: "item"
 			}]
+			title: "Rare Ink"
 			x: -1.125d
 			y: -2.25d
 		}
@@ -162,6 +186,7 @@
 			id: "383562436DCFD6B5"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "pearls sold separately"
 			tasks: [{
 				id: "6FA4920ADBBCB71C"
 				item: {
@@ -181,6 +206,7 @@
 				}
 				type: "item"
 			}]
+			title: "Ender Staff"
 			x: -0.375d
 			y: 3.375d
 		}
@@ -190,11 +216,13 @@
 			id: "7DB0088826AE5760"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "violence, but stylish"
 			tasks: [{
 				id: "3938AAFF343374B4"
 				item: "reliquary:rod_of_lyssa"
 				type: "item"
 			}]
+			title: "Rod of Lyssa"
 			x: -0.75d
 			y: 2.25d
 		}
@@ -204,11 +232,13 @@
 			id: "362A4516582710E7"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "you're (technically) a hero now"
 			tasks: [{
 				id: "2A66D7B89C12968C"
 				item: "reliquary:hero_medallion"
 				type: "item"
 			}]
+			title: "Hero Medallion"
 			x: 0.75d
 			y: 2.25d
 		}
@@ -217,6 +247,7 @@
 			id: "29C678486D003116"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "buildier"
 			tasks: [{
 				id: "72A0A2B720C889FA"
 				item: {
@@ -228,6 +259,7 @@
 				}
 				type: "item"
 			}]
+			title: "Infinity Wand"
 			x: -1.125d
 			y: 3.375d
 		}
@@ -236,6 +268,7 @@
 			id: "28B20F274E486CDB"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "bottomless pocket edition"
 			tasks: [{
 				id: "1B4364F2D2872F97"
 				item: {
@@ -249,6 +282,7 @@
 				}
 				type: "item"
 			}]
+			title: "Void Tear"
 			x: 0.0d
 			y: 2.25d
 		}
@@ -258,12 +292,14 @@
 			id: "1C404D0B2D0F0DEF"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "for spells that don't exist yet"
 			tasks: [{
 				count: 6L
 				id: "29BCE45DC3A2BCCF"
 				item: "irons_spellbooks:blank_rune"
 				type: "item"
 			}]
+			title: "Blank Runes"
 			x: 1.5d
 			y: 2.25d
 		}
@@ -273,24 +309,33 @@
 			id: "4E06D62D4ADB57BB"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "not quite legendary"
 			tasks: [{
 				id: "230985872D188756"
 				item: "irons_spellbooks:uncommon_ink"
 				type: "item"
 			}]
+			title: "Uncommon Ink"
 			x: -1.5d
 			y: 2.25d
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
+			description: [
+				"The &3Silver Dungeon&r houses the &dValkyrie Queen&r, who drops a &aDivine Pearl&r on defeat."
+				""
+				"Bring Zanite gear. Bring healing. Bring patience."
+			]
 			id: "6300D75BCC09AEF1"
 			size: 0.75d
+			subtitle: "clear it out. loot it thoroughly."
 			tasks: [{
 				advancement: "aether:silver_dungeon"
 				criterion: ""
 				id: "250C18732EF37828"
 				type: "advancement"
 			}]
+			title: "Silver Dungeon"
 			x: -0.75d
 			y: -1.125d
 		}

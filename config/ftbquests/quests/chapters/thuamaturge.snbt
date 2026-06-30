@@ -18,11 +18,13 @@
 		{
 			dependencies: ["76080FE8160A0F71"]
 			id: "5188A30959FE9535"
+			subtitle: "biggest crafting block in the game? probably."
 			tasks: [{
 				id: "2632A3C4FDDDF444"
 				item: "botania:terra_plate"
 				type: "item"
 			}]
+			title: "Terrestrial Agglomeration Plate"
 			x: 0.0d
 			y: -7.0d
 		}
@@ -32,32 +34,51 @@
 				"202F55D0054B18FC"
 				"3D4DC3DA79713198"
 			]
+			description: [
+				"&aTerrasteel&r is the capstone of the &8Thaumaturge&r tier."
+				""
+				"If Manasteel was flower-powered metallurgy, Terrasteel is the whole botanical garden condensed into a single ingot."
+				""
+				"&l&3Lore:&r&o In vanilla Botania packs, Terrasteel is considered an endgame material. Here, it's a stepping stone."
+			]
 			id: "278BE65F77B6BD8B"
 			shape: "square"
 			size: 1.5d
+			subtitle: "the forest's offering to the factory"
 			tasks: [{
 				id: "2A5838F49D2DCDC0"
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
+			title: "Terrasteel Ingot"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["56FCF9C63F27F60E"]
+			description: [
+				"The &3Runic Altar&r turns &dMana&r and materials into &aRunes&r — the building blocks of advanced &3Botania&r crafting."
+				""
+				"You'll need a significant variety of runes to eventually reach &aTerrasteel&r. Start here."
+				""
+				"&9Tip:&r Each rune crafting consumes a fixed amount of Mana. Keep your pools topped up or this will take forever."
+			]
 			id: "4F76358C60F3FDE1"
 			size: 0.75d
+			subtitle: "where the real magic happens"
 			tasks: [{
 				id: "1973AE35A207E52E"
 				item: "botania:runic_altar"
 				type: "item"
 			}]
+			title: "Runic Altar"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1C79439FDCE2173E"]
 			id: "2FE1A9BEA093B7B9"
+			subtitle: "sounds nicer than it is"
 			tasks: [{
 				id: "1CA668C07422ACCB"
 				item: "kubejs:florid_compound"
@@ -73,45 +94,60 @@
 				"69AAC4FCAADE1F21"
 			]
 			id: "76080FE8160A0F71"
+			subtitle: "a living what now"
 			tasks: [{
 				id: "335F1FBFBC9C3955"
 				item: "kubejs:living_metalloid"
 				type: "item"
 			}]
+			title: "Living Metalloid"
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["138BA0CD22478ACF"]
 			id: "3D4DC3DA79713198"
+			subtitle: "ender pearl but glowier"
 			tasks: [{
 				id: "4269C1CD1A25CF75"
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
+			title: "Mana Pearl"
 			x: 1.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["138BA0CD22478ACF"]
 			id: "202F55D0054B18FC"
+			subtitle: "diamonds but with extra steps (and plants)"
 			tasks: [{
 				id: "33BC48D27EE86D77"
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
+			title: "Mana Diamond"
 			x: -1.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["56FCF9C63F27F60E"]
+			description: [
+				"&3Hex Casting&r is a visual, pattern-based magic system. Instead of crafting spells, you draw them in the air with a staff."
+				""
+				"It has a bit of a learning curve. That's okay. The in-game book explains everything."
+				""
+				"The &aHexed Amethyst Core&r is your entry point."
+			]
 			id: "578575F33D569EE2"
 			size: 0.75d
+			subtitle: "the start of something weird"
 			tasks: [{
 				id: "017002DE63E2B613"
 				item: "kubejs:hexed_amethyst_core"
 				type: "item"
 			}]
+			title: "Hexed Amethyst Core"
 			x: 0.0d
 			y: 1.125d
 		}
@@ -119,11 +155,13 @@
 			dependencies: ["578575F33D569EE2"]
 			id: "22A18D1A3497D675"
 			size: 0.75d
+			subtitle: "like a wand but geometric"
 			tasks: [{
 				id: "5640147F484CCE9D"
 				item: "hexcasting:focus"
 				type: "item"
 			}]
+			title: "Focus"
 			x: -1.125d
 			y: 1.5d
 		}
@@ -131,11 +169,13 @@
 			dependencies: ["578575F33D569EE2"]
 			id: "5D529521754924FA"
 			size: 0.75d
+			subtitle: "written in patterns"
 			tasks: [{
 				id: "76C9DC1EBEB47BB8"
 				item: "hexcasting:spellbook"
 				type: "item"
 			}]
+			title: "Hex Spellbook"
 			x: -0.375d
 			y: 1.875d
 		}
@@ -143,11 +183,13 @@
 			dependencies: ["578575F33D569EE2"]
 			id: "4FF741638D500FCF"
 			size: 0.75d
+			subtitle: "it does something. we think."
 			tasks: [{
 				id: "102B7093EAFBCBC4"
 				item: "hexcasting:artifact"
 				type: "item"
 			}]
+			title: "Hex Artifact"
 			x: 0.375d
 			y: 1.875d
 		}
@@ -167,6 +209,7 @@
 				title: "Any Hex Staff"
 				type: "item"
 			}]
+			title: "Any Hex Staff"
 			x: 1.125d
 			y: 1.5d
 		}
@@ -174,11 +217,13 @@
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "5F3CCA0806278FD9"
 			size: 0.75d
+			subtitle: "for when archmage just isn't enough"
 			tasks: [{
 				id: "1896D95300FEBA47"
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
+			title: "Legendary Ink"
 			x: 1.125d
 			y: 0.0d
 		}
@@ -186,11 +231,13 @@
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "6FD05FDAA5532519"
 			size: 0.75d
+			subtitle: "you already have this. make another."
 			tasks: [{
 				id: "55374A980BA4B130"
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
+			title: "Archmage's Spell Book"
 			x: -1.125d
 			y: 0.0d
 		}
@@ -198,6 +245,7 @@
 			dependencies: ["4F76358C60F3FDE1"]
 			id: "0EFC49A84C9C3FBB"
 			size: 0.75d
+			subtitle: "fire, water, earth, air. classic."
 			tasks: [{
 				count: 4L
 				id: "35B2DD3C04A45D6E"
@@ -211,7 +259,7 @@
 				title: "Any Element Runes"
 				type: "item"
 			}]
-			title: "Rune"
+			title: "Elemental Runes"
 			x: 0.0d
 			y: -1.875d
 		}
@@ -219,6 +267,7 @@
 			dependencies: ["0EFC49A84C9C3FBB"]
 			id: "1C79439FDCE2173E"
 			size: 0.75d
+			subtitle: "spring, summer, autumn, winter. obviously."
 			tasks: [{
 				count: 4L
 				id: "4DD65CF7E6E97AE3"
@@ -232,14 +281,20 @@
 				title: "Any Season Runes"
 				type: "item"
 			}]
-			title: "Runee"
+			title: "Season Runes"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1C79439FDCE2173E"]
+			description: [
+				"Seven flavors of moral failure, each with its own Runic Altar recipe."
+				""
+				"This is not the hardest part of Terrasteel. It just feels like it."
+			]
 			id: "5AF8A1AB9B552519"
 			size: 0.75d
+			subtitle: "pride, greed, wrath... you know the rest"
 			tasks: [{
 				count: 4L
 				id: "0D800D5FB13E74AF"
@@ -253,7 +308,7 @@
 				title: "Any Sinful Runes"
 				type: "item"
 			}]
-			title: "Runeee"
+			title: "Sin Runes"
 			x: 1.5d
 			y: -3.0d
 		}
@@ -266,11 +321,13 @@
 			]
 			id: "69AAC4FCAADE1F21"
 			size: 0.75d
+			subtitle: "not what it sounds like"
 			tasks: [{
 				id: "28D8A01D4B1312E4"
 				item: "reliquary:fertile_essence"
 				type: "item"
 			}]
+			title: "Fertile Essence"
 			x: 1.0d
 			y: -5.5d
 		}

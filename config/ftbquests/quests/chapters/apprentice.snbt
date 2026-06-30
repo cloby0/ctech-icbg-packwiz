@@ -18,11 +18,13 @@
 			dependencies: ["2C9E18AE64E4E744"]
 			id: "7EA490DB5937F1B3"
 			size: 0.75d
+			subtitle: "ghost juice. don't ask questions."
 			tasks: [{
 				id: "6E9C9B6B45BD2BF9"
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
+			title: "Arcane Essence"
 			x: -1.875d
 			y: -1.125d
 		}
@@ -30,11 +32,13 @@
 			dependencies: ["1BBC77A8493BB220"]
 			id: "2C9E18AE64E4E744"
 			size: 0.75d
+			subtitle: "glorified magic bucket"
 			tasks: [{
 				id: "5F2B80E79832DD3E"
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
+			title: "Imbuement Chamber"
 			x: -0.75d
 			y: -1.125d
 		}
@@ -42,11 +46,13 @@
 			dependencies: ["7EA490DB5937F1B3"]
 			id: "46FA0C350A12D8A3"
 			size: 0.75d
+			subtitle: "where spells are born (and poorly spelled)"
 			tasks: [{
 				id: "26123C1BAD62F2F2"
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
+			title: "Scribes Table"
 			x: -3.0d
 			y: -0.375d
 		}
@@ -54,11 +60,13 @@
 			dependencies: ["7EA490DB5937F1B3"]
 			id: "23DADC343F70C96F"
 			size: 0.75d
+			subtitle: "two tables, both alike in dignity"
 			tasks: [{
 				id: "56DAA8BCEFF118C0"
 				item: "irons_spellbooks:inscription_table"
 				type: "item"
 			}]
+			title: "Inscription Table"
 			x: -3.0d
 			y: -1.875d
 		}
@@ -66,11 +74,13 @@
 			dependencies: ["46FA0C350A12D8A3"]
 			id: "69097C5CA51C927E"
 			size: 0.75d
+			subtitle: "page one: don't point it at yourself"
 			tasks: [{
 				id: "3A2B038ED4115400"
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
+			title: "Novice Spell Book"
 			x: -4.125d
 			y: -0.375d
 		}
@@ -82,11 +92,13 @@
 			]
 			id: "2128E321A9C4A125"
 			size: 0.75d
+			subtitle: "step two: add more glow"
 			tasks: [{
 				id: "6D51528FDBE84F0C"
 				item: "kubejs:glowing_compound_dust"
 				type: "item"
 			}]
+			title: "Glowing Compound Dust"
 			x: 0.0d
 			y: -2.25d
 		}
@@ -94,22 +106,33 @@
 			dependencies: ["1BBC77A8493BB220"]
 			id: "486FF2D3B8C2D77D"
 			size: 0.75d
+			subtitle: "kinda shiny but mostly gross"
 			tasks: [{
 				id: "31661804FF454870"
 				item: "kubejs:impure_glimmering_dust"
 				type: "item"
 			}]
+			title: "Impure Glimmering Dust"
 			x: 0.0d
 			y: -1.125d
 		}
 		{
 			dependencies: ["2128E321A9C4A125"]
+			description: [
+				"&aLuminessence&r is the foundational material of the magic tree's early game."
+				""
+				"16 Glowstone Dust, one Imbuement, and some glowing compound later — you've got a single &aLuminessence Dust&r."
+				""
+				"It shines bright. It gates a lot. Get used to making it."
+			]
 			id: "68DAC01E93C6240E"
+			subtitle: "congratulations on your glow-up"
 			tasks: [{
 				id: "2BB106EE5CBCD4A8"
 				item: "gtceu:luminessence_dust"
 				type: "item"
 			}]
+			title: "Luminessence"
 			x: 0.0d
 			y: -3.5d
 		}

@@ -1,0 +1,436 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iii_medium_voltage"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:mv_electric_motor"
+	id: "3C00F1C2E3D40000"
+	order_index: 2
+	quest_links: [{
+		id: "3C00F1C2E3D40001"
+		linked_quest: "2B00F1C2E3D4000D"
+		size: 1.2d
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2B00F1C2E3D4000D"]
+			hide_until_deps_complete: true
+			id: "3C00F1C2E3D40002"
+			shape: "diamond"
+			subtitle: "MV: medium progress"
+			tasks: [{
+				id: "3C00F1C2E3D40003"
+				title: "Medium Voltage!"
+				type: "checkmark"
+			}]
+			title: "Medium Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40002"]
+			description: [
+				"The &7MV Machine Hull&r uses Vanadium Steel — an early alloy. Make several."
+				""
+				"MV hulls gate every MV machine. Run your EBF with a second power hatch to produce alloys faster."
+			]
+			id: "3C00F1C2E3D40004"
+			rewards: [{
+				count: 8
+				id: "3C00F1C2E3D40005"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "the skeleton, but bigger"
+			tasks: [{
+				count: 3L
+				id: "3C00F1C2E3D40006"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "Medium Frame"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40004"]
+			description: [
+				"MV components are where things start requiring real alloys. &aNeodymium&r for the magnetic rods. &aAluminium&r cables. &aStainless Steel&r bodies."
+				""
+				"Build all seven component types. You'll need emitters and sensors for later machine recipes."
+			]
+			icon: "gtceu:mv_electric_motor"
+			id: "3C00F1C2E3D40020"
+			rewards: [{
+				count: 2
+				id: "3C00F1C2E3D40021"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "one of each"
+			tasks: [
+				{
+					id: "3C00F1C2E3D40022"
+					item: "gtceu:mv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40023"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40024"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40025"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40026"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "MV Components"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40020"]
+			description: [
+				"&aStainless Steel&r is the defining alloy of MV. Six inputs. One output. Worth it."
+				""
+				"You'll need it for MV machines, casings, and basically everything that comes next. The &3MV Mixer&r makes this significantly less painful than doing it by hand."
+			]
+			id: "3C00F1C2E3D40007"
+			rewards: [{
+				count: 8
+				id: "3C00F1C2E3D40008"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "five metals, one ingot"
+			tasks: [{
+				count: 16L
+				id: "3C00F1C2E3D40009"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			title: "Steel, But Fancy"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40007"]
+			description: [
+				"&3Kanthal Coils&r raise your EBF to 2700K — enough for Nichrome, Chrome, and the Titanium chain prereqs."
+				""
+				"16 coil blocks minimum. They replace Cupronickel entirely and are worth the material investment."
+			]
+			id: "3C00F1C2E3D40027"
+			rewards: [{
+				count: 4
+				id: "3C00F1C2E3D40028"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "upgrade your furnace"
+			tasks: [{
+				count: 8L
+				id: "3C00F1C2E3D40029"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "Kanthal Coils"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40027"]
+			description: [
+				"The &3Silicon Boule&r is grown in the EBF from Silicon dust + Gallium. Slice it with a Cutting Machine to get &aSilicon Wafers&r."
+				""
+				"Wafers are the foundation of the circuit line from here forward. Set up a continuous Boule-to-Wafer pipeline before you hit MV circuits."
+			]
+			id: "3C00F1C2E3D4002A"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the original semiconductor"
+			tasks: [
+				{
+					id: "3C00F1C2E3D4002B"
+					item: "gtceu:silicon_boule"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3C00F1C2E3D4002C"
+					item: "gtceu:silicon_wafer"
+					type: "item"
+				}
+			]
+			title: "Silicon Boule"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D4002A"]
+			description: [
+				"&aPolyethylene&r is the simplest plastic and the foundation of the polymer line. It enables plastic circuit boards and wire insulation."
+				""
+				"Ethylene from Ethanol → Distillery → Chemical Reactor with Sulfuric Acid. Then Ethylene + Oxygen → Polyethylene."
+			]
+			id: "3C00F1C2E3D4000D"
+			rewards: [{
+				count: 4
+				id: "3C00F1C2E3D4000E"
+				item: "gtceu:polyethylene_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "everything is plastic now"
+			tasks: [{
+				id: "3C00F1C2E3D4000F"
+				item: "gtceu:polyethylene_ingot"
+				type: "item"
+			}]
+			title: "Plastic Fantastic"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D4000D"]
+			description: [
+				"The &aAdvanced Integrated Circuit&r is the MV circuit workhorse and the capstone of this tier."
+				""
+				"It requires a &3Plastic Circuit Board&r, Ilmenite diodes, and Cleanroom-adjacent wafer processing. Get your &3MV Circuit Assembler&r running — you'll need these in bulk for HV."
+			]
+			id: "3C00F1C2E3D40010"
+			rewards: [{
+				count: 4
+				id: "3C00F1C2E3D40011"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "the MV ceiling"
+			tasks: [
+				{
+					count: 2L
+					id: "3C00F1C2E3D40012"
+					item: "gtceu:advanced_integrated_circuit"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3C00F1C2E3D40013"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+			]
+			title: "Integrated"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40004"]
+			description: [
+				"The &3MV Circuit Assembler&r is your primary circuit production machine from here through HV."
+				""
+				"Feed it &aSoldering Alloy&r and the appropriate components. It handles both Good and Advanced Integrated Circuits."
+			]
+			id: "3C00F1C2E3D40016"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "upgrade requested"
+			tasks: [{
+				id: "3C00F1C2E3D40017"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Circuit Assembler"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40004"]
+			description: [
+				"The &3MV Fluid Drilling Rig&r taps underground oil veins for &aCrude Oil&r."
+				""
+				"You need oil. Polyethylene needs Ethylene. Ethylene needs processing. Processing needs oil. Start the chain now."
+			]
+			id: "3C00F1C2E3D4002D"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "drink the earth"
+			tasks: [{
+				id: "3C00F1C2E3D4002E"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			title: "Fluid Drilling"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40007"]
+			description: [
+				"The &3MV Mixer&r is required for Stainless Steel and most EV-tier alloys. It also mixes &3Fluix Crystals&r for AE2."
+				""
+				"Make at least two — one for alloys, one for other recipes. It overclocks cleanly."
+			]
+			id: "3C00F1C2E3D4002F"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "stir it together"
+			tasks: [{
+				id: "3C00F1C2E3D40030"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			title: "MV Mixer"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40020"]
+			description: [
+				"The &9AE2 Charger&r seeds Certus Quartz crystals by exposing them to charged quartz in water. &9Growth Accelerators&r speed up the process."
+				""
+				"This is the start of your AE2 system. Fluix Crystals require a &3Charged Certus Quartz&r + Quartz + Redstone in the &3MV Mixer&r. Build the charger first, then the accelerators."
+			]
+			icon: "ae2:charger"
+			id: "3C00F1C2E3D40031"
+			shape: "square"
+			size: 0.75d
+			subtitle: "crystal farming, basically"
+			tasks: [
+				{
+					id: "3C00F1C2E3D40032"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40033"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40034"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+			]
+			title: "Crystal Growth"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40031"]
+			description: [
+				"&3Formation Cores&r and &3Annihilation Cores&r are the building blocks of AE2 buses and planes — everything that moves items in and out of your network."
+				""
+				"Both are crafted in the MV Assembler. You'll need several dozen of each before EV when the ME network proper comes online."
+			]
+			icon: "ae2:formation_core"
+			id: "3C00F1C2E3D40035"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "item logistics, pre-network"
+			tasks: [
+				{
+					id: "3C00F1C2E3D40036"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "3C00F1C2E3D40037"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+			]
+			title: "Formation & Annihilation"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40004"]
+			description: [
+				"The &3MV Distillery&r splits one fluid into two — crucial for the Oil → Diesel → Benzene chain."
+				""
+				"Diesel from a Distillery is enough for early power. Run Light Fuel through it and you get Benzene as a bonus — useful later for Nitrobenzene and Toluene."
+			]
+			id: "3C00F1C2E3D40038"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "chemistry, simplified"
+			tasks: [{
+				id: "3C00F1C2E3D40039"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			title: "Distillery"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40020"]
+			description: [
+				"The &3Pyrolyse Oven&r thermally decomposes wood into &aWood Tar&r and &aWood Vinegar&r — cheap routes to Phenol and Acetone."
+				""
+				"Optional at MV, but it's one of the easiest ways to bootstrap the organic chemistry chain without a full oil processing setup."
+			]
+			id: "3C00F1C2E3D4003A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "burning wood for science"
+			tasks: [{
+				id: "3C00F1C2E3D4003B"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			title: "Pyrolyse Oven"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3C00F1C2E3D40004"]
+			description: [
+				"MV batteries charge faster and hold more than LV. &3Lithium&r from Salt processing. &3Cadmium&r from Sphalerite."
+				""
+				"Charge them in the &3MV Charger&r. Use them to power a machine while your cable infrastructure catches up."
+			]
+			id: "3C00F1C2E3D4003C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "more energy, same size"
+			tasks: [{
+				id: "3C00F1C2E3D4003D"
+				item: "gtceu:mv_lithium_battery"
+				type: "item"
+			}]
+			title: "MV Batteries"
+			x: -2.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["Stainless, plastic, and the start of something digital."]
+	title: "III. Medium Voltage"
+}

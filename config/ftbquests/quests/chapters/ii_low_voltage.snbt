@@ -1,0 +1,359 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ii_low_voltage"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:lv_electric_motor"
+	id: "2B00F1C2E3D40000"
+	order_index: 1
+	quest_links: [{
+		id: "2B00F1C2E3D40001"
+		linked_quest: "1A00F1C2E3D4001C"
+		size: 1.2d
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["1A00F1C2E3D4001C"]
+			hide_until_deps_complete: true
+			id: "2B00F1C2E3D40003"
+			shape: "diamond"
+			subtitle: "now with electricity"
+			tasks: [{
+				id: "2B00F1C2E3D40004"
+				title: "Low Voltage!"
+				type: "checkmark"
+			}]
+			title: "Low Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40003"]
+			description: [
+				"The &7LV Machine Hull&r is the body of every LV machine. You'll need a steady supply of them."
+				""
+				"Make at least three. Tin cables for LV. Wrench to configure. You know the drill."
+			]
+			id: "2B00F1C2E3D40005"
+			rewards: [{
+				count: 8
+				id: "2B00F1C2E3D40006"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "the skeleton of a machine"
+			tasks: [{
+				count: 3L
+				id: "2B00F1C2E3D40007"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "Hull Down"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40005"]
+			description: [
+				"The &6Electric Blast Furnace&r is the engine of the entire tech tree. Every important metal from here forward requires it."
+				""
+				"Start with &3Cupronickel coils&r — they handle everything up to 1700K. Aluminium and Steel both fit in that window."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "2B00F1C2E3D40008"
+			rewards: [{
+				count: 8
+				id: "2B00F1C2E3D40009"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "it's electric, boogie woogie woogie"
+			tasks: [
+				{
+					id: "2B00F1C2E3D4000A"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D4000B"
+					item: "gtceu:heat_proof_machine_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2B00F1C2E3D4000C"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			title: "The Blast Furnace"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40008"]
+			description: [
+				"&aAluminium&r is the defining material of LV. It's the key ingredient for LV machine components and half your early machine recipes."
+				""
+				"From &dRuby&r, &dSapphire&r, or &dGreen Sapphire&r ore. Electrolyze first. &6Nitrogen&r cuts the recipe time by a third."
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "2B00F1C2E3D4000D"
+			rewards: [
+				{
+					count: 16
+					id: "2B00F1C2E3D4000E"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2B00F1C2E3D4000F"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "light. strong. essential."
+			tasks: [{
+				count: 16L
+				id: "2B00F1C2E3D40010"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			title: "Light as Air"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2B00F1C2E3D4000D"]
+			description: [
+				"LV components are the building blocks of every LV machine. Motors go in assemblers. Pistons go in miners. Pumps go in fluid machines. You need all of them."
+				""
+				"Aluminium for frames and casings. Copper wire. Tin cables. Keep production running — you'll burn through these."
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "2B00F1C2E3D40020"
+			rewards: [{
+				count: 4
+				id: "2B00F1C2E3D40029"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "one of each. minimum."
+			tasks: [
+				{
+					id: "2B00F1C2E3D4002A"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D4002B"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D4002C"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D4002D"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D4002E"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "LV Components"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40020"]
+			description: [
+				"The &aGood Electronic Circuit&r is the LV circuit workhorse. It's strictly better than the Basic Electronic Circuit and you'll need a lot of them."
+				""
+				"Get your &3LV Circuit Assembler&r up and running. Hand-crafting these doesn't scale."
+			]
+			id: "2B00F1C2E3D40011"
+			rewards: [{
+				count: 4
+				id: "2B00F1C2E3D40012"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "an upgrade, theoretically"
+			tasks: [{
+				count: 4L
+				id: "2B00F1C2E3D40013"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "Better Circuits"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40008"]
+			description: ["You need more coils. &3Four coil blocks&r gets you to 1700K — Aluminium and Steel are both under that threshold. The coils sit inside the EBF ring, not on the outside."]
+			id: "2B00F1C2E3D40016"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "baby's first heating coil"
+			tasks: [{
+				count: 4L
+				id: "2B00F1C2E3D40017"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			title: "Cupronickel Coils"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40005"]
+			description: [
+				"The &3LV Circuit Assembler&r automates component and circuit production with a fluid input for solder."
+				""
+				"Feed it &aSoldering Alloy&r for best results. It replaces 90% of hand-crafting the moment it's running."
+			]
+			id: "2B00F1C2E3D40022"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "automate or suffer"
+			tasks: [{
+				id: "2B00F1C2E3D40030"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Circuit Assembler"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40005"]
+			description: [
+				"The &3LV Electrolyzer&r splits compounds into elements. Water → Hydrogen + Oxygen. Oxygen boosts EBF speeds on non-boosted recipes."
+				""
+				"Start producing Oxygen early — it's a free speedup for Aluminium and most common metals."
+			]
+			id: "2B00F1C2E3D40023"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "splitting atoms, politely"
+			tasks: [
+				{
+					id: "2B00F1C2E3D40031"
+					item: "gtceu:lv_electrolyzer"
+					type: "item"
+				}
+				{
+					id: "2B00F1C2E3D40032"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+			]
+			title: "Electrolyzer"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40005"]
+			description: [
+				"The &3LV Miner&r digs a 3x3 column straight down and deposits ore into an adjacent chest or pipe."
+				""
+				"Two Miners running in parallel keep a basic LV factory fed. Add a Fluid Drilling Rig when you need liquid resources."
+			]
+			id: "2B00F1C2E3D40024"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "dig forever, basically"
+			tasks: [{
+				id: "2B00F1C2E3D40033"
+				item: "gtceu:lv_miner"
+				type: "item"
+			}]
+			title: "LV Miner"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40020"]
+			description: [
+				"&aSilicon&r is required for nearly every circuit line. It's processed in the EBF from Quartzite or Sand."
+				""
+				"Get a steady supply established now. You'll need Silicon Boules in MV, and those require the EBF too."
+			]
+			id: "2B00F1C2E3D40025"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "sand, but useful"
+			tasks: [{
+				id: "2B00F1C2E3D40034"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			title: "Silicon"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40020"]
+			description: [
+				"&3LV Steel-Shell Batteries&r and &3LV Cadmium Batteries&r store power for machines that need it."
+				""
+				"Charge them in an &3LV Charger&r. Use them to power machines while your generators are elsewhere. They're not efficient long-term but they're useful for bootstrapping."
+			]
+			id: "2B00F1C2E3D40026"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "portable power. sort of."
+			tasks: [{
+				id: "2B00F1C2E3D40035"
+				item: "gtceu:lv_battery_re_steel"
+				type: "item"
+			}]
+			title: "LV Batteries"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B00F1C2E3D40005"]
+			description: [
+				"A &3Sophisticated Backpack&r keeps tools out of your hotbar and upgrades alongside your progression."
+				""
+				"The base bag holds 27 slots. Add upgrade cards to expand. Pairs well with the LV Miner — send ore straight to the backpack."
+			]
+			id: "2B00F1C2E3D40018"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "inventory management, solved"
+			tasks: [{
+				id: "2B00F1C2E3D40019"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Backpacks"
+			x: 2.0d
+			y: -4.5d
+		}
+	]
+	subtitle: ["Harness electricity. Process ore. Go further."]
+	title: "II. Low Voltage"
+}

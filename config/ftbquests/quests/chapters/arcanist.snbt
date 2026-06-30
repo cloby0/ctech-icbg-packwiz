@@ -18,7 +18,15 @@
 	quests: [
 		{
 			dependencies: ["278BE65F77B6BD8B"]
+			description: [
+				"The &3Elven Portal&r opens a gateway to &dAlfheim&r — home of the elves."
+				""
+				"You can't visit. You can only trade. Drop items through the portal and the elves will send something back."
+				""
+				"This is how you get &aElven materials&r, including the ones you need for &dElementium&r."
+			]
 			id: "7611918249B75923"
+			subtitle: "time to make some weird friends"
 			tasks: [
 				{
 					count: 8L
@@ -51,57 +59,79 @@
 		{
 			dependencies: ["51FA75C4A1E30685"]
 			id: "104D6BF6AA109EF4"
+			subtitle: "not to be confused with Elementium"
 			tasks: [{
 				id: "2B102D30E4922A3F"
 				item: "kubejs:raw_elementite"
 				type: "item"
 			}]
+			title: "Raw Elementite"
 			x: -0.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["36021729B91C1137"]
 			id: "51FA75C4A1E30685"
+			subtitle: "one step away"
 			tasks: [{
 				id: "729FC4B59E51C137"
 				item: "kubejs:elementite_dust"
 				type: "item"
 			}]
+			title: "Elementite Dust"
 			x: 0.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["7611918249B75923"]
 			id: "2764D29567727F6D"
+			subtitle: "almost magic. almost."
 			tasks: [{
 				id: "4F18D9849B412CD9"
 				item: "kubejs:weak_elementium_dust"
 				type: "item"
 			}]
+			title: "Weak Elementium Dust"
 			x: 0.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["104D6BF6AA109EF4"]
+			description: [
+				"&aElementium&r is the capstone of the &8Arcanist&r tier."
+				""
+				"It can only be obtained through cooperation with the Elves — no amount of GregTech machines can synthesize this one."
+				""
+				"&9Note:&r Automating Elven Portal trading is possible. Once you're producing Elementium in volume, you'll want to look into it."
+			]
 			id: "1C1A082C60D3E432"
 			shape: "square"
 			size: 1.5d
+			subtitle: "extracted from another dimension's flora"
 			tasks: [{
 				id: "1F6E48A31BBC3B91"
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
+			title: "Elementium Ingot"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2764D29567727F6D"]
+			description: [
+				"The &3Elven Portal&r trading process produces &aElven Concentrate&r — the key input for &dElementium&r processing."
+				""
+				"Feed the portal, collect the concentrate, process it further."
+			]
 			id: "36021729B91C1137"
+			subtitle: "what the elves give back"
 			tasks: [{
 				id: "0404B1F210000928"
 				item: "kubejs:elven_concentrate"
 				type: "item"
 			}]
+			title: "Elven Concentrate"
 			x: 0.0d
 			y: -4.0d
 		}

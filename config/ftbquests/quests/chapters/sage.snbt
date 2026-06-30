@@ -18,14 +18,23 @@
 	quests: [
 		{
 			dependencies: ["23D66F8D6CD53A68"]
+			description: [
+				"The &aGaia Spirit Ingot&r is the capstone of the magic tree."
+				""
+				"Congratulations. You've mastered the arcane."
+				""
+				"...go touch some grass before the endgame begins."
+			]
 			id: "4E4F37F6AB877E5C"
 			shape: "square"
 			size: 1.5d
+			subtitle: "what the stars taste like"
 			tasks: [{
 				id: "5B834F0AE04F354B"
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
+			title: "Gaia Spirit Ingot"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -51,33 +60,44 @@
 		{
 			dependencies: ["1C1A082C60D3E432"]
 			id: "7A973CEE81B78C5C"
+			subtitle: "it's understandably upset"
 			tasks: [{
 				id: "7E024FF9662AAD92"
 				item: "kubejs:vengeful_gaia_spirit"
 				type: "item"
 			}]
+			title: "Vengeful Gaia Spirit"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7A973CEE81B78C5C"]
+			description: [
+				"The &dSoul of Gaia&r is an intermediate step in the &aGaia Spirit Ingot&r line."
+				""
+				"The Guardian didn't die easy. Neither does this ingredient."
+			]
 			id: "57D3230B92DA91E0"
+			subtitle: "a concentrated grudge"
 			tasks: [{
 				id: "056989769411D5E0"
 				item: "kubejs:soul_of_gaia"
 				type: "item"
 			}]
+			title: "Soul of Gaia"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["57D3230B92DA91E0"]
 			id: "23D66F8D6CD53A68"
+			subtitle: "unbounded. unhinged. unstoppable."
 			tasks: [{
 				id: "36AA68C441D4A1CE"
 				item: "kubejs:boundless_gaia_spirit_ingot"
 				type: "item"
 			}]
+			title: "Boundless Gaia Spirit Ingot"
 			x: 9.0d
 			y: 0.0d
 		}

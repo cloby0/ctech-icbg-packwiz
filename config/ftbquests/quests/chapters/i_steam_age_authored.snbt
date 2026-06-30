@@ -1,0 +1,348 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_steam_age_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:bronze_brick_casing"
+	id: "1A00F1C2E3D40000"
+	order_index: 0
+	quest_links: [{
+		id: "1A00F1C2E3D40001"
+		linked_quest: "6C717E17AD17FF7B"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["6C717E17AD17FF7B"]
+			hide_until_deps_complete: true
+			id: "1A00F1C2E3D40002"
+			shape: "diamond"
+			subtitle: "fire up the furnaces"
+			tasks: [{
+				id: "1A00F1C2E3D40003"
+				title: "Technology!"
+				type: "checkmark"
+			}]
+			title: "Technology!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40002"]
+			description: [
+				"The &6Steam Solid Boiler&r is GregTech's opening statement. It burns fuel, produces steam, and powers everything else."
+				""
+				"Keep water flowing in and it'll keep steam flowing out. Let it run dry while hot and it'll express its disappointment violently."
+			]
+			id: "1A00F1C2E3D40004"
+			rewards: [{
+				count: 16
+				id: "1A00F1C2E3D40005"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "putting the steam in steam age"
+			tasks: [{
+				id: "1A00F1C2E3D40006"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "Pressure Cookin'"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40004"]
+			description: [
+				"Your first factory floor: the &6Steam Alloy Smelter&r, &6Macerator&r, and &6Forge Hammer&r."
+				""
+				"The Macerator doubles ore output. Use it. Every raw ore you smelt directly is wasted yield."
+			]
+			icon: "gtceu:lp_steam_alloy_smelter"
+			id: "1A00F1C2E3D40007"
+			rewards: [{
+				count: 8
+				id: "1A00F1C2E3D40008"
+				item: "gtceu:bronze_plate"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "you now own a factory. sort of."
+			tasks: [
+				{
+					id: "1A00F1C2E3D40009"
+					item: "gtceu:lp_steam_alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "1A00F1C2E3D4000A"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "1A00F1C2E3D4000B"
+					item: "gtceu:lp_steam_forge_hammer"
+					type: "item"
+				}
+			]
+			title: "Assembly Line, Circa 1780"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40007"]
+			description: [
+				"The &5Primitive Blast Furnace&r doesn't look like much. It isn't. But it makes &aSteel&r, and Steel makes everything else."
+				""
+				"Build at least two. They're slow. &2Wall-sharing saves firebricks&r — multiblocks can share walls in GTCEu."
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "1A00F1C2E3D4000C"
+			rewards: [{
+				count: 64
+				id: "1A00F1C2E3D4000D"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "not pretty, but it makes steel"
+			tasks: [
+				{
+					id: "1A00F1C2E3D4000E"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1A00F1C2E3D4000F"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			title: "Primitive but Persistent"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1A00F1C2E3D4000C"]
+			description: [
+				"&aSteel&r is the lifeblood of early GregTech. Tools, machines, structures — Steel underlies all of it."
+				""
+				"Get comfortable with the PBF. You'll be visiting it frequently for the next few hours."
+			]
+			id: "1A00F1C2E3D40010"
+			rewards: [{
+				count: 8
+				id: "1A00F1C2E3D40011"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "stronger than iron. obviously."
+			tasks: [{
+				count: 16L
+				id: "1A00F1C2E3D40012"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "The Real Deal"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1A00F1C2E3D40010"
+				"1A00F1C2E3D40015"
+			]
+			description: [
+				"Three components. One circuit. A lot of suffering."
+				""
+				"&3Resistors&r from carbon and wire, &3Vacuum Tubes&r from glass and wire, &3Circuit Boards&r from wood pulp and resin. It gets better in LV. It really does."
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "1A00F1C2E3D40017"
+			rewards: [{
+				count: 4
+				id: "1A00F1C2E3D40018"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "resistors and tubes and boards, oh my"
+			tasks: [
+				{
+					id: "1A00F1C2E3D40019"
+					item: "gtceu:resistor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1A00F1C2E3D4001A"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+				{
+					id: "1A00F1C2E3D4001B"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Elementary, Really"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40017"]
+			description: [
+				"Two &aBasic Electronic Circuits&r and six &aLV Electric Motors&r."
+				""
+				"That's the handshake between Steam and electricity. Build them and the modern era begins."
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "1A00F1C2E3D4001C"
+			rewards: [{
+				count: 32
+				id: "1A00F1C2E3D4001D"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, boiler"
+			tasks: [
+				{
+					count: 2L
+					id: "1A00F1C2E3D4001E"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1A00F1C2E3D4001F"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+			]
+			title: "Leaving Steam"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40004"]
+			description: ["&aHigh Pressure Steam Machines&r run faster and hit harder than their LP counterparts. The HP Solid Boiler produces 600 steam/t — three times the LP rate. You'll want both running."]
+			id: "1A00F1C2E3D40013"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "pressure is good, actually"
+			tasks: [{
+				id: "1A00F1C2E3D40022"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "High Pressure"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40007"]
+			description: ["&aRubber&r insulates your wires. No rubber means sparks where sparks shouldn't be. Get some &3Rubber Plates&r — you'll need them for cables before you can run any LV machine."]
+			id: "1A00F1C2E3D40015"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "gotta love a good resin"
+			tasks: [{
+				id: "1A00F1C2E3D40016"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			title: "Getting Sticky"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A00F1C2E3D4000C"]
+			description: [
+				"The &6Bronze Coke Oven&r converts Coal or Wood into &aCoke Coal&r — a higher-energy fuel required by the &3Electric Blast Furnace&r."
+				""
+				"Start it early. The EBF in LV burns through coke. Two coke ovens feeding one EBF is a reasonable starting ratio."
+			]
+			id: "1A00F1C2E3D40020"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "slow burn, big payoff"
+			tasks: [
+				{
+					id: "1A00F1C2E3D40023"
+					item: "gtceu:bronze_coke_oven"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A00F1C2E3D40024"
+					item: "gtceu:coke_gem"
+					type: "item"
+				}
+			]
+			title: "Coke Time"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40010"]
+			description: [
+				"The &6Steam Compressor&r and &6Steam Extractor&r round out your steam production line."
+				""
+				"The Extractor pulls rubber from Rubber Logs far more efficiently than crafting. The Compressor handles ore compression. Both save significant material over the alternatives."
+			]
+			id: "1A00F1C2E3D40021"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "compress. extract. repeat."
+			tasks: [
+				{
+					id: "1A00F1C2E3D40025"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "1A00F1C2E3D40026"
+					item: "gtceu:lp_steam_extractor"
+					type: "item"
+				}
+			]
+			title: "More Machines"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A00F1C2E3D40007"]
+			description: [
+				"The &3Steel Wrench&r is required to properly configure machine outputs and covers in GTCEu."
+				""
+				"Without it, your pipes and conveyor modules won't connect the right way. Craft one before you start laying out your first LV factory."
+			]
+			id: "1A00F1C2E3D40027"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the most essential tool"
+			tasks: [{
+				id: "1A00F1C2E3D40028"
+				item: "gtceu:steel_wrench"
+				type: "item"
+			}]
+			title: "Wrench It"
+			x: -2.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["Tame fire. Make steel. Leave."]
+	title: "I. Steam Age"
+}

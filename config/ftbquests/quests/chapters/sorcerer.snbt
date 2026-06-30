@@ -32,11 +32,13 @@
 			]
 			id: "46D6015549F81149"
 			size: 0.75d
+			subtitle: "it grows air. domestically."
 			tasks: [{
 				id: "06E45B1F0AC456B0"
 				item: "mysticalagriculture:air_seeds"
 				type: "item"
 			}]
+			title: "Air Seed"
 			x: 2.5d
 			y: 3.5d
 		}
@@ -47,11 +49,13 @@
 			]
 			id: "6D67F9A2B676C7CA"
 			size: 0.75d
+			subtitle: "it grows... earth. sure."
 			tasks: [{
 				id: "7B56C1923A8E9123"
 				item: "mysticalagriculture:earth_seeds"
 				type: "item"
 			}]
+			title: "Earth Seed"
 			x: 1.5d
 			y: 4.0d
 		}
@@ -62,11 +66,13 @@
 			]
 			id: "5645B3BFEB76C34A"
 			size: 0.75d
+			subtitle: "somehow this makes sense"
 			tasks: [{
 				id: "5428D8F946CFC23F"
 				item: "mysticalagriculture:water_seeds"
 				type: "item"
 			}]
+			title: "Water Seed"
 			x: -1.5d
 			y: 4.0d
 		}
@@ -77,11 +83,13 @@
 			]
 			id: "48904FDBC23CD945"
 			size: 0.75d
+			subtitle: "fire, but domestic"
 			tasks: [{
 				id: "32AA5130D51CDBA0"
 				item: "mysticalagriculture:fire_seeds"
 				type: "item"
 			}]
+			title: "Fire Seed"
 			x: -2.5d
 			y: 3.5d
 		}
@@ -89,11 +97,13 @@
 			dependencies: ["46D6015549F81149"]
 			id: "6F181FFA56989D01"
 			size: 0.75d
+			subtitle: "lighter than air. obviously."
 			tasks: [{
 				id: "292D3CAA3A5BFC1B"
 				item: "mysticalagriculture:air_essence"
 				type: "item"
 			}]
+			title: "Air Essence"
 			x: 2.0d
 			y: 5.0d
 		}
@@ -101,11 +111,13 @@
 			dependencies: ["6D67F9A2B676C7CA"]
 			id: "5168FD0A21AE3B49"
 			size: 0.75d
+			subtitle: "ground-breaking"
 			tasks: [{
 				id: "465E928A2B317D45"
 				item: "mysticalagriculture:earth_essence"
 				type: "item"
 			}]
+			title: "Earth Essence"
 			x: 1.0d
 			y: 5.0d
 		}
@@ -113,11 +125,13 @@
 			dependencies: ["5645B3BFEB76C34A"]
 			id: "5E9CB75348632373"
 			size: 0.75d
+			subtitle: "damp"
 			tasks: [{
 				id: "5B832A5646999CC7"
 				item: "mysticalagriculture:water_essence"
 				type: "item"
 			}]
+			title: "Water Essence"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -125,11 +139,13 @@
 			dependencies: ["48904FDBC23CD945"]
 			id: "18E8F3A1B08C0C04"
 			size: 0.75d
+			subtitle: "hot"
 			tasks: [{
 				id: "32F22F37E6082359"
 				item: "mysticalagriculture:fire_essence"
 				type: "item"
 			}]
+			title: "Fire Essence"
 			x: -2.0d
 			y: 5.0d
 		}
@@ -141,23 +157,34 @@
 				"18E8F3A1B08C0C04"
 			]
 			id: "270F7BBFAA80139A"
+			subtitle: "what happens when four contradictory forces agree"
 			tasks: [{
 				id: "1AE3507AD0CF9579"
 				item: "kubejs:chaos_essence"
 				type: "item"
 			}]
+			title: "Chaos Essence"
 			x: 0.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
+			description: [
+				"&aPrima Materia&r is the capstone of the &8Sorcerer&r tier — the primordial substance from which all elemental power flows."
+				""
+				"The recipe demands one of each elemental essence (fire, water, earth, air) plus a significant quantity of &aSource Gems&r."
+				""
+				"&9Note:&r Prima Materia bridges the elemental and the botanical. &aManasteel&r is next, and it needs this."
+			]
 			id: "3C613081F4FE51B2"
 			size: 1.5d
+			subtitle: "the first matter. the last obstacle."
 			tasks: [{
 				id: "0A2DE3E8C71654D5"
 				item: "gtceu:prima_materia_ingot"
 				type: "item"
 			}]
+			title: "Prima Materia"
 			x: 0.0d
 			y: 8.25d
 		}
@@ -167,11 +194,13 @@
 			id: "5093B986663EAF9E"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "automation for the magically inclined"
 			tasks: [{
 				id: "578C295EE91F88AE"
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
+			title: "Basic Spell Turret"
 			x: 1.875d
 			y: -1.125d
 		}
@@ -202,11 +231,13 @@
 			id: "0DED4DF736A831B4"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "do NOT drink"
 			tasks: [{
 				id: "779EC72152CFF108"
 				item: "reliquary:glowing_water"
 				type: "item"
 			}]
+			title: "Glowing Water"
 			x: 0.0d
 			y: -1.125d
 		}
@@ -215,11 +246,13 @@
 			id: "7D3CF0C46B40CAF1"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "of Antioch"
 			tasks: [{
 				id: "55E56C1D279EA797"
 				item: "reliquary:holy_hand_grenade"
 				type: "item"
 			}]
+			title: "Holy Hand Grenade"
 			x: 0.0d
 			y: -1.875d
 		}
@@ -229,11 +262,13 @@
 			id: "7D00D62B7AD615A6"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "level up, already"
 			tasks: [{
-				id: "241E90183177770E"
+				id: "22AAFB1314617990"
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
+			title: "Apprentice Spell Book"
 			x: 1.125d
 			y: -1.875d
 		}
@@ -243,8 +278,9 @@
 			id: "1FF1B92CC5B8C283"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "teleportation is valid combat"
 			tasks: [{
-				id: "22AAFB1314617990"
+				id: "2EFBFEE05F8EBC36"
 				item: {
 					Count: 1
 					id: "relics:enders_hand"
@@ -261,6 +297,7 @@
 				}
 				type: "item"
 			}]
+			title: "Ender's Hand"
 			x: -2.625d
 			y: -1.125d
 		}
@@ -291,6 +328,7 @@
 			id: "1074384652CF1489"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "the best defense"
 			tasks: [{
 				id: "72AFBE014CA44FC2"
 				item: {
@@ -311,6 +349,7 @@
 				}
 				type: "item"
 			}]
+			title: "Reflection Necklace"
 			x: -1.125d
 			y: -1.125d
 		}
@@ -320,6 +359,7 @@
 			id: "5A9F425F74A7A52B"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "for throwing at problems"
 			tasks: [{
 				id: "2EFBFEE05F8EBC36"
 				item: {
@@ -349,6 +389,7 @@
 				}
 				type: "item"
 			}]
+			title: "Shadow Glaive"
 			x: -1.125d
 			y: -1.875d
 		}
@@ -358,6 +399,7 @@
 			id: "4A8C585CA9F997BB"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "now with 100% more teleportation"
 			tasks: [{
 				id: "423B5461F5230125"
 				item: {
@@ -377,6 +419,7 @@
 				}
 				type: "item"
 			}]
+			title: "Magic Mirror"
 			x: -1.875d
 			y: -1.125d
 		}
@@ -386,6 +429,7 @@
 			id: "4471E5D89176B710"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "it's a sign. a spatial one."
 			tasks: [{
 				id: "237CFCD1DA9FD0C0"
 				item: {
@@ -404,6 +448,7 @@
 				}
 				type: "item"
 			}]
+			title: "Spatial Sign"
 			x: -1.875d
 			y: -1.875d
 		}
@@ -413,6 +458,7 @@
 			id: "6ABEF9F555A0BD6E"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "dissects space. yes, really."
 			tasks: [{
 				id: "42BF6C459FB86C8E"
 				item: {
@@ -432,6 +478,7 @@
 				}
 				type: "item"
 			}]
+			title: "Space Dissector"
 			x: -3.375d
 			y: -1.125d
 		}
@@ -441,6 +488,7 @@
 			id: "2AC473C0C6832A84"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "go faster, why not"
 			tasks: [{
 				id: "7D07EA23600F86D9"
 				item: {
@@ -460,6 +508,7 @@
 				}
 				type: "item"
 			}]
+			title: "Elytra Booster"
 			x: -3.375d
 			y: -1.875d
 		}
@@ -469,6 +518,7 @@
 			id: "37D0AC07A071D56D"
 			shape: "hexagon"
 			size: 0.75d
+			subtitle: "it never runs out. don't ask why."
 			tasks: [{
 				id: "56F9C04B6AD2F7B9"
 				item: {
@@ -494,6 +544,7 @@
 				}
 				type: "item"
 			}]
+			title: "Infinity Ham"
 			x: -2.625d
 			y: -1.875d
 		}
@@ -501,11 +552,13 @@
 			dependencies: ["51D5B5C004491077"]
 			id: "50376974E4F14658"
 			size: 0.75d
+			subtitle: "ice-cold and ready to levitate"
 			tasks: [{
 				id: "1E6A37FA7C141667"
 				item: "kubejs:frozen_raw_gravitite"
 				type: "item"
 			}]
+			title: "Frozen Raw Gravitite"
 			x: 1.875d
 			y: 0.375d
 		}
@@ -513,11 +566,13 @@
 			dependencies: ["50376974E4F14658"]
 			id: "1B9C0C6A43CB99C7"
 			size: 0.75d
+			subtitle: "blessed by the Aether itself"
 			tasks: [{
 				id: "48EBD5DF3AA8A14E"
 				item: "kubejs:altar_charged_gravitite"
 				type: "item"
 			}]
+			title: "Altar-Charged Gravitite"
 			x: 2.625d
 			y: 0.75d
 		}
@@ -525,11 +580,13 @@
 			dependencies: ["1B9C0C6A43CB99C7"]
 			id: "70103C694B3D2219"
 			size: 0.75d
+			subtitle: "it floats. if you let it."
 			tasks: [{
 				id: "396938C3DDEDBA04"
 				item: "aether_redux:gravitite_ingot"
 				type: "item"
 			}]
+			title: "Gravitite Ingot"
 			x: 3.375d
 			y: 1.125d
 		}
@@ -537,11 +594,13 @@
 			dependencies: ["270F7BBFAA80139A"]
 			id: "17D15E6418E8452E"
 			size: 0.75d
+			subtitle: "forged from chaos and anger"
 			tasks: [{
 				id: "473C3A340A0D66C2"
 				item: "irons_spellbooks:pyrium_ingot"
 				type: "item"
 			}]
+			title: "Pyrium Ingot"
 			x: 1.125d
 			y: 7.125d
 		}
@@ -549,11 +608,13 @@
 			dependencies: ["270F7BBFAA80139A"]
 			id: "7671BC8442421B72"
 			size: 0.75d
+			subtitle: "for epic-tier spells only"
 			tasks: [{
 				id: "6D318A143E41B383"
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
+			title: "Epic Ink"
 			x: -1.125d
 			y: 7.125d
 		}
