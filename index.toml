@@ -913,6 +913,10 @@ file = "kubejs/assets/kubejs/textures/item/elemental_latex_compound.png"
 hash = "91dfed302cc4cf60e67ff61d8e6af8765759a61c9d90b1838c976c37950ebcde"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/elemental_life_reagent.png"
+hash = "9ae6af37d016c75bbf4d001462c02fc3f5b96a4fb646dd7c1a4a27bd93b62630"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/elementite_dust.png"
 hash = "90748e564ca71d7fffdcfa832896fa072d6a58512bd4cc4837b7437ee7be0cf3"
 
@@ -1317,6 +1321,14 @@ file = "kubejs/assets/kubejs/textures/item/rune_of_frost.png"
 hash = "eec876574ddf04ae017b99e0a6130efd94ff809cf19ffbaaec517b6118976309"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/runic_bio_catalyst.png"
+hash = "de5a00f2170b6cbb70c1132fa151613671976e02e5afe74b7cd7c3d9dc52730a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/runic_growth_catalyst.png"
+hash = "49e7d48087e672d04275a2f40aa1d56dc1ac6e236c9735051b8b0f54ad6d15a1"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/short_barrel.png"
 hash = "34ed932675eaa710f26be8fdb47f6c633a27f1594c8527466b2c0b9bbc484809"
 
@@ -1327,6 +1339,14 @@ hash = "5a04d10c4b1a55a5c70ecbb30b0244084803ea8cded7b13dd79eb9efdc11cc06"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/soul_of_gaia.png"
 hash = "ba4b7646a729dc8b8f8b56df994b0c08d5e09c42a1c376cab325df6d17ca41c3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/source_bio_matrix.png"
+hash = "113a9b1cfd2cad1a852ab9af6f3109e99374c616a645cc522988108ac800545d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/source_crystal_lattice.png"
+hash = "d21ec3350b139f031442b3bbab5e73a325f21980d16afa56843da6294630cd23"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/sperm_cell_pellet.png"
@@ -1363,6 +1383,10 @@ hash = "3b27580b0e371820ab51db1f3a07731e6f2fcc17230469e5b2b0ae3099fc7062"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/venus_rocket_engine.png"
 hash = "8645e24c9d1ac257190163a6702eb12ba2420f1c1f9038dcd5ed32b7abbcaa1c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/vitalized_source_fragment.png"
+hash = "e025aee47074b2d77c90468369b1153d6602ccd4a8c3231b5f22fc1bea010f9f"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/void_nucleus.png"
