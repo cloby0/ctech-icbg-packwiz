@@ -29,6 +29,74 @@ file = "config/enigmaticlegacy-common.omniconf"
 hash = "e35be4bc71078233ea1e9f245ccafaa7dcad900adfed06ef583ce53b845051be"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "f05577023cfd2fa4fba2ecf1f7a6c183d3364e15286c45705ef94f727c1c9d32"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/alchemist.snbt"
+hash = "221a4b04c058a201f3ed0bf083192fa6b3e04f79833431ffa5fc296c96855a2c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/apprentice.snbt"
+hash = "debb08d19a75e6742622ec11eace9e11201e792ad3985660207a324dc8b19c2d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/arcanist.snbt"
+hash = "a8c4d7351fb141dbc7d87a383583c5c9218f81935104a8e77d6c583616d6dd8d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_ev_authored.snbt"
+hash = "ce369c98d31d4690a0ed5d5a262ca1aaa804d0a3a60bf9a9ff02984549d40c13"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
+hash = "29ce6d215b3421a042dd79ad2468bfd842558a4796665aead6ad1eb0ac8e95af"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
+hash = "98d10c18e8c20d4ea3de7ae9268f21ba5f29bc5d9aca7433aefe13421328b2fc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_lv_authored.snbt"
+hash = "f9ec1b6c8d1501e4e4ceed957d577a9adc912abd900745d5f3bea966022ab773"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_mv_authored.snbt"
+hash = "4d98c9f76773204ce7b186a90261784c62efbc2f8ef43f5daa682453acead83f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_steam_age_authored.snbt"
+hash = "20ec23851be445d220bda81a527cfdd532499532ba93babc8312cecfd934d981"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/initiate.snbt"
+hash = "3c77c4301d311be648cab85dec99a15f42767e7e0e3a809a1cd6601a07da3a08"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/journeyman.snbt"
+hash = "d36569dbb2b162f976499146a91abb8c47aae51ce4ea767a13908f86e074a677"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/sage.snbt"
+hash = "ddbda260fecfe70b108af2bbfc4d592dcd0f40c240d260252b7b088125d03f03"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/sorcerer.snbt"
+hash = "3f6baae5bfdd34b1800640c71ca3af7f189309edf2cbcd840ac0e6f5bdadb368"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/thuamaturge.snbt"
+hash = "be633081123ef57b4c6e2b6acfc9d055c0ff2a80b102c6678d91a55c0ef8c2f0"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"
+hash = "a31e8d87ad93482f0c4974ae1f8759a07085cb4a97482593a7672f511525f351"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "db77466b60df3ba0fe1c43127d6f5d96e6903d33a3db732fc22cc24bf35b5a11"
+
+[[files]]
 file = "config/greate-recipes.yaml"
 hash = "3022e89e1c7fca4d9860cad623c33fb7d5411d103bcb4dee17cca8270d71e6c3"
 
@@ -973,6 +1041,14 @@ file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form.png"
 hash = "19c928c0a259c23967663c2c4289d65bbc88c92347c6c10d2126f6352e6f0318"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/draconic_processor.png"
+hash = "6cf9e8c3f3c69f581286cc46f73b46d7350a5bf48b1748e5e73bbcc7c8fd431d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/draconic_processor_assembly.png"
+hash = "8b0e3085861dec03fa59d9ad01c68193dc25454085ee889283dd4854edd80d6b"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/earth_nucleus.png"
 hash = "8b7aef712f3463b03acd32a345d8011793f60f1b4afafcaed3ef16c2dfe32a6b"
 
@@ -1363,6 +1439,10 @@ hash = "257421655e85bc324a2011f4faddfc5aec6bc3b5e2923a98c8b79d2a2157af42"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/raw_ostrum_sponge.png"
 hash = "d5029c5197d7d46b7c3dff33739dfb378aae9be51ca61cf2d83af80671eb1ada"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/resonant_zanite_crystal.png"
+hash = "af6d8784bb0604e794b27ca6026e7cd85c89dd920745f69c68117a18ff138fbf"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rifle_receiver.png"
@@ -4103,10 +4183,6 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "a9421a7a29ac8ee6e0598ea20025ad2c30e6198b796324184600621743437c91"
 metafile = true
-
-[[files]]
-file = "sprite_todo.txt"
-hash = "3c0b0225fc5f491b412d08a548ec055e29cb5b8f739850f278fb535f91ee6316"
 
 [[files]]
 file = "tacz/Applied Armorer-v1.1.4.1-for114+.zip"
