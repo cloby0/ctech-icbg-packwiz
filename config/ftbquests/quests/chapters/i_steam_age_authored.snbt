@@ -299,7 +299,14 @@
 			subtitle: "the most essential tool"
 			tasks: [{
 				id: "1A00F1C2E3D40028"
-				item: "gtceu:steel_wrench"
+				item: {
+					Count: 1
+					id: "gtceu:steel_wrench"
+					tag: {
+						Damage: 0
+						GT.Tool: { }
+					}
+				}
 				type: "item"
 			}]
 			title: "Wrench It"

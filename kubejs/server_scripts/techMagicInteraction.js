@@ -475,8 +475,8 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.chemical_reactor('gaia_flux_dust_synthesis')
-        .itemInputs('1x gtceu:gaia_spirit_dust', '1x gtceu:boundless_naquadrite_dust', '1x gtceu:naquadria_dust')
-        .itemOutputs('3x kubejs:gaia_flux_dust')
+        .itemInputs('1x gtceu:boundless_naquadrite_dust', '1x gtceu:elementium_dust')
+        .itemOutputs('2x kubejs:gaia_flux_dust')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.UV])
 

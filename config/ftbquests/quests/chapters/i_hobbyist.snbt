@@ -65,10 +65,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"7FDB6031A17DC65B"
-				"1ABD0854CB886DCF"
-			]
+			dependencies: ["7FDB6031A17DC65B"]
 			dependency_requirement: "one_completed"
 			icon: "minecraft:netherrack"
 			id: "1BBC77A8493BB220"

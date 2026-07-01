@@ -1,0 +1,390 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_lv_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:electric_blast_furnace"
+	id: "1B00F1C2E3D40000"
+	order_index: 1
+	quest_links: [{
+		id: "1B00F1C2E3D40001"
+		linked_quest: "1A00F1C2E3D4001C"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["1A00F1C2E3D4001C"]
+			hide_until_deps_complete: true
+			id: "1B00F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "32 EU/t and a dream"
+			tasks: [{
+				id: "1B00F1C2E3D40003"
+				title: "Low Voltage!"
+				type: "checkmark"
+			}]
+			title: "Low Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40002"]
+			description: [
+				"The &6LV Steam Turbine&r produces 32 EU/t. Four turbines off a &3Large Bronze Boiler&r gives 128 EU/t, enough for a basic LV setup. The boiler (800 steam/t) has plenty of headroom if you need more turbines."
+				""
+				"Fill the boiler before lighting it. If it runs dry while hot and you add cold water, it expresses its disappointment violently."
+			]
+			id: "1B00F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "steam still doing the heavy lifting"
+			tasks: [{
+				count: 4L
+				id: "1B00F1C2E3D40005"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "New Engine"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40004"]
+			description: [
+				"The &6Wiremill&r, &6Bender&r, and &6Lathe&r are the core of the LV workshop. Build all three before anything else."
+				""
+				"Wiremill: 1 ingot -> 2 wires. "
+				""
+				"Bender: 1 ingot -> 1 plate (vs the Forge Hammer's 3:2). "
+				""
+				"Lathe: 1 ingot -> 2 rods."
+			]
+			icon: "gtceu:lv_bender"
+			id: "1B00F1C2E3D40008"
+			shape: "square"
+			size: 0.75d
+			subtitle: "wire, plate, rod: the holy trinity"
+			tasks: [
+				{
+					id: "1B00F1C2E3D40009"
+					item: "gtceu:lv_wiremill"
+					type: "item"
+				}
+				{
+					id: "1B00F1C2E3D4000A"
+					item: "gtceu:lv_bender"
+					type: "item"
+				}
+				{
+					id: "1B00F1C2E3D4000B"
+					item: "gtceu:lv_lathe"
+					type: "item"
+				}
+			]
+			title: "The Workshop"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40008"]
+			description: [
+				"The &6Chemical Reactor&r handles the Sulfuric Acid chain, Latex rubber processing, and HCl. The backbone of everything that follows."
+				""
+				"The &6Extractor&r melts rubber and pulls fluids from items. Set up both before tackling the circuit chain."
+			]
+			icon: "gtceu:lv_chemical_reactor"
+			id: "1B00F1C2E3D4000D"
+			shape: "square"
+			size: 0.75d
+			subtitle: "sulfur, acid, and ambition"
+			tasks: [
+				{
+					id: "1B00F1C2E3D4000E"
+					item: "gtceu:lv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "1B00F1C2E3D4000F"
+					item: "gtceu:lv_extractor"
+					type: "item"
+				}
+			]
+			title: "Chemistry 101"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00F1C2E3D4000D"]
+			description: [
+				"Circuit Assemblers require circuits one tier above what they produce. The &6LV Circuit Assembler&r needs &aGood Electronic Circuits&r (MV tier) in its crafting recipe."
+				""
+				"Hand-craft your first Good Electronic Circuit now. Same components as Basic, more of them. After this you'll have a machine that makes the rest cheap."
+			]
+			id: "1B00F1C2E3D40030"
+			shape: "square"
+			size: 0.75d
+			subtitle: "you need MV circuits to make LV circuits faster"
+			tasks: [{
+				id: "1B00F1C2E3D40031"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "The Bootstrap Problem"
+			x: 0.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40030"]
+			description: [
+				"The &6Circuit Assembler&r makes &aBasic Electronic Circuits&r and &aMicrochip Processors&r far cheaper than crafting by hand."
+				""
+				"Build this before the EBF. You need circuits for the Energy Hatches, and you need a lot of them."
+			]
+			id: "1B00F1C2E3D40011"
+			shape: "square"
+			size: 0.75d
+			subtitle: "circuits are cheaper now. finally."
+			tasks: [{
+				id: "1B00F1C2E3D40012"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Circuit Factory"
+			x: 0.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40011"]
+			description: [
+				"The &5Electric Blast Furnace&r is the gate to every advanced material. It needs &316x Cupronickel Coil Blocks&r, Steel or Invar casings, and at least two &3LV Energy Hatches&r to run."
+				""
+				"Build two EBFs sharing a wall. The second needs only 10 more coils. Sustained 120 EU/t minimum. First target: &aAluminium&r."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "1B00F1C2E3D40014"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "the multiblock that changes everything"
+			tasks: [
+				{
+					id: "1B00F1C2E3D40015"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1B00F1C2E3D40016"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			title: "Blast Off"
+			x: 0.0d
+			y: -8.25d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40014"]
+			description: [
+				"&3Sapphires&r electrolyze into &aAluminium Dust&r, the cleanest Aluminium source at LV. Set up the &6Electrolyzer&r and feed it Sapphires. Green Sapphires also work."
+				""
+				"Nitrogen from centrifuging Air speeds EBF recipes. Set up that passive line while the EBF runs."
+			]
+			icon: "gtceu:lv_electrolyzer"
+			id: "1B00F1C2E3D40018"
+			shape: "square"
+			size: 0.75d
+			subtitle: "blue stones, silver metal"
+			tasks: [
+				{
+					id: "1B00F1C2E3D40019"
+					item: "gtceu:lv_electrolyzer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1B00F1C2E3D4001A"
+					item: "gtceu:sapphire_gem"
+					type: "item"
+				}
+			]
+			title: "Sapphire Route"
+			x: 0.0d
+			y: -9.75d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40018"]
+			description: [
+				"&aAluminium Ingot&r and a &aGood Electronic Circuit&r. Two items that together open Medium Voltage."
+				""
+				"The Good Electronic Circuit uses the same components as Basic, more of them, with a better ratio in the Circuit Assembler. Smelt Aluminium in the EBF first, then close out the circuit."
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "1B00F1C2E3D4001C"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, 32 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "1B00F1C2E3D4001D"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1B00F1C2E3D4001E"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "Leaving Low Voltage"
+			x: 0.0d
+			y: -11.25d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40004"]
+			description: ["The &5Large Bronze Boiler&r outputs 800 Steam/t. Needs a dedicated water supply in the same chunk. Build one early; it frees up space compared to running multiple smaller boilers."]
+			id: "1B00F1C2E3D40020"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "one boiler to rule them all"
+			tasks: [
+				{
+					id: "1B00F1C2E3D40021"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1B00F1C2E3D40033"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1B00F1C2E3D40034"
+					item: "gtceu:bronze_pipe_casing"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "1B00F1C2E3D40035"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+			]
+			title: "Big Boiler"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40008"]
+			description: [
+				"The &6Ore Washer&r converts Crushed Ore into Purified Ore and extracts the first byproduct dust."
+				""
+				"Not all ores are worth the full chain. Focus on ores with valuable byproducts: Copper -> Cobalt, Iron -> Nickel, Gold -> Copper. HV Macerator unlocks 2nd and 3rd output slots; don't over-invest in the full chain yet."
+			]
+			id: "1B00F1C2E3D40022"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "wash your ore, double your yield"
+			tasks: [{
+				id: "1B00F1C2E3D40023"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			title: "Ore Washer"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40022"]
+			description: ["The &6Thermal Centrifuge&r processes Crushed or Purified Ore into a different byproduct than the Ore Washer. Stack both in series for maximum extraction. Comes into its own at HV when the Macerator opens all output slots."]
+			id: "1B00F1C2E3D40025"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "squeeze more from every chunk"
+			tasks: [{
+				id: "1B00F1C2E3D40026"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			title: "Thermal Centrifuge"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40008"]
+			description: [
+				"The &6Centrifuge&r decomposes dusts and separates Air into &aOxygen&r and &aNitrogen&r. Set up an Air centrifugation line early. Nitrogen speeds EBF recipes; Oxygen unlocks the Arc Furnace."
+				""
+				"Also decomposes Resin into Raw Rubber + Glue, which cuts Resistor and PCB costs significantly."
+			]
+			id: "1B00F1C2E3D40027"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "spin fast, get elements"
+			tasks: [{
+				id: "1B00F1C2E3D40028"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			title: "Centrifuge"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40027"]
+			description: [
+				"The &6Polarizer&r magnetizes Iron or Steel Rods without Redstone, cutting costs for motors and transformers significantly."
+				""
+				"The &6Fluid Solidifier&r shapes molten materials into Rubber Sheets, Rotors (4 ingots -> 1 rotor via mold), and other cast forms."
+			]
+			icon: "gtceu:lv_fluid_solidifier"
+			id: "1B00F1C2E3D40029"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "magnetic and solid"
+			tasks: [
+				{
+					id: "1B00F1C2E3D4002A"
+					item: "gtceu:lv_polarizer"
+					type: "item"
+				}
+				{
+					id: "1B00F1C2E3D4002B"
+					item: "gtceu:lv_fluid_solidifier"
+					type: "item"
+				}
+			]
+			title: "Polarizer \\& Solidifier"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00F1C2E3D40011"]
+			description: [
+				"The &6Assembler&r builds complex components in one step: 2x Vacuum Tubes per recipe, 4x Resistors per run, cheaper PCBs."
+				""
+				"This is the machine that turns circuit-making from a chore into a pipeline. Build at least two."
+			]
+			id: "1B00F1C2E3D4002C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "assembles things. profoundly."
+			tasks: [{
+				id: "1B00F1C2E3D4002D"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "Assembler"
+			x: -2.0d
+			y: -6.75d
+		}
+	]
+	subtitle: ["Build the furnace. Find the stone. Make the metal."]
+	title: "II. Low Voltage"
+}

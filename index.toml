@@ -817,6 +817,78 @@ file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "95c361a1165c2895f4e9d7fd2966953d85f426a20a389ef2a3e1b133ca38e3fd"
 
 [[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
+hash = "a1663c31eaffa622b96473d85cc68238be2f0586660d62b91012f2b563c78f07"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png.mcmeta"
+hash = "035b6c81673bb1cd0318c42212d9c28dcd18d990c4ad20befb4dae632ec83b46"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium_bloom.png"
+hash = "2b531b7a65df0b4f7217cf7b8f05480b9fc129e5e4d4fcd20efc6d3e258b0e6d"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium_bloom.png.mcmeta"
+hash = "541f5ee01ca9afa000d2425c3441513fa0c224c86d67cdf2ceb21b021a8b7db5"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium_bloom_ctm.png"
+hash = "aef05dc0ed04a9d5de10605a44cf8b7bebc530daaa74bafcb7f542bd26718b5d"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium_ctm.png"
+hash = "64a838657ec3327525ec053e6438b266ab365f12163b6793336ea918ca08ebf9"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium.png"
+hash = "5f72236e98651cafbf13ae52537fc9f1390e08d0899a7f7461270945d822f624"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium.png.mcmeta"
+hash = "140b3d16e1cab0bdbcecaea6fc8622ff71febfc0f8aec212a9291789b76ab28d"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium_bloom.png"
+hash = "c912b17943e6e0c2d55475640648376176654dc2197759e14d754b25f08379f9"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium_bloom.png.mcmeta"
+hash = "07d8a7c1f9822312d9960b804dc7997013c169ada34674ddd74130c20df8469a"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium_bloom_ctm.png"
+hash = "d55db9e47854e21a3bfde4e24618dcd055fbe9527a46df1d2576ad85d0a999c5"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_cumium_ctm.png"
+hash = "70ff829f7f26d4223312f0a662caa5af6d2fbf7dffef59631784c416eb93416d"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium.png"
+hash = "f1e239ec6f4f9129e186afbb5bd5ad09a5d88678132936501f1ff51f0698e9e5"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium.png.mcmeta"
+hash = "08e95b59339224cfdcdb7afd6e4a0fa7b0ca7146d354c46ba12942636031a566"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium_bloom.png"
+hash = "1e57ff200689894c4554fc2aab1ebd3652e6d4a29e370589bf9100101b62cc7d"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium_bloom.png.mcmeta"
+hash = "baf6c4c5170ad91269075b7ceba85415ec6923e4e2e2ae9471151f42ea4b57e2"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium_bloom_ctm.png"
+hash = "8f7816bd1fa5d15ba6e38d662d4a08b5f3edee42fba347948610f31fa3fbec99"
+
+[[files]]
+file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_draconium_ctm.png"
+hash = "2fe3237476ed3466029f6459b1a72876c3b4c8e495ddea11bbf18199d637e21f"
+
+[[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
 hash = "def30071a73421e830e117433e4d2274244d67ce4de3c9a2d297e23eb988d03c"
 
@@ -1901,6 +1973,10 @@ file = "kubejs/server_scripts/circuitTags.js"
 hash = "b6e4d97880bdbe09264ef2a098d897b83ee4dbd9d34780ccea7ca0e731fa753e"
 
 [[files]]
+file = "kubejs/server_scripts/fluidTags.js"
+hash = "e31519ae3cf4e89ab76a27b9a755297b46d52a7244c5d2715a939d1832eb5aff"
+
+[[files]]
 file = "kubejs/server_scripts/itemTags.js"
 hash = "4ed4e30447c00ecae4ad30d668089109c4782ee81b07a2fe28344ab2db9f1ac1"
 
@@ -2186,7 +2262,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "8ee3ff6996c3168bccf09e9f15405021a10dc17e1a3d36302ac2a40cd6cb2f5c"
+hash = "6ac6d8966f5000b64c3530fe4a4db08f920f56611a56e1a86b933e214d28146d"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -2860,11 +2936,6 @@ metafile = true
 [[files]]
 file = "mods/eeeabs-mobs.pw.toml"
 hash = "832c509051b429d8ffc60941c789298e80179ad63072b087c7ed53ef9556fdd5"
-metafile = true
-
-[[files]]
-file = "mods/effortless-building.pw.toml"
-hash = "fdb68bcedaba7e10832e199b017d1fae8767b7292aaf940bccc646910267d96e"
 metafile = true
 
 [[files]]

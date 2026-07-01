@@ -1,0 +1,338 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_mv_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:mv_circuit_assembler"
+	id: "1C00F1C2E3D40000"
+	order_index: 2
+	quest_links: [{
+		id: "1C00F1C2E3D40001"
+		linked_quest: "1B00F1C2E3D4001C"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["1B00F1C2E3D4001C"]
+			hide_until_deps_complete: true
+			id: "1C00F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "128 EU/t and a plan"
+			tasks: [{
+				id: "1C00F1C2E3D40003"
+				title: "Medium Voltage!"
+				type: "checkmark"
+			}]
+			title: "Medium Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40002"]
+			description: [
+				"The &6MV Steam Turbine&r produces 128 EU/t from 64 mB/t of Steam. A &3Large Steel Boiler&r outputs 900 steam/t, enough to run about 14 turbines at once. Build as many as you need."
+				""
+				"Same rule as LV: fill the boiler before lighting it. Cold water into a hot dry boiler ends badly."
+			]
+			id: "1C00F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "bigger turbines, bigger power"
+			tasks: [{
+				count: 2L
+				id: "1C00F1C2E3D40005"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			title: "MV Power"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40004"]
+			description: [
+				"The &6MV Extruder&r is the biggest quality-of-life upgrade in MV. One ingot plus the right mold outputs a rod, gear, pipe, ring, rotor, or bolt in a single recipe."
+				""
+				"Skip the LV Extruder entirely. If you made one by accident, recycle it in the Arc Furnace. The MV version does everything the LV does, with more shapes and faster."
+			]
+			icon: "gtceu:mv_extruder"
+			id: "1C00F1C2E3D40008"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "one machine, every shape"
+			tasks: [{
+				id: "1C00F1C2E3D40009"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			title: "The Extruder"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40008"]
+			description: [
+				"&aEthylene&r is the feedstock for Polyethylene. The cleanest route: Wood -> Bio Chaff (Macerator) -> Biomass (Pyrolyse Oven) -> Ethanol (Distillery) -> Ethylene (Chemical Reactor with Sulfuric Acid)."
+				""
+				"The &6Pyrolyse Oven&r converts Wood to Biomass and produces Wood Tar as a byproduct. The &6MV Distillery&r pulls Ethanol from Biomass one fluid at a time. Get both running before you need PE."
+			]
+			icon: "gtceu:mv_distillery"
+			id: "1C00F1C2E3D4000B"
+			shape: "square"
+			size: 0.75d
+			subtitle: "wood goes in, chemistry comes out"
+			tasks: [
+				{
+					id: "1C00F1C2E3D4000C"
+					item: "gtceu:pyrolyse_oven"
+					type: "item"
+				}
+				{
+					id: "1C00F1C2E3D4000D"
+					item: "gtceu:mv_distillery"
+					type: "item"
+				}
+			]
+			title: "Biomass Route"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1C00F1C2E3D4000B"]
+			description: [
+				"Ethanol + Sulfuric Acid -> Ethylene + Water. Ethylene + Oxygen -> &aPolyethylene&r fluid. PE fluid -> Fluid Solidifier -> PE plates."
+				""
+				"PE unlocks Plastic PCBs, Transistors, Capacitors, and Super Tanks. Everything MV circuit-related runs on plastic. Get a continuous supply running before starting the circuit line."
+			]
+			icon: "gtceu:mv_chemical_reactor"
+			id: "1C00F1C2E3D4000F"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "plastic: the oil of MV"
+			tasks: [
+				{
+					id: "1C00F1C2E3D40010"
+					item: "gtceu:mv_chemical_reactor"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1C00F1C2E3D40011"
+					item: "gtceu:polyethylene_plate"
+					type: "item"
+				}
+			]
+			title: "Polyethylene"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D4000F"]
+			description: [
+				"&aKanthal&r is an Iron + Aluminium + Chromium alloy. Mix it in the &6MV Mixer&r, shape it into 16 Coil Blocks, and install them to upgrade the EBF from 1800K to 2700K."
+				""
+				"2700K unlocks Silicon Boule and several alloys the Cupronickel coils cannot touch. Higher-temp recipes produce &aHot Ingots&r that cannot be used directly — the Vacuum Freezer handles that, and you will build one at HV."
+			]
+			icon: "gtceu:mv_mixer"
+			id: "1C00F1C2E3D40013"
+			shape: "square"
+			size: 0.75d
+			subtitle: "hotter furnace, better metal"
+			tasks: [
+				{
+					id: "1C00F1C2E3D40014"
+					item: "gtceu:mv_mixer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1C00F1C2E3D40015"
+					item: "gtceu:kanthal_coil_block"
+					type: "item"
+				}
+			]
+			title: "Kanthal Coils"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40013"]
+			description: [
+				"&aSilicon Boule&r: 32 Silicon Dust + Gallium Arsenide in the EBF at 2700K (about 7.5 min). Gallium from Sphalerite centrifuge or Bauxite Chemical Bath."
+				""
+				"The &6MV Laser Engraver&r engraves wafers into specific chip types. The &6MV Cutter&r slices the Boule into 16 wafers. Build both before starting the circuit line, and keep a wafer buffer ready."
+			]
+			icon: "gtceu:mv_laser_engraver"
+			id: "1C00F1C2E3D40017"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the chip factory begins"
+			tasks: [
+				{
+					id: "1C00F1C2E3D40018"
+					item: "gtceu:mv_laser_engraver"
+					type: "item"
+				}
+				{
+					id: "1C00F1C2E3D40019"
+					item: "gtceu:silicon_boule"
+					type: "item"
+				}
+			]
+			title: "Silicon Route"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40017"]
+			description: [
+				"The &6MV Circuit Assembler&r makes circuits at this tier and above far cheaper than hand-crafting."
+				""
+				"Feed it Plastic PCBs, Silicon Wafers, Transistors, Capacitors, and Inductors from the &6MV Assembler&r. The &aAdvanced Integrated Circuit&r (HV tier) is the exit ticket from MV."
+			]
+			id: "1C00F1C2E3D4001B"
+			shape: "square"
+			size: 0.75d
+			subtitle: "circuits now cost plastic, not sanity"
+			tasks: [{
+				id: "1C00F1C2E3D4001C"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Circuit Assembly"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1C00F1C2E3D4001B"]
+			description: [
+				"&aStainless Steel&r needs the EBF running at HV power: two MV Energy Hatches or one HV Hatch. The coil tier does not matter here, just the amperage."
+				""
+				"&aAdvanced Integrated Circuit&r is the HV circuit: Transistors + Capacitors + Inductors + Good Integrated Circuit in the MV Assembler. Finish both and HV opens."
+			]
+			icon: "gtceu:stainless_steel_ingot"
+			id: "1C00F1C2E3D4001F"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, 128 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "1C00F1C2E3D40020"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1C00F1C2E3D40021"
+					item: "gtceu:advanced_integrated_circuit"
+					type: "item"
+				}
+			]
+			title: "Leaving Medium Voltage"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40004"]
+			description: ["The &6MV Gas Turbine&r burns Natural Gas, Methane, and most gaseous hydrocarbons. Cleaner to run than steam if your chemistry line is already producing gas as a byproduct. The &6MV Combustion Engine&r burns liquid fuels like Diesel and Light Fuel for similar output."]
+			id: "1C00F1C2E3D40030"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "gas in, power out"
+			tasks: [{
+				id: "1C00F1C2E3D40031"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			title: "Gas Turbine"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40013"]
+			description: [
+				"&aStainless Steel&r needs &3Chromium&r, &3Manganese&r, &3Iron&r, and &3Nickel&r. Chromium comes from electrolyzing Ruby or Red Garnet dust. Manganese from Pyrolusite ore veins."
+				""
+				"Get the Chromium line running while the Kanthal EBF is warming up. Stainless is the HV gate material and takes time to produce in volume."
+			]
+			id: "1C00F1C2E3D40036"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "prep the alloy before you need it"
+			tasks: [{
+				id: "1C00F1C2E3D40037"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			title: "Chromium Line"
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40008"]
+			description: [
+				"The &6MV Assembler&r produces &aTransistors&r, &aCapacitors&r, and &aInductors&r, the three components the Advanced Integrated Circuit needs beyond a Good Integrated Circuit."
+				""
+				"Transistors need Silicon Wafers and PE. Capacitors need PE and Copper foil. Inductors need Nickel-Zinc Ferrite. Build at least two Assemblers: one for components, one for circuits."
+			]
+			id: "1C00F1C2E3D40040"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "components, not just circuits"
+			tasks: [{
+				id: "1C00F1C2E3D40041"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			title: "MV Assembler"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D4000F"]
+			description: [
+				"&aPlastic Circuit Boards&r are the substrate for the integrated and micro circuit lines. Make the blank board from PE and Glass Fiber, then etch it with &3Sodium Persulfate&r or &3Iron III Chloride&r to get the Plastic Printed Circuit Board."
+				""
+				"Automate the etch step. The circuit line goes through a lot of boards."
+			]
+			id: "1C00F1C2E3D40043"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the board under the chip"
+			tasks: [{
+				id: "1C00F1C2E3D40044"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Plastic Boards"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C00F1C2E3D40017"]
+			description: [
+				"The &6MV Cutter&r slices a Silicon Boule into &a16 Silicon Wafers&r. Supply &3Lubricant&r for 2x speed; Water works but is slower."
+				""
+				"Wafers feed the Laser Engraver for chip type engraving. Keep a buffer of cut wafers before starting the circuit assembler line or it stalls immediately."
+			]
+			id: "1C00F1C2E3D40046"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "one boule, sixteen wafers"
+			tasks: [{
+				id: "1C00F1C2E3D40047"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			title: "Silicon Wafers"
+			x: -2.0d
+			y: -9.0d
+		}
+	]
+	subtitle: ["Make plastic. Make chips. Make steel. Leave."]
+	title: "III. Medium Voltage"
+}

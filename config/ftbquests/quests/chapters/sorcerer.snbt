@@ -361,7 +361,7 @@
 			size: 0.75d
 			subtitle: "for throwing at problems"
 			tasks: [{
-				id: "2EFBFEE05F8EBC36"
+				id: "0E2792D91A2A062E"
 				item: {
 					Count: 1
 					id: "relics:shadow_glaive"
