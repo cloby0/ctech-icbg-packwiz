@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('chaos_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:draconic_processor_supercomputer',
+            '2x kubejs:chaos_processor_assembly',
             '4x kubejs:chaos_harmonic_board',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('draconic_processor_supercomputer_uev_alt')
         .itemInputs(
             '1x gtceu:tritanium_frame',
-            '1x gtceu:wetware_processor_computer',
+            '1x kubejs:draconic_processor_assembly',
             '2x kubejs:draconic_resonance_board',
             '16x gtceu:advanced_smd_diode',
             '16x gtceu:advanced_smd_capacitor',
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('cumium_processor_assembly_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:chaos_processor_supercomputer',
+            '2x kubejs:cumium_processor',
             '4x gtceu:cumium_ingot',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('chaos_processor_supercomputer_uiv_alt')
         .itemInputs(
             '1x gtceu:awakened_framework_frame',
-            '1x kubejs:draconic_processor_supercomputer',
+            '1x kubejs:chaos_processor_assembly',
             '2x kubejs:chaos_harmonic_board',
             '16x gtceu:advanced_smd_diode',
             '16x gtceu:advanced_smd_capacitor',

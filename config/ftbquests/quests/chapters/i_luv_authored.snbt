@@ -1,0 +1,326 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_luv_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "ad_astra:tier_3_rocket"
+	id: "2000F1C2E3D40000"
+	order_index: 6
+	quest_links: [{
+		id: "2000F1C2E3D40001"
+		linked_quest: "1F00F1C2E3D40038"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["1F00F1C2E3D40038"]
+			hide_until_deps_complete: true
+			id: "2000F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "32768 EU/t and a star in a bottle"
+			tasks: [{
+				id: "2000F1C2E3D40003"
+				title: "Ludicrous Voltage!"
+				type: "checkmark"
+			}]
+			title: "Ludicrous Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40002"]
+			description: [
+				"Ice Shards centrifuged from &aGlacio Stone&r react with Nitrogen in the &6LuV Chemical Reactor&r to make &5Cryo Fuel&r -- the fuel that finally makes the Large Combustion Engine worth running at this tier."
+				""
+				"No new multiblock needed. Feed Cryo Fuel to the Large Combustion Engine built back at EV; the higher energy density carries LuV loads."
+			]
+			id: "2000F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "ice and nitrogen, straight to fuel"
+			tasks: [{
+				count: 4L
+				id: "2000F1C2E3D40005"
+				item: "ad_astra:cryo_fuel_bucket"
+				type: "item"
+			}]
+			title: "LuV Power"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D40004"]
+			description: [
+				"&aRhenium&r comes off Platinum Group Sludge -- the full Platline chain matters here. Mixed with Tungsten and Molybdenum in the &6LuV Mixer&r, it makes &aRTM Alloy&r."
+				""
+				"RTM Alloy Coils push the EBF to the highest temperature reachable at this tier. Upgrade before starting Glacio processing."
+			]
+			id: "2000F1C2E3D40008"
+			shape: "square"
+			size: 0.75d
+			subtitle: "rhenium makes it worthwhile"
+			tasks: [{
+				count: 2L
+				id: "2000F1C2E3D40009"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			title: "RTM Alloy"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40008"]
+			description: [
+				"The &3Tier 3 Rocket&r needs five &aOstrum Hull Sections&r, a &aGlacio Rocket Engine&r (LuV Motor + LuV Pump), two &aGlacio Propellant Tanks&r, a &aGlacio Guidance Module&r (LuV circuits), a Nose Cone, and four Fins."
+				""
+				"Glacio hulls reuse &aOstrum&r plated with Tungsten Carbide -- no new hull metal needed. All component recipes use the LuV Assembler; final assembly is at the &6NASA Workbench&r."
+			]
+			icon: "kubejs:ostrum_hull_section"
+			id: "2000F1C2E3D4000C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "ostrum comes back for round two"
+			tasks: [{
+				count: 5L
+				id: "2000F1C2E3D4000D"
+				item: "kubejs:ostrum_hull_section"
+				type: "item"
+			}]
+			title: "Glacio Components"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D4000C"]
+			description: [
+				"Assemble at the &6NASA Workbench&r with all components staged. Fill both &3Propellant Tanks&r before docking."
+				""
+				"Glacio is cold enough to kill fast without a Space Suit. Priority targets: &aNaquadah veins&r (fusion fuel, mineable directly here) and &aPentlandite&r for Nickel/Cobalt byproducts."
+			]
+			icon: "ad_astra:tier_3_rocket"
+			id: "2000F1C2E3D40010"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "colder than anywhere else so far"
+			tasks: [{
+				id: "2000F1C2E3D40011"
+				item: "ad_astra:tier_3_rocket"
+				type: "item"
+			}]
+			title: "The Glacio Rocket"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40010"]
+			description: [
+				"Land on &3Glacio&r. Bring a Space Suit and expect subzero temperatures on top of the usual no-oxygen problem."
+				""
+				"&aGlacio Stone&r centrifuges into Calcium Dust, Ice Shards, and Glacio Air -- the Ice Shards feed Cryo Fuel production. &aNaquadah Ore&r is Glacio-only and comes with Plutonium-239 as a companion."
+			]
+			id: "2000F1C2E3D40014"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "bring warm clothes, this one bites"
+			tasks: [{
+				count: 16L
+				id: "2000F1C2E3D40015"
+				item: "ad_astra:glacio_stone"
+				type: "item"
+			}]
+			title: "First Glacio Trip"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D40014"]
+			description: [
+				"&aNaquadah&r is mineable directly on Glacio in this pack -- no Fusion Reactor required first, unlike stock GT. &aNaquadah Wire&r replaces Niobium-Titanium Wire in the &aCrystal Processor Assembly&r recipe, gating the UV-tier circuit line behind Glacio."
+				""
+				"Get a Naquadah supply chain automated. The Fusion Reactor below wants a mature base to build from, and the alloy form of this material is what gets you out of this chapter."
+			]
+			id: "2000F1C2E3D40018"
+			shape: "square"
+			size: 0.75d
+			subtitle: "mined, not fused -- this pack's deviation"
+			tasks: [{
+				count: 4L
+				id: "2000F1C2E3D40019"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40018"]
+			description: [
+				"Structure: Fusion Reactor Casing (&aTungstensteel&r core + &aIridium&r outer) + Fusion Coils + Hatches. &aLuV Superconductor&r wire (Niobium-Titanium) wires the structure -- see the side branch."
+				""
+				"Beyond raw mined Naquadah, the reactor unlocks fusion-only materials (Lutetium and friends) needed further up the tree. Build it before leaving LuV; ZPM wants it running."
+			]
+			icon: "gtceu:fusion_reactor"
+			id: "2000F1C2E3D4001C"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "a star, contained"
+			tasks: [{
+				id: "2000F1C2E3D4001D"
+				item: "gtceu:fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor Mk1"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D40008"]
+			description: [
+				"The &6LuV Circuit Assembler&r produces &aCrystal Processors&r -- the IV circuit from the Crystal line, now fully craftable at LuV tier."
+				""
+				"Crystal Processors craft up into &aCrystal Processor Assemblies&r, the actual LuV circuit. Build the assembler as soon as RTM Alloy production is stable."
+			]
+			id: "2000F1C2E3D40020"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the crystal line starts here"
+			tasks: [
+				{
+					id: "2000F1C2E3D40021"
+					item: "gtceu:luv_circuit_assembler"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2000F1C2E3D40022"
+					item: "gtceu:crystal_processor"
+					type: "item"
+				}
+			]
+			title: "LuV Circuit Assembler"
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40020"]
+			description: [
+				"The &aCrystal Processor Assembly&r is the actual LuV circuit. Made from Crystal Processors, Silicon Wafers, and high-tier boards."
+				""
+				"Get Naquadah Wire production automated once Glacio is reachable so this doesn't bottleneck. Crafts up into the &aCrystal Processor Computer&r below."
+			]
+			id: "2000F1C2E3D40024"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the LuV circuit, properly"
+			tasks: [{
+				count: 2L
+				id: "2000F1C2E3D40025"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			title: "Crystal Processor Assembly"
+			x: -2.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D40024"]
+			description: [
+				"The &aCrystal Processor Computer&r is the ZPM circuit -- within reach here since nothing past it needs materials beyond Glacio, same deviation as the Quantum line at IV."
+				""
+				"Batch-produce before leaving. LuV and ZPM machines both want a steady supply."
+			]
+			id: "2000F1C2E3D40028"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "ZPM circuit, LuV tier"
+			tasks: [{
+				count: 2L
+				id: "2000F1C2E3D40029"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			title: "Crystal Processor Computer"
+			x: -2.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["2000F1C2E3D40028"]
+			description: [
+				"The &aCrystal Processor Mainframe&r is the UV circuit -- one more crafting step up from the Computer, and nothing in its recipe reaches past materials already in production here."
+				""
+				"Batch this out before leaving LuV. It saves rebuilding the assembler chain from scratch once UV machines start demanding a steady supply."
+			]
+			id: "2000F1C2E3D4002C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "UV circuit, LuV tier"
+			tasks: [{
+				count: 2L
+				id: "2000F1C2E3D4002D"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			title: "Crystal Processor Mainframe"
+			x: -2.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D40004"]
+			description: [
+				"&aNiobium-Titanium&r wire is the LuV superconductor -- lossless, safe to touch, no cable form needed. The single wire variant covers 2A."
+				""
+				"This is also what wires the Fusion Reactor Mk1 structure. Stock up before starting that build -- it eats superconductor wire fast."
+			]
+			id: "2000F1C2E3D40030"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "zero loss, wires the star"
+			tasks: [{
+				count: 2L
+				id: "2000F1C2E3D40031"
+				item: "gtceu:niobium_titanium_single_wire"
+				type: "item"
+			}]
+			title: "LuV Superconductor"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2000F1C2E3D4001C", "2000F1C2E3D4002C"]
+			description: [
+				"&aNaquadah Alloy&r is the structural backbone of ZPM multiblocks -- Naquadah alloyed further in the LuV Mixer. The &aCrystal Processor Mainframe&r -- the UV circuit -- is already in reach at LuV, same deviation as the Computer above."
+				""
+				"Both should be in automated production before leaving. ZPM is next. Osmiridium and the Fusion Reactor Mk2 need a mature LuV base to build from."
+			]
+			icon: "gtceu:naquadah_alloy_plate"
+			id: "2000F1C2E3D40034"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, 32768 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "2000F1C2E3D40035"
+					item: "gtceu:naquadah_alloy_plate"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2000F1C2E3D40036"
+					item: "gtceu:crystal_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "Leaving LuV"
+			x: 0.0d
+			y: -18.0d
+		}
+	]
+	subtitle: ["Get to Glacio. Build the Sun."]
+	title: "VII. Ludicrous Voltage"
+}

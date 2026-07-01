@@ -1,0 +1,142 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_uv_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:uv_lapotronic_battery"
+	id: "2200F1C2E3D40000"
+	order_index: 8
+	quest_links: [{
+		id: "2200F1C2E3D40001"
+		linked_quest: "2100F1C2E3D40024"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2100F1C2E3D40024"]
+			hide_until_deps_complete: true
+			id: "2200F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "524288 EU/t, last stop before the sky burns"
+			tasks: [{
+				id: "2200F1C2E3D40003"
+				title: "Ultimate Voltage!"
+				type: "checkmark"
+			}]
+			title: "Ultimate Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2200F1C2E3D40002"]
+			description: [
+				"The &6Large Plasma Turbine&r is the ceiling of standard GT power generation -- fed by Plasma fluid off the &5Plasma Generator&r or any high-tier turbine byproduct."
+				""
+				"Maximum efficiency matters more than raw output here; UV machines are hungry enough that waste compounds fast."
+			]
+			icon: "gtceu:plasma_large_turbine"
+			id: "2200F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the ceiling of standard power gen"
+			tasks: [{
+				id: "2200F1C2E3D40005"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			title: "UV Power"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2200F1C2E3D40004"]
+			description: [
+				"&aArcmetal&r is UV-tier, 7200K, Glacio-only -- same rock already visited for Naquadah back at LuV. &aNaquadah Coils&r (already buildable since LuV/ZPM) push the EBF hot enough to finally process it."
+				""
+				"No new trip needed. Just the coil upgrade and a return visit to the Tantalite-companion veins."
+			]
+			id: "2200F1C2E3D40008"
+			shape: "square"
+			size: 0.75d
+			subtitle: "same rock, hotter furnace"
+			tasks: [{
+				count: 2L
+				id: "2200F1C2E3D40009"
+				item: "silentcompat:arcmetal_ingot"
+				type: "item"
+			}]
+			title: "Arcmetal"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2200F1C2E3D40008"]
+			description: [
+				"&aYttrium Barium Cuprate&r wire is the UV superconductor -- lossless, safe to touch, the last superconductor tier in standard GT."
+				""
+				"Stock up. Nothing past this point in the vanilla tree needs a new superconductor material -- from here it's refinement, not new unlocks."
+			]
+			id: "2200F1C2E3D4000C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the last new superconductor"
+			tasks: [{
+				count: 2L
+				id: "2200F1C2E3D4000D"
+				item: "gtceu:yttrium_barium_cuprate_single_wire"
+				type: "item"
+			}]
+			title: "YBCO Superconductor"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2200F1C2E3D4000C"]
+			description: [
+				"The &aUV Lapotronic Battery&r is the last battery in the standard Lapotronic line -- EV through UV, all built the same nested-crystal way, just bigger."
+				""
+				"Crafting one marks functional completion of standard GT power storage. The Ultimate Battery past this point is a UHV item -- a different, harder problem."
+			]
+			icon: "gtceu:uv_lapotronic_battery"
+			id: "2200F1C2E3D40010"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "the lapotronic line, maxed out"
+			tasks: [{
+				id: "2200F1C2E3D40011"
+				item: "gtceu:uv_lapotronic_battery"
+				type: "item"
+			}]
+			title: "UV Lapotronic Battery"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2200F1C2E3D40010"]
+			description: [
+				"&aDraconium&r is the UHV material -- not mined, but fused. The &6Fusion Reactor&r built for Naquadah and upgraded for Osmiridium runs one more recipe here: Plutonium-241 and Naquadah fluid in, Draconium fluid out, at a fusion start cost in the hundreds of millions of EU."
+				""
+				"This is the last vanilla GT gate. Past here the pack's custom endgame starts -- Draconic Evolution integration, the processor/processor_assembly/processor_supercomputer/processor_mainframe circuit themes, and eventually the Cumium Ingot. Get Draconium production stable before pushing further."
+			]
+			icon: "gtceu:draconium_plate"
+			id: "2200F1C2E3D40014"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, 524288 EU/t -- the sky burns next"
+			tasks: [{
+				count: 4L
+				id: "2200F1C2E3D40015"
+				item: "gtceu:draconium_plate"
+				type: "item"
+			}]
+			title: "Leaving UV"
+			x: 0.0d
+			y: -7.5d
+		}
+	]
+	subtitle: ["The last standard tier. Then the sky burns."]
+	title: "IX. Ultimate Voltage"
+}

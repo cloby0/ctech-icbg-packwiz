@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('draconic_processor_supercomputer_recipe')
         .itemInputs(
             '2x gtceu:tritanium_frame',
-            '2x gtceu:wetware_processor_computer',
+            '2x kubejs:draconic_processor_assembly',
             '4x kubejs:draconic_resonance_board',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('kubejs:draconic_processor_supercomputer')
         .duration(2000)
-        .EUt(300000)
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.circuit_assembler('draconic_processor_recipe')
         .itemInputs(
