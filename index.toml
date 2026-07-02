@@ -2438,7 +2438,7 @@ hash = "aa8c06fa14c4b517e64ea82ff2b6948fbdc99015c5004977401716b52a881765"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
-hash = "772ada98c14c492c884371a750fad23bd8eba30ab71c33aee2209d0407e89695"
+hash = "1fdb3eba9b50b2ef003725602f1291007128339a278bfc8c0bab22498705d644"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
@@ -2470,7 +2470,7 @@ hash = "cfdd0a26cd90fe04028b54ae4f10cb96aec3f07ba3d456f1bf24005cbe79abf9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/deDraconicHardware.js"
-hash = "dad2deb5919faabcde1549a243fd9299537c6289cc617d1fc59a7d50e0aa3098"
+hash = "f916e15e2642a1c4bedc3507d9e01607d361e7fa44674057c769c644422dcb34"
 
 [[files]]
 file = "kubejs/server_scripts/tech/deDraconicModules.js"
@@ -2534,7 +2534,7 @@ hash = "41eee2fb485612b58a7c4fa89ac1d14f39640db2a4e0bf62ddf5c6fc165c6055"
 
 [[files]]
 file = "kubejs/server_scripts/tech/legendarySurvivalOverhaul.js"
-hash = "8c719249df44eae37aa76a4616a62d187c5eb085c7106821dd52eff0d776f21c"
+hash = "2c16fe64d4b88009704b2de10df1242ef9bb1e752dd2bde218d903be9ab3b2f2"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"

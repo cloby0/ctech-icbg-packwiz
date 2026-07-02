@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
     event.shaped('legendarysurvivaloverhaul:canteen', [' W ', 'LCL', 'LLL'], {
         W: 'gtceu:wrought_iron_ingot',
         L: 'minecraft:leather',
-        C: 'gtceu:copper_plate'
+        C: 'create:copper_sheet'
     })
 
     event.recipes.gtceu.assembler('lso_thermometer')

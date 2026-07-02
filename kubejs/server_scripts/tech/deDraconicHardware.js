@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('de_draconium_core')
         .itemInputs(
             '4x gtceu:draconium_plate',
-            '4x gtceu:gold_plate',
+            '4x create:golden_sheet',
             '1x minecraft:diamond',
             '1x #gtceu:circuits/zpm'
         )
@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('de_reactor_prt_focus_ring')
         .itemInputs(
-            '4x gtceu:gold_plate',
+            '4x create:golden_sheet',
             '2x minecraft:diamond',
             '2x draconicevolution:wyvern_core'
         )
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('de_flux_gate')
         .itemInputs(
-            '4x gtceu:iron_plate',
+            '4x create:iron_sheet',
             '1x draconicevolution:potentiometer',
             '1x minecraft:redstone_block',
             '1x draconicevolution:draconium_core',
@@ -316,7 +316,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('de_fluid_gate')
         .itemInputs(
-            '4x gtceu:iron_plate',
+            '4x create:iron_sheet',
             '1x draconicevolution:potentiometer',
             '1x minecraft:bucket',
             '1x draconicevolution:draconium_core',
@@ -370,7 +370,7 @@ ServerEvents.recipes(event => {
             '1x minecraft:clock',
             '2x gtceu:draconium_plate',
             '1x minecraft:dragon_egg',
-            '2x gtceu:iron_plate',
+            '2x create:iron_sheet',
             '1x draconicevolution:wyvern_core'
         )
         .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x minecraft:redstone',
             '2x gtceu:draconium_plate',
-            '2x gtceu:iron_plate',
+            '2x create:iron_sheet',
             '1x draconicevolution:dislocator'
         )
         .itemOutputs('1x draconicevolution:magnet')
@@ -437,7 +437,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('de_dislocation_inhibitor')
         .itemInputs(
-            '6x gtceu:iron_plate',
+            '6x create:iron_sheet',
             '1x minecraft:iron_bars',
             '1x draconicevolution:magnet'
         )
@@ -446,7 +446,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('de_dislocator_receptacle')
         .itemInputs(
-            '4x gtceu:iron_plate',
+            '4x create:iron_sheet',
             '1x draconicevolution:draconium_core',
             '1x draconicevolution:infused_obsidian'
         )

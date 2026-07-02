@@ -465,11 +465,11 @@ ServerEvents.recipes(event => {
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:refit_blasting_protocol"}'),
         ['BCB', 'CGC', 'BCB'],
-        { B: 'gtceu:brass_plate', C: '#gtceu:circuits/lv', G: 'minecraft:gunpowder' })
+        { B: 'create:brass_sheet', C: '#gtceu:circuits/lv', G: 'minecraft:gunpowder' })
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_ap_grenade"}'),
         ['BAB', 'AGA', 'BAB'],
-        { B: 'gtceu:brass_plate', A: 'create:andesite_alloy', G: 'minecraft:gunpowder' })
+        { B: 'create:brass_sheet', A: 'create:andesite_alloy', G: 'minecraft:gunpowder' })
 
 
     event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_simple"}'),
