@@ -1,0 +1,13 @@
+name = "Armor Stand's Custom Poses"
+filename = "ASCP(R1.1.1)[1.20.1].jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dcda0c389a2fc9f777155acd452e548a9c265037"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5677301
+project-id = 1064356

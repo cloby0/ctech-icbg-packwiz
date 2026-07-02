@@ -96,25 +96,32 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
+    event.shaped('create_new_age:generator_coil',
+        ['CCC', 'CAC', 'CCC'],
+        { C: 'create:copper_sheet', A: 'create:andesite_alloy_block' })
+
     event.recipes.gtceu.assembler('cna_generator_coil')
         .itemInputs(
-            '8x create:copper_sheet',
+            '6x create:copper_sheet',
             'create:andesite_alloy_block',
-            '1x #gtceu:circuits/mv',
         )
         .itemOutputs('create_new_age:generator_coil')
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
+        .duration(8 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.shaped('create_new_age:carbon_brushes',
+        [' C ', 'ASA', 'ACA'],
+        { C: 'gtceu:coal_dust', A: 'create:andesite_alloy', S: 'greate:steel_shaft' })
 
     event.recipes.gtceu.assembler('cna_carbon_brushes')
         .itemInputs(
-            '4x create:andesite_alloy',
-            '2x minecraft:coal',
+            '2x gtceu:carbon_dust',
+            '2x create:andesite_alloy',
             'greate:steel_shaft',
         )
         .itemOutputs('create_new_age:carbon_brushes')
-        .duration(8 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
+        .duration(6 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('cna_electrical_connector')
         .itemInputs(

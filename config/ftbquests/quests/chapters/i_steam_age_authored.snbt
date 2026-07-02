@@ -37,12 +37,6 @@
 				"Route steam through &3Bronze Fluid Pipes&r only - wooden pipes burn. Place a &3Primitive Water Pump&r in the same chunk as the boiler for automatic water supply. No real water source needed."
 			]
 			id: "1A00F1C2E3D40004"
-			rewards: [{
-				count: 16
-				id: "1A00F1C2E3D40005"
-				item: "gtceu:wrought_iron_ingot"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "putting the steam in steam age"
@@ -71,12 +65,6 @@
 			]
 			icon: "gtceu:lp_steam_alloy_smelter"
 			id: "1A00F1C2E3D40007"
-			rewards: [{
-				count: 8
-				id: "1A00F1C2E3D40008"
-				item: "gtceu:bronze_plate"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "you now own a factory. sort of."
@@ -110,12 +98,6 @@
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "1A00F1C2E3D4000C"
-			rewards: [{
-				count: 64
-				id: "1A00F1C2E3D4000D"
-				item: "gtceu:coke_gem"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "not pretty, but it makes steel"
@@ -144,12 +126,6 @@
 				"Get comfortable with the PBF. You'll be visiting it frequently for the next few hours."
 			]
 			id: "1A00F1C2E3D40010"
-			rewards: [{
-				count: 8
-				id: "1A00F1C2E3D40011"
-				item: "gtceu:steel_ingot"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "stronger than iron. obviously."
@@ -175,12 +151,6 @@
 			]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "1A00F1C2E3D40017"
-			rewards: [{
-				count: 4
-				id: "1A00F1C2E3D40018"
-				item: "minecraft:charcoal"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "resistors and tubes and boards, oh my"
@@ -215,12 +185,6 @@
 			]
 			icon: "gtceu:lv_electric_motor"
 			id: "1A00F1C2E3D4001C"
-			rewards: [{
-				count: 32
-				id: "1A00F1C2E3D4001D"
-				item: "gtceu:steel_ingot"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "see you never, boiler"

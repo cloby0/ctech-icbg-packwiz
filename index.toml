@@ -110,7 +110,7 @@ hash = "9d2cedef524457f34a95473c792ae7973b66d619699fcbfc43469feac7a31056"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_steam_age_authored.snbt"
-hash = "b7a388c9c81647f71762dff1cf0b2eaa073471c5daaaecb0acf693a4df8e686a"
+hash = "02f8efc350bb86b7d4e6401fa56a24ec686863b336791599bc2afd6c65c07bfa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uev_authored.snbt"
@@ -2502,7 +2502,7 @@ hash = "d9101e1736083930f985372f91195b21d510706065dc0f09214ec4752c390804"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
-hash = "fc61c295d585e0cd5f6059ae773a09fa4349b62e4685eef004d9db7aa09d82b0"
+hash = "15975e78c4057bce1145d95bdc05928c93a816182a57c33c2ded406f795b0712"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -2586,7 +2586,7 @@ hash = "332472e9d7d660df109620716ccdd3a2e97934d77e429f2ab84f273ff5c5bbe8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
-hash = "1c6a3e9a17e61fa60e569bd4b7ad184a19168ee8c4367a54ff57db1856ded78c"
+hash = "1e0ad8353e3f8d5fbee16c47630da63caffeb96b4fa02124004e790fb9ecf920"
 
 [[files]]
 file = "kubejs/server_scripts/tech/silentcompat.js"
@@ -2894,6 +2894,11 @@ hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
 metafile = true
 
 [[files]]
+file = "mods/armor-stand-s-custom-poses.pw.toml"
+hash = "7811a0059ee0a22300e541bbf4a793bacaf5db39cd292bfab7912b1cca31a36f"
+metafile = true
+
+[[files]]
 file = "mods/armorpoints.pw.toml"
 hash = "3b6ae13d46854f2eeee5f6f102bc0ae44ce992a14b060cfd059264eb0a1ea3fc"
 metafile = true
@@ -3188,8 +3193,18 @@ hash = "d6d7fe6a648a5001449b4a3056afe1856a1d51cb74d6ccd1503e1d9aefaa633e"
 metafile = true
 
 [[files]]
+file = "mods/create-low-heated.pw.toml"
+hash = "6a343f59709db4c0a8766efd0a90ac4a374b4baa399e8fc6cf73715c52fcc5d7"
+metafile = true
+
+[[files]]
 file = "mods/create-new-age.pw.toml"
 hash = "af254a9e26ed280c6078e2d02aa9f511d5b3f0ae43767e6a35a87583014e5e6e"
+metafile = true
+
+[[files]]
+file = "mods/create-picky-waterwheels.pw.toml"
+hash = "7e7fb93ff50314b11e9f2551630c247b973707350c2544986d3b5ceaeca5a413"
 metafile = true
 
 [[files]]
@@ -4209,6 +4224,11 @@ hash = "ad017c00411e9b3cd8564d913e568636270ffd50bc822c919ce1db5ba0dbe126"
 metafile = true
 
 [[files]]
+file = "mods/sandfilter.pw.toml"
+hash = "c77f709f4cf88bcaada0369e9d2a033dde9e7a04a4741bf9d8c53cecf18b0fe1"
+metafile = true
+
+[[files]]
 file = "mods/sbw-vintage-vehicle-pack.pw.toml"
 hash = "af4e682df7b56ad75b607194a760fefb2cdaf160a57c2765c201926615966c5d"
 metafile = true
@@ -4231,6 +4251,11 @@ metafile = true
 [[files]]
 file = "mods/selene.pw.toml"
 hash = "8c1ddc34636bfb9ab2209a4d387900f03682a65ed5fcf8b5027ffdd9ba49880f"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons-pams-harvestcraft-2-crops-compat.pw.toml"
+hash = "e0f624511181996e5cdaa3af40daec17dcc2f4c208b89da845711ea75e23ed71"
 metafile = true
 
 [[files]]

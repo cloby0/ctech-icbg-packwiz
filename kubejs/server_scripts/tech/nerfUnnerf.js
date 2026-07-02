@@ -22,6 +22,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'magistuarmory:furnace/steel_ingot_blasting' });
     event.remove({ id: 'ad_astra:etrionic_blast_furnace' });
     event.remove({ id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals' });
+    event.remove({ id: 'ad_astra:iron_rod' });
+    event.remove({ id: 'silentgear:iron_rod' });
+    event.remove({ id: 'superbwarfare:tungsten_ingot_blasting_from_powder' });
     event.remove({ id: 'ancient_aether:enchanting_table_from_gravitite'})
     event.remove({ id: 'deep_aether:crystal_brewing_stand'})
         
