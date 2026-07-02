@@ -1,12 +1,12 @@
 name = "C-Tech: Intercontinental Ballistic Greg"
 author = "soundgoodizerfan"
-version = "0.0.1"
+version = "1.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e030e558b3c4ea87b6fdfbcaab6325ea450f679f48b2113e2bb37df89698e8d2"
+hash = "8ac12f65ac88bcba535f2482be7d2e69d13f13e5b57e9553316d9dbfb077e244"
 
 [versions]
 forge = "47.4.10"

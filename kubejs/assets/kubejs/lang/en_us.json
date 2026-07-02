@@ -211,6 +211,17 @@
   "item.kubejs.chaotic_sanguinary": "Chaotic Sanguinary",
   "item.kubejs.shattered_sanctum": "Shattered Sanctum",
   "item.kubejs.codex_of_entropy": "Codex of Entropy",
-  "item.kubejs.chronicle_of_unraveling": "Chronicle of Unraveling"
+  "item.kubejs.chronicle_of_unraveling": "Chronicle of Unraveling",
+
+  "item.kubejs.pyromatic_codex": "Pyromatic Codex",
+  "item.kubejs.evocation_folio": "Evocation Folio",
+  "item.kubejs.glacial_grimoire": "Glacial Grimoire",
+  "item.kubejs.verdant_chronicle": "Verdant Chronicle",
+  "item.kubejs.technomatic_folio": "Technomatic Folio",
+  "item.kubejs.blood_grimoire": "Blood Grimoire",
+  "item.kubejs.radiant_sanctum": "Radiant Sanctum",
+  "item.kubejs.eldritch_codex": "Eldritch Codex",
+  "item.kubejs.obliteration_chronicle": "Obliteration Chronicle",
+  "item.kubejs.harbinger_codex": "Harbinger Codex"
 
 }

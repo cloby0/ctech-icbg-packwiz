@@ -34,7 +34,7 @@
 			description: [
 				"The &6LP Steam Solid Boiler&r burns fuel and produces steam. Keep water flowing in and it'll keep steam flowing out. Let it run dry while hot and it will express its disappointment violently."
 				""
-				"Route steam through &3Bronze Fluid Pipes&r only — wooden pipes burn. Place a &3Primitive Water Pump&r in the same chunk as the boiler for automatic water supply. No real water source needed."
+				"Route steam through &3Bronze Fluid Pipes&r only - wooden pipes burn. Place a &3Primitive Water Pump&r in the same chunk as the boiler for automatic water supply. No real water source needed."
 			]
 			id: "1A00F1C2E3D40004"
 			rewards: [{
@@ -67,7 +67,7 @@
 			description: [
 				"Your first factory floor: the &6Steam Alloy Smelter&r, &6Macerator&r, and &6Forge Hammer&r."
 				""
-				"The Macerator doubles ore output. Use it every time — every raw ore smelted directly is wasted yield."
+				"The Macerator doubles ore output. Use it every time - every raw ore smelted directly is wasted yield."
 			]
 			icon: "gtceu:lp_steam_alloy_smelter"
 			id: "1A00F1C2E3D40007"
@@ -106,7 +106,7 @@
 			description: [
 				"The &5Primitive Blast Furnace&r doesn't look like much. It isn't. But it makes &aSteel&r, and Steel makes everything else."
 				""
-				"Build at least two sharing walls — multiblocks share walls in GTCEu, saving firebricks. Load it with Wrought Iron and Coke blocks, then leave it running."
+				"Build at least two sharing walls - multiblocks share walls in GTCEu, saving firebricks. Load it with Wrought Iron and Coke blocks, then leave it running."
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "1A00F1C2E3D4000C"
@@ -139,7 +139,7 @@
 		{
 			dependencies: ["1A00F1C2E3D4000C"]
 			description: [
-				"&aSteel&r is the lifeblood of early GregTech. Tools, machines, structures — Steel underlies all of it."
+				"&aSteel&r is the lifeblood of early GregTech. Tools, machines, structures - Steel underlies all of it."
 				""
 				"Get comfortable with the PBF. You'll be visiting it frequently for the next few hours."
 			]
@@ -244,7 +244,7 @@
 		}
 		{
 			dependencies: ["1A00F1C2E3D40004"]
-			description: ["&aHP Steam Machines&r run at full speed with no duration penalty. The HP Solid Boiler produces 600 steam/t — three times the LP rate. Upgrade when Steel is available."]
+			description: ["&aHP Steam Machines&r run at full speed with no duration penalty. The HP Solid Boiler produces 600 steam/t - three times the LP rate. Upgrade when Steel is available."]
 			id: "1A00F1C2E3D40013"
 			shape: "rsquare"
 			size: 0.66d
@@ -261,7 +261,7 @@
 		{
 			dependencies: ["1A00F1C2E3D40007"]
 			description: [
-				"The &6Coke Oven&r converts Coal or Wood into &aCoke Coal&r — better fuel for the PBF and the Electric Blast Furnace later."
+				"The &6Coke Oven&r converts Coal or Wood into &aCoke Coal&r - better fuel for the PBF and the Electric Blast Furnace later."
 				""
 				"Build it before the PBF. Two Coke Ovens feeding one PBF is a good starting ratio. Creosote byproduct fuels Liquid Boilers."
 			]
@@ -315,7 +315,7 @@
 		}
 		{
 			dependencies: ["1A00F1C2E3D40007"]
-			description: ["&aRubber&r insulates wires. No rubber means sparks where sparks shouldn't be. Get &3Rubber Plates&r before trying to run any LV machine — cables need insulation."]
+			description: ["&aRubber&r insulates wires. No rubber means sparks where sparks shouldn't be. Get &3Rubber Plates&r before trying to run any LV machine - cables need insulation."]
 			id: "1A00F1C2E3D40015"
 			shape: "rsquare"
 			size: 0.66d

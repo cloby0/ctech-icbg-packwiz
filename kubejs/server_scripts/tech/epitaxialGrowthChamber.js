@@ -3,6 +3,19 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/naquadah_boule" })
     event.remove({ id: "gtceu:electric_blast_furnace/neutronium_boule" })
 
+    event.recipes.gtceu.assembler('epitaxial_growth_chamber_controller')
+        .itemInputs(
+            '1x gtceu:hv_machine_hull',
+            '4x gtceu:lunar_rocket_alloy_plate',
+            '2x gtceu:hv_emitter',
+            '1x gtceu:hv_robot_arm',
+            '2x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('1x gtceu:epitaxial_growth_chamber')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
     event.recipes.gtceu.epitaxial_growth_chamber('phosphorus_boule')
         .itemInputs(
             '64x gtceu:silicon_dust',

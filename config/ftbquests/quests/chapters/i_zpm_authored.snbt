@@ -4,7 +4,7 @@
 	filename: "i_zpm_authored"
 	group: "337107DE6FEF7850"
 	hide_quest_until_deps_visible: true
-	icon: "gtceu:fusion_reactor"
+	icon: "gtceu:zpm_fusion_reactor"
 	id: "2100F1C2E3D40000"
 	order_index: 7
 	quest_links: [{
@@ -79,14 +79,14 @@
 				""
 				"Mk2 fusion is what finally produces &aNeutronium&r -- UV's structural material, and the only way to get it. Everything past this point in the tech tree assumes this reactor is running."
 			]
-			icon: "gtceu:fusion_reactor"
+			icon: "gtceu:zpm_fusion_reactor"
 			id: "2100F1C2E3D4000C"
 			shape: "gear"
 			size: 1.5d
 			subtitle: "same controller, bigger coils this time"
 			tasks: [{
 				id: "2100F1C2E3D4000D"
-				item: "gtceu:fusion_reactor"
+				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
 			title: "Fusion Reactor Mk2"

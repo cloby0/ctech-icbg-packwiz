@@ -20,7 +20,7 @@
 			description: [
 				"The &3Mana Pool&r is the central hub of &3Botania&r."
 				""
-				"Flowers generate &dMana&r and pipe it into the pool. From there it's used for pretty much everything Botania does — crafting, transformation, terraforming, you name it."
+				"Flowers generate &dMana&r and pipe it into the pool. From there it's used for pretty much everything Botania does - crafting, transformation, terraforming, you name it."
 				""
 				"&9Note:&r At this tier, reliable options include the &aEndoflame&r (coal/charcoal) and &aRosa Arcana&r (XP). Keep them fed."
 			]
@@ -56,7 +56,7 @@
 				"138BA0CD22478ACF"
 			]
 			description: [
-				"&aManasteel&r is the capstone of the &8Alchemist&r tier — flower-powered metallurgy at its finest."
+				"&aManasteel&r is the capstone of the &8Alchemist&r tier - flower-powered metallurgy at its finest."
 				""
 				"It's produced by submerging &9Prima Materia-derived&r intermediates in a &3Mana Pool&r. The pool does the rest."
 				""
@@ -152,7 +152,7 @@
 			description: [
 				"The &3Abstract Metal&r line bridges &dPrima Materia&r and &aManasteel&r."
 				""
-				"&oCondensed Concepts&r and &oMetal Form&r are intermediate processing steps — don't think too hard about what they are."
+				"&oCondensed Concepts&r and &oMetal Form&r are intermediate processing steps - don't think too hard about what they are."
 				""
 				"&l&3Lore:&r&o Who needs ingots when you can have abstract notions of metal?"
 			]

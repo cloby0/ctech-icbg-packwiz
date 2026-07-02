@@ -116,7 +116,7 @@ StartupEvents.registry('item', event => {
     event.create('glacio_propellant_tank')
     event.create('glacio_guidance_module')
 
-    event.create('cannon_mechanism')
+    event.create('cannon_mechanism').texture('create:item/precision_mechanism')
 
     event.create('primordial_organic_muck')
     event.create('kerogen')

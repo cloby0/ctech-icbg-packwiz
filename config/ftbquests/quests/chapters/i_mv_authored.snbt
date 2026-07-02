@@ -134,7 +134,7 @@
 			description: [
 				"&aKanthal&r is an Iron + Aluminium + Chromium alloy. Mix it in the &6MV Mixer&r, shape it into 16 Coil Blocks, and install them to upgrade the EBF from 1800K to 2700K."
 				""
-				"2700K unlocks Silicon Boule and several alloys the Cupronickel coils cannot touch. Higher-temp recipes produce &aHot Ingots&r that cannot be used directly — the Vacuum Freezer handles that, and you will build one at HV."
+				"2700K unlocks Silicon Boule and several alloys the Cupronickel coils cannot touch. Higher-temp recipes produce &aHot Ingots&r that cannot be used directly - the Vacuum Freezer handles that, and you will build one at HV."
 			]
 			icon: "gtceu:mv_mixer"
 			id: "1C00F1C2E3D40013"

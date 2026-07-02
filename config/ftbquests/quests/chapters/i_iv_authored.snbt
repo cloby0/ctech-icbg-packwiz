@@ -4,7 +4,7 @@
 	filename: "i_iv_authored"
 	group: "337107DE6FEF7850"
 	hide_quest_until_deps_visible: true
-	icon: "ad_astra:tier_4_rocket"
+	icon: "ad_astra:tier_3_rocket"
 	id: "1F00F1C2E3D40000"
 	order_index: 5
 	quest_links: [{
@@ -74,19 +74,19 @@
 		{
 			dependencies: ["1F00F1C2E3D40008"]
 			description: [
-				"The &3Tier 4 Rocket&r needs five &aCalorite Hull Sections&r, a &aVenus Rocket Engine&r (IV Motor + IV Pump), two &aVenus Propellant Tanks&r, a &aVenus Guidance Module&r (IV circuits), a Nose Cone, and four Fins."
+				"The &3Tier 3 Rocket&r needs five &aOstrum Hull Sections&r, a &aVenus Rocket Engine&r (IV Motor + IV Pump), two &aVenus Propellant Tanks&r, a &aVenus Guidance Module&r (IV circuits), a Nose Cone, and four Fins."
 				""
 				"All component recipes use the IV Assembler. Final assembly is at the &6NASA Workbench&r. Fill both propellant tanks with fuel before docking."
 			]
-			icon: "kubejs:calorite_hull_section"
+			icon: "kubejs:ostrum_hull_section"
 			id: "1F00F1C2E3D4000C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "calorite does double duty"
+			subtitle: "ostrum does double duty"
 			tasks: [{
 				count: 5L
 				id: "1F00F1C2E3D4000D"
-				item: "kubejs:calorite_hull_section"
+				item: "kubejs:ostrum_hull_section"
 				type: "item"
 			}]
 			title: "Venus Components"
@@ -100,14 +100,14 @@
 				""
 				"This rocket reaches &3Venus and Mercury&r both -- same tier, same launch. Priority on Venus: &aCooperite and Chalcopyrite veins&r for Platinum-group and copper byproducts. On Mercury: &aPitchblende&r for Thorium and Uranium, &aCobaltite&r for Cobalt."
 			]
-			icon: "ad_astra:tier_4_rocket"
+			icon: "ad_astra:tier_3_rocket"
 			id: "1F00F1C2E3D40010"
 			shape: "gear"
 			size: 1.5d
 			subtitle: "one rocket, two hells"
 			tasks: [{
 				id: "1F00F1C2E3D40011"
-				item: "ad_astra:tier_4_rocket"
+				item: "ad_astra:tier_3_rocket"
 				type: "item"
 			}]
 			title: "The Venus Rocket"

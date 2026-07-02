@@ -7,4 +7,14 @@ ServerEvents.recipes(event => {
     }
     
     kilnRecipe('glass', 'gtceu:glass_dust', 'minecraft:glass');
+
+    event.shaped('gtceu:kiln', [
+        'BBB',
+        'BCB',
+        'LLL'
+    ], {
+        B: 'minecraft:mud_bricks',
+        C: 'minecraft:campfire',
+        L: '#minecraft:logs'
+    });
 });

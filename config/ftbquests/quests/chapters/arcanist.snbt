@@ -19,7 +19,7 @@
 		{
 			dependencies: ["278BE65F77B6BD8B"]
 			description: [
-				"The &3Elven Portal&r opens a gateway to &dAlfheim&r — home of the elves."
+				"The &3Elven Portal&r opens a gateway to &dAlfheim&r - home of the elves."
 				""
 				"You can't visit. You can only trade. Drop items through the portal and the elves will send something back."
 				""
@@ -100,7 +100,7 @@
 			description: [
 				"&aElementium&r is the capstone of the &8Arcanist&r tier."
 				""
-				"It can only be obtained through cooperation with the Elves — no amount of GregTech machines can synthesize this one."
+				"It can only be obtained through cooperation with the Elves - no amount of GregTech machines can synthesize this one."
 				""
 				"&9Note:&r Automating Elven Portal trading is possible. Once you're producing Elementium in volume, you'll want to look into it."
 			]
@@ -120,7 +120,7 @@
 		{
 			dependencies: ["2764D29567727F6D"]
 			description: [
-				"The &3Elven Portal&r trading process produces &aElven Concentrate&r — the key input for &dElementium&r processing."
+				"The &3Elven Portal&r trading process produces &aElven Concentrate&r - the key input for &dElementium&r processing."
 				""
 				"Feed the portal, collect the concentrate, process it further."
 			]

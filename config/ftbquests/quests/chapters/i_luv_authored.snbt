@@ -4,7 +4,7 @@
 	filename: "i_luv_authored"
 	group: "337107DE6FEF7850"
 	hide_quest_until_deps_visible: true
-	icon: "ad_astra:tier_3_rocket"
+	icon: "ad_astra:tier_4_rocket"
 	id: "2000F1C2E3D40000"
 	order_index: 6
 	quest_links: [{
@@ -75,19 +75,19 @@
 		{
 			dependencies: ["2000F1C2E3D40008"]
 			description: [
-				"The &3Tier 3 Rocket&r needs five &aOstrum Hull Sections&r, a &aGlacio Rocket Engine&r (LuV Motor + LuV Pump), two &aGlacio Propellant Tanks&r, a &aGlacio Guidance Module&r (LuV circuits), a Nose Cone, and four Fins."
+				"The &3Tier 4 Rocket&r needs five &aCalorite Hull Sections&r, a &aGlacio Rocket Engine&r (LuV Motor + LuV Pump), two &aGlacio Propellant Tanks&r, a &aGlacio Guidance Module&r (LuV circuits), a Nose Cone, and four Fins."
 				""
-				"Glacio hulls reuse &aOstrum&r plated with Tungsten Carbide -- no new hull metal needed. All component recipes use the LuV Assembler; final assembly is at the &6NASA Workbench&r."
+				"Glacio hulls upgrade to &aCalorite&r plated with Tungsten Carbide -- the Venus metal finally earns its keep. All component recipes use the LuV Assembler; final assembly is at the &6NASA Workbench&r."
 			]
-			icon: "kubejs:ostrum_hull_section"
+			icon: "kubejs:calorite_hull_section"
 			id: "2000F1C2E3D4000C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "ostrum comes back for round two"
+			subtitle: "calorite comes back for round two"
 			tasks: [{
 				count: 5L
 				id: "2000F1C2E3D4000D"
-				item: "kubejs:ostrum_hull_section"
+				item: "kubejs:calorite_hull_section"
 				type: "item"
 			}]
 			title: "Glacio Components"
@@ -101,14 +101,14 @@
 				""
 				"Glacio is cold enough to kill fast without a Space Suit. Priority targets: &aNaquadah veins&r (fusion fuel, mineable directly here) and &aPentlandite&r for Nickel/Cobalt byproducts."
 			]
-			icon: "ad_astra:tier_3_rocket"
+			icon: "ad_astra:tier_4_rocket"
 			id: "2000F1C2E3D40010"
 			shape: "gear"
 			size: 1.5d
 			subtitle: "colder than anywhere else so far"
 			tasks: [{
 				id: "2000F1C2E3D40011"
-				item: "ad_astra:tier_3_rocket"
+				item: "ad_astra:tier_4_rocket"
 				type: "item"
 			}]
 			title: "The Glacio Rocket"
@@ -164,14 +164,14 @@
 				""
 				"Beyond raw mined Naquadah, the reactor unlocks fusion-only materials (Lutetium and friends) needed further up the tree. Build it before leaving LuV; ZPM wants it running."
 			]
-			icon: "gtceu:fusion_reactor"
+			icon: "gtceu:luv_fusion_reactor"
 			id: "2000F1C2E3D4001C"
 			shape: "gear"
 			size: 1.5d
 			subtitle: "a star, contained"
 			tasks: [{
 				id: "2000F1C2E3D4001D"
-				item: "gtceu:fusion_reactor"
+				item: "gtceu:luv_fusion_reactor"
 				type: "item"
 			}]
 			title: "Fusion Reactor Mk1"

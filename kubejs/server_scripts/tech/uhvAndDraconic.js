@@ -22,7 +22,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    event.remove({ type: 'gtceu:mixer', output: 'gtceu:draconic_framework_dust' })
     event.recipes.gtceu.mixer('draconic_framework_dust_mixing')
         .itemInputs(
             '2x gtceu:draconium_dust',
@@ -31,6 +30,16 @@ ServerEvents.recipes(event => {
             '1x kubejs:dragon_heart_crystal'
         )
         .itemOutputs('4x gtceu:draconic_framework_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.mixer('draconic_fluxite_dust_mixing')
+        .itemInputs(
+            '1x draconicevolution:awakened_draconium_dust',
+            '1x gtceu:naquadria_dust',
+            '1x gtceu:gaia_spirit_dust'
+        )
+        .itemOutputs('3x gtceu:draconic_fluxite_dust')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
@@ -78,6 +87,19 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
+
+    event.recipes.gtceu.assembler('draconic_infusion_chamber_controller')
+        .itemInputs(
+            '1x gtceu:uhv_machine_hull',
+            '2x kubejs:draconic_framework_casing',
+            '1x gtceu:uhv_field_generator',
+            '2x gtceu:uhv_emitter',
+            '2x #gtceu:circuits/uhv'
+        )
+        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .itemOutputs('1x gtceu:draconic_infusion_chamber')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.assembly_line('draconic_processor_supercomputer_recipe')
         .itemInputs(

@@ -79,6 +79,32 @@ ServerEvents.recipes(event => {
         })
       }
 
-    
+
   });
+
+  event.recipes.gtceu.assembler('military_industrial_complex_controller')
+      .itemInputs(
+          '1x gtceu:iv_machine_hull',
+          '4x gtceu:tungsten_steel_plate',
+          '2x gtceu:iv_robot_arm',
+          '2x gtceu:iv_conveyor_module',
+          '2x #gtceu:circuits/iv'
+      )
+      .inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
+      .itemOutputs('1x gtceu:military_industrial_complex')
+      .duration(30 * 20)
+      .EUt(GTValues.VA[GTValues.IV])
+
+  event.recipes.gtceu.assembler('human_augmentation_plant_controller')
+      .itemInputs(
+          '1x gtceu:hv_machine_hull',
+          '2x gtceu:stainless_steel_frame',
+          '2x gtceu:hv_robot_arm',
+          '2x gtceu:hv_electric_pump',
+          '2x #gtceu:circuits/hv'
+      )
+      .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+      .itemOutputs('1x gtceu:human_augmentation_plant')
+      .duration(30 * 20)
+      .EUt(GTValues.VA[GTValues.HV])
 })

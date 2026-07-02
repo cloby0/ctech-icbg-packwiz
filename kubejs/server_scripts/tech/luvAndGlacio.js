@@ -24,22 +24,22 @@ ServerEvents.recipes(event => {
         'gtceu:fine_naquadah_wire'
     )
 
-    event.remove({ id: 'ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench' })
+    event.remove({ id: 'ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench' })
 
     event.recipes.gtceu.assembler('glacio_hull_section')
         .itemInputs(
-            '2x ad_astra:ostrum_plate',
+            '2x ad_astra:calorite_plate',
             '2x gtceu:tungsten_carbide_plate',
             '1x gtceu:polytetrafluoroethylene_plate'
         )
-        .itemOutputs('2x kubejs:ostrum_hull_section')
+        .itemOutputs('2x kubejs:calorite_hull_section')
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.assembler('glacio_rocket_engine')
         .itemInputs(
-            '4x gtceu:ostrum_rod',
-            '4x ad_astra:ostrum_plate',
+            '2x gtceu:long_calorite_rod',
+            '4x ad_astra:calorite_plate',
             '1x gtceu:luv_electric_motor',
             '1x gtceu:luv_electric_pump'
         )
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('glacio_propellant_tank')
         .itemInputs(
-            '4x ad_astra:ostrum_plate',
+            '4x ad_astra:calorite_plate',
             '2x gtceu:tungsten_carbide_plate',
             '1x gtceu:polytetrafluoroethylene_plate',
             '1x gtceu:luv_electric_pump'
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         'GCG',
         'LSL'
     ], {
-        L: 'ad_astra:ostrum_plate',
+        L: 'ad_astra:calorite_plate',
         E: 'gtceu:luv_emitter',
         G: 'gtceu:glass_lens',
         C: '#gtceu:circuits/luv',
@@ -74,11 +74,11 @@ ServerEvents.recipes(event => {
         "type": "ad_astra:nasa_workbench",
         "ingredients": [
             {"item": "ad_astra:rocket_nose_cone"},
-            {"item": "kubejs:ostrum_hull_section"},
-            {"item": "kubejs:ostrum_hull_section"},
-            {"item": "kubejs:ostrum_hull_section"},
-            {"item": "kubejs:ostrum_hull_section"},
-            {"item": "kubejs:ostrum_hull_section"},
+            {"item": "kubejs:calorite_hull_section"},
+            {"item": "kubejs:calorite_hull_section"},
+            {"item": "kubejs:calorite_hull_section"},
+            {"item": "kubejs:calorite_hull_section"},
+            {"item": "kubejs:calorite_hull_section"},
             {"item": "kubejs:glacio_guidance_module"},
             {"item": "ad_astra:rocket_fin"},
             {"item": "kubejs:glacio_propellant_tank"},
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             {"item": "kubejs:glacio_rocket_engine"},
             {"item": "ad_astra:rocket_fin"}
         ],
-        "result": {"count": 1, "id": "ad_astra:tier_3_rocket"}
-    }).id('kubejs:gt_tier_3_rocket')
+        "result": {"count": 1, "id": "ad_astra:tier_4_rocket"}
+    }).id('kubejs:gt_tier_4_rocket')
 
 })

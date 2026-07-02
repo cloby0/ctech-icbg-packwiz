@@ -7,6 +7,19 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'superbwarfare:smoke_dye' })
     event.remove({ type: 'superbwarfare:vehicle_reset' })
 
+    event.recipes.gtceu.assembler('vehicle_assembler_controller')
+        .itemInputs(
+            '1x gtceu:mv_machine_hull',
+            '2x gtceu:steel_gearbox',
+            '2x gtceu:mv_robot_arm',
+            '2x gtceu:mv_conveyor_module',
+            '2x #gtceu:circuits/mv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x gtceu:vehicle_assembler')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
     const removedGuns = [
         'taser', 'glock_17', 'glock_18', 'mp_443', 'm_1911', 'homemade_shotgun', 'trachelium',
         'mp_5', 'vector', 'ak_47', 'ak_12', 'sks', 'm_4', 'hk_416', 'qbz_95', 'qbz_191',

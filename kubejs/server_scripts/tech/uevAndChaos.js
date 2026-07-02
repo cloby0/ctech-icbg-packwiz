@@ -1,6 +1,27 @@
 ServerEvents.recipes(event => {
 
 
+    event.recipes.gtceu.mixer('chaotic_singulite_dust_mixing')
+        .itemInputs(
+            '1x draconicevolution:awakened_draconium_dust',
+            '1x gtceu:chaos_crystal_dust',
+            '1x gtceu:gaia_spirit_dust'
+        )
+        .itemOutputs('3x gtceu:chaotic_singulite_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.mixer('awakened_framework_dust_mixing')
+        .itemInputs(
+            '2x draconicevolution:awakened_draconium_dust',
+            '1x gtceu:neutronium_dust',
+            '1x gtceu:chaos_crystal_dust',
+            '1x gtceu:gaia_spirit_dust'
+        )
+        .itemOutputs('5x gtceu:awakened_framework_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV])
+
     event.recipes.gtceu.macerator('chaos_shard_maceration')
         .itemInputs('1x draconicevolution:chaos_shard')
         .itemOutputs('4x gtceu:chaos_crystal_dust')
@@ -117,6 +138,31 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:lubricant', 100))
         .itemOutputs('4x kubejs:biogenic_synthesis_casing')
         .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    event.recipes.gtceu.assembler('biogenic_synthesis_chamber_controller')
+        .itemInputs(
+            '1x gtceu:uev_machine_hull',
+            '2x kubejs:biogenic_synthesis_casing',
+            '2x gtceu:uev_electric_pump',
+            '2x gtceu:uev_sensor',
+            '2x #gtceu:circuits/uev'
+        )
+        .inputFluids(Fluid.of('gtceu:sterilized_growth_medium', 2000))
+        .itemOutputs('1x gtceu:biogenic_synthesis_chamber')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    event.recipes.gtceu.assembler('awakened_framework_casing_assembly')
+        .itemInputs(
+            '4x gtceu:awakened_framework_plate',
+            '4x gtceu:awakened_framework_rod',
+            '1x draconicevolution:awakened_draconium_block',
+            '1x #gtceu:circuits/uev'
+        )
+        .inputFluids(Fluid.of('gtceu:lubricant', 100))
+        .itemOutputs('8x kubejs:awakened_framework_casing')
+        .duration(200)
         .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.chemical_reactor('chaos_matrix_fluid_synthesis')

@@ -278,7 +278,7 @@
 			subtitle: "no fuel, no moon"
 			tasks: [{
 				id: "1D00F1C2E3D40037"
-				item: "gtceu:dimethylhydrazine_cell"
+				item: "gtceu:dimethylhydrazine_bucket"
 				type: "item"
 			}]
 			title: "Rocket Fuel"
