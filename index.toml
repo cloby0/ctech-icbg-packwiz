@@ -169,6 +169,18 @@ file = "config/gtceu.yaml"
 hash = "9df8863f067bd40adfccdc06b75143d3b6b8f81c73d497296ef194b3d06f9a61"
 
 [[files]]
+file = "config/improvedmobs/client.toml"
+hash = "9dc73d3fbdf9b99c4ea142ca45b6618b91ae0bb9c7d9e910a81c2356bc4038ca"
+
+[[files]]
+file = "config/improvedmobs/common.toml"
+hash = "37ccd53ee32e40aaf6711da5ffa04b685283a28974849005fe68c3143c622a1d"
+
+[[files]]
+file = "config/improvedmobs/equipment.json"
+hash = "c81ed47da30395dd4ecc3dfefdf5512f9f7c3d8c8da644b391709736c0087c35"
+
+[[files]]
 file = "config/infernalmobs.cfg"
 hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
@@ -2502,7 +2514,7 @@ hash = "d9101e1736083930f985372f91195b21d510706065dc0f09214ec4752c390804"
 
 [[files]]
 file = "kubejs/server_scripts/tech/createNewAge.js"
-hash = "15975e78c4057bce1145d95bdc05928c93a816182a57c33c2ded406f795b0712"
+hash = "4985a2e7407ae63ed47a52a1e36b8d4961bc1894bacf92fc94459e062e75a1d8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/customMachineRecipes.js"
@@ -2589,12 +2601,16 @@ file = "kubejs/server_scripts/tech/nerfUnnerf.js"
 hash = "1e0ad8353e3f8d5fbee16c47630da63caffeb96b4fa02124004e790fb9ecf920"
 
 [[files]]
+file = "kubejs/server_scripts/tech/paper.js"
+hash = "7d49335f6e9ff6c1dfe93717e07638e73199ece080fd1bcfad0047ab5d0bdc2a"
+
+[[files]]
 file = "kubejs/server_scripts/tech/silentcompat.js"
 hash = "dbf9766fa291081c2960c15f7c548d8d928a260e5a22f02b77e751ef4b827882"
 
 [[files]]
 file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
-hash = "0d806e0a292ac225b7b7156dc06677f5814498f79a0216dd9fd0b865a438286c"
+hash = "df2c619e7043c2d181e29a31b16ecf11c4a4d4227ff3d7069ce718049ab98a23"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"

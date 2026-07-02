@@ -49,6 +49,17 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
+    event.shaped('sophisticatedbackpacks:backpack', [
+        'RWR',
+        'LCL',
+        'RWR'
+    ], {
+        R: 'gtceu:rubber_plate',
+        W: 'gtceu:tin_single_wire',
+        L: 'minecraft:leather',
+        C: 'minecraft:chest'
+    }).id('kubejs:sb_backpack_handcrafted')
+
     event.recipes.gtceu.assembler('sb_copper_backpack')
         .itemInputs('sophisticatedbackpacks:backpack', '4x gtceu:bronze_ingot', '4x gtceu:bronze_plate')
         .itemOutputs('sophisticatedbackpacks:copper_backpack')

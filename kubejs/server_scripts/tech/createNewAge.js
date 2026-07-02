@@ -111,12 +111,12 @@ ServerEvents.recipes(event => {
 
     event.shaped('create_new_age:carbon_brushes',
         [' C ', 'ASA', 'ACA'],
-        { C: 'gtceu:coal_dust', A: 'create:andesite_alloy', S: 'greate:steel_shaft' })
+        { C: 'gtceu:coal_dust', A: 'greate:andesite_alloy_plate', S: 'greate:steel_shaft' })
 
     event.recipes.gtceu.assembler('cna_carbon_brushes')
         .itemInputs(
             '2x gtceu:carbon_dust',
-            '2x create:andesite_alloy',
+            '2x greate:andesite_alloy_plate',
             'greate:steel_shaft',
         )
         .itemOutputs('create_new_age:carbon_brushes')
