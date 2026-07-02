@@ -30,6 +30,13 @@
     // advanced_ae: reaction_chamber machine removed entirely, no GT replacement
     "advanced_ae:reaction_chamber",
 
+    // draconicevolution: DE fusion crafting is dead (injectors removed, replaced by GT draconic_infusion_chamber); crafting core + injectors are vestigial
+    "draconicevolution:crafting_core",
+    "draconicevolution:basic_crafting_injector",
+    "draconicevolution:wyvern_crafting_injector",
+    "draconicevolution:awakened_crafting_injector",
+    "draconicevolution:chaotic_crafting_injector",
+
     // woot: stygian anvil + hammer removed, molds become useless without the anvil
     "woot_revived:stygian_anvil",
     "woot_revived:stygian_hammer",

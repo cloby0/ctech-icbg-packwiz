@@ -77,8 +77,16 @@ file = "config/ftbquests/quests/chapters/i_steam_age_authored.snbt"
 hash = "20ec23851be445d220bda81a527cfdd532499532ba93babc8312cecfd934d981"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/i_uev_authored.snbt"
+hash = "a9714ab7d9bb1245ff553710ffdf26fc42b480969806252db14a2fab90cb3f8b"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/i_uhv_authored.snbt"
 hash = "9ac1f0287b973c90ca845677248fed7825b8f50430c8c60d453315911da208ad"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/i_uiv_authored.snbt"
+hash = "e94d9a03467757aa0637df3f2d6f6c75b3d6215a91841d7327a51ca548ccb55e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uv_authored.snbt"
@@ -130,7 +138,7 @@ hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "8abbd9c839533c9d415a12826d4a29d50f101bf05c2fa2bfdb63bb4f1a1235aa"
+hash = "24f8b6bdffdb80c1d457a80380674a3022ef2bcdb7084c7c9c966686c872fb6b"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -1142,7 +1150,7 @@ hash = "432be6717a1a71cf501e6684cb2d635e76d8324c40ac7f5bf1451c15e0b3b715"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/draconic_resonance_board.png"
-hash = "f2572169544f39e6ebb21e7d9881dd1b0711d9efd17ecf3b6743fb3b744416e8"
+hash = "1a41c01e68fd38e2703371243f72aead4ffa7c1ee72c34bd8641d21b3d581fc5"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/draconic_sanctum.png"
@@ -2461,6 +2469,10 @@ file = "kubejs/server_scripts/tech/cyberware.js"
 hash = "cfdd0a26cd90fe04028b54ae4f10cb96aec3f07ba3d456f1bf24005cbe79abf9"
 
 [[files]]
+file = "kubejs/server_scripts/tech/deDraconicHardware.js"
+hash = "dad2deb5919faabcde1549a243fd9299537c6289cc617d1fc59a7d50e0aa3098"
+
+[[files]]
 file = "kubejs/server_scripts/tech/deDraconicModules.js"
 hash = "beb51a186cf447eda08f62b040efc422114dbb81dde9797887295aef9bfb6c40"
 
@@ -2558,7 +2570,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "6ac6d8966f5000b64c3530fe4a4db08f920f56611a56e1a86b933e214d28146d"
+hash = "5fe5b6cab1f7a8b882ca3493eab07e17436e8b918ffcf8d34cbc2b9403464f87"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"

@@ -1,0 +1,273 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_uiv_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "gtceu:cumium_ingot"
+	id: "2500F1C2E3D40000"
+	order_index: 11
+	quest_links: [{
+		id: "2500F1C2E3D40001"
+		linked_quest: "2400F1C2E3D40024"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2400F1C2E3D40024"]
+			hide_until_deps_complete: true
+			id: "2500F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "33554432 EU/t. The last tier. Everything ends here."
+			tasks: [{
+				id: "2500F1C2E3D40003"
+				title: "Ultra Immense Voltage!"
+				type: "checkmark"
+			}]
+			title: "Ultra Immense Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2500F1C2E3D40002"]
+			description: [
+				"Four Cataclysm bosses, four elemental nuclei: Ignitium (fire), Lacrima (water), Ancient Metal (earth), Essence of the Storm (air). Each boss drop dissolves and recrystallizes for extra copies -- see the dissolution recipes if one fight wasn't enough."
+				""
+				"Each Nucleus assembly line also wants Naquadah plates and rods plus a pair of UV Field Generators. No new machine needed, just the ingredients and patience."
+			]
+			id: "2500F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "four bosses, four elements"
+			tasks: [
+				{
+					id: "2500F1C2E3D40005"
+					item: "kubejs:fire_nucleus"
+					type: "item"
+				}
+				{
+					id: "2500F1C2E3D40006"
+					item: "kubejs:water_nucleus"
+					type: "item"
+				}
+				{
+					id: "2500F1C2E3D40007"
+					item: "kubejs:earth_nucleus"
+					type: "item"
+				}
+				{
+					id: "2500F1C2E3D40008"
+					item: "kubejs:air_nucleus"
+					type: "item"
+				}
+			]
+			title: "The Four Trials"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D40002"]
+			description: [
+				"The fifth nucleus. Cataclysm's Void Core plus the Chaos Shard already fought for back at UEV, with Naquadah parts and a UHV Field Generator."
+				""
+				"This is the one nucleus that ties directly back to the Draconic Evolution side instead of a fresh Cataclysm boss."
+			]
+			id: "2500F1C2E3D4000C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the chaos shard comes back for this one"
+			tasks: [{
+				id: "2500F1C2E3D4000D"
+				item: "kubejs:void_nucleus"
+				type: "item"
+			}]
+			title: "Void Nucleus"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2500F1C2E3D40004", "2500F1C2E3D4000C"]
+			description: [
+				"All five nuclei -- Fire, Water, Earth, Air, Void -- converge with Awakened Draconium, Gaia Ingot, Naquadah, and two UEV Field Generators into the &aElemental Convergence Matrix&r."
+				""
+				"This is half of what the final craft needs. The other half is the Cumium Ritual on the magic side."
+			]
+			id: "2500F1C2E3D40010"
+			shape: "square"
+			size: 0.75d
+			subtitle: "five bosses, one matrix"
+			tasks: [{
+				id: "2500F1C2E3D40011"
+				item: "kubejs:elemental_convergence_matrix"
+				type: "item"
+			}]
+			title: "Elemental Convergence Matrix"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D40002"]
+			description: [
+				"Three magic-machine steps in sequence: Grand Enchanting Sanctum (Draconium + Elementium + Life Essence, sourceCost 75,000) -> Runic Altar (Gaia Ingot, Wilden Tribute, Wrath and Pride Runes, 50,000 mana) -> Terra Plate (Awakened Draconium, Gaia Ingot, Chaotic Singulite, 15,000,000 mana -- the single largest mana cost in the pack)."
+				""
+				"Gestated Cumium Crystal -> Awakened Cumium Embryo -> Unforged Cumium Matrix. This is a pure magic-tree ritual; there's no tech shortcut through it."
+			]
+			id: "2500F1C2E3D40014"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "15 million mana, no shortcuts"
+			tasks: [{
+				id: "2500F1C2E3D40015"
+				item: "kubejs:unforged_cumium_matrix"
+				type: "item"
+			}]
+			title: "The Cumium Ritual"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D40010", "2500F1C2E3D40014"]
+			description: [
+				"The &6Biogenic Synthesis Chamber&r takes the Unforged Cumium Matrix and the Elemental Convergence Matrix together with Darmstadtium Dust, a UEV Field Generator, Awakened Draconium, Gaia Ingot, and Wilden Tribute, plus a UIV circuit -- and turns them, with three exotic fluids, into Cumium Dust."
+				""
+				"EBF at 14400K -- the hottest requirement in the entire pack -- finishes it into Cumium Ingot. This is the craft the whole tech tree has been building toward."
+			]
+			icon: "gtceu:cumium_ingot"
+			id: "2500F1C2E3D40018"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "the hardest craft in the pack"
+			tasks: [{
+				count: 2L
+				id: "2500F1C2E3D40019"
+				item: "gtceu:cumium_ingot"
+				type: "item"
+			}]
+			title: "Cumium Ingot"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2500F1C2E3D40018"]
+			description: [
+				"Cumium Foil and Awakened Draconium Foil, through a Chaos Harmonic Board, make the &aCumium Processor&r -- satisfies UEV-tier recipes. Assemble two into the &aCumium Processor Assembly&r, satisfying UIV."
+				""
+				"Feeds both the Draconic Reactor Core below and the Artificial Cumium Brain."
+			]
+			id: "2500F1C2E3D4001C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the last circuit line"
+			tasks: [
+				{
+					count: 4L
+					id: "2500F1C2E3D4001D"
+					item: "kubejs:cumium_processor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2500F1C2E3D4001E"
+					item: "kubejs:cumium_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "Cumium Circuits"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D4001C"]
+			description: [
+				"The Stabilizer and Injector from UEV finally have a Core to join: Cumium Ingot, Awakened Draconium, Large Chaos Frags, a Chaos Shard, a Cumium Processor Assembly, and an Ascendant Initiation Core -- yes, another Ascendant-tier magic item."
+				""
+				"Assemble all three pieces in the world to complete Draconic Evolution's own endgame power structure. Handle it with care -- it explodes spectacularly if mismanaged."
+			]
+			id: "2500F1C2E3D40020"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "handle with care -- it explodes"
+			tasks: [{
+				id: "2500F1C2E3D40021"
+				item: "draconicevolution:reactor_core"
+				type: "item"
+			}]
+			title: "The Draconic Reactor"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2300F1C2E3D40018", "2400F1C2E3D40018"]
+			description: [
+				"The Draconic Processor Mainframe (its recipe actually runs at UEV power -- easy to miss since nothing forced it earlier) and the Chaos Processor Mainframe (UIV) are both reachable now. Neither needed a new machine, just Chaos Crystal Dust and enough overclock."
+				""
+				"Batch both if they were skipped earlier. Nothing past this chapter needs them, but leaving either unmade means the circuit grid never got finished."
+			]
+			id: "2500F1C2E3D40024"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "catching up two mainframes"
+			tasks: [
+				{
+					count: 2L
+					id: "2500F1C2E3D40025"
+					item: "kubejs:draconic_processor_mainframe"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2500F1C2E3D40026"
+					item: "kubejs:chaos_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "Mainframes, Finally"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D4001C"]
+			description: [
+				"The actual top of the circuit grid. Two Cumium Processor Assemblies, a wall of Advanced SMDs (64 each of five types), Chaotic Singulite Wire, Cumium Plate and Foil, and both Chaos Matrix Fluid and Draconic Computation."
+				""
+				"No tag past this exists in the pack -- this is the final circuit, full stop."
+			]
+			id: "2500F1C2E3D40028"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the top of the grid, full stop"
+			tasks: [{
+				id: "2500F1C2E3D40029"
+				item: "kubejs:artificial_cumium_brain"
+				type: "item"
+			}]
+			title: "Artificial Cumium Brain"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2500F1C2E3D40020", "2500F1C2E3D40024", "2500F1C2E3D40028"]
+			description: [
+				"Cumium Ingot forged. Draconic Reactor standing. Every circuit line maxed out, tech and magic both. This is the end of C-Tech: ICBG's tech tree."
+				""
+				"Whatever comes next is combat, PvP, and whatever the server decides to do with players who've actually finished this."
+			]
+			id: "2500F1C2E3D4002C"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "there is no next chapter"
+			tasks: [{
+				id: "2500F1C2E3D4002D"
+				title: "Journey's End"
+				type: "checkmark"
+			}]
+			title: "Journey's End"
+			x: 0.0d
+			y: -12.0d
+		}
+	]
+	subtitle: ["The last tier. Forge the Cumium Ingot."]
+	title: "XII. Ultra Immense Voltage"
+}

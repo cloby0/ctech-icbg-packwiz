@@ -724,6 +724,17 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
+    event.recipes.gtceu.assembler('ctech:broom_thruster_brush')
+        .itemInputs(
+            '1x hexerei:broom_brush',
+            '2x gtceu:steel_plate',
+            '1x gtceu:bronze_gear',
+            '1x gtceu:mv_electric_motor'
+        )
+        .itemOutputs('1x hexerei:broom_thruster_brush')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
     event.recipes.gtceu.biogenic_synthesis('ctech:cumium_synthesis')
         .itemInputs(
             '1x kubejs:unforged_cumium_matrix',

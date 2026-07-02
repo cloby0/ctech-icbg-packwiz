@@ -1,0 +1,240 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i_uev_authored"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: true
+	icon: "draconicevolution:chaos_shard"
+	id: "2400F1C2E3D40000"
+	order_index: 10
+	quest_links: [{
+		id: "2400F1C2E3D40001"
+		linked_quest: "2300F1C2E3D4001C"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2300F1C2E3D4001C"]
+			hide_until_deps_complete: true
+			id: "2400F1C2E3D40002"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "8388608 EU/t. Time to go kill a dragon-god."
+			tasks: [{
+				id: "2400F1C2E3D40003"
+				title: "Ultra Excessive Voltage!"
+				type: "checkmark"
+			}]
+			title: "Ultra Excessive Voltage!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2400F1C2E3D40002"]
+			description: [
+				"Chaos Shards drop from the &cChaos Guardian&r in the Chaos Island dimension -- Draconic Evolution's own boss fight, untouched by any GT recipe. Bring Awakened-tier gear; this one hits harder than the Ender Dragon."
+				""
+				"Macerating a Chaos Shard yields Chaos Crystal Dust. Everything downstream in this chapter traces back to this fight."
+			]
+			id: "2400F1C2E3D40004"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the boss fight, not a recipe"
+			tasks: [{
+				count: 4L
+				id: "2400F1C2E3D40005"
+				item: "draconicevolution:chaos_shard"
+				type: "item"
+			}]
+			title: "Chaos Shard"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D40002"]
+			description: [
+				"This is an &5Ascendant-tier magic item&r (`magic/ascendant.js`) -- deeper into the magic tree than Prophet. If the magic side hasn't pushed past Sage and Prophet yet, this is where it has to catch up."
+				""
+				"Required directly for the Chaos Harmonic Board below. No tech-only substitute exists for this one."
+			]
+			id: "2400F1C2E3D40008"
+			shape: "square"
+			size: 0.75d
+			subtitle: "ascendant-tier, no tech shortcut"
+			tasks: [{
+				count: 2L
+				id: "2400F1C2E3D40009"
+				item: "kubejs:stabilized_chaos_crystal"
+				type: "item"
+			}]
+			title: "Stabilized Chaos Crystal"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2400F1C2E3D40004", "2400F1C2E3D40008"]
+			description: [
+				"Neutronium Wafers, Awakened Draconium Foil, a Stabilized Chaos Crystal, and Chaos Crystal Dust assemble in a Cleanroom into the &aChaos Harmonic Board&r -- the chaos theme's answer to the Draconic Resonance Board."
+				""
+				"Chaos Matrix Fluid (Chaos Shard + Gaia Spirit Dust + Stellar Plasma + Draconic Computation, Chemical Reactor) feeds most of the recipes downstream too -- worth automating alongside this."
+			]
+			id: "2400F1C2E3D4000C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the chaos theme's resonance board"
+			tasks: [{
+				count: 2L
+				id: "2400F1C2E3D4000D"
+				item: "kubejs:chaos_harmonic_board"
+				type: "item"
+			}]
+			title: "Chaos Harmonic Board"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D4000C"]
+			description: [
+				"Chaos Crystal Dust, Awakened Draconium Foil, a Chaos Harmonic Board, and Advanced SMDs, run through the Circuit Assembler. Satisfies UV-tier recipes -- same three-tiers-behind deviation as the draconic line."
+				""
+				"No new machine needed. Just the ingredients and enough overclock."
+			]
+			id: "2400F1C2E3D40010"
+			shape: "square"
+			size: 0.75d
+			subtitle: "the chaos line starts here"
+			tasks: [{
+				count: 4L
+				id: "2400F1C2E3D40011"
+				item: "kubejs:chaos_processor"
+				type: "item"
+			}]
+			title: "Chaos Processor"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2400F1C2E3D40010"]
+			description: [
+				"Chaos Matrix Fluid gates this recipe, same role Awakened Draconium Foil played for the draconic line's assembly rung."
+				""
+				"Satisfies UHV-tier recipes. Crafts up into the Processor Supercomputer below."
+			]
+			id: "2400F1C2E3D40014"
+			shape: "square"
+			size: 0.75d
+			subtitle: "satisfies UHV, craftable here"
+			tasks: [{
+				count: 2L
+				id: "2400F1C2E3D40015"
+				item: "kubejs:chaos_processor_assembly"
+				type: "item"
+			}]
+			title: "Chaos Processor Assembly"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D40014", "2400F1C2E3D4000C"]
+			description: [
+				"An Assembly Line recipe: Awakened Framework Frame, Chaos Processor Assembly, four Chaos Harmonic Boards, a wall of Advanced SMDs, an Awakened Core, and both Chaos Matrix Fluid and Draconic Computation."
+				""
+				"This is as far as the chaos line goes at UEV -- the Mainframe rung runs at UIV EUt. Satisfies UEV-tier recipes; it's the ceiling here, same deviation the draconic line hit at UHV."
+			]
+			id: "2400F1C2E3D40018"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "the ceiling here -- mainframe waits for UIV"
+			tasks: [{
+				count: 2L
+				id: "2400F1C2E3D40019"
+				item: "kubejs:chaos_processor_supercomputer"
+				type: "item"
+			}]
+			title: "Chaos Processor Supercomputer"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2400F1C2E3D40004"]
+			description: [
+				"The Draconic Reactor's Stabilizer and Injector are both buildable now -- Wyvern Core -> Awakened Core -> Draconic Energy Core -> Chaotic Core, all GT-craftable assembler recipes, no boss fight needed for the core ladder itself."
+				""
+				"The Reactor Core (the third piece) needs a Cumium Processor Assembly and stays out of reach until UIV. Build these two now so the full reactor is one step away next chapter."
+			]
+			id: "2400F1C2E3D4001C"
+			shape: "square"
+			size: 0.75d
+			subtitle: "two of three reactor pieces"
+			tasks: [
+				{
+					id: "2400F1C2E3D4001D"
+					item: "draconicevolution:reactor_stabilizer"
+					type: "item"
+				}
+				{
+					id: "2400F1C2E3D4001E"
+					item: "draconicevolution:reactor_injector"
+					type: "item"
+				}
+			]
+			title: "Draconic Reactor Components"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D40002"]
+			description: [
+				"Awakened Draconium Plate, Terrasteel Ingot, Wilden Tribute, Gaia Ingot, Abstract Elastomer, and a UEV circuit assemble into the structural block for the &6Biogenic Synthesis Chamber&r (Void Crucible)."
+				""
+				"This is a straight tech+magic fusion recipe -- Terrasteel and Gaia Ingot both come from the Botania side of the magic tree. No pure-tech substitute exists here either."
+			]
+			id: "2400F1C2E3D40020"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "botania meets gtceu, no way around it"
+			tasks: [{
+				count: 4L
+				id: "2400F1C2E3D40021"
+				item: "kubejs:biogenic_synthesis_casing"
+				type: "item"
+			}]
+			title: "Biogenic Synthesis Casing"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D40018", "2400F1C2E3D4001C"]
+			description: [
+				"&aCumium&r is UIV's structural material -- confirmed straight from `uiv_machine_casing_recipe` (8x cumium_plate), not guessed. The &aChaos Processor Supercomputer&r is the best circuit reachable here; the Mainframe stays out of reach until UIV."
+				""
+				"Both should be in steady production before leaving. UIV is next -- the Reactor Core, the cumium line, and the Artificial Cumium Brain wait there. This pack's endgame keeps demanding both trees; that doesn't change from here."
+			]
+			icon: "gtceu:cumium_plate"
+			id: "2400F1C2E3D40024"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "see you never, 8388608 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "2400F1C2E3D40025"
+					item: "gtceu:cumium_plate"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2400F1C2E3D40026"
+					item: "kubejs:chaos_processor_supercomputer"
+					type: "item"
+				}
+			]
+			title: "Leaving UEV"
+			x: 0.0d
+			y: -12.0d
+		}
+	]
+	subtitle: ["Kill the Chaos Guardian. Feed it to the machine."]
+	title: "XI. Ultra Excessive Voltage"
+}
