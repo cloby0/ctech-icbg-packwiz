@@ -2745,6 +2745,10 @@ file = "kubejs/startup_scripts/silentcompatRemoveWorldgen.js"
 hash = "5880dcc5802a8f262da0b4ed744a80e6dd9ee821b2eda932974b7a8552abc52a"
 
 [[files]]
+file = "mods/ASCP(R1.1.1)[1.20.1].jar"
+hash = "34cf33958a8fd1cd8cc6cc453d5c15d95a16cef1f6f8be59c058787aad6c61d7"
+
+[[files]]
 file = "mods/CyberSpells-1.1.jar"
 hash = "b912cf2b8f80ce9b13059e0fc26c40b6ee5aaad967c86b392c676fec4e023d41"
 
@@ -2891,11 +2895,6 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
-metafile = true
-
-[[files]]
-file = "mods/armor-stand-s-custom-poses.pw.toml"
-hash = "7811a0059ee0a22300e541bbf4a793bacaf5db39cd292bfab7912b1cca31a36f"
 metafile = true
 
 [[files]]
@@ -4224,9 +4223,8 @@ hash = "ad017c00411e9b3cd8564d913e568636270ffd50bc822c919ce1db5ba0dbe126"
 metafile = true
 
 [[files]]
-file = "mods/sandfilter.pw.toml"
-hash = "c77f709f4cf88bcaada0369e9d2a033dde9e7a04a4741bf9d8c53cecf18b0fe1"
-metafile = true
+file = "mods/sandfilter-1.0.2.jar"
+hash = "0b3d0b48aafa54aa17c747bb2db546551e647b96325feeb1a6a5e286bb9f37ba"
 
 [[files]]
 file = "mods/sbw-vintage-vehicle-pack.pw.toml"
