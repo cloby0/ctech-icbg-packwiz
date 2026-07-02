@@ -181,6 +181,10 @@ file = "config/justparry/justparry_server.toml"
 hash = "b9dca3c70114ffdc349bd4ec4290c1b1e3f2ba2ab15d53d57b7316baed290b91"
 
 [[files]]
+file = "config/l2hostility-common.toml"
+hash = "adf0a706e3d66083de246499ab589fd26ffd6334e21a3cc1037a9a37175af975"
+
+[[files]]
 file = "config/lootbeams-client.toml"
 hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
 
