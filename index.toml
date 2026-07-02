@@ -4219,10 +4219,6 @@ hash = "ad017c00411e9b3cd8564d913e568636270ffd50bc822c919ce1db5ba0dbe126"
 metafile = true
 
 [[files]]
-file = "mods/sandfilter-1.0.2.jar"
-hash = "0b3d0b48aafa54aa17c747bb2db546551e647b96325feeb1a6a5e286bb9f37ba"
-
-[[files]]
 file = "mods/sbw-vintage-vehicle-pack.pw.toml"
 hash = "af4e682df7b56ad75b607194a760fefb2cdaf160a57c2765c201926615966c5d"
 metafile = true
