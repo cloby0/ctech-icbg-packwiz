@@ -135,9 +135,17 @@ function addImbuementRecipe(event, crecipe) {
 
 global.addImbuementRecipe = addImbuementRecipe
 
+const _imbuementMirrorSkip = [
+    'ars_nouveau:fire_essence',
+    'ars_nouveau:earth_essence',
+    'ars_nouveau:air_essence',
+    'ars_nouveau:water_essence'
+]
+
 ServerEvents.recipes(event => {
     event.forEachRecipe({ type: 'ars_nouveau:imbuement' }, recipe => {
         const crecipe = JSON.parse(recipe.json.toString())
+        if (_imbuementMirrorSkip.indexOf(crecipe.output) !== -1) return
         crecipe.skipChamber = true
         addImbuementRecipe(event, crecipe)
     })

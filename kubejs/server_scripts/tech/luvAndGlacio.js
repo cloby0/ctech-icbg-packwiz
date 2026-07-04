@@ -91,4 +91,50 @@ ServerEvents.recipes(event => {
         "result": {"count": 1, "id": "ad_astra:tier_4_rocket"}
     }).id('kubejs:gt_tier_4_rocket')
 
+    event.remove({ id: 'ad_astra:jet_suit_helmet' })
+    event.recipes.gtceu.assembler('gt_jet_suit_helmet')
+        .itemInputs(
+            '1x ad_astra:netherite_space_helmet',
+            '4x ad_astra:calorite_plate',
+            '1x minecraft:tinted_glass'
+        )
+        .itemOutputs('1x ad_astra:jet_suit_helmet')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.remove({ id: 'ad_astra:jet_suit' })
+    event.recipes.gtceu.assembler('gt_jet_suit')
+        .itemInputs(
+            '1x ad_astra:netherite_space_suit',
+            '2x ad_astra:calorite_plate',
+            '2x ad_astra:calorite_tank',
+            '2x ad_astra:etrionic_capacitor',
+            '1x ad_astra:calorite_engine'
+        )
+        .itemOutputs('1x ad_astra:jet_suit')
+        .duration(30 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.remove({ id: 'ad_astra:jet_suit_pants' })
+    event.recipes.gtceu.assembler('gt_jet_suit_pants')
+        .itemInputs(
+            '1x ad_astra:netherite_space_pants',
+            '2x ad_astra:calorite_plate',
+            '2x ad_astra:calorite_block'
+        )
+        .itemOutputs('1x ad_astra:jet_suit_pants')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.remove({ id: 'ad_astra:jet_suit_boots' })
+    event.recipes.gtceu.assembler('gt_jet_suit_boots')
+        .itemInputs(
+            '1x ad_astra:netherite_space_boots',
+            '2x ad_astra:calorite_plate',
+            '2x ad_astra:calorite_block'
+        )
+        .itemOutputs('1x ad_astra:jet_suit_boots')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.LuV])
+
 })

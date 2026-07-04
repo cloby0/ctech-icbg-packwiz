@@ -180,4 +180,54 @@ ServerEvents.recipes(event => {
         .duration(10*20)
         .EUt(GTValues.VA[GTValues.MV])
 
+    event.remove({ id: 'ad_astra:oxygen_gear' })
+    event.recipes.gtceu.assembler('gt_oxygen_gear')
+        .itemInputs('4x gtceu:steel_plate', '3x gtceu:steel_rod')
+        .itemOutputs('1x ad_astra:oxygen_gear')
+        .duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.remove({ id: 'ad_astra:space_helmet' })
+    event.recipes.gtceu.assembler('gt_space_helmet')
+        .itemInputs(
+            '1x legendarysurvivaloverhaul:snow_helmet',
+            '4x gtceu:steel_plate',
+            '1x minecraft:glass_pane'
+        )
+        .itemOutputs('1x ad_astra:space_helmet')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.remove({ id: 'ad_astra:space_suit' })
+    event.recipes.gtceu.assembler('gt_space_suit')
+        .itemInputs(
+            '1x legendarysurvivaloverhaul:snow_chestplate',
+            '4x gtceu:steel_plate',
+            '1x ad_astra:oxygen_gear',
+            '2x ad_astra:gas_tank'
+        )
+        .itemOutputs('1x ad_astra:space_suit')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.remove({ id: 'ad_astra:space_pants' })
+    event.recipes.gtceu.assembler('gt_space_pants')
+        .itemInputs(
+            '1x legendarysurvivaloverhaul:snow_leggings',
+            '5x gtceu:steel_plate'
+        )
+        .itemOutputs('1x ad_astra:space_pants')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.remove({ id: 'ad_astra:space_boots' })
+    event.recipes.gtceu.assembler('gt_space_boots')
+        .itemInputs(
+            '1x legendarysurvivaloverhaul:snow_boots',
+            '2x gtceu:steel_plate'
+        )
+        .itemOutputs('1x ad_astra:space_boots')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
 });

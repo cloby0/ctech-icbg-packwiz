@@ -962,7 +962,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "95c361a1165c2895f4e9d7fd2966953d85f426a20a389ef2a3e1b133ca38e3fd"
+hash = "acab57725a031e21ebd6ac6d6e97e37cbe05443005a7f0fd9bf334b15dfde052"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -2341,10 +2341,6 @@ file = "kubejs/server_scripts/itemTags.js"
 hash = "4ed4e30447c00ecae4ad30d668089109c4782ee81b07a2fe28344ab2db9f1ac1"
 
 [[files]]
-file = "kubejs/server_scripts/kiln.js"
-hash = "4e9ba3c38cfe2bea4714be0da971719c7d112f9a21160eb69b22e4ef3df60313"
-
-[[files]]
 file = "kubejs/server_scripts/lootTables.js"
 hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
@@ -2390,7 +2386,7 @@ hash = "8782069799b0694acef84d9af8b9fca26d513f838af82f7caa14fef46ab633a6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "151b049a89be1ab83d4429d01e976d0431d1e3fbc9162229852ca8a93fa46ad5"
+hash = "8d425001b0b7ac797f974aac678cb1009bf402b1ec75f5d20057eaedacbb8f7f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -2414,7 +2410,7 @@ hash = "e17af75be591a75ecad2e53524ef6769c0e6c0d9391ae3491435bce6ad83c11d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "ac317fed2878ed9e27a5401aa77422de3a1aa69e5dbf3870dfb8625b6e25c7b9"
+hash = "987f34ebf348b3ae29b5dab886745d58b3567583e6cc34b89ddc64728da9ef29"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
@@ -2538,7 +2534,7 @@ hash = "4c5fa22d4f983e19e636eb055e2382dbf3c04dc12ce4e00ece29d117e6e8b0e2"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
-hash = "0e4f9e1efc039c96239461241a261d432d30dc64ec4dc1dd3d03a1cdf5940979"
+hash = "4ecb388f2f213851f684a06878c950d830a7607c51d810c99af513750cbec20b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -2546,7 +2542,7 @@ hash = "8ce680320ca1434b24330adffa429faba1ce04107ec621b64b49f34ebbe435bb"
 
 [[files]]
 file = "kubejs/server_scripts/tech/evAndMars.js"
-hash = "fa5b68775f4751e607559f3bfab5a0c3116ab93e8283218b933b088ae5120f71"
+hash = "f9cc5f408b19df860bd6c8a693fe734886ecca02efa137c10c97dbc4e19c8b10"
 
 [[files]]
 file = "kubejs/server_scripts/tech/fracturepoint.js"
@@ -2578,7 +2574,7 @@ hash = "3f655c13793e8bff8a0f0156219690a5a413b7cd711346fb74c8837a16daa1f1"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
-hash = "3a547d37109e64158c4279ce7b25adeaaaec3f8832cf4baadc1ed94ad4be9aaf"
+hash = "4a9386cda703278cabebc0edd7683fed934b87d259c41be248ccd15853a38bd8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ivAndVenus.js"
@@ -2594,11 +2590,11 @@ hash = "2c16fe64d4b88009704b2de10df1242ef9bb1e752dd2bde218d903be9ab3b2f2"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
-hash = "332472e9d7d660df109620716ccdd3a2e97934d77e429f2ab84f273ff5c5bbe8"
+hash = "08b7202e6926d5edf5e7d6b83866010c4ecda43947e72d48124b3876c92ee95f"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
-hash = "1e0ad8353e3f8d5fbee16c47630da63caffeb96b4fa02124004e790fb9ecf920"
+hash = "22e1ed411d5442fdaffff9bbbfd159eff5245db916c2c90c732eb3e9aeff9e86"
 
 [[files]]
 file = "kubejs/server_scripts/tech/paper.js"
@@ -2663,10 +2659,6 @@ hash = "9dfa5844e4f1f6d9b64f6b0be4bceaf05decb3e27c786acf15f155724bd0ba47"
 [[files]]
 file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
 hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
-
-[[files]]
-file = "kubejs/startup_scripts/customMachines/kiln.js"
-hash = "d78b7c8c604898be485813fbb0b90fac2f5fdf8f8a0c571014de23a2d79dcb12"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"

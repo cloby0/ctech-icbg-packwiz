@@ -21,10 +21,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:fire_essence' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:earth_essence' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:air_essence' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:water_essence' });
 
     event.custom({
         "type": "hexerei:mixingcauldron",
@@ -208,6 +204,13 @@ ServerEvents.recipes(event => {
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"
     });
+
+    addImbuementRecipe(event, {
+        input: 'gtceu:glass_dust',
+        output: 'minecraft:glass',
+        source: 100,
+        pedestalItems: []
+    })
 
     event.remove({ id: 'reliquary:fortune_coin' })
     event.shaped(

@@ -138,4 +138,49 @@ ServerEvents.recipes(event => {
         "result": {"count": 1, "id": "ad_astra:tier_2_rocket"}
     }).id('kubejs:gt_tier_2_rocket')
 
+    event.remove({ id: 'ad_astra:netherite_space_helmet' })
+    event.recipes.gtceu.assembler('gt_netherite_space_helmet')
+        .itemInputs(
+            '1x ad_astra:space_helmet',
+            '4x ad_astra:ostrum_plate',
+            '1x minecraft:glass'
+        )
+        .itemOutputs('1x ad_astra:netherite_space_helmet')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.remove({ id: 'ad_astra:netherite_space_suit' })
+    event.recipes.gtceu.assembler('gt_netherite_space_suit')
+        .itemInputs(
+            '1x ad_astra:space_suit',
+            '4x ad_astra:ostrum_plate',
+            '1x ad_astra:oxygen_gear',
+            '2x ad_astra:large_gas_tank'
+        )
+        .itemOutputs('1x ad_astra:netherite_space_suit')
+        .duration(25 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.remove({ id: 'ad_astra:netherite_space_pants' })
+    event.recipes.gtceu.assembler('gt_netherite_space_pants')
+        .itemInputs(
+            '1x ad_astra:space_pants',
+            '2x ad_astra:ostrum_plate',
+            '2x ad_astra:desh_plate'
+        )
+        .itemOutputs('1x ad_astra:netherite_space_pants')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.remove({ id: 'ad_astra:netherite_space_boots' })
+    event.recipes.gtceu.assembler('gt_netherite_space_boots')
+        .itemInputs(
+            '1x ad_astra:space_boots',
+            '2x ad_astra:ostrum_plate',
+            '2x ad_astra:desh_plate'
+        )
+        .itemOutputs('1x ad_astra:netherite_space_boots')
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
 })

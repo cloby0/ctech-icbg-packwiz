@@ -28,6 +28,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ancient_aether:enchanting_table_from_gravitite'})
     event.remove({ id: 'deep_aether:crystal_brewing_stand'})
         
+    event.remove({ id: 'pamhc2crops:bread_grain' });
+
     event.remove({ id: 'quark:building/crafting/furnaces/blackstone_smoker' });
     event.remove({ id: 'quark:building/crafting/furnaces/deepslate_smoker' });
     event.remove({ output: "create:electron_tube"});
