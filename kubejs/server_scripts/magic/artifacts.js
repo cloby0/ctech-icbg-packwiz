@@ -18,16 +18,16 @@ ServerEvents.recipes(event => {
     ], { 'W': 'minecraft:white_wool', 'S': 'minecraft:string', 'T': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('artifacts:flippers', 1), [
-        'KLK', 'KSK', 'KLK'
-    ], { 'K': 'minecraft:kelp', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust' })
+        'KWK', 'KSK', 'KLK'
+    ], { 'K': 'minecraft:kelp', 'W': 'ars_nouveau:water_essence', 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather' })
 
     event.shaped(Item.of('artifacts:snorkel', 1), [
         ' I ', 'IGI', 'LSL'
     ], { 'I': 'minecraft:iron_ingot', 'G': 'minecraft:glass_pane', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('artifacts:rooted_boots', 1), [
-        'VGV', 'LSL', 'LGL'
-    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust' })
+        'VGV', 'LSL', 'LEL'
+    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'E': 'ars_nouveau:earth_essence' })
 
     event.shaped(Item.of('artifacts:charm_of_sinking', 1), [
         'IGI', 'GSG', 'IGI'
