@@ -186,6 +186,26 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
+    // Four elements combine into a no-steel Nether igniter (magic path; vanilla flint_and_steel untouched)
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:lava" },
+        "ingredients": [
+            { "item": "ars_nouveau:fire_essence" },
+            { "item": "ars_nouveau:fire_essence" },
+            { "item": "ars_nouveau:water_essence" },
+            { "item": "ars_nouveau:earth_essence" },
+            { "item": "ars_nouveau:air_essence" },
+            { "item": "minecraft:blaze_powder" },
+            { "item": "minecraft:coal" },
+            { "item": "minecraft:coal" }
+        ],
+        "output": { "item": "minecraft:fire_charge", "count": 4 },
+        "liquidOutput": { "fluid": "minecraft:lava" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:water" },
