@@ -261,4 +261,22 @@ ServerEvents.recipes(event => {
                      D: '#minecraft:logs'
                  }
     )
+
+    // First spellbook = bind the four elements around a book. Removal by output covers the mod's default recipe id.
+    event.remove({ output: 'irons_spellbooks:iron_spell_book' });
+    event.shaped(
+        Item.of('irons_spellbooks:iron_spell_book', 1),
+        [
+            ' F ',
+            'WBA',
+            ' E '
+        ],
+        {
+            F: 'ars_nouveau:fire_essence',
+            W: 'ars_nouveau:water_essence',
+            A: 'ars_nouveau:air_essence',
+            E: 'ars_nouveau:earth_essence',
+            B: 'minecraft:book'
+        }
+    );
 });
