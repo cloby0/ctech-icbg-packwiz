@@ -128,12 +128,10 @@ ServerEvents.recipes(event => {
         sourceCost: 2000
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:stick', 'minecraft:stick', 'minecraft:iron_ingot', 'minecraft:string', 'gtceu:luminessence_dust'],
-        output: 'artifacts:umbrella',
-        sourceCost: 1500
-    })
+    // Pulled to Hobbyist: air essence binds a slow-fall umbrella (was luminessence-tier enchanting)
+    event.shaped(Item.of('artifacts:umbrella', 1), [
+        'LAL', 'SIS', ' T '
+    ], { 'L': 'minecraft:leather', 'A': 'ars_nouveau:air_essence', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick' })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
