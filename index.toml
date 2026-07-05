@@ -1,62 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".superpowers/sdd/progress.md"
-hash = "bd32584ca8cca03b77ef5fadeaac58427fdc38e34400e2eab997fc3eb703768b"
-
-[[files]]
-file = ".superpowers/sdd/review-211463f..658f94b.diff"
-hash = "f19748ba4958ed4e1c0ae6f080042fa6afa51d079b28c4d44b7c9ac80a822851"
-
-[[files]]
-file = ".superpowers/sdd/review-504f055..211463f.diff"
-hash = "9cd0adc4fe20029cebf40e847fc4ba426918400e1967b2b1dbaa970caaefb987"
-
-[[files]]
-file = ".superpowers/sdd/review-5172a16..658f94b.diff"
-hash = "7956eb663b81fdfd06ba823d1c4ec263dc62760e3419df27059664e9ee0baea1"
-
-[[files]]
-file = ".superpowers/sdd/review-5172a16..d00788c.diff"
-hash = "a7f1102226e3481cc281b43c4f7b23246a8c7e5c5f7ebb6aab852fd4832ad544"
-
-[[files]]
-file = ".superpowers/sdd/review-d00788c..504f055.diff"
-hash = "52511feb433a7d35404e98cf6abb63530c8a7e0e5fd57f42c9e7143c7b73bcd6"
-
-[[files]]
-file = ".superpowers/sdd/task-1-brief.md"
-hash = "5ea5acdd8abaffa6556b275f92e1eb4007d56a193d053b331563bb803589cc74"
-
-[[files]]
-file = ".superpowers/sdd/task-1-report.md"
-hash = "15c9be902ae3981b8013964307c34dadf85542f39b246a4a6516e8bf74678bd2"
-
-[[files]]
-file = ".superpowers/sdd/task-2-brief.md"
-hash = "352b9a3a585bd7146e33a2d6153f301e51861b7128332d4495f5223c7d432b2a"
-
-[[files]]
-file = ".superpowers/sdd/task-2-report.md"
-hash = "4c0758e03d78b7f2f32cba3fa83cb4f394d626017fd70756527d208d4273f558"
-
-[[files]]
-file = ".superpowers/sdd/task-3-brief.md"
-hash = "3f9f7c4a2eb3d5c2c278b8661f4df6a757d1f25df8da7545e0b62f989fd71780"
-
-[[files]]
-file = ".superpowers/sdd/task-3-report.md"
-hash = "c71900f61fcbb344c360233fb29b53d9bd637c6c1a45e83600d8ef5bd579826d"
-
-[[files]]
-file = ".superpowers/sdd/task-4-brief.md"
-hash = "727634544e8aea5a541c86098a761dec40013b3735b211d185d9f811ff69e84d"
-
-[[files]]
-file = ".superpowers/sdd/task-4-report.md"
-hash = "515817e605254cec160bbe3f34983a7584ac875d7b1b886b5d9c6c3460f8ceb4"
-
-[[files]]
 file = "config/aether-common.toml"
 hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
