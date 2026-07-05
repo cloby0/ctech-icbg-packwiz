@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'mysticalagradditions:essence/gaia_spirit' })
 
+    // === Primal/Wilden line: living-beast alt spine, independent of Gaia ===
+    // Wilden drops -> wilden_alloy dust -> (auto furnace smelt) -> ingot + forms
+    addEnchantingRecipe(event, {
+        reagent: 'ars_nouveau:wilden_tribute',
+        pedestalItems: [
+            'ars_nouveau:wilden_horn', 'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_spike', 'ars_nouveau:wilden_spike',
+            'ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_shard',
+            '#kubejs:earth_essences', '#kubejs:fire_essences'
+        ],
+        output: 'gtceu:wilden_alloy_dust',
+        sourceCost: 30000
+    })
+
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:vengeful_gaia_spirit' },
         mana: 8000,

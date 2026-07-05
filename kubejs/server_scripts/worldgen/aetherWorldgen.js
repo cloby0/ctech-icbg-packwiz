@@ -190,4 +190,28 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(5)
         )
     })
+
+    event.add("kubejs:diamond_vein_ae", vein => {
+        vein.weight(50)
+        vein.clusterSize(35)
+        vein.density(0.6)
+        vein.discardChanceOnAirExposure(0)
+
+        vein.layer("holystone")
+        vein.dimensions("aether:the_aether")
+        vein.biomes("#aether:is_aether")
+
+        vein.heightRangeUniform(16, 64)
+
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.Diamond, 4, 40, 95)
+            .withBlock(GTMaterials.Graphite, 3, 20, 55)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Diamond)
+            .placement("above")
+            .density(0.3)
+            .radius(5)
+        )
+    })
 })

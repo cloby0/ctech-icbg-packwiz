@@ -74,4 +74,11 @@ ServerEvents.recipes(event => {
         'minecraft:tnt',
         'gtceu:powderbarrel'
     )
+
+    event.remove({ output: 'pamhc2foodcore:saltitem' });
+    event.replaceInput(
+        { not: { mod: 'gtceu' } },
+        'pamhc2foodcore:saltitem',
+        'gtceu:tiny_salt_dust'
+    );
 })

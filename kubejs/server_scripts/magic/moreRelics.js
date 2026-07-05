@@ -139,28 +139,28 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['botania:gaia_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium'],
+        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium'],
         output: 'morerelics:crown_of_the_legend',
         sourceCost: 25000
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block'],
+        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block'],
         output: 'morerelics:king_crimson',
         sourceCost: 30000
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block'],
+        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block'],
         output: 'morerelics:made_in_heaven',
         sourceCost: 35000
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block'],
+        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block'],
         output: 'morerelics:wonder_of_u',
         sourceCost: 40000
     })

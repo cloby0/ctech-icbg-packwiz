@@ -152,15 +152,16 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:arcane_pedestal', 1),
         [
-            'B B',
-            'ACA',
-            'ACA'
+            'ZPZ',
+            'ASA',
+            'AAA'
         ],
         {
-            A: '#forge:rods/gold',
-            B: 'gtceu:source_plate',
-            C: 'ars_nouveau:sourcestone'
-    });
+            A: 'ars_nouveau:archwood_planks',
+            S: '#forge:tools/saws',
+            P: 'minecraft:purple_carpet',
+            Z: 'gtceu:zanite_screw'
+        }).damageIngredient(Ingredient.of('#forge:tools/saws'));
 
     event.shaped(
         Item.of('ars_nouveau:arcane_core', 1),
@@ -225,6 +226,34 @@ ServerEvents.recipes(event => {
         output: 'gtceu:holy_silver_ingot',
         sourceCost: 3000
     })
+
+    // === Skyforged line: Aether/Valkyrie alt to Holy Silver, independent of holy silver ===
+    // Skyjade + Valkyrie medals -> skyforged dust -> (auto furnace smelt) -> ingot + forms
+    addEnchantingRecipe(event, {
+        reagent: 'deep_aether:skyjade',
+        pedestalItems: ['aether:victory_medal', 'aether:victory_medal', '#kubejs:air_essences', '#kubejs:water_essences'],
+        output: 'gtceu:skyforged_dust',
+        sourceCost: 2500
+    })
+
+    // Combat endpoint: craftable Valkyrie gear from skyforged forms
+    event.shaped('aether:valkyrie_lance', [
+        ' P ',
+        ' R ',
+        ' R '
+    ], { P: 'gtceu:skyforged_plate', R: 'gtceu:skyforged_rod' })
+
+    event.shaped('aether:valkyrie_axe', [
+        'PP',
+        'PR',
+        ' R'
+    ], { P: 'gtceu:skyforged_plate', R: 'gtceu:skyforged_rod' })
+
+    event.shaped('aether:valkyrie_chestplate', [
+        'P P',
+        'PMP',
+        'PPP'
+    ], { P: 'gtceu:skyforged_plate', M: 'aether:victory_medal' })
 
     addEnchantingRecipe(event, {
         reagent: { item: 'kubejs:sacred_ambrosium_shard' },

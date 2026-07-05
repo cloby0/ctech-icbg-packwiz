@@ -1,6 +1,62 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".superpowers/sdd/progress.md"
+hash = "bd32584ca8cca03b77ef5fadeaac58427fdc38e34400e2eab997fc3eb703768b"
+
+[[files]]
+file = ".superpowers/sdd/review-211463f..658f94b.diff"
+hash = "f19748ba4958ed4e1c0ae6f080042fa6afa51d079b28c4d44b7c9ac80a822851"
+
+[[files]]
+file = ".superpowers/sdd/review-504f055..211463f.diff"
+hash = "9cd0adc4fe20029cebf40e847fc4ba426918400e1967b2b1dbaa970caaefb987"
+
+[[files]]
+file = ".superpowers/sdd/review-5172a16..658f94b.diff"
+hash = "7956eb663b81fdfd06ba823d1c4ec263dc62760e3419df27059664e9ee0baea1"
+
+[[files]]
+file = ".superpowers/sdd/review-5172a16..d00788c.diff"
+hash = "a7f1102226e3481cc281b43c4f7b23246a8c7e5c5f7ebb6aab852fd4832ad544"
+
+[[files]]
+file = ".superpowers/sdd/review-d00788c..504f055.diff"
+hash = "52511feb433a7d35404e98cf6abb63530c8a7e0e5fd57f42c9e7143c7b73bcd6"
+
+[[files]]
+file = ".superpowers/sdd/task-1-brief.md"
+hash = "5ea5acdd8abaffa6556b275f92e1eb4007d56a193d053b331563bb803589cc74"
+
+[[files]]
+file = ".superpowers/sdd/task-1-report.md"
+hash = "15c9be902ae3981b8013964307c34dadf85542f39b246a4a6516e8bf74678bd2"
+
+[[files]]
+file = ".superpowers/sdd/task-2-brief.md"
+hash = "352b9a3a585bd7146e33a2d6153f301e51861b7128332d4495f5223c7d432b2a"
+
+[[files]]
+file = ".superpowers/sdd/task-2-report.md"
+hash = "4c0758e03d78b7f2f32cba3fa83cb4f394d626017fd70756527d208d4273f558"
+
+[[files]]
+file = ".superpowers/sdd/task-3-brief.md"
+hash = "3f9f7c4a2eb3d5c2c278b8661f4df6a757d1f25df8da7545e0b62f989fd71780"
+
+[[files]]
+file = ".superpowers/sdd/task-3-report.md"
+hash = "c71900f61fcbb344c360233fb29b53d9bd637c6c1a45e83600d8ef5bd579826d"
+
+[[files]]
+file = ".superpowers/sdd/task-4-brief.md"
+hash = "727634544e8aea5a541c86098a761dec40013b3735b211d185d9f811ff69e84d"
+
+[[files]]
+file = ".superpowers/sdd/task-4-report.md"
+hash = "515817e605254cec160bbe3f34983a7584ac875d7b1b886b5d9c6c3460f8ceb4"
+
+[[files]]
 file = "config/aether-common.toml"
 hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
@@ -186,7 +242,7 @@ hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "24f8b6bdffdb80c1d457a80380674a3022ef2bcdb7084c7c9c966686c872fb6b"
+hash = "9cf17d1f36936c4f755283d754a8db803431f4ed5643aea137bf3b7372712868"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -962,7 +1018,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "acab57725a031e21ebd6ac6d6e97e37cbe05443005a7f0fd9bf334b15dfde052"
+hash = "4f91a1775cdf93696e2f0cf1ae711d5794db5feac97e323a1d7ddf904bb4aabd"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -2338,7 +2394,7 @@ hash = "e31519ae3cf4e89ab76a27b9a755297b46d52a7244c5d2715a939d1832eb5aff"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "4ed4e30447c00ecae4ad30d668089109c4782ee81b07a2fe28344ab2db9f1ac1"
+hash = "861a2f47575b2db2fa82a7d4d8d55db186e74fe127e840ca8e39c6887c182e95"
 
 [[files]]
 file = "kubejs/server_scripts/lootTables.js"
@@ -2366,7 +2422,7 @@ hash = "6161ac104636ec817ce8aa4200e9011004eb3126cdbee7fdf3f3e22960a6edf1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/artifacts.js"
-hash = "563dfb87c4f2c211b4e54d99c57cca9913bb0839757f0ed69972f849422a3635"
+hash = "8b2eafd3207a3dcb5091ac0ed5c1b5302b06fdb58565a2c3a7cca17764f0aec4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
@@ -2410,11 +2466,11 @@ hash = "e17af75be591a75ecad2e53524ef6769c0e6c0d9391ae3491435bce6ad83c11d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "987f34ebf348b3ae29b5dab886745d58b3567583e6cc34b89ddc64728da9ef29"
+hash = "67a899c0682bad12f72c8215c8bc159ecee0fae5df15161c321ceb826ad3ce3f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "e8ef067735bff715a42bb332611c17ceb122848e0ff0ad4b1686ce3ac3294a41"
+hash = "b1a196083edd465864103e5c03afc42d6697d00a8427d4eedf83b0c4da14b46a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"
@@ -2438,7 +2494,7 @@ hash = "9cb148a1194385bdf356b78e4fe83ae0fee71292db5d6a978041ec3fb5bf3c27"
 
 [[files]]
 file = "kubejs/server_scripts/magic/moreRelics.js"
-hash = "a7e47fec9e1b41b54d4af1df69b2786dbfe18efb29cc5631494c8e29ed552ce5"
+hash = "aceb37999000065aa812556d26e81161eea9d4e5ec6be0bfdddea0fc4a72dd3b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
@@ -2462,7 +2518,7 @@ hash = "2349ed489925b699e9afd0f110030bf7116e1d78b523754e08a587a2d5c038dd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "8dee8e963d67e51149331720f8a21a95023f25898d3e27f989271bb316459a96"
+hash = "610d7d0c0593a61b626bf221253077b8bb8708568b3c30aec0582474c02e4113"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -2558,7 +2614,7 @@ hash = "ecd37dbd7d14d580cbf2ebb955366e4915856e9171d98e6b8c93f5db45ebdd9a"
 
 [[files]]
 file = "kubejs/server_scripts/tech/greggingMods.js"
-hash = "6d4b13bc04c4f4a75aaef64838dce2ef4e5cbb09f6fc6a875c3301161fa1f668"
+hash = "5557c2baeae339689d34b744fe77e1d73db23ac700ccec85c26678298a9e308b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/gunComponentRecipes.js"
@@ -2594,7 +2650,7 @@ hash = "08b7202e6926d5edf5e7d6b83866010c4ecda43947e72d48124b3876c92ee95f"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
-hash = "22e1ed411d5442fdaffff9bbbfd159eff5245db916c2c90c732eb3e9aeff9e86"
+hash = "b82445645b5d75cc6f60c17851dd2b1d13f925bccfb1dd1d935d9b832ed42d9e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/paper.js"
@@ -2630,7 +2686,7 @@ hash = "5fe5b6cab1f7a8b882ca3493eab07e17436e8b918ffcf8d34cbc2b9403464f87"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "d8d837e01bfb37b9183321af1d3fd050bc9a1541cab4ae9dc650274365ec6b12"
+hash = "87e875baf31984d93bf2552efce0731f2d01c0299257cf2ba14c156551fadd27"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"
@@ -2726,7 +2782,7 @@ hash = "59452fe9996c533d1561c2456aa9876aa27a4a29a04c64d85e0ff73ed55c2af5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "ec2ebae8bac8f3f3d4491a03036f9188f9c67099e06f73b49ccc41f2a4a6a620"
+hash = "d4386ac8574d9f349b26c4a0f368b7a12e6b6008f12da0afcfded3b5192ca95c"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -3003,6 +3059,11 @@ metafile = true
 [[files]]
 file = "mods/blast-craft.pw.toml"
 hash = "760508aeab5dc87fbe12faddd0d87612e480a7b9cdbc75b3492e416d1ce3e8a0"
+metafile = true
+
+[[files]]
+file = "mods/block-swap.pw.toml"
+hash = "1d093db0add8486b407b1323d2add62c1710469922722ec2531f78ef667ec259"
 metafile = true
 
 [[files]]
@@ -4109,6 +4170,11 @@ metafile = true
 [[files]]
 file = "mods/paucal.pw.toml"
 hash = "d545e2d90446465d26dfef1c6777edde1fa9d2b873674834dd761342a40088bf"
+metafile = true
+
+[[files]]
+file = "mods/perfect-graves.pw.toml"
+hash = "7419be0dbade7795d8f9d7d5e6571c935460dcfffbec90e786a60c74b208c3f8"
 metafile = true
 
 [[files]]

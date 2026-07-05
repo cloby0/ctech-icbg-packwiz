@@ -662,12 +662,11 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('silentgear:blueprint_paper', 4),
         [
-            'PPL',
+            'PPP',
             'PPI'
         ],
         {
             P: 'minecraft:paper',
-            L: 'gtceu:lapis_dust',
             I: 'gtceu:iron_dust'
         }
     )
