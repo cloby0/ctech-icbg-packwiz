@@ -17,6 +17,14 @@ file = "config/ars_botania-common.toml"
 hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
 
 [[files]]
+file = "config/blockswap/block_swap.json5"
+hash = "3c58912de5cd2d75a16a0e748b04177a7ff93700058443f78f3c8e6e4e5cdf75"
+
+[[files]]
+file = "config/blockswap/missing_block_ids.json5"
+hash = "62f528a6cbed5a846e9afb0f42b90e91a7bbbf0948412643d460ea872b8bcb51"
+
+[[files]]
 file = "config/culinarycompat-common.toml"
 hash = "59cf59f1544e790292649a77a6528d86fc71dc69e0c34acfdc2ba3e189c028fa"
 
@@ -962,7 +970,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "4f91a1775cdf93696e2f0cf1ae711d5794db5feac97e323a1d7ddf904bb4aabd"
+hash = "539266cca5bcb9eb0ec226e8d1d4992007e6a30efcdfa4adbc6a2adf07bcfdf1"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -2410,11 +2418,11 @@ hash = "e17af75be591a75ecad2e53524ef6769c0e6c0d9391ae3491435bce6ad83c11d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "67a899c0682bad12f72c8215c8bc159ecee0fae5df15161c321ceb826ad3ce3f"
+hash = "6194a8e35975bee955fb7489197a25410d610b70116181f35062b9a48c287c8f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "b1a196083edd465864103e5c03afc42d6697d00a8427d4eedf83b0c4da14b46a"
+hash = "5d5410728bd45139916c142016ce16f58d40bea7a35dc41059dfc1005259afa0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"
@@ -2726,7 +2734,7 @@ hash = "59452fe9996c533d1561c2456aa9876aa27a4a29a04c64d85e0ff73ed55c2af5"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "d4386ac8574d9f349b26c4a0f368b7a12e6b6008f12da0afcfded3b5192ca95c"
+hash = "c11691ccb1d2fb8680f30594264e2758cc6aa1586a5cecbf7fda69c3cae8e253"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"

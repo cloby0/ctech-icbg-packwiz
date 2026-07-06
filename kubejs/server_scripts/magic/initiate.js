@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
             A: 'ars_nouveau:archwood_planks',
             S: '#forge:tools/saws',
             P: 'minecraft:purple_carpet',
-            Z: 'gtceu:zanite_screw'
+            Z: 'aether:zanite_gemstone'
         }).damageIngredient(Ingredient.of('#forge:tools/saws'));
 
     event.shaped(
@@ -236,24 +236,23 @@ ServerEvents.recipes(event => {
         sourceCost: 2500
     })
 
-    // Combat endpoint: craftable Valkyrie gear from skyforged forms
-    event.shaped('aether:valkyrie_lance', [
-        ' P ',
-        ' R ',
-        ' R '
-    ], { P: 'gtceu:skyforged_plate', R: 'gtceu:skyforged_rod' })
-
-    event.shaped('aether:valkyrie_axe', [
-        'PP',
-        'PR',
-        ' R'
-    ], { P: 'gtceu:skyforged_plate', R: 'gtceu:skyforged_rod' })
-
-    event.shaped('aether:valkyrie_chestplate', [
-        'P P',
-        'PMP',
-        'PPP'
-    ], { P: 'gtceu:skyforged_plate', M: 'aether:victory_medal' })
+    // Combat endpoint: full Valkyrie set craftable from skyforged (medals already gate the alloy upstream)
+    const SP = 'gtceu:skyforged_plate'
+    const SR = 'gtceu:skyforged_rod'
+    const VM = 'aether:victory_medal'
+    ;[
+        ['aether:valkyrie_pickaxe',    ['PPP', ' R ', ' R '], { P: SP, R: SR }],
+        ['aether:valkyrie_axe',        ['PP ', 'PR ', ' R '], { P: SP, R: SR }],
+        ['aether:valkyrie_shovel',     [' P ', ' R ', ' R '], { P: SP, R: SR }],
+        ['aether:valkyrie_hoe',        ['PP ', ' R ', ' R '], { P: SP, R: SR }],
+        ['aether:valkyrie_lance',      ['  P', ' R ', 'R  '], { P: SP, R: SR }],
+        ['aether:valkyrie_helmet',     ['PPP', 'P P'],        { P: SP }],
+        ['aether:valkyrie_chestplate', ['P P', 'PPP', 'PPP'], { P: SP }],
+        ['aether:valkyrie_leggings',   ['PPP', 'P P', 'P P'], { P: SP }],
+        ['aether:valkyrie_boots',      ['P P', 'P P'],        { P: SP }],
+        ['aether:valkyrie_gloves',     ['P P', 'PMP'],        { P: SP, M: VM }],
+        ['aether:valkyrie_cape',       ['PPP', 'PMP', 'PPP'], { P: SP, M: VM }]
+    ].forEach(([out, pat, keys]) => event.shaped(out, pat, keys))
 
     addEnchantingRecipe(event, {
         reagent: { item: 'kubejs:sacred_ambrosium_shard' },

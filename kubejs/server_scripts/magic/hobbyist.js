@@ -279,4 +279,22 @@ ServerEvents.recipes(event => {
             B: 'minecraft:book'
         }
     );
+
+    // Copper spell book = same four elements, bound at the corners so it doesn't collide with the iron recipe grid.
+    event.remove({ output: 'irons_spellbooks:copper_spell_book' });
+    event.shaped(
+        Item.of('irons_spellbooks:copper_spell_book', 1),
+        [
+            'F W',
+            ' B ',
+            'A E'
+        ],
+        {
+            F: 'ars_nouveau:fire_essence',
+            W: 'ars_nouveau:water_essence',
+            A: 'ars_nouveau:air_essence',
+            E: 'ars_nouveau:earth_essence',
+            B: 'minecraft:book'
+        }
+    );
 });

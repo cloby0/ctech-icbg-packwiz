@@ -946,14 +946,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xBFE8D8)
         .secondaryColor(0x4A8C7A)
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('2x skyjade'), c('1x silver'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.GENERATE_FOIL
         )
 
     // Sage alt spine: Primal/Wilden beast metal, gaia-independent. Dust from magic chain -> furnace smelt -> ingot.
@@ -962,13 +960,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x6A8F3C)
         .secondaryColor(0x33471C)
         .iconSet(GTMaterialIconSet.ROUGH)
-        .components(c('2x source'), c('1x iron'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.GENERATE_LONG_ROD
         )
 
 })
