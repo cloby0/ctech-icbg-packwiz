@@ -156,4 +156,18 @@ ServerEvents.recipes(event => {
         source: 500,
         pedestalItems: ['#kubejs:air_essences']
     })
+
+    event.shaped(
+        Item.of('ars_nouveau:dominion_wand', 1),
+                 [
+                    '  A',
+                    ' B ',
+                    'C  '
+                 ],
+                 {
+                     A: 'ars_nouveau:source_gem',
+                     B: '#forge:rods/gold',
+                     C: 'minecraft:ender_pearl'
+                 }
+    );
 })

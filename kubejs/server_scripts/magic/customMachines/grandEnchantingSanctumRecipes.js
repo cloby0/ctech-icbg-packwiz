@@ -144,6 +144,8 @@ global.addEnchantingRecipe = addEnchantingRecipe
 ServerEvents.recipes(event => {
     event.remove({ mod: 'ars_n_spells' })
 
+    event.remove({ id: 'ars_nouveau:dominion_wand'});
+
     event.remove({ id: 'ars_nouveau:imbuement_lapis'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst'});
     event.remove({ id: 'ars_nouveau:imbuement_amethyst_block'});

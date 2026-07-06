@@ -113,6 +113,18 @@ to make editing this file much easier.
 		{
 			"new": { "Name": "greate:large_steel_cogwheel", "Properties": { "axis": "z" } },
 			"old": { "Name": "create:large_cogwheel", "Properties": { "axis": "z" } }
+		},
+		{
+			"new": { "Name": "greate:steel_gearbox", "Properties": { "axis": "x" } },
+			"old": { "Name": "create:gearbox", "Properties": { "axis": "x" } }
+		},
+		{
+			"new": { "Name": "greate:steel_gearbox", "Properties": { "axis": "y" } },
+			"old": { "Name": "create:gearbox", "Properties": { "axis": "y" } }
+		},
+		{
+			"new": { "Name": "greate:steel_gearbox", "Properties": { "axis": "z" } },
+			"old": { "Name": "create:gearbox", "Properties": { "axis": "z" } }
 		}
 	],
 	/* A map of blocks that specifies what the "old" block is and what its "new" block is.

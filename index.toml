@@ -18,7 +18,7 @@ hash = "918ed536f32c7e943048cedb6bd496a7a956f66e4a3fdab9e7c93577c65266ca"
 
 [[files]]
 file = "config/blockswap/block_swap.json5"
-hash = "3c58912de5cd2d75a16a0e748b04177a7ff93700058443f78f3c8e6e4e5cdf75"
+hash = "3f5964d6af183e313c53da5146a33d09bf9109d62abbaec27c2178591510ebd4"
 
 [[files]]
 file = "config/blockswap/missing_block_ids.json5"
@@ -2358,7 +2358,7 @@ hash = "560c51bc5935b68176ccb3632b8a130b3039b8ee561b33f3848811cf0f962a88"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "472a88068cd873f3bc6f85b2597467a5d563c18749913bff591f4d03d8572604"
+hash = "3c8ec688a7c17679474f9302f02a65abbd7b21b5a022cab2dfcdeeb0509dde6f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -2390,7 +2390,7 @@ hash = "da49273801a23e0f73f8f6f0e05f8ceeb84e9ed3558fe13a4abce2c507dca5c7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "8782069799b0694acef84d9af8b9fca26d513f838af82f7caa14fef46ab633a6"
+hash = "98683ae081558ca74414a3a145e9b26e1355711994b0680ec3f09a82e302c691"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
@@ -2430,7 +2430,7 @@ hash = "356007d070b8569862d2ca09f89b55c9a669ea373d29fcefecffd7233d8479a4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "eee8e9acfbebf331ae48b1f6fdbbdf033009834c3c429baa7227752232011cfa"
+hash = "4b11b84a6a702e7b88ca519bde8352dc115d385ad1c4b2b12d258e08a80cbb16"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -3767,6 +3767,11 @@ metafile = true
 [[files]]
 file = "mods/laserio-uel.pw.toml"
 hash = "a913cbfe5e8d38eb05d04708e13b8ac843457fce45d1960b941858bb53aa61ad"
+metafile = true
+
+[[files]]
+file = "mods/ldlib.pw.toml"
+hash = "afd880e9028403834211fb8e19a77bed5e546da72570fb62086e46de83a530ef"
 metafile = true
 
 [[files]]

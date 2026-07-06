@@ -32,6 +32,17 @@ ServerEvents.recipes(event => {
         }
     )
 
+    addImbuementRecipe(event, {
+        input: 'minecraft:book',
+        output: 'irons_spellbooks:ruined_book',
+        source: 2000,
+        pedestalItems: [
+            'minecraft:sculk', 'minecraft:sculk',
+            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'minecraft:echo_shard'
+        ]
+    })
+
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_uncommon_ink' })
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_rare_ink' })
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_epic_ink' })
