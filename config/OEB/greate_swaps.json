@@ -1,0 +1,6 @@
+[
+  { "match": ["create:shaft"],          "result": "greate:steel_shaft" },
+  { "match": ["create:cogwheel"],       "result": "greate:steel_cogwheel" },
+  { "match": ["create:large_cogwheel"], "result": "greate:large_steel_cogwheel" },
+  { "match": ["create:gearbox"],        "result": "greate:steel_gearbox" }
+]

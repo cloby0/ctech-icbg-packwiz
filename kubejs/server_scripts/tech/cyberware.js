@@ -473,7 +473,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.cyberware_constructor('cw_skin_solar_skin')
         .itemInputs(
-            '2x gtceu:ev_solar_panel',
+            '2x gtceu:ulv_solar_panel',
             '1x gtceu:ev_emitter',
             '1x #gtceu:circuits/ev'
         )

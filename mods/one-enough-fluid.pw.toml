@@ -1,0 +1,13 @@
+name = "One Enough Fluid"
+filename = "OneEnoughFluid-1.1.1-hotfix.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dNn2uCxa/versions/gHGHxVeF/OneEnoughFluid-1.1.1-hotfix.jar"
+hash-format = "sha512"
+hash = "221da4e9ab498cf44e9a4f066b6a71291e56368fd39db628da10f93f62d1e611e19a593e888b0cfadcd6140e879fdeb38482fd9037399dbb256ecdf04e2706f1"
+
+[update]
+[update.modrinth]
+mod-id = "dNn2uCxa"
+version = "gHGHxVeF"

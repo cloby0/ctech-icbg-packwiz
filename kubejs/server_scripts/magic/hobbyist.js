@@ -262,39 +262,37 @@ ServerEvents.recipes(event => {
                  }
     )
 
-    // First spellbook = bind the four elements around a book. Removal by output covers the mod's default recipe id.
-    event.remove({ output: 'irons_spellbooks:iron_spell_book' });
-    event.shaped(
-        Item.of('irons_spellbooks:iron_spell_book', 1),
-        [
-            ' F ',
-            'WBA',
-            ' E '
-        ],
-        {
-            F: 'ars_nouveau:fire_essence',
-            W: 'ars_nouveau:water_essence',
-            A: 'ars_nouveau:air_essence',
-            E: 'ars_nouveau:earth_essence',
-            B: 'minecraft:book'
-        }
-    );
-
-    // Copper spell book = same four elements, bound at the corners so it doesn't collide with the iron recipe grid.
+    // Base spellbook = bind the four elements around a book, cased in copper.
     event.remove({ output: 'irons_spellbooks:copper_spell_book' });
     event.shaped(
         Item.of('irons_spellbooks:copper_spell_book', 1),
         [
-            'F W',
-            ' B ',
-            'A E'
+            'PFP',
+            'WBA',
+            'PEP'
         ],
         {
             F: 'ars_nouveau:fire_essence',
             W: 'ars_nouveau:water_essence',
             A: 'ars_nouveau:air_essence',
             E: 'ars_nouveau:earth_essence',
-            B: 'minecraft:book'
+            B: 'minecraft:book',
+            P: '#forge:plates/copper'
+        }
+    );
+
+    // Iron spell book = direct upgrade of the copper book, reinforced with iron.
+    event.remove({ output: 'irons_spellbooks:iron_spell_book' });
+    event.shaped(
+        Item.of('irons_spellbooks:iron_spell_book', 1),
+        [
+            ' I ',
+            'ICI',
+            ' I '
+        ],
+        {
+            I: '#forge:plates/iron',
+            C: 'irons_spellbooks:copper_spell_book'
         }
     );
 });
