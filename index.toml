@@ -4050,6 +4050,11 @@ hash = "21a65898c3292880bf020c3c7e1e9da3e3725b046625d24cb5e0742d342621a0"
 metafile = true
 
 [[files]]
+file = "mods/oelib.pw.toml"
+hash = "20ac24c67acb7777e13a043e796bb3e9ebbdcfcd08bf488aa0cace770d75c63b"
+metafile = true
+
+[[files]]
 file = "mods/oh-the-biomes-weve-gone.pw.toml"
 hash = "910bf8541d58020d34c119cd3b35bd3d4fc3954db80ba22f2db98849a1b40357"
 metafile = true

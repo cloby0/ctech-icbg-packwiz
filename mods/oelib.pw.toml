@@ -1,0 +1,13 @@
+name = "One Enough Lib"
+filename = "OELib-forge-1.20.1-0.2.4.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7ODqOXka/versions/3ZN7sdQJ/OELib-forge-1.20.1-0.2.4.1.jar"
+hash-format = "sha512"
+hash = "97bb1518972084bba031de8ec6e67627102dd7c7ab4c0c30ce9449cf01115a7ecdf7600e65b6aabed8fa359ffebeed54689c511df5d4ae4a6212001933e73174"
+
+[update]
+[update.modrinth]
+mod-id = "7ODqOXka"
+version = "3ZN7sdQJ"
