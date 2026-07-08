@@ -16,6 +16,9 @@
 	quests: [
 		{
 			dependencies: ["33704DE3C564BD46"]
+			description: [
+				"&dMagebloom&r comes from the Imbuement Chamber -- archwood planks and luminessence on pedestals, 2500 source. Farm it: the fiber feeds the sieve below and half of Ars' gear."
+			]
 			id: "74E79BEE176EA828"
 			size: 0.75d
 			subtitle: "it blooms. magically. wow."
@@ -30,6 +33,11 @@
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
+			description: [
+				"&3Source Ore&r generates in the Aether as a proper GT-style ore. Mine plenty -- the gem chain ahead eats dust like a machine line, because it is one."
+				""
+				"Tip: crush the raw ore with the Ars &dCrush&r effect to get Source Dust. No macerator required. The mage way."
+			]
 			id: "42292FB8905CAE54"
 			size: 0.75d
 			subtitle: "nice argument senator"
@@ -45,6 +53,11 @@
 		}
 		{
 			dependencies: ["42292FB8905CAE54"]
+			description: [
+				"Imbue &3Source Dust&r with a &dMagebloom Sieve&r sitting on the pedestal to refine it into &ePure Source Gem Dust&r."
+				""
+				"Tip: the sieve is not consumed. One sieve, infinite sifting. Magic has no OSHA."
+			]
 			id: "08A706FAA18260F5"
 			size: 0.75d
 			subtitle: "getting somewhere"
@@ -81,6 +94,9 @@
 		}
 		{
 			dependencies: ["02865F6285633253"]
+			description: [
+				"Pure dust plus a &cfire essence&r on the pedestal imbues into a &eRough Source Gem&r. 2500 source per gem -- keep those jars full."
+			]
 			id: "7363CD337C4652D8"
 			size: 0.75d
 			subtitle: "almost a gem"
@@ -98,6 +114,8 @@
 			description: [
 				"&aSource Gems&r are the cornerstone of the magic line. They power the &3Enchanting Apparatus&r, fuel the &3Imbuement Chamber&r, and show up in most mid-to-late magic crafting."
 				""
+				"The last step is unexpected: polish the rough gem with Create &6sandpaper&r. Yes, sandpaper. Artisanal gemcraft."
+				""
 				"You'll be making a lot of these. Start automating early."
 			]
 			id: "06C1B3D271B8BFCF"
@@ -114,6 +132,11 @@
 		}
 		{
 			dependencies: ["557FF11A5C0306BC"]
+			description: [
+				"Four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &eSanctified Ambrosium&r."
+				""
+				"Tip: heated cauldron, WATER this time. Pouring the lava out is your problem."
+			]
 			id: "3AE23124DDE87034"
 			size: 0.75d
 			subtitle: "give it a blessing. it deserves it."
@@ -128,6 +151,9 @@
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
+			description: [
+				"&eAmbrosium&r is the Aether's glowing all-purpose rock. Here it's a real ore line -- and the feedstock for the sanctified chain to the right."
+			]
 			id: "557FF11A5C0306BC"
 			size: 0.75d
 			subtitle: "the Aether's other thing"
@@ -143,6 +169,9 @@
 		}
 		{
 			dependencies: ["74E79BEE176EA828"]
+			description: [
+				"&dMagebloom fiber&r woven around &7carved stone&r makes the &6Magebloom Sieve&r -- the catalyst that sits on a pedestal and filters source dust into something worth keeping."
+			]
 			id: "6F0175765720EE51"
 			size: 0.75d
 			subtitle: "yes, really, a sieve"
@@ -178,6 +207,9 @@
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
+			description: [
+				"&9Zanite&r hardens the further it wears down, and this pack has plans for it well beyond tools. Grab a stack while you're up here."
+			]
 			id: "297B9B212C544AF0"
 			size: 0.75d
 			subtitle: "the other other Aether ore"
@@ -192,6 +224,9 @@
 		}
 		{
 			dependencies: ["297B9B212C544AF0"]
+			description: [
+				"Feed a zanite gemstone through the Aether's &6Altar&r to enchant it. The Altar runs on ambrosium shards as fuel -- convenient, since you just mined a pile."
+			]
 			id: "08B0AB8D3C90EB10"
 			size: 0.75d
 			subtitle: "feeling more powerful already"
@@ -206,6 +241,11 @@
 		}
 		{
 			dependencies: ["08B0AB8D3C90EB10"]
+			description: [
+				"Imbue the enchanted gem with two &asource gems&r on pedestals to get a &9Resonant Zanite Crystal&r."
+				""
+				"Tip: resonant crystals imbue onward into &ccinder essence&r (fire pedestals) or &barcane ingots&r (air pedestals) -- your bulk route into Iron's Spells materials."
+			]
 			id: "45BDF6BE6B2DD0CB"
 			size: 0.75d
 			subtitle: "it hums. don't stick your ear near it."
@@ -220,6 +260,11 @@
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
+			description: [
+				"One inventory, every dimension. Dye the three wool pads to make separate channels."
+				""
+				"Tip: on a server, channels are per-color, not per-player by default. Sneak-click the latch with a diamond for a private network before someone 'borrows' your stock."
+			]
 			id: "205170FC8134DC8D"
 			size: 0.75d
 			subtitle: "shared. with yourself. from across the map."
@@ -234,6 +279,9 @@
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
+			description: [
+				"Same trick, fluids. Pump lava in at the Nether, drain it at your base. The commute is imaginary."
+			]
 			id: "3A9BBD003CB49590"
 			size: 0.75d
 			subtitle: "like an ender chest but wetter"
@@ -248,6 +296,11 @@
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
+			description: [
+				"The pouch opens its matching ender chest from anywhere. Mining trips deposit straight home."
+				""
+				"Tip: match the wool colors on the pouch to the chest's channel or you'll be staring into someone else's junk drawer."
+			]
 			id: "7E85C70688BC511F"
 			size: 0.75d
 			subtitle: "pocket dimension, travel size"
@@ -262,6 +315,11 @@
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
+			description: [
+				"The &6Storage Lectern&r shows every linked chest in one searchable screen. It's Ars' answer to a storage network, and it costs a bookshelf, not a fusion reactor."
+				""
+				"Tip: link chests with the &dDominion Wand&r. Range matters -- keep it central."
+			]
 			id: "7FBC73B3CE27E7BB"
 			size: 0.75d
 			subtitle: "the arcane equivalent of a filing cabinet"
@@ -276,6 +334,9 @@
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
+			description: [
+				"The &6Lantern of Paranoia&r auto-places torches in dark spots around you as you walk. Cave lighting without the wrist strain."
+			]
 			hide_dependency_lines: true
 			id: "2F9CF65DB439E571"
 			shape: "hexagon"
@@ -292,6 +353,9 @@
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
+			description: [
+				"The &6Interdiction Torch&r shoves hostile mobs away from itself. Plant one at each base entrance and enjoy the silence. Crafts three at a time."
+			]
 			hide_dependency_lines: true
 			id: "60B898EA8C6DB0F5"
 			shape: "hexagon"
@@ -308,6 +372,9 @@
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
+			description: [
+				"The &6Alkahestry Altar&r eats redstone and, given open sky and time, transmutes it into glowstone. Slow, silent, profitable."
+			]
 			hide_dependency_lines: true
 			id: "48823E5A5985391B"
 			shape: "hexagon"
@@ -324,6 +391,11 @@
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
+			description: [
+				"Build a portal frame from &bglowstone&r and light it with a &9water bucket&r. The Aether is up there waiting: floating islands, angry birds, and three ores this chapter runs on."
+				""
+				"Tip: bring blocks for bridging and do NOT look down. Falling off the Aether returns you to the overworld at terminal velocity."
+			]
 			icon: "aether:aether_portal_frame"
 			id: "33704DE3C564BD46"
 			size: 0.75d

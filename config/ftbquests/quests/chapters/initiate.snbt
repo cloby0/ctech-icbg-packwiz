@@ -24,7 +24,48 @@
 	]
 	quests: [
 		{
+			dependencies: ["5281FFCFFE77EA24"]
+			description: [
+				"The &6Grand Enchanting Sanctum&r is the industrial version of the Enchanting Apparatus -- same rituals, but fed by &dLiquid Source&r from a hatch instead of jars, with a &dParallel Hatch&r slot and perfect overclocking."
+				""
+				"Its &3Sourcestone Casings&r come out of an HV Assembler, eight at a time. Magic scales now."
+			]
+			id: "58C1A4F7B0E92D30"
+			subtitle: "enchanting, but make it factory"
+			tasks: [{
+				id: "58C1A4F7B0E92D31"
+				item: "gtceu:grand_enchanting_sanctum"
+				type: "item"
+			}]
+			title: "Grand Enchanting Sanctum"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			description: [
+				"The &6Imbuement Factory&r automates the Imbuement Chamber. Note the structure itself needs &3Source Blocks&r and &aHoly Silver Blocks&r built into the frame -- they are part of the multiblock, not the recipe."
+				""
+				"&3Holystone Casings&r from the HV Assembler round out the shell."
+			]
+			id: "58C1A4F7B0E92D32"
+			subtitle: "imbuement at line speed"
+			tasks: [{
+				id: "58C1A4F7B0E92D33"
+				item: "gtceu:imbuement_factory"
+				type: "item"
+			}]
+			title: "Imbuement Factory"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
 			dependencies: ["06C1B3D271B8BFCF"]
+			description: [
+				"The &6Enchanting Apparatus&r wants long gold rods, &3source plates&r, and luminessence; pedestals want archwood, zanite, and a GT &7saw&r; the core wants gold bolts and a source gem."
+				""
+				"Tip: source plates are hammered straight from source gems. Note the pedestal recipe needs NO source at all -- that's deliberate, it's your bootstrap."
+			]
 			hide_dependency_lines: true
 			id: "5281FFCFFE77EA24"
 			tasks: [
@@ -51,6 +92,9 @@
 		}
 		{
 			dependencies: ["2DFC564DDE9DDE82"]
+			description: [
+				"&7Silver dust&r enchanted over two &esacred ambrosium shards&r and two &aluminessence&r becomes &fHoly Silver Blend&r. The tech tree grinds the silver; the Aether blesses it."
+			]
 			id: "6598E24995416CFD"
 			subtitle: "mix thoroughly, do NOT drink"
 			tasks: [{
@@ -67,6 +111,9 @@
 				"6598E24995416CFD"
 				"5281FFCFFE77EA24"
 			]
+			description: [
+				"Imbue the blend with a &6Mercy Cross&r standing on the pedestal. The cross is a catalyst -- it judges, it does not burn."
+			]
 			id: "0D62A4DC7559CA80"
 			subtitle: "getting holier by the step"
 			tasks: [{
@@ -77,6 +124,49 @@
 			title: "Holy Silver Dust"
 			x: 0.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["5281FFCFFE77EA24"]
+			description: [
+				"The &bSkyforged&r line is the Aether's answer to Holy Silver -- a fully independent alt spine. No silver required."
+				""
+				"Enchant &3Skyjade&r over two &6Victory Medals&r and an air and water essence. Fight the Valkyrie Queen for the medals. The dust smelts straight to ingots in any furnace."
+			]
+			id: "4F7A2B90D3E16C30"
+			subtitle: "forged in the sky. name checks out"
+			tasks: [{
+				id: "4F7A2B90D3E16C31"
+				item: "gtceu:skyforged_dust"
+				type: "item"
+			}]
+			title: "Skyforged Dust"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F7A2B90D3E16C30"]
+			description: [
+				"&bSkyforged&r plates and rods hammer into the complete &fValkyrie&r arsenal -- tools, the lance, full armor, gloves, and the cape. Gloves and cape want extra &6Victory Medals&r."
+				""
+				"Craft any piece to prove the forge works."
+			]
+			id: "33D08E5A61B94F70"
+			subtitle: "dress code: divine"
+			tasks: [{
+				id: "33D08E5A61B94F71"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(aether:valkyrie_pickaxe)item(aether:valkyrie_axe)item(aether:valkyrie_shovel)item(aether:valkyrie_hoe)item(aether:valkyrie_lance)item(aether:valkyrie_helmet)item(aether:valkyrie_chestplate)item(aether:valkyrie_leggings)item(aether:valkyrie_boots)item(aether:valkyrie_gloves)item(aether:valkyrie_cape))"
+					}
+				}
+				title: "Any Valkyrie Gear"
+				type: "item"
+			}]
+			title: "The Valkyrie Armory"
+			x: -1.0d
+			y: -6.75d
 		}
 		{
 			dependencies: ["0D62A4DC7559CA80"]
@@ -106,6 +196,9 @@
 				"532B8F3CF596352D"
 				"06C1B3D271B8BFCF"
 			]
+			description: [
+				"The &dDivine Pearl&r is Iron's Spells' blessed counterpart to the ender pearl -- and the upgrade reagent that turns uncommon ink rare. Check JEI for your cheapest route."
+			]
 			id: "2D1F7AFFE193EDE3"
 			subtitle: "an Aether ender pearl. basically."
 			tasks: [{
@@ -119,6 +212,9 @@
 		}
 		{
 			dependencies: ["2D1F7AFFE193EDE3"]
+			description: [
+				"A silver cross that smites the undead on hit. Its day job here is holier: it's the pedestal catalyst for the Holy Silver line above."
+			]
 			id: "2DFC564DDE9DDE82"
 			size: 0.75d
 			subtitle: "slightly less violent than it sounds"
@@ -139,6 +235,9 @@
 		}
 		{
 			dependencies: ["28B20F274E486CDB"]
+			description: [
+				"The &6Sojourner's Staff&r eats torches and places them from range. Your caves light themselves now."
+			]
 			id: "0B8AA1EB97970DB4"
 			shape: "hexagon"
 			size: 0.75d
@@ -154,6 +253,9 @@
 		}
 		{
 			dependencies: ["28B20F274E486CDB"]
+			description: [
+				"The &6Glacial Staff&r freezes water and chills whatever it pokes. Bridge oceans, bully drowned."
+			]
 			id: "0B3840C36E5D555F"
 			shape: "hexagon"
 			size: 0.75d
@@ -169,6 +271,9 @@
 		}
 		{
 			dependencies: ["2D1F7AFFE193EDE3"]
+			description: [
+				"Brew &7common ink&r with a &asource gem&r in the Alchemist Cauldron for uncommon, then add a &dDivine Pearl&r for rare. Better ink, better scroll odds."
+			]
 			id: "7592A92943AC392E"
 			size: 0.75d
 			subtitle: "write better spells with better ink"
@@ -183,6 +288,9 @@
 		}
 		{
 			dependencies: ["28B20F274E486CDB"]
+			description: [
+				"The &6Ender Staff&r throws reusable ender pearls off a &5Void Tear&r battery. Teleportation as a subscription service, except free."
+			]
 			id: "383562436DCFD6B5"
 			shape: "hexagon"
 			size: 0.75d
@@ -213,6 +321,9 @@
 		{
 			dependencies: ["06C1B3D271B8BFCF"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Rod of Lyssa&r is a fishing rod for POCKETS -- cast it at a mob and steal what it's holding. Morally gray, mechanically great."
+			]
 			id: "7DB0088826AE5760"
 			shape: "hexagon"
 			size: 0.75d
@@ -227,6 +338,9 @@
 			y: 2.25d
 		}
 		{
+			description: [
+				"The &6Hero Medallion&r banks your XP and pays it back out on demand. Enchanting, anvils, and glyph costs all draw from the same account now."
+			]
 			dependencies: ["06C1B3D271B8BFCF"]
 			hide_dependency_lines: true
 			id: "362A4516582710E7"
@@ -243,6 +357,9 @@
 			y: 2.25d
 		}
 		{
+			description: [
+				"A diamond construction wand upgraded with &aevocation runes&r and a source gem: the &6Infinity Wand&r places from your WHOLE inventory. Walls happen in seconds."
+			]
 			dependencies: ["28B20F274E486CDB"]
 			id: "29C678486D003116"
 			shape: "hexagon"
@@ -264,6 +381,9 @@
 			y: 3.375d
 		}
 		{
+			description: [
+				"Imbue a &asource gem&r over four &5crying obsidian&r for a &6Void Tear&r -- it swallows an entire stack-type of items into one slot. Also the battery for half of Reliquary's staves."
+			]
 			dependencies: ["06C1B3D271B8BFCF"]
 			id: "28B20F274E486CDB"
 			shape: "hexagon"
@@ -287,6 +407,9 @@
 			y: 2.25d
 		}
 		{
+			description: [
+				"&dBlank Runes&r are the canvas for Iron's Spells rune crafting -- each themed rune stamps one onto a blank. Stock up; every armor upgrade eats them."
+			]
 			dependencies: ["06C1B3D271B8BFCF"]
 			hide_dependency_lines: true
 			id: "1C404D0B2D0F0DEF"
@@ -304,6 +427,9 @@
 			y: 2.25d
 		}
 		{
+			description: [
+				"&7Common ink&r plus a &asource gem&r in the Alchemist Cauldron brews &2Uncommon Ink&r, 250mb a pop. The first rung of the scroll-quality ladder."
+			]
 			dependencies: ["06C1B3D271B8BFCF"]
 			hide_dependency_lines: true
 			id: "4E06D62D4ADB57BB"

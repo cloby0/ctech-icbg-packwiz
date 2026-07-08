@@ -15,6 +15,24 @@
 	}]
 	quests: [
 		{
+			dependencies: ["1C00F1C2E3D40040"]
+			description: [
+				"The &6Vehicle Assembler&r multiblock builds cars, boats, and everything else with wheels or a hull. An MV machine hull, steel gearboxes, robot arms, and conveyors put it together."
+				""
+				"Supports a &dParallel Hatch&r and overclocks perfectly. You will care about that later."
+			]
+			id: "15A9D0C4B7E82F30"
+			subtitle: "some assembly required. all of it, actually"
+			tasks: [{
+				id: "15A9D0C4B7E82F31"
+				item: "gtceu:vehicle_assembler"
+				type: "item"
+			}]
+			title: "Vehicle Assembler"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
 			dependencies: ["1B00F1C2E3D4001C"]
 			hide_until_deps_complete: true
 			id: "1C00F1C2E3D40002"

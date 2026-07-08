@@ -54,6 +54,24 @@
 		{
 			dependencies: ["2300F1C2E3D40004"]
 			description: [
+				"Framework casings wrap a UHV hull, field generator, and emitters into the &6Draconic Infusion Chamber&r -- the machine that industrializes Draconic Evolution's fusion altar."
+				""
+				"Perfect overclocks, no Parallel Hatch. It drinks &5Draconic Computation&r fluid, so keep the chemical reactor loop from the next quest fed."
+			]
+			id: "3B90E4C7A2D51F60"
+			subtitle: "the dragon, contained and invoiced"
+			tasks: [{
+				id: "3B90E4C7A2D51F61"
+				item: "gtceu:draconic_infusion_chamber"
+				type: "item"
+			}]
+			title: "Draconic Infusion Chamber"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2300F1C2E3D40004"]
+			description: [
 				"The &6Draconic Infusion Chamber&r turns Draconium Ingot + Draconic Computation fluid into &aAwakened Draconium&r. Draconic Computation itself comes from a Chemical Reactor eating Awakened Draconium Dust -- Draconic Evolution's own altar bootstraps the first batch before the loop can run on its own."
 				""
 				"Awakened Draconium is UEV's structural material. Get this stable early; almost everything past this point wants some."

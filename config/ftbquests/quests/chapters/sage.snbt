@@ -40,7 +40,13 @@
 		}
 		{
 			dependencies: ["4E4F37F6AB877E5C"]
-			description: [""]
+			description: [
+				"You started this book boiling essences in a borrowed cauldron. Now the Guardian of Gaia folds into ingots on request."
+				""
+				"There is no reward in this box. There never was one in any of them. The reward is that the magic tree now answers to you -- and the tech tree is waiting to hear about it."
+				""
+				"Ascendant and Prophet tier work continues in the &6UHV+&r chapters, where both trees stop pretending they can live without each other."
+			]
 			hide_details_until_startable: true
 			hide_text_until_complete: true
 			hide_until_deps_visible: true
@@ -58,6 +64,9 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"Kill the &5Guardian of Gaia&r for life essence, then bind it at the &6Runic Altar&r with runes of &4Wrath&r and &4Pride&r over four elementium bolts -- 8000 mana of pure grudge."
+			]
 			dependencies: ["1C1A082C60D3E432"]
 			id: "7A973CEE81B78C5C"
 			subtitle: "it's understandably upset"
@@ -89,6 +98,9 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"The Soul of Gaia enchanted over EIGHT &delementium blocks&r, 20000 source. The magic tree's last ordinary ingot -- nothing after this is ordinary."
+			]
 			dependencies: ["57D3230B92DA91E0"]
 			id: "23D66F8D6CD53A68"
 			subtitle: "unbounded. unhinged. unstoppable."
@@ -100,6 +112,74 @@
 			title: "Boundless Gaia Spirit Ingot"
 			x: 9.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1C1A082C60D3E432"]
+			description: [
+				"The &2Wilden Alloy&r line is a living-beast alt spine, fully independent of Gaia. Hunt &aWilden&r for horns, spikes, and drygmy shards, then enchant a &6Wilden Tribute&r over them with earth and fire essence."
+				""
+				"The dust smelts straight to ingots in any furnace. The tribute itself can be duplicated in the Imbuement Chamber if the hunt gets old."
+			]
+			id: "6D40B7C2E8A15F90"
+			subtitle: "the beasts provide"
+			tasks: [{
+				id: "6D40B7C2E8A15F91"
+				item: "gtceu:wilden_alloy_dust"
+				type: "item"
+			}]
+			title: "Wilden Alloy"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E4F37F6AB877E5C"]
+			description: [
+				"&aGaia Ingots&r and &dLife Essence&r anchor four ritual cores: &4Blood&r, &eHoly&r, &5Void&r, and &8Annihilation&r. Each wants its own flavor of runes, vials, and unpleasantness."
+				""
+				"Craft any one to start your library."
+			]
+			id: "71C3F5A0B2D98E40"
+			subtitle: "pick your poison"
+			tasks: [{
+				id: "71C3F5A0B2D98E41"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:gaian_blood_core)item(kubejs:gaian_holy_core)item(kubejs:gaian_void_core)item(kubejs:gaian_annihilation_core))"
+					}
+				}
+				title: "Any Gaian Core"
+				type: "item"
+			}]
+			title: "Gaian Cores"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71C3F5A0B2D98E40"]
+			description: [
+				"Each core enchants into its own tome: the &4Blood Grimoire&r, the &eRadiant Sanctum&r, the &5Eldritch Codex&r, the &8Obliteration Chronicle&r -- and for those dabbling in naquadah, the &3Harbinger Codex&r."
+				""
+				"Craft any one. Collect the rest at your own peril."
+			]
+			id: "2A85C0D9F4E17B60"
+			subtitle: "light reading for the end times"
+			tasks: [{
+				id: "2A85C0D9F4E17B61"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:blood_grimoire)item(kubejs:radiant_sanctum)item(kubejs:eldritch_codex)item(kubejs:obliteration_chronicle)item(kubejs:harbinger_codex))"
+					}
+				}
+				title: "Any Grimoire"
+				type: "item"
+			}]
+			title: "The Forbidden Library"
+			x: 14.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Finish what you started and become the master of the arcane"]

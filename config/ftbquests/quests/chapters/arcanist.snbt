@@ -57,6 +57,9 @@
 			y: -2.0d
 		}
 		{
+			description: [
+				"Enchant the dust over an &7Abstract Metal Ingot&r (15000 source), then smelt the result straight into &dElementium&r. Elven metallurgy, fully domesticated."
+			]
 			dependencies: ["51FA75C4A1E30685"]
 			id: "104D6BF6AA109EF4"
 			subtitle: "not to be confused with Elementium"
@@ -70,6 +73,9 @@
 			y: -6.0d
 		}
 		{
+			description: [
+				"Imbue elven concentrate over water and air essences with luminessence -- 8000 source -- for &dElementite Dust&r."
+			]
 			dependencies: ["36021729B91C1137"]
 			id: "51FA75C4A1E30685"
 			subtitle: "one step away"
@@ -83,6 +89,11 @@
 			y: -6.0d
 		}
 		{
+			description: [
+				"The elves are cut out of the deal: the &6Runic Altar&r makes &dWeak Elementium Dust&r from four terrasteel bolts and air, spring, summer, and autumn runes -- 8000 mana, three at a time."
+				""
+				"Trade three dusts through the &aAlfheim Portal&r for two &dElven Concentrate&r. The elves still get their cut. Typical."
+			]
 			dependencies: ["7611918249B75923"]
 			id: "2764D29567727F6D"
 			subtitle: "almost magic. almost."

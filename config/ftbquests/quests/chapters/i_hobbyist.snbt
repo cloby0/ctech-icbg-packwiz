@@ -11,6 +11,11 @@
 	quests: [
 		{
 			dependencies: ["1FA819FE418EBE16"]
+			description: [
+				"Hexerei's &6Mixing Cauldron&r is your first magical workstation. In this pack the four elemental essences brew HERE -- the Imbuement Chamber recipes are gone."
+				""
+				"Tip: it needs a heat source underneath and the right liquid inside. Read the recipe in JEI before you blame the cauldron."
+			]
 			id: "46F3E5D16CC665B8"
 			shape: "rsquare"
 			size: 1.5d
@@ -26,6 +31,11 @@
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
+			description: [
+				"Two fire essences plus one of each other essence brew into FOUR &6Fire Charges&r in the cauldron. A fire charge lights a Nether portal with a right-click -- no flint and steel, no steel, no GregTech."
+				""
+				"The tech tree gets to the Nether through metallurgy. You get there through arson."
+			]
 			id: "7FDB6031A17DC65B"
 			subtitle: "\"i'll be damned if i have to touch *steel*\""
 			tasks: [{
@@ -39,6 +49,11 @@
 		}
 		{
 			dependencies: ["46F3E5D16CC665B8"]
+			description: [
+				"Every essence brews from ingredients matching its element -- &cFire&r is coals and flint stirred into hot lava. The other three follow the same logic in their own liquids."
+				""
+				"Tip: brew spares. Essences are the flour of this entire tree."
+			]
 			id: "475DA94832CDDEB7"
 			subtitle: "man who even needs the periodic table"
 			tasks: [
@@ -67,6 +82,11 @@
 		{
 			dependencies: ["7FDB6031A17DC65B"]
 			dependency_requirement: "one_completed"
+			description: [
+				"Build the frame, right-click a fire charge, walk in. The Nether has blaze rods, soul sand, and several things that want you dead -- all of them ingredients eventually."
+				""
+				"Tip: bring more fire charges than you think you need. Ghasts have opinions about your portal."
+			]
 			icon: "minecraft:netherrack"
 			id: "1BBC77A8493BB220"
 			shape: "rsquare"
@@ -83,6 +103,49 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["475DA94832CDDEB7"]
+			description: [
+				"Essences bind into wearables now. &bAir&r essence sews an &6Umbrella&r that slows your fall, &9Water&r essence webs a pair of &6Flippers&r, and &2Earth&r essence roots the &6Rooted Boots&r into the dirt."
+				""
+				"The Flippers and Boots also want &dDubious Dust&r from Nameless Trinkets. The Umbrella just wants leather and a stick. Craft any one of them."
+			]
+			id: "5B21D4E09A7F3C10"
+			subtitle: "the drip of the elements"
+			tasks: [{
+				id: "5B21D4E09A7F3C11"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(artifacts:umbrella)item(artifacts:flippers)item(artifacts:rooted_boots))"
+					}
+				}
+				title: "Any Elemental Artifact"
+				type: "item"
+			}]
+			title: "Elemental Fashion"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["475DA94832CDDEB7"]
+			description: [
+				"The &6Copper Spell Book&r binds all four essences around a book, cased in copper plates. Hammer time."
+				""
+				"Reinforce it with iron plates for the &6Iron Spell Book&r and an extra spell slot. No, you cannot skip the copper one."
+			]
+			id: "62E8A3F71C0D4B20"
+			subtitle: "read the room. then set it on fire"
+			tasks: [{
+				id: "62E8A3F71C0D4B21"
+				item: "irons_spellbooks:iron_spell_book"
+				type: "item"
+			}]
+			title: "Booked Up"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
 			dependencies: ["42FBF65B12E36EC7"]
 			hide_until_deps_complete: true
 			icon: {
@@ -90,6 +153,11 @@
 				id: "ars_nouveau:wand"
 				tag: { }
 			}
+			description: [
+				"Welcome to the arcane. No boilers, no voltage, no soot -- just cauldrons, essences, and increasingly questionable rituals."
+				""
+				"Tip: magic and tech trade materials constantly in this pack. Even a pure mage should wave at the other book occasionally."
+			]
 			id: "1FA819FE418EBE16"
 			shape: "diamond"
 			subtitle: "something something easy way out"

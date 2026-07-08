@@ -1,6 +1,17 @@
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 
+    addEnchantingRecipe(event, {
+        reagent: 'minecraft:book',
+        pedestalItems: [
+            'gtceu:prima_materia_plate',
+            'minecraft:redstone_block', 'minecraft:redstone_block',
+            'minecraft:experience_bottle'
+        ],
+        output: 'reliquary:alkahestry_tome',
+        sourceCost: 10000
+    })
+
     event.remove({ id: "botania:petal_apothecary/pure_daisy" })
 
     addEnchantingRecipe(event, {

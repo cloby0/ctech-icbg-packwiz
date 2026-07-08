@@ -15,6 +15,24 @@
 	}]
 	quests: [
 		{
+			dependencies: ["1B00F1C2E3D4002C"]
+			description: [
+				"The &6Arms Manufacturer&r is where every gun, magazine, and piece of ordnance in this pack comes from. It is a single-block line with a version at every tier from &7LV&r to &6UV&r -- higher tiers unlock heavier weaponry."
+				""
+				"Robot arm, motor, conveyor, hull, circuits. Same parts as everything else. Very different output."
+			]
+			id: "0C4E8B2A97D3F160"
+			subtitle: "the second amendment, industrialized"
+			tasks: [{
+				id: "0C4E8B2A97D3F161"
+				item: "gtceu:lv_arms_manufacturer"
+				type: "item"
+			}]
+			title: "Arms Manufacturer"
+			x: -3.5d
+			y: -6.75d
+		}
+		{
 			dependencies: ["1A00F1C2E3D4001C"]
 			hide_until_deps_complete: true
 			id: "1B00F1C2E3D40002"

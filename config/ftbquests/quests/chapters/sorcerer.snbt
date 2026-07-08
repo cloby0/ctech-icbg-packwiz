@@ -30,6 +30,11 @@
 				"475DA94832CDDEB7"
 				"51D5B5C004491077"
 			]
+			description: [
+				"Elemental seeds come from the &6Enchanting Apparatus&r: a magebloom crop surrounded by four &bair essences&r and four &bair agglomeratio&r, 5500 source."
+				""
+				"Tip: the Mystical Agriculture infusion altar recipes are removed. The apparatus is the only way."
+			]
 			id: "46D6015549F81149"
 			size: 0.75d
 			subtitle: "it grows air. domestically."
@@ -46,6 +51,9 @@
 			dependencies: [
 				"475DA94832CDDEB7"
 				"51D5B5C004491077"
+			]
+			description: [
+				"Same apparatus ritual, earth flavor: magebloom crop, four &2earth essences&r, four &2earth agglomeratio&r."
 			]
 			id: "6D67F9A2B676C7CA"
 			size: 0.75d
@@ -64,6 +72,9 @@
 				"475DA94832CDDEB7"
 				"51D5B5C004491077"
 			]
+			description: [
+				"Magebloom crop, four &9water essences&r, four &9water agglomeratio&r, one apparatus. Hydroponics, technically."
+			]
 			id: "5645B3BFEB76C34A"
 			size: 0.75d
 			subtitle: "somehow this makes sense"
@@ -81,6 +92,9 @@
 				"475DA94832CDDEB7"
 				"51D5B5C004491077"
 			]
+			description: [
+				"Magebloom crop, four &cfire essences&r, four &cfire agglomeratio&r. The crop survives the ritual. Farming it is your job now."
+			]
 			id: "48904FDBC23CD945"
 			size: 0.75d
 			subtitle: "fire, but domestic"
@@ -95,6 +109,9 @@
 		}
 		{
 			dependencies: ["46D6015549F81149"]
+			description: [
+				"Plant the seeds on farmland, harvest &bAir Essence&r. A renewable element farm -- the cauldron brews from Hobbyist just became optional."
+			]
 			id: "6F181FFA56989D01"
 			size: 0.75d
 			subtitle: "lighter than air. obviously."
@@ -109,6 +126,9 @@
 		}
 		{
 			dependencies: ["6D67F9A2B676C7CA"]
+			description: [
+				"Crops in, &2Earth Essence&r out. Tip: MA growth accelerators and lilypads of fertility stack shamelessly. Build one big essence farm now, thank yourself at Sage."
+			]
 			id: "5168FD0A21AE3B49"
 			size: 0.75d
 			subtitle: "ground-breaking"
@@ -123,6 +143,9 @@
 		}
 		{
 			dependencies: ["5645B3BFEB76C34A"]
+			description: [
+				"&9Water Essence&r, farmed. The four elements as agriculture -- alchemists hate this one trick."
+			]
 			id: "5E9CB75348632373"
 			size: 0.75d
 			subtitle: "damp"
@@ -137,6 +160,9 @@
 		}
 		{
 			dependencies: ["48904FDBC23CD945"]
+			description: [
+				"&cFire Essence&r from a plant. Do not ask the plant how it feels about this."
+			]
 			id: "18E8F3A1B08C0C04"
 			size: 0.75d
 			subtitle: "hot"
@@ -156,6 +182,11 @@
 				"6F181FFA56989D01"
 				"18E8F3A1B08C0C04"
 			]
+			description: [
+				"A &aHoly Silver Ingot&r enchanted over all four MA essences and four &3source blocks&r collapses into &5Chaos Essence&r -- 6000 source of pure disagreement."
+				""
+				"Tip: chaos essence also enchants into &cPyrium&r (fire+air) and bottled XP (water+earth). It's a whole economy."
+			]
 			id: "270F7BBFAA80139A"
 			subtitle: "what happens when four contradictory forces agree"
 			tasks: [{
@@ -172,9 +203,11 @@
 			description: [
 				"&aPrima Materia&r is the capstone of the &8Sorcerer&r tier - the primordial substance from which all elemental power flows."
 				""
-				"The recipe demands one of each elemental essence (fire, water, earth, air) plus a significant quantity of &aSource Gems&r."
+				"Imbue your &5Chaos Essence&r with an &dElement Attunement Stone&r on the pedestal. 10000 source. The chamber will drink your jars dry."
 				""
-				"&9Note:&r Prima Materia bridges the elemental and the botanical. &aManasteel&r is next, and it needs this."
+				"All four elemental essences and a pile of source are already in there -- that's what the Chaos Essence IS. Prima Materia just finishes the argument."
+				""
+				"&9Note:&r Prima Materia bridges the elemental and the botanical. &aManasteel&r is next, and it needs this. Its plates also brew &5Epic Ink&r later -- don't stop at one."
 			]
 			id: "3C613081F4FE51B2"
 			size: 1.5d
@@ -191,6 +224,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Spell Turret&r casts whatever spell you inscribe on it, on a redstone pulse. Farming, smelting, mob disposal -- if a spell does it, a turret automates it."
+			]
 			id: "5093B986663EAF9E"
 			shape: "hexagon"
 			size: 0.75d
@@ -206,6 +242,11 @@
 		}
 		{
 			dependencies: ["5093B986663EAF9E"]
+			description: [
+				"Ars Armorer builds &6guns that shoot spells&r. Pistols, snipers, auto rifles, a mortar, a flying blade -- all fueled by source instead of gunpowder."
+				""
+				"Tip: the tech tree gets the Arms Manufacturer. You get these. Everyone is armed. This is fine."
+			]
 			id: "040DF1F47AC5F4E3"
 			shape: "hexagon"
 			size: 0.75d
@@ -228,6 +269,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"&eGlowing Water&r is a throwable that burns the undead. Crafts three at a time, which is exactly how many you need when three skeletons show up."
+			]
 			id: "0DED4DF736A831B4"
 			shape: "hexagon"
 			size: 0.75d
@@ -243,6 +287,9 @@
 		}
 		{
 			dependencies: ["0DED4DF736A831B4"]
+			description: [
+				"Count to three. Not two, not four. Five is right out."
+			]
 			id: "7D3CF0C46B40CAF1"
 			shape: "hexagon"
 			size: 0.75d
@@ -259,6 +306,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"Upgrade your novice book at the &6Enchanting Apparatus&r. More spell slots, higher tier glyphs, same terrible aim."
+			]
 			id: "7D00D62B7AD615A6"
 			shape: "hexagon"
 			size: 0.75d
@@ -275,6 +325,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Ender's Hand&r swaps your position with whatever you're aiming at. Yes, that includes the creeper. Choose targets responsibly."
+			]
 			id: "1FF1B92CC5B8C283"
 			shape: "hexagon"
 			size: 0.75d
@@ -304,6 +357,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"A &6Magnum Torch&r suppresses hostile spawns in a big radius around it. One per base district ends the nightly zombie tax."
+			]
 			id: "79584900C141FBA0"
 			shape: "hexagon"
 			size: 0.75d
@@ -325,6 +381,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Reflection Necklace&r stores the hits you take and detonates them back outward. Passive-aggressive, weaponized."
+			]
 			id: "1074384652CF1489"
 			shape: "hexagon"
 			size: 0.75d
@@ -356,6 +415,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Shadow Glaive&r ricochets between targets before returning. Throw it into a crowd and let geometry do the rest."
+			]
 			id: "5A9F425F74A7A52B"
 			shape: "hexagon"
 			size: 0.75d
@@ -396,6 +458,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Magic Mirror&r teleports you home from nearly a thousand blocks out. The commute-canceling relic."
+			]
 			id: "4A8C585CA9F997BB"
 			shape: "hexagon"
 			size: 0.75d
@@ -426,6 +491,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Spatial Sign&r seals a point in space you can snap back to. Set it before boss rooms, bad decisions, and lava-adjacent construction."
+			]
 			id: "4471E5D89176B710"
 			shape: "hexagon"
 			size: 0.75d
@@ -455,6 +523,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Space Dissector&r cuts a rift you can step through. Terrain is now a suggestion."
+			]
 			id: "6ABEF9F555A0BD6E"
 			shape: "hexagon"
 			size: 0.75d
@@ -485,6 +556,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Elytra Booster&r straps stored thrust to your wings. Rockets are for people without relics."
+			]
 			id: "2AC473C0C6832A84"
 			shape: "hexagon"
 			size: 0.75d
@@ -515,6 +589,9 @@
 		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
+			description: [
+				"The &6Infinity Ham&r regrows its own slices. Ten pieces, forever. Food problem: solved. Existential questions: introduced."
+			]
 			id: "37D0AC07A071D56D"
 			shape: "hexagon"
 			size: 0.75d
@@ -550,6 +627,9 @@
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
+			description: [
+				"Raw gravitite goes in the Aether &bFreezer&r first. Cold metal holds its levitation better, apparently."
+			]
 			id: "50376974E4F14658"
 			size: 0.75d
 			subtitle: "ice-cold and ready to levitate"
@@ -564,6 +644,9 @@
 		}
 		{
 			dependencies: ["50376974E4F14658"]
+			description: [
+				"Frozen gravitite runs through the Aether &6Altar&r next. Freeze it, then enchant it. The metallurgy is spiritual."
+			]
 			id: "1B9C0C6A43CB99C7"
 			size: 0.75d
 			subtitle: "blessed by the Aether itself"
@@ -578,6 +661,9 @@
 		}
 		{
 			dependencies: ["1B9C0C6A43CB99C7"]
+			description: [
+				"Finish in the &6Imbuement Chamber&r: charged gravitite over two &aholy silver rods&r and two &9resonant zanite crystals&r, 5000 source. Three magic systems, one ingot."
+			]
 			id: "70103C694B3D2219"
 			size: 0.75d
 			subtitle: "it floats. if you let it."
@@ -592,6 +678,9 @@
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
+			description: [
+				"Chaos essence over two &cfire&r and two &bair&r essences enchants into FOUR &cPyrium Ingots&r -- Iron's Spells' angriest metal, four at a time."
+			]
 			id: "17D15E6418E8452E"
 			size: 0.75d
 			subtitle: "forged from chaos and anger"
@@ -606,6 +695,11 @@
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
+			description: [
+				"Ink upgrades brew in the &6Alchemist Cauldron&r: common + source gem = uncommon, uncommon + divine pearl = rare, rare + &aPrima Materia plate&r = epic."
+				""
+				"Tip: 250mb per brew. An epic scroll habit is expensive. Budget accordingly."
+			]
 			id: "7671BC8442421B72"
 			size: 0.75d
 			subtitle: "for epic-tier spells only"

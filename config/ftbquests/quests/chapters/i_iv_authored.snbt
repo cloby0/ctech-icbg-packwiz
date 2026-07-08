@@ -15,6 +15,24 @@
 	}]
 	quests: [
 		{
+			dependencies: ["1F00F1C2E3D40002"]
+			description: [
+				"The &6Military Industrial Complex&r is the multiblock big brother of the Arms Manufacturer -- artillery, heavy ordnance, and vehicle-mounted violence at industrial scale."
+				""
+				"An IV hull wrapped in &9Tungstensteel&r plates, robot arms, and conveyors. Eisenhower warned you about this exact machine."
+			]
+			id: "44B7E09A3C5D2160"
+			subtitle: "war. war never changes. production does"
+			tasks: [{
+				id: "44B7E09A3C5D2161"
+				item: "gtceu:military_industrial_complex"
+				type: "item"
+			}]
+			title: "Military Industrial Complex"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
 			dependencies: ["1E00F1C2E3D40028"]
 			hide_until_deps_complete: true
 			id: "1F00F1C2E3D40002"

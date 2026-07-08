@@ -16,6 +16,11 @@
 	quests: [
 		{
 			dependencies: ["2C9E18AE64E4E744"]
+			description: [
+				"Drop an &damethyst shard&r in the Imbuement Chamber with 750 source and it comes out as &5Arcane Essence&r -- the base reagent for Iron's Spells and half your future books."
+				""
+				"Tip: no pedestals needed. Just source and patience."
+			]
 			id: "7EA490DB5937F1B3"
 			size: 0.75d
 			subtitle: "ghost juice. don't ask questions."
@@ -30,6 +35,11 @@
 		}
 		{
 			dependencies: ["1BBC77A8493BB220"]
+			description: [
+				"The &6Imbuement Chamber&r soaks items in source until they become better items. Glowstone, gold rods, quartz, and silver plates build it -- note the &7silver plates&r, that's the tech tree saying hello."
+				""
+				"Tip: it pulls source from nearby jars automatically. Keep them topped up."
+			]
 			id: "2C9E18AE64E4E744"
 			size: 0.75d
 			subtitle: "glorified magic bucket"
@@ -44,6 +54,11 @@
 		}
 		{
 			dependencies: ["7EA490DB5937F1B3"]
+			description: [
+				"The &6Scribes Table&r turns clay and experience into Ars glyphs. This pack's version wants archwood, gold screws, common ink, magic cloth, and a feather."
+				""
+				"Tip: glyph costs scale with tier. Hoard XP like it's a currency, because it is."
+			]
 			id: "46FA0C350A12D8A3"
 			size: 0.75d
 			subtitle: "where spells are born (and poorly spelled)"
@@ -58,6 +73,11 @@
 		}
 		{
 			dependencies: ["7EA490DB5937F1B3"]
+			description: [
+				"The &6Inscription Table&r is Iron's Spells' answer to the Scribes Table -- this is where spell scrolls get bound into books."
+				""
+				"Tip: two mods, two tables, one desk area. Build them next to each other and pretend it was intentional."
+			]
 			id: "23DADC343F70C96F"
 			size: 0.75d
 			subtitle: "two tables, both alike in dignity"
@@ -72,6 +92,11 @@
 		}
 		{
 			dependencies: ["46FA0C350A12D8A3"]
+			description: [
+				"Magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6Novice Spell Book&r. Foil is a GT Bender product -- yes, the magic book has a tech ingredient. Get used to that."
+				""
+				"Tip: the book holds your glyphs and your mana. Losing it is a personality-altering event. Keybind a slot for it."
+			]
 			id: "69097C5CA51C927E"
 			size: 0.75d
 			subtitle: "page one: don't point it at yourself"
@@ -87,8 +112,12 @@
 		{
 			dependencies: [
 				"46F3E5D16CC665B8"
-				"486FF2D3B8C2D77D"
-				"2C9E18AE64E4E744"
+				"1BBC77A8493BB220"
+			]
+			description: [
+				"Back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eGlowing Compound Dust&r."
+				""
+				"Tip: yes, the diamond is consumed. The compound does not care about your feelings."
 			]
 			id: "2128E321A9C4A125"
 			size: 0.75d
@@ -100,10 +129,18 @@
 			}]
 			title: "Glowing Compound Dust"
 			x: 0.0d
-			y: -2.25d
+			y: -1.125d
 		}
 		{
-			dependencies: ["1BBC77A8493BB220"]
+			dependencies: [
+				"2128E321A9C4A125"
+				"2C9E18AE64E4E744"
+			]
+			description: [
+				"Soak the compound in the &6Imbuement Chamber&r to get &eImpure Glimmering Dust&r, then smelt that into small piles of Luminessence."
+				""
+				"Tip: cheap imbuement, no pedestals. Batch it while doing anything else."
+			]
 			id: "486FF2D3B8C2D77D"
 			size: 0.75d
 			subtitle: "kinda shiny but mostly gross"
@@ -114,10 +151,10 @@
 			}]
 			title: "Impure Glimmering Dust"
 			x: 0.0d
-			y: -1.125d
+			y: -2.25d
 		}
 		{
-			dependencies: ["2128E321A9C4A125"]
+			dependencies: ["486FF2D3B8C2D77D"]
 			description: [
 				"&aLuminessence&r is the foundational material of the magic tree's early game."
 				""

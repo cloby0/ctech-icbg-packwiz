@@ -5,6 +5,10 @@ file = "config/OEB/greate_swaps.json"
 hash = "31073637be9968cca4824c2466cc690e2bab4e8a4b7a1882821d31edf76aa905"
 
 [[files]]
+file = "config/OEB/superbwarfare_ore_removal.json"
+hash = "2352d6229a4655e7a12949818c5ce7e5ecf9c615c0839dcd301ff692948fac9c"
+
+[[files]]
 file = "config/aether-common.toml"
 hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
@@ -66,35 +70,35 @@ hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "f05577023cfd2fa4fba2ecf1f7a6c183d3364e15286c45705ef94f727c1c9d32"
+hash = "f7c30f74ade7214c582cb7a3c13c80659e9f11e8cca8341b264fa2e9117a0cdd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/alchemist.snbt"
-hash = "2c9332390c1575a18c2800ea926fe83904e00ad90fa51fdd78251249b2ff491b"
+hash = "e42d3e61558f88832aa93dcbde726366b76f833781e00dd24a5f726b4c496612"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/apprentice.snbt"
-hash = "eeb254bc070e5592678129ffdc0e26d6230bb3d678e203685dca41f3c0b9fb20"
+hash = "2e45205277c417150415b63c2223111d47dff5123bef86a899da6ac79fa16cf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/arcanist.snbt"
-hash = "3f7b63bfde52e897ea9557d0eec5a73db6ef6927e07b8d5157dcfc2972b88122"
+hash = "eb028e50a59885818b19170ee3c71f7e2d289e3ef71a36d4c0eca4b33454d4e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_ev_authored.snbt"
-hash = "b25ab733b4e2fa93c295dd9a3498efc0b4f9631366fd59e621619679ebf1290f"
+hash = "1be189183c6110cc2719b8a053e2621ecc367950bb3f34466ee28a3e4c0f2d48"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
-hash = "29ce6d215b3421a042dd79ad2468bfd842558a4796665aead6ad1eb0ac8e95af"
+hash = "f97cd6e797ba78c7f9bc6affee8d9adb532e7bcda030d40e181f9ab65b3d9c23"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
-hash = "111176c158ee1a3d162cf5209beaa89ddb7170470464e705f71a29560472253b"
+hash = "047f78806813a745d2653f097f45bfa03a15c8899297a771718982cd79e82ff3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_iv_authored.snbt"
-hash = "2e4f38c03c4b34abd1f3ade84bf55f5c7d734b8e75b630eacd43c8e979c02853"
+hash = "a88f706395f631485705f2a343877d07c2f87d678f7826f7ff142624d6908185"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_luv_authored.snbt"
@@ -102,11 +106,11 @@ hash = "eec0cf9f819e52a5e5b435b997412b81d97bf2d4d6187a1578d851012491e22a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_lv_authored.snbt"
-hash = "f9ec1b6c8d1501e4e4ceed957d577a9adc912abd900745d5f3bea966022ab773"
+hash = "31a0903111f4a92737279575b45291fbc44ce4a60f2c29f913cba41a908e80f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_mv_authored.snbt"
-hash = "9d2cedef524457f34a95473c792ae7973b66d619699fcbfc43469feac7a31056"
+hash = "8dd8e63f846c3e20d355294b7f55ccaa8b6e8c03dc0ccac51b78c79d9633fb99"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_steam_age_authored.snbt"
@@ -114,11 +118,11 @@ hash = "02f8efc350bb86b7d4e6401fa56a24ec686863b336791599bc2afd6c65c07bfa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uev_authored.snbt"
-hash = "a9714ab7d9bb1245ff553710ffdf26fc42b480969806252db14a2fab90cb3f8b"
+hash = "f028d60bb7307fa5b3ff12acc00d5a4b7244a63c9e1c612adbe5b243c3446112"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uhv_authored.snbt"
-hash = "9ac1f0287b973c90ca845677248fed7825b8f50430c8c60d453315911da208ad"
+hash = "618555c9b117f64e54b6bd7e6a4ab173ef8fb3e2fd4d28a8f9a4a0c26ec3bdb2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uiv_authored.snbt"
@@ -134,27 +138,27 @@ hash = "cc8f078130827a2935736a0ba518e6959614cf6c46bc72faf10829d60b5b2747"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "ff8d0d081350b606383f1563a4e3104012b845c2cdaf296828960f523b6976a7"
+hash = "c4a04238f0cdae756326e0966398eb871c3c32f0f1a504c5e51c7ce44899d65c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
-hash = "a2574d8de4440b1aa0b423dedba2a26063e19952b6b72c0a89888ce80aee328e"
+hash = "b70237425be832169000f537a5d35b29d78fb9eb1b005cbf9e60b2f50656254a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
-hash = "ddbda260fecfe70b108af2bbfc4d592dcd0f40c240d260252b7b088125d03f03"
+hash = "48682e72a4c4dec681fffda879a566befee1a9969178f183ebcb36b2c23329ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sorcerer.snbt"
-hash = "f931bc3d88e6c0e5f0aaf3bd75bf5899d6f1309fb752a875606661d5e24a3e20"
+hash = "de2ddad92e606c71ba3ea96fd622ca33bfd12bc724c6e3f7bd44bb06043a5728"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/thuamaturge.snbt"
-hash = "401f03d8c598345e1475dff78cbfd2d99fe11aa7c7381e80bb78e7ff2ff3eb72"
+file = "config/ftbquests/quests/chapters/thaumaturge.snbt"
+hash = "8b8a55145783c43c86762443b5642835ffefef7d255a0fcd41265957563ce123"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"
-hash = "a31e8d87ad93482f0c4974ae1f8759a07085cb4a97482593a7672f511525f351"
+hash = "418bc66be7caa18dc2f7b313956396fa82ed0d27453484c3ba7554c8e729cb24"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -307,6 +311,10 @@ hash = "8299f4fdca56ffa47c29a8057c2d460d6c968ccffb838b184aeb646ac932c8c0"
 [[files]]
 file = "config/obscure_tooltips-client.toml"
 hash = "cb94292192d00ec02479bb58d409195e224709e8823438d62fc4c666e8d4b7b3"
+
+[[files]]
+file = "config/oeb/common.json"
+hash = "7c9302c6c5a9a7433d0e1fe1555f6c4163d2eb5777ae60327cd89a5db06ee698"
 
 [[files]]
 file = "config/quark-common.toml"
@@ -2325,6 +2333,30 @@ file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
 hash = "be081a4465b881ec96423dbefd3c4e1ed60214d4dd23c63bdde2846488187441"
 
 [[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/deepslate_galena_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/deepslate_scheelite_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/deepslate_silver_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/galena_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/scheelite_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/forge/biome_modifier/silver_ore_biome_modifier.json"
+hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
 file = "kubejs/server_scripts/blockTags.js"
 hash = "fb6dcf6fd43cb6ea38d74873ae6b953cd5bcf8707a0ad5605d5edfeb4e349e68"
 
@@ -2346,7 +2378,7 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "560c51bc5935b68176ccb3632b8a130b3039b8ee561b33f3848811cf0f962a88"
+hash = "7611adf7d6ca7e6652f6e64aad68d1c35933cc6464e72018f158e2b9ac64ebde"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"

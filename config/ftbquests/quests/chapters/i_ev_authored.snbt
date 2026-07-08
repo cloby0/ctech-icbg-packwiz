@@ -33,18 +33,17 @@
 		{
 			dependencies: ["1E00F1C2E3D40002"]
 			description: [
-				"The &6EV Gas Turbine&r burns heavy petroleum fractions for 2048 EU/t per ampere. The Cracker output from HV finally justifies itself."
+				"Single-block generators stop at &6HV&r -- there is no EV gas turbine. From here on out, power means multiblocks."
 				""
-				"The &5Large Combustion Engine&r multiblock is stronger once diesel production is stable -- see the right branch. Either way, build two gas turbines as a baseline before anything else."
+				"The &5Large Combustion Engine&r burns diesel for 2048 EU/t, needs a trickle of &bLubricant&r, and boosts higher with &bLiquid Oxygen&r. The Cracker output from HV finally justifies itself."
 			]
 			id: "1E00F1C2E3D40004"
 			shape: "square"
 			size: 0.75d
 			subtitle: "petroleum power, for real this time"
 			tasks: [{
-				count: 2L
 				id: "1E00F1C2E3D40005"
-				item: "gtceu:ev_gas_turbine"
+				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
 			title: "EV Power"

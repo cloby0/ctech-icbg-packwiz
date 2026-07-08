@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "thuamaturge"
+	filename: "thaumaturge"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
 	icon: "botania:terrasteel_ingot"
@@ -16,6 +16,29 @@
 	}]
 	quests: [
 		{
+			dependencies: ["5188A30959FE9535"]
+			description: [
+				"The &6Runic Forge&r multiblock automates both the &dRunic Altar&r and the &aTerra Plate&r in one structure, drinking &dLiquid Source&r instead of raw mana."
+				""
+				"It always runs at &5LuV&r voltage, so bring real power. Parallel Hatch and perfect overclocks supported -- rune production stops being a chore today."
+			]
+			id: "61F4B8D0C3A75E20"
+			subtitle: "the altar grew up and got a job"
+			tasks: [{
+				id: "61F4B8D0C3A75E21"
+				item: "gtceu:runic_forge"
+				type: "item"
+			}]
+			title: "Runic Forge"
+			x: 2.25d
+			y: -7.0d
+		}
+		{
+			description: [
+				"Build the &6Terra Plate&r multiblock and feed it: &aTerrasteel&r here is a &dLiving Metalloid&r, a mana pearl, and a mana diamond under 500,000 mana."
+				""
+				"Tip: add a &bRune of Frost&r to the mix and one pour yields THREE ingots for 1.5M mana. Bulk pricing."
+			]
 			dependencies: ["76080FE8160A0F71"]
 			id: "5188A30959FE9535"
 			subtitle: "biggest crafting block in the game? probably."
@@ -76,6 +99,9 @@
 			y: -1.0d
 		}
 		{
+			description: [
+				"The Runic Altar's first custom job: a manasteel bolt with earth, water, mana, and spring runes, 5200 mana. Compressed springtime."
+			]
 			dependencies: ["1C79439FDCE2173E"]
 			id: "2FE1A9BEA093B7B9"
 			subtitle: "sounds nicer than it is"
@@ -89,6 +115,9 @@
 			y: -4.0d
 		}
 		{
+			description: [
+				"Enchant the florid compound over a &6clock&r, nature essence, water essence, and &aFertile Essence&r -- 30000 source. Time plus life equals metal that grows."
+			]
 			dependencies: [
 				"2FE1A9BEA093B7B9"
 				"69AAC4FCAADE1F21"
@@ -105,6 +134,9 @@
 			y: -5.5d
 		}
 		{
+			description: [
+				"Toss an ender pearl into a &3Mana Pool&r and let it soak. Teleportation, but saturated."
+			]
 			dependencies: ["138BA0CD22478ACF"]
 			id: "3D4DC3DA79713198"
 			subtitle: "ender pearl but glowier"
@@ -118,6 +150,9 @@
 			y: -6.5d
 		}
 		{
+			description: [
+				"A diamond dropped in the pool comes out mana-flavored. Botania's favorite crafting gem."
+			]
 			dependencies: ["138BA0CD22478ACF"]
 			id: "202F55D0054B18FC"
 			subtitle: "diamonds but with extra steps (and plants)"
@@ -152,6 +187,9 @@
 			y: 1.125d
 		}
 		{
+			description: [
+				"Hex Casting begins: the &6Focus&r stores a pattern or an entity reference for your staff to read. Your first step into programmable magic."
+			]
 			dependencies: ["578575F33D569EE2"]
 			id: "22A18D1A3497D675"
 			size: 0.75d
@@ -166,6 +204,9 @@
 			y: 1.5d
 		}
 		{
+			description: [
+				"A multi-page focus. Store a whole library of patterns and flip between them mid-cast."
+			]
 			dependencies: ["578575F33D569EE2"]
 			id: "5D529521754924FA"
 			size: 0.75d
@@ -180,6 +221,9 @@
 			y: 1.875d
 		}
 		{
+			description: [
+				"An &6Artifact&r casts a stored hex on use, by anyone, forever -- as long as you feed it media. Ship your spells to friends."
+			]
 			dependencies: ["578575F33D569EE2"]
 			id: "4FF741638D500FCF"
 			size: 0.75d
@@ -194,6 +238,9 @@
 			y: 1.875d
 		}
 		{
+			description: [
+				"The staff is your hex-drawing instrument. Any wood, same math. Start scribbling patterns and mind the mishaps."
+			]
 			dependencies: ["578575F33D569EE2"]
 			id: "08EEEC1E164C719E"
 			size: 0.75d
@@ -214,6 +261,9 @@
 			y: 1.5d
 		}
 		{
+			description: [
+				"Same brew as the Alchemist route: epic ink plus an &dElven Source Lattice&r. Legendary scrolls stop failing you; you will find new ways to fail without help."
+			]
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "5F3CCA0806278FD9"
 			size: 0.75d
@@ -228,6 +278,9 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"The Apparatus takes your apprentice book the rest of the way. All tiers, all slots."
+			]
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "6FD05FDAA5532519"
 			size: 0.75d
@@ -242,6 +295,9 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"The &6Runic Altar&r stamps the five base runes -- water, fire, earth, air, mana. These are consumable ingredients everywhere in Botania, so make spares of everything."
+			]
 			dependencies: ["4F76358C60F3FDE1"]
 			id: "0EFC49A84C9C3FBB"
 			size: 0.75d
@@ -264,6 +320,9 @@
 			y: -1.875d
 		}
 		{
+			description: [
+				"Pair the elemental runes into &aspring&r, &esummer&r, &6autumn&r, and &bwinter&r. The altar's second course, and the gateway to every fancier rune."
+			]
 			dependencies: ["0EFC49A84C9C3FBB"]
 			id: "1C79439FDCE2173E"
 			size: 0.75d
@@ -313,6 +372,9 @@
 			y: -3.0d
 		}
 		{
+			description: [
+				"Enchant a &2nature essence&r over skeleton, slime, and creeper essences plus earth and water -- 15000 source. Reliquary's concentrated fertility, straight from monster parts."
+			]
 			dependencies: [
 				"18E8F3A1B08C0C04"
 				"5E9CB75348632373"

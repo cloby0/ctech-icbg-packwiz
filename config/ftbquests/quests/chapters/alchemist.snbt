@@ -16,6 +16,24 @@
 	}]
 	quests: [
 		{
+			dependencies: ["138BA0CD22478ACF"]
+			description: [
+				"The &6Automated Mana Pond&r multiblock replaces flower-sitting: it runs Mana Pool infusions off &dLiquid Source&r, one input at a time, with a &dParallel Hatch&r and perfect overclocks."
+				""
+				"Catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r Alchemy Catalyst, &7circuit 3&r Conjuration Catalyst. Built around a real Mana Pool and &3Manaplatinite&r casings at IV."
+			]
+			id: "61F4B8D0C3A75E30"
+			subtitle: "the pool finally cleans itself"
+			tasks: [{
+				id: "61F4B8D0C3A75E31"
+				item: "gtceu:automated_mana_pond"
+				type: "item"
+			}]
+			title: "Automated Mana Pond"
+			x: -2.25d
+			y: -6.0d
+		}
+		{
 			dependencies: ["3C48407D270C6942"]
 			description: [
 				"The &3Mana Pool&r is the central hub of &3Botania&r."
@@ -37,6 +55,11 @@
 			y: -6.0d
 		}
 		{
+			description: [
+				"Smelt the disorganized form and out comes the &7Abstract Metal Ingot&r -- metal with no opinion yet. Combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
+				""
+				"The real trick: drop it in a &3Mana Pool&r and it becomes &bManasteel&r."
+			]
 			dependencies: ["7BDD15A9F2B6BCDD"]
 			id: "5E61BE3584D271A8"
 			size: 0.75d
@@ -97,6 +120,9 @@
 			y: -1.875d
 		}
 		{
+			description: [
+				"Epic ink brewed with an &dElven Source Lattice&r -- an Arcanist-tier elven export. The best ink money cannot buy, because it is not for sale."
+			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3CFDB9C271774552"
 			size: 0.75d
@@ -112,6 +138,11 @@
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"Enchant a &6book&r over a &aPrima Materia plate&r, two &credstone blocks&r, and a bottle o' enchanting -- 10000 source -- to bind the &6Alkahestry Tome&r."
+				""
+				"Charge it with redstone and it transmutes common materials in the crafting grid. The alchemist's actual party trick."
+			]
 			id: "262FBCDEA658CDE8"
 			size: 0.75d
 			subtitle: "the art of transmutation, pocket edition"
@@ -131,6 +162,9 @@
 			y: 1.5d
 		}
 		{
+			description: [
+				"The final Ars book upgrade at the &6Enchanting Apparatus&r. Every glyph tier, maximum mana. The library card is complete."
+			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3B405737C2EC2A85"
 			size: 0.75d
@@ -169,6 +203,11 @@
 			y: -1.875d
 		}
 		{
+			description: [
+				"A bucket enchanted over a &aPrima Materia block&r, bottled XP, and charged amethyst becomes a &dBucket of Concepts&r -- then imbuing it over a &fHoly Silver block&r condenses the concept into &7Metal Form&r."
+				""
+				"Tip: you are industrializing philosophy. Do not think about it too hard."
+			]
 			dependencies: ["2C27B13A2CA65DEC"]
 			id: "442B54C049E4C49E"
 			size: 0.75d
@@ -183,6 +222,9 @@
 			y: -3.0d
 		}
 		{
+			description: [
+				"Imbue the Metal Form over four &bice essences&r to freeze the idea into something you can actually hold. Still disorganized, but holdable."
+			]
 			dependencies: ["442B54C049E4C49E"]
 			id: "7BDD15A9F2B6BCDD"
 			size: 0.75d
@@ -197,6 +239,11 @@
 			y: -4.875d
 		}
 		{
+			description: [
+				"The &aPure Daisy&r recipe is custom here: a magebloom crop enchanted over holy silver dust, a prima materia rod, and two earth essences, 10000 source."
+				""
+				"Plant it, ring it with stone, and wait. &fLivingrock&r feeds every Botania build from here on."
+			]
 			dependencies: ["1F374C13B7A1C7A2"]
 			id: "3C48407D270C6942"
 			size: 0.75d
@@ -211,6 +258,9 @@
 			y: -3.75d
 		}
 		{
+			description: [
+				"Rare ink plus a &aPrima Materia plate&r in the Alchemist Cauldron. The Sorcerer capstone, now stationery."
+			]
 			dependencies: [
 				"51D5B5C004491077"
 				"3C613081F4FE51B2"

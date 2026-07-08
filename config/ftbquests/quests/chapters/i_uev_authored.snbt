@@ -7,12 +7,28 @@
 	icon: "draconicevolution:chaos_shard"
 	id: "2400F1C2E3D40000"
 	order_index: 10
-	quest_links: [{
-		id: "2400F1C2E3D40001"
-		linked_quest: "2300F1C2E3D4001C"
-		x: -1.5d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "2400F1C2E3D40001"
+			linked_quest: "2300F1C2E3D4001C"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "19E4C0A7B5D2F380"
+			linked_quest: "4E4F37F6AB877E5C"
+			size: 0.75d
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "19E4C0A7B5D2F381"
+			linked_quest: "6D40B7C2E8A15F90"
+			size: 0.75d
+			x: 3.5d
+			y: -3.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2300F1C2E3D4001C"]
@@ -202,6 +218,24 @@
 			}]
 			title: "Biogenic Synthesis Casing"
 			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2400F1C2E3D40020"]
+			description: [
+				"Casings, a UEV hull, pumps, sensors, and a bath of &2Sterilized Growth Medium&r assemble the &6Biogenic Synthesis Chamber&r itself."
+				""
+				"It grows the biological components the endgame keeps asking for. Perfect overclocks, but no Parallel Hatch -- life refuses to be rushed in bulk."
+			]
+			id: "77A2D5C1E94B0F80"
+			subtitle: "it's alive. industrially alive"
+			tasks: [{
+				id: "77A2D5C1E94B0F81"
+				item: "gtceu:biogenic_synthesis_chamber"
+				type: "item"
+			}]
+			title: "Biogenic Synthesis Chamber"
+			x: 3.5d
 			y: -1.5d
 		}
 		{

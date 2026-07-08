@@ -15,6 +15,42 @@
 	}]
 	quests: [
 		{
+			dependencies: ["1D00F1C2E3D40002"]
+			description: [
+				"The &6Human Augmentation Plant&r multiblock manufactures &bCyberware&r -- implants that trade your humanity for stat boosts. Nice chrome, choom."
+				""
+				"There is also a single-block &6Cyberware Constructor&r at every tier if you want a bench-top version. The multiblock takes an HV hull, stainless frames, robot arms, and pumps."
+			]
+			id: "3E6B09C8D2A47F50"
+			subtitle: "we can rebuild you. we have the technology"
+			tasks: [{
+				id: "3E6B09C8D2A47F51"
+				item: "gtceu:human_augmentation_plant"
+				type: "item"
+			}]
+			title: "Human Augmentation Plant"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D00F1C2E3D4000C"]
+			description: [
+				"The &6Epitaxial Growth Chamber&r grows specialty wafers and space-grade chips that the Cleanroom line cannot. Its casing wants &3Lunar Rocket Alloy&r plates -- same alloy as your rocket."
+				""
+				"Moon-adjacent chip fabrication starts here and stays relevant deep into the game."
+			]
+			id: "09D2C7E4A1B83F60"
+			subtitle: "chips so pure they're grown, not made"
+			tasks: [{
+				id: "09D2C7E4A1B83F61"
+				item: "gtceu:epitaxial_growth_chamber"
+				type: "item"
+			}]
+			title: "Epitaxial Growth Chamber"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
 			dependencies: ["1C00F1C2E3D4001F"]
 			hide_until_deps_complete: true
 			id: "1D00F1C2E3D40002"
