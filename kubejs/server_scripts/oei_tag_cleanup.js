@@ -40,6 +40,7 @@ ServerEvents.tags('item', event => {
     'forge:storage_blocks/certus_quartz':  ['ae2:quartz_block']
   }
 
+  for (let tag in losersByTag) {
     let losers = losersByTag[tag]
     for (let i = 0; i < losers.length; i++) {
       event.remove(tag, losers[i])
