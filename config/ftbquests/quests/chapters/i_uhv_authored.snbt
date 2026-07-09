@@ -20,22 +20,22 @@
 			id: "2300F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "2097152 EU/t. Tech and magic start talking to each other now."
+			subtitle: "2097152 EU/t. tech and magic start talking to each other now."
 			tasks: [{
 				id: "2300F1C2E3D40003"
-				title: "Ultra High Voltage!"
+				title: "ultra high voltage!"
 				type: "checkmark"
 			}]
-			title: "Ultra High Voltage!"
+			title: "ultra high voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40002"]
 			description: [
-				"&aDraconium Dust&r, &aNeutronium Dust&r, and &aGaia Spirit Dust&r mix with a &aDragon Heart Crystal&r into &aDraconic Framework Dust&r. The EBF needs 12000K to smelt it -- hotter than anything used so far."
+				"&adraconium dust&r, &aneutronium dust&r, and &agaia spirit dust&r mix with a &adragon heart crystal&r into &adraconic framework dust&r. the EBF needs 12000K to smelt it -- hotter than anything used so far."
 				""
-				"Gaia Spirit Dust has a pure-tech route (Void Stellite -> Celestial Concentrate -> Stellar Plasma -> centrifuge chance) if the magic tree isn't there yet. Framework Plate and Rod, plus a Draconium Block and a UHV circuit, assemble into the casing below."
+				"gaia spirit dust has a pure-tech route (void stellite -> celestial concentrate -> stellar plasma -> centrifuge chance) if the magic tree isn't there yet. framework plate and rod, plus a draconium block and a UHV circuit, assemble into the casing below."
 			]
 			id: "2300F1C2E3D40004"
 			shape: "square"
@@ -47,16 +47,16 @@
 				item: "kubejs:draconic_framework_casing"
 				type: "item"
 			}]
-			title: "Draconic Framework"
+			title: "draconic framework"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40004"]
 			description: [
-				"Framework casings wrap a UHV hull, field generator, and emitters into the &6Draconic Infusion Chamber&r -- the machine that industrializes Draconic Evolution's fusion altar."
+				"framework casings wrap a UHV hull, field generator, and emitters into the &6draconic infusion chamber&r -- the machine that industrializes draconic evolution's fusion altar."
 				""
-				"Perfect overclocks, no Parallel Hatch. It drinks &5Draconic Computation&r fluid, so keep the chemical reactor loop from the next quest fed."
+				"perfect overclocks, no parallel hatch. it drinks &5draconic computation&r fluid, so keep the chemical reactor loop from the next quest fed."
 			]
 			id: "3B90E4C7A2D51F60"
 			subtitle: "the dragon, contained and invoiced"
@@ -65,16 +65,16 @@
 				item: "gtceu:draconic_infusion_chamber"
 				type: "item"
 			}]
-			title: "Draconic Infusion Chamber"
+			title: "draconic infusion chamber"
 			x: 1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40004"]
 			description: [
-				"The &6Draconic Infusion Chamber&r turns Draconium Ingot + Draconic Computation fluid into &aAwakened Draconium&r. Draconic Computation itself comes from a Chemical Reactor eating Awakened Draconium Dust -- Draconic Evolution's own altar bootstraps the first batch before the loop can run on its own."
+				"the &6draconic infusion chamber&r turns draconium ingot + draconic computation fluid into &aawakened draconium&r. draconic computation itself comes from a chemical reactor eating awakened draconium dust -- draconic evolution's own altar bootstraps the first batch before the loop can run on its own."
 				""
-				"Awakened Draconium is UEV's structural material. Get this stable early; almost everything past this point wants some."
+				"awakened draconium is UEV's structural material. get this stable early; almost everything past this point wants some."
 			]
 			id: "2300F1C2E3D40008"
 			shape: "square"
@@ -86,16 +86,16 @@
 				item: "draconicevolution:awakened_draconium_ingot"
 				type: "item"
 			}]
-			title: "Awakened Draconium"
+			title: "awakened draconium"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40008"]
 			description: [
-				"&aNeutronium Wafers&r come from cutting a &aDraconic Boule&r in a Cleanroom Cutter -- and Draconic Boule is a &5Prophet-tier magic item&r, not a tech one. This is the real convergence point: the two trees actually need each other from here on."
+				"&aneutronium wafers&r come from cutting a &adraconic boule&r in a cleanroom cutter -- and draconic boule is a &5prophet-tier magic item&r, not a tech one. this is the real convergence point: the two trees actually need each other from here on."
 				""
-				"Board assembly also wants a Dragon Heart Crystal and both Draconium and Awakened Draconium Foil. Feeds directly into the Processor Supercomputer below."
+				"board assembly also wants a dragon heart crystal and both draconium and awakened draconium foil. feeds directly into the processor supercomputer below."
 			]
 			id: "2300F1C2E3D4000C"
 			shape: "square"
@@ -107,16 +107,16 @@
 				item: "kubejs:draconic_resonance_board"
 				type: "item"
 			}]
-			title: "Draconic Resonance Board"
+			title: "draconic resonance board"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40008"]
 			description: [
-				"The base &aDraconic Processor&r -- Neutronium Wafer, Draconium Foil, a Dragon Heart Crystal, and a stack of Advanced SMDs, run through the Circuit Assembler at UHV power. No new machine needed, just enough overclock."
+				"the base &adraconic processor&r -- neutronium wafer, draconium foil, a dragon heart crystal, and a stack of advanced SMDs, run through the circuit assembler at UHV power. no new machine needed, just enough overclock."
 				""
-				"Draconic Processor satisfies ZPM-tier circuit recipes -- three tiers behind, same deviation pattern as every circuit line before it."
+				"draconic processor satisfies ZPM-tier circuit recipes -- three tiers behind, same deviation pattern as every circuit line before it."
 			]
 			id: "2300F1C2E3D40010"
 			shape: "square"
@@ -128,16 +128,16 @@
 				item: "kubejs:draconic_processor"
 				type: "item"
 			}]
-			title: "Draconic Processor"
+			title: "draconic processor"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40010"]
 			description: [
-				"&aAwakened Draconium Foil&r gates this recipe -- the same 'assembly rung introduces the gating material' pattern as every line before it (Ostrum, Calorite, Naquadah wire)."
+				"&aawakened draconium foil&r gates this recipe -- the same 'assembly rung introduces the gating material' pattern as every line before it (ostrum, calorite, naquadah wire)."
 				""
-				"Satisfies UV-tier recipes. Crafts up into the Processor Supercomputer below."
+				"satisfies UV-tier recipes. crafts up into the processor supercomputer below."
 			]
 			id: "2300F1C2E3D40014"
 			shape: "square"
@@ -149,16 +149,16 @@
 				item: "kubejs:draconic_processor_assembly"
 				type: "item"
 			}]
-			title: "Draconic Processor Assembly"
+			title: "draconic processor assembly"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40014", "2300F1C2E3D4000C"]
 			description: [
-				"An Assembly Line recipe: Tritanium Frame, Draconic Processor Assembly, four Resonance Boards, a wall of Advanced SMDs, RAM Chips, Europium Plate, and two more Dragon Heart Crystals."
+				"an assembly line recipe: tritanium frame, draconic processor assembly, four resonance boards, a wall of advanced SMDs, RAM chips, europium plate, and two more dragon heart crystals."
 				""
-				"This is as far as the draconic line goes at UHV -- the Mainframe rung needs Chaos Crystal Dust, which doesn't exist until UEV. Satisfies UHV-tier recipes; batch it, it's the ceiling here."
+				"this is as far as the draconic line goes at UHV -- the mainframe rung needs chaos crystal dust, which doesn't exist until UEV. satisfies UHV-tier recipes; batch it, it's the ceiling here."
 			]
 			id: "2300F1C2E3D40018"
 			shape: "rsquare"
@@ -170,16 +170,16 @@
 				item: "kubejs:draconic_processor_supercomputer"
 				type: "item"
 			}]
-			title: "Draconic Processor Supercomputer"
+			title: "draconic processor supercomputer"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40004", "2300F1C2E3D40018"]
 			description: [
-				"&aAwakened Draconium&r is UEV's structural material -- confirmed straight from the machine casing recipe (`uev_machine_casing_recipe`), not guessed. The &aDraconic Processor Supercomputer&r is the best circuit reachable here; the Mainframe stays out of reach until Chaos Crystal Dust exists at UEV."
+				"&aawakened draconium&r is UEV's structural material -- confirmed straight from the machine casing recipe (`uev_machine_casing_recipe`), not guessed. the &adraconic processor supercomputer&r is the best circuit reachable here; the mainframe stays out of reach until chaos crystal dust exists at UEV."
 				""
-				"Both should be in steady production before leaving. UEV is next -- the Chaos Guardian and the chaos theme circuits wait there. Bring Prophet-tier magic progress if it isn't already running; this pack's endgame stops rewarding solo lines from here."
+				"both should be in steady production before leaving. UEV is next -- the chaos guardian and the chaos theme circuits wait there. bring prophet-tier magic progress if it isn't already running; this pack's endgame stops rewarding solo lines from here."
 			]
 			icon: "gtceu:awakened_draconium_plate"
 			id: "2300F1C2E3D4001C"
@@ -200,11 +200,11 @@
 					type: "item"
 				}
 			]
-			title: "Leaving UHV"
+			title: "leaving UHV"
 			x: 0.0d
 			y: -10.5d
 		}
 	]
 	subtitle: ["Where tech meets myth. Feed the dragon."]
-	title: "X. Ultra High Voltage"
+	title: "x. ultra high voltage"
 }

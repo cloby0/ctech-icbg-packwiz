@@ -18,9 +18,9 @@
 		{
 			dependencies: ["5188A30959FE9535"]
 			description: [
-				"The &6Runic Forge&r multiblock automates both the &dRunic Altar&r and the &aTerra Plate&r in one structure, drinking &dLiquid Source&r instead of raw mana."
+				"the &6runic forge&r multiblock automates both the &drunic altar&r and the &aterra plate&r in one structure, drinking &dliquid source&r instead of raw mana."
 				""
-				"It always runs at &5LuV&r voltage, so bring real power. Parallel Hatch and perfect overclocks supported -- rune production stops being a chore today."
+				"it always runs at &5LuV&r voltage, so bring real power. parallel hatch and perfect overclocks supported -- rune production stops being a chore today."
 			]
 			id: "61F4B8D0C3A75E20"
 			subtitle: "the altar grew up and got a job"
@@ -29,15 +29,15 @@
 				item: "gtceu:runic_forge"
 				type: "item"
 			}]
-			title: "Runic Forge"
+			title: "runic forge"
 			x: 2.25d
 			y: -7.0d
 		}
 		{
 			description: [
-				"Build the &6Terra Plate&r multiblock and feed it: &aTerrasteel&r here is a &dLiving Metalloid&r, a mana pearl, and a mana diamond under 500,000 mana."
+				"build the &6terra plate&r multiblock and feed it: &aterrasteel&r here is a &dliving metalloid&r, a mana pearl, and a mana diamond under 500,000 mana."
 				""
-				"Tip: add a &bRune of Frost&r to the mix and one pour yields THREE ingots for 1.5M mana. Bulk pricing."
+				"tip: add a &brune of frost&r to the mix and one pour yields THREE ingots for 1.5M mana. bulk pricing."
 			]
 			dependencies: ["76080FE8160A0F71"]
 			id: "5188A30959FE9535"
@@ -47,7 +47,7 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			title: "Terrestrial Agglomeration Plate"
+			title: "terrestrial agglomeration plate"
 			x: 0.0d
 			y: -7.0d
 		}
@@ -58,11 +58,11 @@
 				"3D4DC3DA79713198"
 			]
 			description: [
-				"&aTerrasteel&r is the capstone of the &8Thaumaturge&r tier."
+				"&aterrasteel&r caps off the &8thaumaturge&r tier."
 				""
-				"If Manasteel was flower-powered metallurgy, Terrasteel is the whole botanical garden condensed into a single ingot."
+				"if manasteel was flower-powered metallurgy, terrasteel is the whole botanical garden condensed into a single ingot."
 				""
-				"&l&3Lore:&r&o In vanilla Botania packs, Terrasteel is considered an endgame material. Here, it's a stepping stone."
+				"&l&3lore:&r&o in vanilla botania packs, terrasteel is considered an endgame material. here, it's a stepping stone."
 			]
 			id: "278BE65F77B6BD8B"
 			shape: "square"
@@ -73,18 +73,18 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			title: "Terrasteel Ingot"
+			title: "terrasteel ingot"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["56FCF9C63F27F60E"]
 			description: [
-				"The &3Runic Altar&r turns &dMana&r and materials into &aRunes&r - the building blocks of advanced &3Botania&r crafting."
+				"the &3runic altar&r turns &dmana&r and materials into &arunes&r - the building blocks of advanced &3botania&r crafting."
 				""
-				"You'll need a significant variety of runes to eventually reach &aTerrasteel&r. Start here."
+				"you'll need a significant variety of runes to eventually reach &aterrasteel&r. start here."
 				""
-				"&9Tip:&r Each rune crafting consumes a fixed amount of Mana. Keep your pools topped up or this will take forever."
+				"&9tip:&r each rune crafting consumes a fixed amount of mana. keep your pools topped up or this will take forever."
 			]
 			id: "4F76358C60F3FDE1"
 			size: 0.75d
@@ -94,29 +94,29 @@
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			title: "Runic Altar"
+			title: "runic altar"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			description: [
-				"The Runic Altar's first custom job: a manasteel bolt with earth, water, mana, and spring runes, 5200 mana. Compressed springtime."
+				"the runic altar's first custom job: a manasteel bolt with earth, water, mana, and spring runes, 5200 mana. compressed springtime."
 			]
 			dependencies: ["1C79439FDCE2173E"]
 			id: "2FE1A9BEA093B7B9"
-			subtitle: "sounds nicer than it is"
+			subtitle: "sounds nicer than it's"
 			tasks: [{
 				id: "1CA668C07422ACCB"
 				item: "kubejs:florid_compound"
 				type: "item"
 			}]
-			title: "Florid Compound"
+			title: "florid compound"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			description: [
-				"Enchant the florid compound over a &6clock&r, nature essence, water essence, and &aFertile Essence&r -- 30000 source. Time plus life equals metal that grows."
+				"enchant the florid compound over a &6clock&r, nature essence, water essence, and &afertile essence&r -- 30000 source. time plus life equals metal that grows."
 			]
 			dependencies: [
 				"2FE1A9BEA093B7B9"
@@ -129,13 +129,13 @@
 				item: "kubejs:living_metalloid"
 				type: "item"
 			}]
-			title: "Living Metalloid"
+			title: "living metalloid"
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			description: [
-				"Toss an ender pearl into a &3Mana Pool&r and let it soak. Teleportation, but saturated."
+				"toss an ender pearl into a &3mana pool&r and let it soak. teleportation, but saturated."
 			]
 			dependencies: ["138BA0CD22478ACF"]
 			id: "3D4DC3DA79713198"
@@ -145,13 +145,13 @@
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
-			title: "Mana Pearl"
+			title: "mana pearl"
 			x: 1.5d
 			y: -6.5d
 		}
 		{
 			description: [
-				"A diamond dropped in the pool comes out mana-flavored. Botania's favorite crafting gem."
+				"a diamond dropped in the pool comes out mana-flavored. botania's favorite crafting gem."
 			]
 			dependencies: ["138BA0CD22478ACF"]
 			id: "202F55D0054B18FC"
@@ -161,18 +161,18 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			title: "Mana Diamond"
+			title: "mana diamond"
 			x: -1.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["56FCF9C63F27F60E"]
 			description: [
-				"&3Hex Casting&r is a visual, pattern-based magic system. Instead of crafting spells, you draw them in the air with a staff."
+				"&3hex casting&r is a visual, pattern-based magic system. instead of crafting spells, you draw them in the air with a staff."
 				""
-				"It has a bit of a learning curve. That's okay. The in-game book explains everything."
+				"it has a bit of a learning curve. that's okay. the in-game book explains everything."
 				""
-				"The &aHexed Amethyst Core&r is your entry point."
+				"the &ahexed amethyst core&r is your entry point."
 			]
 			id: "578575F33D569EE2"
 			size: 0.75d
@@ -182,13 +182,13 @@
 				item: "kubejs:hexed_amethyst_core"
 				type: "item"
 			}]
-			title: "Hexed Amethyst Core"
+			title: "hexed amethyst core"
 			x: 0.0d
 			y: 1.125d
 		}
 		{
 			description: [
-				"Hex Casting begins: the &6Focus&r stores a pattern or an entity reference for your staff to read. Your first step into programmable magic."
+				"hex casting begins: the &6focus&r stores a pattern or an entity reference for your staff to read. your first step into programmable magic."
 			]
 			dependencies: ["578575F33D569EE2"]
 			id: "22A18D1A3497D675"
@@ -199,13 +199,13 @@
 				item: "hexcasting:focus"
 				type: "item"
 			}]
-			title: "Focus"
+			title: "focus"
 			x: -1.125d
 			y: 1.5d
 		}
 		{
 			description: [
-				"A multi-page focus. Store a whole library of patterns and flip between them mid-cast."
+				"a multi-page focus. store a whole library of patterns and flip between them mid-cast."
 			]
 			dependencies: ["578575F33D569EE2"]
 			id: "5D529521754924FA"
@@ -216,13 +216,13 @@
 				item: "hexcasting:spellbook"
 				type: "item"
 			}]
-			title: "Hex Spellbook"
+			title: "hex spellbook"
 			x: -0.375d
 			y: 1.875d
 		}
 		{
 			description: [
-				"An &6Artifact&r casts a stored hex on use, by anyone, forever -- as long as you feed it media. Ship your spells to friends."
+				"an &6artifact&r casts a stored hex on use, by anyone, forever -- as long as you feed it media. ship your spells to friends."
 			]
 			dependencies: ["578575F33D569EE2"]
 			id: "4FF741638D500FCF"
@@ -233,13 +233,13 @@
 				item: "hexcasting:artifact"
 				type: "item"
 			}]
-			title: "Hex Artifact"
+			title: "hex artifact"
 			x: 0.375d
 			y: 1.875d
 		}
 		{
 			description: [
-				"The staff is your hex-drawing instrument. Any wood, same math. Start scribbling patterns and mind the mishaps."
+				"the staff is your hex-drawing instrument. any wood, same math. start scribbling patterns and mind the mishaps."
 			]
 			dependencies: ["578575F33D569EE2"]
 			id: "08EEEC1E164C719E"
@@ -253,16 +253,16 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(hexcasting:staves)"
 					}
 				}
-				title: "Any Hex Staff"
+				title: "any hex staff"
 				type: "item"
 			}]
-			title: "Any Hex Staff"
+			title: "any hex staff"
 			x: 1.125d
 			y: 1.5d
 		}
 		{
 			description: [
-				"Same brew as the Alchemist route: epic ink plus an &dElven Source Lattice&r. Legendary scrolls stop failing you; you will find new ways to fail without help."
+				"same brew as the alchemist route: epic ink plus an &delven source lattice&r. legendary scrolls stop failing you; you'll find new ways to fail without help."
 			]
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "5F3CCA0806278FD9"
@@ -273,13 +273,13 @@
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
-			title: "Legendary Ink"
+			title: "legendary ink"
 			x: 1.125d
 			y: 0.0d
 		}
 		{
 			description: [
-				"The Apparatus takes your apprentice book the rest of the way. All tiers, all slots."
+				"the apparatus takes your apprentice book the rest of the way. all tiers, all slots."
 			]
 			dependencies: ["56FCF9C63F27F60E"]
 			id: "6FD05FDAA5532519"
@@ -290,13 +290,13 @@
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
-			title: "Archmage's Spell Book"
+			title: "archmage's spell book"
 			x: -1.125d
 			y: 0.0d
 		}
 		{
 			description: [
-				"The &6Runic Altar&r stamps the five base runes -- water, fire, earth, air, mana. These are consumable ingredients everywhere in Botania, so make spares of everything."
+				"the &6runic altar&r stamps the five base runes -- water, fire, earth, air, mana. these are consumable ingredients everywhere in botania, so make spares of everything."
 			]
 			dependencies: ["4F76358C60F3FDE1"]
 			id: "0EFC49A84C9C3FBB"
@@ -312,16 +312,16 @@
 						"ftbfiltersystem:filter": "or(item(botania:rune_water)item(botania:rune_fire)item(botania:rune_earth)item(botania:rune_air)item(botania:rune_mana))"
 					}
 				}
-				title: "Any Element Runes"
+				title: "any element runes"
 				type: "item"
 			}]
-			title: "Elemental Runes"
+			title: "elemental runes"
 			x: 0.0d
 			y: -1.875d
 		}
 		{
 			description: [
-				"Pair the elemental runes into &aspring&r, &esummer&r, &6autumn&r, and &bwinter&r. The altar's second course, and the gateway to every fancier rune."
+				"pair the elemental runes into &aspring&r, &esummer&r, &6autumn&r, and &bwinter&r. the altar's second course, and the gateway to every fancier rune."
 			]
 			dependencies: ["0EFC49A84C9C3FBB"]
 			id: "1C79439FDCE2173E"
@@ -337,19 +337,19 @@
 						"ftbfiltersystem:filter": "or(item(botania:rune_spring)item(botania:rune_summer)item(botania:rune_autumn)item(botania:rune_winter))"
 					}
 				}
-				title: "Any Season Runes"
+				title: "any season runes"
 				type: "item"
 			}]
-			title: "Season Runes"
+			title: "season runes"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1C79439FDCE2173E"]
 			description: [
-				"Seven flavors of moral failure, each with its own Runic Altar recipe."
+				"seven flavors of moral failure, each with its own runic altar recipe."
 				""
-				"This is not the hardest part of Terrasteel. It just feels like it."
+				"this isn't the hardest part of terrasteel. it just feels like it."
 			]
 			id: "5AF8A1AB9B552519"
 			size: 0.75d
@@ -364,16 +364,16 @@
 						"ftbfiltersystem:filter": "or(item(botania:rune_lust)item(botania:rune_gluttony)item(botania:rune_greed)item(botania:rune_sloth)item(botania:rune_wrath)item(botania:rune_envy)item(botania:rune_pride))"
 					}
 				}
-				title: "Any Sinful Runes"
+				title: "any sinful runes"
 				type: "item"
 			}]
-			title: "Sin Runes"
+			title: "sin runes"
 			x: 1.5d
 			y: -3.0d
 		}
 		{
 			description: [
-				"Enchant a &2nature essence&r over skeleton, slime, and creeper essences plus earth and water -- 15000 source. Reliquary's concentrated fertility, straight from monster parts."
+				"enchant a &2nature essence&r over skeleton, slime, and creeper essences plus earth and water -- 15000 source. reliquary's concentrated fertility, straight from monster parts."
 			]
 			dependencies: [
 				"18E8F3A1B08C0C04"
@@ -389,11 +389,11 @@
 				item: "reliquary:fertile_essence"
 				type: "item"
 			}]
-			title: "Fertile Essence"
+			title: "fertile essence"
 			x: 1.0d
 			y: -5.5d
 		}
 	]
 	subtitle: ["Delve deeper into the wonders of plant-based magics"]
-	title: "VII. Thaumaturge"
+	title: "VII. thaumaturge"
 }

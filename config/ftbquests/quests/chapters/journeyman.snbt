@@ -17,7 +17,7 @@
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&dMagebloom&r comes from the Imbuement Chamber -- archwood planks and luminessence on pedestals, 2500 source. Farm it: the fiber feeds the sieve below and half of Ars' gear."
+				"&dmagebloom&r comes from the imbuement chamber -- archwood planks and luminessence on pedestals, 2500 source. farm it: the fiber feeds the sieve below and half of ars' gear."
 			]
 			id: "74E79BEE176EA828"
 			size: 0.75d
@@ -27,16 +27,16 @@
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
-			title: "Magebloom"
+			title: "magebloom"
 			x: -0.375d
 			y: -1.875d
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&3Source Ore&r generates in the Aether as a proper GT-style ore. Mine plenty -- the gem chain ahead eats dust like a machine line, because it is one."
+				"&3source ore&r generates in the aether as a proper GT-style ore. mine plenty -- the gem chain ahead eats dust like a machine line, because it's one."
 				""
-				"Tip: crush the raw ore with the Ars &dCrush&r effect to get Source Dust. No macerator required. The mage way."
+				"tip: crush the raw ore with the ars &dcrush&r effect to get source dust. no macerator required. the mage way."
 			]
 			id: "42292FB8905CAE54"
 			size: 0.75d
@@ -47,16 +47,16 @@
 				item: "gtceu:raw_source"
 				type: "item"
 			}]
-			title: "Vis a Vis"
+			title: "vis a vis"
 			x: 0.375d
 			y: -1.875d
 		}
 		{
 			dependencies: ["42292FB8905CAE54"]
 			description: [
-				"Imbue &3Source Dust&r with a &dMagebloom Sieve&r sitting on the pedestal to refine it into &ePure Source Gem Dust&r."
+				"imbue &3source dust&r with a &dmagebloom sieve&r sitting on the pedestal to refine it into &epure source gem dust&r."
 				""
-				"Tip: the sieve is not consumed. One sieve, infinite sifting. Magic has no OSHA."
+				"tip: the sieve isn't consumed. one sieve, infinite sifting. magic has no OSHA."
 			]
 			id: "08A706FAA18260F5"
 			size: 0.75d
@@ -66,7 +66,7 @@
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
-			title: "Source Gem Dust, Attempt 1"
+			title: "source gem dust, attempt 1"
 			x: 0.75d
 			y: -2.625d
 		}
@@ -76,9 +76,9 @@
 				"6F0175765720EE51"
 			]
 			description: [
-				"Run your &ePure Source Gem Dust&r through the &3Magebloom Sieve&r for another pass."
+				"run your &epure source gem dust&r through the &3magebloom sieve&r for another pass."
 				""
-				"You're almost at a proper &aSource Gem&r."
+				"you're almost at a proper &asource gem&r."
 			]
 			id: "02865F6285633253"
 			size: 0.75d
@@ -88,14 +88,14 @@
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
-			title: "Source Gem Dust, Attempt 2"
+			title: "source gem dust, attempt 2"
 			x: 0.0d
 			y: -4.125d
 		}
 		{
 			dependencies: ["02865F6285633253"]
 			description: [
-				"Pure dust plus a &cfire essence&r on the pedestal imbues into a &eRough Source Gem&r. 2500 source per gem -- keep those jars full."
+				"pure dust plus a &cfire essence&r on the pedestal imbues into a &erough source gem&r. 2500 source per gem -- keep those jars full."
 			]
 			id: "7363CD337C4652D8"
 			size: 0.75d
@@ -105,18 +105,18 @@
 				item: "kubejs:rough_source_gem"
 				type: "item"
 			}]
-			title: "Rough Source Gem"
+			title: "rough source gem"
 			x: 0.0d
 			y: -5.25d
 		}
 		{
 			dependencies: ["7363CD337C4652D8"]
 			description: [
-				"&aSource Gems&r are the cornerstone of the magic line. They power the &3Enchanting Apparatus&r, fuel the &3Imbuement Chamber&r, and show up in most mid-to-late magic crafting."
+				"&asource gems&r are everywhere in the magic line. they power the &3enchanting apparatus&r, fuel the &3imbuement chamber&r, and show up in most mid-to-late magic crafting."
 				""
-				"The last step is unexpected: polish the rough gem with Create &6sandpaper&r. Yes, sandpaper. Artisanal gemcraft."
+				"the last step is unexpected: polish the rough gem with create &6sandpaper&r. yes, sandpaper. artisanal gemcraft."
 				""
-				"You'll be making a lot of these. Start automating early."
+				"you'll be making a lot of these. start automating early."
 			]
 			id: "06C1B3D271B8BFCF"
 			size: 1.0d
@@ -126,16 +126,16 @@
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			title: "Source Gem"
+			title: "source gem"
 			x: 0.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["557FF11A5C0306BC"]
 			description: [
-				"Four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &eSanctified Ambrosium&r."
+				"four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &esanctified ambrosium&r."
 				""
-				"Tip: heated cauldron, WATER this time. Pouring the lava out is your problem."
+				"tip: heated cauldron, WATER this time. pouring the lava out is your problem."
 			]
 			id: "3AE23124DDE87034"
 			size: 0.75d
@@ -145,32 +145,32 @@
 				item: "kubejs:sanctified_ambrosium_bloom"
 				type: "item"
 			}]
-			title: "Sanctified Ambrosium Bloom"
+			title: "sanctified ambrosium bloom"
 			x: 2.625d
 			y: -1.125d
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&eAmbrosium&r is the Aether's glowing all-purpose rock. Here it's a real ore line -- and the feedstock for the sanctified chain to the right."
+				"&eambrosium&r is the aether's glowing all-purpose rock. here it's a real ore line -- and the feedstock for the sanctified chain to the right."
 			]
 			id: "557FF11A5C0306BC"
 			size: 0.75d
-			subtitle: "the Aether's other thing"
+			subtitle: "the aether's other thing"
 			tasks: [{
 				count: 8L
 				id: "0C0ADD32747DC555"
 				item: "gtceu:raw_ambrosium"
 				type: "item"
 			}]
-			title: "Raw Ambrosium"
+			title: "raw ambrosium"
 			x: 1.125d
 			y: -1.125d
 		}
 		{
 			dependencies: ["74E79BEE176EA828"]
 			description: [
-				"&dMagebloom fiber&r woven around &7carved stone&r makes the &6Magebloom Sieve&r -- the catalyst that sits on a pedestal and filters source dust into something worth keeping."
+				"&dmagebloom fiber&r woven around &7carved stone&r makes the &6magebloom sieve&r -- the catalyst that sits on a pedestal and filters source dust into something worth keeping."
 			]
 			id: "6F0175765720EE51"
 			size: 0.75d
@@ -180,52 +180,52 @@
 				item: "kubejs:magebloom_sieve"
 				type: "item"
 			}]
-			title: "Magebloom Sieve"
+			title: "magebloom sieve"
 			x: -0.75d
 			y: -2.625d
 		}
 		{
 			dependencies: ["3AE23124DDE87034"]
 			description: [
-				"The &aSacred Ambrosium Shard&r unlocks access to &3Ender Storage&r - cross-dimensional item and fluid storage."
+				"the &asacred ambrosium shard&r unlocks access to &3ender storage&r - cross-dimensional item and fluid storage."
 				""
-				"&3Ender Chests&r, &3Ender Tanks&r, and &3Ender Pouches&r all share inventory across any distance."
+				"&3ender chests&r, &3ender tanks&r, and &3ender pouches&r all share inventory across any distance."
 				""
-				"Useful now. Essential later."
+				"useful now. essential later."
 			]
 			id: "532B8F3CF596352D"
 			size: 0.75d
-			subtitle: "the Aether's gift to the crafting table"
+			subtitle: "the aether's gift to the crafting table"
 			tasks: [{
 				id: "7A6E829F60A5992F"
 				item: "kubejs:sacred_ambrosium_shard"
 				type: "item"
 			}]
-			title: "Sacred Ambrosium Shard"
+			title: "sacred ambrosium shard"
 			x: 2.625d
 			y: -2.625d
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&9Zanite&r hardens the further it wears down, and this pack has plans for it well beyond tools. Grab a stack while you're up here."
+				"&9zanite&r hardens the further it wears down, and this pack has plans for it well beyond tools. grab a stack while you're up here."
 			]
 			id: "297B9B212C544AF0"
 			size: 0.75d
-			subtitle: "the other other Aether ore"
+			subtitle: "the other other aether ore"
 			tasks: [{
 				id: "4D2AB6B81DCEEC99"
 				item: "gtceu:raw_zanite"
 				type: "item"
 			}]
-			title: "Raw Zanite"
+			title: "raw zanite"
 			x: -1.125d
 			y: -1.125d
 		}
 		{
 			dependencies: ["297B9B212C544AF0"]
 			description: [
-				"Feed a zanite gemstone through the Aether's &6Altar&r to enchant it. The Altar runs on ambrosium shards as fuel -- convenient, since you just mined a pile."
+				"feed a zanite gemstone through the aether's &6altar&r to enchant it. the altar runs on ambrosium shards as fuel -- convenient, since you just mined a pile."
 			]
 			id: "08B0AB8D3C90EB10"
 			size: 0.75d
@@ -235,16 +235,16 @@
 				item: "kubejs:enchanted_zanite_gem"
 				type: "item"
 			}]
-			title: "Enchanted Zanite"
+			title: "enchanted zanite"
 			x: -2.625d
 			y: -1.125d
 		}
 		{
 			dependencies: ["08B0AB8D3C90EB10"]
 			description: [
-				"Imbue the enchanted gem with two &asource gems&r on pedestals to get a &9Resonant Zanite Crystal&r."
+				"imbue the enchanted gem with two &asource gems&r on pedestals to get a &9resonant zanite crystal&r."
 				""
-				"Tip: resonant crystals imbue onward into &ccinder essence&r (fire pedestals) or &barcane ingots&r (air pedestals) -- your bulk route into Iron's Spells materials."
+				"tip: resonant crystals imbue onward into &ccinder essence&r (fire pedestals) or &barcane ingots&r (air pedestals) -- your bulk route into iron's spells materials."
 			]
 			id: "45BDF6BE6B2DD0CB"
 			size: 0.75d
@@ -254,16 +254,16 @@
 				item: "kubejs:resonant_zanite_crystal"
 				type: "item"
 			}]
-			title: "Resonant Zanite Crystal"
+			title: "resonant zanite crystal"
 			x: -1.875d
 			y: -1.875d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"One inventory, every dimension. Dye the three wool pads to make separate channels."
+				"one inventory, every dimension. dye the three wool pads to make separate channels."
 				""
-				"Tip: on a server, channels are per-color, not per-player by default. Sneak-click the latch with a diamond for a private network before someone 'borrows' your stock."
+				"tip: on a server, channels are per-color, not per-player by default. sneak-click the latch with a diamond for a private network before someone 'borrows' your stock."
 			]
 			id: "205170FC8134DC8D"
 			size: 0.75d
@@ -273,14 +273,14 @@
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
-			title: "Ender Chest"
+			title: "ender chest"
 			x: 3.0d
 			y: -3.75d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"Same trick, fluids. Pump lava in at the Nether, drain it at your base. The commute is imaginary."
+				"same trick, fluids. pump lava in at the nether, drain it at your base. the commute is imaginary."
 			]
 			id: "3A9BBD003CB49590"
 			size: 0.75d
@@ -290,16 +290,16 @@
 				item: "enderstorage:ender_tank"
 				type: "item"
 			}]
-			title: "Ender Tank"
+			title: "ender tank"
 			x: 3.375d
 			y: -3.0d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"The pouch opens its matching ender chest from anywhere. Mining trips deposit straight home."
+				"the pouch opens its matching ender chest from anywhere. mining trips deposit straight home."
 				""
-				"Tip: match the wool colors on the pouch to the chest's channel or you'll be staring into someone else's junk drawer."
+				"tip: match the wool colors on the pouch to the chest's channel or you'll be staring into someone else's junk drawer."
 			]
 			id: "7E85C70688BC511F"
 			size: 0.75d
@@ -309,16 +309,16 @@
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			title: "Ender Pouch"
+			title: "ender pouch"
 			x: 2.25d
 			y: -3.75d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"The &6Storage Lectern&r shows every linked chest in one searchable screen. It's Ars' answer to a storage network, and it costs a bookshelf, not a fusion reactor."
+				"the &6storage lectern&r shows every linked chest in one searchable screen. it's ars' answer to a storage network, and it costs a bookshelf, not a fusion reactor."
 				""
-				"Tip: link chests with the &dDominion Wand&r. Range matters -- keep it central."
+				"tip: link chests with the &ddominion wand&r. range matters -- keep it central."
 			]
 			id: "7FBC73B3CE27E7BB"
 			size: 0.75d
@@ -328,14 +328,14 @@
 				item: "ars_nouveau:storage_lectern"
 				type: "item"
 			}]
-			title: "Storage Lectern"
+			title: "storage lectern"
 			x: 1.875d
 			y: -3.0d
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
 			description: [
-				"The &6Lantern of Paranoia&r auto-places torches in dark spots around you as you walk. Cave lighting without the wrist strain."
+				"the &6lantern of paranoia&r auto-places torches in dark spots around you as you walk. cave lighting without the wrist strain."
 			]
 			hide_dependency_lines: true
 			id: "2F9CF65DB439E571"
@@ -347,14 +347,14 @@
 				item: "reliquary:lantern_of_paranoia"
 				type: "item"
 			}]
-			title: "Lantern of Paranoia"
+			title: "lantern of paranoia"
 			x: -0.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
 			description: [
-				"The &6Interdiction Torch&r shoves hostile mobs away from itself. Plant one at each base entrance and enjoy the silence. Crafts three at a time."
+				"the &6interdiction torch&r shoves hostile mobs away from itself. plant one at each base entrance and enjoy the silence. crafts three at a time."
 			]
 			hide_dependency_lines: true
 			id: "60B898EA8C6DB0F5"
@@ -366,14 +366,14 @@
 				item: "reliquary:interdiction_torch"
 				type: "item"
 			}]
-			title: "Interdiction Torch"
+			title: "interdiction torch"
 			x: 0.0d
 			y: 1.125d
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
 			description: [
-				"The &6Alkahestry Altar&r eats redstone and, given open sky and time, transmutes it into glowstone. Slow, silent, profitable."
+				"the &6alkahestry altar&r eats redstone and, given open sky and time, transmutes it into glowstone. slow, silent, profitable."
 			]
 			hide_dependency_lines: true
 			id: "48823E5A5985391B"
@@ -385,16 +385,16 @@
 				item: "reliquary:alkahestry_altar"
 				type: "item"
 			}]
-			title: "Alkahestry Altar"
+			title: "alkahestry altar"
 			x: 0.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
 			description: [
-				"Build a portal frame from &bglowstone&r and light it with a &9water bucket&r. The Aether is up there waiting: floating islands, angry birds, and three ores this chapter runs on."
+				"build a portal frame from &bglowstone&r and light it with a &eluminessence&r. the aether is up there waiting: floating islands, angry birds, and three ores this chapter runs on."
 				""
-				"Tip: bring blocks for bridging and do NOT look down. Falling off the Aether returns you to the overworld at terminal velocity."
+				"tip: bring blocks for bridging and do NOT look down. falling off the aether returns you to the overworld at terminal velocity."
 			]
 			icon: "aether:aether_portal_frame"
 			id: "33704DE3C564BD46"
@@ -404,14 +404,14 @@
 				dimension: "aether:the_aether"
 				icon: "aether:aether_portal_frame"
 				id: "1F578B2124CF8CBD"
-				title: "Head to the Aether"
+				title: "head to the aether"
 				type: "dimension"
 			}]
-			title: "Off to See the Man Upstairs"
+			title: "off to see the man upstairs"
 			x: 0.0d
 			y: -1.125d
 		}
 	]
 	subtitle: ["Venture to a hostile paradise for new boons"]
-	title: "III. Journeyman"
+	title: "III. journeyman"
 }

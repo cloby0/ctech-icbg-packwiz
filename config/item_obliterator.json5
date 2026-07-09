@@ -228,7 +228,20 @@
     "superbwarfare:crystal_barrel",
 
     // pamhc2foodcore: salt duplicates gtceu:tiny_salt_dust; recipe removed + uses replaced in nerfUnnerf.js
-    "pamhc2foodcore:saltitem"
+    "pamhc2foodcore:saltitem",
+
+    // botania: only the livingrock petal apothecary is craftable; all other stone variants obliterated + OEB-swapped to air
+    "botania:apothecary_default",
+    "botania:apothecary_deepslate",
+    "botania:apothecary_desert",
+    "botania:apothecary_forest",
+    "botania:apothecary_fungal",
+    "botania:apothecary_mesa",
+    "botania:apothecary_mossy",
+    "botania:apothecary_mountain",
+    "botania:apothecary_plains",
+    "botania:apothecary_swamp",
+    "botania:apothecary_taiga"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

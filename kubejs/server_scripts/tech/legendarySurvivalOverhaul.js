@@ -74,32 +74,32 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('lso_cold_string_tech')
         .itemInputs('4x minecraft:string', '3x legendarysurvivaloverhaul:ice_fern_leaf')
-        .itemOutputs('4x legendarysurvivaloverhaul:cold_string')
+        .itemOutputs('6x legendarysurvivaloverhaul:cold_string')
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
     addImbuementRecipe(event, {
         input: 'minecraft:string',
         output: 'legendarysurvivaloverhaul:cold_string',
-        source: 500,
+        source: 250,
         pedestalItems: ['legendarysurvivaloverhaul:ice_fern_leaf', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snow_block']
     })
 
     event.recipes.gtceu.assembler('lso_warm_string_tech')
         .itemInputs('4x minecraft:string', '3x legendarysurvivaloverhaul:sun_fern_leaf')
-        .itemOutputs('4x legendarysurvivaloverhaul:warm_string')
+        .itemOutputs('6x legendarysurvivaloverhaul:warm_string')
         .duration(8 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
     addImbuementRecipe(event, {
         input: 'minecraft:string',
         output: 'legendarysurvivaloverhaul:warm_string',
-        source: 500,
+        source: 250,
         pedestalItems: ['legendarysurvivaloverhaul:sun_fern_leaf', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:blaze_powder']
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_1_tech')
-        .itemInputs('4x legendarysurvivaloverhaul:cold_string', '2x create:iron_sheet', 'gtceu:tin_single_wire')
+        .itemInputs('2x legendarysurvivaloverhaul:cold_string', '2x create:iron_sheet')
         .itemOutputs('legendarysurvivaloverhaul:cooling_coat_1')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.LV])
@@ -107,8 +107,8 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'legendarysurvivaloverhaul:cold_string',
         output: 'legendarysurvivaloverhaul:cooling_coat_1',
-        source: 1000,
-        pedestalItems: ['gtceu:luminessence_dust', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snow_block', 'minecraft:snowball']
+        source: 500,
+        pedestalItems: ['legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snow_block', 'minecraft:snowball']
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_2_tech')
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_1_tech')
-        .itemInputs('4x legendarysurvivaloverhaul:warm_string', '2x create:iron_sheet', 'gtceu:tin_single_wire')
+        .itemInputs('2x legendarysurvivaloverhaul:warm_string', '2x create:iron_sheet')
         .itemOutputs('legendarysurvivaloverhaul:heating_coat_1')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.LV])
@@ -148,8 +148,8 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'legendarysurvivaloverhaul:warm_string',
         output: 'legendarysurvivaloverhaul:heating_coat_1',
-        source: 1000,
-        pedestalItems: ['gtceu:luminessence_dust', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream', 'minecraft:blaze_powder']
+        source: 500,
+        pedestalItems: ['legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream', 'minecraft:blaze_powder']
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_2_tech')

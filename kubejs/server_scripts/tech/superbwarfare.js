@@ -82,7 +82,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'superbwarfare:mortar_barrel' })
     event.remove({ output: 'superbwarfare:cemented_carbide_barrel' })
     event.remove({ output: 'superbwarfare:raw_cemented_carbide_powder' })
-    event.remove({ output: 'superbwarfare:cemented_carbide_ingot' })
+    // NOTE: don't remove by output 'superbwarfare:cemented_carbide_ingot' - OEI aliases
+    // it to gtceu:cemented_carbide_ingot, so this would nuke GT's cemented carbide recipes.
+    // The SW recipe is already dead (its raw powder input is obliterated + removed above).
 
     event.shaped(Item.of('superbwarfare:repair_tool'), [
         ' P ',

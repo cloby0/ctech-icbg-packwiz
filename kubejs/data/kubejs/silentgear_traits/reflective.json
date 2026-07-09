@@ -1,0 +1,62 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 3,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
+  "name": {
+    "text": "Reflective"
+  },
+  "description": {
+    "text": "Deflects outside heat. Grants heat resistance while worn."
+  },
+  "attribute_modifiers": {
+    "armor/head": [
+      {
+        "attribute": "legendarysurvivaloverhaul:heat_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/chest": [
+      {
+        "attribute": "legendarysurvivaloverhaul:heat_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/legs": [
+      {
+        "attribute": "legendarysurvivaloverhaul:heat_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/feet": [
+      {
+        "attribute": "legendarysurvivaloverhaul:heat_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ]
+  }
+}

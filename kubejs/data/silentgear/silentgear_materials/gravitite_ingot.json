@@ -1,138 +1,142 @@
 {
-    "type": "silentgear:standard",
-    "simple": true,
-    "harvest_tier": "minecraft:iron",
-    "availability": {
-        "tier": 3,
-        "categories": [
-            "metal"
-        ],
-        "visible": true,
-        "gear_blacklist": [],
-        "can_salvage": true
-    },
-    "crafting_items": {
-        "main": {
-            "item": "aether_redux:gravitite_ingot"
-        }
-    },
-    "name": {
-        "text": "Gravitite"
-    },
-    "stats": {
-        "main": {
-            "durability": 1435,
-            "armor_durability": 24,
-            "enchantment_value": 18,
-            "rarity": 22,
-            "charging_value": 1,
-            "harvest_speed": 10,
-            "melee_damage": 5,
-            "magic_damage": 2,
-            "attack_speed": 0,
-            "attack_speed/axe": 0,
-            "ranged_damage": 2,
-            "ranged_speed": 0,
-            "armor": 18,
-            "armor/helmet": 3,
-            "armor/chestplate": 7,
-            "armor/leggings": 6,
-            "armor/boots": 3,
-            "armor_toughness": 3,
-            "magic_armor": 5
-        },
-        "rod": {
-            "harvest_speed": {
-                "mul2": 0.04
-            },
-            "melee_damage": {
-                "mul2": 0.03
-            },
-            "ranged_damage": {
-                "mul2": 0.025
-            }
-        },
-        "tip": {
-            "durability": {
-                "add": 175
-            },
-            "armor_durability": {
-                "add": 5
-            },
-            "harvest_speed": {
-                "add": 2
-            },
-            "melee_damage": {
-                "add": 2
-            },
-            "rarity": {
-                "add": 8
-            }
-        }
-    },
-    "traits": {
-        "main": [
-            {
-                "name": "silentgear:moonwalker",
-                "level": 2
-            },
-            {
-                "name": "silentgear:light",
-                "level": 1
-            },
-            {
-                "name": "silentgear:bounce",
-                "level": 1
-            },
-            {
-                "name": "silentgear:reach",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0
-                    }
-                ]
-            }
-        ],
-        "rod": [
-            {
-                "name": "silentgear:flexible",
-                "level": 1
-            }
-        ]
-    },
-    "model": {
-        "main/all": [
-            {
-                "texture": "silentgear:main_generic_hc",
-                "color": "#E072D7"
-            },
-            {
-                "texture": "silentgear:_highlight",
-                "color": "#E072D7"
-            }
-        ],
-        "main/armor": [
-            {
-                "texture": "silentgear:main_generic_hc",
-                "color": "#E072D7"
-            },
-            {
-                "texture": "silentgear:_highlight",
-                "color": "#E072D7"
-            }
-        ],
-        "rod/all": [
-            {
-                "texture": "silentgear:rod_generic_lc",
-                "color": "#E072D7"
-            }
-        ],
-        "tip/all": [
-            {
-                "texture": "silentgear:tip_iron"
-            }
-        ]
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:iron",
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "aether_redux:gravitite_ingot"
     }
+  },
+  "name": {
+    "text": "Gravitite"
+  },
+  "stats": {
+    "main": {
+      "durability": 1435,
+      "armor_durability": 24,
+      "enchantment_value": 18,
+      "rarity": 22,
+      "charging_value": 1,
+      "harvest_speed": 10,
+      "melee_damage": 5,
+      "magic_damage": 2,
+      "attack_speed": 0,
+      "attack_speed/axe": 0,
+      "ranged_damage": 2,
+      "ranged_speed": 0,
+      "armor": 18,
+      "armor/helmet": 3,
+      "armor/chestplate": 7,
+      "armor/leggings": 6,
+      "armor/boots": 3,
+      "armor_toughness": 3,
+      "magic_armor": 5
+    },
+    "rod": {
+      "harvest_speed": {
+        "mul2": 0.04
+      },
+      "melee_damage": {
+        "mul2": 0.03
+      },
+      "ranged_damage": {
+        "mul2": 0.025
+      }
+    },
+    "tip": {
+      "durability": {
+        "add": 175
+      },
+      "armor_durability": {
+        "add": 5
+      },
+      "harvest_speed": {
+        "add": 2
+      },
+      "melee_damage": {
+        "add": 2
+      },
+      "rarity": {
+        "add": 8
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:moonwalker",
+        "level": 2
+      },
+      {
+        "name": "silentgear:light",
+        "level": 1
+      },
+      {
+        "name": "silentgear:bounce",
+        "level": 1
+      },
+      {
+        "name": "silentgear:reach",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0
+          }
+        ]
+      },
+      {
+        "name": "kubejs:insulating",
+        "level": 1
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:flexible",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#E072D7"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#E072D7"
+      }
+    ],
+    "main/armor": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#E072D7"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#E072D7"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#E072D7"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_iron"
+      }
+    ]
+  }
 }

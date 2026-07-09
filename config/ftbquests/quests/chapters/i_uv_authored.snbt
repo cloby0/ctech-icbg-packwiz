@@ -23,19 +23,19 @@
 			subtitle: "524288 EU/t, last stop before the sky burns"
 			tasks: [{
 				id: "2200F1C2E3D40003"
-				title: "Ultimate Voltage!"
+				title: "ultimate voltage!"
 				type: "checkmark"
 			}]
-			title: "Ultimate Voltage!"
+			title: "ultimate voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2200F1C2E3D40002"]
 			description: [
-				"The &6Large Plasma Turbine&r is the ceiling of standard GT power generation -- fed by Plasma fluid off the &5Plasma Generator&r or any high-tier turbine byproduct."
+				"the &6large plasma turbine&r is the ceiling of standard GT power generation -- fed by plasma fluid off the &5plasma generator&r or any high-tier turbine byproduct."
 				""
-				"Maximum efficiency matters more than raw output here; UV machines are hungry enough that waste compounds fast."
+				"maximum efficiency matters more than raw output here; UV machines are hungry enough that waste compounds fast."
 			]
 			icon: "gtceu:plasma_large_turbine"
 			id: "2200F1C2E3D40004"
@@ -47,16 +47,16 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
-			title: "UV Power"
+			title: "UV power"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2200F1C2E3D40004"]
 			description: [
-				"&aArcmetal&r is UV-tier, 7200K, Glacio-only -- same rock already visited for Naquadah back at LuV. &aNaquadah Coils&r (already buildable since LuV/ZPM) push the EBF hot enough to finally process it."
+				"&aarcmetal&r is UV-tier, 7200K, glacio-only -- same rock already visited for naquadah back at LuV. &anaquadah coils&r (already buildable since LuV/ZPM) push the EBF hot enough to finally process it."
 				""
-				"No new trip needed. Just the coil upgrade and a return visit to the Tantalite-companion veins."
+				"no new trip needed. just the coil upgrade and a return visit to the tantalite-companion veins."
 			]
 			id: "2200F1C2E3D40008"
 			shape: "square"
@@ -68,16 +68,16 @@
 				item: "silentcompat:arcmetal_ingot"
 				type: "item"
 			}]
-			title: "Arcmetal"
+			title: "arcmetal"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2200F1C2E3D40008"]
 			description: [
-				"&aYttrium Barium Cuprate&r wire is the UV superconductor -- lossless, safe to touch, the last superconductor tier in standard GT."
+				"&ayttrium barium cuprate&r wire is the UV superconductor -- lossless, safe to touch, the last superconductor tier in standard GT."
 				""
-				"Stock up. Nothing past this point in the vanilla tree needs a new superconductor material -- from here it's refinement, not new unlocks."
+				"stock up. nothing past this point in the vanilla tree needs a new superconductor material -- from here it's refinement, not new unlocks."
 			]
 			id: "2200F1C2E3D4000C"
 			shape: "square"
@@ -89,16 +89,16 @@
 				item: "gtceu:yttrium_barium_cuprate_single_wire"
 				type: "item"
 			}]
-			title: "YBCO Superconductor"
+			title: "YBCO superconductor"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2200F1C2E3D4000C"]
 			description: [
-				"The &aUV Lapotronic Battery&r is the last battery in the standard Lapotronic line -- EV through UV, all built the same nested-crystal way, just bigger."
+				"the &aUV lapotronic battery&r is the last battery in the standard lapotronic line -- EV through UV, all built the same nested-crystal way, just bigger."
 				""
-				"Crafting one marks functional completion of standard GT power storage. The Ultimate Battery past this point is a UHV item -- a different, harder problem."
+				"crafting one marks functional completion of standard GT power storage. the ultimate battery past this point is a UHV item -- a different, harder problem."
 			]
 			icon: "gtceu:uv_lapotronic_battery"
 			id: "2200F1C2E3D40010"
@@ -110,16 +110,16 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			title: "UV Lapotronic Battery"
+			title: "UV lapotronic battery"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2200F1C2E3D40010"]
 			description: [
-				"&6Fusion Reactor MK III&r (`gtceu:uv_fusion_reactor`) only accepts UV Energy Hatches, but buffers 40M EU per hatch -- 640M max. Draconium fusion needs a 640M EU startup charge; Mk1 and Mk2 physically cannot hold enough. This is a hard requirement, not a nice-to-have upgrade."
+				"&6fusion reactor MK III&r (`gtceu:uv_fusion_reactor`) only accepts UV energy hatches, but buffers 40M EU per hatch -- 640M max. draconium fusion needs a 640M EU startup charge; Mk1 and Mk2 physically can't hold enough. this is a hard requirement, not a nice-to-have upgrade."
 				""
-				"Build it before the gate below. Everything past this reactor is what it exists for."
+				"build it before the gate below -- you'll need it for everything past this point."
 			]
 			icon: "gtceu:uv_fusion_reactor"
 			id: "2200F1C2E3D40018"
@@ -131,16 +131,16 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			title: "Fusion Reactor Mk3"
+			title: "fusion reactor Mk3"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2200F1C2E3D40018"]
 			description: [
-				"&aDraconium&r is the UHV material -- not mined, but fused. The &6Fusion Reactor MK III&r just built runs the recipe: Plutonium-241 and Naquadah fluid in, Draconium fluid out, at a 640M EU startup charge."
+				"&adraconium&r is the UHV material -- not mined, but fused. the &6fusion reactor MK III&r just built runs the recipe: plutonium-241 and naquadah fluid in, draconium fluid out, at a 640M EU startup charge."
 				""
-				"This is the last vanilla GT gate. Past here the pack's custom endgame starts -- Draconic Evolution integration, the processor/processor_assembly/processor_supercomputer/processor_mainframe circuit themes, and eventually the Cumium Ingot. Get Draconium production stable before pushing further."
+				"this is the last vanilla GT gate. past here the pack's custom endgame starts -- draconic evolution integration, the processor/processor_assembly/processor_supercomputer/processor_mainframe circuit themes, and eventually the cumium ingot. get draconium production stable before pushing further."
 			]
 			icon: "gtceu:draconium_plate"
 			id: "2200F1C2E3D40014"
@@ -153,11 +153,11 @@
 				item: "gtceu:draconium_plate"
 				type: "item"
 			}]
-			title: "Leaving UV"
+			title: "leaving UV"
 			x: 0.0d
 			y: -9.0d
 		}
 	]
 	subtitle: ["The last standard tier. Then the sky burns."]
-	title: "IX. Ultimate Voltage"
+	title: "IX. ultimate voltage"
 }

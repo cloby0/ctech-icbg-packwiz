@@ -1,0 +1,62 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 3,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
+  "name": {
+    "text": "Insulating"
+  },
+  "description": {
+    "text": "Keeps body heat in. Grants cold resistance while worn."
+  },
+  "attribute_modifiers": {
+    "armor/head": [
+      {
+        "attribute": "legendarysurvivaloverhaul:cold_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/chest": [
+      {
+        "attribute": "legendarysurvivaloverhaul:cold_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/legs": [
+      {
+        "attribute": "legendarysurvivaloverhaul:cold_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ],
+    "armor/feet": [
+      {
+        "attribute": "legendarysurvivaloverhaul:cold_resistance",
+        "operation": 0,
+        "value": [
+          0.5,
+          1.0,
+          1.5
+        ]
+      }
+    ]
+  }
+}

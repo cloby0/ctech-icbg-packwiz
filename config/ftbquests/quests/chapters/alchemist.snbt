@@ -18,9 +18,9 @@
 		{
 			dependencies: ["138BA0CD22478ACF"]
 			description: [
-				"The &6Automated Mana Pond&r multiblock replaces flower-sitting: it runs Mana Pool infusions off &dLiquid Source&r, one input at a time, with a &dParallel Hatch&r and perfect overclocks."
+				"the &6automated mana pond&r multiblock replaces flower-sitting: it runs mana pool infusions off &dliquid source&r, one input at a time, with a &dparallel hatch&r and perfect overclocks."
 				""
-				"Catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r Alchemy Catalyst, &7circuit 3&r Conjuration Catalyst. Built around a real Mana Pool and &3Manaplatinite&r casings at IV."
+				"catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r alchemy catalyst, &7circuit 3&r conjuration catalyst. built around a real mana pool and &3manaplatinite&r casings at IV."
 			]
 			id: "61F4B8D0C3A75E30"
 			subtitle: "the pool finally cleans itself"
@@ -29,18 +29,18 @@
 				item: "gtceu:automated_mana_pond"
 				type: "item"
 			}]
-			title: "Automated Mana Pond"
+			title: "automated mana pond"
 			x: -2.25d
 			y: -6.0d
 		}
 		{
 			dependencies: ["3C48407D270C6942"]
 			description: [
-				"The &3Mana Pool&r is the central hub of &3Botania&r."
+				"the &3mana pool&r is the central hub of &3botania&r."
 				""
-				"Flowers generate &dMana&r and pipe it into the pool. From there it's used for pretty much everything Botania does - crafting, transformation, terraforming, you name it."
+				"flowers generate &dmana&r and pipe it into the pool. from there it's used for pretty much everything botania does - crafting, transformation, terraforming, you name it."
 				""
-				"&9Note:&r At this tier, reliable options include the &aEndoflame&r (coal/charcoal) and &aRosa Arcana&r (XP). Keep them fed."
+				"&9note:&r at this tier, reliable options include the &aendoflame&r (coal/charcoal) and &arosa arcana&r (XP). keep them fed."
 			]
 			id: "138BA0CD22478ACF"
 			size: 0.75d
@@ -50,15 +50,15 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			title: "Mana Pool"
+			title: "mana pool"
 			x: -1.125d
 			y: -6.0d
 		}
 		{
 			description: [
-				"Smelt the disorganized form and out comes the &7Abstract Metal Ingot&r -- metal with no opinion yet. Combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
+				"smelt the disorganized form and out comes the &7abstract metal ingot&r -- metal with no opinion yet. combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
 				""
-				"The real trick: drop it in a &3Mana Pool&r and it becomes &bManasteel&r."
+				"the real trick: drop it in a &3mana pool&r and it becomes &bmanasteel&r."
 			]
 			dependencies: ["7BDD15A9F2B6BCDD"]
 			id: "5E61BE3584D271A8"
@@ -69,7 +69,7 @@
 				item: "gtceu:abstract_metal_ingot"
 				type: "item"
 			}]
-			title: "Abstract Metal Ingot"
+			title: "abstract metal ingot"
 			x: 1.125d
 			y: -6.0d
 		}
@@ -79,11 +79,11 @@
 				"138BA0CD22478ACF"
 			]
 			description: [
-				"&aManasteel&r is the capstone of the &8Alchemist&r tier - flower-powered metallurgy at its finest."
+				"&amanasteel&r caps off the &8alchemist&r tier - flower-powered metallurgy at its finest."
 				""
-				"It's produced by submerging &9Prima Materia-derived&r intermediates in a &3Mana Pool&r. The pool does the rest."
+				"it's produced by submerging &9prima materia-derived&r intermediates in a &3mana pool&r. the pool does the rest."
 				""
-				"&9Note:&r Automation becomes important here. A manual Mana Pool setup gets tedious fast."
+				"&9note:&r automation becomes important here. a manual mana pool setup gets tedious fast."
 			]
 			id: "56FCF9C63F27F60E"
 			shape: "square"
@@ -94,18 +94,18 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			title: "Manasteel Ingot"
+			title: "manasteel ingot"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
 			description: [
-				"The &3Pure Daisy&r is the foundation of Botania."
+				"the &3pure daisy&r is the foundation of botania."
 				""
-				"Place &7Stone&r or &eLiving Wood&r next to it and wait. It slowly purifies them into their arcane equivalents."
+				"place &7stone&r or &eliving wood&r next to it and wait. it slowly purifies them into their arcane equivalents."
 				""
-				"That's it. You're a botanist now."
+				"that's it. you're a botanist now."
 			]
 			id: "1F374C13B7A1C7A2"
 			size: 0.75d
@@ -115,13 +115,13 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			title: "Pure Daisy"
+			title: "pure daisy"
 			x: -1.125d
 			y: -1.875d
 		}
 		{
 			description: [
-				"Epic ink brewed with an &dElven Source Lattice&r -- an Arcanist-tier elven export. The best ink money cannot buy, because it is not for sale."
+				"epic ink brewed with an &delven source lattice&r -- an arcanist-tier elven export. the best ink money can't buy, because it's not for sale."
 			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3CFDB9C271774552"
@@ -132,16 +132,16 @@
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
-			title: "Legendary Ink"
+			title: "legendary ink"
 			x: -0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
 			description: [
-				"Enchant a &6book&r over a &aPrima Materia plate&r, two &credstone blocks&r, and a bottle o' enchanting -- 10000 source -- to bind the &6Alkahestry Tome&r."
+				"enchant a &6book&r over a &aprima materia plate&r, two &credstone blocks&r, and a bottle o' enchanting -- 10000 source -- to bind the &6alkahestry tome&r."
 				""
-				"Charge it with redstone and it transmutes common materials in the crafting grid. The alchemist's actual party trick."
+				"charge it with redstone and it transmutes common materials in the crafting grid. the alchemist's actual party trick."
 			]
 			id: "262FBCDEA658CDE8"
 			size: 0.75d
@@ -157,13 +157,13 @@
 				}
 				type: "item"
 			}]
-			title: "Alkahestry Tome"
+			title: "alkahestry tome"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			description: [
-				"The final Ars book upgrade at the &6Enchanting Apparatus&r. Every glyph tier, maximum mana. The library card is complete."
+				"the final ars book upgrade at the &6enchanting apparatus&r. every glyph tier, maximum mana. the library card is complete."
 			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3B405737C2EC2A85"
@@ -174,7 +174,7 @@
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
-			title: "Archmage's Spell Book"
+			title: "archmage's spell book"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -184,11 +184,11 @@
 				"5281FFCFFE77EA24"
 			]
 			description: [
-				"The &3Abstract Metal&r line bridges &dPrima Materia&r and &aManasteel&r."
+				"the &3abstract metal&r line bridges &dprima materia&r and &amanasteel&r."
 				""
-				"&oCondensed Concepts&r and &oMetal Form&r are intermediate processing steps - don't think too hard about what they are."
+				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps - don't think too hard about what they are."
 				""
-				"&l&3Lore:&r&o Who needs ingots when you can have abstract notions of metal?"
+				"&l&3lore:&r&o who needs ingots when you can have abstract notions of metal?"
 			]
 			id: "2C27B13A2CA65DEC"
 			size: 0.75d
@@ -198,15 +198,15 @@
 				item: "gtceu:concepts_bucket"
 				type: "item"
 			}]
-			title: "Condensed Concepts"
+			title: "condensed concepts"
 			x: 1.125d
 			y: -1.875d
 		}
 		{
 			description: [
-				"A bucket enchanted over a &aPrima Materia block&r, bottled XP, and charged amethyst becomes a &dBucket of Concepts&r -- then imbuing it over a &fHoly Silver block&r condenses the concept into &7Metal Form&r."
+				"a bucket enchanted over a &aprima materia block&r, bottled XP, and charged amethyst becomes a &dbucket of concepts&r -- then imbuing it over a &fholy silver block&r condenses the concept into &7metal form&r."
 				""
-				"Tip: you are industrializing philosophy. Do not think about it too hard."
+				"tip: you're industrializing philosophy. don't think about it too hard."
 			]
 			dependencies: ["2C27B13A2CA65DEC"]
 			id: "442B54C049E4C49E"
@@ -217,13 +217,13 @@
 				item: "gtceu:metal_form_bucket"
 				type: "item"
 			}]
-			title: "Metal Form"
+			title: "metal form"
 			x: 1.125d
 			y: -3.0d
 		}
 		{
 			description: [
-				"Imbue the Metal Form over four &bice essences&r to freeze the idea into something you can actually hold. Still disorganized, but holdable."
+				"imbue the metal form over four &bice essences&r to freeze the idea into something you can actually hold. still disorganized, but holdable."
 			]
 			dependencies: ["442B54C049E4C49E"]
 			id: "7BDD15A9F2B6BCDD"
@@ -234,15 +234,15 @@
 				item: "kubejs:disorganized_metal_form"
 				type: "item"
 			}]
-			title: "Disorganized Metal Form"
+			title: "disorganized metal form"
 			x: 1.125d
 			y: -4.875d
 		}
 		{
 			description: [
-				"The &aPure Daisy&r recipe is custom here: a magebloom crop enchanted over holy silver dust, a prima materia rod, and two earth essences, 10000 source."
+				"the &apure daisy&r recipe is custom here: a magebloom crop enchanted over holy silver dust, a prima materia rod, and two earth essences, 10000 source."
 				""
-				"Plant it, ring it with stone, and wait. &fLivingrock&r feeds every Botania build from here on."
+				"plant it, ring it with stone, and wait. &flivingrock&r feeds every botania build from here on."
 			]
 			dependencies: ["1F374C13B7A1C7A2"]
 			id: "3C48407D270C6942"
@@ -253,13 +253,13 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			title: "Livingrock"
+			title: "livingrock"
 			x: -1.125d
 			y: -3.75d
 		}
 		{
 			description: [
-				"Rare ink plus a &aPrima Materia plate&r in the Alchemist Cauldron. The Sorcerer capstone, now stationery."
+				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. the sorcerer-tier material, now stationery."
 			]
 			dependencies: [
 				"51D5B5C004491077"
@@ -273,11 +273,11 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			title: "Epic Ink"
+			title: "epic ink"
 			x: -1.5d
 			y: 1.5d
 		}
 	]
 	subtitle: ["Use your new materials to explore the world of flora"]
-	title: "VI. Alchemist"
+	title: "VI. alchemist"
 }

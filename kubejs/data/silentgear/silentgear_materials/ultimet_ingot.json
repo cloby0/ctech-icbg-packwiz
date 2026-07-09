@@ -1,170 +1,174 @@
 {
-    "type": "silentgear:standard",
-    "simple": true,
-    "harvest_tier": "minecraft:netherite",
-    "availability": {
-        "tier": 6,
-        "categories": [
-            "metal"
-        ],
-        "visible": true,
-        "gear_blacklist": [],
-        "can_salvage": true
-    },
-    "crafting_items": {
-        "main": {
-            "item": "gtceu:ultimet_ingot"
-        }
-    },
-    "name": {
-        "text": "Ultimet Ingot"
-    },
-    "stats": {
-        "main": {
-            "durability": 2802,
-            "armor_durability": 43,
-            "enchantment_value": 0,
-            "rarity": 32,
-            "charging_value": 1,
-            "harvest_speed": 13,
-            "melee_damage": 8,
-            "magic_damage": 3,
-            "attack_speed": 0,
-            "attack_speed/axe": 0,
-            "attack_speed/hoe": 0,
-            "ranged_damage": 3,
-            "ranged_speed": 0,
-            "projectile_speed": 2,
-            "projectile_accuracy": 1,
-            "armor": 26,
-            "armor_toughness": 12,
-            "magic_armor": 8,
-            "armor/helmet": 4,
-            "armor/chestplate": 10,
-            "armor/leggings": 8,
-            "armor/boots": 4
-        },
-        "rod": {
-            "harvest_speed": {
-                "mul2": 0.0931
-            },
-            "melee_damage": {
-                "mul2": 0.0731
-            },
-            "ranged_damage": {
-                "mul2": 0.0598
-            }
-        },
-        "tip": {
-            "durability": {
-                "add": 325
-            },
-            "armor_durability": {
-                "add": 12
-            },
-            "harvest_speed": {
-                "add": 3
-            },
-            "melee_damage": {
-                "add": 3
-            },
-            "ranged_damage": {
-                "add": 1
-            },
-            "rarity": {
-                "add": 11
-            }
-        }
-    },
-    "traits": {
-        "main": [
-            {
-                "name": "silentgear:hard",
-                "level": 1
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 1
-            },
-            {
-                "name": "silentcompat:vigorous",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:gear_type",
-                        "gear_type": "weapon"
-                    },
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 1
-                    }
-                ]
-            }
-        ],
-        "rod": [
-            {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0
-                    }
-                ]
-            }
-        ],
-        "tip": [
-            {
-                "name": "silentgear:malleable",
-                "level": 2
-            }
-        ]
-    },
-    "model": {
-        "main/all": [
-            {
-                "texture": "silentgear:main_generic_hc",
-                "color": "#8090A0"
-            },
-            {
-                "texture": "silentgear:_highlight"
-            }
-        ],
-        "main/fragment": [
-            {
-                "texture": "silentgear:metal",
-                "color": "#8090A0"
-            }
-        ],
-        "rod/all": [
-            {
-                "texture": "silentgear:rod_generic_lc",
-                "color": "#8090A0"
-            }
-        ],
-        "rod/part": [
-            {
-                "texture": "silentgear:rod",
-                "color": "#8090A0"
-            }
-        ],
-        "tip/all": [
-            {
-                "texture": "silentgear:tip_sharp",
-                "color": "#8090A0"
-            }
-        ],
-        "tip/part": [
-            {
-                "texture": "silentgear:tip_base"
-            },
-            {
-                "texture": "silentgear:tip",
-                "color": "#8090A0"
-            },
-            {
-                "texture": "silentgear:tip_shine"
-            }
-        ]
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:netherite",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "gtceu:ultimet_ingot"
     }
+  },
+  "name": {
+    "text": "Ultimet Ingot"
+  },
+  "stats": {
+    "main": {
+      "durability": 2802,
+      "armor_durability": 43,
+      "enchantment_value": 0,
+      "rarity": 32,
+      "charging_value": 1,
+      "harvest_speed": 13,
+      "melee_damage": 8,
+      "magic_damage": 3,
+      "attack_speed": 0,
+      "attack_speed/axe": 0,
+      "attack_speed/hoe": 0,
+      "ranged_damage": 3,
+      "ranged_speed": 0,
+      "projectile_speed": 2,
+      "projectile_accuracy": 1,
+      "armor": 26,
+      "armor_toughness": 12,
+      "magic_armor": 8,
+      "armor/helmet": 4,
+      "armor/chestplate": 10,
+      "armor/leggings": 8,
+      "armor/boots": 4
+    },
+    "rod": {
+      "harvest_speed": {
+        "mul2": 0.0931
+      },
+      "melee_damage": {
+        "mul2": 0.0731
+      },
+      "ranged_damage": {
+        "mul2": 0.0598
+      }
+    },
+    "tip": {
+      "durability": {
+        "add": 325
+      },
+      "armor_durability": {
+        "add": 12
+      },
+      "harvest_speed": {
+        "add": 3
+      },
+      "melee_damage": {
+        "add": 3
+      },
+      "ranged_damage": {
+        "add": 1
+      },
+      "rarity": {
+        "add": 11
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:hard",
+        "level": 1
+      },
+      {
+        "name": "silentgear:magnetic",
+        "level": 1
+      },
+      {
+        "name": "silentcompat:vigorous",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:gear_type",
+            "gear_type": "weapon"
+          },
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 1
+          }
+        ]
+      },
+      {
+        "name": "kubejs:reflective",
+        "level": 1
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:magnetic",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#8090A0"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#8090A0"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#8090A0"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#8090A0"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#8090A0"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#8090A0"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
 }

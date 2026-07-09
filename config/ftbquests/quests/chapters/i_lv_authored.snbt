@@ -17,9 +17,9 @@
 		{
 			dependencies: ["1B00F1C2E3D4002C"]
 			description: [
-				"The &6Arms Manufacturer&r is where every gun, magazine, and piece of ordnance in this pack comes from. It is a single-block line with a version at every tier from &7LV&r to &6UV&r -- higher tiers unlock heavier weaponry."
+				"the &6arms manufacturer&r is where every gun, magazine, and piece of ordnance in this pack comes from. it's a single-block line with a version at every tier from &7LV&r to &6UV&r -- higher tiers unlock heavier weaponry."
 				""
-				"Robot arm, motor, conveyor, hull, circuits. Same parts as everything else. Very different output."
+				"it's built from the usual robot arm, motor, conveyor, hull, and circuits -- same parts as any other machine."
 			]
 			id: "0C4E8B2A97D3F160"
 			subtitle: "the second amendment, industrialized"
@@ -28,7 +28,7 @@
 				item: "gtceu:lv_arms_manufacturer"
 				type: "item"
 			}]
-			title: "Arms Manufacturer"
+			title: "arms manufacturer"
 			x: -3.5d
 			y: -6.75d
 		}
@@ -41,19 +41,19 @@
 			subtitle: "32 EU/t and a dream"
 			tasks: [{
 				id: "1B00F1C2E3D40003"
-				title: "Low Voltage!"
+				title: "low voltage!"
 				type: "checkmark"
 			}]
-			title: "Low Voltage!"
+			title: "low voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40002"]
 			description: [
-				"The &6LV Steam Turbine&r produces 32 EU/t. Four turbines off a &3Large Bronze Boiler&r gives 128 EU/t, enough for a basic LV setup. The boiler (800 steam/t) has plenty of headroom if you need more turbines."
+				"the &6LV steam turbine&r produces 32 EU/t. four turbines off a &3large bronze boiler&r gives 128 EU/t, enough for a basic LV setup. the boiler (800 steam/t) has plenty of headroom if you need more turbines."
 				""
-				"Fill the boiler before lighting it. If it runs dry while hot and you add cold water, it expresses its disappointment violently."
+				"fill the boiler before lighting it. if it runs dry while hot and you add cold water, it expresses its disappointment violently."
 			]
 			id: "1B00F1C2E3D40004"
 			shape: "square"
@@ -65,20 +65,20 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			title: "New Engine"
+			title: "new engine"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40004"]
 			description: [
-				"The &6Wiremill&r, &6Bender&r, and &6Lathe&r are the core of the LV workshop. Build all three before anything else."
+				"the &6wiremill&r, &6bender&r, and &6lathe&r are the core of the LV workshop. build all three before anything else."
 				""
-				"Wiremill: 1 ingot -> 2 wires. "
+				"wiremill: 1 ingot -> 2 wires. "
 				""
-				"Bender: 1 ingot -> 1 plate (vs the Forge Hammer's 3:2). "
+				"bender: 1 ingot -> 1 plate (vs the forge hammer's 3:2). "
 				""
-				"Lathe: 1 ingot -> 2 rods."
+				"lathe: 1 ingot -> 2 rods."
 			]
 			icon: "gtceu:lv_bender"
 			id: "1B00F1C2E3D40008"
@@ -102,16 +102,16 @@
 					type: "item"
 				}
 			]
-			title: "The Workshop"
+			title: "the workshop"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40008"]
 			description: [
-				"The &6Chemical Reactor&r handles the Sulfuric Acid chain, Latex rubber processing, and HCl. The backbone of everything that follows."
+				"the &6chemical reactor&r handles the sulfuric acid chain, latex rubber processing, and HCl. you'll be using it constantly from here on."
 				""
-				"The &6Extractor&r melts rubber and pulls fluids from items. Set up both before tackling the circuit chain."
+				"the &6extractor&r melts rubber and pulls fluids from items. set up both before tackling the circuit chain."
 			]
 			icon: "gtceu:lv_chemical_reactor"
 			id: "1B00F1C2E3D4000D"
@@ -130,16 +130,16 @@
 					type: "item"
 				}
 			]
-			title: "Chemistry 101"
+			title: "chemistry 101"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1B00F1C2E3D4000D"]
 			description: [
-				"Circuit Assemblers require circuits one tier above what they produce. The &6LV Circuit Assembler&r needs &aGood Electronic Circuits&r (MV tier) in its crafting recipe."
+				"circuit assemblers require circuits one tier above what they produce. the &6LV circuit assembler&r needs &agood electronic circuits&r (MV tier) in its crafting recipe."
 				""
-				"Hand-craft your first Good Electronic Circuit now. Same components as Basic, more of them. After this you'll have a machine that makes the rest cheap."
+				"hand-craft your first good electronic circuit now. same components as basic, more of them. after this you'll have a machine that makes the rest cheap."
 			]
 			id: "1B00F1C2E3D40030"
 			shape: "square"
@@ -150,16 +150,16 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "The Bootstrap Problem"
+			title: "the bootstrap problem"
 			x: 0.0d
 			y: -5.25d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40030"]
 			description: [
-				"The &6Circuit Assembler&r makes &aBasic Electronic Circuits&r and &aMicrochip Processors&r far cheaper than crafting by hand."
+				"the &6circuit assembler&r makes &abasic electronic circuits&r and &amicrochip processors&r far cheaper than crafting by hand."
 				""
-				"Build this before the EBF. You need circuits for the Energy Hatches, and you need a lot of them."
+				"build this before the EBF. you need circuits for the energy hatches, and you need a lot of them."
 			]
 			id: "1B00F1C2E3D40011"
 			shape: "square"
@@ -170,16 +170,16 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "Circuit Factory"
+			title: "circuit factory"
 			x: 0.0d
 			y: -6.75d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40011"]
 			description: [
-				"The &5Electric Blast Furnace&r is the gate to every advanced material. It needs &316x Cupronickel Coil Blocks&r, Steel or Invar casings, and at least two &3LV Energy Hatches&r to run."
+				"the &5electric blast furnace&r unlocks basically every advanced material. it needs &316x cupronickel coil blocks&r, steel or invar casings, and at least two &3LV energy hatches&r to run."
 				""
-				"Build two EBFs sharing a wall. The second needs only 10 more coils. Sustained 120 EU/t minimum. First target: &aAluminium&r."
+				"build two EBFs sharing a wall. the second needs only 10 more coils. sustained 120 EU/t minimum. first target: &aaluminium&r."
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "1B00F1C2E3D40014"
@@ -199,16 +199,16 @@
 					type: "item"
 				}
 			]
-			title: "Blast Off"
+			title: "blast off"
 			x: 0.0d
 			y: -8.25d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40014"]
 			description: [
-				"&3Sapphires&r electrolyze into &aAluminium Dust&r, the cleanest Aluminium source at LV. Set up the &6Electrolyzer&r and feed it Sapphires. Green Sapphires also work."
+				"&3sapphires&r electrolyze into &aaluminium dust&r, the cleanest aluminium source at LV. set up the &6electrolyzer&r and feed it sapphires. green sapphires also work."
 				""
-				"Nitrogen from centrifuging Air speeds EBF recipes. Set up that passive line while the EBF runs."
+				"nitrogen from centrifuging air speeds EBF recipes. set up that passive line while the EBF runs."
 			]
 			icon: "gtceu:lv_electrolyzer"
 			id: "1B00F1C2E3D40018"
@@ -228,16 +228,16 @@
 					type: "item"
 				}
 			]
-			title: "Sapphire Route"
+			title: "sapphire route"
 			x: 0.0d
 			y: -9.75d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40018"]
 			description: [
-				"&aAluminium Ingot&r and a &aGood Electronic Circuit&r. Two items that together open Medium Voltage."
+				"&aaluminium ingot&r and a &agood electronic circuit&r. two items that together open medium voltage."
 				""
-				"The Good Electronic Circuit uses the same components as Basic, more of them, with a better ratio in the Circuit Assembler. Smelt Aluminium in the EBF first, then close out the circuit."
+				"the good electronic circuit uses the same components as basic, more of them, with a better ratio in the circuit assembler. smelt aluminium in the EBF first, then close out the circuit."
 			]
 			icon: "gtceu:aluminium_ingot"
 			id: "1B00F1C2E3D4001C"
@@ -258,13 +258,13 @@
 					type: "item"
 				}
 			]
-			title: "Leaving Low Voltage"
+			title: "leaving low voltage"
 			x: 0.0d
 			y: -11.25d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40004"]
-			description: ["The &5Large Bronze Boiler&r outputs 800 Steam/t. Needs a dedicated water supply in the same chunk. Build one early; it frees up space compared to running multiple smaller boilers."]
+			description: ["the &5large bronze boiler&r outputs 800 steam/t. needs a dedicated water supply in the same chunk. build one early; it frees up space compared to running multiple smaller boilers."]
 			id: "1B00F1C2E3D40020"
 			shape: "rsquare"
 			size: 0.66d
@@ -294,16 +294,16 @@
 					type: "item"
 				}
 			]
-			title: "Big Boiler"
+			title: "big boiler"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40008"]
 			description: [
-				"The &6Ore Washer&r converts Crushed Ore into Purified Ore and extracts the first byproduct dust."
+				"the &6ore washer&r converts crushed ore into purified ore and extracts the first byproduct dust."
 				""
-				"Not all ores are worth the full chain. Focus on ores with valuable byproducts: Copper -> Cobalt, Iron -> Nickel, Gold -> Copper. HV Macerator unlocks 2nd and 3rd output slots; don't over-invest in the full chain yet."
+				"not all ores are worth the full chain. focus on ores with valuable byproducts: copper -> cobalt, iron -> nickel, gold -> copper. HV macerator unlocks 2nd and 3rd output slots; don't over-invest in the full chain yet."
 			]
 			id: "1B00F1C2E3D40022"
 			shape: "rsquare"
@@ -314,13 +314,13 @@
 				item: "gtceu:lv_ore_washer"
 				type: "item"
 			}]
-			title: "Ore Washer"
+			title: "ore washer"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40022"]
-			description: ["The &6Thermal Centrifuge&r processes Crushed or Purified Ore into a different byproduct than the Ore Washer. Stack both in series for maximum extraction. Comes into its own at HV when the Macerator opens all output slots."]
+			description: ["the &6thermal centrifuge&r processes crushed or purified ore into a different byproduct than the ore washer. stack both in series for maximum extraction. comes into its own at HV when the macerator opens all output slots."]
 			id: "1B00F1C2E3D40025"
 			shape: "rsquare"
 			size: 0.66d
@@ -330,16 +330,16 @@
 				item: "gtceu:lv_thermal_centrifuge"
 				type: "item"
 			}]
-			title: "Thermal Centrifuge"
+			title: "thermal centrifuge"
 			x: 2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40008"]
 			description: [
-				"The &6Centrifuge&r decomposes dusts and separates Air into &aOxygen&r and &aNitrogen&r. Set up an Air centrifugation line early. Nitrogen speeds EBF recipes; Oxygen unlocks the Arc Furnace."
+				"the &6centrifuge&r decomposes dusts and separates air into &aoxygen&r and &anitrogen&r. set up an air centrifugation line early. nitrogen speeds EBF recipes; oxygen unlocks the arc furnace."
 				""
-				"Also decomposes Resin into Raw Rubber + Glue, which cuts Resistor and PCB costs significantly."
+				"also decomposes resin into raw rubber + glue, which cuts resistor and PCB costs significantly."
 			]
 			id: "1B00F1C2E3D40027"
 			shape: "rsquare"
@@ -350,16 +350,16 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			title: "Centrifuge"
+			title: "centrifuge"
 			x: -2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40027"]
 			description: [
-				"The &6Polarizer&r magnetizes Iron or Steel Rods without Redstone, cutting costs for motors and transformers significantly."
+				"the &6polarizer&r magnetizes iron or steel rods without redstone, cutting costs for motors and transformers significantly."
 				""
-				"The &6Fluid Solidifier&r shapes molten materials into Rubber Sheets, Rotors (4 ingots -> 1 rotor via mold), and other cast forms."
+				"the &6fluid solidifier&r shapes molten materials into rubber sheets, rotors (4 ingots -> 1 rotor via mold), and other cast forms."
 			]
 			icon: "gtceu:lv_fluid_solidifier"
 			id: "1B00F1C2E3D40029"
@@ -378,16 +378,16 @@
 					type: "item"
 				}
 			]
-			title: "Polarizer \\& Solidifier"
+			title: "polarizer \\& solidifier"
 			x: -2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1B00F1C2E3D40011"]
 			description: [
-				"The &6Assembler&r builds complex components in one step: 2x Vacuum Tubes per recipe, 4x Resistors per run, cheaper PCBs."
+				"the &6assembler&r builds complex components in one step: 2x vacuum tubes per recipe, 4x resistors per run, cheaper PCBs."
 				""
-				"This is the machine that turns circuit-making from a chore into a pipeline. Build at least two."
+				"this is the machine that turns circuit-making from a chore into a pipeline. build at least two."
 			]
 			id: "1B00F1C2E3D4002C"
 			shape: "rsquare"
@@ -398,11 +398,11 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			title: "Assembler"
+			title: "assembler"
 			x: -2.0d
 			y: -6.75d
 		}
 	]
 	subtitle: ["Build the furnace. Find the stone. Make the metal."]
-	title: "II. Low Voltage"
+	title: "II. low voltage"
 }

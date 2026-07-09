@@ -22,19 +22,19 @@
 			subtitle: "fire up the furnaces"
 			tasks: [{
 				id: "1A00F1C2E3D40003"
-				title: "Technology!"
+				title: "technology!"
 				type: "checkmark"
 			}]
-			title: "Technology!"
+			title: "technology!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40002"]
 			description: [
-				"The &6LP Steam Solid Boiler&r burns fuel and produces steam. Keep water flowing in and it'll keep steam flowing out. Let it run dry while hot and it will express its disappointment violently."
+				"the &6LP steam solid boiler&r burns fuel and produces steam. keep water flowing in and it'll keep steam flowing out. let it run dry while hot and it'll express its disappointment violently."
 				""
-				"Route steam through &3Bronze Fluid Pipes&r only - wooden pipes burn. Place a &3Primitive Water Pump&r in the same chunk as the boiler for automatic water supply. No real water source needed."
+				"route steam through &3bronze fluid pipes&r only - wooden pipes burn. place a &3primitive water pump&r in the same chunk as the boiler for automatic water supply. no real water source needed."
 			]
 			id: "1A00F1C2E3D40004"
 			shape: "square"
@@ -52,16 +52,16 @@
 					type: "item"
 				}
 			]
-			title: "Pressure Cookin'"
+			title: "pressure cookin'"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40004"]
 			description: [
-				"Your first factory floor: the &6Steam Alloy Smelter&r, &6Macerator&r, and &6Forge Hammer&r."
+				"your first factory floor: the &6steam alloy smelter&r, &6macerator&r, and &6forge hammer&r."
 				""
-				"The Macerator doubles ore output. Use it every time - every raw ore smelted directly is wasted yield."
+				"the macerator doubles ore output. use it every time - every raw ore smelted directly is wasted yield."
 			]
 			icon: "gtceu:lp_steam_alloy_smelter"
 			id: "1A00F1C2E3D40007"
@@ -85,16 +85,16 @@
 					type: "item"
 				}
 			]
-			title: "Assembly Line, Circa 1780"
+			title: "assembly line, circa 1780"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40007"]
 			description: [
-				"The &5Primitive Blast Furnace&r doesn't look like much. It isn't. But it makes &aSteel&r, and Steel makes everything else."
+				"the &5primitive blast furnace&r doesn't look like much, but it makes &asteel&r, and you need steel for pretty much everything."
 				""
-				"Build at least two sharing walls - multiblocks share walls in GTCEu, saving firebricks. Load it with Wrought Iron and Coke blocks, then leave it running."
+				"build at least two sharing walls - multiblocks share walls in GTCEu, saving firebricks. load it with wrought iron and coke blocks, then leave it running."
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "1A00F1C2E3D4000C"
@@ -114,16 +114,16 @@
 					type: "item"
 				}
 			]
-			title: "Primitive but Persistent"
+			title: "primitive but persistent"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1A00F1C2E3D4000C"]
 			description: [
-				"&aSteel&r is the lifeblood of early GregTech. Tools, machines, structures - Steel underlies all of it."
+				"&asteel&r shows up everywhere in early gregtech - tools, machines, structures, all of it."
 				""
-				"Get comfortable with the PBF. You'll be visiting it frequently for the next few hours."
+				"get comfortable with the PBF. you'll be visiting it frequently for the next few hours."
 			]
 			id: "1A00F1C2E3D40010"
 			shape: "square"
@@ -135,7 +135,7 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "The Real Deal"
+			title: "the real deal"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -145,9 +145,9 @@
 				"1A00F1C2E3D40015"
 			]
 			description: [
-				"Three components. One circuit. A lot of suffering."
+				"three components per circuit, all crafted by hand for now. bit of a slog."
 				""
-				"&3Resistors&r from Carbon Rod + Fine Copper Wire + Paper. &3Vacuum Tubes&r from Glass Tube + Red Alloy Wire. &3Circuit Board&r from Wood Pulp + Resin. It gets better in LV."
+				"&3resistors&r from carbon rod + fine copper wire + paper. &3vacuum tubes&r from glass tube + red alloy wire. &3circuit board&r from wood pulp + resin. it gets better in LV."
 			]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "1A00F1C2E3D40017"
@@ -172,16 +172,16 @@
 					type: "item"
 				}
 			]
-			title: "Elementary, Really"
+			title: "elementary, really"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40017"]
 			description: [
-				"Two &aBasic Electronic Circuits&r and six &aLV Electric Motors&r."
+				"two &abasic electronic circuits&r and six &aLV electric motors&r."
 				""
-				"That's the handshake between Steam and electricity. Build them and the modern era begins."
+				"that's the jump from steam to electricity. build them and LV opens up."
 			]
 			icon: "gtceu:lv_electric_motor"
 			id: "1A00F1C2E3D4001C"
@@ -202,13 +202,13 @@
 					type: "item"
 				}
 			]
-			title: "Leaving Steam"
+			title: "leaving steam"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40004"]
-			description: ["&aHP Steam Machines&r run at full speed with no duration penalty. The HP Solid Boiler produces 600 steam/t - three times the LP rate. Upgrade when Steel is available."]
+			description: ["&aHP steam machines&r run at full speed with no duration penalty. the HP solid boiler produces 600 steam/t - three times the LP rate. upgrade when steel is available."]
 			id: "1A00F1C2E3D40013"
 			shape: "rsquare"
 			size: 0.66d
@@ -218,16 +218,16 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			title: "High Pressure"
+			title: "high pressure"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40007"]
 			description: [
-				"The &6Coke Oven&r converts Coal or Wood into &aCoke Coal&r - better fuel for the PBF and the Electric Blast Furnace later."
+				"the &6coke oven&r converts coal or wood into &acoke coal&r - better fuel for the PBF and the electric blast furnace later."
 				""
-				"Build it before the PBF. Two Coke Ovens feeding one PBF is a good starting ratio. Creosote byproduct fuels Liquid Boilers."
+				"build it before the PBF. two coke ovens feeding one PBF is a good starting ratio. creosote byproduct fuels liquid boilers."
 			]
 			id: "1A00F1C2E3D40020"
 			shape: "rsquare"
@@ -246,16 +246,16 @@
 					type: "item"
 				}
 			]
-			title: "Coke Time"
+			title: "coke time"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40007"]
 			description: [
-				"The &3Steel Wrench&r is required to configure machine outputs and covers in GTCEu."
+				"you need a &3steel wrench&r to configure machine outputs and covers in GTCEu."
 				""
-				"Without it, pipes and conveyor modules won't connect correctly. Craft one before laying out the first LV factory."
+				"without it, pipes and conveyor modules won't connect correctly. craft one before laying out the first LV factory."
 			]
 			id: "1A00F1C2E3D40027"
 			shape: "rsquare"
@@ -273,13 +273,13 @@
 				}
 				type: "item"
 			}]
-			title: "Wrench It"
+			title: "wrench it"
 			x: -2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40007"]
-			description: ["&aRubber&r insulates wires. No rubber means sparks where sparks shouldn't be. Get &3Rubber Plates&r before trying to run any LV machine - cables need insulation."]
+			description: ["&arubber&r insulates wires. no rubber means sparks where sparks shouldn't be. get &3rubber plates&r before trying to run any LV machine - cables need insulation."]
 			id: "1A00F1C2E3D40015"
 			shape: "rsquare"
 			size: 0.66d
@@ -289,16 +289,16 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			title: "Getting Sticky"
+			title: "getting sticky"
 			x: -2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40010"]
 			description: [
-				"The &6Steam Compressor&r and &6Steam Extractor&r round out the steam lineup."
+				"the &6steam compressor&r and &6steam extractor&r round out the steam lineup."
 				""
-				"The Extractor pulls rubber from Resin far more efficiently than crafting. The Compressor handles fire bricks for the PBF and item compression."
+				"the extractor pulls rubber from resin far more efficiently than crafting. the compressor handles fire bricks for the PBF and item compression."
 			]
 			id: "1A00F1C2E3D40021"
 			shape: "rsquare"
@@ -316,11 +316,11 @@
 					type: "item"
 				}
 			]
-			title: "More Machines"
+			title: "more machines"
 			x: -2.0d
 			y: -6.0d
 		}
 	]
 	subtitle: ["Tame fire. Make steel. Leave."]
-	title: "I. Steam Age"
+	title: "i. steam age"
 }

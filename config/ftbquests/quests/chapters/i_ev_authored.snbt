@@ -23,19 +23,19 @@
 			subtitle: "2048 EU/t and a whole new planet"
 			tasks: [{
 				id: "1E00F1C2E3D40003"
-				title: "Extreme Voltage!"
+				title: "extreme voltage!"
 				type: "checkmark"
 			}]
-			title: "Extreme Voltage!"
+			title: "extreme voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40002"]
 			description: [
-				"Single-block generators stop at &6HV&r -- there is no EV gas turbine. From here on out, power means multiblocks."
+				"single-block generators stop at &6HV&r -- there's no EV gas turbine. from here on out, power means multiblocks."
 				""
-				"The &5Large Combustion Engine&r burns diesel for 2048 EU/t, needs a trickle of &bLubricant&r, and boosts higher with &bLiquid Oxygen&r. The Cracker output from HV finally justifies itself."
+				"the &5large combustion engine&r burns diesel for 2048 EU/t, needs a trickle of &blubricant&r, and boosts higher with &bliquid oxygen&r. the cracker output from HV finally justifies itself."
 			]
 			id: "1E00F1C2E3D40004"
 			shape: "square"
@@ -46,16 +46,16 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			title: "EV Power"
+			title: "EV power"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40004"]
 			description: [
-				"The &3Tier 2 Rocket&r needs five &aDesh Hull Sections&r, a &aMars Rocket Engine&r (EV Motor + EV Pump), two &aMars Propellant Tanks&r, a &aMars Guidance Module&r (EV circuits), a Nose Cone, and four Fins."
+				"the &3tier 2 rocket&r needs five &adesh hull sections&r, a &amars rocket engine&r (EV motor + EV pump), two &amars propellant tanks&r, a &amars guidance module&r (EV circuits), a nose cone, and four fins."
 				""
-				"All component recipes use the EV Assembler. Final assembly is at the &6NASA Workbench&r. Fill both propellant tanks with fuel before docking -- check JEI for the required fuel type."
+				"all component recipes use the EV assembler. final assembly is at the &6NASA workbench&r. fill both propellant tanks with fuel before docking -- check JEI for the required fuel type."
 			]
 			icon: "kubejs:desh_hull_section"
 			id: "1E00F1C2E3D40008"
@@ -68,16 +68,16 @@
 				item: "kubejs:desh_hull_section"
 				type: "item"
 			}]
-			title: "Mars Components"
+			title: "mars components"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40008"]
 			description: [
-				"Assemble at the &6NASA Workbench&r with all components staged. Fill both &3Propellant Tanks&r before docking."
+				"assemble at the &6NASA workbench&r with all components staged. fill both &3propellant tanks&r before docking."
 				""
-				"Priority targets on Mars: &aWolframite and Scheelite veins&r for Tungsten, &aMartian Soil&r for centrifuge byproducts, &aOstrum Ore&r for the 6-step chain, and secondary &aDesh veins&r if supply is short."
+				"priority targets on mars: &awolframite and scheelite veins&r for tungsten, &amartian soil&r for centrifuge byproducts, &aostrum ore&r for the 6-step chain, and secondary &adesh veins&r if supply is short."
 			]
 			icon: "ad_astra:tier_2_rocket"
 			id: "1E00F1C2E3D4000C"
@@ -89,18 +89,18 @@
 				item: "ad_astra:tier_2_rocket"
 				type: "item"
 			}]
-			title: "The Mars Rocket"
+			title: "the mars rocket"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D4000C"]
 			description: [
-				"Land on &3Mars&r. Bring a Space Suit."
+				"land on &3mars&r. bring a space suit."
 				""
-				"Tungsten is Mars-only in this pack. &aWolframite&r and &aScheelite&r veins are the main source. &aMartian Soil&r also centrifuges into small Tungsten Dust at MV. Set up both routes."
+				"tungsten is mars-only in this pack. &awolframite&r and &ascheelite&r veins are the main source. &amartian soil&r also centrifuges into small tungsten dust at MV. set up both routes."
 				""
-				"&aOstrum Ore&r is Mars-only too. The 6-step chemical chain starts here."
+				"&aostrum ore&r is mars-only too. the 6-step chemical chain starts here."
 			]
 			id: "1E00F1C2E3D40010"
 			shape: "gear"
@@ -112,16 +112,16 @@
 				item: "ad_astra:mars_sand"
 				type: "item"
 			}]
-			title: "First Mars Trip"
+			title: "first mars trip"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40010"]
 			description: [
-				"Tungsten comes from &aWolframite&r and &aScheelite&r ores on Mars, and in small amounts from centrifuging &aMartian Soil&r at MV. Smelt in the EBF -- check JEI for required temperature."
+				"tungsten comes from &awolframite&r and &ascheelite&r ores on mars, and in small amounts from centrifuging &amartian soil&r at MV. smelt in the EBF -- check JEI for required temperature."
 				""
-				"&aTungsten Carbide&r and &aTungsten Steel&r are the structural alloys of EV+ machines. Get ingot production stable and automated before building out EV infrastructure."
+				"&atungsten carbide&r and &atungsten steel&r are the structural alloys of EV+ machines. get ingot production stable and automated before building out EV infrastructure."
 			]
 			id: "1E00F1C2E3D40014"
 			shape: "square"
@@ -133,16 +133,16 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			title: "Tungsten"
+			title: "tungsten"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40014"]
 			description: [
-				"Ostrum takes six steps: three &6EV Chemical Reactors&r (HCl leach -> CO2 carbonation -> HF calcination), the &6EV Electrolyzer&r, the &5EBF at 3600K&r, then the &5Vacuum Freezer&r."
+				"ostrum takes six steps: three &6EV chemical reactors&r (HCl leach -> CO2 carbonation -> HF calcination), the &6EV electrolyzer&r, the &5EBF at 3600K&r, then the &5vacuum freezer&r."
 				""
-				"Plan fluid routing before starting -- HF mid-chain is not friendly. &aOstrum Wire&r replaces Electrum Wire in the &aNano Processor Assembly&r recipe, gating the LuV circuit behind Mars."
+				"plan fluid routing before starting -- HF mid-chain isn't friendly. &aostrum wire&r replaces electrum wire in the &anano processor assembly&r recipe, gating the LuV circuit behind mars."
 			]
 			id: "1E00F1C2E3D40018"
 			shape: "square"
@@ -154,16 +154,16 @@
 				item: "ad_astra:ostrum_ingot"
 				type: "item"
 			}]
-			title: "Ostrum Processing"
+			title: "ostrum processing"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40018"]
 			description: [
-				"The &5EV ME Fabricator&r is the machine that produces all AE2 components. &aSky Steel&r is its core structural material: macerate &3Sky Stone Blocks&r -> Sky Dust -> mix with Steel Dust and Fluix Crystal -> Sky Steel Dust -> EBF."
+				"the &5EV ME fabricator&r is the machine that produces all AE2 components. &asky steel&r is its core structural material: macerate &3sky stone blocks&r -> sky dust -> mix with steel dust and fluix crystal -> sky steel dust -> EBF."
 				""
-				"Build the EV tier first. Most AE2 items need &aMatter-Energy Circuits&r. Start with Controller + Drive + Terminal for a minimal working network."
+				"build the EV tier first. most AE2 items need &amatter-energy circuits&r. start with controller + drive + terminal for a minimal working network."
 			]
 			icon: "gtceu:ev_me_fabricator"
 			id: "1E00F1C2E3D4001C"
@@ -183,16 +183,16 @@
 					type: "item"
 				}
 			]
-			title: "ME Fabricator"
+			title: "ME fabricator"
 			x: 0.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D4001C"]
 			description: [
-				"The &aMatter-Energy Circuit&r is made in the ME Fabricator from one Logic Processor, one Engineering Processor, one Calculation Processor, and one EV circuit."
+				"the &amatter-energy circuit&r is made in the ME fabricator from one logic processor, one engineering processor, one calculation processor, and one EV circuit."
 				""
-				"Each AE2 processor needs Sky Steel plates and CPU Chips in the ME Fabricator. Build order: Processors -> ME Circuit -> Controller -> Drive. Then expand from there."
+				"each AE2 processor needs sky steel plates and CPU chips in the ME fabricator. build order: processors -> ME circuit -> controller -> drive. then expand from there."
 			]
 			id: "1E00F1C2E3D40020"
 			shape: "square"
@@ -204,16 +204,16 @@
 				item: "kubejs:matter_energy_circuit"
 				type: "item"
 			}]
-			title: "Matter-Energy Circuit"
+			title: "matter-energy circuit"
 			x: 0.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40020", "1E00F1C2E3D40058"]
 			description: [
-				"&aTungsten Steel&r is the structural backbone of IV machines. The &aNano Processor Mainframe&r -- the LuV circuit -- is already in reach at EV, same deviation as the Computer above."
+				"&atungsten steel&r is the main structural material for IV machines. the &anano processor mainframe&r -- the LuV circuit -- is already in reach at EV, same deviation as the computer above."
 				""
-				"Both should be in automated production before leaving. Venus is next. Unstable chemical precursors and radiation-altered minerals require IV machines and a working AE2 network to handle efficiently."
+				"both should be in automated production before leaving. venus is next. unstable chemical precursors and radiation-altered minerals require IV machines and a working AE2 network to handle efficiently."
 			]
 			icon: "gtceu:tungsten_steel_ingot"
 			id: "1E00F1C2E3D40028"
@@ -234,16 +234,16 @@
 					type: "item"
 				}
 			]
-			title: "Leaving EV"
+			title: "leaving EV"
 			x: 0.0d
 			y: -16.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40004"]
 			description: [
-				"The &5Large Combustion Engine&r burns Diesel and Cetane-Boosted Diesel far more efficiently than any single-block generator at EV tier."
+				"the &5large combustion engine&r burns diesel and cetane-boosted diesel far more efficiently than any single-block generator at EV tier."
 				""
-				"Requires Titanium casings, EV Energy Hatch, EV Muffler Hatch. Output scales with fuel quality. A stable diesel supply from the petrochem line makes this the backbone of EV base power."
+				"requires titanium casings, EV energy hatch, EV muffler hatch. output scales with fuel quality. a stable diesel supply from the petrochem line makes this your main EV power source."
 			]
 			id: "1E00F1C2E3D40030"
 			shape: "rsquare"
@@ -254,16 +254,16 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			title: "Large Combustion Engine"
+			title: "large combustion engine"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40020"]
 			description: [
-				"The &6ME Drive&r holds up to 10 storage cells and is the core of any functional network. Pair with a Controller, Terminal, and at least one Import and Export Bus."
+				"the &6ME drive&r holds up to 10 storage cells and is the core of any functional network. pair with a controller, terminal, and at least one import and export bus."
 				""
-				"Build the smallest working network first: Controller + Drive + 1k Cell + Terminal. Expand automation once the network is confirmed online."
+				"build the smallest working network first: controller + drive + 1k cell + terminal. expand automation once the network is confirmed online."
 			]
 			id: "1E00F1C2E3D40033"
 			shape: "rsquare"
@@ -274,16 +274,16 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			title: "AE2 Drive"
+			title: "AE2 drive"
 			x: 2.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D4001C"]
 			description: [
-				"The &6EV Circuit Assembler&r produces &aNano Processors&r -- the HV circuit from the Nano line. Ostrum Wire gates this recipe, so it isn't reachable until Mars, even though it's a cheaper tier than what you already have from the Micro line."
+				"the &6EV circuit assembler&r produces &anano processors&r -- the HV circuit from the nano line. ostrum wire gates this recipe, so it isn't reachable until mars, even though it's a cheaper tier than what you already have from the micro line."
 				""
-				"Nano Processors craft up into &aNano Processor Assemblies&r, the actual EV circuit. Build the assembler immediately after the ME Fabricator."
+				"nano processors craft up into &anano processor assemblies&r, the actual EV circuit. build the assembler immediately after the ME fabricator."
 			]
 			id: "1E00F1C2E3D40050"
 			shape: "rsquare"
@@ -302,16 +302,16 @@
 					type: "item"
 				}
 			]
-			title: "EV Circuit Assembler"
+			title: "EV circuit assembler"
 			x: -2.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40050"]
 			description: [
-				"The &aNano Processor Assembly&r is the actual EV circuit -- the Nano Processor before it is only HV-tier, just late to unlock. Made from Nano Processors, Silicon Wafers, and Plastic PCB."
+				"the &anano processor assembly&r is the actual EV circuit -- the nano processor before it's only HV-tier, just late to unlock. made from nano processors, silicon wafers, and plastic PCB."
 				""
-				"Get Ostrum Wire production automated so the Nano Processor supply doesn't bottleneck it. Crafts up into the &aNano Processor Computer&r below."
+				"get ostrum wire production automated so the nano processor supply doesn't bottleneck it. crafts up into the &anano processor computer&r below."
 			]
 			id: "1E00F1C2E3D40053"
 			shape: "rsquare"
@@ -323,16 +323,16 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			title: "Nano Processor Assembly"
+			title: "nano processor assembly"
 			x: -2.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40053"]
 			description: [
-				"The &aNano Processor Computer&r is the IV circuit -- within reach here since nothing in its recipe needs Venus or Mercury materials, same deviation as the Micro Processor Mainframe at HV."
+				"the &anano processor computer&r is the IV circuit -- within reach here since nothing in its recipe needs venus or mercury materials, same deviation as the micro processor mainframe at HV."
 				""
-				"Batch-produce before leaving. IV machines are hungry and the EV Circuit Assembler is slower than the IV tier will be."
+				"batch-produce before leaving. IV machines are hungry and the EV circuit assembler is slower than the IV tier will be."
 			]
 			id: "1E00F1C2E3D40056"
 			shape: "rsquare"
@@ -344,16 +344,16 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			title: "Nano Processor Computer"
+			title: "nano processor computer"
 			x: -2.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["1E00F1C2E3D40056"]
 			description: [
-				"The &aNano Processor Mainframe&r is the LuV circuit -- one more crafting step up from the Computer, and nothing in its recipe reaches past materials already in production here."
+				"the &anano processor mainframe&r is the LuV circuit -- one more crafting step up from the computer, and nothing in its recipe reaches past materials already in production here."
 				""
-				"Batch this out before leaving EV. It saves rebuilding the assembler chain from scratch once LuV machines start demanding a steady supply."
+				"batch this out before leaving EV. it saves rebuilding the assembler chain from scratch once LuV machines start demanding a steady supply."
 			]
 			id: "1E00F1C2E3D40058"
 			shape: "rsquare"
@@ -365,11 +365,11 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			title: "Nano Processor Mainframe"
+			title: "nano processor mainframe"
 			x: -2.0d
 			y: -15.0d
 		}
 	]
 	subtitle: ["Get to Mars. Get to AE2."]
-	title: "V. Extreme Voltage"
+	title: "v. extreme voltage"
 }

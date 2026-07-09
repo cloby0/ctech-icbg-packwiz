@@ -50,6 +50,13 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
+        "base_fluid": { "Amount": 1000, "FluidName": "minecraft:water" },
+        "input": { "item": "minecraft:ink_sac" },
+        "results": [{ "Amount": 500, "FluidName": "irons_spellbooks:common_ink" }]
+    })
+
+    event.custom({
+        "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:common_ink" },
         "input": { "item": "ars_nouveau:source_gem" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:uncommon_ink" }]

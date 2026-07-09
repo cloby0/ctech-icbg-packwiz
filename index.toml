@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/OEB/botania_apothecary_removal.json"
+hash = "111ba9fe409ac3f924b286bed0d1b21d4f31d67ee3e38be5093ac0d9946ba221"
+
+[[files]]
 file = "config/OEB/greate_swaps.json"
 hash = "31073637be9968cca4824c2466cc690e2bab4e8a4b7a1882821d31edf76aa905"
 
@@ -70,95 +74,95 @@ hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "f7c30f74ade7214c582cb7a3c13c80659e9f11e8cca8341b264fa2e9117a0cdd"
+hash = "302595426dc93bd275e567131c0894a37cd96154b94cc36f6bb8b526cd7667d0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/alchemist.snbt"
-hash = "e42d3e61558f88832aa93dcbde726366b76f833781e00dd24a5f726b4c496612"
+hash = "143e5ac8bb4dd32df0a7a1f1049f4ab6a292aa86549ce41f88f54622db0304c5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/apprentice.snbt"
-hash = "2e45205277c417150415b63c2223111d47dff5123bef86a899da6ac79fa16cf8"
+hash = "964b79c9dcb638d3d3bea0fcce03d894d9577a943d6bb9aa84308ae4784c6cde"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/arcanist.snbt"
-hash = "eb028e50a59885818b19170ee3c71f7e2d289e3ef71a36d4c0eca4b33454d4e0"
+hash = "1cacd7d2bcb4864f7172b0d262782a0602bdb29c8639b1d42c912d1633ebb7e7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_ev_authored.snbt"
-hash = "1be189183c6110cc2719b8a053e2621ecc367950bb3f34466ee28a3e4c0f2d48"
+hash = "00bc0a18d9b27b26e9ac0f57779112a7cfd205ad20abc71387815d16d5f2dc63"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
-hash = "f97cd6e797ba78c7f9bc6affee8d9adb532e7bcda030d40e181f9ab65b3d9c23"
+hash = "ed69c92f51550b1f4d5d382d695f78dc34b331862e2a19077ae8c5ef61643340"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
-hash = "047f78806813a745d2653f097f45bfa03a15c8899297a771718982cd79e82ff3"
+hash = "55b3aeec34549af90a8c0dfbe076fce3e62c98a59a54cd9d8278222adfd91f04"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_iv_authored.snbt"
-hash = "a88f706395f631485705f2a343877d07c2f87d678f7826f7ff142624d6908185"
+hash = "1d7274ce7307166dd59d5dbf038a4d40524b635586382684b1ba1bb5a4abf99d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_luv_authored.snbt"
-hash = "eec0cf9f819e52a5e5b435b997412b81d97bf2d4d6187a1578d851012491e22a"
+hash = "0b53360f95e3b0d826a7658ba8af789887de02351255f92e3ab51be7cea423be"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_lv_authored.snbt"
-hash = "31a0903111f4a92737279575b45291fbc44ce4a60f2c29f913cba41a908e80f6"
+hash = "e48c7ee14398df781f2ab968252a871f82525f52541388b5986561f2f43fae02"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_mv_authored.snbt"
-hash = "8dd8e63f846c3e20d355294b7f55ccaa8b6e8c03dc0ccac51b78c79d9633fb99"
+hash = "b4e867330f38a7c814c524e46ff766f3e7070a4d4d14727ef232f316d5e0df6b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_steam_age_authored.snbt"
-hash = "02f8efc350bb86b7d4e6401fa56a24ec686863b336791599bc2afd6c65c07bfa"
+hash = "9dbd71609469a3730b4b716e8ac273e26c1bae54502210b69bebdd126a71a189"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uev_authored.snbt"
-hash = "f028d60bb7307fa5b3ff12acc00d5a4b7244a63c9e1c612adbe5b243c3446112"
+hash = "bf95989932472aa5b71682d952ffb2fc347d1dd02a9aedd895bd30bcbc8d357b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uhv_authored.snbt"
-hash = "618555c9b117f64e54b6bd7e6a4ab173ef8fb3e2fd4d28a8f9a4a0c26ec3bdb2"
+hash = "39f48b6995eee3e62d1f6dd849769071b540589695906219262fbb8e57c07307"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uiv_authored.snbt"
-hash = "e94d9a03467757aa0637df3f2d6f6c75b3d6215a91841d7327a51ca548ccb55e"
+hash = "7c90f06ba49600db71d98c1e061be4be943af822de3d5dce3257761c0b350210"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uv_authored.snbt"
-hash = "56032ccab521ed490e72ec69fdd463001288b9f5a3eeaf41e353509ec67d5445"
+hash = "769f4cc7118a5494bd3a03257b49c75b0706294dd67f8d90b0a6b06083adb361"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_zpm_authored.snbt"
-hash = "cc8f078130827a2935736a0ba518e6959614cf6c46bc72faf10829d60b5b2747"
+hash = "8ee0edb429188e54b17d48ae6ea815a7b3528cd0fd69510df478fa09359603c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "c4a04238f0cdae756326e0966398eb871c3c32f0f1a504c5e51c7ce44899d65c"
+hash = "7736d7311a5823a42e958016cff36c77b5343a0c8ac0dc059763607960c00c7f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
-hash = "b70237425be832169000f537a5d35b29d78fb9eb1b005cbf9e60b2f50656254a"
+hash = "b76befec83b764f8ca8bb2cf734dfcf86043d13d0cbf416a92cd5b4383b6bb6a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
-hash = "48682e72a4c4dec681fffda879a566befee1a9969178f183ebcb36b2c23329ca"
+hash = "47e3ac0f6c83fd370cae494230fff093d649d93c19735febef3a4f19050185c3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sorcerer.snbt"
-hash = "de2ddad92e606c71ba3ea96fd622ca33bfd12bc724c6e3f7bd44bb06043a5728"
+hash = "0ca9bf312a415fbf01c0747d7fcc6c59bb9b7bb5f159d1c92db223eba5801bfc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thaumaturge.snbt"
-hash = "8b8a55145783c43c86762443b5642835ffefef7d255a0fcd41265957563ce123"
+hash = "2c4111027229c192712d8bc10de4d3347c9a7f32e7a2b43d5a257224ea7003e6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"
-hash = "418bc66be7caa18dc2f7b313956396fa82ed0d27453484c3ba7554c8e729cb24"
+hash = "648277bb8d608b528f31c1aa66851603a6de290b825186e2b4c96c1c4c1f4cae"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -190,7 +194,7 @@ hash = "275f6c2dc02ba318aee9c9be05d23a75e5613099d6ac7382076bd076ff1caf4c"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "9cf17d1f36936c4f755283d754a8db803431f4ed5643aea137bf3b7372712868"
+hash = "0103db1ac3301e6a0c61902dc8e81bcfca84946edc5d6b93ab451a3b4d3498b8"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -318,7 +322,7 @@ hash = "7c9302c6c5a9a7433d0e1fe1555f6c4163d2eb5777ae60327cd89a5db06ee698"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "3057fb5d38a27fc699fb951874b326c18cb5cf463e7e561ee99b99bf267f653c"
+hash = "6ecf44936b58ff549cdb127d8c4014740c033241f01314dbed787dbeca0e6c02"
 
 [[files]]
 file = "config/reliquary-common.toml"
@@ -1865,6 +1869,198 @@ file = "kubejs/config/common.properties"
 hash = "e641ee5161de4d83903af046619a7c73ccdf6640a10a9f075cc94fcd2b2f31e3"
 
 [[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/jet_suit.json"
+hash = "0c1ea50b975ab837f745b4a65fa1ac843a73465d0fba1c055ee1b73ecdf505a5"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/jet_suit_boots.json"
+hash = "0c1ea50b975ab837f745b4a65fa1ac843a73465d0fba1c055ee1b73ecdf505a5"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/jet_suit_helmet.json"
+hash = "0c1ea50b975ab837f745b4a65fa1ac843a73465d0fba1c055ee1b73ecdf505a5"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/jet_suit_pants.json"
+hash = "0c1ea50b975ab837f745b4a65fa1ac843a73465d0fba1c055ee1b73ecdf505a5"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/netherite_space_boots.json"
+hash = "f191e0e0edf49a7fb60cb40fd1ca5f0c0000351a412a767b97c4e65249d10e9a"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/netherite_space_helmet.json"
+hash = "f191e0e0edf49a7fb60cb40fd1ca5f0c0000351a412a767b97c4e65249d10e9a"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/netherite_space_pants.json"
+hash = "f191e0e0edf49a7fb60cb40fd1ca5f0c0000351a412a767b97c4e65249d10e9a"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/netherite_space_suit.json"
+hash = "f191e0e0edf49a7fb60cb40fd1ca5f0c0000351a412a767b97c4e65249d10e9a"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/space_boots.json"
+hash = "3524146b5122119740ba3ce8091a7a58c2d25888c305925c0e64c9ff120c30ac"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/space_helmet.json"
+hash = "3524146b5122119740ba3ce8091a7a58c2d25888c305925c0e64c9ff120c30ac"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/space_pants.json"
+hash = "3524146b5122119740ba3ce8091a7a58c2d25888c305925c0e64c9ff120c30ac"
+
+[[files]]
+file = "kubejs/data/ad_astra/legendarysurvivaloverhaul/temperature/items/space_suit.json"
+hash = "3524146b5122119740ba3ce8091a7a58c2d25888c305925c0e64c9ff120c30ac"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/diamond_gloves.json"
+hash = "20ed70abdb91498adfed515df73d20262d00c21a615e8a2469112b922d06fd47"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/golden_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/gravitite_boots.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/gravitite_chestplate.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/gravitite_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/gravitite_helmet.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/gravitite_leggings.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/iron_gloves.json"
+hash = "20ed70abdb91498adfed515df73d20262d00c21a615e8a2469112b922d06fd47"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/leather_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/neptune_boots.json"
+hash = "f23d072a92c05c03a38664fdba5ba9d148fb6c8e97246af96bf0e6e17d81a4ce"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/neptune_chestplate.json"
+hash = "f23d072a92c05c03a38664fdba5ba9d148fb6c8e97246af96bf0e6e17d81a4ce"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/neptune_gloves.json"
+hash = "20ed70abdb91498adfed515df73d20262d00c21a615e8a2469112b922d06fd47"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/neptune_helmet.json"
+hash = "f23d072a92c05c03a38664fdba5ba9d148fb6c8e97246af96bf0e6e17d81a4ce"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/neptune_leggings.json"
+hash = "f23d072a92c05c03a38664fdba5ba9d148fb6c8e97246af96bf0e6e17d81a4ce"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/netherite_gloves.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/obsidian_boots.json"
+hash = "da314f0a101d3597d2d8fc972de421bb79baf2107c2dc0c671513a395dbac97f"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/obsidian_chestplate.json"
+hash = "da314f0a101d3597d2d8fc972de421bb79baf2107c2dc0c671513a395dbac97f"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/obsidian_gloves.json"
+hash = "20ed70abdb91498adfed515df73d20262d00c21a615e8a2469112b922d06fd47"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/obsidian_helmet.json"
+hash = "da314f0a101d3597d2d8fc972de421bb79baf2107c2dc0c671513a395dbac97f"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/obsidian_leggings.json"
+hash = "da314f0a101d3597d2d8fc972de421bb79baf2107c2dc0c671513a395dbac97f"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/phoenix_boots.json"
+hash = "ed79149019c53d592f1c44ecd9e72e9bdc451a3cbaecb26b3fae606989764e08"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/phoenix_chestplate.json"
+hash = "ed79149019c53d592f1c44ecd9e72e9bdc451a3cbaecb26b3fae606989764e08"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/phoenix_gloves.json"
+hash = "f23d072a92c05c03a38664fdba5ba9d148fb6c8e97246af96bf0e6e17d81a4ce"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/phoenix_helmet.json"
+hash = "ed79149019c53d592f1c44ecd9e72e9bdc451a3cbaecb26b3fae606989764e08"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/phoenix_leggings.json"
+hash = "ed79149019c53d592f1c44ecd9e72e9bdc451a3cbaecb26b3fae606989764e08"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/sentry_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/valkyrie_boots.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/valkyrie_chestplate.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/valkyrie_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/valkyrie_helmet.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/valkyrie_leggings.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/zanite_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/zanite_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/zanite_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/zanite_helmet.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/aether/legendarysurvivaloverhaul/temperature/items/zanite_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
 file = "kubejs/data/aether/worldgen/biome/skyroot_forest.json"
 hash = "f32fb52df1fea241727441d2d780db02e33ba39f1cfe5605ee2dfa022169e749"
 
@@ -1911,6 +2107,306 @@ hash = "55b61aa7c7e2671907520637f65af1b0308a09574fbc568978d6c2cbc5e5671c"
 [[files]]
 file = "kubejs/data/aether_redux/worldgen/biome/the_blight.json"
 hash = "9930456509448af79b11aacd36a672595408c8e70f44ad94b860fc0c1ae81440"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/balyk_sook_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/bandenhelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/benty_grange_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/birka_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/birka_tunic.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/black_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/black_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/black_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/broa_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/brown_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/brown_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/brown_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/common_hauberk.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/common_hauberk_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/coppergate_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/desjatinna_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/early_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/eastern_rich_kaftan_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/fur_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/gilded_desjatinna_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/gilded_hauberk_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/gilded_hauberk_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/gjermundbu_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/gorzuchy_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/green_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/green_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/green_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/kerch_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/leiden_bandhelmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/lokrume_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/lombard_lamellar_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/lombard_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/northern_gambeson.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/pecs_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/red_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/red_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/red_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/rich_byrnie_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/rich_byrnie_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/somme_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/stafforshire_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/stromovka_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/sutton_hoo_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/trosino_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/ultuna_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/vendel_greaves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/vendel_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/verden_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/white_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/white_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/white_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/wollaston_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/yarm_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/yellow_birka_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/yellow_oaterned_pillbox_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/yellow_tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/darkagesarmory/legendarysurvivaloverhaul/temperature/items/zlin_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/skyjade_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/skyjade_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/skyjade_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/skyjade_helmet.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/skyjade_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stormforged_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stormforged_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stormforged_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stormforged_helmet.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stormforged_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stratus_boots.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stratus_chestplate.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stratus_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stratus_helmet.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
+
+[[files]]
+file = "kubejs/data/deep_aether/legendarysurvivaloverhaul/temperature/items/stratus_leggings.json"
+hash = "bf8824989b571fc5a22104fdd72ccc83c920b006ea7a3fb0260ad7c9db7dc7b2"
 
 [[files]]
 file = "kubejs/data/deep_aether/worldgen/biome/aerglow_forest.json"
@@ -1961,6 +2457,1382 @@ file = "kubejs/data/draconicevolution/forge/biome_modifier/overworld_draconium_o
 hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
 
 [[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/advanced_nanomuscle_chestplate.json"
+hash = "8bb2eff49dd8cd998c49546c175565c90981192374ad5e50ad708b5621a75495"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/advanced_quarktech_chestplate.json"
+hash = "3524146b5122119740ba3ce8091a7a58c2d25888c305925c0e64c9ff120c30ac"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/hazmat_boots.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/hazmat_chestpiece.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/hazmat_headpiece.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/hazmat_leggings.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/nanomuscle_boots.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/nanomuscle_chestplate.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/nanomuscle_helmet.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/nanomuscle_leggings.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/quarktech_boots.json"
+hash = "8bb2eff49dd8cd998c49546c175565c90981192374ad5e50ad708b5621a75495"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/quarktech_chestplate.json"
+hash = "8bb2eff49dd8cd998c49546c175565c90981192374ad5e50ad708b5621a75495"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/quarktech_helmet.json"
+hash = "8bb2eff49dd8cd998c49546c175565c90981192374ad5e50ad708b5621a75495"
+
+[[files]]
+file = "kubejs/data/gtceu/legendarysurvivaloverhaul/temperature/items/quarktech_leggings.json"
+hash = "8bb2eff49dd8cd998c49546c175565c90981192374ad5e50ad708b5621a75495"
+
+[[files]]
+file = "kubejs/data/kubejs/silentgear_traits/insulating.json"
+hash = "73f6c0aed9707b6c3f7f24187d648b910439cf87b6245b16b6238fbfd3ca12e9"
+
+[[files]]
+file = "kubejs/data/kubejs/silentgear_traits/reflective.json"
+hash = "3c441694f87bebab71808f3d3a86d478ccb99fddfe37a0edade3c869723d9c05"
+
+[[files]]
+file = "kubejs/data/lost_aether_content/legendarysurvivaloverhaul/temperature/items/agility_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/lost_aether_content/legendarysurvivaloverhaul/temperature/items/power_gloves.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/barbute.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/brigandine_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/ceremonial_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/ceremonial_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/ceremonialarmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/chainmail_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/chainmail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/chainmail_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/chainmail_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/coif.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/crusader_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/crusader_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/crusader_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/cuirassier_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/cuirassier_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/cuirassier_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/cuirassier_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/face_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/gambeson_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/gambeson_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/gothic_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/grand_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/halfarmor_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/jousting_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/jousting_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/jousting_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/kastenbrust_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/kastenbrust_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/kastenbrust_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/knight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/lamellar_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/maximilian_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/norman_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/platemail_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/platemail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/platemail_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedbarbute.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedchainmail_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedchainmail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedchainmail_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedchainmail_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedcrusader_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedcrusader_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedgreathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedhalfarmor_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustedkettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/rustednorman_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/stechhelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/wingedhussar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/xivcenturyknight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/xivcenturyknight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmory/legendarysurvivaloverhaul/temperature/items/xivcenturyknight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/alla_tedesca_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/alla_tedesca_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/articulated_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/avant_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/avant_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/avant_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/bellows_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/black_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/black_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/blue_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/blue_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/british_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/brown_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/brown_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/burgundian_kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cabasset.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/ceremonial_kastenbrust_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/ceremonial_kastenbrust_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cervelliere.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/chained_gambeson.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/chained_gambeson_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/chapel.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/close_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/closed_barbute.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/closed_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/coat_of_plates_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/coat_of_plates_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/condottiero_cap.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cuman_captain_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cuman_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cyan_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/cyan_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_bellows_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_crusader_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_crusader_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_crusader_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_crusader_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_early_cabasset.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_parade_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_parade_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gilded_parade_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gothic_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_gothic_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_grand_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_heavy_brigandine_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_heavy_brigandine_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_heavy_brigandine_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_heavy_cuirassier_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_heavy_cuirassier_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_jousting_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_jousting_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_jousting_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_jousting_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_kastenbrust_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_kastenbrust_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_kastenbrust_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_knight_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_knight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_late_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_maximilian_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_peascod_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_proto_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/dark_proto_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_gothic_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_kastenbrust_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_kastenbrust_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_kastenbrust_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_knight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_maximilian_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/darkblued_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/devilish_grotesque_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/early_cabasset.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/early_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/embosed_parade_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/embosed_parade_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/embosed_parade_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/english_knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/english_knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/engraved_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/engraved_close_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/exquisite_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/facial_grotesque_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fox_grotesque_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_articulated_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_gothic_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_grand_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_grilled_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_jousting_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_jousting_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_jousting_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_jousting_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_kastenbrust_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_kastenbrust_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_kastenbrust_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_knight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_maximilian_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_milanese_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/fully_gilded_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gallowglass_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gallowglass_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gallowglass_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/german_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_cabasset.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_chainmail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_chainmail_coif.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_chainmail_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_close_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_dark_close_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_dark_gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_dark_gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_dark_peascod_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_dark_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_darkblued_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_darkblued_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_darkblued_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_early_cabasset.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_exquisite_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_fox_grotesque_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_gothic_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_gothic_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_grand_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_grilled_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_heavy_brigandine_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_heavy_brigandine_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_heavy_brigandine_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_peascod_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_steel_puff_and_slash_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_steel_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_sugarloaf_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_xivcenturyknight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gilded_xivcenturyknight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gray_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/gray_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/green_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/green_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/greenwich_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/greenwich_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/greenwich_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/grilled_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/heavy_brigandine_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/heavy_brigandine_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/heavy_brigandine_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/heavy_cuirassier_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/heavy_cuirassier_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/klappvisor_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/late_bascinet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/late_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/late_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/late_kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/late_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_blue_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_blue_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_cuman_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_gray_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/light_gray_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/lime_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/lime_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/linen_coif.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/lion_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/lobster_tailed_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/magenta_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/magenta_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/mamluk_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/maximilian_burgonet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/milanese_armet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/mirror_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/mirror_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/morion.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/opened_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/orange_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/orange_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/patrician_tuher_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/peascod_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/pikeman_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/pikeman_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/pink_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/pink_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/proto_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/proto_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/puff_and_slash_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/purple_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/purple_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/red_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/red_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/red_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/sallet_without_neck_protection.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/sallet_without_visor.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/saracen_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/saracen_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/saracen_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/savoyard_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/scale_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/shoes.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/silvered_dark_bellows_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/silvered_dark_maximilian_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/silvered_dark_maximilian_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/silvered_dark_maximilian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/splint_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/splint_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/splint_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/steel_puff_and_slash_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/steel_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/sugarloaf_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/tablet_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/tunic.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/tunic_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/two_eye_slits_sallet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/visored_kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/white_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/white_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/white_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/xiii_century_knight_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/xiii_century_knight_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/xiii_century_knight_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/yellow_greathelm.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/yellow_puff_and_slash_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/magistuarmoryaddon/legendarysurvivaloverhaul/temperature/items/yellow_puff_and_slash_leggings.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/elementium.json"
 hash = "a10addfd1cbd4fa144be061c7b8515700cf6d98a77de906ad07373e069dfd16f"
 
@@ -1986,7 +3858,7 @@ hash = "7cd0eda25116d3de28d7058fef3404538ff8a13ae6a0614897cc4aecbe96bdf4"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ambrosium_shard.json"
-hash = "242fa9e5f715cc39fd252e4725462b6b6d2b9b5ab667aa2fb5fa75a0548f6e94"
+hash = "08a1c90ea89aed5fc5d14591551405f8869089caef082be576ee7d2074939b21"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/americium_ingot.json"
@@ -1999,6 +3871,14 @@ hash = "9a3d637504e0f2850ec8da5a396ac70dc523439d9091200fca86204d8caf9cc6"
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/antimony_ingot.json"
 hash = "d14a6b84cc7735948e424baa44e47be9e312f381377d63c30067bc6f2ef78a66"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/azure_electrum.json"
+hash = "b483ba19dbae6da0e1d9161e1fb44f49f15de8592f0ca9f239876cfc725f2e31"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/azure_silver.json"
+hash = "68b5684c91f6c4b86c3917a684966ccaabd6c5734f461fd94c050aeb88f5bbd1"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/beryllium_ingot.json"
@@ -2017,6 +3897,10 @@ file = "kubejs/data/silentgear/silentgear_materials/black_steel_ingot.json"
 hash = "030cdcc1c00c143d6c7f196c99b4500599997d3c031804db46f6b368042de83f"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/blaze_gold.json"
+hash = "30f9aaffde8fbbd4fc41f2f930d1bde019241f26e664e1cde55b9117eda6f5f8"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/blue_steel_ingot.json"
 hash = "8fe51cef55a7d8bf78eabc62b3f2ea93b3b1a06f0ed3eecec169aeabd0b241d2"
 
@@ -2031,6 +3915,14 @@ hash = "9e10f7dfcf5efd03df7e71741160b30e7210d0f53cdb9278d383e7855e90bd6d"
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/cobalt_ingot.json"
 hash = "c5c44de19c9bf315bbca1d9366702c4a47b645dd5ed519c0522f068a1d4ab43c"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/crimson_iron.json"
+hash = "697d9c939cd4ca4099e99f4ab1f94746195cd44b21be8d493eafe4e8189e15d0"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/crimson_steel.json"
+hash = "4924acf5caee45e4368a3374f50548afce456f7b42d2f5dbce718f5a5f9cf2df"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/cupronickel_ingot.json"
@@ -2049,6 +3941,10 @@ file = "kubejs/data/silentgear/silentgear_materials/duranium_ingot.json"
 hash = "e80cf4e4ca07b88963a2e8c5117101003c4dc9448fee6a1a7981f6026350cdc3"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/enderium.json"
+hash = "0498e30a05f99da77d68dd12f9c19ca3f95a7bcd6166b0f8b4a2466bb56c7b57"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/enriched_naquadah_ingot.json"
 hash = "001fdafc5b8b43d1144226ca4e098467f541b1e31ca9279503fe534386b4573e"
 
@@ -2061,24 +3957,28 @@ file = "kubejs/data/silentgear/silentgear_materials/europium_ingot.json"
 hash = "13fd759129fad2f53c76a5e8fe88506fc664afda2d3aa50f478c3c795dde8907"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/fine_silk_cloth.json"
+hash = "f4cac328b714a4544c2f67cf8da63ecb1700dd942217fa972e4432e7bb2f05a4"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/graphene_ingot.json"
 hash = "eac7ebca4e8891c57c4358989d7c20e92ed74fb8bc05041f46bbf65cc3731c4e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/gravitite_ingot.json"
-hash = "db1d08d907798dacbe578a82d4d8f5eb96162f23664850e5bf06a37b88ad8f48"
+hash = "38ff7ac568ceb5afa91c2f25c039b2e4154d4ac292ff6fad1b3430a364c190bd"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hastelloy_c_276_ingot.json"
-hash = "013f6f632ccbccbb3be3102b013b466bc111c19c3f63b7c6df32b925cd89b6b6"
+hash = "67f8929b3454ef6b68604efadb16dfec7ce684d80cc6576fefe959f701eb4fc0"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hastelloy_x_ingot.json"
-hash = "a9a9098e9715f5400a798cd69bcc8f23d61ce6720fe05e7bdbfb43c3e7c86ca7"
+hash = "91a5c3ec3a39b27227653c68cdd12ca5fbceb8681809bdbc65f872c6603ef546"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/holy_silver_ingot.json"
-hash = "159f70ab957c9dd7fada1d8fd1b3624150ba0a04b5ab2aa2723d57950cf0d1e6"
+hash = "9a9ec550b592c60cb33303a9ba56ada8705732f1ac08183ec7ef477bb97e4329"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsla_steel_ingot.json"
@@ -2086,19 +3986,19 @@ hash = "3f4eb860c0a87443f9d050602f50759c2383c1bf0f72ac4ef7a4a33e6e8e9e60"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsse_ingot.json"
-hash = "d60c22d7fa4ed4a905021ae4b38d9fa7e00f3afe6521129c4528fd68d9b7c0ef"
+hash = "067706f7ddadb8448038f7e978e4f140bb12378cf56e2a1d7085fc44cbe9392a"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hssg_ingot.json"
-hash = "921341e92db175a12ec4fb8b1f3812752590da2fef71f14dc9ef91c2e4b32da3"
+hash = "161287f908ca1920bf64dd19c7e1e331ee9a1cf7a26f8a8e9d39c9c5e23cc78d"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/hsss_ingot.json"
-hash = "b914deaae1999a75a0035a5b034c959dd974691481d76a681b938c6aaa47d2e2"
+hash = "b91302fb9181f256cc2337a206d78d5f3325111934ca9f687cf847f3fc323863"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/incoloy_ma_956_ingot.json"
-hash = "018d4a6099a3086ce3c36f14cf9dcf97b1257114ffc8d42141f89f17585d1970"
+hash = "99685213e58096f2820feedd015812338a23562d923011e1fca36d9204cadba7"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/iridium_ingot.json"
@@ -2106,11 +4006,19 @@ hash = "ba3de645805fb8116260b4a6a7f27b68f574ad48ca6ce952562e9f8f7b7744d9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/kanthal_ingot.json"
-hash = "3ba0ee3e4840add46f14605ab4f58ced0fbc3c5f3384599cbdf2f956687cecbb"
+hash = "ffec82e046a328cea11e8f181074075619feb0fabcdc86100ad42554bf314d23"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/leather.json"
+hash = "c41681359a57063364ef11ee7542a427f86db9f708572e8b88e638623666efb0"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/luminessence_dust.json"
 hash = "5bb1b06be8f18af547bbe24ed5333da6e54f90b023ecf23c1cf137d9cf6d9f87"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/lumium.json"
+hash = "9f283759540b340bd1b852ab0c38ba8ffec041dfeb4af72d052a182ac4dc2dcc"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/magnalium_ingot.json"
@@ -2130,7 +4038,7 @@ hash = "c0ce6ed082134ec6f16b9bc7ce9cc8d43ced28319b015c75678bc5588ab9dce9"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_alloy_ingot.json"
-hash = "98af951067d9d8c11f0dfe9157df9679e78610089bfbc57a2fc0d5218ece5bd5"
+hash = "3ef1ced35b067e185c63138f8075f8153af6af7bf4ef1b8662a333192c4d9952"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/naquadah_ingot.json"
@@ -2145,16 +4053,24 @@ file = "kubejs/data/silentgear/silentgear_materials/neodymium_ingot.json"
 hash = "7340caca302d22ca540884f5d289f2c57e29ee860451133c835c8fe01b883b35"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/netherite.json"
+hash = "39d06fd9324755ba7d2d32f9720b07e61dee1e185600dd754ff2231bcf59a121"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/neutronium_ingot.json"
-hash = "eebbe7664abf7bfc9c3fd7936a4277d9c6c094d88af1a67b78e3d1f324646930"
+hash = "2c6f47ff732e65b8457d61c652027dbce9517ae22cd3168904dbf91045ca22ba"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/nichrome_ingot.json"
-hash = "f9a1ec603b12df5760fae3017eb7060f529f86701a30b02d5da7d80d6642f949"
+hash = "38300275af77d0ae4bbab509a01c6254fba20939caae7445935c0528e520dcc8"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/niobium_ingot.json"
 hash = "45daf2dec9efbc73936ced78436a295cdd4869d49cda1a8b5101bd1798005d33"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/obsidian.json"
+hash = "8617887c336138799c444b286bb7ebffb48b933e221f68ea59df867ec578f83e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/osmiridium_ingot.json"
@@ -2163,6 +4079,10 @@ hash = "cbbd591240563a9d45f3ee0cbf5a3b198214991742534cb70743e45fac245676"
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/palladium_ingot.json"
 hash = "34ac2c0f97af44f3171800c64c20a0d5647e2e2a919fbd89e4296521174ef155"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/phantom_membrane.json"
+hash = "4f734a2f9dc10d59d23d06827ad9909dafb747b61256d24c2786d3c7384f4569"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/plutonium_241_ingot.json"
@@ -2178,11 +4098,15 @@ hash = "f12e2a1687899cf72d0c6d0c6b776889a862a61efcb5d3e21c52e59d5bf43bc2"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/prima_materia_ingot.json"
-hash = "b386812adfce10c59a649fe514739945e64744f6bf7d6d635a8bc0a8865ddb86"
+hash = "3fb89a937cfe7973057a5561004952074595d8026cab3a7c2da763c9591d062b"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/red_steel_ingot.json"
 hash = "2451548a23e31be674de50bc0e9d00a244d4d60b655ee2bb26cce28b9144d918"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/refined_glowstone.json"
+hash = "7763c0a85d3155c45fb5bd147e7822df15b9063f60819eb2ae632c1ce00de3a5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/reinforced_epoxy_resin_ingot.json"
@@ -2222,7 +4146,11 @@ hash = "6e5e22c0882934045f2884a424655bcffa20ddc9ac82d87372e4af8c0a8ccdc5"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/skyjade.json"
-hash = "90d619c93a458d75d1372f9c5eeff3a57203adc0c25b39057eb1b9b79cbc091d"
+hash = "1b3fe50b3791e4f983252344fcad4addd86baa6ee4f1041a1d802ed9894777a0"
+
+[[files]]
+file = "kubejs/data/silentgear/silentgear_materials/slime.json"
+hash = "5bceda2c1be220f04751b5ffd895da731b45081dbc12b6c56e3eb8f95ce120cb"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/stainless_steel_ingot.json"
@@ -2230,7 +4158,7 @@ hash = "d7c62a3d54529e7c89297ec261d929fb0d168eedd47180b6dce295679db06196"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/stellite_100_ingot.json"
-hash = "a5fc1a7c4db5f2a2792730f3bf627d200567ecc2f7f1486d0abf235b0df1b45a"
+hash = "9179dd922acc8b0bdea137066fe906a7dcb5946cd9e22228e0a0356e85ffd96e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/sterling_silver_ingot.json"
@@ -2238,7 +4166,7 @@ hash = "fae7e337b8e0e5cf29dadd3b82c37a6617a90b8210aea9e8a7a9dc85070bef29"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tantalum_carbide_ingot.json"
-hash = "012c742785b6c9cd70cd557b39bbfff37b9d5deae0c99c2cb973f85f4492de45"
+hash = "d5a90829c2845ea32424f31c3c5efc1fb191d31d01c9ca914809405ae3d8b931"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tantalum_ingot.json"
@@ -2254,7 +4182,7 @@ hash = "227312f00e1f902f6c42311ee5dd0bdf7cd7d390737812c4a7152b97da5528c8"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_carbide_ingot.json"
-hash = "16627dc005f74067db6249e3ad492264b65469d66f5617ed4d5f90c676132a94"
+hash = "ffb33f5ff68037b5388cceb8edd7a60a4a4daa2ce327fd25f48decc544c2291b"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_ingot.json"
@@ -2262,7 +4190,7 @@ hash = "76a0efaa768dce3c9e1ea2287b7c27d9ca14930dec3a2b6a54e4605ae3014278"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/titanium_tungsten_carbide_ingot.json"
-hash = "3c1a13c20afc9bb8ef1b661326b6052d615daf64cfbfb83a4900ebfa4ec9cbcd"
+hash = "98f46f49bb6c113d04805ac18d59b94be1dd641c3c8a20e8929cbc3e166a9e81"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/trinium_ingot.json"
@@ -2274,7 +4202,7 @@ hash = "7a72db036cb90453620fd5f4350030a6c3900ee05b72b08eeb678c3e3c68b553"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tungsten_carbide_ingot.json"
-hash = "a4e9bd9752918e029ffb22ba774434e4bb90e07e3cf38174692254fe5c19e6b7"
+hash = "e216dc32afa945435353ccdfa108422a2375319509cc52f56b60b564e31e39ea"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/tungsten_ingot.json"
@@ -2285,8 +4213,12 @@ file = "kubejs/data/silentgear/silentgear_materials/tungsten_steel_ingot.json"
 hash = "caf5817fc0e0d92e9eca7a0218dff3aee5cb160f98f71ce7f0f17fb5c2b0414c"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/turtle.json"
+hash = "e9929fbda2fbb4c8945f37071c1c80ad3af8ed1719668dffa481c33a7c07b479"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/ultimet_ingot.json"
-hash = "93cd69d8b9be3b86058b6b7f1afca94c2392523df506402cefb5a9c847bb6ad2"
+hash = "a23e6d53a440dc42beb4449f6e94c681762dc540c9c26f2568747fa496ba341c"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/uranium_235_ingot.json"
@@ -2317,6 +4249,10 @@ file = "kubejs/data/silentgear/silentgear_materials/watertight_steel_ingot.json"
 hash = "0cbc82e64249f35d1d33f721c4de787be1a2a442f72a428018bde134072b9fb3"
 
 [[files]]
+file = "kubejs/data/silentgear/silentgear_materials/wool.json"
+hash = "dc3fd59d462a7ca3fc0fa02454af2879882be92a60fea522e83318a7ed76be0b"
+
+[[files]]
 file = "kubejs/data/silentgear/silentgear_materials/wrought_iron_ingot.json"
 hash = "fca2bbbc3fbbd6a7b29a759c7e0eb89a275c2fb97d138d1b53f5b71fc73943db"
 
@@ -2326,11 +4262,207 @@ hash = "fc39ead9690c5abdaddffb25056fe3dbac416a323e90fcaf89e7d312d87b8160"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/zanite.json"
-hash = "353f91ecb7a4965d906fd6223a13865433dd118a665c32759cc41eb1dc0492e5"
+hash = "efeda6de2be14ed513d1ecf336cd441fb5873860b852b323bf7beced4480542e"
 
 [[files]]
 file = "kubejs/data/silentgear/silentgear_materials/zeron_100_ingot.json"
-hash = "be081a4465b881ec96423dbefd3c4e1ed60214d4dd23c63bdde2846488187441"
+hash = "8cba366de3f5141082eb054f0e4c1b3a6575c1bfac007e6f8eff2b10663ea577"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/andreevski_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/bahteretz_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/bahteretz_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/bulgar_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/byzantine_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/byzantine_scale_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/eastern_kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_andreevski_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_bahteretz_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_byzantine_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_byzantine_scale_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_eastern_kettlehat.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_gnezdovo_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_lamellar_mail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_late_phrygian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_nikolskoe_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_raikovec_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_rus_heavy_lamellar_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_rus_heavy_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_rus_scale_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_rus_scale_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_shater_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_tagancha_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gilded_yushman_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/gnezdovo_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/kaftan_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/kuyak_breastplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/kuyak_chestplate.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/lamellar_mail_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/lamellar_mail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/late_phrygian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/nikolskoe_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/ozernoe_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/raikovec_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_chainmail_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_chainmail_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_chainmail_coif.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_chainmail_leggings.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_gambeson.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_gambeson_boots.json"
+hash = "79db3a2d29ea490ff98f38d4588396f2267f4ceb32e3dbb6d66a5b86c84181b2"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_heavy_lamellar_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_heavy_lamellar_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_scale_boots.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/rus_scale_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/shater_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/tagancha_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/varangian_guard_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/varangian_helmet.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
+
+[[files]]
+file = "kubejs/data/slavicarmory/legendarysurvivaloverhaul/temperature/items/yushman_chestplate.json"
+hash = "634ee764812de3f61bd573c3abbfc39f553dd5c1f8230bf5472cb92e1cb7e12d"
 
 [[files]]
 file = "kubejs/data/superbwarfare/forge/biome_modifier/deepslate_galena_ore_biome_modifier.json"
@@ -2355,6 +4487,26 @@ hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
 [[files]]
 file = "kubejs/data/superbwarfare/forge/biome_modifier/silver_ore_biome_modifier.json"
 hash = "80a5cec4b049df2e1fe4ebe2ce5a61b19cc70894a303558bdedee182b59335c0"
+
+[[files]]
+file = "kubejs/data/superbwarfare/legendarysurvivaloverhaul/temperature/items/ge_helmet_m_35.json"
+hash = "ba30ba0703c112896befd6b1fbe06535eb8a5e96b29f3c63c461b1a9364a5db4"
+
+[[files]]
+file = "kubejs/data/superbwarfare/legendarysurvivaloverhaul/temperature/items/ru_chest_6b43.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/superbwarfare/legendarysurvivaloverhaul/temperature/items/ru_helmet_6b47.json"
+hash = "ba30ba0703c112896befd6b1fbe06535eb8a5e96b29f3c63c461b1a9364a5db4"
+
+[[files]]
+file = "kubejs/data/superbwarfare/legendarysurvivaloverhaul/temperature/items/us_chest_iotv.json"
+hash = "8da59d0af784dd45e4f1bd52b320d50ac995d16cdeb94f8cb63339d233ca356e"
+
+[[files]]
+file = "kubejs/data/superbwarfare/legendarysurvivaloverhaul/temperature/items/us_helmet_pasgt.json"
+hash = "ba30ba0703c112896befd6b1fbe06535eb8a5e96b29f3c63c461b1a9364a5db4"
 
 [[files]]
 file = "kubejs/server_scripts/blockTags.js"
@@ -2382,7 +4534,7 @@ hash = "7611adf7d6ca7e6652f6e64aad68d1c35933cc6464e72018f158e2b9ac64ebde"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "3c8ec688a7c17679474f9302f02a65abbd7b21b5a022cab2dfcdeeb0509dde6f"
+hash = "53c09b6fc0abec005e265a634534d05f1e0d2b34e5babe007dd76923e39fcea1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -2454,7 +4606,7 @@ hash = "356007d070b8569862d2ca09f89b55c9a669ea373d29fcefecffd7233d8479a4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "4b11b84a6a702e7b88ca519bde8352dc115d385ad1c4b2b12d258e08a80cbb16"
+hash = "eb2d1ba427bfeb247d840f4240b09fc3b71b3e75177c30d517dcf6d3719cca28"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -2511,6 +4663,10 @@ hash = "ba3e877f9be7c9335e25f285a4ed87749ddeb9fedd30a712b1418aa3dc8ec30b"
 [[files]]
 file = "kubejs/server_scripts/magic/uniqueAccessories.js"
 hash = "b608e7d3aaf8671f4e10e664e0b50aadb5309bc79ba074969771d05adfc09b9b"
+
+[[files]]
+file = "kubejs/server_scripts/oei_tag_cleanup.js"
+hash = "0fac9df401c98c5cfb6da22cdd954a2d4f60736ca9acd2b4c689477ca44f51dd"
 
 [[files]]
 file = "kubejs/server_scripts/oei_unification.js"
@@ -2570,7 +4726,7 @@ hash = "4c5fa22d4f983e19e636eb055e2382dbf3c04dc12ce4e00ece29d117e6e8b0e2"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epicKnights.js"
-hash = "4ecb388f2f213851f684a06878c950d830a7607c51d810c99af513750cbec20b"
+hash = "307db7ecb52a650b72974a571e88717a49bca3ce6e5cc185e23935c1b0918440"
 
 [[files]]
 file = "kubejs/server_scripts/tech/epitaxialGrowthChamber.js"
@@ -2622,7 +4778,7 @@ hash = "41eee2fb485612b58a7c4fa89ac1d14f39640db2a4e0bf62ddf5c6fc165c6055"
 
 [[files]]
 file = "kubejs/server_scripts/tech/legendarySurvivalOverhaul.js"
-hash = "2c16fe64d4b88009704b2de10df1242ef9bb1e752dd2bde218d903be9ab3b2f2"
+hash = "610489e5ed4634e26cc32f97513968dc4e6d7303cf208d37442963f44d5a42d6"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
@@ -2646,7 +4802,7 @@ hash = "df2c619e7043c2d181e29a31b16ecf11c4a4d4227ff3d7069ce718049ab98a23"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "e034a888d5357d0f319b9c3a6985946e139e8c93f3bc9df52d92b295a94dbf50"
+hash = "483f579845b2c3ec7c8028bd24ce9e74463ee0f94aff8d083e7979ae85cb8354"
 
 [[files]]
 file = "kubejs/server_scripts/tech/thermal.js"

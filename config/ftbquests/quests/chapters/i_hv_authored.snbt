@@ -17,9 +17,9 @@
 		{
 			dependencies: ["1D00F1C2E3D40002"]
 			description: [
-				"The &6Human Augmentation Plant&r multiblock manufactures &bCyberware&r -- implants that trade your humanity for stat boosts. Nice chrome, choom."
+				"the &6human augmentation plant&r multiblock manufactures &bcyberware&r -- implants you install for stat boosts."
 				""
-				"There is also a single-block &6Cyberware Constructor&r at every tier if you want a bench-top version. The multiblock takes an HV hull, stainless frames, robot arms, and pumps."
+				"there's also a single-block &6cyberware constructor&r at every tier if you want a bench-top version. the multiblock takes an HV hull, stainless frames, robot arms, and pumps."
 			]
 			id: "3E6B09C8D2A47F50"
 			subtitle: "we can rebuild you. we have the technology"
@@ -28,16 +28,16 @@
 				item: "gtceu:human_augmentation_plant"
 				type: "item"
 			}]
-			title: "Human Augmentation Plant"
+			title: "human augmentation plant"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D4000C"]
 			description: [
-				"The &6Epitaxial Growth Chamber&r grows specialty wafers and space-grade chips that the Cleanroom line cannot. Its casing wants &3Lunar Rocket Alloy&r plates -- same alloy as your rocket."
+				"the &6epitaxial growth chamber&r grows specialty wafers and space-grade chips that the cleanroom line can't. its casing wants &3lunar rocket alloy&r plates -- same alloy as your rocket."
 				""
-				"Moon-adjacent chip fabrication starts here and stays relevant deep into the game."
+				"moon-adjacent chip fabrication starts here and stays relevant deep into the game."
 			]
 			id: "09D2C7E4A1B83F60"
 			subtitle: "chips so pure they're grown, not made"
@@ -46,7 +46,7 @@
 				item: "gtceu:epitaxial_growth_chamber"
 				type: "item"
 			}]
-			title: "Epitaxial Growth Chamber"
+			title: "epitaxial growth chamber"
 			x: 3.5d
 			y: -4.5d
 		}
@@ -59,19 +59,19 @@
 			subtitle: "512 EU/t and a rocket to build"
 			tasks: [{
 				id: "1D00F1C2E3D40003"
-				title: "High Voltage!"
+				title: "high voltage!"
 				type: "checkmark"
 			}]
-			title: "High Voltage!"
+			title: "high voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40002"]
 			description: [
-				"The &6HV Steam Turbine&r produces 512 EU/t. Two off a &3Large Steel Boiler&r gives over 1000 EU/t, enough for a full HV base."
+				"the &6HV steam turbine&r produces 512 EU/t. two off a &3large steel boiler&r gives over 1000 EU/t, enough for a full HV base."
 				""
-				"The HV Gas and Combustion Turbines are better long-term. Steam bridges you while the petrochem line comes online."
+				"the HV gas and combustion turbines are better long-term. steam bridges you while the petrochem line comes online."
 			]
 			id: "1D00F1C2E3D40004"
 			shape: "square"
@@ -83,16 +83,16 @@
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			title: "HV Power"
+			title: "HV power"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40004"]
 			description: [
-				"The &6HV Macerator&r unlocks the 2nd and 3rd output slots on ore processing. Before this, almost every byproduct was silently discarded. After this, effective ore yield doubles or triples."
+				"the &6HV macerator&r unlocks the 2nd and 3rd output slots on ore processing. before this, almost every byproduct was silently discarded. after this, effective ore yield doubles or triples."
 				""
-				"Retrofit your existing Washer and Centrifuge lines. Prioritize ores with valuable 2nd and 3rd outputs: Iron, Copper, Gold."
+				"retrofit your existing washer and centrifuge lines. prioritize ores with valuable 2nd and 3rd outputs: iron, copper, gold."
 			]
 			icon: "gtceu:hv_macerator"
 			id: "1D00F1C2E3D40008"
@@ -104,16 +104,16 @@
 				item: "gtceu:hv_macerator"
 				type: "item"
 			}]
-			title: "Full Extraction"
+			title: "full extraction"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40008"]
 			description: [
-				"&aLunar Rocket Alloy&r: 4x Ultimet Dust + 2x Aluminium Dust + 1x Chromium Dust in an HV Mixer. Ultimet is Cobalt + Chromium + Nickel + Molybdenum."
+				"&alunar rocket alloy&r: 4x ultimet dust + 2x aluminium dust + 1x chromium dust in an HV mixer. ultimet is cobalt + chromium + nickel + molybdenum."
 				""
-				"Shape the alloy into Plates and Long Rods before assembly. Both are required for the rocket hull and engine."
+				"shape the alloy into plates and long rods before assembly. both are required for the rocket hull and engine."
 			]
 			icon: "gtceu:hv_mixer"
 			id: "1D00F1C2E3D4000C"
@@ -133,16 +133,16 @@
 					type: "item"
 				}
 			]
-			title: "Rocket Alloy"
+			title: "rocket alloy"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D4000C"]
 			description: [
-				"Assemble five &aRocket Hull Sections&r, a &aCombustion Engine&r, two &aFuel Tanks&r, a &aGuidance Module&r, a &aNose Cone&r, and four &aFins&r at the &6NASA Workbench&r."
+				"assemble five &arocket hull sections&r, a &acombustion engine&r, two &afuel tanks&r, a &aguidance module&r, a &anose cone&r, and four &afins&r at the &6NASA workbench&r."
 				""
-				"The Guidance Module requires HV circuits. The Engine needs an HV Electric Motor and HV Pump. Fill the fuel tank before launch."
+				"the guidance module requires HV circuits. the engine needs an HV electric motor and HV pump. fill the fuel tank before launch."
 			]
 			icon: "ad_astra:tier_1_rocket"
 			id: "1D00F1C2E3D40010"
@@ -154,16 +154,16 @@
 				item: "ad_astra:tier_1_rocket"
 				type: "item"
 			}]
-			title: "The Rocket"
+			title: "the rocket"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40010"]
 			description: [
-				"Land on the &3Moon&r. Bring a Space Suit."
+				"land on the &3moon&r. bring a space suit."
 				""
-				"Priority targets: &aBauxite and Ilmenite&r veins (Titanium source, moved here from the End), &aDesh&r veins (5-step processing chain, new alloy), and &aMoon Sand&r (required for the Cleanroom back home)."
+				"priority targets: &abauxite and ilmenite&r veins (titanium source, moved here from the end), &adesh&r veins (5-step processing chain, new alloy), and &amoon sand&r (required for the cleanroom back home)."
 			]
 			id: "1D00F1C2E3D40014"
 			shape: "gear"
@@ -175,16 +175,16 @@
 				item: "ad_astra:moon_sand"
 				type: "item"
 			}]
-			title: "First Moon Trip"
+			title: "first moon trip"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40014"]
 			description: [
-				"&aBauxite and Ilmenite&r on the Moon both yield &aRutile Dust&r. Rutile -> HV Chemical Reactor -> TiCl4 -> EBF with Magnesium -> Titanium ingot."
+				"&abauxite and ilmenite&r on the moon both yield &arutile dust&r. rutile -> HV chemical reactor -> TiCl4 -> EBF with magnesium -> titanium ingot."
 				""
-				"MgCl2 byproduct electrolyzes back into Mg and Cl2, which loop cleanly back in. Net input is just Rutile. Run Bauxite through the full ore chain for best yield."
+				"MgCl2 byproduct electrolyzes back into mg and Cl2, which loop cleanly back in. net input is just rutile. run bauxite through the full ore chain for best yield."
 			]
 			id: "1D00F1C2E3D40018"
 			shape: "square"
@@ -196,16 +196,16 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "Titanium"
+			title: "titanium"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40018"]
 			description: [
-				"The &5Cleanroom&r is the Moon-gated multiblock. &3Plascrete&r and &3Cleanroom Glass&r both require Moon Sand, so you cannot build it before the first Moon trip."
+				"the &5cleanroom&r is the moon-gated multiblock. &3plascrete&r and &3cleanroom glass&r both require moon sand, so you can't build it before the first moon trip."
 				""
-				"Build it as soon as Moon Sand is stockpiled. The Cleanroom unlocks the Microchip Processor and the full &aMicro Processor&r circuit line, which is the path to EV circuits and past HV."
+				"build it as soon as moon sand is stockpiled. the cleanroom unlocks the microchip processor and the full &amicro processor&r circuit line, which is the path to EV circuits and past HV."
 			]
 			icon: "gtceu:cleanroom"
 			id: "1D00F1C2E3D4001C"
@@ -225,16 +225,16 @@
 					type: "item"
 				}
 			]
-			title: "Cleanroom"
+			title: "cleanroom"
 			x: 0.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D4001C"]
 			description: [
-				"Desh takes five steps: three HV Chemical Reactors (Crushed Ore -> sulfate slurry -> desh carbonyl -> condensed carbonyl), then the EBF at 2700K, then the &5Vacuum Freezer&r."
+				"desh takes five steps: three HV chemical reactors (crushed ore -> sulfate slurry -> desh carbonyl -> condensed carbonyl), then the EBF at 2700K, then the &5vacuum freezer&r."
 				""
-				"Byproducts from step 3 include Manganese, Cobalt, and Nickel. CO recycles back into step 2. &aDesh Ingot&r -> Wiremill -> Desh Wire, which replaces Electrum Wire in the Micro Processor Computer recipe."
+				"byproducts from step 3 include manganese, cobalt, and nickel. CO recycles back into step 2. &adesh ingot&r -> wiremill -> desh wire, which replaces electrum wire in the micro processor computer recipe."
 			]
 			id: "1D00F1C2E3D40020"
 			shape: "square"
@@ -246,16 +246,16 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "Desh Processing"
+			title: "desh processing"
 			x: 0.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40020", "1D00F1C2E3D40059"]
 			description: [
-				"The &aMicro Processor Computer&r is the first EV circuit and the gate out of HV. It requires the Cleanroom, a Plastic Printed Circuit Board, Silicon Wafers, and &aDesh Wire&r (replaces Electrum Wire in this pack)."
+				"the &amicro processor computer&r is the first EV circuit and the gate out of HV. it requires the cleanroom, a plastic printed circuit board, silicon wafers, and &adesh wire&r (replaces electrum wire in this pack)."
 				""
-				"Batch-produce at least a stack before moving on. EV machines are hungry for them."
+				"batch-produce at least a stack before moving on. EV machines are hungry for them."
 			]
 			id: "1D00F1C2E3D40024"
 			shape: "square"
@@ -267,16 +267,16 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "First EV Circuit"
+			title: "first EV circuit"
 			x: 0.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40024", "1D00F1C2E3D4005C"]
 			description: [
-				"&aTitanium&r is the structural backbone of EV machines. The &aMicro Processor Mainframe&r is the IV circuit gate."
+				"&atitanium&r is the main structural material for EV machines. the &amicro processor mainframe&r is the IV circuit gate."
 				""
-				"Both should be in automated production before leaving. Mars is next, and it has its own expectations."
+				"both should be in automated production before leaving. mars is next, and it has its own expectations."
 			]
 			icon: "gtceu:titanium_ingot"
 			id: "1D00F1C2E3D40028"
@@ -297,16 +297,16 @@
 					type: "item"
 				}
 			]
-			title: "Leaving High Voltage"
+			title: "leaving high voltage"
 			x: 0.0d
 			y: -16.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D4000C"]
 			description: [
-				"&aRocket Fuel&r is &3Dimethylhydrazine + Oxygen&r in the Chemical Reactor. Dimethylhydrazine has several synthesis routes through nitrogen and methanol chemistry. Check JEI for the path that fits your existing lines."
+				"&arocket fuel&r is &3dimethylhydrazine + oxygen&r in the chemical reactor. dimethylhydrazine has several synthesis routes through nitrogen and methanol chemistry. check JEI for the path that fits your existing lines."
 				""
-				"You need enough to fill the rocket tank before launch. Don't assemble the rocket at the NASA Workbench until fuel is ready."
+				"you need enough to fill the rocket tank before launch. don't assemble the rocket at the NASA workbench until fuel is ready."
 			]
 			id: "1D00F1C2E3D40036"
 			shape: "rsquare"
@@ -317,13 +317,13 @@
 				item: "gtceu:dimethylhydrazine_bucket"
 				type: "item"
 			}]
-			title: "Rocket Fuel"
+			title: "rocket fuel"
 			x: 2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40004"]
-			description: ["The &6HV Gas Turbine&r burns Natural Gas, Methane, Ethylene, and heavier petroleum fractions. More efficient than steam for sustained power once the petrochem line is producing. Pair with the Cracker for best fuel yield from Naphtha."]
+			description: ["the &6HV gas turbine&r burns natural gas, methane, ethylene, and heavier petroleum fractions. more efficient than steam for sustained power once the petrochem line is producing. pair with the cracker for best fuel yield from naphtha."]
 			id: "1D00F1C2E3D40030"
 			shape: "rsquare"
 			size: 0.66d
@@ -333,16 +333,16 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			title: "HV Gas Turbine"
+			title: "HV gas turbine"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40014"]
 			description: [
-				"The &5Vacuum Freezer&r cools &aHot Ingots&r from high-temp EBF recipes into usable metal. Required for the Desh processing chain (step 5) and any future material that produces a Hot Ingot."
+				"the &5vacuum freezer&r cools &ahot ingots&r from high-temp EBF recipes into usable metal. required for the desh processing chain (step 5) and any future material that produces a hot ingot."
 				""
-				"Route Hot Ingots automatically using an Item Tag Filter set to tag &3hot_ingots&r. Without this, the EBF output fills and stalls."
+				"route hot ingots automatically using an item tag filter set to tag &3hot_ingots&r. without this, the EBF output fills and stalls."
 			]
 			id: "1D00F1C2E3D40033"
 			shape: "rsquare"
@@ -353,16 +353,16 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			title: "Vacuum Freezer"
+			title: "vacuum freezer"
 			x: 2.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40008"]
 			description: [
-				"The &5Cracker&r hydrocracks Naphtha and other light fractions with Steam or Hydrogen at full efficiency, with no yield loss vs. the Chemical Reactor's 50%."
+				"the &5cracker&r hydrocracks naphtha and other light fractions with steam or hydrogen at full efficiency, with no yield loss vs. the chemical reactor's 50%."
 				""
-				"Feed cracked output to the Distillation Tower for Ethylene, LPG, and other fuel fractions. The Cracker is the core of a mature petrochem line."
+				"feed cracked output to the distillation tower for ethylene, LPG, and other fuel fractions. the cracker is the core of a mature petrochem line."
 			]
 			id: "1D00F1C2E3D40040"
 			shape: "rsquare"
@@ -373,16 +373,16 @@
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			title: "Cracker"
+			title: "cracker"
 			x: -2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D4001C"]
 			description: [
-				"The &6HV Circuit Assembler&r makes circuits at this tier far cheaper. The first product to make is the &aNAND Chip&r, a ULV-tier circuit used in volume for higher-tier components."
+				"the &6HV circuit assembler&r makes circuits at this tier far cheaper. the first product to make is the &aNAND chip&r, a ULV-tier circuit used in volume for higher-tier components."
 				""
-				"NAND Chip specifically requires the HV Cleanroom to produce. Build the assembler and start the chip line before moving up the processor chain."
+				"NAND chip specifically requires the HV cleanroom to produce. build the assembler and start the chip line before moving up the processor chain."
 			]
 			id: "1D00F1C2E3D40050"
 			shape: "rsquare"
@@ -401,13 +401,13 @@
 					type: "item"
 				}
 			]
-			title: "NAND Chip"
+			title: "NAND chip"
 			x: -2.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40050"]
-			description: ["The &aMicrochip Processor&r is the best LV circuit for the rest of the game. Made in the Cleanroom with NAND Chips, Plastic PCB, and fine wire. Once you have production running, it replaces Basic Electronic Circuit in every LV recipe slot."]
+			description: ["the &amicrochip processor&r is the best LV circuit for the rest of the game. made in the cleanroom with NAND chips, plastic PCB, and fine wire. once you have production running, it replaces basic electronic circuit in every LV recipe slot."]
 			id: "1D00F1C2E3D40053"
 			shape: "rsquare"
 			size: 0.66d
@@ -418,13 +418,13 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			title: "Microchip Processor"
+			title: "microchip processor"
 			x: -2.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40053"]
-			description: ["The &aMicro Processor&r is the best MV circuit for the rest of the game. Made in the Cleanroom from Microchip Processors, Silicon Wafers, and Plastic PCB. Replaces Good Electronic Circuit in every MV recipe slot."]
+			description: ["the &amicro processor&r is the best MV circuit for the rest of the game. made in the cleanroom from microchip processors, silicon wafers, and plastic PCB. replaces good electronic circuit in every MV recipe slot."]
 			id: "1D00F1C2E3D40056"
 			shape: "rsquare"
 			size: 0.66d
@@ -435,13 +435,13 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			title: "Micro Processor"
+			title: "micro processor"
 			x: -2.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40056"]
-			description: ["The &aMicro Processor Assembly&r is the HV circuit. Made in the Cleanroom from Micro Processors, more Silicon Wafers, and Plastic PCB. Required for HV machine crafting recipes and as an intermediate toward the Micro Processor Computer."]
+			description: ["the &amicro processor assembly&r is the HV circuit. made in the cleanroom from micro processors, more silicon wafers, and plastic PCB. required for HV machine crafting recipes and as an intermediate toward the micro processor computer."]
 			id: "1D00F1C2E3D40059"
 			shape: "rsquare"
 			size: 0.66d
@@ -452,16 +452,16 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			title: "Micro Processor Assembly"
+			title: "micro processor assembly"
 			x: -2.0d
 			y: -15.0d
 		}
 		{
 			dependencies: ["1D00F1C2E3D40059"]
 			description: [
-				"The &aMicro Processor Mainframe&r is the IV circuit -- the top of the Micro line, and reachable from the HV Cleanroom."
+				"the &amicro processor mainframe&r is the IV circuit -- the top of the micro line, and reachable from the HV cleanroom."
 				""
-				"Build a buffer stock now. IV machines gate on them, and the HV Circuit Assembler is slower than the EV tier. Batch-produce here while Desh and Titanium production ramps up."
+				"build a buffer stock now. IV machines gate on them, and the HV circuit assembler is slower than the EV tier. batch-produce here while desh and titanium production ramps up."
 			]
 			id: "1D00F1C2E3D4005C"
 			shape: "rsquare"
@@ -473,11 +473,11 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			title: "Micro Processor Mainframe"
+			title: "micro processor mainframe"
 			x: -2.0d
 			y: -16.5d
 		}
 	]
 	subtitle: ["Get to the Moon. Bring Titanium back."]
-	title: "IV. High Voltage"
+	title: "IV. high voltage"
 }

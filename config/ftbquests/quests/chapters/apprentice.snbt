@@ -17,9 +17,9 @@
 		{
 			dependencies: ["2C9E18AE64E4E744"]
 			description: [
-				"Drop an &damethyst shard&r in the Imbuement Chamber with 750 source and it comes out as &5Arcane Essence&r -- the base reagent for Iron's Spells and half your future books."
+				"drop an &damethyst shard&r in the imbuement chamber with 750 source and it comes out as &5arcane essence&r -- the base reagent for iron's spells and half your future books."
 				""
-				"Tip: no pedestals needed. Just source and patience."
+				"tip: no pedestals needed. just source and patience."
 			]
 			id: "7EA490DB5937F1B3"
 			size: 0.75d
@@ -29,16 +29,16 @@
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "Arcane Essence"
+			title: "arcane essence"
 			x: -1.875d
 			y: -1.125d
 		}
 		{
 			dependencies: ["1BBC77A8493BB220"]
 			description: [
-				"The &6Imbuement Chamber&r soaks items in source until they become better items. Glowstone, gold rods, quartz, and silver plates build it -- note the &7silver plates&r, that's the tech tree saying hello."
+				"the &6imbuement chamber&r soaks items in source until they become better items. glowstone, gold rods, quartz, and silver plates build it -- note the &7silver plates&r, that's the tech tree saying hello."
 				""
-				"Tip: it pulls source from nearby jars automatically. Keep them topped up."
+				"tip: it pulls source from nearby jars automatically. keep them topped up."
 			]
 			id: "2C9E18AE64E4E744"
 			size: 0.75d
@@ -48,16 +48,16 @@
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			title: "Imbuement Chamber"
+			title: "imbuement chamber"
 			x: -0.75d
 			y: -1.125d
 		}
 		{
 			dependencies: ["7EA490DB5937F1B3"]
 			description: [
-				"The &6Scribes Table&r turns clay and experience into Ars glyphs. This pack's version wants archwood, gold screws, common ink, magic cloth, and a feather."
+				"the &6scribes table&r turns clay and experience into ars glyphs. this pack's version wants archwood, gold screws, common ink, magic cloth, and a feather."
 				""
-				"Tip: glyph costs scale with tier. Hoard XP like it's a currency, because it is."
+				"tip: glyph costs scale with tier. hoard XP like it's a currency, because it is."
 			]
 			id: "46FA0C350A12D8A3"
 			size: 0.75d
@@ -67,16 +67,16 @@
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			title: "Scribes Table"
+			title: "scribes table"
 			x: -3.0d
 			y: -0.375d
 		}
 		{
 			dependencies: ["7EA490DB5937F1B3"]
 			description: [
-				"The &6Inscription Table&r is Iron's Spells' answer to the Scribes Table -- this is where spell scrolls get bound into books."
+				"the &6inscription table&r is iron's spells' answer to the scribes table -- this is where spell scrolls get bound into books."
 				""
-				"Tip: two mods, two tables, one desk area. Build them next to each other and pretend it was intentional."
+				"tip: two mods, two tables, one desk area. build them next to each other and pretend it was intentional."
 			]
 			id: "23DADC343F70C96F"
 			size: 0.75d
@@ -86,16 +86,16 @@
 				item: "irons_spellbooks:inscription_table"
 				type: "item"
 			}]
-			title: "Inscription Table"
+			title: "inscription table"
 			x: -3.0d
 			y: -1.875d
 		}
 		{
 			dependencies: ["46FA0C350A12D8A3"]
 			description: [
-				"Magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6Novice Spell Book&r. Foil is a GT Bender product -- yes, the magic book has a tech ingredient. Get used to that."
+				"magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6novice spell book&r. foil is a GT bender product -- yes, the magic book has a tech ingredient. get used to that."
 				""
-				"Tip: the book holds your glyphs and your mana. Losing it is a personality-altering event. Keybind a slot for it."
+				"tip: the book holds your glyphs and your mana. losing it is a personality-altering event. keybind a slot for it."
 			]
 			id: "69097C5CA51C927E"
 			size: 0.75d
@@ -105,7 +105,7 @@
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
-			title: "Novice Spell Book"
+			title: "novice spell book"
 			x: -4.125d
 			y: -0.375d
 		}
@@ -115,9 +115,9 @@
 				"1BBC77A8493BB220"
 			]
 			description: [
-				"Back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eGlowing Compound Dust&r."
+				"back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eglowing compound dust&r."
 				""
-				"Tip: yes, the diamond is consumed. The compound does not care about your feelings."
+				"tip: yes, the diamond is consumed. the compound doesn't care about your feelings."
 			]
 			id: "2128E321A9C4A125"
 			size: 0.75d
@@ -127,7 +127,7 @@
 				item: "kubejs:glowing_compound_dust"
 				type: "item"
 			}]
-			title: "Glowing Compound Dust"
+			title: "glowing compound dust"
 			x: 0.0d
 			y: -1.125d
 		}
@@ -137,9 +137,9 @@
 				"2C9E18AE64E4E744"
 			]
 			description: [
-				"Soak the compound in the &6Imbuement Chamber&r to get &eImpure Glimmering Dust&r, then smelt that into small piles of Luminessence."
+				"soak the compound in the &6imbuement chamber&r to get &eimpure glimmering dust&r, then smelt that into small piles of luminessence."
 				""
-				"Tip: cheap imbuement, no pedestals. Batch it while doing anything else."
+				"tip: cheap imbuement, no pedestals. batch it while doing anything else."
 			]
 			id: "486FF2D3B8C2D77D"
 			size: 0.75d
@@ -149,18 +149,18 @@
 				item: "kubejs:impure_glimmering_dust"
 				type: "item"
 			}]
-			title: "Impure Glimmering Dust"
+			title: "impure glimmering dust"
 			x: 0.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["486FF2D3B8C2D77D"]
 			description: [
-				"&aLuminessence&r is the foundational material of the magic tree's early game."
+				"&aluminessence&r is the foundational material of the magic tree's early game."
 				""
-				"16 Glowstone Dust, one Imbuement, and some glowing compound later - you've got a single &aLuminessence Dust&r."
+				"16 glowstone dust, one imbuement, and some glowing compound later - you've got a single &aluminessence dust&r."
 				""
-				"It shines bright. It gates a lot. Get used to making it."
+				"it shines bright. it gates a lot. get used to making it."
 			]
 			id: "68DAC01E93C6240E"
 			subtitle: "congratulations on your glow-up"
@@ -169,11 +169,11 @@
 				item: "gtceu:luminessence_dust"
 				type: "item"
 			}]
-			title: "Luminessence"
+			title: "luminessence"
 			x: 0.0d
 			y: -3.5d
 		}
 	]
 	subtitle: ["Explore the hellish depths in search of power"]
-	title: "II. Apprentice"
+	title: "II. apprentice"
 }

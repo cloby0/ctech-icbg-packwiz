@@ -1,154 +1,158 @@
 {
-    "type": "silentgear:standard",
-    "simple": true,
-    "harvest_tier": "minecraft:netherite",
-    "availability": {
-        "tier": 7,
-        "categories": [
-            "metal"
-        ],
-        "visible": true,
-        "gear_blacklist": [],
-        "can_salvage": true
-    },
-    "crafting_items": {
-        "main": {
-            "item": "gtceu:tantalum_carbide_ingot"
-        }
-    },
-    "name": {
-        "text": "Tantalum Carbide Ingot"
-    },
-    "stats": {
-        "main": {
-            "durability": 3708,
-            "armor_durability": 56,
-            "enchantment_value": -4,
-            "rarity": 39,
-            "charging_value": 1,
-            "harvest_speed": 18,
-            "melee_damage": 11,
-            "magic_damage": 4,
-            "attack_speed": 0,
-            "attack_speed/axe": 0,
-            "attack_speed/hoe": 0,
-            "ranged_damage": 4,
-            "ranged_speed": 0,
-            "projectile_speed": 2,
-            "projectile_accuracy": 1,
-            "armor": 33,
-            "armor_toughness": 16,
-            "magic_armor": 10,
-            "armor/helmet": 5,
-            "armor/chestplate": 12,
-            "armor/leggings": 10,
-            "armor/boots": 5
-        },
-        "rod": {
-            "harvest_speed": {
-                "mul2": 0.1201
-            },
-            "melee_damage": {
-                "mul2": 0.0943
-            },
-            "ranged_damage": {
-                "mul2": 0.0772
-            }
-        },
-        "tip": {
-            "durability": {
-                "add": 426
-            },
-            "armor_durability": {
-                "add": 16
-            },
-            "harvest_speed": {
-                "add": 4
-            },
-            "melee_damage": {
-                "add": 3
-            },
-            "ranged_damage": {
-                "add": 1
-            },
-            "rarity": {
-                "add": 14
-            }
-        }
-    },
-    "traits": {
-        "main": [
-            {
-                "name": "silentgear:hard",
-                "level": 2
-            },
-            {
-                "name": "silentgear:sharp",
-                "level": 1
-            },
-            {
-                "name": "silentgear:fireproof",
-                "level": 1
-            }
-        ],
-        "rod": [
-            {
-                "name": "silentgear:hard",
-                "level": 1
-            }
-        ],
-        "tip": [
-            {
-                "name": "silentgear:malleable",
-                "level": 2
-            }
-        ]
-    },
-    "model": {
-        "main/all": [
-            {
-                "texture": "silentgear:main_generic_hc",
-                "color": "#808090"
-            },
-            {
-                "texture": "silentgear:_highlight"
-            }
-        ],
-        "main/fragment": [
-            {
-                "texture": "silentgear:metal",
-                "color": "#808090"
-            }
-        ],
-        "rod/all": [
-            {
-                "texture": "silentgear:rod_generic_lc",
-                "color": "#808090"
-            }
-        ],
-        "rod/part": [
-            {
-                "texture": "silentgear:rod",
-                "color": "#808090"
-            }
-        ],
-        "tip/all": [
-            {
-                "texture": "silentgear:tip_sharp",
-                "color": "#808090"
-            }
-        ],
-        "tip/part": [
-            {
-                "texture": "silentgear:tip_base"
-            },
-            {
-                "texture": "silentgear:tip",
-                "color": "#808090"
-            },
-            {
-                "texture": "silentgear:tip_shine"
-            }
-        ]
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:netherite",
+  "availability": {
+    "tier": 7,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "gtceu:tantalum_carbide_ingot"
     }
+  },
+  "name": {
+    "text": "Tantalum Carbide Ingot"
+  },
+  "stats": {
+    "main": {
+      "durability": 3708,
+      "armor_durability": 56,
+      "enchantment_value": -4,
+      "rarity": 39,
+      "charging_value": 1,
+      "harvest_speed": 18,
+      "melee_damage": 11,
+      "magic_damage": 4,
+      "attack_speed": 0,
+      "attack_speed/axe": 0,
+      "attack_speed/hoe": 0,
+      "ranged_damage": 4,
+      "ranged_speed": 0,
+      "projectile_speed": 2,
+      "projectile_accuracy": 1,
+      "armor": 33,
+      "armor_toughness": 16,
+      "magic_armor": 10,
+      "armor/helmet": 5,
+      "armor/chestplate": 12,
+      "armor/leggings": 10,
+      "armor/boots": 5
+    },
+    "rod": {
+      "harvest_speed": {
+        "mul2": 0.1201
+      },
+      "melee_damage": {
+        "mul2": 0.0943
+      },
+      "ranged_damage": {
+        "mul2": 0.0772
+      }
+    },
+    "tip": {
+      "durability": {
+        "add": 426
+      },
+      "armor_durability": {
+        "add": 16
+      },
+      "harvest_speed": {
+        "add": 4
+      },
+      "melee_damage": {
+        "add": 3
+      },
+      "ranged_damage": {
+        "add": 1
+      },
+      "rarity": {
+        "add": 14
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:hard",
+        "level": 2
+      },
+      {
+        "name": "silentgear:sharp",
+        "level": 1
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "kubejs:reflective",
+        "level": 2
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:hard",
+        "level": 1
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#808090"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#808090"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#808090"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#808090"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#808090"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#808090"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
 }

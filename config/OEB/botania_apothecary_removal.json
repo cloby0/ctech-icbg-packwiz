@@ -1,0 +1,3 @@
+[
+  { "match": ["botania:apothecary_default", "botania:apothecary_deepslate", "botania:apothecary_desert", "botania:apothecary_forest", "botania:apothecary_fungal", "botania:apothecary_mesa", "botania:apothecary_mossy", "botania:apothecary_mountain", "botania:apothecary_plains", "botania:apothecary_swamp", "botania:apothecary_taiga"], "result": "minecraft:air" }
+]

@@ -23,19 +23,19 @@
 			subtitle: "131072 EU/t, no new rock to land on"
 			tasks: [{
 				id: "2100F1C2E3D40003"
-				title: "Zero Point!"
+				title: "zero point!"
 				type: "checkmark"
 			}]
-			title: "Zero Point!"
+			title: "zero point!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2100F1C2E3D40002"]
 			description: [
-				"Ruthenium and Iridium off the Platline mix in the &6ZPM Mixer&r into &aOsmiridium&r -- ZPM's own structural material, and the backbone of ZPM-tier components."
+				"ruthenium and iridium off the platline mix in the &6ZPM mixer&r into &aosmiridium&r -- ZPM's own structural material, used all over ZPM-tier components."
 				""
-				"The interplanetary ore pipeline should be mature by now: Mars Tungsten, Venus Calorite, Glacio Naquadah all flowing through one automated AE2 network feeding the Platline."
+				"the interplanetary ore pipeline should be mature by now: mars tungsten, venus calorite, glacio naquadah all flowing through one automated AE2 network feeding the platline."
 			]
 			id: "2100F1C2E3D40004"
 			shape: "square"
@@ -47,16 +47,16 @@
 				item: "gtceu:osmiridium_ingot"
 				type: "item"
 			}]
-			title: "Osmiridium"
+			title: "osmiridium"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2100F1C2E3D40004"]
 			description: [
-				"&aUranium-Rhodium-Dinaquadide&r wire is the ZPM superconductor -- lossless, safe to touch. The Fusion Reactor Mk2 structure below needs it in bulk for its coil blocks."
+				"&auranium-rhodium-dinaquadide&r wire is the ZPM superconductor -- lossless, safe to touch. the fusion reactor Mk2 structure below needs it in bulk for its coil blocks."
 				""
-				"Automate this before starting the reactor upgrade. Underbuilding the wire supply is the most common reason a Mk2 build stalls halfway."
+				"automate this before starting the reactor upgrade. underbuilding the wire supply is the most common reason a Mk2 build stalls halfway."
 			]
 			id: "2100F1C2E3D40008"
 			shape: "square"
@@ -68,16 +68,16 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
 				type: "item"
 			}]
-			title: "ZPM Superconductor"
+			title: "ZPM superconductor"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2100F1C2E3D40008"]
 			description: [
-				"Same controller, bigger casings: swap in &5Fusion Casing Mk2&r blocks and higher-tier coils. Osmiridium production needs to be mature before this upgrade pays for itself."
+				"same controller, bigger casings: swap in &5fusion casing Mk2&r blocks and higher-tier coils. osmiridium production needs to be mature before this upgrade pays for itself."
 				""
-				"Mk2 fusion is what finally produces &aNeutronium&r -- UV's structural material, and the only way to get it. Everything past this point in the tech tree assumes this reactor is running."
+				"Mk2 fusion is what finally produces &aneutronium&r -- UV's structural material, and the only way to get it. everything past this point in the tech tree assumes this reactor is running."
 			]
 			icon: "gtceu:zpm_fusion_reactor"
 			id: "2100F1C2E3D4000C"
@@ -89,16 +89,16 @@
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
-			title: "Fusion Reactor Mk2"
+			title: "fusion reactor Mk2"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2100F1C2E3D40004"]
 			description: [
-				"The &6ZPM Circuit Assembler&r produces &aWetware Processors&r -- the LuV circuit from the Wetware line, now fully craftable at ZPM tier."
+				"the &6ZPM circuit assembler&r produces &awetware processors&r -- the LuV circuit from the wetware line, now fully craftable at ZPM tier."
 				""
-				"Wetware Printed Circuit Board is the biggest automation challenge in this pack -- start that supply chain now, not when the Assembly quest below is blocking on it."
+				"wetware printed circuit board is the biggest automation challenge in this pack -- start that supply chain now, not when the assembly quest below is blocking on it."
 			]
 			id: "2100F1C2E3D40010"
 			shape: "rsquare"
@@ -117,16 +117,16 @@
 					type: "item"
 				}
 			]
-			title: "ZPM Circuit Assembler"
+			title: "ZPM circuit assembler"
 			x: -2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2100F1C2E3D40010"]
 			description: [
-				"The &aWetware Processor Assembly&r is the actual ZPM circuit. Made from Wetware Processors, Wetware Boards, and the usual wafer stack."
+				"the &awetware processor assembly&r is the actual ZPM circuit. made from wetware processors, wetware boards, and the usual wafer stack."
 				""
-				"Keep Wetware Board production running continuously -- it's slow enough that batching it will bottleneck everything downstream. Crafts up into the &aWetware Processor Computer&r below."
+				"keep wetware board production running continuously -- it's slow enough that batching it'll bottleneck everything downstream. crafts up into the &awetware processor computer&r below."
 			]
 			id: "2100F1C2E3D40014"
 			shape: "rsquare"
@@ -138,16 +138,16 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "Wetware Processor Assembly"
+			title: "wetware processor assembly"
 			x: -2.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2100F1C2E3D40014"]
 			description: [
-				"The &aWetware Processor Computer&r is the UV circuit -- within reach here since nothing past it needs anything beyond what's already in production."
+				"the &awetware processor computer&r is the UV circuit -- within reach here since nothing past it needs anything beyond what's already in production."
 				""
-				"Batch-produce before leaving. ZPM and UV machines both want a steady supply."
+				"batch-produce before leaving. ZPM and UV machines both want a steady supply."
 			]
 			id: "2100F1C2E3D40018"
 			shape: "rsquare"
@@ -159,16 +159,16 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			title: "Wetware Processor Computer"
+			title: "wetware processor computer"
 			x: -2.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["2100F1C2E3D40018"]
 			description: [
-				"The &aWetware Processor Mainframe&r is the UHV circuit -- the top of the entire circuit grid, and the only circuit that satisfies UHV recipes at all."
+				"the &awetware processor mainframe&r is the UHV circuit -- the top of the entire circuit grid, and the only circuit that satisfies UHV recipes at all."
 				""
-				"Batch this out before leaving ZPM. Post-UV endgame content assumes a working supply of this exact item."
+				"batch this out before leaving ZPM. post-UV endgame content assumes a working supply of this exact item."
 			]
 			id: "2100F1C2E3D4001C"
 			shape: "rsquare"
@@ -180,16 +180,16 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "Wetware Processor Mainframe"
+			title: "wetware processor mainframe"
 			x: -2.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["2100F1C2E3D40002"]
 			description: [
-				"Upgrade the &6ME Fabricator&r to ZPM tier to keep pace with component demand -- by now the interplanetary pipeline (Mars, Venus, Glacio, all feeding one AE2 network) should be running itself."
+				"upgrade the &6ME fabricator&r to ZPM tier to keep pace with component demand -- by now the interplanetary pipeline (mars, venus, glacio, all feeding one AE2 network) should be running itself."
 				""
-				"This isn't a new machine, just a voltage upgrade on the one built at EV. If the network is still bottlenecked on raw ore instead of processing throughput, fix that before pushing further."
+				"this isn't a new machine, just a voltage upgrade on the one built at EV. if the network is still bottlenecked on raw ore instead of processing throughput, fix that before pushing further."
 			]
 			id: "2100F1C2E3D40020"
 			shape: "rsquare"
@@ -200,16 +200,16 @@
 				item: "gtceu:zpm_me_fabricator"
 				type: "item"
 			}]
-			title: "ZPM ME Fabricator"
+			title: "ZPM ME fabricator"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2100F1C2E3D4000C", "2100F1C2E3D4001C"]
 			description: [
-				"&aNeutronium&r is the structural backbone of UV multiblocks -- only producible via Fusion, which the Mk2 reactor above should already be running. The &aWetware Processor Mainframe&r -- the UHV circuit -- is already in reach at ZPM, same deviation as the Computer above."
+				"&aneutronium&r is the main structural material for UV multiblocks -- only producible via fusion, which the Mk2 reactor above should already be running. the &awetware processor mainframe&r -- the UHV circuit -- is already in reach at ZPM, same deviation as the computer above."
 				""
-				"Both should be in automated production before leaving. UV is next -- the last standard GT tier. Everything from here to the Ultimate Battery is refinement, not new unlocks."
+				"both should be in automated production before leaving. UV is next -- the last standard GT tier. everything from here to the ultimate battery is refinement, not new unlocks."
 			]
 			icon: "gtceu:neutronium_plate"
 			id: "2100F1C2E3D40024"
@@ -230,11 +230,11 @@
 					type: "item"
 				}
 			]
-			title: "Leaving ZPM"
+			title: "leaving ZPM"
 			x: 0.0d
 			y: -12.0d
 		}
 	]
 	subtitle: ["Mature the pipeline. Build a bigger star."]
-	title: "VIII. Zero Point Module"
+	title: "VIII. zero point module"
 }

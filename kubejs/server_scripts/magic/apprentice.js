@@ -24,6 +24,14 @@ ServerEvents.recipes(event => {
         pedestalItems: []
     });
 
+    event.remove({ id: 'biomeswevegone:golden_apple_from_green_apple' });
+    addImbuementRecipe(event, {
+        input: 'minecraft:apple',
+        output: 'minecraft:golden_apple',
+        source: 1000,
+        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot']
+    });
+
     event.remove({ id: 'ars_nouveau:scribes_table' });
     event.shaped(
         Item.of('ars_nouveau:scribes_table', 1),

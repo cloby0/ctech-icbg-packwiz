@@ -1,154 +1,158 @@
 {
-    "type": "silentgear:standard",
-    "simple": true,
-    "harvest_tier": "minecraft:netherite",
-    "availability": {
-        "tier": 6,
-        "categories": [
-            "metal"
-        ],
-        "visible": true,
-        "gear_blacklist": [],
-        "can_salvage": true
-    },
-    "crafting_items": {
-        "main": {
-            "item": "gtceu:hastelloy_x_ingot"
-        }
-    },
-    "name": {
-        "text": "Hastelloy-X Ingot"
-    },
-    "stats": {
-        "main": {
-            "durability": 3188,
-            "armor_durability": 49,
-            "enchantment_value": -2,
-            "rarity": 35,
-            "charging_value": 1,
-            "harvest_speed": 15,
-            "melee_damage": 10,
-            "magic_damage": 3,
-            "attack_speed": 0,
-            "attack_speed/axe": 0,
-            "attack_speed/hoe": 0,
-            "ranged_damage": 4,
-            "ranged_speed": 0,
-            "projectile_speed": 2,
-            "projectile_accuracy": 1,
-            "armor": 29,
-            "armor_toughness": 14,
-            "magic_armor": 9,
-            "armor/helmet": 5,
-            "armor/chestplate": 11,
-            "armor/leggings": 9,
-            "armor/boots": 5
-        },
-        "rod": {
-            "harvest_speed": {
-                "mul2": 0.1063
-            },
-            "melee_damage": {
-                "mul2": 0.0835
-            },
-            "ranged_damage": {
-                "mul2": 0.0684
-            }
-        },
-        "tip": {
-            "durability": {
-                "add": 368
-            },
-            "armor_durability": {
-                "add": 13
-            },
-            "harvest_speed": {
-                "add": 3
-            },
-            "melee_damage": {
-                "add": 3
-            },
-            "ranged_damage": {
-                "add": 1
-            },
-            "rarity": {
-                "add": 12
-            }
-        }
-    },
-    "traits": {
-        "main": [
-            {
-                "name": "silentgear:hard",
-                "level": 1
-            },
-            {
-                "name": "silentgear:fireproof",
-                "level": 1
-            },
-            {
-                "name": "silentgear:malleable",
-                "level": 1
-            }
-        ],
-        "rod": [
-            {
-                "name": "silentgear:flexible",
-                "level": 1
-            }
-        ],
-        "tip": [
-            {
-                "name": "silentgear:malleable",
-                "level": 2
-            }
-        ]
-    },
-    "model": {
-        "main/all": [
-            {
-                "texture": "silentgear:main_generic_hc",
-                "color": "#B8C0C8"
-            },
-            {
-                "texture": "silentgear:_highlight"
-            }
-        ],
-        "main/fragment": [
-            {
-                "texture": "silentgear:metal",
-                "color": "#B8C0C8"
-            }
-        ],
-        "rod/all": [
-            {
-                "texture": "silentgear:rod_generic_lc",
-                "color": "#B8C0C8"
-            }
-        ],
-        "rod/part": [
-            {
-                "texture": "silentgear:rod",
-                "color": "#B8C0C8"
-            }
-        ],
-        "tip/all": [
-            {
-                "texture": "silentgear:tip_sharp",
-                "color": "#B8C0C8"
-            }
-        ],
-        "tip/part": [
-            {
-                "texture": "silentgear:tip_base"
-            },
-            {
-                "texture": "silentgear:tip",
-                "color": "#B8C0C8"
-            },
-            {
-                "texture": "silentgear:tip_shine"
-            }
-        ]
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:netherite",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "gtceu:hastelloy_x_ingot"
     }
+  },
+  "name": {
+    "text": "Hastelloy-X Ingot"
+  },
+  "stats": {
+    "main": {
+      "durability": 3188,
+      "armor_durability": 49,
+      "enchantment_value": -2,
+      "rarity": 35,
+      "charging_value": 1,
+      "harvest_speed": 15,
+      "melee_damage": 10,
+      "magic_damage": 3,
+      "attack_speed": 0,
+      "attack_speed/axe": 0,
+      "attack_speed/hoe": 0,
+      "ranged_damage": 4,
+      "ranged_speed": 0,
+      "projectile_speed": 2,
+      "projectile_accuracy": 1,
+      "armor": 29,
+      "armor_toughness": 14,
+      "magic_armor": 9,
+      "armor/helmet": 5,
+      "armor/chestplate": 11,
+      "armor/leggings": 9,
+      "armor/boots": 5
+    },
+    "rod": {
+      "harvest_speed": {
+        "mul2": 0.1063
+      },
+      "melee_damage": {
+        "mul2": 0.0835
+      },
+      "ranged_damage": {
+        "mul2": 0.0684
+      }
+    },
+    "tip": {
+      "durability": {
+        "add": 368
+      },
+      "armor_durability": {
+        "add": 13
+      },
+      "harvest_speed": {
+        "add": 3
+      },
+      "melee_damage": {
+        "add": 3
+      },
+      "ranged_damage": {
+        "add": 1
+      },
+      "rarity": {
+        "add": 12
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:hard",
+        "level": 1
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 1
+      },
+      {
+        "name": "kubejs:reflective",
+        "level": 2
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:flexible",
+        "level": 1
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#B8C0C8"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#B8C0C8"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#B8C0C8"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#B8C0C8"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#B8C0C8"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#B8C0C8"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
 }

@@ -17,9 +17,9 @@
 		{
 			dependencies: ["1F00F1C2E3D40002"]
 			description: [
-				"The &6Military Industrial Complex&r is the multiblock big brother of the Arms Manufacturer -- artillery, heavy ordnance, and vehicle-mounted violence at industrial scale."
+				"the &6military industrial complex&r is the multiblock version of the arms manufacturer -- artillery, heavy ordnance, and vehicle weapons."
 				""
-				"An IV hull wrapped in &9Tungstensteel&r plates, robot arms, and conveyors. Eisenhower warned you about this exact machine."
+				"an IV hull wrapped in &9tungstensteel&r plates, robot arms, and conveyors."
 			]
 			id: "44B7E09A3C5D2160"
 			subtitle: "war. war never changes. production does"
@@ -28,7 +28,7 @@
 				item: "gtceu:military_industrial_complex"
 				type: "item"
 			}]
-			title: "Military Industrial Complex"
+			title: "military industrial complex"
 			x: 3.5d
 			y: 0.0d
 		}
@@ -41,19 +41,19 @@
 			subtitle: "8192 EU/t, radiation, and two new fronts"
 			tasks: [{
 				id: "1F00F1C2E3D40003"
-				title: "Insane Voltage!"
+				title: "insane voltage!"
 				type: "checkmark"
 			}]
-			title: "Insane Voltage!"
+			title: "insane voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40002"]
 			description: [
-				"The &6Extreme Combustion Engine&r is the primary IV power generator. It needs a &5Liquid Oxygen&r boost to justify the build over stacking EV turbines, and outputs through a 4A IV Dynamo Hatch."
+				"the &6extreme combustion engine&r is the primary IV power generator. it needs a &5liquid oxygen&r boost to justify the build over stacking EV turbines, and outputs through a 4A IV dynamo hatch."
 				""
-				"Build at least one before touching the rest of this chapter -- HSS-G processing and the Venus rocket both want sustained IV power."
+				"build at least one before touching the rest of this chapter -- HSS-g processing and the venus rocket both want sustained IV power."
 			]
 			id: "1F00F1C2E3D40004"
 			shape: "square"
@@ -64,16 +64,16 @@
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			title: "IV Power"
+			title: "IV power"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40004"]
 			description: [
-				"&aMolybdenum&r mixes with &aTungstensteel&r in the &6EV Mixer&r to make &aHSS-G&r. HSS-G Coils upgrade the EBF to 5400K -- enough to handle everything through this chapter in one furnace."
+				"&amolybdenum&r mixes with &atungstensteel&r in the &6EV mixer&r to make &aHSS-g&r. HSS-g coils upgrade the EBF to 5400K -- enough to handle everything through this chapter in one furnace."
 				""
-				"Tungstensteel already covers IV machine hulls -- HSS-G is the next step up, and the point of this quest. Run the EBF at the highest voltage available; overclocking the coil bonus stacks with the temperature it already covers."
+				"tungstensteel already covers IV machine hulls -- HSS-g is the next step up, and the point of this quest. run the EBF at the highest voltage available; overclocking the coil bonus stacks with the temperature it already covers."
 			]
 			id: "1F00F1C2E3D40008"
 			shape: "square"
@@ -85,16 +85,16 @@
 				item: "gtceu:molybdenum_ingot"
 				type: "item"
 			}]
-			title: "Molybdenum"
+			title: "molybdenum"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40008"]
 			description: [
-				"The &3Tier 3 Rocket&r needs five &aOstrum Hull Sections&r, a &aVenus Rocket Engine&r (IV Motor + IV Pump), two &aVenus Propellant Tanks&r, a &aVenus Guidance Module&r (IV circuits), a Nose Cone, and four Fins."
+				"the &3tier 3 rocket&r needs five &aostrum hull sections&r, a &avenus rocket engine&r (IV motor + IV pump), two &avenus propellant tanks&r, a &avenus guidance module&r (IV circuits), a nose cone, and four fins."
 				""
-				"All component recipes use the IV Assembler. Final assembly is at the &6NASA Workbench&r. Fill both propellant tanks with fuel before docking."
+				"all component recipes use the IV assembler. final assembly is at the &6NASA workbench&r. fill both propellant tanks with fuel before docking."
 			]
 			icon: "kubejs:ostrum_hull_section"
 			id: "1F00F1C2E3D4000C"
@@ -107,16 +107,16 @@
 				item: "kubejs:ostrum_hull_section"
 				type: "item"
 			}]
-			title: "Venus Components"
+			title: "venus components"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D4000C"]
 			description: [
-				"Assemble at the &6NASA Workbench&r with all components staged. Fill both &3Propellant Tanks&r before docking."
+				"assemble at the &6NASA workbench&r with all components staged. fill both &3propellant tanks&r before docking."
 				""
-				"This rocket reaches &3Venus and Mercury&r both -- same tier, same launch. Priority on Venus: &aCooperite and Chalcopyrite veins&r for Platinum-group and copper byproducts. On Mercury: &aPitchblende&r for Thorium and Uranium, &aCobaltite&r for Cobalt."
+				"this rocket reaches &3venus and mercury&r both -- same tier, same launch. priority on venus: &acooperite and chalcopyrite veins&r for platinum-group and copper byproducts. on mercury: &apitchblende&r for thorium and uranium, &acobaltite&r for cobalt."
 			]
 			icon: "ad_astra:tier_3_rocket"
 			id: "1F00F1C2E3D40010"
@@ -128,16 +128,16 @@
 				item: "ad_astra:tier_3_rocket"
 				type: "item"
 			}]
-			title: "The Venus Rocket"
+			title: "the venus rocket"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40010"]
 			description: [
-				"Land on &3Venus&r. Bring a Space Suit -- no oxygen, and the heat will cook an unprotected player fast."
+				"land on &3venus&r. bring a space suit -- no oxygen, and the heat will cook an unprotected player fast."
 				""
-				"&aCalorite Ore&r is Venus-only. Wolframite-style layered veins mean Sulfur and Pyrite come along for free. Mercury is the same rocket away if the radiation-altered minerals are worth the second trip yet."
+				"&acalorite ore&r is venus-only. wolframite-style layered veins mean sulfur and pyrite come along for free. mercury is the same rocket away if the radiation-altered minerals are worth the second trip yet."
 			]
 			id: "1F00F1C2E3D40014"
 			shape: "gear"
@@ -149,16 +149,16 @@
 				item: "ad_astra:venus_sand"
 				type: "item"
 			}]
-			title: "First Venus Trip"
+			title: "first venus trip"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40014"]
 			description: [
-				"Calorite takes six steps: three &6IV Chemical Reactors&r (sulfuric roast -> chlorine leach -> HF fluorination), the &6IV Electrolyzer&r, the &5EBF at 4500K&r, then the &5Vacuum Freezer&r."
+				"calorite takes six steps: three &6IV chemical reactors&r (sulfuric roast -> chlorine leach -> HF fluorination), the &6IV electrolyzer&r, the &5EBF at 4500K&r, then the &5vacuum freezer&r."
 				""
-				"&aCalorite Wire&r replaces Platinum Wire in the &aQuantum Processor Assembly&r recipe, gating the ZPM-tier circuit line behind Venus -- same pattern as Ostrum Wire did for the Nano line at EV."
+				"&acalorite wire&r replaces platinum wire in the &aquantum processor assembly&r recipe, gating the ZPM-tier circuit line behind venus -- same pattern as ostrum wire did for the nano line at EV."
 			]
 			id: "1F00F1C2E3D40018"
 			shape: "square"
@@ -170,16 +170,16 @@
 				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
-			title: "Calorite Processing"
+			title: "calorite processing"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40008"]
 			description: [
-				"The &6IV Circuit Assembler&r produces &aQuantum Processors&r -- the EV circuit from the Quantum line, now fully craftable at IV tier."
+				"the &6IV circuit assembler&r produces &aquantum processors&r -- the EV circuit from the quantum line, now fully craftable at IV tier."
 				""
-				"Quantum Processors craft up into &aQuantum Processor Assemblies&r, the actual IV circuit. Build the assembler as soon as HSS-G production is stable."
+				"quantum processors craft up into &aquantum processor assemblies&r, the actual IV circuit. build the assembler as soon as HSS-g production is stable."
 			]
 			id: "1F00F1C2E3D4001C"
 			shape: "rsquare"
@@ -198,16 +198,16 @@
 					type: "item"
 				}
 			]
-			title: "IV Circuit Assembler"
+			title: "IV circuit assembler"
 			x: -2.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D4001C"]
 			description: [
-				"The &aQuantum Processor Assembly&r is the actual IV circuit. Made from Quantum Processors, Silicon Wafers, and Multilayer Fiber Reinforced PCB."
+				"the &aquantum processor assembly&r is the actual IV circuit. made from quantum processors, silicon wafers, and multilayer fiber reinforced PCB."
 				""
-				"Get Calorite Wire production automated once Venus is reachable so this doesn't bottleneck. Crafts up into the &aQuantum Processor Computer&r below."
+				"get calorite wire production automated once venus is reachable so this doesn't bottleneck. crafts up into the &aquantum processor computer&r below."
 			]
 			id: "1F00F1C2E3D40020"
 			shape: "rsquare"
@@ -219,16 +219,16 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			title: "Quantum Processor Assembly"
+			title: "quantum processor assembly"
 			x: -2.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40020"]
 			description: [
-				"The &aQuantum Processor Computer&r is the LuV circuit -- within reach here since nothing past it needs Glacio materials, same deviation as the Nano line at EV."
+				"the &aquantum processor computer&r is the LuV circuit -- within reach here since nothing past it needs glacio materials, same deviation as the nano line at EV."
 				""
-				"Batch-produce before leaving. IV and LuV machines both want a steady supply."
+				"batch-produce before leaving. IV and LuV machines both want a steady supply."
 			]
 			id: "1F00F1C2E3D40024"
 			shape: "rsquare"
@@ -240,16 +240,16 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			title: "Quantum Processor Computer"
+			title: "quantum processor computer"
 			x: -2.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40024"]
 			description: [
-				"The &aQuantum Processor Mainframe&r is the ZPM circuit -- one more crafting step up from the Computer, and nothing in its recipe reaches past materials already in production here."
+				"the &aquantum processor mainframe&r is the ZPM circuit -- one more crafting step up from the computer, and nothing in its recipe reaches past materials already in production here."
 				""
-				"Batch this out before leaving IV. It saves rebuilding the assembler chain from scratch once ZPM machines start demanding a steady supply."
+				"batch this out before leaving IV. it saves rebuilding the assembler chain from scratch once ZPM machines start demanding a steady supply."
 			]
 			id: "1F00F1C2E3D40028"
 			shape: "rsquare"
@@ -261,16 +261,16 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "Quantum Processor Mainframe"
+			title: "quantum processor mainframe"
 			x: -2.0d
 			y: -15.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40004"]
 			description: [
-				"&aMonazite&r (already available from the Moon since HV) centrifuges into &aRare Earth Dust&r, which centrifuges again into individual elements."
+				"&amonazite&r (already available from the moon since HV) centrifuges into &arare earth dust&r, which centrifuges again into individual elements."
 				""
-				"&aSamarium&r is the target here -- feeds the IV Superconductor line. Lanthanum, Yttrium, and the rest matter more at LuV and beyond; don't over-invest in the full spread yet."
+				"&asamarium&r is the target here -- feeds the IV superconductor line. lanthanum, yttrium, and the rest matter more at LuV and beyond; don't over-invest in the full spread yet."
 			]
 			id: "1F00F1C2E3D40030"
 			shape: "rsquare"
@@ -282,16 +282,16 @@
 				item: "gtceu:samarium_ingot"
 				type: "item"
 			}]
-			title: "Rare Earth Processing"
+			title: "rare earth processing"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40030"]
 			description: [
-				"&aSamarium Iron Arsenic Oxide&r wire is the IV superconductor -- lossless, safe to touch, no cable form needed. The single wire variant covers 2A."
+				"&asamarium iron arsenic oxide&r wire is the IV superconductor -- lossless, safe to touch, no cable form needed. the single wire variant covers 2A."
 				""
-				"Required in bulk for the LuV Fusion Reactor. Start stockpiling now; Fusion research at LuV eats superconductor wire fast."
+				"required in bulk for the LuV fusion reactor. start stockpiling now; fusion research at LuV eats superconductor wire fast."
 			]
 			id: "1F00F1C2E3D40034"
 			shape: "rsquare"
@@ -303,16 +303,16 @@
 				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
 				type: "item"
 			}]
-			title: "IV Superconductor"
+			title: "IV superconductor"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1F00F1C2E3D40018", "1F00F1C2E3D40028"]
 			description: [
-				"&aRhodium Plated Palladium&r is the structural backbone of LuV multiblocks -- Palladium plated with Rhodium in the IV Mixer. Palladium comes off Platinum Group Sludge; the full Platline chain is worth running seriously by now."
+				"&arhodium plated palladium&r is the main structural material for LuV multiblocks -- palladium plated with rhodium in the IV mixer. palladium comes off platinum group sludge; the full platline chain is worth running seriously by now."
 				""
-				"The &aQuantum Processor Mainframe&r -- the ZPM circuit -- is already in reach at IV, same deviation as the Computer above. Both should be in automated production before leaving. LuV is next. Naquadah on Glacio and the first Fusion Reactor need a mature IV base to build from."
+				"the &aquantum processor mainframe&r -- the ZPM circuit -- is already in reach at IV, same deviation as the computer above. both should be in automated production before leaving. LuV is next. naquadah on glacio and the first fusion reactor need a mature IV base to build from."
 			]
 			icon: "gtceu:rhodium_plated_palladium_plate"
 			id: "1F00F1C2E3D40038"
@@ -333,11 +333,11 @@
 					type: "item"
 				}
 			]
-			title: "Leaving IV"
+			title: "leaving IV"
 			x: 0.0d
 			y: -16.5d
 		}
 	]
 	subtitle: ["Get to Venus. Mind Mercury too."]
-	title: "VI. Insane Voltage"
+	title: "VI. insane voltage"
 }

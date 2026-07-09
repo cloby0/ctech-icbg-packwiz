@@ -19,11 +19,11 @@
 		{
 			dependencies: ["278BE65F77B6BD8B"]
 			description: [
-				"The &3Elven Portal&r opens a gateway to &dAlfheim&r - home of the elves."
+				"the &3elven portal&r opens a gateway to &dalfheim&r - home of the elves."
 				""
-				"You can't visit. You can only trade. Drop items through the portal and the elves will send something back."
+				"you can't visit. you can only trade. drop items through the portal and the elves will send something back."
 				""
-				"This is how you get &aElven materials&r, including the ones you need for &dElementium&r."
+				"this is how you get &aelven materials&r, including the ones you need for &delementium&r."
 			]
 			id: "7611918249B75923"
 			subtitle: "time to make some weird friends"
@@ -52,29 +52,29 @@
 					type: "item"
 				}
 			]
-			title: "Elven Trade Portal"
+			title: "elven trade portal"
 			x: -0.5d
 			y: -2.0d
 		}
 		{
 			description: [
-				"Enchant the dust over an &7Abstract Metal Ingot&r (15000 source), then smelt the result straight into &dElementium&r. Elven metallurgy, fully domesticated."
+				"enchant the dust over an &7abstract metal ingot&r (15000 source), then smelt the result straight into &delementium&r. elven metallurgy, fully domesticated."
 			]
 			dependencies: ["51FA75C4A1E30685"]
 			id: "104D6BF6AA109EF4"
-			subtitle: "not to be confused with Elementium"
+			subtitle: "not to be confused with elementium"
 			tasks: [{
 				id: "2B102D30E4922A3F"
 				item: "kubejs:raw_elementite"
 				type: "item"
 			}]
-			title: "Raw Elementite"
+			title: "raw elementite"
 			x: -0.5d
 			y: -6.0d
 		}
 		{
 			description: [
-				"Imbue elven concentrate over water and air essences with luminessence -- 8000 source -- for &dElementite Dust&r."
+				"imbue elven concentrate over water and air essences with luminessence -- 8000 source -- for &delementite dust&r."
 			]
 			dependencies: ["36021729B91C1137"]
 			id: "51FA75C4A1E30685"
@@ -84,15 +84,15 @@
 				item: "kubejs:elementite_dust"
 				type: "item"
 			}]
-			title: "Elementite Dust"
+			title: "elementite dust"
 			x: 0.5d
 			y: -6.0d
 		}
 		{
 			description: [
-				"The elves are cut out of the deal: the &6Runic Altar&r makes &dWeak Elementium Dust&r from four terrasteel bolts and air, spring, summer, and autumn runes -- 8000 mana, three at a time."
+				"the elves are cut out of the deal: the &6runic altar&r makes &dweak elementium dust&r from four terrasteel bolts and air, spring, summer, and autumn runes -- 8000 mana, three at a time."
 				""
-				"Trade three dusts through the &aAlfheim Portal&r for two &dElven Concentrate&r. The elves still get their cut. Typical."
+				"trade three dusts through the &aalfheim portal&r for two &delven concentrate&r. the elves still get their cut. typical."
 			]
 			dependencies: ["7611918249B75923"]
 			id: "2764D29567727F6D"
@@ -102,18 +102,18 @@
 				item: "kubejs:weak_elementium_dust"
 				type: "item"
 			}]
-			title: "Weak Elementium Dust"
+			title: "weak elementium dust"
 			x: 0.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["104D6BF6AA109EF4"]
 			description: [
-				"&aElementium&r is the capstone of the &8Arcanist&r tier."
+				"&aelementium&r caps off the &8arcanist&r tier."
 				""
-				"It can only be obtained through cooperation with the Elves - no amount of GregTech machines can synthesize this one."
+				"it can only be obtained through cooperation with the elves - no amount of gregtech machines can synthesize this one."
 				""
-				"&9Note:&r Automating Elven Portal trading is possible. Once you're producing Elementium in volume, you'll want to look into it."
+				"&9note:&r automating elven portal trading is possible. once you're producing elementium in volume, you'll want to look into it."
 			]
 			id: "1C1A082C60D3E432"
 			shape: "square"
@@ -124,16 +124,16 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			title: "Elementium Ingot"
+			title: "elementium ingot"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2764D29567727F6D"]
 			description: [
-				"The &3Elven Portal&r trading process produces &aElven Concentrate&r - the key input for &dElementium&r processing."
+				"the &3elven portal&r trading process produces &aelven concentrate&r - the key input for &delementium&r processing."
 				""
-				"Feed the portal, collect the concentrate, process it further."
+				"feed the portal, collect the concentrate, process it further."
 			]
 			id: "36021729B91C1137"
 			subtitle: "what the elves give back"
@@ -142,11 +142,11 @@
 				item: "kubejs:elven_concentrate"
 				type: "item"
 			}]
-			title: "Elven Concentrate"
+			title: "elven concentrate"
 			x: 0.0d
 			y: -4.0d
 		}
 	]
 	subtitle: ["Trade with interdimensional creatures for new materials"]
-	title: "VIII. Arcanist"
+	title: "VIII. arcanist"
 }
