@@ -2,40 +2,40 @@ ServerEvents.recipes(event => {
 
 
     event.shaped(Item.of('relics:leather_belt', 1), [
-        'LLL', 'LDL', 'LLL'
-    ], { 'L': 'minecraft:leather', 'D': 'nameless_trinkets:dubious_dust' })
+        'KLL', 'LDL', 'LLL'
+    ], { 'L': 'minecraft:leather', 'D': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('relics:horse_flute', 1), [
-        ' G ', 'IDI', ' I '
-    ], { 'G': 'minecraft:gold_ingot', 'I': 'minecraft:stick', 'D': 'nameless_trinkets:dubious_dust' })
+        'FG ', 'IDI', ' I '
+    ], { 'G': 'minecraft:gold_ingot', 'I': 'minecraft:stick', 'D': 'nameless_trinkets:dubious_dust', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('relics:arrow_quiver', 1), [
-        'LSL', 'LDL', 'LSL'
-    ], { 'L': 'minecraft:leather', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
+        'KSL', 'LDL', 'LSL'
+    ], { 'L': 'minecraft:leather', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('relics:ice_skates', 1), [
-        'ILI', 'LDL', 'ILI'
-    ], { 'I': 'minecraft:iron_ingot', 'L': 'minecraft:leather', 'D': 'nameless_trinkets:dubious_dust' })
+        'FLI', 'LDL', 'ILI'
+    ], { 'I': 'minecraft:iron_ingot', 'L': 'minecraft:leather', 'D': 'nameless_trinkets:dubious_dust', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('relics:roller_skates', 1), [
-        'LIL', 'RDR', 'LIL'
-    ], { 'L': 'minecraft:leather', 'I': 'minecraft:iron_ingot', 'R': 'minecraft:redstone', 'D': 'nameless_trinkets:dubious_dust' })
+        'ZIL', 'RDR', 'LIL'
+    ], { 'L': 'minecraft:leather', 'I': 'minecraft:iron_ingot', 'R': 'minecraft:redstone', 'D': 'nameless_trinkets:dubious_dust', 'Z': '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(Item.of('relics:solid_snowball', 1), [
         'PBP', 'BDB', 'PBP'
     ], { 'P': 'minecraft:packed_ice', 'B': 'minecraft:snowball', 'D': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('relics:wool_mitten', 1), [
-        'WW ', 'WDW', 'WLW'
-    ], { 'W': 'minecraft:white_wool', 'D': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather' })
+        'WWK', 'WDW', 'WLW'
+    ], { 'W': 'minecraft:white_wool', 'D': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('relics:chorus_inhibitor', 1), [
-        'CIC', 'IDI', 'CIC'
-    ], { 'C': 'minecraft:chorus_fruit', 'I': 'minecraft:iron_ingot', 'D': 'nameless_trinkets:dubious_dust' })
+        'CZC', 'IDI', 'CIC'
+    ], { 'C': 'minecraft:chorus_fruit', 'I': 'minecraft:iron_ingot', 'D': 'nameless_trinkets:dubious_dust', 'Z': '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(Item.of('relics:spore_sack', 1), [
-        'LML', 'MDM', 'LML'
-    ], { 'L': 'minecraft:leather', 'M': 'minecraft:red_mushroom', 'D': 'nameless_trinkets:dubious_dust' })
+        'KML', 'MDM', 'LML'
+    ], { 'L': 'minecraft:leather', 'M': 'minecraft:red_mushroom', 'D': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('relics:relic_experience_bottle', 1), [
         'GDG', 'GRG', ' G '

@@ -43,9 +43,9 @@ ServerEvents.recipes(event => {
 
     event.shaped('l2complements:wind_capture_bottle', [
         'SLS',
-        'LGL',
+        'KGL',
         'SLS'
-    ], { S: 'minecraft:string', L: 'minecraft:leather', G: 'minecraft:glass_bottle' })
+    ], { S: 'minecraft:string', L: 'minecraft:leather', G: 'minecraft:glass_bottle', K: '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped('l2complements:soul_fire_charge', [
         ' S ',
@@ -74,16 +74,16 @@ ServerEvents.recipes(event => {
     ], { S: 'ars_nouveau:source_gem', F: 'minecraft:fermented_spider_eye', B: 'minecraft:glass_bottle' })
 
     event.shaped('l2hostility:witch_wand', [
-        'D  ',
+        'D F',
         ' B ',
         '  S'
-    ], { D: 'l2hostility:witch_droplet', B: 'minecraft:blaze_rod', S: 'ars_nouveau:source_gem' })
+    ], { D: 'l2hostility:witch_droplet', B: 'minecraft:blaze_rod', S: 'ars_nouveau:source_gem', F: '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped('l2hostility:hostility_detector', [
-        ' S ',
+        'DS ',
         'MCM',
         ' S '
-    ], { S: 'ars_nouveau:source_gem', M: '#gtceu:circuits/mv', C: 'minecraft:compass' })
+    ], { S: 'ars_nouveau:source_gem', M: '#gtceu:circuits/mv', C: 'minecraft:compass', D: '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:dubious_dust',
@@ -349,10 +349,10 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped('l2hostility:book_of_reprint', [
-        'GHG',
+        'KHG',
         'HBH',
         'GHG'
-    ], { G: 'minecraft:gold_ingot', H: 'gtceu:holy_silver_dust', B: 'minecraft:book' })
+    ], { G: 'minecraft:gold_ingot', H: 'gtceu:holy_silver_dust', B: 'minecraft:book', K: '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:book',

@@ -130,8 +130,8 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: /hexcasting:staff\// })
-    const staffPattern = [' SA', ' WS', 'S  ']
-    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w })
+    const staffPattern = ['ZSA', ' WS', 'S  ']
+    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w, Z: '#forge:tools/saws' })
     ;[
         ['minecraft:oak_planks',                     'hexcasting:staff/oak'],
         ['minecraft:birch_planks',                   'hexcasting:staff/birch'],
@@ -147,76 +147,86 @@ ServerEvents.recipes(event => {
         ['hexcasting:edified_planks',                'hexcasting:staff/edified'],
         ['hexcasting:quenched_allay_shard',          'hexcasting:staff/quenched'],
         ['#hexcasting:brainswept_circle_components', 'hexcasting:staff/mindsplice'],
-    ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)))
+    ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)).damageIngredient(Ingredient.of('#forge:tools/saws')))
 
     event.remove({ id: 'hexcasting:lens' })
-    event.shaped('hexcasting:lens', [' C ', 'CAC', ' C '], {
+    event.shaped('hexcasting:lens', ['FC ', 'CAC', ' C '], {
         C: 'minecraft:glass',
         A: 'kubejs:hexed_amethyst_core',
-    })
+        F: '#forge:tools/files',
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'hexcasting:thought_knot' })
-    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string'])
+    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string', '#forge:tools/wire_cutters']).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.remove({ id: 'hexcasting:slate' })
-    event.shaped('6x hexcasting:slate', [' A ', 'SSS'], {
+    event.shaped('6x hexcasting:slate', ['HA ', 'SSS'], {
         A: 'kubejs:hexed_amethyst_core',
         S: 'minecraft:deepslate',
-    })
+        H: '#forge:tools/hammers',
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'hexcasting:cypher' })
-    event.shaped('hexcasting:cypher', [' C ', 'CAC', ' C '], {
+    event.shaped('hexcasting:cypher', ['FC ', 'CAC', ' C '], {
         C: '#forge:ingots/copper',
         A: 'kubejs:hexed_amethyst_core',
-    })
+        F: '#forge:tools/files',
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'hexcasting:scroll_small' })
-    event.shaped('hexcasting:scroll_small', [' A', 'P '], {
+    event.shaped('hexcasting:scroll_small', ['KA', 'P '], {
         A: 'kubejs:hexed_amethyst_core',
         P: 'minecraft:paper',
-    })
+        K: '#forge:tools/knives',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ id: 'hexcasting:scroll_medium' })
-    event.shaped('hexcasting:scroll_medium', ['  A', 'PP ', 'PP '], {
+    event.shaped('hexcasting:scroll_medium', ['K A', 'PP ', 'PP '], {
         A: 'kubejs:hexed_amethyst_core',
         P: 'minecraft:paper',
-    })
+        K: '#forge:tools/knives',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ id: 'hexcasting:scroll' })
-    event.shaped('hexcasting:scroll', ['PPA', 'PPP', 'PPP'], {
+    event.shaped('hexcasting:scroll', ['PPA', 'PPP', 'PPK'], {
         A: 'kubejs:hexed_amethyst_core',
         P: 'minecraft:paper',
-    })
+        K: '#forge:tools/knives',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ id: 'hexcasting:scroll_paper' })
-    event.shaped('8x hexcasting:scroll_paper', ['PPP', 'PAP', 'PPP'], {
+    event.shaped('8x hexcasting:scroll_paper', ['PPP', 'PAP', 'PPK'], {
         P: 'minecraft:paper',
         A: 'kubejs:hexed_amethyst_core',
-    })
+        K: '#forge:tools/knives',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ id: 'hexcasting:abacus' })
-    event.shaped('hexcasting:abacus', ['WAW', 'SAS', 'WAW'], {
+    event.shaped('hexcasting:abacus', ['MAW', 'SAS', 'WAW'], {
         W: '#minecraft:planks',
         A: 'kubejs:hexed_amethyst_core',
         S: 'minecraft:stick',
-    })
+        M: '#forge:tools/mallets',
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'hexcasting:akashic_bookshelf' })
-    event.shaped('hexcasting:akashic_bookshelf', ['LPL', 'CAC', 'LPL'], {
+    event.shaped('hexcasting:akashic_bookshelf', ['ZPL', 'CAC', 'LPL'], {
         L: '#hexcasting:edified_logs',
         P: '#hexcasting:edified_planks',
         C: 'minecraft:book',
         A: 'kubejs:hexed_mana_matrix',
-    })
+        Z: '#forge:tools/saws',
+    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.remove({ id: 'hexcasting:akashic_connector' })
-    event.shaped('4x hexcasting:akashic_connector', ['LPL', '12A', 'LPL'], {
+    event.shaped('4x hexcasting:akashic_connector', ['ZPL', '12A', 'LPL'], {
         L: '#hexcasting:edified_logs',
         P: '#hexcasting:edified_planks',
         '1': 'hexcasting:amethyst_dust',
         '2': 'minecraft:amethyst_shard',
         A: 'kubejs:hexed_mana_matrix',
-    })
+        Z: '#forge:tools/saws',
+    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.remove({ id: 'hexcasting:focus' })
     event.remove({ id: 'hexcasting:focus_rotated' })
@@ -244,10 +254,12 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'hexcasting:trinket' })
-    event.shaped('hexcasting:trinket', [' M ', 'MAM', ' M '], {
+    event.shaped('hexcasting:trinket', ['HMF', 'MAM', ' M '], {
         M: 'gtceu:manasteel_plate',
         A: 'kubejs:hexed_mana_matrix',
-    })
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files',
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'hex_ars_link:linker_base' })
     addEnchantingRecipe(event, {

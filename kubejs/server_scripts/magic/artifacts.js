@@ -2,40 +2,40 @@ ServerEvents.recipes(event => {
 
 
     event.shaped(Item.of('artifacts:lucky_scarf', 1), [
-        'GGG', 'GSG', 'GRG'
-    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:rabbit_foot' })
+        'CGG', 'GSG', 'GRG'
+    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:rabbit_foot', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('artifacts:running_shoes', 1), [
-        ' S ', 'LAL', 'LAL'
-    ], { 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'A': 'minecraft:sugar' })
+        'KS ', 'LAL', 'LAL'
+    ], { 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'A': 'minecraft:sugar', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:snowshoes', 1), [
-        'SIS', 'LSL', 'SIS'
-    ], { 'S': 'minecraft:packed_ice', 'I': 'minecraft:stick', 'L': 'nameless_trinkets:dubious_dust' })
+        'CIS', 'LSL', 'SIS'
+    ], { 'S': 'minecraft:packed_ice', 'I': 'minecraft:stick', 'L': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('artifacts:kitty_slippers', 1), [
-        'WW ', 'WSW', 'STS'
-    ], { 'W': 'minecraft:white_wool', 'S': 'minecraft:string', 'T': 'nameless_trinkets:dubious_dust' })
+        'WWK', 'WSW', 'STS'
+    ], { 'W': 'minecraft:white_wool', 'S': 'minecraft:string', 'T': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:flippers', 1), [
-        'KWK', 'KSK', 'KLK'
-    ], { 'K': 'minecraft:kelp', 'W': 'ars_nouveau:water_essence', 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather' })
+        'NWK', 'KSK', 'KLK'
+    ], { 'K': 'minecraft:kelp', 'W': 'ars_nouveau:water_essence', 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'N': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:snorkel', 1), [
-        ' I ', 'IGI', 'LSL'
-    ], { 'I': 'minecraft:iron_ingot', 'G': 'minecraft:glass_pane', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust' })
+        'HI ', 'IGI', 'LSL'
+    ], { 'I': 'minecraft:iron_ingot', 'G': 'minecraft:glass_pane', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'H': '#forge:tools/hammers' }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.shaped(Item.of('artifacts:rooted_boots', 1), [
-        'VGV', 'LSL', 'LEL'
-    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'E': 'ars_nouveau:earth_essence' })
+        'KGV', 'LSL', 'LEL'
+    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'E': 'ars_nouveau:earth_essence', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:charm_of_sinking', 1), [
-        'IGI', 'GSG', 'IGI'
-    ], { 'I': 'minecraft:iron_ingot', 'G': 'minecraft:gravel', 'S': 'nameless_trinkets:dubious_dust' })
+        'IFI', 'GSG', 'IGI'
+    ], { 'I': 'minecraft:iron_ingot', 'G': 'minecraft:gravel', 'S': 'nameless_trinkets:dubious_dust', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('artifacts:onion_ring', 1), [
-        ' G ', 'GSG', ' G '
-    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust' })
+        'HGF', 'GSG', ' G '
+    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'H': '#forge:tools/hammers', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
@@ -130,8 +130,8 @@ ServerEvents.recipes(event => {
 
     // Pulled to Hobbyist: air essence binds a slow-fall umbrella (was luminessence-tier enchanting)
     event.shaped(Item.of('artifacts:umbrella', 1), [
-        'LAL', 'SIS', ' T '
-    ], { 'L': 'minecraft:leather', 'A': 'ars_nouveau:air_essence', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick' })
+        'LAL', 'SIS', 'CT '
+    ], { 'L': 'minecraft:leather', 'A': 'ars_nouveau:air_essence', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',

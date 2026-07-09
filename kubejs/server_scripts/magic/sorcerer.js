@@ -27,18 +27,20 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:basic_spell_turret', 1),
         [
-            'ED ',
+            'EDW',
             'CBA',
-            'ED '
+            'EDS'
         ],
         {
             A: 'minecraft:bow',
             B: 'ars_nouveau:source_jar',
             C: 'gtceu:source_block',
             D: 'gtceu:holy_silver_rod',
-            E: "gtceu:double_holy_silver_plate"
+            E: "gtceu:double_holy_silver_plate",
+            W: '#forge:tools/wrenches',
+            S: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/wrenches')).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.custom({
         "type": "aether:freezing",

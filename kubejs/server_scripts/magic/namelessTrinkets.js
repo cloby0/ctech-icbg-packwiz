@@ -80,80 +80,80 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(Item.of('nameless_trinkets:amphibious_hands', 1), [
-        '###', '#S#', '###'
-    ], { '#': 'minecraft:kelp', 'S': 'nameless_trinkets:dubious_dust' })
+        'K##', '#S#', '###'
+    ], { '#': 'minecraft:kelp', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:blaze_nucleus', 1), [
         '///', '/S/', '///'
     ], { '/': 'minecraft:blaze_rod', 'S': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('nameless_trinkets:blindfold', 1), [
-        '#G#', 'GSG', '#G#'
-    ], { '#': 'minecraft:leather', 'G': 'minecraft:golden_carrot', 'S': 'nameless_trinkets:dubious_dust' })
+        'KG#', 'GSG', '#G#'
+    ], { '#': 'minecraft:leather', 'G': 'minecraft:golden_carrot', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:broken_magnet', 1), [
-        'iLi', 'RSL', 'iRi'
-    ], { 'i': 'minecraft:iron_ingot', 'L': 'minecraft:lapis_lazuli', 'R': 'minecraft:redstone', 'S': 'nameless_trinkets:dubious_dust' })
+        'MLi', 'RSL', 'iRi'
+    ], { 'i': 'minecraft:iron_ingot', 'L': 'minecraft:lapis_lazuli', 'R': 'minecraft:redstone', 'S': 'nameless_trinkets:dubious_dust', 'M': '#forge:tools/hammers' }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.shaped(Item.of('nameless_trinkets:creeper_sense', 1), [
         '###', 'TST', '###'
     ], { '#': 'minecraft:gunpowder', 'T': 'minecraft:tnt', 'S': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('nameless_trinkets:dark_nelumbo', 1), [
-        '#M#', 'CSC', '#C#'
-    ], { '#': 'minecraft:nether_wart', 'M': 'minecraft:magma_block', 'C': 'minecraft:crimson_stem', 'S': 'nameless_trinkets:dubious_dust' })
+        'KM#', 'CSC', '#C#'
+    ], { '#': 'minecraft:nether_wart', 'M': 'minecraft:magma_block', 'C': 'minecraft:crimson_stem', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:dragons_eye', 1), [
         '#W#', '#S#', '#W#'
     ], { '#': 'minecraft:ender_eye', 'W': 'minecraft:end_stone', 'S': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('nameless_trinkets:experience_magnet', 1), [
-        'iGi', 'RSR', 'iRi'
-    ], { 'i': 'minecraft:iron_ingot', 'G': 'minecraft:glass_bottle', 'R': 'minecraft:redstone', 'S': 'nameless_trinkets:dubious_dust' })
+        'FGi', 'RSR', 'iRi'
+    ], { 'i': 'minecraft:iron_ingot', 'G': 'minecraft:glass_bottle', 'R': 'minecraft:redstone', 'S': 'nameless_trinkets:dubious_dust', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('nameless_trinkets:explosion_proof_jacket', 1), [
-        'iLi', 'LSL', 'iLi'
-    ], { 'i': 'minecraft:iron_ingot', 'L': 'minecraft:leather_chestplate', 'S': 'nameless_trinkets:dubious_dust' })
+        'KLi', 'LSL', 'iLi'
+    ], { 'i': 'minecraft:iron_ingot', 'L': 'minecraft:leather_chestplate', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:gills', 1), [
-        ' # ', 'TSK', ' P '
-    ], { '#': 'minecraft:cod', 'T': 'minecraft:tropical_fish', 'S': 'nameless_trinkets:dubious_dust', 'K': 'minecraft:salmon', 'P': 'minecraft:pufferfish' })
+        'N# ', 'TSK', ' P '
+    ], { '#': 'minecraft:cod', 'T': 'minecraft:tropical_fish', 'S': 'nameless_trinkets:dubious_dust', 'K': 'minecraft:salmon', 'P': 'minecraft:pufferfish', 'N': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:ice_cube', 1), [
         '#S#', 'SPS', '#S#'
     ], { '#': 'minecraft:ice', 'S': 'minecraft:snow_block', 'P': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('nameless_trinkets:lucky_rock', 1), [
-        '#R#', 'iSg', '#C#'
-    ], { '#': 'minecraft:cobblestone', 'R': 'minecraft:redstone', 'i': 'minecraft:iron_ingot', 'S': 'nameless_trinkets:dubious_dust', 'g': 'minecraft:gold_ingot', 'C': 'minecraft:coal' })
+        'HR#', 'iSg', '#C#'
+    ], { '#': 'minecraft:cobblestone', 'R': 'minecraft:redstone', 'i': 'minecraft:iron_ingot', 'S': 'nameless_trinkets:dubious_dust', 'g': 'minecraft:gold_ingot', 'C': 'minecraft:coal', 'H': '#forge:tools/hammers' }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.shaped(Item.of('nameless_trinkets:moon_stone', 1), [
         '###', 'SKS', '###'
     ], { '#': 'minecraft:feather', 'S': 'minecraft:sponge', 'K': 'nameless_trinkets:dubious_dust' })
 
     event.shaped(Item.of('nameless_trinkets:nelumbo', 1), [
-        '#S#', 'OQO', '#O#'
-    ], { '#': 'minecraft:lily_pad', 'S': 'minecraft:sponge', 'O': 'minecraft:oak_log', 'Q': 'nameless_trinkets:dubious_dust' })
+        '#S#', 'WQO', '#O#'
+    ], { '#': 'minecraft:lily_pad', 'S': 'minecraft:sponge', 'O': 'minecraft:oak_log', 'Q': 'nameless_trinkets:dubious_dust', 'W': '#forge:tools/saws' }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.shaped(Item.of('nameless_trinkets:pocket_lightning_rod', 1), [
-        '///', '/S/', '///'
-    ], { '/': 'minecraft:string', 'S': 'nameless_trinkets:dubious_dust' })
+        'C//', '/S/', '///'
+    ], { '/': 'minecraft:string', 'S': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shapeless(Item.of('nameless_trinkets:puffer_fish_liver', 1), [
-        'minecraft:pufferfish', 'nameless_trinkets:dubious_dust'
-    ])
+        'minecraft:pufferfish', 'nameless_trinkets:dubious_dust', '#forge:tools/knives'
+    ]).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('nameless_trinkets:sleeping_pills', 1), [
-        '#SP', 'GYG', 'SFS'
-    ], { '#': 'minecraft:dandelion', 'S': 'minecraft:sugar', 'P': 'minecraft:poppy', 'G': 'minecraft:golden_carrot', 'Y': 'nameless_trinkets:dubious_dust', 'F': 'minecraft:fermented_spider_eye' })
+        '#MP', 'GYG', 'SFS'
+    ], { '#': 'minecraft:dandelion', 'S': 'minecraft:sugar', 'P': 'minecraft:poppy', 'G': 'minecraft:golden_carrot', 'Y': 'nameless_trinkets:dubious_dust', 'F': 'minecraft:fermented_spider_eye', 'M': '#forge:tools/mortars' }).damageIngredient(Ingredient.of('#forge:tools/mortars'))
 
     event.shaped(Item.of('nameless_trinkets:spider_legs', 1), [
-        '#S#', 'RUR', '#R#'
-    ], { '#': 'minecraft:cobweb', 'S': 'minecraft:spider_eye', 'R': 'minecraft:string', 'U': 'nameless_trinkets:dubious_dust' })
+        '#S#', 'CUR', '#R#'
+    ], { '#': 'minecraft:cobweb', 'S': 'minecraft:spider_eye', 'R': 'minecraft:string', 'U': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('nameless_trinkets:wooden_stick', 1), [
-        'g/g', '/S/', 'g/g'
-    ], { 'g': 'minecraft:gold_ingot', '/': 'minecraft:stick', 'S': 'nameless_trinkets:dubious_dust' })
+        'gWg', '/S/', 'g/g'
+    ], { 'g': 'minecraft:gold_ingot', '/': 'minecraft:stick', 'S': 'nameless_trinkets:dubious_dust', 'W': '#forge:tools/saws' }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:callus', source: 750, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:cobblestone', 'minecraft:hay_block', 'minecraft:rotten_flesh'] })
     addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:electric_paddle', source: 750, pedestalItems: ['minecraft:oak_boat', 'minecraft:redstone', 'minecraft:oak_boat', 'minecraft:redstone'] })

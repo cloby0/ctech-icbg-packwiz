@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('botania:runic_altar', 1),
         [
-            'AAA',
+            'WAA',
             'DCD',
             'BAB'
         ],
@@ -13,9 +13,10 @@ ServerEvents.recipes(event => {
             A: 'botania:livingrock_bricks',
             B: 'botania:livingrock',
             C: 'botania:mana_diamond',
-            D: 'gtceu:manasteel_bolt'
+            D: 'gtceu:manasteel_bolt',
+            W: '#forge:tools/wrenches'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
     addRunicAltarRecipe(event, {
         output: { count: 1, item: 'kubejs:florid_compound' },
         mana: 5200,

@@ -2,28 +2,28 @@ ServerEvents.recipes(event => {
 
 
     event.shaped(Item.of('morerelics:moodworm', 1), [
-        'WBW', 'BDB', 'WBW'
-    ], { 'W': 'minecraft:white_wool', 'B': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
+        'WCW', 'BDB', 'WBW'
+    ], { 'W': 'minecraft:white_wool', 'B': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('morerelics:axolotl_cream', 1), [
-        'GKG', 'KDK', 'GKG'
-    ], { 'G': 'minecraft:glass_bottle', 'K': 'minecraft:kelp', 'D': 'nameless_trinkets:dubious_dust' })
+        'GMG', 'KDK', 'GKG'
+    ], { 'G': 'minecraft:glass_bottle', 'K': 'minecraft:kelp', 'D': 'nameless_trinkets:dubious_dust', 'M': '#forge:tools/mortars' }).damageIngredient(Ingredient.of('#forge:tools/mortars'))
 
     event.shaped(Item.of('morerelics:eject_button', 1), [
-        'RIR', 'IDI', 'RIR'
-    ], { 'R': 'minecraft:redstone', 'I': 'minecraft:iron_ingot', 'D': 'nameless_trinkets:dubious_dust' })
+        'ZIR', 'IDI', 'RIR'
+    ], { 'R': 'minecraft:redstone', 'I': 'minecraft:iron_ingot', 'D': 'nameless_trinkets:dubious_dust', 'Z': '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(Item.of('morerelics:depleted_spool', 1), [
-        'ISI', 'SDS', 'ISI'
-    ], { 'I': 'minecraft:iron_ingot', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
+        'ICI', 'SDS', 'ISI'
+    ], { 'I': 'minecraft:iron_ingot', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('morerelics:slumbering_amulet', 1), [
-        'GGG', 'GDG', 'PPP'
-    ], { 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'P': 'minecraft:poppy' })
+        'FGG', 'GDG', 'PPP'
+    ], { 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'P': 'minecraft:poppy', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('morerelics:whispering_amulett', 1), [
-        'FGF', 'GDG', 'FGF'
-    ], { 'F': 'minecraft:feather', 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust' })
+        'ZGF', 'GDG', 'FGF'
+    ], { 'F': 'minecraft:feather', 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'Z': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',

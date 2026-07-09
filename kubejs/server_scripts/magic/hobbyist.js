@@ -6,16 +6,17 @@ ServerEvents.recipes(event => {
             [
                 'BDB',
                 'ACA',
-                'EEE'
+                'EWE'
             ],
             {
                  A: '#forge:plates/iron',
                  B: 'gtceu:iron_bolt',
                  C: 'minecraft:cauldron',
                  D: '#forge:plates/gold',
-                 E: '#minecraft:wooden_slabs'
+                 E: '#minecraft:wooden_slabs',
+                 W: '#forge:tools/wrenches'
             }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     event.remove({ id: 'ars_nouveau:imbuement_fire_essence' });
     event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
@@ -236,31 +237,35 @@ ServerEvents.recipes(event => {
     event.shaped(
                  Item.of('reliquary:fortune_coin', 1),
                  [
-                    ' A ',
+                    'HAF',
                     'ACA',
                     ' A '
                  ],
                  {
                      A: 'irons_spellbooks:arcane_essence',
-                     C: 'gtceu:double_gold_plate'
+                     C: 'gtceu:double_gold_plate',
+                     H: '#forge:tools/hammers',
+                     F: '#forge:tools/files'
                  }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'irons_spellbooks:inscription_table' })
     event.shaped(
                 Item.of('irons_spellbooks:inscription_table', 1),
                  [
-                    'A B',
+                    'ASB',
                     'CCC',
-                    'D D'
+                    'DMD'
                  ],
                  {
                      A: 'irons_spellbooks:common_ink',
                      B: 'minecraft:book',
                      C: '#minecraft:wooden_slabs',
-                     D: '#minecraft:logs'
+                     D: '#minecraft:logs',
+                     S: '#forge:tools/saws',
+                     M: '#forge:tools/mallets'
                  }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/saws')).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     // Base spellbook = bind the four elements around a book, cased in copper.
     event.remove({ output: 'irons_spellbooks:copper_spell_book' });
@@ -269,7 +274,7 @@ ServerEvents.recipes(event => {
         [
             'PFP',
             'WBA',
-            'PEP'
+            'PEH'
         ],
         {
             F: 'ars_nouveau:fire_essence',
@@ -277,22 +282,25 @@ ServerEvents.recipes(event => {
             A: 'ars_nouveau:air_essence',
             E: 'ars_nouveau:earth_essence',
             B: 'minecraft:book',
-            P: '#forge:plates/copper'
+            P: '#forge:plates/copper',
+            H: '#forge:tools/hammers'
         }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
 
     // Iron spell book = direct upgrade of the copper book, reinforced with iron.
     event.remove({ output: 'irons_spellbooks:iron_spell_book' });
     event.shaped(
         Item.of('irons_spellbooks:iron_spell_book', 1),
         [
-            ' I ',
+            'HIF',
             'ICI',
             ' I '
         ],
         {
             I: '#forge:plates/iron',
-            C: 'irons_spellbooks:copper_spell_book'
+            C: 'irons_spellbooks:copper_spell_book',
+            H: '#forge:tools/hammers',
+            F: '#forge:tools/files'
         }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'));
 });

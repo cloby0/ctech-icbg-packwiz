@@ -3,12 +3,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'extrabotany:pedestal_livingrock' })
     event.shaped('extrabotany:pedestal_livingrock', [
         'CPC',
-        ' C ',
+        'HC ',
         'CCC'
     ], {
         C: 'botania:livingrock',
-        P: 'botania:manasteel_ingot'
-    })
+        P: 'botania:manasteel_ingot',
+        H: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     addImbuementRecipe(event, {
         input: 'botania:terrasteel_ingot',

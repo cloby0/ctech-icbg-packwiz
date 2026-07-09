@@ -5,28 +5,30 @@ ServerEvents.recipes(event => {
     event.shaped('apprenticecodex:apprentice_desk', [
         'CAC',
         'SSS',
-        'F F'
+        'FMF'
     ], {
         C: 'gtceu:luminessence_dust',
         A: 'irons_spellbooks:arcane_essence',
         S: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences'
-    })
+        F: '#minecraft:wooden_fences',
+        M: '#forge:tools/mallets'
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'apprenticecodex:arcanum_in_a_jar' })
     event.shaped('apprenticecodex:arcanum_in_a_jar', [
         'GAG',
         'GLG',
-        'GGG'
+        'GMG'
     ], {
         G: 'minecraft:glass_pane',
         A: 'irons_spellbooks:arcane_ingot',
-        L: 'gtceu:luminessence_dust'
-    })
+        L: 'gtceu:luminessence_dust',
+        M: '#forge:tools/mallets'
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'apprenticecodex:essence_smoker' })
     event.shaped('apprenticecodex:essence_smoker', [
-        'A A',
+        'AMA',
         'FEF',
         'LCL'
     ], {
@@ -34,19 +36,21 @@ ServerEvents.recipes(event => {
         F: '#minecraft:wooden_fences',
         E: 'irons_spellbooks:arcane_essence',
         L: 'gtceu:luminessence_dust',
-        C: 'minecraft:campfire'
-    })
+        C: 'minecraft:campfire',
+        M: '#forge:tools/mallets'
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'apprenticecodex:rapid_spellcaster_round' })
     event.shaped(Item.of('apprenticecodex:rapid_spellcaster_round', 12), [
-        'A',
-        'C',
-        'L'
+        'A ',
+        'CH',
+        'L '
     ], {
         A: 'minecraft:amethyst_shard',
         C: 'minecraft:copper_ingot',
-        L: 'gtceu:luminessence_dust'
-    })
+        L: 'gtceu:luminessence_dust',
+        H: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     const apprenticeMageArmor = [
         ['apprentice_mage_scarf',    'irons_spellbooks:wandering_magician_helmet'],
@@ -68,117 +72,130 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'apprenticecodex:spellcaster_workbench' })
     event.shaped('apprenticecodex:spellcaster_workbench', [
-        ' S ',
+        'WSM',
         'XXX',
         'FAF'
     ], {
         S: 'ars_nouveau:source_gem',
         X: '#minecraft:wooden_slabs',
         F: '#minecraft:wooden_fences',
-        A: 'irons_spellbooks:arcane_ingot'
-    })
+        A: 'irons_spellbooks:arcane_ingot',
+        W: '#forge:tools/saws',
+        M: '#forge:tools/mallets'
+    }).damageIngredient(Ingredient.of('#forge:tools/saws')).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'apprenticecodex:spell_calibration_bench' })
     event.shaped('apprenticecodex:spell_calibration_bench', [
         'ASI',
         'XXX',
-        'F F'
+        'FDF'
     ], {
         A: 'minecraft:amethyst_shard',
         S: 'ars_nouveau:source_gem',
         I: 'irons_spellbooks:scroll',
         X: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences'
-    })
+        F: '#minecraft:wooden_fences',
+        D: '#forge:tools/screwdrivers'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.remove({ id: 'apprenticecodex:copper_swingcast_staff' })
     event.shaped('apprenticecodex:copper_swingcast_staff', [
-        ' AB',
+        'HAB',
         'SWC',
-        'C  '
+        'C F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         B: 'irons_spellbooks:lightning_bottle',
         S: 'ars_nouveau:source_gem',
         W: 'gtceu:long_wood_rod',
-        C: 'create:copper_sheet'
-    })
+        C: 'create:copper_sheet',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:iron_swingcast_staff' })
     event.shaped('apprenticecodex:iron_swingcast_staff', [
-        ' AG',
+        'HAG',
         'SWI',
-        'I  '
+        'I F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         S: 'ars_nouveau:source_gem',
         W: 'gtceu:long_wood_rod',
-        I: 'create:iron_sheet'
-    })
+        I: 'create:iron_sheet',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:silver_swingcast_staff' })
     event.shaped('apprenticecodex:silver_swingcast_staff', [
-        ' AG',
+        'HAG',
         'SWR',
-        'A  '
+        'A F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         S: 'ars_nouveau:source_gem',
         W: 'gtceu:long_wood_rod',
-        R: 'irons_spellbooks:silver_ring'
-    })
+        R: 'irons_spellbooks:silver_ring',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:grimoire_manifest' })
     event.shaped('apprenticecodex:grimoire_manifest', [
-        ' E ',
+        'FE ',
         'SBS',
         ' S '
     ], {
         E: 'minecraft:ender_eye',
         S: 'ars_nouveau:source_gem',
-        B: 'irons_spellbooks:ruined_book'
-    })
+        B: 'irons_spellbooks:ruined_book',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:spellcasters_flask' })
     event.shaped('apprenticecodex:spellcasters_flask', [
-        ' A ',
+        'FA ',
         'DBD',
         ' S '
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         D: 'minecraft:diamond',
         B: 'minecraft:glass_bottle',
-        S: 'ars_nouveau:source_gem'
-    })
+        S: 'ars_nouveau:source_gem',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:spellcaster_ammo_pouch' })
     event.shaped('apprenticecodex:spellcaster_ammo_pouch', [
         'SAS',
         'LCL',
-        'LLL'
+        'LKL'
     ], {
         S: 'ars_nouveau:source_gem',
         A: 'irons_spellbooks:arcane_ingot',
         L: 'minecraft:leather',
-        C: '#forge:chests'
-    })
+        C: '#forge:chests',
+        K: '#forge:tools/knives'
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ id: 'apprenticecodex:spellcaster_quiver' })
     event.shaped('apprenticecodex:spellcaster_quiver', [
-        'S S',
+        'SHS',
         'ACA',
         ' A '
     ], {
         S: 'ars_nouveau:source_gem',
         A: 'irons_spellbooks:arcane_ingot',
-        C: '#forge:chests'
-    })
+        C: '#forge:chests',
+        H: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'apprenticecodex:explorers_cane' })
     event.shaped('apprenticecodex:explorers_cane', [
-        ' CG',
+        'FCG',
         ' IA',
         'S  '
     ], {
@@ -186,20 +203,22 @@ ServerEvents.recipes(event => {
         G: 'ars_nouveau:source_gem',
         I: 'irons_spellbooks:graybeard_staff',
         A: 'irons_spellbooks:arcane_ingot',
-        S: 'gtceu:wood_rod'
-    })
+        S: 'gtceu:wood_rod',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:magi_compressor_gadget' })
     event.shaped('apprenticecodex:magi_compressor_gadget', [
         'TST',
-        'S S',
+        'SWS',
         'ABA'
     ], {
         T: 'create:copper_backtank',
         S: 'ars_nouveau:source_gem',
         A: 'irons_spellbooks:arcane_ingot',
-        B: '#forge:ingots/brass'
-    })
+        B: '#forge:ingots/brass',
+        W: '#forge:tools/wrenches'
+    }).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     const enchantressArmor = [
         ['enchantress_hat',      'irons_spellbooks:pumpkin_helmet'],
@@ -222,32 +241,36 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'apprenticecodex:copper_spellcaster_gun' })
     event.shaped('apprenticecodex:copper_spellcaster_gun', [
         'CAL',
-        ' CS',
-        ' TC'
+        'DCS',
+        'FTC'
     ], {
         C: 'create:copper_sheet',
         A: 'irons_spellbooks:arcane_ingot',
         L: 'irons_spellbooks:lightning_bottle',
         S: 'ars_nouveau:source_gem',
-        T: 'gtceu:steel_ingot'
-    })
+        T: 'gtceu:steel_ingot',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:iron_spellcaster_gun' })
     event.shaped('apprenticecodex:iron_spellcaster_gun', [
         'IAE',
-        ' IS',
-        ' TI'
+        'DIS',
+        'FTI'
     ], {
         I: 'create:iron_sheet',
         A: 'irons_spellbooks:arcane_ingot',
         E: 'minecraft:ender_pearl',
         S: 'ars_nouveau:source_gem',
-        T: 'gtceu:steel_ingot'
-    })
+        T: 'gtceu:steel_ingot',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:spell_dispenser' })
     event.shaped('apprenticecodex:spell_dispenser', [
-        'XWX',
+        'XDX',
         'WBW',
         'AGA'
     ], {
@@ -255,83 +278,93 @@ ServerEvents.recipes(event => {
         W: 'gtceu:long_wood_rod',
         B: 'minecraft:bow',
         A: 'irons_spellbooks:arcane_ingot',
-        G: 'ars_nouveau:source_gem'
-    })
+        G: 'ars_nouveau:source_gem',
+        D: '#forge:tools/screwdrivers'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
 
     event.remove({ id: 'apprenticecodex:gold_swingcast_staff' })
     event.shaped('apprenticecodex:gold_swingcast_staff', [
-        ' AG',
+        'MAG',
         'HWI',
-        'I  '
+        'I F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         H: 'gtceu:holy_silver_ingot',
         W: 'gtceu:iron_rod',
-        I: 'create:golden_sheet'
-    })
+        I: 'create:golden_sheet',
+        M: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:diamond_swingcast_staff' })
     event.shaped('apprenticecodex:diamond_swingcast_staff', [
-        ' AG',
+        'MAG',
         'HWD',
-        'D  '
+        'D F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         H: 'gtceu:holy_silver_ingot',
         W: 'gtceu:iron_rod',
-        D: 'minecraft:diamond'
-    })
+        D: 'minecraft:diamond',
+        M: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:crystal_bladed_staff' })
     event.shaped('apprenticecodex:crystal_bladed_staff', [
-        ' HS',
+        'FHS',
         ' AH',
         'H  '
     ], {
         H: 'gtceu:holy_silver_ingot',
         S: 'minecraft:diamond_sword',
-        A: 'irons_spellbooks:arcane_ingot'
-    })
+        A: 'irons_spellbooks:arcane_ingot',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:reflectcast_shield' })
     event.shaped('apprenticecodex:reflectcast_shield', [
-        'AGA',
+        'MGA',
         'HSH',
         'AGA'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass_pane',
         H: 'gtceu:holy_silver_ingot',
-        S: 'minecraft:shield'
-    })
+        S: 'minecraft:shield',
+        M: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'apprenticecodex:atelier_station' })
     event.shaped('apprenticecodex:atelier_station', [
         'BMH',
         'SSS',
-        'F F'
+        'FLF'
     ], {
         B: 'apprenticecodex:spellcasters_flask',
         M: 'irons_spellbooks:magic_cloth',
         H: 'gtceu:holy_silver_ingot',
         S: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences'
-    })
+        F: '#minecraft:wooden_fences',
+        L: '#forge:tools/mallets'
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     event.remove({ id: 'apprenticecodex:autocast_amulet' })
     event.shaped('apprenticecodex:autocast_amulet', [
-        'H H',
+        'HDH',
         'ACA',
-        ' M '
+        'FM '
     ], {
         H: 'gtceu:holy_silver_ingot',
         A: 'irons_spellbooks:arcane_ingot',
         C: 'minecraft:clock',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     const stealthRuneArmor = [
         ['stealth_rune_armor_head', 'minecraft:golden_helmet'],
@@ -354,97 +387,110 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'apprenticecodex:gold_spellcaster_gun' })
     event.shaped('apprenticecodex:gold_spellcaster_gun', [
         'TAH',
-        ' TR',
-        ' BT'
+        'DTR',
+        'FBT'
     ], {
         T: 'gtceu:stainless_steel_ingot',
         A: 'irons_spellbooks:arcane_ingot',
         H: 'gtceu:holy_silver_ingot',
         R: 'minecraft:redstone',
-        B: '#minecraft:buttons'
-    })
+        B: '#minecraft:buttons',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:multipurpose_staffrifle' })
     event.shaped('apprenticecodex:multipurpose_staffrifle', [
         'MWL',
-        ' MH',
-        ' TM'
+        'DMH',
+        'FTM'
     ], {
         M: 'irons_spellbooks:mithril_ingot',
         W: 'irons_spellbooks:weapon_parts',
         L: 'irons_spellbooks:cooldown_upgrade_orb',
         H: 'gtceu:holy_silver_ingot',
-        T: 'gtceu:stainless_steel_ingot'
-    })
+        T: 'gtceu:stainless_steel_ingot',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:circuit_heat_staff' })
     event.shaped('apprenticecodex:circuit_heat_staff', [
-        ' PH',
-        ' WT',
+        'CPH',
+        'DWT',
         'P  '
     ], {
         P: 'irons_spellbooks:pyrium_ingot',
         H: 'gtceu:holy_silver_ingot',
         W: 'gtceu:iron_rod',
-        T: 'gtceu:stainless_steel_ingot'
-    })
+        T: 'gtceu:stainless_steel_ingot',
+        C: '#forge:tools/wire_cutters',
+        D: '#forge:tools/screwdrivers'
+    }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters')).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
 
     event.remove({ id: 'apprenticecodex:mithril_freecast_staff' })
     event.shaped('apprenticecodex:mithril_freecast_staff', [
-        ' AG',
+        'MAG',
         'LWP',
-        'D  '
+        'D F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         L: 'irons_spellbooks:magic_cloth',
         W: 'irons_spellbooks:weapon_parts',
         P: 'gtceu:prima_materia_plate',
-        D: 'irons_spellbooks:mithril_scrap'
-    })
+        D: 'irons_spellbooks:mithril_scrap',
+        M: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:revolvercast_staff' })
     event.shaped('apprenticecodex:revolvercast_staff', [
-        ' AG',
+        'DAG',
         'LPM',
-        'X  '
+        'X F'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
         L: 'irons_spellbooks:magic_cloth',
         P: 'gtceu:prima_materia_plate',
         M: 'irons_spellbooks:mithril_ingot',
-        X: 'irons_spellbooks:pyrium_ingot'
-    })
+        X: 'irons_spellbooks:pyrium_ingot',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:elemental_bow' })
     event.shaped('apprenticecodex:elemental_bow', [
-        ' AS',
+        'CAS',
         'PMS',
         ' AS'
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         S: 'minecraft:string',
         P: 'gtceu:prima_materia_plate',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        C: '#forge:tools/wire_cutters'
+    }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.remove({ id: 'apprenticecodex:charged_twin_blade_staff' })
     event.shaped('apprenticecodex:charged_twin_blade_staff', [
-        ' PS',
-        ' TP',
+        'HPS',
+        'FTP',
         'A  '
     ], {
         P: 'gtceu:prima_materia_plate',
         S: 'minecraft:netherite_sword',
         T: 'minecraft:trident',
-        A: 'irons_spellbooks:arcane_ingot'
-    })
+        A: 'irons_spellbooks:arcane_ingot',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:mana_force_blade' })
     event.shaped('apprenticecodex:mana_force_blade', [
-        'CAC',
+        'CAH',
         'RAP',
         'PSW'
     ], {
@@ -453,37 +499,40 @@ ServerEvents.recipes(event => {
         R: 'irons_spellbooks:protection_rune',
         P: 'gtceu:prima_materia_plate',
         S: 'minecraft:netherite_sword',
-        W: 'irons_spellbooks:mithril_scrap'
-    })
+        W: 'irons_spellbooks:mithril_scrap',
+        H: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'apprenticecodex:smashcast_scepter' })
     event.shaped('apprenticecodex:smashcast_scepter', [
-        ' MI',
+        'HMI',
         ' WM',
         'P  '
     ], {
         M: 'irons_spellbooks:mithril_scrap',
         I: 'minecraft:iron_block',
         W: 'irons_spellbooks:weapon_parts',
-        P: 'gtceu:prima_materia_plate'
-    })
+        P: 'gtceu:prima_materia_plate',
+        H: '#forge:tools/hammers'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'apprenticecodex:photon_siphon' })
     event.shaped('apprenticecodex:photon_siphon', [
         'PAP',
         'LSL',
-        'SCS'
+        'FCS'
     ], {
         P: 'gtceu:prima_materia_plate',
         A: 'irons_spellbooks:arcane_ingot',
         L: 'gtceu:glass_lens',
         S: 'irons_spellbooks:mithril_scrap',
-        C: 'ars_nouveau:source_gem'
-    })
+        C: 'ars_nouveau:source_gem',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:mana_thruster' })
     event.shaped('apprenticecodex:mana_thruster', [
-        'FSF',
+        'WSF',
         'PAP',
         'MSM'
     ], {
@@ -491,48 +540,53 @@ ServerEvents.recipes(event => {
         S: 'ars_nouveau:source_gem',
         P: 'gtceu:prima_materia_plate',
         A: 'irons_spellbooks:arcane_ingot',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        W: '#forge:tools/wrenches'
+    }).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     event.remove({ id: 'apprenticecodex:scarlet_thirst' })
     event.shaped('apprenticecodex:scarlet_thirst', [
         'VIP',
         'IMI',
-        ' I '
+        'FI '
     ], {
         V: 'irons_spellbooks:blood_vial',
         I: 'irons_spellbooks:arcane_ingot',
         P: 'gtceu:prima_materia_plate',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:protection_spell_supporter' })
     event.shaped('apprenticecodex:protection_spell_supporter', [
-        ' P ',
+        'DP ',
         'PMP',
         'ARA'
     ], {
         P: 'gtceu:prima_materia_plate',
         M: 'irons_spellbooks:mithril_scrap',
         A: 'irons_spellbooks:arcane_ingot',
-        R: 'irons_spellbooks:protection_rune'
-    })
+        R: 'irons_spellbooks:protection_rune',
+        D: '#forge:tools/screwdrivers'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.remove({ id: 'apprenticecodex:craftsmans_delight' })
     event.shaped('apprenticecodex:craftsmans_delight', [
         'RIP',
         'IMI',
-        ' I '
+        'HIF'
     ], {
         R: 'irons_spellbooks:nature_rune',
         I: 'irons_spellbooks:arcane_ingot',
         P: 'gtceu:prima_materia_plate',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:mana_shield_charm' })
     event.shaped('apprenticecodex:mana_shield_charm', [
-        'SRS',
+        'FRS',
         'APA',
         'SMS'
     ], {
@@ -540,33 +594,37 @@ ServerEvents.recipes(event => {
         R: 'irons_spellbooks:protection_rune',
         A: 'irons_spellbooks:arcane_ingot',
         P: 'gtceu:prima_materia_plate',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:jumpcast_charm' })
     event.shaped('apprenticecodex:jumpcast_charm', [
         'SRS',
         'PAP',
-        'MSM'
+        'DSM'
     ], {
         S: 'apprenticecodex:spellstained_arcane_ingot',
         R: 'gtceu:steel_spring',
         P: 'gtceu:prima_materia_plate',
         A: 'ars_nouveau:source_gem',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        D: '#forge:tools/screwdrivers'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.remove({ id: 'apprenticecodex:spell_cast_parrying_ring' })
     event.shaped('apprenticecodex:spell_cast_parrying_ring', [
         'SIR',
         'IPI',
-        ' I '
+        'HIF'
     ], {
         S: 'apprenticecodex:reflectcast_shield',
         I: 'irons_spellbooks:arcane_ingot',
         R: 'irons_spellbooks:protection_rune',
-        P: 'gtceu:prima_materia_plate'
-    })
+        P: 'gtceu:prima_materia_plate',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     const chromaticArmor = [
         ['chromatic_magia_dress_hat',      'irons_spellbooks:wizard_base_helmet'],
@@ -589,130 +647,146 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'apprenticecodex:diamond_spellcaster_gun' })
     event.shaped('apprenticecodex:diamond_spellcaster_gun', [
         'TMP',
-        ' TR',
-        ' BT'
+        'DTR',
+        'FBT'
     ], {
         T: 'gtceu:titanium_ingot',
         M: 'irons_spellbooks:mithril_ingot',
         P: 'gtceu:prima_materia_plate',
         R: 'minecraft:redstone',
-        B: '#minecraft:buttons'
-    })
+        B: '#minecraft:buttons',
+        D: '#forge:tools/screwdrivers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:multicast_echo_staff' })
     event.shaped('apprenticecodex:multicast_echo_staff', [
-        ' ME',
-        ' PT',
+        'HME',
+        'FPT',
         'WT '
     ], {
         M: 'irons_spellbooks:mithril_ingot',
         E: 'minecraft:echo_shard',
         P: 'gtceu:prima_materia_plate',
         T: 'gtceu:titanium_ingot',
-        W: 'irons_spellbooks:weapon_parts'
-    })
+        W: 'irons_spellbooks:weapon_parts',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
 
     event.remove({ id: 'apprenticecodex:zenith_staff' })
     event.shaped('apprenticecodex:zenith_staff', [
-        ' MS',
-        ' XC',
+        'HMS',
+        'FXC',
         'P  '
     ], {
         M: 'irons_spellbooks:mithril_ingot',
         S: 'irons_spellbooks:divine_soulshard',
         X: 'botania:manasteel_ingot',
         C: 'irons_spellbooks:mithril_weave',
-        P: 'irons_spellbooks:weapon_parts'
-    })
+        P: 'irons_spellbooks:weapon_parts',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:focus_staffbow' })
     event.shaped('apprenticecodex:focus_staffbow', [
-        ' MS',
+        'CMS',
         'DXS',
         ' MS'
     ], {
         M: 'irons_spellbooks:mithril_ingot',
         S: 'minecraft:string',
         D: 'irons_spellbooks:divine_soulshard',
-        X: 'botania:manasteel_ingot'
-    })
+        X: 'botania:manasteel_ingot',
+        C: '#forge:tools/wire_cutters'
+    }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.remove({ id: 'apprenticecodex:illuminate_stellar_staff' })
     event.shaped('apprenticecodex:illuminate_stellar_staff', [
-        ' YS',
+        'FYS',
         ' NY',
         'X  '
     ], {
         Y: 'botania:mana_glass',
         S: 'minecraft:netherite_sword',
         N: 'minecraft:nether_star',
-        X: 'botania:manasteel_ingot'
-    })
+        X: 'botania:manasteel_ingot',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:unite_luna_staff' })
     event.shaped('apprenticecodex:unite_luna_staff', [
-        ' PS',
-        ' RP',
+        'HPS',
+        'FRP',
         'X  '
     ], {
         P: 'botania:mana_glass',
         S: 'minecraft:netherite_sword',
         R: 'irons_spellbooks:silver_ring',
-        X: 'botania:manasteel_ingot'
-    })
+        X: 'botania:manasteel_ingot',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:pastel_staff' })
     event.shaped('apprenticecodex:pastel_staff', [
-        ' MU',
-        ' X ',
+        'HMU',
+        'FX ',
         'P  '
     ], {
         M: 'irons_spellbooks:mithril_ingot',
         U: 'irons_spellbooks:upgrade_orb',
         X: 'botania:manasteel_ingot',
-        P: 'irons_spellbooks:weapon_parts'
-    })
+        P: 'irons_spellbooks:weapon_parts',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:satellite_followcast_amulet' })
     event.shaped('apprenticecodex:satellite_followcast_amulet', [
         'X X',
         'ADA',
-        ' M '
+        'FM '
     ], {
         X: 'botania:manasteel_ingot',
         A: 'apprenticecodex:spellstained_arcane_ingot',
         D: 'minecraft:diamond',
-        M: 'irons_spellbooks:mithril_scrap'
-    })
+        M: 'irons_spellbooks:mithril_scrap',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:scrollcaster_gauntlet' })
     event.shaped('apprenticecodex:scrollcaster_gauntlet', [
-        ' M ',
+        'HMF',
         'MDM',
         'XBX'
     ], {
         M: 'irons_spellbooks:mithril_scrap',
         D: 'minecraft:diamond',
         X: 'botania:manasteel_ingot',
-        B: 'minecraft:chiseled_bookshelf'
-    })
+        B: 'minecraft:chiseled_bookshelf',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:absorption_amplify_amulet' })
     event.shaped('apprenticecodex:absorption_amplify_amulet', [
         'XIX',
         'MGM',
-        ' M '
+        'FM '
     ], {
         X: 'botania:manasteel_ingot',
         I: 'irons_spellbooks:mithril_ingot',
         M: 'irons_spellbooks:mithril_scrap',
-        G: 'minecraft:enchanted_golden_apple'
-    })
+        G: 'minecraft:enchanted_golden_apple',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:archivists_grimoire' })
     event.shaped('apprenticecodex:archivists_grimoire', [
-        'MXM',
+        'KXM',
         'CBC',
         'MWM'
     ], {
@@ -720,8 +794,9 @@ ServerEvents.recipes(event => {
         X: 'botania:manasteel_ingot',
         C: '#forge:chests',
         B: 'irons_spellbooks:ruined_book',
-        W: 'irons_spellbooks:mithril_weave'
-    })
+        W: 'irons_spellbooks:mithril_weave',
+        K: '#forge:tools/knives'
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     const elementMaidenArmor = [
         ['element_maiden_robe_ribbon',   'irons_spellbooks:wizard_base_helmet'],

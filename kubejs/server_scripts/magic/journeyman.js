@@ -42,14 +42,15 @@ ServerEvents.recipes(event => {
             Item.of('kubejs:magebloom_sieve', 1),
             [
                 'BAB',
-                'AAA',
+                'ACA',
                 'BAB'
             ],
             {
                 A: 'ars_nouveau:magebloom_fiber',
-                B: 'aether:carved_stone'
+                B: 'aether:carved_stone',
+                C: '#forge:tools/wire_cutters'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'));
     event.shaped(
             Item.of('reliquary:interdiction_torch', 3),
             [
@@ -65,16 +66,17 @@ ServerEvents.recipes(event => {
     event.shaped(
             Item.of('reliquary:alkahestry_altar', 1),
             [
-                'ABA',
+                'AHA',
                 'BCB',
                 'ABA'
             ],
             {
                 A: 'gtceu:lead_plate',
                 B: 'gtceu:luminessence_dust',
-                C: 'minecraft:glowstone'
+                C: 'minecraft:glowstone',
+                H: '#forge:tools/hammers'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
     event.shaped(
             Item.of('enderstorage:ender_chest', 1),
             [
@@ -107,32 +109,34 @@ ServerEvents.recipes(event => {
             [
                 'ABA',
                 'ACA',
-                ' A '
+                'KA '
             ],
             {
                 A: 'irons_spellbooks:magic_cloth',
                 C: 'enderstorage:ender_chest',
-                B: 'gtceu:luminessence_dust'
+                B: 'gtceu:luminessence_dust',
+                K: '#forge:tools/knives'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/knives'));
     event.shaped(
             Item.of('ars_nouveau:source_jar', 1),
             [
                 'AAA',
                 'BCB',
-                'ADA'
+                'MDA'
             ],
             {
                 A: 'ars_nouveau:archwood_slab',
                 B: 'minecraft:glass',
                 C: 'aether:ambrosium_shard',
-                D: '#forge:plates/gold'
+                D: '#forge:plates/gold',
+                M: '#forge:tools/mallets'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/mallets'));
     event.shaped(
             Item.of('ars_nouveau:storage_lectern', 1),
             [
-                ' E ',
+                'HEM',
                 'CDC',
                 'ABA'
             ],
@@ -141,28 +145,31 @@ ServerEvents.recipes(event => {
                 B: 'ars_nouveau:repository',
                 C: 'aether:ambrosium_shard',
                 D: 'minecraft:lectern',
-                E: 'irons_spellbooks:iron_spell_book'
+                E: 'irons_spellbooks:iron_spell_book',
+                H: '#forge:tools/hammers',
+                M: '#forge:tools/mallets'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/mallets'));
 
     event.shaped(
             Item.of('ars_nouveau:repository', 1),
             [
                 'ACA',
-                'B B',
+                'BDB',
                 'ACA'
             ],
             {
                 A: '#forge:screws/gold',
                 B: '#forge:logs/archwood',
-                C: 'ars_nouveau:archwood_slab'
+                C: 'ars_nouveau:archwood_slab',
+                D: '#forge:tools/screwdrivers'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'));
 
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
             [
-                'DAD',
+                'FAD',
                 'BCB',
                 'DAD'
             ],
@@ -170,9 +177,10 @@ ServerEvents.recipes(event => {
                 A: '#forge:plates/iron',
                 B: 'minecraft:glass',
                 C: 'gtceu:luminessence_dust',
-                D: '#forge:rods/silver'
+                D: '#forge:rods/silver',
+                F: '#forge:tools/files'
             }
-        );
+        ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
     addImbuementRecipe(event, {
         input: 'gtceu:source_dust',

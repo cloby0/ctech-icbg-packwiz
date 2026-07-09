@@ -5,32 +5,36 @@ ServerEvents.recipes(event => {
         Item.of('irons_spellbooks:arcane_anvil', 1),
         [
             'AAA',
-            ' S ',
+            'HSW',
             'MVM'
         ],
         {
             A: 'minecraft:amethyst_block',
             S: 'ars_nouveau:source_gem',
             M: 'gtceu:mithril_plate',
-            V: 'minecraft:anvil'
+            V: 'minecraft:anvil',
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     event.remove({ id: 'irons_spellbooks:scroll_forge' })
     event.shaped(
         Item.of('irons_spellbooks:scroll_forge', 1),
         [
             'MDM',
-            ' O ',
+            'HOW',
             'OSO'
         ],
         {
             M: 'gtceu:mithril_plate',
             D: 'minecraft:polished_deepslate',
             O: 'minecraft:crying_obsidian',
-            S: 'ars_nouveau:source_gem'
+            S: 'ars_nouveau:source_gem',
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     addImbuementRecipe(event, {
         input: 'minecraft:book',
@@ -103,11 +107,12 @@ ServerEvents.recipes(event => {
 
     runeRecipes.forEach(r => {
         event.remove({ id: r.id })
-        event.shaped(Item.of(r.id, 1), ['EFE', 'FBF', 'EFE'], {
+        event.shaped(Item.of(r.id, 1), ['EZE', 'FBF', 'EFE'], {
             E: r.themeItem,
             F: 'ars_nouveau:source_gem',
-            B: 'irons_spellbooks:blank_rune'
-        })
+            B: 'irons_spellbooks:blank_rune',
+            Z: '#forge:tools/files'
+        }).damageIngredient(Ingredient.of('#forge:tools/files'))
     })
 
     const orbRecipes = [
@@ -128,11 +133,12 @@ ServerEvents.recipes(event => {
 
     orbRecipes.forEach(r => {
         event.remove({ id: r.id })
-        event.shaped(Item.of(r.id, 1), ['RTR', 'TUT', 'RTR'], {
+        event.shaped(Item.of(r.id, 1), ['RZR', 'TUT', 'RTR'], {
             R: r.rune,
             T: r.theme,
-            U: 'irons_spellbooks:upgrade_orb'
-        })
+            U: 'irons_spellbooks:upgrade_orb',
+            Z: '#forge:tools/files'
+        }).damageIngredient(Ingredient.of('#forge:tools/files'))
     })
 
     addEnchantingRecipe(event, {

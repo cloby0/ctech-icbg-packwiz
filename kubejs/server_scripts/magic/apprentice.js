@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:imbuement_chamber', 1),
                  [
-                    ' E ',
+                    'HEF',
                     'BCB',
                     'ADA'
                  ],
@@ -12,9 +12,11 @@ ServerEvents.recipes(event => {
                      B: '#forge:rods/gold',
                      C: 'minecraft:quartz',
                      D: '#forge:plates/silver',
-                     E: 'minecraft:glowstone_dust'
+                     E: 'minecraft:glowstone_dust',
+                     H: '#forge:tools/hammers',
+                     F: '#forge:tools/files'
                  }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'));
 
 
     addImbuementRecipe(event, {
@@ -37,7 +39,7 @@ ServerEvents.recipes(event => {
         Item.of('ars_nouveau:scribes_table', 1),
                  [
                     'DEF',
-                    'BBB',
+                    'BSB',
                     'ACA'
                  ],
                  {
@@ -46,15 +48,16 @@ ServerEvents.recipes(event => {
                      C: '#forge:screws/gold',
                      D: 'irons_spellbooks:common_ink',
                      E: 'irons_spellbooks:magic_cloth',
-                     F: 'minecraft:feather'
+                     F: 'minecraft:feather',
+                     S: '#forge:tools/screwdrivers'
                  }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'));
 
     event.remove({ id: 'ars_nouveau:novice_spell_book' });
     event.shaped(
         Item.of('ars_nouveau:novice_spell_book', 1),
                  [
-                 ' C ',
+                 'KC ',
                  'ABG',
                  ' C '
                  ],
@@ -62,9 +65,10 @@ ServerEvents.recipes(event => {
                      A: 'irons_spellbooks:magic_cloth',
                      B: 'minecraft:book',
                      C: 'irons_spellbooks:arcane_essence',
-                     G: 'gtceu:gold_foil'
+                     G: 'gtceu:gold_foil',
+                     K: '#forge:tools/knives'
                  }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'));
 
     event.custom({
         "type": "hexerei:mixingcauldron",
@@ -168,14 +172,15 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:dominion_wand', 1),
                  [
-                    '  A',
+                    'F A',
                     ' B ',
                     'C  '
                  ],
                  {
                      A: 'ars_nouveau:source_gem',
                      B: '#forge:rods/gold',
-                     C: 'minecraft:ender_pearl'
+                     C: 'minecraft:ender_pearl',
+                     F: '#forge:tools/files'
                  }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/files'));
 })

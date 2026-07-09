@@ -247,15 +247,16 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('psi:detonator', 1),
         [
-            ' B ',
+            'DB ',
             'APA',
         ],
         {
             A: '#forge:rods/steel',
             B: 'minecraft:stone_button',
-            P: 'psi:psidust'
+            P: 'psi:psidust',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.recipes.gtceu.assembler('psi_gold_cad_assembly')
         .itemInputs('4x create:golden_sheet', '2x psi:psidust', '#gtceu:circuits/hv')

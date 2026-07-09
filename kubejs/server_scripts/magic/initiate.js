@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('reliquary:ender_staff', 1),
         [
-            ' D ',
+            'FD ',
             'BCB',
             ' A '
         ],
@@ -38,9 +38,10 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_wood_rod',
             B: 'irons_spellbooks:ender_rune',
             C: 'reliquary:void_tear',
-            D: 'minecraft:ender_eye'
+            D: 'minecraft:ender_eye',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:shears',
@@ -52,7 +53,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('reliquary:sojourner_staff', 1),
         [
-            ' D ',
+            'FD ',
             'BCB',
             ' A '
         ],
@@ -60,14 +61,15 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_wood_rod',
             B: 'irons_spellbooks:protection_rune',
             C: 'reliquary:void_tear',
-            D: 'reliquary:lantern_of_paranoia'
+            D: 'reliquary:lantern_of_paranoia',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(
         Item.of('reliquary:glacial_staff', 1),
         [
-            ' D ',
+            'FD ',
             'BCB',
             ' A '
         ],
@@ -75,23 +77,26 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_iron_rod',
             B: 'irons_spellbooks:ice_rune',
             C: 'reliquary:void_tear',
-            D: 'minecraft:blue_ice'
+            D: 'minecraft:blue_ice',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(
         Item.of("reliquary:hero_medallion", 1),
         [
-            'CBC',
+            'CHC',
             'BAB',
-            'CBC'
+            'CFC'
         ],
         {
             A: 'reliquary:fortune_coin',
             B: 'gtceu:wrought_iron_plate',
-            C: '#forge:gems/source'
+            C: '#forge:gems/source',
+            H: '#forge:tools/hammers',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:fishing_rod',
@@ -103,7 +108,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('constructionwand:infinity_wand', 1),
         [
-            ' D ',
+            'FD ',
             'BCB',
             ' A '
         ],
@@ -111,9 +116,10 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_iron_rod',
             B: 'irons_spellbooks:evocation_rune',
             C: 'constructionwand:diamond_wand',
-            D: '#forge:gems/source'
+            D: '#forge:gems/source',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:amethyst_shard',
@@ -139,15 +145,16 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:enchanting_apparatus', 1),
         [
-            'ABA',
+            'FBA',
             'ACA',
             'ABA'
         ],
         {
             A: '#forge:rods/long/gold',
             B: 'gtceu:source_plate',
-            C: 'gtceu:luminessence_dust'
-    });
+            C: 'gtceu:luminessence_dust',
+            F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'));
 
     event.shaped(
         Item.of('ars_nouveau:arcane_pedestal', 1),
@@ -166,7 +173,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ars_nouveau:arcane_core', 1),
         [
-            'ADA',
+            'WDA',
             'BCB',
             'ADA'
         ],
@@ -174,8 +181,9 @@ ServerEvents.recipes(event => {
             A: '#forge:bolts/gold',
             B: 'ars_nouveau:archwood_fence',
             C: '#forge:gems/source',
-            D: 'gtceu:source_plate'
-    });
+            D: 'gtceu:source_plate',
+            W: '#forge:tools/wrenches'
+    }).damageIngredient(Ingredient.of('#forge:tools/wrenches'));
 
     addImbuementRecipe(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
@@ -194,16 +202,17 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('reliquary:mercy_cross', '{Damage:0}'),
         [
-            ' A ',
+            'FA ',
             'ACA',
             ' B '
         ],
         {
             A: '#forge:rods/gold',
             B: '#forge:rods/long/gold',
-            C: 'irons_spellbooks:divine_pearl'
+            C: 'irons_spellbooks:divine_pearl',
+            F: '#forge:tools/files'
         }
-    );
+    ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
     addEnchantingRecipe(event, {
         reagent: 'gtceu:silver_dust',
@@ -240,19 +249,25 @@ ServerEvents.recipes(event => {
     const SP = 'gtceu:skyforged_plate'
     const SR = 'gtceu:skyforged_rod'
     const VM = 'aether:victory_medal'
+    const TH = '#forge:tools/hammers'
+    const TF = '#forge:tools/files'
+    const TK = '#forge:tools/knives'
     ;[
-        ['aether:valkyrie_pickaxe',    ['PPP', ' R ', ' R '], { P: SP, R: SR }],
-        ['aether:valkyrie_axe',        ['PP ', 'PR ', ' R '], { P: SP, R: SR }],
-        ['aether:valkyrie_shovel',     [' P ', ' R ', ' R '], { P: SP, R: SR }],
-        ['aether:valkyrie_hoe',        ['PP ', ' R ', ' R '], { P: SP, R: SR }],
-        ['aether:valkyrie_lance',      ['  P', ' R ', 'R  '], { P: SP, R: SR }],
-        ['aether:valkyrie_helmet',     ['PPP', 'P P'],        { P: SP }],
-        ['aether:valkyrie_chestplate', ['P P', 'PPP', 'PPP'], { P: SP }],
-        ['aether:valkyrie_leggings',   ['PPP', 'P P', 'P P'], { P: SP }],
-        ['aether:valkyrie_boots',      ['P P', 'P P'],        { P: SP }],
-        ['aether:valkyrie_gloves',     ['P P', 'PMP'],        { P: SP, M: VM }],
-        ['aether:valkyrie_cape',       ['PPP', 'PMP', 'PPP'], { P: SP, M: VM }]
-    ].forEach(([out, pat, keys]) => event.shaped(out, pat, keys))
+        ['aether:valkyrie_pickaxe',    ['PPP', 'HRF', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_axe',        ['PP ', 'PRH', ' RF'], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_shovel',     ['HPF', ' R ', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_hoe',        ['PPH', ' RF', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_lance',      ['H P', ' R ', 'R F'], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_helmet',     ['PPP', 'PHP'],        { P: SP, H: TH }, [TH]],
+        ['aether:valkyrie_chestplate', ['PHP', 'PPP', 'PPP'], { P: SP, H: TH }, [TH]],
+        ['aether:valkyrie_leggings',   ['PPP', 'PHP', 'P P'], { P: SP, H: TH }, [TH]],
+        ['aether:valkyrie_boots',      ['PHP', 'P P'],        { P: SP, H: TH }, [TH]],
+        ['aether:valkyrie_gloves',     ['PHP', 'PMP'],        { P: SP, M: VM, H: TH }, [TH]],
+        ['aether:valkyrie_cape',       ['KPP', 'PMP', 'PPP'], { P: SP, M: VM, K: TK }, [TK]]
+    ].forEach(([out, pat, keys, tools]) => {
+        let r = event.shaped(out, pat, keys)
+        tools.forEach(t => r.damageIngredient(Ingredient.of(t)))
+    })
 
     addEnchantingRecipe(event, {
         reagent: { item: 'kubejs:sacred_ambrosium_shard' },
@@ -280,7 +295,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('kubejs:magical_receiver', 1),
         [
-            'HRH',
+            'DRH',
             'STS',
             'HRH'
         ],
@@ -288,14 +303,15 @@ ServerEvents.recipes(event => {
             H: 'gtceu:holy_silver_ingot',
             R: 'gtceu:holy_silver_rod',
             S: 'ars_nouveau:source_gem',
-            T: 'ars_nouveau:basic_spell_turret'
+            T: 'ars_nouveau:basic_spell_turret',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:pistol_source_ejector",HasBulletInBarrel:0b}'),
         [
-            'GPG',
+            'DPG',
             'FMR',
             'GPG'
         ],
@@ -304,15 +320,16 @@ ServerEvents.recipes(event => {
             P: 'gtceu:holy_silver_plate',
             F: 'ars_nouveau:magebloom_fiber',
             M: 'kubejs:magical_receiver',
-            R: 'gtceu:holy_silver_rod'
+            R: 'gtceu:holy_silver_rod',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_jet_ejector",HasBulletInBarrel:0b}'),
         [
             'BPB',
-            'GMG',
+            'DMG',
             'BFB'
         ],
         {
@@ -320,14 +337,15 @@ ServerEvents.recipes(event => {
             P: 'gtceu:holy_silver_plate',
             G: 'ars_nouveau:source_gem',
             M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_splash_ejector",HasBulletInBarrel:0b}'),
         [
-            'GPG',
+            'DPG',
             'PMG',
             'GFG'
         ],
@@ -335,14 +353,15 @@ ServerEvents.recipes(event => {
             G: 'ars_nouveau:source_gem',
             P: 'gtceu:holy_silver_plate',
             M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"ars_armorer:auto_rifle_stream_ejector",HasBulletInBarrel:0b}'),
         [
-            'GPG',
+            'DPG',
             'BMB',
             'RFR'
         ],
@@ -352,14 +371,15 @@ ServerEvents.recipes(event => {
             B: 'gtceu:holy_silver_bolt',
             M: 'kubejs:magical_receiver',
             R: 'gtceu:holy_silver_rod',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:sniper_distance_ejector",HasBulletInBarrel:0b}'),
         [
-            'GPO',
+            'DPO',
             'LMG',
             'PFP'
         ],
@@ -369,14 +389,15 @@ ServerEvents.recipes(event => {
             O: 'gtceu:holy_silver_foil',
             L: 'gtceu:long_holy_silver_rod',
             M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:mortar_source_thrower",HasBulletInBarrel:0b}'),
         [
-            'PGP',
+            'PDP',
             'GMG',
             'LFL'
         ],
@@ -385,14 +406,15 @@ ServerEvents.recipes(event => {
             G: 'ars_nouveau:source_gem',
             M: 'kubejs:magical_receiver',
             L: 'gtceu:long_holy_silver_rod',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_miner_drill",HasBulletInBarrel:0b}'),
         [
-            'BGB',
+            'DGB',
             'LML',
             'BFB'
         ],
@@ -401,14 +423,15 @@ ServerEvents.recipes(event => {
             G: 'ars_nouveau:source_gem',
             L: 'gtceu:long_holy_silver_rod',
             M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.shaped(
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_source_flying_blade",HasBulletInBarrel:0b}'),
         [
-            'OPO',
+            'DPO',
             'GMF',
             'OPO'
         ],
@@ -417,7 +440,8 @@ ServerEvents.recipes(event => {
             P: 'gtceu:holy_silver_plate',
             G: 'ars_nouveau:source_gem',
             M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber'
+            F: 'ars_nouveau:magebloom_fiber',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 });

@@ -15,24 +15,24 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'too_many_bows:necro_flame_bow' })
 
     event.shapeless(Item.of('too_many_bows:webstring', 4), [
-        'minecraft:cobweb', 'minecraft:string', 'minecraft:string', 'minecraft:string'
-    ])
+        'minecraft:cobweb', 'minecraft:string', 'minecraft:string', 'minecraft:string', '#forge:tools/wire_cutters'
+    ]).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('too_many_bows:hunter_bow', 1), [
-        ' L ', 'LBL', ' D '
-    ], { 'L': 'minecraft:leather', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
+        'KL ', 'LBL', ' D '
+    ], { 'L': 'minecraft:leather', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('too_many_bows:tidal_bow', 1), [
-        'KPK', ' B ', ' D '
-    ], { 'K': 'minecraft:kelp', 'P': 'minecraft:prismarine_shard', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
+        'KPK', 'NB ', ' D '
+    ], { 'K': 'minecraft:kelp', 'P': 'minecraft:prismarine_shard', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust', 'N': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('too_many_bows:torchbearer', 1), [
-        'TBT', 'TDT', ' T '
-    ], { 'T': 'minecraft:torch', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
+        'TBT', 'TDT', 'CT '
+    ], { 'T': 'minecraft:torch', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('too_many_bows:scatter_bow', 1), [
-        'A A', 'DBD', 'A A'
-    ], { 'A': 'minecraft:arrow', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust' })
+        'AKA', 'DBD', 'A A'
+    ], { 'A': 'minecraft:arrow', 'B': 'minecraft:bow', 'D': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
@@ -238,12 +238,12 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(Item.of('too_many_bows:sharpshot_ring', 1), [
-        'GDG', 'GAG', 'GDG'
-    ], { 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'A': 'minecraft:arrow' })
+        'HDF', 'GAG', 'GDG'
+    ], { 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'A': 'minecraft:arrow', 'H': '#forge:tools/hammers', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('too_many_bows:fletchers_talisman', 1), [
-        'FSF', 'SDS', 'FSF'
-    ], { 'F': 'minecraft:feather', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust' })
+        'FSF', 'CDS', 'FSF'
+    ], { 'F': 'minecraft:feather', 'S': 'minecraft:string', 'D': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',

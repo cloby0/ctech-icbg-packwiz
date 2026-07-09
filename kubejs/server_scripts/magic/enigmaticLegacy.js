@@ -5,22 +5,23 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('enigmaticlegacy:the_acknowledgment', 1),
         [
-            'H H',
+            'HKH',
             ' B ',
             ' L '
         ],
         {
             H: 'gtceu:holy_silver_ingot',
             B: 'minecraft:book',
-            L: 'minecraft:lantern'
+            L: 'minecraft:lantern',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ output: 'enigmaticlegacy:animal_guidebook' })
     event.shaped(
         Item.of('enigmaticlegacy:animal_guidebook', 1),
         [
-            ' H ',
+            'KH ',
             'fXf',
             ' a '
         ],
@@ -28,15 +29,16 @@ ServerEvents.recipes(event => {
             H: 'gtceu:holy_silver_nugget',
             f: 'minecraft:dandelion',
             X: 'minecraft:book',
-            a: 'minecraft:apple'
+            a: 'minecraft:apple',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ output: 'enigmaticlegacy:hunter_guidebook' })
     event.shaped(
         Item.of('enigmaticlegacy:hunter_guidebook', 1),
         [
-            'bp ',
+            'bpK',
             'HXH',
             ' lb'
         ],
@@ -45,30 +47,33 @@ ServerEvents.recipes(event => {
             b: 'minecraft:bone',
             p: 'minecraft:ender_pearl',
             X: 'minecraft:book',
-            l: 'minecraft:leather'
+            l: 'minecraft:leather',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ output: 'enigmaticlegacy:iron_ring' })
     event.shaped(
         Item.of('enigmaticlegacy:iron_ring', 1),
         [
-            'nXn',
+            'MXn',
             'XHX',
-            'nXn'
+            'nXF'
         ],
         {
             X: 'minecraft:iron_ingot',
             n: 'minecraft:iron_nugget',
-            H: 'gtceu:holy_silver_nugget'
+            H: 'gtceu:holy_silver_nugget',
+            M: '#forge:tools/hammers',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:mega_sponge' })
     event.shaped(
         Item.of('enigmaticlegacy:mega_sponge', 1),
         [
-            'SES',
+            'KES',
             'XNX',
             'SHS'
         ],
@@ -77,15 +82,16 @@ ServerEvents.recipes(event => {
             E: 'minecraft:ender_eye',
             X: 'minecraft:heart_of_the_sea',
             N: 'minecraft:nautilus_shell',
-            H: 'gtceu:holy_silver_plate'
+            H: 'gtceu:holy_silver_plate',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ output: 'enigmaticlegacy:extradimensional_eye' })
     event.shaped(
         Item.of('enigmaticlegacy:extradimensional_eye', 1),
         [
-            ' M ',
+            'FM ',
             'IXI',
             'NHN'
         ],
@@ -94,15 +100,16 @@ ServerEvents.recipes(event => {
             I: 'minecraft:gold_ingot',
             X: 'minecraft:ender_eye',
             N: 'minecraft:gold_nugget',
-            H: 'gtceu:holy_silver_nugget'
+            H: 'gtceu:holy_silver_nugget',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:insignia' })
     event.shaped(
         Item.of('enigmaticlegacy:insignia', 1),
         [
-            ' E ',
+            'ZEY',
             'HMG',
             'PNP'
         ],
@@ -112,9 +119,11 @@ ServerEvents.recipes(event => {
             M: 'minecraft:emerald',
             G: 'minecraft:gold_ingot',
             P: 'minecraft:prismarine_crystals',
-            N: 'minecraft:name_tag'
+            N: 'minecraft:name_tag',
+            Z: '#forge:tools/hammers',
+            Y: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:mending_mixture', type: 'enigmaticlegacy:shapeless_no_return_craft' })
     event.custom({
@@ -146,24 +155,26 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('enigmaticlegacy:super_magnet_ring', 1),
         [
-            'LEL',
+            'ZEL',
             'GXP',
-            'LGL'
+            'YGL'
         ],
         {
             L: 'minecraft:lapis_lazuli',
             E: 'minecraft:ender_eye',
             G: 'minecraft:gold_ingot',
             X: 'enigmaticlegacy:magnet_ring',
-            P: 'gtceu:prima_materia_plate'
+            P: 'gtceu:prima_materia_plate',
+            Z: '#forge:tools/hammers',
+            Y: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:enchantment_transposer' })
     event.shaped(
         Item.of('enigmaticlegacy:enchantment_transposer', 1),
         [
-            'pPp',
+            'DPp',
             'lXl',
             'brb'
         ],
@@ -173,15 +184,16 @@ ServerEvents.recipes(event => {
             l: 'minecraft:lapis_lazuli',
             X: 'minecraft:book',
             b: 'minecraft:blaze_powder',
-            r: 'minecraft:redstone'
+            r: 'minecraft:redstone',
+            D: '#forge:tools/screwdrivers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.remove({ output: 'enigmaticlegacy:monster_charm' })
     event.shaped(
         Item.of('enigmaticlegacy:monster_charm', 1),
         [
-            ' S ',
+            'FS ',
             'BXB',
             'EPE'
         ],
@@ -190,15 +202,16 @@ ServerEvents.recipes(event => {
             B: 'minecraft:blaze_powder',
             X: 'minecraft:skeleton_skull',
             E: 'minecraft:experience_bottle',
-            P: 'gtceu:prima_materia_plate'
+            P: 'gtceu:prima_materia_plate',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:xp_scroll' })
     event.shaped(
         Item.of('enigmaticlegacy:xp_scroll', 1),
         [
-            'BEB',
+            'KEB',
             'IXF',
             'BPB'
         ],
@@ -208,15 +221,16 @@ ServerEvents.recipes(event => {
             I: 'minecraft:ink_sac',
             X: 'enigmaticlegacy:thicc_scroll',
             F: 'minecraft:feather',
-            P: 'gtceu:prima_materia_plate'
+            P: 'gtceu:prima_materia_plate',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.remove({ output: 'enigmaticlegacy:evil_ingot' })
     event.shaped(
         Item.of('enigmaticlegacy:evil_ingot', 1),
         [
-            'TPT',
+            'HPT',
             'ENE',
             'TET'
         ],
@@ -224,9 +238,10 @@ ServerEvents.recipes(event => {
             T: 'minecraft:ghast_tear',
             P: 'gtceu:prima_materia_plate',
             E: 'enigmaticlegacy:evil_essence',
-            N: 'minecraft:netherite_ingot'
+            N: 'minecraft:netherite_ingot',
+            H: '#forge:tools/hammers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
 
     event.remove({ output: 'enigmaticlegacy:forbidden_axe' })
@@ -234,7 +249,7 @@ ServerEvents.recipes(event => {
         Item.of('enigmaticlegacy:forbidden_axe', 1),
         [
             'ISI',
-            'PXP',
+            'FXP',
             'MRM'
         ],
         {
@@ -243,15 +258,16 @@ ServerEvents.recipes(event => {
             P: 'minecraft:blaze_powder',
             X: 'minecraft:diamond_axe',
             M: 'botania:manasteel_ingot',
-            R: 'minecraft:blaze_rod'
+            R: 'minecraft:blaze_rod',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ output: 'enigmaticlegacy:cosmic_heart' })
     event.shaped(
         Item.of('enigmaticlegacy:cosmic_heart', 1),
         [
-            'DSD',
+            'HSD',
             'MXM',
             'DED'
         ],
@@ -260,9 +276,10 @@ ServerEvents.recipes(event => {
             S: 'minecraft:nether_star',
             M: 'gtceu:manasteel_plate',
             X: 'minecraft:heart_of_the_sea',
-            E: 'minecraft:ender_eye'
+            E: 'minecraft:ender_eye',
+            H: '#forge:tools/hammers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
 
     event.remove({ output: 'enigmaticlegacy:enigmatic_elytra' })
@@ -271,7 +288,7 @@ ServerEvents.recipes(event => {
         [
             'TAT',
             'EXE',
-            'DND'
+            'KND'
         ],
         {
             T: 'botania:terrasteel_ingot',
@@ -279,9 +296,10 @@ ServerEvents.recipes(event => {
             E: 'enigmaticlegacy:etherium_ingot',
             X: 'minecraft:elytra',
             D: 'enigmaticlegacy:astral_dust',
-            N: 'enigmaticlegacy:eye_of_nebula'
+            N: 'enigmaticlegacy:eye_of_nebula',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
 
     event.remove({ output: 'enigmaticlegacy:the_infinitum' })
@@ -290,7 +308,7 @@ ServerEvents.recipes(event => {
         [
             'HCH',
             'EXE',
-            'ZAZ'
+            'MAZ'
         ],
         {
             H: 'enigmaticlegacy:cosmic_heart',
@@ -298,17 +316,18 @@ ServerEvents.recipes(event => {
             E: 'enigmaticlegacy:evil_essence',
             X: 'enigmaticlegacy:the_twist',
             Z: 'botania:elementium_ingot',
-            A: 'enigmaticlegacy:abyssal_heart'
+            A: 'enigmaticlegacy:abyssal_heart',
+            M: '#forge:tools/hammers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ output: 'enigmaticlegacy:desolation_ring' })
     event.shaped(
         Item.of('enigmaticlegacy:desolation_ring', 1),
         [
             'HAH',
-            'ZXZ',
-            'EPE'
+            'MXZ',
+            'FPE'
         ],
         {
             H: 'enigmaticlegacy:cosmic_heart',
@@ -316,15 +335,17 @@ ServerEvents.recipes(event => {
             Z: 'gtceu:elementium_plate',
             X: 'enigmaticlegacy:golden_ring',
             E: 'enigmaticlegacy:evil_essence',
-            P: 'enigmaticlegacy:void_pearl'
+            P: 'enigmaticlegacy:void_pearl',
+            M: '#forge:tools/hammers',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
 
     event.shaped(
         Item.of('enigmaticlegacy:astral_dust', 4),
         [
-            ' G ',
+            'MG ',
             'AHA',
             ' E '
         ],
@@ -332,9 +353,10 @@ ServerEvents.recipes(event => {
             G: 'ars_nouveau:source_gem',
             A: 'minecraft:amethyst_shard',
             H: 'gtceu:holy_silver_dust',
-            E: 'minecraft:ender_eye'
+            E: 'minecraft:ender_eye',
+            M: '#forge:tools/mortars'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/mortars'))
 
     event.shaped(
         Item.of('enigmaticlegacy:recall_potion', 1),
@@ -354,7 +376,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('enigmaticlegacy:eye_of_nebula', 1),
         [
-            'APA',
+            'FPA',
             'DXD',
             'ABA'
         ],
@@ -363,91 +385,98 @@ ServerEvents.recipes(event => {
             P: 'gtceu:prima_materia_plate',
             D: 'enigmaticlegacy:etherium_ingot',
             X: 'minecraft:ender_eye',
-            B: 'minecraft:dragon_breath'
+            B: 'minecraft:dragon_breath',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(
         Item.of('enigmaticlegacy:void_pearl', 1),
         [
-            ' O ',
+            'FO ',
             'PXP',
             ' O '
         ],
         {
             O: 'minecraft:obsidian',
             P: 'gtceu:prima_materia_plate',
-            X: 'minecraft:ender_pearl'
+            X: 'minecraft:ender_pearl',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(
         Item.of('enigmaticlegacy:evil_essence', 2),
         [
-            ' W ',
+            'MW ',
             'WPW',
             ' W '
         ],
         {
             W: 'minecraft:wither_rose',
-            P: 'gtceu:prima_materia_plate'
+            P: 'gtceu:prima_materia_plate',
+            M: '#forge:tools/mortars'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/mortars'))
 
     event.shaped(
         Item.of('enigmaticlegacy:earth_heart', 1),
         [
-            'GMG',
+            'KMG',
             'MHM',
             'GMG'
         ],
         {
             G: 'minecraft:moss_block',
             M: 'botania:manasteel_ingot',
-            H: 'minecraft:heart_of_the_sea'
+            H: 'minecraft:heart_of_the_sea',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(
         Item.of('enigmaticlegacy:darkest_scroll', 1),
         [
-            'EWE',
+            'KWE',
             'WMW',
             'EWE'
         ],
         {
             E: 'enigmaticlegacy:evil_essence',
             W: 'minecraft:wither_rose',
-            M: 'botania:manasteel_ingot'
+            M: 'botania:manasteel_ingot',
+            K: '#forge:tools/knives'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(
         Item.of('enigmaticlegacy:angel_blessing', 2),
         [
-            'FTF',
+            'HTF',
             'TNT',
             'FTF'
         ],
         {
             F: 'minecraft:feather',
             T: 'botania:terrasteel_ingot',
-            N: 'minecraft:nether_star'
+            N: 'minecraft:nether_star',
+            H: '#forge:tools/hammers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.shaped(
         Item.of('enigmaticlegacy:abyssal_heart', 1),
         [
-            'CTC',
+            'HTC',
             'TAT',
             'CTC'
         ],
         {
             C: 'minecraft:crying_obsidian',
             T: 'botania:terrasteel_ingot',
-            A: 'minecraft:wither_skeleton_skull'
+            A: 'minecraft:wither_skeleton_skull',
+            H: '#forge:tools/hammers'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
 })

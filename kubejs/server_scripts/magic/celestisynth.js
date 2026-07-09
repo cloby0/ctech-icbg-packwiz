@@ -4,15 +4,16 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('celestisynth:celestial_core', 1),
         [
-            ' X ',
+            'FX ',
             'XYX',
             ' X '
         ],
         {
             X: 'minecraft:amethyst_shard',
-            Y: 'irons_spellbooks:divine_pearl'
+            Y: 'irons_spellbooks:divine_pearl',
+            F: '#forge:tools/files'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'celestisynth:supernal_netherite_ingot_smithing' })
 
@@ -22,7 +23,7 @@ ServerEvents.recipes(event => {
         [
             'IAI',
             'SCB',
-            'OOO'
+            'WOO'
         ],
         {
             I: 'celestisynth:celestial_netherite_ingot',
@@ -30,29 +31,30 @@ ServerEvents.recipes(event => {
             S: 'minecraft:smithing_table',
             C: 'minecraft:crafting_table',
             B: 'minecraft:blast_furnace',
-            O: 'minecraft:obsidian'
+            O: 'minecraft:obsidian',
+            W: '#forge:tools/wrenches'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     const armorData = [
         {
             set: 'solar_crystal',
             mat: 'celestisynth:solar_crystal',
             pieces: {
-                helmet:     ['xMx', 'x x'],
-                chestplate: ['x x', 'xMx', 'xxx'],
-                leggings:   ['xMx', 'x x', 'x x'],
-                boots:      ['x x', 'xMx']
+                helmet:     ['xMx', 'xHx'],
+                chestplate: ['xHx', 'xMx', 'xxx'],
+                leggings:   ['xMx', 'xHx', 'x x'],
+                boots:      ['xHx', 'xMx']
             }
         },
         {
             set: 'lunar_stone',
             mat: 'celestisynth:lunar_stone',
             pieces: {
-                helmet:     ['xMx', 'x x'],
-                chestplate: ['x x', 'xMx', 'xxx'],
-                leggings:   ['xMx', 'x x', 'x x'],
-                boots:      ['x x', 'xMx']
+                helmet:     ['xMx', 'xHx'],
+                chestplate: ['xHx', 'xMx', 'xxx'],
+                leggings:   ['xMx', 'xHx', 'x x'],
+                boots:      ['xHx', 'xMx']
             }
         }
     ]
@@ -66,8 +68,8 @@ ServerEvents.recipes(event => {
             event.shaped(
                 Item.of(`celestisynth:${set}_${piece}`, 1),
                 pattern,
-                { x: mat, M: '#forge:ingots/mithril' }
-            )
+                { x: mat, M: '#forge:ingots/mithril', H: '#forge:tools/hammers' }
+            ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
         })
     })
 })

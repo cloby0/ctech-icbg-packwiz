@@ -2,40 +2,40 @@ ServerEvents.recipes(event => {
 
 
     event.shaped(Item.of('uniqueaccessories:waist_warmer', 1), [
-        'AAA', 'ASA', 'AAA'
-    ], { 'A': 'minecraft:white_wool', 'S': 'nameless_trinkets:dubious_dust' })
+        'KAA', 'ASA', 'AAA'
+    ], { 'A': 'minecraft:white_wool', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('uniqueaccessories:life_jacket_belt', 1), [
-        'ABA', 'BSB', 'ABA'
-    ], { 'A': 'minecraft:sponge', 'B': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust' })
+        'KBA', 'BSB', 'ABA'
+    ], { 'A': 'minecraft:sponge', 'B': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('uniqueaccessories:durable_spring', 1), [
-        ' I ', 'ISI', ' I '
-    ], { 'I': 'minecraft:iron_ingot', 'S': 'nameless_trinkets:dubious_dust' })
+        'CI ', 'ISI', ' I '
+    ], { 'I': 'minecraft:iron_ingot', 'S': 'nameless_trinkets:dubious_dust', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.shaped(Item.of('uniqueaccessories:large_paddle', 1), [
-        ' P ', 'PSP', ' B '
-    ], { 'P': 'minecraft:oak_planks', 'S': 'nameless_trinkets:dubious_dust', 'B': 'minecraft:stick' })
+        'WP ', 'PSP', ' B '
+    ], { 'P': 'minecraft:oak_planks', 'S': 'nameless_trinkets:dubious_dust', 'B': 'minecraft:stick', 'W': '#forge:tools/saws' }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.shaped(Item.of('uniqueaccessories:all_purpose_seasoning', 1), [
-        'BDB', 'DSG', 'BDB'
-    ], { 'B': 'minecraft:bone_meal', 'D': 'minecraft:dried_kelp', 'S': 'nameless_trinkets:dubious_dust', 'G': 'minecraft:sugar' })
+        'MDB', 'DSG', 'BDB'
+    ], { 'B': 'minecraft:bone_meal', 'D': 'minecraft:dried_kelp', 'S': 'nameless_trinkets:dubious_dust', 'G': 'minecraft:sugar', 'M': '#forge:tools/mortars' }).damageIngredient(Ingredient.of('#forge:tools/mortars'))
 
     event.shaped(Item.of('uniqueaccessories:anklet_of_fortune', 1), [
-        'GGG', 'GSG', 'GRG'
-    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:rabbit_foot' })
+        'HGF', 'GSG', 'GRG'
+    ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'R': 'minecraft:rabbit_foot', 'H': '#forge:tools/hammers', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('uniqueaccessories:sharp_fishing_hook', 1), [
-        ' IF', 'IST', ' T '
-    ], { 'I': 'minecraft:iron_ingot', 'F': 'minecraft:fishing_rod', 'S': 'nameless_trinkets:dubious_dust', 'T': 'minecraft:string' })
+        'ZIF', 'IST', ' T '
+    ], { 'I': 'minecraft:iron_ingot', 'F': 'minecraft:fishing_rod', 'S': 'nameless_trinkets:dubious_dust', 'T': 'minecraft:string', 'Z': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped(Item.of('uniqueaccessories:rose_of_temptation', 1), [
-        'RGR', 'GSG', 'RGR'
-    ], { 'R': 'minecraft:rose_bush', 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust' })
+        'KGR', 'GSG', 'RGR'
+    ], { 'R': 'minecraft:rose_bush', 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('uniqueaccessories:ninjutsu_manual', 1), [
-        'PPP', 'LSL', 'PIP'
-    ], { 'P': 'minecraft:paper', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'I': 'minecraft:ink_sac' })
+        'KPP', 'LSL', 'PIP'
+    ], { 'P': 'minecraft:paper', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'I': 'minecraft:ink_sac', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
