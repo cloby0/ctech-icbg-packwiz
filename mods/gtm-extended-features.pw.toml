@@ -1,6 +1,6 @@
 name = "GTM Extended Features"
 filename = "extendedfeatures-2.1.0.jar"
-side = "client"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/9MCfIDeI/versions/FHADgU4G/extendedfeatures-2.1.0.jar"

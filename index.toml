@@ -5802,7 +5802,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtm-extended-features.pw.toml"
-hash = "f2ecd9becdfa1f2c7fddb336d607404755379e910d6a5fbbebdba5d378297dc6"
+hash = "c6fd9b99242232766c12ea283d5595f178eff3339c1bde144a98d5a3823d2ed3"
 metafile = true
 
 [[files]]
