@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:netherite",
     "availability": {
-        "tier": 10,
+        "tier": 13,
         "categories": [
             "metal"
         ],
@@ -73,60 +73,60 @@
     },
     "stats": {
         "main": {
-            "durability": 4744.41,
-            "armor_durability": 79.68,
-            "enchantment_value": 9.97,
-            "harvest_speed": 23.29,
-            "melee_damage": 13.6,
-            "magic_damage": 4.86,
+            "durability": 10495.8,
+            "armor_durability": 176.27,
+            "enchantment_value": 17.23,
+            "harvest_speed": 49.29,
+            "melee_damage": 28.78,
+            "magic_damage": 10.3,
             "attack_speed": 1,
             "attack_speed/axe": 1,
-            "armor": 44.45,
-            "armor/helmet": 7,
-            "armor/chestplate": 14,
-            "armor/leggings": 12,
-            "armor/boots": 7,
-            "armor_toughness": 16.93,
-            "ranged_damage": 5.92,
+            "armor": 94.1,
+            "armor/helmet": 15,
+            "armor/chestplate": 30,
+            "armor/leggings": 25,
+            "armor/boots": 15,
+            "armor_toughness": 35.85,
+            "ranged_damage": 12.53,
             "ranged_speed": 0,
-            "rarity": 34.98,
-            "charging_value": 1.28,
+            "rarity": 53.2,
+            "charging_value": 1.7,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
-            "magic_armor": 14.82,
+            "magic_armor": 31.37,
             "knockback_resistance": {
                 "add": 2
             }
         },
         "rod": {
             "harvest_speed": {
-                "mul2": 0.22
+                "mul2": 0.2494
             },
             "melee_damage": {
-                "mul2": 0.22
+                "mul2": 0.196
             },
             "ranged_damage": {
-                "mul2": 0.18
+                "mul2": 0.1604
             }
         },
         "tip": {
             "durability": {
-                "add": 680
+                "add": 2229
             },
             "armor_durability": {
-                "add": 18
+                "add": 80
             },
             "harvest_speed": {
-                "add": 5
+                "add": 20
             },
             "melee_damage": {
-                "add": 9
+                "add": 16
             },
             "ranged_damage": {
-                "add": 3
+                "add": 7
             },
             "rarity": {
-                "add": 45
+                "add": 25
             }
         }
     },
