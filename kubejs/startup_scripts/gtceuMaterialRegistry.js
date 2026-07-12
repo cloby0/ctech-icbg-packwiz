@@ -977,6 +977,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xFF6189).secondaryColor(0x8C2E44)
         .iconSet(GTMaterialIconSet.METALLIC)
+        .components(c('3x iron'), c('1x sulfur'))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
         .addOreByproducts('nickel', 'gold', 'sulfur')
         .washedIn('gtceu:mercury')
@@ -987,6 +988,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xCBBAFF).secondaryColor(0x6A5C9C)
         .iconSet(GTMaterialIconSet.SHINY)
+        .components(c('3x silver'), c('1x amethyst'))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
         .addOreByproducts('silver', 'amethyst', 'ender_pearl')
         .washedIn('gtceu:mercury')
@@ -996,6 +998,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xDD8500).secondaryColor(0x8C5400)
         .iconSet(GTMaterialIconSet.SHINY)
+        .components(c('3x gold'), c('1x sulfur'))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
 
     event.create('azure_electrum')
