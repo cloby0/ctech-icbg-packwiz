@@ -10,10 +10,10 @@
 	quests: [
 		{
 			id: "39A552B41CABFCC0"
-			subtitle: "modp"
+			subtitle: "it's a modpack"
 			tasks: [{
 				id: "09A5EB2E592FCD54"
-				title: "welcome to c-tech!!!!1!"
+				title: "Welcome to C-Tech!!!!1!"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -22,9 +22,9 @@
 		{
 			dependencies: ["39A552B41CABFCC0"]
 			description: [
-				"punch trees. yes, even here. sixteen logs buys your first tools, your first fires, and your first regrets."
+				"punch trees. sixteen logs covers your first tools and your first fires."
 				""
-				"tip: keep a chest of logs forever -- charcoal stays relevant deep into steam."
+				"tip: keep a chest of logs around -- charcoal stays relevant deep into steam."
 			]
 			id: "6696AB28A0F974E0"
 			shape: "square"
@@ -40,19 +40,19 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
 					}
 				}
-				title: "any #minecraft:logs"
+				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			title: "check logs"
+			title: "Check Logs"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6696AB28A0F974E0"]
 			description: [
-				"gregtech scatters iron across half a dozen ore flavors -- limonite, magnetite, pyrite, hematite, and friends all smelt down to the same thing."
+				"gregtech scatters iron across half a dozen ore types -- limonite, magnetite, pyrite, hematite, and the rest all smelt down to the same thing."
 				""
-				"tip: don't be picky. if it's brownish and vaguely metallic, mine it."
+				"tip: they all become iron. don't be picky about which one you mine."
 			]
 			id: "70898463C3BFDA3A"
 			shape: "square"
@@ -67,10 +67,10 @@
 						"ftbfiltersystem:filter": "or(item(minecraft:raw_iron)item(gtceu:raw_yellow_limonite)item(gtceu:raw_magnetite)item(gtceu:raw_basaltic_mineral_sand)item(gtceu:raw_granitic_mineral_sand)item(gtceu:raw_pyrite)item(gtceu:raw_goethite)item(gtceu:raw_hematite))"
 					}
 				}
-				title: "iron-bearing ores"
+				title: "Iron-Bearing Ores"
 				type: "item"
 			}]
-			title: "iron man"
+			title: "Iron Man"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -79,11 +79,11 @@
 			description: [
 				"the &6crafting hammer&r smashes ores into crushed ore and beats ingots into plates right in the crafting grid -- slow and durability-hungry, but it works before you own a single machine."
 				""
-				"tip: check JEI for what your hammer can bully. the answer is more than you think."
+				"tip: check JEI's uses tab for everything the hammer can process. it's more than you'd expect."
 			]
 			id: "047B3EB6DF0D600E"
 			size: 0.75d
-			subtitle: "i hardly kn"
+			subtitle: "i hardly know her"
 			tasks: [{
 				id: "374F41E1530B63BE"
 				item: {
@@ -93,23 +93,23 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_hammers)"
 					}
 				}
-				title: "any GTM hammer"
+				title: "Any GTM Hammer"
 				type: "item"
 			}]
-			title: "hammer?"
+			title: "Hammer?"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["047B3EB6DF0D600E"]
 			description: [
-				"the &6wrench&r picks up machines without breaking them, the &6file&r shaves ingots into rods, and the &6saw&r makes planks pay proper dividends."
+				"the &6wrench&r picks up machines without breaking them, the &6file&r shaves ingots into rods, and the &6saw&r doubles plank output."
 				""
-				"tip: GT tools live in the crafting grid as much as in your hand. JEI's uses tab on each tool is required reading."
+				"tip: GT tools work in the crafting grid as much as in your hand. JEI's uses tab on each tool is required reading."
 			]
 			id: "159977EC081BCE70"
 			size: 0.75d
-			subtitle: "haha i get it like tool"
+			subtitle: "it's a pun"
 			tasks: [
 				{
 					id: "11906B9E743D2237"
@@ -120,7 +120,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wrenches)"
 						}
 					}
-					title: "any GTM wrench"
+					title: "Any GTM Wrench"
 					type: "item"
 				}
 				{
@@ -132,7 +132,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_files)"
 						}
 					}
-					title: "any GTM file"
+					title: "Any GTM File"
 					type: "item"
 				}
 				{
@@ -144,20 +144,20 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_saws)"
 						}
 					}
-					title: "any GTM saw"
+					title: "Any GTM Saw"
 					type: "item"
 				}
 			]
-			title: "what a tool!"
+			title: "What a Tool!"
 			x: -1.125d
 			y: -3.0d
 		}
 		{
 			dependencies: ["159977EC081BCE70"]
 			description: [
-				"&6screwdriver&r configures machine covers, &6wire cutters&r trim cables, the &6mortar&r grinds things into dust by hand, the &6knife&r slices, and the &6soft mallet&r pauses machines without hurting their feelings."
+				"the &6screwdriver&r configures machine covers, &6wire cutters&r trim cables, the &6mortar&r grinds things into dust by hand, the &6knife&r slices, and the &6soft mallet&r pauses running machines."
 				""
-				"tip: you'll lose the mortar four times this week. make two."
+				"tip: the mortar breaks fast. make two."
 			]
 			icon: {
 				Count: 1
@@ -182,7 +182,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_screwdrivers)"
 						}
 					}
-					title: "any screwdriver!"
+					title: "Any Screwdriver!"
 					type: "item"
 				}
 				{
@@ -194,7 +194,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wire_cutters)"
 						}
 					}
-					title: "any wire cutter!"
+					title: "Any Wire Cutter!"
 					type: "item"
 				}
 				{
@@ -206,7 +206,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_mortars)"
 						}
 					}
-					title: "any mortar!"
+					title: "Any Mortar!"
 					type: "item"
 				}
 				{
@@ -218,7 +218,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_knives)"
 						}
 					}
-					title: "any knife!"
+					title: "Any Knife!"
 					type: "item"
 				}
 				{
@@ -230,20 +230,20 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_mallets)"
 						}
 					}
-					title: "any soft mallet!"
+					title: "Any Soft Mallet!"
 					type: "item"
 				}
 			]
-			title: "okay this is getting ridiculous"
+			title: "Okay This Is Getting Ridiculous"
 			x: -2.25d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2F83308882B913E4"]
 			description: [
-				"the tech path: steam, steel, circuits, rockets, and eventually machines that print other machines. starts in the &6steam age&r chapter."
+				"the tech path: steam, steel, circuits, rockets, and eventually machines that build other machines. starts in the &6steam age&r chapter."
 				""
-				"tip: gregtech rewards planning and punishes vibes. bring a notebook."
+				"tip: gregtech rewards planning and punishes guesswork. keep notes."
 			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "6C717E17AD17FF7B"
@@ -251,7 +251,7 @@
 			subtitle: "circuitry"
 			tasks: [{
 				id: "6EE4F60BF05581C1"
-				title: "tech?"
+				title: "Tech?"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -270,7 +270,7 @@
 			subtitle: "sorcery"
 			tasks: [{
 				id: "4C9CFDD9AD576366"
-				title: "magic?"
+				title: "Magic?"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -279,31 +279,26 @@
 		{
 			dependencies: ["047B3EB6DF0D600E"]
 			description: [
-				"it's time for this modpack's exciting gimmick!"
+				"the pack splits into two paths here: tech and magic."
 				""
-				"in c-tech: intercontinental ballistic greg, you're afforded an amazing choice:"
+				"tech is gregtech -- steam to steel to circuits to endgame. magic is a separate progression that skips gregtech almost entirely."
 				""
-				"choosing to not have to engage in gregtech at ALL!"
+				"you can do one, the other, or both. running both opens options neither has alone, and you can also ignore magic and play pure gregtech."
 				""
-				"that's right, there's an entirely alternate path you can choose to take, that being the pursuit of magic."
-				"now, notably, you can go ahead and just do BOTH. in fact, there's a lot of beneficial options that are afforded to you if you do."
-				""
-				"you can also just play pure gregtech and ignore ALL of the magic aspects."
-				""
-				"just check off the path you want to play, and new questbooks will open from there."
+				"check off the path you want. the matching questbook opens from there, and you can pick up the other one later."
 			]
 			id: "2F83308882B913E4"
 			shape: "diamond"
 			size: 0.75d
-			subtitle: "time for the gimmick, everybody!"
+			subtitle: "here's the gimmick"
 			tasks: [{
 				id: "25574905F9E84A1C"
-				title: "the crossroads..."
+				title: "The Crossroads..."
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: -4.0d
 		}
 	]
-	title: "welcome to ICBG!"
+	title: "Welcome to ICBG!"
 }

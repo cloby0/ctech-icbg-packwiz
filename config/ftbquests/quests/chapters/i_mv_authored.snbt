@@ -28,7 +28,7 @@
 				item: "gtceu:vehicle_assembler"
 				type: "item"
 			}]
-			title: "vehicle assembler"
+			title: "Vehicle Assembler"
 			x: -3.5d
 			y: -3.0d
 		}
@@ -41,10 +41,10 @@
 			subtitle: "128 EU/t and a plan"
 			tasks: [{
 				id: "1C00F1C2E3D40003"
-				title: "medium voltage!"
+				title: "Medium Voltage!"
 				type: "checkmark"
 			}]
-			title: "medium voltage!"
+			title: "Medium Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -65,7 +65,7 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			title: "MV power"
+			title: "MV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -86,7 +86,7 @@
 				item: "gtceu:mv_extruder"
 				type: "item"
 			}]
-			title: "the extruder"
+			title: "The Extruder"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -114,7 +114,7 @@
 					type: "item"
 				}
 			]
-			title: "biomass route"
+			title: "Biomass Route"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -143,7 +143,7 @@
 					type: "item"
 				}
 			]
-			title: "polyethylene"
+			title: "Polyethylene"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -172,7 +172,7 @@
 					type: "item"
 				}
 			]
-			title: "kanthal coils"
+			title: "Kanthal Coils"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -200,7 +200,7 @@
 					type: "item"
 				}
 			]
-			title: "silicon route"
+			title: "Silicon Route"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -214,13 +214,13 @@
 			id: "1C00F1C2E3D4001B"
 			shape: "square"
 			size: 0.75d
-			subtitle: "circuits now cost plastic, not sanity"
+			subtitle: "circuits, minus the hand-crafting"
 			tasks: [{
 				id: "1C00F1C2E3D4001C"
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			title: "circuit assembly"
+			title: "Circuit Assembly"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -250,7 +250,7 @@
 					type: "item"
 				}
 			]
-			title: "leaving medium voltage"
+			title: "Leaving Medium Voltage"
 			x: 0.0d
 			y: -12.0d
 		}
@@ -266,7 +266,7 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			title: "gas turbine"
+			title: "Gas Turbine"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -286,7 +286,7 @@
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			title: "chromium line"
+			title: "Chromium Line"
 			x: 2.0d
 			y: -9.0d
 		}
@@ -306,7 +306,7 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			title: "MV assembler"
+			title: "MV Assembler"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -326,7 +326,7 @@
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "plastic boards"
+			title: "Plastic Boards"
 			x: -2.0d
 			y: -6.0d
 		}
@@ -346,11 +346,11 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			title: "silicon wafers"
+			title: "Silicon Wafers"
 			x: -2.0d
 			y: -9.0d
 		}
 	]
 	subtitle: ["Make plastic. Make chips. Make steel. Leave."]
-	title: "III. medium voltage"
+	title: "III. Medium Voltage"
 }

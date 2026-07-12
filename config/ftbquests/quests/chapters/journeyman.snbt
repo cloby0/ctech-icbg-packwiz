@@ -21,13 +21,13 @@
 			]
 			id: "74E79BEE176EA828"
 			size: 0.75d
-			subtitle: "it blooms. magically. wow."
+			subtitle: "it blooms, magically"
 			tasks: [{
 				id: "2D021DD247072229"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
-			title: "magebloom"
+			title: "Magebloom"
 			x: -0.375d
 			y: -1.875d
 		}
@@ -36,18 +36,18 @@
 			description: [
 				"&3source ore&r generates in the aether as a proper GT-style ore. mine plenty -- the gem chain ahead eats dust like a machine line, because it's one."
 				""
-				"tip: crush the raw ore with the ars &dcrush&r effect to get source dust. no macerator required. the mage way."
+				"tip: crush the raw ore with the ars &dcrush&r effect for source dust. no macerator required."
 			]
 			id: "42292FB8905CAE54"
 			size: 0.75d
-			subtitle: "nice argument senator"
+			subtitle: "source you have to mine"
 			tasks: [{
 				count: 8L
 				id: "39ACF8532ACB550A"
 				item: "gtceu:raw_source"
 				type: "item"
 			}]
-			title: "vis a vis"
+			title: "Vis a Vis"
 			x: 0.375d
 			y: -1.875d
 		}
@@ -56,7 +56,7 @@
 			description: [
 				"imbue &3source dust&r with a &dmagebloom sieve&r sitting on the pedestal to refine it into &epure source gem dust&r."
 				""
-				"tip: the sieve isn't consumed. one sieve, infinite sifting. magic has no OSHA."
+				"tip: the sieve isn't consumed. one sieve, infinite sifting."
 			]
 			id: "08A706FAA18260F5"
 			size: 0.75d
@@ -66,7 +66,7 @@
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
-			title: "source gem dust, attempt 1"
+			title: "Source Gem Dust, Attempt 1"
 			x: 0.75d
 			y: -2.625d
 		}
@@ -82,13 +82,13 @@
 			]
 			id: "02865F6285633253"
 			size: 0.75d
-			subtitle: "we're getting there (for real this time)"
+			subtitle: "getting there, for real this time"
 			tasks: [{
 				id: "3AE6D13DDE3FE740"
 				item: "kubejs:pure_source_gem_dust"
 				type: "item"
 			}]
-			title: "source gem dust, attempt 2"
+			title: "Source Gem Dust, Attempt 2"
 			x: 0.0d
 			y: -4.125d
 		}
@@ -105,7 +105,7 @@
 				item: "kubejs:rough_source_gem"
 				type: "item"
 			}]
-			title: "rough source gem"
+			title: "Rough Source Gem"
 			x: 0.0d
 			y: -5.25d
 		}
@@ -114,7 +114,7 @@
 			description: [
 				"&asource gems&r are everywhere in the magic line. they power the &3enchanting apparatus&r, fuel the &3imbuement chamber&r, and show up in most mid-to-late magic crafting."
 				""
-				"the last step is unexpected: polish the rough gem with create &6sandpaper&r. yes, sandpaper. artisanal gemcraft."
+				"the last step: polish the rough gem with create &6sandpaper&r. yes, sandpaper."
 				""
 				"you'll be making a lot of these. start automating early."
 			]
@@ -126,7 +126,7 @@
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			title: "source gem"
+			title: "Source Gem"
 			x: 0.0d
 			y: -6.5d
 		}
@@ -135,17 +135,17 @@
 			description: [
 				"four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &esanctified ambrosium&r."
 				""
-				"tip: heated cauldron, WATER this time. pouring the lava out is your problem."
+				"tip: heated cauldron, WATER this time. drain the lava first."
 			]
 			id: "3AE23124DDE87034"
 			size: 0.75d
-			subtitle: "give it a blessing. it deserves it."
+			subtitle: "bless the rock"
 			tasks: [{
 				id: "0666134470222C91"
 				item: "kubejs:sanctified_ambrosium_bloom"
 				type: "item"
 			}]
-			title: "sanctified ambrosium bloom"
+			title: "Sanctified Ambrosium Bloom"
 			x: 2.625d
 			y: -1.125d
 		}
@@ -163,7 +163,7 @@
 				item: "gtceu:raw_ambrosium"
 				type: "item"
 			}]
-			title: "raw ambrosium"
+			title: "Raw Ambrosium"
 			x: 1.125d
 			y: -1.125d
 		}
@@ -180,7 +180,7 @@
 				item: "kubejs:magebloom_sieve"
 				type: "item"
 			}]
-			title: "magebloom sieve"
+			title: "Magebloom Sieve"
 			x: -0.75d
 			y: -2.625d
 		}
@@ -201,7 +201,7 @@
 				item: "kubejs:sacred_ambrosium_shard"
 				type: "item"
 			}]
-			title: "sacred ambrosium shard"
+			title: "Sacred Ambrosium Shard"
 			x: 2.625d
 			y: -2.625d
 		}
@@ -218,7 +218,7 @@
 				item: "gtceu:raw_zanite"
 				type: "item"
 			}]
-			title: "raw zanite"
+			title: "Raw Zanite"
 			x: -1.125d
 			y: -1.125d
 		}
@@ -235,7 +235,7 @@
 				item: "kubejs:enchanted_zanite_gem"
 				type: "item"
 			}]
-			title: "enchanted zanite"
+			title: "Enchanted Zanite"
 			x: -2.625d
 			y: -1.125d
 		}
@@ -248,13 +248,13 @@
 			]
 			id: "45BDF6BE6B2DD0CB"
 			size: 0.75d
-			subtitle: "it hums. don't stick your ear near it."
+			subtitle: "it hums"
 			tasks: [{
 				id: "245CF51C6A647EA1"
 				item: "kubejs:resonant_zanite_crystal"
 				type: "item"
 			}]
-			title: "resonant zanite crystal"
+			title: "Resonant Zanite Crystal"
 			x: -1.875d
 			y: -1.875d
 		}
@@ -263,24 +263,24 @@
 			description: [
 				"one inventory, every dimension. dye the three wool pads to make separate channels."
 				""
-				"tip: on a server, channels are per-color, not per-player by default. sneak-click the latch with a diamond for a private network before someone 'borrows' your stock."
+				"tip: on a server, channels are per-color, not per-player by default. sneak-click the latch with a diamond for a private network."
 			]
 			id: "205170FC8134DC8D"
 			size: 0.75d
-			subtitle: "shared. with yourself. from across the map."
+			subtitle: "shared with yourself, across the map"
 			tasks: [{
 				id: "1A1F67BED84E07AF"
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
-			title: "ender chest"
+			title: "Ender Chest"
 			x: 3.0d
 			y: -3.75d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"same trick, fluids. pump lava in at the nether, drain it at your base. the commute is imaginary."
+				"same trick, fluids. pump lava in at the nether, drain it at your base."
 			]
 			id: "3A9BBD003CB49590"
 			size: 0.75d
@@ -290,7 +290,7 @@
 				item: "enderstorage:ender_tank"
 				type: "item"
 			}]
-			title: "ender tank"
+			title: "Ender Tank"
 			x: 3.375d
 			y: -3.0d
 		}
@@ -299,7 +299,7 @@
 			description: [
 				"the pouch opens its matching ender chest from anywhere. mining trips deposit straight home."
 				""
-				"tip: match the wool colors on the pouch to the chest's channel or you'll be staring into someone else's junk drawer."
+				"tip: match the wool colors on the pouch to the chest's channel, or you'll open the wrong network."
 			]
 			id: "7E85C70688BC511F"
 			size: 0.75d
@@ -309,14 +309,14 @@
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			title: "ender pouch"
+			title: "Ender Pouch"
 			x: 2.25d
 			y: -3.75d
 		}
 		{
 			dependencies: ["532B8F3CF596352D"]
 			description: [
-				"the &6storage lectern&r shows every linked chest in one searchable screen. it's ars' answer to a storage network, and it costs a bookshelf, not a fusion reactor."
+				"the &6storage lectern&r shows every linked chest in one searchable screen. it's ars' answer to a storage network, and it's cheap to build."
 				""
 				"tip: link chests with the &ddominion wand&r. range matters -- keep it central."
 			]
@@ -328,7 +328,7 @@
 				item: "ars_nouveau:storage_lectern"
 				type: "item"
 			}]
-			title: "storage lectern"
+			title: "Storage Lectern"
 			x: 1.875d
 			y: -3.0d
 		}
@@ -347,7 +347,7 @@
 				item: "reliquary:lantern_of_paranoia"
 				type: "item"
 			}]
-			title: "lantern of paranoia"
+			title: "Lantern of Paranoia"
 			x: -0.75d
 			y: 1.125d
 		}
@@ -366,7 +366,7 @@
 				item: "reliquary:interdiction_torch"
 				type: "item"
 			}]
-			title: "interdiction torch"
+			title: "Interdiction Torch"
 			x: 0.0d
 			y: 1.125d
 		}
@@ -385,33 +385,33 @@
 				item: "reliquary:alkahestry_altar"
 				type: "item"
 			}]
-			title: "alkahestry altar"
+			title: "Alkahestry Altar"
 			x: 0.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["68DAC01E93C6240E"]
 			description: [
-				"build a portal frame from &bglowstone&r and light it with a &eluminessence&r. the aether is up there waiting: floating islands, angry birds, and three ores this chapter runs on."
+				"build a portal frame from &bglowstone&r and light it with a &eluminessence&r. the aether is up there: floating islands, hostile mobs, and the three ores this chapter runs on."
 				""
-				"tip: bring blocks for bridging and do NOT look down. falling off the aether returns you to the overworld at terminal velocity."
+				"tip: bring blocks for bridging. falling off the aether drops you back to the overworld at terminal velocity."
 			]
 			icon: "aether:aether_portal_frame"
 			id: "33704DE3C564BD46"
 			size: 0.75d
-			subtitle: "excuse me, sir!"
+			subtitle: "up to see the man upstairs"
 			tasks: [{
 				dimension: "aether:the_aether"
 				icon: "aether:aether_portal_frame"
 				id: "1F578B2124CF8CBD"
-				title: "head to the aether"
+				title: "Head to the Aether"
 				type: "dimension"
 			}]
-			title: "off to see the man upstairs"
+			title: "Off to See the Man Upstairs"
 			x: 0.0d
 			y: -1.125d
 		}
 	]
-	subtitle: ["Venture to a hostile paradise for new boons"]
-	title: "III. journeyman"
+	subtitle: ["A hostile paradise with good ores"]
+	title: "III. Journeyman"
 }

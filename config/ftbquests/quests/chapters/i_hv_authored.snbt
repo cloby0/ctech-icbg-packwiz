@@ -22,13 +22,13 @@
 				"there's also a single-block &6cyberware constructor&r at every tier if you want a bench-top version. the multiblock takes an HV hull, stainless frames, robot arms, and pumps."
 			]
 			id: "3E6B09C8D2A47F50"
-			subtitle: "we can rebuild you. we have the technology"
+			subtitle: "stat boosts, surgically installed"
 			tasks: [{
 				id: "3E6B09C8D2A47F51"
 				item: "gtceu:human_augmentation_plant"
 				type: "item"
 			}]
-			title: "human augmentation plant"
+			title: "Human Augmentation Plant"
 			x: 3.5d
 			y: 0.0d
 		}
@@ -46,7 +46,7 @@
 				item: "gtceu:epitaxial_growth_chamber"
 				type: "item"
 			}]
-			title: "epitaxial growth chamber"
+			title: "Epitaxial Growth Chamber"
 			x: 3.5d
 			y: -4.5d
 		}
@@ -59,10 +59,10 @@
 			subtitle: "512 EU/t and a rocket to build"
 			tasks: [{
 				id: "1D00F1C2E3D40003"
-				title: "high voltage!"
+				title: "High Voltage!"
 				type: "checkmark"
 			}]
-			title: "high voltage!"
+			title: "High Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -83,7 +83,7 @@
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			title: "HV power"
+			title: "HV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -104,7 +104,7 @@
 				item: "gtceu:hv_macerator"
 				type: "item"
 			}]
-			title: "full extraction"
+			title: "Full Extraction"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -133,7 +133,7 @@
 					type: "item"
 				}
 			]
-			title: "rocket alloy"
+			title: "Rocket Alloy"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -148,13 +148,13 @@
 			id: "1D00F1C2E3D40010"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "the only door that matters right now"
+			subtitle: "your ride off the planet"
 			tasks: [{
 				id: "1D00F1C2E3D40011"
 				item: "ad_astra:tier_1_rocket"
 				type: "item"
 			}]
-			title: "the rocket"
+			title: "The Rocket"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -175,7 +175,7 @@
 				item: "ad_astra:moon_sand"
 				type: "item"
 			}]
-			title: "first moon trip"
+			title: "First Moon Trip"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -196,7 +196,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "titanium"
+			title: "Titanium"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -225,7 +225,7 @@
 					type: "item"
 				}
 			]
-			title: "cleanroom"
+			title: "Cleanroom"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -246,7 +246,7 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "desh processing"
+			title: "Desh Processing"
 			x: 0.0d
 			y: -12.0d
 		}
@@ -267,7 +267,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "first EV circuit"
+			title: "First EV Circuit"
 			x: 0.0d
 			y: -13.5d
 		}
@@ -297,7 +297,7 @@
 					type: "item"
 				}
 			]
-			title: "leaving high voltage"
+			title: "Leaving High Voltage"
 			x: 0.0d
 			y: -16.5d
 		}
@@ -317,7 +317,7 @@
 				item: "gtceu:dimethylhydrazine_bucket"
 				type: "item"
 			}]
-			title: "rocket fuel"
+			title: "Rocket Fuel"
 			x: 2.0d
 			y: -4.5d
 		}
@@ -333,7 +333,7 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			title: "HV gas turbine"
+			title: "HV Gas Turbine"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -353,7 +353,7 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			title: "vacuum freezer"
+			title: "Vacuum Freezer"
 			x: 2.0d
 			y: -7.5d
 		}
@@ -373,7 +373,7 @@
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			title: "cracker"
+			title: "Cracker"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -401,7 +401,7 @@
 					type: "item"
 				}
 			]
-			title: "NAND chip"
+			title: "NAND Chip"
 			x: -2.0d
 			y: -10.5d
 		}
@@ -418,7 +418,7 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			title: "microchip processor"
+			title: "Microchip Processor"
 			x: -2.0d
 			y: -12.0d
 		}
@@ -435,7 +435,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			title: "micro processor"
+			title: "Micro Processor"
 			x: -2.0d
 			y: -13.5d
 		}
@@ -452,7 +452,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			title: "micro processor assembly"
+			title: "Micro Processor Assembly"
 			x: -2.0d
 			y: -15.0d
 		}
@@ -473,11 +473,11 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			title: "micro processor mainframe"
+			title: "Micro Processor Mainframe"
 			x: -2.0d
 			y: -16.5d
 		}
 	]
-	subtitle: ["Get to the Moon. Bring Titanium back."]
-	title: "IV. high voltage"
+	subtitle: ["Get to the moon. Bring titanium back."]
+	title: "IV. High Voltage"
 }

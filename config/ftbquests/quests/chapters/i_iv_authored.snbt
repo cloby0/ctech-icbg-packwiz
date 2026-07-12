@@ -22,13 +22,13 @@
 				"an IV hull wrapped in &9tungstensteel&r plates, robot arms, and conveyors."
 			]
 			id: "44B7E09A3C5D2160"
-			subtitle: "war. war never changes. production does"
+			subtitle: "war never changes, production does"
 			tasks: [{
 				id: "44B7E09A3C5D2161"
 				item: "gtceu:military_industrial_complex"
 				type: "item"
 			}]
-			title: "military industrial complex"
+			title: "Military Industrial Complex"
 			x: 3.5d
 			y: 0.0d
 		}
@@ -41,10 +41,10 @@
 			subtitle: "8192 EU/t, radiation, and two new fronts"
 			tasks: [{
 				id: "1F00F1C2E3D40003"
-				title: "insane voltage!"
+				title: "Insane Voltage!"
 				type: "checkmark"
 			}]
-			title: "insane voltage!"
+			title: "Insane Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -64,7 +64,7 @@
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			title: "IV power"
+			title: "IV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -78,14 +78,14 @@
 			id: "1F00F1C2E3D40008"
 			shape: "square"
 			size: 0.75d
-			subtitle: "molybdenum makes it insane"
+			subtitle: "the alloy ingredient for HSS-g"
 			tasks: [{
 				count: 2L
 				id: "1F00F1C2E3D40009"
 				item: "gtceu:molybdenum_ingot"
 				type: "item"
 			}]
-			title: "molybdenum"
+			title: "Molybdenum"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -107,7 +107,7 @@
 				item: "kubejs:ostrum_hull_section"
 				type: "item"
 			}]
-			title: "venus components"
+			title: "Venus Components"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -122,13 +122,13 @@
 			id: "1F00F1C2E3D40010"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "one rocket, two hells"
+			subtitle: "one rocket, two planets"
 			tasks: [{
 				id: "1F00F1C2E3D40011"
 				item: "ad_astra:tier_3_rocket"
 				type: "item"
 			}]
-			title: "the venus rocket"
+			title: "The Venus Rocket"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -149,7 +149,7 @@
 				item: "ad_astra:venus_sand"
 				type: "item"
 			}]
-			title: "first venus trip"
+			title: "First Venus Trip"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -170,7 +170,7 @@
 				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
-			title: "calorite processing"
+			title: "Calorite Processing"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -198,7 +198,7 @@
 					type: "item"
 				}
 			]
-			title: "IV circuit assembler"
+			title: "IV Circuit Assembler"
 			x: -2.0d
 			y: -10.5d
 		}
@@ -219,7 +219,7 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			title: "quantum processor assembly"
+			title: "Quantum Processor Assembly"
 			x: -2.0d
 			y: -12.0d
 		}
@@ -240,7 +240,7 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			title: "quantum processor computer"
+			title: "Quantum Processor Computer"
 			x: -2.0d
 			y: -13.5d
 		}
@@ -261,7 +261,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "quantum processor mainframe"
+			title: "Quantum Processor Mainframe"
 			x: -2.0d
 			y: -15.0d
 		}
@@ -282,7 +282,7 @@
 				item: "gtceu:samarium_ingot"
 				type: "item"
 			}]
-			title: "rare earth processing"
+			title: "Rare Earth Processing"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -303,7 +303,7 @@
 				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
 				type: "item"
 			}]
-			title: "IV superconductor"
+			title: "IV Superconductor"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -333,11 +333,11 @@
 					type: "item"
 				}
 			]
-			title: "leaving IV"
+			title: "Leaving IV"
 			x: 0.0d
 			y: -16.5d
 		}
 	]
-	subtitle: ["Get to Venus. Mind Mercury too."]
-	title: "VI. insane voltage"
+	subtitle: ["Get to venus, mind mercury too"]
+	title: "VI. Insane Voltage"
 }

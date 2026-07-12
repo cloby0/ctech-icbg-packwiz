@@ -52,13 +52,13 @@
 					type: "item"
 				}
 			]
-			title: "elven trade portal"
+			title: "Elven Trade Portal"
 			x: -0.5d
 			y: -2.0d
 		}
 		{
 			description: [
-				"enchant the dust over an &7abstract metal ingot&r (15000 source), then smelt the result straight into &delementium&r. elven metallurgy, fully domesticated."
+				"enchant the dust over an &7abstract metal ingot&r (15000 source), then smelt the result straight into &delementium&r."
 			]
 			dependencies: ["51FA75C4A1E30685"]
 			id: "104D6BF6AA109EF4"
@@ -68,7 +68,7 @@
 				item: "kubejs:raw_elementite"
 				type: "item"
 			}]
-			title: "raw elementite"
+			title: "Raw Elementite"
 			x: -0.5d
 			y: -6.0d
 		}
@@ -84,7 +84,7 @@
 				item: "kubejs:elementite_dust"
 				type: "item"
 			}]
-			title: "elementite dust"
+			title: "Elementite Dust"
 			x: 0.5d
 			y: -6.0d
 		}
@@ -92,7 +92,7 @@
 			description: [
 				"the elves are cut out of the deal: the &6runic altar&r makes &dweak elementium dust&r from four terrasteel bolts and air, spring, summer, and autumn runes -- 8000 mana, three at a time."
 				""
-				"trade three dusts through the &aalfheim portal&r for two &delven concentrate&r. the elves still get their cut. typical."
+				"trade three dusts through the &aalfheim portal&r for two &delven concentrate&r."
 			]
 			dependencies: ["7611918249B75923"]
 			id: "2764D29567727F6D"
@@ -102,7 +102,7 @@
 				item: "kubejs:weak_elementium_dust"
 				type: "item"
 			}]
-			title: "weak elementium dust"
+			title: "Weak Elementium Dust"
 			x: 0.5d
 			y: -2.0d
 		}
@@ -124,7 +124,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			title: "elementium ingot"
+			title: "Elementium Ingot"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -142,11 +142,11 @@
 				item: "kubejs:elven_concentrate"
 				type: "item"
 			}]
-			title: "elven concentrate"
+			title: "Elven Concentrate"
 			x: 0.0d
 			y: -4.0d
 		}
 	]
-	subtitle: ["Trade with interdimensional creatures for new materials"]
-	title: "VIII. arcanist"
+	subtitle: ["The elves have materials you can't make yourself"]
+	title: "VIII. Arcanist"
 }

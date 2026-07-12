@@ -23,13 +23,13 @@
 				"catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r alchemy catalyst, &7circuit 3&r conjuration catalyst. built around a real mana pool and &3manaplatinite&r casings at IV."
 			]
 			id: "61F4B8D0C3A75E30"
-			subtitle: "the pool finally cleans itself"
+			subtitle: "the pool cleans itself now"
 			tasks: [{
 				id: "61F4B8D0C3A75E31"
 				item: "gtceu:automated_mana_pond"
 				type: "item"
 			}]
-			title: "automated mana pond"
+			title: "Automated Mana Pond"
 			x: -2.25d
 			y: -6.0d
 		}
@@ -44,32 +44,32 @@
 			]
 			id: "138BA0CD22478ACF"
 			size: 0.75d
-			subtitle: "the world's most expensive infinity pool"
+			subtitle: "an expensive infinity pool"
 			tasks: [{
 				id: "2B744BA6473CBDBD"
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			title: "mana pool"
+			title: "Mana Pool"
 			x: -1.125d
 			y: -6.0d
 		}
 		{
 			description: [
-				"smelt the disorganized form and out comes the &7abstract metal ingot&r -- metal with no opinion yet. combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
+				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
 				""
-				"the real trick: drop it in a &3mana pool&r and it becomes &bmanasteel&r."
+				"drop it in a &3mana pool&r and it becomes &bmanasteel&r."
 			]
 			dependencies: ["7BDD15A9F2B6BCDD"]
 			id: "5E61BE3584D271A8"
 			size: 0.75d
-			subtitle: "look, don't ask. it's metal, it works."
+			subtitle: "it's metal. it works."
 			tasks: [{
 				id: "01EEE80DDFE70C38"
 				item: "gtceu:abstract_metal_ingot"
 				type: "item"
 			}]
-			title: "abstract metal ingot"
+			title: "Abstract Metal Ingot"
 			x: 1.125d
 			y: -6.0d
 		}
@@ -94,7 +94,7 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			title: "manasteel ingot"
+			title: "Manasteel Ingot"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -105,7 +105,7 @@
 				""
 				"place &7stone&r or &eliving wood&r next to it and wait. it slowly purifies them into their arcane equivalents."
 				""
-				"that's it. you're a botanist now."
+				"that's it."
 			]
 			id: "1F374C13B7A1C7A2"
 			size: 0.75d
@@ -115,24 +115,24 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			title: "pure daisy"
+			title: "Pure Daisy"
 			x: -1.125d
 			y: -1.875d
 		}
 		{
 			description: [
-				"epic ink brewed with an &delven source lattice&r -- an arcanist-tier elven export. the best ink money can't buy, because it's not for sale."
+				"epic ink brewed with an &delven source lattice&r, an arcanist-tier elven export. the highest ink tier for spell scrolls."
 			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3CFDB9C271774552"
 			size: 0.75d
-			subtitle: "your spells just got significantly fancier"
+			subtitle: "the best ink there is"
 			tasks: [{
 				id: "386FECC40F4FE79E"
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
-			title: "legendary ink"
+			title: "Legendary Ink"
 			x: -0.5d
 			y: 1.5d
 		}
@@ -141,7 +141,7 @@
 			description: [
 				"enchant a &6book&r over a &aprima materia plate&r, two &credstone blocks&r, and a bottle o' enchanting -- 10000 source -- to bind the &6alkahestry tome&r."
 				""
-				"charge it with redstone and it transmutes common materials in the crafting grid. the alchemist's actual party trick."
+				"charge it with redstone and it transmutes common materials in the crafting grid."
 			]
 			id: "262FBCDEA658CDE8"
 			size: 0.75d
@@ -157,24 +157,24 @@
 				}
 				type: "item"
 			}]
-			title: "alkahestry tome"
+			title: "Alkahestry Tome"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			description: [
-				"the final ars book upgrade at the &6enchanting apparatus&r. every glyph tier, maximum mana. the library card is complete."
+				"the final ars book upgrade at the &6enchanting apparatus&r. every glyph tier, maximum mana."
 			]
 			dependencies: ["3C613081F4FE51B2"]
 			id: "3B405737C2EC2A85"
 			size: 0.75d
-			subtitle: "you're basically a wizard now"
+			subtitle: "the last ars book"
 			tasks: [{
 				id: "50F864927D5AA470"
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
-			title: "archmage's spell book"
+			title: "Archmage's Spell Book"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -186,9 +186,7 @@
 			description: [
 				"the &3abstract metal&r line bridges &dprima materia&r and &amanasteel&r."
 				""
-				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps - don't think too hard about what they are."
-				""
-				"&l&3lore:&r&o who needs ingots when you can have abstract notions of metal?"
+				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward manasteel."
 			]
 			id: "2C27B13A2CA65DEC"
 			size: 0.75d
@@ -198,15 +196,13 @@
 				item: "gtceu:concepts_bucket"
 				type: "item"
 			}]
-			title: "condensed concepts"
+			title: "Condensed Concepts"
 			x: 1.125d
 			y: -1.875d
 		}
 		{
 			description: [
-				"a bucket enchanted over a &aprima materia block&r, bottled XP, and charged amethyst becomes a &dbucket of concepts&r -- then imbuing it over a &fholy silver block&r condenses the concept into &7metal form&r."
-				""
-				"tip: you're industrializing philosophy. don't think about it too hard."
+				"a bucket enchanted over a &aprima materia block&r, bottled XP, and charged amethyst becomes a &dbucket of concepts&r. imbuing it over a &fholy silver block&r condenses that into &7metal form&r."
 			]
 			dependencies: ["2C27B13A2CA65DEC"]
 			id: "442B54C049E4C49E"
@@ -217,13 +213,13 @@
 				item: "gtceu:metal_form_bucket"
 				type: "item"
 			}]
-			title: "metal form"
+			title: "Metal Form"
 			x: 1.125d
 			y: -3.0d
 		}
 		{
 			description: [
-				"imbue the metal form over four &bice essences&r to freeze the idea into something you can actually hold. still disorganized, but holdable."
+				"imbue the metal form over four &bice essences&r to freeze it into a solid you can hold. still disorganized, but real."
 			]
 			dependencies: ["442B54C049E4C49E"]
 			id: "7BDD15A9F2B6BCDD"
@@ -234,7 +230,7 @@
 				item: "kubejs:disorganized_metal_form"
 				type: "item"
 			}]
-			title: "disorganized metal form"
+			title: "Disorganized Metal Form"
 			x: 1.125d
 			y: -4.875d
 		}
@@ -253,13 +249,13 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			title: "livingrock"
+			title: "Livingrock"
 			x: -1.125d
 			y: -3.75d
 		}
 		{
 			description: [
-				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. the sorcerer-tier material, now stationery."
+				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. one tier below legendary."
 			]
 			dependencies: [
 				"51D5B5C004491077"
@@ -273,11 +269,11 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			title: "epic ink"
+			title: "Epic Ink"
 			x: -1.5d
 			y: 1.5d
 		}
 	]
-	subtitle: ["Use your new materials to explore the world of flora"]
-	title: "VI. alchemist"
+	subtitle: ["Flowers doing metallurgy now"]
+	title: "VI. Alchemist"
 }

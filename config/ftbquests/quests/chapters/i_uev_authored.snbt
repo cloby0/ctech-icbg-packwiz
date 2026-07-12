@@ -36,13 +36,13 @@
 			id: "2400F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "8388608 EU/t. time to go kill a dragon-god."
+			subtitle: "8388608 EU/t. there's a boss fight this tier."
 			tasks: [{
 				id: "2400F1C2E3D40003"
-				title: "ultra excessive voltage!"
+				title: "Ultra Excessive Voltage!"
 				type: "checkmark"
 			}]
-			title: "ultra excessive voltage!"
+			title: "Ultra Excessive Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -63,7 +63,7 @@
 				item: "draconicevolution:chaos_shard"
 				type: "item"
 			}]
-			title: "chaos shard"
+			title: "Chaos Shard"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -84,7 +84,7 @@
 				item: "kubejs:stabilized_chaos_crystal"
 				type: "item"
 			}]
-			title: "stabilized chaos crystal"
+			title: "Stabilized Chaos Crystal"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -105,7 +105,7 @@
 				item: "kubejs:chaos_harmonic_board"
 				type: "item"
 			}]
-			title: "chaos harmonic board"
+			title: "Chaos Harmonic Board"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -126,7 +126,7 @@
 				item: "kubejs:chaos_processor"
 				type: "item"
 			}]
-			title: "chaos processor"
+			title: "Chaos Processor"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -147,7 +147,7 @@
 				item: "kubejs:chaos_processor_assembly"
 				type: "item"
 			}]
-			title: "chaos processor assembly"
+			title: "Chaos Processor Assembly"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -168,7 +168,7 @@
 				item: "kubejs:chaos_processor_supercomputer"
 				type: "item"
 			}]
-			title: "chaos processor supercomputer"
+			title: "Chaos Processor Supercomputer"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -195,7 +195,7 @@
 					type: "item"
 				}
 			]
-			title: "draconic reactor components"
+			title: "Draconic Reactor Components"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -216,7 +216,7 @@
 				item: "kubejs:biogenic_synthesis_casing"
 				type: "item"
 			}]
-			title: "biogenic synthesis casing"
+			title: "Biogenic Synthesis Casing"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -225,16 +225,16 @@
 			description: [
 				"casings, a UEV hull, pumps, sensors, and a bath of &2sterilized growth medium&r assemble the &6biogenic synthesis chamber&r itself."
 				""
-				"it grows the biological components the endgame keeps asking for. perfect overclocks, but no parallel hatch -- life refuses to be rushed in bulk."
+				"it grows the biological components the endgame keeps asking for. perfect overclocks, no parallel hatch."
 			]
 			id: "77A2D5C1E94B0F80"
-			subtitle: "it's alive. industrially alive"
+			subtitle: "grows biological components in bulk"
 			tasks: [{
 				id: "77A2D5C1E94B0F81"
 				item: "gtceu:biogenic_synthesis_chamber"
 				type: "item"
 			}]
-			title: "biogenic synthesis chamber"
+			title: "Biogenic Synthesis Chamber"
 			x: 3.5d
 			y: -1.5d
 		}
@@ -264,11 +264,11 @@
 					type: "item"
 				}
 			]
-			title: "leaving UEV"
+			title: "Leaving UEV"
 			x: 0.0d
 			y: -12.0d
 		}
 	]
-	subtitle: ["Kill the Chaos Guardian. Feed it to the machine."]
-	title: "XI. ultra excessive voltage"
+	subtitle: ["Kill the Chaos Guardian."]
+	title: "XI. Ultra Excessive Voltage"
 }

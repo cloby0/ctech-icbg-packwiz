@@ -56,6 +56,10 @@
 "element.gtceu.ambrosium": "Ambrosium",
 "element.gtceu.gravitite": "Gravitite",
 "element.gtceu.veridium": "Veridium",
+"element.gtceu.chaos_crystal": "Chaos Crystal",
+"element.gtceu.voidmetal": "Voidmetal",
+"element.gtceu.solarmetal": "Solarmetal",
+"element.gtceu.arcmetal": "Arcmetal",
 
 "material.gtceu.lead_sourcite": "Lead Sourcite",
 "material.gtceu.hallowed_nickelate": "Hallowed Nickelate",
@@ -94,6 +98,10 @@
 "material.gtceu.awakened_framework": "Awakened Framework",
 "material.gtceu.draconic_fluxite": "Draconic Fluxite",
 "material.gtceu.chaotic_singulite": "Chaotic Singulite",
+"material.gtceu.chaos_crystal": "Chaos Crystal",
+"material.gtceu.voidmetal": "Voidmetal",
+"material.gtceu.solarmetal": "Solarmetal",
+"material.gtceu.arcmetal": "Arcmetal",
 
 "tagprefix.holystone": "Holystone %s Ore",
 "tagprefix.moon_stone": "Moon %s Ore",
@@ -169,6 +177,16 @@
 "gtceu.jei.ore_vein.pitchblende_vein_mc": "Mercury Pitchblende Vein",
 "gtceu.jei.ore_vein.tetrahedrite_vein_mc": "Mercury Tetrahedrite Vein",
 "gtceu.jei.ore_vein.cobaltite_vein_mc": "Mercury Cobaltite Vein",
-"gtceu.jei.ore_vein.solarmetal_vein_mc": "Mercury Solar Metal Vein"
+"gtceu.jei.ore_vein.solarmetal_vein_mc": "Mercury Solar Metal Vein",
+
+"material.gtceu.crimson_iron": "Crimson Iron",
+"material.gtceu.azure_silver": "Azure Silver",
+"material.gtceu.blaze_gold": "Blaze Gold",
+"material.gtceu.azure_electrum": "Azure Electrum",
+"material.gtceu.crimson_steel": "Crimson Steel",
+"material.gtceu.tyrian_steel": "Tyrian Steel",
+
+"gtceu.jei.ore_vein.crimson_iron_vein_nether": "Nether Crimson Iron Vein",
+"gtceu.jei.ore_vein.azure_silver_vein_end": "End Azure Silver Vein"
 
 }

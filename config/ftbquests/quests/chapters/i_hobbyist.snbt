@@ -12,50 +12,50 @@
 		{
 			dependencies: ["1FA819FE418EBE16"]
 			description: [
-				"hexerei's &6mixing cauldron&r is your first magical workstation. in this pack the four elemental essences brew HERE -- the imbuement chamber recipes are gone."
+				"hexerei's &6mixing cauldron&r is your first magical workstation. all four elemental essences brew here -- the ars nouveau imbuement chamber recipes are gone."
 				""
-				"tip: it needs a heat source underneath and the right liquid inside. read the recipe in JEI before you blame the cauldron."
+				"needs a heat source underneath and the right liquid inside. the recipe's in JEI."
 			]
 			id: "46F3E5D16CC665B8"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "the cauldron awakens"
+			subtitle: "The cauldron awakens"
 			tasks: [{
 				id: "18F0B637AAB71C9E"
 				item: "hexerei:mixing_cauldron"
 				type: "item"
 			}]
-			title: "double, double!"
+			title: "Double, Double"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"two fire essences plus one of each other essence brew into FOUR &6fire charges&r in the cauldron. a fire charge lights a nether portal with a right-click -- no flint and steel, no steel, no gregtech."
+				"two fire essences plus one of each other essence brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
 				""
-				"the tech tree gets to the nether through metallurgy. you get there through arson."
+				"the tech tree reaches the nether through metallurgy. this skips all of it."
 			]
 			id: "7FDB6031A17DC65B"
-			subtitle: "\"i'll be damned if i have to touch *steel*\""
+			subtitle: "i'd rather not touch steel"
 			tasks: [{
 				id: "3AF5DEF6D2FCCE84"
 				item: "minecraft:fire_charge"
 				type: "item"
 			}]
-			title: "evil ass progression skip"
+			title: "Arson Works Too"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46F3E5D16CC665B8"]
 			description: [
-				"every essence brews from ingredients matching its element -- &cfire&r is coals and flint stirred into hot lava. the other three follow the same logic in their own liquids."
+				"every essence brews from ingredients matching its element -- &cfire&r is coals and flint in hot lava. the other three follow the same logic in their own liquids."
 				""
-				"tip: brew spares. essences are the flour of this entire tree."
+				"brew spares. essences are the base of this whole tree."
 			]
 			id: "475DA94832CDDEB7"
-			subtitle: "man who even needs the periodic table"
+			subtitle: "who needs the periodic table"
 			tasks: [
 				{
 					id: "0B787DB01AADC412"
@@ -71,11 +71,11 @@
 							"ftbfiltersystem:filter": "or(item(ars_nouveau:earth_essence)item(ars_nouveau:air_essence)item(ars_nouveau:water_essence))"
 						}
 					}
-					title: "any other essence"
+					title: "Any Other Essence"
 					type: "item"
 				}
 			]
-			title: "greek to me"
+			title: "Greek to Me"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -83,31 +83,31 @@
 			dependencies: ["7FDB6031A17DC65B"]
 			dependency_requirement: "one_completed"
 			description: [
-				"build the frame, right-click a fire charge, walk in. the nether has blaze rods, soul sand, and several things that want you dead -- all of them ingredients eventually."
+				"build the frame, right-click a fire charge, walk in. the nether has blaze rods, soul sand, and plenty that wants you dead -- most of it an ingredient eventually."
 				""
-				"tip: bring more fire charges than you think you need. ghasts have opinions about your portal."
+				"bring spare fire charges. portals break."
 			]
 			icon: "minecraft:netherrack"
 			id: "1BBC77A8493BB220"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "welcome to hell! weather's great here.."
+			subtitle: "welcome to hell, weather's lovely"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "3FB55B635F060F2D"
-				title: "take a trip to the nether"
+				title: "Take a Trip to the Nether"
 				type: "dimension"
 			}]
-			title: "nether again"
+			title: "Nether Again"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"essences bind into wearables now. &bair&r essence sews an &6umbrella&r that slows your fall, &9water&r essence webs a pair of &6flippers&r, and &2earth&r essence roots the &6rooted boots&r into the dirt."
+				"essences bind into wearables. &bair&r essence sews an &6umbrella&r that slows your fall, &9water&r essence webs a pair of &6flippers&r, and &2earth&r essence roots the &6rooted boots&r."
 				""
-				"the flippers and boots also want &ddubious dust&r from nameless trinkets. the umbrella just wants leather and a stick. craft any one of them."
+				"the flippers and boots also need &ddubious dust&r from nameless trinkets. the umbrella just needs leather and a stick. craft any one."
 			]
 			id: "5B21D4E09A7F3C10"
 			subtitle: "the drip of the elements"
@@ -120,28 +120,28 @@
 						"ftbfiltersystem:filter": "or(item(artifacts:umbrella)item(artifacts:flippers)item(artifacts:rooted_boots))"
 					}
 				}
-				title: "any elemental artifact"
+				title: "Any Elemental Artifact"
 				type: "item"
 			}]
-			title: "elemental fashion"
+			title: "Elemental Fashion"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"the &6copper spell book&r binds all four essences around a book, cased in copper plates. hammer time."
+				"the &6copper spell book&r binds all four essences around a book, cased in copper plates."
 				""
-				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. no, you can't skip the copper one."
+				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
 			]
 			id: "62E8A3F71C0D4B20"
-			subtitle: "read the room. then set it on fire"
+			subtitle: "required reading"
 			tasks: [{
 				id: "62E8A3F71C0D4B21"
 				item: "irons_spellbooks:iron_spell_book"
 				type: "item"
 			}]
-			title: "booked up"
+			title: "Booked Up"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -154,23 +154,23 @@
 				tag: { }
 			}
 			description: [
-				"this is the magic side: no boilers, no voltage, no soot -- just cauldrons, essences, and some questionable rituals."
+				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essences, and rituals."
 				""
-				"tip: magic and tech trade materials constantly in this pack. even a pure mage should wave at the other book occasionally."
+				"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
 			]
 			id: "1FA819FE418EBE16"
 			shape: "diamond"
-			subtitle: "something something easy way out"
+			subtitle: "the easy way out"
 			tasks: [{
 				id: "5CE2A909940AA9BB"
-				title: "magic!"
+				title: "Magic!"
 				type: "checkmark"
 			}]
-			title: "magic!"
+			title: "Magic!"
 			x: -1.5d
 			y: 0.0d
 		}
 	]
 	subtitle: ["Dip your toes into the arcane"]
-	title: "i. hobbyist"
+	title: "I. Hobbyist"
 }

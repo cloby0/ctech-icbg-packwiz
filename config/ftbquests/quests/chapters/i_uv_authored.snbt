@@ -20,13 +20,13 @@
 			id: "2200F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "524288 EU/t, last stop before the sky burns"
+			subtitle: "524288 EU/t, the last standard tier"
 			tasks: [{
 				id: "2200F1C2E3D40003"
-				title: "ultimate voltage!"
+				title: "Ultimate Voltage!"
 				type: "checkmark"
 			}]
-			title: "ultimate voltage!"
+			title: "Ultimate Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -47,7 +47,7 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
-			title: "UV power"
+			title: "UV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -68,7 +68,7 @@
 				item: "silentcompat:arcmetal_ingot"
 				type: "item"
 			}]
-			title: "arcmetal"
+			title: "Arcmetal"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -89,7 +89,7 @@
 				item: "gtceu:yttrium_barium_cuprate_single_wire"
 				type: "item"
 			}]
-			title: "YBCO superconductor"
+			title: "YBCO Superconductor"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -110,7 +110,7 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			title: "UV lapotronic battery"
+			title: "UV Lapotronic Battery"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -131,7 +131,7 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			title: "fusion reactor Mk3"
+			title: "Fusion Reactor Mk3"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -146,18 +146,18 @@
 			id: "2200F1C2E3D40014"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "see you never, 524288 EU/t -- the sky burns next"
+			subtitle: "see you never, 524288 EU/t"
 			tasks: [{
 				count: 4L
 				id: "2200F1C2E3D40015"
 				item: "gtceu:draconium_plate"
 				type: "item"
 			}]
-			title: "leaving UV"
+			title: "Leaving UV"
 			x: 0.0d
 			y: -9.0d
 		}
 	]
-	subtitle: ["The last standard tier. Then the sky burns."]
-	title: "IX. ultimate voltage"
+	subtitle: ["The last standard tier."]
+	title: "IX. Ultimate Voltage"
 }

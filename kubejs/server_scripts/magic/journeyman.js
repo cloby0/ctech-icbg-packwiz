@@ -212,6 +212,18 @@ ServerEvents.recipes(event => {
         }
     );
 
+    event.shaped(
+            Item.of('gtceu:source_dust', 1),
+            [
+                'S',
+                'M'
+            ],
+            {
+                S: 'gtceu:raw_source',
+                M: '#forge:tools/mortars'
+            }
+        ).damageIngredient(Ingredient.of('#forge:tools/mortars'));
+
     event.custom({
         "type": "ars_nouveau:crush",
         "input": { "item": "gtceu:raw_source" },

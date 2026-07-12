@@ -28,7 +28,7 @@
 				item: "gtceu:lv_arms_manufacturer"
 				type: "item"
 			}]
-			title: "arms manufacturer"
+			title: "Arms Manufacturer"
 			x: -3.5d
 			y: -6.75d
 		}
@@ -41,10 +41,10 @@
 			subtitle: "32 EU/t and a dream"
 			tasks: [{
 				id: "1B00F1C2E3D40003"
-				title: "low voltage!"
+				title: "Low Voltage!"
 				type: "checkmark"
 			}]
-			title: "low voltage!"
+			title: "Low Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -53,7 +53,7 @@
 			description: [
 				"the &6LV steam turbine&r produces 32 EU/t. four turbines off a &3large bronze boiler&r gives 128 EU/t, enough for a basic LV setup. the boiler (800 steam/t) has plenty of headroom if you need more turbines."
 				""
-				"fill the boiler before lighting it. if it runs dry while hot and you add cold water, it expresses its disappointment violently."
+				"fill the boiler before lighting it. if it runs dry while hot and you add cold water, it explodes."
 			]
 			id: "1B00F1C2E3D40004"
 			shape: "square"
@@ -65,7 +65,7 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			title: "new engine"
+			title: "New Engine"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -102,7 +102,7 @@
 					type: "item"
 				}
 			]
-			title: "the workshop"
+			title: "The Workshop"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -130,7 +130,7 @@
 					type: "item"
 				}
 			]
-			title: "chemistry 101"
+			title: "Chemistry 101"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -150,7 +150,7 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "the bootstrap problem"
+			title: "The Bootstrap Problem"
 			x: 0.0d
 			y: -5.25d
 		}
@@ -170,7 +170,7 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "circuit factory"
+			title: "Circuit Factory"
 			x: 0.0d
 			y: -6.75d
 		}
@@ -199,7 +199,7 @@
 					type: "item"
 				}
 			]
-			title: "blast off"
+			title: "Blast Off"
 			x: 0.0d
 			y: -8.25d
 		}
@@ -228,7 +228,7 @@
 					type: "item"
 				}
 			]
-			title: "sapphire route"
+			title: "Sapphire Route"
 			x: 0.0d
 			y: -9.75d
 		}
@@ -258,7 +258,7 @@
 					type: "item"
 				}
 			]
-			title: "leaving low voltage"
+			title: "Leaving Low Voltage"
 			x: 0.0d
 			y: -11.25d
 		}
@@ -294,7 +294,7 @@
 					type: "item"
 				}
 			]
-			title: "big boiler"
+			title: "Big Boiler"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -314,7 +314,7 @@
 				item: "gtceu:lv_ore_washer"
 				type: "item"
 			}]
-			title: "ore washer"
+			title: "Ore Washer"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -330,7 +330,7 @@
 				item: "gtceu:lv_thermal_centrifuge"
 				type: "item"
 			}]
-			title: "thermal centrifuge"
+			title: "Thermal Centrifuge"
 			x: 2.0d
 			y: -4.5d
 		}
@@ -350,7 +350,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			title: "centrifuge"
+			title: "Centrifuge"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -378,7 +378,7 @@
 					type: "item"
 				}
 			]
-			title: "polarizer \\& solidifier"
+			title: "Polarizer \\& Solidifier"
 			x: -2.0d
 			y: -4.5d
 		}
@@ -398,11 +398,11 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			title: "assembler"
+			title: "Assembler"
 			x: -2.0d
 			y: -6.75d
 		}
 	]
 	subtitle: ["Build the furnace. Find the stone. Make the metal."]
-	title: "II. low voltage"
+	title: "II. Low Voltage"
 }

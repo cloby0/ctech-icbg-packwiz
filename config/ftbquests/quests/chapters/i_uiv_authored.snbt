@@ -20,13 +20,13 @@
 			id: "2500F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "33554432 EU/t. the last tier. everything ends here."
+			subtitle: "33554432 EU/t. the last tier."
 			tasks: [{
 				id: "2500F1C2E3D40003"
-				title: "ultra immense voltage!"
+				title: "Ultra Immense Voltage!"
 				type: "checkmark"
 			}]
-			title: "ultra immense voltage!"
+			title: "Ultra Immense Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -63,7 +63,7 @@
 					type: "item"
 				}
 			]
-			title: "the four trials"
+			title: "The Four Trials"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -83,7 +83,7 @@
 				item: "kubejs:void_nucleus"
 				type: "item"
 			}]
-			title: "void nucleus"
+			title: "Void Nucleus"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -103,7 +103,7 @@
 				item: "kubejs:elemental_convergence_matrix"
 				type: "item"
 			}]
-			title: "elemental convergence matrix"
+			title: "Elemental Convergence Matrix"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -123,7 +123,7 @@
 				item: "kubejs:unforged_cumium_matrix"
 				type: "item"
 			}]
-			title: "the cumium ritual"
+			title: "The Cumium Ritual"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -145,7 +145,7 @@
 				item: "gtceu:cumium_ingot"
 				type: "item"
 			}]
-			title: "cumium ingot"
+			title: "Cumium Ingot"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -174,7 +174,7 @@
 					type: "item"
 				}
 			]
-			title: "cumium circuits"
+			title: "Cumium Circuits"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -194,7 +194,7 @@
 				item: "draconicevolution:reactor_core"
 				type: "item"
 			}]
-			title: "the draconic reactor"
+			title: "The Draconic Reactor"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -223,7 +223,7 @@
 					type: "item"
 				}
 			]
-			title: "mainframes, finally"
+			title: "Mainframes, Finally"
 			x: 2.0d
 			y: -7.5d
 		}
@@ -243,7 +243,7 @@
 				item: "kubejs:artificial_cumium_brain"
 				type: "item"
 			}]
-			title: "artificial cumium brain"
+			title: "Artificial Cumium Brain"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -260,14 +260,14 @@
 			subtitle: "there's no next chapter"
 			tasks: [{
 				id: "2500F1C2E3D4002D"
-				title: "journey's end"
+				title: "Journey's End"
 				type: "checkmark"
 			}]
-			title: "journey's end"
+			title: "Journey's End"
 			x: 0.0d
 			y: -12.0d
 		}
 	]
 	subtitle: ["The last tier. Forge the Cumium Ingot."]
-	title: "XII. ultra immense voltage"
+	title: "XII. Ultra Immense Voltage"
 }

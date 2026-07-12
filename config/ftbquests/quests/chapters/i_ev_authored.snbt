@@ -23,10 +23,10 @@
 			subtitle: "2048 EU/t and a whole new planet"
 			tasks: [{
 				id: "1E00F1C2E3D40003"
-				title: "extreme voltage!"
+				title: "Extreme Voltage!"
 				type: "checkmark"
 			}]
-			title: "extreme voltage!"
+			title: "Extreme Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -46,7 +46,7 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			title: "EV power"
+			title: "EV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -68,7 +68,7 @@
 				item: "kubejs:desh_hull_section"
 				type: "item"
 			}]
-			title: "mars components"
+			title: "Mars Components"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -89,7 +89,7 @@
 				item: "ad_astra:tier_2_rocket"
 				type: "item"
 			}]
-			title: "the mars rocket"
+			title: "The Mars Rocket"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -112,7 +112,7 @@
 				item: "ad_astra:mars_sand"
 				type: "item"
 			}]
-			title: "first mars trip"
+			title: "First Mars Trip"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -133,7 +133,7 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			title: "tungsten"
+			title: "Tungsten"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -154,7 +154,7 @@
 				item: "ad_astra:ostrum_ingot"
 				type: "item"
 			}]
-			title: "ostrum processing"
+			title: "Ostrum Processing"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -183,7 +183,7 @@
 					type: "item"
 				}
 			]
-			title: "ME fabricator"
+			title: "ME Fabricator"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -204,7 +204,7 @@
 				item: "kubejs:matter_energy_circuit"
 				type: "item"
 			}]
-			title: "matter-energy circuit"
+			title: "Matter-Energy Circuit"
 			x: 0.0d
 			y: -12.0d
 		}
@@ -234,7 +234,7 @@
 					type: "item"
 				}
 			]
-			title: "leaving EV"
+			title: "Leaving EV"
 			x: 0.0d
 			y: -16.5d
 		}
@@ -254,7 +254,7 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			title: "large combustion engine"
+			title: "Large Combustion Engine"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -274,7 +274,7 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			title: "AE2 drive"
+			title: "AE2 Drive"
 			x: 2.0d
 			y: -12.0d
 		}
@@ -302,7 +302,7 @@
 					type: "item"
 				}
 			]
-			title: "EV circuit assembler"
+			title: "EV Circuit Assembler"
 			x: -2.0d
 			y: -10.5d
 		}
@@ -323,7 +323,7 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			title: "nano processor assembly"
+			title: "Nano Processor Assembly"
 			x: -2.0d
 			y: -12.0d
 		}
@@ -344,7 +344,7 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			title: "nano processor computer"
+			title: "Nano Processor Computer"
 			x: -2.0d
 			y: -13.5d
 		}
@@ -365,11 +365,11 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			title: "nano processor mainframe"
+			title: "Nano Processor Mainframe"
 			x: -2.0d
 			y: -15.0d
 		}
 	]
 	subtitle: ["Get to Mars. Get to AE2."]
-	title: "v. extreme voltage"
+	title: "V. Extreme Voltage"
 }

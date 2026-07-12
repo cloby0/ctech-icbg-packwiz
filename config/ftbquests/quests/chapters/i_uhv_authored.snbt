@@ -20,13 +20,13 @@
 			id: "2300F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "2097152 EU/t. tech and magic start talking to each other now."
+			subtitle: "2097152 EU/t. tech and magic start converging here."
 			tasks: [{
 				id: "2300F1C2E3D40003"
-				title: "ultra high voltage!"
+				title: "Ultra High Voltage!"
 				type: "checkmark"
 			}]
-			title: "ultra high voltage!"
+			title: "Ultra High Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -47,7 +47,7 @@
 				item: "kubejs:draconic_framework_casing"
 				type: "item"
 			}]
-			title: "draconic framework"
+			title: "Draconic Framework"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -59,13 +59,13 @@
 				"perfect overclocks, no parallel hatch. it drinks &5draconic computation&r fluid, so keep the chemical reactor loop from the next quest fed."
 			]
 			id: "3B90E4C7A2D51F60"
-			subtitle: "the dragon, contained and invoiced"
+			subtitle: "draconic evolution's fusion altar, industrialized"
 			tasks: [{
 				id: "3B90E4C7A2D51F61"
 				item: "gtceu:draconic_infusion_chamber"
 				type: "item"
 			}]
-			title: "draconic infusion chamber"
+			title: "Draconic Infusion Chamber"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -86,7 +86,7 @@
 				item: "draconicevolution:awakened_draconium_ingot"
 				type: "item"
 			}]
-			title: "awakened draconium"
+			title: "Awakened Draconium"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -107,7 +107,7 @@
 				item: "kubejs:draconic_resonance_board"
 				type: "item"
 			}]
-			title: "draconic resonance board"
+			title: "Draconic Resonance Board"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -128,7 +128,7 @@
 				item: "kubejs:draconic_processor"
 				type: "item"
 			}]
-			title: "draconic processor"
+			title: "Draconic Processor"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -149,7 +149,7 @@
 				item: "kubejs:draconic_processor_assembly"
 				type: "item"
 			}]
-			title: "draconic processor assembly"
+			title: "Draconic Processor Assembly"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -170,7 +170,7 @@
 				item: "kubejs:draconic_processor_supercomputer"
 				type: "item"
 			}]
-			title: "draconic processor supercomputer"
+			title: "Draconic Processor Supercomputer"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -200,11 +200,11 @@
 					type: "item"
 				}
 			]
-			title: "leaving UHV"
+			title: "Leaving UHV"
 			x: 0.0d
 			y: -10.5d
 		}
 	]
-	subtitle: ["Where tech meets myth. Feed the dragon."]
-	title: "x. ultra high voltage"
+	subtitle: ["Where tech meets myth."]
+	title: "X. Ultra High Voltage"
 }

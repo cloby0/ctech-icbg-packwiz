@@ -43,7 +43,7 @@
 				item: "mysticalagriculture:air_seeds"
 				type: "item"
 			}]
-			title: "air seed"
+			title: "Air Seed"
 			x: 2.5d
 			y: 3.5d
 		}
@@ -63,7 +63,7 @@
 				item: "mysticalagriculture:earth_seeds"
 				type: "item"
 			}]
-			title: "earth seed"
+			title: "Earth Seed"
 			x: 1.5d
 			y: 4.0d
 		}
@@ -83,7 +83,7 @@
 				item: "mysticalagriculture:water_seeds"
 				type: "item"
 			}]
-			title: "water seed"
+			title: "Water Seed"
 			x: -1.5d
 			y: 4.0d
 		}
@@ -93,7 +93,7 @@
 				"51D5B5C004491077"
 			]
 			description: [
-				"magebloom crop, four &cfire essences&r, four &cfire agglomeratio&r. the crop survives the ritual. farming it is your job now."
+				"magebloom crop, four &cfire essences&r, four &cfire agglomeratio&r. the crop survives the ritual, so replant and farm it."
 			]
 			id: "48904FDBC23CD945"
 			size: 0.75d
@@ -103,7 +103,7 @@
 				item: "mysticalagriculture:fire_seeds"
 				type: "item"
 			}]
-			title: "fire seed"
+			title: "Fire Seed"
 			x: -2.5d
 			y: 3.5d
 		}
@@ -120,14 +120,14 @@
 				item: "mysticalagriculture:air_essence"
 				type: "item"
 			}]
-			title: "air essence"
+			title: "Air Essence"
 			x: 2.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["6D67F9A2B676C7CA"]
 			description: [
-				"crops in, &2earth essence&r out. tip: MA growth accelerators and lilypads of fertility stack shamelessly. build one big essence farm now, thank yourself at sage."
+				"crops in, &2earth essence&r out. tip: MA growth accelerators and lilypads of fertility stack. build one big essence farm now -- you'll want it by sage."
 			]
 			id: "5168FD0A21AE3B49"
 			size: 0.75d
@@ -137,14 +137,14 @@
 				item: "mysticalagriculture:earth_essence"
 				type: "item"
 			}]
-			title: "earth essence"
+			title: "Earth Essence"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5645B3BFEB76C34A"]
 			description: [
-				"&9water essence&r, farmed. the four elements as agriculture -- alchemists hate this one trick."
+				"&9water essence&r, farmed. the four elements, grown as crops."
 			]
 			id: "5E9CB75348632373"
 			size: 0.75d
@@ -154,14 +154,14 @@
 				item: "mysticalagriculture:water_essence"
 				type: "item"
 			}]
-			title: "water essence"
+			title: "Water Essence"
 			x: -1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["48904FDBC23CD945"]
 			description: [
-				"&cfire essence&r from a plant. don't ask the plant how it feels about this."
+				"&cfire essence&r, harvested from the crop."
 			]
 			id: "18E8F3A1B08C0C04"
 			size: 0.75d
@@ -171,7 +171,7 @@
 				item: "mysticalagriculture:fire_essence"
 				type: "item"
 			}]
-			title: "fire essence"
+			title: "Fire Essence"
 			x: -2.0d
 			y: 5.0d
 		}
@@ -185,39 +185,39 @@
 			description: [
 				"a &aholy silver ingot&r enchanted over all four MA essences and four &3source blocks&r collapses into &5chaos essence&r for 6000 source."
 				""
-				"tip: chaos essence also enchants into &cpyrium&r (fire+air) and bottled XP (water+earth). it's a whole economy."
+				"tip: chaos essence also enchants into &cpyrium&r (fire+air) and bottled XP (water+earth)."
 			]
 			id: "270F7BBFAA80139A"
-			subtitle: "what happens when four contradictory forces agree"
+			subtitle: "four elements, forced to agree"
 			tasks: [{
 				id: "1AE3507AD0CF9579"
 				item: "kubejs:chaos_essence"
 				type: "item"
 			}]
-			title: "chaos essence"
+			title: "Chaos Essence"
 			x: 0.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"&aprima materia&r caps off the &8sorcerer&r tier - the combined form of all four elements."
+				"&aprima materia&r caps off the &8sorcerer&r tier -- the combined form of all four elements."
 				""
-				"imbue your &5chaos essence&r with an &delement attunement stone&r on the pedestal. 10000 source. the chamber will drink your jars dry."
+				"imbue your &5chaos essence&r with an &delement attunement stone&r on the pedestal for 10000 source. keep the source jars stocked."
 				""
-				"all four elemental essences and a pile of source are already in there -- that's what the chaos essence IS. prima materia is just the final step."
+				"the chaos essence already holds all four elemental essences and a pile of source; prima materia is the final step."
 				""
-				"&9note:&r prima materia bridges the elemental and the botanical. &amanasteel&r is next, and it needs this. its plates also brew &5epic ink&r later -- don't stop at one."
+				"&9note:&r prima materia bridges the elemental and the botanical. &amanasteel&r is next and needs this. its plates also brew &5epic ink&r later, so don't stop at one."
 			]
 			id: "3C613081F4FE51B2"
 			size: 1.5d
-			subtitle: "the first matter. the last obstacle."
+			subtitle: "the first matter"
 			tasks: [{
 				id: "0A2DE3E8C71654D5"
 				item: "gtceu:prima_materia_ingot"
 				type: "item"
 			}]
-			title: "prima materia"
+			title: "Prima Materia"
 			x: 0.0d
 			y: 8.25d
 		}
@@ -236,7 +236,7 @@
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			title: "basic spell turret"
+			title: "Basic Spell Turret"
 			x: 1.875d
 			y: -1.125d
 		}
@@ -244,8 +244,6 @@
 			dependencies: ["5093B986663EAF9E"]
 			description: [
 				"ars armorer builds &6guns that shoot spells&r. pistols, snipers, auto rifles, a mortar, a flying blade -- all fueled by source instead of gunpowder."
-				""
-				"tip: the tech tree gets the arms manufacturer. you get these. everyone is armed. this is fine."
 			]
 			id: "040DF1F47AC5F4E3"
 			shape: "hexagon"
@@ -259,10 +257,10 @@
 						"ftbfiltersystem:filter": "or(nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"SEMI\",GunId:\"ars_armorer:pistol_source_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:280,GunFireMode:\"SEMI\",GunId:\"ars_armorer:sniper_distance_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"AUTO\",GunId:\"ars_armorer:auto_rifle_stream_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:250,GunFireMode:\"SEMI\",GunId:\"ars_armorer:shotgun_splash_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:350,GunFireMode:\"AUTO\",GunId:\"ars_armorer:shotgun_jet_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"BURST\",GunId:\"ars_armorer:special_miner_drill\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"SEMI\",GunId:\"ars_armorer:mortar_source_thrower\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:6,GunFireMode:\"SEMI\",GunId:\"ars_armorer:special_source_flying_blade\",HasBulletInBarrel:1b}))"
 					}
 				}
-				title: "any magic gun"
+				title: "Any Magic Gun"
 				type: "item"
 			}]
-			title: "magic guns!"
+			title: "Magic Guns!"
 			x: 1.875d
 			y: -1.875d
 		}
@@ -270,7 +268,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"&eglowing water&r is a throwable that burns the undead. crafts three at a time, which is exactly how many you need when three skeletons show up."
+				"&eglowing water&r is a throwable that burns the undead. crafts three at a time."
 			]
 			id: "0DED4DF736A831B4"
 			shape: "hexagon"
@@ -281,14 +279,14 @@
 				item: "reliquary:glowing_water"
 				type: "item"
 			}]
-			title: "glowing water"
+			title: "Glowing Water"
 			x: 0.0d
 			y: -1.125d
 		}
 		{
 			dependencies: ["0DED4DF736A831B4"]
 			description: [
-				"count to three. not two, not four. five is right out."
+				"a thrown explosive, brutal against the undead. count to three, then lob it."
 			]
 			id: "7D3CF0C46B40CAF1"
 			shape: "hexagon"
@@ -299,7 +297,7 @@
 				item: "reliquary:holy_hand_grenade"
 				type: "item"
 			}]
-			title: "holy hand grenade"
+			title: "Holy Hand Grenade"
 			x: 0.0d
 			y: -1.875d
 		}
@@ -307,7 +305,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"upgrade your novice book at the &6enchanting apparatus&r. more spell slots, higher tier glyphs, same terrible aim."
+				"upgrade your novice book at the &6enchanting apparatus&r. more spell slots and higher tier glyphs."
 			]
 			id: "7D00D62B7AD615A6"
 			shape: "hexagon"
@@ -318,7 +316,7 @@
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
-			title: "apprentice spell book"
+			title: "Apprentice Spell Book"
 			x: 1.125d
 			y: -1.875d
 		}
@@ -326,7 +324,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"the &6ender's hand&r swaps your position with whatever you're aiming at. yes, that includes the creeper. choose targets responsibly."
+				"the &6ender's hand&r swaps your position with whatever you're aiming at, creepers included."
 			]
 			id: "1FF1B92CC5B8C283"
 			shape: "hexagon"
@@ -350,7 +348,7 @@
 				}
 				type: "item"
 			}]
-			title: "ender's hand"
+			title: "Ender's Hand"
 			x: -2.625d
 			y: -1.125d
 		}
@@ -358,7 +356,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"a &6magnum torch&r suppresses hostile spawns in a big radius around it. one per base district ends the nightly zombie tax."
+				"a &6magnum torch&r suppresses hostile spawns in a large radius. one per base district and the nights go quiet."
 			]
 			id: "79584900C141FBA0"
 			shape: "hexagon"
@@ -374,7 +372,7 @@
 				}
 				type: "item"
 			}]
-			title: "any magnum torch"
+			title: "Any Magnum Torch"
 			x: 1.125d
 			y: -1.125d
 		}
@@ -382,7 +380,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"the &6reflection necklace&r stores the hits you take and detonates them back outward. passive-aggressive, weaponized."
+				"the &6reflection necklace&r stores the hits you take and detonates them back outward."
 			]
 			id: "1074384652CF1489"
 			shape: "hexagon"
@@ -408,7 +406,7 @@
 				}
 				type: "item"
 			}]
-			title: "reflection necklace"
+			title: "Reflection Necklace"
 			x: -1.125d
 			y: -1.125d
 		}
@@ -451,7 +449,7 @@
 				}
 				type: "item"
 			}]
-			title: "shadow glaive"
+			title: "Shadow Glaive"
 			x: -1.125d
 			y: -1.875d
 		}
@@ -459,12 +457,12 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"the &6magic mirror&r teleports you home from nearly a thousand blocks out. the commute-canceling relic."
+				"the &6magic mirror&r teleports you home from nearly a thousand blocks out."
 			]
 			id: "4A8C585CA9F997BB"
 			shape: "hexagon"
 			size: 0.75d
-			subtitle: "now with 100% more teleportation"
+			subtitle: "for skipping the walk home"
 			tasks: [{
 				id: "423B5461F5230125"
 				item: {
@@ -484,7 +482,7 @@
 				}
 				type: "item"
 			}]
-			title: "magic mirror"
+			title: "Magic Mirror"
 			x: -1.875d
 			y: -1.125d
 		}
@@ -492,7 +490,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"the &6spatial sign&r seals a point in space you can snap back to. set it before boss rooms, bad decisions, and lava-adjacent construction."
+				"the &6spatial sign&r seals a point in space you can snap back to. set it before boss rooms or risky builds."
 			]
 			id: "4471E5D89176B710"
 			shape: "hexagon"
@@ -516,7 +514,7 @@
 				}
 				type: "item"
 			}]
-			title: "spatial sign"
+			title: "Spatial Sign"
 			x: -1.875d
 			y: -1.875d
 		}
@@ -549,7 +547,7 @@
 				}
 				type: "item"
 			}]
-			title: "space dissector"
+			title: "Space Dissector"
 			x: -3.375d
 			y: -1.125d
 		}
@@ -582,7 +580,7 @@
 				}
 				type: "item"
 			}]
-			title: "elytra booster"
+			title: "Elytra Booster"
 			x: -3.375d
 			y: -1.875d
 		}
@@ -590,7 +588,7 @@
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
-				"the &6infinity ham&r regrows its own slices. ten pieces, forever. food problem: solved. existential questions: introduced."
+				"the &6infinity ham&r regrows its own slices. ten pieces, effectively infinite food."
 			]
 			id: "37D0AC07A071D56D"
 			shape: "hexagon"
@@ -621,7 +619,7 @@
 				}
 				type: "item"
 			}]
-			title: "infinity ham"
+			title: "Infinity Ham"
 			x: -2.625d
 			y: -1.875d
 		}
@@ -638,14 +636,14 @@
 				item: "kubejs:frozen_raw_gravitite"
 				type: "item"
 			}]
-			title: "frozen raw gravitite"
+			title: "Frozen Raw Gravitite"
 			x: 1.875d
 			y: 0.375d
 		}
 		{
 			dependencies: ["50376974E4F14658"]
 			description: [
-				"frozen gravitite runs through the aether &6altar&r next. freeze it, then enchant it. the metallurgy is spiritual."
+				"frozen gravitite runs through the aether &6altar&r next. freeze it, then charge it."
 			]
 			id: "1B9C0C6A43CB99C7"
 			size: 0.75d
@@ -655,7 +653,7 @@
 				item: "kubejs:altar_charged_gravitite"
 				type: "item"
 			}]
-			title: "altar-charged gravitite"
+			title: "Altar-Charged Gravitite"
 			x: 2.625d
 			y: 0.75d
 		}
@@ -672,24 +670,24 @@
 				item: "aether_redux:gravitite_ingot"
 				type: "item"
 			}]
-			title: "gravitite ingot"
+			title: "Gravitite Ingot"
 			x: 3.375d
 			y: 1.125d
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"chaos essence over two &cfire&r and two &bair&r essences enchants into FOUR &cpyrium ingots&r -- iron's spells' angriest metal, four at a time."
+				"chaos essence over two &cfire&r and two &bair&r essences enchants into FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
 			]
 			id: "17D15E6418E8452E"
 			size: 0.75d
-			subtitle: "forged from chaos and anger"
+			subtitle: "chaos, refined into metal"
 			tasks: [{
 				id: "473C3A340A0D66C2"
 				item: "irons_spellbooks:pyrium_ingot"
 				type: "item"
 			}]
-			title: "pyrium ingot"
+			title: "Pyrium Ingot"
 			x: 1.125d
 			y: 7.125d
 		}
@@ -708,11 +706,11 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			title: "epic ink"
+			title: "Epic Ink"
 			x: -1.125d
 			y: 7.125d
 		}
 	]
-	subtitle: ["Tap into alchemy and discover the great work"]
-	title: "v. sorcerer"
+	subtitle: ["Alchemy, the great work"]
+	title: "V. Sorcerer"
 }

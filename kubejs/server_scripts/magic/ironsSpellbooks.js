@@ -89,6 +89,11 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'irons_spellbooks:arcane_ingot' })
 
+    event.shapeless(
+        Item.of('irons_spellbooks:blank_rune', 2),
+        ['minecraft:paper', 'minecraft:paper', 'minecraft:stone', '#forge:tools/files']
+    ).damageIngredient(Ingredient.of('#forge:tools/files'))
+
     const runeRecipes = [
         { id: 'irons_spellbooks:arcane_rune',            themeItem: 'irons_spellbooks:arcane_essence'    },
         { id: 'irons_spellbooks:blood_rune',             themeItem: 'irons_spellbooks:blood_vial'        },
@@ -107,7 +112,7 @@ ServerEvents.recipes(event => {
 
     runeRecipes.forEach(r => {
         event.remove({ id: r.id })
-        event.shaped(Item.of(r.id, 1), ['EZE', 'FBF', 'EFE'], {
+        event.shaped(Item.of(r.id, 1), ['EZE', ' B ', ' F '], {
             E: r.themeItem,
             F: 'ars_nouveau:source_gem',
             B: 'irons_spellbooks:blank_rune',
@@ -133,7 +138,7 @@ ServerEvents.recipes(event => {
 
     orbRecipes.forEach(r => {
         event.remove({ id: r.id })
-        event.shaped(Item.of(r.id, 1), ['RZR', 'TUT', 'RTR'], {
+        event.shaped(Item.of(r.id, 1), ['RZR', ' U ', ' T '], {
             R: r.rune,
             T: r.theme,
             U: 'irons_spellbooks:upgrade_orb',

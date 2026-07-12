@@ -37,7 +37,7 @@
 				item: "gtceu:grand_enchanting_sanctum"
 				type: "item"
 			}]
-			title: "grand enchanting sanctum"
+			title: "Grand Enchanting Sanctum"
 			x: 2.0d
 			y: -4.0d
 		}
@@ -55,7 +55,7 @@
 				item: "gtceu:imbuement_factory"
 				type: "item"
 			}]
-			title: "imbuement factory"
+			title: "Imbuement Factory"
 			x: 2.0d
 			y: -5.5d
 		}
@@ -86,7 +86,7 @@
 					type: "item"
 				}
 			]
-			title: "enchanting apparatus"
+			title: "Enchanting Apparatus"
 			x: -0.5d
 			y: -4.0d
 		}
@@ -102,7 +102,7 @@
 				item: "kubejs:holy_silver_blend"
 				type: "item"
 			}]
-			title: "holy silver blend"
+			title: "Holy Silver Blend"
 			x: 0.5d
 			y: -4.0d
 		}
@@ -121,7 +121,7 @@
 				item: "gtceu:holy_silver_dust"
 				type: "item"
 			}]
-			title: "holy silver dust"
+			title: "Holy Silver Dust"
 			x: 0.0d
 			y: -5.5d
 		}
@@ -133,13 +133,13 @@
 				"enchant &3skyjade&r over two &6victory medals&r and an air and water essence. fight the valkyrie queen for the medals. the dust smelts straight to ingots in any furnace."
 			]
 			id: "4F7A2B90D3E16C30"
-			subtitle: "forged in the sky. name checks out"
+			subtitle: "forged in the sky, name checks out"
 			tasks: [{
 				id: "4F7A2B90D3E16C31"
 				item: "gtceu:skyforged_dust"
 				type: "item"
 			}]
-			title: "skyforged dust"
+			title: "Skyforged Dust"
 			x: -1.0d
 			y: -5.5d
 		}
@@ -161,10 +161,10 @@
 						"ftbfiltersystem:filter": "or(item(aether:valkyrie_pickaxe)item(aether:valkyrie_axe)item(aether:valkyrie_shovel)item(aether:valkyrie_hoe)item(aether:valkyrie_lance)item(aether:valkyrie_helmet)item(aether:valkyrie_chestplate)item(aether:valkyrie_leggings)item(aether:valkyrie_boots)item(aether:valkyrie_gloves)item(aether:valkyrie_cape))"
 					}
 				}
-				title: "any valkyrie gear"
+				title: "Any Valkyrie Gear"
 				type: "item"
 			}]
-			title: "the valkyrie armory"
+			title: "The Valkyrie Armory"
 			x: -1.0d
 			y: -6.75d
 		}
@@ -173,7 +173,7 @@
 			description: [
 				"&aholy silver&r is the defining material of the &8initiate&r tier - the magic line's equivalent of &7aluminium&r."
 				""
-				"it's made by pushing regular &7silver&r through a gauntlet of &3imbuements&r and &3apparatus&r rituals until it gets with the program."
+				"it's made by pushing regular &7silver&r through a gauntlet of &3imbuements&r and &3apparatus&r rituals."
 				""
 				"&9note:&r holy silver isn't mined. it's &dprocessed&r. plan accordingly."
 			]
@@ -186,7 +186,7 @@
 				item: "gtceu:holy_silver_ingot"
 				type: "item"
 			}]
-			title: "holy silver ingot"
+			title: "Holy Silver Ingot"
 			x: 0.0d
 			y: -6.75d
 		}
@@ -200,13 +200,13 @@
 				"the &ddivine pearl&r is iron's spells' blessed counterpart to the ender pearl -- and the upgrade reagent that turns uncommon ink rare. check JEI for your cheapest route."
 			]
 			id: "2D1F7AFFE193EDE3"
-			subtitle: "an aether ender pearl. basically."
+			subtitle: "basically an aether ender pearl"
 			tasks: [{
 				id: "5C0B76FCCF9776E5"
 				item: "irons_spellbooks:divine_pearl"
 				type: "item"
 			}]
-			title: "divine pearl"
+			title: "Divine Pearl"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -217,7 +217,7 @@
 			]
 			id: "2DFC564DDE9DDE82"
 			size: 0.75d
-			subtitle: "slightly less violent than it sounds"
+			subtitle: "less violent than it sounds"
 			tasks: [{
 				id: "263AFC9691CBD4E1"
 				item: {
@@ -229,7 +229,7 @@
 				}
 				type: "item"
 			}]
-			title: "mercy cross"
+			title: "Mercy Cross"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -241,20 +241,20 @@
 			id: "0B8AA1EB97970DB4"
 			shape: "hexagon"
 			size: 0.75d
-			subtitle: "teleportation, but classier"
+			subtitle: "cave lighting, at range"
 			tasks: [{
 				id: "406CC399D0C22A76"
 				item: "reliquary:sojourner_staff"
 				type: "item"
 			}]
-			title: "sojourner's staff"
+			title: "Sojourner's Staff"
 			x: 1.125d
 			y: 3.375d
 		}
 		{
 			dependencies: ["28B20F274E486CDB"]
 			description: [
-				"the &6glacial staff&r freezes water and chills whatever it pokes. bridge oceans, bully drowned."
+				"the &6glacial staff&r freezes water and chills whatever it pokes. bridge water, slow mobs."
 			]
 			id: "0B3840C36E5D555F"
 			shape: "hexagon"
@@ -265,7 +265,7 @@
 				item: "reliquary:glacial_staff"
 				type: "item"
 			}]
-			title: "glacial staff"
+			title: "Glacial Staff"
 			x: 0.375d
 			y: 3.375d
 		}
@@ -282,14 +282,14 @@
 				item: "irons_spellbooks:rare_ink"
 				type: "item"
 			}]
-			title: "rare ink"
+			title: "Rare Ink"
 			x: -1.125d
 			y: -2.25d
 		}
 		{
 			dependencies: ["28B20F274E486CDB"]
 			description: [
-				"the &6ender staff&r throws reusable ender pearls off a &5void tear&r battery. teleportation as a subscription service, except free."
+				"the &6ender staff&r throws reusable ender pearls off a &5void tear&r battery. teleport without spending pearls."
 			]
 			id: "383562436DCFD6B5"
 			shape: "hexagon"
@@ -314,7 +314,7 @@
 				}
 				type: "item"
 			}]
-			title: "ender staff"
+			title: "Ender Staff"
 			x: -0.375d
 			y: 3.375d
 		}
@@ -322,18 +322,18 @@
 			dependencies: ["06C1B3D271B8BFCF"]
 			hide_dependency_lines: true
 			description: [
-				"the &6rod of lyssa&r is a fishing rod for POCKETS -- cast it at a mob and steal what it's holding. morally gray, mechanically great."
+				"the &6rod of lyssa&r is a fishing rod for POCKETS -- cast it at a mob and steal what it's holding."
 			]
 			id: "7DB0088826AE5760"
 			shape: "hexagon"
 			size: 0.75d
-			subtitle: "violence, but stylish"
+			subtitle: "theft, at range"
 			tasks: [{
 				id: "3938AAFF343374B4"
 				item: "reliquary:rod_of_lyssa"
 				type: "item"
 			}]
-			title: "rod of lyssa"
+			title: "Rod of Lyssa"
 			x: -0.75d
 			y: 2.25d
 		}
@@ -352,7 +352,7 @@
 				item: "reliquary:hero_medallion"
 				type: "item"
 			}]
-			title: "hero medallion"
+			title: "Hero Medallion"
 			x: 0.75d
 			y: 2.25d
 		}
@@ -376,7 +376,7 @@
 				}
 				type: "item"
 			}]
-			title: "infinity wand"
+			title: "Infinity Wand"
 			x: -1.125d
 			y: 3.375d
 		}
@@ -402,7 +402,7 @@
 				}
 				type: "item"
 			}]
-			title: "void tear"
+			title: "Void Tear"
 			x: 0.0d
 			y: 2.25d
 		}
@@ -422,7 +422,7 @@
 				item: "irons_spellbooks:blank_rune"
 				type: "item"
 			}]
-			title: "blank runes"
+			title: "Blank Runes"
 			x: 1.5d
 			y: 2.25d
 		}
@@ -441,7 +441,7 @@
 				item: "irons_spellbooks:uncommon_ink"
 				type: "item"
 			}]
-			title: "uncommon ink"
+			title: "Uncommon Ink"
 			x: -1.5d
 			y: 2.25d
 		}
@@ -454,18 +454,18 @@
 			]
 			id: "6300D75BCC09AEF1"
 			size: 0.75d
-			subtitle: "clear it out. loot it thoroughly."
+			subtitle: "clear it out, loot it"
 			tasks: [{
 				advancement: "aether:silver_dungeon"
 				criterion: ""
 				id: "250C18732EF37828"
 				type: "advancement"
 			}]
-			title: "silver dungeon"
+			title: "Silver Dungeon"
 			x: -0.75d
 			y: -1.125d
 		}
 	]
-	subtitle: ["Continue capitalizing on your new resources"]
-	title: "IV. initiate"
+	subtitle: ["Still cashing in new resources"]
+	title: "IV. Initiate"
 }

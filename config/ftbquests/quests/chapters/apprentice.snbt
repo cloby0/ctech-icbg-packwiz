@@ -23,13 +23,13 @@
 			]
 			id: "7EA490DB5937F1B3"
 			size: 0.75d
-			subtitle: "ghost juice. don't ask questions."
+			subtitle: "ghost juice, essentially"
 			tasks: [{
 				id: "6E9C9B6B45BD2BF9"
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "arcane essence"
+			title: "Arcane Essence"
 			x: -1.875d
 			y: -1.125d
 		}
@@ -48,7 +48,7 @@
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			title: "imbuement chamber"
+			title: "Imbuement Chamber"
 			x: -0.75d
 			y: -1.125d
 		}
@@ -57,17 +57,17 @@
 			description: [
 				"the &6scribes table&r turns clay and experience into ars glyphs. this pack's version wants archwood, gold screws, common ink, magic cloth, and a feather."
 				""
-				"tip: glyph costs scale with tier. hoard XP like it's a currency, because it is."
+				"tip: glyph costs scale with tier. keep XP on hand."
 			]
 			id: "46FA0C350A12D8A3"
 			size: 0.75d
-			subtitle: "where spells are born (and poorly spelled)"
+			subtitle: "where glyphs come from"
 			tasks: [{
 				id: "26123C1BAD62F2F2"
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			title: "scribes table"
+			title: "Scribes Table"
 			x: -3.0d
 			y: -0.375d
 		}
@@ -76,26 +76,26 @@
 			description: [
 				"the &6inscription table&r is iron's spells' answer to the scribes table -- this is where spell scrolls get bound into books."
 				""
-				"tip: two mods, two tables, one desk area. build them next to each other and pretend it was intentional."
+				"tip: build it next to the scribes table. they pair up."
 			]
 			id: "23DADC343F70C96F"
 			size: 0.75d
-			subtitle: "two tables, both alike in dignity"
+			subtitle: "the other spellcrafting desk"
 			tasks: [{
 				id: "56DAA8BCEFF118C0"
 				item: "irons_spellbooks:inscription_table"
 				type: "item"
 			}]
-			title: "inscription table"
+			title: "Inscription Table"
 			x: -3.0d
 			y: -1.875d
 		}
 		{
 			dependencies: ["46FA0C350A12D8A3"]
 			description: [
-				"magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6novice spell book&r. foil is a GT bender product -- yes, the magic book has a tech ingredient. get used to that."
+				"magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6novice spell book&r. foil is a GT bender product -- the magic book takes a tech ingredient."
 				""
-				"tip: the book holds your glyphs and your mana. losing it is a personality-altering event. keybind a slot for it."
+				"tip: the book holds your glyphs and mana. keybind a slot so you don't lose it."
 			]
 			id: "69097C5CA51C927E"
 			size: 0.75d
@@ -105,7 +105,7 @@
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
-			title: "novice spell book"
+			title: "Novice Spell Book"
 			x: -4.125d
 			y: -0.375d
 		}
@@ -117,7 +117,7 @@
 			description: [
 				"back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eglowing compound dust&r."
 				""
-				"tip: yes, the diamond is consumed. the compound doesn't care about your feelings."
+				"tip: yes, the diamond is consumed."
 			]
 			id: "2128E321A9C4A125"
 			size: 0.75d
@@ -127,7 +127,7 @@
 				item: "kubejs:glowing_compound_dust"
 				type: "item"
 			}]
-			title: "glowing compound dust"
+			title: "Glowing Compound Dust"
 			x: 0.0d
 			y: -1.125d
 		}
@@ -143,13 +143,13 @@
 			]
 			id: "486FF2D3B8C2D77D"
 			size: 0.75d
-			subtitle: "kinda shiny but mostly gross"
+			subtitle: "shiny, mostly gross"
 			tasks: [{
 				id: "31661804FF454870"
 				item: "kubejs:impure_glimmering_dust"
 				type: "item"
 			}]
-			title: "impure glimmering dust"
+			title: "Impure Glimmering Dust"
 			x: 0.0d
 			y: -2.25d
 		}
@@ -160,20 +160,20 @@
 				""
 				"16 glowstone dust, one imbuement, and some glowing compound later - you've got a single &aluminessence dust&r."
 				""
-				"it shines bright. it gates a lot. get used to making it."
+				"it gates a lot of recipes. get used to making it."
 			]
 			id: "68DAC01E93C6240E"
-			subtitle: "congratulations on your glow-up"
+			subtitle: "it glows, and it gates a lot"
 			tasks: [{
 				id: "2BB106EE5CBCD4A8"
 				item: "gtceu:luminessence_dust"
 				type: "item"
 			}]
-			title: "luminessence"
+			title: "Luminessence"
 			x: 0.0d
 			y: -3.5d
 		}
 	]
-	subtitle: ["Explore the hellish depths in search of power"]
-	title: "II. apprentice"
+	subtitle: ["Searching the depths for power"]
+	title: "II. Apprentice"
 }

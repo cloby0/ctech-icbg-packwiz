@@ -967,4 +967,59 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD
         )
 
+    // ---- Silent Gear native metals. Registering as GT materials autogenerates the full
+    // ore/dust/ingot/block processing chain (macerator, washer, EBF, compressor). Alloys still
+    // need a hand-written mixer (see tech/silentgear.js); the blast step autogens from blastTemp.
+    // Gear materials tag-reference forge:ingots/<metal>, so they pick these up automatically.
+
+    event.create('crimson_iron')
+        .ingot()
+        .ore()
+        .color(0xFF6189).secondaryColor(0x8C2E44)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+        .addOreByproducts('nickel', 'gold', 'sulfur')
+        .washedIn('gtceu:mercury')
+        .separatedInto('nickel', 'gold')
+
+    event.create('azure_silver')
+        .ingot()
+        .ore()
+        .color(0xCBBAFF).secondaryColor(0x6A5C9C)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+        .addOreByproducts('silver', 'amethyst', 'ender_pearl')
+        .washedIn('gtceu:mercury')
+        .separatedInto('silver', 'amethyst')
+
+    event.create('blaze_gold')
+        .ingot()
+        .color(0xDD8500).secondaryColor(0x8C5400)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+
+    event.create('azure_electrum')
+        .ingot()
+        .color(0x4575E3).secondaryColor(0x223A80)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(1700, "low", GTValues.VA[GTValues.HV], 1000)
+        .components(c('2x azure_silver'), c('2x gold'))
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+
+    event.create('crimson_steel')
+        .ingot()
+        .color(0xDC143C).secondaryColor(0x780A20)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .blastTemp(1700, "low", GTValues.VA[GTValues.HV], 1000)
+        .components(c('1x crimson_iron'))
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD)
+
+    event.create('tyrian_steel')
+        .ingot()
+        .color(0x8B1A62).secondaryColor(0x4A0A34)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
+        .components(c('1x crimson_steel'), c('1x azure_electrum'))
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW)
+
 })

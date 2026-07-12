@@ -20,13 +20,13 @@
 			id: "2000F1C2E3D40002"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "32768 EU/t and a star in a bottle"
+			subtitle: "32768 EU/t and your first fusion reactor"
 			tasks: [{
 				id: "2000F1C2E3D40003"
-				title: "ludicrous voltage!"
+				title: "Ludicrous Voltage!"
 				type: "checkmark"
 			}]
-			title: "ludicrous voltage!"
+			title: "Ludicrous Voltage!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -47,7 +47,7 @@
 				item: "ad_astra:cryo_fuel_bucket"
 				type: "item"
 			}]
-			title: "LuV power"
+			title: "LuV Power"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -61,14 +61,14 @@
 			id: "2000F1C2E3D40008"
 			shape: "square"
 			size: 0.75d
-			subtitle: "rhenium makes it worthwhile"
+			subtitle: "rhenium is the key ingredient"
 			tasks: [{
 				count: 2L
 				id: "2000F1C2E3D40009"
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			title: "RTM alloy"
+			title: "RTM Alloy"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -83,14 +83,14 @@
 			id: "2000F1C2E3D4000C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "calorite comes back for round two"
+			subtitle: "calorite comes back around"
 			tasks: [{
 				count: 5L
 				id: "2000F1C2E3D4000D"
 				item: "kubejs:calorite_hull_section"
 				type: "item"
 			}]
-			title: "glacio components"
+			title: "Glacio Components"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -111,7 +111,7 @@
 				item: "ad_astra:tier_4_rocket"
 				type: "item"
 			}]
-			title: "the glacio rocket"
+			title: "The Glacio Rocket"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -125,14 +125,14 @@
 			id: "2000F1C2E3D40014"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "bring warm clothes, this one bites"
+			subtitle: "cold enough to kill without a suit"
 			tasks: [{
 				count: 16L
 				id: "2000F1C2E3D40015"
 				item: "ad_astra:glacio_stone"
 				type: "item"
 			}]
-			title: "first glacio trip"
+			title: "First Glacio Trip"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -153,7 +153,7 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			title: "naquadah"
+			title: "Naquadah"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -174,7 +174,7 @@
 				item: "gtceu:luv_fusion_reactor"
 				type: "item"
 			}]
-			title: "fusion reactor Mk1"
+			title: "Fusion Reactor Mk1"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -202,7 +202,7 @@
 					type: "item"
 				}
 			]
-			title: "LuV circuit assembler"
+			title: "LuV Circuit Assembler"
 			x: -2.0d
 			y: -12.0d
 		}
@@ -223,7 +223,7 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			title: "crystal processor assembly"
+			title: "Crystal Processor Assembly"
 			x: -2.0d
 			y: -13.5d
 		}
@@ -244,7 +244,7 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			title: "crystal processor computer"
+			title: "Crystal Processor Computer"
 			x: -2.0d
 			y: -15.0d
 		}
@@ -265,7 +265,7 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			title: "crystal processor mainframe"
+			title: "Crystal Processor Mainframe"
 			x: -2.0d
 			y: -16.5d
 		}
@@ -286,7 +286,7 @@
 				item: "gtceu:niobium_titanium_single_wire"
 				type: "item"
 			}]
-			title: "LuV superconductor"
+			title: "LuV Superconductor"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -316,11 +316,11 @@
 					type: "item"
 				}
 			]
-			title: "leaving LuV"
+			title: "Leaving LuV"
 			x: 0.0d
 			y: -18.0d
 		}
 	]
-	subtitle: ["Get to Glacio. Build the Sun."]
-	title: "VII. ludicrous voltage"
+	subtitle: ["Get to glacio, build the sun"]
+	title: "VII. Ludicrous Voltage"
 }

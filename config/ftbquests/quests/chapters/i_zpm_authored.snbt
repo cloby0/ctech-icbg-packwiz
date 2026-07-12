@@ -23,10 +23,10 @@
 			subtitle: "131072 EU/t, no new rock to land on"
 			tasks: [{
 				id: "2100F1C2E3D40003"
-				title: "zero point!"
+				title: "Zero Point!"
 				type: "checkmark"
 			}]
-			title: "zero point!"
+			title: "Zero Point!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -47,7 +47,7 @@
 				item: "gtceu:osmiridium_ingot"
 				type: "item"
 			}]
-			title: "osmiridium"
+			title: "Osmiridium"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -68,7 +68,7 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
 				type: "item"
 			}]
-			title: "ZPM superconductor"
+			title: "ZPM Superconductor"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -89,7 +89,7 @@
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
-			title: "fusion reactor Mk2"
+			title: "Fusion Reactor Mk2"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -117,7 +117,7 @@
 					type: "item"
 				}
 			]
-			title: "ZPM circuit assembler"
+			title: "ZPM Circuit Assembler"
 			x: -2.0d
 			y: -6.0d
 		}
@@ -138,7 +138,7 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "wetware processor assembly"
+			title: "Wetware Processor Assembly"
 			x: -2.0d
 			y: -7.5d
 		}
@@ -159,7 +159,7 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			title: "wetware processor computer"
+			title: "Wetware Processor Computer"
 			x: -2.0d
 			y: -9.0d
 		}
@@ -180,7 +180,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "wetware processor mainframe"
+			title: "Wetware Processor Mainframe"
 			x: -2.0d
 			y: -10.5d
 		}
@@ -200,7 +200,7 @@
 				item: "gtceu:zpm_me_fabricator"
 				type: "item"
 			}]
-			title: "ZPM ME fabricator"
+			title: "ZPM ME Fabricator"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -230,11 +230,11 @@
 					type: "item"
 				}
 			]
-			title: "leaving ZPM"
+			title: "Leaving ZPM"
 			x: 0.0d
 			y: -12.0d
 		}
 	]
-	subtitle: ["Mature the pipeline. Build a bigger star."]
-	title: "VIII. zero point module"
+	subtitle: ["Mature the pipeline, build a bigger star"]
+	title: "VIII. Zero Point Module"
 }

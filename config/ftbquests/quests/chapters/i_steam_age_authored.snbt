@@ -22,17 +22,17 @@
 			subtitle: "fire up the furnaces"
 			tasks: [{
 				id: "1A00F1C2E3D40003"
-				title: "technology!"
+				title: "Technology!"
 				type: "checkmark"
 			}]
-			title: "technology!"
+			title: "Technology!"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1A00F1C2E3D40002"]
 			description: [
-				"the &6LP steam solid boiler&r burns fuel and produces steam. keep water flowing in and it'll keep steam flowing out. let it run dry while hot and it'll express its disappointment violently."
+				"the &6LP steam solid boiler&r burns fuel and produces steam. keep water flowing in and it keeps steam flowing out. let it run dry while hot and it explodes."
 				""
 				"route steam through &3bronze fluid pipes&r only - wooden pipes burn. place a &3primitive water pump&r in the same chunk as the boiler for automatic water supply. no real water source needed."
 			]
@@ -52,7 +52,7 @@
 					type: "item"
 				}
 			]
-			title: "pressure cookin'"
+			title: "Pressure Cookin'"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -85,7 +85,7 @@
 					type: "item"
 				}
 			]
-			title: "assembly line, circa 1780"
+			title: "Assembly Line, Circa 1780"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -114,7 +114,7 @@
 					type: "item"
 				}
 			]
-			title: "primitive but persistent"
+			title: "Primitive but Persistent"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -135,7 +135,7 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "the real deal"
+			title: "The Real Deal"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -172,7 +172,7 @@
 					type: "item"
 				}
 			]
-			title: "elementary, really"
+			title: "Elementary, Really"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -202,7 +202,7 @@
 					type: "item"
 				}
 			]
-			title: "leaving steam"
+			title: "Leaving Steam"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -218,7 +218,7 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			title: "high pressure"
+			title: "High Pressure"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -246,7 +246,7 @@
 					type: "item"
 				}
 			]
-			title: "coke time"
+			title: "Coke Time"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -273,7 +273,7 @@
 				}
 				type: "item"
 			}]
-			title: "wrench it"
+			title: "Wrench It"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -289,7 +289,7 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			title: "getting sticky"
+			title: "Getting Sticky"
 			x: -2.0d
 			y: -4.5d
 		}
@@ -316,11 +316,11 @@
 					type: "item"
 				}
 			]
-			title: "more machines"
+			title: "More Machines"
 			x: -2.0d
 			y: -6.0d
 		}
 	]
 	subtitle: ["Tame fire. Make steel. Leave."]
-	title: "i. steam age"
+	title: "I. Steam Age"
 }

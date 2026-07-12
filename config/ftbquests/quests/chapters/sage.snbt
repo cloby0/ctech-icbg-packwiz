@@ -21,9 +21,7 @@
 			description: [
 				"the &agaia spirit ingot&r caps off the magic tree."
 				""
-				"congratulations. you've mastered the arcane."
-				""
-				"...go touch some grass before the endgame begins."
+				"the arcane side is finished here. the endgame brings both trees together."
 			]
 			id: "4E4F37F6AB877E5C"
 			shape: "square"
@@ -34,14 +32,14 @@
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			title: "gaia spirit ingot"
+			title: "Gaia Spirit Ingot"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4E4F37F6AB877E5C"]
 			description: [
-				"you started this book boiling essences in a borrowed cauldron, and now you're farming the guardian of gaia for ingots."
+				"you started this book boiling essences in a borrowed cauldron. now you're farming the guardian of gaia for ingots."
 				""
 				"no reward in this box -- the pack doesn't do quest rewards. what you get is the whole magic tree unlocked, and plenty of ways to use it on the tech side."
 				""
@@ -59,7 +57,7 @@
 			shape: "heart"
 			size: 4.0d
 			subtitle: "is this... the end?"
-			title: "the crescendo"
+			title: "The Crescendo"
 			x: 16.0d
 			y: 0.0d
 		}
@@ -75,7 +73,7 @@
 				item: "kubejs:vengeful_gaia_spirit"
 				type: "item"
 			}]
-			title: "vengeful gaia spirit"
+			title: "Vengeful Gaia Spirit"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -93,7 +91,7 @@
 				item: "kubejs:soul_of_gaia"
 				type: "item"
 			}]
-			title: "soul of gaia"
+			title: "Soul of Gaia"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -103,13 +101,13 @@
 			]
 			dependencies: ["57D3230B92DA91E0"]
 			id: "23D66F8D6CD53A68"
-			subtitle: "unbounded. unhinged. unstoppable."
+			subtitle: "boundless, allegedly"
 			tasks: [{
 				id: "36AA68C441D4A1CE"
 				item: "kubejs:boundless_gaia_spirit_ingot"
 				type: "item"
 			}]
-			title: "boundless gaia spirit ingot"
+			title: "Boundless Gaia Spirit Ingot"
 			x: 9.0d
 			y: 0.0d
 		}
@@ -127,7 +125,7 @@
 				item: "gtceu:wilden_alloy_dust"
 				type: "item"
 			}]
-			title: "wilden alloy"
+			title: "Wilden Alloy"
 			x: 3.0d
 			y: 2.0d
 		}
@@ -149,10 +147,10 @@
 						"ftbfiltersystem:filter": "or(item(kubejs:gaian_blood_core)item(kubejs:gaian_holy_core)item(kubejs:gaian_void_core)item(kubejs:gaian_annihilation_core))"
 					}
 				}
-				title: "any gaian core"
+				title: "Any Gaian Core"
 				type: "item"
 			}]
-			title: "gaian cores"
+			title: "Gaian Cores"
 			x: 12.0d
 			y: 2.0d
 		}
@@ -174,14 +172,14 @@
 						"ftbfiltersystem:filter": "or(item(kubejs:blood_grimoire)item(kubejs:radiant_sanctum)item(kubejs:eldritch_codex)item(kubejs:obliteration_chronicle)item(kubejs:harbinger_codex))"
 					}
 				}
-				title: "any grimoire"
+				title: "Any Grimoire"
 				type: "item"
 			}]
-			title: "the forbidden library"
+			title: "The Forbidden Library"
 			x: 14.0d
 			y: 2.0d
 		}
 	]
-	subtitle: ["Finish what you started and become the master of the arcane"]
-	title: "IX. sage"
+	subtitle: ["The last stretch of the magic tree"]
+	title: "IX. Sage"
 }
