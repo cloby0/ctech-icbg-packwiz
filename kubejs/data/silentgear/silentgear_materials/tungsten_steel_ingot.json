@@ -21,13 +21,13 @@
     },
     "stats": {
         "main": {
-            "durability": 2715.45,
-            "armor_durability": 45.6,
-            "enchantment_value": 7.2,
+            "durability": 2722.46,
+            "armor_durability": 45.72,
+            "enchantment_value": 7.18,
             "rarity": 26.45,
             "charging_value": 1.1,
             "harvest_speed": 14.12,
-            "melee_damage": 8.99,
+            "melee_damage": 10.34,
             "magic_damage": 2.57,
             "attack_speed": 0,
             "attack_speed/axe": 0,

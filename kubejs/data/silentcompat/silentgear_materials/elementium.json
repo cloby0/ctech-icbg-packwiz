@@ -54,12 +54,12 @@
     },
     "stats": {
         "main": {
-            "durability": 3538.23,
-            "armor_durability": 59.42,
-            "enchantment_value": 8.64,
+            "durability": 3623.31,
+            "armor_durability": 60.85,
+            "enchantment_value": 8.36,
             "harvest_speed": 18.14,
-            "melee_damage": 11.54,
-            "magic_damage": 3.3,
+            "melee_damage": 9.81,
+            "magic_damage": 3.79,
             "attack_speed/axe": 0,
             "armor": 34.62,
             "armor/helmet": 5,
@@ -70,7 +70,7 @@
             "ranged_damage": 4.95,
             "ranged_speed": 0,
             "rarity": 30.42,
-            "charging_value": 1.21,
+            "charging_value": 1.17,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
             "magic_armor": 11.54

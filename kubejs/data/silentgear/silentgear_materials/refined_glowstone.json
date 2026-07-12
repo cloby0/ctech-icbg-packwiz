@@ -21,13 +21,13 @@
     },
     "stats": {
         "main": {
-            "durability": 1599.39,
-            "armor_durability": 26.86,
+            "durability": 1442.66,
+            "armor_durability": 24.23,
             "repair_value": 0.15,
-            "enchantment_value": 5.0,
+            "enchantment_value": 5.65,
             "harvest_speed": 8.57,
-            "melee_damage": 5.45,
-            "magic_damage": 1.56,
+            "melee_damage": 4.63,
+            "magic_damage": 1.75,
             "attack_speed": 0.0,
             "armor": 16.36,
             "armor/helmet": 3.0,
@@ -35,10 +35,10 @@
             "armor/leggings": 6.0,
             "armor/boots": 3.0,
             "magic_armor": 5.45,
-            "ranged_damage": 2.34,
+            "ranged_damage": 2.4,
             "ranged_speed": 0.0,
             "rarity": 20.0,
-            "charging_value": 0.91
+            "charging_value": 1.03
         },
         "rod": {
             "durability": {

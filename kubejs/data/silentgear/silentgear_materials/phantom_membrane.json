@@ -22,11 +22,11 @@
     },
     "stats": {
         "main": {
-            "durability": 1227.46,
-            "armor_durability": 20.61,
-            "enchantment_value": 4.17,
+            "durability": 1043.34,
+            "armor_durability": 17.52,
+            "enchantment_value": 5.0,
             "rarity": 17.39,
-            "charging_value": 0.83,
+            "charging_value": 1.0,
             "armor_durability/elytra": 17.0,
             "armor": 12.74,
             "armor/helmet": 1.0,
