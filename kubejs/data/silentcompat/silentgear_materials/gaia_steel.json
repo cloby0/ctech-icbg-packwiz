@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:netherite",
     "availability": {
-        "tier": 10,
+        "tier": 11,
         "categories": [
             "metal"
         ],
@@ -73,27 +73,27 @@
     },
     "stats": {
         "main": {
-            "durability": 6500,
-            "armor_durability": 82,
-            "enchantment_value": 38,
-            "harvest_speed": 22,
-            "melee_damage": 24,
-            "magic_damage": 12,
+            "durability": 6007.25,
+            "armor_durability": 100.89,
+            "enchantment_value": 12.44,
+            "harvest_speed": 29.9,
+            "melee_damage": 19.03,
+            "magic_damage": 5.44,
             "attack_speed": 1,
             "attack_speed/axe": 1,
-            "armor": 46,
+            "armor": 57.08,
             "armor/helmet": 8,
             "armor/chestplate": 16,
             "armor/leggings": 14,
             "armor/boots": 8,
-            "armor_toughness": 30,
-            "ranged_damage": 9,
+            "armor_toughness": 21.74,
+            "ranged_damage": 8.15,
             "ranged_speed": 0,
-            "rarity": 90,
-            "charging_value": 2,
+            "rarity": 40.23,
+            "charging_value": 1.46,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
-            "magic_armor": 22,
+            "magic_armor": 19.03,
             "knockback_resistance": {
                 "add": 2
             }
