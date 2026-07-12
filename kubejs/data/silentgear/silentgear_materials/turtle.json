@@ -1,65 +1,65 @@
 {
-  "type": "silentgear:standard",
-  "simple": true,
-  "harvest_tier": "minecraft:wood",
-  "availability": {
-    "tier": 2,
-    "categories": [
-      "organic"
-    ],
-    "visible": true,
-    "gear_blacklist": [],
-    "can_salvage": true
-  },
-  "crafting_items": {
-    "main": {
-      "item": "minecraft:scute"
-    }
-  },
-  "name": {
-    "translate": "material.silentgear.turtle"
-  },
-  "stats": {
-    "main": {
-      "durability": 0.0,
-      "armor_durability/helmet": 25.0,
-      "enchantment_value": 9.0,
-      "charging_value": 0.5,
-      "rarity": 20.0,
-      "armor/helmet": 2.0,
-      "magic_armor": 4.0
-    }
-  },
-  "traits": {
-    "main": [
-      {
-        "name": "silentgear:turtle",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:material_count",
-            "count": 3
-          }
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "minecraft:scute"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.turtle"
+    },
+    "stats": {
+        "main": {
+            "durability": 942.03,
+            "armor_durability/helmet": 25.0,
+            "enchantment_value": 3.47,
+            "charging_value": 0.75,
+            "rarity": 15.12,
+            "armor/helmet": 2.0,
+            "magic_armor": 3.31
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:turtle",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_count",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 1
+            }
         ]
-      },
-      {
-        "name": "kubejs:reflective",
-        "level": 1
-      }
-    ]
-  },
-  "model": {
-    "main/helmet": [
-      {
-        "texture": "silentgear:turtle",
-        "color": "#47BF4A"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#47BF4A"
-      }
-    ]
-  }
+    },
+    "model": {
+        "main/helmet": [
+            {
+                "texture": "silentgear:turtle",
+                "color": "#47BF4A"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#47BF4A"
+            }
+        ]
+    }
 }

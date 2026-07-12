@@ -1,162 +1,162 @@
 {
-  "type": "silentgear:standard",
-  "simple": true,
-  "harvest_tier": "minecraft:netherite",
-  "availability": {
-    "tier": 11,
-    "categories": [
-      "metal"
-    ],
-    "visible": true,
-    "gear_blacklist": [],
-    "can_salvage": true
-  },
-  "crafting_items": {
-    "main": {
-      "item": "gtceu:neutronium_ingot"
-    }
-  },
-  "name": {
-    "text": "Neutronium Ingot"
-  },
-  "stats": {
-    "main": {
-      "durability": 17117,
-      "armor_durability": 241,
-      "enchantment_value": -25,
-      "rarity": 71,
-      "charging_value": 2,
-      "harvest_speed": 78,
-      "melee_damage": 50,
-      "magic_damage": 16,
-      "attack_speed": 1,
-      "attack_speed/axe": 1,
-      "attack_speed/hoe": 1,
-      "ranged_damage": 19,
-      "ranged_speed": 1,
-      "projectile_speed": 7,
-      "projectile_accuracy": 1,
-      "armor": 111,
-      "armor_toughness": 61,
-      "magic_armor": 32,
-      "armor/helmet": 18,
-      "armor/chestplate": 42,
-      "armor/leggings": 33,
-      "armor/boots": 18
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
     },
-    "rod": {
-      "harvest_speed": {
-        "mul2": 0.2451
-      },
-      "melee_damage": {
-        "mul2": 0.1926
-      },
-      "ranged_damage": {
-        "mul2": 0.1576
-      }
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:neutronium_ingot"
+        }
     },
-    "tip": {
-      "durability": {
-        "add": 1934
-      },
-      "armor_durability": {
-        "add": 69
-      },
-      "harvest_speed": {
-        "add": 17
-      },
-      "melee_damage": {
-        "add": 14
-      },
-      "ranged_damage": {
-        "add": 6
-      },
-      "rarity": {
-        "add": 25
-      }
+    "name": {
+        "text": "Neutronium Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 7827.44,
+            "armor_durability": 131.46,
+            "enchantment_value": 14.93,
+            "rarity": 46.26,
+            "charging_value": 1.61,
+            "harvest_speed": 38.39,
+            "melee_damage": 24.43,
+            "magic_damage": 6.98,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 10.47,
+            "ranged_speed": 1,
+            "projectile_speed": 7,
+            "projectile_accuracy": 1,
+            "armor": 73.29,
+            "armor_toughness": 27.92,
+            "magic_armor": 24.43,
+            "armor/helmet": 18,
+            "armor/chestplate": 42,
+            "armor/leggings": 33,
+            "armor/boots": 18
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 0.2451
+            },
+            "melee_damage": {
+                "mul2": 0.1926
+            },
+            "ranged_damage": {
+                "mul2": 0.1576
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1934
+            },
+            "armor_durability": {
+                "add": 69
+            },
+            "harvest_speed": {
+                "add": 17
+            },
+            "melee_damage": {
+                "add": 14
+            },
+            "ranged_damage": {
+                "add": 6
+            },
+            "rarity": {
+                "add": 25
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:heavy",
+                "level": 2
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 2
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 3
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 3
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E8E8F0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#E8E8F0"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#E8E8F0"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#E8E8F0"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#E8E8F0"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#E8E8F0"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
     }
-  },
-  "traits": {
-    "main": [
-      {
-        "name": "silentgear:hard",
-        "level": 2
-      },
-      {
-        "name": "silentgear:heavy",
-        "level": 2
-      },
-      {
-        "name": "silentgear:sturdy",
-        "level": 2
-      },
-      {
-        "name": "kubejs:insulating",
-        "level": 3
-      },
-      {
-        "name": "kubejs:reflective",
-        "level": 3
-      }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:hard",
-        "level": 2
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 3
-      }
-    ]
-  },
-  "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#E8E8F0"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#E8E8F0"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#E8E8F0"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#E8E8F0"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#E8E8F0"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#E8E8F0"
-      },
-      {
-        "texture": "silentgear:tip_shine"
-      }
-    ]
-  }
 }

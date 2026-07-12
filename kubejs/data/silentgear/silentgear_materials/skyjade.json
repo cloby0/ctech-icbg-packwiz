@@ -1,126 +1,126 @@
 {
-  "type": "silentgear:standard",
-  "simple": true,
-  "harvest_tier": "minecraft:iron",
-  "availability": {
-    "tier": 2,
-    "categories": [
-      "gem"
-    ],
-    "visible": true,
-    "gear_blacklist": [],
-    "can_salvage": true
-  },
-  "crafting_items": {
-    "main": {
-      "item": "deep_aether:skyjade"
-    }
-  },
-  "name": {
-    "text": "Skyjade"
-  },
-  "stats": {
-    "main": {
-      "durability": 522,
-      "armor_durability": 13,
-      "enchantment_value": 18,
-      "rarity": 16,
-      "charging_value": 1,
-      "harvest_speed": 5,
-      "melee_damage": 2,
-      "magic_damage": 1,
-      "attack_speed": 0,
-      "attack_speed/axe": 0,
-      "ranged_damage": 1,
-      "ranged_speed": 0,
-      "armor": 12,
-      "armor/helmet": 1,
-      "armor/chestplate": 5,
-      "armor/leggings": 5,
-      "armor/boots": 1,
-      "armor_toughness": 0,
-      "magic_armor": 5
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
     },
-    "tip": {
-      "durability": {
-        "add": 80
-      },
-      "harvest_speed": {
-        "add": 1
-      },
-      "melee_damage": {
-        "add": 1
-      },
-      "ranged_damage": {
-        "add": 0
-      },
-      "rarity": {
-        "add": 6
-      }
-    }
-  },
-  "traits": {
-    "main": [
-      {
-        "name": "silentgear:ancient",
-        "level": 1
-      },
-      {
-        "name": "silentcompat:crystalline_magic",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0
-          }
+    "crafting_items": {
+        "main": {
+            "item": "deep_aether:skyjade"
+        }
+    },
+    "name": {
+        "text": "Skyjade"
+    },
+    "stats": {
+        "main": {
+            "durability": 2084.0,
+            "armor_durability": 35.0,
+            "enchantment_value": 6.0,
+            "rarity": 23.0,
+            "charging_value": 1.0,
+            "harvest_speed": 11.0,
+            "melee_damage": 7.0,
+            "magic_damage": 2.0,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "ranged_damage": 3.0,
+            "ranged_speed": 0,
+            "armor": 21.0,
+            "armor/helmet": 1,
+            "armor/chestplate": 5,
+            "armor/leggings": 5,
+            "armor/boots": 1,
+            "armor_toughness": 8.0,
+            "magic_armor": 7.0
+        },
+        "tip": {
+            "durability": {
+                "add": 80
+            },
+            "harvest_speed": {
+                "add": 1
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 6
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:ancient",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:crystalline_magic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:lucky",
+                "level": 1
+            }
         ]
-      },
-      {
-        "name": "kubejs:insulating",
-        "level": 1
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:lucky",
-        "level": 1
-      }
-    ]
-  },
-  "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#CFF095"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#CFF095"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#CFF095"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base",
-        "color": "#CFF095"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#CFF095"
-      },
-      {
-        "texture": "silentgear:tip_shine"
-      }
-    ]
-  }
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#CFF095"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#CFF095"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#CFF095"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base",
+                "color": "#CFF095"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#CFF095"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
 }

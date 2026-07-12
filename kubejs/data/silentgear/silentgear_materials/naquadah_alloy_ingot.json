@@ -1,182 +1,182 @@
 {
-  "type": "silentgear:standard",
-  "simple": true,
-  "harvest_tier": "minecraft:netherite",
-  "availability": {
-    "tier": 8,
-    "categories": [
-      "metal"
-    ],
-    "visible": true,
-    "gear_blacklist": [],
-    "can_salvage": true
-  },
-  "crafting_items": {
-    "main": {
-      "item": "gtceu:naquadah_alloy_ingot"
-    }
-  },
-  "name": {
-    "text": "Naquadah Alloy Ingot"
-  },
-  "stats": {
-    "main": {
-      "durability": 5063,
-      "armor_durability": 74,
-      "enchantment_value": -10,
-      "rarity": 50,
-      "charging_value": 1,
-      "harvest_speed": 23,
-      "melee_damage": 15,
-      "magic_damage": 8,
-      "attack_speed": 1,
-      "attack_speed/axe": 0,
-      "attack_speed/hoe": 0,
-      "ranged_damage": 6,
-      "ranged_speed": 1,
-      "projectile_speed": 2,
-      "projectile_accuracy": 1,
-      "armor": 43,
-      "armor_toughness": 22,
-      "magic_armor": 13,
-      "armor/helmet": 7,
-      "armor/chestplate": 16,
-      "armor/leggings": 13,
-      "armor/boots": 7
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
     },
-    "rod": {
-      "harvest_speed": {
-        "mul2": 0.164
-      },
-      "melee_damage": {
-        "mul2": 0.1289
-      },
-      "ranged_damage": {
-        "mul2": 0.1054
-      }
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:naquadah_alloy_ingot"
+        }
     },
-    "tip": {
-      "durability": {
-        "add": 577
-      },
-      "armor_durability": {
-        "add": 21
-      },
-      "harvest_speed": {
-        "add": 5
-      },
-      "melee_damage": {
-        "add": 4
-      },
-      "ranged_damage": {
-        "add": 2
-      },
-      "rarity": {
-        "add": 18
-      }
+    "name": {
+        "text": "Naquadah Alloy Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 6007.25,
+            "armor_durability": 100.89,
+            "enchantment_value": 12.44,
+            "rarity": 40.23,
+            "charging_value": 1.46,
+            "harvest_speed": 29.9,
+            "melee_damage": 19.03,
+            "magic_damage": 5.44,
+            "attack_speed": 1,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 8.15,
+            "ranged_speed": 1,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 57.08,
+            "armor_toughness": 21.74,
+            "magic_armor": 19.03,
+            "armor/helmet": 7,
+            "armor/chestplate": 16,
+            "armor/leggings": 13,
+            "armor/boots": 7
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 0.164
+            },
+            "melee_damage": {
+                "mul2": 0.1289
+            },
+            "ranged_damage": {
+                "mul2": 0.1054
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 577
+            },
+            "armor_durability": {
+                "add": 21
+            },
+            "harvest_speed": {
+                "add": 5
+            },
+            "melee_damage": {
+                "add": 4
+            },
+            "ranged_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 18
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:withering",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "silentcompat:volatile",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "tool"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#384828"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#384828"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#384828"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#384828"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#384828"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#384828"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
     }
-  },
-  "traits": {
-    "main": [
-      {
-        "name": "silentgear:hard",
-        "level": 2
-      },
-      {
-        "name": "silentgear:sturdy",
-        "level": 1
-      },
-      {
-        "name": "silentcompat:withering",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:gear_type",
-            "gear_type": "weapon"
-          },
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 1
-          }
-        ]
-      },
-      {
-        "name": "silentcompat:volatile",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:gear_type",
-            "gear_type": "tool"
-          },
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0
-          }
-        ]
-      },
-      {
-        "name": "kubejs:reflective",
-        "level": 2
-      }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:hard",
-        "level": 1
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 2
-      }
-    ]
-  },
-  "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#384828"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#384828"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#384828"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#384828"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#384828"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#384828"
-      },
-      {
-        "texture": "silentgear:tip_shine"
-      }
-    ]
-  }
 }

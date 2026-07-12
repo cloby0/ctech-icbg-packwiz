@@ -1,158 +1,158 @@
 {
-  "type": "silentgear:standard",
-  "simple": true,
-  "harvest_tier": "minecraft:netherite",
-  "availability": {
-    "tier": 8,
-    "categories": [
-      "metal"
-    ],
-    "visible": true,
-    "gear_blacklist": [],
-    "can_salvage": true
-  },
-  "crafting_items": {
-    "main": {
-      "item": "gtceu:titanium_tungsten_carbide_ingot"
-    }
-  },
-  "name": {
-    "text": "Titanium Tungsten Carbide Ingot"
-  },
-  "stats": {
-    "main": {
-      "durability": 4163,
-      "armor_durability": 62,
-      "enchantment_value": -7,
-      "rarity": 43,
-      "charging_value": 1,
-      "harvest_speed": 21,
-      "melee_damage": 12,
-      "magic_damage": 4,
-      "attack_speed": 0,
-      "attack_speed/axe": 0,
-      "attack_speed/hoe": 0,
-      "ranged_damage": 5,
-      "ranged_speed": 0,
-      "projectile_speed": 2,
-      "projectile_accuracy": 1,
-      "armor": 36,
-      "armor_toughness": 18,
-      "magic_armor": 11,
-      "armor/helmet": 6,
-      "armor/chestplate": 14,
-      "armor/leggings": 11,
-      "armor/boots": 6
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
     },
-    "rod": {
-      "harvest_speed": {
-        "mul2": 0.1343
-      },
-      "melee_damage": {
-        "mul2": 0.1055
-      },
-      "ranged_damage": {
-        "mul2": 0.0863
-      }
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:titanium_tungsten_carbide_ingot"
+        }
     },
-    "tip": {
-      "durability": {
-        "add": 477
-      },
-      "armor_durability": {
-        "add": 17
-      },
-      "harvest_speed": {
-        "add": 4
-      },
-      "melee_damage": {
-        "add": 4
-      },
-      "ranged_damage": {
-        "add": 1
-      },
-      "rarity": {
-        "add": 15
-      }
+    "name": {
+        "text": "Titanium Tungsten Carbide Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 6007.25,
+            "armor_durability": 100.89,
+            "enchantment_value": 12.44,
+            "rarity": 40.23,
+            "charging_value": 1.46,
+            "harvest_speed": 29.9,
+            "melee_damage": 19.03,
+            "magic_damage": 5.44,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 8.15,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 57.08,
+            "armor_toughness": 21.74,
+            "magic_armor": 19.03,
+            "armor/helmet": 6,
+            "armor/chestplate": 14,
+            "armor/leggings": 11,
+            "armor/boots": 6
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 0.1343
+            },
+            "melee_damage": {
+                "mul2": 0.1055
+            },
+            "ranged_damage": {
+                "mul2": 0.0863
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 477
+            },
+            "armor_durability": {
+                "add": 17
+            },
+            "harvest_speed": {
+                "add": 4
+            },
+            "melee_damage": {
+                "add": 4
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 15
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:sharp",
+                "level": 2
+            },
+            {
+                "name": "silentgear:fireproof",
+                "level": 1
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#707888"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#707888"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#707888"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#707888"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#707888"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#707888"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
     }
-  },
-  "traits": {
-    "main": [
-      {
-        "name": "silentgear:hard",
-        "level": 2
-      },
-      {
-        "name": "silentgear:sharp",
-        "level": 2
-      },
-      {
-        "name": "silentgear:fireproof",
-        "level": 1
-      },
-      {
-        "name": "kubejs:reflective",
-        "level": 2
-      }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:hard",
-        "level": 2
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 2
-      }
-    ]
-  },
-  "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#707888"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#707888"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#707888"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#707888"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#707888"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#707888"
-      },
-      {
-        "texture": "silentgear:tip_shine"
-      }
-    ]
-  }
 }
