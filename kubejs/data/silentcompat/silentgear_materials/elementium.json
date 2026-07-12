@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:netherite",
     "availability": {
-        "tier": 9,
+        "tier": 11,
         "categories": [
             "metal"
         ],
@@ -54,26 +54,26 @@
     },
     "stats": {
         "main": {
-            "durability": 3623.31,
-            "armor_durability": 60.85,
-            "enchantment_value": 8.36,
-            "harvest_speed": 18.14,
-            "melee_damage": 9.81,
-            "magic_damage": 3.79,
+            "durability": 6151.69,
+            "armor_durability": 103.32,
+            "enchantment_value": 12.04,
+            "harvest_speed": 29.9,
+            "melee_damage": 16.18,
+            "magic_damage": 6.26,
             "attack_speed/axe": 0,
-            "armor": 34.62,
-            "armor/helmet": 5,
-            "armor/chestplate": 12,
-            "armor/leggings": 10,
-            "armor/boots": 7,
-            "armor_toughness": 13.19,
-            "ranged_damage": 4.95,
+            "armor": 57.08,
+            "armor/helmet": 8,
+            "armor/chestplate": 20,
+            "armor/leggings": 16,
+            "armor/boots": 12,
+            "armor_toughness": 21.74,
+            "ranged_damage": 8.15,
             "ranged_speed": 0,
-            "rarity": 30.42,
-            "charging_value": 1.17,
+            "rarity": 40.23,
+            "charging_value": 1.41,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
-            "magic_armor": 11.54
+            "magic_armor": 19.03
         },
         "rod": {
             "harvest_speed": {
@@ -88,19 +88,19 @@
         },
         "tip": {
             "durability": {
-                "add": 560
+                "add": 951
             },
             "armor_durability": {
-                "add": 14
+                "add": 24
             },
             "harvest_speed": {
-                "add": 4
+                "add": 7
             },
             "melee_damage": {
-                "add": 5
+                "add": 8
             },
             "rarity": {
-                "add": 35
+                "add": 59
             }
         }
     },
