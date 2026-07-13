@@ -1,0 +1,175 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 16,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:cumium_ingot"
+        },
+        "rod": {
+            "item": "gtceu:cumium_ingot"
+        },
+        "tip": {
+            "item": "gtceu:cumium_ingot"
+        }
+    },
+    "name": {
+        "text": "Cumium"
+    },
+    "stats": {
+        "main": {
+            "durability": 23748,
+            "armor_durability": 399,
+            "enchantment_value": 29,
+            "rarity": 81,
+            "charging_value": 3,
+            "harvest_speed": 105,
+            "melee_damage": 67,
+            "magic_damage": 19,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 29,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 200,
+            "armor_toughness": 76,
+            "magic_armor": 67,
+            "armor/helmet": 25,
+            "armor/chestplate": 66,
+            "armor/leggings": 50,
+            "armor/boots": 25
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 2683
+            },
+            "armor_durability": {
+                "add": 95
+            },
+            "harvest_speed": {
+                "add": 21
+            },
+            "melee_damage": {
+                "add": 21
+            },
+            "ranged_damage": {
+                "add": 10
+            },
+            "rarity": {
+                "add": 39
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            },
+            {
+                "name": "silentgear:lucky",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#CFD2D5"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#CFD2D5"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#CFD2D5"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#8FB1AF"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#8FB1AF"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#CFD2D5"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#CFD2D5"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

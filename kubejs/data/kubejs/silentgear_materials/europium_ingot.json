@@ -1,0 +1,154 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:europium_ingot"
+        }
+    },
+    "name": {
+        "text": "Europium"
+    },
+    "stats": {
+        "main": {
+            "durability": 7817,
+            "armor_durability": 132,
+            "enchantment_value": 15,
+            "rarity": 47,
+            "charging_value": 2,
+            "harvest_speed": 39,
+            "melee_damage": 21,
+            "magic_damage": 7,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 13,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 74,
+            "armor_toughness": 28,
+            "magic_armor": 25,
+            "armor/helmet": 2,
+            "armor/chestplate": 5,
+            "armor/leggings": 4,
+            "armor/boots": 2
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 126
+            },
+            "armor_durability": {
+                "add": 5
+            },
+            "harvest_speed": {
+                "add": 1
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 5
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A8B8C8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#A8B8C8"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#A8B8C8"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#A8B8C8"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#A8B8C8"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#A8B8C8"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

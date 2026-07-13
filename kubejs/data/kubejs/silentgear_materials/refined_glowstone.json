@@ -1,0 +1,143 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/refined_glowstone"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.refined_glowstone"
+    },
+    "stats": {
+        "main": {
+            "durability": 1443,
+            "armor_durability": 25,
+            "repair_value": 1,
+            "enchantment_value": 6,
+            "harvest_speed": 9,
+            "melee_damage": 5,
+            "magic_damage": 2,
+            "attack_speed": 0,
+            "armor": 17,
+            "armor/helmet": 3,
+            "armor/chestplate": 7,
+            "armor/leggings": 6,
+            "armor/boots": 3,
+            "magic_armor": 6,
+            "ranged_damage": 3,
+            "ranged_speed": 0,
+            "rarity": 20,
+            "charging_value": 2
+        },
+        "rod": {
+            "durability": {
+                "mul2": 0
+            },
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "rarity": 45
+        },
+        "tip": {
+            "harvest_speed": {
+                "add": 5
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            },
+            {
+                "name": "silentgear:lustrous",
+                "level": 4
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:malleable",
+                "level": 4
+            },
+            {
+                "name": "silentgear:lustrous",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:refractive",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FDE054"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#FDE054"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_hc",
+                "color": "#FDE054"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#FDE054"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#FDE054"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#FDE054"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

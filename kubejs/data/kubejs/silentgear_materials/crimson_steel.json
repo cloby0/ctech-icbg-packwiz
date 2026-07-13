@@ -1,0 +1,170 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/crimson_steel"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.crimson_steel"
+    },
+    "stats": {
+        "main": {
+            "durability": 2133,
+            "armor_durability": 36,
+            "enchantment_value": 6,
+            "rarity": 23,
+            "charging_value": 1,
+            "repair_value": 1,
+            "harvest_speed": 11,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "ranged_damage": 3,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 2,
+            "armor": 21,
+            "armor/helmet": 4,
+            "armor/chestplate": 8,
+            "armor/leggings": 6,
+            "armor/boots": 4,
+            "armor_toughness": 8,
+            "magic_armor": 7
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "add": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 448
+            },
+            "armor_durability": {
+                "add": 16
+            },
+            "rarity": {
+                "add": 20
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 5
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 3
+            },
+            {
+                "name": "silentgear:flame_ward",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:or",
+                        "values": [
+                            {
+                                "type": "silentgear:material_count",
+                                "count": 3
+                            },
+                            {
+                                "type": "silentgear:material_ratio",
+                                "ratio": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 4
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:magmatic",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#DC143C"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#DC143C"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#DC143C"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#DC143C"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#DC143C"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#DC143C"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

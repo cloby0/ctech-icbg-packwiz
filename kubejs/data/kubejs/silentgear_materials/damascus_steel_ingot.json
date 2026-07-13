@@ -1,0 +1,170 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:damascus_steel_ingot"
+        }
+    },
+    "name": {
+        "text": "Damascus Steel"
+    },
+    "stats": {
+        "main": {
+            "durability": 2071,
+            "armor_durability": 35,
+            "enchantment_value": 7,
+            "rarity": 23,
+            "charging_value": 2,
+            "harvest_speed": 11,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 4,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 21,
+            "armor_toughness": 8,
+            "magic_armor": 7,
+            "armor/helmet": 3,
+            "armor/chestplate": 7,
+            "armor/leggings": 5,
+            "armor/boots": 3
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 206
+            },
+            "armor_durability": {
+                "add": 8
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 7
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:sharp",
+                "level": 2
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:vorpal",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#808898"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#808898"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#808898"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#808898"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#808898"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#808898"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

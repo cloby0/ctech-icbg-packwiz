@@ -1,0 +1,118 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "organic",
+            "cloth"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "silentgear:fine_silk_cloth"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.fine_silk_cloth"
+    },
+    "stats": {
+        "main": {
+            "durability": 615,
+            "armor_durability": 11,
+            "enchantment_value": 4,
+            "rarity": 14,
+            "charging_value": 1,
+            "armor_durability/elytra": 18,
+            "armor": 8,
+            "armor/helmet": 1,
+            "armor/chestplate": 2,
+            "armor/leggings": 2,
+            "armor/boots": 1,
+            "magic_armor": 3
+        },
+        "grip": {
+            "repair_efficiency": {
+                "mul1": 1
+            },
+            "harvest_speed": {
+                "mul1": 1
+            }
+        },
+        "lining": {
+            "magic_armor": {
+                "add": 2
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:snow_walker",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "boots"
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
+        ],
+        "grip": [
+            {
+                "name": "silentgear:accelerate",
+                "level": 1
+            }
+        ],
+        "lining": [
+            {
+                "name": "silentgear:flexible",
+                "level": 4
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#C3B9A1"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:cloth",
+                "color": "#C3B9A1"
+            }
+        ],
+        "grip/all": [
+            {
+                "texture": "silentgear:grip_wool",
+                "color": "#C3B9A1"
+            }
+        ],
+        "grip/part": [
+            {
+                "texture": "silentgear:grip",
+                "color": "#C3B9A1"
+            }
+        ],
+        "lining/part": [
+            {
+                "texture": "silentgear:lining_cloth",
+                "color": "#C3B9A1"
+            }
+        ]
+    }
+}

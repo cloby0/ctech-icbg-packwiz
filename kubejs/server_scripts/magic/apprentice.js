@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_chamber' });
     event.shaped(
@@ -22,7 +24,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:amethyst_shard',
         output: 'irons_spellbooks:arcane_essence',
-        source: 750,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: []
     });
 
@@ -30,7 +32,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:apple',
         output: 'minecraft:golden_apple',
-        source: 1000,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot']
     });
 
@@ -114,7 +116,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:glowing_compound_dust',
         output: 'kubejs:impure_glimmering_dust',
-        source: 100,
+        source: Source.APPRENTICE,
         pedestalItems: []
     });
 
@@ -124,7 +126,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:primordial_organic_muck',
         output: 'kubejs:kerogen',
         count: 4,
-        source: 1000,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: ['#kubejs:earth_essences']
     })
 
@@ -157,7 +159,7 @@ ServerEvents.recipes(event => {
         input: 'gtceu:luminessence_dust',
         output: 'minecraft:experience_bottle',
         count: 4,
-        source: 500,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
@@ -165,7 +167,7 @@ ServerEvents.recipes(event => {
         input: 'gtceu:amethyst_dust',
         output: 'hexcasting:charged_amethyst',
         count: 2,
-        source: 500,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: ['#kubejs:air_essences']
     })
 

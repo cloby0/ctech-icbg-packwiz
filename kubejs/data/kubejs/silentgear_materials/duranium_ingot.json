@@ -1,0 +1,154 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:duranium_ingot"
+        }
+    },
+    "name": {
+        "text": "Duranium"
+    },
+    "stats": {
+        "main": {
+            "durability": 8845,
+            "armor_durability": 149,
+            "enchantment_value": 15,
+            "rarity": 47,
+            "charging_value": 2,
+            "harvest_speed": 35,
+            "melee_damage": 22,
+            "magic_damage": 9,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 9,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 81,
+            "armor_toughness": 31,
+            "magic_armor": 27,
+            "armor/helmet": 9,
+            "armor/chestplate": 21,
+            "armor/leggings": 17,
+            "armor/boots": 9
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 831
+            },
+            "armor_durability": {
+                "add": 30
+            },
+            "harvest_speed": {
+                "add": 7
+            },
+            "melee_damage": {
+                "add": 6
+            },
+            "ranged_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 20
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:heavy",
+                "level": 1
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#9090A8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#9090A8"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#9090A8"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#9090A8"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#9090A8"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#9090A8"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

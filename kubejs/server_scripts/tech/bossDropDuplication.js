@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')
@@ -25,7 +27,7 @@ ServerEvents.recipes(event => {
             '1x cataclysm:lacrima',
             '4x ars_nouveau:source_gem'
         )
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SORCERER))
         .outputFluids(Fluid.of('kubejs:dissolved_lacrima', 1000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])

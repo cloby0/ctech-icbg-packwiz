@@ -1,0 +1,199 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/blaze_gold"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.blaze_gold"
+    },
+    "stats": {
+        "main": {
+            "durability": 1411,
+            "armor_durability": 24,
+            "enchantment_value": 6,
+            "rarity": 20,
+            "charging_value": 2,
+            "harvest_speed": 9,
+            "melee_damage": 5,
+            "magic_damage": 2,
+            "attack_speed": 1,
+            "ranged_damage": 3,
+            "ranged_speed": 1,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 17,
+            "armor/helmet": 2,
+            "armor/chestplate": 5,
+            "armor/leggings": 4,
+            "armor/boots": 2,
+            "armor_toughness": 7,
+            "magic_armor": 6
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 32
+            },
+            "armor_durability": {
+                "add": 3
+            },
+            "harvest_speed": {
+                "add": 4
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "magic_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 14
+            }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 20
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:brilliant",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:greedy",
+                "level": 3
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 3
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:soft",
+                "level": 2
+            },
+            {
+                "name": "silentgear:fiery",
+                "level": 4
+            }
+        ],
+        "coating": [
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            },
+            {
+                "name": "silentgear:soft",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_hc",
+                "color": "#DD8500"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#DD8500"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_smooth",
+                "color": "#DD8500"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#DD8500"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#DD8500"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#DD8500"
+            },
+            {
+                "texture": "silentgear:coating_jar"
+            }
+        ],
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#DD8500"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#DD8500"
+            }
+        ]
+    }
+}

@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'nameless_trinkets:dubious_dust' })
@@ -68,7 +70,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'nameless_trinkets:dubious_dust',
         output: 'nameless_trinkets:glowing_dust',
-        source: 500,
+        source: Source.JOURNEYMAN,
         pedestalItems: ['minecraft:glowstone_dust', 'minecraft:blaze_rod', 'minecraft:glowstone_dust', 'minecraft:quartz']
     })
 
@@ -76,7 +78,7 @@ ServerEvents.recipes(event => {
         reagent: 'nameless_trinkets:glowing_dust',
         pedestalItems: ['minecraft:ender_eye', 'gtceu:luminessence_dust', 'minecraft:ender_eye', 'gtceu:luminessence_dust'],
         output: 'nameless_trinkets:ultimate_dust',
-        sourceCost: 2000
+        sourceCost: Source.SORCERER
     })
 
     event.shaped(Item.of('nameless_trinkets:amphibious_hands', 1), [
@@ -155,98 +157,98 @@ ServerEvents.recipes(event => {
         'gWg', '/S/', 'g/g'
     ], { 'g': 'minecraft:gold_ingot', '/': 'minecraft:stick', 'S': 'nameless_trinkets:dubious_dust', 'W': '#forge:tools/saws' }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:callus', source: 750, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:cobblestone', 'minecraft:hay_block', 'minecraft:rotten_flesh'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:electric_paddle', source: 750, pedestalItems: ['minecraft:oak_boat', 'minecraft:redstone', 'minecraft:oak_boat', 'minecraft:redstone'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:ethereal_wings', source: 1000, pedestalItems: ['minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:feather', 'minecraft:glass_pane'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:experience_battery', source: 750, pedestalItems: ['minecraft:glass_bottle', 'minecraft:redstone', 'minecraft:glass_bottle', 'minecraft:iron_ingot'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fertilizer', source: 750, pedestalItems: ['minecraft:bone_block', 'minecraft:dirt', 'minecraft:bone_block', 'minecraft:leather'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fractured_nullstone', source: 1000, pedestalItems: ['minecraft:glowstone', 'minecraft:lapis_block', 'minecraft:glowstone', 'minecraft:lapis_block'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fragile_cloud', source: 750, pedestalItems: ['minecraft:white_wool', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:white_wool'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:ghast_eye', source: 1000, pedestalItems: ['minecraft:ghast_tear', 'minecraft:redstone_block', 'minecraft:ghast_tear', 'minecraft:redstone_block'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:missing_page', source: 1000, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:paper', 'minecraft:bone', 'minecraft:paper'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:scarab_amulet', source: 750, pedestalItems: ['minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:speed_force', source: 1000, pedestalItems: ['minecraft:sugar', 'minecraft:rabbit_foot', 'minecraft:sugar', 'minecraft:feather'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:super_magnet', source: 1500, pedestalItems: ['nameless_trinkets:experience_magnet', 'nameless_trinkets:broken_magnet', 'minecraft:iron_block', 'minecraft:iron_block'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tear_of_the_sea', source: 1000, pedestalItems: ['minecraft:cod', 'minecraft:salmon', 'minecraft:tropical_fish', 'minecraft:pufferfish'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tick', source: 750, pedestalItems: ['minecraft:brown_mushroom', 'minecraft:red_mushroom', 'minecraft:hay_block', 'minecraft:hay_block'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:vampire_blood', source: 1000, pedestalItems: ['minecraft:crying_obsidian', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:clock'] })
-    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:what_magnet', source: 750, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:leather', 'minecraft:porkchop', 'minecraft:bone'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:callus', source: Source.INITIATE, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:cobblestone', 'minecraft:hay_block', 'minecraft:rotten_flesh'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:electric_paddle', source: Source.INITIATE, pedestalItems: ['minecraft:oak_boat', 'minecraft:redstone', 'minecraft:oak_boat', 'minecraft:redstone'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:ethereal_wings', source: Source.INITIATE, pedestalItems: ['minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:feather', 'minecraft:glass_pane'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:experience_battery', source: Source.INITIATE, pedestalItems: ['minecraft:glass_bottle', 'minecraft:redstone', 'minecraft:glass_bottle', 'minecraft:iron_ingot'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fertilizer', source: Source.INITIATE, pedestalItems: ['minecraft:bone_block', 'minecraft:dirt', 'minecraft:bone_block', 'minecraft:leather'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fractured_nullstone', source: Source.INITIATE, pedestalItems: ['minecraft:glowstone', 'minecraft:lapis_block', 'minecraft:glowstone', 'minecraft:lapis_block'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:fragile_cloud', source: Source.INITIATE, pedestalItems: ['minecraft:white_wool', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:white_wool'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:ghast_eye', source: Source.INITIATE, pedestalItems: ['minecraft:ghast_tear', 'minecraft:redstone_block', 'minecraft:ghast_tear', 'minecraft:redstone_block'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:missing_page', source: Source.INITIATE, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:paper', 'minecraft:bone', 'minecraft:paper'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:scarab_amulet', source: Source.INITIATE, pedestalItems: ['minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone', 'minecraft:chiseled_sandstone'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:speed_force', source: Source.INITIATE, pedestalItems: ['minecraft:sugar', 'minecraft:rabbit_foot', 'minecraft:sugar', 'minecraft:feather'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:super_magnet', source: Source.SORCERER, pedestalItems: ['nameless_trinkets:experience_magnet', 'nameless_trinkets:broken_magnet', 'minecraft:iron_block', 'minecraft:iron_block'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tear_of_the_sea', source: Source.INITIATE, pedestalItems: ['minecraft:cod', 'minecraft:salmon', 'minecraft:tropical_fish', 'minecraft:pufferfish'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:tick', source: Source.INITIATE, pedestalItems: ['minecraft:brown_mushroom', 'minecraft:red_mushroom', 'minecraft:hay_block', 'minecraft:hay_block'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:vampire_blood', source: Source.INITIATE, pedestalItems: ['minecraft:crying_obsidian', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:clock'] })
+    addImbuementRecipe(event, { input: 'nameless_trinkets:glowing_dust', output: 'nameless_trinkets:what_magnet', source: Source.INITIATE, pedestalItems: ['minecraft:rotten_flesh', 'minecraft:leather', 'minecraft:porkchop', 'minecraft:bone'] })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:bone", "minecraft:wither_skeleton_skull", "minecraft:bone", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:broken_ankh",
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:gold_block", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:cracked_crown",
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:emerald_block", "minecraft:bell", "minecraft:emerald_block", "minecraft:bell", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:fate_emerald",
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:diamond_block", "minecraft:grass", "minecraft:diamond_block", "minecraft:grass", "gtceu:luminessence_dust", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:four_leaf_clover",
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:gold_block", "minecraft:diamond", "minecraft:gold_block", "minecraft:diamond", "gtceu:holy_silver_dust", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:light_gloves",
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:blackstone", "minecraft:emerald", "minecraft:diamond", "minecraft:lapis_lazuli", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:miners_soul",
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:crying_obsidian", "minecraft:diamond", "minecraft:magma_block", "minecraft:diamond", "gtceu:holy_silver_dust"],
         output: "nameless_trinkets:rage_mind",
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:gold_block", "minecraft:iron_block", "minecraft:gold_block", "minecraft:iron_block", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:reforger",
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:shield", "minecraft:iron_block", "minecraft:shield", "minecraft:iron_block", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:reverse_card",
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:obsidian", "minecraft:wither_skeleton_skull", "minecraft:obsidian", "minecraft:netherite_scrap", "gtceu:luminessence_dust", "gtceu:holy_silver_dust"],
         output: "nameless_trinkets:sigil_of_baphomet",
-        sourceCost: 3500
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: "nameless_trinkets:ultimate_dust",
         pedestalItems: ["minecraft:heart_of_the_sea", "nameless_trinkets:gills", "nameless_trinkets:tear_of_the_sea", "nameless_trinkets:amphibious_hands", "gtceu:luminessence_dust"],
         output: "nameless_trinkets:true_heart_of_the_sea",
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
 })

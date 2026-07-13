@@ -1,0 +1,169 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:wilden_alloy_ingot"
+        },
+        "rod": {
+            "item": "gtceu:wilden_alloy_ingot"
+        },
+        "tip": {
+            "item": "gtceu:wilden_alloy_ingot"
+        }
+    },
+    "name": {
+        "text": "Wilden Alloy"
+    },
+    "stats": {
+        "main": {
+            "durability": 9063,
+            "armor_durability": 153,
+            "enchantment_value": 14,
+            "rarity": 47,
+            "charging_value": 2,
+            "harvest_speed": 35,
+            "melee_damage": 26,
+            "magic_damage": 7,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 9,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 81,
+            "armor_toughness": 31,
+            "magic_armor": 27,
+            "armor/helmet": 10,
+            "armor/chestplate": 27,
+            "armor/leggings": 20,
+            "armor/boots": 10
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 1022
+            },
+            "armor_durability": {
+                "add": 36
+            },
+            "harvest_speed": {
+                "add": 7
+            },
+            "melee_damage": {
+                "add": 8
+            },
+            "ranged_damage": {
+                "add": 3
+            },
+            "rarity": {
+                "add": 22
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 1
+            },
+            {
+                "name": "silentgear:sharp",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#6A8F3C"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#6A8F3C"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#6A8F3C"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#33471C"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#33471C"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#6A8F3C"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#6A8F3C"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

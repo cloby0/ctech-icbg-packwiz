@@ -1,10 +1,12 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
     addEnchantingRecipe(event, {
         reagent: 'ars_nouveau:novice_spell_book',
         pedestalItems: ['gtceu:holy_silver_foil', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:blank_parchment', 'ars_nouveau:blank_parchment'],
         output: 'ars_nouveau:apprentice_spell_book',
-        sourceCost: 3500
+        sourceCost: 2 * Source.SORCERER
     })
 
     event.remove({ id: 'reliquary:glowing_water' })
@@ -61,7 +63,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:altar_charged_gravitite',
         output: 'aether_redux:gravitite_ingot',
-        source: 5000,
+        source: 2 * Source.SORCERER,
         pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal']
     })
 
@@ -81,7 +83,7 @@ ServerEvents.recipes(event => {
                 `mysticalagriculture:${element}_agglomeratio`
             ],
             output: `mysticalagriculture:${element}_seeds`,
-            sourceCost: 5500
+            sourceCost: 2 * Source.SORCERER
         })
         event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
     })
@@ -95,13 +97,13 @@ ServerEvents.recipes(event => {
             'mysticalagriculture:fire_essence', 'gtceu:source_block'
         ],
         output: 'kubejs:chaos_essence',
-        sourceCost: 6000
+        sourceCost: 2 * Source.SORCERER
     })
 
     addImbuementRecipe(event, {
         input: 'kubejs:chaos_essence',
         output: 'gtceu:prima_materia_ingot',
-        source: 10000,
+        source: 2 * Source.SORCERER,
         pedestalItems: ['kubejs:element_attunement_stone']
     })
 
@@ -112,7 +114,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:fire_essences' }
         ],
         output: { item: 'ars_nouveau:source_gem', count: 2 },
-        sourceCost: 3000
+        sourceCost: 2 * Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
@@ -122,7 +124,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:air_essences' }, { tag: 'kubejs:air_essences' }
         ],
         output: { item: 'irons_spellbooks:pyrium_ingot', count: 4 },
-        sourceCost: 6000
+        sourceCost: 2 * Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
@@ -132,6 +134,6 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:earth_essences' }, { tag: 'kubejs:earth_essences' }
         ],
         output: { item: 'minecraft:experience_bottle', count: 8 },
-        sourceCost: 4000
+        sourceCost: 2 * Source.SORCERER
     })
 })

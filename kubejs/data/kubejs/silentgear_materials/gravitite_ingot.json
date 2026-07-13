@@ -1,0 +1,142 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 8,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "aether_redux:gravitite_ingot"
+        }
+    },
+    "name": {
+        "text": "Gravitite"
+    },
+    "stats": {
+        "main": {
+            "durability": 2423,
+            "armor_durability": 41,
+            "enchantment_value": 8,
+            "rarity": 27,
+            "charging_value": 2,
+            "harvest_speed": 16,
+            "melee_damage": 10,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "ranged_damage": 4,
+            "ranged_speed": 0,
+            "armor": 25,
+            "armor/helmet": 3,
+            "armor/chestplate": 7,
+            "armor/leggings": 6,
+            "armor/boots": 3,
+            "armor_toughness": 10,
+            "magic_armor": 9
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 175
+            },
+            "armor_durability": {
+                "add": 5
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 8
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:moonwalker",
+                "level": 2
+            },
+            {
+                "name": "silentgear:light",
+                "level": 1
+            },
+            {
+                "name": "silentgear:bounce",
+                "level": 1
+            },
+            {
+                "name": "silentgear:reach",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E072D7"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#E072D7"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E072D7"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#E072D7"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#E072D7"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_iron"
+            }
+        ]
+    }
+}

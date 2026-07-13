@@ -1,0 +1,159 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 10,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:uranium_triplatinum_ingot"
+        }
+    },
+    "name": {
+        "text": "Uranium Triplatinum"
+    },
+    "stats": {
+        "main": {
+            "durability": 4661,
+            "armor_durability": 79,
+            "enchantment_value": 11,
+            "rarity": 35,
+            "charging_value": 2,
+            "harvest_speed": 24,
+            "melee_damage": 15,
+            "magic_damage": 5,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 6,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 45,
+            "armor_toughness": 17,
+            "magic_armor": 15,
+            "armor/helmet": 5,
+            "armor/chestplate": 12,
+            "armor/leggings": 10,
+            "armor/boots": 5
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 426
+            },
+            "armor_durability": {
+                "add": 16
+            },
+            "harvest_speed": {
+                "add": 4
+            },
+            "melee_damage": {
+                "add": 3
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 14
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            },
+            {
+                "name": "silentgear:lustrous",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:withering",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "rod": [],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#909880"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#909880"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#909880"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#909880"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#909880"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#909880"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

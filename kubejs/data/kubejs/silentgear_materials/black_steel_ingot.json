@@ -1,0 +1,160 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:black_steel_ingot"
+        }
+    },
+    "name": {
+        "text": "Black Steel"
+    },
+    "stats": {
+        "main": {
+            "durability": 2118,
+            "armor_durability": 36,
+            "enchantment_value": 6,
+            "rarity": 23,
+            "charging_value": 1,
+            "harvest_speed": 11,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 4,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 21,
+            "armor_toughness": 8,
+            "magic_armor": 7,
+            "armor/helmet": 3,
+            "armor/chestplate": 7,
+            "armor/leggings": 5,
+            "armor/boots": 3
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 206
+            },
+            "armor_durability": {
+                "add": 8
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 7
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:sharp",
+                "level": 1
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#303840"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#303840"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#303840"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#303840"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#303840"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#303840"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

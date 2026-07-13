@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
@@ -13,7 +15,7 @@ ServerEvents.recipes(event => {
             'draconicevolution:wyvern_core'
         ],
         output: 'kubejs:dragon_heart_crystal',
-        sourceCost: 70000
+        sourceCost: Source.PROPHET
     })
 
     addEnchantingRecipe(event, {
@@ -29,7 +31,7 @@ ServerEvents.recipes(event => {
             'gtceu:neutronium_ingot'
         ],
         output: 'kubejs:draconic_boule',
-        sourceCost: 60000
+        sourceCost: Source.PROPHET
     })
 
 
@@ -46,7 +48,7 @@ ServerEvents.recipes(event => {
             'gtceu:gaia_spirit_dust'
         ],
         output: 'kubejs:draconic_sanguinary',
-        sourceCost: 65000
+        sourceCost: Source.PROPHET
     })
 
     addEnchantingRecipe(event, {
@@ -62,7 +64,7 @@ ServerEvents.recipes(event => {
             'gtceu:gaia_spirit_dust'
         ],
         output: 'kubejs:draconic_sanctum',
-        sourceCost: 65000
+        sourceCost: Source.PROPHET
     })
 
     addEnchantingRecipe(event, {
@@ -78,7 +80,7 @@ ServerEvents.recipes(event => {
             'gtceu:gaia_spirit_dust'
         ],
         output: 'kubejs:dracontine_codex',
-        sourceCost: 65000
+        sourceCost: Source.PROPHET
     })
 
     addEnchantingRecipe(event, {
@@ -94,6 +96,6 @@ ServerEvents.recipes(event => {
             'gtceu:gaia_spirit_dust'
         ],
         output: 'kubejs:chronicle_of_dominion',
-        sourceCost: 65000
+        sourceCost: Source.PROPHET
     })
 })

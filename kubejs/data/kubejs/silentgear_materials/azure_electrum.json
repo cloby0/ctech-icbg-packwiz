@@ -1,0 +1,167 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/azure_electrum"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.azure_electrum"
+    },
+    "stats": {
+        "main": {
+            "durability": 1782,
+            "armor_durability": 30,
+            "enchantment_value": 7,
+            "rarity": 23,
+            "charging_value": 2,
+            "repair_value": 1,
+            "harvest_speed": 13,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "ranged_damage": 4,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 2,
+            "armor": 19,
+            "armor/helmet": 3,
+            "armor/chestplate": 7,
+            "armor/leggings": 6,
+            "armor/boots": 3,
+            "armor_toughness": 8,
+            "magic_armor": 7
+        },
+        "rod": {
+            "harvest_speed": {
+                "add": 3
+            },
+            "projectile_speed": {
+                "mul2": 2
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 401
+            },
+            "armor_durability": {
+                "add": 11
+            },
+            "harvest_speed": {
+                "add": 5
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:accelerate",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:light",
+                "level": 4,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:accelerate",
+                "level": 5,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#4575E3"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#4575E3"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#4575E3"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#4575E3"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#4575E3"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#4575E3"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

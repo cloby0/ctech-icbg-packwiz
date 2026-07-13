@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:source_gem_block'})
     event.remove({ output: 'ars_nouveau:source_gem', type: 'gtceu:sifter' })
@@ -34,7 +36,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:wheat_seeds',
         output: 'ars_nouveau:magebloom_crop',
-        source: 2500,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['ars_nouveau:archwood_planks', 'ars_nouveau:archwood_planks', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust']
     });
 
@@ -185,14 +187,14 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'gtceu:source_dust',
         output: 'kubejs:pure_source_gem_dust',
-        source: 500,
+        source: Source.JOURNEYMAN,
         pedestalItems: ['kubejs:magebloom_sieve']
     });
 
     addImbuementRecipe(event, {
         input: 'kubejs:pure_source_gem_dust',
         output: 'kubejs:rough_source_gem',
-        source: 2500,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['#kubejs:fire_essences']
     });
 
@@ -260,7 +262,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:enchanted_zanite_gem',
         output: 'kubejs:resonant_zanite_crystal',
-        source: 1500,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem']
     })
 
@@ -287,7 +289,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:resonant_zanite_crystal',
         output: 'irons_spellbooks:cinder_essence',
         count: 3,
-        source: 1500,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
@@ -295,7 +297,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:resonant_zanite_crystal',
         output: 'irons_spellbooks:arcane_ingot',
         count: 4,
-        source: 1500,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['#kubejs:air_essences', '#kubejs:air_essences']
     })
 });

@@ -1,0 +1,164 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:incoloy_ma_956_ingot"
+        }
+    },
+    "name": {
+        "text": "Incoloy-956 Ma"
+    },
+    "stats": {
+        "main": {
+            "durability": 3571,
+            "armor_durability": 60,
+            "enchantment_value": 9,
+            "rarity": 31,
+            "charging_value": 2,
+            "harvest_speed": 19,
+            "melee_damage": 12,
+            "magic_damage": 4,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 5,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 35,
+            "armor_toughness": 14,
+            "magic_armor": 12,
+            "armor/helmet": 4,
+            "armor/chestplate": 10,
+            "armor/leggings": 8,
+            "armor/boots": 4
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 325
+            },
+            "armor_durability": {
+                "add": 12
+            },
+            "harvest_speed": {
+                "add": 3
+            },
+            "melee_damage": {
+                "add": 3
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 11
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            },
+            {
+                "name": "silentgear:fireproof",
+                "level": 1
+            },
+            {
+                "name": "silentgear:magnetic",
+                "level": 1
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 2
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:magnetic",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#B0B0A8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#B0B0A8"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#B0B0A8"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#B0B0A8"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#B0B0A8"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#B0B0A8"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

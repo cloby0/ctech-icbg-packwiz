@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:runic_altar' })
     event.remove({ id: 'botania:gaia_ingot' })
@@ -19,7 +22,7 @@ ServerEvents.recipes(event => {
     ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
     addRunicAltarRecipe(event, {
         output: { count: 1, item: 'kubejs:florid_compound' },
-        mana: 5200,
+        mana: Mana.THAUMATURGE,
         ingredients: [
             { item: 'gtceu:manasteel_bolt' },
             { item: 'botania:rune_earth' },
@@ -32,13 +35,13 @@ ServerEvents.recipes(event => {
         reagent: 'kubejs:florid_compound',
         pedestalItems: ['minecraft:clock', 'mysticalagriculture:nature_essence', 'mysticalagriculture:water_essence', 'reliquary:fertile_essence'],
         output: 'kubejs:living_metalloid',
-        sourceCost: 30000
+        sourceCost: 2 * Source.THAUMATURGE
     })
 
     event.remove({ id: "botania:terra_plate/terrasteel_ingot" })
     addTerraPlateRecipe(event, {
         result: { item: 'botania:terrasteel_ingot' },
-        mana: 500000,
+        mana: 4 * Mana.PROPHET,
         ingredients: [
             { item: 'kubejs:living_metalloid' },
             { item: 'botania:mana_pearl' },
@@ -53,12 +56,12 @@ ServerEvents.recipes(event => {
             'mysticalagriculture:creeper_essence', '#kubejs:earth_essences', '#kubejs:water_essences'
         ],
         output: 'reliquary:fertile_essence',
-        sourceCost: 15000
+        sourceCost: 2 * Source.THAUMATURGE
     })
 
     addRunicAltarRecipe(event, {
         output: { count: 1, item: 'kubejs:rune_of_frost' },
-        mana: 25000,
+        mana: 2 * Mana.THAUMATURGE,
         ingredients: [
             { item: 'gtceu:manasteel_bolt' },
             { item: 'ad_astra:ice_shard' },
@@ -73,7 +76,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: { count: 3, item: 'botania:terrasteel_ingot' },
-        mana: 1500000,
+        mana: 16 * Mana.PROPHET,
         ingredients: [
             { item: 'kubejs:living_metalloid' },
             { item: 'botania:mana_pearl' },
@@ -91,26 +94,26 @@ ServerEvents.recipes(event => {
             { item: 'mysticalagriculture:nature_essence' }
         ],
         output: { item: 'ars_nouveau:source_gem', count: 4 },
-        sourceCost: 10000
+        sourceCost: Source.THAUMATURGE
     })
 
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_diamond' },
-        mana: 25000,
+        mana: 2 * Mana.THAUMATURGE,
         catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
         output: { item: 'botania:mana_diamond', count: 2 }
     })
 
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_pearl' },
-        mana: 15000,
+        mana: 2 * Mana.THAUMATURGE,
         catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
         output: { item: 'botania:mana_pearl', count: 2 }
     })
 
     addManaPondRecipe(event, {
         input: { tag: 'forge:ingots/terrasteel' },
-        mana: 20000,
+        mana: 2 * Mana.THAUMATURGE,
         catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
         output: { count: 4, item: 'gtceu:abstract_metal_ingot' }
     })

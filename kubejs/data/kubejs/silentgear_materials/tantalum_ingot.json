@@ -1,0 +1,164 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 8,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:tantalum_ingot"
+        }
+    },
+    "name": {
+        "text": "Tantalum"
+    },
+    "stats": {
+        "main": {
+            "durability": 2786,
+            "armor_durability": 47,
+            "enchantment_value": 7,
+            "rarity": 27,
+            "charging_value": 2,
+            "harvest_speed": 15,
+            "melee_damage": 9,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 4,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 27,
+            "armor_toughness": 11,
+            "magic_armor": 9,
+            "armor/helmet": 4,
+            "armor/chestplate": 8,
+            "armor/leggings": 7,
+            "armor/boots": 4
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 269
+            },
+            "armor_durability": {
+                "add": 10
+            },
+            "harvest_speed": {
+                "add": 3
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 9
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:purifying",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "armor"
+                    },
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#B8C0CC"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#B8C0CC"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#B8C0CC"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#B8C0CC"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#B8C0CC"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#B8C0CC"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

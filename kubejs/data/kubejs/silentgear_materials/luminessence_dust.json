@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "item": "gtceu:luminessence_dust"
+        }
+    },
+    "name": {
+        "text": "Luminessence"
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#fafa5d"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#fafa5d"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 120
+            },
+            "armor_durability": {
+                "add": 4
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "magic_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 8
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "silentgear:lustrous",
+                "level": 1
+            }
+        ]
+    }
+}

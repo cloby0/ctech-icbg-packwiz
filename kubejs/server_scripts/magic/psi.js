@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'psi:cad_assembly_iron' })
     event.remove({ id: 'psi:cad_assembly_psimetal' })
@@ -80,7 +82,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:latent_psi_crystal',
         output: 'psi:psidust',
-        source: 2000,
+        source: Source.SORCERER,
         pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
     })
 
@@ -143,7 +145,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'psi:psigem',
-        sourceCost: 6000
+        sourceCost: Source.THAUMATURGE
     })
 
     event.recipes.gtceu.assembler('psi_programmer_block')

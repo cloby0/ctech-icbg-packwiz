@@ -1,0 +1,170 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "draconicevolution:draconium_ingot"
+        },
+        "rod": {
+            "item": "draconicevolution:draconium_ingot"
+        },
+        "tip": {
+            "item": "draconicevolution:draconium_ingot"
+        }
+    },
+    "name": {
+        "text": "Draconium"
+    },
+    "stats": {
+        "main": {
+            "durability": 7828,
+            "armor_durability": 132,
+            "enchantment_value": 15,
+            "rarity": 47,
+            "charging_value": 2,
+            "harvest_speed": 39,
+            "melee_damage": 22,
+            "magic_damage": 9,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 11,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 74,
+            "armor_toughness": 28,
+            "magic_armor": 25,
+            "armor/helmet": 9,
+            "armor/chestplate": 24,
+            "armor/leggings": 18,
+            "armor/boots": 9
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 883
+            },
+            "armor_durability": {
+                "add": 31
+            },
+            "harvest_speed": {
+                "add": 6
+            },
+            "melee_damage": {
+                "add": 7
+            },
+            "ranged_damage": {
+                "add": 3
+            },
+            "rarity": {
+                "add": 19
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            },
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#7B35D9"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#7B35D9"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#7B35D9"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#3D0F7A"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#3D0F7A"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#7B35D9"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base",
+                "color": "#3D0F7A"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#7B35D9"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "rock"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:obsidian"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.obsidian"
+    },
+    "stats": {
+        "main": {
+            "durability": 1840,
+            "armor_durability": 31,
+            "enchantment_value": 4,
+            "rarity": 20,
+            "charging_value": 1,
+            "repair_value": 0,
+            "harvest_speed": 9,
+            "melee_damage": 6,
+            "magic_damage": 2,
+            "attack_speed": 0,
+            "ranged_damage": 2,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 17,
+            "armor/helmet": 3,
+            "armor/chestplate": 8,
+            "armor/leggings": 6,
+            "armor/boots": 3,
+            "armor_toughness": 7,
+            "magic_armor": 6
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:jagged",
+                "level": 3
+            },
+            {
+                "name": "silentgear:crushing",
+                "level": 2
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:brittle",
+                "level": 2
+            },
+            {
+                "name": "silentgear:chipping",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#443464"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#443464"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#443464"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#443464"
+            }
+        ]
+    }
+}

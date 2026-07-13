@@ -1,0 +1,151 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/elementium"
+        }
+    },
+    "name": {
+        "text": "Elementium"
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#EF8CBD"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#EF8CBD"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#EF8CBD"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#EF8CBD"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#EF8CBD"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_iron"
+            }
+        ]
+    },
+    "stats": {
+        "main": {
+            "durability": 6152,
+            "armor_durability": 104,
+            "enchantment_value": 13,
+            "harvest_speed": 30,
+            "melee_damage": 17,
+            "magic_damage": 7,
+            "attack_speed/axe": 0,
+            "armor": 58,
+            "armor/helmet": 8,
+            "armor/chestplate": 20,
+            "armor/leggings": 16,
+            "armor/boots": 12,
+            "armor_toughness": 22,
+            "ranged_damage": 9,
+            "ranged_speed": 0,
+            "rarity": 41,
+            "charging_value": 2,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "magic_armor": 20
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 951
+            },
+            "armor_durability": {
+                "add": 24
+            },
+            "harvest_speed": {
+                "add": 7
+            },
+            "melee_damage": {
+                "add": 8
+            },
+            "rarity": {
+                "add": 59
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            },
+            {
+                "name": "silentgear:synergistic",
+                "level": 3
+            },
+            {
+                "name": "silentcompat:mana_repair",
+                "level": 2,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "silentcompat:pixie",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentcompat:pixie",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

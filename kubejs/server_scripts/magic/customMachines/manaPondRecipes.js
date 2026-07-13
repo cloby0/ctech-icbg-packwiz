@@ -24,7 +24,8 @@ function catalystify(str) {
     }
 }
 
-let source_rate = 1
+// Inverse of ars_botania mana_convert (source buys mana at 2:1).
+let source_rate = 0.5
 
 let _nextManaPondIndex = 1
 
@@ -100,9 +101,9 @@ function addManaPondRecipe(event, crecipe) {
         console.log(`[mana_pond] mana=${mana} input=${itemInput} output=${outputId}`)
 
         let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', (mana * source_rate)))
-            .duration((manaRound(mana) * 2))
-            .EUt(7680 + Math.round(mana / 25))
+            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+            .duration((manaRound(mana * source_rate) * 2))
+            .EUt(7680 + Math.round(mana * source_rate / 25))
             .circuit(catalystify(catalystBlock))
 
         if (isConjuration) {

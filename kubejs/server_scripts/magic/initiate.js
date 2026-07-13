@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
     event.remove({ id: "reliquary:ender_staff" });
     event.remove({ id: "reliquary:shears_of_winter" });
@@ -23,7 +25,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: '#forge:gems/source',
         output: 'reliquary:void_tear',
-        source: 1500,
+        source: 2 * Source.INITIATE,
         pedestalItems: ['minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian']
     });
 
@@ -47,7 +49,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:shears',
         pedestalItems: ['minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'minecraft:snowball'],
         output: 'reliquary:shears_of_winter',
-        sourceCost: 2500
+        sourceCost: 2 * Source.INITIATE
     })
 
     event.shaped(
@@ -102,7 +104,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:fishing_rod',
         pedestalItems: ['irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune', 'ars_nouveau:magebloom_fiber', '#forge:gems/source'],
         output: 'reliquary:rod_of_lyssa',
-        sourceCost: 2500
+        sourceCost: 2 * Source.INITIATE
     })
 
     event.shaped(
@@ -125,21 +127,21 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:amethyst_shard',
         pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
         output: 'magnumtorch:amethyst_magnum_torch',
-        sourceCost: 1500
+        sourceCost: 2 * Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:emerald',
         pedestalItems: ['gtceu:holy_silver_rod', '#forge:gems/source', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
         output: 'magnumtorch:emerald_magnum_torch',
-        sourceCost: 2000
+        sourceCost: 2 * Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:diamond',
         pedestalItems: ['gtceu:holy_silver_plate', '#forge:gems/source', '#forge:gems/source', 'gtceu:luminessence_dust'],
         output: 'magnumtorch:diamond_magnum_torch',
-        sourceCost: 2500
+        sourceCost: 2 * Source.INITIATE
     })
 
     event.shaped(
@@ -188,14 +190,14 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
         output: 'kubejs:sacred_ambrosium_shard',
-        source: 1500,
+        source: 2 * Source.INITIATE,
         pedestalItems: ['gtceu:luminessence_dust', 'gtceu:luminessence_dust']
     });
 
     addImbuementRecipe(event, {
         input: 'minecraft:ender_pearl',
         output: 'irons_spellbooks:divine_pearl',
-        source: 3000,
+        source: 2 * Source.INITIATE,
         pedestalItems: ['kubejs:sacred_ambrosium_shard']
     });
 
@@ -218,13 +220,13 @@ ServerEvents.recipes(event => {
         reagent: 'gtceu:silver_dust',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust'],
         output: 'kubejs:holy_silver_blend',
-        sourceCost: 2000
+        sourceCost: 2 * Source.INITIATE
     })
 
     addImbuementRecipe(event, {
         input: 'kubejs:holy_silver_blend',
         output: 'gtceu:holy_silver_dust',
-        source: 2500,
+        source: 2 * Source.INITIATE,
         pedestalItems: ['reliquary:mercy_cross']
     });
 
@@ -233,7 +235,7 @@ ServerEvents.recipes(event => {
         reagent: 'gtceu:holy_silver_dust',
         pedestalItems: ['#kubejs:fire_essences'],
         output: 'gtceu:holy_silver_ingot',
-        sourceCost: 3000
+        sourceCost: 2 * Source.INITIATE
     })
 
     // === Skyforged line: Aether/Valkyrie alt to Holy Silver, independent of holy silver ===
@@ -242,7 +244,7 @@ ServerEvents.recipes(event => {
         reagent: 'deep_aether:skyjade',
         pedestalItems: ['aether:victory_medal', 'aether:victory_medal', '#kubejs:air_essences', '#kubejs:water_essences'],
         output: 'gtceu:skyforged_dust',
-        sourceCost: 2500
+        sourceCost: 2 * Source.INITIATE
     })
 
     // Combat endpoint: full Valkyrie set craftable from skyforged (medals already gate the alloy upstream)
@@ -277,7 +279,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:earth_essences' }
         ],
         output: { item: 'minecraft:ender_pearl', count: 4 },
-        sourceCost: 2500
+        sourceCost: 2 * Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
@@ -289,7 +291,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:water_essences' }
         ],
         output: { item: 'reliquary:fortune_coin', count: 4 },
-        sourceCost: 3000
+        sourceCost: 2 * Source.INITIATE
     })
 
     event.shaped(

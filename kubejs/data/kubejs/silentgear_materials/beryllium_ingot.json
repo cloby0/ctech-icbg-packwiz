@@ -1,0 +1,145 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:beryllium_ingot"
+        }
+    },
+    "name": {
+        "text": "Beryllium"
+    },
+    "stats": {
+        "main": {
+            "durability": 1031,
+            "armor_durability": 18,
+            "enchantment_value": 5,
+            "rarity": 18,
+            "charging_value": 1,
+            "harvest_speed": 8,
+            "melee_damage": 4,
+            "magic_damage": 2,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 2,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 12,
+            "armor_toughness": 5,
+            "magic_armor": 5,
+            "armor/helmet": 1,
+            "armor/chestplate": 3,
+            "armor/leggings": 2,
+            "armor/boots": 1
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 54
+            },
+            "armor_durability": {
+                "add": 3
+            },
+            "harvest_speed": {
+                "add": 1
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 4
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:light",
+                "level": 1
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "rod": [],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#D4E8C8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#D4E8C8"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#D4E8C8"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#D4E8C8"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#D4E8C8"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#D4E8C8"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

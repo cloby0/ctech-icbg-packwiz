@@ -1,0 +1,154 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 12,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:tritanium_ingot"
+        }
+    },
+    "name": {
+        "text": "Tritanium"
+    },
+    "stats": {
+        "main": {
+            "durability": 8794,
+            "armor_durability": 148,
+            "enchantment_value": 15,
+            "rarity": 47,
+            "charging_value": 2,
+            "harvest_speed": 35,
+            "melee_damage": 24,
+            "magic_damage": 8,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 9,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 81,
+            "armor_toughness": 31,
+            "magic_armor": 27,
+            "armor/helmet": 8,
+            "armor/chestplate": 19,
+            "armor/leggings": 15,
+            "armor/boots": 8
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 726
+            },
+            "armor_durability": {
+                "add": 26
+            },
+            "harvest_speed": {
+                "add": 7
+            },
+            "melee_damage": {
+                "add": 5
+            },
+            "ranged_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 19
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:sturdy",
+                "level": 2
+            },
+            {
+                "name": "silentgear:heavy",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A8B8E0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#A8B8E0"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#A8B8E0"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#A8B8E0"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#A8B8E0"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#A8B8E0"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

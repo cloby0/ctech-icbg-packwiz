@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
 
 
@@ -38,7 +41,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:poseidite_ingot',
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.shaped('l2complements:wind_capture_bottle', [
@@ -94,7 +97,7 @@ ServerEvents.recipes(event => {
             'minecraft:gold_ingot', 'minecraft:gold_ingot'
         ],
         output: 'l2hostility:charm_of_looting_1',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addImbuementRecipe(event, {
@@ -104,7 +107,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:bottle_of_curse',
-        source: 2000
+        source: Source.SORCERER
     })
 
 
@@ -117,7 +120,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:totemic_gold_ingot',
-        source: 8000,
+        source: Source.THAUMATURGE,
     })
 
     event.shaped('l2complements:totemic_carrot', [
@@ -140,7 +143,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:hard_ice',
-        source: 5000,
+        source: Source.ALCHEMIST,
     })
 
     addImbuementRecipe(event, {
@@ -150,7 +153,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:soul_flame',
-        source: 6000
+        source: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -162,7 +165,7 @@ ServerEvents.recipes(event => {
             'minecraft:sponge', 'minecraft:sponge'
         ],
         output: 'l2complements:guardian_eye',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -173,7 +176,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:guardian_rune',
-        sourceCost: 6000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -185,7 +188,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:piglin_rune',
-        sourceCost: 6000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -197,7 +200,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:reinforced_warp_stone',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -209,7 +212,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:totem_of_the_sea',
-        sourceCost: 10000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -220,7 +223,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:enchanted_totemic_carrot',
-        sourceCost: 6000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -231,7 +234,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:enchanted_totemic_apple',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
 
@@ -243,7 +246,7 @@ ServerEvents.recipes(event => {
             'minecraft:rabbit_foot', 'minecraft:rabbit_foot'
         ],
         output: 'l2hostility:curse_of_sloth',
-        source: 6000,
+        source: Source.THAUMATURGE,
     })
 
     addImbuementRecipe(event, {
@@ -254,7 +257,7 @@ ServerEvents.recipes(event => {
             'minecraft:honey_bottle', 'minecraft:honey_bottle'
         ],
         output: 'l2hostility:curse_of_gluttony',
-        source: 8000,
+        source: Source.THAUMATURGE,
     })
 
     addEnchantingRecipe(event, {
@@ -266,7 +269,7 @@ ServerEvents.recipes(event => {
             'minecraft:golden_apple'
         ],
         output: 'l2hostility:ring_of_healing',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -278,7 +281,7 @@ ServerEvents.recipes(event => {
             'minecraft:heart_of_the_sea'
         ],
         output: 'l2hostility:ring_of_ocean',
-        sourceCost: 7000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -290,7 +293,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:bottle_of_sanity',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     event.shaped('l2hostility:booster_potion', [
@@ -302,7 +305,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('l2hostility/hostility_essence')
         .itemInputs('4x l2hostility:witch_droplet', '2x gtceu:holy_silver_dust')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 500))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.JOURNEYMAN))
         .itemOutputs('1x l2hostility:hostility_essence')
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])
@@ -321,7 +324,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2hostility:eternal_witch_charge',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -333,7 +336,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:charm_of_looting_2',
-        sourceCost: 8000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
@@ -345,7 +348,7 @@ ServerEvents.recipes(event => {
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence'
         ],
         output: 'l2hostility:detector_glasses',
-        sourceCost: 10000
+        sourceCost: Source.THAUMATURGE
     })
 
     event.shaped('l2hostility:book_of_reprint', [
@@ -363,7 +366,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:book_of_omniscience',
-        sourceCost: 12000
+        sourceCost: Source.ARCANIST
     })
 
 
@@ -376,7 +379,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:sculkium_ingot',
-        source: 15000,
+        source: Source.ARCANIST,
     })
 
     addImbuementRecipe(event, {
@@ -387,7 +390,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
         ],
         output: 'l2complements:warden_bone_shard',
-        source: 12000,
+        source: Source.ARCANIST,
     })
 
     addImbuementRecipe(event, {
@@ -399,7 +402,7 @@ ServerEvents.recipes(event => {
             'minecraft:glass'
         ],
         output: 'l2complements:storm_core',
-        source: 12000,
+        source: Source.ARCANIST,
     })
 
     addImbuementRecipe(event, {
@@ -410,7 +413,7 @@ ServerEvents.recipes(event => {
             'minecraft:totem_of_undying'
         ],
         output: 'l2complements:life_essence',
-        source: 15000,
+        source: Source.ARCANIST,
     })
 
     addImbuementRecipe(event, {
@@ -421,7 +424,7 @@ ServerEvents.recipes(event => {
             'minecraft:spider_eye', 'minecraft:spider_eye'
         ],
         output: 'l2complements:cursed_droplet',
-        source: 10000,
+        source: Source.THAUMATURGE,
     })
 
     addEnchantingRecipe(event, {
@@ -433,7 +436,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:void_eye',
-        sourceCost: 15000
+        sourceCost: Source.ARCANIST
     })
 
     addImbuementRecipe(event, {
@@ -445,7 +448,7 @@ ServerEvents.recipes(event => {
             'l2complements:sculkium_ingot'
         ],
         output: 'l2complements:blackstone_core',
-        source: 12000,
+        source: Source.ARCANIST,
     })
 
     addImbuementRecipe(event, {
@@ -456,7 +459,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
         ],
         output: 'l2complements:explosion_shard',
-        source: 12000,
+        source: Source.ARCANIST,
     })
 
     event.recipes.gtceu.alloy_smelter('l2hostility/chaos_ingot')
@@ -474,7 +477,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:charm_of_looting_3',
-        sourceCost: 20000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -485,7 +488,7 @@ ServerEvents.recipes(event => {
             'minecraft:diamond_sword', 'minecraft:diamond_sword'
         ],
         output: 'l2hostility:curse_of_wrath',
-        sourceCost: 18000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -497,7 +500,7 @@ ServerEvents.recipes(event => {
             'minecraft:netherite_ingot'
         ],
         output: 'l2hostility:curse_of_lust',
-        sourceCost: 16000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -508,7 +511,7 @@ ServerEvents.recipes(event => {
             'minecraft:gold_block', 'minecraft:gold_block'
         ],
         output: 'l2hostility:curse_of_greed',
-        sourceCost: 16000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -520,7 +523,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:ring_of_life',
-        sourceCost: 18000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -532,7 +535,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:ring_of_incarceration',
-        sourceCost: 16000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -544,7 +547,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:ring_of_corrosion',
-        sourceCost: 15000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -556,7 +559,7 @@ ServerEvents.recipes(event => {
             'minecraft:soul_campfire', 'minecraft:soul_campfire'
         ],
         output: 'l2hostility:flaming_thorn',
-        sourceCost: 18000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -568,7 +571,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
         ],
         output: 'l2hostility:platinum_star',
-        sourceCost: 22000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -580,7 +583,7 @@ ServerEvents.recipes(event => {
             'minecraft:ender_pearl', 'minecraft:ender_pearl'
         ],
         output: 'l2hostility:hostility_orb',
-        sourceCost: 20000
+        sourceCost: Source.ARCANIST
     })
 
 
@@ -593,7 +596,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2complements:shulkerate_ingot',
-        sourceCost: 25000
+        sourceCost: Source.SAGE
     })
 
     addRunicAltarRecipe(event, {
@@ -605,19 +608,7 @@ ServerEvents.recipes(event => {
             { item: 'l2complements:totem_of_the_sea' },
             { item: 'l2complements:life_essence' }, { item: 'l2complements:life_essence' }
         ],
-        mana: 50000
-    })
-
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:echo_shard',
-        pedestalItems: [
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'minecraft:chorus_fruit', 'minecraft:chorus_fruit',
-            'l2complements:void_eye'
-        ],
-        output: 'l2complements:space_shard',
-        sourceCost: 28000
+        mana: Mana.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -629,7 +620,7 @@ ServerEvents.recipes(event => {
             'minecraft:echo_shard', 'minecraft:echo_shard'
         ],
         output: 'l2complements:resonant_feather',
-        sourceCost: 25000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -641,7 +632,7 @@ ServerEvents.recipes(event => {
             'l2complements:storm_core', 'l2complements:storm_core'
         ],
         output: 'l2complements:sun_membrane',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addRunicAltarRecipe(event, {
@@ -653,12 +644,12 @@ ServerEvents.recipes(event => {
             { item: 'minecraft:wither_skeleton_skull' }, { item: 'minecraft:wither_skeleton_skull' },
             { item: 'l2hostility:chaos_ingot' }, { item: 'l2hostility:chaos_ingot' }
         ],
-        mana: 60000
+        mana: Mana.ASCENDANT
     })
 
     event.recipes.gtceu.assembler('l2hostility/miracle_ingot')
         .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x ars_nouveau:source_gem')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SORCERER))
         .itemOutputs('1x l2hostility:miracle_ingot')
         .duration(400)
         .EUt(GTValues.VA[GTValues.IV])
@@ -679,7 +670,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:charm_of_looting_4',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -691,7 +682,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:curse_of_envy',
-        sourceCost: 32000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -703,7 +694,7 @@ ServerEvents.recipes(event => {
             'minecraft:netherite_ingot', 'minecraft:diamond'
         ],
         output: 'l2hostility:curse_of_pride',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -715,7 +706,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2hostility:ring_of_divinity',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -727,7 +718,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:ring_of_reflection',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -739,7 +730,7 @@ ServerEvents.recipes(event => {
             'minecraft:gold_block', 'minecraft:gold_block'
         ],
         output: 'l2hostility:greed_of_nidhoggur',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -751,7 +742,7 @@ ServerEvents.recipes(event => {
             'minecraft:echo_shard', 'minecraft:echo_shard'
         ],
         output: 'l2hostility:abyssal_thorn',
-        sourceCost: 32000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -763,7 +754,7 @@ ServerEvents.recipes(event => {
             'minecraft:amethyst_shard', 'minecraft:amethyst_shard'
         ],
         output: 'l2hostility:oddeyes_glasses',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -775,7 +766,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:pocket_of_restoration',
-        sourceCost: 28000
+        sourceCost: Source.SAGE
     })
 
 
@@ -788,7 +779,7 @@ ServerEvents.recipes(event => {
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
             { item: 'ars_nouveau:source_gem' }, { item: 'ars_nouveau:source_gem' }
         ],
-        mana: 75000
+        mana: Mana.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -800,7 +791,7 @@ ServerEvents.recipes(event => {
             'minecraft:fire_charge', 'minecraft:fire_charge'
         ],
         output: 'l2complements:heirophant_green',
-        sourceCost: 42000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -812,7 +803,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:divinity_cross',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -824,7 +815,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:divinity_light',
-        sourceCost: 42000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -836,7 +827,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'l2hostility:triple_strip_cape',
-        sourceCost: 38000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -848,7 +839,7 @@ ServerEvents.recipes(event => {
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence'
         ],
         output: 'l2hostility:trait_adder_wand',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -860,7 +851,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot'
         ],
         output: 'l2hostility:target_select_wand',
-        sourceCost: 35000
+        sourceCost: Source.SAGE
     })
 
 
@@ -873,7 +864,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/iv', '#gtceu:circuits/iv'
         ],
         output: 'l2hostility:abrahadabra',
-        sourceCost: 60000
+        sourceCost: Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -885,7 +876,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/iv', '#gtceu:circuits/iv'
         ],
         output: 'l2hostility:imagine_breaker',
-        sourceCost: 55000
+        sourceCost: Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -897,7 +888,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/luv', '#gtceu:circuits/luv'
         ],
         output: 'l2hostility:infinity_glove',
-        sourceCost: 70000
+        sourceCost: Source.ASCENDANT
     })
 
 })

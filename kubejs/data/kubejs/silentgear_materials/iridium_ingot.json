@@ -1,0 +1,154 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 10,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:iridium_ingot"
+        }
+    },
+    "name": {
+        "text": "Iridium"
+    },
+    "stats": {
+        "main": {
+            "durability": 4889,
+            "armor_durability": 83,
+            "enchantment_value": 11,
+            "rarity": 35,
+            "charging_value": 2,
+            "harvest_speed": 21,
+            "melee_damage": 13,
+            "magic_damage": 5,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 6,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 49,
+            "armor_toughness": 19,
+            "magic_armor": 17,
+            "armor/helmet": 4,
+            "armor/chestplate": 10,
+            "armor/leggings": 8,
+            "armor/boots": 4
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 325
+            },
+            "armor_durability": {
+                "add": 12
+            },
+            "harvest_speed": {
+                "add": 3
+            },
+            "melee_damage": {
+                "add": 3
+            },
+            "ranged_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 11
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            },
+            {
+                "name": "silentgear:heavy",
+                "level": 1
+            },
+            {
+                "name": "silentgear:brittle",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#D0D8E0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#D0D8E0"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#D0D8E0"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#D0D8E0"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#D0D8E0"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#D0D8E0"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

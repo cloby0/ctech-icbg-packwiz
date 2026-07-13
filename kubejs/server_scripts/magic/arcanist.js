@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/elementium' })
     event.remove({ id: 'botania:elven_trade/elementium_block' })
@@ -6,7 +9,7 @@ ServerEvents.recipes(event => {
 
     addRunicAltarRecipe(event, {
         output: { count: 3, item: 'kubejs:weak_elementium_dust' },
-        mana: 8000,
+        mana: Mana.ARCANIST,
         ingredients: [
             { item: 'gtceu:terrasteel_bolt' },
             { item: 'gtceu:terrasteel_bolt' },
@@ -34,7 +37,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:elven_concentrate',
         output: 'kubejs:elementite_dust',
-        source: 8000,
+        source: Source.ARCANIST,
         pedestalItems: ['#kubejs:water_essences', '#kubejs:air_essences', 'gtceu:luminessence_dust']
     })
 
@@ -42,13 +45,13 @@ ServerEvents.recipes(event => {
         reagent: 'kubejs:elementite_dust',
         pedestalItems: ['gtceu:abstract_metal_ingot'],
         output: 'kubejs:raw_elementite',
-        sourceCost: 15000
+        sourceCost: Source.ARCANIST
     })
 
     addImbuementRecipe(event, {
         input: 'kubejs:elven_concentrate',
         output: 'kubejs:elven_source_lattice',
-        source: 12000,
+        source: Source.ARCANIST,
         pedestalItems: ['kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem']
     })
 
@@ -61,7 +64,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:air_essences' }
         ],
         output: { item: 'ars_nouveau:source_gem', count: 5 },
-        sourceCost: 15000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -73,7 +76,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:air_essences' }
         ],
         output: { item: 'botania:pixie_dust', count: 3 },
-        sourceCost: 15000
+        sourceCost: Source.ARCANIST
     })
 
     addEnchantingRecipe(event, {
@@ -85,7 +88,7 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:water_essences' }
         ],
         output: { item: 'botania:dragonstone', count: 2 },
-        sourceCost: 20000
+        sourceCost: Source.ARCANIST
     })
 
     event.smelting("botania:elementium_ingot", "kubejs:raw_elementite")

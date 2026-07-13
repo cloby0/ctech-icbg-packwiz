@@ -12,6 +12,9 @@ function manaToTicks(mana) {
     return Math.max(Math.round(mana / 100), 20) * 2
 }
 
+// Inverse of ars_botania mana_convert (source buys mana at 2:1).
+let source_rate = 0.5
+
 function resolveRunicIngredient(ing, debugLabel) {
     if (Array.isArray(ing)) {
         for (let i = 0; i < ing.length; i++) {
@@ -73,9 +76,9 @@ function addRunicAltarRecipe(event, crecipe) {
     }
 
     const gt = event.recipes.gtceu.runic_forge('runic_forge/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
         .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(manaToTicks(mana))
+        .duration(manaToTicks(mana * source_rate))
         .EUt(LuV_EU)
     itemInputs.forEach(input => gt.itemInputs(input))
 }
@@ -104,7 +107,7 @@ function addTerraPlateRecipe(event, crecipe) {
 
     const duration = mana >= 1000000 ? 1200 : 600
     const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
         .itemOutputs(outputCount + 'x ' + outputId)
         .duration(duration)
         .EUt(LuV_EU)
@@ -147,9 +150,9 @@ ServerEvents.recipes(event => {
         console.log('[runic_forge] cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.runic_forge(`runic_forge/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
             .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(manaToTicks(mana))
+            .duration(manaToTicks(mana * source_rate))
             .EUt(LuV_EU)
 
         itemInputs.forEach(input => gt.itemInputs(input))
@@ -185,7 +188,7 @@ ServerEvents.recipes(event => {
         console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', mana))
+            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
             .itemOutputs(`${outputCount}x ${outputId}`)
             .duration(duration)
             .EUt(LuV_EU)

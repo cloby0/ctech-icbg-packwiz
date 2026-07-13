@@ -27,12 +27,10 @@ ServerEvents.recipes(event => {
         event.remove({ id: SG + ':' + metal + '_dust_blasting' })
     })
 
-    // Drop the non-mixer alloy ingot crafts (compounding / shaped / shapeless).
-    event.remove({ id: SG + ':blaze_gold_ingot' })
-    event.remove({ id: SG + ':compounding/metal/blaze_gold_ingot' })
-    event.remove({ id: SG + ':azure_electrum_ingot' })
-    event.remove({ id: SG + ':compounding/metal/crimson_steel_ingot' })
-    event.remove({ id: SG + ':compounding/metal/tyrian_steel_ingot' })
+    // Drop the non-mixer alloy ingot crafts (all variants, not just known IDs).
+    ;['blaze_gold_ingot', 'azure_electrum_ingot', 'crimson_steel_ingot', 'tyrian_steel_ingot'].forEach(ingot => {
+        event.remove({ output: SG + ':' + ingot })
+    })
 
     // Alloy mixers (the blast/furnace step autogens from each material's blastTemp / ingot form).
     event.recipes.gtceu.mixer('sg_blaze_gold_dust_mix')

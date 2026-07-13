@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 
@@ -9,7 +12,7 @@ ServerEvents.recipes(event => {
             'minecraft:experience_bottle'
         ],
         output: 'reliquary:alkahestry_tome',
-        sourceCost: 10000
+        sourceCost: 2 * Source.ALCHEMIST
     })
 
     event.remove({ id: "botania:petal_apothecary/pure_daisy" })
@@ -18,27 +21,27 @@ ServerEvents.recipes(event => {
         reagent: 'ars_nouveau:magebloom_crop',
         pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:prima_materia_rod', 'mysticalagriculture:earth_essence', 'mysticalagriculture:earth_essence'],
         output: 'botania:pure_daisy',
-        sourceCost: 10000
+        sourceCost: 2 * Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:bucket',
         pedestalItems: ['gtceu:prima_materia_block', 'minecraft:experience_bottle', 'minecraft:experience_bottle', 'hexcasting:charged_amethyst'],
         output: 'gtceu:concepts_bucket',
-        sourceCost: 5000
+        sourceCost: Source.ALCHEMIST
     })
 
     addImbuementRecipe(event, {
         input: 'gtceu:concepts_bucket',
         output: 'gtceu:metal_form_bucket',
-        source: 7500,
+        source: 2 * Source.ALCHEMIST,
         pedestalItems: ['gtceu:holy_silver_block']
     })
 
     addImbuementRecipe(event, {
         input: 'gtceu:metal_form_bucket',
         output: 'kubejs:disorganized_metal_form',
-        source: 3000,
+        source: Source.ALCHEMIST,
         pedestalItems: ['mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence']
     })
 
@@ -46,7 +49,7 @@ ServerEvents.recipes(event => {
 
     addManaPondRecipe(event, {
         input: { item: 'gtceu:abstract_metal_ingot' },
-        mana: 3500,
+        mana: Mana.ALCHEMIST,
         output: { item: 'botania:manasteel_ingot' }
     })
 
@@ -59,31 +62,31 @@ ServerEvents.recipes(event => {
         reagent: 'gtceu:abstract_metal_ingot',
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:water_essences'],
         output: 'gtceu:bismuth_ingot',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
     addEnchantingRecipe(event, {
         reagent: 'gtceu:abstract_metal_ingot',
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:earth_essences'],
         output: 'minecraft:copper_ingot',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
     addEnchantingRecipe(event, {
         reagent: 'gtceu:abstract_metal_ingot',
         pedestalItems: ['#kubejs:water_essences', '#kubejs:air_essences'],
         output: 'gtceu:silver_ingot',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
     addEnchantingRecipe(event, {
         reagent: 'gtceu:abstract_metal_ingot',
         pedestalItems: ['#kubejs:earth_essences', '#kubejs:air_essences'],
         output: 'gtceu:magnesium_dust',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
     addEnchantingRecipe(event, {
         reagent: 'gtceu:abstract_metal_ingot',
         pedestalItems: ['#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
         output: 'gtceu:holy_silver_ingot',
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -94,18 +97,18 @@ ServerEvents.recipes(event => {
             { tag: 'kubejs:earth_essences' }
         ],
         output: { item: 'ars_nouveau:source_gem', count: 3 },
-        sourceCost: 6000
+        sourceCost: 2 * Source.ALCHEMIST
     })
 
     addManaPondRecipe(event, {
         input: { item: 'minecraft:glowstone' },
-        mana: 2000,
+        mana: Mana.ALCHEMIST,
         output: { count: 4, item: 'gtceu:luminessence_dust' }
     })
 
     addManaPondRecipe(event, {
         input: { tag: 'forge:ingots/silver' },
-        mana: 3000,
+        mana: Mana.ALCHEMIST,
         catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
         output: { item: 'gtceu:holy_silver_ingot' }
     })
@@ -114,7 +117,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'hexcasting:charged_amethyst',
         output: 'kubejs:hexed_amethyst_core',
-        source: 5000,
+        source: Source.ALCHEMIST,
         pedestalItems: ['gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'gtceu:abstract_metal_ingot', 'minecraft:glowstone']
     })
 
@@ -126,7 +129,7 @@ ServerEvents.recipes(event => {
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
         ],
         output: 'kubejs:hexed_mana_matrix',
-        sourceCost: 10000
+        sourceCost: 2 * Source.ALCHEMIST
     })
 
     event.remove({ output: /hexcasting:staff\// })
@@ -234,7 +237,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:leather',
         pedestalItems: ['gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'minecraft:glowstone'],
         output: 'hexcasting:focus',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.remove({ id: 'hexcasting:spellbook' })
@@ -242,7 +245,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:writable_book',
         pedestalItems: ['gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit'],
         output: 'hexcasting:spellbook',
-        sourceCost: 5000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.remove({ id: 'hexcasting:artifact' })
@@ -250,7 +253,7 @@ ServerEvents.recipes(event => {
         reagent: '#minecraft:music_discs',
         pedestalItems: ['gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot'],
         output: 'hexcasting:artifact',
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.remove({ id: 'hexcasting:trinket' })
@@ -266,6 +269,6 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:amethyst_shard',
         pedestalItems: ['gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix'],
         output: 'hex_ars_link:linker_base',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 })

@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'mysticalagradditions:essence/gaia_spirit' })
 
@@ -12,12 +15,12 @@ ServerEvents.recipes(event => {
             '#kubejs:earth_essences', '#kubejs:fire_essences'
         ],
         output: 'gtceu:wilden_alloy_dust',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:vengeful_gaia_spirit' },
-        mana: 8000,
+        mana: Mana.SAGE,
         ingredients: [
             { item: 'botania:life_essence' },
             { item: 'botania:rune_wrath' },
@@ -32,7 +35,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:vengeful_gaia_spirit',
         output: 'kubejs:soul_of_gaia',
-        source: 20000,
+        source: Source.SAGE,
         pedestalItems: ['mysticalagriculture:wither_skeleton_essence', 'mysticalagriculture:wither_skeleton_essence', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence']
     })
 
@@ -45,7 +48,7 @@ ServerEvents.recipes(event => {
             'botania:elementium_block', 'botania:elementium_block'
         ],
         output: 'kubejs:boundless_gaia_spirit_ingot',
-        sourceCost: 20000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -56,7 +59,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:blood_rune', 'irons_spellbooks:blood_rune', 'minecraft:netherite_ingot'
         ],
         output: 'kubejs:gaian_blood_core',
-        sourceCost: 25000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -67,7 +70,7 @@ ServerEvents.recipes(event => {
             'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard'
         ],
         output: 'kubejs:gaian_holy_core',
-        sourceCost: 25000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -77,7 +80,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune', 'minecraft:nether_star'
         ],
         output: 'kubejs:gaian_void_core',
-        sourceCost: 25000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -89,7 +92,7 @@ ServerEvents.recipes(event => {
             'minecraft:nether_star', 'minecraft:nether_star'
         ],
         output: 'kubejs:gaian_annihilation_core',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -101,7 +104,7 @@ ServerEvents.recipes(event => {
             'minecraft:netherite_ingot', 'minecraft:netherite_ingot'
         ],
         output: 'kubejs:blood_grimoire',
-        sourceCost: 50000
+        sourceCost: 2 * Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -113,7 +116,7 @@ ServerEvents.recipes(event => {
             'minecraft:golden_apple', 'minecraft:golden_apple'
         ],
         output: 'kubejs:radiant_sanctum',
-        sourceCost: 50000
+        sourceCost: 2 * Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -125,7 +128,7 @@ ServerEvents.recipes(event => {
             'minecraft:ender_eye', 'minecraft:ender_eye'
         ],
         output: 'kubejs:eldritch_codex',
-        sourceCost: 50000
+        sourceCost: 2 * Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -137,7 +140,7 @@ ServerEvents.recipes(event => {
             'minecraft:ender_eye', 'minecraft:ender_eye'
         ],
         output: 'kubejs:obliteration_chronicle',
-        sourceCost: 50000
+        sourceCost: 2 * Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -149,7 +152,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/uv', '#gtceu:circuits/uv'
         ],
         output: 'kubejs:harbinger_codex',
-        sourceCost: 55000
+        sourceCost: 2 * Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -161,12 +164,12 @@ ServerEvents.recipes(event => {
             '#kubejs:fire_essences', '#kubejs:air_essences'
         ],
         output: 'botania:life_essence',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 
     addTerraPlateRecipe(event, {
         result: { item: 'botania:gaia_ingot' },
-        mana: 1000000,
+        mana: 8 * Mana.PROPHET,
         ingredients: [
             { item: 'kubejs:boundless_gaia_spirit_ingot' },
             { item: 'botania:terrasteel_block' },
@@ -177,7 +180,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'ars_nouveau:wilden_tribute',
         output: { item: 'ars_nouveau:wilden_tribute', count: 2 },
-        source: 50000,
+        source: 2 * Source.SAGE,
         pedestalItems: [
             'ars_nouveau:wilden_horn',
             'ars_nouveau:wilden_horn',
@@ -191,7 +194,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: '4x gtceu:rubber_dust',
         output: 'kubejs:primal_latex_billet',
-        source: 25000,
+        source: Source.SAGE,
         pedestalItems: [
             'mysticalagriculture:fire_essence',
             'mysticalagriculture:water_essence',
@@ -208,7 +211,7 @@ ServerEvents.recipes(event => {
             '4x ars_nouveau:source_gem',
             '1x ars_nouveau:wilden_horn'
         )
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SAGE))
         .itemOutputs('1x kubejs:elemental_latex_compound')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
@@ -224,6 +227,6 @@ ServerEvents.recipes(event => {
             'gtceu:abstract_metal_ingot'
         ],
         output: 'gtceu:abstract_elastomer_ingot',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 })

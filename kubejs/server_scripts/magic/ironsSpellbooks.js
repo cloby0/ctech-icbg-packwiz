@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'irons_spellbooks:arcane_anvil' })
@@ -39,7 +41,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:book',
         output: 'irons_spellbooks:ruined_book',
-        source: 2000,
+        source: Source.SORCERER,
         pedestalItems: [
             'minecraft:sculk', 'minecraft:sculk',
             'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
@@ -154,7 +156,7 @@ ServerEvents.recipes(event => {
             'kubejs:chaos_essence', 'irons_spellbooks:fire_rune', 'irons_spellbooks:fire_rune'
         ],
         output: 'kubejs:pyromatic_codex',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -165,7 +167,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:evocation_rune', 'minecraft:nether_star'
         ],
         output: 'kubejs:evocation_folio',
-        sourceCost: 30000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -177,7 +179,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/zpm', '#gtceu:circuits/zpm'
         ],
         output: 'kubejs:technomatic_folio',
-        sourceCost: 42000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -189,7 +191,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:ice_rune', 'irons_spellbooks:ice_rune'
         ],
         output: 'kubejs:glacial_grimoire',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -201,7 +203,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune'
         ],
         output: 'kubejs:verdant_chronicle',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -213,7 +215,7 @@ ServerEvents.recipes(event => {
             'minecraft:ender_eye', 'minecraft:ender_eye'
         ],
         output: 'legendary_spellbooks:annihilators_protocol',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
@@ -225,6 +227,6 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:lightning_bottle', 'irons_spellbooks:lightning_bottle'
         ],
         output: 'legendary_spellbooks:stormbound_grimoire',
-        sourceCost: 40000
+        sourceCost: Source.SAGE
     })
 })

@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'legendarysurvivaloverhaul:sewing_table' })
@@ -81,7 +83,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:string',
         output: 'legendarysurvivaloverhaul:cold_string',
-        source: 250,
+        source: Source.APPRENTICE,
         pedestalItems: ['legendarysurvivaloverhaul:ice_fern_leaf', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snow_block']
     })
 
@@ -94,7 +96,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:string',
         output: 'legendarysurvivaloverhaul:warm_string',
-        source: 250,
+        source: Source.APPRENTICE,
         pedestalItems: ['legendarysurvivaloverhaul:sun_fern_leaf', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:blaze_powder']
     })
 
@@ -107,7 +109,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'legendarysurvivaloverhaul:cold_string',
         output: 'legendarysurvivaloverhaul:cooling_coat_1',
-        source: 500,
+        source: Source.JOURNEYMAN,
         pedestalItems: ['legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snow_block', 'minecraft:snowball']
     })
 
@@ -122,7 +124,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_1',
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'minecraft:blue_ice', 'minecraft:blue_ice'],
         output: 'legendarysurvivaloverhaul:cooling_coat_2',
-        sourceCost: 2000
+        sourceCost: Source.SORCERER
     })
 
     event.recipes.gtceu.assembler('lso_cooling_coat_3_tech')
@@ -136,7 +138,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_2',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_plate', '#kubejs:water_essences', '#kubejs:water_essences'],
         output: 'legendarysurvivaloverhaul:cooling_coat_3',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_1_tech')
@@ -148,7 +150,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'legendarysurvivaloverhaul:warm_string',
         output: 'legendarysurvivaloverhaul:heating_coat_1',
-        source: 500,
+        source: Source.JOURNEYMAN,
         pedestalItems: ['legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream', 'minecraft:blaze_powder']
     })
 
@@ -163,7 +165,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:heating_coat_1',
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'minecraft:magma_block', 'minecraft:blaze_rod'],
         output: 'legendarysurvivaloverhaul:heating_coat_2',
-        sourceCost: 2000
+        sourceCost: Source.SORCERER
     })
 
     event.recipes.gtceu.assembler('lso_heating_coat_3_tech')
@@ -177,7 +179,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:heating_coat_2',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_plate', '#kubejs:fire_essences', '#kubejs:fire_essences'],
         output: 'legendarysurvivaloverhaul:heating_coat_3',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     event.recipes.gtceu.assembler('lso_thermal_coat_1_tech')
@@ -191,7 +193,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_1',
         pedestalItems: ['legendarysurvivaloverhaul:heating_coat_1', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem'],
         output: 'legendarysurvivaloverhaul:thermal_coat_1',
-        sourceCost: 2500
+        sourceCost: Source.SORCERER
     })
 
     event.recipes.gtceu.assembler('lso_thermal_coat_2_tech')
@@ -205,7 +207,7 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_2',
         pedestalItems: ['legendarysurvivaloverhaul:heating_coat_2', 'kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_plate', '#kubejs:earth_essences'],
         output: 'legendarysurvivaloverhaul:thermal_coat_2',
-        sourceCost: 3500
+        sourceCost: Source.ALCHEMIST
     })
 
     event.recipes.gtceu.assembler('lso_thermal_coat_3_tech')
@@ -219,56 +221,56 @@ ServerEvents.recipes(event => {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_3',
         pedestalItems: ['legendarysurvivaloverhaul:heating_coat_3', 'gtceu:prima_materia_ingot', 'kubejs:element_attunement_stone', '#kubejs:air_essences'],
         output: 'legendarysurvivaloverhaul:thermal_coat_3',
-        sourceCost: 5000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:gold_ingot',
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:sun_fern_leaf', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream'],
         output: 'legendarysurvivaloverhaul:heat_resistance_ring',
-        sourceCost: 1500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:gold_ingot',
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:ice_fern_leaf', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snowball'],
         output: 'legendarysurvivaloverhaul:cold_resistance_ring',
-        sourceCost: 1500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:cold_resistance_ring',
         pedestalItems: ['legendarysurvivaloverhaul:heat_resistance_ring', 'gtceu:prima_materia_ingot', '#kubejs:fire_essences', '#kubejs:water_essences'],
         output: 'legendarysurvivaloverhaul:thermal_resistance_ring',
-        sourceCost: 5000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:glass_bottle',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_ingot', '#kubejs:fire_essences', 'minecraft:blaze_rod', 'minecraft:blaze_rod'],
         output: 'legendarysurvivaloverhaul:nether_chalice',
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:sponge',
         pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', '#kubejs:water_essences', '#kubejs:water_essences', 'minecraft:sea_lantern'],
         output: 'legendarysurvivaloverhaul:sponge',
-        sourceCost: 1500
+        sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:glass_bottle',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_ingot', '#kubejs:water_essences', 'ars_nouveau:source_gem'],
         output: 'legendarysurvivaloverhaul:water_purifier',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:medkit',
         pedestalItems: ['kubejs:sacred_ambrosium_shard', 'irons_spellbooks:divine_pearl', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:healing_herbs'],
         output: 'legendarysurvivaloverhaul:first_aid_supplies',
-        sourceCost: 3500
+        sourceCost: Source.ALCHEMIST
     })
 
 })

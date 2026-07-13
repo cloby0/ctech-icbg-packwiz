@@ -1,0 +1,65 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "minecraft:scute"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.turtle"
+    },
+    "stats": {
+        "main": {
+            "durability": 943,
+            "armor_durability/helmet": 25,
+            "enchantment_value": 4,
+            "charging_value": 1,
+            "rarity": 16,
+            "armor/helmet": 2,
+            "magic_armor": 4
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:turtle",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_count",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/helmet": [
+            {
+                "texture": "silentgear:turtle",
+                "color": "#47BF4A"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#47BF4A"
+            }
+        ]
+    }
+}

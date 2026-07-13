@@ -1,0 +1,117 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:wood",
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "organic",
+            "cloth"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "minecraft:phantom_membrane"
+        }
+    },
+    "name": {
+        "translate": "material.silentgear.phantom_membrane"
+    },
+    "stats": {
+        "main": {
+            "durability": 1044,
+            "armor_durability": 18,
+            "enchantment_value": 5,
+            "rarity": 18,
+            "charging_value": 1,
+            "armor_durability/elytra": 17,
+            "armor": 13,
+            "armor/helmet": 1,
+            "armor/chestplate": 2,
+            "armor/leggings": 2,
+            "armor/boots": 1,
+            "magic_armor": 5
+        },
+        "grip": {
+            "repair_efficiency": {
+                "mul1": 1
+            },
+            "harvest_speed": {
+                "mul1": 1
+            },
+            "attack_speed": {
+                "add": 1
+            }
+        },
+        "lining": {}
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:renew",
+                "level": 2,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            }
+        ],
+        "grip": [
+            {
+                "name": "silentgear:ancient",
+                "level": 2
+            }
+        ],
+        "lining": [
+            {
+                "name": "silentgear:light",
+                "level": 2
+            },
+            {
+                "name": "silentgear:flexible",
+                "level": 3
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#C3B9A1"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:cloth",
+                "color": "#C3B9A1"
+            }
+        ],
+        "grip/all": [
+            {
+                "texture": "silentgear:grip_wool",
+                "color": "#C3B9A1"
+            }
+        ],
+        "grip/part": [
+            {
+                "texture": "silentgear:grip",
+                "color": "#C3B9A1"
+            }
+        ],
+        "lining/part": [
+            {
+                "texture": "silentgear:lining_cloth",
+                "color": "#C3B9A1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:holy_silver_ingot"
+        }
+    },
+    "name": {
+        "text": "Holy Silver"
+    },
+    "stats": {
+        "main": {
+            "durability": 2025,
+            "armor_durability": 34,
+            "enchantment_value": 7,
+            "rarity": 23,
+            "charging_value": 2,
+            "harvest_speed": 11,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "ranged_damage": 3,
+            "ranged_speed": 0,
+            "armor": 21,
+            "armor/helmet": 4,
+            "armor/chestplate": 9,
+            "armor/leggings": 7,
+            "armor/boots": 4,
+            "armor_toughness": 8,
+            "magic_armor": 7
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 252
+            },
+            "armor_durability": {
+                "add": 10
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 10
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:holy",
+                "level": 2
+            },
+            {
+                "name": "silentcompat:purifying",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:cure_poison",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:holy",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E7F79E"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#E7F79E"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E7F79E"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#E7F79E"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#E7F79E"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_iron"
+            }
+        ]
+    }
+}

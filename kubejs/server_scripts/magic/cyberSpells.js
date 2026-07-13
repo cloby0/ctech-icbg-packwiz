@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'cyberspells:rune_arm_left' })
@@ -22,7 +24,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'cyberspells:rune_arm_left',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -33,7 +35,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'cyberspells:rune_arm_right',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -44,7 +46,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'cyberspells:rune_leg_left',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -55,7 +57,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'cyberspells:rune_leg_right',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -66,7 +68,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
         ],
         output: 'cyberspells:rune_heart',
-        sourceCost: 4000
+        sourceCost: Source.ALCHEMIST
     })
 
 })

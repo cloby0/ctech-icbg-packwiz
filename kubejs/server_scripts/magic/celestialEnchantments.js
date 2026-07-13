@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'celestial_enchantments:basic_celestial_catalyst' })
@@ -28,7 +30,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'celestial_enchantments:basic_celestial_catalyst',
-        sourceCost: 3000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -39,7 +41,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
         ],
         output: 'celestial_enchantments:advanced_celestial_catalyst',
-        sourceCost: 5000
+        sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
@@ -50,7 +52,7 @@ ServerEvents.recipes(event => {
             'botania:terrasteel_ingot', 'botania:terrasteel_ingot'
         ],
         output: 'celestial_enchantments:legendary_celestial_catalyst',
-        sourceCost: 7000
+        sourceCost: Source.THAUMATURGE
     })
 
 })

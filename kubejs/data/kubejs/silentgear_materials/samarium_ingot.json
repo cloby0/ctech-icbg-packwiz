@@ -1,0 +1,156 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "gtceu:samarium_ingot"
+        }
+    },
+    "name": {
+        "text": "Samarium"
+    },
+    "stats": {
+        "main": {
+            "durability": 3534,
+            "armor_durability": 60,
+            "enchantment_value": 9,
+            "rarity": 31,
+            "charging_value": 2,
+            "harvest_speed": 19,
+            "melee_damage": 10,
+            "magic_damage": 4,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 6,
+            "ranged_speed": 0,
+            "projectile_speed": 2,
+            "projectile_accuracy": 1,
+            "armor": 35,
+            "armor_toughness": 14,
+            "magic_armor": 12,
+            "armor/helmet": 2,
+            "armor/chestplate": 5,
+            "armor/leggings": 4,
+            "armor/boots": 2
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 126
+            },
+            "armor_durability": {
+                "add": 5
+            },
+            "harvest_speed": {
+                "add": 1
+            },
+            "melee_damage": {
+                "add": 1
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 5
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:magnetic",
+                "level": 2
+            },
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:magnetic",
+                "level": 2,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 0
+                    }
+                ]
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:malleable",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#B0B8C8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#B0B8C8"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#B0B8C8"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#B0B8C8"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#B0B8C8"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#B0B8C8"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

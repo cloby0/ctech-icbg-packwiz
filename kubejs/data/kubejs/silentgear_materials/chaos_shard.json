@@ -1,0 +1,126 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 14,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "draconicevolution:chaos_shard"
+        },
+        "tip": {
+            "item": "draconicevolution:chaos_shard"
+        }
+    },
+    "name": {
+        "text": "Chaos Shard"
+    },
+    "stats": {
+        "main": {
+            "durability": 11396,
+            "armor_durability": 192,
+            "enchantment_value": 26,
+            "rarity": 62,
+            "charging_value": 3,
+            "harvest_speed": 64,
+            "melee_damage": 36,
+            "magic_damage": 14,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "attack_speed/hoe": 1,
+            "ranged_damage": 17,
+            "ranged_speed": 1,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 121,
+            "armor_toughness": 47,
+            "magic_armor": 41,
+            "armor/helmet": 15,
+            "armor/chestplate": 40,
+            "armor/leggings": 30,
+            "armor/boots": 15
+        },
+        "tip": {
+            "durability": {
+                "add": 456
+            },
+            "harvest_speed": {
+                "add": 6
+            },
+            "melee_damage": {
+                "add": 5
+            },
+            "ranged_damage": {
+                "add": 0
+            },
+            "rarity": {
+                "add": 12
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:brittle",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:crystalline_magic",
+                "level": 1
+            },
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:lucky",
+                "level": 1
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FF2020"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#FF2020"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#FF2020"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base",
+                "color": "#8B0000"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#FF2020"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
@@ -13,7 +15,7 @@ ServerEvents.recipes(event => {
             'draconicevolution:awakened_draconium_ingot'
         ],
         output: 'kubejs:stabilized_chaos_crystal',
-        sourceCost: 100000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
 
@@ -30,7 +32,7 @@ ServerEvents.recipes(event => {
             'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:chaotic_sanguinary',
-        sourceCost: 90000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -46,7 +48,7 @@ ServerEvents.recipes(event => {
             'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:shattered_sanctum',
-        sourceCost: 90000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -62,7 +64,7 @@ ServerEvents.recipes(event => {
             'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:codex_of_entropy',
-        sourceCost: 90000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -78,7 +80,7 @@ ServerEvents.recipes(event => {
             'gtceu:chaos_crystal_dust'
         ],
         output: 'kubejs:chronicle_of_unraveling',
-        sourceCost: 90000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
     addEnchantingRecipe(event, {
@@ -94,7 +96,7 @@ ServerEvents.recipes(event => {
             'botania:gaia_ingot'
         ],
         output: 'kubejs:ascendant_initiation_core',
-        sourceCost: 100000
+        sourceCost: 2 * Source.ASCENDANT
     })
 
 })

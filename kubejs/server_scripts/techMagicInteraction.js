@@ -1,3 +1,6 @@
+const Source = global.Source
+const Mana = global.Mana
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('lead_sourcite_alloy')
@@ -67,7 +70,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 10000))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.THAUMATURGE))
         .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
@@ -386,7 +389,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('elven_concentrate_synthesis')
         .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_source')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', 2000))
+        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SORCERER))
         .itemOutputs('2x kubejs:elven_concentrate')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -411,14 +414,14 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'gtceu:silicon_boule',
         output: 'kubejs:hallowed_silicon_boule',
-        source: 2000,
+        source: Source.SORCERER,
         pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
     })
 
     addImbuementRecipe(event, {
         input: 'gtceu:phosphorus_boule',
         output: 'kubejs:primal_phosphorus_boule',
-        source: 4000,
+        source: Source.ALCHEMIST,
         pedestalItems: ['gtceu:prima_materia_dust']
     })
 
@@ -426,14 +429,14 @@ ServerEvents.recipes(event => {
         reagent: 'gtceu:naquadah_boule',
         pedestalItems: ['botania:terrasteel_ingot', 'botania:terrasteel_ingot'],
         output: 'kubejs:verdant_naquadah_boule',
-        sourceCost: 6000
+        sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'gtceu:neutronium_boule',
         pedestalItems: ['botania:gaia_ingot'],
         output: 'kubejs:gaian_neutronium_boule',
-        sourceCost: 10000
+        sourceCost: Source.THAUMATURGE
     })
 
     event.recipes.gtceu.mixer('aqua_vitae_growth_medium')
@@ -551,7 +554,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     addManaPondRecipe(event, {
-        mana: 25000,
+        mana: Mana.SAGE,
         input: { item: 'kubejs:living_cell_matrix' },
         output: { item: 'kubejs:mana_seeded_cell_matrix' }
     })
@@ -571,7 +574,7 @@ ServerEvents.recipes(event => {
 
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:runic_growth_catalyst' },
-        mana: 25000,
+        mana: Mana.SAGE,
         ingredients: [
             { item: 'botania:rune_spring' },
             { item: 'botania:rune_summer' },
@@ -608,7 +611,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'ars_nouveau:source_gem',
         output: 'kubejs:source_crystal_lattice',
-        source: 35000,
+        source: Source.SAGE,
         pedestalItems: [
             'ars_nouveau:source_gem',
             'ars_nouveau:wilden_horn',
@@ -654,12 +657,12 @@ ServerEvents.recipes(event => {
             'botania:life_essence'
         ],
         output: 'kubejs:gestated_cumium_crystal',
-        sourceCost: 75000
+        sourceCost: Source.ASCENDANT
     })
 
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:awakened_cumium_embryo' },
-        mana: 50000,
+        mana: Mana.ASCENDANT,
         ingredients: [
             { item: 'kubejs:gestated_cumium_crystal' },
             { item: 'botania:gaia_ingot' },
@@ -673,7 +676,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: { item: 'kubejs:unforged_cumium_matrix' },
-        mana: 15000000,
+        mana: 128 * Mana.PROPHET,
         ingredients: [
             { item: 'kubejs:awakened_cumium_embryo' },
             { item: 'draconicevolution:awakened_draconium_ingot' },

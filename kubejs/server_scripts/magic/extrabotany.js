@@ -1,3 +1,5 @@
+const Source = global.Source
+
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'extrabotany:pedestal_livingrock' })
@@ -14,7 +16,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'botania:terrasteel_ingot',
         output: 'extrabotany:spirit_fuel',
-        source: 5000,
+        source: Source.ALCHEMIST,
         pedestalItems: ['botania:mana_pearl', 'botania:mana_pearl', 'botania:mana_diamond', 'botania:mana_diamond']
     })
 
@@ -29,7 +31,7 @@ ServerEvents.recipes(event => {
             reagent: 'botania:mana_pearl',
             pedestalItems: ['botania:manasteel_ingot', 'botania:mana_pearl'],
             output: flower,
-            sourceCost: 9000
+            sourceCost: Source.THAUMATURGE
         })
     })
 
@@ -55,7 +57,7 @@ ServerEvents.recipes(event => {
                 'botania:mana_pearl', 'botania:mana_pearl'
             ],
             output: flower,
-            sourceCost: 15000
+            sourceCost: Source.ARCANIST
         })
     })
 
@@ -72,7 +74,7 @@ ServerEvents.recipes(event => {
                 'botania:mana_pearl', 'botania:mana_pearl'
             ],
             output: flower,
-            sourceCost: 20000
+            sourceCost: Source.ARCANIST
         })
     })
 

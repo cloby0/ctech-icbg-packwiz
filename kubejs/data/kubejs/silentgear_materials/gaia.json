@@ -1,0 +1,215 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 13,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "tag": "forge:ingots/gaia"
+        }
+    },
+    "name": {
+        "text": "Gaia"
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#e6bdfc"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#e6bdfc"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#e6bdfc"
+            },
+            {
+                "texture": "silentgear:_highlight",
+                "color": "#e6bdfc"
+            }
+        ],
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#e6bdfc"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#e6bdfc"
+            }
+        ],
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#e6bdfc"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#e6bdfc"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    },
+    "stats": {
+        "main": {
+            "durability": 10496,
+            "armor_durability": 177,
+            "enchantment_value": 18,
+            "harvest_speed": 50,
+            "melee_damage": 29,
+            "magic_damage": 11,
+            "attack_speed": 1,
+            "attack_speed/axe": 1,
+            "armor": 95,
+            "armor/helmet": 15,
+            "armor/chestplate": 30,
+            "armor/leggings": 25,
+            "armor/boots": 15,
+            "armor_toughness": 36,
+            "ranged_damage": 13,
+            "ranged_speed": 0,
+            "rarity": 54,
+            "charging_value": 2,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "magic_armor": 32,
+            "knockback_resistance": {
+                "add": 2
+            }
+        },
+        "rod": {
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "melee_damage": {
+                "mul2": 1
+            },
+            "ranged_damage": {
+                "mul2": 1
+            }
+        },
+        "tip": {
+            "durability": {
+                "add": 2229
+            },
+            "armor_durability": {
+                "add": 80
+            },
+            "harvest_speed": {
+                "add": 20
+            },
+            "melee_damage": {
+                "add": 16
+            },
+            "ranged_damage": {
+                "add": 7
+            },
+            "rarity": {
+                "add": 25
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:malleable",
+                "level": 5
+            },
+            {
+                "name": "silentgear:synergistic",
+                "level": 5
+            },
+            {
+                "name": "silentcompat:mana_repair",
+                "level": 3,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:mighty",
+                "level": 2,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    },
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "armor"
+                    }
+                ]
+            },
+            {
+                "name": "silentgear:stellar",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    },
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "armor"
+                    }
+                ]
+            },
+            {
+                "name": "silentcompat:mana_burst",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:material_ratio",
+                        "ratio": 1
+                    },
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    }
+                ]
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:malleable",
+                "level": 2
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentcompat:mana_burst",
+                "level": 1,
+                "conditions": [
+                    {
+                        "type": "silentgear:gear_type",
+                        "gear_type": "weapon"
+                    }
+                ]
+            }
+        ]
+    }
+}
