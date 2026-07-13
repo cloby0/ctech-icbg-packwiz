@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
     addEnchantingRecipe(event, {

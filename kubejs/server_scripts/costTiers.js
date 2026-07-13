@@ -1,10 +1,11 @@
 // priority: 10
 // Source cost per magic tier, GTValues-style. Mana (botania) mirrors Source via MANA_PER_SOURCE.
-
+// Server scripts share one scope, so Source/Mana are visible in every server script. Declare them nowhere else.
 // Must match mana_convert in config/ars_botania-common.toml and source_rate (its inverse) in pond/runicForge helpers.
+
 const MANA_PER_SOURCE = 2
 
-global.Source = {
+const Source = {
     HOBBYIST: 100,
     APPRENTICE: 250,
     JOURNEYMAN: 500,
@@ -18,7 +19,10 @@ global.Source = {
     PROPHET: 128000
 }
 
-global.Mana = {}
-for (let tier in global.Source) {
-    global.Mana[tier] = global.Source[tier] * MANA_PER_SOURCE
+const Mana = {}
+for (let tier in Source) {
+    Mana[tier] = Source[tier] * MANA_PER_SOURCE
 }
+
+global.Source = Source
+global.Mana = Mana

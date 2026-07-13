@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: "reliquary:ender_staff" });
     event.remove({ id: "reliquary:shears_of_winter" });

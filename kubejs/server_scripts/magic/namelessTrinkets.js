@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'nameless_trinkets:dubious_dust' })

@@ -1,6 +1,3 @@
-const Source = global.Source
-const Mana = global.Mana
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/elementium' })
     event.remove({ id: 'botania:elven_trade/elementium_block' })

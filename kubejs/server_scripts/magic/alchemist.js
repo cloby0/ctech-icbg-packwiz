@@ -1,6 +1,3 @@
-const Source = global.Source
-const Mana = global.Mana
-
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 

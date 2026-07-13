@@ -1,6 +1,3 @@
-const Source = global.Source
-const Mana = global.Mana
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'botania:runic_altar' })
     event.remove({ id: 'botania:gaia_ingot' })

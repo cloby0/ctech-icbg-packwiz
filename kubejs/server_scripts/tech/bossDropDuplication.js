@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')

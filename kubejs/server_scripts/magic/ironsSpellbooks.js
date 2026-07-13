@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'irons_spellbooks:arcane_anvil' })

@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_chamber' });
     event.shaped(
@@ -121,6 +119,13 @@ ServerEvents.recipes(event => {
     });
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
+
+    addImbuementRecipe(event, {
+        input: 'minecraft:glowstone',
+        output: 'gtceu:small_luminessence_dust',
+        source: 3 * Source.APPRENTICE,
+        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
+    })
 
     addImbuementRecipe(event, {
         input: 'kubejs:primordial_organic_muck',

@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'too_many_bows:hunter_bow' })

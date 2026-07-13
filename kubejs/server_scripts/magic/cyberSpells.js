@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
 
     event.remove({ output: 'cyberspells:rune_arm_left' })

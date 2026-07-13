@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'hexerei:mixing_cauldron' });
 

@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'psi:cad_assembly_iron' })
     event.remove({ id: 'psi:cad_assembly_psimetal' })

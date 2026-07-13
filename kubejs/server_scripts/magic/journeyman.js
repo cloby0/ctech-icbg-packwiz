@@ -1,5 +1,3 @@
-const Source = global.Source
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:source_gem_block'})
     event.remove({ output: 'ars_nouveau:source_gem', type: 'gtceu:sifter' })
