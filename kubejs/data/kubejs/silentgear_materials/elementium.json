@@ -133,6 +133,10 @@
                         "ratio": 1
                     }
                 ]
+            },
+            {
+                "name": "kubejs:eldritch_attunement",
+                "level": 4
             }
         ],
         "tip": [

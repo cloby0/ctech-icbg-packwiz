@@ -95,6 +95,10 @@
             {
                 "name": "silentgear:ancient",
                 "level": 1
+            },
+            {
+                "name": "kubejs:fire_attunement",
+                "level": 5
             }
         ],
         "rod": [

@@ -78,6 +78,10 @@
             {
                 "name": "kubejs:insulating",
                 "level": 1
+            },
+            {
+                "name": "kubejs:lightning_attunement",
+                "level": 2
             }
         ],
         "tip": [

@@ -78,6 +78,10 @@
             {
                 "name": "kubejs:insulating",
                 "level": 1
+            },
+            {
+                "name": "kubejs:ice_attunement",
+                "level": 2
             }
         ],
         "tip": [

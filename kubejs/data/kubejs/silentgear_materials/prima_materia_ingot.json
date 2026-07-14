@@ -93,6 +93,10 @@
             {
                 "name": "kubejs:reflective",
                 "level": 1
+            },
+            {
+                "name": "kubejs:evocation_attunement",
+                "level": 3
             }
         ],
         "rod": [

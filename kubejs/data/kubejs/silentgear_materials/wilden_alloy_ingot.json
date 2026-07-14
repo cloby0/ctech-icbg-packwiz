@@ -95,6 +95,10 @@
             {
                 "name": "silentgear:sharp",
                 "level": 1
+            },
+            {
+                "name": "kubejs:nature_attunement",
+                "level": 5
             }
         ],
         "rod": [

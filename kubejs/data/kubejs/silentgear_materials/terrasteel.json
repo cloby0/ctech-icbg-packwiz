@@ -126,6 +126,10 @@
                         "ratio": 1
                     }
                 ]
+            },
+            {
+                "name": "kubejs:nature_attunement",
+                "level": 4
             }
         ],
         "tip": [

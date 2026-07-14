@@ -191,6 +191,10 @@
                         "gear_type": "weapon"
                     }
                 ]
+            },
+            {
+                "name": "kubejs:evocation_attunement",
+                "level": 5
             }
         ],
         "rod": [

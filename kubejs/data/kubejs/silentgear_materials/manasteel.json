@@ -116,6 +116,10 @@
                         "ratio": 1
                     }
                 ]
+            },
+            {
+                "name": "kubejs:arcane_reservoir",
+                "level": 3
             }
         ],
         "tip": [

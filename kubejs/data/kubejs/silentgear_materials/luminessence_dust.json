@@ -65,6 +65,10 @@
             {
                 "name": "silentgear:lustrous",
                 "level": 1
+            },
+            {
+                "name": "kubejs:holy_attunement",
+                "level": 1
             }
         ]
     }

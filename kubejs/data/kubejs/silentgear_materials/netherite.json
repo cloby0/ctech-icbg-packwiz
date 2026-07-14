@@ -59,6 +59,12 @@
         }
     },
     "traits": {
+        "main": [
+            {
+                "name": "kubejs:fire_attunement",
+                "level": 1
+            }
+        ],
         "coating": [
             {
                 "name": "silentgear:fireproof",

@@ -99,6 +99,10 @@
             {
                 "name": "kubejs:reflective",
                 "level": 1
+            },
+            {
+                "name": "kubejs:holy_attunement",
+                "level": 2
             }
         ],
         "rod": [

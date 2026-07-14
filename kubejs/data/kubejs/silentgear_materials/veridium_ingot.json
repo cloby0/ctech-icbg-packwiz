@@ -85,6 +85,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:nature_attunement",
+                "level": 2
             }
         ],
         "rod": [
