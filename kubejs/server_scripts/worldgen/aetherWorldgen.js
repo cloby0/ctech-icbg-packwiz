@@ -191,6 +191,30 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    event.add("kubejs:prosperity_vein_ae", vein => {
+        vein.weight(120)
+        vein.clusterSize(40)
+        vein.density(0.6)
+        vein.discardChanceOnAirExposure(0)
+
+        vein.layer("holystone")
+        vein.dimensions("aether:the_aether")
+        vein.biomes("#aether:is_aether")
+
+        vein.heightRangeUniform(16, 128)
+
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get('prosperity'), 4, 40, 95)
+            .withBlock(GTMaterials.Emerald, 3, 20, 55)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('prosperity'))
+            .placement("above")
+            .density(0.4)
+            .radius(5)
+        )
+    })
+
     event.add("kubejs:diamond_vein_ae", vein => {
         vein.weight(50)
         vein.clusterSize(35)

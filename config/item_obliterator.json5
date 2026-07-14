@@ -241,7 +241,37 @@
     "botania:apothecary_mountain",
     "botania:apothecary_plains",
     "botania:apothecary_swamp",
-    "botania:apothecary_taiga"
+    "botania:apothecary_taiga",
+
+    // MysticalAgriculture: tier -ites are gem-canonical (see gtceuMaterialRegistry.js). The parallel
+    // <tier>_ingot line is obliterated; every ingot use is swapped to gtceu:<ite>_plate in tech/mysticalagriculture.js.
+    "mysticalagriculture:inferium_ingot",
+    "mysticalagriculture:inferium_nugget",
+    "mysticalagriculture:inferium_ingot_block",
+    "mysticalagriculture:prudentium_ingot",
+    "mysticalagriculture:prudentium_nugget",
+    "mysticalagriculture:prudentium_ingot_block",
+    "mysticalagriculture:tertium_ingot",
+    "mysticalagriculture:tertium_nugget",
+    "mysticalagriculture:tertium_ingot_block",
+    "mysticalagriculture:imperium_ingot",
+    "mysticalagriculture:imperium_nugget",
+    "mysticalagriculture:imperium_ingot_block",
+    "mysticalagriculture:supremium_ingot",
+    "mysticalagriculture:supremium_nugget",
+    "mysticalagriculture:supremium_ingot_block",
+    "mysticalagriculture:awakened_supremium_ingot",
+    "mysticalagriculture:awakened_supremium_nugget",
+    "mysticalagriculture:awakened_supremium_ingot_block",
+    "mysticalagriculture:soulium_ingot",
+    "mysticalagriculture:soulium_nugget",
+    "mysticalagriculture:soulium_ingot_block",
+    "mysticalagriculture:prosperity_ingot",
+    "mysticalagriculture:prosperity_nugget",
+    "mysticalagriculture:prosperity_ingot_block",
+    "mysticalagradditions:insanium_ingot",
+    "mysticalagradditions:insanium_nugget",
+    "mysticalagradditions:insanium_ingot_block"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

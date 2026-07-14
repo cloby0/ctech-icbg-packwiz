@@ -7,6 +7,18 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mysticalagriculture:inferium_essence' })
     event.remove({ output: 'mysticalagriculture:prosperity_shard' })
 
+    // Remove the vanilla tier-essence compression ladder; re-added below via the enchanting apparatus
+    // (magic, non-GT) + GT sanctum, so a non-GT path exists. The tier -ites are GEM-canonical: their
+    // gemstones keep the vanilla bench craft; the parallel MA ingots are obliterated + swapped to
+    // gtceu:<ite>_plate (tech/mysticalagriculture.js), so no ingot recipe needs removing here.
+    ;[
+        'mysticalagriculture:prudentium_essence',
+        'mysticalagriculture:tertium_essence',
+        'mysticalagriculture:imperium_essence',
+        'mysticalagriculture:supremium_essence',
+        'mysticalagradditions:insanium_essence',
+    ].forEach(id => event.remove({ id: id }))
+
     const F = 'mysticalagriculture:fire_essence'
     const E = 'mysticalagriculture:earth_essence'
     const W = 'mysticalagriculture:water_essence'
@@ -143,6 +155,27 @@ ServerEvents.recipes(event => {
             sourceCost: source
         })
     })
+
+    // ---- Tier essence ladder: 4x lower -> next, via Grand Enchanting Sanctum (infusion_crystal dropped) ----
+    // [output, lower essence, sourceCost]. reagent=1 lower + 3 pedestal lower = 4 total.
+    const tierLadder = [
+        ['mysticalagriculture:prudentium_essence',  'mysticalagriculture:inferium_essence',   2000],
+        ['mysticalagriculture:tertium_essence',     'mysticalagriculture:prudentium_essence', 3500],
+        ['mysticalagriculture:imperium_essence',    'mysticalagriculture:tertium_essence',    5000],
+        ['mysticalagriculture:supremium_essence',   'mysticalagriculture:imperium_essence',   8000],
+        ['mysticalagradditions:insanium_essence',   'mysticalagriculture:supremium_essence',  30000],
+    ]
+    tierLadder.forEach(([output, lower, source]) => {
+        addEnchantingRecipe(event, {
+            reagent: lower,
+            pedestalItems: [lower, lower, lower],
+            output: output,
+            sourceCost: source
+        })
+    })
+
+    // (Tier -ites are gem-canonical: their gemstones keep the vanilla bench craft as the non-GT path;
+    // ingots are obliterated. No ingot production here.)
 
     const seedessence = [
         ma('stone'),          ma('dirt'),           ma('wood'),           ma('ice'),

@@ -135,6 +135,24 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Az')
         .isIsotope(false)
 
+    // MysticalAgriculture essences: isotopes of source (same protons/symbol, heavier). inferium is base,
+    // higher tiers are denser compressions of it. If GT rejects duplicate symbols, give distinct symbols.
+    event.create('inferium')  .protons(36).neutrons(144).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+    event.create('prudentium').protons(36).neutrons(148).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+    event.create('tertium')   .protons(36).neutrons(152).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+    event.create('imperium')  .protons(36).neutrons(156).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+    event.create('supremium') .protons(36).neutrons(160).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+
+    // prosperity: its own element (the growth crystal that alloys with essences into the -ites).
+    event.create('prosperity').protons(61).neutrons(84).halfLifeSeconds(-1).decayTo(null).symbol('Pz').isIsotope(false)
+
+    // The four classical elements: the base MysticalAgriculture essences. Symbols are the alchemical
+    // Unicode glyphs (won't render in-game's default font -- fine, cosmetic in JEI/tooltips only).
+    event.create('fire') .protons(130).neutrons(130).halfLifeSeconds(-1).decayTo(null).symbol('🜂').isIsotope(false) // U+1F702
+    event.create('water').protons(131).neutrons(131).halfLifeSeconds(-1).decayTo(null).symbol('🜄').isIsotope(false) // U+1F704
+    event.create('earth').protons(132).neutrons(132).halfLifeSeconds(-1).decayTo(null).symbol('🜃').isIsotope(false) // U+1F703
+    event.create('air')  .protons(133).neutrons(133).halfLifeSeconds(-1).decayTo(null).symbol('🜁').isIsotope(false) // U+1F701
+
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -967,10 +985,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_LONG_ROD
         )
 
-    // ---- Silent Gear native metals. Registering as GT materials autogenerates the full
-    // ore/dust/ingot/block processing chain (macerator, washer, EBF, compressor). Alloys still
-    // need a hand-written mixer (see tech/silentgear.js); the blast step autogens from blastTemp.
-    // Gear materials tag-reference forge:ingots/<metal>, so they pick these up automatically.
+    // ---- Silent Gear native metals. Registering as GT materials autogenerates the ore/dust
+    // processing chain (macerator, washer, EBF, compressor) - GT still drives acquisition/processing.
+    // Alloys still need a hand-written mixer (see tech/silentgear.js); the blast step autogens from
+    // blastTemp. Every form these materials have (ingot/nugget/block/dust, +rawOre for the two ore
+    // materials crimson_iron/azure_silver) is TagPrefix.setIgnored() to silentgear's own items
+    // (gtceuMaterialModification.js) since these are SG's native materials - gtceu:<metal>_* items
+    // don't exist at all for these 6, always use silentgear:<metal>_* instead.
 
     event.create('crimson_iron')
         .ingot()
@@ -1024,5 +1045,66 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1200)
         .components(c('1x crimson_steel'), c('1x azure_electrum'))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW)
+
+    // ==== MysticalAgriculture ====
+    // Essences = dust materials (the _essence item IS the dust; setIgnored in gtceuMaterialModification.js).
+    // Isotopes of source, so no ingot/plate — an essence is a magical powder, nothing more.
+    event.create('inferium')  .dust().element('inferium')  .color(0x7DBF3F).iconSet(GTMaterialIconSet.DULL)
+    event.create('prudentium').dust().element('prudentium').color(0xE0C93F).iconSet(GTMaterialIconSet.DULL)
+    event.create('tertium')   .dust().element('tertium')   .color(0xE07B3F).iconSet(GTMaterialIconSet.DULL)
+    event.create('imperium')  .dust().element('imperium')  .color(0x5FC9E8).iconSet(GTMaterialIconSet.DULL)
+    event.create('supremium') .dust().element('supremium') .color(0xE23B3B).iconSet(GTMaterialIconSet.DULL)
+
+    // The four classical element essences: base MA essences, dust form (the _essence item IS the dust).
+    // Each carries its own classical element (fire/water/earth/air, alchemical-symbol elements).
+    event.create('fire_essence') .dust().element('fire') .color(0xD63A1F).iconSet(GTMaterialIconSet.DULL)
+    event.create('water_essence').dust().element('water').color(0x2F7FE0).iconSet(GTMaterialIconSet.DULL)
+    event.create('earth_essence').dust().element('earth').color(0x6E4A2A).iconSet(GTMaterialIconSet.DULL)
+    event.create('air_essence')  .dust().element('air')  .color(0xF2E34A).iconSet(GTMaterialIconSet.DULL)
+
+    // prosperity: the growth gem. Ore vein in the Aether (aetherWorldgen.js); rawOre = prosperity_shard.
+    event.create('prosperity')
+        .gem()
+        .ore()
+        .element('prosperity')
+        .color(0x4FD8C4).secondaryColor(0x2C8A7C)
+        .iconSet(GTMaterialIconSet.QUARTZ)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+        .addOreByproducts('gold', 'emerald', 'diamond')
+        .washedIn('gtceu:mercury')
+        .separatedInto('gold', 'emerald')
+
+    // -ites: prosperity+essence alloys used by the MA tools. GEM form (GT forbids ingot+gem on one
+    // material). Maps to MA's <tier>_gemstone; the parallel MA <tier>_ingot is obliterated and every
+    // ingot use is hard-swapped to gtceu:<ite>_plate (see tech/mysticalagriculture.js).
+    // [material, essence, color]
+    ;[
+        ['inferite',          'inferium',           0x7DBF3F],
+        ['prudentite',        'prudentium',         0xE0C93F],
+        ['tertite',           'tertium',            0xE07B3F],
+        ['imperite',          'imperium',           0x5FC9E8],
+        ['supremite',         'supremium',          0xE23B3B],
+        ['awakened_supremite','awakened_supremium', 0xFF9A2E],
+        ['insanite',          'insanium',           0xE84DD0],
+    ].forEach(row => {
+        let name = row[0], essence = row[1], color = row[2]
+        let b = event.create(name)
+            .gem()
+            .color(color)
+            .iconSet(GTMaterialIconSet.SHINY)
+        if (essence === 'awakened_supremium' || essence === 'insanium') {
+            b.components(c('1x prosperity'))             // essence isn't a GT material for these two
+        } else {
+            b.components(c('1x prosperity'), c('2x ' + essence))
+        }
+        b.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+    })
+
+    // soulium: prosperity + soul alloy. Gem form (its own dust + gemstone); ingot obliterated + swapped.
+    event.create('soulium')
+        .gem()
+        .color(0x3E3768).secondaryColor(0x211C3C)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
 
 })

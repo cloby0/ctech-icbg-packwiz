@@ -74,14 +74,10 @@ ServerEvents.recipes(event => {
                 `#kubejs:${element}_essences`,
                 `mysticalagriculture:${element}_agglomeratio`,
                 `#kubejs:${element}_essences`,
-                `mysticalagriculture:${element}_agglomeratio`,
-                `#kubejs:${element}_essences`,
-                `mysticalagriculture:${element}_agglomeratio`,
-                `#kubejs:${element}_essences`,
                 `mysticalagriculture:${element}_agglomeratio`
             ],
             output: `mysticalagriculture:${element}_seeds`,
-            sourceCost: 2 * Source.SORCERER
+            sourceCost: Source.SORCERER
         })
         event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
     })

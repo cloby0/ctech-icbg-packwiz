@@ -45,34 +45,10 @@ ServerEvents.highPriorityData(event => {
     { matchItems: ['superbwarfare:silver_block'],    resultItems: 'gtceu:silver_block' },
     { matchItems: ['ad_astra:steel_block', 'superbwarfare:steel_block', 'createbigcannons:steel_block'], resultItems: 'gtceu:steel_block' },
     { matchItems: ['superbwarfare:tungsten_block'],  resultItems: 'gtceu:tungsten_block' },
-    { matchItems: ['ae2:quartz_block'], resultItems: 'gtceu:certus_quartz_block' },
+    { matchItems: ['ae2:quartz_block'], resultItems: 'gtceu:certus_quartz_block' }
 
-    // silent gear native metals -> gtceu (materials registered in gtceuMaterialRegistry.js)
-    { matchItems: ['silentgear:crimson_iron_ingot'],   resultItems: 'gtceu:crimson_iron_ingot' },
-    { matchItems: ['silentgear:crimson_iron_dust'],    resultItems: 'gtceu:crimson_iron_dust' },
-    { matchItems: ['silentgear:crimson_iron_nugget'],  resultItems: 'gtceu:crimson_iron_nugget' },
-    { matchItems: ['silentgear:crimson_iron_block'],   resultItems: 'gtceu:crimson_iron_block' },
-    { matchItems: ['silentgear:raw_crimson_iron'],     resultItems: 'gtceu:raw_crimson_iron' },
-    { matchItems: ['silentgear:azure_silver_ingot'],   resultItems: 'gtceu:azure_silver_ingot' },
-    { matchItems: ['silentgear:azure_silver_dust'],    resultItems: 'gtceu:azure_silver_dust' },
-    { matchItems: ['silentgear:azure_silver_nugget'],  resultItems: 'gtceu:azure_silver_nugget' },
-    { matchItems: ['silentgear:azure_silver_block'],   resultItems: 'gtceu:azure_silver_block' },
-    { matchItems: ['silentgear:raw_azure_silver'],     resultItems: 'gtceu:raw_azure_silver' },
-    { matchItems: ['silentgear:blaze_gold_ingot'],     resultItems: 'gtceu:blaze_gold_ingot' },
-    { matchItems: ['silentgear:blaze_gold_dust'],      resultItems: 'gtceu:blaze_gold_dust' },
-    { matchItems: ['silentgear:blaze_gold_nugget'],    resultItems: 'gtceu:blaze_gold_nugget' },
-    { matchItems: ['silentgear:blaze_gold_block'],     resultItems: 'gtceu:blaze_gold_block' },
-    { matchItems: ['silentgear:azure_electrum_ingot'], resultItems: 'gtceu:azure_electrum_ingot' },
-    { matchItems: ['silentgear:azure_electrum_dust'],  resultItems: 'gtceu:azure_electrum_dust' },
-    { matchItems: ['silentgear:azure_electrum_nugget'],resultItems: 'gtceu:azure_electrum_nugget' },
-    { matchItems: ['silentgear:azure_electrum_block'], resultItems: 'gtceu:azure_electrum_block' },
-    { matchItems: ['silentgear:crimson_steel_ingot'],  resultItems: 'gtceu:crimson_steel_ingot' },
-    { matchItems: ['silentgear:crimson_steel_dust'],   resultItems: 'gtceu:crimson_steel_dust' },
-    { matchItems: ['silentgear:crimson_steel_nugget'], resultItems: 'gtceu:crimson_steel_nugget' },
-    { matchItems: ['silentgear:crimson_steel_block'],  resultItems: 'gtceu:crimson_steel_block' },
-    { matchItems: ['silentgear:tyrian_steel_ingot'],   resultItems: 'gtceu:tyrian_steel_ingot' },
-    { matchItems: ['silentgear:tyrian_steel_dust'],    resultItems: 'gtceu:tyrian_steel_dust' },
-    { matchItems: ['silentgear:tyrian_steel_nugget'],  resultItems: 'gtceu:tyrian_steel_nugget' },
-    { matchItems: ['silentgear:tyrian_steel_block'],   resultItems: 'gtceu:tyrian_steel_block' }
+    // silent gear native metals removed entirely (crimson_iron, azure_silver, blaze_gold,
+    // azure_electrum, crimson_steel, tyrian_steel) - all forms are TagPrefix.setIgnored() to
+    // silentgear's own items in gtceuMaterialModification.js, no gtceu duplicate exists to unify.
   ])
 })
