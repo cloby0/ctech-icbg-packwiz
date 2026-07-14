@@ -1,0 +1,14 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Ice Attunement" },
+  "description": { "text": "Grants ice spell power and magic resistance." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:ice_spell_power", "operation": 0,
+        "value": [0.05, 0.10, 0.15, 0.20, 0.25] },
+      { "attribute": "irons_spellbooks:ice_magic_resist", "operation": 0,
+        "value": [0.05, 0.08, 0.11, 0.14, 0.17] }
+    ]
+  }
+}
