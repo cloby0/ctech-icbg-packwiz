@@ -1,0 +1,14 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Inked" },
+  "description": { "text": "A magic ink coating. Grants a small amount of spell power and resistance." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:spell_power", "operation": 0,
+        "value": [0.02, 0.04, 0.06, 0.08, 0.10] },
+      { "attribute": "irons_spellbooks:spell_resist", "operation": 0,
+        "value": [0.02, 0.03, 0.04, 0.05, 0.06] }
+    ]
+  }
+}

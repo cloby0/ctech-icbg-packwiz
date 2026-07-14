@@ -1,0 +1,14 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Swift Casting" },
+  "description": { "text": "Grants cooldown reduction and cast time reduction." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:cooldown_reduction", "operation": 0,
+        "value": [0.03, 0.06, 0.09, 0.12, 0.15] },
+      { "attribute": "irons_spellbooks:cast_time_reduction", "operation": 0,
+        "value": [0.03, 0.06, 0.09, 0.12, 0.15] }
+    ]
+  }
+}
