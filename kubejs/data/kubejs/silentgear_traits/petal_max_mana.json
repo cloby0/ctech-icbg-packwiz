@@ -1,0 +1,12 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Petal Max Mana" },
+  "description": { "text": "Grants max mana." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:max_mana", "operation": 0,
+        "value": [10, 20, 30, 40, 50] }
+    ]
+  }
+}

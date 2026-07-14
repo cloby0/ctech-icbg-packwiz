@@ -1,0 +1,12 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Petal Movespeed" },
+  "description": { "text": "Grants movement speed while casting." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:casting_movespeed", "operation": 0,
+        "value": [0.02, 0.04, 0.06, 0.08, 0.10] }
+    ]
+  }
+}

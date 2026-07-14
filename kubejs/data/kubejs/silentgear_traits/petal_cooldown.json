@@ -1,0 +1,12 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Petal Cooldown" },
+  "description": { "text": "Grants cooldown reduction." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:cooldown_reduction", "operation": 0,
+        "value": [0.02, 0.04, 0.06, 0.08, 0.10] }
+    ]
+  }
+}
