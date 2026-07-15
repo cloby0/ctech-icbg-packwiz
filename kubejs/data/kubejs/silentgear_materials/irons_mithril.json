@@ -12,11 +12,15 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "main": { "tag": "forge:ingots/mithril" },
-        "rod": { "tag": "forge:ingots/mithril" }
+        "main": {
+            "tag": "forge:ingots/mithril"
+        },
+        "rod": {
+            "tag": "forge:ingots/mithril"
+        }
     },
     "name": {
-        "text": "Iron's Mithril"
+        "text": "Mithril"
     },
     "stats": {
         "main": {
@@ -44,38 +48,114 @@
             "magic_armor": 12
         },
         "rod": {
-            "durability": { "mul2": 1 },
-            "harvest_speed": { "mul2": 1 },
-            "rarity": { "add": 46 }
+            "durability": {
+                "mul2": 1
+            },
+            "harvest_speed": {
+                "mul2": 1
+            },
+            "rarity": {
+                "add": 46
+            }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 27
+            }
         }
     },
     "traits": {
         "main": [
-            { "name": "silentgear:light", "level": 1 },
-            { "name": "kubejs:swift_casting", "level": 3 },
-            { "name": "kubejs:insulating", "level": 1 }
+            {
+                "name": "silentgear:light",
+                "level": 1
+            },
+            {
+                "name": "kubejs:swift_casting",
+                "level": 3
+            },
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            }
         ],
         "rod": [
-            { "name": "silentgear:flexible", "level": 1 }
+            {
+                "name": "silentgear:flexible",
+                "level": 1
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            },
+            {
+                "name": "kubejs:swift_casting",
+                "level": 3
+            }
         ]
     },
     "model": {
         "main/all": [
-            { "texture": "silentgear:main_generic_hc", "color": "#C7D9E8" },
-            { "texture": "silentgear:_highlight" }
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#C7D9E8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
         ],
         "main/fragment": [
-            { "texture": "silentgear:metal", "color": "#C7D9E8" }
+            {
+                "texture": "silentgear:metal",
+                "color": "#C7D9E8"
+            }
         ],
         "main/armor": [
-            { "texture": "silentgear:main_generic_hc", "color": "#C7D9E8" },
-            { "texture": "silentgear:_highlight" }
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#C7D9E8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
         ],
         "rod/all": [
-            { "texture": "silentgear:rod_generic_lc", "color": "#C7D9E8" }
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#C7D9E8"
+            }
         ],
         "rod/part": [
-            { "texture": "silentgear:rod", "color": "#C7D9E8" }
+            {
+                "texture": "silentgear:rod",
+                "color": "#C7D9E8"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#C7D9E8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#C7D9E8"
+            },
+            {
+                "texture": "silentgear:coating_jar"
+            }
         ]
     }
 }

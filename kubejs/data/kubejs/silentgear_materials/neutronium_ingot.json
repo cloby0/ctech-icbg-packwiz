@@ -97,6 +97,10 @@
             {
                 "name": "kubejs:reflective",
                 "level": 3
+            },
+            {
+                "name": "kubejs:eldritch_attunement",
+                "level": 3
             }
         ],
         "rod": [

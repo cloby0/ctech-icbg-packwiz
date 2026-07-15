@@ -1,13 +1,121 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "availability": { "tier": 2, "categories": [ "organic" ], "visible": true, "gear_blacklist": [], "can_salvage": true },
-    "crafting_items": { "main": { "item": "botania:black_petal" } },
-    "name": { "text": "Black Petal" },
-    "stats": { "tip": { "durability": { "add": 92 }, "armor_durability": { "add": 3 }, "harvest_speed": { "add": 2 }, "melee_damage": { "add": 2 }, "magic_damage": { "add": 1 }, "rarity": { "add": 7 } } },
-    "traits": { "tip": [ { "name": "kubejs:eldritch_attunement", "level": 1 } ] },
+    "availability": {
+        "tier": 2,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "botania:black_petal"
+        }
+    },
+    "name": {
+        "text": "Black Petal"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 92
+            },
+            "armor_durability": {
+                "add": 3
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "magic_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 7
+            }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0.04
+            },
+            "armor_durability": {
+                "mul2": 0.04
+            },
+            "harvest_speed": {
+                "mul2": 0.04
+            },
+            "melee_damage": {
+                "mul2": 0.04
+            },
+            "magic_damage": {
+                "mul2": 0.04
+            },
+            "armor_toughness": {
+                "add": 0.08
+            },
+            "knockback_resistance": {
+                "add": 0.02
+            },
+            "enchantment_value": {
+                "add": 0.1
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:eldritch_attunement",
+                "level": 1
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:eldritch_attunement",
+                "level": 1
+            }
+        ]
+    },
     "model": {
-        "tip/all": [ { "texture": "silentgear:tip_sharp", "color": "#1D1D21" } ],
-        "tip/part": [ { "texture": "silentgear:tip_base" }, { "texture": "silentgear:tip", "color": "#1D1D21" }, { "texture": "silentgear:tip_shine" } ]
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#1D1D21"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#1D1D21"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#1D1D21"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#1D1D21"
+            },
+            {
+                "texture": "silentgear:coating_jar"
+            }
+        ]
     }
 }

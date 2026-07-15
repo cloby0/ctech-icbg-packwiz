@@ -95,6 +95,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:evocation_attunement",
+                "level": 2
             }
         ],
         "rod": [

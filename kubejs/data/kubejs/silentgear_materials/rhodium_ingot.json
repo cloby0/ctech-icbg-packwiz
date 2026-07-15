@@ -85,6 +85,10 @@
             {
                 "name": "silentgear:hard",
                 "level": 1
+            },
+            {
+                "name": "kubejs:holy_attunement",
+                "level": 2
             }
         ],
         "rod": [],

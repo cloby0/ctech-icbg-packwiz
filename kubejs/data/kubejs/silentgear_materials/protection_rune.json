@@ -20,11 +20,15 @@
             "melee_damage": { "add": 4 },
             "magic_damage": { "add": 2 },
             "rarity": { "add": 12 }
-        }
+        },
+        "adornment": {}
     },
     "traits": {
         "tip": [
             { "name": "kubejs:warded", "level": 1 }
+        ],
+        "adornment": [
+            { "name": "kubejs:warded", "level": 2 }
         ]
     },
     "model": {
@@ -35,6 +39,14 @@
             { "texture": "silentgear:tip_base" },
             { "texture": "silentgear:tip", "color": "#B0C4DE" },
             { "texture": "silentgear:tip_shine" }
+        ],
+        "adornment/all": [
+            { "texture": "silentgear:adornment_generic", "color": "#B0C4DE" },
+            { "texture": "silentgear:adornment_highlight", "color": "#B0C4DE" }
+        ],
+        "adornment/part": [
+            { "texture": "silentgear:adornment", "color": "#B0C4DE" },
+            { "texture": "silentgear:adornment_highlight" }
         ]
     }
 }

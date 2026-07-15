@@ -61,6 +61,17 @@
             "rarity": {
                 "add": 20
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 21
+            }
         }
     },
     "traits": {
@@ -118,6 +129,16 @@
                 "name": "silentgear:magmatic",
                 "level": 1
             }
+        ],
+        "coating": [
+            {
+                "name": "silentgear:flame_ward",
+                "level": 1
+            },
+            {
+                "name": "silentgear:magmatic",
+                "level": 1
+            }
         ]
     },
     "model": {
@@ -164,6 +185,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#DC143C"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#DC143C"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

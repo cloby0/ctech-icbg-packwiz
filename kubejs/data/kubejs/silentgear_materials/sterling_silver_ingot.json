@@ -99,6 +99,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:holy_attunement",
+                "level": 1
             }
         ],
         "rod": [

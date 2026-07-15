@@ -1,0 +1,12 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": { "text": "Nanite Swarm" },
+  "description": { "text": "Grants summon damage." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:summon_damage", "operation": 0,
+        "value": [0.05, 0.10, 0.15, 0.20, 0.25] }
+    ]
+  }
+}

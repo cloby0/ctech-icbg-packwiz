@@ -74,6 +74,17 @@
             "rarity": {
                 "add": 24
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 45
+            }
         }
     },
     "traits": {
@@ -109,6 +120,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:transcendent_power",
+                "level": 2
             }
         ],
         "rod": [
@@ -121,6 +136,12 @@
             {
                 "name": "silentgear:malleable",
                 "level": 3
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:transcendent_power",
+                "level": 2
             }
         ]
     },
@@ -168,6 +189,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#88A0B8"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#88A0B8"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

@@ -74,6 +74,17 @@
             "rarity": {
                 "add": 19
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 36
+            }
         }
     },
     "traits": {
@@ -89,6 +100,10 @@
             {
                 "name": "silentgear:heavy",
                 "level": 1
+            },
+            {
+                "name": "kubejs:celestial_attunement",
+                "level": 3
             }
         ],
         "rod": [
@@ -100,6 +115,12 @@
         "tip": [
             {
                 "name": "silentgear:malleable",
+                "level": 3
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:celestial_attunement",
                 "level": 3
             }
         ]
@@ -148,6 +169,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#A8B8E0"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#A8B8E0"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

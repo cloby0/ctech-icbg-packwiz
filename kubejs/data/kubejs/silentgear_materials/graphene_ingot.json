@@ -74,6 +74,17 @@
             "rarity": {
                 "add": 9
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 33
+            }
         }
     },
     "traits": {
@@ -89,6 +100,10 @@
             {
                 "name": "silentgear:light",
                 "level": 1
+            },
+            {
+                "name": "kubejs:nanite_swarm",
+                "level": 2
             }
         ],
         "rod": [
@@ -100,6 +115,12 @@
         "tip": [
             {
                 "name": "silentgear:malleable",
+                "level": 2
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:nanite_swarm",
                 "level": 2
             }
         ]
@@ -148,6 +169,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#303030"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#303030"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

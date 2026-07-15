@@ -89,6 +89,10 @@
             {
                 "name": "silentgear:sharp",
                 "level": 1
+            },
+            {
+                "name": "kubejs:abyssal_attunement",
+                "level": 2
             }
         ],
         "rod": [

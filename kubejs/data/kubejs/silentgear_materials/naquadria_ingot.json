@@ -119,6 +119,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:abyssal_attunement",
+                "level": 3
             }
         ],
         "rod": [

@@ -69,6 +69,24 @@
             {
                 "texture": "silentgear:tip_shine"
             }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#e6bdfc"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#e6bdfc"
+            },
+            {
+                "texture": "silentgear:coating_jar"
+            }
         ]
     },
     "stats": {
@@ -127,6 +145,17 @@
             },
             "rarity": {
                 "add": 25
+            }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 39
             }
         }
     },
@@ -213,6 +242,16 @@
                         "gear_type": "weapon"
                     }
                 ]
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:evocation_attunement",
+                "level": 5
+            },
+            {
+                "name": "silentcompat:mana_burst",
+                "level": 1
             }
         ]
     }

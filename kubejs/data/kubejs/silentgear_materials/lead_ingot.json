@@ -1,9 +1,9 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "harvest_tier": "minecraft:iron",
+    "harvest_tier": "minecraft:stone",
     "availability": {
-        "tier": 5,
+        "tier": 3,
         "categories": [
             "metal"
         ],
@@ -13,36 +13,36 @@
     },
     "crafting_items": {
         "main": {
-            "item": "gtceu:aluminium_ingot"
+            "item": "gtceu:lead_ingot"
         }
     },
     "name": {
-        "text": "Aluminium"
+        "text": "Lead"
     },
     "stats": {
         "main": {
-            "durability": 1115,
-            "armor_durability": 19,
-            "enchantment_value": 5,
-            "rarity": 18,
+            "durability": 620,
+            "armor_durability": 11,
+            "enchantment_value": 3,
+            "rarity": 12,
             "charging_value": 1,
-            "harvest_speed": 8,
-            "melee_damage": 4,
-            "magic_damage": 2,
+            "harvest_speed": 4,
+            "melee_damage": 2,
+            "magic_damage": 1,
             "attack_speed": 0,
             "attack_speed/axe": 0,
             "attack_speed/hoe": 0,
-            "ranged_damage": 2,
+            "ranged_damage": 1,
             "ranged_speed": 0,
-            "projectile_speed": 2,
+            "projectile_speed": 0,
             "projectile_accuracy": 1,
-            "armor": 12,
-            "armor_toughness": 5,
-            "magic_armor": 5,
-            "armor/helmet": 3,
-            "armor/chestplate": 6,
-            "armor/leggings": 5,
-            "armor/boots": 3
+            "armor": 9,
+            "armor_toughness": 4,
+            "magic_armor": 3,
+            "armor/helmet": 2,
+            "armor/chestplate": 4,
+            "armor/leggings": 3,
+            "armor/boots": 2
         },
         "rod": {
             "harvest_speed": {
@@ -57,22 +57,22 @@
         },
         "tip": {
             "durability": {
-                "add": 166
+                "add": 43
             },
             "armor_durability": {
-                "add": 7
-            },
-            "harvest_speed": {
                 "add": 2
             },
-            "melee_damage": {
+            "harvest_speed": {
                 "add": 1
+            },
+            "melee_damage": {
+                "add": 0
             },
             "ranged_damage": {
                 "add": 0
             },
             "rarity": {
-                "add": 6
+                "add": 3
             }
         },
         "coating": {
@@ -83,14 +83,14 @@
                 "mul2": 0
             },
             "rarity": {
-                "add": 15
+                "add": 9
             }
         }
     },
     "traits": {
         "main": [
             {
-                "name": "silentgear:light",
+                "name": "silentgear:heavy",
                 "level": 1
             },
             {
@@ -98,7 +98,7 @@
                 "level": 2
             },
             {
-                "name": "kubejs:slipstream_channeling",
+                "name": "kubejs:geo_attunement",
                 "level": 1
             }
         ],
@@ -106,16 +106,6 @@
             {
                 "name": "silentgear:flexible",
                 "level": 1
-            },
-            {
-                "name": "silentgear:magnetic",
-                "level": 1,
-                "conditions": [
-                    {
-                        "type": "silentgear:material_ratio",
-                        "ratio": 0
-                    }
-                ]
             }
         ],
         "tip": [
@@ -126,7 +116,7 @@
         ],
         "coating": [
             {
-                "name": "kubejs:slipstream_channeling",
+                "name": "kubejs:geo_attunement",
                 "level": 1
             }
         ]
@@ -135,7 +125,7 @@
         "main/all": [
             {
                 "texture": "silentgear:main_generic_hc",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             },
             {
                 "texture": "silentgear:_highlight"
@@ -144,25 +134,25 @@
         "main/fragment": [
             {
                 "texture": "silentgear:metal",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             }
         ],
         "rod/all": [
             {
                 "texture": "silentgear:rod_generic_lc",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             }
         ],
         "rod/part": [
             {
                 "texture": "silentgear:rod",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             }
         ],
         "tip/all": [
             {
                 "texture": "silentgear:tip_sharp",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             }
         ],
         "tip/part": [
@@ -171,7 +161,7 @@
             },
             {
                 "texture": "silentgear:tip",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             },
             {
                 "texture": "silentgear:tip_shine"
@@ -180,7 +170,7 @@
         "coating/all": [
             {
                 "texture": "silentgear:main_generic_hc",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             },
             {
                 "texture": "silentgear:_highlight"
@@ -189,7 +179,7 @@
         "coating/part": [
             {
                 "texture": "silentgear:coating_material",
-                "color": "#A8C0D8"
+                "color": "#5A5A66"
             },
             {
                 "texture": "silentgear:coating_jar"

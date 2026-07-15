@@ -69,6 +69,17 @@
             "rarity": {
                 "add": 31
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 18
+            }
         }
     },
     "traits": {
@@ -109,6 +120,16 @@
             },
             {
                 "name": "silentgear:soft",
+                "level": 2
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:insulating",
+                "level": 1
+            },
+            {
+                "name": "silentgear:moonwalker",
                 "level": 2
             }
         ]
@@ -157,6 +178,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#CBBAFF"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#CBBAFF"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

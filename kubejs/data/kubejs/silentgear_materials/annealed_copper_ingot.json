@@ -95,6 +95,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:lightning_attunement",
+                "level": 1
             }
         ],
         "rod": [

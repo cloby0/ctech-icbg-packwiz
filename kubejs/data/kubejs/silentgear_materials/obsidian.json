@@ -47,6 +47,17 @@
             "harvest_speed": {
                 "mul2": 0
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 18
+            }
         }
     },
     "traits": {
@@ -71,6 +82,16 @@
             },
             {
                 "name": "silentgear:chipping",
+                "level": 3
+            }
+        ],
+        "coating": [
+            {
+                "name": "silentgear:crushing",
+                "level": 2
+            },
+            {
+                "name": "silentgear:jagged",
                 "level": 3
             }
         ]
@@ -98,6 +119,21 @@
             {
                 "texture": "silentgear:rod",
                 "color": "#443464"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#443464"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#443464"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

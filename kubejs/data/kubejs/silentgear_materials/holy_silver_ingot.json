@@ -68,6 +68,17 @@
             "rarity": {
                 "add": 10
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 21
+            }
         }
     },
     "traits": {
@@ -116,6 +127,16 @@
                 "name": "silentgear:holy",
                 "level": 1
             }
+        ],
+        "coating": [
+            {
+                "name": "silentgear:cure_poison",
+                "level": 1
+            },
+            {
+                "name": "kubejs:holy_attunement",
+                "level": 2
+            }
         ]
     },
     "model": {
@@ -148,6 +169,24 @@
         "tip/all": [
             {
                 "texture": "silentgear:tip_iron"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#E7F79E"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#E7F79E"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

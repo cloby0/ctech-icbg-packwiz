@@ -1,13 +1,121 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "availability": { "tier": 2, "categories": [ "organic" ], "visible": true, "gear_blacklist": [], "can_salvage": true },
-    "crafting_items": { "main": { "item": "botania:pink_petal" } },
-    "name": { "text": "Pink Petal" },
-    "stats": { "tip": { "durability": { "add": 92 }, "armor_durability": { "add": 3 }, "harvest_speed": { "add": 2 }, "melee_damage": { "add": 2 }, "magic_damage": { "add": 1 }, "rarity": { "add": 7 } } },
-    "traits": { "tip": [ { "name": "kubejs:petal_movespeed", "level": 1 } ] },
+    "availability": {
+        "tier": 2,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "botania:pink_petal"
+        }
+    },
+    "name": {
+        "text": "Pink Petal"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 92
+            },
+            "armor_durability": {
+                "add": 3
+            },
+            "harvest_speed": {
+                "add": 2
+            },
+            "melee_damage": {
+                "add": 2
+            },
+            "magic_damage": {
+                "add": 1
+            },
+            "rarity": {
+                "add": 7
+            }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0.04
+            },
+            "armor_durability": {
+                "mul2": 0.04
+            },
+            "harvest_speed": {
+                "mul2": 0.04
+            },
+            "melee_damage": {
+                "mul2": 0.04
+            },
+            "magic_damage": {
+                "mul2": 0.04
+            },
+            "armor_toughness": {
+                "add": 0.08
+            },
+            "knockback_resistance": {
+                "add": 0.02
+            },
+            "enchantment_value": {
+                "add": 0.1
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:petal_movespeed",
+                "level": 1
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:petal_movespeed",
+                "level": 1
+            }
+        ]
+    },
     "model": {
-        "tip/all": [ { "texture": "silentgear:tip_sharp", "color": "#F38BAA" } ],
-        "tip/part": [ { "texture": "silentgear:tip_base" }, { "texture": "silentgear:tip", "color": "#F38BAA" }, { "texture": "silentgear:tip_shine" } ]
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#F38BAA"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#F38BAA"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_lc",
+                "color": "#F38BAA"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#F38BAA"
+            },
+            {
+                "texture": "silentgear:coating_jar"
+            }
+        ]
     }
 }

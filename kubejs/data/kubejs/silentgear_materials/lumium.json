@@ -49,6 +49,17 @@
                 "mul2": 1
             },
             "rarity": 75
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 24
+            }
         }
     },
     "traits": {
@@ -87,6 +98,12 @@
                     }
                 ]
             }
+        ],
+        "coating": [
+            {
+                "name": "silentgear:refractive",
+                "level": 1
+            }
         ]
     },
     "model": {
@@ -115,6 +132,24 @@
             {
                 "texture": "silentgear:rod",
                 "color": "#FFD789"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#FFD789"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#FFD789"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

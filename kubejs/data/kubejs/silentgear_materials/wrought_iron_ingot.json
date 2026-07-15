@@ -89,6 +89,10 @@
             {
                 "name": "silentgear:rustic",
                 "level": 1
+            },
+            {
+                "name": "kubejs:blood_attunement",
+                "level": 1
             }
         ],
         "rod": [

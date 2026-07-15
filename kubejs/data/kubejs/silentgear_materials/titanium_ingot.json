@@ -89,6 +89,10 @@
             {
                 "name": "silentgear:malleable",
                 "level": 1
+            },
+            {
+                "name": "kubejs:warded",
+                "level": 1
             }
         ],
         "rod": [

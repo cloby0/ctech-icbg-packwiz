@@ -20,11 +20,15 @@
             "melee_damage": { "add": 4 },
             "magic_damage": { "add": 2 },
             "rarity": { "add": 12 }
-        }
+        },
+        "adornment": {}
     },
     "traits": {
         "tip": [
             { "name": "kubejs:technomancy_attunement", "level": 1 }
+        ],
+        "adornment": [
+            { "name": "kubejs:technomancy_attunement", "level": 2 }
         ]
     },
     "model": {
@@ -35,6 +39,14 @@
             { "texture": "silentgear:tip_base" },
             { "texture": "silentgear:tip", "color": "#607D8B" },
             { "texture": "silentgear:tip_shine" }
+        ],
+        "adornment/all": [
+            { "texture": "silentgear:adornment_generic", "color": "#607D8B" },
+            { "texture": "silentgear:adornment_highlight", "color": "#607D8B" }
+        ],
+        "adornment/part": [
+            { "texture": "silentgear:adornment", "color": "#607D8B" },
+            { "texture": "silentgear:adornment_highlight" }
         ]
     }
 }

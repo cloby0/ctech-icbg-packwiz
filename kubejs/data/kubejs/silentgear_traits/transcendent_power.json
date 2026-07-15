@@ -1,0 +1,12 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 2,
+  "name": { "text": "Transcendent Power" },
+  "description": { "text": "Grants universal spell power, boosting every school at once." },
+  "attribute_modifiers": {
+    "all": [
+      { "attribute": "irons_spellbooks:spell_power", "operation": 0,
+        "value": [0.05, 0.10] }
+    ]
+  }
+}

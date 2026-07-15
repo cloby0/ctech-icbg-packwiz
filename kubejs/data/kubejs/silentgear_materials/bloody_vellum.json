@@ -54,6 +54,11 @@
         },
         "lining": {
             "magic_armor": { "add": 2 }
+        },
+        "grip": {
+            "repair_efficiency": { "mul1": 1 },
+            "harvest_speed": { "mul1": 1 },
+            "attack_speed": { "add": 1 }
         }
     },
     "traits": {
@@ -67,6 +72,9 @@
         "lining": [
             { "name": "kubejs:blood_attunement", "level": 2 },
             { "name": "kubejs:insulating", "level": 1 }
+        ],
+        "grip": [
+            { "name": "silentgear:flexible", "level": 2 }
         ]
     },
     "model": {
@@ -91,6 +99,12 @@
         ],
         "lining/part": [
             { "texture": "silentgear:lining_cloth", "color": "#6B0F1A" }
+        ],
+        "grip/all": [
+            { "texture": "silentgear:grip_wool", "color": "#6B0F1A" }
+        ],
+        "grip/part": [
+            { "texture": "silentgear:grip", "color": "#6B0F1A" }
         ]
     }
 }

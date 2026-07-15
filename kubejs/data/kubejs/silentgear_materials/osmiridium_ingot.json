@@ -74,6 +74,17 @@
             "rarity": {
                 "add": 14
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 33
+            }
         }
     },
     "traits": {
@@ -89,6 +100,10 @@
             {
                 "name": "silentgear:lustrous",
                 "level": 1
+            },
+            {
+                "name": "kubejs:precision_channeling",
+                "level": 3
             }
         ],
         "rod": [
@@ -101,6 +116,12 @@
             {
                 "name": "silentgear:malleable",
                 "level": 2
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:precision_channeling",
+                "level": 3
             }
         ]
     },
@@ -148,6 +169,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#606870"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#606870"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

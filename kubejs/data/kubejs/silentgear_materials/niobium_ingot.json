@@ -85,6 +85,10 @@
             {
                 "name": "silentgear:sturdy",
                 "level": 1
+            },
+            {
+                "name": "kubejs:lightning_attunement",
+                "level": 1
             }
         ],
         "rod": [
