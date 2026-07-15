@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 13,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/uiv"
+        }
+    },
+    "name": {
+        "text": "UIV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 1697
+            },
+            "armor_durability": {
+                "add": 57
+            },
+            "harvest_speed": {
+                "add": 23
+            },
+            "melee_damage": {
+                "add": 23
+            },
+            "magic_damage": {
+                "add": 12
+            },
+            "rarity": {
+                "add": 32
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 12
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#FFD700"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#FFD700"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

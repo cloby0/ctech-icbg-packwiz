@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 15,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/opv"
+        }
+    },
+    "name": {
+        "text": "OPV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 2881
+            },
+            "armor_durability": {
+                "add": 98
+            },
+            "harvest_speed": {
+                "add": 38
+            },
+            "melee_damage": {
+                "add": 38
+            },
+            "magic_damage": {
+                "add": 19
+            },
+            "rarity": {
+                "add": 42
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 14
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#FFFFFF"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#FFFFFF"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

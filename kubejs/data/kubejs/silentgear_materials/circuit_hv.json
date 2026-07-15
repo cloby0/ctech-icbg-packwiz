@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/hv"
+        }
+    },
+    "name": {
+        "text": "HV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 204
+            },
+            "armor_durability": {
+                "add": 7
+            },
+            "harvest_speed": {
+                "add": 3
+            },
+            "melee_damage": {
+                "add": 3
+            },
+            "magic_damage": {
+                "add": 2
+            },
+            "rarity": {
+                "add": 10
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 4
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#59B0F5"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#59B0F5"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

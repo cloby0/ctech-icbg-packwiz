@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/uhv"
+        }
+    },
+    "name": {
+        "text": "UHV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 999
+            },
+            "armor_durability": {
+                "add": 34
+            },
+            "harvest_speed": {
+                "add": 14
+            },
+            "melee_damage": {
+                "add": 14
+            },
+            "magic_damage": {
+                "add": 7
+            },
+            "rarity": {
+                "add": 24
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 10
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#E8380D"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#E8380D"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

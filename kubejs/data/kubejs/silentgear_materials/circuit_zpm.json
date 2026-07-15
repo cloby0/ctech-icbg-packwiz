@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/zpm"
+        }
+    },
+    "name": {
+        "text": "ZPM Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 589
+            },
+            "armor_durability": {
+                "add": 20
+            },
+            "harvest_speed": {
+                "add": 8
+            },
+            "melee_damage": {
+                "add": 8
+            },
+            "magic_damage": {
+                "add": 4
+            },
+            "rarity": {
+                "add": 18
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 8
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#9B30D9"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#9B30D9"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

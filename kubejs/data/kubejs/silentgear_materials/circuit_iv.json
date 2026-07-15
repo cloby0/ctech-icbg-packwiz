@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/iv"
+        }
+    },
+    "name": {
+        "text": "IV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 347
+            },
+            "armor_durability": {
+                "add": 12
+            },
+            "harvest_speed": {
+                "add": 5
+            },
+            "melee_damage": {
+                "add": 5
+            },
+            "magic_damage": {
+                "add": 3
+            },
+            "rarity": {
+                "add": 14
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 6
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#1B4F91"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#1B4F91"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}

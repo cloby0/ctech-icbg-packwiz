@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 14,
+        "categories": [
+            "circuit"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": {
+            "tag": "gtceu:circuits/uxv"
+        }
+    },
+    "name": {
+        "text": "UXV Circuit"
+    },
+    "stats": {
+        "tip": {
+            "durability": {
+                "add": 2211
+            },
+            "armor_durability": {
+                "add": 75
+            },
+            "harvest_speed": {
+                "add": 30
+            },
+            "melee_damage": {
+                "add": 30
+            },
+            "magic_damage": {
+                "add": 15
+            },
+            "rarity": {
+                "add": 37
+            }
+        }
+    },
+    "traits": {
+        "tip": [
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 13
+            }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            {
+                "texture": "silentgear:tip_sharp",
+                "color": "#00E5FF"
+            }
+        ],
+        "tip/part": [
+            {
+                "texture": "silentgear:tip_base"
+            },
+            {
+                "texture": "silentgear:tip",
+                "color": "#00E5FF"
+            },
+            {
+                "texture": "silentgear:tip_shine"
+            }
+        ]
+    }
+}
