@@ -1,0 +1,40 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 6,
+        "categories": [ "gem" ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": { "item": "irons_spellbooks:ice_rune" }
+    },
+    "name": { "text": "Ice Rune" },
+    "stats": {
+        "tip": {
+            "durability": { "add": 266 },
+            "armor_durability": { "add": 9 },
+            "harvest_speed": { "add": 4 },
+            "melee_damage": { "add": 4 },
+            "magic_damage": { "add": 2 },
+            "rarity": { "add": 12 }
+        }
+    },
+    "traits": {
+        "tip": [
+            { "name": "kubejs:ice_attunement", "level": 1 }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#66CCFF" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#66CCFF" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}
