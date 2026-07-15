@@ -1,0 +1,81 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "tag": "forge:ingots/mithril" },
+        "rod": { "tag": "forge:ingots/mithril" }
+    },
+    "name": {
+        "text": "Iron's Mithril"
+    },
+    "stats": {
+        "main": {
+            "durability": 3017,
+            "armor_durability": 51,
+            "enchantment_value": 9.24,
+            "rarity": 30,
+            "charging_value": 1.29,
+            "harvest_speed": 20,
+            "melee_damage": 11,
+            "magic_damage": 4,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 5,
+            "ranged_speed": 0,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 31,
+            "armor/helmet": 5,
+            "armor/chestplate": 12,
+            "armor/leggings": 9,
+            "armor/boots": 5,
+            "armor_toughness": 12,
+            "magic_armor": 12
+        },
+        "rod": {
+            "durability": { "mul2": 1 },
+            "harvest_speed": { "mul2": 1 },
+            "rarity": { "add": 46 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:light", "level": 1 },
+            { "name": "kubejs:swift_casting", "level": 3 },
+            { "name": "kubejs:insulating", "level": 1 }
+        ],
+        "rod": [
+            { "name": "silentgear:flexible", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C7D9E8" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#C7D9E8" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C7D9E8" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#C7D9E8" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#C7D9E8" }
+        ]
+    }
+}

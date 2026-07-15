@@ -1,0 +1,81 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 8,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "tag": "forge:ingots/pyrium" },
+        "rod": { "tag": "forge:ingots/pyrium" }
+    },
+    "name": {
+        "text": "Pyrium"
+    },
+    "stats": {
+        "main": {
+            "durability": 3144,
+            "armor_durability": 53,
+            "enchantment_value": 6.7,
+            "rarity": 26,
+            "charging_value": 1.02,
+            "harvest_speed": 13,
+            "melee_damage": 7,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 3,
+            "ranged_speed": 0,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 30,
+            "armor/helmet": 5,
+            "armor/chestplate": 12,
+            "armor/leggings": 9,
+            "armor/boots": 4,
+            "armor_toughness": 11,
+            "magic_armor": 10
+        },
+        "rod": {
+            "durability": { "mul2": 1 },
+            "harvest_speed": { "mul2": 1 },
+            "rarity": { "add": 40 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 1 },
+            { "name": "kubejs:fire_attunement", "level": 3 },
+            { "name": "kubejs:reflective", "level": 2 }
+        ],
+        "rod": [
+            { "name": "silentgear:sturdy", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E25822" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#E25822" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E25822" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_hc", "color": "#E25822" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#E25822" }
+        ]
+    }
+}

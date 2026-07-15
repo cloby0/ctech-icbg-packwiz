@@ -1,0 +1,81 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 14,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:dragonskin" },
+        "rod": { "item": "irons_spellbooks:dragonskin" }
+    },
+    "name": {
+        "text": "Dragonskin"
+    },
+    "stats": {
+        "main": {
+            "durability": 16044,
+            "armor_durability": 269,
+            "enchantment_value": 18.7,
+            "rarity": 61,
+            "charging_value": 1.7,
+            "harvest_speed": 57,
+            "melee_damage": 32,
+            "magic_damage": 13,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 15,
+            "ranged_speed": 0,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 133,
+            "armor/helmet": 20,
+            "armor/chestplate": 53,
+            "armor/leggings": 40,
+            "armor/boots": 20,
+            "armor_toughness": 51,
+            "magic_armor": 44
+        },
+        "rod": {
+            "durability": { "mul2": 1 },
+            "harvest_speed": { "mul2": 1 },
+            "rarity": { "add": 93 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 2 },
+            { "name": "kubejs:ender_attunement", "level": 5 },
+            { "name": "kubejs:reflective", "level": 1 }
+        ],
+        "rod": [
+            { "name": "silentgear:sturdy", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#2E4A3D" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:cloth", "color": "#2E4A3D" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#2E4A3D" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_hc", "color": "#2E4A3D" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#2E4A3D" }
+        ]
+    }
+}

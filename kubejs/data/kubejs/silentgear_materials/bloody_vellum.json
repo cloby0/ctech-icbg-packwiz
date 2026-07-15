@@ -1,0 +1,85 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 6,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "irons_spellbooks:bloody_vellum"
+        }
+    },
+    "name": {
+        "text": "Bloody Vellum"
+    },
+    "stats": {
+        "main": {
+            "durability": 1364,
+            "armor_durability": 23,
+            "enchantment_value": 5.35,
+            "rarity": 20,
+            "charging_value": 0.97,
+            "harvest_speed": 9,
+            "melee_damage": 5,
+            "magic_damage": 2,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 2,
+            "ranged_speed": 0,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 15,
+            "armor/helmet": 2,
+            "armor/chestplate": 6,
+            "armor/leggings": 5,
+            "armor/boots": 2,
+            "armor_toughness": 6,
+            "magic_armor": 5
+        },
+        "tip": {
+            "durability": { "add": 80 },
+            "harvest_speed": { "add": 1 },
+            "melee_damage": { "add": 1 },
+            "ranged_damage": { "add": 0 },
+            "rarity": { "add": 5 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:light", "level": 1 },
+            { "name": "kubejs:blood_attunement", "level": 2 }
+        ],
+        "tip": [
+            { "name": "silentgear:flexible", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_lc", "color": "#6B0F1A" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:cloth", "color": "#6B0F1A" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_lc", "color": "#6B0F1A" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#6B0F1A" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#6B0F1A" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}
