@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 6,
+        "categories": [ "ink" ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "coating": { "item": "irons_spellbooks:uncommon_ink" }
+    },
+    "name": { "text": "Uncommon Ink Coating" },
+    "stats": {
+        "coating": {
+            "durability": [
+                { "mul2": 0.08 },
+                { "add": 0.16 }
+            ],
+            "armor_durability": { "mul2": 0.08 },
+            "harvest_speed": { "mul2": 0.08 },
+            "melee_damage": { "mul2": 0.08 },
+            "magic_damage": { "mul2": 0.08 },
+            "ranged_damage": { "mul2": 0.08 },
+            "armor_toughness": { "add": 0.32 },
+            "knockback_resistance": { "add": 0.08 },
+            "enchantment_value": { "add": 0.4 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "kubejs:inked", "level": 2 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_lc", "color": "#55FF55" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#55FF55" },
+            { "texture": "silentgear:coating_jar" }
+        ]
+    }
+}
