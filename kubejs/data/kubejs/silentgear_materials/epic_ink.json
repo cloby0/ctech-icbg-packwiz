@@ -9,7 +9,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "coating": { "item": "irons_spellbooks:epic_ink" }
+        "main": { "item": "irons_spellbooks:epic_ink" }
     },
     "name": { "text": "Epic Ink Coating" },
     "stats": {

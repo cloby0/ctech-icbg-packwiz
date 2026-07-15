@@ -9,7 +9,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "tip": { "item": "irons_spellbooks:holy_rune" }
+        "main": { "item": "irons_spellbooks:holy_rune" }
     },
     "name": { "text": "Holy Rune" },
     "stats": {

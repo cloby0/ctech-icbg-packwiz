@@ -11,7 +11,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "tip": {
+        "main": {
             "tag": "gtceu:circuits/zpm"
         }
     },

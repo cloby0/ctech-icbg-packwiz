@@ -9,7 +9,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "tip": { "item": "irons_spellbooks:fire_rune" }
+        "main": { "item": "irons_spellbooks:fire_rune" }
     },
     "name": { "text": "Fire Rune" },
     "stats": {

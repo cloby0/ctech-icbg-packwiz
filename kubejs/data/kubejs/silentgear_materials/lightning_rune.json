@@ -9,7 +9,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "tip": { "item": "irons_spellbooks:lightning_rune" }
+        "main": { "item": "irons_spellbooks:lightning_rune" }
     },
     "name": { "text": "Lightning Rune" },
     "stats": {

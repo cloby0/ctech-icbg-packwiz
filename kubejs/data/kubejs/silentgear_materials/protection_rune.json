@@ -9,7 +9,7 @@
         "can_salvage": true
     },
     "crafting_items": {
-        "tip": { "item": "irons_spellbooks:protection_rune" }
+        "main": { "item": "irons_spellbooks:protection_rune" }
     },
     "name": { "text": "Protection Rune" },
     "stats": {
