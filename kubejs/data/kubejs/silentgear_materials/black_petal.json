@@ -1,0 +1,13 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": { "tier": 2, "categories": [ "organic" ], "visible": true, "gear_blacklist": [], "can_salvage": true },
+    "crafting_items": { "tip": { "item": "botania:black_petal" } },
+    "name": { "text": "Black Petal" },
+    "stats": { "tip": { "durability": { "add": 92 }, "armor_durability": { "add": 3 }, "harvest_speed": { "add": 2 }, "melee_damage": { "add": 2 }, "magic_damage": { "add": 1 }, "rarity": { "add": 7 } } },
+    "traits": { "tip": [ { "name": "kubejs:eldritch_attunement", "level": 1 } ] },
+    "model": {
+        "tip/all": [ { "texture": "silentgear:tip_sharp", "color": "#1D1D21" } ],
+        "tip/part": [ { "texture": "silentgear:tip_base" }, { "texture": "silentgear:tip", "color": "#1D1D21" }, { "texture": "silentgear:tip_shine" } ]
+    }
+}

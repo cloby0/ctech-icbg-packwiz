@@ -1,0 +1,13 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": { "tier": 2, "categories": [ "organic" ], "visible": true, "gear_blacklist": [], "can_salvage": true },
+    "crafting_items": { "tip": { "item": "botania:blue_petal" } },
+    "name": { "text": "Blue Petal" },
+    "stats": { "tip": { "durability": { "add": 92 }, "armor_durability": { "add": 3 }, "harvest_speed": { "add": 2 }, "melee_damage": { "add": 2 }, "magic_damage": { "add": 1 }, "rarity": { "add": 7 } } },
+    "traits": { "tip": [ { "name": "kubejs:petal_cooldown", "level": 1 } ] },
+    "model": {
+        "tip/all": [ { "texture": "silentgear:tip_sharp", "color": "#3C44AA" } ],
+        "tip/part": [ { "texture": "silentgear:tip_base" }, { "texture": "silentgear:tip", "color": "#3C44AA" }, { "texture": "silentgear:tip_shine" } ]
+    }
+}

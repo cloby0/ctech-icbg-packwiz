@@ -1,0 +1,13 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": { "tier": 2, "categories": [ "organic" ], "visible": true, "gear_blacklist": [], "can_salvage": true },
+    "crafting_items": { "tip": { "item": "botania:light_blue_petal" } },
+    "name": { "text": "Light Blue Petal" },
+    "stats": { "tip": { "durability": { "add": 92 }, "armor_durability": { "add": 3 }, "harvest_speed": { "add": 2 }, "melee_damage": { "add": 2 }, "magic_damage": { "add": 1 }, "rarity": { "add": 7 } } },
+    "traits": { "tip": [ { "name": "kubejs:ice_attunement", "level": 1 } ] },
+    "model": {
+        "tip/all": [ { "texture": "silentgear:tip_sharp", "color": "#3AB3DA" } ],
+        "tip/part": [ { "texture": "silentgear:tip_base" }, { "texture": "silentgear:tip", "color": "#3AB3DA" }, { "texture": "silentgear:tip_shine" } ]
+    }
+}
