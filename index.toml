@@ -4933,6 +4933,10 @@ file = "kubejs/server_scripts/fluidTags.js"
 hash = "e31519ae3cf4e89ab76a27b9a755297b46d52a7244c5d2715a939d1832eb5aff"
 
 [[files]]
+file = "kubejs/server_scripts/glassBottles.js"
+hash = "d784e1c1b3fb0e24c5c30ededf298f3509d27e436d0c13ceac2b4fe8d4971916"
+
+[[files]]
 file = "kubejs/server_scripts/itemTags.js"
 hash = "861a2f47575b2db2fa82a7d4d8d55db186e74fe127e840ca8e39c6887c182e95"
 
@@ -6224,6 +6228,10 @@ metafile = true
 [[files]]
 file = "mods/hexerei-0.4.2.3.jar"
 hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
+
+[[files]]
+file = "mods/icbg-gear-1.20.1-1.0.0.jar"
+hash = "6dc51560c6a98022d682605e322fa9cb2b40ec012ff5fc60cdd92c25207fc7fc"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
