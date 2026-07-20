@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: SG + ':metal_alloyer' })
     event.recipes.gtceu.assembler('sg_metal_alloyer')
-        .itemInputs('2x gtceu:crimson_steel_plate', '1x gtceu:hv_machine_hull', '1x gtceu:nichrome_wire_gt_single')
+        .itemInputs('2x gtceu:crimson_steel_plate', '1x gtceu:hv_machine_hull', '1x gtceu:nichrome_single_wire')
         .itemOutputs('1x ' + SG + ':metal_alloyer')
         .duration(14 * 20).EUt(GTValues.VA[GTValues.HV])
 
