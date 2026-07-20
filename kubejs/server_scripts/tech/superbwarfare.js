@@ -183,6 +183,21 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
         .duration(10 * 20)
 
+    const gunParts = ['pistol_frame', 'rifle_receiver', 'heavy_frame', 'short_barrel', 'long_barrel', 'gun_fire_control']
+
+    function unpackMaterialPack(packTier, tier) {
+        let recipe = event.recipes.gtceu.sifter(`sw_unpack_${packTier}_material_pack`)
+            .itemInputs(`1x superbwarfare:${packTier}_material_pack`)
+            .duration(tier === 'LV' ? 10 * 20 : tier === 'MV' ? 15 * 20 : tier === 'HV' ? 20 * 20 : 25 * 20)
+            .EUt(GTValues.VA[GTValues[tier]])
+        gunParts.forEach(part => recipe.chancedOutput(`kubejs:${tier.toLowerCase()}_${part}`, 2000, 0))
+    }
+
+    unpackMaterialPack('common', 'LV')
+    unpackMaterialPack('rare', 'MV')
+    unpackMaterialPack('epic', 'HV')
+    unpackMaterialPack('legendary', 'EV')
+
     event.recipes.gtceu.arms_manufacturer('superbwarfare_light_armament_module')
         .itemInputs('superbwarfare:steel_barrel', '4x gtceu:steel_plate', 'minecraft:dispenser', '#gtceu:circuits/lv')
         .itemOutputs('superbwarfare:light_armament_module')

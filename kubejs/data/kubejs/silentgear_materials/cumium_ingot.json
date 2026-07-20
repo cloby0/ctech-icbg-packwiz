@@ -80,6 +80,17 @@
             "rarity": {
                 "add": 39
             }
+        },
+        "coating": {
+            "durability": {
+                "mul2": 0
+            },
+            "armor_durability": {
+                "mul2": 0
+            },
+            "rarity": {
+                "add": 65
+            }
         }
     },
     "traits": {
@@ -101,6 +112,18 @@
                         "ratio": 1
                     }
                 ]
+            },
+            {
+                "name": "kubejs:transcendent_power",
+                "level": 2
+            },
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 14
+            },
+            {
+                "name": "kubejs:fire_attunement",
+                "level": 5
             }
         ],
         "rod": [
@@ -113,6 +136,20 @@
             {
                 "name": "silentgear:malleable",
                 "level": 2
+            }
+        ],
+        "coating": [
+            {
+                "name": "kubejs:transcendent_power",
+                "level": 2
+            },
+            {
+                "name": "kubejs:technomancy_attunement",
+                "level": 14
+            },
+            {
+                "name": "kubejs:fire_attunement",
+                "level": 5
             }
         ]
     },
@@ -169,6 +206,24 @@
             },
             {
                 "texture": "silentgear:tip_shine"
+            }
+        ],
+        "coating/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#CFD2D5"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "coating/part": [
+            {
+                "texture": "silentgear:coating_material",
+                "color": "#CFD2D5"
+            },
+            {
+                "texture": "silentgear:coating_jar"
             }
         ]
     }

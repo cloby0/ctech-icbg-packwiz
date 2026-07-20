@@ -133,10 +133,8 @@
     "superbwarfare:swarm_drone",
 
     // superbwarfare: rarity/perk/loot meta system removed wholesale
-    "superbwarfare:common_material_pack",
-    "superbwarfare:rare_material_pack",
-    "superbwarfare:epic_material_pack",
-    "superbwarfare:legendary_material_pack",
+    // material packs (common/rare/epic/legendary) un-obliterated: sold by villagers,
+    // now sifter-unpackable into tiered gun parts (see superbwarfare.js)
     "superbwarfare:superb_material_pack",
     "superbwarfare:virtual_material_pack",
     "superbwarfare:data_chip_substrate",

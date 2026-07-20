@@ -25,7 +25,6 @@ ServerEvents.recipes(event => {
 
     // All native metals: drop the vanilla hammer-dust and duplicate dust-smelting recipes.
     ;['crimson_iron', 'azure_silver', 'blaze_gold', 'azure_electrum', 'crimson_steel', 'tyrian_steel'].forEach(metal => {
-        event.remove({ output: SG + ':' + metal + '_dust' })   // silentgear:damage_item hammer recipe
         event.remove({ id: SG + ':' + metal + '_dust_smelting' })
         event.remove({ id: SG + ':' + metal + '_dust_blasting' })
     })
@@ -64,34 +63,37 @@ ServerEvents.recipes(event => {
         .duration(200).EUt(GTValues.VA[GTValues.EV])
 
     // ---- Bucket B: machine blocks (assembler; tier follows hardest ingredient) ----
+    // Native metals also GENERATE_PLATE/GENERATE_ROD (gtceuMaterialRegistry.js) - only ingot/nugget/
+    // block/dust are setIgnored, so gtceu:<metal>_plate/_rod are real, safe, un-overridden GT items.
+    // Used below for form-appropriate components instead of raw ingots/forge filler.
 
     event.remove({ id: SG + ':salvager' })
     event.recipes.gtceu.assembler('sg_salvager')
-        .itemInputs('1x minecraft:piston', '1x minecraft:iron_block', '2x ' + SG + ':crimson_iron_ingot', '2x #forge:obsidian')
+        .itemInputs('2x gtceu:crimson_iron_plate', '1x gtceu:steel_gear', '1x gtceu:mv_robot_arm', '1x minecraft:piston')
         .itemOutputs('1x ' + SG + ':salvager')
         .duration(12 * 20).EUt(GTValues.VA[GTValues.MV])
 
     event.remove({ id: SG + ':material_grader' })
     event.recipes.gtceu.assembler('sg_material_grader')
-        .itemInputs('1x ' + SG + ':advanced_upgrade_base', '3x ' + SG + ':blaze_gold_ingot', '2x #forge:gems/quartz', '2x create:iron_sheet')
+        .itemInputs('1x ' + SG + ':advanced_upgrade_base', '2x gtceu:blaze_gold_plate', '1x gtceu:mv_sensor', '1x #gtceu:circuits/mv')
         .itemOutputs('1x ' + SG + ':material_grader')
         .duration(12 * 20).EUt(GTValues.VA[GTValues.MV])
 
     event.remove({ id: SG + ':metal_alloyer' })
     event.recipes.gtceu.assembler('sg_metal_alloyer')
-        .itemInputs('2x ' + SG + ':crimson_steel_ingot', '1x minecraft:iron_block', '4x minecraft:blackstone')
+        .itemInputs('2x gtceu:crimson_steel_plate', '1x gtceu:hv_machine_hull', '1x gtceu:nichrome_wire_gt_single')
         .itemOutputs('1x ' + SG + ':metal_alloyer')
         .duration(14 * 20).EUt(GTValues.VA[GTValues.HV])
 
     event.remove({ id: SG + ':refabricator' })
     event.recipes.gtceu.assembler('sg_refabricator')
-        .itemInputs('1x minecraft:iron_block', '2x #forge:gems/diamond', '1x #forge:gems/bort', '2x gtceu:iron_rod')
+        .itemInputs('2x #forge:gems/diamond', '1x #forge:gems/bort', '2x gtceu:steel_bolt', '1x #gtceu:circuits/mv')
         .itemOutputs('1x ' + SG + ':refabricator')
         .duration(12 * 20).EUt(GTValues.VA[GTValues.MV])
 
     event.remove({ id: SG + ':metal_press' })
     event.recipes.gtceu.assembler('sg_metal_press')
-        .itemInputs('2x ' + SG + ':tyrian_steel_ingot', '4x #forge:obsidian', '2x gtceu:iron_rod')
+        .itemInputs('2x gtceu:tyrian_steel_plate', '1x gtceu:ev_electric_piston', '1x gtceu:steel_gear')
         .itemOutputs('1x ' + SG + ':metal_press')
         .duration(16 * 20).EUt(GTValues.VA[GTValues.EV])
 
@@ -99,13 +101,13 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: SG + ':crimson_repair_kit' })
     event.recipes.gtceu.assembler('sg_crimson_repair_kit')
-        .itemInputs('4x ' + SG + ':crimson_steel_ingot', '1x ' + SG + ':blaze_gold_ingot', '1x minecraft:blaze_rod')
+        .itemInputs('2x gtceu:crimson_steel_plate', '1x gtceu:blaze_gold_rod', '1x minecraft:blaze_rod')
         .itemOutputs('1x ' + SG + ':crimson_repair_kit')
         .duration(10 * 20).EUt(GTValues.VA[GTValues.HV])
 
     event.remove({ id: SG + ':azure_repair_kit' })
     event.recipes.gtceu.assembler('sg_azure_repair_kit')
-        .itemInputs('4x ' + SG + ':azure_electrum_ingot', '1x #forge:gems/emerald', '1x minecraft:end_rod')
+        .itemInputs('2x gtceu:azure_electrum_plate', '1x #forge:gems/emerald', '1x minecraft:end_rod')
         .itemOutputs('1x ' + SG + ':azure_repair_kit')
         .duration(10 * 20).EUt(GTValues.VA[GTValues.HV])
 
@@ -161,13 +163,13 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: SG + ':starlight_charger' })
     event.recipes.gtceu.assembler('sg_starlight_charger')
-        .itemInputs('1x #forge:storage_blocks/blaze_gold', '2x #forge:storage_blocks/quartz', '2x #forge:glass/colorless', '4x minecraft:polished_blackstone')
+        .itemInputs('1x gtceu:blaze_gold_plate', '1x #gtceu:circuits/hv', '2x #forge:glass/colorless')
         .itemOutputs('1x ' + SG + ':starlight_charger')
         .duration(14 * 20).EUt(GTValues.VA[GTValues.HV])
 
     event.remove({ id: SG + ':recrystallizer' })
     event.recipes.gtceu.assembler('sg_recrystallizer')
-        .itemInputs('2x ' + SG + ':azure_electrum_ingot', '1x #forge:storage_blocks/gold', '1x #forge:gems/diamond', '1x #forge:gems/emerald', '4x minecraft:purpur_block')
+        .itemInputs('2x gtceu:azure_electrum_plate', '1x #forge:gems/diamond', '1x #gtceu:circuits/hv')
         .itemOutputs('1x ' + SG + ':recrystallizer')
         .duration(14 * 20).EUt(GTValues.VA[GTValues.HV])
 })

@@ -19,6 +19,8 @@ ServerEvents.recipes(event => {
         'mysticalagradditions:insanium_essence',
     ].forEach(id => event.remove({ id: id }))
 
+    const MA = 'mysticalagriculture'
+    const MAA = 'mysticalagradditions'
     const F = 'mysticalagriculture:fire_essence'
     const E = 'mysticalagriculture:earth_essence'
     const W = 'mysticalagriculture:water_essence'
@@ -174,8 +176,124 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // (Tier -ites are gem-canonical: their gemstones keep the vanilla bench craft as the non-GT path;
-    // ingots are obliterated. No ingot production here.)
+    // ---- Gear tier-upgrade recipes: hardcode the MA <tier>_ingot directly, and use custom serializers
+    // (cucumber:shaped_transfer_damage/_nbt, mysticalagriculture:awakening) that tech/mysticalagriculture.js's
+    // event.replaceInput(ingot -> plate) never reaches (KubeJS can't probe ingredients in those types).
+    // Removed + rebuilt here with gtceu:<ite>_plate swapped in for every ingot slot.
+    const itePlate = {
+        inferium:           'gtceu:inferite_plate',
+        prudentium:         'gtceu:prudentite_plate',
+        tertium:            'gtceu:tertite_plate',
+        imperium:           'gtceu:imperite_plate',
+        supremium:          'gtceu:supremite_plate',
+        awakened_supremium: 'gtceu:awakened_supremite_plate',
+    }
+    const gearTiers = ['inferium', 'prudentium', 'tertium', 'imperium', 'supremium']
+    const gearBase = {
+        axe:         'minecraft:diamond_axe',
+        boots:       'minecraft:diamond_boots',
+        bow:         'minecraft:bow',
+        chestplate:  'minecraft:diamond_chestplate',
+        crossbow:    'minecraft:crossbow',
+        fishing_rod: 'minecraft:fishing_rod',
+        helmet:      'minecraft:diamond_helmet',
+        hoe:         'minecraft:diamond_hoe',
+        leggings:    'minecraft:diamond_leggings',
+        pickaxe:     'minecraft:diamond_pickaxe',
+        scythe:      { tag: 'mysticalagriculture:diamond_scythes' },
+        shears:      'minecraft:shears',
+        shovel:      'minecraft:diamond_shovel',
+        sickle:      { tag: 'mysticalagriculture:diamond_sickles' },
+        sword:       'minecraft:diamond_sword',
+    }
+    const ing = x => typeof x === 'string' ? { item: x } : x
+
+    // Tools/armor: chain S = previous tier's item (vanilla base at inferium).
+    Object.keys(gearBase).forEach(type => {
+        gearTiers.forEach((tier, i) => {
+            const id = `${MA}:gear/${tier}_${type}`
+            event.remove({ id: id })
+            const s = i === 0 ? gearBase[type] : `${MA}:${gearTiers[i - 1]}_${type}`
+            event.custom({
+                type: 'cucumber:shaped_transfer_damage',
+                transfer_nbt: true,
+                pattern: [' G ', 'ISI', ' G '],
+                key: {
+                    G: { item: `${MA}:${tier}_gemstone` },
+                    I: { item: itePlate[tier] },
+                    S: ing(s),
+                },
+                result: { item: `${MA}:${tier}_${type}` },
+            }).id(id)
+        })
+    })
+
+    // Watering can: same chain, but both G and I are ingot slots -> both become the plate.
+    gearTiers.forEach((tier, i) => {
+        const id = `${MA}:gear/${tier}_watering_can`
+        event.remove({ id: id })
+        const s = i === 0 ? { tag: `${MA}:watering_cans` } : { item: `${MA}:${gearTiers[i - 1]}_watering_can` }
+        event.custom({
+            type: 'cucumber:shaped_transfer_nbt',
+            transfer_slot: 4,
+            pattern: ['FGF', 'ISI', 'FGF'],
+            key: {
+                G: { item: itePlate[tier] },
+                I: { item: itePlate[tier] },
+                S: s,
+                F: { item: `${MA}:mystical_fertilizer` },
+            },
+            result: { item: `${MA}:${tier}_watering_can` },
+        }).id(id)
+    })
+
+    // Awakened supremium tier: awakening-altar recipes (ingredients array, not key/pattern).
+    const essences40 = ['air', 'earth', 'water', 'fire'].map(e => ({ item: `${MA}:${e}_essence`, count: 40 }))
+    Object.keys(gearBase).concat('watering_can').forEach(type => {
+        const id = `${MA}:gear/awakened_supremium_${type}`
+        event.remove({ id: id })
+        const ingredients = type === 'watering_can'
+            ? [itePlate.awakened_supremium, itePlate.awakened_supremium, itePlate.awakened_supremium, itePlate.awakened_supremium]
+            : [`${MA}:awakened_supremium_gemstone`, itePlate.awakened_supremium, `${MA}:awakened_supremium_gemstone`, itePlate.awakened_supremium]
+        event.custom({
+            type: `${MA}:awakening`,
+            transfer_nbt: true,
+            essences: essences40,
+            input: { item: `${MA}:supremium_${type}` },
+            ingredients: ingredients.map(x => ({ item: x })),
+            result: { item: `${MA}:awakened_supremium_${type}` },
+        }).id(id)
+    })
+
+    // Awakened supremium paxel (mysticalagradditions) -- same altar type, same ingot problem.
+    event.remove({ id: `${MAA}:awakened_supremium_paxel` })
+    event.custom({
+        type: `${MA}:awakening`,
+        transfer_nbt: true,
+        essences: essences40,
+        input: { item: `${MAA}:supremium_paxel` },
+        ingredients: [
+            { item: `${MA}:awakened_supremium_gemstone` },
+            { item: itePlate.awakened_supremium },
+            { item: `${MA}:awakened_supremium_gemstone` },
+            { item: itePlate.awakened_supremium },
+        ],
+        result: { item: `${MAA}:awakened_supremium_paxel` },
+    }).id(`${MAA}:awakened_supremium_paxel`)
+
+    // Soulium dagger base craft (same cucumber:shaped_transfer_damage issue, uses soulium_ingot).
+    event.remove({ id: `${MA}:soulium_dagger` })
+    event.custom({
+        type: 'cucumber:shaped_transfer_damage',
+        transfer_nbt: true,
+        pattern: [' D ', 'ISI', ' D '],
+        key: {
+            D: { item: `${MA}:soulium_dust` },
+            I: { item: 'gtceu:soulium_plate' },
+            S: { item: 'minecraft:golden_sword' },
+        },
+        result: { item: `${MA}:soulium_dagger` },
+    }).id(`${MA}:soulium_dagger`)
 
     const seedessence = [
         ma('stone'),          ma('dirt'),           ma('wood'),           ma('ice'),

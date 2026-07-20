@@ -44,6 +44,15 @@ ServerEvents.recipes(event => {
 
     event.smelting('gtceu:abstract_metal_ingot', 'kubejs:disorganized_metal_form')
 
+    // Repeat-friendly bypass for the ritual chain above: once the mana pond is built,
+    // skip concepts_bucket -> metal_form_bucket -> disorganized_metal_form per ingot.
+    addManaPondRecipe(event, {
+        input: { item: 'minecraft:iron_ingot' },
+        mana: 2 * Mana.ALCHEMIST,
+        catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
+        output: { item: 'gtceu:abstract_metal_ingot' }
+    })
+
     addManaPondRecipe(event, {
         input: { item: 'gtceu:abstract_metal_ingot' },
         mana: Mana.ALCHEMIST,

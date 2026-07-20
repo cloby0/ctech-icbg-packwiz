@@ -30,7 +30,7 @@
                 "add": 38
             },
             "melee_damage": {
-                "add": 38
+                "add": 10
             },
             "magic_damage": {
                 "add": 19

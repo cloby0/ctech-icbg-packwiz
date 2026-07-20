@@ -64,17 +64,18 @@
     "traits": {
         "main": [
             { "name": "silentgear:light", "level": 1 },
-            { "name": "kubejs:blood_attunement", "level": 2 }
+            { "name": "kubejs:blood_attunement", "level": 3 }
         ],
         "tip": [
             { "name": "silentgear:flexible", "level": 1 }
         ],
         "lining": [
-            { "name": "kubejs:blood_attunement", "level": 2 },
+            { "name": "kubejs:blood_attunement", "level": 3 },
             { "name": "kubejs:insulating", "level": 1 }
         ],
         "grip": [
-            { "name": "silentgear:flexible", "level": 2 }
+            { "name": "silentgear:flexible", "level": 2 },
+            { "name": "kubejs:blood_attunement", "level": 3 }
         ]
     },
     "model": {
