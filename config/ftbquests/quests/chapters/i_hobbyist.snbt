@@ -50,7 +50,7 @@
 		{
 			dependencies: ["7FDB6031A17DC65B"]
 			description: [
-				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. bind it to &blumberjack&r, &bcleaner&r, or &bitem transport&r duty to start automating the hand-fed grind ahead."
+				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. this quest tracks the &blumberjack&r ritual specifically; you can also bind a foliot to &bcleaner&r or &bitem transport&r duty afterward, but summon a lumberjack first to clear this quest."
 				""
 				"costs a fire charge. cheap, and it's required -- the apprentice tier assumes you have logistics help."
 			]
