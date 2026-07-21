@@ -34,7 +34,10 @@
 			y: -1.125d
 		}
 		{
-			dependencies: ["1BBC77A8493BB220"]
+			dependencies: [
+				"1BBC77A8493BB220"
+				"8F3A6C1D2B9E4057"
+			]
 			description: [
 				"the &6imbuement chamber&r soaks items in source until they become better items. glowstone, gold rods, quartz, and silver plates build it -- note the &7silver plates&r, that's the tech tree saying hello."
 				""
@@ -113,6 +116,7 @@
 			dependencies: [
 				"46F3E5D16CC665B8"
 				"1BBC77A8493BB220"
+				"8F3A6C1D2B9E4057"
 			]
 			description: [
 				"back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eglowing compound dust&r."

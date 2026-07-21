@@ -48,6 +48,25 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7FDB6031A17DC65B"]
+			description: [
+				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. bind it to &blumberjack&r, &bcleaner&r, or &bitem transport&r duty to start automating the hand-fed grind ahead."
+				""
+				"costs a fire charge. cheap, and it's required -- the apprentice tier assumes you have logistics help."
+			]
+			id: "8F3A6C1D2B9E4057"
+			subtitle: "your first spirit"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_lumberjack"
+				criterion: ""
+				id: "8F3A6C1D2B9E4058"
+				type: "advancement"
+			}]
+			title: "Foliot Spirit"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
 			dependencies: ["46F3E5D16CC665B8"]
 			description: [
 				"every essence brews from ingredients matching its element -- &cfire&r is coals and flint in hot lava. the other three follow the same logic in their own liquids."
