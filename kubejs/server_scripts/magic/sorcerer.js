@@ -91,13 +91,13 @@ ServerEvents.recipes(event => {
             'mysticalagriculture:fire_essence', 'gtceu:source_block'
         ],
         output: 'kubejs:chaos_essence',
-        sourceCost: 2 * Source.SORCERER
+        sourceCost: 3 * Source.SORCERER
     })
 
     addImbuementRecipe(event, {
         input: 'kubejs:chaos_essence',
         output: 'gtceu:prima_materia_ingot',
-        source: 2 * Source.SORCERER,
+        source: 3 * Source.SORCERER,
         pedestalItems: ['kubejs:element_attunement_stone']
     })
 

@@ -185,14 +185,14 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'gtceu:source_dust',
         output: 'kubejs:pure_source_gem_dust',
-        source: Source.JOURNEYMAN,
+        source: 2 * Source.JOURNEYMAN,
         pedestalItems: ['kubejs:magebloom_sieve']
     });
 
     addImbuementRecipe(event, {
         input: 'kubejs:pure_source_gem_dust',
         output: 'kubejs:rough_source_gem',
-        source: 2 * Source.JOURNEYMAN,
+        source: 3 * Source.JOURNEYMAN,
         pedestalItems: ['#kubejs:fire_essences']
     });
 

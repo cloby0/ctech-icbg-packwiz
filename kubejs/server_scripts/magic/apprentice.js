@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'kubejs:glowing_compound_dust',
         output: 'kubejs:impure_glimmering_dust',
-        source: Source.APPRENTICE,
+        source: 2 * Source.APPRENTICE,
         pedestalItems: []
     });
 
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
     addImbuementRecipe(event, {
         input: 'minecraft:glowstone',
         output: 'gtceu:small_luminessence_dust',
-        source: 3 * Source.APPRENTICE,
+        source: 5 * Source.APPRENTICE,
         pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
     })
 
