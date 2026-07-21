@@ -89,6 +89,10 @@
             {
                 "name": "silentgear:sturdy",
                 "level": 2
+            },
+            {
+                "name": "kubejs:warded",
+                "level": 4
             }
         ],
         "rod": [

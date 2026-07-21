@@ -91,6 +91,10 @@
                         "ratio": 0
                     }
                 ]
+            },
+            {
+                "name": "kubejs:warded",
+                "level": 1
             }
         ],
         "rod": [

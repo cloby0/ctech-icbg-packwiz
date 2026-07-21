@@ -89,6 +89,10 @@
             {
                 "name": "silentgear:fireproof",
                 "level": 1
+            },
+            {
+                "name": "kubejs:warded",
+                "level": 2
             }
         ],
         "rod": [
