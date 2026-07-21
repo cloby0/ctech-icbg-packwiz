@@ -99,7 +99,10 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["3C613081F4FE51B2"]
+			dependencies: [
+				"3C613081F4FE51B2"
+				"9A4C2F6D8B1E3075"
+			]
 			description: [
 				"the &3pure daisy&r is the foundation of botania."
 				""
@@ -182,6 +185,7 @@
 			dependencies: [
 				"3C613081F4FE51B2"
 				"5281FFCFFE77EA24"
+				"9A4C2F6D8B1E3075"
 			]
 			description: [
 				"the &3abstract metal&r line bridges &dprima materia&r and &amanasteel&r."

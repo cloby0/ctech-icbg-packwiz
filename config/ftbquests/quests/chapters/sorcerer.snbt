@@ -222,6 +222,23 @@
 			y: 8.25d
 		}
 		{
+			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"summon a &6marid&r and bind it to a crusher setup, or hand off logistics from the afrit above. required before alchemist -- manasteel automation assumes you have crushing throughput already sorted."
+			]
+			id: "9A4C2F6D8B1E3075"
+			subtitle: "top-tier spirit, top-tier grind"
+			tasks: [{
+				advancement: "occultism:occultism/summon_marid_crusher"
+				criterion: ""
+				id: "9A4C2F6D8B1E3076"
+				type: "advancement"
+			}]
+			title: "Marid Spirit"
+			x: 1.5d
+			y: 8.25d
+		}
+		{
 			dependencies: ["51D5B5C004491077"]
 			hide_dependency_lines: true
 			description: [
