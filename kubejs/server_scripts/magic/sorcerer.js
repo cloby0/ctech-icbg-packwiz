@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:altar_charged_gravitite',
         output: 'aether_redux:gravitite_ingot',
         source: 2 * Source.SORCERER,
-        pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal']
+        pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'occultism:afrit_essence']
     })
 
     const elements = ['air', 'earth', 'fire', 'water']

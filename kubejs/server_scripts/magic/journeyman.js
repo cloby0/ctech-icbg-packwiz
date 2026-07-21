@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:enchanted_zanite_gem',
         output: 'kubejs:resonant_zanite_crystal',
         source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem']
+        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'occultism:spirit_attuned_crystal']
     })
 
     event.custom({

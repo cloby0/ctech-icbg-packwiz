@@ -66,11 +66,11 @@ hash = "f7c30f74ade7214c582cb7a3c13c80659e9f11e8cca8341b264fa2e9117a0cdd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/alchemist.snbt"
-hash = "a6fb3ff82a89eb3c29c6bc9cdcf4c3f792f4aa089895f8eb05e4df442a5612cc"
+hash = "9ee155b19ba6ecec0d349c279ebca6685894aa7779d19be2a54565a76340e5ac"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/apprentice.snbt"
-hash = "1be51258e127a91c3d53f09b74528a7dbf5ea843c98df253cf7a86ee73f6d309"
+hash = "c13c7776e16a2627ecdadd7a5439d0732d2df896ffcd42f0f4ff725baa8a66c5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/arcanist.snbt"
@@ -82,7 +82,7 @@ hash = "6e82c6840148c842d3ee38c70dfba959419793e4ebc996c446482aa271ebb0ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
-hash = "8296740ecfa8830271b37b9f3822c564b874c0c89960e96af7cda9c839f84aad"
+hash = "495ed325e6d0eacd469bec1a6c8bdf244841443ab1c6cfbcfc80d9ca2c0c7916"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
@@ -130,11 +130,11 @@ hash = "9ebcb99632b299557f3ca2ab49f14443bd6b261b0402a764c23d4f9371bd8bb0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "16c5b27a6fa0c1420a6696ba049a09950b4c532a91493ea9c6c53c707d474de1"
+hash = "a3126cf7d9d7bc3e4e2376904aa80dce7a3a5ce7c51f94d5e610d33e7279eff0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
-hash = "1dde61a8238b7ce23fa4309436231059134826844ffb0ce9ed360a51b6e92870"
+hash = "d45ea8521acb21de609c7ab626f3be2a9654a11c9904f6a20f1eded8add4f832"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
@@ -142,7 +142,7 @@ hash = "2d7106078ed151006c59a3827c9afb6446d3e664ca7774b7cc33269b34b01670"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sorcerer.snbt"
-hash = "ea5f1e3050b4583ce1b26444b7c5abadceceda08baf902a4c5c0e45b9c351404"
+hash = "ead128fd150fced22c7325a04296fb72f0e08598a9f9893618fc31e98be265c3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thaumaturge.snbt"
@@ -4950,7 +4950,7 @@ hash = "7bf0d976a49b6e2700378035e6a7f592af6788d0a7c5450cd082ff90ce8ef2f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "0be3b74b740934f61c56ca3ee336bbbd47354dd48fff4dac588059e36622aae9"
+hash = "ef6526b255cd84ea9c8c2db331f23ce97aeea85ea7f9907844411f2571695c02"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -4963,6 +4963,10 @@ hash = "d4243cd70d624b5bb3a8cb0cf0f9ddedc55d996bf2da6a36392e3bc8228f6f91"
 [[files]]
 file = "kubejs/server_scripts/magic/arsArmorer.js"
 hash = "306d729843ac9e1824dbf19b9763167b5ababdac8fcf22a15ac0d40bfe887581"
+
+[[files]]
+file = "kubejs/server_scripts/magic/arsNouveauAutomation.js"
+hash = "593ad9af74440e822402729f1911d36c2413ebaadc3a07086cdb95c3325e1677"
 
 [[files]]
 file = "kubejs/server_scripts/magic/artifacts.js"
@@ -5026,7 +5030,7 @@ hash = "7359175d558a97ae2e161f1a172254b020d450bafa84a134aed5071e1e8a9685"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "dc786e4f072a464e8e916cd71ab77bf62061fedcf6c092f3127d2ae57fd59d67"
+hash = "33331e28c1838d220131ceee3709c443ba6babc4d4621c85127997daa0fb2f38"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
@@ -5049,6 +5053,10 @@ file = "kubejs/server_scripts/magic/namelessTrinkets.js"
 hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
 
 [[files]]
+file = "kubejs/server_scripts/magic/occultism.js"
+hash = "79cd4d44a902e20151bcc3a76a2bce2bf7fcaf6b8d0c5b505c345281355cdfe1"
+
+[[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
 hash = "3c181db1865257f26d283fc6ecea5bd9c1b855264f9d74e8d156995f2c5e3503"
 
@@ -5062,11 +5070,11 @@ hash = "48d043245814b7fde0392234586c12cfd15648c90e41b56104277d9082cc1114"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "2cec4f844376585f1bea80da31f98b7017384fc083a61334f07e4d8119f14fed"
+hash = "9eec9d55a0cc4f28251f50bcc3f43f262dd0a8c77a5038236564bf3757707df7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "4525c40c6d9661986ca7241e77c9a10c0454b92030cd73b87fa78aa9dd170bf6"
+hash = "68fe8abb6fc8260cd06a965411ef209ebe324bd6c6f97e15ec4f91161c1b9d4b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
@@ -5222,7 +5230,7 @@ hash = "dbf9766fa291081c2960c15f7c548d8d928a260e5a22f02b77e751ef4b827882"
 
 [[files]]
 file = "kubejs/server_scripts/tech/silentgear.js"
-hash = "d2ac99194b29d7cc9a82afc28d72023d33d2b38465882c9e39fcc39161039e48"
+hash = "4750acb1b7ae7972c3e739d02a7b70672f4abb68eb595dd1852f5cfa72b5b58e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/sophisticatedBackpacks.js"
@@ -5555,6 +5563,11 @@ hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
 
 [[files]]
+file = "mods/ars-ocultas.pw.toml"
+hash = "4ae74554aeb63b9c955755fde32e8d0123b213c0dbd803fe9c5135be6fbe11c4"
+metafile = true
+
+[[files]]
 file = "mods/ars_n_spells-1.9.0.jar"
 hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 
@@ -5870,7 +5883,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
+hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
 metafile = true
 
 [[files]]
@@ -6137,7 +6150,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "a1dba016bfd85fbabc5ff7c78f0302d3dd5b20026842231d6422947a7bb5f6f0"
+hash = "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10"
 metafile = true
 
 [[files]]
@@ -6231,7 +6244,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "ffb4c5a56fb65b5fb1898d7bf1603de4ae16f3e9f9eb1f00aa04916c91b4724c"
+hash = "b899cd1b111c67d8acfa356e7bc45014332fdc5df0f165d87ae172d180f23a7e"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
@@ -6321,6 +6334,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "98bba4705f700e1b41e76f5cd34973d3d8d92db8b40704eb79f03c0633b69871"
 metafile = true
 
 [[files]]
@@ -6589,6 +6607,11 @@ hash = "f0d2394f2d9c3e7d25f744aabc26fbc806eb8694e239b333cfe56e4a6df07f17"
 metafile = true
 
 [[files]]
+file = "mods/modonomicon.pw.toml"
+hash = "11a52fe3ca031baf3f9425b0ac98bc79c8818bc261ee8f59ee7d322193902658"
+metafile = true
+
+[[files]]
 file = "mods/modulargolems.pw.toml"
 hash = "76b517d06d0d2e9667336440aaceb1e4685b9188ca258505a157880d215ac629"
 metafile = true
@@ -6676,6 +6699,11 @@ metafile = true
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
 hash = "36862eca043b9d3fd35fa3c2c823b23df931475d147c76a371a07c9b79c1d70c"
+metafile = true
+
+[[files]]
+file = "mods/occultism.pw.toml"
+hash = "2b4193156e0322eb82ce6dd168530cdcc77c64c186e277eec788f5bb30a22271"
 metafile = true
 
 [[files]]
@@ -6948,6 +6976,11 @@ hash = "5b8e9b68de4791fc875de20080977ea4103f5da72adc3a4ff9e541992b24826a"
 metafile = true
 
 [[files]]
+file = "mods/smartbrainlib.pw.toml"
+hash = "bd231c766e25e2f3a5fbfa7e7b8ade2536fed16c3a5574dc30b212dc51a75044"
+metafile = true
+
+[[files]]
 file = "mods/smooth-boot-reloaded.pw.toml"
 hash = "8b001d223c2458eed8970eb699974cb73d93b75c6ceee62b5f61be85913b98ac"
 metafile = true
@@ -7073,13 +7106,14 @@ hash = "14dfa617c4d1d656674e412dda1c7309c12bbce747d33804a6f8a3070c9cf0a1"
 metafile = true
 
 [[files]]
-file = "mods/too-many-bows.pw.toml"
-hash = "4e06a09428dada1ab3237c6dc842c260a3c73fd614519fbd100668bef27b3dbd"
+file = "mods/tmrv.pw.toml"
+hash = "45d4ba062d4ac7a75e2b6122d47215996f389db8928465a5aa58eaf5be1d516b"
 metafile = true
 
 [[files]]
-file = "mods/toomanyrecipeviewers-0.9.0-dev.8+mc.20.1.jar"
-hash = "5355f4c31a9026402818d88a85d34b66a6d54ce1269a3d89ffa91f4fe0f4b2b2"
+file = "mods/too-many-bows.pw.toml"
+hash = "4e06a09428dada1ab3237c6dc842c260a3c73fd614519fbd100668bef27b3dbd"
+metafile = true
 
 [[files]]
 file = "mods/true-ending.pw.toml"

@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
             'ars_nouveau:wilden_horn', 'ars_nouveau:wilden_horn',
             'ars_nouveau:wilden_spike', 'ars_nouveau:wilden_spike',
             'ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_shard',
-            '#kubejs:earth_essences', '#kubejs:fire_essences'
+            '#kubejs:earth_essences', '#kubejs:fire_essences',
+            'occultism:iesnium_ingot'
         ],
         output: 'gtceu:wilden_alloy_dust',
         sourceCost: Source.SAGE
