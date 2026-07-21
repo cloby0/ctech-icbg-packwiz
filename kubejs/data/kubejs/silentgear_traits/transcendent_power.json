@@ -5,7 +5,7 @@
   "description": { "text": "Grants universal spell power, boosting every school at once." },
   "attribute_modifiers": {
     "all": [
-      { "attribute": "irons_spellbooks:spell_power", "operation": 0,
+      { "attribute": "irons_spellbooks:spell_power", "operation": 1,
         "value": [0.05, 0.10] }
     ]
   }

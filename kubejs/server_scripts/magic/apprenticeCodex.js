@@ -791,9 +791,9 @@ ServerEvents.recipes(event => {
         'MWM'
     ], {
         M: 'irons_spellbooks:mithril_scrap',
-        X: 'botania:manasteel_ingot',
+        X: 'minecraft:iron_ingot',
         C: '#forge:chests',
-        B: 'irons_spellbooks:ruined_book',
+        B: 'minecraft:book',
         W: 'irons_spellbooks:mithril_weave',
         K: '#forge:tools/knives'
     }).damageIngredient(Ingredient.of('#forge:tools/knives'))

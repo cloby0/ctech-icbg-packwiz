@@ -3194,51 +3194,51 @@ hash = "37ba00cdbb99873ec96ea1067fd6697a470134e02b5d6c6ae60614213cb18fdf"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/abyssal_attunement.json"
-hash = "acc7e5eb5d18b66289741992c072a05ace943380f5e0a6b3e6eecf3efdc29190"
+hash = "b6412a89bfdf82f5452367e051d9e556768f065f9b40fc677b96e5375cb78d57"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/arcane_reservoir.json"
-hash = "b6de3b30c99ad97711506df9bf76feca8380f362c55eefb16b5b73c0b12b2f3e"
+hash = "649d53d32723972dd350b8248fb5889fb80000f775cfdcded86ba6965027a2d4"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/blood_attunement.json"
-hash = "7b83a284fde7542a15517bced55d7e97b45febb43d23aaabde4859d447f350f7"
+hash = "c96c5fafba10a1cf1b434a2782e16b8f79866ba74e1a89a4004302c259591722"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/celestial_attunement.json"
-hash = "c9c1fcde28a716a81a55c3ad823d54d31aaf525a6cc5e24ec5c7b0378907c9b4"
+hash = "954ae1f3d2aabf118cf26181159bfc2c9c0f760cf4b7e3aa5a7583796eeaee49"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/eldritch_attunement.json"
-hash = "2ccec4b25a8fb102726ae70263ed089efb4dd120c8bcdf24ae4122cab13e594b"
+hash = "bd1dfe9d532d305b99a8e9897d4139ebca9d5394058cb684b479d2b9f89c5c86"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/ender_attunement.json"
-hash = "a387d175c202a27b7cefc71e14163e2d46d393fa0e093cc689536fc724db527e"
+hash = "4cd95becfa29d4cae44b28379ce91debc8abfc188f046510dc9ade4db6fbc156"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/evocation_attunement.json"
-hash = "6ba27771c8872b34a0be185eda0e19b8b8706be99882825037f8cba3c1745533"
+hash = "4c04340939ffb5517f510d0e1d68ad8939f32f2a685d00aec4be4a9e6caca986"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/fire_attunement.json"
-hash = "909f9e22f4ae19854b8131d013b2df9deb84e094860c13f1cd1a0624eca198b0"
+hash = "ad2d8d0a6b295eb821eb6cacd6dbd45f25d8bc091ccd8e29e8e8b704dee5b992"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/geo_attunement.json"
-hash = "c3bcda0ad14adbc905559e18bf7ecfe141b72fe834d6c3a5ff17b0d2558b0940"
+hash = "2e29deb9c5162ed49fd26bd18bb9f2c06f343eae130ecf8eb390eb76577c9d9f"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/holy_attunement.json"
-hash = "8653f1445689aa9fdda3ea2f131c754f2b6d0ac8617dac08f18951774b06a6c9"
+hash = "ef6043d85dd01615e2f21b786d50825e409cc17dd4bd6940814f08e85f150085"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/ice_attunement.json"
-hash = "9b9e773d04fdce56ee368947bc4c7332cf58f58bf1f96430667f8aced7e3d9ee"
+hash = "8489226a41f22fa27dd295107ca040322de1c9ad0851e6c2f235d381bddd4cad"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/inked.json"
-hash = "66456e42df1fab9c4d26d1dfef7567346a3607a3f4515cd1d8c1d336f61fa723"
+hash = "2ab2cf49d256090bce4b1008251e2da0b00451cbbaaf34f12fea4379a27c84ab"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/insulating.json"
@@ -3246,39 +3246,39 @@ hash = "73f6c0aed9707b6c3f7f24187d648b910439cf87b6245b16b6238fbfd3ca12e9"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/lightning_attunement.json"
-hash = "ff5d9d0ac88e528fc471b63fc392877d53cceaed8e1863205507bd8624ba8c0b"
+hash = "265d761ffcce728d0068d2ecf1940ff9c5b95396bc5aa3a93d02fdd7d62461e3"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/nanite_swarm.json"
-hash = "51e1e1dc86708955dc35ccb30653ec7c6ee4c2cef83ab7ceed81d51685cd7356"
+hash = "d130386bb982be31b6198dd706a9ec5ca2f97191a5b99cba98797111ca8d8603"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/nature_attunement.json"
-hash = "bff47bf2bb8f0fdc90c1865c52c27a0aeff7a4555614e656dfad267e5b4c8fca"
+hash = "0b3405c47d5d82ab93a69b559be117b9c303a55d68d0c363b08c2dfbbdbe8980"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/petal_cast_speed.json"
-hash = "381b2204d96c65bd3762a84c713e2fe4e42dc707256bdd76ec8f4fd64fb2280a"
+hash = "006f438dd72d9b32066eb7f1124b53700eefc26c0beb5a9acf4fd29797d2ff08"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/petal_cooldown.json"
-hash = "f0d6007bfeca3bc3c42519a6028a4bd85666e36d00f71f75a77a4af44302b7cc"
+hash = "c0c123a68167d339fe9decd32418e0f705adb7fb76d1bd47aace577b5c82bf68"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/petal_mana_regen.json"
-hash = "82375e38e878ad4e10c37a9c42d67bb04bb41924c9af0c1e8ff1f8327943b8ef"
+hash = "cd51b5bd26faa935bc6c5f9cc408ae02ba677f9f700c8d03d9677c505ee563de"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/petal_max_mana.json"
-hash = "1dcda85889aed042bd576912a9e895cc0df228bdcb8ff6aa2b6ce80ed7742c00"
+hash = "2b554741a55100708f7400e47a5035b5803bdddf401e0832e759aabc82379519"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/petal_movespeed.json"
-hash = "4ae36931b2bef290e87009ae34e46264c7017bfb69d541553fad25cac9a53839"
+hash = "ef16d7ba8cddcfea89fd88ac7777c07f5a26fe4c7ae8de269973217f3b5cc768"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/precision_channeling.json"
-hash = "4f1db33026cea05dd99076dcf2aa5b77124294b158d36b6a622379a6114b4252"
+hash = "3fb88207567c98a7efb72b1ebff8f3a0ecbf3723f903be144f95b0003e7dff61"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/reflective.json"
@@ -3286,23 +3286,23 @@ hash = "3c441694f87bebab71808f3d3a86d478ccb99fddfe37a0edade3c869723d9c05"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/slipstream_channeling.json"
-hash = "5e42b45cd21dba6aa5402c910a9e4c5404b41acda3ef8c17e9d1dd1b0ec96efe"
+hash = "efd5cf8e3e4ff7f816d7aabe8f5e7a0a4a252dee282fac330b0d63569f11e93d"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/swift_casting.json"
-hash = "5b6786b3abbf02395868f9ac194cf4f31fe3a3eac89ae37ec98c3fd0b262299b"
+hash = "c6d3af1e190618da61265a708e2052a829a50e8e8972189a818884d1ac4bcbb3"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/technomancy_attunement.json"
-hash = "7ae2e2af17d36bacd988d37c09e5601dd9cd3324c0e7cd919de21cd2a065cd92"
+hash = "26fdc1f6d1290122a4d23e6e11428f85ed891d2dcec6c9fb0c8305b1ce1efc4d"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/transcendent_power.json"
-hash = "1298056e5a9faadc9f9fdbe1ff21a8bafeacedd45045e89fe2dc6a5bde4c5a34"
+hash = "f9b1893849c56ca1a01430c56d8a5bebe69a7617c97acd8320c08a8f99834aaf"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_traits/warded.json"
-hash = "306b8a23127260901e1b8e2d0b2f8688c33dd3ad4d74c61a75323ad7aca23bb8"
+hash = "b800d110418ab005ec17be023695bef33dcc9f8e709db5d842311541b00f8786"
 
 [[files]]
 file = "kubejs/data/lost_aether_content/legendarysurvivaloverhaul/temperature/items/agility_boots.json"
@@ -4954,7 +4954,7 @@ hash = "0be3b74b740934f61c56ca3ee336bbbd47354dd48fff4dac588059e36622aae9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
-hash = "f5ed16cf206910079455cef59b5b06e5a437e2e7c5bc0a2e1d6b5066fdc3b5ce"
+hash = "68b584c1b1b56163e65cbe36b6ea5419005de7bf0712c9329186fc4b0bdc5336"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
@@ -5338,7 +5338,7 @@ hash = "a35e56168f623ca483b457d0afbe0741d6fc81adf2748e78e19bdfecc4e45671"
 
 [[files]]
 file = "kubejs/startup_scripts/customSpellbooks.js"
-hash = "1c48bf46236f22bcc2552d85fd8e8d80adf96e221bea9151dcaabb742edf6f7e"
+hash = "9bb72c4462e945a4745dd47d81b516162f8218b60c139c574cffe2c95a8b4830"
 
 [[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
@@ -6231,7 +6231,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "6dc51560c6a98022d682605e322fa9cb2b40ec012ff5fc60cdd92c25207fc7fc"
+hash = "0136b221dc22e923f49cc34c1d44a00f804f06bc320641c5e543192d4538d0da"
 
 [[files]]
 file = "mods/iceberg.pw.toml"

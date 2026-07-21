@@ -7,7 +7,7 @@
     "all": [
       { "attribute": "gtbcs_spell_lib:spell_crit_chance", "operation": 0,
         "value": [0.02, 0.04, 0.06, 0.08, 0.10] },
-      { "attribute": "gtbcs_spell_lib:spell_crit_damage", "operation": 0,
+      { "attribute": "gtbcs_spell_lib:spell_crit_damage", "operation": 1,
         "value": [0.05, 0.10, 0.15, 0.20, 0.25] }
     ]
   }

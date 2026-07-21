@@ -38,7 +38,7 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:earthquake', 9)
         .addSpell('irons_spellbooks:oakskin', 9)
         .addAttribute('irons_spellbooks:nature_spell_power', 0.15, 'ADDITION')
-        .addAttribute('irons_spellbooks:max_mana', 50.0, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 150.0, 'ADDITION')
 
     event.create('technomatic_folio', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(8)
@@ -78,7 +78,7 @@ StartupEvents.registry('item', event => {
         .addSpell('irons_spellbooks:telekinesis', 10)
         .addSpell('irons_spellbooks:sonic_boom', 10)
         .addAttribute('irons_spellbooks:eldritch_spell_power', 0.25, 'ADDITION')
-        .addAttribute('irons_spellbooks:max_mana', 75.0, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 300.0, 'ADDITION')
 
     event.create('obliteration_chronicle', 'irons_spells_js:spellbook')
         .setMaxSpellSlots(12)
@@ -98,6 +98,6 @@ StartupEvents.registry('item', event => {
         .addSpell('cataclysm_spellbooks:aerial_assault', 10)
         .addAttribute('cataclysm_spellbooks:technomancy_spell_power', 0.35, 'ADDITION')
         .addAttribute('irons_spellbooks:cooldown_reduction', 0.15, 'ADDITION')
-        .addAttribute('irons_spellbooks:max_mana', 75.0, 'ADDITION')
+        .addAttribute('irons_spellbooks:max_mana', 300.0, 'ADDITION')
 
 })

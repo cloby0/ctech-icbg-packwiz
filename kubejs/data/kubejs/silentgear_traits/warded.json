@@ -5,7 +5,7 @@
   "description": { "text": "Grants spell resistance." },
   "attribute_modifiers": {
     "all": [
-      { "attribute": "irons_spellbooks:spell_resist", "operation": 0,
+      { "attribute": "irons_spellbooks:spell_resist", "operation": 1,
         "value": [0.05, 0.10, 0.15, 0.20, 0.25] }
     ]
   }

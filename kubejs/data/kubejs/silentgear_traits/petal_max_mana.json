@@ -6,7 +6,7 @@
   "attribute_modifiers": {
     "all": [
       { "attribute": "irons_spellbooks:max_mana", "operation": 0,
-        "value": [10, 20, 30, 40, 50] }
+        "value": [10, 20, 40, 70, 110] }
     ]
   }
 }
