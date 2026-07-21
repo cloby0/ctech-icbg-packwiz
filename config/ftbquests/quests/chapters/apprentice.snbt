@@ -177,6 +177,25 @@
 			x: 0.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["68DAC01E93C6240E"]
+			description: [
+				"summon a &6djinni&r and bind its &bmanage machine&r job to the hexerei mixing cauldron or the ars nouveau imbuement chamber -- both expose a standard item-handler inventory, so the djinni can feed and empty them without you standing there."
+				""
+				"required before journeyman: the source gem chain ahead eats dust like a machine line. it IS one."
+			]
+			id: "5C2E9B7A4D1F6083"
+			subtitle: "hands-off crafting, finally"
+			tasks: [{
+				advancement: "occultism:occultism/summon_djinni_manage_machine"
+				criterion: ""
+				id: "5C2E9B7A4D1F6084"
+				type: "advancement"
+			}]
+			title: "Djinni Spirit"
+			x: 1.5d
+			y: -3.5d
+		}
 	]
 	subtitle: ["Searching the depths for power"]
 	title: "II. Apprentice"

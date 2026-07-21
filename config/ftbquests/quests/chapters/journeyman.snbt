@@ -390,7 +390,10 @@
 			y: 1.125d
 		}
 		{
-			dependencies: ["68DAC01E93C6240E"]
+			dependencies: [
+				"68DAC01E93C6240E"
+				"5C2E9B7A4D1F6083"
+			]
 			description: [
 				"build a portal frame from &bglowstone&r and light it with a &eluminessence&r. the aether is up there: floating islands, hostile mobs, and the three ores this chapter runs on."
 				""
