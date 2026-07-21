@@ -6338,7 +6338,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "98bba4705f700e1b41e76f5cd34973d3d8d92db8b40704eb79f03c0633b69871"
+hash = "0cb7826691d922653b2638001f8d6fc0a9ff29320a8662bbd26542356cd657c7"
 metafile = true
 
 [[files]]
@@ -6977,7 +6977,7 @@ metafile = true
 
 [[files]]
 file = "mods/smartbrainlib.pw.toml"
-hash = "bd231c766e25e2f3a5fbfa7e7b8ade2536fed16c3a5574dc30b212dc51a75044"
+hash = "8d3e9ef52ac3b65fb976629b55652ca30f9ad8b7ff37925c3111ae78386e1a97"
 metafile = true
 
 [[files]]
