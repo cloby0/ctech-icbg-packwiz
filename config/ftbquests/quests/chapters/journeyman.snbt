@@ -131,6 +131,23 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["06C1B3D271B8BFCF"]
+			description: [
+				"summon an &6afrit&r and bind it to a crusher setup. required before initiate -- holy silver processing chews through material at a pace manual crushing can't keep up with."
+			]
+			id: "3D7B1E9C6A2F5091"
+			subtitle: "the crushing gets real"
+			tasks: [{
+				advancement: "occultism:occultism/summon_afrit_crusher"
+				criterion: ""
+				id: "3D7B1E9C6A2F5092"
+				type: "advancement"
+			}]
+			title: "Afrit Spirit"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
 			dependencies: ["557FF11A5C0306BC"]
 			description: [
 				"four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &esanctified ambrosium&r."

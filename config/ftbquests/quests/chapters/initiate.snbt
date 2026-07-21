@@ -60,7 +60,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["06C1B3D271B8BFCF"]
+			dependencies: [
+				"06C1B3D271B8BFCF"
+				"3D7B1E9C6A2F5091"
+			]
 			description: [
 				"the &6enchanting apparatus&r wants long gold rods, &3source plates&r, and luminessence; pedestals want archwood, zanite, and a GT &7saw&r; the core wants gold bolts and a source gem."
 				""
