@@ -5558,11 +5558,6 @@ hash = "fe693ae80d95c3b06c0c91285417bf58d13e1e1d69496d35224dbf0002d54476"
 metafile = true
 
 [[files]]
-file = "mods/ars-expanded-combat.pw.toml"
-hash = "b73ac0c0f3d27b93f4f2c4436a7259a76c2ab6a7d1c435fe1a215b0e1a1defaf"
-metafile = true
-
-[[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
@@ -6029,11 +6024,6 @@ hash = "a9c35b5265445218f14be7bce6c01bcaf7f6c3e456e8ef675ae41b3d0298e3a5"
 metafile = true
 
 [[files]]
-file = "mods/expanded-combat.pw.toml"
-hash = "130a6604604947c3cc2e739afe4e1fcf31fa52779ee2a955af50c7fafe029f4a"
-metafile = true
-
-[[files]]
 file = "mods/extrabotany-reburn.pw.toml"
 hash = "2712ed38c1af5fcda0879eef5772c81d44fb9ce5be987543e240bc1eae61dc10"
 metafile = true
@@ -6254,7 +6244,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "356edf6e1ff3530628a9bd82290047cef028a9305e2ce77b52dd6cb6bbb01ba8"
+hash = "23ade8d3adc35e9781d37a300401657759d3d4cec64f50f1cf7d911ab7424a6c"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
