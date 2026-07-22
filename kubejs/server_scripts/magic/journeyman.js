@@ -212,30 +212,22 @@ ServerEvents.recipes(event => {
         }
     );
 
-    event.shaped(
-            Item.of('gtceu:source_dust', 1),
-            [
-                'S',
-                'M'
-            ],
-            {
-                S: 'gtceu:raw_source',
-                M: '#forge:tools/mortars'
-            }
-        ).damageIngredient(Ingredient.of('#forge:tools/mortars'));
-
+    // Automatic alternate to hand-sanding above -- same result, run by the Foliot Crusher spirit.
+    // Sanding stays a valid option; this just gives players who'd rather automate it a route.
     event.custom({
-        "type": "ars_nouveau:crush",
-        "input": { "item": "gtceu:raw_source" },
-        "output": [
-            {
-                "item": "gtceu:source_dust",
-                "chance": 1.0,
-                "count": 1,
-                "maxRange": 10
-            }
-        ]
-    });
+        type: 'occultism:crushing',
+        ingredients: [{ item: 'kubejs:rough_source_gem' }],
+        result: { item: 'ars_nouveau:source_gem' },
+    }).id('kubejs:crushing/rough_source_gem_to_source_gem')
+
+    // Crushing raw_source into source_dust now requires the Foliot Crusher spirit instead of a
+    // mortar or the Ars Nouveau crush glyph -- makes the spirit an ongoing requirement, not just
+    // a one-time summon (see occultism.js summon_foliot_crusher gate).
+    event.custom({
+        type: 'occultism:crushing',
+        ingredients: [{ item: 'gtceu:raw_source' }],
+        result: { item: 'gtceu:source_dust' },
+    }).id('kubejs:crushing/raw_source_to_source_dust')
 
     event.shaped(
         Item.of("gtceu:source_plate", 1),

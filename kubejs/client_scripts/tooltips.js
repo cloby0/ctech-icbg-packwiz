@@ -44,7 +44,7 @@ ItemEvents.tooltip((event) => {
     "kubejs:sacred_ambrosium_shard",
     "irons_spellbooks:divine_pearl",
     "gtceu:prima_materia_ingot",
-    "aether_redux:gravitite_ingot",
+    "kubejs:resonant_gravitite_core",
     "kubejs:element_attunement_stone",
     "kubejs:chaos_essence",
     "irons_spellbooks:pyrium_ingot",

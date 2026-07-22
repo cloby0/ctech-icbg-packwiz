@@ -95,6 +95,14 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Vr')
         .isIsotope(false)
 
+    event.create('iesnium')
+        .protons(59)
+        .neutrons(150)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Ie')
+        .isIsotope(false)
+
     event.create('gaia_spirit')
         .protons(48)
         .neutrons(180)
@@ -240,6 +248,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('cobalt', 'chromium')
         .washedIn('gtceu:mercury')
         .separatedInto('cobalt', 'chromium')
+
+    // Occultism's signature metal. Its own Otherworld-dimension ore is the only vein (no GT worldgen
+    // vein registered here) -- .ore() just enables macerator/processing recognition via the existing
+    // forge:ores/iesnium tag. All item forms are setIgnored to occultism's own items (gtceuMaterialModification.js).
+    event.create('iesnium')
+        .ingot()
+        .ore()
+        .element('iesnium')
+        .color(0x8a9aa3)
+        .secondaryColor(0x4a5259)
+        .iconSet(GTMaterialIconSet.METALLIC)
 
     event.create('luminessence')
         .dust()

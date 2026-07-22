@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
 
     addImbuementRecipe(event, {
         input: 'kubejs:altar_charged_gravitite',
-        output: 'aether_redux:gravitite_ingot',
+        output: 'kubejs:resonant_gravitite_core',
         source: 2 * Source.SORCERER,
         pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'occultism:afrit_essence']
     })

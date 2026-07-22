@@ -677,17 +677,17 @@
 		{
 			dependencies: ["1B9C0C6A43CB99C7"]
 			description: [
-				"finish in the &6imbuement chamber&r: charged gravitite over two &aholy silver rods&r and two &9resonant zanite crystals&r, 5000 source. three magic systems, one ingot."
+				"finish in the &6imbuement chamber&r: charged gravitite over two &aholy silver rods&r and two &9resonant zanite crystals&r, 5000 source. three magic systems, one resonant core."
 			]
 			id: "70103C694B3D2219"
 			size: 0.75d
 			subtitle: "it floats. if you let it."
 			tasks: [{
 				id: "396938C3DDEDBA04"
-				item: "aether_redux:gravitite_ingot"
+				item: "kubejs:resonant_gravitite_core"
 				type: "item"
 			}]
-			title: "Gravitite Ingot"
+			title: "Resonant Gravitite Core"
 			x: 3.375d
 			y: 1.125d
 		}

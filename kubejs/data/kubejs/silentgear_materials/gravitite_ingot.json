@@ -21,25 +21,25 @@
     },
     "stats": {
         "main": {
-            "durability": 2423,
-            "armor_durability": 41,
+            "durability": 2050,
+            "armor_durability": 34,
             "enchantment_value": 8,
             "rarity": 27,
             "charging_value": 2,
-            "harvest_speed": 16,
-            "melee_damage": 10,
-            "magic_damage": 3,
+            "harvest_speed": 13,
+            "melee_damage": 8,
+            "magic_damage": 2,
             "attack_speed": 0,
             "attack_speed/axe": 0,
-            "ranged_damage": 4,
+            "ranged_damage": 3,
             "ranged_speed": 0,
-            "armor": 25,
-            "armor/helmet": 3,
-            "armor/chestplate": 7,
-            "armor/leggings": 6,
-            "armor/boots": 3,
-            "armor_toughness": 10,
-            "magic_armor": 9
+            "armor": 20,
+            "armor/helmet": 2,
+            "armor/chestplate": 6,
+            "armor/leggings": 5,
+            "armor/boots": 2,
+            "armor_toughness": 8,
+            "magic_armor": 7
         },
         "rod": {
             "harvest_speed": {
@@ -74,7 +74,7 @@
         "main": [
             {
                 "name": "silentgear:moonwalker",
-                "level": 2
+                "level": 1
             },
             {
                 "name": "silentgear:light",

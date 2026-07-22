@@ -91,6 +91,7 @@ StartupEvents.registry('item', event => {
     event.create('sacred_ambrosium_shard')
     event.create('frozen_raw_gravitite')
     event.create('altar_charged_gravitite')
+    event.create('resonant_gravitite_core')
 
     event.create('calorite_sulfate_slag')
     event.create('calorite_chloride_melt')

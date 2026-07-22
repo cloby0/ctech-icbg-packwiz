@@ -88,6 +88,12 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('skyjade', 'deep_aether:skyjade')
 
     ingot('veridium', 'aether_redux:veridium_ingot')
+
+    // Occultism's iesnium: unique to the mod, no gtceu duplicate. GT ore/macerator chain drives
+    // acquisition (via the existing forge:ores/iesnium tag), all item forms stay occultism's own.
+    assumptionator('iesnium', 'occultism')
+    dust('iesnium', 'occultism:iesnium_dust')
+    rawOre('iesnium', 'occultism:raw_iesnium')
     
     ingot('moon_cheese', 'ad_astra:cheese')
     block('moon_cheese', 'ad_astra:cheese_block')
