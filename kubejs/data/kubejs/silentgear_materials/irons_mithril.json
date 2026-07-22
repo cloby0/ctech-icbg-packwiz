@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:diamond",
     "availability": {
-        "tier": 9,
+        "tier": 4,
         "categories": [
             "metal"
         ],
@@ -24,28 +24,28 @@
     },
     "stats": {
         "main": {
-            "durability": 3017,
-            "armor_durability": 51,
-            "enchantment_value": 9.24,
-            "rarity": 30,
-            "charging_value": 1.29,
-            "harvest_speed": 20,
-            "melee_damage": 11,
-            "magic_damage": 4,
+            "durability": 803,
+            "armor_durability": 13,
+            "enchantment_value": 3.71,
+            "rarity": 15,
+            "charging_value": 0.80,
+            "harvest_speed": 6,
+            "melee_damage": 4,
+            "magic_damage": 1,
             "attack_speed": 0,
             "attack_speed/axe": 0,
             "attack_speed/hoe": 0,
-            "ranged_damage": 5,
+            "ranged_damage": 2,
             "ranged_speed": 0,
             "projectile_speed": 3,
             "projectile_accuracy": 1,
-            "armor": 31,
-            "armor/helmet": 5,
-            "armor/chestplate": 12,
-            "armor/leggings": 9,
-            "armor/boots": 5,
-            "armor_toughness": 12,
-            "magic_armor": 12
+            "armor": 9,
+            "armor/helmet": 1,
+            "armor/chestplate": 4,
+            "armor/leggings": 3,
+            "armor/boots": 1,
+            "armor_toughness": 3,
+            "magic_armor": 3
         },
         "rod": {
             "durability": {
@@ -55,7 +55,7 @@
                 "mul2": 1
             },
             "rarity": {
-                "add": 46
+                "add": 23
             }
         },
         "coating": {
@@ -66,7 +66,7 @@
                 "mul2": 0
             },
             "rarity": {
-                "add": 27
+                "add": 14
             }
         }
     },

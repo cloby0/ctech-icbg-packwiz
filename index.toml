@@ -2782,7 +2782,7 @@ hash = "fe67c4076364e99a0b4778f9d68f48b88bca1f4e03761044f86cf3c294f54d67"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/gravitite_ingot.json"
-hash = "2f202918d3fe137633366cadf434090714e0c1f7025012fc16584bda75a22df5"
+hash = "544be1a723b652e85b16a28cdf082471d5349b8e30aa421b444f081fca8b1ee2"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/gray_petal.json"
@@ -2838,7 +2838,7 @@ hash = "47eb397c50342fb2b8f910364a5538b71fd8c129fc69b484e60051b958892d1a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/irons_mithril.json"
-hash = "ebd17199db4a852ec834fdffe38595c0c7d9e85788ae4705ec42a89249b586ef"
+hash = "b8e2b344a0e5cb4b566a187111c2e9bc2c80a229daf07c0315a8377b5cab7d26"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/kanthal_ingot.json"
@@ -6254,7 +6254,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "58d783f607e63ed8afce463f8be70e397517d7e18f506e437606ca856160028a"
+hash = "8aeea86571ffb655c049b63704617852feda195d8cef954e8f1d0161cd86e0b7"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
