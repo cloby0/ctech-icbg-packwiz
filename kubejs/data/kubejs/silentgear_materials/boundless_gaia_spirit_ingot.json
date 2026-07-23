@@ -1,0 +1,83 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 14,
+        "categories": ["metal"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "kubejs:boundless_gaia_spirit_ingot" },
+        "rod": { "item": "kubejs:boundless_gaia_spirit_ingot" },
+        "tip": { "item": "kubejs:boundless_gaia_spirit_ingot" }
+    },
+    "name": { "text": "Boundless Gaia Spirit Ingot" },
+    "stats": {
+        "main": {
+            "durability": 15386, "armor_durability": 258, "enchantment_value": 20.0,
+            "rarity": 61, "charging_value": 1.81, "harvest_speed": 57,
+            "melee_damage": 42, "magic_damage": 11, "ranged_damage": 14,
+            "armor": 133, "armor_toughness": 51, "magic_armor": 44,
+            "attack_speed": 0, "attack_speed/axe": 0, "attack_speed/hoe": 0,
+            "ranged_speed": 0, "projectile_speed": 1, "projectile_accuracy": 1,
+            "armor/helmet": 20, "armor/chestplate": 53, "armor/leggings": 40, "armor/boots": 20
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 1 },
+            "melee_damage": { "mul2": 1 },
+            "ranged_damage": { "mul2": 1 }
+        },
+        "tip": {
+            "durability": { "add": 1738 },
+            "armor_durability": { "add": 61 },
+            "harvest_speed": { "add": 17 },
+            "melee_damage": { "add": 15 },
+            "ranged_damage": { "add": 7 },
+            "rarity": { "add": 35 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 2 },
+            { "name": "silentgear:hard", "level": 1 },
+            { "name": "silentgear:ancient", "level": 1 },
+            { "name": "kubejs:eldritch_attunement", "level": 5 }
+        ],
+        "rod": [
+            { "name": "silentgear:hard", "level": 1 }
+        ],
+        "tip": [
+            { "name": "silentgear:malleable", "level": 2 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#3D1A4D" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#3D1A4D" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#3D1A4D" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#1F0D26" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#1F0D26" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#3D1A4D" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#3D1A4D" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

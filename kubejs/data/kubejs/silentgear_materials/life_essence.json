@@ -11,7 +11,7 @@
     "crafting_items": {
         "tip": { "item": "botania:life_essence" }
     },
-    "name": { "text": "Life Essence" },
+    "name": { "text": "Gaia Spirit" },
     "stats": {
         "tip": {
             "durability": { "add": 1900 },
@@ -29,10 +29,10 @@
     },
     "traits": {
         "tip": [
-            { "name": "kubejs:holy_attunement", "level": 5 }
+            { "name": "kubejs:eldritch_attunement", "level": 5 }
         ],
         "coating": [
-            { "name": "kubejs:holy_attunement", "level": 5 }
+            { "name": "kubejs:eldritch_attunement", "level": 5 }
         ]
     },
     "model": {
