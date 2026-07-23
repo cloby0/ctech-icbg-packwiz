@@ -35,11 +35,14 @@ ServerEvents.recipes(event => {
         pedestalItems: ['gtceu:holy_silver_block']
     })
 
+    // otherworld_essence is renewable via the Datura farming loop (occultism.js spirit_fire
+    // recipes), no spirit-tier ceiling -- works as an ongoing Occultism tax through the top
+    // half of the tree, where there's no higher spirit to summon past Marid (Sorcerer).
     addImbuementRecipe(event, {
         input: 'gtceu:metal_form_bucket',
         output: 'kubejs:disorganized_metal_form',
         source: Source.ALCHEMIST,
-        pedestalItems: ['mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence']
+        pedestalItems: ['mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'occultism:otherworld_essence']
     })
 
     event.smelting('gtceu:abstract_metal_ingot', 'kubejs:disorganized_metal_form')
