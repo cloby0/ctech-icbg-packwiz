@@ -430,3 +430,105 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 })
+
+// Crushing tier-gate: closes the same free-automation exploit already fixed for miners
+// above (the ore-spread rebalance) but for crushing spirits. Verified against the pack's
+// Occultism jar (1.158.0): 180 shipped crushing recipes, none use min_tier/max_tier. The
+// 35 "_from_ingot" recipes (ignore_crushing_multiplier: true) convert an already-made
+// ingot back to dust -- balance-neutral, the ingot's cost was already paid through the
+// normal GT chain -- so those are left untouched. Only ore/raw_material/raw_block/gem
+// recipes (the free-resource-processing surface) get gated or removed.
+ServerEvents.recipes(event => {
+    const crushingTier = { foliot: 1, djinni: 2, afrit: 3, marid: 4 }
+
+    // Ore-vein metals: 3 recipe ids each (dust / dust_from_raw / dust_from_raw_block).
+    // Reuses the miner rebalance's material lists above, plus 4 real ores that list
+    // missed -- crimson_iron/azure_silver/graphite/mithril -- and gold, all verified via
+    // docs/claude/full_pack_dump to have real, populated ore tags in this pack.
+    const oreVeinTier = {
+        foliot: ['copper', 'gold', 'graphite', 'iron', 'lead', 'nickel', 'silver', 'tin', 'zinc'],
+        djinni: ['azure_silver', 'cobalt', 'crimson_iron'],
+        afrit: ['mithril', 'platinum', 'tungsten'],
+        marid: ['iesnium'],
+    }
+    const oreVeinForm = {
+        '': { tagPath: m => `ores/${m}`, count: 2 },
+        '_from_raw': { tagPath: m => `raw_materials/${m}`, count: 2 },
+        '_from_raw_block': { tagPath: m => `storage_blocks/raw_${m}`, count: 18 },
+    }
+    Object.keys(oreVeinTier).forEach(tier => {
+        oreVeinTier[tier].forEach(material => {
+            Object.keys(oreVeinForm).forEach(suffix => {
+                const form = oreVeinForm[suffix]
+                const id = `occultism:${material}_dust${suffix}`
+                event.remove({ id: id })
+                event.custom({
+                    type: 'occultism:crushing',
+                    ingredient: { tag: `forge:${form.tagPath(material)}` },
+                    min_tier: crushingTier[tier],
+                    result: { tag: `forge:dusts/${material}`, count: form.count },
+                    crushing_time: 200,
+                }).id(id)
+            })
+        })
+    })
+
+    // Gem-shaped materials: 2 recipe ids each (dust from ore-tag / dust_from_gem).
+    const gemTier = {
+        foliot: ['apatite', 'coal', 'lapis', 'quartz', 'redstone', 'sulfur'],
+        djinni: ['certus_quartz', 'cinnabar', 'diamond', 'emerald', 'ruby', 'sapphire', 'topaz'],
+    }
+    const gemForm = {
+        '': { tagPath: m => `ores/${m}`, count: 4 },
+        '_from_gem': { tagPath: m => `gems/${m}`, count: 1 },
+    }
+    Object.keys(gemTier).forEach(tier => {
+        gemTier[tier].forEach(material => {
+            Object.keys(gemForm).forEach(suffix => {
+                const form = gemForm[suffix]
+                const id = `occultism:${material}_dust${suffix}`
+                event.remove({ id: id })
+                event.custom({
+                    type: 'occultism:crushing',
+                    ingredient: { tag: `forge:${form.tagPath(material)}` },
+                    min_tier: crushingTier[tier],
+                    result: { tag: `forge:dusts/${material}`, count: form.count },
+                    crushing_time: 200,
+                }).id(id)
+            })
+        })
+    })
+
+    // obsidian_dust: single recipe, no suffix variants, ingredient tag has no ores/ prefix.
+    event.remove({ id: 'occultism:obsidian_dust' })
+    event.custom({
+        type: 'occultism:crushing',
+        ingredient: { tag: 'forge:obsidian' },
+        min_tier: crushingTier.foliot,
+        result: { tag: 'forge:dusts/obsidian', count: 1 },
+        crushing_time: 200,
+    }).id('occultism:obsidian_dust')
+
+    // Dead-tag materials: verified via docs/claude/full_pack_dump that their ore/
+    // raw_material/storage_blocks-raw tags are entirely empty in this pack (pure alloys
+    // with no raw-ore form, or vestigial mod content) -- these recipes can never fire.
+    // Remove as clutter rather than gate (same logic as the itemobliterator policy).
+    const deadOreVeinMaterials = ['allthemodium', 'aluminum', 'brass', 'bronze', 'constantan',
+        'electrum', 'enderium', 'invar', 'iridium', 'lumium', 'netherite', 'osmium', 'pewter',
+        'quicksilver', 'signalum', 'steel', 'unobtainium', 'uranium', 'vibranium']
+    deadOreVeinMaterials.forEach(material => {
+        ['', '_from_raw', '_from_raw_block'].forEach(suffix => {
+            event.remove({ id: `occultism:${material}_dust${suffix}` })
+        })
+    })
+
+    const deadGemMaterials = ['amber', 'arcane_crystal', 'charged_certus_quartz', 'fluorite', 'peridot']
+    deadGemMaterials.forEach(material => {
+        ['', '_from_gem'].forEach(suffix => {
+            event.remove({ id: `occultism:${material}_dust${suffix}` })
+        })
+    })
+
+    // blaze_powder_from_rod, datura, end_stone_dust: not ore/metal materials, not part of
+    // the tier system -- left untouched.
+})
