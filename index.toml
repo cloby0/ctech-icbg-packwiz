@@ -4946,11 +4946,11 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "7bf0d976a49b6e2700378035e6a7f592af6788d0a7c5450cd082ff90ce8ef2f5"
+hash = "b2014c895bdfa4ea9cdd0f92519c8568750f9eae5171df34aa54be717eb94ce6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "ef6526b255cd84ea9c8c2db331f23ce97aeea85ea7f9907844411f2571695c02"
+hash = "9641fa26459f38d7fad90cf8e70f3c8b3fab462c25ae0d2453882bc5ee2f9ab4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -4958,7 +4958,7 @@ hash = "68b584c1b1b56163e65cbe36b6ea5419005de7bf0712c9329186fc4b0bdc5336"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
-hash = "d4243cd70d624b5bb3a8cb0cf0f9ddedc55d996bf2da6a36392e3bc8228f6f91"
+hash = "eee1d0f9b5e00e26feb1029d03048bddcef0cb792f0a5d275d55f67206ce3051"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arsArmorer.js"
@@ -5014,7 +5014,7 @@ hash = "54797210a54b082bd6f9daf4ce00ce2701d427c8409ca15429c871305ffba197"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "92608985708b064847551b7290adf416d9e891c03894c36d40e694c8057019b3"
+hash = "2b12b14ca90fbe305dde601d07fac2f5ad98ddd51a1eb5271d95dbf45de3e0ef"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
@@ -5030,7 +5030,7 @@ hash = "7359175d558a97ae2e161f1a172254b020d450bafa84a134aed5071e1e8a9685"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "748fc3a69d93c8ad8c3aadb21f1ed4a109823473704d6dfd267c1cbe36bd765f"
+hash = "a615a9ff27b74362ad0b02fb7f9c31f4709f321b15bea64b8ea85fc569ef0d68"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
@@ -5054,7 +5054,7 @@ hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "b973ede5d27a36f0210116fca88b5c983d1e2985743ace7322a564ed1906d82b"
+hash = "7e8ef51e6f21095a1276a38916a7e76b2e4644ed961bc93e336cce416ad04855"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
@@ -5070,15 +5070,15 @@ hash = "48d043245814b7fde0392234586c12cfd15648c90e41b56104277d9082cc1114"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "9eec9d55a0cc4f28251f50bcc3f43f262dd0a8c77a5038236564bf3757707df7"
+hash = "6b7b860885cc0437bb385f3b3453602af8e997196439d643af02ba43b9d9faab"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "e203e69e3fa313951bbe876c757aaf44ce4e7077a2e40315b50f36efe6595583"
+hash = "aa29dd8e26eb1d8b27ca20a956c48723ade44736f3641818c778e628ddbbcf8f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
-hash = "ae0f2f88c816d2100ed085ee0c29a21bad6b3c2355ae3d3df22e519de839333e"
+hash = "1ee42c07bd2becfd951afab4c56e571f6a03b5578de951b48d907d8ef4c21a86"
 
 [[files]]
 file = "kubejs/server_scripts/magic/tooManyBows.js"
@@ -5460,11 +5460,6 @@ metafile = true
 [[files]]
 file = "mods/aeroblender.pw.toml"
 hash = "7885154390b9961ed757a8f2178a09ab00f20a90d53fa9ba13851474a3d6fbe8"
-metafile = true
-
-[[files]]
-file = "mods/aether-lost-content.pw.toml"
-hash = "0093665794d9745c4d0529f78694aad2c852f31ea0e8f8cdc2fdc0d42ab86ca6"
 metafile = true
 
 [[files]]
@@ -6244,7 +6239,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "23ade8d3adc35e9781d37a300401657759d3d4cec64f50f1cf7d911ab7424a6c"
+hash = "aa4a662553757b0b48112f237ed765a6e0917281b43ca9f5a60840d4c52a0216"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
