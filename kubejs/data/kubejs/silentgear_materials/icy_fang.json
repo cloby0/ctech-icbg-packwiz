@@ -1,0 +1,79 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+        "tier": 8,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:icy_fang" },
+        "rod": { "item": "irons_spellbooks:icy_fang" }
+    },
+    "name": { "text": "Icy Fang" },
+    "stats": {
+        "main": {
+            "durability": 2315.6,
+            "armor_durability": 38.89,
+            "enchantment_value": 7.7,
+            "rarity": 26.45,
+            "charging_value": 1.18,
+            "harvest_speed": 15.53,
+            "melee_damage": 11.37,
+            "magic_damage": 2.43,
+            "attack_speed": 0,
+            "attack_speed/axe": 0,
+            "attack_speed/hoe": 0,
+            "ranged_damage": 4.02,
+            "ranged_speed": 0,
+            "projectile_speed": 3,
+            "projectile_accuracy": 1,
+            "armor": 24.26,
+            "armor/helmet": 4,
+            "armor/chestplate": 10,
+            "armor/leggings": 7,
+            "armor/boots": 3,
+            "armor_toughness": 9.24,
+            "magic_armor": 8.99
+        },
+        "rod": {
+            "durability": { "mul2": 1 },
+            "harvest_speed": { "mul2": 1 },
+            "rarity": { "add": 40 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:light", "level": 1 },
+            { "name": "silentgear:sharp", "level": 1 },
+            { "name": "kubejs:ice_attunement", "level": 3 }
+        ],
+        "rod": [
+            { "name": "silentgear:flexible", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#D6F0FA" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#D6F0FA" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#D6F0FA" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#D6F0FA" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#D6F0FA" }
+        ]
+    }
+}

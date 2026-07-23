@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:energized_core" }
+    },
+    "name": { "text": "Energized Core" },
+    "stats": {
+        "coating": {
+            "melee_damage": { "mul2": 1.1 },
+            "ranged_damage": { "mul2": 1.1 },
+            "attack_speed": { "add": 0.3 },
+            "armor/helmet": { "add": 1 },
+            "armor/chestplate": { "add": 2 },
+            "armor/leggings": { "add": 2 },
+            "armor/boots": { "add": 1 },
+            "armor_toughness": { "add": 1 },
+            "enchantment_value": { "add": 6.0 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "silentgear:brilliant", "level": 1 },
+            { "name": "kubejs:lightning_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#FFE45C" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#FFE45C" },
+            { "texture": "silentgear:coating_jar" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:dust", "color": "#FFE45C" }
+        ]
+    }
+}

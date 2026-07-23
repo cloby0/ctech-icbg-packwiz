@@ -1,0 +1,55 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:opal_gem" }
+    },
+    "name": { "text": "Opal" },
+    "stats": {
+        "main": {
+            "durability": 652,
+            "armor_durability": 11,
+            "enchantment_value": 3.27,
+            "rarity": 13,
+            "charging_value": 0.77,
+            "harvest_speed": 4.1,
+            "melee_damage": 2.3,
+            "magic_damage": 0.9,
+            "attack_speed": 0,
+            "ranged_damage": 1.1,
+            "ranged_speed": 0,
+            "armor": 8,
+            "armor/helmet": 1,
+            "armor/chestplate": 3,
+            "armor/leggings": 2,
+            "armor/boots": 1,
+            "armor_toughness": 3,
+            "magic_armor": 3
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:lustrous", "level": 1 },
+            { "name": "silentgear:brittle", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#D9D9F3" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#D9D9F3" }
+        ]
+    }
+}

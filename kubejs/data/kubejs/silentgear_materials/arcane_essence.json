@@ -1,0 +1,43 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:arcane_essence" }
+    },
+    "name": { "text": "Arcane Essence" },
+    "stats": {
+        "tip": {
+            "durability": { "add": 120 },
+            "armor_durability": { "add": 4 },
+            "harvest_speed": { "add": 2 },
+            "melee_damage": { "add": 1 },
+            "magic_damage": { "add": 3 },
+            "rarity": { "add": 9 }
+        }
+    },
+    "traits": {
+        "tip": [
+            { "name": "silentgear:brilliant", "level": 1 },
+            { "name": "kubejs:evocation_attunement", "level": 1 }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#B266FF" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#B266FF" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

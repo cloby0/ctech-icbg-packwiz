@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "ars_nouveau:drygmy_shard"
+        }
+    },
+    "name": {
+        "text": "Drygmy Token"
+    },
+    "stats": {
+        "main": {
+            "durability": 6608,
+            "armor_durability": 111,
+            "enchantment_value": 12.4,
+            "rarity": 40,
+            "charging_value": 1.46,
+            "harvest_speed": 27,
+            "melee_damage": 15,
+            "magic_damage": 6,
+            "ranged_damage": 7,
+            "attack_speed": 0,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 63,
+            "armor_toughness": 24,
+            "magic_armor": 21,
+            "armor/helmet": 9,
+            "armor/chestplate": 21,
+            "armor/leggings": 18,
+            "armor/boots": 13
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:sturdy",
+                "level": 2
+            },
+            {
+                "name": "kubejs:geo_attunement",
+                "level": 4
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#6B7A4F"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#6B7A4F"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#6B7A4F"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

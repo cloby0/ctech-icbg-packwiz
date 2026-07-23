@@ -1,0 +1,64 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "rod": {
+            "item": "ars_nouveau:wilden_wing"
+        }
+    },
+    "name": {
+        "text": "Wilden Wing"
+    },
+    "stats": {
+        "rod": {
+            "harvest_speed": {
+                "mul2": 0.12
+            },
+            "melee_damage": {
+                "mul2": 0.05
+            },
+            "ranged_damage": {
+                "mul2": 0.3
+            }
+        }
+    },
+    "traits": {
+        "rod": [
+            {
+                "name": "silentgear:flexible",
+                "level": 2
+            },
+            {
+                "name": "silentgear:moonwalker",
+                "level": 1
+            },
+            {
+                "name": "kubejs:slipstream_channeling",
+                "level": 4
+            }
+        ]
+    },
+    "model": {
+        "rod/all": [
+            {
+                "texture": "silentgear:rod_generic_lc",
+                "color": "#A8C99A"
+            }
+        ],
+        "rod/part": [
+            {
+                "texture": "silentgear:rod",
+                "color": "#A8C99A"
+            }
+        ]
+    }
+}

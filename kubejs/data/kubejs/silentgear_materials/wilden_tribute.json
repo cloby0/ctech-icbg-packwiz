@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "ars_nouveau:wilden_tribute"
+        }
+    },
+    "name": {
+        "text": "Wilden Tribute"
+    },
+    "stats": {
+        "main": {
+            "durability": 6007,
+            "armor_durability": 101,
+            "enchantment_value": 12.4,
+            "rarity": 40,
+            "charging_value": 1.46,
+            "harvest_speed": 30,
+            "melee_damage": 22,
+            "magic_damage": 5,
+            "ranged_damage": 8,
+            "attack_speed": 0,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 57,
+            "armor_toughness": 22,
+            "magic_armor": 19,
+            "armor/helmet": 8,
+            "armor/chestplate": 19,
+            "armor/leggings": 16,
+            "armor/boots": 11
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "kubejs:nature_attunement",
+                "level": 4
+            },
+            {
+                "name": "kubejs:reflective",
+                "level": 3
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#9C6B1F"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#9C6B1F"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#9C6B1F"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

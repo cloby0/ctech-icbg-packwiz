@@ -1,0 +1,55 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:apatite_gem" }
+    },
+    "name": { "text": "Apatite" },
+    "stats": {
+        "main": {
+            "durability": 837,
+            "armor_durability": 14,
+            "enchantment_value": 2.69,
+            "rarity": 13,
+            "charging_value": 0.63,
+            "harvest_speed": 3.7,
+            "melee_damage": 2.1,
+            "magic_damage": 0.9,
+            "attack_speed": 0,
+            "ranged_damage": 1.0,
+            "ranged_speed": 0,
+            "armor": 9,
+            "armor/helmet": 1,
+            "armor/chestplate": 3,
+            "armor/leggings": 3,
+            "armor/boots": 1,
+            "armor_toughness": 3,
+            "magic_armor": 3
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 1 },
+            { "name": "silentgear:malleable", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#2E8B87" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#2E8B87" }
+        ]
+    }
+}

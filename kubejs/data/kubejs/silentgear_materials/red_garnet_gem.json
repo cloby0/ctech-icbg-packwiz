@@ -1,0 +1,55 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:red_garnet_gem" }
+    },
+    "name": { "text": "Red Garnet" },
+    "stats": {
+        "main": {
+            "durability": 837,
+            "armor_durability": 14,
+            "enchantment_value": 2.69,
+            "rarity": 13,
+            "charging_value": 0.63,
+            "harvest_speed": 3.7,
+            "melee_damage": 2.7,
+            "magic_damage": 0.7,
+            "attack_speed": 0,
+            "ranged_damage": 0.9,
+            "ranged_speed": 0,
+            "armor": 9,
+            "armor/helmet": 1,
+            "armor/chestplate": 3,
+            "armor/leggings": 3,
+            "armor/boots": 1,
+            "armor_toughness": 3,
+            "magic_armor": 3
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 1 },
+            { "name": "silentgear:holy", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#7B1113" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#7B1113" }
+        ]
+    }
+}

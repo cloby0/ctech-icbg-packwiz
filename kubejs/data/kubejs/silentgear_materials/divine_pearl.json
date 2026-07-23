@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:divine_pearl" }
+    },
+    "name": { "text": "Divine Pearl" },
+    "stats": {
+        "adornment": {}
+    },
+    "traits": {
+        "adornment": [
+            { "name": "silentgear:holy", "level": 1 },
+            { "name": "kubejs:holy_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "adornment/all": [
+            { "texture": "silentgear:adornment_generic", "color": "#F5E6C8" },
+            { "texture": "silentgear:adornment_highlight", "color": "#F5E6C8" }
+        ],
+        "adornment/part": [
+            { "texture": "silentgear:adornment", "color": "#F5E6C8" },
+            { "texture": "silentgear:adornment_highlight" }
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 3,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:blood_vial" }
+    },
+    "name": { "text": "Blood Vial" },
+    "stats": {
+        "coating": {
+            "melee_damage": { "mul2": 1.05 },
+            "attack_speed": { "add": -0.2 },
+            "armor/chestplate": { "add": 1 },
+            "armor_toughness": { "add": 1 },
+            "enchantment_value": { "add": 3.0 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "silentgear:brittle", "level": 1 },
+            { "name": "kubejs:blood_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#A00020" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#A00020" },
+            { "texture": "silentgear:coating_jar" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#A00020" }
+        ]
+    }
+}

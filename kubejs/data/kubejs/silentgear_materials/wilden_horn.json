@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "ars_nouveau:wilden_horn"
+        }
+    },
+    "name": {
+        "text": "Wilden Horn"
+    },
+    "stats": {
+        "main": {
+            "durability": 6955,
+            "armor_durability": 117,
+            "enchantment_value": 11.6,
+            "rarity": 40,
+            "charging_value": 1.36,
+            "harvest_speed": 27,
+            "melee_damage": 17,
+            "magic_damage": 5,
+            "ranged_damage": 7,
+            "attack_speed": 0,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 63,
+            "armor_toughness": 24,
+            "magic_armor": 21,
+            "armor/helmet": 9,
+            "armor/chestplate": 21,
+            "armor/leggings": 18,
+            "armor/boots": 13
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:sturdy",
+                "level": 2
+            },
+            {
+                "name": "kubejs:warded",
+                "level": 4
+            }
+        ]
+    },
+    "model": {
+        "main/all": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#D4B483"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ],
+        "main/fragment": [
+            {
+                "texture": "silentgear:metal",
+                "color": "#D4B483"
+            }
+        ],
+        "main/armor": [
+            {
+                "texture": "silentgear:main_generic_hc",
+                "color": "#D4B483"
+            },
+            {
+                "texture": "silentgear:_highlight"
+            }
+        ]
+    }
+}

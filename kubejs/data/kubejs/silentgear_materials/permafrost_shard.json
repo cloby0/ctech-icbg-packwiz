@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 7,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:permafrost_shard" }
+    },
+    "name": { "text": "Permafrost Shard" },
+    "stats": {
+        "coating": {
+            "melee_damage": { "mul2": 1.1 },
+            "magic_damage": { "mul2": 1.1 },
+            "attack_speed": { "add": -0.3 },
+            "armor/helmet": { "add": 1 },
+            "armor/chestplate": { "add": 3 },
+            "armor/leggings": { "add": 2 },
+            "armor/boots": { "add": 1 },
+            "armor_toughness": { "add": 3 },
+            "enchantment_value": { "add": 6.0 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "silentgear:moonwalker", "level": 1 },
+            { "name": "kubejs:ice_attunement", "level": 4 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#3AA0D9" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#3AA0D9" },
+            { "texture": "silentgear:coating_jar" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:dust", "color": "#3AA0D9" }
+        ]
+    }
+}
