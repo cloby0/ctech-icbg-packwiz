@@ -30,11 +30,15 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // soul_gem is renewable via occultism.js's mob-capture ritual loop -- recurring here in
+    // the true Gaia Spirit Ingot line (not the Wilden alt-line above, which already uses
+    // iesnium_ingot as a one-off raw-material cost). Matches the boss-adjacent flavor of the
+    // blood/holy/void/annihilation "core" reagents below.
     addImbuementRecipe(event, {
         input: 'kubejs:vengeful_gaia_spirit',
         output: 'kubejs:soul_of_gaia',
         source: Source.SAGE,
-        pedestalItems: ['mysticalagriculture:wither_skeleton_essence', 'mysticalagriculture:wither_skeleton_essence', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence']
+        pedestalItems: ['mysticalagriculture:wither_skeleton_essence', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence', 'occultism:soul_gem']
     })
 
     addEnchantingRecipe(event, {
