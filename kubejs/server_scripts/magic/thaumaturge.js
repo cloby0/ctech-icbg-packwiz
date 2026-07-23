@@ -35,6 +35,10 @@ ServerEvents.recipes(event => {
         sourceCost: 2 * Source.THAUMATURGE
     })
 
+    // storage_stabilizer_tier4 is a Marid-only ritual craft (occultism.js), already buildable
+    // once Marid is summoned at Sorcerer -- a one-time infrastructure check here, not a
+    // recurring cost: your dimensional storage network must be complete before Terrasteel
+    // stabilizes.
     event.remove({ id: "botania:terra_plate/terrasteel_ingot" })
     addTerraPlateRecipe(event, {
         result: { item: 'botania:terrasteel_ingot' },
@@ -42,7 +46,8 @@ ServerEvents.recipes(event => {
         ingredients: [
             { item: 'kubejs:living_metalloid' },
             { item: 'botania:mana_pearl' },
-            { item: 'botania:mana_diamond' }
+            { item: 'botania:mana_diamond' },
+            { item: 'occultism:storage_stabilizer_tier4' }
         ]
     })
 
