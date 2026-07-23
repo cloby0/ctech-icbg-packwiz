@@ -188,6 +188,8 @@ ServerEvents.recipes(event => {
     });
 
     // Four elements combine into a no-steel Nether igniter (magic path; vanilla flint_and_steel untouched)
+    // Also the exact item occultism.js's Foliot summon ritual consumes as its gate item --
+    // otherworld_essence here makes that gate ingredient itself carry an Occultism cost.
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
@@ -199,7 +201,7 @@ ServerEvents.recipes(event => {
             { "item": "ars_nouveau:air_essence" },
             { "item": "minecraft:blaze_powder" },
             { "item": "minecraft:coal" },
-            { "item": "minecraft:coal" }
+            { "item": "occultism:otherworld_essence" }
         ],
         "output": { "item": "minecraft:fire_charge", "count": 4 },
         "liquidOutput": { "fluid": "minecraft:lava" },
