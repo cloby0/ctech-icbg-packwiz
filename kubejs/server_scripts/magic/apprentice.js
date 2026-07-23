@@ -120,11 +120,14 @@ ServerEvents.recipes(event => {
 
     event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
 
+    // small_luminessence_dust feeds into luminessence_dust, the exact item occultism.js's
+    // Djinni summon ritual consumes as its gate -- otherworld_essence here gives that gate
+    // item an ongoing Occultism cost.
     addImbuementRecipe(event, {
         input: 'minecraft:glowstone',
         output: 'gtceu:small_luminessence_dust',
         source: 5 * Source.APPRENTICE,
-        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
+        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences', 'occultism:otherworld_essence']
     })
 
     addImbuementRecipe(event, {
