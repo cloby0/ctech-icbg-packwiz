@@ -6852,11 +6852,6 @@ hash = "346314904e0a035d68514e7d9e332d4a63e288abc7fd7bdfaf6d655c511a5916"
 metafile = true
 
 [[files]]
-file = "mods/recruits-tacz.pw.toml"
-hash = "7609627bb5d7b81179cd61eaa3a1f0059cf07b7b9c65465c5b617e242d5d93e0"
-metafile = true
-
-[[files]]
 file = "mods/redirected.pw.toml"
 hash = "401fc0a78334b2e05b04d51309afb3b84f6820eea12058b34c8a4a89eaa43fb7"
 metafile = true
