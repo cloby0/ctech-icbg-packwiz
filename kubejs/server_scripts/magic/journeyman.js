@@ -189,11 +189,13 @@ ServerEvents.recipes(event => {
         pedestalItems: ['kubejs:magebloom_sieve']
     });
 
+    // spirit_attuned_crystal already used once in this file (resonant_zanite_crystal below)
+    // -- a second use here puts it in the core Source Gem chain itself, not just a side recipe.
     addImbuementRecipe(event, {
         input: 'kubejs:pure_source_gem_dust',
         output: 'kubejs:rough_source_gem',
         source: 3 * Source.JOURNEYMAN,
-        pedestalItems: ['#kubejs:fire_essences']
+        pedestalItems: ['#kubejs:fire_essences', 'occultism:spirit_attuned_crystal']
     });
 
     event.custom(
