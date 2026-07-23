@@ -1846,11 +1846,11 @@ hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
 
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/edition.png"
-hash = "058d8956c9e84811e1de5cf372d97b191886c5ece29af98e27fa163c4245c6ae"
+hash = "6719555d17993fa2a60fe5bcd57ace268fa3ac03c55edbf4396d954d3391fc0f"
 
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/minecraft.png"
-hash = "bfd5499ac235e8a204cb6d68f22c64c634daebfafb6a2d2399f578b80cf6c84c"
+hash = "a50b3e1690feeefc306ad109131c7e20df609d114feb07875b1b322bba8acc0e"
 
 [[files]]
 file = "kubejs/assets/mysticalagradditions/lang/en_us.json"
