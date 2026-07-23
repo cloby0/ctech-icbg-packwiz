@@ -31,11 +31,13 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // otherworld_essence recurring here, same renewable-resource logic as the Alchemist
+    // manasteel chain -- no spirit-tier ceiling, works as an ongoing Occultism tax.
     addImbuementRecipe(event, {
         input: 'kubejs:elven_concentrate',
         output: 'kubejs:elementite_dust',
         source: Source.ARCANIST,
-        pedestalItems: ['#kubejs:water_essences', '#kubejs:air_essences', 'gtceu:luminessence_dust']
+        pedestalItems: ['#kubejs:water_essences', '#kubejs:air_essences', 'gtceu:luminessence_dust', 'occultism:otherworld_essence']
     })
 
     addEnchantingRecipe(event, {
