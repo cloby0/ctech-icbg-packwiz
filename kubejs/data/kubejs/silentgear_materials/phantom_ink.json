@@ -1,0 +1,38 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 6,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "botania:phantom_ink" }
+    },
+    "name": { "text": "Phantom Ink" },
+    "stats": {
+        "coating": {
+            "durability": { "mul2": 0.05 },
+            "armor_durability": { "mul2": 0.05 },
+            "rarity": { "add": 16 },
+            "enchantment_value": { "add": 0.2 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "kubejs:inked", "level": 2 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#8FA8C9" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#8FA8C9" },
+            { "texture": "silentgear:coating_jar" }
+        ]
+    }
+}

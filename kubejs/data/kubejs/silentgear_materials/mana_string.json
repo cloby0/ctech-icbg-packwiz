@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 4,
+        "categories": ["organic"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "rod": { "item": "botania:mana_string" }
+    },
+    "name": { "text": "Mana String" },
+    "stats": {
+        "rod": {
+            "durability": { "mul2": 0.07 },
+            "harvest_speed": { "mul2": 0.04 },
+            "ranged_damage": { "mul2": 0.08 }
+        }
+    },
+    "traits": {
+        "rod": [
+            { "name": "silentgear:flexible", "level": 1 },
+            { "name": "kubejs:slipstream_channeling", "level": 1 }
+        ]
+    },
+    "model": {
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#C41E3A" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#C41E3A" }
+        ]
+    }
+}

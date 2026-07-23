@@ -1,0 +1,56 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 12,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": { "item": "botania:life_essence" }
+    },
+    "name": { "text": "Life Essence" },
+    "stats": {
+        "tip": {
+            "durability": { "add": 1900 },
+            "armor_durability": { "add": 32 },
+            "harvest_speed": { "add": 17 },
+            "melee_damage": { "add": 14 },
+            "rarity": { "add": 46 }
+        },
+        "coating": {
+            "durability": { "mul2": 0.09 },
+            "armor_durability": { "mul2": 0.09 },
+            "armor_toughness": { "add": 0.6 },
+            "enchantment_value": { "add": 0.5 }
+        }
+    },
+    "traits": {
+        "tip": [
+            { "name": "kubejs:holy_attunement", "level": 5 }
+        ],
+        "coating": [
+            { "name": "kubejs:holy_attunement", "level": 5 }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#FF3D7F" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#FF3D7F" },
+            { "texture": "silentgear:tip_shine" }
+        ],
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#FF3D7F" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#FF3D7F" },
+            { "texture": "silentgear:coating_jar" }
+        ]
+    }
+}

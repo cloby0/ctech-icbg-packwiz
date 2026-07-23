@@ -1,0 +1,57 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 6,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": { "item": "botania:mana_diamond" }
+    },
+    "name": { "text": "Mana Diamond" },
+    "stats": {
+        "tip": {
+            "durability": { "add": 280 },
+            "armor_durability": { "add": 9 },
+            "harvest_speed": { "add": 4 },
+            "magic_damage": { "add": 4 },
+            "rarity": { "add": 21 }
+        },
+        "coating": {
+            "durability": { "mul2": 0.10 },
+            "armor_durability": { "mul2": 0.10 },
+            "magic_damage": { "mul2": 0.10 },
+            "armor_toughness": { "add": 0.2 },
+            "enchantment_value": { "add": 0.3 }
+        }
+    },
+    "traits": {
+        "tip": [
+            { "name": "kubejs:arcane_reservoir", "level": 2 }
+        ],
+        "coating": [
+            { "name": "kubejs:arcane_reservoir", "level": 2 }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#A8D8FF" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#A8D8FF" },
+            { "texture": "silentgear:tip_shine" }
+        ],
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#A8D8FF" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#A8D8FF" },
+            { "texture": "silentgear:coating_jar" }
+        ]
+    }
+}

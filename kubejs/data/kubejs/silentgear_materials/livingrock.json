@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:stone",
+    "availability": {
+        "tier": 5,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "botania:livingrock" }
+    },
+    "name": { "text": "Livingrock" },
+    "stats": {
+        "main": {
+            "durability": 1421, "armor_durability": 24, "enchantment_value": 3.88,
+            "rarity": 17, "charging_value": 0.77, "harvest_speed": 6,
+            "melee_damage": 4, "magic_damage": 1, "ranged_damage": 2,
+            "armor": 14, "armor_toughness": 5, "magic_armor": 5,
+            "attack_speed": 0, "ranged_speed": 0,
+            "projectile_speed": 1, "projectile_accuracy": 1,
+            "armor/helmet": 2, "armor/chestplate": 6, "armor/leggings": 4, "armor/boots": 2
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:sturdy", "level": 1 },
+            { "name": "kubejs:nature_attunement", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C9A8A0" },
+            { "texture": "silentgear:_highlight", "color": "#C9A8A0" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C9A8A0" },
+            { "texture": "silentgear:_highlight", "color": "#C9A8A0" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#C9A8A0" }
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 8,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "tip": { "item": "botania:pixie_dust" }
+    },
+    "name": { "text": "Pixie Dust" },
+    "stats": {
+        "tip": {
+            "durability": { "add": 400 },
+            "armor_durability": { "add": 13 },
+            "harvest_speed": { "add": 5 },
+            "melee_damage": { "add": 3 },
+            "rarity": { "add": 28 }
+        },
+        "coating": {
+            "durability": { "mul2": 0.06 },
+            "armor_durability": { "mul2": 0.06 },
+            "rarity": { "add": 18 }
+        }
+    },
+    "traits": {
+        "tip": [
+            { "name": "silentgear:lucky", "level": 2 }
+        ],
+        "coating": [
+            { "name": "silentgear:lucky", "level": 2 }
+        ]
+    },
+    "model": {
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#FFD966" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#FFD966" },
+            { "texture": "silentgear:tip_shine" }
+        ],
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#FFD966" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#FFD966" },
+            { "texture": "silentgear:coating_jar" }
+        ]
+    }
+}

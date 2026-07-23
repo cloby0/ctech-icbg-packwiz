@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 7,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "botania:mana_pearl" },
+        "tip": { "item": "botania:mana_pearl" }
+    },
+    "name": { "text": "Mana Pearl" },
+    "stats": {
+        "main": {
+            "durability": 2084, "armor_durability": 35, "enchantment_value": 6.0,
+            "rarity": 23, "charging_value": 1.0, "harvest_speed": 11,
+            "melee_damage": 6, "magic_damage": 2, "ranged_damage": 3,
+            "armor": 21, "armor_toughness": 8, "magic_armor": 7,
+            "attack_speed": 0, "ranged_speed": 0,
+            "projectile_speed": 2, "projectile_accuracy": 1,
+            "armor/helmet": 3, "armor/chestplate": 8, "armor/leggings": 6, "armor/boots": 3
+        },
+        "tip": {
+            "durability": { "add": 380 },
+            "armor_durability": { "add": 6 },
+            "ranged_damage": { "add": 3 },
+            "rarity": { "add": 12 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "kubejs:ender_attunement", "level": 2 }
+        ],
+        "tip": [
+            { "name": "kubejs:ender_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C9E8FF" },
+            { "texture": "silentgear:_highlight", "color": "#C9E8FF" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#C9E8FF" },
+            { "texture": "silentgear:_highlight", "color": "#C9E8FF" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#C9E8FF" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#C9E8FF" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

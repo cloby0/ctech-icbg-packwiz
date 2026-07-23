@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:stone",
+    "availability": {
+        "tier": 6,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "botania:red_quartz" },
+        "tip": { "item": "botania:red_quartz" }
+    },
+    "name": { "text": "Red Quartz" },
+    "stats": {
+        "main": {
+            "durability": 1599, "armor_durability": 27, "enchantment_value": 5.0,
+            "rarity": 20, "charging_value": 0.91, "harvest_speed": 9,
+            "melee_damage": 5, "magic_damage": 2, "ranged_damage": 2,
+            "armor": 16, "armor_toughness": 6, "magic_armor": 5,
+            "attack_speed": 0, "ranged_speed": 0,
+            "projectile_speed": 1, "projectile_accuracy": 1,
+            "armor/helmet": 2, "armor/chestplate": 6, "armor/leggings": 5, "armor/boots": 2
+        },
+        "tip": {
+            "durability": { "add": 320 },
+            "armor_durability": { "add": 5 },
+            "harvest_speed": { "add": 2 },
+            "magic_damage": { "add": 2 },
+            "rarity": { "add": 10 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "kubejs:blood_attunement", "level": 2 }
+        ],
+        "tip": [
+            { "name": "kubejs:blood_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#D32F2F" },
+            { "texture": "silentgear:_highlight", "color": "#D32F2F" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#D32F2F" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#D32F2F" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#D32F2F" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

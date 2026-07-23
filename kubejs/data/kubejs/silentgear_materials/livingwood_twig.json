@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 3,
+        "categories": ["organic"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "rod": { "item": "botania:livingwood_twig" }
+    },
+    "name": { "text": "Livingwood Twig" },
+    "stats": {
+        "rod": {
+            "durability": { "mul2": 0.06 },
+            "harvest_speed": { "mul2": 0.05 },
+            "melee_damage": { "mul2": 0.03 }
+        }
+    },
+    "traits": {
+        "rod": [
+            { "name": "silentgear:flexible", "level": 1 },
+            { "name": "kubejs:nature_attunement", "level": 1 }
+        ]
+    },
+    "model": {
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#8B6F47" }
+        ],
+        "rod/part": [
+            { "texture": "silentgear:rod", "color": "#8B6F47" }
+        ]
+    }
+}

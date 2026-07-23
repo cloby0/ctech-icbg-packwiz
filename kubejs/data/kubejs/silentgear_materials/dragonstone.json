@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 13,
+        "categories": ["gem"],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "botania:dragonstone" }
+    },
+    "name": { "text": "Dragonstone" },
+    "stats": {
+        "main": {
+            "durability": 8697, "armor_durability": 146, "enchantment_value": 19.17,
+            "rarity": 53, "charging_value": 1.89, "harvest_speed": 54,
+            "melee_damage": 40, "magic_damage": 8, "ranged_damage": 14,
+            "armor": 85, "armor_toughness": 32, "magic_armor": 31,
+            "attack_speed": 1, "attack_speed/axe": 1, "ranged_speed": 0,
+            "projectile_speed": 1, "projectile_accuracy": 1,
+            "armor/helmet": 13, "armor/chestplate": 34, "armor/leggings": 26, "armor/boots": 13
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:light", "level": 1 },
+            { "name": "kubejs:celestial_attunement", "level": 5 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#4A2B5C" },
+            { "texture": "silentgear:_highlight", "color": "#4A2B5C" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#4A2B5C" },
+            { "texture": "silentgear:_highlight", "color": "#4A2B5C" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#4A2B5C" }
+        ]
+    }
+}
