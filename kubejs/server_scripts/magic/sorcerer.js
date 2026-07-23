@@ -94,11 +94,13 @@ ServerEvents.recipes(event => {
         sourceCost: 3 * Source.SORCERER
     })
 
+    // afrit_essence already used once in this file (resonant_gravitite_core above) -- a
+    // second use here puts it in the Prima Materia recipe itself, this tier's signature material.
     addImbuementRecipe(event, {
         input: 'kubejs:chaos_essence',
         output: 'gtceu:prima_materia_ingot',
         source: 3 * Source.SORCERER,
-        pedestalItems: ['kubejs:element_attunement_stone']
+        pedestalItems: ['kubejs:element_attunement_stone', 'occultism:afrit_essence']
     })
 
     addEnchantingRecipe(event, {
