@@ -6857,11 +6857,6 @@ hash = "7609627bb5d7b81179cd61eaa3a1f0059cf07b7b9c65465c5b617e242d5d93e0"
 metafile = true
 
 [[files]]
-file = "mods/recruits.pw.toml"
-hash = "67d1d671f8246b013531c0991e2c3a97453667533252642c9daa55dda5a166d6"
-metafile = true
-
-[[files]]
 file = "mods/redirected.pw.toml"
 hash = "401fc0a78334b2e05b04d51309afb3b84f6820eea12058b34c8a4a89eaa43fb7"
 metafile = true
@@ -7148,11 +7143,6 @@ metafile = true
 [[files]]
 file = "mods/woot-revived.pw.toml"
 hash = "4b70eb25ec673d9f6af6c88b80b887e112d7b1a26974c656e4b12cdaa25222f6"
-metafile = true
-
-[[files]]
-file = "mods/workers.pw.toml"
-hash = "8b39a5f607e8c740dbe9da597ac5be0ad637dd71f1b68a2116a1ccfdfa2d204c"
 metafile = true
 
 [[files]]
