@@ -33,6 +33,25 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:iron_rod' });
     event.remove({ id: 'silentgear:iron_rod' });
     event.remove({ id: 'superbwarfare:tungsten_ingot_blasting_from_powder' });
+    // furnace/blast furnace bypasses for OEI-aliased ingots (lead/silver/steel/tungsten/cemented_carbide) - skip GT processing entirely
+    event.remove({ id: 'superbwarfare:tungsten_ingot_blasting' });
+    event.remove({ id: 'superbwarfare:tungsten_ingot_blasting_from_ore' });
+    event.remove({ id: 'superbwarfare:lead_ingot_blasting' });
+    event.remove({ id: 'superbwarfare:lead_ingot_smelting' });
+    event.remove({ id: 'superbwarfare:lead_ingot_smelting_from_ore' });
+    event.remove({ id: 'superbwarfare:compat/optional/lead_ingot_blasting_from_powder' });
+    event.remove({ id: 'superbwarfare:compat/optional/lead_ingot_smelting_from_powder' });
+    event.remove({ id: 'superbwarfare:compat/create/blasting/crushed_raw_lead_blasting' });
+    event.remove({ id: 'superbwarfare:silver_ingot_blasting' });
+    event.remove({ id: 'superbwarfare:silver_ingot_blasting_from_ore' });
+    event.remove({ id: 'superbwarfare:silver_ingot_smelting' });
+    event.remove({ id: 'superbwarfare:silver_ingot_smelting_from_ore' });
+    event.remove({ id: 'superbwarfare:compat/optional/silver_ingot_blasting_from_powder' });
+    event.remove({ id: 'superbwarfare:compat/optional/silver_ingot_smelting_from_powder' });
+    event.remove({ id: 'superbwarfare:compat/create/blasting/crushed_raw_silver_blasting' });
+    event.remove({ id: 'superbwarfare:steel_ingot_blasting' });
+    event.remove({ id: 'superbwarfare:cemented_carbide_ingot_blasting' });
+    event.remove({ id: 'superbwarfare:iron_ingot_blasting_from_ore' }); // mislabeled, actually outputs lead_ingot from galena_ore
     event.remove({ id: 'ancient_aether:enchanting_table_from_gravitite'})
     event.remove({ id: 'deep_aether:crystal_brewing_stand'})
         

@@ -15,7 +15,7 @@
     },
     "name": { "text": "Energized Core" },
     "stats": {
-        "coating": {
+        "adornment": {
             "melee_damage": { "mul2": 1.1 },
             "ranged_damage": { "mul2": 1.1 },
             "attack_speed": { "add": 0.3 },
@@ -28,19 +28,19 @@
         }
     },
     "traits": {
-        "coating": [
+        "adornment": [
             { "name": "silentgear:brilliant", "level": 1 },
             { "name": "kubejs:lightning_attunement", "level": 2 }
         ]
     },
     "model": {
-        "coating/all": [
-            { "texture": "silentgear:main_generic_hc", "color": "#FFE45C" },
-            { "texture": "silentgear:_highlight" }
+        "adornment/all": [
+            { "texture": "silentgear:adornment_generic", "color": "#FFE45C" },
+            { "texture": "silentgear:adornment_highlight", "color": "#FFE45C" }
         ],
-        "coating/part": [
-            { "texture": "silentgear:coating_material", "color": "#FFE45C" },
-            { "texture": "silentgear:coating_jar" }
+        "adornment/part": [
+            { "texture": "silentgear:adornment", "color": "#FFE45C" },
+            { "texture": "silentgear:adornment_highlight" }
         ],
         "main/fragment": [
             { "texture": "silentgear:dust", "color": "#FFE45C" }

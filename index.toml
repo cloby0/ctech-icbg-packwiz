@@ -321,6 +321,10 @@ file = "config/oeb/superbwarfare_ore_removal.json"
 hash = "2352d6229a4655e7a12949818c5ce7e5ecf9c615c0839dcd301ff692948fac9c"
 
 [[files]]
+file = "config/packmenu.cfg"
+hash = "1dff32a219cb28f622e712536e02cb0a9e6087ce2851d332cd6da5ecf5784bd3"
+
+[[files]]
 file = "config/quark-common.toml"
 hash = "6ecf44936b58ff549cdb127d8c4014740c033241f01314dbed787dbeca0e6c02"
 
@@ -1246,7 +1250,7 @@ hash = "bd809092e358de70c8e4f68c97c1cfeb250cc5bdad45822a8e04a49220be2be8"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/element_attunement_stone.png"
-hash = "eaed50f29e4b30ac30bbf87f5cf3783c0b897a277144ff1fe44aa033d612d12a"
+hash = "d229ca3627ea5b2aa4f048654cf89d23bbab4031356e0c0a37379fe70635cccb"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/elemental_convergence_matrix.png"
@@ -2802,7 +2806,7 @@ hash = "83d57378aefa80a92fee0022728313375078689d1a9675a1a70e2963c7fcd369"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/energized_core.json"
-hash = "0fe2f2492db38d8b0a829c45569c57f7bf30f2d2949b762c995f13ad0ddb65af"
+hash = "bbaafc6c985648e8515f68d62507606789a3caaa2355d53c9a77fcc9ef8f9ce2"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/enriched_naquadah_ingot.json"
@@ -5386,7 +5390,7 @@ hash = "f65ea943d50d7f9b8e1dfd8beb6e83c6235d6344a6910ef547f6d34bf4bddae6"
 
 [[files]]
 file = "kubejs/server_scripts/tech/nerfUnnerf.js"
-hash = "a89bc391d7ea7eb2200f2509e0692602973f0e7b05f05f4d2b9590af39adfec3"
+hash = "4f7b094532bf64917da60aace7d5ed56c5e77169b7aa1904fec204ccb764eeb9"
 
 [[files]]
 file = "kubejs/server_scripts/tech/paper.js"
@@ -6402,7 +6406,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
-hash = "aa4a662553757b0b48112f237ed765a6e0917281b43ca9f5a60840d4c52a0216"
+hash = "72cb7734e67c6a59e4ede08b23033bdf45c67ec73c62c57e49e09821289d9439"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
@@ -7174,6 +7178,11 @@ hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
 metafile = true
 
 [[files]]
+file = "mods/spartan-weaponry.pw.toml"
+hash = "74ea4dfd995e75e83d0e0ffc80ffa97c80f56563e1affaf65837c916f38407fa"
+metafile = true
+
+[[files]]
 file = "mods/spells-gone-wrong.pw.toml"
 hash = "5838f3888353bd92a8afdafd31347c48b4357e89232068e86d399a8ccd6917ef"
 metafile = true
@@ -7231,6 +7240,11 @@ metafile = true
 [[files]]
 file = "mods/tacz-x-gunslightsaddon-addon.pw.toml"
 hash = "dec8b70e5df37440fc78ba0723ffd8a4f3a1791f17433ea403e36cbfc0bceb89"
+metafile = true
+
+[[files]]
+file = "mods/tax-free-levels.pw.toml"
+hash = "1dc27b5ead0c955a5a7c11cffc00876a2cb75f15d13778ef6b51f0cf3b213e68"
 metafile = true
 
 [[files]]
