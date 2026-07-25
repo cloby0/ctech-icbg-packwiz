@@ -1,841 +1,1233 @@
 ServerEvents.recipes(event => {
 
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_1"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'create:iron_sheet', B: 'gtceu:steel_bolt', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_2"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', B: 'gtceu:aluminium_bolt', R: 'gtceu:aluminium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_3"}'),
-        ['PBP', 'BCB', 'PBP'],
-        { P: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt', C: '#gtceu:circuits/lv' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_1"}'),
-        ['P P', 'PRP', 'P P'],
-        { P: 'gtceu:aluminium_plate', R: 'gtceu:aluminium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_2"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt', R: 'gtceu:aluminium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_3"}'),
-        ['PBP', 'BCB', 'PBP'],
-        { P: 'gtceu:titanium_plate', B: 'gtceu:aluminium_bolt', C: 'gtceu:aluminium_ring' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_1"}'),
-        ['PRP', 'RRR', 'PRP'],
-        { P: 'create:iron_sheet', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_2"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'gtceu:steel_plate', B: 'gtceu:steel_bolt', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_3"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', B: 'gtceu:steel_bolt', R: 'gtceu:stainless_steel_ring' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_1"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'create:iron_sheet', B: 'gtceu:brass_bolt', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_2"}'),
-        ['PBP', 'BRB', 'PBP'],
-        { P: 'gtceu:aluminium_plate', B: 'gtceu:stainless_steel_bolt', R: 'gtceu:aluminium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_3"}'),
-        ['PBP', 'BCB', 'PBP'],
-        { P: 'gtceu:titanium_plate', B: 'gtceu:titanium_bolt', C: '#gtceu:circuits/mv' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cobra"}'),
-        ['RPR', 'PBP', 'RPR'],
-        { R: 'gtceu:rubber_plate', P: 'gtceu:steel_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_td"}'),
-        [' P ', 'PBP', ' P '],
-        { P: 'gtceu:steel_rod', B: 'gtceu:rubber_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk0"}'),
-        ['SRS', 'RBR', 'SRS'],
-        { S: 'gtceu:steel_plate', R: 'gtceu:rubber_plate', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk6"}'),
-        ['ARA', 'RBR', 'ARA'],
-        { A: 'gtceu:aluminium_plate', R: 'gtceu:rubber_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk1_b25u"}'),
-        ['ARA', 'RBR', 'ARA'],
-        { A: 'gtceu:aluminium_rod', R: 'gtceu:rubber_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_se_5"}'),
-        ['RAR', 'ABA', 'RAR'],
-        { R: 'gtceu:rubber_plate', A: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_magpul_afg_2"}'),
-        ['PAP', 'AAA', 'P P'],
-        { P: 'gtceu:silicone_rubber_plate', A: 'gtceu:aluminium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_osovets_black"}'),
-        ['RSR', 'SBS', 'RSR'],
-        { R: 'gtceu:silicone_rubber_plate', S: 'gtceu:stainless_steel_plate', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_military"}'),
-        [' A ', 'ARA', ' A '],
-        { A: 'gtceu:aluminium_plate', R: 'gtceu:rubber_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_ranger"}'),
-        ['RAR', 'ARA', 'RAR'],
-        { R: 'gtceu:rubber_plate', A: 'gtceu:aluminium_rod' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_talon"}'),
-        [' S ', 'SBS', ' S '],
-        { S: 'gtceu:stainless_steel_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cqr"}'),
-        ['P P', 'PBP', 'P P'],
-        { P: 'gtceu:aluminium_plate', B: 'gtceu:rubber_plate' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_ak12"}'),
-        ['WRW', 'RBR', 'WRW'],
-        { W: 'gtceu:treated_wood_plate', R: 'gtceu:steel_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_moe"}'),
-        ['W W', 'WRW', 'W W'],
-        { W: 'gtceu:treated_wood_plate', R: 'gtceu:steel_rod' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_sba3"}'),
-        ['WAW', 'ABA', 'WAW'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_rod', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_m4ss"}'),
-        ['W W', 'WAW', 'WBW'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_rod', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_ripstock"}'),
-        ['AWA', 'WBW', 'AWA'],
-        { A: 'gtceu:aluminium_rod', W: 'gtceu:treated_wood_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_hk_slim_line"}'),
-        ['WAW', 'ABA', 'WAW'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_militech_b5"}'),
-        ['SAS', 'ABA', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_rod', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_carbon_bone_c5"}'),
-        ['SWS', 'WBW', 'SWS'],
-        { S: 'gtceu:stainless_steel_plate', W: 'gtceu:treated_wood_plate', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_heavy_spas_12"}'),
-        ['SWS', 'WAW', 'SWS'],
-        { S: 'gtceu:stainless_steel_plate', W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_rod' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_tactical_spas_12"}'),
-        ['SAS', 'ABA', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_tactical_ar"}'),
-        ['SAS', 'ACA', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_light"}'),
-        ['AAA', 'AWA', 'AAA'],
-        { A: 'gtceu:aluminium_plate', W: 'gtceu:treated_wood_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_heavy"}'),
-        ['SAA', 'AWA', 'AAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate', W: 'gtceu:treated_wood_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_tactical"}'),
-        ['SAS', 'AWA', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate', W: 'gtceu:treated_wood_plate' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:bayonet_6h3"}'),
-        [' R ', 'PRP', ' B '],
-        { P: 'create:iron_sheet', R: 'gtceu:aluminium_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:bayonet_m9"}'),
-        ['PAP', 'RAR', 'RBR'],
-        { P: 'gtceu:aluminium_plate', A: 'gtceu:aluminium_rod', R: 'gtceu:rubber_plate', B: 'gtceu:steel_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:deagle_golden_long_barrel"}'),
-        ['GHG', 'GHG', 'G G'],
-        { G: 'create:golden_sheet', H: 'gtceu:steel_small_fluid_pipe' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_pioneer"}'),
-        ['PHP', ' P ', 'PHP'],
-        { P: 'gtceu:steel_plate', H: 'gtceu:steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_trex"}'),
-        ['PHP', 'PBP', 'PHP'],
-        { P: 'gtceu:steel_plate', H: 'gtceu:steel_small_fluid_pipe', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_cthulhu"}'),
-        ['PHP', ' P ', 'PHP'],
-        { P: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_cyclone_d2"}'),
-        ['PHP', 'PBP', 'PHP'],
-        { P: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_mastiff_sg"}'),
-        ['PHP', 'PRP', 'PHP'],
-        { P: 'gtceu:steel_plate', H: 'gtceu:steel_small_fluid_pipe', R: 'gtceu:rubber_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_timeless50"}'),
-        ['PHP', 'PAP', 'PHP'],
-        { P: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_choke_sg"}'),
-        [' H ', 'PHP', ' H '],
-        { P: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_compensator_trident"}'),
-        ['HAH', 'PAP', 'HAH'],
-        { H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_plate' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_knight_qd"}'),
-        ['UHU', 'U U', 'PBP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_mirage"}'),
-        ['UHU', 'U U', 'PBP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_phantom_s1"}'),
-        ['UHU', 'U U', 'PBP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_ptilopsis"}'),
-        ['UHU', 'U U', 'PBP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_ursus"}'),
-        ['UHU', 'UHU', 'PBP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_vulture"}'),
-        ['UHU', 'UHU', 'PAP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:aluminium_plate', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_wraith"}'),
-        ['UHU', 'UHU', 'PAP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_sg"}'),
-        ['UHU', 'PHU', 'PHP'],
-        { U: 'gtceu:silicone_rubber_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', P: 'gtceu:stainless_steel_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_duckbill_sg"}'),
-        ['P P', 'BPB', 'P P'],
-        { P: 'gtceu:stainless_steel_plate', B: 'gtceu:steel_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_98k"}'),
-        ['PGP', 'PCR', 'PBP'],
-        { P: 'gtceu:steel_plate', G: 'gtceu:glass_plate', C: 'gtceu:copper_rod', R: 'gtceu:steel_ring', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_retro_2x"}'),
-        ['PGP', 'PRG', 'PBP'],
-        { P: 'create:iron_sheet', G: 'gtceu:glass_plate', R: 'gtceu:copper_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_contender"}'),
-        ['PGP', 'GCG', 'PBP'],
-        { P: 'gtceu:steel_plate', G: 'gtceu:glass_plate', C: 'gtceu:copper_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_qmk152"}'),
-        ['PGP', 'PCP', 'PBP'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_acog_ta31"}'),
-        ['PGP', 'GCG', 'PBP'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_aug_default"}'),
-        ['PGP', 'GCG', 'GBG'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_1873_6x"}'),
-        ['PGG', 'PCP', 'PBP'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_elcan_4x"}'),
-        ['GGG', 'PCP', 'PBP'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_hamr"}'),
-        ['PPG', 'PCG', 'PPG'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_lpvo_1_6"}'),
-        ['PGP', 'PCP', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_mk5hd"}'),
-        ['PGP', 'GCG', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_standard_8x"}'),
-        ['GGG', 'PCP', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_vudu"}'),
-        ['PGG', 'PCG', 'PBP'],
-        { P: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_rmr_dot"}'),
-        [' G ', 'PRP', ' B '],
-        { G: 'gtceu:glass_plate', P: 'gtceu:aluminium_plate', R: 'gtceu:red_alloy_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_sro_dot"}'),
-        ['PGP', 'PRP', 'PBP'],
-        { P: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', R: 'gtceu:red_alloy_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_okp7"}'),
-        [' G ', 'PRP', 'PBP'],
-        { G: 'gtceu:glass_plate', P: 'gtceu:aluminium_plate', R: 'gtceu:red_alloy_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_pistol"}'),
-        [' G ', 'ACA', ' B '],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_rifle"}'),
-        ['AGA', 'ACA', ' B '],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_t1"}'),
-        ['AGA', 'ACA', 'ABA'],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_t2"}'),
-        ['AGA', 'CAC', 'ABA'],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_acro_pistol"}'),
-        ['AGA', 'GCG', ' B '],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_acro_rifle"}'),
-        ['AGA', 'GCG', 'ABA'],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_deltapoint_pistol"}'),
-        ['GAG', 'ACA', ' B '],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_deltapoint_rifle"}'),
-        ['GAG', 'ACA', 'GAG'],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_fastfire_pistol"}'),
-        ['GAG', 'CAC', ' B '],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_fastfire_rifle"}'),
-        ['GAG', 'CAC', 'GAG'],
-        { G: 'gtceu:glass_plate', A: 'gtceu:aluminium_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_552"}'),
-        ['SAS', 'GCG', 'SBS'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', A: 'gtceu:aluminium_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_coyote"}'),
-        ['SAS', 'GCG', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', A: 'gtceu:aluminium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_exp3"}'),
-        ['SGS', 'GCG', 'SBS'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_p90"}'),
-        ['GSG', 'GCG', 'GSG'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_uh1"}'),
-        ['SGS', 'GCG', 'GSG'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_srs_02"}'),
-        ['SAS', 'GCG', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', A: 'gtceu:aluminium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_compact"}'),
-        [' C ', 'PRP', ' B '],
-        { P: 'create:iron_sheet', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/lv', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_lopro"}'),
-        ['PCP', 'PRP', ' B '],
-        { P: 'create:iron_sheet', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/lv', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_nightstick"}'),
-        ['PCP', 'PRP', 'PBP'],
-        { P: 'gtceu:aluminium_plate', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_peq6"}'),
-        ['ACA', 'ARA', 'ABA'],
-        { A: 'gtceu:aluminium_plate', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_peq15"}'),
-        ['SCS', 'SRS', 'SBS'],
-        { S: 'gtceu:stainless_steel_plate', R: 'gtceu:red_alloy_plate', C: '#gtceu:circuits/mv', B: 'gtceu:aluminium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_fmj"}'),
-        ['SLS', 'LBL', 'SLS'],
-        { S: 'create:iron_sheet', L: 'gtceu:lead_ingot', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_hp"}'),
-        ['LRL', 'RBR', 'LRL'],
-        { L: 'gtceu:lead_ingot', R: 'gtceu:steel_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_he"}'),
-        ['TET', 'EBE', 'TET'],
-        { T: 'minecraft:tnt', E: 'gtceu:electrum_plate', B: 'minecraft:blaze_powder' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_i"}'),
-        ['CMC', 'MBM', 'CMC'],
-        { C: 'create:copper_sheet', M: 'gtceu:magnesium_dust', B: 'minecraft:blaze_powder' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_slug"}'),
-        ['LRL', 'RBR', 'LRL'],
-        { L: 'gtceu:lead_ingot', R: 'gtceu:steel_rod', B: 'gtceu:brass_bolt' })
-
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_1"}'),
-        ['IAI', 'ARA', 'IAI'],
-        { I: 'create:iron_sheet', A: 'create:andesite_alloy', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_2"}'),
-        ['CBC', 'BRB', 'CBC'],
-        { C: 'create:copper_sheet', B: 'gtceu:brass_bolt', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_3"}'),
-        ['GBG', 'BCB', 'GBG'],
-        { G: 'create:golden_sheet', B: 'gtceu:brass_bolt', C: '#gtceu:circuits/lv' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_wooden"}'),
-        ['WIW', 'IBI', 'WIW'],
-        { W: 'gtceu:treated_wood_plate', I: 'create:iron_sheet', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_shaft"}'),
-        ['WSW', 'SBS', 'WSW'],
-        { W: 'gtceu:treated_wood_plate', S: 'greate:steel_shaft', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_gantry_shaft"}'),
-        ['IGI', 'GBG', 'IGI'],
-        { I: 'gtceu:steel_plate', G: 'create:gantry_shaft', B: 'gtceu:steel_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_iron_spike"}'),
-        [' R ', 'IRI', ' B '],
-        { I: 'create:iron_sheet', R: 'gtceu:steel_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_brass_retractor"}'),
-        ['CBC', 'BCB', 'CBC'],
-        { C: 'create:copper_sheet', B: 'gtceu:brass_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_bigger_cylinder"}'),
-        ['IHI', 'HLH', 'IHI'],
-        { I: 'create:iron_sheet', H: 'gtceu:steel_small_fluid_pipe', L: 'minecraft:lapis_lazuli' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_energy_blade"}'),
-        ['GEG', 'EBE', 'GEG'],
-        { G: 'gtceu:glass_plate', E: 'gtceu:electrum_plate', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_lava_perfusion_bottle"}'),
-        ['IHI', 'HVH', 'IHI'],
-        { I: 'create:iron_sheet', H: 'gtceu:steel_small_fluid_pipe', V: 'minecraft:lava_bucket' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:refit_blasting_protocol"}'),
-        ['BCB', 'CGC', 'BCB'],
-        { B: 'create:brass_sheet', C: '#gtceu:circuits/lv', G: 'minecraft:gunpowder' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_ap_grenade"}'),
-        ['BAB', 'AGA', 'BAB'],
-        { B: 'create:brass_sheet', A: 'create:andesite_alloy', G: 'minecraft:gunpowder' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_simple"}'),
-        [' C ', 'ICI', ' B '],
-        { I: 'create:copper_sheet', C: 'create:andesite_alloy', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_standard"}'),
-        ['IGI', 'GCG', ' B '],
-        { I: 'create:copper_sheet', G: 'gtceu:glass_plate', C: 'gtceu:copper_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_reflex"}'),
-        ['AGA', 'ACA', ' B '],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_medium_distance"}'),
-        ['AGA', 'GCG', 'ABA'],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:scope_telephoto"}'),
-        ['GGG', 'ACA', 'ABA'],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_1"}'),
-        ['SCS', 'CGC', 'SCS'],
-        { S: 'gtceu:stainless_steel_plate', C: 'create:copper_sheet', G: 'gtceu:glass_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_2"}'),
-        ['SCS', 'CAC', 'SCS'],
-        { S: 'gtceu:stainless_steel_plate', C: 'create:copper_sheet', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_3"}'),
-        ['SES', 'ECE', 'SES'],
-        { S: 'gtceu:stainless_steel_plate', E: 'gtceu:electrum_plate', C: '#gtceu:circuits/mv' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_1"}'),
-        ['IHI', 'H H', 'IHI'],
-        { I: 'create:iron_sheet', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_2"}'),
-        ['SHS', 'H H', 'SHS'],
-        { S: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_3"}'),
-        ['SHS', 'HAH', 'SHS'],
-        { S: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', A: 'gtceu:aluminium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood"}'),
-        ['WIW', 'IBI', 'WIW'],
-        { W: 'gtceu:treated_wood_plate', I: 'gtceu:steel_plate', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood_light"}'),
-        ['WAW', 'A A', 'WAW'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_twined"}'),
-        ['FGF', 'FGF', 'FGF'],
-        { F: 'gtceu:copper_single_wire', G: Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood"}') })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_crude"}'),
-        ['W W', 'WAW', 'W W'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_rod' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_simple"}'),
-        ['WAW', 'ARA', 'WAW'],
-        { W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_rod', R: 'gtceu:steel_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_heavy"}'),
-        ['SWS', 'WAW', 'SWS'],
-        { S: 'gtceu:stainless_steel_plate', W: 'gtceu:treated_wood_plate', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_bracket"}'),
-        ['SAS', 'ABA', 'SAS'],
-        { S: 'gtceu:stainless_steel_plate', A: 'gtceu:aluminium_rod', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_steady"}'),
-        ['WUW', 'UAU', 'WUW'],
-        { W: 'gtceu:treated_wood_plate', U: 'gtceu:silicone_rubber_plate', A: 'gtceu:aluminium_rod' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:bayonet_revolver"}'),
-        ['GAP', 'AAP', 'GAP'],
-        { G: 'create:golden_sheet', A: 'gtceu:aluminium_plate', P: 'gtceu:treated_wood_plate' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_extended_barrel"}'),
-        ['HSH', 'S S', 'HSH'],
-        { S: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_focused_nozzle"}'),
-        ['AHA', 'HAH', 'AHA'],
-        { A: 'gtceu:aluminium_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_electromagnetic_accelerator"}'),
-        ['ECE', 'CIC', 'ECE'],
-        { E: 'gtceu:electrum_plate', C: 'create:iron_sheet', I: '#gtceu:circuits/mv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_extra_heavy_barrel"}'),
-        ['SHS', 'SAS', 'SHS'],
-        { S: 'gtceu:stainless_steel_plate', H: 'gtceu:stainless_steel_small_fluid_pipe', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_extra_wires"}'),
-        ['WIW', 'IWI', 'WIW'],
-        { W: 'gtceu:copper_single_wire', I: 'create:iron_sheet' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_face_melter"}'),
-        ['SBS', 'BAB', 'SBS'],
-        { S: 'gtceu:stainless_steel_plate', B: 'minecraft:blaze_powder', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_fuel_stream_diffuser"}'),
-        ['AHA', 'H H', 'AHA'],
-        { A: 'gtceu:aluminium_plate', H: 'gtceu:stainless_steel_small_fluid_pipe' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_he_compound"}'),
-        ['AGA', 'GBG', 'AGA'],
-        { A: 'gtceu:aluminium_plate', G: 'create:golden_sheet', B: 'minecraft:blaze_powder' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_melted_metal_spitter"}'),
-        ['GSG', 'SBS', 'GSG'],
-        { G: 'create:golden_sheet', S: 'gtceu:stainless_steel_plate', B: 'gtceu:stainless_steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_pressure_wave"}'),
-        ['CAC', 'ABA', 'CAC'],
-        { C: 'create:copper_sheet', A: 'gtceu:aluminium_plate', B: 'minecraft:gunpowder' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_simple_reflex"}'),
-        ['IGI', 'GWG', ' B '],
-        { I: 'create:iron_sheet', G: 'gtceu:glass_plate', W: 'gtceu:treated_wood_plate', B: 'gtceu:steel_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_light"}'),
-        ['AGA', 'ARA', ' B '],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', R: 'gtceu:red_alloy_plate', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_light_short"}'),
-        ['AGA', 'GCG', ' B '],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/lv', B: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:scope_spyglass_ie"}'),
-        ['GGG', 'ACA', 'ABA'],
-        { A: 'gtceu:aluminium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/mv', B: 'create:golden_sheet' })
-
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_1"}'),
-        ['TAT', 'ACA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal', C: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_2"}'),
-        ['TAT', 'ACA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:charged_certus_quartz_crystal', C: '#gtceu:circuits/hv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_3"}'),
-        ['TFT', 'FCF', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', C: '#gtceu:circuits/ev' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_1"}'),
-        ['TAT', 'ARA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal', R: 'gtceu:titanium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_2"}'),
-        ['TAT', 'ACA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal', C: '#gtceu:circuits/hv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_3"}'),
-        ['TFT', 'FRF', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', R: 'gtceu:titanium_ring' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_1"}'),
-        ['TQT', 'QRQ', 'TQT'],
-        { T: 'gtceu:titanium_plate', Q: 'ae2:charged_certus_quartz_crystal', R: 'gtceu:titanium_ring' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_2"}'),
-        ['TQT', 'QCQ', 'TQT'],
-        { T: 'gtceu:titanium_plate', Q: 'ae2:charged_certus_quartz_crystal', C: '#gtceu:circuits/hv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_3"}'),
-        ['TFT', 'TCT', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', C: '#gtceu:circuits/ev' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_er"}'),
-        [' R ', 'TAT', ' B '],
-        { T: 'gtceu:titanium_plate', R: 'gtceu:titanium_rod', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_gladius"}'),
-        ['TAT', 'TAT', ' B '],
-        { T: 'gtceu:titanium_plate', A: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'),
-        ['TAT', 'A A', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_aerial_wristband"}'),
-        [' A ', 'APA', ' A '],
-        { A: 'ae2:certus_quartz_crystal', P: 'gtceu:aluminium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_magma_wristband"}'),
-        ['AMA', 'MPA', 'AMA'],
-        { A: 'ae2:certus_quartz_crystal', M: 'minecraft:magma_cream', P: 'gtceu:aluminium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_watch"}'),
-        ['ABA', 'BPB', 'ABA'],
-        { A: 'ae2:certus_quartz_crystal', B: 'gtceu:copper_bolt', P: 'gtceu:aluminium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_handcuffs"}'),
-        ['TAT', 'ATA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_koeis_armband"}'),
-        ['RAR', 'ATA', 'RAR'],
-        { R: 'gtceu:rubber_plate', A: 'ae2:certus_quartz_crystal', T: 'gtceu:treated_wood_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_exo"}'),
-        ['TFT', 'FBF', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'minecraft:blaze_powder' })
-
-    event.shapeless(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_zenith"}'),
-        [
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_aerial_wristband"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_magma_wristband"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_watch"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_handcuffs"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_koeis_armband"}'),
-            Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_exo"}'),
-            'ae2:fluix_crystal'
-        ])
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_eazy"}'),
-        ['TAT', 'ABA', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_lf11"}'),
-        ['ATA', 'T T', 'ATA'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_light"}'),
-        [' A ', 'TAT', ' A '],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_stable"}'),
-        ['TFT', 'F F', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_storm"}'),
-        ['FTF', 'T T', 'FTF'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_sl_2"}'),
-        ['TFT', 'FBF', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_hf_17"}'),
-        ['FTF', 'TBT', 'FTF'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_static_1"}'),
-        ['TFT', 'FAF', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', A: 'gtceu:aluminium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_classic"}'),
-        ['TBT', 'B B', 'TBT'],
-        { T: 'gtceu:titanium_plate', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_bs_mod4"}'),
-        ['TBT', 'BAB', 'TBT'],
-        { T: 'gtceu:titanium_plate', B: 'gtceu:titanium_bolt', A: 'gtceu:aluminium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_ns_1"}'),
-        ['TAT', 'TBT', 'TAT'],
-        { T: 'gtceu:titanium_plate', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_commander"}'),
-        ['TFT', 'TBT', 'TFT'],
-        { T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal', B: 'gtceu:titanium_bolt' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_pcs_x1"}'),
-        ['LAL', 'ACA', 'LAL'],
-        { L: 'ae2:calculation_processor', A: 'minecraft:lapis_lazuli', C: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firefly"}'),
-        ['LBL', 'BCB', 'LBL'],
-        { L: 'ae2:logic_processor', B: 'minecraft:blaze_powder', C: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firework"}'),
-        [' F ', 'FTF', ' G '],
-        { T: Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firefly"}'), F: 'minecraft:fire_charge', G: 'minecraft:tnt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_toxic_sword"}'),
-        ['LAL', 'ACA', 'LAL'],
-        { L: 'ae2:logic_processor', A: 'minecraft:spider_eye', C: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_wither_sword"}'),
-        [' W ', 'TST', ' W '],
-        { W: 'minecraft:wither_skeleton_skull', S: Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_toxic_sword"}'), T: 'gtceu:titanium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_tutorial_sword_mastery"}'),
-        ['LGL', 'GBG', 'LGL'],
-        { L: 'ae2:logic_processor', G: 'minecraft:glowstone_dust', B: 'minecraft:blaze_powder' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_fat_boy"}'),
-        ['EFE', 'FNF', 'EFE'],
-        { E: 'ae2:engineering_processor', F: 'ae2:fluix_crystal', N: 'minecraft:nether_star' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_hyper_propellant"}'),
-        ['ETF', 'TFT', 'FTE'],
-        { E: 'ae2:engineering_processor', T: 'gtceu:titanium_plate', F: 'ae2:fluix_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_atm_x2"}'),
-        ['EWF', 'WFW', 'FWE'],
-        { E: 'ae2:engineering_processor', W: 'minecraft:wither_skeleton_skull', F: 'ae2:fluix_crystal' })
-
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_simple_3"}'),
-        ['TGT', 'GAG', ' B '],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_profession"}'),
-        ['TGT', 'GAG', 'TBT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_pricision"}'),
-        ['TGT', 'GCG', 'TBT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/hv', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_ms_12"}'),
-        ['GTG', 'TCT', 'GTG'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/hv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_pride_default"}'),
-        [' G ', 'TAT', ' B '],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', A: 'ae2:certus_quartz_crystal', B: 'gtceu:titanium_bolt' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_xs_07"}'),
-        ['GTG', 'TAT', 'GTG'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', A: 'ae2:certus_quartz_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_double_sided_mirror"}'),
-        ['TGT', 'GFG', 'TGT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', F: 'ae2:fluix_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_zako_2403"}'),
-        ['SFS', 'FTF', 'SFS'],
-        { S: 'minecraft:skeleton_skull', F: 'ae2:fluix_crystal', T: 'gtceu:titanium_plate' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:sight_type_3741"}'),
-        ['TGT', 'GCG', 'TGT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/hv' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:scope_ms_14"}'),
-        ['GGG', 'TCT', 'TBT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/hv', B: 'ae2:fluix_crystal' })
-
-    event.shaped(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:scope_xgs_905"}'),
-        ['GGG', 'TCT', 'TBT'],
-        { T: 'gtceu:titanium_plate', G: 'gtceu:glass_plate', C: '#gtceu:circuits/ev', B: 'ae2:fluix_crystal' })
+    event.recipes.gtceu.arms_manufacturer('tacz_extended_mag_1')
+        .itemInputs('4x gtceu:steel_bolt', '4x create:iron_sheet', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_1"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_extended_mag_2')
+        .itemInputs('4x gtceu:aluminium_bolt', '4x gtceu:stainless_steel_plate', 'gtceu:aluminium_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_extended_mag_3')
+        .itemInputs('4x gtceu:aluminium_bolt', '#gtceu:circuits/lv', '4x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:extended_mag_3"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_light_extended_mag_1')
+        .itemInputs('6x gtceu:aluminium_plate', 'gtceu:aluminium_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_1"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_light_extended_mag_2')
+        .itemInputs('4x gtceu:aluminium_bolt', '4x gtceu:aluminium_plate', 'gtceu:aluminium_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_2"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_light_extended_mag_3')
+        .itemInputs('4x gtceu:aluminium_bolt', 'gtceu:aluminium_ring', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:light_extended_mag_3"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_shotgun_extended_mag_1')
+        .itemInputs('4x create:iron_sheet', '5x gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_1"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_shotgun_extended_mag_2')
+        .itemInputs('4x gtceu:steel_bolt', '4x gtceu:steel_plate', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_2"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_shotgun_extended_mag_3')
+        .itemInputs('4x gtceu:steel_bolt', '4x gtceu:stainless_steel_plate', 'gtceu:stainless_steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:shotgun_extended_mag_3"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sniper_extended_mag_1')
+        .itemInputs('4x gtceu:brass_bolt', '4x create:iron_sheet', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_1"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sniper_extended_mag_2')
+        .itemInputs('4x gtceu:stainless_steel_bolt', '4x gtceu:aluminium_plate', 'gtceu:aluminium_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sniper_extended_mag_3')
+        .itemInputs('4x gtceu:titanium_bolt', '#gtceu:circuits/mv', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sniper_extended_mag_3"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_cobra')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:steel_rod', '4x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cobra"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_td')
+        .itemInputs('gtceu:rubber_plate', '4x gtceu:steel_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_td"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_rk0')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:rubber_plate', '4x gtceu:steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk0"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_rk6')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '4x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk6"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_rk1_b25u')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:aluminium_bolt', '4x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_rk1_b25u"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_se_5')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '4x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_se_5"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_magpul_afg_2')
+        .itemInputs('4x gtceu:aluminium_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_magpul_afg_2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_osovets_black')
+        .itemInputs('gtceu:stainless_steel_bolt', '4x gtceu:silicone_rubber_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_osovets_black"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_vertical_military')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_military"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_vertical_ranger')
+        .itemInputs('4x gtceu:aluminium_rod', '5x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_ranger"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_vertical_talon')
+        .itemInputs('gtceu:aluminium_bolt', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_talon"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_grip_cqr')
+        .itemInputs('gtceu:rubber_plate', '6x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_cqr"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_ak12')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:steel_rod', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_ak12"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_moe')
+        .itemInputs('gtceu:steel_rod', '6x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_moe"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_sba3')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:aluminium_bolt', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_sba3"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_m4ss')
+        .itemInputs('gtceu:aluminium_rod', 'gtceu:aluminium_bolt', '6x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_m4ss"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_ripstock')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:aluminium_bolt', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_ripstock"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_hk_slim_line')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_hk_slim_line"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_militech_b5')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:aluminium_bolt', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_militech_b5"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_carbon_bone_c5')
+        .itemInputs('gtceu:stainless_steel_bolt', '4x gtceu:stainless_steel_plate', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_carbon_bone_c5"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_heavy_spas_12')
+        .itemInputs('gtceu:aluminium_rod', '4x gtceu:stainless_steel_plate', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_heavy_spas_12"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_tactical_spas_12')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_tactical_spas_12"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_stock_tactical_ar')
+        .itemInputs('4x gtceu:aluminium_plate', '#gtceu:circuits/lv', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:stock_tactical_ar"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_oem_stock_light')
+        .itemInputs('8x gtceu:aluminium_plate', 'gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_light"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_oem_stock_heavy')
+        .itemInputs('6x gtceu:aluminium_plate', '2x gtceu:stainless_steel_plate', 'gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_heavy"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_oem_stock_tactical')
+        .itemInputs('4x gtceu:aluminium_plate', '4x gtceu:stainless_steel_plate', 'gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:oem_stock_tactical"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_bayonet_6h3')
+        .itemInputs('gtceu:steel_bolt', '2x create:iron_sheet', '2x gtceu:aluminium_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:bayonet_6h3"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_bayonet_m9')
+        .itemInputs('2x gtceu:aluminium_rod', 'gtceu:steel_bolt', '2x gtceu:aluminium_plate', '4x gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:bayonet_m9"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_deagle_golden_long_barrel')
+        .itemInputs('6x create:golden_sheet', '2x gtceu:steel_small_fluid_pipe')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:deagle_golden_long_barrel"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_pioneer')
+        .itemInputs('2x gtceu:steel_small_fluid_pipe', '5x gtceu:steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_pioneer"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_trex')
+        .itemInputs('gtceu:steel_bolt', '2x gtceu:steel_small_fluid_pipe', '6x gtceu:steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_trex"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_cthulhu')
+        .itemInputs('2x gtceu:stainless_steel_small_fluid_pipe', '5x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_cthulhu"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_cyclone_d2')
+        .itemInputs('gtceu:stainless_steel_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '6x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_cyclone_d2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_mastiff_sg')
+        .itemInputs('2x gtceu:steel_small_fluid_pipe', '6x gtceu:steel_plate', 'gtceu:rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_mastiff_sg"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_timeless50')
+        .itemInputs('gtceu:aluminium_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '6x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_timeless50"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_choke_sg')
+        .itemInputs('3x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_choke_sg"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_compensator_trident')
+        .itemInputs('3x gtceu:aluminium_plate', '4x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_compensator_trident"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_knight_qd')
+        .itemInputs('gtceu:steel_bolt', 'gtceu:steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_knight_qd"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_mirage')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_mirage"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_phantom_s1')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_phantom_s1"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_ptilopsis')
+        .itemInputs('gtceu:stainless_steel_bolt', 'gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_ptilopsis"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_ursus')
+        .itemInputs('gtceu:stainless_steel_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_ursus"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_vulture')
+        .itemInputs('gtceu:aluminium_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:aluminium_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_vulture"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_wraith')
+        .itemInputs('gtceu:aluminium_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_wraith"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_sg')
+        .itemInputs('3x gtceu:stainless_steel_small_fluid_pipe', '3x gtceu:stainless_steel_plate', '3x gtceu:silicone_rubber_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_sg"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_muzzle_duckbill_sg')
+        .itemInputs('2x gtceu:steel_bolt', '5x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_duckbill_sg"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_98k')
+        .itemInputs('gtceu:steel_bolt', 'gtceu:copper_rod', 'gtceu:glass_plate', '3x gtceu:steel_plate', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_98k"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_retro_2x')
+        .itemInputs('gtceu:steel_bolt', '2x gtceu:glass_plate', '3x create:iron_sheet', 'gtceu:copper_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_retro_2x"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_contender')
+        .itemInputs('gtceu:steel_bolt', 'gtceu:copper_rod', '3x gtceu:glass_plate', '3x gtceu:steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_contender"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_qmk152')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '3x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_qmk152"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_acog_ta31')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_acog_ta31"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_aug_default')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '2x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_aug_default"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_1873_6x')
+        .itemInputs('gtceu:aluminium_bolt', '2x gtceu:glass_plate', '3x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_1873_6x"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_elcan_4x')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_elcan_4x"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_hamr')
+        .itemInputs('3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_hamr"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_lpvo_1_6')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_lpvo_1_6"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_mk5hd')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_mk5hd"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_standard_8x')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_standard_8x"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_scope_vudu')
+        .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_vudu"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(3)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_rmr_dot')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '2x gtceu:aluminium_plate', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_rmr_dot"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_sro_dot')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '6x gtceu:aluminium_plate', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_sro_dot"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_okp7')
+        .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '4x gtceu:aluminium_plate', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_okp7"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_pk06_pistol')
+        .itemInputs('2x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_pistol"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_pk06_rifle')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_rifle"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_t1')
+        .itemInputs('6x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_t1"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_t2')
+        .itemInputs('5x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '2x #gtceu:circuits/lv', 'gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_t2"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_acro_pistol')
+        .itemInputs('2x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_acro_pistol"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_acro_rifle')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_acro_rifle"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_deltapoint_pistol')
+        .itemInputs('3x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '2x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_deltapoint_pistol"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_deltapoint_rifle')
+        .itemInputs('4x gtceu:aluminium_plate', '#gtceu:circuits/lv', '4x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_deltapoint_rifle"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_fastfire_pistol')
+        .itemInputs('2x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '2x #gtceu:circuits/lv', '2x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_fastfire_pistol"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_fastfire_rifle')
+        .itemInputs('3x gtceu:aluminium_plate', '2x #gtceu:circuits/lv', '4x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_fastfire_rifle"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_552')
+        .itemInputs('gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '2x gtceu:glass_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_552"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_coyote')
+        .itemInputs('2x gtceu:aluminium_plate', '#gtceu:circuits/lv', '2x gtceu:glass_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_coyote"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_exp3')
+        .itemInputs('gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_exp3"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_p90')
+        .itemInputs('#gtceu:circuits/lv', '6x gtceu:glass_plate', '2x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_p90"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_uh1')
+        .itemInputs('#gtceu:circuits/lv', '5x gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_uh1"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_sight_srs_02')
+        .itemInputs('2x gtceu:aluminium_bolt', '#gtceu:circuits/lv', '2x gtceu:glass_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_srs_02"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_laser_compact')
+        .itemInputs('gtceu:steel_bolt', '#gtceu:circuits/lv', '2x create:iron_sheet', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_compact"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_laser_lopro')
+        .itemInputs('gtceu:steel_bolt', '#gtceu:circuits/lv', '4x create:iron_sheet', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_lopro"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_laser_nightstick')
+        .itemInputs('gtceu:aluminium_bolt', '#gtceu:circuits/lv', '6x gtceu:aluminium_plate', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_nightstick"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_laser_peq6')
+        .itemInputs('6x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_peq6"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('tacz_laser_peq15')
+        .itemInputs('gtceu:aluminium_bolt', '#gtceu:circuits/mv', 'gtceu:red_alloy_plate', '6x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_peq15"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_ammo_mod_fmj')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:lead_ingot', '4x create:iron_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_fmj"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_ammo_mod_hp')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:lead_ingot', '4x gtceu:steel_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_hp"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_ammo_mod_he')
+        .itemInputs('minecraft:blaze_powder', '4x gtceu:electrum_plate', '4x minecraft:tnt')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_he"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_ammo_mod_i')
+        .itemInputs('minecraft:blaze_powder', '4x create:copper_sheet', '4x gtceu:magnesium_dust')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_i"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('tacz_ammo_mod_slug')
+        .itemInputs('gtceu:brass_bolt', '4x gtceu:lead_ingot', '4x gtceu:steel_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:ammo_mod_slug"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_extended_mag_ca_1')
+        .itemInputs('4x create:andesite_alloy', '4x create:iron_sheet', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_1"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_extended_mag_ca_2')
+        .itemInputs('4x gtceu:brass_bolt', '4x create:copper_sheet', 'gtceu:steel_ring')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_2"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_extended_mag_ca_3')
+        .itemInputs('4x gtceu:brass_bolt', '#gtceu:circuits/lv', '4x create:golden_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_3"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_grip_wooden')
+        .itemInputs('gtceu:steel_bolt', '4x create:iron_sheet', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_wooden"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_grip_shaft')
+        .itemInputs('gtceu:steel_bolt', '4x greate:steel_shaft', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_shaft"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_grip_gantry_shaft')
+        .itemInputs('gtceu:steel_bolt', '4x create:gantry_shaft', '4x gtceu:steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_gantry_shaft"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_iron_spike')
+        .itemInputs('gtceu:steel_bolt', '2x create:iron_sheet', '2x gtceu:steel_rod')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_iron_spike"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_brass_retractor')
+        .itemInputs('4x gtceu:brass_bolt', '5x create:copper_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_brass_retractor"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_bigger_cylinder')
+        .itemInputs('4x gtceu:steel_small_fluid_pipe', '4x create:iron_sheet', 'minecraft:lapis_lazuli')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_bigger_cylinder"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_energy_blade')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:electrum_plate', '4x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_energy_blade"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_lava_perfusion_bottle')
+        .itemInputs('4x gtceu:steel_small_fluid_pipe', '4x create:iron_sheet', 'minecraft:lava_bucket')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_lava_perfusion_bottle"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_refit_blasting_protocol')
+        .itemInputs('4x create:brass_sheet', '4x #gtceu:circuits/lv', 'minecraft:gunpowder')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:refit_blasting_protocol"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_muzzle_refit_ap_grenade')
+        .itemInputs('4x create:andesite_alloy', '4x create:brass_sheet', 'minecraft:gunpowder')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_ap_grenade"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_sight_simple')
+        .itemInputs('gtceu:steel_bolt', '2x create:andesite_alloy', '2x create:copper_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_simple"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_sight_standard')
+        .itemInputs('gtceu:steel_bolt', 'gtceu:copper_rod', '3x gtceu:glass_plate', '2x create:copper_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_standard"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_sight_reflex')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_reflex"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_sight_medium_distance')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_medium_distance"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('create_armorer_scope_telephoto')
+        .itemInputs('3x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:scope_telephoto"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(3)
+
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_capacitor_1')
+        .itemInputs('4x create:copper_sheet', 'gtceu:glass_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_1"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_capacitor_2')
+        .itemInputs('gtceu:aluminium_bolt', '4x create:copper_sheet', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_capacitor_3')
+        .itemInputs('#gtceu:circuits/mv', '4x gtceu:electrum_plate', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_3"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_jar_1')
+        .itemInputs('4x gtceu:stainless_steel_small_fluid_pipe', '4x create:iron_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_1"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_jar_2')
+        .itemInputs('4x gtceu:stainless_steel_small_fluid_pipe', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_2"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_extended_jar_3')
+        .itemInputs('gtceu:aluminium_bolt', '4x gtceu:stainless_steel_small_fluid_pipe', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_jar_3"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_grip_treated_wood')
+        .itemInputs('gtceu:steel_bolt', '4x gtceu:steel_plate', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_grip_treated_wood_light')
+        .itemInputs('4x gtceu:aluminium_bolt', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_treated_wood_light"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_grip_twined')
+        .itemInputs('6x gtceu:copper_single_wire', Item.of('tacz:attachment', 3, '{AttachmentId:"immersive_armorer:grip_treated_wood"}'))
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:grip_twined"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_crude')
+        .itemInputs('gtceu:aluminium_rod', '6x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_crude"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_simple')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:steel_ring', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_simple"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_heavy')
+        .itemInputs('gtceu:aluminium_bolt', '4x gtceu:stainless_steel_plate', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_heavy"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_bracket')
+        .itemInputs('4x gtceu:aluminium_rod', 'gtceu:steel_bolt', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_bracket"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_steady')
+        .itemInputs('gtceu:aluminium_rod', '4x gtceu:silicone_rubber_plate', '4x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_steady"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_bayonet_revolver')
+        .itemInputs('4x gtceu:aluminium_plate', '2x create:golden_sheet', '3x gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:bayonet_revolver"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_extended_barrel')
+        .itemInputs('4x gtceu:stainless_steel_small_fluid_pipe', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_extended_barrel"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_focused_nozzle')
+        .itemInputs('5x gtceu:aluminium_plate', '4x gtceu:stainless_steel_small_fluid_pipe')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_focused_nozzle"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_electromagnetic_accelerator')
+        .itemInputs('4x create:iron_sheet', '4x gtceu:electrum_plate', '#gtceu:circuits/mv')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_electromagnetic_accelerator"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_extra_heavy_barrel')
+        .itemInputs('gtceu:aluminium_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '6x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_extra_heavy_barrel"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_extra_wires')
+        .itemInputs('4x create:iron_sheet', '5x gtceu:copper_single_wire')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_extra_wires"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_face_melter')
+        .itemInputs('gtceu:aluminium_bolt', '4x minecraft:blaze_powder', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_face_melter"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_fuel_stream_diffuser')
+        .itemInputs('4x gtceu:aluminium_plate', '4x gtceu:stainless_steel_small_fluid_pipe')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_fuel_stream_diffuser"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_he_compound')
+        .itemInputs('4x gtceu:aluminium_plate', 'minecraft:blaze_powder', '4x create:golden_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_he_compound"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_melted_metal_spitter')
+        .itemInputs('gtceu:stainless_steel_bolt', '4x create:golden_sheet', '4x gtceu:stainless_steel_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_melted_metal_spitter"}'))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_pressure_wave')
+        .itemInputs('4x gtceu:aluminium_plate', 'minecraft:gunpowder', '4x create:copper_sheet')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_pressure_wave"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_sight_simple_reflex')
+        .itemInputs('gtceu:steel_bolt', '3x gtceu:glass_plate', '2x create:iron_sheet', 'gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_simple_reflex"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_sight_light')
+        .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', 'gtceu:glass_plate', 'gtceu:red_alloy_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_light"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_sight_light_short')
+        .itemInputs('2x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_light_short"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(3)
+
+    event.recipes.gtceu.arms_manufacturer('immersive_armorer_scope_spyglass_ie')
+        .itemInputs('3x gtceu:aluminium_plate', 'create:golden_sheet', '3x gtceu:glass_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:scope_spyglass_ie"}'))
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_battery_aa_1')
+        .itemInputs('4x ae2:certus_quartz_crystal', 'gtceu:aluminium_bolt', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_1"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_battery_aa_2')
+        .itemInputs('4x ae2:charged_certus_quartz_crystal', '#gtceu:circuits/hv', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_2"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_battery_aa_3')
+        .itemInputs('#gtceu:circuits/ev', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_battery_aa_3"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mag_aa_1')
+        .itemInputs('4x ae2:certus_quartz_crystal', 'gtceu:titanium_ring', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_1"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mag_aa_2')
+        .itemInputs('4x ae2:certus_quartz_crystal', '#gtceu:circuits/hv', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_2"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mag_aa_3')
+        .itemInputs('4x ae2:fluix_crystal', 'gtceu:titanium_ring', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mag_aa_3"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mid_mag_aa_1')
+        .itemInputs('4x ae2:charged_certus_quartz_crystal', 'gtceu:titanium_ring', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_1"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mid_mag_aa_2')
+        .itemInputs('#gtceu:circuits/hv', '4x ae2:charged_certus_quartz_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_2"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_extended_mid_mag_aa_3')
+        .itemInputs('#gtceu:circuits/ev', '2x ae2:fluix_crystal', '6x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:extended_mid_mag_aa_3"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bayonet_er')
+        .itemInputs('ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', 'gtceu:titanium_rod', '2x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_er"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bayonet_gladius')
+        .itemInputs('2x ae2:fluix_crystal', 'gtceu:titanium_bolt', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_gladius"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_niklas')
+        .itemInputs('4x ae2:certus_quartz_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_aerial_wristband')
+        .itemInputs('4x ae2:certus_quartz_crystal', 'gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_aerial_wristband"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_magma_wristband')
+        .itemInputs('5x ae2:certus_quartz_crystal', '3x minecraft:magma_cream', 'gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_magma_wristband"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_broken_watch')
+        .itemInputs('4x ae2:certus_quartz_crystal', '4x gtceu:copper_bolt', 'gtceu:aluminium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_watch"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_broken_handcuffs')
+        .itemInputs('4x ae2:certus_quartz_crystal', '5x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_handcuffs"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_koeis_armband')
+        .itemInputs('4x ae2:certus_quartz_crystal', '4x gtceu:rubber_plate', 'gtceu:treated_wood_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_koeis_armband"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_exo')
+        .itemInputs('minecraft:blaze_powder', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_exo"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_zenith')
+        .itemInputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_niklas"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_aerial_wristband"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_magma_wristband"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_watch"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_broken_handcuffs"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_koeis_armband"}'), Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_exo"}'), 'ae2:fluix_crystal')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_zenith"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_eazy')
+        .itemInputs('4x ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_eazy"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_lf11')
+        .itemInputs('4x ae2:certus_quartz_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_lf11"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_light')
+        .itemInputs('3x ae2:certus_quartz_crystal', '2x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_light"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_stable')
+        .itemInputs('4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_stable"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_storm')
+        .itemInputs('4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_storm"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_sl_2')
+        .itemInputs('gtceu:titanium_bolt', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_sl_2"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_hf_17')
+        .itemInputs('gtceu:titanium_bolt', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_hf_17"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_static_1')
+        .itemInputs('gtceu:aluminium_bolt', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_static_1"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_classic')
+        .itemInputs('4x gtceu:titanium_bolt', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_classic"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_bs_mod4')
+        .itemInputs('gtceu:aluminium_bolt', '4x gtceu:titanium_bolt', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_bs_mod4"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_ns_1')
+        .itemInputs('2x ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', '6x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_ns_1"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_commander')
+        .itemInputs('gtceu:titanium_bolt', '2x ae2:fluix_crystal', '6x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_commander"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_pcs_x1')
+        .itemInputs('4x minecraft:lapis_lazuli', 'gtceu:titanium_bolt', '4x ae2:calculation_processor')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_pcs_x1"}'))
+        .duration(150)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_firefly')
+        .itemInputs('4x minecraft:blaze_powder', 'gtceu:titanium_bolt', '4x ae2:logic_processor')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firefly"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_firework')
+        .itemInputs('3x minecraft:fire_charge', 'minecraft:tnt', Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firefly"}'))
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_firework"}'))
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_toxic_sword')
+        .itemInputs('4x minecraft:spider_eye', 'ae2:certus_quartz_crystal', '4x ae2:logic_processor')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_toxic_sword"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_wither_sword')
+        .itemInputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_toxic_sword"}'), '2x gtceu:titanium_plate', '2x minecraft:wither_skeleton_skull')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_wither_sword"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_tutorial_sword_mastery')
+        .itemInputs('minecraft:blaze_powder', '4x minecraft:glowstone_dust', '4x ae2:logic_processor')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_tutorial_sword_mastery"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_fat_boy')
+        .itemInputs('4x ae2:engineering_processor', '4x ae2:fluix_crystal', 'minecraft:nether_star')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_fat_boy"}'))
+        .duration(220)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_hyper_propellant')
+        .itemInputs('2x ae2:engineering_processor', '3x ae2:fluix_crystal', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_hyper_propellant"}'))
+        .duration(220)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_atm_x2')
+        .itemInputs('2x ae2:engineering_processor', '3x ae2:fluix_crystal', '4x minecraft:wither_skeleton_skull')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_atm_x2"}'))
+        .duration(220)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_simple_3')
+        .itemInputs('ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', '3x gtceu:glass_plate', '2x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_simple_3"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_profession')
+        .itemInputs('ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', '3x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_profession"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_pricision')
+        .itemInputs('gtceu:titanium_bolt', '#gtceu:circuits/hv', '3x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_pricision"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_ms_12')
+        .itemInputs('#gtceu:circuits/hv', '4x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_ms_12"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_pride_default')
+        .itemInputs('ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', 'gtceu:glass_plate', '2x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_pride_default"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_xs_07')
+        .itemInputs('ae2:certus_quartz_crystal', '4x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_xs_07"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_double_sided_mirror')
+        .itemInputs('ae2:fluix_crystal', '4x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_double_sided_mirror"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_si_zako_2403')
+        .itemInputs('4x ae2:fluix_crystal', '4x minecraft:skeleton_skull', 'gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_zako_2403"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_sight_type_3741')
+        .itemInputs('#gtceu:circuits/hv', '4x gtceu:glass_plate', '4x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:sight_type_3741"}'))
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_scope_ms_14')
+        .itemInputs('ae2:fluix_crystal', '3x gtceu:glass_plate', '3x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:scope_ms_14"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(1)
+
+    event.recipes.gtceu.arms_manufacturer('applied_armorer_scope_xgs_905')
+        .itemInputs('ae2:fluix_crystal', '3x gtceu:glass_plate', '3x gtceu:titanium_plate')
+        .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:scope_xgs_905"}'))
+        .duration(180)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(2)
 
 })

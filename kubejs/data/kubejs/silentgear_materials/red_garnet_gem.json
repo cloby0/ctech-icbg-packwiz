@@ -40,7 +40,8 @@
     "traits": {
         "main": [
             { "name": "silentgear:sturdy", "level": 1 },
-            { "name": "silentgear:holy", "level": 1 }
+            { "name": "silentgear:holy", "level": 1 },
+            { "name": "kubejs:blood_attunement", "level": 1 }
         ]
     },
     "model": {

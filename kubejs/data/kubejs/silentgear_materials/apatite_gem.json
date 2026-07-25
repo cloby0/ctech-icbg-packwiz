@@ -40,7 +40,8 @@
     "traits": {
         "main": [
             { "name": "silentgear:sturdy", "level": 1 },
-            { "name": "silentgear:malleable", "level": 1 }
+            { "name": "silentgear:malleable", "level": 1 },
+            { "name": "kubejs:ender_attunement", "level": 1 }
         ]
     },
     "model": {

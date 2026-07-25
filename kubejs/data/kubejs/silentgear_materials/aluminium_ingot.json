@@ -82,6 +82,18 @@
             "armor_durability": {
                 "mul2": 0
             },
+            "ranged_damage": {
+                "mul2": 0.6
+            },
+            "melee_damage": {
+                "mul2": 0.2
+            },
+            "armor_toughness": {
+                "add": 2
+            },
+            "enchantment_value": {
+                "add": 3
+            },
             "rarity": {
                 "add": 15
             }

@@ -1,0 +1,43 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 8,
+        "categories": [
+            "organic"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:ancient_knowledge_fragment" }
+    },
+    "name": { "text": "Ancient Knowledge Fragment" },
+    "stats": {
+        "coating": {
+            "enchantment_value": { "add": 6.0 },
+            "magic_armor": { "add": 2 },
+            "rarity": { "add": 8 }
+        }
+    },
+    "traits": {
+        "coating": [
+            { "name": "silentgear:brilliant", "level": 1 },
+            { "name": "kubejs:eldritch_attunement", "level": 1 }
+        ]
+    },
+    "model": {
+        "coating/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#3A2A4A" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "coating/part": [
+            { "texture": "silentgear:coating_material", "color": "#3A2A4A" },
+            { "texture": "silentgear:coating_jar" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#3A2A4A" }
+        ]
+    }
+}

@@ -40,7 +40,8 @@
     "traits": {
         "main": [
             { "name": "silentgear:lustrous", "level": 1 },
-            { "name": "silentgear:brittle", "level": 1 }
+            { "name": "silentgear:brittle", "level": 1 },
+            { "name": "kubejs:evocation_attunement", "level": 1 }
         ]
     },
     "model": {

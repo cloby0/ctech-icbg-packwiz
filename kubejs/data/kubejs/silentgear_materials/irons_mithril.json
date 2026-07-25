@@ -65,6 +65,18 @@
             "armor_durability": {
                 "mul2": 0
             },
+            "magic_damage": {
+                "mul2": 0.5
+            },
+            "ranged_damage": {
+                "mul2": 0.2
+            },
+            "attack_speed": {
+                "add": 0.3
+            },
+            "enchantment_value": {
+                "add": 3
+            },
             "rarity": {
                 "add": 14
             }

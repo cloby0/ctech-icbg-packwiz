@@ -2542,7 +2542,7 @@ hash = "ddefa8e3b31201e4422c9230a9869aad35e019f56972c75bb2e6ddbe626c8939"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/aluminium_ingot.json"
-hash = "982999d1dcc72a95c469d616938188ff2d7c1cc04130576c1d95e37e856d24c2"
+hash = "770ac67cfb27846fb085ecd2f7cfdee223cc150b9fecd4666f0af445438b06a0"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/ambrosium_shard.json"
@@ -2551,6 +2551,10 @@ hash = "d87e12c13ada135c9dceb835da7dd8f1356babf71ce9dd88abce8343bc5360f2"
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/americium_ingot.json"
 hash = "0d153db94da159869fb0a9fd40763ed2d5431c34c349d0a1c7802a16653b59bd"
+
+[[files]]
+file = "kubejs/data/kubejs/silentgear_materials/ancient_knowledge_fragment.json"
+hash = "cef143578ab715c59d76cd7fed1565f6de2b120b25017ecfda09d537ad79c29f"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/annealed_copper_ingot.json"
@@ -2562,7 +2566,7 @@ hash = "ab3cfcf3b26b25b817f4cb4b77af68779ff628dcdb2f7c61c3fad4c8b6c069ae"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/apatite_gem.json"
-hash = "5e3aba2f2dc39308af905c9233f3387324f740732e9fdc2dbd7869e5ee176a1b"
+hash = "7da8a73068b42804db5f56102a5616e5b0edea7d1c6cb4854cd704b612b734ae"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/arcane_essence.json"
@@ -2582,7 +2586,7 @@ hash = "ba0dcbe34ba32eeb68139c311ebafeb0769bcb43e7150cfa8d8f826587ecf9cb"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/azure_silver.json"
-hash = "be0582fb8c17271e71f1cc4be125243b68f21d6713a80413a7f4e46f25d4c958"
+hash = "6bc10b3ab41c3a8e238dbd0e2ccb4e4a7ee0e8107a9f4ac19823b6e703c10180"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/beryllium_ingot.json"
@@ -2606,7 +2610,7 @@ hash = "e8ffcc05170da9d413666929f8cc537e88f86a7b09ffdc9cb30111890011fded"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/blaze_gold.json"
-hash = "e150220717508edfbb66f43279d81ae779ab438b147e27f60a617ebc97213f18"
+hash = "40f8e503b780fad8f415b4b5ef810de6986a234b08585fb40b739e3ab4a1bd37"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/blaze_quartz.json"
@@ -2618,7 +2622,7 @@ hash = "32b7872e63bb5b9f5cef3ed1318a31d6ff5ffa1fcf2ed9580f4ca66aa4020a09"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/blood_vial.json"
-hash = "135aef0fd7f003cd9399697be86fb7f7f8407d82b14bd1dfa43c94b40b27fd71"
+hash = "8cfb5ba5ea3846a332129e2acbed2d25f40b99c0d724440a6bed2b325fe1c1fe"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/bloody_vellum.json"
@@ -2634,7 +2638,7 @@ hash = "2014da96763bd89c35cb1a6b1fd0b7fd14517a729ee164d58759c028c9935008"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/blue_topaz_gem.json"
-hash = "56e7b3909575ef187a4af5646b99ad809f0462f3cf123ff234873ab2606d6e6f"
+hash = "ddc9c19b5e7c10d5f6b05e0d9224c36b531c9e47ae985d3b52c59e76c12d264b"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/brown_petal.json"
@@ -2730,11 +2734,11 @@ hash = "1f164d28244fbcc3efcec8344c894f4934c7f3634a9bc95c60fe86fdd147bcd6"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/crimson_steel.json"
-hash = "9b8816f016eb9cd954d81855e9da56cc05d312386b809483ee9885de0ada2b29"
+hash = "53c5f9b6feab3121eea70e436eb09b279e7db72a66df487bc00d058f5408f228"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/cumium_ingot.json"
-hash = "3588970556240008bd8f20ca792a56c06adc02b0ce29a83efb81513589224b1a"
+hash = "8e86a63a912cd055906747dd1aa801b68905d96afd7d7e2953886275937bbf64"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/cupronickel_ingot.json"
@@ -2746,7 +2750,7 @@ hash = "63dc98522aabdb44b9d0def708e6387129a3595d6d31f1a71a96868189362fd3"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/damascus_steel_ingot.json"
-hash = "5402e2674f24f5d44d5c60c0a00e303bc044474de4a9ca8da2de498357bff8bf"
+hash = "50ceb7da32fd8178adac1d6d6da06fc5a0844461afd336d912441936266904d4"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/dark_quartz.json"
@@ -2842,11 +2846,11 @@ hash = "7619aa2dd0adc1228fba3dbfae635d63833cdcd772333f2ed4cfcc807a31c3dd"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/gaia.json"
-hash = "3fb5a1ff24728605ee028d82ff8a6367a8f661cdcdedce194257193772ec0696"
+hash = "41f5cc21dbabf16834c145f6237ba56b0720a7d87890d503b98229c700090129"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/graphene_ingot.json"
-hash = "fe67c4076364e99a0b4778f9d68f48b88bca1f4e03761044f86cf3c294f54d67"
+hash = "0cedede15dbd32d7163e50c5e85d1e3d580ab85402fae82538afc6a7bec71944"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/gravitite_ingot.json"
@@ -2862,7 +2866,7 @@ hash = "868a284719d2f715ea5f8eacce9657088060870926c966870c83907ba7f9c9ff"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/green_sapphire_gem.json"
-hash = "188c6334835725ca27a8b9362da6f48412a82448e039b4514c1de81479c868bb"
+hash = "3e5f738d0eac7dce332779e3100953fdf9c96cb2fecfdc1fab12a9261859412d"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/hastelloy_c_276_ingot.json"
@@ -2878,7 +2882,7 @@ hash = "447bbc5445620016cf7a4674cd1dc7f723da38ee55e2b84766a9a0192d355ff0"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/holy_silver_ingot.json"
-hash = "4afb34bf417c43ca5fdc3fb3ef480e2053fc8ea9dec31a00032d571f9ed67bef"
+hash = "4056f14cc959711b5c3b7ba52bd9af3b91d5b1b5e874442e8c2ee76a1e7c5a35"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/hsla_steel_ingot.json"
@@ -2914,7 +2918,7 @@ hash = "47eb397c50342fb2b8f910364a5538b71fd8c129fc69b484e60051b958892d1a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/irons_mithril.json"
-hash = "b8e2b344a0e5cb4b566a187111c2e9bc2c80a229daf07c0315a8377b5cab7d26"
+hash = "f8dfed8d31081f90192b6f73acaed5c1e705628292b6124ee7a4889f39ba8eb2"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/kanthal_ingot.json"
@@ -2926,7 +2930,7 @@ hash = "4f347b64135c87245ad413953f1b88ca1e07d5860ddbfdcd3aee7c6e150f53d5"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/lead_ingot.json"
-hash = "8c3ad86e398e444307fee6e4b70b0c8be82545f55e889adc7e12f089f876d0f7"
+hash = "051ef97687989dba74afb0294718a2ccae6aa381d9b70e4c5f6c365af71c82d5"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/leather.json"
@@ -2970,7 +2974,7 @@ hash = "d38f8b1863bac8dc6b9b7a0157ab9ad27f2ad47d758db596acebd7043e58e4f2"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/lumium.json"
-hash = "de2e7dd891c4d3eb0668704653de3f3c51ff646b8f1ed524e1a2d7a30e39beaf"
+hash = "6df60c3e40ff1027c19029e68446330744ce415189313f7ba29707ba212109a1"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/magenta_petal.json"
@@ -2998,7 +3002,7 @@ hash = "24bee1ae9127780572c1a7d981e7f4a4e381bc1085d26c474987766244c32e3f"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/manasteel.json"
-hash = "3cbf4a6cfbb9da334fee0ede730d0e214211d42ae57daa8b4bb648bb307cd03b"
+hash = "a0f6eba6c1357d64552c7ef203657a5b89d02a06c73983b850a20a8ee4c413fd"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/manganese_ingot.json"
@@ -3050,15 +3054,15 @@ hash = "72551b95356d8fabd34e0edc30c79efe5673dcc24984e4b7e67a62e4f7a8bf3c"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/obsidian.json"
-hash = "323905feaa539ea17065520d54fa3aaec1450dbe45d86898ff52f561021be529"
+hash = "8c7184fc6a40d2718775022ae34a38723db07b7439ead9c949bb5e14bb1104dd"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/olivine_gem.json"
-hash = "d68d48cd43bec2403417e27f415319e61f18bad21f2e6cce4017f75b16b73282"
+hash = "7c4bf667b3ca733165e166d709b0bdeb3db7c1766f5abc32d1b61d8e03bca65a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/opal_gem.json"
-hash = "789c3faa20c7087148872e95a780420e692c897cd6bd89d24fc4348b7c63d58c"
+hash = "819bf95aebca33f8fd65c86a329614919566bfa194caef0d6e09dbc0f9dcc0c6"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/orange_petal.json"
@@ -3066,7 +3070,7 @@ hash = "fe48543ef84f1d0a59c56b440c187dc849fdcbeebe93805c2bfcd43b70a4baaf"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/osmiridium_ingot.json"
-hash = "b56434f7a12d41b2a7a23dde16a63dd2a425bf773906237b8b0922935218fa9c"
+hash = "0b1570ef96ff69d265cd79dcd63dd37537f4c8a3021fc6817a38745917a72629"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/palladium_ingot.json"
@@ -3126,7 +3130,7 @@ hash = "5ef03f5319b21553e4298febca05b73a19ff8a61f1d3c2b557cd5b1055a8c2ed"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/red_garnet_gem.json"
-hash = "73158f4865d7f8c6dc1336b2c59ac72fcc26057bdb1e948947fe179ad17ec485"
+hash = "2e4460f139ff3bb3cf9ad5741b544d1ac70a5c9754fcf24ce0b17bca9490b40f"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/red_petal.json"
@@ -3166,7 +3170,7 @@ hash = "d4edcb5a66834a64c89badda809e98e7d6bed437a212c0b2a8675607c18fc825"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/ruby_gem.json"
-hash = "5162910aac5987422878d24be9d6c52cd1394336e39d2dd228c99852bf26d19a"
+hash = "be71878f3eba48d895dcc32c3c4ca682ea8f697126886c0bb283c0b65d706631"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/ruridit_ingot.json"
@@ -3178,7 +3182,7 @@ hash = "eab2d93cbc03736e8eec85c65ae6bda04fcfb50c85e44bebaaed22a378f04915"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/ruthenium_trinium_americium_neutronate_ingot.json"
-hash = "32208ce13735f501bee37ccf79cec3f507dee9f628f244af99ec785a08cac8a0"
+hash = "0dc2144c0c08e6a31757859759fac2e123d76190045192c889936b6487c6824b"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/samarium_ingot.json"
@@ -3186,7 +3190,11 @@ hash = "018c2382d9f8cc32464021581483c2455242a99544d36007fbfccec261ec77ce"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/sapphire_gem.json"
-hash = "5695a88f40a58d33b4226bb94e9fc1affa7750c607a3b84c0fb197e25d5efe17"
+hash = "57a88a72785ee0cb3fdcf5968546abebab3b26733c05f15c70bfab4e7888f339"
+
+[[files]]
+file = "kubejs/data/kubejs/silentgear_materials/shriving_stone.json"
+hash = "eb6ef3bc8928f603dc9eccd30abe85e127fabd584d3eadd3d5cb85b5f11badca"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/skyjade.json"
@@ -3250,7 +3258,7 @@ hash = "6875df187f6d2c9ca26fcccfcfed462bbc499b06ea924e3bd539efe2518e19db"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/topaz_gem.json"
-hash = "6ca2ac7b3f34178dda2127dc889636dc1224cd51a95474ba4e6644755a79a7f0"
+hash = "195aa8db61c45769e1bf3e6239caa915c1d9eea11edba0bc21375cffcc11e99d"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/trinium_ingot.json"
@@ -3258,7 +3266,7 @@ hash = "b79f1e5e0b40b56c0950219ff57ab938082f4bddf82ba1604dcffd7171e962d3"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/tritanium_ingot.json"
-hash = "7a6006cd371233d0e1b64f8d9a0ea5d3d39e20f446cddfbe2b14c525bd7417be"
+hash = "a9c5119f61eacc2ae06a79f6f3158788b9abb64ca3ec975549406e1c44349e8a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/tungsten_carbide_ingot.json"
@@ -3342,7 +3350,7 @@ hash = "e4cb91990cd66165e63a6ed4684be71727a314add89dae219a2048a0d9385920"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/yellow_garnet_gem.json"
-hash = "b38acf69f13ffe807e125c7424e43ca3f6293ab462605c147589acb07558cee5"
+hash = "ac0d276cd1bd7c43369b301f8f4f0dee66c33d09fd49257ac5be22b6b1b2a17a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/yellow_petal.json"
@@ -5278,7 +5286,7 @@ hash = "aa8c06fa14c4b517e64ea82ff2b6948fbdc99015c5004977401716b52a881765"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
-hash = "1fdb3eba9b50b2ef003725602f1291007128339a278bfc8c0bab22498705d644"
+hash = "135c746878f67ecb5fa3b0f8636d055a8f5674c700d1fb54150bba8167cf8a9e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"

@@ -40,7 +40,8 @@
     "traits": {
         "main": [
             { "name": "silentgear:light", "level": 1 },
-            { "name": "silentgear:malleable", "level": 1 }
+            { "name": "silentgear:malleable", "level": 1 },
+            { "name": "kubejs:fire_attunement", "level": 1 }
         ]
     },
     "model": {

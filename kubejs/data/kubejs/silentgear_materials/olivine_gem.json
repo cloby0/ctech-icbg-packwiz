@@ -40,7 +40,8 @@
     "traits": {
         "main": [
             { "name": "silentgear:malleable", "level": 1 },
-            { "name": "silentgear:ancient", "level": 1 }
+            { "name": "silentgear:ancient", "level": 1 },
+            { "name": "kubejs:arcane_reservoir", "level": 1 }
         ]
     },
     "model": {

@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "irons_spellbooks:shriving_stone" }
+    },
+    "name": { "text": "Shriving Stone" },
+    "stats": {
+        "adornment": {}
+    },
+    "traits": {
+        "adornment": [
+            { "name": "silentgear:holy", "level": 1 },
+            { "name": "kubejs:holy_attunement", "level": 2 }
+        ]
+    },
+    "model": {
+        "adornment/all": [
+            { "texture": "silentgear:adornment_generic", "color": "#D8C8E8" },
+            { "texture": "silentgear:adornment_highlight", "color": "#D8C8E8" }
+        ],
+        "adornment/part": [
+            { "texture": "silentgear:adornment", "color": "#D8C8E8" },
+            { "texture": "silentgear:adornment_highlight" }
+        ]
+    }
+}

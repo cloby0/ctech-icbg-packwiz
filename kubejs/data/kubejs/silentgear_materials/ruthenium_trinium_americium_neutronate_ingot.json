@@ -82,6 +82,30 @@
             "armor_durability": {
                 "mul2": 0
             },
+            "melee_damage": {
+                "mul2": 2.0
+            },
+            "magic_damage": {
+                "mul2": 0.8
+            },
+            "armor/helmet": {
+                "add": 3
+            },
+            "armor/chestplate": {
+                "add": 6
+            },
+            "armor/leggings": {
+                "add": 5
+            },
+            "armor/boots": {
+                "add": 3
+            },
+            "armor_toughness": {
+                "add": 9
+            },
+            "enchantment_value": {
+                "add": 13
+            },
             "rarity": {
                 "add": 45
             }

@@ -16,7 +16,7 @@
     "name": { "text": "Blood Vial" },
     "stats": {
         "coating": {
-            "melee_damage": { "mul2": 1.05 },
+            "melee_damage": { "mul2": 0.4 },
             "attack_speed": { "add": -0.2 },
             "armor/chestplate": { "add": 1 },
             "armor_toughness": { "add": 1 },
@@ -26,7 +26,7 @@
     "traits": {
         "coating": [
             { "name": "silentgear:brittle", "level": 1 },
-            { "name": "kubejs:blood_attunement", "level": 2 }
+            { "name": "kubejs:blood_attunement", "level": 1 }
         ]
     },
     "model": {
