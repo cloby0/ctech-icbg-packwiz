@@ -77,13 +77,13 @@ ServerEvents.recipes(event => {
     // Shipped values gave ~800 units per impetus before catalyzer acceleration.
     // Halved output and doubled durability cost brings that to ~200.
     let focusingRecosts = [
-        { id: 'redstone',         output: 'minecraft:redstone',        count: 4, spirit: 'arcane' },
-        { id: 'glowstone_dust',   output: 'minecraft:glowstone_dust',  count: 2, spirit: 'sacred' },
-        { id: 'gunpowder',        output: 'minecraft:gunpowder',       count: 2, spirit: 'wicked' },
-        { id: 'quartz',           output: 'minecraft:quartz',          count: 2, spirit: 'earthen' },
-        { id: 'amethyst_shard',   output: 'minecraft:amethyst_shard',  count: 2, spirit: 'arcane' },
-        { id: 'prismarine_shard', output: 'minecraft:prismarine_shard', count: 2, spirit: 'aqueous' },
-        { id: 'blazing_quartz',   output: 'malum:blazing_quartz',      count: 2, spirit: 'infernal' },
+        { id: 'redstone',         output: 'minecraft:redstone',        count: 4, spirits: [{ type: 'arcane' }] },
+        { id: 'glowstone_dust',   output: 'minecraft:glowstone_dust',  count: 4, spirits: [{ type: 'infernal' }] },
+        { id: 'gunpowder',        output: 'minecraft:gunpowder',       count: 4, spirits: [{ type: 'earthen' }] },
+        { id: 'quartz',           output: 'minecraft:quartz',          count: 2, spirits: [{ type: 'earthen', count: 2 }, { type: 'arcane', count: 2 }] },
+        { id: 'amethyst_shard',   output: 'minecraft:amethyst_shard',  count: 4, spirits: [{ type: 'aerial', count: 2 }, { type: 'arcane', count: 2 }] },
+        { id: 'prismarine_shard', output: 'minecraft:prismarine_shard', count: 4, spirits: [{ type: 'aqueous', count: 2 }, { type: 'arcane', count: 2 }] },
+        { id: 'blazing_quartz',   output: 'malum:blazing_quartz',      count: 2, spirits: [{ type: 'infernal', count: 2 }, { type: 'arcane', count: 2 }] },
     ]
 
     focusingRecosts.forEach(r => {
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
             time: 300,
             input: { item: 'malum:alchemical_impetus' },
             output: { item: r.output, count: r.count },
-            spirits: [{ type: r.spirit }],
+            spirits: r.spirits,
         }).id('malum:spirit_crucible/' + r.id)
     })
 
