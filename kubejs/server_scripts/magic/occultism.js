@@ -19,161 +19,140 @@ ServerEvents.recipes(event => {
         marid: { item: 'gtceu:prima_materia_ingot' },
     }
 
+    // Occultism's RitualRecipe needs 5-8 metadata fields beyond ingredients/result.
+    // Omitting any of them fails deserialization silently at recipe-parse time.
+    function summonRitual(name, tier, jobType, maxAge, duration, ingredients, result) {
+        event.remove({ id: 'occultism:ritual/' + name })
+        event.custom({
+            type: 'occultism:ritual',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_' + tier,
+            activation_item: { item: 'occultism:book_of_binding_bound_' + tier },
+            ritual_dummy: { item: 'occultism:ritual_dummy/' + name },
+            duration: duration,
+            spirit_max_age: maxAge,
+            spirit_job_type: jobType,
+            entity_to_summon: 'occultism:' + tier,
+            ingredients: ingredients,
+            result: result,
+        }).id('occultism:ritual/' + name)
+    }
+
+    function craftMinerRitual(name, tier, duration, ingredients, result) {
+        event.remove({ id: 'occultism:ritual/' + name })
+        event.custom({
+            type: 'occultism:ritual',
+            ritual_type: 'occultism:craft_miner_spirit',
+            pentacle_id: 'occultism:craft_' + tier,
+            activation_item: { item: 'occultism:book_of_binding_bound_' + tier },
+            ritual_dummy: { item: 'occultism:ritual_dummy/' + name },
+            duration: duration,
+            ingredients: ingredients,
+            result: result,
+        }).id('occultism:ritual/' + name)
+    }
+
     // Foliot ritual/craft -> Hobbyist gate
-    event.remove({ id: 'occultism:ritual/summon_foliot_lumberjack' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:otherworld_sapling' },
-            { item: 'minecraft:oak_sapling' },
-            { item: 'minecraft:birch_sapling' },
-            { item: 'minecraft:spruce_sapling' },
-            foliotAxe,
-            gate.foliot,
-        ],
-        result: { item: 'occultism:book_of_calling_foliot_lumberjack' },
-    }).id('occultism:ritual/summon_foliot_lumberjack')
+    summonRitual('summon_foliot_lumberjack', 'foliot', 'occultism:lumberjack', -1, 60, [
+        { item: 'occultism:otherworld_sapling' },
+        { item: 'minecraft:oak_sapling' },
+        { item: 'minecraft:birch_sapling' },
+        { item: 'minecraft:spruce_sapling' },
+        foliotAxe,
+        gate.foliot,
+    ], { item: 'occultism:book_of_calling_foliot_lumberjack' })
 
-    event.remove({ id: 'occultism:ritual/summon_foliot_cleaner' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:brush' },
-            { tag: 'forge:chests' },
-            { item: 'minecraft:dispenser' },
-            { item: 'minecraft:hopper' },
-            gate.foliot,
-        ],
-        result: { item: 'occultism:book_of_calling_foliot_cleaner' },
-    }).id('occultism:ritual/summon_foliot_cleaner')
+    summonRitual('summon_foliot_cleaner', 'foliot', 'occultism:cleaner', -1, 60, [
+        { item: 'occultism:brush' },
+        { tag: 'forge:chests' },
+        { item: 'minecraft:dispenser' },
+        { item: 'minecraft:hopper' },
+        gate.foliot,
+    ], { item: 'occultism:book_of_calling_foliot_cleaner' })
 
-    event.remove({ id: 'occultism:ritual/summon_foliot_transport_items' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'minecraft:minecart' },
-            { tag: 'forge:chests' },
-            { item: 'minecraft:dispenser' },
-            { item: 'minecraft:hopper' },
-            gate.foliot,
-        ],
-        result: { item: 'occultism:book_of_calling_foliot_transport_items' },
-    }).id('occultism:ritual/summon_foliot_transport_items')
+    summonRitual('summon_foliot_transport_items', 'foliot', 'occultism:transport_items', -1, 60, [
+        { item: 'minecraft:minecart' },
+        { tag: 'forge:chests' },
+        { item: 'minecraft:dispenser' },
+        { item: 'minecraft:hopper' },
+        gate.foliot,
+    ], { item: 'occultism:book_of_calling_foliot_transport_items' })
 
-    event.remove({ id: 'occultism:ritual/craft_miner_foliot_unspecialized' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:magic_lamp_empty' },
-            iesniumPickaxe,
-            { item: 'minecraft:raw_iron' },
-            { item: 'minecraft:gravel' },
-            gate.foliot,
-        ],
-        result: { item: 'occultism:miner_foliot_unspecialized' },
-    }).id('occultism:ritual/craft_miner_foliot_unspecialized')
+    craftMinerRitual('craft_miner_foliot_unspecialized', 'foliot', 60, [
+        { item: 'occultism:magic_lamp_empty' },
+        iesniumPickaxe,
+        { item: 'minecraft:raw_iron' },
+        { item: 'minecraft:gravel' },
+        gate.foliot,
+    ], { item: 'occultism:miner_foliot_unspecialized' })
 
     // Foliot crusher: makes the crusher spirit itself required, not just its output --
     // see the source_gem crushing recipe added in journeyman.js, which only that spirit can run.
-    event.remove({ id: 'occultism:ritual/summon_foliot_crusher' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'minecraft:raw_iron' },
-            { item: 'minecraft:raw_gold' },
-            { item: 'minecraft:raw_copper' },
-            { item: 'gtceu:raw_silver' },
-            gate.foliot,
-        ],
-        result: { item: 'occultism:jei_dummy/none' },
-    }).id('occultism:ritual/summon_foliot_crusher')
+    // spirit_max_age 32400 is upstream's shipped value for this ritual; every other summon uses -1.
+    summonRitual('summon_foliot_crusher', 'foliot', 'occultism:crush_tier1', 32400, 60, [
+        { item: 'minecraft:raw_iron' },
+        { item: 'minecraft:raw_gold' },
+        { item: 'minecraft:raw_copper' },
+        { item: 'gtceu:raw_silver' },
+        gate.foliot,
+    ], { item: 'occultism:jei_dummy/none' })
 
     // Djinni ritual/craft -> Apprentice gate
-    event.remove({ id: 'occultism:ritual/summon_djinni_manage_machine' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'minecraft:coal_block' },
-            { item: 'minecraft:gold_ingot' },
-            { item: 'minecraft:iron_ingot' },
-            { item: 'minecraft:furnace' },
-            gate.djinni,
-        ],
-        result: { item: 'occultism:book_of_calling_djinni_manage_machine' },
-    }).id('occultism:ritual/summon_djinni_manage_machine')
+    summonRitual('summon_djinni_manage_machine', 'djinni', 'occultism:manage_machine', -1, 60, [
+        { item: 'minecraft:coal_block' },
+        { item: 'minecraft:gold_ingot' },
+        { item: 'minecraft:iron_ingot' },
+        { item: 'minecraft:furnace' },
+        gate.djinni,
+    ], { item: 'occultism:book_of_calling_djinni_manage_machine' })
 
-    event.remove({ id: 'occultism:ritual/craft_miner_djinni_ores' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:miner_foliot_unspecialized', nbt: '{Damage:0}' },
-            iesniumPickaxe,
-            { item: 'minecraft:raw_gold' },
-            { item: 'minecraft:lapis_block' },
-            { item: 'occultism:spirit_attuned_crystal' },
-            gate.djinni,
-        ],
-        result: { item: 'occultism:miner_djinni_ores' },
-    }).id('occultism:ritual/craft_miner_djinni_ores')
+    craftMinerRitual('craft_miner_djinni_ores', 'djinni', 60, [
+        { item: 'occultism:miner_foliot_unspecialized', nbt: '{Damage:0}' },
+        iesniumPickaxe,
+        { item: 'minecraft:raw_gold' },
+        { item: 'minecraft:lapis_block' },
+        { item: 'occultism:spirit_attuned_crystal' },
+        gate.djinni,
+    ], { item: 'occultism:miner_djinni_ores' })
 
     // Afrit ritual/craft -> Journeyman gate
-    event.remove({ id: 'occultism:ritual/summon_afrit_crusher' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'minecraft:diamond' },
-            { item: 'occultism:iesnium_dust' },
-            { item: 'occultism:iesnium_dust' },
-            { item: 'minecraft:emerald' },
-            gate.afrit,
-        ],
-        result: { item: 'occultism:jei_dummy/none' },
-    }).id('occultism:ritual/summon_afrit_crusher')
+    summonRitual('summon_afrit_crusher', 'afrit', 'occultism:crush_tier3', -1, 120, [
+        { item: 'minecraft:diamond' },
+        { item: 'occultism:iesnium_dust' },
+        { item: 'occultism:iesnium_dust' },
+        { item: 'minecraft:emerald' },
+        gate.afrit,
+    ], { item: 'occultism:jei_dummy/none' })
 
-    event.remove({ id: 'occultism:ritual/craft_miner_afrit_deeps' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:miner_djinni_ores', nbt: '{Damage:0}' },
-            iesniumPickaxe,
-            { item: 'occultism:spirit_attuned_crystal' },
-            { item: 'occultism:afrit_essence' },
-            { item: 'minecraft:echo_shard' },
-            { item: 'minecraft:crying_obsidian' },
-            gate.afrit,
-        ],
-        result: { item: 'occultism:miner_afrit_deeps' },
-    }).id('occultism:ritual/craft_miner_afrit_deeps')
+    craftMinerRitual('craft_miner_afrit_deeps', 'afrit', 120, [
+        { item: 'occultism:miner_djinni_ores', nbt: '{Damage:0}' },
+        iesniumPickaxe,
+        { item: 'occultism:spirit_attuned_crystal' },
+        { item: 'occultism:afrit_essence' },
+        { item: 'minecraft:echo_shard' },
+        { item: 'minecraft:crying_obsidian' },
+        gate.afrit,
+    ], { item: 'occultism:miner_afrit_deeps' })
 
     // Marid ritual/craft -> Sorcerer gate
-    event.remove({ id: 'occultism:ritual/summon_marid_crusher' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'minecraft:diamond_block' },
-            { item: 'minecraft:ghast_tear' },
-            { item: 'occultism:iesnium_block' },
-            { item: 'minecraft:emerald_block' },
-            gate.marid,
-        ],
-        result: { item: 'occultism:jei_dummy/none' },
-    }).id('occultism:ritual/summon_marid_crusher')
+    summonRitual('summon_marid_crusher', 'marid', 'occultism:crush_tier4', -1, 150, [
+        { item: 'minecraft:diamond_block' },
+        { item: 'minecraft:ghast_tear' },
+        { item: 'occultism:iesnium_block' },
+        { item: 'minecraft:emerald_block' },
+        gate.marid,
+    ], { item: 'occultism:jei_dummy/none' })
 
-    event.remove({ id: 'occultism:ritual/craft_miner_marid_master' })
-    event.custom({
-        type: 'occultism:ritual',
-        ingredients: [
-            { item: 'occultism:miner_afrit_deeps', nbt: '{Damage:0}' },
-            iesniumPickaxe,
-            { item: 'occultism:spirit_attuned_crystal' },
-            { item: 'minecraft:netherite_pickaxe', nbt: '{Damage:0}' },
-            { item: 'minecraft:dragon_breath' },
-            { item: 'minecraft:totem_of_undying' },
-            { item: 'minecraft:nether_star' },
-            gate.marid,
-        ],
-        result: { item: 'occultism:miner_marid_master' },
-    }).id('occultism:ritual/craft_miner_marid_master')
+    craftMinerRitual('craft_miner_marid_master', 'marid', 120, [
+        { item: 'occultism:miner_afrit_deeps', nbt: '{Damage:0}' },
+        iesniumPickaxe,
+        { item: 'occultism:spirit_attuned_crystal' },
+        { item: 'minecraft:netherite_pickaxe', nbt: '{Damage:0}' },
+        { item: 'minecraft:dragon_breath' },
+        { item: 'minecraft:totem_of_undying' },
+        { item: 'minecraft:nether_star' },
+        gate.marid,
+    ], { item: 'occultism:miner_marid_master' })
 
     // --- Miner GT-ore-spread rebalance ---
     // Vanilla Occultism puts nearly every ore (including tungsten/platinum/uranium/thorium) on the
