@@ -5330,7 +5330,7 @@ hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "7e8ef51e6f21095a1276a38916a7e76b2e4644ed961bc93e336cce416ad04855"
+hash = "38a787262a785fd9387d44f4db7637e7a46969e8c44f90df27fc029b300bafc7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
@@ -6960,6 +6960,11 @@ metafile = true
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
 hash = "36862eca043b9d3fd35fa3c2c823b23df931475d147c76a371a07c9b79c1d70c"
+metafile = true
+
+[[files]]
+file = "mods/occultism-kubejs.pw.toml"
+hash = "3f2e98fd7935a46b28a423f7d845301331458010a504496a9b64ee836e3973e1"
 metafile = true
 
 [[files]]
