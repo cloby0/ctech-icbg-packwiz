@@ -5270,7 +5270,7 @@ hash = "8d425001b0b7ac797f974aac678cb1009bf402b1ec75f5d20057eaedacbb8f7f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/malumRecipes.js"
-hash = "d145d97cf2e844e5cbcac0a6e732fc7e6847af4a2f0ee5dffe1cd2de5c423092"
+hash = "53d90c03f99df461d7bba0e902f761404b39eca782631449da1e9d48214913fb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
@@ -5278,7 +5278,7 @@ hash = "e26410e5e3037541144e7c4ccf57444d130d91b1dce90a9f904bce0f2ab32a0a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "a318fea1b339e7744cb160d848a215b6fdfe230c8f1ca0a9bb4115c64fe6f451"
+hash = "e490f004d089329904558384a6dde89ef53105cd94274cf1c2e8e811adcc6249"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"

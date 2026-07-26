@@ -16,6 +16,15 @@ function addOccultismRitual(event, crecipe) {
 
     let tier = crecipe.tier || 'foliot'
     let name = crecipe.name
+    if (!name || typeof name !== 'string') {
+        console.warn(`[occultism-ritual] skipping ${index}: null/non-string name '${name}'`)
+        return
+    }
+    let ritualDummyId = 'kubejs:ritual_dummy_' + name
+    if (!$ForgeRegistries.ITEMS.getValue(ritualDummyId)) {
+        console.warn(`[occultism-ritual] skipping ${index}: non-existent ritual_dummy '${ritualDummyId}'`)
+        return
+    }
 
     console.log(`[occultism-ritual] ${index}: ${outputId} tier=${tier}`)
     event.custom({
@@ -23,7 +32,7 @@ function addOccultismRitual(event, crecipe) {
         ritual_type: 'occultism:craft',
         pentacle_id: crecipe.pentacle || ('occultism:craft_' + tier),
         activation_item: { item: 'occultism:book_of_binding_bound_' + tier },
-        ritual_dummy: { item: 'kubejs:ritual_dummy_' + name },
+        ritual_dummy: { item: ritualDummyId },
         duration: crecipe.duration || 60,
         ingredients: crecipe.ingredients,
         result: typeof crecipe.output === 'object' ? crecipe.output : { item: outputId },

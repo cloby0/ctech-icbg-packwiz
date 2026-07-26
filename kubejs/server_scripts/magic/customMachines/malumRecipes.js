@@ -119,6 +119,13 @@ function addSpiritRepair(event, crecipe) {
         }
     }
 
+    let repairMaterial = crecipe.repairMaterial
+    let repairMaterialId = typeof repairMaterial === 'object' && repairMaterial !== null ? repairMaterial.item : repairMaterial
+    if (!repairMaterialId || !$ForgeRegistries.ITEMS.getValue(repairMaterialId)) {
+        console.warn(`[malum] skipping repair ${index}: bad repairMaterial '${repairMaterialId}'`)
+        return
+    }
+
     // Explicit inputs only. itemIdRegex/modIdRegex stay empty deliberately -- broad regex
     // matching is what made spirit repair a pack-wide bypass of GT and Silent Gear repair,
     // and those recipes were removed in Phase 2.
@@ -129,7 +136,7 @@ function addSpiritRepair(event, crecipe) {
         inputs: inputs,
         itemIdRegex: '',
         modIdRegex: '',
-        repairMaterial: crecipe.repairMaterial,
+        repairMaterial: repairMaterial,
         spirits: _malumSpirits(crecipe.spirits || []),
     }).id(`kubejs:spirit_repair_${_malumStrip(inputs[0])}_${index}`)
 }
