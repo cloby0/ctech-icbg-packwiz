@@ -5542,7 +5542,7 @@ hash = "5a72df2208a699cdbe34c7421c4813b4277f694c2b69313b1307d57b5216ed5e"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "fa805431177d4070a404caa945381091011c2dc91f93f17174c9912ab707d3c0"
+hash = "80e6cbc527214fbacf7279f1c8817110382612132dfaa79b1744a88696fc07a5"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"

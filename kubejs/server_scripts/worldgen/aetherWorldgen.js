@@ -238,4 +238,30 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(5)
         )
     })
+
+    // Malum's entry materials. Aether access lands right after luminessence,
+    // matching the Spirit Altar's Journeyman placement.
+    event.add("kubejs:soulstone_vein", vein => {
+        vein.weight(160)
+        vein.clusterSize(32)
+        vein.density(0.5)
+        vein.discardChanceOnAirExposure(0)
+
+        vein.layer("holystone")
+        vein.dimensions("aether:the_aether")
+        vein.biomes("#aether:is_aether")
+
+        vein.heightRangeUniform(8, 96)
+
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get('soulstone'), 4, 8, 70)
+            .withBlock(GTMaterials.get('brilliance'), 2, 55, 96)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('soulstone'))
+            .placement("above")
+            .density(0.3)
+            .radius(5)
+        )
+    })
 })
