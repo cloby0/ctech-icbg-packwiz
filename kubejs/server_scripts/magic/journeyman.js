@@ -251,11 +251,14 @@ ServerEvents.recipes(event => {
         "experience": 0.5
     })
 
-    addImbuementRecipe(event, {
+    addSpiritInfusion(event, {
         input: 'kubejs:enchanted_zanite_gem',
         output: 'kubejs:resonant_zanite_crystal',
-        source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'occultism:spirit_attuned_crystal']
+        extraItems: [
+            { item: 'ars_nouveau:source_gem', count: 2 },
+            { item: 'occultism:spirit_attuned_crystal' }
+        ],
+        spirits: [{ type: 'arcane', count: 2 }, { type: 'aerial' }]
     })
 
     event.custom({
@@ -277,19 +280,17 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     })
 
-    addImbuementRecipe(event, {
+    addSpiritInfusion(event, {
         input: 'kubejs:resonant_zanite_crystal',
-        output: 'irons_spellbooks:cinder_essence',
-        count: 3,
-        source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
+        output: { item: 'irons_spellbooks:cinder_essence', count: 3 },
+        extraItems: [{ tag: 'kubejs:fire_essences', count: 2 }],
+        spirits: [{ type: 'infernal', count: 2 }, { type: 'arcane' }]
     })
 
-    addImbuementRecipe(event, {
+    addSpiritInfusion(event, {
         input: 'kubejs:resonant_zanite_crystal',
-        output: 'irons_spellbooks:arcane_ingot',
-        count: 4,
-        source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['#kubejs:air_essences', '#kubejs:air_essences']
+        output: { item: 'irons_spellbooks:arcane_ingot', count: 4 },
+        extraItems: [{ tag: 'kubejs:air_essences', count: 2 }],
+        spirits: [{ type: 'arcane', count: 2 }, { type: 'aerial' }]
     })
 });

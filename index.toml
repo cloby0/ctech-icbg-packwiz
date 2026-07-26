@@ -5314,7 +5314,7 @@ hash = "7359175d558a97ae2e161f1a172254b020d450bafa84a134aed5071e1e8a9685"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "149c66fa0c6653731e93653ff621d854ee2dd54140606e1be0ca429715a86fb8"
+hash = "dec9ce303e8a3146f6be74d65beebd84e42fad84af7e090946d9f459afced6d4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
