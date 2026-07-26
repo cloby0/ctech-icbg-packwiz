@@ -755,4 +755,20 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
+    // --- Malum reagent alternates (supplemental only) ---
+    // Every output here also has a surviving magic route (spirit_infusion or
+    // an equivalent Malum mechanic). These exist so tech players have a second
+    // path, never a sole one.
+    event.recipes.gtceu.centrifuge('malum_hex_ash_from_charcoal')
+        .itemInputs('4x malum:arcane_charcoal')
+        .itemOutputs('1x malum:hex_ash')
+        .duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('malum_void_salts_from_soulstone')
+        .itemInputs('2x malum:processed_soulstone', '1x gtceu:salt_dust')
+        .itemOutputs('2x malum:void_salts')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
 })
