@@ -5362,7 +5362,7 @@ hash = "6b7b860885cc0437bb385f3b3453602af8e997196439d643af02ba43b9d9faab"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "aa29dd8e26eb1d8b27ca20a956c48723ade44736f3641818c778e628ddbbcf8f"
+hash = "88e32391405e512653951682c2421d060519f7d0f9b065110adad944dc292682"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"

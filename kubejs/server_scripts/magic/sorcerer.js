@@ -58,11 +58,19 @@ ServerEvents.recipes(event => {
         "experience": 0.8
     })
 
-    addImbuementRecipe(event, {
-        input: 'kubejs:altar_charged_gravitite',
+    addOccultismRitual(event, {
+        name: 'resonant_gravitite_core',
+        tier: 'afrit',
         output: 'kubejs:resonant_gravitite_core',
-        source: 2 * Source.SORCERER,
-        pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'occultism:afrit_essence']
+        duration: 120,
+        ingredients: [
+            { item: 'kubejs:altar_charged_gravitite' },
+            { item: 'gtceu:holy_silver_rod' },
+            { item: 'gtceu:holy_silver_rod' },
+            { item: 'kubejs:resonant_zanite_crystal' },
+            { item: 'kubejs:resonant_zanite_crystal' },
+            { item: 'occultism:afrit_essence' }
+        ]
     })
 
     const elements = ['air', 'earth', 'fire', 'water']
@@ -82,25 +90,38 @@ ServerEvents.recipes(event => {
         event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'gtceu:holy_silver_ingot',
-        pedestalItems: [
-            'mysticalagriculture:air_essence', 'gtceu:source_block',
-            'mysticalagriculture:earth_essence', 'gtceu:source_block',
-            'mysticalagriculture:water_essence', 'gtceu:source_block',
-            'mysticalagriculture:fire_essence', 'gtceu:source_block'
-        ],
+    addOccultismRitual(event, {
+        name: 'chaos_essence',
+        tier: 'marid',
         output: 'kubejs:chaos_essence',
-        sourceCost: 3 * Source.SORCERER
+        duration: 150,
+        ingredients: [
+            { item: 'gtceu:holy_silver_ingot' },
+            { item: 'mysticalagriculture:air_essence' },
+            { item: 'mysticalagriculture:earth_essence' },
+            { item: 'mysticalagriculture:water_essence' },
+            { item: 'mysticalagriculture:fire_essence' },
+            { item: 'gtceu:source_block' },
+            { item: 'gtceu:source_block' },
+            { item: 'gtceu:source_block' },
+            { item: 'gtceu:source_block' }
+        ]
     })
 
     // afrit_essence already used once in this file (resonant_gravitite_core above) -- a
     // second use here puts it in the Prima Materia recipe itself, this tier's signature material.
-    addImbuementRecipe(event, {
-        input: 'kubejs:chaos_essence',
+    // Uses afrit tier, not marid: prima_materia_ingot IS the marid gate item in occultism.js,
+    // so gating its own ritual behind marid would be circular.
+    addOccultismRitual(event, {
+        name: 'prima_materia_ingot',
+        tier: 'afrit',
         output: 'gtceu:prima_materia_ingot',
-        source: 3 * Source.SORCERER,
-        pedestalItems: ['kubejs:element_attunement_stone', 'occultism:afrit_essence']
+        duration: 150,
+        ingredients: [
+            { item: 'kubejs:chaos_essence' },
+            { item: 'kubejs:element_attunement_stone' },
+            { item: 'occultism:afrit_essence' }
+        ]
     })
 
     addEnchantingRecipe(event, {
