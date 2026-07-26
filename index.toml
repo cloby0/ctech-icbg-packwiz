@@ -5653,6 +5653,10 @@ file = "kubejs/startup_scripts/layerRegistry.js"
 hash = "fb63a446397924d35bdcfafae1106a1504a3636166289ffb2545ffde38cb8ef1"
 
 [[files]]
+file = "kubejs/startup_scripts/malumRemoveWorldgen.js"
+hash = "605c1531665b64973fbfb50fb4bd18f020dac6d1a36d7e64ed4410428134f057"
+
+[[files]]
 file = "kubejs/startup_scripts/namespace.js"
 hash = "c1b2c12af7b3f7da07c3ce64d611583d56099ac9da3be34ebf1385a045332d4e"
 
