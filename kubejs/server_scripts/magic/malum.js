@@ -1,10 +1,8 @@
-// Gates Malum's spirit arcana into the magic tree and removes its ore-free metal
-// generation, which would otherwise hand out uranium and aluminium off a mob farm.
+// Gates Malum's spirit arcana into the magic tree and removes its ore-free metal node economy.
 ServerEvents.recipes(event => {
 
-    // Malum's crucible converts spirits directly into metal with no ore and no power.
-    // At ~100 ingots per impetus with infinitely repeatable impetuses, this bypasses
-    // GT ore processing entirely -- including uranium and aluminium, both gated elsewhere.
+    // Malum's crucible turns spirits into metal with no ore or power, ~100 ingots/impetus -- removed below.
+    // aluminum stays in the list though inert: this pack uses forge:nuggets/aluminium, not the tag the recipe checks.
     let nodeMetals = [
         'iron', 'copper', 'gold', 'lead', 'silver', 'aluminum',
         'nickel', 'uranium', 'osmium', 'zinc', 'tin'
