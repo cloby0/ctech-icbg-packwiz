@@ -105,6 +105,27 @@ ServerEvents.recipes(event => {
         }).id('malum:spirit_crucible/' + r.id)
     })
 
+    // --- New crucible commodities (Initiate) ---
+    // Additive alternates for grind-heavy drops. The crucible is a spirit-to-matter
+    // generator, so these carry no ingredient chain by design.
+    // luminessence_dust deliberately NOT here -- it is the Aether portal key, the
+    // Apprentice tier gate, the djinni gate, and a pedestal item in six recipes.
+    let crucibleCommodities = [
+        { output: 'minecraft:blaze_powder',      count: 4, spirits: [{ type: 'infernal', count: 2 }, { type: 'arcane' }] },
+        { output: 'minecraft:phantom_membrane',  count: 2, spirits: [{ type: 'aerial', count: 2 }, { type: 'wicked' }] },
+        { output: 'minecraft:slime_ball',        count: 4, spirits: [{ type: 'aqueous', count: 2 }, { type: 'earthen' }] },
+        { output: 'minecraft:glow_ink_sac',      count: 4, spirits: [{ type: 'aerial', count: 2 }, { type: 'sacred' }] },
+    ]
+
+    crucibleCommodities.forEach(c => {
+        global.addSpiritFocusing(event, {
+            output: { item: c.output, count: c.count },
+            spirits: c.spirits,
+            durabilityCost: 2,
+            time: 300
+        })
+    })
+
     // --- Spirit repair containment ---
     // These 8 recipes match broadly via itemIdRegex (e.g. "iron_.+", "copper_.+") with no
     // mod restriction, making spirit repair a pack-wide path around both GT tool repair and
