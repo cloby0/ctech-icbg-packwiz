@@ -98,4 +98,19 @@ ServerEvents.recipes(event => {
         }).id('malum:spirit_crucible/' + r.id)
     })
 
+    // --- Spirit repair containment ---
+    // These 8 recipes match broadly via itemIdRegex (e.g. "iron_.+", "copper_.+") with no
+    // mod restriction, making spirit repair a pack-wide path around both GT tool repair and
+    // the Silent Gear repair-kit economy. Malum's own gear repairs (tyrving, soul_stained_steel,
+    // special_soul_stained_steel, soul_hunter_armor, both impetus restorations) use explicit
+    // inputs lists with no regex and are kept. trident.json also has no regex (inputs-only,
+    // matches only minecraft:trident) so it is not part of this containment and stays.
+    let genericRepairs = [
+        'wooden', 'stone', 'iron', 'gold', 'diamond', 'netherite', 'copper', 'flint'
+    ]
+
+    genericRepairs.forEach(mat => {
+        event.remove({ id: 'malum:spirit_crucible/repair/' + mat })
+    })
+
 })
