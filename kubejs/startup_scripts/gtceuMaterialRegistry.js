@@ -1126,4 +1126,61 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
 
+    // ==== Malum ====
+    // Hallowed gold: mod-native "perfect conductor" -> fine wire, no cableProperties (not a power line).
+    event.create('hallowed_gold')
+        .ingot()
+        .color(0xF3E5AB)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL
+        )
+        .blastTemp(1800)
+
+    // Soul stained steel: structural, weapons/armor -> plate/rod line.
+    event.create('soul_stained_steel')
+        .ingot()
+        .color(0x6B4E8C)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        )
+        .blastTemp(1900)
+
+    // soulstone / brilliance: shared Aether vein, each other's byproduct.
+    event.create('soulstone')
+        .gem()
+        .ore()
+        .color(0x8E7FA8)
+        .secondaryColor(0x4A3F5E)
+        .iconSet(GTMaterialIconSet.QUARTZ)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .addOreByproducts('brilliance', 'amethyst')
+        .washedIn('gtceu:mercury')
+
+    event.create('brilliance')
+        .gem()
+        .ore()
+        .color(0x7FE3D8)
+        .secondaryColor(0x2E8B84)
+        .iconSet(GTMaterialIconSet.DIAMOND)
+        .flags(GTMaterialFlags.GENERATE_LENS)
+        .addOreByproducts('soulstone', 'amethyst')
+        .washedIn('gtceu:mercury')
+
+    // blazing_quartz: Nether gem, no washedIn (matches GT's own nether quartz treatment).
+    event.create('blazing_quartz')
+        .gem()
+        .ore()
+        .color(0xE08A2B)
+        .secondaryColor(0x8C4A10)
+        .iconSet(GTMaterialIconSet.QUARTZ)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS)
+        .addOreByproducts('netherquartz', 'sulfur')
+
 })

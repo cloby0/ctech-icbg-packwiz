@@ -170,4 +170,25 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('soulium',   'mysticalagriculture:soulium_gemstone')
     block('soulium', 'mysticalagriculture:soulium_gemstone_block')
     dust('soulium',  'mysticalagriculture:soulium_dust')
+
+    // ==== Malum ====
+    ingot('hallowed_gold', 'malum:hallowed_gold_ingot')
+    nugget('hallowed_gold', 'malum:hallowed_gold_nugget')
+    block('hallowed_gold', 'malum:block_of_hallowed_gold')
+
+    ingot('soul_stained_steel', 'malum:soul_stained_steel_ingot')
+    nugget('soul_stained_steel', 'malum:soul_stained_steel_nugget')
+    block('soul_stained_steel', 'malum:block_of_soul_stained_steel')
+
+    rawOre('soulstone', 'malum:raw_soulstone')
+    gem('soulstone', 'malum:processed_soulstone')
+    block('soulstone', 'malum:block_of_soulstone')
+
+    rawOre('brilliance', 'malum:cluster_of_brilliance')
+    gem('brilliance', 'malum:chunk_of_brilliance')
+    block('brilliance', 'malum:block_of_brilliance')
+
+    // blazing_quartz: no rawOre -- Malum's ore drops the gem directly, no raw form exists.
+    gem('blazing_quartz', 'malum:blazing_quartz')
+    block('blazing_quartz', 'malum:block_of_blazing_quartz')
 })

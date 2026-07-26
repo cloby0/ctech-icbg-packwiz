@@ -5638,11 +5638,11 @@ hash = "c256b59269c3e613b6aa07bef8591e5fd1a8affcbed591d88b5d99d76da66341"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "b03c51d1f5ec380fd75971b3d569b1c4c77f8a8c11382f87d14880a0d20ce5ef"
+hash = "73ace99d833517a63e691f9c68a149bc801a9d17ecb08c64d1da7df0656f11da"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "1fe872c4a138c52fa12b349831c30928ffcb79b7b7f1e5176a59b59006e0f4cb"
+hash = "5847b50eaec759d532e035ce75623ea274f3e1d0936aa49f1b58631d87c467bc"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
