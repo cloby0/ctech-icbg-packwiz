@@ -1078,7 +1078,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "d6889395fd8cb1c5a755c763a640b3fbe3b059fed2952a2d6871be00e10f2d61"
+hash = "d321379e0d2236f75529c42f1ce8796b5f98c45be5f972c420c0d59a6a3c4173"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -5269,8 +5269,16 @@ file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
 hash = "8d425001b0b7ac797f974aac678cb1009bf402b1ec75f5d20057eaedacbb8f7f"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/malumRecipes.js"
+hash = "d145d97cf2e844e5cbcac0a6e732fc7e6847af4a2f0ee5dffe1cd2de5c423092"
+
+[[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
 hash = "e26410e5e3037541144e7c4ccf57444d130d91b1dce90a9f904bce0f2ab32a0a"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
+hash = "a318fea1b339e7744cb160d848a215b6fdfe230c8f1ca0a9bb4115c64fe6f451"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
@@ -5654,7 +5662,7 @@ hash = "50cd94672812eed675e47acce700a8d94f831747892b2d49891cf5d6a499f503"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "904e2ee733bbe4c13ed9e866ca1f4312fc96219c3b07c3c5f2f45d84e1ad6e25"
+hash = "7f58797d3854e8df4b8129ee7203f86655416484e396d73c12eb85ed452bcd1c"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

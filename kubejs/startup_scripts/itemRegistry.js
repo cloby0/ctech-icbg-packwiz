@@ -222,4 +222,10 @@ StartupEvents.registry('item', event => {
 
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
+
+    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'prima_materia_ingot']
+    ritualDummies.forEach(name => {
+        event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
+            .displayName('Ritual: ' + name)
+    })
 })
