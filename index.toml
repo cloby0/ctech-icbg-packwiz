@@ -5561,6 +5561,10 @@ file = "kubejs/server_scripts/worldgen/moonWorldgen.js"
 hash = "5ed7299ec9c1ed24387a7981cd74987b972b3daa9c891f363ebd406dcb619136"
 
 [[files]]
+file = "kubejs/server_scripts/worldgen/netherWorldgen.js"
+hash = "4e05d2b33b18fe7640e7bcf8de10c6fa67bc573bf58c1ec159e0ac4d699e7c6a"
+
+[[files]]
 file = "kubejs/server_scripts/worldgen/silentgearOreWorldgen.js"
 hash = "e1a0b3f1a61a2ba3025aafbea604f8277aef76dd9442a5639248296966e20e91"
 
