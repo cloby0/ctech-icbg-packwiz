@@ -5313,6 +5313,10 @@ file = "kubejs/server_scripts/magic/l2hostility.js"
 hash = "a19fc84017d24255ffca5fbb915ebf897ee28ee084a9a28c3755a07cc8315785"
 
 [[files]]
+file = "kubejs/server_scripts/magic/malum.js"
+hash = "6031e7c2802ca7c0e09e78e838b5b5bc0f9fd2cba402ad79ceb702879c8ae5cd"
+
+[[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
 hash = "07d16b14b711bc9b09d1d477495e50ea0a32d46b6b6f44936ca47de76143e2dd"
 
