@@ -310,6 +310,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"immersive_armorer:standard_rail_pistol_mk2",HasBulletInBarrel:0b}'))
         .duration(250)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(5)
 
     event.recipes.gtceu.arms_manufacturer('standard_rail_pistol_mk3')
         .itemInputs(PISTOL_FRAME.get(GTValues.HV))
@@ -330,6 +331,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"immersive_armorer:double_shotgun",HasBulletInBarrel:0b}'))
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('pump_shotgun')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.HV))
@@ -371,6 +373,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"immersive_armorer:standard_rail_smg_mk1",HasBulletInBarrel:0b}'))
         .duration(280)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('short_smg')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.HV))
@@ -421,6 +424,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"tacz:uzi",HasBulletInBarrel:0b}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(5)
 
     event.recipes.gtceu.arms_manufacturer('b93r')
         .itemInputs(PISTOL_FRAME.get(GTValues.HV))
@@ -550,7 +554,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"fallout:dzj08",HasBulletInBarrel:0b}'))
         .duration(350)
         .EUt(GTValues.VA[GTValues.EV])
-        .circuit(1)
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('qlz87')
         .itemInputs(HEAVY_FRAME.get(GTValues.EV))
@@ -665,7 +669,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:m1911",HasBulletInBarrel:0b}'))
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
-        .circuit(1)
+        .circuit(4)
 
     event.recipes.gtceu.arms_manufacturer('deagle')
         .itemInputs(PISTOL_FRAME.get(GTValues.EV))
@@ -675,7 +679,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:deagle",HasBulletInBarrel:0b}'))
         .duration(250)
         .EUt(GTValues.VA[GTValues.EV])
-        .circuit(2)
+        .circuit(7)
 
     event.recipes.gtceu.arms_manufacturer('ump45')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.EV))
@@ -735,7 +739,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:fn_fal",HasBulletInBarrel:0b}'))
         .duration(280)
         .EUt(GTValues.VA[GTValues.EV])
-        .circuit(3)
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('scar_h')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.EV))
@@ -828,7 +832,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:rpg7",HasBulletInBarrel:0b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
-        .circuit(2)
+        .circuit(4)
 
     event.recipes.gtceu.arms_manufacturer('cz75')
         .itemInputs(PISTOL_FRAME.get(GTValues.EV))
@@ -861,6 +865,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:p320",HasBulletInBarrel:0b}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(8)
 
     event.recipes.gtceu.arms_manufacturer('hk_mk23')
         .itemInputs(PISTOL_FRAME.get(GTValues.EV))
@@ -991,6 +996,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:sks_tactical",HasBulletInBarrel:0b}'))
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('hk_g3')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.EV))
@@ -1081,6 +1087,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:m320",HasBulletInBarrel:0b}'))
         .duration(250)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('standard_rail_smg_mk3')
         .itemInputs(RIFLE_RECEIVER.get(GTValues.EV))
@@ -1103,7 +1110,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_semi_union",HasBulletInBarrel:0b}'))
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
-        .circuit(1)
+        .circuit(2)
 
     event.recipes.gtceu.arms_manufacturer('niklas_pistol_semi_pride')
         .itemInputs(PISTOL_FRAME.get(GTValues.IV))

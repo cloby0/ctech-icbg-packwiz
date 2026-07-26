@@ -1,8 +1,68 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/adaptive_performance_tweaks/ai_throttle.cfg"
+hash = "351bca1dafef1a8bcf9a340206da06f3dbdf2b8fa743ba86aefd9b4fd0996b6a"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/arrows.cfg"
+hash = "9f9a78f40ceac1d87dea46735962074089c925cb3b4cf0b5b1a89c9252caea92"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/chunk_gen_throttle.cfg"
+hash = "14bbf43f1929ca3f43c39fb9269ed8df2e3523f7782b6047c4a22b5f6b6be874"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/core.cfg"
+hash = "68fe00e9e12d426e5e6b7f8a0072bb1b5037c1987f49a97b4036f7052ffbf000"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/experience_orbs.cfg"
+hash = "68a5a343b095ea826ac233a46a21ad52b8bfb7753add1ceefd77c7cb175e7608"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/gamerules.cfg"
+hash = "e6b471fed1c5bf357efde266806dc109602ff7791a3e9ea202c86a0b9afe8374"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/items.cfg"
+hash = "1e57e46f1c0da0efad17eb6c4fbabb0d397e8ba23c9a43af8a3dc4730b3f851b"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/monitoring.cfg"
+hash = "fb11ad8158fb1be63d20b19ed0913dac781a826bf316110fda2fee19f985812b"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/player_easy_child_mode.cfg"
+hash = "9cdf53b63e71f7fefb0e752299e47d7a6070b4a686bf1d7eacc6384e99bc2a4b"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/player_login_protection.cfg"
+hash = "44f1a4cf50335c6db10e2dd457324f5eeee472aaf1d3f71ca11f975838cf33d0"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/player_starter_protection.cfg"
+hash = "8014017fe3777317de1a850c0cb2f0afabe5b754e34b98ee062fda6e011feb3c"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/sim_distance.cfg"
+hash = "2e449d22f38d78e4878077b4f051030e75b0686b1e616be4f36c6ba90db3f000"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/spawn.cfg"
+hash = "f3a84fd67de0c9f8e4656afa25eb31bec76f276d9ff980498bb25098306566ed"
+
+[[files]]
+file = "config/adaptive_performance_tweaks/view_distance.cfg"
+hash = "7887170529949c6632afbf896444fc971f5e4baddd50ad9094df6f8239c429f6"
+
+[[files]]
 file = "config/aether-common.toml"
 hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
+
+[[files]]
+file = "config/alltheleaks.json"
+hash = "826f82b9452db9f0c5b9baf292dda0b5fb0b0c780ba53dffdcbaa9654600b954"
 
 [[files]]
 file = "config/appleskin-client.toml"
@@ -13,6 +73,10 @@ file = "config/ars_botania-common.toml"
 hash = "e9654d2e30b705e0d35e0d38e2309386cfd887567187dc3bf6186d45b7fca0e2"
 
 [[files]]
+file = "config/chunksending.json"
+hash = "e589c5988aa0f23e08400df47ef156a61eea1978f2161ba014da278c28a60ac7"
+
+[[files]]
 file = "config/culinarycompat-common.toml"
 hash = "59cf59f1544e790292649a77a6528d86fc71dc69e0c34acfdc2ba3e189c028fa"
 
@@ -21,8 +85,16 @@ file = "config/cumulus_menus-client.toml"
 hash = "ed577a5f879d797bac579fc0a558ba985b465bb492dab9411ead2939fe51ca73"
 
 [[files]]
+file = "config/doespotatotick-common.toml"
+hash = "f3be680acb9f7bfc0de2b406add522360c7e69388908b98d5cff8c310b472e1d"
+
+[[files]]
 file = "config/enigmaticlegacy-common.omniconf"
 hash = "e35be4bc71078233ea1e9f245ccafaa7dcad900adfed06ef583ce53b845051be"
+
+[[files]]
+file = "config/entityculling.json"
+hash = "4a20c861703440f723527fd70623d7467ab5c9c7ddca81de3f4b5b8c9ea7df00"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
@@ -165,6 +237,10 @@ file = "config/gtceu.yaml"
 hash = "9df8863f067bd40adfccdc06b75143d3b6b8f81c73d497296ef194b3d06f9a61"
 
 [[files]]
+file = "config/immersive_optimization.json"
+hash = "04acf94882e13427aaf3b292f4d7dc253cff708fddd6c3211ac64512ba4a4340"
+
+[[files]]
 file = "config/improvedmobs/client.toml"
 hash = "9dc73d3fbdf9b99c4ea142ca45b6618b91ae0bb9c7d9e910a81c2356bc4038ca"
 
@@ -193,8 +269,16 @@ file = "config/l2hostility-common.toml"
 hash = "adf0a706e3d66083de246499ab589fd26ffd6334e21a3cc1037a9a37175af975"
 
 [[files]]
+file = "config/leaky.json"
+hash = "ad988e8c437867dc1cfad16ca0b37484bca8abecf4fdacc69f6d398504ab1174"
+
+[[files]]
 file = "config/lootbeams-client.toml"
 hash = "e1d09585ff6c4d0aa5754d61bac2e72b50e2ce617aa71ecea122aeaa475f53ae"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "6328836dfdf2ed1fa2b61d9c3dd7210898762bcc71840e034e93a63e62daa536"
 
 [[files]]
 file = "config/mysticalagriculture-common.toml"
@@ -333,8 +417,20 @@ file = "config/reliquary-common.toml"
 hash = "c423261c957dcfdb1b6afcf531860b32b899ae738cc6e9c950f71d8a9c23dd57"
 
 [[files]]
+file = "config/servercore/config.yml"
+hash = "29d325012fc081041dc253e2934ae043e15f4b342d785da3543d10db1334b0c6"
+
+[[files]]
+file = "config/servercore/optimizations.yml"
+hash = "299965ce464b4c0bb4a79dfd2dba2cdfd63f3360628b0d5b0d3b3988003f4f0d"
+
+[[files]]
 file = "config/silentgear-common.toml"
 hash = "560077f32116e556c457a926c9f54eef1033a4fc490aa24b42b0959b92efa367"
+
+[[files]]
+file = "config/smoothchunk.json"
+hash = "5f85b2c857c2561cf720745f724d20befce7bb58732083259a798263c0af99f2"
 
 [[files]]
 file = "defaultconfigs/aether-server.toml"
@@ -5286,7 +5382,7 @@ hash = "aa8c06fa14c4b517e64ea82ff2b6948fbdc99015c5004977401716b52a881765"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
-hash = "135c746878f67ecb5fa3b0f8636d055a8f5674c700d1fb54150bba8167cf8a9e"
+hash = "ba5afb96844e32530482b1df5408ab93e225c631757fbd5441f063089eac49fe"
 
 [[files]]
 file = "kubejs/server_scripts/tech/ballistix.js"
@@ -5366,7 +5462,7 @@ hash = "aa39d3052d6ebe4fc26c0a9dd3d3c33d5a91171559012535b8f3ca1a8f9a88c8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/guns.js"
-hash = "703870b1ae90f7f1be239d3242e1f5b916fa67e7ec17042a0f0b50b2f08a9fe5"
+hash = "fd133324d654a297c79d32a61da7a130d978192004eb4ec1e9dcf7fc6749a33e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/highTierComponents.js"
@@ -5418,7 +5514,7 @@ hash = "df2c619e7043c2d181e29a31b16ecf11c4a4d4227ff3d7069ce718049ab98a23"
 
 [[files]]
 file = "kubejs/server_scripts/tech/superbwarfare.js"
-hash = "44f4aebfac0d245b3a70b960d1d4312d6cd853e83315febe87b095af90350d65"
+hash = "5c1b3613bcde5494c27861df2444c2057ab097e9c30453099f0bc1927be258ed"
 
 [[files]]
 file = "kubejs/server_scripts/tech/thermal.js"
@@ -5740,6 +5836,11 @@ metafile = true
 [[files]]
 file = "mods/ars-ocultas.pw.toml"
 hash = "4ae74554aeb63b9c955755fde32e8d0123b213c0dbd803fe9c5135be6fbe11c4"
+metafile = true
+
+[[files]]
+file = "mods/ars-scalaes.pw.toml"
+hash = "cff38a0ff474bdbd272e2766a697f4964bcc232e4ecd67f27daf367ee162a053"
 metafile = true
 
 [[files]]
@@ -6102,11 +6203,6 @@ metafile = true
 [[files]]
 file = "mods/duplicationless.pw.toml"
 hash = "8421350563d3ae212a0a6198d36e6a3a43c0047ef00f5057322aa99a5934fc51"
-metafile = true
-
-[[files]]
-file = "mods/dynamic-view.pw.toml"
-hash = "a884ab98ff6006ab5e4815431a0d7d35582e415df5168769c1a6ef8c93849947"
 metafile = true
 
 [[files]]
@@ -6679,11 +6775,6 @@ metafile = true
 [[files]]
 file = "mods/macaws-bridges.pw.toml"
 hash = "48fd7031ccf8ecf2e16bddad85f5e53348137477ab465fb75cfd71fddc81bccc"
-metafile = true
-
-[[files]]
-file = "mods/macaws-byg-bwg.pw.toml"
-hash = "730b4d743119bc441c08941177cbfef04738c18414ad9a1df0506ebbc786c93e"
 metafile = true
 
 [[files]]

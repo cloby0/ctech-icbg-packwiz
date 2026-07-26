@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         'insidious', 'mk_14', 'ql_1031', 'marlin', 'k_98', 'mosin_nagant', 'svd', 'awm',
         'm_98b', 'sentinel', 'hunting_rifle', 'ntw_20', 'm_870', 'aa_12', 'devotion', 'rpk',
         'm_60', 'm_2_hb', 'minigun', 'm_79', 'secondary_cataclysm', 'rpg', 'javelin',
-        'igla_9k38', 'bocek', 'super_star_shooter', 'aurelia_sceptre'
+        'igla_9k38', 'bocek', 'super_star_shooter', 'aurelia_sceptre', 'beast'
     ]
     removedGuns.forEach(id => event.remove({ output: `superbwarfare:${id}` }))
 
@@ -36,7 +36,8 @@ ServerEvents.recipes(event => {
         'creative_ammo_box', 'ammo_box', 'taser_electrode', 'grenade_40mm',
         'mortar_shell_smoke', 'potion_mortar_shell', 'rpg_rocket_standard', 'rpg_rocket_tbg',
         'javelin_missile', 'lunge_mine', 'hand_grenade', 'rgo_grenade', 'm18_smoke_grenade',
-        'claymore_mine', 'tm_62', 'ptkm_1r', 'c4_bomb', 'blu_43_mine', 'edd', 'swarm_drone'
+        'claymore_mine', 'tm_62', 'ptkm_1r', 'c4_bomb', 'blu_43_mine', 'edd', 'swarm_drone',
+        'beast_bullet'
     ]
     removedAmmo.forEach(id => event.remove({ output: `superbwarfare:${id}` }))
 
@@ -85,6 +86,29 @@ ServerEvents.recipes(event => {
     // NOTE: don't remove by output 'superbwarfare:cemented_carbide_ingot' - OEI aliases
     // it to gtceu:cemented_carbide_ingot, so this would nuke GT's cemented carbide recipes.
     // The SW recipe is already dead (its raw powder input is obliterated + removed above).
+
+    // these outputs also get a GT arms_manufacturer recipe below - kill the mod's original
+    // vanilla-crafting-table recipe so the GT gate can't be bypassed by hand-crafting
+    const removedVanillaOrdnance = [
+        'light_armament_module', 'medium_armament_module', 'heavy_armament_module',
+        'mortar_shell', 'small_shell', 'ap_5_inches', 'he_5_inches', 'cm_5_inches', 'gs_5_inches',
+        'small_rocket', 'medium_rocket_ap', 'medium_rocket_he', 'medium_rocket_cm',
+        'medium_anti_air_missile', 'medium_anti_ground_missile', 'large_anti_ground_missile',
+        'medium_aerial_bomb'
+    ]
+    removedVanillaOrdnance.forEach(id => event.remove({ output: `superbwarfare:${id}` }))
+
+    // bullet/utility perks - still hand-craftable via the mod's own vanilla recipes,
+    // never gated. empty_perk is the base item; the rest live under a superbwarfare:perk/*
+    // recipe id but register as flat superbwarfare:<id> items.
+    const removedPerks = [
+        'empty_perk', 'ap_bullet', 'he_bullet', 'poisonous_bullet', 'riot_bullet',
+        'silver_bullet', 'jhp_bullet', 'incendiary_bullet', 'phase_penetrating_bullet',
+        'blade_bullet', 'cupid_arrow', 'micro_missile', 'firefly', 'volt_overload',
+        'backpack_linked_magazine', 'longer_wire', 'powerful_attraction', 'powerful_cooler',
+        'intelligent_chip', 'turbo_charger', 'regeneration'
+    ]
+    removedPerks.forEach(id => event.remove({ output: `superbwarfare:${id}` }))
 
     event.shaped(Item.of('superbwarfare:repair_tool'), [
         ' P ',

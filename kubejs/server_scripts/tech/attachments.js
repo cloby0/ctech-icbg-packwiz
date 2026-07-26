@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_td"}'))
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('tacz_grip_rk0')
         .itemInputs('gtceu:steel_bolt', '4x gtceu:rubber_plate', '4x gtceu:steel_plate')
@@ -127,6 +128,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_military"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('tacz_grip_vertical_ranger')
         .itemInputs('4x gtceu:aluminium_rod', '5x gtceu:rubber_plate')
@@ -139,6 +141,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:grip_vertical_talon"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(4)
 
     event.recipes.gtceu.arms_manufacturer('tacz_grip_cqr')
         .itemInputs('gtceu:rubber_plate', '6x gtceu:aluminium_plate')
@@ -255,6 +258,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_pioneer"}'))
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_trex')
         .itemInputs('gtceu:steel_bolt', '2x gtceu:steel_small_fluid_pipe', '6x gtceu:steel_plate')
@@ -267,6 +271,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_brake_cthulhu"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(5)
 
     event.recipes.gtceu.arms_manufacturer('tacz_muzzle_brake_cyclone_d2')
         .itemInputs('gtceu:stainless_steel_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '6x gtceu:stainless_steel_plate')
@@ -292,6 +297,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_choke_sg"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(6)
 
     event.recipes.gtceu.arms_manufacturer('tacz_muzzle_compensator_trident')
         .itemInputs('3x gtceu:aluminium_plate', '4x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate')
@@ -316,12 +322,14 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_phantom_s1"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_ptilopsis')
         .itemInputs('gtceu:stainless_steel_bolt', 'gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:muzzle_silencer_ptilopsis"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('tacz_muzzle_silencer_ursus')
         .itemInputs('gtceu:stainless_steel_bolt', '2x gtceu:stainless_steel_small_fluid_pipe', '2x gtceu:stainless_steel_plate', '4x gtceu:silicone_rubber_plate')
@@ -376,46 +384,49 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_qmk152"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(4)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_acog_ta31')
         .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_acog_ta31"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(1)
+        .circuit(5)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_aug_default')
         .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '2x gtceu:aluminium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_aug_default"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(1)
+        .circuit(6)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_1873_6x')
         .itemInputs('gtceu:aluminium_bolt', '2x gtceu:glass_plate', '3x gtceu:aluminium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_1873_6x"}'))
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
-        .circuit(1)
+        .circuit(7)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_elcan_4x')
         .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_elcan_4x"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(2)
+        .circuit(8)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_hamr')
         .itemInputs('3x gtceu:glass_plate', '3x gtceu:aluminium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_hamr"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(9)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_lpvo_1_6')
         .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:scope_lpvo_1_6"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(7)
 
     event.recipes.gtceu.arms_manufacturer('tacz_scope_mk5hd')
         .itemInputs('gtceu:aluminium_bolt', '3x gtceu:glass_plate', '3x gtceu:stainless_steel_plate')
@@ -443,6 +454,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_rmr_dot"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(10)
 
     event.recipes.gtceu.arms_manufacturer('tacz_sight_sro_dot')
         .itemInputs('gtceu:aluminium_bolt', 'gtceu:glass_plate', '6x gtceu:aluminium_plate', 'gtceu:red_alloy_plate')
@@ -462,13 +474,14 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_pistol"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(11)
 
     event.recipes.gtceu.arms_manufacturer('tacz_sight_pk06_rifle')
         .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_pk06_rifle"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(1)
+        .circuit(12)
 
     event.recipes.gtceu.arms_manufacturer('tacz_sight_t1')
         .itemInputs('6x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', 'gtceu:glass_plate')
@@ -487,7 +500,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_acro_pistol"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(2)
+        .circuit(13)
 
     event.recipes.gtceu.arms_manufacturer('tacz_sight_acro_rifle')
         .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
@@ -501,7 +514,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:sight_deltapoint_pistol"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(2)
+        .circuit(14)
 
     event.recipes.gtceu.arms_manufacturer('tacz_sight_deltapoint_rifle')
         .itemInputs('4x gtceu:aluminium_plate', '#gtceu:circuits/lv', '4x gtceu:glass_plate')
@@ -562,6 +575,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"tacz:laser_compact"}'))
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('tacz_laser_lopro')
         .itemInputs('gtceu:steel_bolt', '#gtceu:circuits/lv', '4x create:iron_sheet', 'gtceu:red_alloy_plate')
@@ -715,7 +729,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_reflex"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
-        .circuit(2)
+        .circuit(15)
 
     event.recipes.gtceu.arms_manufacturer('create_armorer_sight_medium_distance')
         .itemInputs('4x gtceu:aluminium_plate', 'gtceu:aluminium_bolt', '#gtceu:circuits/lv', '3x gtceu:glass_plate')
@@ -792,6 +806,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:stock_crude"}'))
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('immersive_armorer_stock_simple')
         .itemInputs('4x gtceu:aluminium_rod', 'gtceu:steel_ring', '4x gtceu:treated_wood_plate')
@@ -866,6 +881,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_fuel_stream_diffuser"}'))
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('immersive_armorer_muzzle_refit_he_compound')
         .itemInputs('4x gtceu:aluminium_plate', 'minecraft:blaze_powder', '4x create:golden_sheet')
@@ -979,6 +995,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bayonet_gladius"}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.LuV])
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_niklas')
         .itemInputs('4x ae2:certus_quartz_crystal', '4x gtceu:titanium_plate')
@@ -992,6 +1009,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:bracelet_aerial_wristband"}'))
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_bracelet_magma_wristband')
         .itemInputs('5x ae2:certus_quartz_crystal', '3x minecraft:magma_cream', 'gtceu:aluminium_plate')
@@ -1047,20 +1065,21 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_light"}'))
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(3)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_stable')
         .itemInputs('4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_stable"}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.LuV])
-        .circuit(1)
+        .circuit(4)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_storm')
         .itemInputs('4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_storm"}'))
         .duration(180)
         .EUt(GTValues.VA[GTValues.LuV])
-        .circuit(2)
+        .circuit(6)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_grip_sl_2')
         .itemInputs('gtceu:titanium_bolt', '4x ae2:fluix_crystal', '4x gtceu:titanium_plate')
@@ -1087,6 +1106,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_classic"}'))
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_bs_mod4')
         .itemInputs('gtceu:aluminium_bolt', '4x gtceu:titanium_bolt', '4x gtceu:titanium_plate')
@@ -1153,6 +1173,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_chip_hyper_propellant"}'))
         .duration(220)
         .EUt(GTValues.VA[GTValues.ZPM])
+        .circuit(7)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_muzzle_chip_atm_x2')
         .itemInputs('2x ae2:engineering_processor', '3x ae2:fluix_crystal', '4x minecraft:wither_skeleton_skull')
@@ -1165,6 +1186,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_simple_3"}'))
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(1)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_si_profession')
         .itemInputs('ae2:certus_quartz_crystal', 'gtceu:titanium_bolt', '3x gtceu:glass_plate', '4x gtceu:titanium_plate')
@@ -1190,6 +1212,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:si_pride_default"}'))
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
+        .circuit(2)
 
     event.recipes.gtceu.arms_manufacturer('applied_armorer_si_xs_07')
         .itemInputs('ae2:certus_quartz_crystal', '4x gtceu:glass_plate', '4x gtceu:titanium_plate')
