@@ -5302,7 +5302,7 @@ hash = "2b12b14ca90fbe305dde601d07fac2f5ad98ddd51a1eb5271d95dbf45de3e0ef"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "e6c53ca5bbac521435244a6eb625740073490de7647c22d5937aac9e6ae8bde1"
+hash = "44cf5269e6e0f50f4ed490c4edaac535aa598b822f37e3ab15a548d1f0d45008"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"

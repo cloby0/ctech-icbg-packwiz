@@ -185,19 +185,19 @@ ServerEvents.recipes(event => {
             W: '#forge:tools/wrenches'
     }).damageIngredient(Ingredient.of('#forge:tools/wrenches'));
 
-    addImbuementRecipe(event, {
+    addSpiritInfusion(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
         output: 'kubejs:sacred_ambrosium_shard',
-        source: 2 * Source.INITIATE,
-        pedestalItems: ['gtceu:luminessence_dust', 'gtceu:luminessence_dust']
-    });
+        extraItems: [{ item: 'gtceu:luminessence_dust', count: 2 }],
+        spirits: [{ type: 'sacred', count: 2 }, { type: 'aerial' }]
+    })
 
-    addImbuementRecipe(event, {
+    addSpiritInfusion(event, {
         input: 'minecraft:ender_pearl',
         output: 'irons_spellbooks:divine_pearl',
-        source: 2 * Source.INITIATE,
-        pedestalItems: ['kubejs:sacred_ambrosium_shard']
-    });
+        extraItems: [{ item: 'kubejs:sacred_ambrosium_shard' }],
+        spirits: [{ type: 'sacred', count: 2 }, { type: 'arcane' }]
+    })
 
     event.shaped(
         Item.of('reliquary:mercy_cross', '{Damage:0}'),
