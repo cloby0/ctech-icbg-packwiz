@@ -73,4 +73,29 @@ ServerEvents.recipes(event => {
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
         .damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
+    // --- Focusing re-cost ---
+    // Shipped values gave ~800 units per impetus before catalyzer acceleration.
+    // Halved output and doubled durability cost brings that to ~200.
+    let focusingRecosts = [
+        { id: 'redstone',         output: 'minecraft:redstone',        count: 4, spirit: 'arcane' },
+        { id: 'glowstone_dust',   output: 'minecraft:glowstone_dust',  count: 2, spirit: 'sacred' },
+        { id: 'gunpowder',        output: 'minecraft:gunpowder',       count: 2, spirit: 'wicked' },
+        { id: 'quartz',           output: 'minecraft:quartz',          count: 2, spirit: 'earthen' },
+        { id: 'amethyst_shard',   output: 'minecraft:amethyst_shard',  count: 2, spirit: 'arcane' },
+        { id: 'prismarine_shard', output: 'minecraft:prismarine_shard', count: 2, spirit: 'aqueous' },
+        { id: 'blazing_quartz',   output: 'malum:blazing_quartz',      count: 2, spirit: 'infernal' },
+    ]
+
+    focusingRecosts.forEach(r => {
+        event.remove({ id: 'malum:spirit_crucible/' + r.id })
+        event.custom({
+            type: 'malum:spirit_focusing',
+            durabilityCost: 2,
+            time: 300,
+            input: { item: 'malum:alchemical_impetus' },
+            output: { item: r.output, count: r.count },
+            spirits: [{ type: r.spirit }],
+        }).id('malum:spirit_crucible/' + r.id)
+    })
+
 })
