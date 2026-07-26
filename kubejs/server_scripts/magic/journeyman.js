@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
     // Sanding stays a valid option; this just gives players who'd rather automate it a route.
     event.custom({
         type: 'occultism:crushing',
-        ingredients: [{ item: 'kubejs:rough_source_gem' }],
+        ingredient: { item: 'kubejs:rough_source_gem' },
         result: { item: 'ars_nouveau:source_gem' },
     }).id('kubejs:crushing/rough_source_gem_to_source_gem')
 
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
     // a one-time summon (see occultism.js summon_foliot_crusher gate).
     event.custom({
         type: 'occultism:crushing',
-        ingredients: [{ item: 'gtceu:raw_source' }],
+        ingredient: { item: 'gtceu:raw_source' },
         result: { item: 'gtceu:source_dust' },
     }).id('kubejs:crushing/raw_source_to_source_dust')
 

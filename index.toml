@@ -5306,7 +5306,7 @@ hash = "7359175d558a97ae2e161f1a172254b020d450bafa84a134aed5071e1e8a9685"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "a615a9ff27b74362ad0b02fb7f9c31f4709f321b15bea64b8ea85fc569ef0d68"
+hash = "149c66fa0c6653731e93653ff621d854ee2dd54140606e1be0ca429715a86fb8"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
@@ -5334,7 +5334,7 @@ hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "38a787262a785fd9387d44f4db7637e7a46969e8c44f90df27fc029b300bafc7"
+hash = "c301be6b6ff295ccdb422c660d606226de530eefdba2a5f691af4c8000220c7d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"

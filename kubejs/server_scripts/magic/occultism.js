@@ -444,17 +444,20 @@ ServerEvents.recipes(event => {
                 event.custom({
                     type: 'occultism:crushing',
                     ingredient: { tag: `forge:${form.tagPath(material)}` },
-                    min_tier: crushingTier[tier],
+                    minTier: crushingTier[tier],
                     result: { tag: `forge:dusts/${material}`, count: form.count },
-                    crushing_time: 200,
+                    crushingTime: 200,
                 }).id(id)
             })
         })
     })
 
     // Gem-shaped materials: 2 recipe ids each (dust from ore-tag / dust_from_gem).
+    // quartz dropped: this pack has forge:ores/quartz and forge:gems/quartz but no
+    // forge:dusts/quartz (verified docs/claude/full_pack_dump/datasets/tags/items/forge/dusts/),
+    // so both generated recipes had an empty output tag and could never fire.
     const gemTier = {
-        foliot: ['apatite', 'coal', 'lapis', 'quartz', 'redstone', 'sulfur'],
+        foliot: ['apatite', 'coal', 'lapis', 'redstone', 'sulfur'],
         djinni: ['certus_quartz', 'cinnabar', 'diamond', 'emerald', 'ruby', 'sapphire', 'topaz'],
     }
     const gemForm = {
@@ -470,9 +473,9 @@ ServerEvents.recipes(event => {
                 event.custom({
                     type: 'occultism:crushing',
                     ingredient: { tag: `forge:${form.tagPath(material)}` },
-                    min_tier: crushingTier[tier],
+                    minTier: crushingTier[tier],
                     result: { tag: `forge:dusts/${material}`, count: form.count },
-                    crushing_time: 200,
+                    crushingTime: 200,
                 }).id(id)
             })
         })
@@ -483,9 +486,9 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'occultism:crushing',
         ingredient: { tag: 'forge:obsidian' },
-        min_tier: crushingTier.foliot,
+        minTier: crushingTier.foliot,
         result: { tag: 'forge:dusts/obsidian', count: 1 },
-        crushing_time: 200,
+        crushingTime: 200,
     }).id('occultism:obsidian_dust')
 
     // Dead-tag materials: verified via docs/claude/full_pack_dump that their ore/
@@ -507,6 +510,12 @@ ServerEvents.recipes(event => {
             event.remove({ id: `occultism:${material}_dust${suffix}` })
         })
     })
+
+    // quartz: no forge:dusts/quartz tag in this pack (see gemTier comment above), so these
+    // two Occultism-shipped recipes can never produce output -- strip them explicitly since
+    // quartz no longer runs through the gemTier generator loop.
+    event.remove({ id: 'occultism:quartz_dust' })
+    event.remove({ id: 'occultism:quartz_dust_from_gem' })
 
     // blaze_powder_from_rod, datura, end_stone_dust: not ore/metal materials, not part of
     // the tier system -- left untouched.
