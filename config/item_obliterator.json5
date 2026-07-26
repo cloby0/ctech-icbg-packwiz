@@ -43,6 +43,16 @@
     "malum:cracked_zinc_impetus",
     "malum:cracked_tin_impetus",
 
+    // malum: mod-native ore worldgen stripped in malumRemoveWorldgen.js; GT veins
+    // in aetherWorldgen.js / netherWorldgen.js are the sole source now.
+    "malum:natural_quartz_ore",
+    "malum:deepslate_quartz_ore",
+    "malum:soulstone_ore",
+    "malum:deepslate_soulstone_ore",
+    "malum:brilliant_stone",
+    "malum:brilliant_deepslate",
+    "malum:blazing_quartz_ore",
+
     // advancedperipherals: recipe removed in greggingMods.js, no GT replacement
     "advancedperipherals:computer_tool",
     "advancedperipherals:colony_integrator",

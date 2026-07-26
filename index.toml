@@ -258,7 +258,7 @@ hash = "d9f931a425a7136f5600485ce66a404260aa8ac332e81a27442255ef8ea38670"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "d22e1d616f7aa5bfd1af957d7b069c141781f39acc39ea5a7d5da5c1f20af315"
+hash = "77b6daa77fd1d0a7ae2365feadf730b4156422bdf758c4481b849a8603d02968"
 
 [[files]]
 file = "config/justparry/justparry_server.toml"
@@ -5658,7 +5658,7 @@ hash = "fb63a446397924d35bdcfafae1106a1504a3636166289ffb2545ffde38cb8ef1"
 
 [[files]]
 file = "kubejs/startup_scripts/malumRemoveWorldgen.js"
-hash = "605c1531665b64973fbfb50fb4bd18f020dac6d1a36d7e64ed4410428134f057"
+hash = "1c3238a33541d92d1424cbdfb9321ab9d735c6761cdc4444d8fa2e39ee2a4771"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"

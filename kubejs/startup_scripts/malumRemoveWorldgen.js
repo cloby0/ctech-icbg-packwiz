@@ -4,7 +4,12 @@ WorldgenEvents.remove(event => {
     event.removeOres(props => {
         props.blocks = [
             "malum:natural_quartz_ore",
-            "malum:deepslate_quartz_ore"
+            "malum:deepslate_quartz_ore",
+            "malum:soulstone_ore",
+            "malum:deepslate_soulstone_ore",
+            "malum:brilliant_stone",
+            "malum:brilliant_deepslate",
+            "malum:blazing_quartz_ore"
         ]
     })
 })
