@@ -27,49 +27,56 @@ ServerEvents.recipes(event => {
     event.shaped('malum:spirit_altar', [
         'PSP',
         'PGP',
-        'RRR'
+        'RHR'
     ], {
         P: 'gtceu:holy_silver_plate',
         S: 'malum:processed_soulstone',
         G: 'ars_nouveau:source_gem',
-        R: 'gtceu:holy_silver_rod'
+        R: 'gtceu:holy_silver_rod',
+        H: '#forge:tools/hammers'
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'malum:spirit_infusion/spirit_crucible' })
     event.shaped('malum:spirit_crucible', [
-        'PHP',
-        'PSP',
+        'PGP',
+        'HSW',
         'RRR'
     ], {
         P: 'gtceu:soul_stained_steel_plate',
-        H: 'malum:hallowed_gold_ingot',
+        G: 'malum:hallowed_gold_ingot',
         S: 'malum:processed_soulstone',
-        R: 'gtceu:soul_stained_steel_rod'
+        R: 'gtceu:soul_stained_steel_rod',
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches'
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
         .damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
     event.remove({ id: 'malum:spirit_infusion/spirit_catalyzer' })
     event.shaped('malum:spirit_catalyzer', [
         'PWP',
-        'WSW',
+        'CSD',
         'PRP'
     ], {
         P: 'gtceu:soul_stained_steel_plate',
         W: 'gtceu:fine_hallowed_gold_wire',
         S: 'malum:block_of_blazing_quartz',
-        R: 'gtceu:soul_stained_steel_rod'
+        R: 'gtceu:soul_stained_steel_rod',
+        C: '#forge:tools/wire_cutters',
+        D: '#forge:tools/screwdrivers'
     }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
         .damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     event.remove({ id: 'malum:spirit_infusion/brilliant_obelisk' })
     event.shaped('malum:brilliant_obelisk', [
-        ' B ',
+        'FBH',
         'PBP',
         'RRR'
     ], {
         B: 'malum:block_of_brilliance',
         P: 'gtceu:hallowed_gold_plate',
-        R: 'gtceu:soul_stained_steel_rod'
+        R: 'gtceu:soul_stained_steel_rod',
+        F: '#forge:tools/files',
+        H: '#forge:tools/hammers'
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
         .damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
