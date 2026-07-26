@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         'PRP'
     ], {
         P: 'gtceu:soul_stained_steel_plate',
-        W: 'gtceu:hallowed_gold_fine_wire',
+        W: 'gtceu:fine_hallowed_gold_wire',
         S: 'malum:block_of_blazing_quartz',
         R: 'gtceu:soul_stained_steel_rod'
     }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
