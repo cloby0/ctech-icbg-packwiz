@@ -20,4 +20,57 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'malum:spirit_infusion/copper_impetus' })
     event.remove({ id: 'malum:spirit_infusion/gold_impetus' })
 
+    // --- Machine gating: Altar at Journeyman (MV), rest at Initiate (HV) ---
+    // Magic materials only. A player with zero tech progression must be able to build these.
+
+    event.remove({ id: 'malum:spirit_altar' })
+    event.shaped('malum:spirit_altar', [
+        'PSP',
+        'PGP',
+        'RRR'
+    ], {
+        P: 'gtceu:holy_silver_plate',
+        S: 'malum:processed_soulstone',
+        G: 'ars_nouveau:source_gem',
+        R: 'gtceu:holy_silver_rod'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    event.remove({ id: 'malum:spirit_infusion/spirit_crucible' })
+    event.shaped('malum:spirit_crucible', [
+        'PHP',
+        'PSP',
+        'RRR'
+    ], {
+        P: 'gtceu:soul_stained_steel_plate',
+        H: 'malum:hallowed_gold_ingot',
+        S: 'malum:processed_soulstone',
+        R: 'gtceu:soul_stained_steel_rod'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+        .damageIngredient(Ingredient.of('#forge:tools/wrenches'))
+
+    event.remove({ id: 'malum:spirit_infusion/spirit_catalyzer' })
+    event.shaped('malum:spirit_catalyzer', [
+        'PWP',
+        'WSW',
+        'PRP'
+    ], {
+        P: 'gtceu:soul_stained_steel_plate',
+        W: 'gtceu:hallowed_gold_fine_wire',
+        S: 'malum:block_of_blazing_quartz',
+        R: 'gtceu:soul_stained_steel_rod'
+    }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
+        .damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+
+    event.remove({ id: 'malum:spirit_infusion/brilliant_obelisk' })
+    event.shaped('malum:brilliant_obelisk', [
+        ' B ',
+        'PBP',
+        'RRR'
+    ], {
+        B: 'malum:block_of_brilliance',
+        P: 'gtceu:hallowed_gold_plate',
+        R: 'gtceu:soul_stained_steel_rod'
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
+        .damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
 })
