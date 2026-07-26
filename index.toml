@@ -62,7 +62,7 @@ hash = "f178f518f5bfb39e8430e21c737e0c2789c4fc8f24861e55aa8034a16d31afb0"
 
 [[files]]
 file = "config/alltheleaks.json"
-hash = "826f82b9452db9f0c5b9baf292dda0b5fb0b0c780ba53dffdcbaa9654600b954"
+hash = "56ed24db70d51f104618698164d954a7868cb43fd920efaaa7a0f96708fdc3e3"
 
 [[files]]
 file = "config/appleskin-client.toml"
@@ -6738,6 +6738,11 @@ hash = "afca79f6ef3b857bfd147d4d7f9887ee433a73f8fcd1ec4476c49ac3349926d0"
 metafile = true
 
 [[files]]
+file = "mods/lodestonelib.pw.toml"
+hash = "dfb4b7c9a2085a665e87ebc3d60045e3173bb602e7b3de94e29d37168083345d"
+metafile = true
+
+[[files]]
 file = "mods/loot-beams.pw.toml"
 hash = "f693a894163ba11c97ab67e39dcff98ad490476b74843c8ad8cae82354a854f5"
 metafile = true
@@ -6800,6 +6805,11 @@ metafile = true
 [[files]]
 file = "mods/magnum-torch.pw.toml"
 hash = "5f6768157929bccb85b4b561fb4e16c99018ad93ce3f53b945ab9b37307c3665"
+metafile = true
+
+[[files]]
+file = "mods/malum.pw.toml"
+hash = "00a16f6cc02ad9f0825138857da26e6bf5c0f65dc5d4d40705b091e29176d3a2"
 metafile = true
 
 [[files]]
