@@ -5322,7 +5322,7 @@ hash = "a19fc84017d24255ffca5fbb915ebf897ee28ee084a9a28c3755a07cc8315785"
 
 [[files]]
 file = "kubejs/server_scripts/magic/malum.js"
-hash = "a8c13cc445015a599b2de9264637f4109b0601ff5d745c745847011ab69105b8"
+hash = "f4a58c944fb40152dd7bc7d1e8097c46701c7b93a362a70deadf3e7c15e38d7a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"

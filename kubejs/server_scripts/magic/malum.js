@@ -184,4 +184,28 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // --- Spirit repair: magic gear only (Initiate) ---
+    // Explicit inputs, empty regex (enforced by the helper). Phase 2 removed 8 broad-regex
+    // recipes because they routed around GT tool repair and the Silent Gear repair-kit
+    // economy -- these must not reopen that.
+    // Only 1 candidate qualified out of the full Ars Nouveau + Iron's Spellbooks equipment
+    // pool, after auditing every item's actual repair behavior (decompiled both jars'
+    // Tier/ArmorMaterial classes -- see task-7-report.md). Every Iron's Spellbooks armor
+    // material and every ExtendedWeaponTier melee weapon ships its own vanilla-anvil repairIngredient
+    // (MAGIC_CLOTH/mithril/netherite/arcane_ingot/etc). Every Ars Nouveau enchanters
+    // item and magic armor line either repairs at anvil with magebloom_fiber/netherite,
+    // or is covered by Ars Nouveau's own RepairingPerk (passive mana-repair for "ANY
+    // magical armor or enchanters item"). All staves/wands/flask cannons/crowns have no
+    // durability at all. irons_spellbooks:autoloader_crossbow is the one exception:
+    // extends vanilla CrossbowItem (max_damage 465) with no repairIngredient override --
+    // vanilla crossbows aren't anvil-repairable with a material either, and the mod adds
+    // no perk/rune covering it. Not SG, not GT. Trial Chambers ominous vault loot, not
+    // craftable, so no other acquisition-side repair path either.
+    addSpiritRepair(event, {
+        inputs: ['irons_spellbooks:autoloader_crossbow'],
+        durabilityPercentage: 0.4,
+        repairMaterial: { count: 4, item: 'irons_spellbooks:arcane_ingot' },
+        spirits: [{ type: 'arcane', count: 6 }, { type: 'earthen', count: 4 }]
+    })
+
 })
