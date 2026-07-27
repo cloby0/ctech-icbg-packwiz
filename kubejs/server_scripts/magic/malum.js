@@ -141,4 +141,23 @@ ServerEvents.recipes(event => {
         event.remove({ id: 'malum:spirit_crucible/repair/' + mat })
     })
 
+    // --- Spirit transmutation: block-for-block conversions (Journeyman) ---
+    // Soulwood totem rite, no machine. Moves building stone sideways -- creates no ore
+    // and bypasses no GT processing. The soulwood totem needs the Arcane Rite chain first.
+    // Only 3 of the originally planned 8 ship: Malum's own 22 shipped transmutation recipes
+    // already use minecraft:stone, cobblestone, andesite, and granite as inputs, and
+    // SpiritTransmutationRecipe.getRecipe() returns the first RecipeManager match for a
+    // given input with no collision error -- a second recipe on the same input is silently
+    // unreachable, not a crash. Dropped: stone->holystone, stone->tuff (also a same-list dupe
+    // of the first), cobblestone->tainted_rock, andesite->diorite, granite->andesite.
+    let transmutations = [
+        { input: 'aether:holystone',       output: 'minecraft:stone' },
+        { input: 'malum:tainted_rock',     output: 'malum:twisted_rock' },
+        { input: 'malum:twisted_rock',     output: 'malum:tainted_rock' },
+    ]
+
+    transmutations.forEach(t => {
+        global.addSpiritTransmutation(event, { input: t.input, output: t.output })
+    })
+
 })
