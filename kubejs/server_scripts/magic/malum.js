@@ -160,4 +160,28 @@ ServerEvents.recipes(event => {
         global.addSpiritTransmutation(event, { input: t.input, output: t.output })
     })
 
+    // --- Totem base re-gate ---
+    // Shipped runewood_totem_base requires an eldritch spirit, which drops only from
+    // rare/boss mobs -- that put all 13 base rites at Alchemist tier, far past where
+    // their utility is useful. Dropping eldritch lands base rites at Journeyman.
+    // soulwood_totem_base is deliberately NOT touched: corrupt rites are stronger, and
+    // soulwood already requires the Arcane Rite chain to exist.
+    event.remove({ id: 'malum:spirit_infusion/runewood_totem_base' })
+    addSpiritInfusion(event, {
+        input: { item: 'malum:runewood_log', count: 4 },
+        output: { item: 'malum:runewood_totem_base', count: 4 },
+        extraItems: [
+            { item: 'malum:runewood_planks', count: 6 },
+            { item: 'malum:hex_ash', count: 2 },
+            { item: 'ars_nouveau:source_gem', count: 2 }
+        ],
+        spirits: [
+            { type: 'aerial', count: 2 },
+            { type: 'aqueous', count: 2 },
+            { type: 'earthen', count: 2 },
+            { type: 'infernal', count: 2 },
+            { type: 'arcane', count: 4 }
+        ]
+    })
+
 })
