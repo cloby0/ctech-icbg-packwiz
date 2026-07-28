@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_1',
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'minecraft:blue_ice', 'minecraft:blue_ice'],
+        pedestalItems: ['gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'minecraft:blue_ice', 'minecraft:blue_ice'],
         output: 'legendarysurvivaloverhaul:cooling_coat_2',
         sourceCost: Source.SORCERER
     })
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:heating_coat_1',
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'minecraft:magma_block', 'minecraft:blaze_rod'],
+        pedestalItems: ['gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'minecraft:magma_block', 'minecraft:blaze_rod'],
         output: 'legendarysurvivaloverhaul:heating_coat_2',
         sourceCost: Source.SORCERER
     })
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:cooling_coat_1',
-        pedestalItems: ['legendarysurvivaloverhaul:heating_coat_1', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem'],
+        pedestalItems: ['legendarysurvivaloverhaul:heating_coat_1', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
         output: 'legendarysurvivaloverhaul:thermal_coat_1',
         sourceCost: Source.SORCERER
     })
@@ -224,14 +224,14 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:gold_ingot',
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:sun_fern_leaf', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream'],
+        pedestalItems: ['gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'legendarysurvivaloverhaul:sun_fern_leaf', 'legendarysurvivaloverhaul:sun_fern_leaf', 'minecraft:magma_cream'],
         output: 'legendarysurvivaloverhaul:heat_resistance_ring',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:gold_ingot',
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:ice_fern_leaf', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snowball'],
+        pedestalItems: ['gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'legendarysurvivaloverhaul:ice_fern_leaf', 'legendarysurvivaloverhaul:ice_fern_leaf', 'minecraft:snowball'],
         output: 'legendarysurvivaloverhaul:cold_resistance_ring',
         sourceCost: Source.SORCERER
     })
@@ -252,21 +252,21 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:sponge',
-        pedestalItems: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', '#kubejs:water_essences', '#kubejs:water_essences', 'minecraft:sea_lantern'],
+        pedestalItems: ['gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', '#kubejs:water_essences', '#kubejs:water_essences', 'minecraft:sea_lantern'],
         output: 'legendarysurvivaloverhaul:sponge',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'minecraft:glass_bottle',
-        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_ingot', '#kubejs:water_essences', 'ars_nouveau:source_gem'],
+        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'gtceu:holy_silver_ingot', '#kubejs:water_essences', 'gtceu:distilled_animus_ingot'],
         output: 'legendarysurvivaloverhaul:water_purifier',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'legendarysurvivaloverhaul:medkit',
-        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'irons_spellbooks:divine_pearl', 'ars_nouveau:source_gem', 'legendarysurvivaloverhaul:healing_herbs'],
+        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'irons_spellbooks:divine_pearl', 'gtceu:distilled_animus_ingot', 'legendarysurvivaloverhaul:healing_herbs'],
         output: 'legendarysurvivaloverhaul:first_aid_supplies',
         sourceCost: Source.ALCHEMIST
     })

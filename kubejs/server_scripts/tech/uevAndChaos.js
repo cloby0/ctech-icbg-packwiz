@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '4x gtceu:awakened_draconium_plate',
             '2x botania:terrasteel_ingot',
-            '2x ars_nouveau:wilden_tribute',
+            '2x kubejs:boundless_gaia_spirit_ingot',
             '1x botania:gaia_ingot',
             '1x gtceu:abstract_elastomer_ingot',
             '1x #gtceu:circuits/uev'

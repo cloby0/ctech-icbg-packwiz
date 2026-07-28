@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     const gate = {
         foliot: { item: 'minecraft:fire_charge' },
         djinni: { item: 'botania:manasteel_ingot' },
-        afrit: { item: 'ars_nouveau:source_gem' },
+        afrit: { item: 'botania:terrasteel_ingot' },
         marid: { item: 'gtceu:prima_materia_ingot' },
     }
 

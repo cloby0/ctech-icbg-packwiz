@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
             'type': 'minecraft:smithing_transform',
             'template': { 'item': 'irons_spellbooks:magic_cloth' },
             'base': { 'item': base },
-            'addition': { 'item': 'ars_nouveau:source_gem' },
+            'addition': { 'item': 'gtceu:luminessence_dust' },
             'result': { 'item': `apprenticecodex:${piece}` }
         })
     })
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         'XXX',
         'FAF'
     ], {
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         X: '#minecraft:wooden_slabs',
         F: '#minecraft:wooden_fences',
         A: 'irons_spellbooks:arcane_ingot',
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         'FDF'
     ], {
         A: 'minecraft:amethyst_shard',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         I: 'irons_spellbooks:scroll',
         X: '#minecraft:wooden_slabs',
         F: '#minecraft:wooden_fences',
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         B: 'irons_spellbooks:lightning_bottle',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         W: 'gtceu:long_wood_rod',
         C: 'create:copper_sheet',
         H: '#forge:tools/hammers',
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         W: 'gtceu:long_wood_rod',
         I: 'create:iron_sheet',
         H: '#forge:tools/hammers',
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'irons_spellbooks:arcane_ingot',
         G: 'minecraft:glass',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         W: 'gtceu:long_wood_rod',
         R: 'irons_spellbooks:silver_ring',
         H: '#forge:tools/hammers',
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
         ' S '
     ], {
         E: 'minecraft:ender_eye',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         B: 'irons_spellbooks:ruined_book',
         F: '#forge:tools/files'
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
         A: 'irons_spellbooks:arcane_ingot',
         D: 'minecraft:diamond',
         B: 'minecraft:glass_bottle',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         F: '#forge:tools/files'
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
         'LCL',
         'LKL'
     ], {
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         A: 'irons_spellbooks:arcane_ingot',
         L: 'minecraft:leather',
         C: '#forge:chests',
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
         'ACA',
         ' A '
     ], {
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         A: 'irons_spellbooks:arcane_ingot',
         C: '#forge:chests',
         H: '#forge:tools/hammers'
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         'S  '
     ], {
         C: 'minecraft:compass',
-        G: 'ars_nouveau:source_gem',
+        G: 'gtceu:luminessence_dust',
         I: 'irons_spellbooks:graybeard_staff',
         A: 'irons_spellbooks:arcane_ingot',
         S: 'gtceu:wood_rod',
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
         'ABA'
     ], {
         T: 'create:copper_backtank',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         A: 'irons_spellbooks:arcane_ingot',
         B: '#forge:ingots/brass',
         W: '#forge:tools/wrenches'
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
             'type': 'minecraft:smithing_transform',
             'template': { 'item': 'irons_spellbooks:hogskin' },
             'base': { 'item': base },
-            'addition': { 'item': 'ars_nouveau:source_gem' },
+            'addition': { 'item': 'gtceu:luminessence_dust' },
             'result': { 'item': `apprenticecodex:${piece}` }
         })
     })
@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
         C: 'create:copper_sheet',
         A: 'irons_spellbooks:arcane_ingot',
         L: 'irons_spellbooks:lightning_bottle',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         T: 'gtceu:steel_ingot',
         D: '#forge:tools/screwdrivers',
         F: '#forge:tools/files'
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
         I: 'create:iron_sheet',
         A: 'irons_spellbooks:arcane_ingot',
         E: 'minecraft:ender_pearl',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:luminessence_dust',
         T: 'gtceu:steel_ingot',
         D: '#forge:tools/screwdrivers',
         F: '#forge:tools/files'
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
         W: 'gtceu:long_wood_rod',
         B: 'minecraft:bow',
         A: 'irons_spellbooks:arcane_ingot',
-        G: 'ars_nouveau:source_gem',
+        G: 'gtceu:luminessence_dust',
         D: '#forge:tools/screwdrivers'
     }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
         'RAP',
         'PSW'
     ], {
-        C: 'ars_nouveau:source_gem',
+        C: 'gtceu:prima_materia_dust',
         A: 'irons_spellbooks:arcane_ingot',
         R: 'irons_spellbooks:protection_rune',
         P: 'gtceu:prima_materia_plate',
@@ -526,7 +526,7 @@ ServerEvents.recipes(event => {
         A: 'irons_spellbooks:arcane_ingot',
         L: 'gtceu:glass_lens',
         S: 'irons_spellbooks:mithril_scrap',
-        C: 'ars_nouveau:source_gem',
+        C: 'gtceu:prima_materia_dust',
         F: '#forge:tools/files'
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -537,7 +537,7 @@ ServerEvents.recipes(event => {
         'MSM'
     ], {
         F: 'minecraft:feather',
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:prima_materia_dust',
         P: 'gtceu:prima_materia_plate',
         A: 'irons_spellbooks:arcane_ingot',
         M: 'irons_spellbooks:mithril_scrap',
@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
         'APA',
         'SMS'
     ], {
-        S: 'ars_nouveau:source_gem',
+        S: 'gtceu:prima_materia_dust',
         R: 'irons_spellbooks:protection_rune',
         A: 'irons_spellbooks:arcane_ingot',
         P: 'gtceu:prima_materia_plate',
@@ -607,7 +607,7 @@ ServerEvents.recipes(event => {
         S: 'apprenticecodex:spellstained_arcane_ingot',
         R: 'gtceu:steel_spring',
         P: 'gtceu:prima_materia_plate',
-        A: 'ars_nouveau:source_gem',
+        A: 'gtceu:prima_materia_dust',
         M: 'irons_spellbooks:mithril_scrap',
         D: '#forge:tools/screwdrivers'
     }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))

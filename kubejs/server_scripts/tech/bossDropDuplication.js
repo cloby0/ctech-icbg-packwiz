@@ -20,10 +20,12 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    // Dead ars_nouveau:source_gem swapped for water essence tag -- lacrima is Cataclysm's
+    // ocean-monument boss material, matches the coral/prismarine water theme here.
     event.recipes.gtceu.chemical_reactor('ctech:lacrima_dissolution')
         .itemInputs(
             '1x cataclysm:lacrima',
-            '4x ars_nouveau:source_gem'
+            '4x #kubejs:water_essences'
         )
         .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
         .outputFluids(Fluid.of('kubejs:dissolved_lacrima', 1000))

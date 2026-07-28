@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:amethyst_block',
-            S: 'ars_nouveau:source_gem',
+            S: 'gtceu:holy_silver_dust',
             M: 'gtceu:mithril_plate',
             V: 'minecraft:anvil',
             H: '#forge:tools/hammers',
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             M: 'gtceu:mithril_plate',
             D: 'minecraft:polished_deepslate',
             O: 'minecraft:crying_obsidian',
-            S: 'ars_nouveau:source_gem',
+            S: 'gtceu:holy_silver_dust',
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
         }
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         source: Source.SORCERER,
         pedestalItems: [
             'minecraft:sculk', 'minecraft:sculk',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'minecraft:echo_shard'
         ]
     })
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:common_ink" },
-        "input": { "item": "ars_nouveau:source_gem" },
+        "input": { "item": "gtceu:luminessence_dust" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:uncommon_ink" }]
     })
 
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: r.id })
         event.shaped(Item.of(r.id, 1), ['EZE', ' B ', ' F '], {
             E: r.themeItem,
-            F: 'ars_nouveau:source_gem',
+            F: 'gtceu:holy_silver_dust',
             B: 'irons_spellbooks:blank_rune',
             Z: '#forge:tools/files'
         }).damageIngredient(Ingredient.of('#forge:tools/files'))

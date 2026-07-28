@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         ],
         {
             C: 'minecraft:clay_ball',
-            S: 'ars_nouveau:source_gem',
+            S: 'gtceu:ambrosium_dust',
             H: 'gtceu:holy_silver_plate',
             D: '#forge:tools/screwdrivers'
         }

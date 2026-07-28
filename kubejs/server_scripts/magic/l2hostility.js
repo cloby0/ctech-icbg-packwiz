@@ -30,12 +30,21 @@ ServerEvents.recipes(event => {
     ].forEach(id => event.remove({ output: `l2complements:${id}` }))
 
 
+    // Dead ars_nouveau:source_gem across this whole file (never touched by the magic rework's
+    // tier phases) swapped for this rework's own tier-signature dust, matched to each recipe's
+    // own tier field: Alchemist->distilled_animus_dust, Thaumaturge->starforged_chimerite_dust,
+    // Arcanist->gravitic_rubedo_dust, Sage->kubejs:soul_of_gaia. Fixed 2026-07-28 alongside the
+    // reported runic_forge/awakened_cumium_embryo error (same failure class: dead item breaks
+    // GT .itemInputs()). Helper calls (addEnchantingRecipe/addImbuementRecipe/Source.TIER) left
+    // as-is -- they still work (delegate to addEldrinAltarRecipe internally), full modernization
+    // of this file is out of scope here.
+
     addEnchantingRecipe(event, {
         reagent: 'minecraft:prismarine_shard',
         pedestalItems: [
             'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot',
             'minecraft:prismarine_crystals', 'minecraft:prismarine_crystals',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust'
         ],
         output: 'l2complements:poseidite_ingot',
         sourceCost: Source.ALCHEMIST
@@ -67,30 +76,32 @@ ServerEvents.recipes(event => {
 
     event.shapeless('l2complements:fragile_warp_stone', ['minecraft:chorus_fruit', 'minecraft:ender_pearl'])
 
+    // "S" (source_gem) swapped for magichem:admixture_witchcraft -- real MagiChem admixture,
+    // literal thematic match for a witch-flavored bootstrap item.
     event.shaped('l2hostility:witch_droplet', [
         ' S ',
         'FBF',
         ' S '
-    ], { S: 'ars_nouveau:source_gem', F: 'minecraft:fermented_spider_eye', B: 'minecraft:glass_bottle' })
+    ], { S: 'magichem:admixture_witchcraft', F: 'minecraft:fermented_spider_eye', B: 'minecraft:glass_bottle' })
 
     event.shaped('l2hostility:witch_wand', [
         'D F',
         ' B ',
         '  S'
-    ], { D: 'l2hostility:witch_droplet', B: 'minecraft:blaze_rod', S: 'ars_nouveau:source_gem', F: '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
+    ], { D: 'l2hostility:witch_droplet', B: 'minecraft:blaze_rod', S: 'magichem:admixture_witchcraft', F: '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.shaped('l2hostility:hostility_detector', [
         'DS ',
         'MCM',
         ' S '
-    ], { S: 'ars_nouveau:source_gem', M: '#gtceu:circuits/mv', C: 'minecraft:compass', D: '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    ], { S: 'gtceu:holy_silver_dust', M: '#gtceu:circuits/mv', C: 'minecraft:compass', D: '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:dubious_dust',
         pedestalItems: [
             'minecraft:leather', 'minecraft:leather',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust',
+            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust',
             'minecraft:gold_ingot', 'minecraft:gold_ingot'
         ],
         output: 'l2hostility:charm_of_looting_1',
@@ -101,7 +112,7 @@ ServerEvents.recipes(event => {
         input: 'minecraft:glass_bottle',
         pedestalItems: [
             'l2hostility:witch_droplet', 'l2hostility:witch_droplet',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
         ],
         output: 'l2hostility:bottle_of_curse',
         source: Source.SORCERER
@@ -137,7 +148,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:powder_snow_bucket',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust'
         ],
         output: 'l2complements:hard_ice',
         source: Source.ALCHEMIST,
@@ -168,8 +179,8 @@ ServerEvents.recipes(event => {
     addEnchantingRecipe(event, {
         reagent: 'l2complements:guardian_eye',
         pedestalItems: [
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:guardian_rune',
@@ -180,8 +191,8 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:gold_ingot',
         pedestalItems: [
             'minecraft:piglin_banner_pattern',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
         ],
         output: 'l2complements:piglin_rune',
@@ -194,7 +205,7 @@ ServerEvents.recipes(event => {
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
         ],
         output: 'l2complements:reinforced_warp_stone',
         sourceCost: Source.THAUMATURGE
@@ -262,7 +273,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'minecraft:golden_apple'
         ],
         output: 'l2hostility:ring_of_healing',
@@ -274,7 +285,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'minecraft:heart_of_the_sea'
         ],
         output: 'l2hostility:ring_of_ocean',
@@ -286,8 +297,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
         ],
         output: 'l2hostility:bottle_of_sanity',
         sourceCost: Source.THAUMATURGE
@@ -330,7 +341,7 @@ ServerEvents.recipes(event => {
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
         ],
         output: 'l2hostility:charm_of_looting_2',
         sourceCost: Source.THAUMATURGE
@@ -360,7 +371,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2hostility:book_of_omniscience',
         sourceCost: Source.ARCANIST
@@ -373,7 +384,7 @@ ServerEvents.recipes(event => {
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2complements:sculkium_ingot',
         source: Source.ARCANIST,
@@ -430,7 +441,7 @@ ServerEvents.recipes(event => {
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2complements:void_eye',
         sourceCost: Source.ARCANIST
@@ -471,7 +482,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2hostility:charm_of_looting_3',
         sourceCost: Source.ARCANIST
@@ -517,7 +528,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2hostility:ring_of_life',
         sourceCost: Source.ARCANIST
@@ -529,7 +540,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2hostility:ring_of_incarceration',
         sourceCost: Source.ARCANIST
@@ -541,7 +552,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
         ],
         output: 'l2hostility:ring_of_corrosion',
         sourceCost: Source.ARCANIST
@@ -590,7 +601,7 @@ ServerEvents.recipes(event => {
             'minecraft:end_stone', 'minecraft:end_stone',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2complements:shulkerate_ingot',
         sourceCost: Source.SAGE
@@ -645,7 +656,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.assembler('l2hostility/miracle_ingot')
-        .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x ars_nouveau:source_gem')
+        .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x gtceu:prima_materia_dust')
         .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
         .itemOutputs('1x l2hostility:miracle_ingot')
         .duration(400)
@@ -664,7 +675,7 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:charm_of_looting_4',
         sourceCost: Source.SAGE
@@ -676,7 +687,7 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:curse_of_envy',
         sourceCost: Source.SAGE
@@ -712,7 +723,7 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:ring_of_reflection',
         sourceCost: Source.SAGE
@@ -760,7 +771,7 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:pocket_of_restoration',
         sourceCost: Source.SAGE
@@ -774,7 +785,7 @@ ServerEvents.recipes(event => {
             { item: 'botania:terrasteel_ingot' }, { item: 'botania:terrasteel_ingot' },
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
-            { item: 'ars_nouveau:source_gem' }, { item: 'ars_nouveau:source_gem' }
+            { item: 'kubejs:soul_of_gaia' }, { item: 'kubejs:soul_of_gaia' }
         ],
         mana: Mana.ASCENDANT
     })
@@ -796,8 +807,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_block', 'gtceu:holy_silver_block',
             'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:divinity_cross',
         sourceCost: Source.SAGE
@@ -808,8 +819,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:nether_star',
             'l2hostility:divinity_cross',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:divinity_light',
         sourceCost: Source.SAGE
@@ -821,7 +832,7 @@ ServerEvents.recipes(event => {
             'minecraft:leather', 'minecraft:leather',
             'minecraft:leather', 'minecraft:leather',
             'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'ars_nouveau:source_gem', 'ars_nouveau:source_gem'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
         ],
         output: 'l2hostility:triple_strip_cape',
         sourceCost: Source.SAGE

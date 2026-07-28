@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 
     event.shaped(Item.of('artifacts:flippers', 1), [
         'NWK', 'KSK', 'KLK'
-    ], { 'K': 'minecraft:kelp', 'W': 'ars_nouveau:water_essence', 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'N': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+    ], { 'K': 'minecraft:kelp', 'W': '#kubejs:water_essences', 'S': 'nameless_trinkets:dubious_dust', 'L': 'minecraft:leather', 'N': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:snorkel', 1), [
         'HI ', 'IGI', 'LSL'
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
 
     event.shaped(Item.of('artifacts:rooted_boots', 1), [
         'KGV', 'LSL', 'LEL'
-    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'E': 'ars_nouveau:earth_essence', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+    ], { 'V': 'minecraft:vine', 'G': 'minecraft:grass_block', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'E': '#kubejs:earth_essences', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
     event.shaped(Item.of('artifacts:charm_of_sinking', 1), [
         'IFI', 'GSG', 'IGI'
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     // Pulled to Hobbyist: air essence binds a slow-fall umbrella (was luminessence-tier enchanting)
     event.shaped(Item.of('artifacts:umbrella', 1), [
         'LAL', 'SIS', 'CT '
-    ], { 'L': 'minecraft:leather', 'A': 'ars_nouveau:air_essence', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
+    ], { 'L': 'minecraft:leather', 'A': '#kubejs:air_essences', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',

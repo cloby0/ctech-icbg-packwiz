@@ -605,18 +605,22 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
 
-    addImbuementRecipe(event, {
-        input: 'ars_nouveau:source_gem',
+    // Dead ars_nouveau:source_gem / Wilden items (Wilden retired per 09-sage.md) swapped for a
+    // convergence of this rework's own tier-signature ingots -- fitting for a Sage-tier bridge
+    // recipe. Ported addImbuementRecipe -> addEldrinAltarRecipe/LP while fixing this.
+    addEldrinAltarRecipe(event, {
         output: 'kubejs:source_crystal_lattice',
-        source: Source.SAGE,
-        pedestalItems: [
-            'ars_nouveau:source_gem',
-            'ars_nouveau:wilden_horn',
-            'ars_nouveau:wilden_spike',
-            'ars_nouveau:wilden_tribute',
+        items: [
+            'gtceu:prima_materia_ingot',
+            'kubejs:element_attunement_stone',
+            'gtceu:distilled_animus_ingot',
+            'gtceu:starforged_chimerite_ingot',
+            'gtceu:gravitic_rubedo_ingot',
             'mysticalagriculture:air_essence',
             'gtceu:naquadah_dust'
-        ]
+        ],
+        affinity: 'arcane',
+        power: LP.SAGE
     })
 
     event.recipes.gtceu.chemical_reactor('ctech:vitalized_source_fragment_synthesis')
@@ -657,6 +661,9 @@ ServerEvents.recipes(event => {
         sourceCost: Source.ASCENDANT
     })
 
+    // Dead ars_nouveau:wilden_tribute x2 (Wilden retired per 09-sage.md) swapped for
+    // gtceu:empyrean_ichor_ingot x2 -- matches 09-sage.md's own design intent ("feeds
+    // Ascendant/Prophet the same way Gaia Spirit Ingot did before this rework").
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:awakened_cumium_embryo' },
         mana: Mana.ASCENDANT,
@@ -664,8 +671,8 @@ ServerEvents.recipes(event => {
             { item: 'kubejs:gestated_cumium_crystal' },
             { item: 'botania:gaia_ingot' },
             { item: 'botania:gaia_ingot' },
-            { item: 'ars_nouveau:wilden_tribute' },
-            { item: 'ars_nouveau:wilden_tribute' },
+            { item: 'gtceu:empyrean_ichor_ingot' },
+            { item: 'gtceu:empyrean_ichor_ingot' },
             { item: 'botania:rune_wrath' },
             { item: 'botania:rune_pride' }
         ]
@@ -743,7 +750,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:uev_field_generator',
             '2x draconicevolution:awakened_draconium_ingot',
             '1x botania:gaia_ingot',
-            '2x ars_nouveau:wilden_tribute',
+            '2x gtceu:empyrean_ichor_ingot',
             '1x #gtceu:circuits/uiv'
         )
         .inputFluids(

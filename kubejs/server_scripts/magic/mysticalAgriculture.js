@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     ;[
         [ma('ambrosium'), 'aether:ambrosium_shard',     3],
         [ma('zanite'),    'aether:zanite_gemstone',     3],
-        [ma('mana'),      'ars_nouveau:source_gem',     3],
+        [ma('mana'),      'gtceu:raw_mana',             3],
         [ma('skyjade'),   'deep_aether:skyjade',        3],
     ].forEach(([essence, material, count]) => {
         const inputs = []

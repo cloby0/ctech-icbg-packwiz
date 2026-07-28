@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
             ' E '
         ],
         {
-            G: 'ars_nouveau:source_gem',
+            G: 'magichem:essentia_arcane',
             A: 'minecraft:amethyst_shard',
             H: 'gtceu:holy_silver_dust',
             E: 'minecraft:ender_eye',

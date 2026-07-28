@@ -5198,7 +5198,7 @@ hash = "d784e1c1b3fb0e24c5c30ededf298f3509d27e436d0c13ceac2b4fe8d4971916"
 
 [[files]]
 file = "kubejs/server_scripts/itemTags.js"
-hash = "b3d936a87cb5ef652764d55b5d53a22d0180446e048dbeff1f2ad0689a41fd2d"
+hash = "f096df377922a6f0fa7c77fb4a6a45aa280d75f9b8f47792c7427a767c71b820"
 
 [[files]]
 file = "kubejs/server_scripts/lootTables.js"
@@ -5214,19 +5214,15 @@ hash = "94d9b09fc2a083c181087b2930cd107258e72101e3135d1811bb9a5f7a1f6ac4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
-hash = "68b584c1b1b56163e65cbe36b6ea5419005de7bf0712c9329186fc4b0bdc5336"
+hash = "bca5343b5cbee4943819bc06ff3563a1c800fbd5bd4b6220f01ee344b70315d9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
 hash = "eb93627cefa73554be89d33b510980dc6c58b1b421e15c3833ef89dc41a19f07"
 
 [[files]]
-file = "kubejs/server_scripts/magic/arsNouveauAutomation.js"
-hash = "593ad9af74440e822402729f1911d36c2413ebaadc3a07086cdb95c3325e1677"
-
-[[files]]
 file = "kubejs/server_scripts/magic/artifacts.js"
-hash = "69ac43d0454283c79de29603d3fbec4bcc0abf1d49bebffb307db817ed55fe61"
+hash = "4d03e9c8c5a9a2aa1389db3cd597e4f99a9281d53295dc06b78866dafc8df77c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
@@ -5306,7 +5302,7 @@ hash = "99cb1a934cb73173b06e0d94b099bd1a7ac7ff3d9f84508a6df3e7239bde2f46"
 
 [[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
-hash = "abc06733c727bd1092d4a6a47ebe248ee8a192d9a8b5faed69d03e01f97a7889"
+hash = "8ec6d41b8061cb53779f66bdde90896ba05d14ccbefaaffb7b1373e67f0c5d61"
 
 [[files]]
 file = "kubejs/server_scripts/magic/extrabotany.js"
@@ -5326,7 +5322,7 @@ hash = "2ddd33221122baa6c8a3fdeb46650c95cb1496e43f766a04c127b5e325fdf7ab"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "7359175d558a97ae2e161f1a172254b020d450bafa84a134aed5071e1e8a9685"
+hash = "f723b2c8ab7c97a4fa4a989183678b9f39a6fe15d1955beddb4e3aa2868cf46f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -5334,15 +5330,15 @@ hash = "0795f3c1714e1656f39d6bd24717d371296cacc690089dcc83dbd243203550c5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
-hash = "5e036892fc8f00c7dbe574cd942fd60ad29dec06a7a89911992da5229ff487c3"
+hash = "49a60411a352d7ed2c91d339ba8b976623903e273ffc556da35a7d0b08335d9b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/malum.js"
-hash = "f4a58c944fb40152dd7bc7d1e8097c46701c7b93a362a70deadf3e7c15e38d7a"
+hash = "526a1cd59c2408991b0103951594e45036fe42451befeb46f4ff6187740c611e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
-hash = "07d16b14b711bc9b09d1d477495e50ea0a32d46b6b6f44936ca47de76143e2dd"
+hash = "d0856593ece518d8c1b8f1bd18725af57896529343ab9fd3120b7e69e332f7df"
 
 [[files]]
 file = "kubejs/server_scripts/magic/moreRelics.js"
@@ -5350,7 +5346,7 @@ hash = "b4964f6559d55032bd66b71ced641411532db1f4864bbfff9262a5932cfe8632"
 
 [[files]]
 file = "kubejs/server_scripts/magic/mysticalAgriculture.js"
-hash = "7c45aa11af96735bb7fe291decf45bc779548a16e6802d59c9b5c46669721ceb"
+hash = "c3f46ee220c6bde72ce6e16209c71056586b3971992bed05d881088e2b6c77ff"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
@@ -5358,7 +5354,7 @@ hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "c2955e9dee0be2d2848b2837c749d5eb47baf28791fb05747d808cac5849e404"
+hash = "965881c6ffc48ec0a0209ea6cddbb4a9efdbde0fe9d95610358b93aa33a455d6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
@@ -5366,7 +5362,7 @@ hash = "aca1b936748e30e18f0759bcab4a92e3b7c61ef9305197e45cb628463fa7f8c0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "8546527de3936dce918baee68ffb7b1e328231e2ac5baa3e0168ba8824ae6ef5"
+hash = "e98a9f34714e2ed9774435cdac58b92d245d24026f247f8198e5263163dfca31"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
@@ -5422,7 +5418,7 @@ hash = "d2c0eb28519420e84e3146e327a35cb645c282dfffe7f9a069361574f90cb654"
 
 [[files]]
 file = "kubejs/server_scripts/tech/bossDropDuplication.js"
-hash = "45ee58355606335bd75a55b7636b706bd27da74d3d666ed454efdbad7eb052a1"
+hash = "24b17f3696edfab811c588d3eab1eceb491a50d24de77834edf17466907bdd89"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
@@ -5510,7 +5506,7 @@ hash = "41eee2fb485612b58a7c4fa89ac1d14f39640db2a4e0bf62ddf5c6fc165c6055"
 
 [[files]]
 file = "kubejs/server_scripts/tech/legendarySurvivalOverhaul.js"
-hash = "e82239c4fd944c4aeb465a87a96233056cec5dc9f409b2b72fcc91e33018d5c8"
+hash = "fb57c0328d3117fbe28cd62ced9e2ba6eaa9e15264cf4fbd47604e8be37966f6"
 
 [[files]]
 file = "kubejs/server_scripts/tech/luvAndGlacio.js"
@@ -5550,7 +5546,7 @@ hash = "0d70d27df9acc626db9170fc6b52ce94a6a32853e94e5d914c2b65ffb32fbb86"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndChaos.js"
-hash = "19c352e8b658729c3dfeaaa7cac50b7fd81af21f549f1557a8212ed80ed1ea4c"
+hash = "f7e5db656c9da38341a4d00d9fc8cb2c2d8663f10944a04a1946e6b8d15bddd7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
@@ -5562,7 +5558,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "096ecc1c4532b7fe595b8772eb39c07e83cd54c5edfc3558b2c50c517e7ab2c6"
+hash = "49cc500968b3203610ec17a22a8e1a2cd86ed189997b55a0be4f49380eb3e95c"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
