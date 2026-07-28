@@ -294,15 +294,11 @@ ServerEvents.recipes(event => {
     // Soul Forge takes 4 fixed item slots (verified against the mod's recipe JSON) -- the
     // Destructive Will cost is the consumed basemonstersoul_destructive item itself, same
     // pattern 05-sorcerer.md used for its Demon Will types.
-    event.custom({
-        "type": "bloodmagic:soulforge",
-        "drain": 20.0,
-        "minimumDrain": 400.0,
-        "input0": { "item": "kubejs:arcane_residue" },
-        "input1": { "item": "bloodmagic:basemonstersoul_destructive" },
-        "input2": { "item": "minecraft:soul_sand" },
-        "input3": { "item": "minecraft:magma_cream" },
-        "output": { "item": "kubejs:animus_fragment" }
+    addSoulForgeRecipe(event, {
+        output: 'kubejs:animus_fragment',
+        inputs: ['kubejs:arcane_residue', 'bloodmagic:basemonstersoul_destructive', 'minecraft:soul_sand', 'minecraft:magma_cream'],
+        drain: 20,
+        minimumDrain: 400
     })
 
     // Distillery step: Occultism crushing straight into the real GT dust form -- no GT machine.

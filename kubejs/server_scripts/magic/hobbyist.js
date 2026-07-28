@@ -247,14 +247,11 @@ ServerEvents.recipes(event => {
     // 2a. blend in vinteum dust, 2b. Blood Altar charges the blend into kindled ichor dust (small LP tax)
     event.shapeless('kubejs:vinteum_ichor_blend', ['kubejs:ichor_dust', 'mna:vinteum_dust'])
 
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": LP.HOBBYIST / 2,
-        "consumptionRate": 5,
-        "drainRate": 5,
-        "input": { "item": "kubejs:vinteum_ichor_blend" },
-        "output": { "item": "kubejs:kindled_ichor_dust" },
-        "upgradeLevel": 0
+    addBloodAltarRecipe(event, {
+        input: 'kubejs:vinteum_ichor_blend',
+        output: 'kubejs:kindled_ichor_dust',
+        syphon: LP.HOBBYIST / 2,
+        upgradeLevel: 0
     })
 
     // 3. smelt into the rough ingot

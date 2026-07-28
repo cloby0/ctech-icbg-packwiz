@@ -86,7 +86,7 @@ hash = "ed577a5f879d797bac579fc0a558ba985b465bb492dab9411ead2939fe51ca73"
 
 [[files]]
 file = "config/doespotatotick-common.toml"
-hash = "f3be680acb9f7bfc0de2b406add522360c7e69388908b98d5cff8c310b472e1d"
+hash = "1ab0ef6337a5e75cba5b425af7ec53526718d89f85c64c3a3e9e9d529380618a"
 
 [[files]]
 file = "config/enigmaticlegacy-common.omniconf"
@@ -2881,10 +2881,6 @@ file = "kubejs/data/kubejs/silentgear_materials/dreamwood_twig.json"
 hash = "801c3f3dd1fca692d7ac4b842675d61b023d45d75d852d14e877e0836405cbae"
 
 [[files]]
-file = "kubejs/data/kubejs/silentgear_materials/drygmy_shard.json"
-hash = "53d6f7e1b9d093ebec6e58a48cae1bd0e75edec9c68b44630f3a3f61380d2be3"
-
-[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/duranium_ingot.json"
 hash = "233b9f549fc3872cef79a3b3ba5241cc62faeb317534deb8ed2587006478abec"
 
@@ -3423,18 +3419,6 @@ hash = "790c5217574963aa1b0b8c8334c0af09f6cf4ceb21dd04593540a9795459964d"
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/wilden_alloy_ingot.json"
 hash = "98e8dbe74f80ea5d966aca8576084160abd196051364cada8144c1e4a716fad9"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/wilden_horn.json"
-hash = "340a5d30934d0be11732a837e778e8c7d7e2c392058fffec968bd953dd1af4cc"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/wilden_tribute.json"
-hash = "30f24c462acb7afaa4aa7f45c6bd2a2c6f01302cc9e0d4350e19b1a7d6a6316d"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/wilden_wing.json"
-hash = "3858edbb078845625cdafbeb066d5f67942184c0a58b64986d1d2b3c0613ac12"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/wool.json"
@@ -5222,7 +5206,7 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "e2fb098de1c9deeb28c1332684d120bb2c1315d0528652984558b0430d07b4ce"
+hash = "71bc4527e867eb5eea8bf6253d4ca3c73eea2ec7bc8fc6cbc615a9a03733a25a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -5261,6 +5245,22 @@ file = "kubejs/server_scripts/magic/customMachines/alchemyTableRecipes.js"
 hash = "8ae70940202cff1bbd2f3fb776af99e36f5e32f6abc84fbef80c59ed2a8f51e0"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/bloodMagicAltarRecipes.js"
+hash = "3198b5cf628af24617b57322dea4e5db36aacf901522b04dcaaca400a61502fe"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/bloodMagicArcRecipes.js"
+hash = "2d7eea5d09424bbef14cb003181d0817129cc2d67f1eef810f5f92b9cec3b61f"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/bloodMagicArrayRecipes.js"
+hash = "8be25afa6403701f4ab1e0b38991c6866ca9520ed916cf59324dcc350bd5b3c2"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/bloodMagicSoulForgeRecipes.js"
+hash = "53913e2f4b88db6c3d9d6d0f4249471a9ff2429f6ca01a1def41e564123734c7"
+
+[[files]]
 file = "kubejs/server_scripts/magic/customMachines/eldrinAltarRecipes.js"
 hash = "22e516e9cf2a4b62b7e8bfb8df84249fda0bcc576d1311548c14b38233a57bb3"
 
@@ -5279,6 +5279,18 @@ hash = "53d90c03f99df461d7bba0e902f761404b39eca782631449da1e9d48214913fb"
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
 hash = "edeff89059870cfb94de99920748ac399f592c1caed4094203d1faabda0e8457"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/mnaArcaneFurnaceRecipes.js"
+hash = "77e9edde4430296af1da8a105c7833b10c724ee8628c7c8763d0868e35dbf50a"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/mnaCrushingRecipes.js"
+hash = "b0a5274faccf76175ab5ae5c9b9a28cb1eeabb52ba9624376394e0c58b2bd149"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/mnaRuneforgingRecipes.js"
+hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
@@ -5302,7 +5314,7 @@ hash = "54797210a54b082bd6f9daf4ce00ce2701d427c8409ca15429c871305ffba197"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "f82a633d50e97c008ba3eea4f8965f5b1af9881558e58ddb973804b7815616d2"
+hash = "00007266147f841b727325c1ee73efce59aa193fcf14beec42e61a29523899a8"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
@@ -5835,11 +5847,6 @@ metafile = true
 [[files]]
 file = "mods/artifacts.pw.toml"
 hash = "9224b29b7fc388a0a030f8a6e87b26b24ec73dbc853bcdd531a144ed8e59ccea"
-metafile = true
-
-[[files]]
-file = "mods/ashvehicle.pw.toml"
-hash = "76ca01d608690bfa4b61ae96360558766eaa7a4e60be28872adfc37690634eed"
 metafile = true
 
 [[files]]

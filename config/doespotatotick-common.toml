@@ -63,7 +63,7 @@
 					#A list of specific entities that will always tick no matter what.
 					EntitiesThatWillAlwaysTick = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:warden", "minecraft:ghast", "minecraft:player", "cataclysm:ender_golem", "cataclysm:ender_guardian", "cataclysm:ignis", "cataclysm:ignited_revenant", "cataclysm:netherite_monstrosity", "cataclysm:the_leviathan", "cataclysm:the_harbinger", "cataclysm:scylla", "cataclysm:maledictus", "cataclysm:ancient_remnant", "cataclysm:coralssus", "cataclysm:the_watcher", "cataclysm:symbiocto", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:naga", "mowziesmobs:umvuthi", "mowziesmobs:sculptor", "aether:slider", "aether:sun_spirit", "aether:valkyrie_queen", "lost_aether_content:aerwhale_king", "draconicevolution:draconic_guardian", "botania:doppleganger"]
 					#All entities from these mod IDs will always tick.
-					EntitiesOfTheModsThatWillAlwaysTick = ["create", "railways", "createbigcannons", "superbwarfare", "ashvehicle", "vvp", "tacz", "ballistix", "ad_astra", "gtceu", "irons_spellbooks", "modulargolems", "workers", "recruits", "l2hostility", "legendary_monsters", "eeeabsmobs", "opposing_force"]
+					EntitiesOfTheModsThatWillAlwaysTick = ["create", "railways", "createbigcannons", "superbwarfare", "vvp", "tacz", "ballistix", "ad_astra", "gtceu", "irons_spellbooks", "modulargolems", "workers", "recruits", "l2hostility", "legendary_monsters", "eeeabsmobs", "opposing_force"]
 					#A list of raider entities that will always tick.
 					RaidersThatWillAlwaysTick = []
 
