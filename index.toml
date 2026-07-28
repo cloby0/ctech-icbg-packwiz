@@ -6653,11 +6653,6 @@ hash = "7e9ef26310359f482e595815664b3d08381b30c6517c32a58078b0999e1d953a"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-irons-spells.pw.toml"
-hash = "501f083955796e603f061d2ea5a972315a49d1f8275d3aabe11cecbfb51e2fd1"
-metafile = true
-
-[[files]]
 file = "mods/kubejs-mna.pw.toml"
 hash = "848619f262ce264dbac2d139696440ba1982856ec618e4189b345faefbfd387f"
 metafile = true
