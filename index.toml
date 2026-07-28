@@ -5911,6 +5911,11 @@ hash = "b9db465dc932e15bc8b652bb6b675f4b53abc12367eac2a451fc380008474663"
 metafile = true
 
 [[files]]
+file = "mods/bloodmagicwootaddon.pw.toml"
+hash = "508ad3950b5bda100880baf94c85746b777261928c236b57d8791fb6bbde440a"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089"
 metafile = true
@@ -5918,6 +5923,11 @@ metafile = true
 [[files]]
 file = "mods/botania-mana-fluid.pw.toml"
 hash = "f3d496cb117262c7b8db6718807d827a9f2b885b79f9d35bf65467333854019c"
+metafile = true
+
+[[files]]
+file = "mods/botania-window-box.pw.toml"
+hash = "03d0d62ea319fb2cf80939bbde41922780171fa59af870c019578355cd7fbcc1"
 metafile = true
 
 [[files]]
@@ -6572,7 +6582,7 @@ metafile = true
 
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
-hash = "f61d1835a5c388d7eb1bc9727e3a436d9e10bb806ee215ec0f72a8e36d7f5dd2"
+hash = "4f89e36cf31ce139ab798c6ae457fb59e6c5ecbe40632ec95450cd2c43604c84"
 metafile = true
 
 [[files]]
@@ -6697,7 +6707,7 @@ metafile = true
 
 [[files]]
 file = "mods/legendary-spellbooks.pw.toml"
-hash = "6c765dc2e41b21ceaa6f740a805799b393573d4ea5a74174f373dc663f29b3fb"
+hash = "bdb59445d4bfc69f4a32b8833ab377569475ae647000a42ed825a6d933664d5b"
 metafile = true
 
 [[files]]

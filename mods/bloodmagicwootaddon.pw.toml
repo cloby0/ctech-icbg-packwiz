@@ -1,0 +1,13 @@
+name = "Blood Magic: Woot Addon"
+filename = "bloodmagicwootaddon-20.1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7150270d0235b74669ee524ac6fc7c2712c70129"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7412552
+project-id = 1395322
