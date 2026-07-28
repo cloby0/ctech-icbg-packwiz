@@ -1,5 +1,35 @@
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
+let $Affinity = Java.loadClass("com.mna.api.affinity.Affinity");
+
+// Build a case-insensitive lookup of the REAL enum constant names once, at load time,
+// instead of guessing at casing/naming (e.g. 'AIR' vs 'WIND') per call site.
+let _affinityByLowerName = {}
+$Affinity.values().forEach(v => {
+    _affinityByLowerName[String(v.name()).toLowerCase()] = v.name()
+})
+
+// Optional aliases for friendlier tier-file authoring, where the enum's real name doesn't
+// match the intuitive/lore name. Confirmed directly against the mna jar's Affinity.class -
+// the real constants are: ARCANE, EARTH, ENDER, FIRE, WATER, WIND, HELLFIRE, ICE,
+// LIGHTNING, UNKNOWN, BLOOD. Notably there is NO 'AIR' constant - it's WIND.
+let _affinityAliases = {
+    air: 'wind',
+}
+
+function resolveAffinityName(input, debugLabel) {
+    if (!input) return null
+    let key = String(input).toLowerCase()
+    if (_affinityAliases[key]) key = _affinityAliases[key]
+
+    let real = _affinityByLowerName[key]
+    if (!real) {
+        let valid = Object.values(_affinityByLowerName).sort().join(', ')
+        console.error(`[eldrin_altar] unknown affinity '${input}' at ${debugLabel}. Valid affinities: ${valid}`)
+        return null
+    }
+    return real
+}
 
 let _nextEldrinAltarIndex = 1
 
@@ -96,7 +126,10 @@ function addEldrinAltarRecipe(event, crecipe) {
 
     let altarItems = rawItems.map(i => normalizeEldrinItem(i))
     let r = event.recipes.mna.eldrinAltar(outputId, altarItems).tier(tier)
-    powers.forEach(p => r.powerRequirement(p.affinity, p.amount))
+    powers.forEach(p => {
+        let resolvedAffinity = resolveAffinityName(p.affinity, `index ${index} (${outputId}) power`)
+        if (resolvedAffinity) r.powerRequirement(resolvedAffinity, p.amount)
+    })
     r.id(`kubejs:eldrin_altar_${stripNamespace(outputId)}_${index}`)
 }
 

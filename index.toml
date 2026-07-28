@@ -5258,7 +5258,7 @@ hash = "53913e2f4b88db6c3d9d6d0f4249471a9ff2429f6ca01a1def41e564123734c7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/eldrinAltarRecipes.js"
-hash = "22e516e9cf2a4b62b7e8bfb8df84249fda0bcc576d1311548c14b38233a57bb3"
+hash = "9ee9bad471bc397f1c5c031ccff1e444b1a086eec5ff8694a75f36a334137c12"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
