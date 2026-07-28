@@ -7038,11 +7038,6 @@ hash = "b55581a1699dd2cda80870aa2ad3642b44bd20befd0c9f396f68751fbb1ed04e"
 metafile = true
 
 [[files]]
-file = "mods/opposing-force.pw.toml"
-hash = "8e28d018c2d4eff077b34bc58a45d56930a6ac00114a7ef50634d4434f604875"
-metafile = true
-
-[[files]]
 file = "mods/packagedauto.pw.toml"
 hash = "1ad3425de5982cb89cf1c20d9c8bf0310bb8be1c489a917f3e4ad2e9ec56e107"
 metafile = true
