@@ -994,6 +994,35 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL
         )
 
+    // Sage capstone metal (magic rework Phase 9): Empyrean Ichor, no ore vein -- Blood Magic
+    // Hellforged ingot + Gaia Ingot + MNA greater mote of magic + Malum/Occultism ritual +
+    // gtceu:ashen_ichor_ingot (the Hobbyist material the tree started with). No blastTemp on
+    // purpose -- magic spine stays GT-free, last step is a literal furnace smelt. No shortcut --
+    // capstones stay hard by design, matching the old Gaia Spirit Ingot.
+    event.create('empyrean_ichor')
+        .ingot()
+        .color(0xF2E9C9).secondaryColor(0x8A6FD1)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
+
+    // Arcanist signature metal (magic rework Phase 8): crafted line, no ore vein -- superheated
+    // purified vinteum + MagiChem rubedo essentia + Blood Magic Hellforged sand + Marid-tier
+    // Occultism essence. No blastTemp on purpose -- magic spine stays GT-free, last step is a
+    // literal furnace smelt.
+    event.create('gravitic_rubedo')
+        .ingot()
+        .color(0x7A1F3D).secondaryColor(0xD4AF37)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
+
     // Hobbyist signature metal (magic rework Phase 1): crafted line, no ore vein --
     // arcane charcoal + redstone + vinteum + Malum Infernal Spirit, replaces Ars's role here.
     // Starter tool/charm material: rod for a wand handle, no plate (not structural).
@@ -1198,6 +1227,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.QUARTZ)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS)
         .addOreByproducts('netherquartz', 'sulfur')
+
+    // Thaumaturge signature metal (magic rework Phase 7): crafted line, no ore vein -- MNA
+    // chimerite gem + MagiChem astral admixture + Blood Magic Vengeful Will + MagiChem Astral
+    // Observer starlight infusion. No blastTemp on purpose -- magic spine stays GT-free, last
+    // step is a literal furnace smelt (blastTemp would block that per feedback_no_smelting_blast_temp).
+    event.create('starforged_chimerite')
+        .ingot()
+        .color(0x2E3A87).secondaryColor(0xB8C8FF)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
 
     // Alchemist signature metal (magic rework Phase 6): crafted line, no ore vein -- MNA animus
     // dust + MagiChem arcane essentia + Blood Magic Destructive Will. Dust form is the macerator

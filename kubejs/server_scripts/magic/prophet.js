@@ -1,8 +1,9 @@
 ServerEvents.recipes(event => {
 
-    addEnchantingRecipe(event, {
-        reagent: 'draconicevolution:dragon_heart',
-        pedestalItems: [
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:dragon_heart_crystal',
+        input: [
+            'draconicevolution:dragon_heart',
             'kubejs:gaian_blood_core',
             'kubejs:gaian_holy_core',
             'kubejs:gaian_void_core',
@@ -12,13 +13,13 @@ ServerEvents.recipes(event => {
             'draconicevolution:awakened_draconium_ingot',
             'draconicevolution:wyvern_core'
         ],
-        output: 'kubejs:dragon_heart_crystal',
-        sourceCost: Source.PROPHET
+        syphon: LP.PROPHET
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:gaian_neutronium_boule',
-        pedestalItems: [
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:draconic_boule',
+        input: [
+            'kubejs:gaian_neutronium_boule',
             'kubejs:dragon_heart_crystal',
             'draconicevolution:awakened_draconium_ingot',
             'draconicevolution:awakened_draconium_ingot',
@@ -28,30 +29,13 @@ ServerEvents.recipes(event => {
             'gtceu:neutronium_ingot',
             'gtceu:neutronium_ingot'
         ],
-        output: 'kubejs:draconic_boule',
-        sourceCost: Source.PROPHET
+        syphon: LP.PROPHET
     })
 
-
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:blood_grimoire',
-        pedestalItems: [
-            'kubejs:dragon_heart_crystal',
-            'kubejs:dragon_heart_crystal',
-            'draconicevolution:awakened_draconium_ingot',
-            'draconicevolution:awakened_draconium_ingot',
-            'draconicevolution:wyvern_core',
-            'botania:gaia_ingot',
-            'botania:gaia_ingot',
-            'gtceu:gaia_spirit_dust'
-        ],
+    addAlchemyTableRecipe(event, {
         output: 'kubejs:draconic_sanguinary',
-        sourceCost: Source.PROPHET
-    })
-
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:radiant_sanctum',
-        pedestalItems: [
+        input: [
+            'kubejs:blood_grimoire',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
             'draconicevolution:awakened_draconium_ingot',
@@ -61,13 +45,13 @@ ServerEvents.recipes(event => {
             'botania:gaia_ingot',
             'gtceu:gaia_spirit_dust'
         ],
+        syphon: LP.PROPHET
+    })
+
+    addAlchemyTableRecipe(event, {
         output: 'kubejs:draconic_sanctum',
-        sourceCost: Source.PROPHET
-    })
-
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:eldritch_codex',
-        pedestalItems: [
+        input: [
+            'kubejs:radiant_sanctum',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
             'draconicevolution:awakened_draconium_ingot',
@@ -77,13 +61,13 @@ ServerEvents.recipes(event => {
             'botania:gaia_ingot',
             'gtceu:gaia_spirit_dust'
         ],
+        syphon: LP.PROPHET
+    })
+
+    addAlchemyTableRecipe(event, {
         output: 'kubejs:dracontine_codex',
-        sourceCost: Source.PROPHET
-    })
-
-    addEnchantingRecipe(event, {
-        reagent: 'kubejs:obliteration_chronicle',
-        pedestalItems: [
+        input: [
+            'kubejs:eldritch_codex',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
             'draconicevolution:awakened_draconium_ingot',
@@ -93,7 +77,22 @@ ServerEvents.recipes(event => {
             'botania:gaia_ingot',
             'gtceu:gaia_spirit_dust'
         ],
+        syphon: LP.PROPHET
+    })
+
+    addAlchemyTableRecipe(event, {
         output: 'kubejs:chronicle_of_dominion',
-        sourceCost: Source.PROPHET
+        input: [
+            'kubejs:obliteration_chronicle',
+            'kubejs:dragon_heart_crystal',
+            'kubejs:dragon_heart_crystal',
+            'draconicevolution:awakened_draconium_ingot',
+            'draconicevolution:awakened_draconium_ingot',
+            'draconicevolution:wyvern_core',
+            'botania:gaia_ingot',
+            'botania:gaia_ingot',
+            'gtceu:gaia_spirit_dust'
+        ],
+        syphon: LP.PROPHET
     })
 })

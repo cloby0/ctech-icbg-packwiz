@@ -18,169 +18,12 @@ ServerEvents.recipes(event => {
             }
     ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
-    event.custom({
-        "type": "hexerei:mixingcauldron",
-        "liquid": {
-            "fluid": "minecraft:lava"
-        },
-        "ingredients": [
-            {
-                "tag": "minecraft:coals"
-            },
-            {
-                "item": "minecraft:flint"
-            },
-            {
-                "tag": "minecraft:coals"
-            },
-            {
-                "item": "minecraft:flint"
-            },
-            {
-                "tag": "minecraft:coals"
-            },
-            {
-                "item": "minecraft:flint"
-            },
-            {
-                "tag": "minecraft:coals"
-            },
-            {
-                "item": "minecraft:flint"
-            }
-        ],
-        "output": {
-            "item": "kubejs:fire_essence"
-        },
-        "liquidOutput": {
-            "fluid": "minecraft:lava"
-        },
-        "fluidLevelsConsumed": 1000,
-        "heatRequirement": "heated"
-    });
-
-    event.custom({
-        "type": "hexerei:mixingcauldron",
-        "liquid": {
-            "fluid": "minecraft:water"
-        },
-        "ingredients": [
-            {
-                "tag": "forge:corals/alive"
-            },
-            {
-                "item": "minecraft:kelp"
-            },
-            {
-                "tag": "forge:corals/alive"
-            },
-            {
-                "item": "minecraft:kelp"
-            },
-            {
-                "tag": "forge:corals/alive"
-            },
-            {
-                "item": "minecraft:kelp"
-            },
-            {
-                "tag": "forge:corals/alive"
-            },
-            {
-                "item": "minecraft:kelp"
-            }
-        ],
-        "output": {
-            "item": "kubejs:water_essence"
-        },
-        "liquidOutput": {
-            "fluid": "minecraft:water"
-        },
-        "fluidLevelsConsumed": 1000,
-        "heatRequirement": "heated"
-    });
-
-    event.custom({
-        "type": "hexerei:mixingcauldron",
-        "liquid": {
-            "fluid": "minecraft:water"
-        },
-        "ingredients": [
-            {
-                "item": "quark:bottled_cloud"
-            },
-            {
-                "item": "minecraft:feather"
-            },
-            {
-                "item": "quark:bottled_cloud"
-            },
-            {
-                "item": "minecraft:feather"
-            },
-            {
-                "item": "quark:bottled_cloud"
-            },
-            {
-                "item": "minecraft:feather"
-            },
-            {
-                "item": "quark:bottled_cloud"
-            },
-            {
-                "item": "minecraft:feather"
-            }
-        ],
-        "output": {
-            "item": "kubejs:air_essence"
-        },
-        "liquidOutput": {
-            "fluid": "minecraft:water"
-        },
-        "fluidLevelsConsumed": 1000,
-        "heatRequirement": "heated"
-    });
-
-    event.custom({
-        "type": "hexerei:mixingcauldron",
-        "liquid": {
-            "fluid": "minecraft:lava"
-        },
-        "ingredients": [
-            {
-                "item": "gtceu:lead_ingot"
-            },
-            {
-                "item": "minecraft:dirt"
-            },
-            {
-                "item": "gtceu:lead_ingot"
-            },
-            {
-                "item": "minecraft:dirt"
-            },
-            {
-                "item": "gtceu:lead_ingot"
-            },
-            {
-                "item": "minecraft:dirt"
-            },
-            {
-                "item": "gtceu:lead_ingot"
-            },
-            {
-                "item": "minecraft:dirt"
-            }
-        ],
-        "output": {
-            "item": "kubejs:earth_essence"
-        },
-        "liquidOutput": {
-            "fluid": "minecraft:lava"
-        },
-        "fluidLevelsConsumed": 1000,
-        "heatRequirement": "heated"
-    });
+    // Custom fire/water/air/earth essence crafting dropped: MagiChem's Alembic (real, cheap,
+    // entry-tier device -- coal/dirt/feather/etc -> essentia_fire/earth/air/water, wisdom 0, no
+    // Wisdom Stone needed) already produces the real thing. #kubejs:<element>_essences tags now
+    // point at magichem:essentia_<element> instead (itemTags.js) -- every recipe using those
+    // tags picks this up automatically, no other file needed touching. Per user direction
+    // 2026-07-28: let MagiChem be a full-game system, not just a Phase 6 sidebar.
 
     // Four elements combine into a no-steel Nether igniter (magic path; vanilla flint_and_steel untouched)
     // Also the exact item occultism.js's Foliot summon ritual consumes as its gate item --
@@ -189,11 +32,11 @@ ServerEvents.recipes(event => {
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
         "ingredients": [
-            { "item": "kubejs:fire_essence" },
-            { "item": "kubejs:fire_essence" },
-            { "item": "kubejs:water_essence" },
-            { "item": "kubejs:earth_essence" },
-            { "item": "kubejs:air_essence" },
+            { "item": "magichem:essentia_fire" },
+            { "item": "magichem:essentia_fire" },
+            { "item": "magichem:essentia_water" },
+            { "item": "magichem:essentia_earth" },
+            { "item": "magichem:essentia_air" },
             { "item": "minecraft:blaze_powder" },
             { "item": "minecraft:coal" },
             { "item": "occultism:otherworld_essence" }
@@ -313,10 +156,10 @@ ServerEvents.recipes(event => {
             'PEH'
         ],
         {
-            F: 'kubejs:fire_essence',
-            W: 'kubejs:water_essence',
-            A: 'kubejs:air_essence',
-            E: 'kubejs:earth_essence',
+            F: 'magichem:essentia_fire',
+            W: 'magichem:essentia_water',
+            A: 'magichem:essentia_air',
+            E: 'magichem:essentia_earth',
             B: 'minecraft:book',
             P: '#forge:plates/copper',
             H: '#forge:tools/hammers'

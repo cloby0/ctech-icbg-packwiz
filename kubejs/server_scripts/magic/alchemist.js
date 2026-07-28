@@ -72,11 +72,9 @@ ServerEvents.recipes(event => {
         output: { item: 'gtceu:abstract_metal_ingot' }
     })
 
-    addManaPondRecipe(event, {
-        input: { item: 'gtceu:abstract_metal_ingot' },
-        mana: Mana.ALCHEMIST,
-        output: { item: 'botania:manasteel_ingot' }
-    })
+    // abstract_metal_ingot -> manasteel_ingot dropped: Apprentice's zanite chain already makes
+    // manasteel far cheaper. No reason to keep a harder, less profitable duplicate recipe for
+    // the same output this many tiers later. Per user direction 2026-07-28.
 
     event.shapeless('minecraft:gold_ingot',   ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
     event.shapeless('gtceu:tin_ingot',       ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'])

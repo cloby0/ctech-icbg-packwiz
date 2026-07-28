@@ -1,10 +1,8 @@
 StartupEvents.registry('item', event => {
 
-    // Magic rework Phase 1 (Hobbyist): Ars Nouveau essence replacements, same 4-tag slot.
-    event.create('fire_essence')
-    event.create('water_essence')
-    event.create('air_essence')
-    event.create('earth_essence')
+    // Magic rework Phase 1 (Hobbyist): custom fire/water/air/earth essence items retired
+    // 2026-07-28 -- MagiChem's real magichem:essentia_<element> replaces them entirely
+    // (see itemTags.js). No longer registered here.
 
     // Ashen Ichor chain: arcane charcoal + redstone -> ichor dust -> vinteum blend
     // -> Blood Altar charge -> kindled dust -> smelt -> rough ingot -> Spirit Altar -> gtceu:ashen_ichor_ingot.
@@ -39,6 +37,22 @@ StartupEvents.registry('item', event => {
     // Magic rework Phase 6 (Alchemist): Distilled Animus chain -> gtceu:distilled_animus_ingot.
     event.create('arcane_residue')
     event.create('animus_fragment')
+
+    // Magic rework Phase 7 (Thaumaturge): Starforged Chimerite chain -> gtceu:starforged_chimerite_ingot.
+    event.create('chimerite_dust')
+    event.create('star_touched_chimerite')
+    event.create('vengeance_touched_chimerite')
+    event.create('charged_chimerite')
+
+    // Magic rework Phase 8 (Arcanist): Gravitic Rubedo chain -> gtceu:gravitic_rubedo_ingot.
+    event.create('rubedo_touched_vinteum')
+    event.create('gravitic_residue')
+    event.create('bound_gravitic_core')
+
+    // Magic rework Phase 9 (Sage): Empyrean Ichor chain -> gtceu:empyrean_ichor_ingot.
+    event.create('hallowed_remnant')
+    event.create('wellspring_bound_remnant')
+    event.create('empyrean_core')
 
     event.create('holy_silver_blend')
     event.create('element_attunement_stone')
@@ -264,7 +278,7 @@ StartupEvents.registry('item', event => {
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
 
-    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'chaos_essence_mysticalag', 'prima_materia_ingot']
+    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'chaos_essence_mysticalag', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)

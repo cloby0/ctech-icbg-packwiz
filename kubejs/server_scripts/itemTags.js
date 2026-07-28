@@ -8,8 +8,12 @@ ServerEvents.tags('item', event => {
     "water"
   ]
 
+  // magichem:essentia_<element> is the real thing (MagiChem's Alembic, entry-tier, wisdom 0) --
+  // replaces the custom kubejs:<element>_essence items entirely. mysticalagriculture stays as
+  // the alternate/cheaper route wherever a tier splits default vs MysticalAg. Per user direction
+  // 2026-07-28: let MagiChem be a full-game system.
   elements.forEach(element => {
-    event.add(`kubejs:${element}_essences`, `kubejs:${element}_essence`);
+    event.add(`kubejs:${element}_essences`, `magichem:essentia_${element}`);
     event.add(`kubejs:${element}_essences`, `mysticalagriculture:${element}_essence`);
   })
 
@@ -23,10 +27,10 @@ ServerEvents.tags('item', event => {
   event.remove('cataclysm_spellbooks:technomancy_focus', 'minecraft:redstone')
   event.add('cataclysm_spellbooks:technomancy_focus', '#gtceu:circuits/lv')
 
-  event.add('irons_spellbooks:fire_focus',      'kubejs:fire_essence')
-  event.add('irons_spellbooks:ice_focus',       'kubejs:water_essence')
-  event.add('irons_spellbooks:nature_focus',    'kubejs:earth_essence')
-  event.add('irons_spellbooks:lightning_focus', 'kubejs:air_essence')
+  event.add('irons_spellbooks:fire_focus',      'magichem:essentia_fire')
+  event.add('irons_spellbooks:ice_focus',       'magichem:essentia_water')
+  event.add('irons_spellbooks:nature_focus',    'magichem:essentia_earth')
+  event.add('irons_spellbooks:lightning_focus', 'magichem:essentia_air')
   event.add('irons_spellbooks:holy_focus',    'minecraft:golden_apple')
 
   event.add('kubejs:magic/apprentice', ['gtceu:luminessence_dust', 'hexcasting:charged_amethyst', 'irons_spellbooks:magic_cloth'])

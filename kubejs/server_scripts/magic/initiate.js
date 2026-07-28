@@ -281,7 +281,10 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'aqueous', count: 2 }]
     })
 
-    event.shapeless('kubejs:ambrosia_touched_elementite', ['gtceu:ambrosium_dust', 'kubejs:weak_elementium_dust'])
+    // magichem:essentia_precious is a real base Essentia (confirmed in the jar lang file) --
+    // matches ambrosium's precious/divine-metal theme. Per user direction 2026-07-28: make
+    // MagiChem load-bearing, not just a background essence tag.
+    event.shapeless('kubejs:ambrosia_touched_elementite', ['gtceu:ambrosium_dust', 'kubejs:weak_elementium_dust', 'magichem:essentia_precious'])
 
     event.custom({
         "type": "botania:elven_trade",

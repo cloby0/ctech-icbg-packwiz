@@ -135,9 +135,12 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'earthen', count: 4 }]
     })
 
+    // magichem:essentia_verdant is a real base Essentia (confirmed in the jar lang file) --
+    // literal thematic match for "verdant" grafted manasteel. Per user direction 2026-07-28:
+    // make MagiChem load-bearing, not just a background essence tag.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:verdant_grafted_manasteel',
-        input: ['kubejs:verdant_charged_filings', 'botania:manasteel_block'],
+        input: ['kubejs:verdant_charged_filings', 'botania:manasteel_block', 'magichem:essentia_verdant'],
         syphon: LP.JOURNEYMAN
     })
 

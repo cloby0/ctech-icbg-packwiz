@@ -165,9 +165,12 @@ ServerEvents.recipes(event => {
 
     // upgradeLevel 4 IS the Master Orb requirement -- a BM Alchemy Table only reaches T4 with
     // Master-tier rune investment, so the orb itself doesn't need to be a consumed ingredient here.
+    // magichem:admixture_mountains is a real MagiChem admixture (confirmed in the jar lang file)
+    // -- heavy/dense stone theme fits gravitite. Per user direction 2026-07-28: make MagiChem
+    // load-bearing, not just a background essence tag.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:bound_gravitite',
-        input: ['kubejs:gravitite_shavings'],
+        input: ['kubejs:gravitite_shavings', 'magichem:admixture_mountains'],
         syphon: LP.SORCERER,
         upgradeLevel: 4
     })

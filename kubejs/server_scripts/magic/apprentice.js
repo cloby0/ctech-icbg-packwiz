@@ -25,9 +25,12 @@ ServerEvents.recipes(event => {
     // Weaken-to-empower: zanite's own inverse-durability mechanic, flavored with redstone.
     event.shapeless('kubejs:cracked_zanite', ['kubejs:zanite_shard', 'minecraft:redstone', 'minecraft:redstone'])
 
+    // magichem:admixture_energy (real MagiChem materia, Alembic-decomposed from coal) binds the
+    // charge into the iron. Per user direction 2026-07-28: make MagiChem load-bearing, not just
+    // a background essence tag.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:zanite_laced_iron',
-        input: ['kubejs:cracked_zanite', 'minecraft:iron_ingot'],
+        input: ['kubejs:cracked_zanite', 'minecraft:iron_ingot', 'magichem:admixture_energy'],
         syphon: LP.APPRENTICE
     })
 
