@@ -26,3 +26,23 @@ for (let tier in Source) {
 
 global.Source = Source
 global.Mana = Mana
+
+// Blood Magic Life Essence (LP) cost per magic tier. Replaces Source/Mana once tier files migrate
+// off Ars Nouveau (magic rework Phase 1+). Placeholder scale pending in-game LP generation rate
+// verification (Blood Magic altar/sacrifice/Well of Suffering throughput is a code constant, not
+// in datapack JSON).
+const LP = {
+    HOBBYIST: 500,
+    APPRENTICE: 1500,
+    JOURNEYMAN: 3000,
+    INITIATE: 6000,
+    SORCERER: 12000,
+    ALCHEMIST: 20000,
+    THAUMATURGE: 35000,
+    ARCANIST: 55000,
+    SAGE: 100000,
+    PROPHET: 65000,
+    ASCENDANT: 95000
+}
+
+global.LP = LP

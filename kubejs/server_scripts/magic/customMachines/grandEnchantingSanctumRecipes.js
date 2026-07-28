@@ -132,7 +132,7 @@ function addEnchantingRecipe(event, crecipe) {
         .itemOutputs(`${outputCount}x ${outputId}`)
 
     if (sourceCost > 0) {
-        r.inputFluids(Fluid.of('starbunclemania:source_fluid', sourceCost))
+        r.inputFluids(Fluid.of('bloodmagic:life_essence_fluid', sourceCost))
     }
 
     reagentInputs.forEach(reagent => r.itemInputs(reagent))
@@ -157,30 +157,4 @@ ServerEvents.recipes(event => {
         crecipe.skipApparatus = true
         addEnchantingRecipe(event, crecipe)
     })
-
-    event.recipes.gtceu.assembler('grand_enchanting_sanctum_controller')
-        .itemInputs(
-            '4x gtceu:consecrated_chromite_plate',
-            '2x gtceu:consecrated_chromite_frame',
-            '1x ars_nouveau:source_gem',
-            '1x gtceu:hv_electric_pump',
-            '1x gtceu:hv_sensor',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x gtceu:grand_enchanting_sanctum')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.assembler('sanctum_sourcestone_casing_assembly')
-        .itemInputs(
-            '4x gtceu:consecrated_chromite_plate',
-            '4x gtceu:consecrated_chromite_rod',
-            '1x ars_nouveau:sourcestone_large_bricks',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:lubricant', 50))
-        .itemOutputs('8x kubejs:sanctum_sourcestone_casing')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
 })

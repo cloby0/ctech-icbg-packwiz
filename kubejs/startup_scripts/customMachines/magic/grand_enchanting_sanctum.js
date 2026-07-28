@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('grand_enchanting_sanctum', 'multiblock')
-        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Enchanting Apparatus recipes using Liquefied Source")])
+        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Alchemy Table recipes using Life Essence")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['enchanting_sanctum'])

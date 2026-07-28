@@ -113,7 +113,7 @@ function addImbuementRecipe(event, crecipe) {
     let recipeId = `ars_nouveau/imbuement_${stripNamespace(outputId)}_${index}`
     console.log(`[imbuement] ${index}: ${outputId} source=${sourceCost} pedestals=${pedestalInputs.length}`)
     let r = event.recipes.gtceu.imbuement_factory(recipeId)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', sourceCost))
+        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid', sourceCost))
         .itemInputs(centerInput)
         .itemOutputs(`${outputCount}x ${outputId}`)
         .duration(sourceRound(sourceCost) * 2)
@@ -149,30 +149,4 @@ ServerEvents.recipes(event => {
         crecipe.skipChamber = true
         addImbuementRecipe(event, crecipe)
     })
-
-    event.recipes.gtceu.assembler('imbuement_factory_controller')
-        .itemInputs(
-            '4x gtceu:ambrotungstite_plate',
-            '2x gtceu:ambrotungstite_frame',
-            '1x ars_nouveau:source_gem',
-            '1x gtceu:hv_electric_pump',
-            '1x gtceu:hv_emitter',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x gtceu:imbuement_factory')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.assembler('imbuement_holystone_casing_assembly')
-        .itemInputs(
-            '4x gtceu:ambrotungstite_plate',
-            '4x gtceu:ambrotungstite_rod',
-            '1x aether:holystone_bricks',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:lubricant', 50))
-        .itemOutputs('8x kubejs:imbuement_holystone_casing')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
 })

@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('imbuement_factory', 'multiblock')
-        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Imbuement Chamber recipes using Liquefied Source")])
+        ["tooltips(java.util.List)"]([Component.literal("Allows you to automate Eldrin Altar recipes")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['imbuement_factory'])
@@ -30,8 +30,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("e", Predicates.blocks("kubejs:imbuement_holystone_casing"))
             .where("f", Predicates.blocks("kubejs:imbuement_holystone_casing"))
             .where("g", Predicates.blocks("minecraft:air"))
-            .where("h", Predicates.blocks("gtceu:source_block"))
-            .where("i", Predicates.blocks("gtceu:holy_silver_block"))
+            .where("h", Predicates.blocks("mna:vinteum_block"))
+            .where("i", Predicates.blocks("bloodmagic:masterritualstone"))
             .where("j", Predicates.abilities(PartAbility.MAINTENANCE))
         .build())
         .workableCasingModel(

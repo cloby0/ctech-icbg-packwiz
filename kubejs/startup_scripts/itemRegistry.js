@@ -209,6 +209,17 @@ StartupEvents.registry('item', event => {
     event.create('dracontine_codex')
     event.create('chronicle_of_dominion')
 
+    event.create('pyromatic_codex')
+    event.create('evocation_folio')
+    event.create('glacial_grimoire')
+    event.create('verdant_chronicle')
+    event.create('technomatic_folio')
+    event.create('blood_grimoire')
+    event.create('radiant_sanctum')
+    event.create('eldritch_codex')
+    event.create('obliteration_chronicle')
+    event.create('harbinger_codex')
+
     event.create('ascendant_initiation_core')
     event.create('chaotic_sanguinary')
     event.create('shattered_sanctum')

@@ -101,7 +101,7 @@ function addManaPondRecipe(event, crecipe) {
         console.log(`[mana_pond] mana=${mana} input=${itemInput} output=${outputId}`)
 
         let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
             .duration((manaRound(mana * source_rate) * 2))
             .EUt(7680 + Math.round(mana * source_rate / 25))
             .circuit(catalystify(catalystBlock))

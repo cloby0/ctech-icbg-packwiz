@@ -77,8 +77,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     ingot('mithril', `irons_spellbooks:mithril_ingot`);
 
-    gem('source', 'ars_nouveau:source_gem')
-
     ingot('gravitite', 'aether_redux:gravitite_ingot')
 
     gem('zanite', 'aether:zanite_gemstone')

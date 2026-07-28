@@ -5202,7 +5202,7 @@ hash = "b6e4d97880bdbe09264ef2a098d897b83ee4dbd9d34780ccea7ca0e731fa753e"
 
 [[files]]
 file = "kubejs/server_scripts/costTiers.js"
-hash = "86be1ad33ed34978c05e0ddb17834d5366587520e3117ea9ecdc593a3e3513a3"
+hash = "a034ec43d51cd7f78587b1e4a9ba93d38b0d6f69ff110dc2e17d0552e240bb0f"
 
 [[files]]
 file = "kubejs/server_scripts/fluidTags.js"
@@ -5261,12 +5261,20 @@ file = "kubejs/server_scripts/magic/celestisynth.js"
 hash = "44f48d131678c96ff65252d06fdff0c1c59abe8e60018659635859e023202440"
 
 [[files]]
+file = "kubejs/server_scripts/magic/customMachines/alchemyTableRecipes.js"
+hash = "cf7eab3a81d04367c0e2e557da5c7ae3272afc05c96279f960eb38e04ee1e65f"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/eldrinAltarRecipes.js"
+hash = "580f25f9c9ab8c3ced38bab8794b18a4008383390417fec81aa5db287157f448"
+
+[[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "98683ae081558ca74414a3a145e9b26e1355711994b0680ec3f09a82e302c691"
+hash = "fe64405d28ebb706f1110bbd63193fd0680b511115b6ef2706374aeb310a2775"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "8d425001b0b7ac797f974aac678cb1009bf402b1ec75f5d20057eaedacbb8f7f"
+hash = "2ebab7b651739cc436425ff6c910579f47dcf0517ad7720484b43ec04dd617ec"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/malumRecipes.js"
@@ -5274,7 +5282,7 @@ hash = "53d90c03f99df461d7bba0e902f761404b39eca782631449da1e9d48214913fb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "e26410e5e3037541144e7c4ccf57444d130d91b1dce90a9f904bce0f2ab32a0a"
+hash = "edeff89059870cfb94de99920748ac399f592c1caed4094203d1faabda0e8457"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
@@ -5282,7 +5290,7 @@ hash = "e490f004d089329904558384a6dde89ef53105cd94274cf1c2e8e811adcc6249"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "04bf6bcea52f25a266f43a941575a8a2aa84636fba0e2841ce96aace95358fdb"
+hash = "5be695b658161a28c4a763a437bdcac22818afee7b669ac4d5992e60e3113f3f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/cyberSpells.js"
@@ -5590,11 +5598,11 @@ hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "17952c1a6080085bf3a1756504897d5ea056f87ca754fa7e82e039e609894094"
+hash = "411a491cc3d160f0d24abfe723911c94ae6556ad105679f494c02dcb506476ff"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
-hash = "b9f0529a3f0b7fd8b9e071bf47353b942e040f41ef294d8878b108a83e068e2c"
+hash = "1c499c9b0dcdd089f9f429d0cc31af4485fee9deea55b0dd9cf25830a0bd41f6"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -5637,10 +5645,6 @@ file = "kubejs/startup_scripts/customMachines/tech/void_crucible.js"
 hash = "a35e56168f623ca483b457d0afbe0741d6fc81adf2748e78e19bdfecc4e45671"
 
 [[files]]
-file = "kubejs/startup_scripts/customSpellbooks.js"
-hash = "d9852a12ac7e0df57cfae4c9d825851327c6390ce78af396032b015724e6473f"
-
-[[files]]
 file = "kubejs/startup_scripts/fluidRegistry.js"
 hash = "5df79dcfa8f2c2eb71a02743c5a41b7052197cf3de1cde24f108cb0fd5053ea6"
 
@@ -5650,7 +5654,7 @@ hash = "c256b59269c3e613b6aa07bef8591e5fd1a8affcbed591d88b5d99d76da66341"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "73ace99d833517a63e691f9c68a149bc801a9d17ecb08c64d1da7df0656f11da"
+hash = "ac5686271f9973111051b8cbc867355bd6df4b36ecaf2a0825bde9cf4f43fdac"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
@@ -5662,7 +5666,7 @@ hash = "50cd94672812eed675e47acce700a8d94f831747892b2d49891cf5d6a499f503"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "7f58797d3854e8df4b8129ee7203f86655416484e396d73c12eb85ed452bcd1c"
+hash = "86f6ee86a58f475dea36b34471cb8919c5f9cbfec7608f3efce2f26266edc1e2"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -5829,48 +5833,9 @@ hash = "3b6ae13d46854f2eeee5f6f102bc0ae44ce992a14b060cfd059264eb0a1ea3fc"
 metafile = true
 
 [[files]]
-file = "mods/ars-botania.pw.toml"
-hash = "26eb8fbb5a49fed39adbdee12fe5e51c3fd2c862e429bd102bfd7b7ae4c873c5"
-metafile = true
-
-[[files]]
-file = "mods/ars-creo.pw.toml"
-hash = "0502e2b33b08fe5920ff1ea61d3cd3c86d9e93ff234af56088c63dff4c189733"
-metafile = true
-
-[[files]]
-file = "mods/ars-elemental.pw.toml"
-hash = "75f86a754e146de4246da9efa839bab8a0becd9d637567bafd2d02ca813a7f48"
-metafile = true
-
-[[files]]
-file = "mods/ars-energistique.pw.toml"
-hash = "fe693ae80d95c3b06c0c91285417bf58d13e1e1d69496d35224dbf0002d54476"
-metafile = true
-
-[[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
 metafile = true
-
-[[files]]
-file = "mods/ars-ocultas.pw.toml"
-hash = "4ae74554aeb63b9c955755fde32e8d0123b213c0dbd803fe9c5135be6fbe11c4"
-metafile = true
-
-[[files]]
-file = "mods/ars-scalaes.pw.toml"
-hash = "cff38a0ff474bdbd272e2766a697f4964bcc232e4ecd67f27daf367ee162a053"
-metafile = true
-
-[[files]]
-file = "mods/ars-zero.pw.toml"
-hash = "68fec5755fbd56a75e8575f7589ab81bde89bbe77e44e67a23c10f5ada036320"
-metafile = true
-
-[[files]]
-file = "mods/ars_n_spells-1.9.0.jar"
-hash = "9088a54c25622a3003cf0502aefbba9107fbc287bb86b1655320d82d38be95b5"
 
 [[files]]
 file = "mods/artifacts.pw.toml"
@@ -5943,8 +5908,18 @@ hash = "760508aeab5dc87fbe12faddd0d87612e480a7b9cdbc75b3492e416d1ce3e8a0"
 metafile = true
 
 [[files]]
+file = "mods/blood-magic.pw.toml"
+hash = "b9db465dc932e15bc8b652bb6b675f4b53abc12367eac2a451fc380008474663"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089"
+metafile = true
+
+[[files]]
+file = "mods/botania-mana-fluid.pw.toml"
+hash = "f3d496cb117262c7b8db6718807d827a9f2b885b79f9d35bf65467333854019c"
 metafile = true
 
 [[files]]
@@ -6165,6 +6140,11 @@ metafile = true
 [[files]]
 file = "mods/creativecore.pw.toml"
 hash = "44245e405666e878f41403e50d2a941b86b6db2aaef8ddb8fc2089fca5134483"
+metafile = true
+
+[[files]]
+file = "mods/ctm.pw.toml"
+hash = "ff55f6dd98968c446e32885ec0eae66ee882071f8a4efbf1486e57590778b2eb"
 metafile = true
 
 [[files]]
@@ -6515,11 +6495,6 @@ hash = "5cc92eb0e58c2afbfd625d727d80da1d1c84500ec962bb22f5be28b864f18551"
 metafile = true
 
 [[files]]
-file = "mods/hex-ars-linker.pw.toml"
-hash = "a6f914660cda8891afa8a9486b802325adb66b2bf7efb0e05d1c973d3eaef3cb"
-metafile = true
-
-[[files]]
 file = "mods/hexal.pw.toml"
 hash = "05f0aaf63c00487b7e7744c940dc5e4aacdf5843fe6368c3ac22ab07b52f3124"
 metafile = true
@@ -6658,13 +6633,13 @@ hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-aisle-tool.pw.toml"
-hash = "4758eab730bf3c33bddef9756034801f45cf33b5f4b81d1bcedff24a1b2a94b9"
+file = "mods/kubejs-addon-blood-magic.pw.toml"
+hash = "a8741233d9aaf6e45488a35bf77770646137e4502e558806debe2b754e0edb42"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-ars-nouveau.pw.toml"
-hash = "94416feb86dc3a3e476e1c3d761111b0223426c92b9a2b0f388abca81b5b5a57"
+file = "mods/kubejs-aisle-tool.pw.toml"
+hash = "4758eab730bf3c33bddef9756034801f45cf33b5f4b81d1bcedff24a1b2a94b9"
 metafile = true
 
 [[files]]
@@ -6680,6 +6655,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs-irons-spells.pw.toml"
 hash = "501f083955796e603f061d2ea5a972315a49d1f8275d3aabe11cecbfb51e2fd1"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-mna.pw.toml"
+hash = "848619f262ce264dbac2d139696440ba1982856ec618e4189b345faefbfd387f"
 metafile = true
 
 [[files]]
@@ -6833,6 +6813,11 @@ hash = "8ee3776430187fb4d69278e645e10fefb7fe7342caee0a5861479ce25956713a"
 metafile = true
 
 [[files]]
+file = "mods/magichem.pw.toml"
+hash = "3868455c2eebabe528e5dd7ec3e1dc679eb0d0bc396aa01968136da0a900f01c"
+metafile = true
+
+[[files]]
 file = "mods/magnum-torch.pw.toml"
 hash = "5f6768157929bccb85b4b561fb4e16c99018ad93ce3f53b945ab9b37307c3665"
 metafile = true
@@ -6840,6 +6825,11 @@ metafile = true
 [[files]]
 file = "mods/malum.pw.toml"
 hash = "00a16f6cc02ad9f0825138857da26e6bf5c0f65dc5d4d40705b091e29176d3a2"
+metafile = true
+
+[[files]]
+file = "mods/mana-and-artifice.pw.toml"
+hash = "3435128be37d46d9c18039a8ec4aa9764da4fb39ff4197a4b1090fea0547641b"
 metafile = true
 
 [[files]]
@@ -7329,11 +7319,6 @@ metafile = true
 [[files]]
 file = "mods/spells-gone-wrong.pw.toml"
 hash = "5838f3888353bd92a8afdafd31347c48b4357e89232068e86d399a8ccd6917ef"
-metafile = true
-
-[[files]]
-file = "mods/starbunclemania.pw.toml"
-hash = "5db8d594f2f22b256379bd0a9880c86016d0e83f2dff486ea4143ff8e676eab5"
 metafile = true
 
 [[files]]

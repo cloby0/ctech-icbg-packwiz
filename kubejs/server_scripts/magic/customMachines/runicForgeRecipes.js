@@ -76,7 +76,7 @@ function addRunicAltarRecipe(event, crecipe) {
     }
 
     const gt = event.recipes.gtceu.runic_forge('runic_forge/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+        .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
         .itemOutputs(outputCount + 'x ' + outputId)
         .duration(manaToTicks(mana * source_rate))
         .EUt(LuV_EU)
@@ -107,7 +107,7 @@ function addTerraPlateRecipe(event, crecipe) {
 
     const duration = mana >= 1000000 ? 1200 : 600
     const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+        .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
         .itemOutputs(outputCount + 'x ' + outputId)
         .duration(duration)
         .EUt(LuV_EU)
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
         console.log('[runic_forge] cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.runic_forge(`runic_forge/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
             .itemOutputs(`${outputCount}x ${outputId}`)
             .duration(manaToTicks(mana * source_rate))
             .EUt(LuV_EU)
@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
         console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('starbunclemania:source_fluid', Math.round(mana * source_rate)))
+            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
             .itemOutputs(`${outputCount}x ${outputId}`)
             .duration(duration)
             .EUt(LuV_EU)
