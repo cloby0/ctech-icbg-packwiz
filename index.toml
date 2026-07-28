@@ -5840,7 +5840,7 @@ metafile = true
 
 [[files]]
 file = "mods/ars-elemental.pw.toml"
-hash = "3988dbd2074a7171a504bab87691175256db0e3690fde42cecbc9c47a256d31b"
+hash = "75f86a754e146de4246da9efa839bab8a0becd9d637567bafd2d02ca813a7f48"
 metafile = true
 
 [[files]]
@@ -5861,6 +5861,11 @@ metafile = true
 [[files]]
 file = "mods/ars-scalaes.pw.toml"
 hash = "cff38a0ff474bdbd272e2766a697f4964bcc232e4ecd67f27daf367ee162a053"
+metafile = true
+
+[[files]]
+file = "mods/ars-zero.pw.toml"
+hash = "68fec5755fbd56a75e8575f7589ab81bde89bbe77e44e67a23c10f5ada036320"
 metafile = true
 
 [[files]]
@@ -6620,6 +6625,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+metafile = true
+
+[[files]]
+file = "mods/jei-malum.pw.toml"
+hash = "d3637a2b2e9ca25d2887515f57f1c0fc33538f9c470461089496f30c63124b65"
 metafile = true
 
 [[files]]
