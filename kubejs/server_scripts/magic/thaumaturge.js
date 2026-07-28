@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     })
 
     addEnchantingRecipe(event, {
-        reagent: { item: 'gtceu:raw_source' },
+        reagent: { item: 'gtceu:raw_mana' },
         pedestalItems: [
             { item: 'botania:rune_spring' },
             { item: 'botania:rune_water' },

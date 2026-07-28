@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
             '1x cataclysm:lacrima',
             '4x ars_nouveau:source_gem'
         )
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SORCERER))
+        .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
         .outputFluids(Fluid.of('kubejs:dissolved_lacrima', 1000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])

@@ -13,11 +13,11 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:gems/source"
+        "tag": "forge:gems/mana"
       }
     },
     "name": {
-      "translate": "Source Gem"
+      "translate": "Mana Gem"
     },
     "stats": {
       "main": {

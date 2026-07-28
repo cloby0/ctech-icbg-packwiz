@@ -10,21 +10,17 @@ ServerEvents.recipes(event => {
     event.remove({ id: "irons_spellbooks:divine_pearl" });
     event.remove({ id: "reliquary:mercy_cross" });
 
-    event.remove({ id: "ars_nouveau:enchanting_apparatus" });
-    event.remove({ id: "ars_nouveau:arcane_pedestal" });
-    event.remove({ id: "ars_nouveau:arcane_core" });
-
     event.remove({ id: "constructionwand:infinity_wand" });
 
     event.remove({ id: 'magnumtorch:amethyst_magnum_torch' });
     event.remove({ id: 'magnumtorch:diamond_magnum_torch' });
     event.remove({ id: 'magnumtorch:emerald_magnum_torch' });
 
-    addImbuementRecipe(event, {
-        input: '#forge:gems/source',
+    addEldrinAltarRecipe(event, {
         output: 'reliquary:void_tear',
-        source: 2 * Source.INITIATE,
-        pedestalItems: ['minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian']
+        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian'],
+        affinity: 'ender',
+        power: 2 * LP.INITIATE
     });
 
     event.shaped(
@@ -43,11 +39,11 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:shears',
-        pedestalItems: ['minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'minecraft:snowball'],
+    addEldrinAltarRecipe(event, {
         output: 'reliquary:shears_of_winter',
-        sourceCost: 2 * Source.INITIATE
+        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'minecraft:snowball'],
+        affinity: 'water',
+        power: 2 * LP.INITIATE
     })
 
     event.shaped(
@@ -92,17 +88,19 @@ ServerEvents.recipes(event => {
         {
             A: 'reliquary:fortune_coin',
             B: 'gtceu:wrought_iron_plate',
-            C: '#forge:gems/source',
+            C: '#forge:gems/mana',
             H: '#forge:tools/hammers',
             F: '#forge:tools/files'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:fishing_rod',
-        pedestalItems: ['irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune', 'ars_nouveau:magebloom_fiber', '#forge:gems/source'],
+    // magebloom_fiber dropped -- dead ingredient, same open fiber-crop question flagged in
+    // 03-journeyman.md (no post-Ars fiber source decided yet). Pedestal count reduced, not substituted.
+    addEldrinAltarRecipe(event, {
         output: 'reliquary:rod_of_lyssa',
-        sourceCost: 2 * Source.INITIATE
+        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune', '#forge:gems/mana'],
+        affinity: 'earth',
+        power: 2 * LP.INITIATE
     })
 
     event.shaped(
@@ -116,79 +114,58 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_iron_rod',
             B: 'irons_spellbooks:evocation_rune',
             C: 'constructionwand:diamond_wand',
-            D: '#forge:gems/source',
+            D: '#forge:gems/mana',
             F: '#forge:tools/files'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:amethyst_shard',
-        pedestalItems: ['gtceu:holy_silver_rod', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
+    addEldrinAltarRecipe(event, {
         output: 'magnumtorch:amethyst_magnum_torch',
-        sourceCost: 2 * Source.INITIATE
+        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard'],
+        affinity: 'arcane',
+        power: 2 * LP.INITIATE
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:emerald',
-        pedestalItems: ['gtceu:holy_silver_rod', '#forge:gems/source', 'gtceu:luminessence_dust', 'aether:ambrosium_shard'],
+    addEldrinAltarRecipe(event, {
         output: 'magnumtorch:emerald_magnum_torch',
-        sourceCost: 2 * Source.INITIATE
+        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', '#forge:gems/mana', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard'],
+        affinity: 'earth',
+        power: 2 * LP.INITIATE
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:diamond',
-        pedestalItems: ['gtceu:holy_silver_plate', '#forge:gems/source', '#forge:gems/source', 'gtceu:luminessence_dust'],
+    addEldrinAltarRecipe(event, {
         output: 'magnumtorch:diamond_magnum_torch',
-        sourceCost: 2 * Source.INITIATE
+        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', '#forge:gems/mana', 'gtceu:ambrosium_dust'],
+        affinity: 'air',
+        power: 2 * LP.INITIATE
     })
 
+    // Enchanting Apparatus/Arcane Pedestal/Arcane Core: Ars Nouveau blocks, gone with the mod.
+    // This is where the old "Enchanting Apparatus unlocks at Initiate" gate lived -- per
+    // 00-foundation.md, that gate carries forward as a re-craft of the Alchemy Table's real
+    // block (Blood Magic's own), gated with this tier's own materials in place of source_plate/
+    // luminessence_dust. No pedestal/core equivalent needed -- Blood Magic's table is one block.
+    event.remove({ id: 'bloodmagic:alchemy_table' })
     event.shaped(
-        Item.of('ars_nouveau:enchanting_apparatus', 1),
+        Item.of('bloodmagic:alchemytable', 1),
         [
-            'FBA',
-            'ACA',
-            'ABA'
+            'AEA',
+            'FBF',
+            'AGA'
         ],
         {
-            A: '#forge:rods/long/gold',
-            B: 'gtceu:source_plate',
-            C: 'gtceu:luminessence_dust',
-            F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/files'));
-
-    event.shaped(
-        Item.of('ars_nouveau:arcane_pedestal', 1),
-        [
-            'ZPZ',
-            'ASA',
-            'AAA'
-        ],
-        {
-            A: 'ars_nouveau:archwood_planks',
-            S: '#forge:tools/saws',
-            P: 'minecraft:purple_carpet',
-            Z: 'aether:zanite_gemstone'
-        }).damageIngredient(Ingredient.of('#forge:tools/saws'));
-
-    event.shaped(
-        Item.of('ars_nouveau:arcane_core', 1),
-        [
-            'WDA',
-            'BCB',
-            'ADA'
-        ],
-        {
-            A: '#forge:bolts/gold',
-            B: 'ars_nouveau:archwood_fence',
-            C: '#forge:gems/source',
-            D: 'gtceu:source_plate',
-            W: '#forge:tools/wrenches'
-    }).damageIngredient(Ingredient.of('#forge:tools/wrenches'));
+            A: 'aether:ambrosium_shard',
+            E: 'kubejs:ambrosia_touched_elementite',
+            F: '#forge:plates/gold',
+            B: 'bloodmagic:blankslate',
+            G: '#forge:tools/hammers'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
 
     addSpiritInfusion(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
         output: 'kubejs:sacred_ambrosium_shard',
-        extraItems: [{ item: 'gtceu:luminessence_dust', count: 2 }],
+        extraItems: [{ item: 'gtceu:ambrosium_dust', count: 2 }],
         spirits: [{ type: 'sacred', count: 2 }, { type: 'aerial' }]
     })
 
@@ -214,35 +191,38 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
-    addEnchantingRecipe(event, {
-        reagent: 'gtceu:silver_dust',
-        pedestalItems: ['kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust'],
+    // Holy Silver survives as a parallel/gear material, not the tier signature (Elementium+
+    // ambrosium is). luminessence_dust (dead) -> ambrosium_dust, consistent across this whole chain.
+    addEldrinAltarRecipe(event, {
         output: 'kubejs:holy_silver_blend',
-        sourceCost: 2 * Source.INITIATE
+        items: ['gtceu:silver_dust', 'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard', 'gtceu:ambrosium_dust', 'gtceu:ambrosium_dust'],
+        affinity: 'fire',
+        power: 2 * LP.INITIATE
     })
 
-    addImbuementRecipe(event, {
-        input: 'kubejs:holy_silver_blend',
+    addEldrinAltarRecipe(event, {
         output: 'gtceu:holy_silver_dust',
-        source: 2 * Source.INITIATE,
-        pedestalItems: ['reliquary:mercy_cross']
+        items: ['kubejs:holy_silver_blend', 'reliquary:mercy_cross'],
+        affinity: 'arcane',
+        power: 2 * LP.INITIATE
     });
 
     event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})
-    addEnchantingRecipe(event, {
-        reagent: 'gtceu:holy_silver_dust',
-        pedestalItems: ['#kubejs:fire_essences'],
+    addEldrinAltarRecipe(event, {
         output: 'gtceu:holy_silver_ingot',
-        sourceCost: 2 * Source.INITIATE
+        items: ['gtceu:holy_silver_dust', '#kubejs:fire_essences'],
+        affinity: 'fire',
+        power: 2 * LP.INITIATE
     })
 
     // === Skyforged line: Aether/Valkyrie alt to Holy Silver, independent of holy silver ===
-    // Skyjade + Valkyrie medals -> skyforged dust -> (auto furnace smelt) -> ingot + forms
-    addEnchantingRecipe(event, {
-        reagent: 'deep_aether:skyjade',
-        pedestalItems: ['aether:victory_medal', 'aether:victory_medal', '#kubejs:air_essences', '#kubejs:water_essences'],
+    // Skyjade + Valkyrie medals -> skyforged dust -> (auto furnace smelt) -> ingot + forms.
+    // No Ars ingredients here -- helper call ported, ingredients unchanged.
+    addEldrinAltarRecipe(event, {
         output: 'gtceu:skyforged_dust',
-        sourceCost: 2 * Source.INITIATE
+        items: ['deep_aether:skyjade', 'aether:victory_medal', 'aether:victory_medal', '#kubejs:air_essences', '#kubejs:water_essences'],
+        affinity: 'air',
+        power: 2 * LP.INITIATE
     })
 
     // Combat endpoint: full Valkyrie set craftable from skyforged (medals already gate the alloy upstream)
@@ -269,179 +249,59 @@ ServerEvents.recipes(event => {
         tools.forEach(t => r.damageIngredient(Ingredient.of(t)))
     })
 
-    addEnchantingRecipe(event, {
-        reagent: { item: 'kubejs:sacred_ambrosium_shard' },
-        pedestalItems: [
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:earth_essences' }
-        ],
+    addEldrinAltarRecipe(event, {
         output: { item: 'minecraft:ender_pearl', count: 4 },
-        sourceCost: 2 * Source.INITIATE
+        items: ['kubejs:sacred_ambrosium_shard', '#kubejs:earth_essences', '#kubejs:earth_essences', '#kubejs:earth_essences'],
+        affinity: 'earth',
+        power: 2 * LP.INITIATE
     })
 
-    addEnchantingRecipe(event, {
-        reagent: { item: 'kubejs:sacred_ambrosium_shard' },
-        pedestalItems: [
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:earth_essences' },
-            { tag: 'kubejs:water_essences' },
-            { tag: 'kubejs:water_essences' }
-        ],
+    addEldrinAltarRecipe(event, {
         output: { item: 'reliquary:fortune_coin', count: 4 },
-        sourceCost: 2 * Source.INITIATE
+        items: ['kubejs:sacred_ambrosium_shard', '#kubejs:earth_essences', '#kubejs:earth_essences', '#kubejs:water_essences', '#kubejs:water_essences'],
+        affinity: 'water',
+        power: 2 * LP.INITIATE
     })
 
-    event.shaped(
-        Item.of('kubejs:magical_receiver', 1),
-        [
-            'DRH',
-            'STS',
-            'HRH'
-        ],
-        {
-            H: 'gtceu:holy_silver_ingot',
-            R: 'gtceu:holy_silver_rod',
-            S: 'ars_nouveau:source_gem',
-            T: 'ars_nouveau:basic_spell_turret',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    // --- Elementium: Initiate signature material, ambrosium chain ---
+    // Correction from the master spec: skyjade is NOT sourced here -- it already has a complete,
+    // self-contained alt-material system above (Skyforged/Valkyrie), not a spare-parts bin.
+    // Diverting a share of it into this chain too would be redundant, not additive. Ambrosium
+    // dust (gtceu:ambrosium_dust, autogenerated GT dust off the ambrosium gem) feeds forward alone.
 
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:pistol_source_ejector",HasBulletInBarrel:0b}'),
-        [
-            'DPG',
-            'FMR',
-            'GPG'
-        ],
-        {
-            G: 'ars_nouveau:source_gem',
-            P: 'gtceu:holy_silver_plate',
-            F: 'ars_nouveau:magebloom_fiber',
-            M: 'kubejs:magical_receiver',
-            R: 'gtceu:holy_silver_rod',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    // weak_elementium_dust already has a producer (Arcanist's addRunicAltarRecipe, feeds
+    // elven_concentrate downstream) -- that recipe was never Elementium's own bootstrap, Elementium
+    // itself has had no production path since arcanist.js removed botania:elven_trade/elementium.
+    // This is that missing bootstrap: a cheap, tier-appropriate route off Terrasteel (this pack's
+    // own precursor metal), parallel to Arcanist's pricier route, same material either way.
+    // Magic spine stays GT-free: Spirit Altar dilutes the dust, hand-combine finishes it -- no GT machine.
+    addSpiritInfusion(event, {
+        input: 'gtceu:terrasteel_dust',
+        output: 'kubejs:weak_elementium_dust',
+        spirits: [{ type: 'aqueous', count: 2 }]
+    })
 
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_jet_ejector",HasBulletInBarrel:0b}'),
-        [
-            'BPB',
-            'DMG',
-            'BFB'
-        ],
-        {
-            B: 'gtceu:holy_silver_bolt',
-            P: 'gtceu:holy_silver_plate',
-            G: 'ars_nouveau:source_gem',
-            M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    event.shapeless('kubejs:ambrosia_touched_elementite', ['gtceu:ambrosium_dust', 'kubejs:weak_elementium_dust'])
 
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:shotgun_splash_ejector",HasBulletInBarrel:0b}'),
-        [
-            'DPG',
-            'PMG',
-            'GFG'
+    event.custom({
+        "type": "botania:elven_trade",
+        "ingredients": [
+            { "item": "kubejs:ambrosia_touched_elementite" },
+            { "item": "kubejs:ambrosia_touched_elementite" },
+            { "item": "kubejs:ambrosia_touched_elementite" }
         ],
-        {
-            G: 'ars_nouveau:source_gem',
-            P: 'gtceu:holy_silver_plate',
-            M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+        "output": [
+            { "item": "botania:elementium_ingot", "count": 2 }
+        ]
+    })
 
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"ars_armorer:auto_rifle_stream_ejector",HasBulletInBarrel:0b}'),
-        [
-            'DPG',
-            'BMB',
-            'RFR'
-        ],
-        {
-            G: 'ars_nouveau:source_gem',
-            P: 'gtceu:holy_silver_plate',
-            B: 'gtceu:holy_silver_bolt',
-            M: 'kubejs:magical_receiver',
-            R: 'gtceu:holy_silver_rod',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    // Shortcut (Sorcerer+): direct to the elementite, gated on tier attainment not this file.
+    event.shapeless('kubejs:ambrosia_touched_elementite', [
+        'aether:ambrosium_shard', 'kubejs:weak_elementium_dust', '#kubejs:magic/sorcerer'
+    ])
 
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:sniper_distance_ejector",HasBulletInBarrel:0b}'),
-        [
-            'DPO',
-            'LMG',
-            'PFP'
-        ],
-        {
-            G: 'ars_nouveau:source_gem',
-            P: 'gtceu:holy_silver_plate',
-            O: 'gtceu:holy_silver_foil',
-            L: 'gtceu:long_holy_silver_rod',
-            M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
-
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:mortar_source_thrower",HasBulletInBarrel:0b}'),
-        [
-            'PDP',
-            'GMG',
-            'LFL'
-        ],
-        {
-            P: 'gtceu:holy_silver_plate',
-            G: 'ars_nouveau:source_gem',
-            M: 'kubejs:magical_receiver',
-            L: 'gtceu:long_holy_silver_rod',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
-
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_miner_drill",HasBulletInBarrel:0b}'),
-        [
-            'DGB',
-            'LML',
-            'BFB'
-        ],
-        {
-            B: 'gtceu:holy_silver_bolt',
-            G: 'ars_nouveau:source_gem',
-            L: 'gtceu:long_holy_silver_rod',
-            M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
-
-    event.shaped(
-        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ars_armorer:special_source_flying_blade",HasBulletInBarrel:0b}'),
-        [
-            'DPO',
-            'GMF',
-            'OPO'
-        ],
-        {
-            O: 'gtceu:holy_silver_foil',
-            P: 'gtceu:holy_silver_plate',
-            G: 'ars_nouveau:source_gem',
-            M: 'kubejs:magical_receiver',
-            F: 'ars_nouveau:magebloom_fiber',
-            D: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    // magical_receiver, all seven TACZ ars_armorer guns: retired outright, per user direction --
+    // kubejs:magical_receiver's basic_spell_turret ingredient is Ars-native with no MNA/Blood
+    // Magic equivalent, and this was the only consumer of it. arsArmorer.js (its attachment line)
+    // deleted entirely for the same reason.
 });

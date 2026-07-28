@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
             '4x ars_nouveau:source_gem',
             '1x ars_nouveau:wilden_horn'
         )
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SAGE))
+        .inputFluids(Fluid.of('manafluid:mana', Source.SAGE))
         .itemOutputs('1x kubejs:elemental_latex_compound')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])

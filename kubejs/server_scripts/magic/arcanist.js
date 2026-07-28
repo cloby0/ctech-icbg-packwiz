@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     })
 
     addEnchantingRecipe(event, {
-        reagent: { item: 'gtceu:raw_source' },
+        reagent: { item: 'gtceu:raw_mana' },
         pedestalItems: [
             { item: 'kubejs:elven_concentrate' },
             { item: 'kubejs:elven_concentrate' },

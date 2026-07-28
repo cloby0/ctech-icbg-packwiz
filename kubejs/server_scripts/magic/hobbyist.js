@@ -18,11 +18,6 @@ ServerEvents.recipes(event => {
             }
     ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
-    event.remove({ id: 'ars_nouveau:imbuement_fire_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_earth_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_air_essence' });
-    event.remove({ id: 'ars_nouveau:imbuement_water_essence' });
-
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": {
@@ -55,7 +50,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "item": "ars_nouveau:fire_essence"
+            "item": "kubejs:fire_essence"
         },
         "liquidOutput": {
             "fluid": "minecraft:lava"
@@ -96,7 +91,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "item": "ars_nouveau:water_essence"
+            "item": "kubejs:water_essence"
         },
         "liquidOutput": {
             "fluid": "minecraft:water"
@@ -137,7 +132,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "item": "ars_nouveau:air_essence"
+            "item": "kubejs:air_essence"
         },
         "liquidOutput": {
             "fluid": "minecraft:water"
@@ -178,7 +173,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "item": "ars_nouveau:earth_essence"
+            "item": "kubejs:earth_essence"
         },
         "liquidOutput": {
             "fluid": "minecraft:lava"
@@ -194,11 +189,11 @@ ServerEvents.recipes(event => {
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
         "ingredients": [
-            { "item": "ars_nouveau:fire_essence" },
-            { "item": "ars_nouveau:fire_essence" },
-            { "item": "ars_nouveau:water_essence" },
-            { "item": "ars_nouveau:earth_essence" },
-            { "item": "ars_nouveau:air_essence" },
+            { "item": "kubejs:fire_essence" },
+            { "item": "kubejs:fire_essence" },
+            { "item": "kubejs:water_essence" },
+            { "item": "kubejs:earth_essence" },
+            { "item": "kubejs:air_essence" },
             { "item": "minecraft:blaze_powder" },
             { "item": "minecraft:coal" },
             { "item": "occultism:otherworld_essence" }
@@ -228,12 +223,54 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    addImbuementRecipe(event, {
-        input: 'gtceu:glass_dust',
-        output: 'minecraft:glass',
-        source: Source.HOBBYIST,
-        pedestalItems: []
+    // --- Ashen Ichor: Hobbyist signature metal, no Ars dependency ---
+    // 1. arcane charcoal + redstone -> ichor dust
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:lava" },
+        "ingredients": [
+            { "item": "malum:arcane_charcoal_fragment" },
+            { "item": "minecraft:redstone" },
+            { "item": "malum:arcane_charcoal_fragment" },
+            { "item": "minecraft:redstone" },
+            { "item": "malum:arcane_charcoal_fragment" },
+            { "item": "minecraft:redstone" },
+            { "item": "malum:arcane_charcoal_fragment" },
+            { "item": "minecraft:redstone" }
+        ],
+        "output": { "item": "kubejs:ichor_dust" },
+        "liquidOutput": { "fluid": "minecraft:lava" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    // 2a. blend in vinteum dust, 2b. Blood Altar charges the blend into kindled ichor dust (small LP tax)
+    event.shapeless('kubejs:vinteum_ichor_blend', ['kubejs:ichor_dust', 'mna:vinteum_dust'])
+
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": LP.HOBBYIST / 2,
+        "consumptionRate": 5,
+        "drainRate": 5,
+        "input": { "item": "kubejs:vinteum_ichor_blend" },
+        "output": { "item": "kubejs:kindled_ichor_dust" },
+        "upgradeLevel": 0
     })
+
+    // 3. smelt into the rough ingot
+    event.smelting('kubejs:ashen_ichor_ingot_rough', 'kubejs:kindled_ichor_dust')
+
+    // 4. Spirit Altar finishes it into the real GT ingot with an Infernal Spirit
+    addSpiritInfusion(event, {
+        input: 'kubejs:ashen_ichor_ingot_rough',
+        output: 'gtceu:ashen_ichor_ingot',
+        spirits: [{ type: 'infernal', count: 2 }]
+    })
+
+    // Shortcut (Journeyman+): direct craft, gated on tier attainment not this file
+    event.shapeless('gtceu:ashen_ichor_ingot', [
+        'mna:vinteum_dust', 'malum:arcane_charcoal_fragment', '#kubejs:magic/journeyman'
+    ])
 
     event.remove({ id: 'reliquary:fortune_coin' })
     event.shaped(
@@ -279,10 +316,10 @@ ServerEvents.recipes(event => {
             'PEH'
         ],
         {
-            F: 'ars_nouveau:fire_essence',
-            W: 'ars_nouveau:water_essence',
-            A: 'ars_nouveau:air_essence',
-            E: 'ars_nouveau:earth_essence',
+            F: 'kubejs:fire_essence',
+            W: 'kubejs:water_essence',
+            A: 'kubejs:air_essence',
+            E: 'kubejs:earth_essence',
             B: 'minecraft:book',
             P: '#forge:plates/copper',
             H: '#forge:tools/hammers'

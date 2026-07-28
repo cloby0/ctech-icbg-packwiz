@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('lead_sourcite_alloy')
-        .itemInputs('2x gtceu:lead_dust', '1x gtceu:source_dust')
+        .itemInputs('2x gtceu:lead_dust', '1x gtceu:mana_dust')
         .itemOutputs('3x gtceu:lead_sourcite_ingot')
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.MV])
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.THAUMATURGE))
+        .inputFluids(Fluid.of('manafluid:mana', Source.THAUMATURGE))
         .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
@@ -105,14 +105,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('inferium_to_source_fluid')
         .itemInputs('4x mysticalagriculture:inferium_essence')
         .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
-        .outputFluids(Fluid.of('starbunclemania:source_fluid', 500))
+        .outputFluids(Fluid.of('manafluid:mana', 500))
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor('pneuma_to_source_fluid')
         .itemInputs('4x mysticalagriculture:inferium_essence')
         .inputFluids(Fluid.of('gtceu:pneuma', 1000))
-        .outputFluids(Fluid.of('starbunclemania:source_fluid', 2500))
+        .outputFluids(Fluid.of('manafluid:mana', 2500))
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -375,7 +375,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:infernal_diesel', 750))
         .outputFluids(Fluid.of('gtceu:naphtha', 400))
         .outputFluids(Fluid.of('gtceu:light_fuel', 100))
-        .outputFluids(Fluid.of('starbunclemania:source_fluid', 250))
+        .outputFluids(Fluid.of('manafluid:mana', 250))
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -385,8 +385,8 @@ ServerEvents.recipes(event => {
         .EUt(-32)
 
     event.recipes.gtceu.chemical_reactor('elven_concentrate_synthesis')
-        .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_source')
-        .inputFluids(Fluid.of('starbunclemania:source_fluid', Source.SORCERER))
+        .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_mana')
+        .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
         .itemOutputs('2x kubejs:elven_concentrate')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])

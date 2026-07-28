@@ -8,14 +8,6 @@ function stripNamespace(str) {
     return colon === -1 ? str : str.slice(colon + 1)
 }
 
-function powerRound(num) {
-    if ((num / 100) > 20) {
-        return num / 100
-    } else {
-        return 20
-    }
-}
-
 function _resolveEldrinAltarItem(entry, debugLabel) {
     if (!entry) {
         console.error(`[eldrin_altar] null entry at ${debugLabel}`)
@@ -87,11 +79,8 @@ function addEldrinAltarRecipe(event, crecipe) {
         console.warn(`[eldrin_altar] skipping recipe with non-existent output '${outputId}'`)
         return
     }
-    let outputCount = (typeof outputRaw === 'object' ? outputRaw.count : crecipe.count) || 1
-
     let tier = crecipe.tier || 0
     let powers = normalizePower(crecipe)
-    let totalPower = powers.reduce((sum, p) => sum + (p.amount || 0), 0)
 
     let rawItems = crecipe.items ?? []
     let resolvedItems = []
@@ -105,57 +94,10 @@ function addEldrinAltarRecipe(event, crecipe) {
         return
     }
 
-    if (!crecipe.skipAltar) {
-        let altarItems = rawItems.map(i => normalizeEldrinItem(i))
-        let r = event.recipes.mna.eldrinAltar(outputId, altarItems).tier(tier)
-        powers.forEach(p => r.powerRequirement(p.affinity, p.amount))
-        r.id(`kubejs:eldrin_altar_${stripNamespace(outputId)}_${index}`)
-    }
-
-    let recipeId = `mna/eldrin_altar_${stripNamespace(outputId)}_${index}`
-    console.log(`[eldrin_altar] ${index}: ${outputId} power=${totalPower} tier=${tier}`)
-    let r = event.recipes.gtceu.imbuement_factory(recipeId)
-        .itemOutputs(`${outputCount}x ${outputId}`)
-        .duration(powerRound(totalPower) * 2)
-        .EUt(1920 + Math.round(totalPower / 25))
-
-    resolvedItems.forEach(item => r.itemInputs(item))
+    let altarItems = rawItems.map(i => normalizeEldrinItem(i))
+    let r = event.recipes.mna.eldrinAltar(outputId, altarItems).tier(tier)
+    powers.forEach(p => r.powerRequirement(p.affinity, p.amount))
+    r.id(`kubejs:eldrin_altar_${stripNamespace(outputId)}_${index}`)
 }
 
 global.addEldrinAltarRecipe = addEldrinAltarRecipe
-
-ServerEvents.recipes(event => {
-    event.forEachRecipe({ type: 'mna:eldrin-altar' }, recipe => {
-        const crecipe = JSON.parse(recipe.json.toString())
-        crecipe.items = crecipe.items ?? []
-        crecipe.power = crecipe.power_requirements ?? []
-        crecipe.skipAltar = true
-        addEldrinAltarRecipe(event, crecipe)
-    })
-
-    event.recipes.gtceu.assembler('imbuement_factory_controller')
-        .itemInputs(
-            '4x gtceu:ambrotungstite_plate',
-            '2x gtceu:ambrotungstite_frame',
-            '1x mna:vinteum_ingot',
-            '1x gtceu:hv_electric_pump',
-            '1x gtceu:hv_emitter',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x gtceu:imbuement_factory')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.assembler('imbuement_holystone_casing_assembly')
-        .itemInputs(
-            '4x gtceu:ambrotungstite_plate',
-            '4x gtceu:ambrotungstite_rod',
-            '1x aether:holystone_bricks',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:lubricant', 50))
-        .itemOutputs('8x kubejs:imbuement_holystone_casing')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
-})

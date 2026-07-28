@@ -31,12 +31,12 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Ig')
         .isIsotope(false)
 
-    event.create('source')
+    event.create('mana')
         .protons(36)
         .neutrons(142)
         .halfLifeSeconds(-1)
         .decayTo(null)
-        .symbol('Vs')
+        .symbol('ᛗ')
         .isIsotope(false)
 
     event.create('prima_materia')
@@ -143,13 +143,16 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Az')
         .isIsotope(false)
 
-    // MysticalAgriculture essences: isotopes of source (same protons/symbol, heavier). inferium is base,
+    // MysticalAgriculture essences: isotopes of mana (same protons/symbol, heavier). inferium is base,
     // higher tiers are denser compressions of it. If GT rejects duplicate symbols, give distinct symbols.
-    event.create('inferium')  .protons(36).neutrons(144).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
-    event.create('prudentium').protons(36).neutrons(148).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
-    event.create('tertium')   .protons(36).neutrons(152).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
-    event.create('imperium')  .protons(36).neutrons(156).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
-    event.create('supremium') .protons(36).neutrons(160).halfLifeSeconds(-1).decayTo(null).symbol('Vs').isIsotope(true)
+    event.create('inferium')  .protons(36).neutrons(144).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
+    event.create('prudentium').protons(36).neutrons(148).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
+    event.create('tertium')   .protons(36).neutrons(152).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
+    event.create('imperium')  .protons(36).neutrons(156).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
+    event.create('supremium') .protons(36).neutrons(160).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
+
+    // life_essence: another isotope of mana, blood-red.
+    event.create('life_essence').protons(36).neutrons(164).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
 
     // prosperity: its own element (the growth crystal that alloys with essences into the -ites).
     event.create('prosperity').protons(61).neutrons(84).halfLifeSeconds(-1).decayTo(null).symbol('Pz').isIsotope(false)
@@ -193,7 +196,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
-        .addOreByproducts('silicon', 'vanadium', 'source')
+        .addOreByproducts('silicon', 'vanadium', 'mana')
         .washedIn('gtceu:mercury')
 
     event.create('mithril')
@@ -264,13 +267,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xfafa5d)
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('2x gold'), c('1x redstone'), c('1x source'))
+        .components(c('2x gold'), c('1x redstone'), c('1x mana'))
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
-    event.create('source')
+    event.create('mana')
         .gem()
         .ore()
-        .element('source')
+        .element('mana')
         .color(0xAE44E2)
         .secondaryColor(0xE244C8)
         .iconSet(GTMaterialIconSet.QUARTZ)
@@ -313,7 +316,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xb5fffc)
         .secondaryColor(0x1d1eb0)
         .ingot()
-        .components(c('1x prima_materia'), c('2x source'))
+        .components(c('1x prima_materia'), c('2x mana'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -327,7 +330,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x55f609)
         .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('3x manasteel'), c('2x source'))
+        .components(c('3x manasteel'), c('2x mana'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -626,7 +629,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x9E7FC0)
         .secondaryColor(0x5C4A80)
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('2x lead'), c('1x source'))
+        .components(c('2x lead'), c('1x mana'))
         .cableProperties(GTValues.VA[GTValues.MV], 1, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -991,6 +994,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL
         )
 
+    // Hobbyist signature metal (magic rework Phase 1): crafted line, no ore vein --
+    // arcane charcoal + redstone + vinteum + Malum Infernal Spirit, replaces Ars's role here.
+    // Starter tool/charm material: rod for a wand handle, no plate (not structural).
+    event.create('ashen_ichor')
+        .ingot()
+        .color(0xB23A1F).secondaryColor(0x4A150A)
+        .iconSet(GTMaterialIconSet.ROUGH)
+        .blastTemp(1400, "low", GTValues.VA[GTValues.ULV], 400)
+        .flags(GTMaterialFlags.GENERATE_ROD)
+
     // Sage alt spine: Primal/Wilden beast metal, gaia-independent. Dust from magic chain -> furnace smelt -> ingot.
     event.create('wilden_alloy')
         .ingot()
@@ -1067,12 +1080,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // ==== MysticalAgriculture ====
     // Essences = dust materials (the _essence item IS the dust; setIgnored in gtceuMaterialModification.js).
-    // Isotopes of source, so no ingot/plate — an essence is a magical powder, nothing more.
+    // Isotopes of mana, so no ingot/plate — an essence is a magical powder, nothing more.
     event.create('inferium')  .dust().element('inferium')  .color(0x7DBF3F).iconSet(GTMaterialIconSet.DULL)
     event.create('prudentium').dust().element('prudentium').color(0xE0C93F).iconSet(GTMaterialIconSet.DULL)
     event.create('tertium')   .dust().element('tertium')   .color(0xE07B3F).iconSet(GTMaterialIconSet.DULL)
     event.create('imperium')  .dust().element('imperium')  .color(0x5FC9E8).iconSet(GTMaterialIconSet.DULL)
     event.create('supremium') .dust().element('supremium') .color(0xE23B3B).iconSet(GTMaterialIconSet.DULL)
+
+    // life_essence: isotope of mana, dust form. Blood-red.
+    event.create('life_essence').dust().element('life_essence').color(0x8B0000).iconSet(GTMaterialIconSet.DULL)
 
     // The four classical element essences: base MA essences, dust form (the _essence item IS the dust).
     // Each carries its own classical element (fire/water/earth/air, alchemical-symbol elements).
@@ -1182,5 +1198,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.QUARTZ)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS)
         .addOreByproducts('netherquartz', 'sulfur')
+
+    // Alchemist signature metal (magic rework Phase 6): crafted line, no ore vein -- MNA animus
+    // dust + MagiChem arcane essentia + Blood Magic Destructive Will. Dust form is the macerator
+    // target for the last chain step; blastTemp autogens the EBF smelt to ingot from there.
+    event.create('distilled_animus')
+        .ingot()
+        .color(0x8A4FD1).secondaryColor(0x4A2570)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(4200, "high", GTValues.VA[GTValues.IV], 1000)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
 
 })

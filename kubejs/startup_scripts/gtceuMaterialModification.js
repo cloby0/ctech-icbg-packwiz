@@ -133,7 +133,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('azure_silver', 'silentgear:raw_azure_silver')
 
     // ==== MysticalAgriculture ====
-    // Essences: the dust form IS the _essence item (isotopes of source, no ingot).
+    // Essences: the dust form IS the _essence item (isotopes of mana, no ingot).
     ;['inferium', 'prudentium', 'tertium', 'imperium', 'supremium'].forEach(e => {
         dust(e, `mysticalagriculture:${e}_essence`)
     })

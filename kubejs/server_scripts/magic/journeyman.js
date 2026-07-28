@@ -1,7 +1,8 @@
 ServerEvents.recipes(event => {
-    event.remove({ id: 'ars_nouveau:source_gem_block'})
-    event.remove({ output: 'ars_nouveau:source_gem', type: 'gtceu:sifter' })
-    
+    // Source Jars/relays, source_gem_block, sifter output: StarbuncleMania is a cut Ars addon,
+    // its two assembler recipes and the items they made are dead. Nothing to replace, dropped
+    // outright along with the recipes that crafted the now-gone ars_nouveau:source_gem_block.
+
     event.remove({ id: 'reliquary:lantern_of_paranoia' })
     event.remove({ id: 'reliquary:interdiction_torch' })
     event.remove({ id: 'reliquary:alkahestry_altar' })
@@ -11,46 +12,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'enderstorage:ender_chest' })
     event.remove({ id: 'enderstorage:ender_tank' })
     event.remove({ id: 'enderstorage:ender_pouch'})
-    event.remove({ id: 'ars_nouveau:source_jar'})
-    event.remove({ id: 'ars_nouveau:storage_lectern'})
-    event.remove({ id: 'ars_nouveau:repository'})
-    event.remove({ id: 'starbunclemania:source_condenser' })
-    event.remove({ id: 'starbunclemania:fluid_sourcelink' })
 
-    event.recipes.gtceu.assembler('starbuncle_source_condenser')
-        .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '4x minecraft:glass_pane', '#gtceu:circuits/mv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x starbunclemania:source_condenser')
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
+    // Magebloom crop/fiber/sieve: fiber's only source was Ars's own crop, which is a dead item.
+    // Flagging rather than inventing a replacement plant -- this is a real open design question
+    // (does the pack want a post-Ars fiber crop at all?), and magebloom_fiber still has dozens of
+    // uses in initiate.js/arsArmorer.js/sorcerer.js/alchemist.js that are out of scope here.
+    // Dropped: wheat_seeds -> magebloom_crop imbuement, and the magebloom_sieve craft that needed
+    // magebloom_fiber (its only other consumer here was the Source Gem chain below, also dropped).
 
-    event.recipes.gtceu.assembler('starbuncle_fluid_sourcelink')
-        .itemInputs('2x ars_nouveau:source_gem', 'gtceu:mv_electric_pump', '2x create:golden_sheet', '#gtceu:circuits/mv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x starbunclemania:fluid_sourcelink')
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
-
-    addImbuementRecipe(event, {
-        input: 'minecraft:wheat_seeds',
-        output: 'ars_nouveau:magebloom_crop',
-        source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['ars_nouveau:archwood_planks', 'ars_nouveau:archwood_planks', 'gtceu:luminessence_dust', 'gtceu:luminessence_dust']
-    });
-
-    event.shaped(
-            Item.of('kubejs:magebloom_sieve', 1),
-            [
-                'BAB',
-                'ACA',
-                'BAB'
-            ],
-            {
-                A: 'ars_nouveau:magebloom_fiber',
-                B: 'aether:carved_stone',
-                C: '#forge:tools/wire_cutters'
-            }
-        ).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'));
     event.shaped(
             Item.of('reliquary:interdiction_torch', 3),
             [
@@ -60,7 +29,7 @@ ServerEvents.recipes(event => {
             ],
             {
                 A: 'minecraft:blaze_rod',
-                B: 'gtceu:luminessence_dust'
+                B: 'kubejs:zanite_laced_iron'
             }
         );
     event.shaped(
@@ -72,7 +41,7 @@ ServerEvents.recipes(event => {
             ],
             {
                 A: 'gtceu:lead_plate',
-                B: 'gtceu:luminessence_dust',
+                B: 'kubejs:veridium_filings',
                 C: 'minecraft:glowstone',
                 H: '#forge:tools/hammers'
             }
@@ -87,7 +56,7 @@ ServerEvents.recipes(event => {
             {
                 A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
-                C: 'gtceu:luminessence_dust'
+                C: 'kubejs:zanite_laced_iron'
             }
         );
     event.shaped(
@@ -100,7 +69,7 @@ ServerEvents.recipes(event => {
             {
                 A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
-                C: 'gtceu:luminessence_dust',
+                C: 'kubejs:zanite_laced_iron',
                 D: 'minecraft:glass'
             }
         );
@@ -114,57 +83,13 @@ ServerEvents.recipes(event => {
             {
                 A: 'irons_spellbooks:magic_cloth',
                 C: 'enderstorage:ender_chest',
-                B: 'gtceu:luminessence_dust',
+                B: 'kubejs:zanite_laced_iron',
                 K: '#forge:tools/knives'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/knives'));
-    event.shaped(
-            Item.of('ars_nouveau:source_jar', 1),
-            [
-                'AAA',
-                'BCB',
-                'MDA'
-            ],
-            {
-                A: 'ars_nouveau:archwood_slab',
-                B: 'minecraft:glass',
-                C: 'aether:ambrosium_shard',
-                D: '#forge:plates/gold',
-                M: '#forge:tools/mallets'
-            }
-        ).damageIngredient(Ingredient.of('#forge:tools/mallets'));
-    event.shaped(
-            Item.of('ars_nouveau:storage_lectern', 1),
-            [
-                'HEM',
-                'CDC',
-                'ABA'
-            ],
-            {
-                A: '#forge:plates/silver',
-                B: 'ars_nouveau:repository',
-                C: 'aether:ambrosium_shard',
-                D: 'minecraft:lectern',
-                E: 'irons_spellbooks:iron_spell_book',
-                H: '#forge:tools/hammers',
-                M: '#forge:tools/mallets'
-            }
-        ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/mallets'));
 
-    event.shaped(
-            Item.of('ars_nouveau:repository', 1),
-            [
-                'ACA',
-                'BDB',
-                'ACA'
-            ],
-            {
-                A: '#forge:screws/gold',
-                B: '#forge:logs/archwood',
-                C: 'ars_nouveau:archwood_slab',
-                D: '#forge:tools/screwdrivers'
-            }
-        ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'));
+    // Source Jar, Storage Lectern, Repository: all three craft Ars Nouveau blocks that no
+    // longer exist once Ars is uninstalled. Nothing to port to; dropped outright.
 
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
@@ -176,72 +101,56 @@ ServerEvents.recipes(event => {
             {
                 A: '#forge:plates/iron',
                 B: 'minecraft:glass',
-                C: 'gtceu:luminessence_dust',
+                C: 'kubejs:veridium_filings',
                 D: '#forge:rods/silver',
                 F: '#forge:tools/files'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
-    addImbuementRecipe(event, {
-        input: 'gtceu:source_dust',
-        output: 'kubejs:pure_source_gem_dust',
-        source: 2 * Source.JOURNEYMAN,
-        pedestalItems: ['kubejs:magebloom_sieve']
-    });
+    // Source Gem chain (mana_dust -> pure_source_gem_dust -> rough_source_gem -> source_gem):
+    // replaced entirely by the veridium -> Terrasteel chain below. gtceu:mana_plate's manual
+    // hammer recipe off source_gem is dropped too -- mana already has GENERATE_PLATE, GT autogens
+    // the plate from mana_gem directly, this hand-written recipe was always redundant.
 
-    // spirit_attuned_crystal already used once in this file (resonant_zanite_crystal below)
-    // -- a second use here puts it in the core Source Gem chain itself, not just a side recipe.
-    addImbuementRecipe(event, {
-        input: 'kubejs:pure_source_gem_dust',
-        output: 'kubejs:rough_source_gem',
-        source: 3 * Source.JOURNEYMAN,
-        pedestalItems: ['#kubejs:fire_essences', 'occultism:spirit_attuned_crystal']
-    });
-
-    event.custom(
-        {
-        "type": "create:sandpaper_polishing",
-        "ingredients": [
-            {
-            "item": "kubejs:rough_source_gem"
-            }
-        ],
-        "results": [
-            {
-            "item": "ars_nouveau:source_gem"
-            }
-        ]
-        }
-    );
-
-    // Automatic alternate to hand-sanding above -- same result, run by the Foliot Crusher spirit.
-    // Sanding stays a valid option; this just gives players who'd rather automate it a route.
+    // Crushing raw_mana into mana_dust still requires the Foliot Crusher spirit -- unrelated to
+    // Source Gem removal, mana is its own surviving GT material (see occultism.js summon_foliot_crusher gate).
     event.custom({
         type: 'occultism:crushing',
-        ingredient: { item: 'kubejs:rough_source_gem' },
-        result: { item: 'ars_nouveau:source_gem' },
-    }).id('kubejs:crushing/rough_source_gem_to_source_gem')
+        ingredient: { item: 'gtceu:raw_mana' },
+        result: { item: 'gtceu:mana_dust' },
+    }).id('kubejs:crushing/raw_mana_to_mana_dust')
 
-    // Crushing raw_source into source_dust now requires the Foliot Crusher spirit instead of a
-    // mortar or the Ars Nouveau crush glyph -- makes the spirit an ongoing requirement, not just
-    // a one-time summon (see occultism.js summon_foliot_crusher gate).
+    // --- Terrasteel: Journeyman signature material, veridium chain ---
+    // Magic spine stays GT-free: Occultism crushing (same pattern as raw_mana above), Spirit
+    // Altar, Alchemy Table -- no GT machine anywhere in this chain.
     event.custom({
         type: 'occultism:crushing',
-        ingredient: { item: 'gtceu:raw_source' },
-        result: { item: 'gtceu:source_dust' },
-    }).id('kubejs:crushing/raw_source_to_source_dust')
+        ingredient: { item: 'aether_redux:veridium_ingot' },
+        result: { item: 'kubejs:veridium_filings' },
+    }).id('kubejs:crushing/veridium_ingot_to_filings')
 
-    event.shaped(
-        Item.of("gtceu:source_plate", 1),
-        [
-            'H',
-            'I',
-            'I'
-        ],
-        {
-            I: "ars_nouveau:source_gem",
-            H: '#forge:tools/hammers',
-        }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    addSpiritInfusion(event, {
+        input: 'kubejs:veridium_filings',
+        output: 'kubejs:verdant_charged_filings',
+        spirits: [{ type: 'earthen', count: 4 }]
+    })
+
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:verdant_grafted_manasteel',
+        input: ['kubejs:verdant_charged_filings', 'botania:manasteel_block'],
+        syphon: LP.JOURNEYMAN
+    })
+
+    addTerraPlateRecipe(event, {
+        result: 'botania:terrasteel_ingot',
+        mana: Mana.JOURNEYMAN,
+        ingredients: ['kubejs:verdant_grafted_manasteel']
+    })
+
+    // Shortcut (Initiate+): direct to the pre-terra-plate feed, still needs the terra plate step.
+    event.shapeless('kubejs:verdant_grafted_manasteel', [
+        'aether_redux:veridium_ingot', 'botania:manasteel_block', '#kubejs:magic/initiate'
+    ])
 
     event.custom({
         "type": "aether:enchanting",
@@ -255,7 +164,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:enchanted_zanite_gem',
         output: 'kubejs:resonant_zanite_crystal',
         extraItems: [
-            { item: 'ars_nouveau:source_gem', count: 2 },
+            { item: 'kubejs:verdant_charged_filings', count: 2 },
             { item: 'occultism:spirit_attuned_crystal' }
         ],
         spirits: [{ type: 'arcane', count: 2 }, { type: 'aerial' }]

@@ -1,141 +1,67 @@
 ServerEvents.recipes(event => {
-    event.remove({ id: 'ars_nouveau:imbuement_chamber' });
-    event.shaped(
-        Item.of('ars_nouveau:imbuement_chamber', 1),
-                 [
-                    'HEF',
-                    'BCB',
-                    'ADA'
-                 ],
-                 {
-                     A: 'minecraft:glowstone',
-                     B: '#forge:rods/gold',
-                     C: 'minecraft:quartz',
-                     D: '#forge:plates/silver',
-                     E: 'minecraft:glowstone_dust',
-                     H: '#forge:tools/hammers',
-                     F: '#forge:tools/files'
-                 }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'));
+    // Imbuement Chamber, Scribe's Table, Novice Spell Book: all three craft Ars Nouveau blocks
+    // that no longer exist once Ars is uninstalled. Nothing to port to; dropped outright.
 
-
-    addImbuementRecipe(event, {
-        input: 'minecraft:amethyst_shard',
+    addEldrinAltarRecipe(event, {
         output: 'irons_spellbooks:arcane_essence',
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: []
+        items: ['minecraft:amethyst_shard'],
+        affinity: 'arcane',
+        power: 2 * LP.APPRENTICE
     });
 
     event.remove({ id: 'biomeswevegone:golden_apple_from_green_apple' });
-    addImbuementRecipe(event, {
-        input: 'minecraft:apple',
+    addEldrinAltarRecipe(event, {
         output: 'minecraft:golden_apple',
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot']
+        items: ['minecraft:apple', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot'],
+        affinity: 'earth',
+        power: 2 * LP.APPRENTICE
     });
 
-    event.remove({ id: 'ars_nouveau:scribes_table' });
-    event.shaped(
-        Item.of('ars_nouveau:scribes_table', 1),
-                 [
-                    'DEF',
-                    'BSB',
-                    'ACA'
-                 ],
-                 {
-                     A: '#forge:logs/archwood',
-                     B: 'ars_nouveau:archwood_slab',
-                     C: '#forge:screws/gold',
-                     D: 'irons_spellbooks:common_ink',
-                     E: 'irons_spellbooks:magic_cloth',
-                     F: 'minecraft:feather',
-                     S: '#forge:tools/screwdrivers'
-                 }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'));
+    // --- Manasteel: Apprentice signature material, zanite chain (replaces Luminessence here) ---
+    // Magic spine stays GT-free: hammer-crush, hand combine, Alchemy Table infusion -- no GT machine.
+    event.shapeless('kubejs:zanite_shard', ['aether:zanite_gemstone', '#forge:tools/hammers'])
+        .damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
-    event.remove({ id: 'ars_nouveau:novice_spell_book' });
-    event.shaped(
-        Item.of('ars_nouveau:novice_spell_book', 1),
-                 [
-                 'KC ',
-                 'ABG',
-                 ' C '
-                 ],
-                 {
-                     A: 'irons_spellbooks:magic_cloth',
-                     B: 'minecraft:book',
-                     C: 'irons_spellbooks:arcane_essence',
-                     G: 'gtceu:gold_foil',
-                     K: '#forge:tools/knives'
-                 }
-    ).damageIngredient(Ingredient.of('#forge:tools/knives'));
+    // Weaken-to-empower: zanite's own inverse-durability mechanic, flavored with redstone.
+    event.shapeless('kubejs:cracked_zanite', ['kubejs:zanite_shard', 'minecraft:redstone', 'minecraft:redstone'])
 
-    event.custom({
-        "type": "hexerei:mixingcauldron",
-        "liquid": {
-            "fluid": "minecraft:lava"
-        },
-        "ingredients": [
-            {
-                "item": "minecraft:glowstone_dust"
-            },
-            {
-                "item": "minecraft:glowstone_dust"
-            },
-            {
-                "item": "minecraft:glowstone_dust"
-            },
-            {
-                "item": "minecraft:glowstone_dust"
-            },
-            {
-                "item": "minecraft:blaze_powder"
-            },
-            {
-                "tag": "kubejs:fire_essences"
-            },
-            {
-                "item": "minecraft:glow_berries"
-            },
-            {
-                "item": "minecraft:diamond"
-            }
-        ],
-        "output": {
-            "item": "kubejs:glowing_compound_dust"
-        },
-        "liquidOutput": {
-            "fluid": "minecraft:lava"
-        },
-        "fluidLevelsConsumed": 1000,
-        "heatRequirement": "heated"
-    });
-
-    addImbuementRecipe(event, {
-        input: 'kubejs:glowing_compound_dust',
-        output: 'kubejs:impure_glimmering_dust',
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: []
-    });
-
-    event.smelting('gtceu:small_luminessence_dust', 'kubejs:impure_glimmering_dust');
-
-    // small_luminessence_dust feeds into luminessence_dust, the exact item occultism.js's
-    // Djinni summon ritual consumes as its gate -- otherworld_essence here gives that gate
-    // item an ongoing Occultism cost.
-    addImbuementRecipe(event, {
-        input: 'minecraft:glowstone',
-        output: 'gtceu:small_luminessence_dust',
-        source: 5 * Source.APPRENTICE,
-        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences', 'occultism:otherworld_essence']
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:zanite_laced_iron',
+        input: ['kubejs:cracked_zanite', 'minecraft:iron_ingot'],
+        syphon: LP.APPRENTICE
     })
 
-    addImbuementRecipe(event, {
-        input: 'kubejs:primordial_organic_muck',
-        output: 'kubejs:kerogen',
-        count: 4,
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: ['#kubejs:earth_essences']
+    addManaPondRecipe(event, {
+        input: { item: 'kubejs:zanite_laced_iron' },
+        mana: Mana.APPRENTICE,
+        output: { item: 'botania:manasteel_ingot' }
+    })
+
+    // Shortcut (Sorcerer+): raw zanite gemstone direct, gated on tier attainment not this file.
+    event.shapeless('botania:manasteel_ingot', [
+        'aether:zanite_gemstone', 'minecraft:iron_ingot', '#kubejs:magic/sorcerer'
+    ])
+
+    // Aether gate (moved here from the old Journeyman slot): glowstone + Hobbyist's Ashen Ichor.
+    event.shaped(
+        Item.of('aether:aether_portal_frame', 1),
+        [
+            'GIG',
+            'IHI',
+            'GIG'
+        ],
+        {
+            G: 'minecraft:glowstone',
+            I: 'gtceu:ashen_ichor_ingot',
+            H: '#forge:tools/hammers'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    addEldrinAltarRecipe(event, {
+        output: { item: 'kubejs:kerogen', count: 4 },
+        items: ['kubejs:primordial_organic_muck', '#kubejs:earth_essences'],
+        affinity: 'earth',
+        power: 2 * LP.APPRENTICE
     })
 
     event.custom({
@@ -163,34 +89,22 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    addImbuementRecipe(event, {
-        input: 'gtceu:luminessence_dust',
-        output: 'minecraft:experience_bottle',
-        count: 4,
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: ['#kubejs:fire_essences', '#kubejs:fire_essences']
+    // Reagent swapped from luminessence_dust (retired signature material) to this tier's own
+    // cracked zanite intermediate. Pedestal items unchanged.
+    addEldrinAltarRecipe(event, {
+        output: { item: 'minecraft:experience_bottle', count: 4 },
+        items: ['kubejs:cracked_zanite', '#kubejs:fire_essences', '#kubejs:fire_essences'],
+        affinity: 'fire',
+        power: 2 * LP.APPRENTICE
     })
 
-    addImbuementRecipe(event, {
-        input: 'gtceu:amethyst_dust',
-        output: 'hexcasting:charged_amethyst',
-        count: 2,
-        source: 2 * Source.APPRENTICE,
-        pedestalItems: ['#kubejs:air_essences']
+    addEldrinAltarRecipe(event, {
+        output: { item: 'hexcasting:charged_amethyst', count: 2 },
+        items: ['gtceu:amethyst_dust', '#kubejs:air_essences'],
+        affinity: 'air',
+        power: 2 * LP.APPRENTICE
     })
 
-    event.shaped(
-        Item.of('ars_nouveau:dominion_wand', 1),
-                 [
-                    'F A',
-                    ' B ',
-                    'C  '
-                 ],
-                 {
-                     A: 'ars_nouveau:source_gem',
-                     B: '#forge:rods/gold',
-                     C: 'minecraft:ender_pearl',
-                     F: '#forge:tools/files'
-                 }
-    ).damageIngredient(Ingredient.of('#forge:tools/files'));
+    // Dominion Wand: dead Ars item, dead source_gem ingredient. Dropped, no replacement --
+    // inventing a substitute utility wand isn't in the design spec, flag if one is wanted.
 })

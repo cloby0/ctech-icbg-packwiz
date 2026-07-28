@@ -1,5 +1,5 @@
 GTCEuServerEvents.oreVeins(event => {
-    event.add("kubejs:source_gem_vein", vein => {
+    event.add("kubejs:mana_gem_vein", vein => {
         vein.weight(200)
         vein.clusterSize(40)
         vein.density(0.6)
@@ -12,11 +12,11 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(16, 128)
 
         vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.get('source'), 4, 40, 95)
+            .withBlock(GTMaterials.get('mana'), 4, 40, 95)
             .withBlock(GTMaterials.get('zanite'), 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get('source'))
+            .surfaceRock(GTMaterials.get('mana'))
             .placement("above")
             .density(0.4)
             .radius(5)

@@ -1,12 +1,44 @@
 StartupEvents.registry('item', event => {
 
-    event.create('glowing_compound_dust')
-    event.create('impure_glimmering_dust')
+    // Magic rework Phase 1 (Hobbyist): Ars Nouveau essence replacements, same 4-tag slot.
+    event.create('fire_essence')
+    event.create('water_essence')
+    event.create('air_essence')
+    event.create('earth_essence')
 
-    event.create('pure_source_gem_dust')
-    event.create('rough_source_gem')
+    // Ashen Ichor chain: arcane charcoal + redstone -> ichor dust -> vinteum blend
+    // -> Blood Altar charge -> kindled dust -> smelt -> rough ingot -> Spirit Altar -> gtceu:ashen_ichor_ingot.
+    event.create('ichor_dust')
+    event.create('vinteum_ichor_blend')
+    event.create('kindled_ichor_dust')
+    event.create('ashen_ichor_ingot_rough')
 
-    event.create('magebloom_sieve')
+    // Magic rework Phase 2 (Apprentice): zanite chain -> botania:manasteel_ingot, replaces Luminessence.
+    event.create('zanite_shard')
+    event.create('cracked_zanite')
+    event.create('zanite_laced_iron')
+
+    // Magic rework Phase 3 (Journeyman): veridium chain -> botania:terrasteel_ingot, replaces
+    // the old Source Gem line (pure_source_gem_dust/rough_source_gem retired with it).
+    event.create('veridium_filings')
+    event.create('verdant_charged_filings')
+    event.create('verdant_grafted_manasteel')
+
+    // Magic rework Phase 4 (Initiate): ambrosium chain -> botania:elementium_ingot.
+    // gtceu:ambrosium_dust already exists (ambrosium is a .gem() GT material, dust autogens).
+    // weak_elementium_dust already existed too (Arcanist's own runic-altar route feeds
+    // elven_concentrate); this tier gets its own cheaper macerator route to the same item.
+    event.create('ambrosia_touched_elementite')
+
+    // Magic rework Phase 5 (Sorcerer): gravitite chain -> botania:gaia_ingot. Gaia Guardian is
+    // now expected to be fought at Sorcerer (boss-drop Life Essence), per user direction.
+    event.create('gravitite_shavings')
+    event.create('bound_gravitite')
+    event.create('gravity_bound_life_essence')
+
+    // Magic rework Phase 6 (Alchemist): Distilled Animus chain -> gtceu:distilled_animus_ingot.
+    event.create('arcane_residue')
+    event.create('animus_fragment')
 
     event.create('holy_silver_blend')
     event.create('element_attunement_stone')
@@ -30,8 +62,6 @@ StartupEvents.registry('item', event => {
     event.create('gaian_holy_core')
     event.create('gaian_void_core')
     event.create('gaian_annihilation_core')
-
-    event.create('magical_receiver')
 
     event.create('matter_energy_circuit')
 
@@ -234,7 +264,7 @@ StartupEvents.registry('item', event => {
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
 
-    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'prima_materia_ingot']
+    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'chaos_essence_mysticalag', 'prima_materia_ingot']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)

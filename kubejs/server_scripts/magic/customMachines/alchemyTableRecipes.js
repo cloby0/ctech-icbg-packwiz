@@ -8,14 +8,6 @@ function stripNamespace(str) {
     return colon === -1 ? str : str.slice(colon + 1)
 }
 
-function lpRound(num) {
-    if ((num / 100) > 20) {
-        return num / 100
-    } else {
-        return 20
-    }
-}
-
 function _resolveAlchemyTableItem(entry, debugLabel) {
     if (!entry) {
         console.error(`[alchemytable] null entry at ${debugLabel}`)
@@ -97,59 +89,13 @@ function addAlchemyTableRecipe(event, crecipe) {
         return
     }
 
-    if (!crecipe.skipTable) {
-        let tableInputs = rawInputs.map(i => normalizeAlchemyInput(i))
-        let tableOutput = outputCount > 1 ? { item: outputId, count: outputCount } : outputId
-        event.recipes.bloodmagic.alchemytable(tableOutput, tableInputs)
-            .syphon(syphon)
-            .ticks(ticks)
-            .upgradeLevel(upgradeLevel)
-            .id(`kubejs:alchemytable_${stripNamespace(outputId)}_${index}`)
-    }
-
-    let recipeId = `bloodmagic/alchemytable_${stripNamespace(outputId)}_${index}`
-    console.log(`[alchemytable] ${index}: ${outputId} syphon=${syphon} upgradeLevel=${upgradeLevel}`)
-    let r = event.recipes.gtceu.enchanting_sanctum(recipeId)
-        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid', syphon))
-        .itemOutputs(`${outputCount}x ${outputId}`)
-        .duration(lpRound(syphon) * 2)
-        .EUt(1920 + Math.round(syphon / 25))
-
-    inputItems.forEach(item => r.itemInputs(item))
+    let tableInputs = rawInputs.map(i => normalizeAlchemyInput(i))
+    let tableOutput = outputCount > 1 ? { item: outputId, count: outputCount } : outputId
+    event.recipes.bloodmagic.alchemytable(tableOutput, tableInputs)
+        .syphon(syphon)
+        .ticks(ticks)
+        .upgradeLevel(upgradeLevel)
+        .id(`kubejs:alchemytable_${stripNamespace(outputId)}_${index}`)
 }
 
 global.addAlchemyTableRecipe = addAlchemyTableRecipe
-
-ServerEvents.recipes(event => {
-    event.forEachRecipe({ type: 'bloodmagic:alchemytable' }, recipe => {
-        const crecipe = JSON.parse(recipe.json.toString())
-        crecipe.skipTable = true
-        addAlchemyTableRecipe(event, crecipe)
-    })
-
-    event.recipes.gtceu.assembler('grand_enchanting_sanctum_controller')
-        .itemInputs(
-            '4x gtceu:consecrated_chromite_plate',
-            '2x gtceu:consecrated_chromite_frame',
-            '1x bloodmagic:weakbloodorb',
-            '1x gtceu:hv_electric_pump',
-            '1x gtceu:hv_sensor',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('1x gtceu:grand_enchanting_sanctum')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.assembler('sanctum_sourcestone_casing_assembly')
-        .itemInputs(
-            '4x gtceu:consecrated_chromite_plate',
-            '4x gtceu:consecrated_chromite_rod',
-            '1x bloodmagic:largebloodstonebrick',
-            '1x #gtceu:circuits/hv'
-        )
-        .inputFluids(Fluid.of('gtceu:lubricant', 50))
-        .itemOutputs('8x kubejs:sanctum_sourcestone_casing')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
-})

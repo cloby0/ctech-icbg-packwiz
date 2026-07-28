@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
 
         [ma('ambrosium'),       ma('glowstone'), [ma('aether'), A, W, ma('limestone')],                                   3500],
         [ma('zanite'),          ma('amethyst'),  [ma('aether'), A, A, A],                                                 3500],
-        [ma('source'),          ma('amethyst'),  [W, W, A, A, ma('lapis_lazuli')],                                        4500],
+        [ma('mana'),            ma('amethyst'),  [W, W, A, A, ma('lapis_lazuli')],                                        4500],
         [ma('gravitite'),       ma('iron'),      [ma('aether'), ma('aether'), A, A, ma('chrome')],                        4500],
         [ma('skyjade'),         ma('amethyst'),  [ma('aether'), W, A, E, ma('zanite')],                                   4500],
         [ma('veridium'),        ma('iron'),      [ma('aether'), W, W, E, ma('cobalt')],                                   4500],
@@ -321,7 +321,7 @@ ServerEvents.recipes(event => {
         ma('cobalt'),         ma('bismuth'),         ma('antimony'),       ma('manganese'),
         ma('beryllium'),      ma('vanadium'),        ma('thorium'),        ma('neodymium'),
         ma('palladium'),      ma('molybdenum'),      ma('lithium'),
-        ma('ambrosium'),      ma('zanite'),          ma('source'),         ma('gravitite'),
+        ma('ambrosium'),      ma('zanite'),          ma('mana'),           ma('gravitite'),
         ma('skyjade'),        ma('veridium'),
         ma('desh'),           ma('ostrum'),          ma('calorite'),       ma('naquadah'),
     ]
@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     ;[
         [ma('ambrosium'), 'aether:ambrosium_shard',     3],
         [ma('zanite'),    'aether:zanite_gemstone',     3],
-        [ma('source'),    'ars_nouveau:source_gem',     3],
+        [ma('mana'),      'ars_nouveau:source_gem',     3],
         [ma('skyjade'),   'deep_aether:skyjade',        3],
     ].forEach(([essence, material, count]) => {
         const inputs = []

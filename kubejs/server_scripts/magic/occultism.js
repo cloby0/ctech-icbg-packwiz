@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     const iesniumPickaxe = { item: 'occultism:iesnium_pickaxe', nbt: '{Damage:0}' }
     const gate = {
         foliot: { item: 'minecraft:fire_charge' },
-        djinni: { item: 'gtceu:luminessence_dust' },
+        djinni: { item: 'botania:manasteel_ingot' },
         afrit: { item: 'ars_nouveau:source_gem' },
         marid: { item: 'gtceu:prima_materia_ingot' },
     }

@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:helium', 25000))
         .outputFluids(Fluid.of('gtceu:oxygen', 17500))
         .outputFluids(Fluid.of('gtceu:hydrogen', 5000))
-        .outputFluids(Fluid.of('starbunclemania:source_fluid', 2500))
+        .outputFluids(Fluid.of('manafluid:mana', 2500))
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 

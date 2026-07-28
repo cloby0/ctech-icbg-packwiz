@@ -9,7 +9,7 @@ ServerEvents.tags('item', event => {
   ]
 
   elements.forEach(element => {
-    event.add(`kubejs:${element}_essences`, `ars_nouveau:${element}_essence`);
+    event.add(`kubejs:${element}_essences`, `kubejs:${element}_essence`);
     event.add(`kubejs:${element}_essences`, `mysticalagriculture:${element}_essence`);
   })
 
@@ -23,10 +23,10 @@ ServerEvents.tags('item', event => {
   event.remove('cataclysm_spellbooks:technomancy_focus', 'minecraft:redstone')
   event.add('cataclysm_spellbooks:technomancy_focus', '#gtceu:circuits/lv')
 
-  event.add('irons_spellbooks:fire_focus',      'ars_nouveau:fire_essence')
-  event.add('irons_spellbooks:ice_focus',       'ars_nouveau:water_essence')
-  event.add('irons_spellbooks:nature_focus',    'ars_nouveau:earth_essence')
-  event.add('irons_spellbooks:lightning_focus', 'ars_nouveau:air_essence')
+  event.add('irons_spellbooks:fire_focus',      'kubejs:fire_essence')
+  event.add('irons_spellbooks:ice_focus',       'kubejs:water_essence')
+  event.add('irons_spellbooks:nature_focus',    'kubejs:earth_essence')
+  event.add('irons_spellbooks:lightning_focus', 'kubejs:air_essence')
   event.add('irons_spellbooks:holy_focus',    'minecraft:golden_apple')
 
   event.add('kubejs:magic/apprentice', ['gtceu:luminessence_dust', 'hexcasting:charged_amethyst', 'irons_spellbooks:magic_cloth'])
