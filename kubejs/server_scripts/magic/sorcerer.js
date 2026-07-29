@@ -188,4 +188,37 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:gravity_bound_life_essence', [
         'aether_redux:gravitite_ingot', 'botania:life_essence', '#kubejs:magic/alchemist'
     ])
+
+    // --- Microcrafting: Sorcerer circuit + components ---
+    // Circuit built through 2 real handlers: Alchemy Table -> Terra Plate.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:gravitic_matrix_core',
+        input: ['botania:gaia_ingot', 'kubejs:resonant_gravitite_core', 'kubejs:chaos_essence'],
+        syphon: LP.SORCERER,
+        ticks: 200
+    })
+
+    addTerraPlateRecipe(event, {
+        result: 'kubejs:gravitic_matrix',
+        mana: Mana.SORCERER,
+        ingredients: ['kubejs:gravitic_matrix_core', 'kubejs:element_attunement_stone']
+    })
+
+    // Wizard Brain: Manaweaving Altar t2 (3rd distinct handler for this tier's item set).
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:gravitic_wizard_brain',
+        items: ['botania:gaia_ingot', 'kubejs:element_attunement_stone', 'occultism:afrit_essence'],
+        patterns: ['mna:knot2', 'mna:diamond'],
+        tier: 2
+    })
+
+    event.shapeless('kubejs:gravitic_motive_core', [
+        'gtceu:prima_materia_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
+    ])
+    event.shapeless('kubejs:gravitic_channeling_vessel', [
+        'botania:gaia_ingot', 'kubejs:chaos_essence', 'mysticalagriculture:fire_essence'
+    ])
+    event.shapeless('kubejs:gravitic_ward_lattice', [
+        'gtceu:prima_materia_plate', 'bloodmagic:basemonstersoul_steadfast', 'botania:gaia_ingot'
+    ])
 })
