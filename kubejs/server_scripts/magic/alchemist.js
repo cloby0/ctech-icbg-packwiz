@@ -321,4 +321,38 @@ ServerEvents.recipes(event => {
     event.shapeless('gtceu:distilled_animus_ingot', [
         'mna:animus_dust', 'magichem:essentia_arcane', '#kubejs:magic/thaumaturge'
     ])
+
+    // --- Microcrafting: Alchemist circuit + components ---
+    // Circuit built through 2 real handlers: Soul Forge -> Alchemy Table.
+    addSoulForgeRecipe(event, {
+        output: 'kubejs:animus_matrix_core',
+        inputs: ['gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'botania:mana_pearl'],
+        drain: 20,
+        minimumDrain: 400
+    })
+
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:animus_matrix',
+        input: ['kubejs:animus_matrix_core', 'kubejs:hexed_mana_matrix'],
+        syphon: LP.ALCHEMIST,
+        ticks: 200
+    })
+
+    // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    addEldrinAltarRecipe(event, {
+        output: 'kubejs:animus_wizard_brain',
+        items: ['gtceu:distilled_animus_ingot', 'kubejs:hexed_amethyst_core', 'botania:mana_diamond'],
+        affinity: 'ARCANE', power: Source.ALCHEMIST,
+        tier: 3
+    })
+
+    event.shapeless('kubejs:animus_motive_core', [
+        'gtceu:abstract_metal_ingot', 'gtceu:distilled_animus_dust', 'botania:mana_pearl'
+    ])
+    event.shapeless('kubejs:animus_channeling_vessel', [
+        'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'mysticalagriculture:ice_essence'
+    ])
+    event.shapeless('kubejs:animus_ward_lattice', [
+        'gtceu:distilled_animus_ingot', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot'
+    ])
 })
