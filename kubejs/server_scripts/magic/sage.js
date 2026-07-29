@@ -241,4 +241,38 @@ ServerEvents.recipes(event => {
     })
 
     event.smelting('gtceu:empyrean_ichor_ingot', 'kubejs:empyrean_core')
+
+    // --- Microcrafting: Sage circuit + components ---
+    // Circuit built through 2 real handlers: Runic Altar -> Terra Plate. Anchored on Empyrean
+    // Ichor (the tier's genuinely novel capstone material) rather than gaia_ingot, which
+    // magic_palette.md already flags as the single most over-repeated staple in the pack.
+    addRunicAltarRecipe(event, {
+        output: 'kubejs:empyrean_array_core',
+        mana: Mana.SAGE,
+        ingredients: ['gtceu:empyrean_ichor_ingot', 'kubejs:gaian_void_core', 'minecraft:nether_star']
+    })
+
+    addTerraPlateRecipe(event, {
+        result: 'kubejs:empyrean_array',
+        mana: Mana.SAGE,
+        ingredients: ['kubejs:empyrean_array_core', 'botania:gaia_ingot']
+    })
+
+    // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    addEldrinAltarRecipe(event, {
+        output: 'kubejs:empyrean_wizard_brain',
+        items: ['gtceu:empyrean_ichor_ingot', 'kubejs:gaian_holy_core', 'irons_spellbooks:divine_pearl'],
+        affinity: 'ENDER', power: Source.SAGE,
+        tier: 5
+    })
+
+    event.shapeless('kubejs:empyrean_motive_core', [
+        'gtceu:empyrean_ichor_rod', 'kubejs:gaian_blood_core', 'minecraft:netherite_ingot'
+    ])
+    event.shapeless('kubejs:empyrean_channeling_vessel', [
+        'gtceu:empyrean_ichor_ingot', 'gtceu:abstract_elastomer_ingot', 'mysticalagriculture:enderman_essence'
+    ])
+    event.shapeless('kubejs:empyrean_ward_lattice', [
+        'gtceu:empyrean_ichor_plate', 'kubejs:gaian_annihilation_core', 'minecraft:ender_eye'
+    ])
 })
