@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
-            'kubejs:elven_concentrate', 'kubejs:elven_concentrate',
+            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
             '#gtceu:circuits/zpm', '#gtceu:circuits/zpm',
             'kubejs:empyrean_array'
         ],

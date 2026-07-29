@@ -30,6 +30,9 @@ ItemEvents.tooltip((event) => {
   event.add("kubejs:artificial_cumium_brain", "§aUXV-Tier Circuit");
 
   const TIER_ITEMS = [
+    "kubejs:primordial_organic_muck",
+    "gtceu:iron_bolt",
+    "gtceu:gold_bolt",
     "gtceu:luminessence_dust",
     "hexcasting:charged_amethyst",
     "irons_spellbooks:magic_cloth",
@@ -70,8 +73,6 @@ ItemEvents.tooltip((event) => {
     "gtceu:starforged_chimerite_ingot",
     "kubejs:star_touched_chimerite",
     "botania:elementium_ingot",
-    "kubejs:weak_elementium_dust",
-    "kubejs:elven_concentrate",
     "gtceu:gravitic_rubedo_ingot",
     "kubejs:glacial_grimoire",
     "kubejs:verdant_chronicle",
@@ -97,6 +98,7 @@ ItemEvents.tooltip((event) => {
   ];
 
   const TIER_LABELS = {
+    "kubejs:magic/hobbyist": "Magic Tier: §8Hobbyist",
     "kubejs:magic/apprentice": "Magic Tier: §7Apprentice",
     "kubejs:magic/journeyman": "Magic Tier: §aJourneyman",
     "kubejs:magic/initiate": "Magic Tier: §6Initiate",

@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     // conduit dust, then fuse the conduit with a real GT-tree superconductor compound of the
     // same voltage tier (see gtceuMaterialRegistry.js for the full design note).
     event.recipes.gtceu.mixer('manasteel_conduit_dust_mix')
-        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:manasteel_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:manasteel_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.mixer('terrasteel_conduit_dust_mix')
-        .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:terrasteel_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:terrasteel_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.MV])
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.mixer('elementium_conduit_dust_mix')
-        .itemInputs('2x gtceu:elementium_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:elementium_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:elementium_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.mixer('gaia_conduit_dust_mix')
-        .itemInputs('2x gtceu:gaia_spirit_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:gaia_spirit_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:gaia_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV])
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer('animus_conduit_dust_mix')
-        .itemInputs('2x gtceu:distilled_animus_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:distilled_animus_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:animus_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.mixer('chimerite_conduit_dust_mix')
-        .itemInputs('2x gtceu:starforged_chimerite_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:starforged_chimerite_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:chimerite_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.mixer('rubedo_conduit_dust_mix')
-        .itemInputs('2x gtceu:gravitic_rubedo_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:gravitic_rubedo_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:rubedo_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.mixer('ichor_conduit_dust_mix')
-        .itemInputs('2x gtceu:empyrean_ichor_dust', '1x gtceu:redstone_dust')
+        .itemInputs('2x gtceu:empyrean_ichor_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:ichor_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UV])
@@ -448,15 +448,11 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(-32)
 
-    event.recipes.gtceu.chemical_reactor('elven_concentrate_synthesis')
-        .itemInputs('3x kubejs:weak_elementium_dust', '1x mna:raw_vinteum')
-        .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
-        .itemOutputs('2x kubejs:elven_concentrate')
-        .duration(30 * 20)
-        .EUt(GTValues.VA[GTValues.ZPM])
-
+    // weak_elementium_dust/elven_concentrate removed from existence entirely -- this recipe's
+    // producer and consumer are both dead. Aerosol synthesis below now runs straight off
+    // superheated purified vinteum ingot instead of the deleted elven_concentrate middle-item.
     event.recipes.gtceu.chemical_reactor('faefire_aerosol_synthesis')
-        .itemInputs('1x kubejs:elven_concentrate', '2x mysticalagriculture:air_essence')
+        .itemInputs('1x mna:superheated_purified_vinteum_ingot', '2x mysticalagriculture:air_essence')
         .outputFluids(Fluid.of('gtceu:faefire_aerosol', 500))
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])

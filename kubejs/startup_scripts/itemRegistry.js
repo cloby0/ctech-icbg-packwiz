@@ -24,8 +24,6 @@ StartupEvents.registry('item', event => {
 
     // Magic rework Phase 4 (Initiate): ambrosium chain -> botania:elementium_ingot.
     // gtceu:ambrosium_dust already exists (ambrosium is a .gem() GT material, dust autogens).
-    // weak_elementium_dust already existed too (Arcanist's own runic-altar route feeds
-    // elven_concentrate); this tier gets its own cheaper macerator route to the same item.
     event.create('ambrosia_touched_elementite')
 
     // Magic rework Phase 5 (Sorcerer): gravitite chain -> botania:gaia_ingot. Gaia Guardian is
@@ -60,9 +58,6 @@ StartupEvents.registry('item', event => {
     event.create('prima_materia_seed')
 
     event.create('disorganized_metal_form')
-
-    event.create('weak_elementium_dust')
-    event.create('elven_concentrate')
 
     event.create('vengeful_gaia_spirit')
     event.create('soul_of_gaia')

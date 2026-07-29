@@ -4,24 +4,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/pixie_dust' })
     event.remove({ id: 'botania:elven_trade/dragonstone' })
 
-    // Old runic-altar weak_elementium_dust producer dropped: Initiate's Spirit Infusion route
-    // (initiate.js, off gtceu:terrasteel_dust) already makes the same dust far cheaper. No
-    // reason to keep a harder, less profitable duplicate recipe for the same output four tiers
-    // later. Per user direction 2026-07-28.
-
-    // elven_concentrate input swapped off weak_elementium_dust (Initiate-tier, too far back) onto
-    // this tier's own base metal -- same superheated purified vinteum ingot feeding rubedo_touched_vinteum below.
-    event.custom({
-        "type": "botania:elven_trade",
-        "ingredients": [
-            { "item": "mna:superheated_purified_vinteum_ingot" },
-            { "item": "mna:superheated_purified_vinteum_ingot" },
-            { "item": "mna:superheated_purified_vinteum_ingot" }
-        ],
-        "output": [
-            { "item": "kubejs:elven_concentrate", "count": 2 }
-        ]
-    })
+    // weak_elementium_dust and elven_concentrate removed from existence entirely: both were
+    // dead/duplicate Arcanist-only intermediates (Initiate's Spirit Infusion route already makes
+    // Elementium's dust far cheaper; elven_concentrate was just a relabeled superheated purified
+    // vinteum ingot with an extra crafting step). Every recipe below that consumed
+    // elven_concentrate now takes mna:superheated_purified_vinteum_ingot directly.
 
     // elementite_dust -> raw_elementite -> elementium_ingot smelt dropped entirely: Initiate's
     // elven_trade route (3x ambrosia_touched_elementite -> 2x elementium_ingot) already makes
@@ -30,14 +17,13 @@ ServerEvents.recipes(event => {
     // (this chain burns rubedo_touched_vinteum -- an Arcanist SIGNATURE intermediate -- for just
     // 1x elementium_ingot, worse than Initiate's cheap 3-dust combine for 2x). Per user direction
     // 2026-07-28: cut unless a later-tier route is genuinely cheaper/bulkier or handler-exclusive;
-    // this was neither. elven_concentrate itself stays -- still feeds elven_source_lattice/
-    // pixie_dust/dragonstone below.
+    // this was neither.
 
     // elven_source_lattice: dead ars_nouveau:source_gem x2 swapped for this tier's own new
     // intermediate, 2x gravitic residue.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:elven_source_lattice',
-        items: ['kubejs:elven_concentrate', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'kubejs:gravitic_residue', 'kubejs:gravitic_residue'],
+        items: ['mna:superheated_purified_vinteum_ingot', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'kubejs:gravitic_residue', 'kubejs:gravitic_residue'],
         affinity: 'arcane',
         power: LP.ARCANIST
     })
@@ -46,14 +32,14 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: { item: 'botania:pixie_dust', count: 3 },
-        items: ['botania:mana_pearl', 'kubejs:elven_concentrate', 'kubejs:elven_concentrate', '#kubejs:air_essences', '#kubejs:air_essences'],
+        items: ['botania:mana_pearl', 'mna:superheated_purified_vinteum_ingot', 'mna:superheated_purified_vinteum_ingot', '#kubejs:air_essences', '#kubejs:air_essences'],
         patterns: ['mna:star', 'mna:diamond'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: { item: 'botania:dragonstone', count: 2 },
-        items: ['botania:mana_diamond', 'kubejs:elven_concentrate', 'kubejs:elven_concentrate', '#kubejs:earth_essences', '#kubejs:water_essences'],
+        items: ['botania:mana_diamond', 'mna:superheated_purified_vinteum_ingot', 'mna:superheated_purified_vinteum_ingot', '#kubejs:earth_essences', '#kubejs:water_essences'],
         patterns: ['mna:square', 'mna:diamond'],
         tier: 4
     })
@@ -121,7 +107,7 @@ ServerEvents.recipes(event => {
     // Wizard Brain: Manaweaving Altar (3rd distinct handler for this tier's item set).
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:rubedo_wizard_brain',
-        items: ['gtceu:gravitic_rubedo_ingot', 'kubejs:elven_concentrate', 'botania:pixie_dust'],
+        items: ['gtceu:gravitic_rubedo_ingot', 'mna:superheated_purified_vinteum_ingot', 'botania:pixie_dust'],
         patterns: ['mna:diamond', 'mna:knot3'],
         tier: 3
     })
@@ -130,7 +116,7 @@ ServerEvents.recipes(event => {
         'gtceu:gravitic_rubedo_rod', 'extrabotany:aerialite_ingot', 'gtceu:gravitic_rubedo_ingot'
     ])
     event.shapeless('kubejs:rubedo_channeling_vessel', [
-        'gtceu:gravitic_rubedo_ingot', 'kubejs:elven_concentrate', 'extrabotany:photonium_ingot'
+        'gtceu:gravitic_rubedo_ingot', 'mna:superheated_purified_vinteum_ingot', 'extrabotany:photonium_ingot'
     ])
     event.shapeless('kubejs:rubedo_ward_lattice', [
         'gtceu:gravitic_rubedo_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'

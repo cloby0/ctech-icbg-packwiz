@@ -394,10 +394,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
-        // From the real recipe (initiate.js): gtceu:terrasteel_dust -> +2x Aqueous Spirit ->
-        // weak_elementium_dust; + gtceu:ambrosium_dust + magichem:essentia_precious (not a GT
-        // material, MagiChem excluded per user direction) -> ambrosia_touched_elementite -> Elven
-        // Trade -> Elementium. The file's own comment (initiate.js:268) explicitly says skyjade is
+        // From the real recipe (initiate.js): gtceu:terrasteel_dust + gtceu:ambrosium_dust +
+        // magichem:essentia_precious (not a GT material, MagiChem excluded per user direction)
+        // -> ambrosia_touched_elementite -> Elven Trade -> Elementium. The file's own comment
+        // (initiate.js:268) explicitly says skyjade is
         // NOT sourced here -- it has its own separate Skyforged chain; the design-doc draft that
         // suggested skyjade here was never actually implemented. Was 2x terrasteel + 1x
         // luminessence (stale Ars-era link).
