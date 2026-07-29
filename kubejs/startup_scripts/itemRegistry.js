@@ -276,4 +276,78 @@ StartupEvents.registry('item', event => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)
     })
+
+    // --- Magic microcrafting: Circuit + Component items (per docs/superpowers/specs/2026-07-29-magic-microcrafting-components-design.md) ---
+
+    // Hobbyist
+    event.create('ichor_sigil_blank')
+    event.create('ichorbound_sigil')
+    event.create('ichor_wizard_brain')
+    event.create('ichor_motive_core')
+    event.create('ichor_channeling_vessel')
+    event.create('ichor_ward_lattice')
+
+    // Apprentice
+    event.create('zanite_sigil_blank')
+    event.create('zanite_sigil')
+    event.create('zanite_wizard_brain')
+    event.create('zanite_motive_core')
+    event.create('zanite_channeling_vessel')
+    event.create('zanite_ward_lattice')
+
+    // Journeyman
+    event.create('veridian_sigil_blank')
+    event.create('veridian_sigil')
+    event.create('veridian_wizard_brain')
+    event.create('veridian_motive_core')
+    event.create('veridian_channeling_vessel')
+    event.create('veridian_ward_lattice')
+
+    // Initiate
+    event.create('elementium_matrix_core')
+    event.create('elementium_matrix')
+    event.create('elementium_wizard_brain')
+    event.create('elementium_motive_core')
+    event.create('elementium_channeling_vessel')
+    event.create('elementium_ward_lattice')
+
+    // Sorcerer
+    event.create('gravitic_matrix_core')
+    event.create('gravitic_matrix')
+    event.create('gravitic_wizard_brain')
+    event.create('gravitic_motive_core')
+    event.create('gravitic_channeling_vessel')
+    event.create('gravitic_ward_lattice')
+
+    // Alchemist
+    event.create('animus_matrix_core')
+    event.create('animus_matrix')
+    event.create('animus_wizard_brain')
+    event.create('animus_motive_core')
+    event.create('animus_channeling_vessel')
+    event.create('animus_ward_lattice')
+
+    // Thaumaturge
+    event.create('starforged_array_dust')
+    event.create('starforged_array')
+    event.create('starforged_wizard_brain')
+    event.create('starforged_motive_core')
+    event.create('starforged_channeling_vessel')
+    event.create('starforged_ward_lattice')
+
+    // Arcanist
+    event.create('rubedo_array_core')
+    event.create('rubedo_array')
+    event.create('rubedo_wizard_brain')
+    event.create('rubedo_motive_core')
+    event.create('rubedo_channeling_vessel')
+    event.create('rubedo_ward_lattice')
+
+    // Sage
+    event.create('empyrean_array_core')
+    event.create('empyrean_array')
+    event.create('empyrean_wizard_brain')
+    event.create('empyrean_motive_core')
+    event.create('empyrean_channeling_vessel')
+    event.create('empyrean_ward_lattice')
 })
