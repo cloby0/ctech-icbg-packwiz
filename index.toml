@@ -5554,7 +5554,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "28fc853b7acffeee77a6828424a45e2962444549d166118c903c27f407f750d5"
+hash = "fe8657a2db1b144a125acb8b7fd7cace0548a234f6b8818b40cf8d1820203557"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
