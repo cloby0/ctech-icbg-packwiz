@@ -1,9 +1,10 @@
 ServerEvents.recipes(event => {
     event.remove ({ id: 'reliquary:alkahestry_tome' })
 
+    // Wizard Brain: a tome of stored transmutation knowledge is automation of complex process.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:alkahestry_tome',
-        items: ['minecraft:book', 'gtceu:prima_materia_plate', 'minecraft:redstone_block', 'minecraft:redstone_block', 'minecraft:experience_bottle'],
+        items: ['minecraft:book', 'gtceu:prima_materia_plate', 'minecraft:redstone_block', 'minecraft:redstone_block', 'minecraft:experience_bottle', 'kubejs:animus_wizard_brain'],
         affinity: 'arcane',
         power: 2 * LP.ALCHEMIST
     })
@@ -149,9 +150,11 @@ ServerEvents.recipes(event => {
         power: 2 * LP.ALCHEMIST
     })
 
+    // Circuit: a staff is the tier's central casting device, same role copper_spell_book played
+    // at Hobbyist -- filled into the shared pattern's one open slot for all 14 wood variants.
     event.remove({ output: /hexcasting:staff\// })
-    const staffPattern = ['ZSA', ' WS', 'S  ']
-    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w, Z: '#forge:tools/saws' })
+    const staffPattern = ['ZSA', ' WS', 'SX ']
+    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w, Z: '#forge:tools/saws', X: 'kubejs:animus_matrix' })
     ;[
         ['minecraft:oak_planks',                     'hexcasting:staff/oak'],
         ['minecraft:birch_planks',                   'hexcasting:staff/birch'],
@@ -169,15 +172,18 @@ ServerEvents.recipes(event => {
         ['#hexcasting:brainswept_circle_components', 'hexcasting:staff/mindsplice'],
     ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)).damageIngredient(Ingredient.of('#forge:tools/saws')))
 
+    // Channeling Vessel: a lens focuses and channels light/magic through it.
     event.remove({ id: 'hexcasting:lens' })
-    event.shaped('hexcasting:lens', ['FC ', 'CAC', ' C '], {
+    event.shaped('hexcasting:lens', ['FCV', 'CAC', ' C '], {
         C: 'minecraft:glass',
         A: 'kubejs:hexed_amethyst_core',
         F: '#forge:tools/files',
+        V: 'kubejs:animus_channeling_vessel',
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
+    // Wizard Brain: a thought knot is literally stored/looped thought (iota storage).
     event.remove({ id: 'hexcasting:thought_knot' })
-    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string', '#forge:tools/wire_cutters']).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
+    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string', 'kubejs:animus_wizard_brain', '#forge:tools/wire_cutters']).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.remove({ id: 'hexcasting:slate' })
     event.shaped('6x hexcasting:slate', ['HA ', 'SSS'], {
@@ -186,11 +192,13 @@ ServerEvents.recipes(event => {
         H: '#forge:tools/hammers',
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
+    // Wizard Brain: a cypher encodes a single stored pattern for reuse -- stored logic.
     event.remove({ id: 'hexcasting:cypher' })
-    event.shaped('hexcasting:cypher', ['FC ', 'CAC', ' C '], {
+    event.shaped('hexcasting:cypher', ['FCX', 'CAC', ' C '], {
         C: '#forge:ingots/copper',
         A: 'kubejs:hexed_amethyst_core',
         F: '#forge:tools/files',
+        X: 'kubejs:animus_wizard_brain',
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'hexcasting:scroll_small' })
@@ -221,38 +229,45 @@ ServerEvents.recipes(event => {
         K: '#forge:tools/knives',
     }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
+    // Wizard Brain: an abacus is a literal computation/counting device.
     event.remove({ id: 'hexcasting:abacus' })
-    event.shaped('hexcasting:abacus', ['MAW', 'SAS', 'WAW'], {
+    event.shaped('hexcasting:abacus', ['MAX', 'SAS', 'WAW'], {
         W: '#minecraft:planks',
         A: 'kubejs:hexed_amethyst_core',
         S: 'minecraft:stick',
         M: '#forge:tools/mallets',
+        X: 'kubejs:animus_wizard_brain',
     }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
+    // Channeling Vessel: a bookshelf/connector stores and channels knowledge flow.
     event.remove({ id: 'hexcasting:akashic_bookshelf' })
-    event.shaped('hexcasting:akashic_bookshelf', ['ZPL', 'CAC', 'LPL'], {
+    event.shaped('hexcasting:akashic_bookshelf', ['ZPV', 'CAC', 'LPL'], {
         L: '#hexcasting:edified_logs',
         P: '#hexcasting:edified_planks',
         C: 'minecraft:book',
         A: 'kubejs:hexed_mana_matrix',
         Z: '#forge:tools/saws',
+        V: 'kubejs:animus_channeling_vessel',
     }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.remove({ id: 'hexcasting:akashic_connector' })
-    event.shaped('4x hexcasting:akashic_connector', ['ZPL', '12A', 'LPL'], {
+    event.shaped('4x hexcasting:akashic_connector', ['ZPV', '12A', 'LPL'], {
         L: '#hexcasting:edified_logs',
         P: '#hexcasting:edified_planks',
         '1': 'hexcasting:amethyst_dust',
         '2': 'minecraft:amethyst_shard',
         A: 'kubejs:hexed_mana_matrix',
         Z: '#forge:tools/saws',
+        V: 'kubejs:animus_channeling_vessel',
     }).damageIngredient(Ingredient.of('#forge:tools/saws'))
 
     event.remove({ id: 'hexcasting:focus' })
     event.remove({ id: 'hexcasting:focus_rotated' })
+    // Circuit: focus and spellbook are the tier's own core casting devices (focus is the
+    // hand-held caster, spellbook the written form) -- same role as Hobbyist's spell books.
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:focus',
-        items: ['minecraft:leather', 'gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'minecraft:glowstone'],
+        items: ['minecraft:leather', 'gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'minecraft:glowstone', 'kubejs:animus_matrix'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
     })
@@ -260,25 +275,28 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'hexcasting:spellbook' })
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:spellbook',
-        items: ['minecraft:writable_book', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit'],
+        items: ['minecraft:writable_book', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit', 'kubejs:animus_matrix'],
         affinity: 'ender',
         power: LP.ALCHEMIST
     })
 
+    // Wizard Brain: an artifact stores and can rebroadcast a spell -- unattended casting logic.
     event.remove({ id: 'hexcasting:artifact' })
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:artifact',
-        items: ['#minecraft:music_discs', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot'],
+        items: ['#minecraft:music_discs', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'kubejs:animus_wizard_brain'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
     })
 
+    // Ward Lattice: a worn trinket is a passive protective effect.
     event.remove({ id: 'hexcasting:trinket' })
-    event.shaped('hexcasting:trinket', ['HMF', 'MAM', ' M '], {
+    event.shaped('hexcasting:trinket', ['HMF', 'MAM', 'WMW'], {
         M: 'gtceu:manasteel_plate',
         A: 'kubejs:hexed_mana_matrix',
         H: '#forge:tools/hammers',
         F: '#forge:tools/files',
+        W: 'kubejs:animus_ward_lattice',
     }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // hex_ars_link:linker_base: hex_ars_link is one of the 12 cut Ars addons. This recipe
@@ -317,10 +335,21 @@ ServerEvents.recipes(event => {
         syphon: LP.ALCHEMIST
     })
 
-    // Shortcut (Thaumaturge+): direct to the finished ingot, gated on tier attainment not this file.
-    event.shapeless('gtceu:distilled_animus_ingot', [
-        'mna:animus_dust', 'magichem:essentia_arcane', '#kubejs:magic/thaumaturge'
-    ])
+    // Shortcut (Thaumaturge+, Citrinitas worn): Alembic/Distillery fabricates the ingot straight
+    // from materia, real wisdom-field gate (wisdom_stone_citrinitas, wisdom:2).
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 2,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 3,
+        object: { item: 'gtceu:distilled_animus_ingot' },
+        components: [
+            { item: 'magichem:essentia_arcane', count: 50 },
+            { item: 'magichem:admixture_change', count: 30 },
+            { item: 'magichem:essentia_citrinitas', count: 25 }
+        ]
+    })
 
     // --- Microcrafting: Alchemist circuit + components ---
     // Circuit built through 2 real handlers: Soul Forge -> Alchemy Table.

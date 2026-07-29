@@ -199,70 +199,70 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:glass_bottle', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_motive_core'],
         output: 'artifacts:cloud_in_a_bottle',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:diamond_block', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:totem_of_undying', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:diamond_block', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:totem_of_undying', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_ward_lattice'],
         output: 'artifacts:crystal_heart',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:feather', 'minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:glass_bottle', 'minecraft:feather', 'minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_motive_core'],
         output: 'artifacts:helium_flamingo',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:glass', 'minecraft:glass', 'minecraft:spider_eye', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:glass', 'minecraft:glass', 'minecraft:spider_eye', 'gtceu:holy_silver_dust', 'kubejs:animus_wizard_brain'],
         output: 'artifacts:night_vision_goggles',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:magma_cream', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:magma_cream', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_ward_lattice'],
         output: 'artifacts:obsidian_skull',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:flint', 'minecraft:flint', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:flint', 'minecraft:flint', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_ward_lattice'],
         output: 'artifacts:steadfast_spikes',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:diamond', 'minecraft:diamond', 'minecraft:iron_block', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:diamond', 'minecraft:diamond', 'minecraft:iron_block', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_channeling_vessel'],
         output: 'artifacts:universal_attractor',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['create:golden_sheet', 'minecraft:redstone_block', 'minecraft:rotten_flesh', 'minecraft:fermented_spider_eye', 'minecraft:diamond', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['create:golden_sheet', 'minecraft:redstone_block', 'minecraft:rotten_flesh', 'minecraft:fermented_spider_eye', 'minecraft:diamond', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:animus_channeling_vessel'],
         output: 'artifacts:vampiric_glove',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:golden_apple', 'minecraft:gold_block', 'minecraft:feather', 'minecraft:ender_pearl', 'minecraft:rabbit_foot', 'gtceu:holy_silver_dust'],
+        pedestalItems: ['minecraft:golden_apple', 'minecraft:gold_block', 'minecraft:feather', 'minecraft:ender_pearl', 'minecraft:rabbit_foot', 'gtceu:holy_silver_dust', 'kubejs:animus_wizard_brain'],
         output: 'artifacts:panic_necklace',
         sourceCost: Source.ALCHEMIST
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:chorus_fruit', 'minecraft:chorus_fruit', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:chorus_fruit', 'minecraft:chorus_fruit', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'kubejs:animus_channeling_vessel'],
         output: 'artifacts:chorus_totem',
         sourceCost: Source.ALCHEMIST
     })
