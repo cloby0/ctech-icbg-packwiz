@@ -51,105 +51,124 @@ ServerEvents.recipes(event => {
         power: LP.SAGE
     })
 
+    // Channeling Vessel: a blood core's whole theme is flowing vitality.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_blood_core',
         items: [
             'botania:life_essence', 'botania:gaia_ingot', 'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
-            'irons_spellbooks:blood_rune', 'irons_spellbooks:blood_rune', 'minecraft:netherite_ingot'
+            'irons_spellbooks:blood_rune', 'irons_spellbooks:blood_rune', 'minecraft:netherite_ingot',
+            'kubejs:empyrean_channeling_vessel'
         ],
         affinity: 'fire',
         power: LP.SAGE
     })
 
+    // Ward Lattice: a holy core is protective/divine ward.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_holy_core',
         items: [
             'botania:life_essence', 'botania:gaia_ingot', 'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
             'irons_spellbooks:holy_rune', 'irons_spellbooks:holy_rune',
-            'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard'
+            'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard',
+            'kubejs:empyrean_ward_lattice'
         ],
         affinity: 'water',
         power: LP.SAGE
     })
 
+    // Wizard Brain: a void core channels eldritch/otherworldly knowledge.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_void_core',
         items: [
             'botania:life_essence', 'botania:gaia_ingot', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence',
-            'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune', 'minecraft:nether_star'
+            'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune', 'minecraft:nether_star',
+            'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'ender',
         power: LP.SAGE
     })
 
+    // Motive Core: an annihilation core is raw destructive force.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_annihilation_core',
         items: [
             'botania:life_essence', 'botania:gaia_ingot', 'legendary_spellbooks:annihilators_protocol',
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
-            'minecraft:nether_star', 'minecraft:nether_star'
+            'minecraft:nether_star', 'minecraft:nether_star',
+            'kubejs:empyrean_motive_core'
         ],
         affinity: 'ender',
         power: LP.SAGE
     })
 
+    // Wizard Brain: a grimoire is stored magical knowledge, same role as any tier's spell book.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:blood_grimoire',
         items: [
             'kubejs:gaian_blood_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
-            'minecraft:netherite_ingot', 'minecraft:netherite_ingot'
+            'minecraft:netherite_ingot', 'minecraft:netherite_ingot',
+            'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'fire',
         power: 2 * LP.SAGE
     })
 
+    // Ward Lattice: a sanctum is a protective holy structure.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:radiant_sanctum',
         items: [
             'kubejs:gaian_holy_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
             'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
             'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
-            'minecraft:golden_apple', 'minecraft:golden_apple'
+            'minecraft:golden_apple', 'minecraft:golden_apple',
+            'kubejs:empyrean_ward_lattice'
         ],
         affinity: 'water',
         power: 2 * LP.SAGE
     })
 
+    // Wizard Brain: a codex is stored eldritch knowledge.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:eldritch_codex',
         items: [
             'kubejs:gaian_void_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
             'minecraft:nether_star', 'minecraft:nether_star',
             'minecraft:ender_eye', 'minecraft:ender_eye',
-            'minecraft:ender_eye', 'minecraft:ender_eye'
+            'minecraft:ender_eye', 'minecraft:ender_eye',
+            'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'ender',
         power: 2 * LP.SAGE
     })
 
+    // Motive Core: a chronicle of obliteration is raw destructive force, matches its core.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:obliteration_chronicle',
         items: [
             'kubejs:gaian_annihilation_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
             'minecraft:nether_star', 'minecraft:nether_star',
             'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence',
-            'minecraft:ender_eye', 'minecraft:ender_eye'
+            'minecraft:ender_eye', 'minecraft:ender_eye',
+            'kubejs:empyrean_motive_core'
         ],
         affinity: 'ender',
         power: 2 * LP.SAGE
     })
 
+    // Circuit: the tech-bridge codex, already built from UV circuits -- doubling down on the
+    // circuit theme fits better than any single component.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:harbinger_codex',
         items: [
             'gtceu:boundless_naquadrite_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
-            '#gtceu:circuits/uv', '#gtceu:circuits/uv'
+            '#gtceu:circuits/uv', '#gtceu:circuits/uv',
+            'kubejs:empyrean_array'
         ],
         affinity: 'arcane',
         power: 2 * LP.SAGE
@@ -275,4 +294,72 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:empyrean_ward_lattice', [
         'gtceu:empyrean_ichor_plate', 'kubejs:gaian_annihilation_core', 'minecraft:ender_eye'
     ])
+
+    // Wisdom Stone: Philosopher's Stone (Ritual of the Balanced Scales, Alchemical Nexus).
+    // Brand-new recipe -- confirmed via full jar recipe search that magichem-0.5.2.jar ships NO
+    // recipe of any type for magichem:philosophers_stone, so there's nothing to conflict with or
+    // override. Final stage anchors on Empyrean Ichor, deliberately echoing Sage's own "no
+    // shortcut, callback to Hobbyist" capstone material (see magic_palette.md's Sage section).
+    // Wizard Brain in stage 1: a worn Wisdom Stone is automated magical reasoning, same as every
+    // other tier's Wisdom Stone.
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 6,
+        wisdom: 4,
+        object: { item: 'magichem:philosophers_stone' },
+        stages: [
+            {
+                experience: 300,
+                components: [
+                    { item: 'kubejs:gaian_blood_core' },
+                    { item: 'kubejs:gaian_holy_core' },
+                    { item: 'kubejs:empyrean_wizard_brain' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_nigredo', count: 60 },
+                    { item: 'magichem:essentia_albedo', count: 60 },
+                    { item: 'magichem:admixture_potential', count: 120 }
+                ]
+            },
+            {
+                experience: 350,
+                components: [
+                    { item: 'kubejs:gaian_annihilation_core' },
+                    { item: 'minecraft:nether_star' },
+                    { item: 'minecraft:ender_eye' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_citrinitas', count: 60 },
+                    { item: 'magichem:essentia_rubedo', count: 60 },
+                    { item: 'magichem:admixture_change', count: 120 }
+                ]
+            },
+            {
+                experience: 400,
+                components: [
+                    { item: 'kubejs:blood_grimoire' },
+                    { item: 'kubejs:radiant_sanctum' },
+                    { item: 'kubejs:eldritch_codex' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_wizard', count: 90 },
+                    { item: 'magichem:admixture_sorcery', count: 90 },
+                    { item: 'magichem:essentia_conceptual', count: 100 }
+                ]
+            },
+            {
+                experience: 500,
+                components: [
+                    { item: 'gtceu:empyrean_ichor_ingot' },
+                    { item: 'magichem:wisdom_stone_rubedo' },
+                    { item: 'gtceu:empyrean_ichor_ingot' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 150 },
+                    { item: 'magichem:admixture_change', count: 150 },
+                    { item: 'magichem:essentia_rubedo', count: 80 }
+                ]
+            }
+        ]
+    })
 })
