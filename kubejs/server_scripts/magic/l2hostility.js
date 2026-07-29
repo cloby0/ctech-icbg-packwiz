@@ -607,7 +607,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
+            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'kubejs:empyrean_motive_core'
         ],
         output: 'l2hostility:platinum_star',
         sourceCost: Source.SAGE
@@ -657,7 +658,8 @@ ServerEvents.recipes(event => {
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'minecraft:echo_shard', 'minecraft:echo_shard',
-            'minecraft:echo_shard', 'minecraft:echo_shard'
+            'minecraft:echo_shard', 'minecraft:echo_shard',
+            'kubejs:empyrean_channeling_vessel'
         ],
         output: 'l2complements:resonant_feather',
         sourceCost: Source.SAGE
@@ -669,7 +671,8 @@ ServerEvents.recipes(event => {
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'l2complements:soul_flame', 'l2complements:soul_flame',
-            'l2complements:storm_core', 'l2complements:storm_core'
+            'l2complements:storm_core', 'l2complements:storm_core',
+            'kubejs:empyrean_channeling_vessel'
         ],
         output: 'l2complements:sun_membrane',
         sourceCost: Source.SAGE
@@ -707,7 +710,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:charm_of_looting_4',
         sourceCost: Source.SAGE
@@ -719,7 +723,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:curse_of_envy',
         sourceCost: Source.SAGE
@@ -731,7 +736,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'minecraft:netherite_ingot', 'minecraft:diamond'
+            'minecraft:netherite_ingot', 'minecraft:diamond',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:curse_of_pride',
         sourceCost: Source.SAGE
@@ -743,7 +749,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:ring_of_divinity',
         sourceCost: Source.SAGE
@@ -755,7 +762,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:ring_of_reflection',
         sourceCost: Source.SAGE
@@ -767,7 +775,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'minecraft:gold_block', 'minecraft:gold_block'
+            'minecraft:gold_block', 'minecraft:gold_block',
+            'kubejs:empyrean_motive_core'
         ],
         output: 'l2hostility:greed_of_nidhoggur',
         sourceCost: Source.SAGE
@@ -779,7 +788,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'minecraft:echo_shard', 'minecraft:echo_shard'
+            'minecraft:echo_shard', 'minecraft:echo_shard',
+            'kubejs:empyrean_motive_core'
         ],
         output: 'l2hostility:abyssal_thorn',
         sourceCost: Source.SAGE
@@ -791,7 +801,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'minecraft:amethyst_shard', 'minecraft:amethyst_shard'
+            'minecraft:amethyst_shard', 'minecraft:amethyst_shard',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:oddeyes_glasses',
         sourceCost: Source.SAGE
@@ -803,7 +814,8 @@ ServerEvents.recipes(event => {
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_channeling_vessel'
         ],
         output: 'l2hostility:pocket_of_restoration',
         sourceCost: Source.SAGE
@@ -828,7 +840,8 @@ ServerEvents.recipes(event => {
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
             'l2complements:soul_flame', 'l2complements:soul_flame',
             'l2complements:sun_membrane', 'l2complements:sun_membrane',
-            'minecraft:fire_charge', 'minecraft:fire_charge'
+            'minecraft:fire_charge', 'minecraft:fire_charge',
+            'kubejs:empyrean_channeling_vessel'
         ],
         output: 'l2complements:heirophant_green',
         sourceCost: Source.SAGE
@@ -840,7 +853,8 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_block', 'gtceu:holy_silver_block',
             'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:divinity_cross',
         sourceCost: Source.SAGE
@@ -852,7 +866,8 @@ ServerEvents.recipes(event => {
             'minecraft:nether_star',
             'l2hostility:divinity_cross',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:divinity_light',
         sourceCost: Source.SAGE
@@ -864,7 +879,8 @@ ServerEvents.recipes(event => {
             'minecraft:leather', 'minecraft:leather',
             'minecraft:leather', 'minecraft:leather',
             'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:triple_strip_cape',
         sourceCost: Source.SAGE
@@ -876,7 +892,8 @@ ServerEvents.recipes(event => {
             'minecraft:stick', 'minecraft:stick',
             'minecraft:stick', 'minecraft:stick',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence'
+            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:trait_adder_wand',
         sourceCost: Source.SAGE
@@ -888,7 +905,8 @@ ServerEvents.recipes(event => {
             'minecraft:stick', 'minecraft:stick',
             'minecraft:stick', 'minecraft:stick',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot'
+            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
+            'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:target_select_wand',
         sourceCost: Source.SAGE

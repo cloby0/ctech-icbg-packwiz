@@ -139,28 +139,28 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium'],
+        pedestalItems: ['gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium', 'kubejs:empyrean_ward_lattice'],
         output: 'morerelics:crown_of_the_legend',
         sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block'],
+        pedestalItems: ['gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'kubejs:empyrean_wizard_brain'],
         output: 'morerelics:king_crimson',
         sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block'],
+        pedestalItems: ['gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block', 'kubejs:empyrean_motive_core'],
         output: 'morerelics:made_in_heaven',
         sourceCost: Source.SAGE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['gtceu:wilden_alloy_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block'],
+        pedestalItems: ['gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block', 'kubejs:empyrean_wizard_brain'],
         output: 'morerelics:wonder_of_u',
         sourceCost: Source.SAGE
     })
