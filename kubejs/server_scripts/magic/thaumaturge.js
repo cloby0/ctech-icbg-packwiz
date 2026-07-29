@@ -93,4 +93,36 @@ ServerEvents.recipes(event => {
         catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
         output: { count: 4, item: 'gtceu:abstract_metal_ingot' }
     })
+
+    // --- Microcrafting: Thaumaturge circuit + components ---
+    // Circuit built through 2 real handlers: MNA crushing -> MagiChem Astral Observer illumination.
+    addMnaCrushingRecipe(event, {
+        input: 'gtceu:starforged_chimerite_ingot',
+        output: 'kubejs:starforged_array_dust'
+    })
+
+    event.custom({
+        type: 'magichem:illumination',
+        input: 'kubejs:starforged_array_dust',
+        lumins: { type: 3, minutes: 4 },
+        result: { item: 'kubejs:starforged_array', count: 1 }
+    })
+
+    // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    addEldrinAltarRecipe(event, {
+        output: 'kubejs:starforged_wizard_brain',
+        items: ['gtceu:starforged_chimerite_ingot', 'kubejs:star_touched_chimerite', 'ad_astra:ice_shard'],
+        affinity: 'WATER', power: Source.THAUMATURGE,
+        tier: 4
+    })
+
+    event.shapeless('kubejs:starforged_motive_core', [
+        'gtceu:starforged_chimerite_rod', 'ad_astra:ice_shard', 'gtceu:starforged_chimerite_ingot'
+    ])
+    event.shapeless('kubejs:starforged_channeling_vessel', [
+        'gtceu:starforged_chimerite_ingot', 'botania:rune_water', 'kubejs:chimerite_dust'
+    ])
+    event.shapeless('kubejs:starforged_ward_lattice', [
+        'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:naquadah_dust'
+    ])
 })
