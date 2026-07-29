@@ -386,7 +386,8 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:book_of_omniscience',
         sourceCost: Source.ARCANIST
@@ -410,7 +411,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
+            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2complements:warden_bone_shard',
         source: Source.ARCANIST,
@@ -422,7 +424,8 @@ ServerEvents.recipes(event => {
             'minecraft:lightning_rod',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:glass'
+            'minecraft:glass',
+            'kubejs:rubedo_motive_core'
         ],
         output: 'l2complements:storm_core',
         source: Source.ARCANIST,
@@ -433,7 +436,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:totem_of_undying'
+            'minecraft:totem_of_undying',
+            'kubejs:rubedo_channeling_vessel'
         ],
         output: 'l2complements:life_essence',
         source: Source.ARCANIST,
@@ -457,7 +461,8 @@ ServerEvents.recipes(event => {
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2complements:void_eye',
         sourceCost: Source.ARCANIST
@@ -469,7 +474,8 @@ ServerEvents.recipes(event => {
             'l2complements:piglin_rune',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'l2complements:sculkium_ingot'
+            'l2complements:sculkium_ingot',
+            'kubejs:rubedo_motive_core'
         ],
         output: 'l2complements:blackstone_core',
         source: Source.ARCANIST,
@@ -480,7 +486,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:tnt', 'minecraft:tnt',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
+            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'kubejs:rubedo_motive_core'
         ],
         output: 'l2complements:explosion_shard',
         source: Source.ARCANIST,
@@ -498,7 +505,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:charm_of_looting_3',
         sourceCost: Source.ARCANIST
@@ -509,7 +517,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:diamond_sword', 'minecraft:diamond_sword'
+            'minecraft:diamond_sword', 'minecraft:diamond_sword',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:curse_of_wrath',
         sourceCost: Source.ARCANIST
@@ -521,7 +530,8 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'minecraft:rotten_flesh', 'minecraft:rotten_flesh',
-            'minecraft:netherite_ingot'
+            'minecraft:netherite_ingot',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:curse_of_lust',
         sourceCost: Source.ARCANIST
@@ -532,7 +542,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:gold_block', 'minecraft:gold_block'
+            'minecraft:gold_block', 'minecraft:gold_block',
+            'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:curse_of_greed',
         sourceCost: Source.ARCANIST
@@ -544,7 +555,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_channeling_vessel'
         ],
         output: 'l2hostility:ring_of_life',
         sourceCost: Source.ARCANIST
@@ -556,7 +568,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_ward_lattice'
         ],
         output: 'l2hostility:ring_of_incarceration',
         sourceCost: Source.ARCANIST
@@ -568,7 +581,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'kubejs:rubedo_motive_core'
         ],
         output: 'l2hostility:ring_of_corrosion',
         sourceCost: Source.ARCANIST
@@ -580,7 +594,8 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:soul_campfire', 'minecraft:soul_campfire'
+            'minecraft:soul_campfire', 'minecraft:soul_campfire',
+            'kubejs:rubedo_motive_core'
         ],
         output: 'l2hostility:flaming_thorn',
         sourceCost: Source.ARCANIST
@@ -604,7 +619,8 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'minecraft:ender_pearl', 'minecraft:ender_pearl',
-            'minecraft:ender_pearl', 'minecraft:ender_pearl'
+            'minecraft:ender_pearl', 'minecraft:ender_pearl',
+            'kubejs:rubedo_array'
         ],
         output: 'l2hostility:hostility_orb',
         sourceCost: Source.ARCANIST

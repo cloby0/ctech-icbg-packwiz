@@ -90,10 +90,21 @@ ServerEvents.recipes(event => {
 
     event.smelting('gtceu:gravitic_rubedo_ingot', 'kubejs:bound_gravitic_core')
 
-    // Shortcut (Sage+): superheated purified vinteum + Hellforged ingot direct, gated on tier attainment not this file.
-    event.shapeless('gtceu:gravitic_rubedo_ingot', [
-        'mna:superheated_purified_vinteum_ingot', 'bloodmagic:ingot_hellforged', '#kubejs:magic/sage'
-    ])
+    // Shortcut (Sage+, Philosopher's Stone worn): Alembic/Distillery fabricates the ingot straight
+    // from materia, real wisdom-field gate (philosophers_stone, wisdom:4).
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 4,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 3,
+        object: { item: 'gtceu:gravitic_rubedo_ingot' },
+        components: [
+            { item: 'magichem:essentia_rubedo', count: 60 },
+            { item: 'magichem:admixture_potential', count: 35 },
+            { item: 'magichem:essentia_conceptual', count: 30 }
+        ]
+    })
 
     // --- Microcrafting: Arcanist circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> furnace.
@@ -123,4 +134,73 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:rubedo_ward_lattice', [
         'gtceu:gravitic_rubedo_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
     ])
+
+    // Wisdom Stone: Rubedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
+    // Arcanist's own material line. Materia kept verbatim from the mod's own rubedo recipe
+    // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_rubedo.json).
+    // Wizard Brain in stage 1: a worn Wisdom Stone is automated magical reasoning.
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 5,
+        wisdom: 3,
+        object: { item: 'magichem:wisdom_stone_rubedo' },
+        stages: [
+            {
+                experience: 135,
+                components: [
+                    { item: 'kubejs:elven_source_lattice' },
+                    { item: 'kubejs:gravitic_residue' },
+                    { item: 'kubejs:rubedo_wizard_brain' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 100 },
+                    { item: 'magichem:admixture_sorcery', count: 70 },
+                    { item: 'magichem:admixture_violence', count: 70 },
+                    { item: 'magichem:essentia_rubedo', count: 50 }
+                ]
+            },
+            {
+                experience: 180,
+                components: [
+                    { item: 'extrabotany:aerialite_ingot' },
+                    { item: 'extrabotany:photonium_ingot' },
+                    { item: 'extrabotany:shadowium_ingot' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_alcohol', count: 70 },
+                    { item: 'magichem:admixture_delight', count: 70 },
+                    { item: 'magichem:admixture_gourmet', count: 70 },
+                    { item: 'magichem:admixture_satiety', count: 70 }
+                ]
+            },
+            {
+                experience: 225,
+                components: [
+                    { item: 'botania:pixie_dust' },
+                    { item: 'botania:dragonstone' },
+                    { item: 'botania:mana_diamond' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_demon', count: 70 },
+                    { item: 'magichem:admixture_exanimate', count: 70 },
+                    { item: 'magichem:admixture_fey', count: 70 },
+                    { item: 'magichem:admixture_wizard', count: 70 }
+                ]
+            },
+            {
+                experience: 270,
+                components: [
+                    { item: 'kubejs:rubedo_touched_vinteum' },
+                    { item: 'magichem:wisdom_stone_citrinitas' },
+                    { item: 'kubejs:rubedo_touched_vinteum' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_change', count: 100 },
+                    { item: 'magichem:admixture_healing', count: 70 },
+                    { item: 'magichem:admixture_blood', count: 70 },
+                    { item: 'magichem:essentia_rubedo', count: 40 }
+                ]
+            }
+        ]
+    })
 })
