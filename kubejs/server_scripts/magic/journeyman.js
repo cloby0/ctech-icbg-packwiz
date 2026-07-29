@@ -21,22 +21,25 @@ ServerEvents.recipes(event => {
     // Dropped: wheat_seeds -> magebloom_crop imbuement, and the magebloom_sieve craft that needed
     // magebloom_fiber (its only other consumer here was the Source Gem chain below, also dropped).
 
+    // Ward Lattice: an interdiction torch's whole job is repelling/deterring -- protection theme.
     event.shaped(
             Item.of('reliquary:interdiction_torch', 3),
             [
                 '   ',
-                ' B ',
+                'WB ',
                 ' A '
             ],
             {
                 A: 'minecraft:blaze_rod',
-                B: 'kubejs:zanite_laced_iron'
+                B: 'kubejs:zanite_laced_iron',
+                W: 'kubejs:veridian_ward_lattice'
             }
         );
+    // Wizard Brain: alkahestry (universal transmutation) is a complex process, fits automation theme.
     event.shaped(
             Item.of('reliquary:alkahestry_altar', 1),
             [
-                'AHA',
+                'XHA',
                 'BCB',
                 'ABA'
             ],
@@ -44,26 +47,29 @@ ServerEvents.recipes(event => {
                 A: 'gtceu:lead_plate',
                 B: 'kubejs:veridium_filings',
                 C: 'minecraft:glowstone',
-                H: '#forge:tools/hammers'
+                H: '#forge:tools/hammers',
+                X: 'kubejs:veridian_wizard_brain'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
+    // Channeling Vessel: the ender-storage family (chest/tank/pouch) is literally item/fluid transport.
     event.shaped(
             Item.of('enderstorage:ender_chest', 1),
             [
-                'ABA',
+                'VBA',
                 'BCB',
                 'ABA'
             ],
             {
                 A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
-                C: 'kubejs:zanite_laced_iron'
+                C: 'kubejs:zanite_laced_iron',
+                V: 'kubejs:veridian_channeling_vessel'
             }
         );
     event.shaped(
             Item.of('enderstorage:ender_tank', 1),
             [
-                'ABA',
+                'VBA',
                 'DCD',
                 'ABA'
             ],
@@ -71,7 +77,8 @@ ServerEvents.recipes(event => {
                 A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
                 C: 'kubejs:zanite_laced_iron',
-                D: 'minecraft:glass'
+                D: 'minecraft:glass',
+                V: 'kubejs:veridian_channeling_vessel'
             }
         );
     event.shaped(
@@ -79,32 +86,35 @@ ServerEvents.recipes(event => {
             [
                 'ABA',
                 'ACA',
-                'KA '
+                'KAV'
             ],
             {
                 A: 'irons_spellbooks:magic_cloth',
                 C: 'enderstorage:ender_chest',
                 B: 'kubejs:zanite_laced_iron',
-                K: '#forge:tools/knives'
+                K: '#forge:tools/knives',
+                V: 'kubejs:veridian_channeling_vessel'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/knives'));
 
     // Source Jar, Storage Lectern, Repository: all three craft Ars Nouveau blocks that no
     // longer exist once Ars is uninstalled. Nothing to port to; dropped outright.
 
+    // Wizard Brain: a paranoia lantern's entire function is automated threat detection.
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
             [
                 'FAD',
                 'BCB',
-                'DAD'
+                'WAD'
             ],
             {
                 A: '#forge:plates/iron',
                 B: 'minecraft:glass',
                 C: 'kubejs:veridium_filings',
                 D: '#forge:rods/silver',
-                F: '#forge:tools/files'
+                F: '#forge:tools/files',
+                W: 'kubejs:veridian_wizard_brain'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
