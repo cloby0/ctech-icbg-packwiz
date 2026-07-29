@@ -159,10 +159,14 @@ ServerEvents.recipes(event => {
         ingredients: ['kubejs:verdant_grafted_manasteel']
     })
 
-    // Shortcut (Initiate+): direct to the pre-terra-plate feed, still needs the terra plate step.
-    event.shapeless('kubejs:verdant_grafted_manasteel', [
-        'aether_redux:veridium_ingot', 'botania:manasteel_block', '#kubejs:magic/initiate'
-    ])
+    // Shortcut (Initiate+): Initiate's Manaweaving Altar t2 fabricates the pre-terra-plate feed
+    // directly, batch output. Pattern tier is the gate -- no stone exists at Initiate yet.
+    addMnaManaweavingRecipe(event, {
+        output: { item: 'kubejs:verdant_grafted_manasteel', count: 2 },
+        items: ['aether_redux:veridium_ingot', 'botania:manasteel_block'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
+    })
 
     event.custom({
         "type": "aether:enchanting",
@@ -199,6 +203,20 @@ ServerEvents.recipes(event => {
         "liquidOutput": { "fluid": "minecraft:water" },
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"
+    })
+
+    // Luminessence revival (2026-07-29): the item is still a real registered GT material
+    // (gtceuMaterialRegistry.js, dust-only), it just lost its old glowstone-chain producer when
+    // Ars was removed. Re-themed off MagiChem's admixture of light rather than restoring the
+    // dead glowstone recipe -- magichem:admixture_light is real (Alembic -> Fixation Separation),
+    // available by MNA tier 2 (~Journeyman per mods/mna.md's progression fit), matching where
+    // this tier's other MagiChem-load-bearing swaps already live. Spirit Altar, not a plain craft:
+    // sacred (divine radiance) + aerial (open sky/daylight) spirits bind the light into the dust.
+    addSpiritInfusion(event, {
+        input: 'magichem:admixture_light',
+        output: 'gtceu:luminessence_dust',
+        extraItems: [{ item: 'minecraft:glowstone_dust' }],
+        spirits: [{ type: 'sacred' }, { type: 'aerial' }]
     })
 
     addSpiritInfusion(event, {
@@ -246,4 +264,59 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:veridian_ward_lattice', [
         'botania:terrasteel_ingot', 'gtceu:terrasteel_plate', 'irons_spellbooks:protection_rune'
     ])
+
+    // Wisdom Stone: Nigredo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
+    // Journeyman's own material line -- components swapped from MagiChem's generic endgame items,
+    // materia kept verbatim from the mod's own nigredo recipe (magichem-0.5.2.jar
+    // data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_nigredo.json).
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 2,
+        wisdom: 0,
+        object: { item: 'magichem:wisdom_stone_nigredo' },
+        stages: [
+            {
+                experience: 45,
+                components: [
+                    { item: 'kubejs:veridium_filings' },
+                    { item: 'kubejs:resonant_zanite_crystal' },
+                    { item: 'kubejs:veridium_filings' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 70 },
+                    { item: 'magichem:admixture_dust', count: 30 },
+                    { item: 'magichem:essentia_conceptual', count: 55 },
+                    { item: 'magichem:essentia_nigredo', count: 50 }
+                ]
+            },
+            {
+                experience: 60,
+                components: [
+                    { item: 'irons_spellbooks:fire_rune' },
+                    { item: 'irons_spellbooks:ice_rune' },
+                    { item: 'irons_spellbooks:lightning_rune' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_death', count: 30 },
+                    { item: 'magichem:admixture_destruction', count: 30 },
+                    { item: 'magichem:admixture_disaster', count: 30 },
+                    { item: 'magichem:admixture_violence', count: 30 }
+                ]
+            },
+            {
+                experience: 75,
+                components: [
+                    { item: 'kubejs:enchanted_zanite_gem' },
+                    { item: 'magichem:inert_wisdom_stone' },
+                    { item: 'kubejs:enchanted_zanite_gem' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_change', count: 55 },
+                    { item: 'magichem:admixture_erosion', count: 30 },
+                    { item: 'magichem:admixture_realm', count: 30 },
+                    { item: 'magichem:essentia_nigredo', count: 40 }
+                ]
+            }
+        ]
+    })
 });
