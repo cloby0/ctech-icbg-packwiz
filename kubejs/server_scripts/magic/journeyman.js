@@ -204,4 +204,36 @@ ServerEvents.recipes(event => {
         extraItems: [{ tag: 'kubejs:air_essences', count: 2 }],
         spirits: [{ type: 'arcane', count: 2 }, { type: 'aerial' }]
     })
+
+    // --- Microcrafting: Journeyman circuit + components ---
+    // Circuit built through 2 real handlers: Spirit Infusion -> Alchemy Table.
+    addSpiritInfusion(event, {
+        input: 'botania:terrasteel_ingot',
+        output: 'kubejs:veridian_sigil_blank',
+        spirits: [{ type: 'earthen', count: 2 }]
+    })
+
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:veridian_sigil',
+        input: ['kubejs:veridian_sigil_blank', 'kubejs:veridium_filings', 'irons_spellbooks:arcane_ingot'],
+        syphon: LP.JOURNEYMAN,
+        ticks: 200
+    })
+
+    // Wizard Brain: Terra Plate (3rd distinct handler for this tier's item set).
+    addTerraPlateRecipe(event, {
+        result: 'kubejs:veridian_wizard_brain',
+        mana: Mana.JOURNEYMAN,
+        ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:arcane_ingot', 'kubejs:resonant_zanite_crystal']
+    })
+
+    event.shapeless('kubejs:veridian_motive_core', [
+        'botania:terrasteel_ingot', 'gtceu:terrasteel_bolt', 'kubejs:veridium_filings'
+    ])
+    event.shapeless('kubejs:veridian_channeling_vessel', [
+        'botania:terrasteel_ingot', 'aether:ambrosium_shard', 'kubejs:enchanted_zanite_gem'
+    ])
+    event.shapeless('kubejs:veridian_ward_lattice', [
+        'botania:terrasteel_ingot', 'gtceu:terrasteel_plate', 'irons_spellbooks:protection_rune'
+    ])
 });
