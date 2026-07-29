@@ -57,6 +57,7 @@ StartupEvents.registry('item', event => {
     event.create('holy_silver_blend')
     event.create('element_attunement_stone')
     event.create('chaos_essence')
+    event.create('prima_materia_seed')
 
     event.create('disorganized_metal_form')
 
@@ -225,21 +226,31 @@ StartupEvents.registry('item', event => {
 
     event.create('dragon_heart_crystal')
     event.create('draconic_boule').texture('gtceu:item/neutronium_boule').glow(true)
-    event.create('draconic_resonance_board')
     event.create('stabilized_chaos_crystal')
     event.create('chaos_harmonic_board')
 
-    event.create('draconic_processor')                // ZPM
-    event.create('draconic_processor_assembly')       // UV
-    event.create('draconic_processor_supercomputer')  // UHV
-    event.create('draconic_processor_mainframe')      // UEV
-    event.create('chaos_processor')                   // UV
-    event.create('chaos_processor_assembly')          // UHV
-    event.create('chaos_processor_supercomputer')     // UEV
-    event.create('chaos_processor_mainframe')         // UIV
+    event.create('argentware_processor')                 // ZPM
+    event.create('argentware_processor_assembly')         // UV
+    event.create('argentware_processor_supercomputer')    // UHV
+    event.create('argentware_processor_mainframe')        // UEV
+    event.create('wraithware_processor_unbound')           // UV, pre-ritual
+    event.create('wraithware_processor')                   // UV, post-ritual
+    event.create('wraithware_processor_assembly')          // UHV
+    event.create('wraithware_processor_supercomputer')     // UEV
+    event.create('wraithware_processor_mainframe')         // UIV
     event.create('cumium_processor')                  // UEV
     event.create('cumium_processor_assembly')         // UIV
     event.create('artificial_cumium_brain')           // UXV
+
+    // Laplace's Determinism Engine reagents
+    event.create('bound_demon_will')
+    event.create('crystallized_malice')
+    event.create('vengeful_ichor')
+    event.create('hellforged_determinant')
+    event.create('bound_djinni_seal')
+    event.create('afrit_bound_core')
+    event.create('marid_dominion_matrix')
+    event.create('otherworld_convergence_core')
 
     event.create('draconic_sanguinary')
     event.create('draconic_sanctum')
@@ -271,7 +282,7 @@ StartupEvents.registry('item', event => {
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
 
-    let ritualDummies = ['resonant_gravitite_core', 'chaos_essence', 'chaos_essence_mysticalag', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core']
+    let ritualDummies = ['resonant_gravitite_core', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core', 'wraithware_processor']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)

@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
 
     addEldrinAltarRecipe(event, {
         output: 'kubejs:hexed_amethyst_core',
-        items: ['hexcasting:charged_amethyst', 'gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'gtceu:abstract_metal_ingot', 'minecraft:glowstone'],
+        items: ['hexcasting:charged_amethyst', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'gtceu:abstract_metal_ingot', 'minecraft:glowstone'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
     })
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         output: 'kubejs:hexed_mana_matrix',
         items: [
             'kubejs:hexed_amethyst_core',
-            'gtceu:manasteel_plate', 'gtceu:manasteel_plate',
+            'gtceu:holy_silver_plate', 'gtceu:holy_silver_plate',
             'botania:mana_pearl', 'botania:mana_pearl',
             'kubejs:arcane_residue', 'kubejs:arcane_residue'
         ],
@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
     // hand-held caster, spellbook the written form) -- same role as Hobbyist's spell books.
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:focus',
-        items: ['minecraft:leather', 'gtceu:manasteel_rod', 'gtceu:manasteel_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'minecraft:glowstone', 'kubejs:animus_matrix'],
+        items: ['minecraft:leather', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'minecraft:glowstone', 'kubejs:animus_matrix'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
     })
@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'hexcasting:spellbook' })
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:spellbook',
-        items: ['minecraft:writable_book', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit', 'kubejs:animus_matrix'],
+        items: ['minecraft:writable_book', 'gtceu:holy_silver_plate', 'gtceu:holy_silver_plate', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit', 'kubejs:animus_matrix'],
         affinity: 'ender',
         power: LP.ALCHEMIST
     })
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'hexcasting:artifact' })
     addEldrinAltarRecipe(event, {
         output: 'hexcasting:artifact',
-        items: ['#minecraft:music_discs', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'kubejs:animus_wizard_brain'],
+        items: ['#minecraft:music_discs', 'gtceu:holy_silver_plate', 'gtceu:holy_silver_plate', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'kubejs:animus_wizard_brain'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
     })
@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
     // Ward Lattice: a worn trinket is a passive protective effect.
     event.remove({ id: 'hexcasting:trinket' })
     event.shaped('hexcasting:trinket', ['HMF', 'MAM', 'WMW'], {
-        M: 'gtceu:manasteel_plate',
+        M: 'gtceu:holy_silver_plate',
         A: 'kubejs:hexed_mana_matrix',
         H: '#forge:tools/hammers',
         F: '#forge:tools/files',

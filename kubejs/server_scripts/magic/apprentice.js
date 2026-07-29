@@ -167,8 +167,8 @@ ServerEvents.recipes(event => {
     })
 
     addManaPondRecipe(event, {
-        input: 'kubejs:zanite_sigil_blank',
-        output: 'kubejs:zanite_sigil',
+        input: { item: 'kubejs:zanite_sigil_blank' },
+        output: { item: 'kubejs:zanite_sigil' },
         mana: Mana.APPRENTICE
     })
 

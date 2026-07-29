@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
     addEnchantingRecipe(event, {
         reagent: 'irons_spellbooks:netherite_spell_book',
         pedestalItems: [
-            'gtceu:elven_americate_ingot', 'gtceu:elven_americate_ingot',
+            'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             'kubejs:elven_concentrate', 'kubejs:elven_concentrate',
             '#gtceu:circuits/zpm', '#gtceu:circuits/zpm',

@@ -261,11 +261,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('silicon', 'calcium', 'beryllium')
         .washedIn('gtceu:mercury')
 
-    // MNA's real vein/dust/ingot line. Takes over the Aether GT ore vein 'mana' used to occupy --
+    // MNA's real vein/dust line. Takes over the Aether GT ore vein 'mana' used to occupy --
     // mana lost its .ore() (see below), vinteum fills that worldgen slot instead. Item forms
-    // setIgnored to mna:'s own (gtceuMaterialModification.js).
+    // setIgnored to mna:'s own (gtceuMaterialModification.js). Pure element, dust only -- the
+    // real mna:vinteum_ingot is an iron alloy (see vinteum_iron below), not this material's ingot.
     event.create('vinteum')
-        .ingot()
         .ore()
         .dust()
         .element('vinteum')
@@ -274,6 +274,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.SHINY)
         .addOreByproducts('quartz', 'redstone')
         .washedIn('gtceu:mercury')
+
+    // mna:vinteum_ingot is really an alloy: iron_ingot + vinteum_dust -> vinteum_coated_iron ->
+    // furnace smelt -> vinteum_ingot (verified in the mna: recipe jars). Ingot setIgnored to
+    // mna:vinteum_ingot (gtceuMaterialModification.js). No blastTemp -- real recipe is a plain
+    // furnace/blast-furnace smelt, so this autogens via Alloy Smelter, hand-authored in
+    // techMagicInteraction.js (vinteum_iron_alloy) -- standalone alloy smelter, no dust mixer needed.
+    event.create('vinteum_iron')
+        .ingot()
+        .color(0xA8B8C4)
+        .secondaryColor(0x6E7A85)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .components(c('1x iron'), c('1x vinteum'))
 
     event.create('veridium')
         .ingot()
@@ -673,13 +685,92 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.DULL)
         .addOreByproducts('sodium', 'calcium')
 
-    event.create('lead_sourcite')
+    // Magic superconductor ladder, one per magic tier LV(Apprentice)-UV(Sage). Rebalanced
+    // 2026-07-29, reworked again same day into real 2-step chains: each tier's signature
+    // material (progression.md) is first charged with redstone into a "conduit" intermediate
+    // (dust-only, no ingot -- see the *_conduit block below), then the conduit fuses with a
+    // genuine GT-tree superconductor compound of the SAME voltage tier (Manganese Phosphide,
+    // Mercury-Barium-Calcium-Cuprate, Samarium Iron Arsenic Oxide, Indium Tin Barium Titanium
+    // Cuprate, Uranium-Rhodium-Dinaquadide, Yttrium-Barium-Cuprate -- GTCEu's own vanilla
+    // superconductors, see gt_base_progression.md). No vanilla superconductor exists at MV/EV,
+    // so those two fuse real-world superconducting element pairs instead (Vanadium-Gallium,
+    // Niobium-Titanium). This is philosophy.md's promised hybridization payoff made literal:
+    // magic tree's own material fused onto the tech tree's own superconductor. No ULV rung --
+    // ULV cables are never useful, not worth a material slot.
+
+    // -- conduit intermediates: dust-only, magic signature material charged with redstone --
+    event.create('manasteel_conduit')
+        .dust()
+        .color(0xC9736E)
+        .secondaryColor(0x6B3230)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('terrasteel_conduit')
+        .dust()
+        .color(0xC97E4E)
+        .secondaryColor(0x5C331A)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('elementium_conduit')
+        .dust()
+        .color(0xD97AA0)
+        .secondaryColor(0x6E2E4A)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('gaia_conduit')
+        .dust()
+        .color(0xB06AC0)
+        .secondaryColor(0x552F63)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('animus_conduit')
+        .dust()
+        .color(0x9B5FD9)
+        .secondaryColor(0x4A2670)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('chimerite_conduit')
+        .dust()
+        .color(0x5C6FC2)
+        .secondaryColor(0x2A3266)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('rubedo_conduit')
+        .dust()
+        .color(0xC23A5C)
+        .secondaryColor(0x5C1A2C)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    event.create('ichor_conduit')
+        .dust()
+        .color(0xE0A26E)
+        .secondaryColor(0x8A5A2E)
+        .iconSet(GTMaterialIconSet.DULL)
+
+    // -- final superconductors: conduit + real superconducting compound of the same tier --
+    event.create('fulguromana')
         .ingot()
         .fluid()
-        .color(0x9E7FC0)
-        .secondaryColor(0x5C4A80)
+        .color(0x8FE0E8)
+        .secondaryColor(0x2E7A80)
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('2x lead'), c('1x mana'))
+        .blastTemp(1400, "low", GTValues.VA[GTValues.LV], 800)
+        .components(c('2x manasteel_conduit'), c('1x manganese_phosphide'))
+        .cableProperties(GTValues.VA[GTValues.LV], 1, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        )
+
+    event.create('verdantium')
+        .ingot()
+        .fluid()
+        .color(0x6FCE55)
+        .secondaryColor(0x2E5C2A)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .blastTemp(1800, "low", GTValues.VA[GTValues.MV], 1000)
+        .components(c('2x terrasteel_conduit'), c('1x vanadium'), c('1x gallium'))
         .cableProperties(GTValues.VA[GTValues.MV], 1, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -687,14 +778,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    event.create('hallowed_nickelate')
+    event.create('elenbarite')
         .ingot()
         .fluid()
-        .color(0xCCEDAA)
-        .secondaryColor(0x8AAA70)
+        .color(0xE8B8D8)
+        .secondaryColor(0x8A4A6E)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1200)
-        .components(c('1x holy_silver'), c('2x nickel'))
+        .components(c('2x elementium_conduit'), c('1x mercury_barium_calcium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.HV], 2, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -702,14 +793,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    event.create('prima_ruridite')
+    event.create('gaiobium')
         .ingot()
         .fluid()
-        .color(0x90C868)
-        .secondaryColor(0x4A7830)
+        .color(0xA070E0)
+        .secondaryColor(0x4A2A80)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1400)
-        .components(c('1x prima_materia'), c('2x ruridit'))
+        .components(c('2x gaia_conduit'), c('1x niobium'), c('1x titanium'))
         .cableProperties(GTValues.VA[GTValues.EV], 4, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -717,14 +808,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    event.create('hssg_manaferrite')
+    event.create('animarium')
         .ingot()
         .fluid()
-        .color(0x4D9AC0)
-        .secondaryColor(0x255472)
+        .color(0x9060D8)
+        .secondaryColor(0x40206C)
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(4500, "high", GTValues.VA[GTValues.IV], 1600)
-        .components(c('3x manasteel'), c('1x hssg'))
+        .components(c('2x animus_conduit'), c('1x samarium_iron_arsenic_oxide'))
         .cableProperties(GTValues.VA[GTValues.IV], 4, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -732,14 +823,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    event.create('terranaquadite')
+    event.create('chimerindium')
         .ingot()
         .fluid()
-        .color(0x3EC84A)
-        .secondaryColor(0x1A5C20)
+        .color(0x4A8AC8)
+        .secondaryColor(0x1E4470)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(6000, "high", GTValues.VA[GTValues.LuV], 1800)
-        .components(c('2x terrasteel'), c('1x enriched_naquadah'))
+        .components(c('2x chimerite_conduit'), c('1x indium_tin_barium_titanium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.LuV], 8, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -747,14 +838,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
         )
 
-    event.create('elven_americate')
+    event.create('gravidium')
         .ingot()
         .fluid()
-        .color(0xCC5CB8)
-        .secondaryColor(0x7A3070)
+        .color(0xC85AA0)
+        .secondaryColor(0x601048)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(7500, "high", GTValues.VA[GTValues.ZPM], 2000)
-        .components(c('2x elementium'), c('1x americium'))
+        .components(c('2x rubedo_conduit'), c('1x uranium_rhodium_dinaquadide'))
         .cableProperties(GTValues.VA[GTValues.ZPM], 8, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -762,14 +853,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
         )
 
-    event.create('boundless_naquadrite')
+    event.create('empyrium')
         .ingot()
         .fluid()
-        .color(0xA845A8)
-        .secondaryColor(0x5A1880)
+        .color(0xE8D8A0)
+        .secondaryColor(0x8C7040)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 2400)
-        .components(c('1x gaia_spirit'), c('2x naquadria'))
+        .components(c('2x ichor_conduit'), c('1x yttrium_barium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.UV], 16, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
@@ -1073,11 +1164,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x7A1F3D).secondaryColor(0xD4AF37)
         .iconSet(GTMaterialIconSet.SHINY)
-        // From the real recipe (arcanist.js): mna:superheated_purified_vinteum_ingot (-> vinteum)
+        // From the real recipe (arcanist.js): mna:superheated_purified_vinteum_ingot (an
+        // iron-alloy vinteum_ingot derivative, -> vinteum_iron, not pure vinteum)
         // + magichem:essentia_rubedo (not a GT material) -> rubedo_touched_vinteum; +
         // bloodmagic:sand_hellforged (not one of the 5 Demon Will types, not representable) ->
         // gravitic_residue; + occultism:afrit_essence (-> afrit_essence) -> bound_gravitic_core.
-        .components(c('1x vinteum'), c('1x afrit_essence'))
+        .components(c('1x vinteum_iron'), c('1x afrit_essence'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,

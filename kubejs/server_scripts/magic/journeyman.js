@@ -269,6 +269,9 @@ ServerEvents.recipes(event => {
     // Journeyman's own material line -- components swapped from MagiChem's generic endgame items,
     // materia kept verbatim from the mod's own nigredo recipe (magichem-0.5.2.jar
     // data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_nigredo.json).
+    // Jar's own recipe stays otherwise loaded alongside ours (custom serializer, not overwritten
+    // by a new object -> id: removal required).
+    event.remove({ id: 'magichem:alchemical_sublimation/magichem/wisdom_stone_nigredo' })
     event.custom({
         type: 'magichem:sublimation',
         tier: 2,
@@ -292,9 +295,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 60,
                 components: [
-                    { item: 'irons_spellbooks:fire_rune' },
-                    { item: 'irons_spellbooks:ice_rune' },
-                    { item: 'irons_spellbooks:lightning_rune' }
+                    { item: 'magichem:salt_of_soot' },
+                    { item: 'magichem:mote_achromatic' },
+                    { item: 'magichem:salt_of_bone' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_death', count: 30 },

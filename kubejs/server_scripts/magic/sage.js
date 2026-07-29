@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_blood_core',
         items: [
-            'botania:life_essence', 'botania:gaia_ingot', 'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
+            'botania:life_essence', 'kubejs:soul_of_gaia', 'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'irons_spellbooks:blood_rune', 'irons_spellbooks:blood_rune', 'minecraft:netherite_ingot',
             'kubejs:empyrean_channeling_vessel'
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_holy_core',
         items: [
-            'botania:life_essence', 'botania:gaia_ingot', 'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
+            'botania:life_essence', 'kubejs:soul_of_gaia', 'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
             'irons_spellbooks:holy_rune', 'irons_spellbooks:holy_rune',
             'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard',
             'kubejs:empyrean_ward_lattice'
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_void_core',
         items: [
-            'botania:life_essence', 'botania:gaia_ingot', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence',
+            'botania:life_essence', 'kubejs:soul_of_gaia', 'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence',
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune', 'minecraft:nether_star',
             'kubejs:empyrean_wizard_brain'
         ],
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:gaian_annihilation_core',
         items: [
-            'botania:life_essence', 'botania:gaia_ingot', 'legendary_spellbooks:annihilators_protocol',
+            'botania:life_essence', 'kubejs:soul_of_gaia', 'legendary_spellbooks:annihilators_protocol',
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
             'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
             'minecraft:nether_star', 'minecraft:nether_star',
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:blood_grimoire',
         items: [
-            'kubejs:gaian_blood_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'kubejs:gaian_blood_core', 'occultism:soul_gem', 'occultism:soul_gem',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'irons_spellbooks:blood_vial', 'irons_spellbooks:blood_vial',
             'minecraft:netherite_ingot', 'minecraft:netherite_ingot',
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:radiant_sanctum',
         items: [
-            'kubejs:gaian_holy_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'kubejs:gaian_holy_core', 'irons_spellbooks:holy_rune', 'irons_spellbooks:holy_rune',
             'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
             'irons_spellbooks:divine_pearl', 'irons_spellbooks:divine_pearl',
             'minecraft:golden_apple', 'minecraft:golden_apple',
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:eldritch_codex',
         items: [
-            'kubejs:gaian_void_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'kubejs:gaian_void_core', 'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
             'minecraft:nether_star', 'minecraft:nether_star',
             'minecraft:ender_eye', 'minecraft:ender_eye',
             'minecraft:ender_eye', 'minecraft:ender_eye',
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:obliteration_chronicle',
         items: [
-            'kubejs:gaian_annihilation_core', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'kubejs:gaian_annihilation_core', 'minecraft:nether_star', 'minecraft:nether_star',
             'minecraft:nether_star', 'minecraft:nether_star',
             'mysticalagriculture:enderman_essence', 'mysticalagriculture:enderman_essence',
             'minecraft:ender_eye', 'minecraft:ender_eye',
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
     addEldrinAltarRecipe(event, {
         output: 'kubejs:harbinger_codex',
         items: [
-            'gtceu:boundless_naquadrite_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'gtceu:empyrium_ingot', '#gtceu:circuits/uv', '#gtceu:circuits/uv',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             '#gtceu:circuits/uv', '#gtceu:circuits/uv',
@@ -180,15 +180,10 @@ ServerEvents.recipes(event => {
     // (MysticalAg or otherwise) doesn't matter at this point and isn't needed. Per user direction
     // 2026-07-28.
 
-    addTerraPlateRecipe(event, {
-        result: { item: 'botania:gaia_ingot' },
-        mana: 8 * Mana.PROPHET,
-        ingredients: [
-            { item: 'kubejs:boundless_gaia_spirit_ingot' },
-            { item: 'botania:terrasteel_block' },
-            { item: 'botania:terrasteel_block' }
-        ]
-    })
+    // boundless_gaia_spirit_ingot -> Terra Plate -> gaia_ingot dropped: gaia_ingot is
+    // Sorcerer-tier now (sorcerer.js's gravitite chain), backwards for Sage to be re-minting it
+    // this many tiers later. boundless_gaia_spirit_ingot still feeds Prophet/UEV tech-bridge
+    // recipes elsewhere in the pack.
 
     // primal_latex_billet: MysticalAg difficulty-cliff fix (default drops the 4 hard base
     // essences for tags, alternate keeps them cheaper) PLUS the Wilden retirement fix
@@ -216,14 +211,15 @@ ServerEvents.recipes(event => {
         'gtceu:abstract_metal_ingot'
     ])
 
-    // abstract_elastomer_ingot: dead wilden_tribute x2 swapped for 2x this tier's own
-    // soul_of_gaia -- keeps a "powerful spirit essence" ingredient in the recipe's shape without
-    // reviving the dead Wilden line.
+    // abstract_elastomer_ingot: dead wilden_tribute x2 and the leftover gaia_ingot x4 (Sorcerer-
+    // tier, too far back) both consolidated onto this tier's own soul_of_gaia -- keeps a
+    // "powerful spirit essence" ingredient in the recipe's shape without reviving Wilden or
+    // re-importing gaia_ingot.
     addEldrinAltarRecipe(event, {
         output: 'gtceu:abstract_elastomer_ingot',
         items: [
             'kubejs:elemental_latex_compound',
-            'botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot', 'botania:gaia_ingot',
+            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'gtceu:abstract_metal_ingot', 'gtceu:abstract_metal_ingot'
         ],
@@ -242,7 +238,9 @@ ServerEvents.recipes(event => {
     // bound to the mod's own fixed item<->materia dictionary, same mechanical wall Phases 6-8
     // already hit repeatedly. Vanilla combine instead. Also dropped the "worn, not consumed"
     // Philosopher's Stone requirement (same call as Phase 8's Wisdom Stone) -- paired with
-    // gaia_ingot instead, matching this file's dominant reagent.
+    // gaia_ingot instead. Kept even after the rest of the file dropped gaia_ingot (now
+    // Sorcerer-tier): it's a hard component of empyrean_ichor's registered GT material
+    // (gtceuMaterialRegistry.js), not a stale ingredient choice.
     event.shapeless('kubejs:hallowed_remnant', ['bloodmagic:ingot_hellforged', 'botania:gaia_ingot'])
 
     event.shapeless('kubejs:wellspring_bound_remnant', ['kubejs:hallowed_remnant', 'mna:greater_mote_arcane'])
@@ -274,7 +272,7 @@ ServerEvents.recipes(event => {
     addTerraPlateRecipe(event, {
         result: 'kubejs:empyrean_array',
         mana: Mana.SAGE,
-        ingredients: ['kubejs:empyrean_array_core', 'botania:gaia_ingot']
+        ingredients: ['kubejs:empyrean_array_core', 'kubejs:soul_of_gaia']
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).

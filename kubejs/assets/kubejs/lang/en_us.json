@@ -1,4 +1,6 @@
 {
+  "item.kubejs.ashen_ichor_ingot_rough": "Rough Ashen Ichor Ingot",
+
   "item.kubejs.glowing_compound_dust": "Glowing Compound Dust",
   "item.kubejs.impure_glimmering_dust": "Impure Glimmering Dust",
 
@@ -186,17 +188,24 @@
 
   "item.kubejs.dragon_heart_crystal": "Dragon Heart Crystal",
   "item.kubejs.draconic_boule": "Draconic Boule",
-  "item.kubejs.draconic_resonance_board": "Draconic Resonance Board",
   "item.kubejs.stabilized_chaos_crystal": "Stabilized Chaos Crystal",
   "item.kubejs.chaos_harmonic_board": "Chaos Harmonic Board",
-  "item.kubejs.draconic_processor": "Draconic Processor",
-  "item.kubejs.draconic_processor_assembly": "Draconic Processor Assembly",
-  "item.kubejs.draconic_processor_supercomputer": "Draconic Processor Supercomputer",
-  "item.kubejs.draconic_processor_mainframe": "Draconic Processor Mainframe",
-  "item.kubejs.chaos_processor": "Chaos Processor",
-  "item.kubejs.chaos_processor_assembly": "Chaos Processor Assembly",
-  "item.kubejs.chaos_processor_supercomputer": "Chaos Processor Supercomputer",
-  "item.kubejs.chaos_processor_mainframe": "Chaos Processor Mainframe",
+  "item.kubejs.argentware_processor": "Argentware Processor",
+  "item.kubejs.argentware_processor_assembly": "Argentware Processor Assembly",
+  "item.kubejs.argentware_processor_supercomputer": "Argentware Processor Supercomputer",
+  "item.kubejs.argentware_processor_mainframe": "Argentware Processor Mainframe",
+  "item.kubejs.wraithware_processor": "Wraithware Processor",
+  "item.kubejs.wraithware_processor_assembly": "Wraithware Processor Assembly",
+  "item.kubejs.wraithware_processor_supercomputer": "Wraithware Processor Supercomputer",
+  "item.kubejs.wraithware_processor_mainframe": "Wraithware Processor Mainframe",
+  "item.kubejs.bound_demon_will": "Bound Demon Will",
+  "item.kubejs.crystallized_malice": "Crystallized Malice",
+  "item.kubejs.vengeful_ichor": "Vengeful Ichor",
+  "item.kubejs.hellforged_determinant": "Hellforged Determinant",
+  "item.kubejs.bound_djinni_seal": "Bound Djinni Seal",
+  "item.kubejs.afrit_bound_core": "Afrit-Bound Core",
+  "item.kubejs.marid_dominion_matrix": "Marid Dominion Matrix",
+  "item.kubejs.otherworld_convergence_core": "Otherworld Convergence Core",
   "item.kubejs.cumium_processor": "Cumium Processor",
   "item.kubejs.cumium_processor_assembly": "Cumium Processor Assembly",
   "item.kubejs.artificial_cumium_brain": "Artificial Cumium Brain",
@@ -221,6 +230,8 @@
   "item.kubejs.radiant_sanctum": "Radiant Sanctum",
   "item.kubejs.eldritch_codex": "Eldritch Codex",
   "item.kubejs.obliteration_chronicle": "Obliteration Chronicle",
-  "item.kubejs.harbinger_codex": "Harbinger Codex"
+  "item.kubejs.harbinger_codex": "Harbinger Codex",
+
+  "item.kubejs.wraithware_processor_unbound": "Unbound Wraithware Processor"
 
 }

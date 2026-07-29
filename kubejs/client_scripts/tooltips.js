@@ -4,15 +4,26 @@ ItemEvents.tooltip((event) => {
     "§7A chip that comes with the firmware to think in ME",
   );
 
-  event.add("kubejs:draconic_processor", "§5ZPM-Tier Circuit");
-  event.add("kubejs:draconic_processor_assembly", "§5UV-Tier Circuit");
-  event.add("kubejs:draconic_processor_supercomputer", "§5UHV-Tier Circuit");
-  event.add("kubejs:draconic_processor_mainframe", "§5UEV-Tier Circuit");
+  event.add("kubejs:argentware_processor", "§cZPM-Tier Circuit");
+  event.add("kubejs:argentware_processor_assembly", "§cUV-Tier Circuit");
+  event.add("kubejs:argentware_processor_supercomputer", "§cUHV-Tier Circuit");
+  event.add("kubejs:argentware_processor_mainframe", [
+    "§cUEV-Tier Circuit",
+    "§7Wetware laced with argent will -- demons power it, whether they meant to or not",
+  ]);
 
-  event.add("kubejs:chaos_processor", "§4UV-Tier Circuit");
-  event.add("kubejs:chaos_processor_assembly", "§4UHV-Tier Circuit");
-  event.add("kubejs:chaos_processor_supercomputer", "§4UEV-Tier Circuit");
-  event.add("kubejs:chaos_processor_mainframe", "§4UIV-Tier Circuit");
+  event.add("kubejs:wraithware_processor_unbound", "§dUV-Tier Circuit (pre-ritual)");
+  event.add("kubejs:wraithware_processor", "§dUV-Tier Circuit");
+  event.add("kubejs:wraithware_processor_assembly", "§dUHV-Tier Circuit");
+  event.add("kubejs:wraithware_processor_supercomputer", "§dUEV-Tier Circuit");
+  event.add("kubejs:wraithware_processor_mainframe", [
+    "§dUIV-Tier Circuit",
+    "§7An afrit bound to move numbers for you -- Maxwell's demon, minus the physics violation",
+  ]);
+
+  event.add("gtceu:determinism_engine", [
+    "§7\"Nothing would be uncertain\" -- Laplace's demon, if it had ever met a chance-based drop table",
+  ]);
 
   event.add("kubejs:cumium_processor", "§aUEV-Tier Circuit");
   event.add("kubejs:cumium_processor_assembly", "§aUIV-Tier Circuit");

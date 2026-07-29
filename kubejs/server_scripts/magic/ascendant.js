@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:stabilized_chaos_crystal',
         input: [
             'draconicevolution:chaos_shard',
-            'kubejs:draconic_processor_supercomputer',
-            'kubejs:draconic_processor_supercomputer',
+            'kubejs:argentware_processor_supercomputer',
+            'kubejs:argentware_processor_supercomputer',
             'draconicevolution:chaotic_core',
             'draconicevolution:chaotic_core',
             'botania:gaia_ingot',

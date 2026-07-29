@@ -41,49 +41,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line('chaos_processor_supercomputer_recipe')
-        .itemInputs(
-            '2x gtceu:awakened_framework_frame',
-            '2x kubejs:chaos_processor_assembly',
-            '4x kubejs:chaos_harmonic_board',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_capacitor',
-            '32x gtceu:advanced_smd_transistor',
-            '32x gtceu:advanced_smd_resistor',
-            '32x gtceu:advanced_smd_inductor',
-            '64x gtceu:awakened_draconium_foil',
-            '32x gtceu:ram_chip',
-            '16x gtceu:draconic_fluxite_double_wire',
-            '8x gtceu:awakened_draconium_plate',
-            '2x draconicevolution:awakened_core'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('kubejs:draconic_computation', 8000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 2000)
-        )
-        .itemOutputs('kubejs:chaos_processor_supercomputer')
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.circuit_assembler('draconic_processor_supercomputer_uev_alt')
-        .itemInputs(
-            '1x gtceu:tritanium_frame',
-            '1x kubejs:draconic_processor_assembly',
-            '2x kubejs:draconic_resonance_board',
-            '16x gtceu:advanced_smd_diode',
-            '16x gtceu:advanced_smd_capacitor',
-            '16x gtceu:advanced_smd_transistor',
-            '16x gtceu:advanced_smd_resistor',
-            '16x gtceu:advanced_smd_inductor',
-            '16x gtceu:ram_chip',
-            '1x kubejs:dragon_heart_crystal'
-        )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
-        .itemOutputs('kubejs:draconic_processor_supercomputer')
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.UEV])
-
     event.recipes.gtceu.assembly_line('cumium_processor_assembly_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
@@ -106,24 +63,6 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('kubejs:cumium_processor_assembly')
         .duration(2000)
-        .EUt(GTValues.VA[GTValues.UIV])
-
-    event.recipes.gtceu.circuit_assembler('chaos_processor_supercomputer_uiv_alt')
-        .itemInputs(
-            '1x gtceu:awakened_framework_frame',
-            '1x kubejs:chaos_processor_assembly',
-            '2x kubejs:chaos_harmonic_board',
-            '16x gtceu:advanced_smd_diode',
-            '16x gtceu:advanced_smd_capacitor',
-            '16x gtceu:advanced_smd_transistor',
-            '16x gtceu:advanced_smd_resistor',
-            '16x gtceu:advanced_smd_inductor',
-            '16x gtceu:ram_chip',
-            '1x draconicevolution:awakened_core'
-        )
-        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 2000))
-        .itemOutputs('kubejs:chaos_processor_supercomputer')
-        .duration(800)
         .EUt(GTValues.VA[GTValues.UIV])
 
     event.recipes.gtceu.assembler('biogenic_synthesis_casing_assembly')
@@ -224,64 +163,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x draconicevolution:reactor_injector')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
-
-
-    event.recipes.gtceu.circuit_assembler('chaos_processor_recipe')
-        .itemInputs(
-            '4x gtceu:chaos_crystal_dust',
-            '2x gtceu:awakened_draconium_foil',
-            '1x kubejs:chaos_harmonic_board',
-            '8x gtceu:advanced_smd_diode',
-            '8x gtceu:advanced_smd_capacitor',
-            '8x gtceu:advanced_smd_transistor',
-            '8x gtceu:advanced_smd_resistor'
-        )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
-        .itemOutputs('1x kubejs:chaos_processor')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.circuit_assembler('chaos_processor_assembly_recipe')
-        .itemInputs(
-            '2x kubejs:chaos_processor',
-            '2x kubejs:chaos_harmonic_board',
-            '4x gtceu:awakened_draconium_foil',
-            '16x gtceu:advanced_smd_diode',
-            '16x gtceu:advanced_smd_capacitor',
-            '16x gtceu:advanced_smd_transistor',
-            '16x gtceu:advanced_smd_resistor',
-            '8x gtceu:ram_chip'
-        )
-        .inputFluids(
-            Fluid.of('kubejs:draconic_computation', 1000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 500)
-        )
-        .itemOutputs('1x kubejs:chaos_processor_assembly')
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.assembly_line('chaos_processor_mainframe_recipe')
-        .itemInputs(
-            '2x gtceu:awakened_framework_frame',
-            '2x kubejs:chaos_processor_supercomputer',
-            '4x kubejs:chaos_harmonic_board',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_capacitor',
-            '32x gtceu:advanced_smd_transistor',
-            '32x gtceu:advanced_smd_resistor',
-            '32x gtceu:advanced_smd_inductor',
-            '32x gtceu:ram_chip',
-            '16x gtceu:chaotic_singulite_double_wire',
-            '8x gtceu:awakened_draconium_plate',
-            '2x draconicevolution:chaotic_core'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('kubejs:chaos_matrix_fluid', 8000)
-        )
-        .itemOutputs('1x kubejs:chaos_processor_mainframe')
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.UIV])
 
 
     event.recipes.gtceu.circuit_assembler('cumium_processor_recipe')

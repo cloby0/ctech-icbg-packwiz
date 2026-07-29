@@ -98,12 +98,8 @@ ServerEvents.recipes(event => {
         output: { item: 'botania:mana_pearl', count: 2 }
     })
 
-    addManaPondRecipe(event, {
-        input: { tag: 'forge:ingots/terrasteel' },
-        mana: 2 * Mana.THAUMATURGE,
-        catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
-        output: { count: 4, item: 'gtceu:abstract_metal_ingot' }
-    })
+    // terrasteel -> abstract_metal_ingot dropped: terrasteel is Journeyman-tier now, and
+    // Alchemist's iron_ingot route already covers abstract_metal_ingot supply by this point.
 
     // --- Microcrafting: Thaumaturge circuit + components ---
     // Circuit built through 2 real handlers: MNA crushing -> MagiChem Astral Observer illumination.
@@ -141,6 +137,9 @@ ServerEvents.recipes(event => {
     // Thaumaturge's own material line. Materia kept verbatim from the mod's own citrinitas recipe
     // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_citrinitas.json).
     // Wizard Brain in stage 1: a worn Wisdom Stone is literally automated magical reasoning.
+    // Jar's own recipe stays otherwise loaded alongside ours (custom serializer, not overwritten
+    // by a new object -> id: removal required).
+    event.remove({ id: 'magichem:alchemical_sublimation/magichem/wisdom_stone_citrinitas' })
     event.custom({
         type: 'magichem:sublimation',
         tier: 4,
@@ -178,9 +177,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 225,
                 components: [
-                    { item: 'ad_astra:ice_shard' },
-                    { item: 'gtceu:naquadah_dust' },
-                    { item: 'ad_astra:ice_shard' }
+                    { item: 'gtceu:starforged_chimerite_plate' },
+                    { item: 'kubejs:charged_chimerite' },
+                    { item: 'gtceu:starforged_chimerite_plate' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_hells', count: 70 },

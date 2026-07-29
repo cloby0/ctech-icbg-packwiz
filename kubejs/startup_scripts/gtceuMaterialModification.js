@@ -88,11 +88,12 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('veridium', 'aether_redux:veridium_ingot')
 
     // vinteum: MNA's own material, source-mod-native item is canonical for every form (same
-    // pattern as the Aether metals above). No nugget -- MNA doesn't ship one.
-    ingot('vinteum', 'mna:vinteum_ingot')
+    // pattern as the Aether metals above). No nugget -- MNA doesn't ship one. Pure element has
+    // no ingot -- mna:vinteum_ingot is an iron alloy, mapped to vinteum_iron instead.
     dust('vinteum', 'mna:vinteum_dust')
     rawOre('vinteum', 'mna:raw_vinteum')
     block('vinteum', 'mna:vinteum_block')
+    ingot('vinteum_iron', 'mna:vinteum_ingot')
 
     // Occultism's iesnium: unique to the mod, no gtceu duplicate. GT ore/macerator chain drives
     // acquisition (via the existing forge:ores/iesnium tag), all item forms stay occultism's own.
@@ -175,6 +176,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('soulium',   'mysticalagriculture:soulium_gemstone')
     block('soulium', 'mysticalagriculture:soulium_gemstone_block')
     dust('soulium',  'mysticalagriculture:soulium_dust')
+
+    // mana: Botania's own dust item is canonical, no gtceu duplicate.
+    dust('mana', 'botania:mana_powder')
 
     // ==== Malum ====
     ingot('hallowed_gold', 'malum:hallowed_gold_ingot')

@@ -7,15 +7,16 @@ ServerEvents.recipes(event => {
     // Old runic-altar weak_elementium_dust producer dropped: Initiate's Spirit Infusion route
     // (initiate.js, off gtceu:terrasteel_dust) already makes the same dust far cheaper. No
     // reason to keep a harder, less profitable duplicate recipe for the same output four tiers
-    // later. elven_concentrate below still resolves fine off the Initiate-tier supply. Per user
-    // direction 2026-07-28.
+    // later. Per user direction 2026-07-28.
 
+    // elven_concentrate input swapped off weak_elementium_dust (Initiate-tier, too far back) onto
+    // this tier's own base metal -- same superheated purified vinteum ingot feeding rubedo_touched_vinteum below.
     event.custom({
         "type": "botania:elven_trade",
         "ingredients": [
-            { "item": "kubejs:weak_elementium_dust" },
-            { "item": "kubejs:weak_elementium_dust" },
-            { "item": "kubejs:weak_elementium_dust" }
+            { "item": "mna:superheated_purified_vinteum_ingot" },
+            { "item": "mna:superheated_purified_vinteum_ingot" },
+            { "item": "mna:superheated_purified_vinteum_ingot" }
         ],
         "output": [
             { "item": "kubejs:elven_concentrate", "count": 2 }
@@ -129,7 +130,7 @@ ServerEvents.recipes(event => {
         'gtceu:gravitic_rubedo_rod', 'extrabotany:aerialite_ingot', 'gtceu:gravitic_rubedo_ingot'
     ])
     event.shapeless('kubejs:rubedo_channeling_vessel', [
-        'gtceu:gravitic_rubedo_ingot', 'kubejs:weak_elementium_dust', 'extrabotany:photonium_ingot'
+        'gtceu:gravitic_rubedo_ingot', 'kubejs:elven_concentrate', 'extrabotany:photonium_ingot'
     ])
     event.shapeless('kubejs:rubedo_ward_lattice', [
         'gtceu:gravitic_rubedo_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
@@ -139,6 +140,9 @@ ServerEvents.recipes(event => {
     // Arcanist's own material line. Materia kept verbatim from the mod's own rubedo recipe
     // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_rubedo.json).
     // Wizard Brain in stage 1: a worn Wisdom Stone is automated magical reasoning.
+    // Jar's own recipe stays otherwise loaded alongside ours (custom serializer, not overwritten
+    // by a new object -> id: removal required).
+    event.remove({ id: 'magichem:alchemical_sublimation/magichem/wisdom_stone_rubedo' })
     event.custom({
         type: 'magichem:sublimation',
         tier: 5,
@@ -162,9 +166,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 180,
                 components: [
-                    { item: 'extrabotany:aerialite_ingot' },
-                    { item: 'extrabotany:photonium_ingot' },
-                    { item: 'extrabotany:shadowium_ingot' }
+                    { item: 'magichem:ambrosia' },
+                    { item: 'magichem:fork_of_the_gulaporrigo' },
+                    { item: 'magichem:nectar' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_alcohol', count: 70 },

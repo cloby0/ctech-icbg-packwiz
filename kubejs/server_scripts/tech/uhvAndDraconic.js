@@ -62,19 +62,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembler('draconic_resonance_board_assembly')
-        .itemInputs(
-            '4x gtceu:neutronium_wafer',
-            '2x gtceu:draconium_foil',
-            '1x kubejs:dragon_heart_crystal',
-            '1x gtceu:awakened_draconium_foil'
-        )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
-        .itemOutputs('kubejs:draconic_resonance_board')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UHV])
-        .cleanroom(CleanroomType.CLEANROOM)
-
     event.recipes.gtceu.assembler('draconic_framework_casing_assembly')
         .itemInputs(
             '4x gtceu:draconic_framework_plate',
@@ -100,86 +87,5 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:draconic_infusion_chamber')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembly_line('draconic_processor_supercomputer_recipe')
-        .itemInputs(
-            '2x gtceu:tritanium_frame',
-            '2x kubejs:draconic_processor_assembly',
-            '4x kubejs:draconic_resonance_board',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_capacitor',
-            '32x gtceu:advanced_smd_transistor',
-            '32x gtceu:advanced_smd_resistor',
-            '32x gtceu:advanced_smd_inductor',
-            '64x gtceu:polybenzimidazole_foil',
-            '32x gtceu:ram_chip',
-            '16x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire',
-            '8x gtceu:europium_plate',
-            '2x kubejs:dragon_heart_crystal'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('gtceu:polybenzimidazole', 1152),
-            Fluid.of('kubejs:draconic_computation', 4000)
-        )
-        .itemOutputs('kubejs:draconic_processor_supercomputer')
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.circuit_assembler('draconic_processor_recipe')
-        .itemInputs(
-            '1x gtceu:neutronium_wafer',
-            '4x gtceu:draconium_foil',
-            '1x kubejs:dragon_heart_crystal',
-            '8x gtceu:advanced_smd_diode',
-            '8x gtceu:advanced_smd_capacitor',
-            '8x gtceu:advanced_smd_transistor',
-            '8x gtceu:advanced_smd_resistor'
-        )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
-        .itemOutputs('1x kubejs:draconic_processor')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.circuit_assembler('draconic_processor_assembly_recipe')
-        .itemInputs(
-            '2x kubejs:draconic_processor',
-            '2x gtceu:neutronium_wafer',
-            '4x gtceu:draconium_foil',
-            '1x gtceu:awakened_draconium_foil',
-            '16x gtceu:advanced_smd_diode',
-            '16x gtceu:advanced_smd_capacitor',
-            '16x gtceu:advanced_smd_transistor',
-            '16x gtceu:advanced_smd_resistor',
-            '8x gtceu:ram_chip'
-        )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
-        .itemOutputs('1x kubejs:draconic_processor_assembly')
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembly_line('draconic_processor_mainframe_recipe')
-        .itemInputs(
-            '2x gtceu:tritanium_frame',
-            '2x kubejs:draconic_processor_supercomputer',
-            '4x kubejs:draconic_resonance_board',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_capacitor',
-            '32x gtceu:advanced_smd_transistor',
-            '32x gtceu:advanced_smd_resistor',
-            '32x gtceu:advanced_smd_inductor',
-            '32x gtceu:ram_chip',
-            '16x gtceu:draconic_fluxite_double_wire',
-            '8x gtceu:awakened_draconium_plate',
-            '4x gtceu:chaos_crystal_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('kubejs:draconic_computation', 6000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 1000)
-        )
-        .itemOutputs('1x kubejs:draconic_processor_mainframe')
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.UEV])
 
 })

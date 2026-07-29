@@ -1,26 +1,72 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.alloy_smelter('lead_sourcite_alloy')
-        .itemInputs('2x gtceu:lead_dust', '1x gtceu:mana_dust')
-        .itemOutputs('3x gtceu:lead_sourcite_ingot')
-        .duration(15 * 20)
+    // Magic superconductor ladder: charge the tier's signature material with redstone into a
+    // conduit dust, then fuse the conduit with a real GT-tree superconductor compound of the
+    // same voltage tier (see gtceuMaterialRegistry.js for the full design note).
+    event.recipes.gtceu.mixer('manasteel_conduit_dust_mix')
+        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:manasteel_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.mixer('fulguromana_dust_mix')
+        .itemInputs('2x gtceu:manasteel_conduit_dust', '1x gtceu:manganese_phosphide_dust')
+        .itemOutputs('3x gtceu:fulguromana_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // mna:vinteum_ingot is really iron_ingot + vinteum_dust smelted (see gtceuMaterialRegistry.js).
+    event.recipes.gtceu.alloy_smelter('vinteum_iron_alloy')
+        .itemInputs('1x gtceu:iron_dust', '1x gtceu:vinteum_dust')
+        .itemOutputs('1x gtceu:vinteum_iron_ingot')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.mixer('terrasteel_conduit_dust_mix')
+        .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:terrasteel_conduit_dust')
+        .duration(100)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.mixer('hallowed_nickelate_dust_mix')
-        .itemInputs('1x gtceu:holy_silver_dust', '2x gtceu:nickel_dust')
-        .itemOutputs('3x gtceu:hallowed_nickelate_dust')
+    event.recipes.gtceu.mixer('verdantium_dust_mix')
+        .itemInputs('2x gtceu:terrasteel_conduit_dust', '1x gtceu:vanadium_dust', '1x gtceu:gallium_dust')
+        .itemOutputs('3x gtceu:verdantium_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.mixer('elementium_conduit_dust_mix')
+        .itemInputs('2x gtceu:elementium_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:elementium_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('elenbarite_dust_mix')
+        .itemInputs('2x gtceu:elementium_conduit_dust', '1x gtceu:mercury_barium_calcium_cuprate_dust')
+        .itemOutputs('3x gtceu:elenbarite_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.mixer('prima_ruridite_dust_mix')
-        .itemInputs('1x gtceu:prima_materia_dust', '2x gtceu:ruridit_dust')
-        .itemOutputs('3x gtceu:prima_ruridite_dust')
+    event.recipes.gtceu.mixer('gaia_conduit_dust_mix')
+        .itemInputs('2x gtceu:gaia_spirit_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:gaia_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.mixer('gaiobium_dust_mix')
+        .itemInputs('2x gtceu:gaia_conduit_dust', '1x gtceu:niobium_dust', '1x gtceu:titanium_dust')
+        .itemOutputs('3x gtceu:gaiobium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.mixer('hssg_manaferrite_dust_mix')
-        .itemInputs('3x gtceu:manasteel_dust', '1x gtceu:hssg_dust')
-        .itemOutputs('4x gtceu:hssg_manaferrite_dust')
+    event.recipes.gtceu.mixer('animus_conduit_dust_mix')
+        .itemInputs('2x gtceu:distilled_animus_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:animus_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.mixer('animarium_dust_mix')
+        .itemInputs('2x gtceu:animus_conduit_dust', '1x gtceu:samarium_iron_arsenic_oxide_dust')
+        .itemOutputs('3x gtceu:animarium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
@@ -30,21 +76,39 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('terranaquadite_dust_mix')
-        .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:enriched_naquadah_dust')
-        .itemOutputs('3x gtceu:terranaquadite_dust')
+    event.recipes.gtceu.mixer('chimerite_conduit_dust_mix')
+        .itemInputs('2x gtceu:starforged_chimerite_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:chimerite_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.mixer('chimerindium_dust_mix')
+        .itemInputs('2x gtceu:chimerite_conduit_dust', '1x gtceu:indium_tin_barium_titanium_cuprate_dust')
+        .itemOutputs('3x gtceu:chimerindium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('elven_americate_dust_mix')
-        .itemInputs('2x gtceu:elementium_dust', '1x gtceu:americium_dust')
-        .itemOutputs('3x gtceu:elven_americate_dust')
+    event.recipes.gtceu.mixer('rubedo_conduit_dust_mix')
+        .itemInputs('2x gtceu:gravitic_rubedo_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:rubedo_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    event.recipes.gtceu.mixer('gravidium_dust_mix')
+        .itemInputs('2x gtceu:rubedo_conduit_dust', '1x gtceu:uranium_rhodium_dinaquadide_dust')
+        .itemOutputs('3x gtceu:gravidium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.mixer('boundless_naquadrite_dust_mix')
-        .itemInputs('1x gtceu:gaia_spirit_dust', '2x gtceu:naquadria_dust')
-        .itemOutputs('3x gtceu:boundless_naquadrite_dust')
+    event.recipes.gtceu.mixer('ichor_conduit_dust_mix')
+        .itemInputs('2x gtceu:empyrean_ichor_dust', '1x gtceu:redstone_dust')
+        .itemOutputs('3x gtceu:ichor_conduit_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.mixer('empyrium_dust_mix')
+        .itemInputs('2x gtceu:ichor_conduit_dust', '1x gtceu:yttrium_barium_cuprate_dust')
+        .itemOutputs('3x gtceu:empyrium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
@@ -475,7 +539,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.chemical_reactor('gaia_flux_dust_synthesis')
-        .itemInputs('1x gtceu:boundless_naquadrite_dust', '1x gtceu:elementium_dust')
+        .itemInputs('1x gtceu:empyrium_dust', '1x gtceu:elementium_dust')
         .itemOutputs('2x kubejs:gaia_flux_dust')
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.UV])

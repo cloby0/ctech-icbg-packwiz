@@ -82,61 +82,55 @@ ServerEvents.recipes(event => {
         event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
     })
 
-    // MysticalAg difficulty-cliff fix, part 2 (chaos_essence) -- the actual wall, since this
-    // feeds prima_materia_ingot right below. Default ritual drops the four hard-required
-    // mysticalagriculture essences for four Blood Magic Demon Will types instead (one per
-    // element); a second alternate ritual keeps the four MysticalAg essences, costed
-    // cheaper/faster as the reward-for-investment route. mana_block x4 was never Ars-dependent,
-    // left unchanged in the default.
-    // tier 'afrit', not 'marid': marid can only be summoned with prima_materia_ingot (occultism.js
-    // gate.marid), which is crafted FROM chaos_essence -- marid tier here would be circular
-    // (no way to bind the first marid). afrit is already available from journeyman.js onward.
-    addOccultismRitual(event, {
-        name: 'chaos_essence',
-        tier: 'afrit',
-        output: 'kubejs:chaos_essence',
-        duration: 150,
-        ingredients: [
-            { item: 'gtceu:holy_silver_ingot' },
-            { item: 'bloodmagic:basemonstersoul_corrosive' },
-            { item: 'bloodmagic:basemonstersoul_steadfast' },
-            { item: 'bloodmagic:basemonstersoul' },
-            { item: 'bloodmagic:basemonstersoul_vengeful' },
-            { item: 'gtceu:mana_block' },
-            { item: 'gtceu:mana_block' },
-            { item: 'gtceu:mana_block' },
-            { item: 'gtceu:mana_block' }
+    // Prima Materia rework 2026-07-29: was pure Occultism ritual, zero MagiChem tie despite
+    // being the pack's explicit "classical alchemy" nod and MagiChem being the actual classical
+    // alchemy mod. Chaos Essence (the undifferentiated pre-elemental state) is now literally
+    // alchemically fabricated -- Circle of Fabrication runs the distillation_fabrication recipe
+    // type in reverse (materia -> item, same recipe Alembic uses item -> materia). Components
+    // are the 4 unseparated classical elements plus nigredo, the Magnum Opus's first/blackening
+    // stage -- real MagiChem essentia (magichem.md), not decorative.
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 0,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 1,
+        object: { item: 'kubejs:chaos_essence' },
+        components: [
+            { item: 'magichem:essentia_nigredo', count: 8 },
+            { item: 'magichem:essentia_fire', count: 4 },
+            { item: 'magichem:essentia_water', count: 4 },
+            { item: 'magichem:essentia_earth', count: 4 },
+            { item: 'magichem:essentia_air', count: 4 }
         ]
-    })
+    }).id('kubejs:distillation_fabrication/chaos_essence')
 
-    addOccultismRitual(event, {
-        name: 'chaos_essence_mysticalag',
-        tier: 'afrit',
-        output: 'kubejs:chaos_essence',
-        duration: 100,
-        ingredients: [
-            { item: 'gtceu:holy_silver_ingot' },
-            { item: 'mysticalagriculture:air_essence' },
-            { item: 'mysticalagriculture:earth_essence' },
-            { item: 'mysticalagriculture:water_essence' },
-            { item: 'mysticalagriculture:fire_essence' },
-            { item: 'gtceu:mana_block' },
-            { item: 'gtceu:mana_block' }
-        ]
+    // Old ritual's real gate (GT ingot + demon wills) moves here, onto the alchemical step
+    // instead of an Occultism ritual -- admixture_potential is Prima Materia's classical
+    // definition (pure undifferentiated potential), a real MagiChem admixture, not invented flavor.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:prima_materia_seed',
+        input: ['kubejs:chaos_essence', 'gtceu:holy_silver_ingot', 'magichem:admixture_potential'],
+        syphon: LP.SORCERER,
+        upgradeLevel: 4
     })
 
     // afrit_essence already used once in this file (resonant_gravitite_core above) -- a
     // second use here puts it in the Prima Materia recipe itself, this tier's signature material.
     // Uses afrit tier, not marid: prima_materia_ingot IS the marid gate item in occultism.js,
     // so gating its own ritual behind marid would be circular.
+    // admixture_philosophers_concoction is MagiChem's real Philosopher's Stone-precursor
+    // admixture -- the ritual is now the final occult binding of an already-alchemical material,
+    // not the sole source of "alchemy" flavor.
     addOccultismRitual(event, {
         name: 'prima_materia_ingot',
         tier: 'afrit',
         output: 'gtceu:prima_materia_ingot',
         duration: 150,
         ingredients: [
-            { item: 'kubejs:chaos_essence' },
+            { item: 'kubejs:prima_materia_seed' },
             { item: 'kubejs:element_attunement_stone' },
+            { item: 'magichem:admixture_philosophers_concoction' },
             { item: 'occultism:afrit_essence' }
         ]
     })
@@ -234,6 +228,9 @@ ServerEvents.recipes(event => {
     // Wisdom Stone: Albedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
     // Sorcerer's own material line. Materia kept verbatim from the mod's own albedo recipe
     // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_albedo.json).
+    // Jar's own recipe stays otherwise loaded alongside ours (custom serializer, not overwritten
+    // by a new object -> id: removal required).
+    event.remove({ id: 'magichem:alchemical_sublimation/magichem/wisdom_stone_albedo' })
     event.custom({
         type: 'magichem:sublimation',
         tier: 3,
@@ -257,9 +254,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 120,
                 components: [
-                    { item: 'kubejs:pyromatic_codex' },
-                    { item: 'kubejs:evocation_folio' },
-                    { item: 'kubejs:chaos_essence' }
+                    { item: 'magichem:radiant_rose' },
+                    { item: 'magichem:abjuration_necrotic' },
+                    { item: 'magichem:slumbering_idol' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_alcohol', count: 55 },
