@@ -29,6 +29,25 @@ ServerEvents.recipes(event => {
         tier: 1
     });
 
+    // bloodmagic:alchemytable's only other recipe (initiate.js) needs ambrosia_touched_elementite,
+    // an Initiate-tier intermediate -- but this tier's own Manasteel chain needs the table two
+    // tiers early. Cheap Apprentice-only bootstrap recipe, coexists with Initiate's harder one
+    // (same output, different recipe id, first one built wins).
+    event.shaped(
+        Item.of('bloodmagic:alchemytable', 1),
+        [
+            'IBI',
+            'GSG',
+            'IBI'
+        ],
+        {
+            I: '#forge:plates/iron',
+            B: 'bloodmagic:blankslate',
+            G: 'minecraft:glass',
+            S: 'aether:zanite_gemstone'
+        }
+    )
+
     // --- Manasteel: Apprentice signature material, zanite chain (replaces Luminessence here) ---
     // Magic spine stays GT-free: hammer-crush, hand combine, Alchemy Table infusion -- no GT machine.
     event.shapeless('kubejs:zanite_shard', ['aether:zanite_gemstone', '#forge:tools/hammers'])
@@ -58,16 +77,18 @@ ServerEvents.recipes(event => {
     ])
 
     // Aether gate (moved here from the old Journeyman slot): glowstone + Hobbyist's Ashen Ichor.
+    // Ward Lattice component: a portal frame's whole job is containing/stabilizing the gate.
     event.shaped(
         Item.of('aether:aether_portal_frame', 1),
         [
             'GIG',
             'IHI',
-            'GIG'
+            'GZG'
         ],
         {
             G: 'minecraft:glowstone',
             I: 'gtceu:ashen_ichor_ingot',
+            Z: 'kubejs:zanite_ward_lattice',
             H: '#forge:tools/hammers'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
