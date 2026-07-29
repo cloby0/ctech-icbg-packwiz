@@ -193,36 +193,37 @@ ServerEvents.recipes(event => {
 
     // Holy Silver survives as a parallel/gear material, not the tier signature (Elementium+
     // ambrosium is). luminessence_dust (dead) -> ambrosium_dust, consistent across this whole chain.
-    addEldrinAltarRecipe(event, {
+    // Alloy blend/refine chain, not ritual artifacts -- moved to the Manaweaving Altar.
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:holy_silver_blend',
         items: ['gtceu:silver_dust', 'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard', 'gtceu:ambrosium_dust', 'gtceu:ambrosium_dust'],
-        affinity: 'fire',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:triangle', 'mna:slash'],
+        tier: 2
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:holy_silver_dust',
         items: ['kubejs:holy_silver_blend', 'reliquary:mercy_cross'],
-        affinity: 'arcane',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:triangle', 'mna:backslash'],
+        tier: 2
     });
 
     event.remove({ id: 'gtceu:smelting/smelt_dust_holy_silver_to_ingot'})
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:holy_silver_ingot',
         items: ['gtceu:holy_silver_dust', '#kubejs:fire_essences'],
-        affinity: 'fire',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:triangle', 'mna:circle'],
+        tier: 2
     })
 
     // === Skyforged line: Aether/Valkyrie alt to Holy Silver, independent of holy silver ===
     // Skyjade + Valkyrie medals -> skyforged dust -> (auto furnace smelt) -> ingot + forms.
     // No Ars ingredients here -- helper call ported, ingredients unchanged.
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:skyforged_dust',
         items: ['deep_aether:skyjade', 'aether:victory_medal', 'aether:victory_medal', '#kubejs:air_essences', '#kubejs:water_essences'],
-        affinity: 'air',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:diamond', 'mna:backslash'],
+        tier: 2
     })
 
     // Combat endpoint: full Valkyrie set craftable from skyforged (medals already gate the alloy upstream)
@@ -249,18 +250,18 @@ ServerEvents.recipes(event => {
         tools.forEach(t => r.damageIngredient(Ingredient.of(t)))
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'minecraft:ender_pearl', count: 4 },
         items: ['kubejs:sacred_ambrosium_shard', '#kubejs:earth_essences', '#kubejs:earth_essences', '#kubejs:earth_essences'],
-        affinity: 'earth',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:square', 'mna:circle'],
+        tier: 2
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'reliquary:fortune_coin', count: 4 },
         items: ['kubejs:sacred_ambrosium_shard', '#kubejs:earth_essences', '#kubejs:earth_essences', '#kubejs:water_essences', '#kubejs:water_essences'],
-        affinity: 'water',
-        power: 2 * LP.INITIATE
+        patterns: ['mna:circle', 'mna:backslash'],
+        tier: 2
     })
 
     // --- Elementium: Initiate signature material, ambrosium chain ---

@@ -4,7 +4,7 @@
 	filename: "apprentice"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "gtceu:luminessence_dust"
+	icon: "botania:manasteel_ingot"
 	id: "57B17DD0492AB6CD"
 	order_index: 1
 	quest_links: [{
@@ -15,11 +15,32 @@
 	}]
 	quests: [
 		{
-			dependencies: ["2C9E18AE64E4E744"]
+			dependencies: ["1BBC77A8493BB220"]
 			description: [
-				"drop an &damethyst shard&r in the imbuement chamber with 750 source and it comes out as &5arcane essence&r -- the base reagent for iron's spells and half your future books."
+				"the &6manaweaving altar&r draws glyphs onto items sitting in its pedestals -- your main crafting bench from here on."
 				""
-				"tip: no pedestals needed. just source and patience."
+				"up to 9 items, up to 6 glyphs per craft. the recipe's in JEI."
+			]
+			icon: "mna:manaweaving_altar"
+			id: "5CCF5C4303843804"
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "glyphs and pedestals"
+			tasks: [{
+				id: "746B92DE3DCF18C2"
+				item: "mna:manaweaving_altar"
+				type: "item"
+			}]
+			title: "Manaweaving Altar"
+			x: -1.875d
+			y: -1.125d
+		}
+		{
+			dependencies: ["5CCF5C4303843804"]
+			description: [
+				"weave an &damethyst shard&r into &5arcane essence&r -- the base reagent for iron's spells and half your future books."
+				""
+				"just the altar, the shard, and two glyphs."
 			]
 			id: "7EA490DB5937F1B3"
 			size: 0.75d
@@ -30,60 +51,19 @@
 				type: "item"
 			}]
 			title: "Arcane Essence"
-			x: -1.875d
-			y: -1.125d
-		}
-		{
-			dependencies: [
-				"1BBC77A8493BB220"
-				"8F3A6C1D2B9E4057"
-			]
-			description: [
-				"the &6imbuement chamber&r soaks items in source until they become better items. glowstone, gold rods, quartz, and silver plates build it -- note the &7silver plates&r, that's the tech tree saying hello."
-				""
-				"tip: it pulls source from nearby jars automatically. keep them topped up."
-			]
-			id: "2C9E18AE64E4E744"
-			size: 0.75d
-			subtitle: "glorified magic bucket"
-			tasks: [{
-				id: "5F2B80E79832DD3E"
-				item: "ars_nouveau:imbuement_chamber"
-				type: "item"
-			}]
-			title: "Imbuement Chamber"
 			x: -0.75d
 			y: -1.125d
 		}
 		{
-			dependencies: ["7EA490DB5937F1B3"]
+			dependencies: ["1BBC77A8493BB220"]
 			description: [
-				"the &6scribes table&r turns clay and experience into ars glyphs. this pack's version wants archwood, gold screws, common ink, magic cloth, and a feather."
+				"the &6inscription table&r binds spell scrolls into books -- iron's spells' main crafting desk."
 				""
-				"tip: glyph costs scale with tier. keep XP on hand."
-			]
-			id: "46FA0C350A12D8A3"
-			size: 0.75d
-			subtitle: "where glyphs come from"
-			tasks: [{
-				id: "26123C1BAD62F2F2"
-				item: "ars_nouveau:scribes_table"
-				type: "item"
-			}]
-			title: "Scribes Table"
-			x: -3.0d
-			y: -0.375d
-		}
-		{
-			dependencies: ["7EA490DB5937F1B3"]
-			description: [
-				"the &6inscription table&r is iron's spells' answer to the scribes table -- this is where spell scrolls get bound into books."
-				""
-				"tip: build it next to the scribes table. they pair up."
+				"archwood, gold screws, common ink, magic cloth, a feather."
 			]
 			id: "23DADC343F70C96F"
 			size: 0.75d
-			subtitle: "the other spellcrafting desk"
+			subtitle: "the spellcrafting desk"
 			tasks: [{
 				id: "56DAA8BCEFF118C0"
 				item: "irons_spellbooks:inscription_table"
@@ -94,95 +74,72 @@
 			y: -1.875d
 		}
 		{
-			dependencies: ["46FA0C350A12D8A3"]
+			dependencies: ["46F3E5D16CC665B8"]
 			description: [
-				"magic cloth, a book, two arcane essences, and a &6gold foil&r bind the &6novice spell book&r. foil is a GT bender product -- the magic book takes a tech ingredient."
+				"blood magic's &4alchemy table&r binds several items at once, syphoning &6LP&r from a nearby blood altar to power the craft."
 				""
-				"tip: the book holds your glyphs and mana. keybind a slot so you don't lose it."
+				"the recipe's in JEI. keep your altar topped up before you start a batch."
 			]
-			id: "69097C5CA51C927E"
+			icon: "bloodmagic:alchemytable"
+			id: "1C4D9CB5510F47D0"
+			shape: "rsquare"
 			size: 0.75d
-			subtitle: "page one: don't point it at yourself"
+			subtitle: "several items, one bill"
 			tasks: [{
-				id: "3A2B038ED4115400"
-				item: "ars_nouveau:novice_spell_book"
+				id: "4704974828335B14"
+				item: "bloodmagic:alchemytable"
 				type: "item"
 			}]
-			title: "Novice Spell Book"
-			x: -4.125d
-			y: -0.375d
-		}
-		{
-			dependencies: [
-				"46F3E5D16CC665B8"
-				"1BBC77A8493BB220"
-				"8F3A6C1D2B9E4057"
-			]
-			description: [
-				"back to the cauldron: four glowstone dust, blaze powder, a fire essence, glow berries, and a diamond stirred into hot lava make &eglowing compound dust&r."
-				""
-				"tip: yes, the diamond is consumed."
-			]
-			id: "2128E321A9C4A125"
-			size: 0.75d
-			subtitle: "step two: add more glow"
-			tasks: [{
-				id: "6D51528FDBE84F0C"
-				item: "kubejs:glowing_compound_dust"
-				type: "item"
-			}]
-			title: "Glowing Compound Dust"
+			title: "Alchemy Table"
 			x: 0.0d
 			y: -1.125d
 		}
 		{
-			dependencies: [
-				"2128E321A9C4A125"
-				"2C9E18AE64E4E744"
-			]
+			dependencies: ["1C4D9CB5510F47D0"]
 			description: [
-				"soak the compound in the &6imbuement chamber&r to get &eimpure glimmering dust&r, then smelt that into small piles of luminessence."
+				"the tier's signature metal. hammer a &dzanite gemstone&r into a shard, weaken it with redstone, then bind the cracked shard to iron at the &4alchemy table&r with a pinch of &6magichem admixture&r."
 				""
-				"tip: cheap imbuement, no pedestals. batch it while doing anything else."
+				"drop the result in a &9mana pond&r for &6manasteel ingot&r. get comfortable making this -- it's everywhere from here on."
 			]
-			id: "486FF2D3B8C2D77D"
-			size: 0.75d
-			subtitle: "shiny, mostly gross"
+			icon: "botania:manasteel_ingot"
+			id: "66724F3FB8D5FB59"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
 			tasks: [{
-				id: "31661804FF454870"
-				item: "kubejs:impure_glimmering_dust"
+				id: "6B59B1376B0D613E"
+				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			title: "Impure Glimmering Dust"
+			title: "Manasteel"
 			x: 0.0d
 			y: -2.25d
 		}
 		{
-			dependencies: ["486FF2D3B8C2D77D"]
+			dependencies: ["66724F3FB8D5FB59"]
 			description: [
-				"&aluminessence&r is the foundational material of the magic tree's early game."
+				"glowstone and ashen ichor build the &6aether portal frame&r -- the gate to a second sky."
 				""
-				"16 glowstone dust, one imbuement, and some glowing compound later - you've got a single &aluminessence dust&r."
-				""
-				"it gates a lot of recipes. get used to making it."
+				"the aether has its own resources and its own dangers. worth the trip."
 			]
-			id: "68DAC01E93C6240E"
-			subtitle: "it glows, and it gates a lot"
+			id: "5732DF3D208DC50F"
+			size: 0.75d
+			subtitle: "a second sky"
 			tasks: [{
-				id: "2BB106EE5CBCD4A8"
-				item: "gtceu:luminessence_dust"
+				id: "31DAA8E71C21AD23"
+				item: "aether:aether_portal_frame"
 				type: "item"
 			}]
-			title: "Luminessence"
-			x: 0.0d
-			y: -3.5d
+			title: "Aether Portal Frame"
+			x: 1.5d
+			y: -2.25d
 		}
 		{
-			dependencies: ["68DAC01E93C6240E"]
+			dependencies: ["66724F3FB8D5FB59"]
 			description: [
-				"summon a &6djinni&r and bind its &bmanage machine&r job to the hexerei mixing cauldron or the ars nouveau imbuement chamber -- both expose a standard item-handler inventory, so the djinni can feed and empty them without you standing there."
+				"summon a &6djinni&r and bind its &bmanage machine&r job to the mixing cauldron or the manaweaving altar -- either exposes a standard item-handler inventory, so the djinni feeds and empties it without you standing there."
 				""
-				"required before journeyman: the source gem chain ahead eats dust like a machine line. it IS one."
+				"costs a manasteel ingot."
 			]
 			id: "5C2E9B7A4D1F6083"
 			subtitle: "hands-off crafting, finally"

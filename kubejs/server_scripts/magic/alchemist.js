@@ -35,11 +35,11 @@ ServerEvents.recipes(event => {
         power: LP.ALCHEMIST
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:metal_form_bucket',
         items: ['gtceu:concepts_bucket', 'gtceu:holy_silver_block'],
-        affinity: 'fire',
-        power: 2 * LP.ALCHEMIST
+        patterns: ['mna:triangle', 'mna:slash'],
+        tier: 3
     })
 
     // otherworld_essence is renewable via the Datura farming loop (occultism.js spirit_fire
@@ -81,35 +81,37 @@ ServerEvents.recipes(event => {
     event.shapeless('gtceu:lead_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'])
     event.shapeless('gtceu:aluminium_ingot', ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'])
 
-    addEldrinAltarRecipe(event, {
+    // Ore-sort family (abstract_metal_ingot + essence tags -> named metal) -- refine steps, not
+    // rituals. Moved to the Manaweaving Altar.
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:bismuth_ingot',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences', '#kubejs:water_essences'],
-        affinity: 'fire',
-        power: LP.ALCHEMIST
+        patterns: ['mna:triangle', 'mna:circle'],
+        tier: 3
     })
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'minecraft:copper_ingot',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences', '#kubejs:earth_essences'],
-        affinity: 'fire',
-        power: LP.ALCHEMIST
+        patterns: ['mna:triangle', 'mna:square'],
+        tier: 3
     })
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:silver_ingot',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences', '#kubejs:air_essences'],
-        affinity: 'water',
-        power: LP.ALCHEMIST
+        patterns: ['mna:circle', 'mna:diamond'],
+        tier: 3
     })
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:magnesium_dust',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences', '#kubejs:air_essences'],
-        affinity: 'earth',
-        power: LP.ALCHEMIST
+        patterns: ['mna:square', 'mna:diamond'],
+        tier: 3
     })
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'gtceu:holy_silver_ingot',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
-        affinity: 'water',
-        power: LP.ALCHEMIST
+        patterns: ['mna:circle', 'mna:diamond'],
+        tier: 3
     })
 
     // raw_mana -> source_gem: dead output, Source Gem retired pack-wide since 03-journeyman.md.

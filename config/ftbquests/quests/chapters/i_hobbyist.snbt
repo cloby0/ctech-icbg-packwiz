@@ -12,7 +12,7 @@
 		{
 			dependencies: ["1FA819FE418EBE16"]
 			description: [
-				"hexerei's &6mixing cauldron&r is your first magical workstation. all four elemental essences brew here -- the ars nouveau imbuement chamber recipes are gone."
+				"hexerei's &6mixing cauldron&r is your first magical workstation. fire charges, ashen ichor, and plenty else brew here across the early tree."
 				""
 				"needs a heat source underneath and the right liquid inside. the recipe's in JEI."
 			]
@@ -32,7 +32,7 @@
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"two fire essences plus one of each other essence brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
+				"two &cfire essentia&r plus one each of &9water&r/&2earth&r/&7air&r, plus blaze powder, coal, and occultism's &dotherworld essence&r, brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
 				""
 				"the tech tree reaches the nether through metallurgy. this skips all of it."
 			]
@@ -69,16 +69,16 @@
 		{
 			dependencies: ["46F3E5D16CC665B8"]
 			description: [
-				"every essence brews from ingredients matching its element -- &cfire&r is coals and flint in hot lava. the other three follow the same logic in their own liquids."
+				"magichem's &6alembic&r decomposes ordinary items into essentia -- coal, dirt, feathers, and the like break down into &cfire&r/&2earth&r/&7air&r/&9water&r essentia. wisdom 0, no wisdom stone needed, entry tier."
 				""
-				"brew spares. essences are the base of this whole tree."
+				"brew spares. essentia are the base of this whole tree."
 			]
 			id: "475DA94832CDDEB7"
 			subtitle: "who needs the periodic table"
 			tasks: [
 				{
 					id: "0B787DB01AADC412"
-					item: "ars_nouveau:fire_essence"
+					item: "magichem:essentia_fire"
 					type: "item"
 				}
 				{
@@ -87,10 +87,10 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(ars_nouveau:earth_essence)item(ars_nouveau:air_essence)item(ars_nouveau:water_essence))"
+							"ftbfiltersystem:filter": "or(item(magichem:essentia_earth)item(magichem:essentia_air)item(magichem:essentia_water))"
 						}
 					}
-					title: "Any Other Essence"
+					title: "Any Other Essentia"
 					type: "item"
 				}
 			]
@@ -124,9 +124,9 @@
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"essences bind into wearables. &bair&r essence sews an &6umbrella&r that slows your fall, &9water&r essence webs a pair of &6flippers&r, and &2earth&r essence roots the &6rooted boots&r."
+				"essentia bind into wearables. &bair&r essentia sews an &6umbrella&r that slows your fall, &9water&r essentia webs a pair of &6flippers&r, and &2earth&r essentia roots the &6rooted boots&r."
 				""
-				"the flippers and boots also need &ddubious dust&r from nameless trinkets. the umbrella just needs leather and a stick. craft any one."
+				"the flippers and boots also need &ddubious dust&r from nameless trinkets. the umbrella just needs leather, a stick, and wire cutters. craft any one."
 			]
 			id: "5B21D4E09A7F3C10"
 			subtitle: "the drip of the elements"
@@ -149,7 +149,7 @@
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"the &6copper spell book&r binds all four essences around a book, cased in copper plates."
+				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates."
 				""
 				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
 			]
@@ -169,11 +169,11 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
-				id: "ars_nouveau:wand"
+				id: "mna:manaweaver_wand"
 				tag: { }
 			}
 			description: [
-				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essences, and rituals."
+				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essentia, life essence, and rituals. three pillars carry the tree: &6mana & artifice&r (manaweaving/wands), &4blood magic&r (the LP economy), and &dmagichem&r (essentia/alembic)."
 				""
 				"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
 			]
@@ -188,6 +188,47 @@
 			title: "Magic!"
 			x: -1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1FA819FE418EBE16"]
+			description: [
+				"blood magic's &4blood altar&r turns life essence into &6LP&r (life points), the resource that fuels alchemy and infusion pack-wide. self-sacrifice with a ritual knife fills it at tier 0, no orb required yet."
+				""
+				"you'll be syphoning LP out of this altar for the rest of the tree."
+			]
+			icon: "bloodmagic:weakbloodorb"
+			id: "501D74B0BE102380"
+			shape: "rsquare"
+			subtitle: "the first altar"
+			tasks: [{
+				id: "411C5FF82F54BECD"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "First Blood"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["46F3E5D16CC665B8", "501D74B0BE102380"]
+			description: [
+				"the tier's signature metal. &carcane charcoal fragments&r (malum) plus redstone brew into &6ichor dust&r in the cauldron. blend in a pinch of &9vinteum dust&r (mana & artifice), then charge the blend at the &4blood altar&r into &6kindled ichor dust&r."
+				""
+				"smelt the kindled dust into a rough ingot, then finish it at malum's &dspirit altar&r with two infernal spirits bound -- that's &6ashen ichor&r, a real GT material from here on. shortcut once you hit journeyman: vinteum dust + arcane charcoal, no altar chain needed."
+			]
+			icon: "gtceu:ashen_ichor_ingot"
+			id: "46D4D92DC55B091D"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
+			tasks: [{
+				id: "02D4C5E13E757C05"
+				item: "gtceu:ashen_ichor_ingot"
+				type: "item"
+			}]
+			title: "Ashen Ichor"
+			x: 3.5d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Dip your toes into the arcane"]

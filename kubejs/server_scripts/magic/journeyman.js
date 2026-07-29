@@ -14,9 +14,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'enderstorage:ender_pouch'})
 
     // Magebloom crop/fiber/sieve: fiber's only source was Ars's own crop, which is a dead item.
-    // Flagging rather than inventing a replacement plant -- this is a real open design question
-    // (does the pack want a post-Ars fiber crop at all?), and magebloom_fiber still has dozens of
-    // uses in initiate.js/arsArmorer.js/sorcerer.js/alchemist.js that are out of scope here.
+    // Per user direction 2026-07-28: retired outright, no replacement crop. SilentGear's
+    // Magebloom Fiber material (silentgear_materials/magebloom_fiber.json) deleted, its
+    // silentcompat:magebloom_fiber tag had no other source. magebloom_sieve orphan lang/texture
+    // removed too (its only registered use).
     // Dropped: wheat_seeds -> magebloom_crop imbuement, and the magebloom_sieve craft that needed
     // magebloom_fiber (its only other consumer here was the Source Gem chain below, also dropped).
 
@@ -112,13 +113,11 @@ ServerEvents.recipes(event => {
     // hammer recipe off source_gem is dropped too -- mana already has GENERATE_PLATE, GT autogens
     // the plate from mana_gem directly, this hand-written recipe was always redundant.
 
-    // Crushing raw_mana into mana_dust still requires the Foliot Crusher spirit -- unrelated to
-    // Source Gem removal, mana is its own surviving GT material (see occultism.js summon_foliot_crusher gate).
-    event.custom({
-        type: 'occultism:crushing',
-        ingredient: { item: 'gtceu:raw_mana' },
-        result: { item: 'gtceu:mana_dust' },
-    }).id('kubejs:crushing/raw_mana_to_mana_dust')
+    // raw_vinteum crushing dropped here: it was transmuting into mana_dust instead of
+    // vinteum_dust, hijacking Occultism's crusher for something a crusher shouldn't do.
+    // raw_vinteum -> vinteum_dust is GT's own macerator autogen now (vinteum has .ore()).
+    // mana_dust (mana lost its ore vein, see gtceuMaterialRegistry.js) is sourced instead
+    // via a Manaweaving Altar refine off vinteum_dust -- see apprentice.js.
 
     // --- Terrasteel: Journeyman signature material, veridium chain ---
     // Magic spine stays GT-free: Occultism crushing (same pattern as raw_mana above), Spirit

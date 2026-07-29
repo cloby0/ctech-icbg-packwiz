@@ -60,13 +60,8 @@ StartupEvents.registry('item', event => {
 
     event.create('disorganized_metal_form')
 
-    event.create('florid_compound')
-    event.create('living_metalloid')
-
     event.create('weak_elementium_dust')
     event.create('elven_concentrate')
-    event.create('raw_elementite')
-    event.create('elementite_dust')
 
     event.create('vengeful_gaia_spirit')
     event.create('soul_of_gaia')
@@ -153,8 +148,6 @@ StartupEvents.registry('item', event => {
     event.create('hexed_mana_matrix')
 
     event.create('elven_source_lattice')
-
-    event.create('rune_of_frost')
 
     event.create('ostrum_hull_section')
     event.create('glacio_rocket_engine')

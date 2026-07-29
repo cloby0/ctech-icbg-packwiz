@@ -62,18 +62,19 @@ ServerEvents.recipes(event => {
     const elementFlavor = { fire: 'minecraft:netherrack', water: 'minecraft:prismarine_shard', earth: 'minecraft:dirt', air: 'minecraft:feather' }
 
     Object.keys(elementFlavor).forEach(element => {
-        addEldrinAltarRecipe(event, {
+        // Simple ingredient-swap crafts, not ritual-scale -- moved to the Manaweaving Altar.
+        addMnaManaweavingRecipe(event, {
             output: `mysticalagriculture:${element}_seeds`,
             items: ['minecraft:wheat_seeds', `#kubejs:${element}_essences`, `#kubejs:${element}_essences`, `#kubejs:${element}_essences`, elementFlavor[element]],
-            affinity: element,
-            power: LP.SORCERER
+            patterns: ['mna:square', 'mna:circle'],
+            tier: 2
         })
 
-        addEldrinAltarRecipe(event, {
+        addMnaManaweavingRecipe(event, {
             output: `mysticalagriculture:${element}_seeds`,
             items: ['minecraft:wheat_seeds', `#kubejs:${element}_essences`, `mysticalagriculture:${element}_agglomeratio`, `mysticalagriculture:${element}_agglomeratio`],
-            affinity: element,
-            power: LP.SORCERER / 2
+            patterns: ['mna:circle', 'mna:diamond'],
+            tier: 2
         })
 
         event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
@@ -137,18 +138,18 @@ ServerEvents.recipes(event => {
 
     // raw_mana -> source_gem: dead output, source material is gone. Dropped outright.
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'irons_spellbooks:pyrium_ingot', count: 4 },
         items: ['kubejs:chaos_essence', '#kubejs:fire_essences', '#kubejs:fire_essences', '#kubejs:air_essences', '#kubejs:air_essences'],
-        affinity: 'fire',
-        power: 2 * LP.SORCERER
+        patterns: ['mna:triangle', 'mna:diamond'],
+        tier: 2
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'minecraft:experience_bottle', count: 8 },
         items: ['kubejs:chaos_essence', '#kubejs:water_essences', '#kubejs:water_essences', '#kubejs:earth_essences', '#kubejs:earth_essences'],
-        affinity: 'water',
-        power: 2 * LP.SORCERER
+        patterns: ['mna:circle', 'mna:square'],
+        tier: 2
     })
 
     // --- Gaia Ingot: Sorcerer signature material, gravitite chain. Botania's ladder ends here. ---

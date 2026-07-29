@@ -2,19 +2,31 @@ ServerEvents.recipes(event => {
     // Imbuement Chamber, Scribe's Table, Novice Spell Book: all three craft Ars Nouveau blocks
     // that no longer exist once Ars is uninstalled. Nothing to port to; dropped outright.
 
-    addEldrinAltarRecipe(event, {
+    // Simple 1:1 refines don't need a ritual-scale altar cost -- moved to the Manaweaving Altar,
+    // MNA's actual primary crafting mechanic. Eldrin Altar reserved for late-midgame+ proper crafts.
+    addMnaManaweavingRecipe(event, {
         output: 'irons_spellbooks:arcane_essence',
         items: ['minecraft:amethyst_shard'],
-        affinity: 'arcane',
-        power: 2 * LP.APPRENTICE
+        patterns: ['mna:triangle', 'mna:slash'],
+        tier: 1
+    });
+
+    // mana lost its ore vein to vinteum (gtceuMaterialRegistry.js) so mana_dust needs a
+    // source of its own -- refine off vinteum_dust here instead of hijacking Occultism's
+    // crusher into transmuting raw_vinteum into a different material (see journeyman.js).
+    addMnaManaweavingRecipe(event, {
+        output: 'gtceu:mana_dust',
+        items: ['mna:vinteum_dust'],
+        patterns: ['mna:circle', 'mna:slash'],
+        tier: 1
     });
 
     event.remove({ id: 'biomeswevegone:golden_apple_from_green_apple' });
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: 'minecraft:golden_apple',
         items: ['minecraft:apple', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot'],
-        affinity: 'earth',
-        power: 2 * LP.APPRENTICE
+        patterns: ['mna:circle', 'mna:square'],
+        tier: 1
     });
 
     // --- Manasteel: Apprentice signature material, zanite chain (replaces Luminessence here) ---
@@ -60,11 +72,11 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'kubejs:kerogen', count: 4 },
         items: ['kubejs:primordial_organic_muck', '#kubejs:earth_essences'],
-        affinity: 'earth',
-        power: 2 * LP.APPRENTICE
+        patterns: ['mna:square', 'mna:backslash'],
+        tier: 1
     })
 
     event.custom({
@@ -94,18 +106,18 @@ ServerEvents.recipes(event => {
 
     // Reagent swapped from luminessence_dust (retired signature material) to this tier's own
     // cracked zanite intermediate. Pedestal items unchanged.
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'minecraft:experience_bottle', count: 4 },
         items: ['kubejs:cracked_zanite', '#kubejs:fire_essences', '#kubejs:fire_essences'],
-        affinity: 'fire',
-        power: 2 * LP.APPRENTICE
+        patterns: ['mna:triangle', 'mna:slash'],
+        tier: 1
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'hexcasting:charged_amethyst', count: 2 },
         items: ['gtceu:amethyst_dust', '#kubejs:air_essences'],
-        affinity: 'air',
-        power: 2 * LP.APPRENTICE
+        patterns: ['mna:triangle', 'mna:backslash'],
+        tier: 1
     })
 
     // Dominion Wand: dead Ars item, dead source_gem ingredient. Dropped, no replacement --

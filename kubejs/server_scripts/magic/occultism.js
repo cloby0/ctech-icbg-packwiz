@@ -86,8 +86,7 @@ ServerEvents.recipes(event => {
         gate.foliot,
     ], { item: 'occultism:miner_foliot_unspecialized' })
 
-    // Foliot crusher: makes the crusher spirit itself required, not just its output --
-    // see the source_gem crushing recipe added in journeyman.js, which only that spirit can run.
+    // Foliot crusher: makes the crusher spirit itself required, not just its output.
     // spirit_max_age 32400 is upstream's shipped value for this ritual; every other summon uses -1.
     summonRitual('summon_foliot_crusher', 'foliot', 'occultism:crush_tier1', 32400, 60, [
         { item: 'minecraft:raw_iron' },

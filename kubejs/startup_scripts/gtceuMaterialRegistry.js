@@ -87,6 +87,14 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('Dc')
         .isIsotope(true)
 
+    event.create('vinteum')
+        .protons(46)
+        .neutrons(170)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Vn')
+        .isIsotope(false)
+
     event.create('veridium')
         .protons(44)
         .neutrons(165)
@@ -101,14 +109,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .halfLifeSeconds(-1)
         .decayTo(null)
         .symbol('Ie')
-        .isIsotope(false)
-
-    event.create('gaia_spirit')
-        .protons(48)
-        .neutrons(180)
-        .halfLifeSeconds(-1)
-        .decayTo(null)
-        .symbol('Gs')
         .isIsotope(false)
 
     event.create('chaos_crystal')
@@ -151,11 +151,31 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('imperium')  .protons(36).neutrons(156).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
     event.create('supremium') .protons(36).neutrons(160).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
 
-    // life_essence: another isotope of mana, blood-red.
-    event.create('life_essence').protons(36).neutrons(164).halfLifeSeconds(-1).decayTo(null).symbol('ᛗ').isIsotope(true)
-
     // prosperity: its own element (the growth crystal that alloys with essences into the -ites).
     event.create('prosperity').protons(61).neutrons(84).halfLifeSeconds(-1).decayTo(null).symbol('Pz').isIsotope(false)
+
+    // Malum spirits: isotopes of one another (same protons/symbol, heavier per type). Composition-only
+    // -- no dust/gem/ingot form, these stay Malum-native items. See materials section below for the
+    // matching form-less Material entries (GTMaterials.get() needs a Material, not a bare Element,
+    // to resolve inside .components()).
+    event.create('infernal_spirit').protons(40).neutrons(140).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('earthen_spirit') .protons(40).neutrons(144).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('aqueous_spirit') .protons(40).neutrons(148).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('aerial_spirit')  .protons(40).neutrons(152).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('arcane_spirit')  .protons(40).neutrons(156).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('sacred_spirit')  .protons(40).neutrons(160).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('wicked_spirit')  .protons(40).neutrons(164).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+    event.create('eldritch_spirit').protons(40).neutrons(168).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
+
+    // Souls: afrit_essence (Occultism) + all 5 Blood Magic Demon Will types, isotopes of one shared
+    // "soul" element per user direction -- all soul-stuff is one element for composition purposes.
+    // Composition-only, same as the spirits above.
+    event.create('afrit_essence')     .protons(50).neutrons(170).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
+    event.create('demon_will_raw')        .protons(50).neutrons(174).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
+    event.create('demon_will_corrosive')  .protons(50).neutrons(178).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
+    event.create('demon_will_destructive').protons(50).neutrons(182).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
+    event.create('demon_will_steadfast')  .protons(50).neutrons(186).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
+    event.create('demon_will_vengeful')   .protons(50).neutrons(190).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
 
     // The four classical elements: the base MysticalAgriculture essences. Symbols are the alchemical
     // Unicode glyphs (won't render in-game's default font -- fine, cosmetic in JEI/tooltips only).
@@ -241,6 +261,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('silicon', 'calcium', 'beryllium')
         .washedIn('gtceu:mercury')
 
+    // MNA's real vein/dust/ingot line. Takes over the Aether GT ore vein 'mana' used to occupy --
+    // mana lost its .ore() (see below), vinteum fills that worldgen slot instead. Item forms
+    // setIgnored to mna:'s own (gtceuMaterialModification.js).
+    event.create('vinteum')
+        .ingot()
+        .ore()
+        .dust()
+        .element('vinteum')
+        .color(0x8FC7EE)
+        .secondaryColor(0xC9E6F7)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .addOreByproducts('quartz', 'redstone')
+        .washedIn('gtceu:mercury')
+
     event.create('veridium')
         .ingot()
         .ore()
@@ -270,21 +304,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components(c('2x gold'), c('1x redstone'), c('1x mana'))
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
+    // Liquid form is manafluid:mana (ManaFluid addon, mods/botania-mana-fluid.pw.toml) --
+    // GTCEu's Material.Builder has no way to point .fluid()/.liquid() at an already-registered
+    // Fluid (only FluidBuilder, which always builds a new one), so this material stays fluid-less
+    // and recipes needing liquid mana reference manafluid:mana / manafluid:mana_bucket directly.
+    // No ore vein -- vinteum took over the Aether worldgen slot this used to occupy. Dust-only.
     event.create('mana')
-        .gem()
-        .ore()
+        .dust()
         .element('mana')
-        .color(0xAE44E2)
-        .secondaryColor(0xE244C8)
-        .iconSet(GTMaterialIconSet.QUARTZ)
-        .flags(
-            GTMaterialFlags.GENERATE_LENS,
-            GTMaterialFlags.NO_ORE_SMELTING,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_PLATE
-        )
-        .addOreByproducts('amethyst', 'lapis', 'luminessence')
-        .washedIn('gtceu:mercury')
+        .color(0x6FA0C4)
+        .secondaryColor(0xA9CBE0)
+        .iconSet(GTMaterialIconSet.DULL)
 
     event.create('holy_silver')
         .ingot()
@@ -316,7 +346,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xb5fffc)
         .secondaryColor(0x1d1eb0)
         .ingot()
-        .components(c('1x prima_materia'), c('2x mana'))
+        // From the real recipe (apprentice.js): zanite_gemstone -> zanite_shard -> +2x redstone ->
+        // cracked_zanite -> +1x iron_ingot (+ magichem:admixture_energy, not a GT material) ->
+        // zanite_laced_iron -> Mana Pool (mana cost, not an item) -> Manasteel. Was
+        // 1x prima_materia + 2x mana -- prima_materia is Sorcerer-tier, backwards for Apprentice,
+        // and neither was ever actually in this recipe.
+        .components(c('1x zanite'), c('2x redstone'), c('1x iron'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -330,7 +365,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x55f609)
         .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
-        .components(c('3x manasteel'), c('2x mana'))
+        // From the real recipe (journeyman.js): veridium_ingot -> veridium_filings -> +4x Earthen
+        // Spirit -> verdant_charged_filings -> +1x manasteel_block + magichem:essentia_verdant
+        // (not a GT material, MagiChem excluded per user direction) -> verdant_grafted_manasteel
+        // -> Terra Plate -> Terrasteel.
+        .components(c('1x manasteel'), c('1x veridium'), c('4x earthen_spirit'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -343,7 +382,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
-        .components(c('2x terrasteel'), c('1x luminessence'))
+        // From the real recipe (initiate.js): gtceu:terrasteel_dust -> +2x Aqueous Spirit ->
+        // weak_elementium_dust; + gtceu:ambrosium_dust + magichem:essentia_precious (not a GT
+        // material, MagiChem excluded per user direction) -> ambrosia_touched_elementite -> Elven
+        // Trade -> Elementium. The file's own comment (initiate.js:268) explicitly says skyjade is
+        // NOT sourced here -- it has its own separate Skyforged chain; the design-doc draft that
+        // suggested skyjade here was never actually implemented. Was 2x terrasteel + 1x
+        // luminessence (stale Ars-era link).
+        .components(c('1x terrasteel'), c('1x ambrosium'), c('2x aqueous_spirit'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -355,8 +401,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('gaia_spirit')
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
-        .element('gaia_spirit')
         .ingot()
+        // From the real recipe (sorcerer.js): gravitite_ingot -> gravitite_shavings ->
+        // +magichem:admixture_mountains (not a GT material) -> bound_gravitite ->
+        // +botania:life_essence (real item, not a registered GT material) -> gravity_bound_life_essence
+        // -> Terra Plate -> Gaia Ingot. Only gravitite maps to a registered GT material.
+        .components(c('1x gravitite'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -1003,6 +1053,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xF2E9C9).secondaryColor(0x8A6FD1)
         .iconSet(GTMaterialIconSet.SHINY)
+        // From the real recipe (sage.js): bloodmagic:ingot_hellforged + botania:gaia_ingot ->
+        // hallowed_remnant; + mna:greater_mote_arcane -> wellspring_bound_remnant; + ritual with
+        // gtceu:ashen_ichor_ingot + occultism:soul_gem -> empyrean_core -> smelt -> ingot.
+        // gaia_spirit (-> botania:gaia_ingot) and ashen_ichor are the only registered GT materials
+        // actually in this chain; hellforged/greater_mote/soul_gem aren't GT materials.
+        .components(c('1x gaia_spirit'), c('1x ashen_ichor'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -1017,6 +1073,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x7A1F3D).secondaryColor(0xD4AF37)
         .iconSet(GTMaterialIconSet.SHINY)
+        // From the real recipe (arcanist.js): mna:superheated_purified_vinteum_ingot (-> vinteum)
+        // + magichem:essentia_rubedo (not a GT material) -> rubedo_touched_vinteum; +
+        // bloodmagic:sand_hellforged (not one of the 5 Demon Will types, not representable) ->
+        // gravitic_residue; + occultism:afrit_essence (-> afrit_essence) -> bound_gravitic_core.
+        .components(c('1x vinteum'), c('1x afrit_essence'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -1030,6 +1091,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xB23A1F).secondaryColor(0x4A150A)
         .iconSet(GTMaterialIconSet.ROUGH)
+        // From the real recipe (hobbyist.js): 4x malum:arcane_charcoal_fragment + 4x redstone ->
+        // ichor dust; + mna:vinteum_dust (-> vinteum) -> kindled ichor; + 2x Infernal Spirit at
+        // the Spirit Altar -> ingot.
+        .components(c('1x carbon'), c('1x redstone'), c('1x vinteum'), c('2x infernal_spirit'))
         .blastTemp(1400, "low", GTValues.VA[GTValues.ULV], 400)
         .flags(GTMaterialFlags.GENERATE_ROD)
 
@@ -1116,15 +1181,31 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('imperium')  .dust().element('imperium')  .color(0x5FC9E8).iconSet(GTMaterialIconSet.DULL)
     event.create('supremium') .dust().element('supremium') .color(0xE23B3B).iconSet(GTMaterialIconSet.DULL)
 
-    // life_essence: isotope of mana, dust form. Blood-red.
-    event.create('life_essence').dust().element('life_essence').color(0x8B0000).iconSet(GTMaterialIconSet.DULL)
-
     // The four classical element essences: base MA essences, dust form (the _essence item IS the dust).
     // Each carries its own classical element (fire/water/earth/air, alchemical-symbol elements).
     event.create('fire_essence') .dust().element('fire') .color(0xD63A1F).iconSet(GTMaterialIconSet.DULL)
     event.create('water_essence').dust().element('water').color(0x2F7FE0).iconSet(GTMaterialIconSet.DULL)
     event.create('earth_essence').dust().element('earth').color(0x6E4A2A).iconSet(GTMaterialIconSet.DULL)
     event.create('air_essence')  .dust().element('air')  .color(0xF2E34A).iconSet(GTMaterialIconSet.DULL)
+
+    // Malum spirits + souls (afrit_essence, Demon Will types): composition-only Materials, no
+    // dust/gem/ingot form -- these stay Malum/Occultism/Blood Magic-native items. Registered purely
+    // so real recipe steps that consume them can show up truthfully in another material's
+    // .components() (GTMaterials.get() needs an actual Material, a bare Element isn't enough).
+    event.create('infernal_spirit').element('infernal_spirit')
+    event.create('earthen_spirit').element('earthen_spirit')
+    event.create('aqueous_spirit').element('aqueous_spirit')
+    event.create('aerial_spirit').element('aerial_spirit')
+    event.create('arcane_spirit').element('arcane_spirit')
+    event.create('sacred_spirit').element('sacred_spirit')
+    event.create('wicked_spirit').element('wicked_spirit')
+    event.create('eldritch_spirit').element('eldritch_spirit')
+    event.create('afrit_essence').element('afrit_essence')
+    event.create('demon_will_raw').element('demon_will_raw')
+    event.create('demon_will_corrosive').element('demon_will_corrosive')
+    event.create('demon_will_destructive').element('demon_will_destructive')
+    event.create('demon_will_steadfast').element('demon_will_steadfast')
+    event.create('demon_will_vengeful').element('demon_will_vengeful')
 
     // prosperity: the growth gem. Ore vein in the Aether (aetherWorldgen.js); rawOre = prosperity_shard.
     event.create('prosperity')
@@ -1236,6 +1317,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x2E3A87).secondaryColor(0xB8C8FF)
         .iconSet(GTMaterialIconSet.SHINY)
+        // From the real recipe (thaumaturge.js): mna:chimerite_gem + magichem:admixture_light
+        // (neither a GT material) + bloodmagic:basemonstersoul_vengeful (-> demon_will_vengeful).
+        .components(c('1x demon_will_vengeful'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
@@ -1249,6 +1333,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x8A4FD1).secondaryColor(0x4A2570)
         .iconSet(GTMaterialIconSet.SHINY)
+        // From the real recipe (alchemist.js): mna:animus_dust + magichem:essentia_arcane (neither
+        // a GT material) + bloodmagic:basemonstersoul_destructive (-> demon_will_destructive) +
+        // minecraft:soul_sand + minecraft:magma_cream (neither a GT material either).
+        .components(c('1x demon_will_destructive'))
         .blastTemp(4200, "high", GTValues.VA[GTValues.IV], 1000)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,

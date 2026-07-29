@@ -87,6 +87,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
     ingot('veridium', 'aether_redux:veridium_ingot')
 
+    // vinteum: MNA's own material, source-mod-native item is canonical for every form (same
+    // pattern as the Aether metals above). No nugget -- MNA doesn't ship one.
+    ingot('vinteum', 'mna:vinteum_ingot')
+    dust('vinteum', 'mna:vinteum_dust')
+    rawOre('vinteum', 'mna:raw_vinteum')
+    block('vinteum', 'mna:vinteum_block')
+
     // Occultism's iesnium: unique to the mod, no gtceu duplicate. GT ore/macerator chain drives
     // acquisition (via the existing forge:ores/iesnium tag), all item forms stay occultism's own.
     assumptionator('iesnium', 'occultism')

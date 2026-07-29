@@ -135,7 +135,7 @@
 "gtceu.terra_agglomeration": "Terra Agglomeration",
 
 "gtceu.jei.ore_vein.voidmetal_vein_end": "End Void Metal Vein",
-"gtceu.jei.ore_vein.source_gem_vein": "Aether Source Gem Vein",
+"gtceu.jei.ore_vein.vinteum_vein": "Aether Vinteum Vein",
 "gtceu.jei.ore_vein.silver_vein": "Aether Silver Vein",
 "gtceu.jei.ore_vein.mithril_vein": "Aether Mithril Vein",
 "gtceu.jei.ore_vein.skyjade_vein": "Aether Skyjade Vein",
@@ -208,6 +208,21 @@
 
 "gtceu.jei.ore_vein.prosperity_vein_ae": "Prosperity Vein",
 "gtceu.jei.ore_vein.crimson_iron_vein_nether": "Nether Crimson Iron Vein",
-"gtceu.jei.ore_vein.azure_silver_vein_end": "End Azure Silver Vein"
+"gtceu.jei.ore_vein.azure_silver_vein_end": "End Azure Silver Vein",
+
+"material.gtceu.mana": "Mana",
+"material.gtceu.vinteum": "Vinteum",
+"element.gtceu.vinteum": "Vinteum",
+"material.gtceu.ashen_ichor": "Ashen Ichor",
+"material.gtceu.distilled_animus": "Distilled Animus",
+"material.gtceu.starforged_chimerite": "Starforged Chimerite",
+"material.gtceu.gravitic_rubedo": "Gravitic Rubedo",
+"material.gtceu.empyrean_ichor": "Empyrean Ichor",
+"material.gtceu.iesnium": "Iesnium",
+"element.gtceu.iesnium": "Iesnium",
+"material.gtceu.fire_essence": "Essence of Fire",
+"material.gtceu.water_essence": "Essence of Water",
+"material.gtceu.earth_essence": "Essence of Earth",
+"material.gtceu.air_essence": "Essence of Air"
 
 }

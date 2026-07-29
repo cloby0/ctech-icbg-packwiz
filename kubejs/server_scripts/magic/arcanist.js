@@ -22,24 +22,15 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // otherworld_essence recurring here, same renewable-resource logic as the Alchemist
-    // manasteel chain -- no spirit-tier ceiling, works as an ongoing Occultism tax.
-    // luminessence_dust (dead) swapped for this tier's own rubedo-touched vinteum -- it fires
-    // earlier in this file than elven_source_lattice below (which gets the later, more-processed
-    // gravitic residue instead), matching the design spec's ordering caveat.
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:elementite_dust',
-        items: ['kubejs:elven_concentrate', '#kubejs:water_essences', '#kubejs:air_essences', 'kubejs:rubedo_touched_vinteum', 'occultism:otherworld_essence'],
-        affinity: 'air',
-        power: LP.ARCANIST
-    })
-
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:raw_elementite',
-        items: ['kubejs:elementite_dust', 'gtceu:abstract_metal_ingot'],
-        affinity: 'air',
-        power: LP.ARCANIST
-    })
+    // elementite_dust -> raw_elementite -> elementium_ingot smelt dropped entirely: Initiate's
+    // elven_trade route (3x ambrosia_touched_elementite -> 2x elementium_ingot) already makes
+    // elementium cheaper, with no exclusive-to-Arcanist mechanic backing this route (same
+    // addEldrinAltarRecipe/Manaweaving Altar helpers as everywhere else) and no bulk advantage
+    // (this chain burns rubedo_touched_vinteum -- an Arcanist SIGNATURE intermediate -- for just
+    // 1x elementium_ingot, worse than Initiate's cheap 3-dust combine for 2x). Per user direction
+    // 2026-07-28: cut unless a later-tier route is genuinely cheaper/bulkier or handler-exclusive;
+    // this was neither. elven_concentrate itself stays -- still feeds elven_source_lattice/
+    // pixie_dust/dragonstone below.
 
     // elven_source_lattice: dead ars_nouveau:source_gem x2 swapped for this tier's own new
     // intermediate, 2x gravitic residue.
@@ -52,21 +43,20 @@ ServerEvents.recipes(event => {
 
     // raw_mana -> source_gem x5: dead reagent and output. Dropped outright, no port needed.
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'botania:pixie_dust', count: 3 },
         items: ['botania:mana_pearl', 'kubejs:elven_concentrate', 'kubejs:elven_concentrate', '#kubejs:air_essences', '#kubejs:air_essences'],
-        affinity: 'air',
-        power: LP.ARCANIST
+        patterns: ['mna:star', 'mna:diamond'],
+        tier: 4
     })
 
-    addEldrinAltarRecipe(event, {
+    addMnaManaweavingRecipe(event, {
         output: { item: 'botania:dragonstone', count: 2 },
         items: ['botania:mana_diamond', 'kubejs:elven_concentrate', 'kubejs:elven_concentrate', '#kubejs:earth_essences', '#kubejs:water_essences'],
-        affinity: 'earth',
-        power: LP.ARCANIST
+        patterns: ['mna:square', 'mna:diamond'],
+        tier: 4
     })
 
-    event.smelting("botania:elementium_ingot", "kubejs:raw_elementite")
 
     // --- Gravitic Rubedo: Arcanist signature material ---
     // Magic spine stays GT-free: vanilla combine, real Blood Magic Alchemy Table, real Occultism

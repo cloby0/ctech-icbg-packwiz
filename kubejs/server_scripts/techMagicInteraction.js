@@ -385,7 +385,7 @@ ServerEvents.recipes(event => {
         .EUt(-32)
 
     event.recipes.gtceu.chemical_reactor('elven_concentrate_synthesis')
-        .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_mana')
+        .itemInputs('3x kubejs:weak_elementium_dust', '1x gtceu:raw_vinteum')
         .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
         .itemOutputs('2x kubejs:elven_concentrate')
         .duration(30 * 20)

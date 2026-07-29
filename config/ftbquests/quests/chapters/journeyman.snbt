@@ -4,12 +4,12 @@
 	filename: "journeyman"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "ars_nouveau:source_gem"
+	icon: "botania:terrasteel_ingot"
 	id: "678B455094A57005"
 	order_index: 2
 	quest_links: [{
 		id: "274881337E63AA77"
-		linked_quest: "68DAC01E93C6240E"
+		linked_quest: "66724F3FB8D5FB59"
 		x: 0.0d
 		y: 0.0d
 	}]
@@ -17,123 +17,47 @@
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&dmagebloom&r comes from the imbuement chamber -- archwood planks and luminessence on pedestals, 2500 source. farm it: the fiber feeds the sieve below and half of ars' gear."
+				"&2veridium ore&r generates in the aether as a proper GT-style ore. mine plenty -- this tier's signature chain runs on it."
 			]
-			id: "74E79BEE176EA828"
+			icon: "gtceu:raw_veridium"
+			id: "2BDE0042C9B10FEF"
 			size: 0.75d
-			subtitle: "it blooms, magically"
-			tasks: [{
-				id: "2D021DD247072229"
-				item: "ars_nouveau:magebloom_crop"
-				type: "item"
-			}]
-			title: "Magebloom"
-			x: -0.375d
-			y: -1.875d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			description: [
-				"&3source ore&r generates in the aether as a proper GT-style ore. mine plenty -- the gem chain ahead eats dust like a machine line, because it's one."
-				""
-				"tip: crush the raw ore with the ars &dcrush&r effect for source dust. no macerator required."
-			]
-			id: "42292FB8905CAE54"
-			size: 0.75d
-			subtitle: "source you have to mine"
+			subtitle: "the aether's structural ore"
 			tasks: [{
 				count: 8L
-				id: "39ACF8532ACB550A"
-				item: "gtceu:raw_source"
+				id: "3C725871626807FB"
+				item: "gtceu:raw_veridium"
 				type: "item"
 			}]
-			title: "Vis a Vis"
+			title: "Raw Veridium"
 			x: 0.375d
 			y: -1.875d
 		}
 		{
-			dependencies: ["42292FB8905CAE54"]
+			dependencies: ["2BDE0042C9B10FEF"]
 			description: [
-				"imbue &3source dust&r with a &dmagebloom sieve&r sitting on the pedestal to refine it into &epure source gem dust&r."
+				"the tier's signature metal. crush a &2veridium ingot&r into filings, charge them at the spirit altar with four earthen spirits, then bind the result to a &9manasteel block&r at the alchemy table with a pinch of &6magichem essentia&r."
 				""
-				"tip: the sieve isn't consumed. one sieve, infinite sifting."
+				"finish it on a &9terra plate&r for &6terrasteel ingot&r. this one carries you through the rest of the tree."
 			]
-			id: "08A706FAA18260F5"
-			size: 0.75d
-			subtitle: "getting somewhere"
+			icon: "botania:terrasteel_ingot"
+			id: "42FDEBEBA7998889"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
 			tasks: [{
-				id: "2178DEC9F9795184"
-				item: "kubejs:pure_source_gem_dust"
+				id: "6BCDF02D7C5639D8"
+				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			title: "Source Gem Dust, Attempt 1"
-			x: 0.75d
-			y: -2.625d
-		}
-		{
-			dependencies: [
-				"08A706FAA18260F5"
-				"6F0175765720EE51"
-			]
-			description: [
-				"run your &epure source gem dust&r through the &3magebloom sieve&r for another pass."
-				""
-				"you're almost at a proper &asource gem&r."
-			]
-			id: "02865F6285633253"
-			size: 0.75d
-			subtitle: "getting there, for real this time"
-			tasks: [{
-				id: "3AE6D13DDE3FE740"
-				item: "kubejs:pure_source_gem_dust"
-				type: "item"
-			}]
-			title: "Source Gem Dust, Attempt 2"
+			title: "Terrasteel"
 			x: 0.0d
-			y: -4.125d
+			y: -3.0d
 		}
 		{
-			dependencies: ["02865F6285633253"]
+			dependencies: ["42FDEBEBA7998889"]
 			description: [
-				"pure dust plus a &cfire essence&r on the pedestal imbues into a &erough source gem&r. 2500 source per gem -- keep those jars full."
-			]
-			id: "7363CD337C4652D8"
-			size: 0.75d
-			subtitle: "almost a gem"
-			tasks: [{
-				id: "4879E5ABA7CFBCD2"
-				item: "kubejs:rough_source_gem"
-				type: "item"
-			}]
-			title: "Rough Source Gem"
-			x: 0.0d
-			y: -5.25d
-		}
-		{
-			dependencies: ["7363CD337C4652D8"]
-			description: [
-				"&asource gems&r are everywhere in the magic line. they power the &3enchanting apparatus&r, fuel the &3imbuement chamber&r, and show up in most mid-to-late magic crafting."
-				""
-				"the last step: polish the rough gem with create &6sandpaper&r. yes, sandpaper."
-				""
-				"you'll be making a lot of these. start automating early."
-			]
-			id: "06C1B3D271B8BFCF"
-			size: 1.0d
-			subtitle: "the cornerstone of arcane industry"
-			tasks: [{
-				id: "0218DF052D48973B"
-				item: "ars_nouveau:source_gem"
-				type: "item"
-			}]
-			title: "Source Gem"
-			x: 0.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["06C1B3D271B8BFCF"]
-			description: [
-				"summon an &6afrit&r and bind it to a crusher setup. required before initiate -- holy silver processing chews through material at a pace manual crushing can't keep up with."
+				"summon an &6afrit&r and bind it to a crusher setup. required before initiate -- material processing ahead chews through more than manual crushing can keep up with."
 			]
 			id: "3D7B1E9C6A2F5091"
 			subtitle: "the crushing gets real"
@@ -145,7 +69,7 @@
 			}]
 			title: "Afrit Spirit"
 			x: 1.5d
-			y: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["557FF11A5C0306BC"]
@@ -169,7 +93,7 @@
 		{
 			dependencies: ["33704DE3C564BD46"]
 			description: [
-				"&eambrosium&r is the aether's glowing all-purpose rock. here it's a real ore line -- and the feedstock for the sanctified chain to the right."
+				"&eambrosium&r is the aether's glowing all-purpose rock. here it's a real ore line -- and the feedstock for what's ahead."
 			]
 			id: "557FF11A5C0306BC"
 			size: 0.75d
@@ -183,44 +107,6 @@
 			title: "Raw Ambrosium"
 			x: 1.125d
 			y: -1.125d
-		}
-		{
-			dependencies: ["74E79BEE176EA828"]
-			description: [
-				"&dmagebloom fiber&r woven around &7carved stone&r makes the &6magebloom sieve&r -- the catalyst that sits on a pedestal and filters source dust into something worth keeping."
-			]
-			id: "6F0175765720EE51"
-			size: 0.75d
-			subtitle: "yes, really, a sieve"
-			tasks: [{
-				id: "723752AC62DE4355"
-				item: "kubejs:magebloom_sieve"
-				type: "item"
-			}]
-			title: "Magebloom Sieve"
-			x: -0.75d
-			y: -2.625d
-		}
-		{
-			dependencies: ["3AE23124DDE87034"]
-			description: [
-				"the &asacred ambrosium shard&r unlocks access to &3ender storage&r - cross-dimensional item and fluid storage."
-				""
-				"&3ender chests&r, &3ender tanks&r, and &3ender pouches&r all share inventory across any distance."
-				""
-				"useful now. essential later."
-			]
-			id: "532B8F3CF596352D"
-			size: 0.75d
-			subtitle: "the aether's gift to the crafting table"
-			tasks: [{
-				id: "7A6E829F60A5992F"
-				item: "kubejs:sacred_ambrosium_shard"
-				type: "item"
-			}]
-			title: "Sacred Ambrosium Shard"
-			x: 2.625d
-			y: -2.625d
 		}
 		{
 			dependencies: ["33704DE3C564BD46"]
@@ -257,11 +143,14 @@
 			y: -1.125d
 		}
 		{
-			dependencies: ["08B0AB8D3C90EB10"]
+			dependencies: [
+				"08B0AB8D3C90EB10"
+				"2BDE0042C9B10FEF"
+			]
 			description: [
-				"imbue the enchanted gem with two &asource gems&r on pedestals to get a &9resonant zanite crystal&r."
+				"bind the enchanted gem to a spirit-attuned crystal and a pair of verdant filings at the spirit altar to get a &9resonant zanite crystal&r."
 				""
-				"tip: resonant crystals imbue onward into &ccinder essence&r (fire pedestals) or &barcane ingots&r (air pedestals) -- your bulk route into iron's spells materials."
+				"tip: resonant crystals bind onward into &ccinder essence&r (fire) or &barcane ingots&r (air) -- your bulk route into iron's spells materials."
 			]
 			id: "45BDF6BE6B2DD0CB"
 			size: 0.75d
@@ -276,7 +165,7 @@
 			y: -1.875d
 		}
 		{
-			dependencies: ["532B8F3CF596352D"]
+			dependencies: ["557FF11A5C0306BC"]
 			description: [
 				"one inventory, every dimension. dye the three wool pads to make separate channels."
 				""
@@ -295,7 +184,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["532B8F3CF596352D"]
+			dependencies: ["557FF11A5C0306BC"]
 			description: [
 				"same trick, fluids. pump lava in at the nether, drain it at your base."
 			]
@@ -312,7 +201,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["532B8F3CF596352D"]
+			dependencies: ["557FF11A5C0306BC"]
 			description: [
 				"the pouch opens its matching ender chest from anywhere. mining trips deposit straight home."
 				""
@@ -331,26 +220,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["532B8F3CF596352D"]
-			description: [
-				"the &6storage lectern&r shows every linked chest in one searchable screen. it's ars' answer to a storage network, and it's cheap to build."
-				""
-				"tip: link chests with the &ddominion wand&r. range matters -- keep it central."
-			]
-			id: "7FBC73B3CE27E7BB"
-			size: 0.75d
-			subtitle: "the arcane equivalent of a filing cabinet"
-			tasks: [{
-				id: "44338EC6F52099DE"
-				item: "ars_nouveau:storage_lectern"
-				type: "item"
-			}]
-			title: "Storage Lectern"
-			x: 1.875d
-			y: -3.0d
-		}
-		{
-			dependencies: ["68DAC01E93C6240E"]
+			dependencies: ["33704DE3C564BD46"]
 			description: [
 				"the &6lantern of paranoia&r auto-places torches in dark spots around you as you walk. cave lighting without the wrist strain."
 			]
@@ -369,7 +239,7 @@
 			y: 1.125d
 		}
 		{
-			dependencies: ["68DAC01E93C6240E"]
+			dependencies: ["33704DE3C564BD46"]
 			description: [
 				"the &6interdiction torch&r shoves hostile mobs away from itself. plant one at each base entrance and enjoy the silence. crafts three at a time."
 			]
@@ -388,7 +258,7 @@
 			y: 1.125d
 		}
 		{
-			dependencies: ["68DAC01E93C6240E"]
+			dependencies: ["33704DE3C564BD46"]
 			description: [
 				"the &6alkahestry altar&r eats redstone and, given open sky and time, transmutes it into glowstone. slow, silent, profitable."
 			]
@@ -408,11 +278,11 @@
 		}
 		{
 			dependencies: [
-				"68DAC01E93C6240E"
+				"5732DF3D208DC50F"
 				"5C2E9B7A4D1F6083"
 			]
 			description: [
-				"build a portal frame from &bglowstone&r and light it with a &eluminessence&r. the aether is up there: floating islands, hostile mobs, and the three ores this chapter runs on."
+				"step through your portal frame. the aether is up there: floating islands, hostile mobs, and the ores this chapter runs on."
 				""
 				"tip: bring blocks for bridging. falling off the aether drops you back to the overworld at terminal velocity."
 			]

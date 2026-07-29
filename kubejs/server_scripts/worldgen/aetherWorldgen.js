@@ -1,5 +1,7 @@
 GTCEuServerEvents.oreVeins(event => {
-    event.add("kubejs:mana_gem_vein", vein => {
+    // Was kubejs:mana_gem_vein -- mana lost its .ore() (gtceuMaterialRegistry.js), vinteum fills
+    // this worldgen slot instead.
+    event.add("kubejs:vinteum_vein", vein => {
         vein.weight(200)
         vein.clusterSize(40)
         vein.density(0.6)
@@ -12,11 +14,11 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(16, 128)
 
         vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.get('mana'), 4, 40, 95)
+            .withBlock(GTMaterials.get('vinteum'), 4, 40, 95)
             .withBlock(GTMaterials.get('zanite'), 3, 20, 55)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get('mana'))
+            .surfaceRock(GTMaterials.get('vinteum'))
             .placement("above")
             .density(0.4)
             .radius(5)
