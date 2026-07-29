@@ -17,8 +17,8 @@ ServerEvents.recipes(event => {
 
     // mna:vinteum_ingot is really iron_ingot + vinteum_dust smelted (see gtceuMaterialRegistry.js).
     event.recipes.gtceu.alloy_smelter('vinteum_iron_alloy')
-        .itemInputs('1x gtceu:iron_dust', '1x gtceu:vinteum_dust')
-        .itemOutputs('1x gtceu:vinteum_iron_ingot')
+        .itemInputs('1x gtceu:iron_dust', '1x mna:vinteum_dust')
+        .itemOutputs('1x mna:vinteum_ingot')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
