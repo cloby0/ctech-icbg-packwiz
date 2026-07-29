@@ -4,7 +4,7 @@
 	filename: "alchemist"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "botania:manasteel_ingot"
+	icon: "gtceu:distilled_animus_ingot"
 	id: "726A09074A62FCF3"
 	order_index: 5
 	quest_links: [{
@@ -56,9 +56,9 @@
 		}
 		{
 			description: [
-				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essence in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
+				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essentia in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
 				""
-				"drop it in a &3mana pool&r and it becomes &bmanasteel&r."
+				"weave it with a pair of essentia at the manaweaving altar for bismuth, copper, silver, magnesium, or holy silver -- pick your pair, pick your metal."
 			]
 			dependencies: ["7BDD15A9F2B6BCDD"]
 			id: "5E61BE3584D271A8"
@@ -72,31 +72,6 @@
 			title: "Abstract Metal Ingot"
 			x: 1.125d
 			y: -6.0d
-		}
-		{
-			dependencies: [
-				"5E61BE3584D271A8"
-				"138BA0CD22478ACF"
-			]
-			description: [
-				"&amanasteel&r caps off the &8alchemist&r tier - flower-powered metallurgy at its finest."
-				""
-				"it's produced by submerging &9prima materia-derived&r intermediates in a &3mana pool&r. the pool does the rest."
-				""
-				"&9note:&r automation becomes important here. a manual mana pool setup gets tedious fast."
-			]
-			id: "56FCF9C63F27F60E"
-			shape: "square"
-			size: 1.5d
-			subtitle: "flower-powered metallurgy"
-			tasks: [{
-				id: "07868ED1E5EEE0B7"
-				item: "botania:manasteel_ingot"
-				type: "item"
-			}]
-			title: "Manasteel Ingot"
-			x: 0.0d
-			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -142,7 +117,7 @@
 		{
 			dependencies: ["3C613081F4FE51B2"]
 			description: [
-				"enchant a &6book&r over a &aprima materia plate&r, two &credstone blocks&r, and a bottle o' enchanting -- 10000 source -- to bind the &6alkahestry tome&r."
+				"bind a &6book&r to a &aprima materia plate&r, two &credstone blocks&r, and a bottle o' enchanting at the eldrin altar for the &6alkahestry tome&r."
 				""
 				"charge it with redstone and it transmutes common materials in the crafting grid."
 			]
@@ -165,32 +140,14 @@
 			y: 1.5d
 		}
 		{
-			description: [
-				"the final ars book upgrade at the &6enchanting apparatus&r. every glyph tier, maximum mana."
-			]
-			dependencies: ["3C613081F4FE51B2"]
-			id: "3B405737C2EC2A85"
-			size: 0.75d
-			subtitle: "the last ars book"
-			tasks: [{
-				id: "50F864927D5AA470"
-				item: "ars_nouveau:archmage_spell_book"
-				type: "item"
-			}]
-			title: "Archmage's Spell Book"
-			x: 0.5d
-			y: 1.5d
-		}
-		{
 			dependencies: [
 				"3C613081F4FE51B2"
-				"5281FFCFFE77EA24"
 				"9A4C2F6D8B1E3075"
 			]
 			description: [
-				"the &3abstract metal&r line bridges &dprima materia&r and &amanasteel&r."
+				"the &3abstract metal&r line turns &dprima materia&r into a whole family of ordinary metals."
 				""
-				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward manasteel."
+				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward the abstract ingot."
 			]
 			id: "2C27B13A2CA65DEC"
 			size: 0.75d
@@ -206,7 +163,7 @@
 		}
 		{
 			description: [
-				"a bucket enchanted over a &aprima materia block&r, bottled XP, and charged amethyst becomes a &dbucket of concepts&r. imbuing it over a &fholy silver block&r condenses that into &7metal form&r."
+				"bind a bucket to a &aprima materia block&r, bottled XP, and charged amethyst at the eldrin altar for a &dbucket of concepts&r. weaving it with a &fholy silver block&r condenses that into &7metal form&r."
 			]
 			dependencies: ["2C27B13A2CA65DEC"]
 			id: "442B54C049E4C49E"
@@ -223,7 +180,9 @@
 		}
 		{
 			description: [
-				"imbue the metal form over four &bice essences&r to freeze it into a solid you can hold. still disorganized, but real."
+				"bind the metal form to three ad astra &bice shards&r and an otherworld essence at the eldrin altar to freeze it into a solid you can hold. still disorganized, but real."
+				""
+				"tip: already sitting on mystical agriculture ice essence? a second altar recipe takes three of those instead, cheaper. neither route is required."
 			]
 			dependencies: ["442B54C049E4C49E"]
 			id: "7BDD15A9F2B6BCDD"
@@ -240,9 +199,7 @@
 		}
 		{
 			description: [
-				"the &apure daisy&r recipe is custom here: a magebloom crop enchanted over holy silver dust, a prima materia rod, and two earth essences, 10000 source."
-				""
-				"plant it, ring it with stone, and wait. &flivingrock&r feeds every botania build from here on."
+				"ring your pure daisy with stone and wait. &flivingrock&r feeds every botania build from here on."
 			]
 			dependencies: ["1F374C13B7A1C7A2"]
 			id: "3C48407D270C6942"
@@ -275,6 +232,27 @@
 			}]
 			title: "Epic Ink"
 			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"the tier's signature metal. combine &9animus dust&r with &darcane essentia&r for &carcane residue&r, then feed the soul forge two residue, a destructive will, soul sand, and magma cream for &canimus fragment&r."
+				""
+				"crush the fragment for &9distilled animus dust&r, then finish it at the alchemy table for &6distilled animus ingot&r."
+			]
+			icon: "gtceu:distilled_animus_ingot"
+			id: "2D3D4D46D2DD008F"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
+			tasks: [{
+				id: "417BB77B93665ADC"
+				item: "gtceu:distilled_animus_ingot"
+				type: "item"
+			}]
+			title: "Distilled Animus"
+			x: 2.5d
 			y: 1.5d
 		}
 	]

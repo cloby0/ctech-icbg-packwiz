@@ -71,10 +71,23 @@ ServerEvents.recipes(event => {
         output: { item: 'botania:manasteel_ingot' }
     })
 
-    // Shortcut (Sorcerer+): raw zanite gemstone direct, gated on tier attainment not this file.
-    event.shapeless('botania:manasteel_ingot', [
-        'aether:zanite_gemstone', 'minecraft:iron_ingot', '#kubejs:magic/sorcerer'
-    ])
+    // Shortcut (Journeyman+, Nigredo worn): Alembic/Distillery fabricates manasteel straight
+    // from materia -- no raw items, real wisdom-field gate (needs wisdom_stone_nigredo equipped,
+    // wisdom:0). batch_size does the "cheaper than the full chain" job natively. Normalized from
+    // the old Sorcerer+ gate (was 3 tiers ahead).
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 0,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 3,
+        object: { item: 'botania:manasteel_ingot' },
+        components: [
+            { item: 'magichem:essentia_precious', count: 40 },
+            { item: 'magichem:admixture_energy', count: 30 },
+            { item: 'magichem:admixture_crystal', count: 20 }
+        ]
+    })
 
     // Aether gate (moved here from the old Journeyman slot): glowstone + Hobbyist's Ashen Ichor.
     // Ward Lattice component: a portal frame's whole job is containing/stabilizing the gate.

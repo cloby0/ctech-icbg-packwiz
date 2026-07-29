@@ -4,12 +4,12 @@
 	filename: "sage"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "botania:gaia_ingot"
+	icon: "gtceu:empyrean_ichor_ingot"
 	id: "6B058364BA34F53C"
 	order_index: 8
 	quest_links: [{
 		id: "1E107863AA9AD9C7"
-		linked_quest: "1C1A082C60D3E432"
+		linked_quest: "0035907892269ECE"
 		shape: "square"
 		size: 1.5d
 		x: 0.0d
@@ -19,9 +19,7 @@
 		{
 			dependencies: ["23D66F8D6CD53A68"]
 			description: [
-				"the &agaia spirit ingot&r caps off the magic tree."
-				""
-				"the arcane side is finished here. the endgame brings both trees together."
+				"this tier's own bulk route to &agaia ingot&r -- feed the boundless spirit ingot through a &9terra plate&r with two terrasteel blocks. the gaian core rituals ahead eat these by the handful."
 			]
 			id: "4E4F37F6AB877E5C"
 			shape: "square"
@@ -37,9 +35,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4E4F37F6AB877E5C"]
+			dependencies: [
+				"4E4F37F6AB877E5C"
+				"302D332A3D2BD619"
+			]
 			description: [
-				"you started this book boiling essences in a borrowed cauldron. now you're farming the guardian of gaia for ingots."
+				"you started this book boiling essences in a borrowed cauldron. now you're farming the guardian of gaia for ingots and smelting starlight into empyrean ichor."
 				""
 				"no reward in this box -- the pack doesn't do quest rewards. what you get is the whole magic tree unlocked, and plenty of ways to use it on the tech side."
 				""
@@ -50,7 +51,7 @@
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
-				id: "ars_nouveau:dominion_wand"
+				id: "gtceu:empyrean_ichor_ingot"
 				tag: { }
 			}
 			id: "448A708579752294"
@@ -65,7 +66,7 @@
 			description: [
 				"kill the &5guardian of gaia&r for life essence, then bind it at the &6runic altar&r with runes of &4wrath&r and &4pride&r over four elementium bolts -- 8000 mana."
 			]
-			dependencies: ["1C1A082C60D3E432"]
+			dependencies: ["0035907892269ECE"]
 			id: "7A973CEE81B78C5C"
 			subtitle: "it's understandably upset"
 			tasks: [{
@@ -80,7 +81,7 @@
 		{
 			dependencies: ["7A973CEE81B78C5C"]
 			description: [
-				"the &dsoul of gaia&r is an intermediate step in the &agaia spirit ingot&r line."
+				"bind the vengeful spirit to a wither skeleton skull, two ender pearls, and a soul gem at the eldrin altar for &dsoul of gaia&r. already deep in mystical agriculture? wither skeleton essence plus two enderman essence works too, cheaper."
 				""
 				"it takes a few more steps from here."
 			]
@@ -97,7 +98,7 @@
 		}
 		{
 			description: [
-				"the soul of gaia enchanted over EIGHT &delementium blocks&r, 20000 source. the last plain ingot in the magic tree."
+				"bind the soul of gaia to EIGHT &delementium blocks&r at the eldrin altar for the boundless spirit ingot."
 			]
 			dependencies: ["57D3230B92DA91E0"]
 			id: "23D66F8D6CD53A68"
@@ -112,21 +113,50 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1C1A082C60D3E432"]
+			dependencies: ["0035907892269ECE"]
 			description: [
-				"the &2wilden alloy&r line is a living-beast alt spine, fully independent of gaia. hunt &awilden&r for horns, spikes, and drygmy shards, then enchant a &6wilden tribute&r over them with earth and fire essence."
+				"the tier's signature metal. combine a hellforged ingot with a &6gaia ingot&r for &fhallowed remnant&r, then fold in a greater arcane mote for &9wellspring-bound remnant&r."
 				""
-				"the dust smelts straight to ingots in any furnace. the tribute itself can be duplicated in the imbuement chamber if the hunt gets old."
+				"a bound &6marid&r rituals it with your original &castarted-with ashen ichor&r and a soul gem into &6empyrean core&r. a plain furnace finishes the smelt -- the tree bookends itself."
 			]
-			id: "6D40B7C2E8A15F90"
-			subtitle: "the beasts provide"
+			icon: "gtceu:empyrean_ichor_ingot"
+			id: "302D332A3D2BD619"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
 			tasks: [{
-				id: "6D40B7C2E8A15F91"
-				item: "gtceu:wilden_alloy_dust"
+				id: "32F4456FC7CC6F63"
+				item: "gtceu:empyrean_ichor_ingot"
 				type: "item"
 			}]
-			title: "Wilden Alloy"
+			title: "Empyrean Ichor"
 			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["302D332A3D2BD619"]
+			description: [
+				"empyrean ichor builds this tier's own circuit line: the &6empyrean array&r core (runic altar, then a terra plate pass) and the &6empyrean wizard brain&r (eldrin altar) both start here."
+				""
+				"a handful of vanilla combines with ichor plus this tier's own gaian cores round out the set -- motive cores, channeling vessels, ward lattices."
+			]
+			icon: "kubejs:empyrean_array"
+			id: "64624A72C1208B1D"
+			subtitle: "small parts, biggest tier"
+			tasks: [{
+				id: "03F67E95E8E47CEE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:empyrean_array)item(kubejs:empyrean_wizard_brain)item(kubejs:empyrean_motive_core)item(kubejs:empyrean_channeling_vessel)item(kubejs:empyrean_ward_lattice))"
+					}
+				}
+				title: "Any Empyrean Component"
+				type: "item"
+			}]
+			title: "Empyrean Components"
+			x: 5.0d
 			y: 2.0d
 		}
 		{

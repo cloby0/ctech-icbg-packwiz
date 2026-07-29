@@ -5,16 +5,18 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'reliquary:glowing_water' })
     event.remove({ id: 'reliquary:glowing_water_from_potion_vial' })
 
+    // Channeling Vessel: glowing water is a bottled/flowing magical fluid.
     event.shaped(
         Item.of('reliquary:glowing_water', 3),
         [
             '   ',
             ' B ',
-            ' A '
+            'VA '
         ],
         {
             A: Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
             B: 'gtceu:holy_silver_dust',
+            V: 'kubejs:gravitic_channeling_vessel'
         }
     )
 
@@ -86,9 +88,12 @@ ServerEvents.recipes(event => {
     // element); a second alternate ritual keeps the four MysticalAg essences, costed
     // cheaper/faster as the reward-for-investment route. mana_block x4 was never Ars-dependent,
     // left unchanged in the default.
+    // tier 'afrit', not 'marid': marid can only be summoned with prima_materia_ingot (occultism.js
+    // gate.marid), which is crafted FROM chaos_essence -- marid tier here would be circular
+    // (no way to bind the first marid). afrit is already available from journeyman.js onward.
     addOccultismRitual(event, {
         name: 'chaos_essence',
-        tier: 'marid',
+        tier: 'afrit',
         output: 'kubejs:chaos_essence',
         duration: 150,
         ingredients: [
@@ -106,7 +111,7 @@ ServerEvents.recipes(event => {
 
     addOccultismRitual(event, {
         name: 'chaos_essence_mysticalag',
-        tier: 'marid',
+        tier: 'afrit',
         output: 'kubejs:chaos_essence',
         duration: 100,
         ingredients: [
@@ -184,10 +189,14 @@ ServerEvents.recipes(event => {
         ingredients: ['kubejs:gravity_bound_life_essence']
     })
 
-    // Shortcut (Alchemist+): direct to the pre-terra-plate feed, still needs the terra plate step.
-    event.shapeless('kubejs:gravity_bound_life_essence', [
-        'aether_redux:gravitite_ingot', 'botania:life_essence', '#kubejs:magic/alchemist'
-    ])
+    // Shortcut (Alchemist+): Alchemist's Soul Forge produces the pre-terra-plate feed directly,
+    // batch output. Drain cost is the gate -- no stone exists at Alchemist yet.
+    addSoulForgeRecipe(event, {
+        output: { item: 'kubejs:gravity_bound_life_essence', count: 2 },
+        inputs: ['aether_redux:gravitite_ingot', 'botania:life_essence'],
+        drain: 20,
+        minimumDrain: 400
+    })
 
     // --- Microcrafting: Sorcerer circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> Terra Plate.
@@ -221,4 +230,58 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:gravitic_ward_lattice', [
         'gtceu:prima_materia_plate', 'bloodmagic:basemonstersoul_steadfast', 'botania:gaia_ingot'
     ])
+
+    // Wisdom Stone: Albedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
+    // Sorcerer's own material line. Materia kept verbatim from the mod's own albedo recipe
+    // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_albedo.json).
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 3,
+        wisdom: 1,
+        object: { item: 'magichem:wisdom_stone_albedo' },
+        stages: [
+            {
+                experience: 90,
+                components: [
+                    { item: 'kubejs:resonant_gravitite_core' },
+                    { item: 'kubejs:element_attunement_stone' },
+                    { item: 'kubejs:resonant_gravitite_core' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 100 },
+                    { item: 'magichem:admixture_breath', count: 55 },
+                    { item: 'magichem:essentia_conceptual', count: 70 },
+                    { item: 'magichem:essentia_albedo', count: 50 }
+                ]
+            },
+            {
+                experience: 120,
+                components: [
+                    { item: 'kubejs:pyromatic_codex' },
+                    { item: 'kubejs:evocation_folio' },
+                    { item: 'kubejs:chaos_essence' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_alcohol', count: 55 },
+                    { item: 'magichem:admixture_firmament', count: 55 },
+                    { item: 'magichem:admixture_healing', count: 55 },
+                    { item: 'magichem:admixture_light', count: 55 }
+                ]
+            },
+            {
+                experience: 150,
+                components: [
+                    { item: 'gtceu:prima_materia_ingot' },
+                    { item: 'magichem:wisdom_stone_nigredo' },
+                    { item: 'gtceu:prima_materia_ingot' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_change', count: 70 },
+                    { item: 'magichem:admixture_acid', count: 55 },
+                    { item: 'magichem:admixture_realm', count: 55 },
+                    { item: 'magichem:essentia_albedo', count: 40 }
+                ]
+            }
+        ]
+    })
 })

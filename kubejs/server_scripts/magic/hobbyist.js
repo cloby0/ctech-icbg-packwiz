@@ -107,10 +107,16 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'infernal', count: 2 }]
     })
 
-    // Shortcut (Journeyman+): direct craft, gated on tier attainment not this file
-    event.shapeless('gtceu:ashen_ichor_ingot', [
-        'mna:vinteum_dust', 'malum:arcane_charcoal_fragment', '#kubejs:magic/journeyman'
-    ])
+    // Shortcut (Apprentice+): Apprentice's Alchemy Table fabricates this tier's ingot directly,
+    // batch output instead of the full chain's 1x. No vanilla table, no tag toll -- the device
+    // itself (LP.APPRENTICE syphon) is what a Hobbyist-only player can't reach yet. Normalized
+    // from the old Journeyman+ gate (was 2 tiers ahead, inconsistent with the other 6 shortcuts).
+    addAlchemyTableRecipe(event, {
+        output: { item: 'gtceu:ashen_ichor_ingot', count: 2 },
+        input: ['mna:vinteum_dust', 'malum:arcane_charcoal_fragment'],
+        syphon: LP.APPRENTICE,
+        ticks: 200
+    })
 
     event.remove({ id: 'reliquary:fortune_coin' })
     event.shaped(

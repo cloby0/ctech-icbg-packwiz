@@ -319,10 +319,21 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // Shortcut (Sorcerer+): direct to the elementite, gated on tier attainment not this file.
-    event.shapeless('kubejs:ambrosia_touched_elementite', [
-        'aether:ambrosium_shard', 'kubejs:weak_elementium_dust', '#kubejs:magic/sorcerer'
-    ])
+    // Shortcut (Sorcerer+, Albedo worn): Alembic/Distillery fabricates the elementite straight
+    // from materia, real wisdom-field gate (wisdom_stone_albedo, wisdom:1).
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 1,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 3,
+        object: { item: 'kubejs:ambrosia_touched_elementite' },
+        components: [
+            { item: 'magichem:essentia_precious', count: 50 },
+            { item: 'magichem:admixture_light', count: 30 },
+            { item: 'magichem:essentia_albedo', count: 25 }
+        ]
+    })
 
     // magical_receiver, all seven TACZ ars_armorer guns: retired outright, per user direction --
     // kubejs:magical_receiver's basic_spell_turret ingredient is Ars-native with no MNA/Blood

@@ -4,12 +4,12 @@
 	filename: "thaumaturge"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "botania:terrasteel_ingot"
+	icon: "gtceu:starforged_chimerite_ingot"
 	id: "321C191A1AEEDAD8"
 	order_index: 6
 	quest_links: [{
 		id: "4813B934B8D4C8E5"
-		linked_quest: "56FCF9C63F27F60E"
+		linked_quest: "2D3D4D46D2DD008F"
 		shape: "rsquare"
 		x: 0.0d
 		y: 0.0d
@@ -35,11 +35,14 @@
 		}
 		{
 			description: [
-				"build the &6terra plate&r multiblock and feed it: &aterrasteel&r here is a &dliving metalloid&r, a mana pearl, and a mana diamond under 500,000 mana."
+				"the &6terra plate&r multiblock feeds every high-tier botania craft in this pack -- terrasteel, gaia ingot, and more all pour through it."
 				""
-				"tip: add a &brune of frost&r to the mix and one pour yields THREE ingots for 1.5M mana."
+				"build it once. you'll be back."
 			]
-			dependencies: ["76080FE8160A0F71"]
+			dependencies: [
+				"202F55D0054B18FC"
+				"3D4DC3DA79713198"
+			]
 			id: "5188A30959FE9535"
 			subtitle: "biggest crafting block in the game? probably."
 			tasks: [{
@@ -52,35 +55,9 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"5188A30959FE9535"
-				"202F55D0054B18FC"
-				"3D4DC3DA79713198"
-			]
+			dependencies: ["2D3D4D46D2DD008F"]
 			description: [
-				"&aterrasteel&r caps off the &8thaumaturge&r tier."
-				""
-				"&l&3lore:&r&o in vanilla botania packs, terrasteel is considered an endgame material. here, it's a stepping stone."
-			]
-			id: "278BE65F77B6BD8B"
-			shape: "square"
-			size: 1.5d
-			subtitle: "the forest's offering to the factory"
-			tasks: [{
-				id: "2A5838F49D2DCDC0"
-				item: "botania:terrasteel_ingot"
-				type: "item"
-			}]
-			title: "Terrasteel Ingot"
-			x: 0.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["56FCF9C63F27F60E"]
-			description: [
-				"the &3runic altar&r turns &dmana&r and materials into &arunes&r - the building blocks of advanced &3botania&r crafting."
-				""
-				"you'll need a significant variety of runes to eventually reach &aterrasteel&r. start here."
+				"the &3runic altar&r turns &dmana&r and materials into &arunes&r - the building blocks of advanced &3botania&r crafting, and an ingredient in more than a few recipes further up the tree."
 				""
 				"&9tip:&r each rune crafting consumes a fixed amount of mana. keep your pools topped up or this will take forever."
 			]
@@ -95,41 +72,6 @@
 			title: "Runic Altar"
 			x: 0.0d
 			y: -1.0d
-		}
-		{
-			description: [
-				"the runic altar's first custom job: a manasteel bolt with earth, water, mana, and spring runes, 5200 mana."
-			]
-			dependencies: ["1C79439FDCE2173E"]
-			id: "2FE1A9BEA093B7B9"
-			subtitle: "sounds nicer than it is"
-			tasks: [{
-				id: "1CA668C07422ACCB"
-				item: "kubejs:florid_compound"
-				type: "item"
-			}]
-			title: "Florid Compound"
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			description: [
-				"enchant the florid compound over a &6clock&r, nature essence, water essence, and &afertile essence&r -- 30000 source."
-			]
-			dependencies: [
-				"2FE1A9BEA093B7B9"
-				"69AAC4FCAADE1F21"
-			]
-			id: "76080FE8160A0F71"
-			subtitle: "a living what now"
-			tasks: [{
-				id: "335F1FBFBC9C3955"
-				item: "kubejs:living_metalloid"
-				type: "item"
-			}]
-			title: "Living Metalloid"
-			x: 0.0d
-			y: -5.5d
 		}
 		{
 			description: [
@@ -164,7 +106,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["56FCF9C63F27F60E"]
+			dependencies: ["2D3D4D46D2DD008F"]
 			description: [
 				"&3hex casting&r is a visual, pattern-based magic system. instead of crafting spells, you draw them in the air with a staff."
 				""
@@ -262,7 +204,7 @@
 			description: [
 				"same brew as the alchemist route: epic ink plus an &delven source lattice&r. legendary scrolls stop failing on inscription."
 			]
-			dependencies: ["56FCF9C63F27F60E"]
+			dependencies: ["2D3D4D46D2DD008F"]
 			id: "5F3CCA0806278FD9"
 			size: 0.75d
 			subtitle: "for when archmage just isn't enough"
@@ -273,23 +215,6 @@
 			}]
 			title: "Legendary Ink"
 			x: 1.125d
-			y: 0.0d
-		}
-		{
-			description: [
-				"the apparatus takes your apprentice book the rest of the way. all tiers, all slots."
-			]
-			dependencies: ["56FCF9C63F27F60E"]
-			id: "6FD05FDAA5532519"
-			size: 0.75d
-			subtitle: "you already have this. make another."
-			tasks: [{
-				id: "55374A980BA4B130"
-				item: "ars_nouveau:archmage_spell_book"
-				type: "item"
-			}]
-			title: "Archmage's Spell Book"
-			x: -1.125d
 			y: 0.0d
 		}
 		{
@@ -347,7 +272,7 @@
 			description: [
 				"the seven sin runes, each with its own runic altar recipe."
 				""
-				"not the hardest part of terrasteel. it just feels like it."
+				"grindy. worth having spares of all seven regardless."
 			]
 			id: "5AF8A1AB9B552519"
 			size: 0.75d
@@ -370,28 +295,27 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["2D3D4D46D2DD008F"]
 			description: [
-				"enchant a &2nature essence&r over skeleton, slime, and creeper essences plus earth and water -- 15000 source. reliquary's concentrated fertility."
+				"the tier's signature metal. crush a &dchimerite gem&r into dust, combine it with &6magichem admixture&r for star-touched chimerite, then fold in a vengeful demon will."
+				""
+				"bind the result at an &bastral observer&r and wait out the light phase for &6charged chimerite&r. a plain furnace finishes it into &astarforged chimerite ingot&r."
 			]
-			dependencies: [
-				"18E8F3A1B08C0C04"
-				"5E9CB75348632373"
-				"5168FD0A21AE3B49"
-				"6F181FFA56989D01"
-			]
-			id: "69AAC4FCAADE1F21"
-			size: 0.75d
-			subtitle: "not what it sounds like"
+			icon: "gtceu:starforged_chimerite_ingot"
+			id: "7F1ABCF957C7AE77"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
 			tasks: [{
-				id: "28D8A01D4B1312E4"
-				item: "reliquary:fertile_essence"
+				id: "68DDE19F3E0BDDB1"
+				item: "gtceu:starforged_chimerite_ingot"
 				type: "item"
 			}]
-			title: "Fertile Essence"
-			x: 1.0d
-			y: -5.5d
+			title: "Starforged Chimerite"
+			x: -1.5d
+			y: -6.5d
 		}
 	]
-	subtitle: ["More plant-based metallurgy, at industrial scale"]
+	subtitle: ["Runes, hexes, and starlight"]
 	title: "VII. Thaumaturge"
 }

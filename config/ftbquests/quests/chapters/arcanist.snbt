@@ -4,12 +4,12 @@
 	filename: "arcanist"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "botania:elementium_ingot"
+	icon: "gtceu:gravitic_rubedo_ingot"
 	id: "7337FC0129A5752D"
 	order_index: 7
 	quest_links: [{
 		id: "71BE038EB1D9B1C3"
-		linked_quest: "278BE65F77B6BD8B"
+		linked_quest: "7F1ABCF957C7AE77"
 		shape: "square"
 		size: 1.5d
 		x: 0.0d
@@ -17,13 +17,13 @@
 	}]
 	quests: [
 		{
-			dependencies: ["278BE65F77B6BD8B"]
+			dependencies: ["7F1ABCF957C7AE77"]
 			description: [
 				"the &3elven portal&r opens a gateway to &dalfheim&r - home of the elves."
 				""
 				"you can't visit. you can only trade. drop items through the portal and the elves will send something back."
 				""
-				"this is how you get &aelven materials&r, including the ones you need for &delementium&r."
+				"this is how you get &aelven materials&r -- pixie dust, dragonstone, and the concentrate this tier's own signature chain needs."
 			]
 			id: "7611918249B75923"
 			subtitle: "time to make some weird friends"
@@ -57,81 +57,9 @@
 			y: -2.0d
 		}
 		{
-			description: [
-				"enchant the dust over an &7abstract metal ingot&r (15000 source), then smelt the result straight into &delementium&r."
-			]
-			dependencies: ["51FA75C4A1E30685"]
-			id: "104D6BF6AA109EF4"
-			subtitle: "not to be confused with elementium"
-			tasks: [{
-				id: "2B102D30E4922A3F"
-				item: "kubejs:raw_elementite"
-				type: "item"
-			}]
-			title: "Raw Elementite"
-			x: -0.5d
-			y: -6.0d
-		}
-		{
-			description: [
-				"imbue elven concentrate over water and air essences with luminessence -- 8000 source -- for &delementite dust&r."
-			]
-			dependencies: ["36021729B91C1137"]
-			id: "51FA75C4A1E30685"
-			subtitle: "one step away"
-			tasks: [{
-				id: "729FC4B59E51C137"
-				item: "kubejs:elementite_dust"
-				type: "item"
-			}]
-			title: "Elementite Dust"
-			x: 0.5d
-			y: -6.0d
-		}
-		{
-			description: [
-				"the elves are cut out of the deal: the &6runic altar&r makes &dweak elementium dust&r from four terrasteel bolts and air, spring, summer, and autumn runes -- 8000 mana, three at a time."
-				""
-				"trade three dusts through the &aalfheim portal&r for two &delven concentrate&r."
-			]
 			dependencies: ["7611918249B75923"]
-			id: "2764D29567727F6D"
-			subtitle: "almost magic. almost."
-			tasks: [{
-				id: "4F18D9849B412CD9"
-				item: "kubejs:weak_elementium_dust"
-				type: "item"
-			}]
-			title: "Weak Elementium Dust"
-			x: 0.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["104D6BF6AA109EF4"]
 			description: [
-				"&aelementium&r caps off the &8arcanist&r tier."
-				""
-				"it can only be obtained through cooperation with the elves - no amount of gregtech machines can synthesize this one."
-				""
-				"&9note:&r automating elven portal trading is possible. once you're producing elementium in volume, you'll want to look into it."
-			]
-			id: "1C1A082C60D3E432"
-			shape: "square"
-			size: 1.5d
-			subtitle: "extracted from another dimension's flora"
-			tasks: [{
-				id: "1F6E48A31BBC3B91"
-				item: "botania:elementium_ingot"
-				type: "item"
-			}]
-			title: "Elementium Ingot"
-			x: 0.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["2764D29567727F6D"]
-			description: [
-				"the &3elven portal&r trading process produces &aelven concentrate&r - the key input for &delementium&r processing."
+				"the &3elven portal&r trades &dweak elementium dust&r (you've had a source of it since initiate) three at a time for two &aelven concentrate&r."
 				""
 				"feed the portal, collect the concentrate, process it further."
 			]
@@ -145,6 +73,80 @@
 			title: "Elven Concentrate"
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["36021729B91C1137"]
+			description: [
+				"weave elven concentrate with a mana pearl and air essentia for &6pixie dust&r, or with a mana diamond and earth+water essentia for &6dragonstone&r."
+			]
+			icon: "botania:pixie_dust"
+			id: "05BE7E00A2F8ABD2"
+			subtitle: "the elves' other exports"
+			tasks: [{
+				id: "5D33288DD128B733"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(botania:pixie_dust)item(botania:dragonstone))"
+					}
+				}
+				title: "Any Elven Novelty"
+				type: "item"
+			}]
+			title: "Elven Novelties"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["36021729B91C1137"]
+			description: [
+				"the tier's signature metal. combine &9superheated purified vinteum&r with &drubedo essentia&r, then bind it to hellforged sand at the alchemy table for &cgravitic residue&r."
+				""
+				"a bound &6marid&r rituals the residue with afrit essence into &6gravitic rubedo&r. a plain furnace finishes the smelt."
+			]
+			icon: "gtceu:gravitic_rubedo_ingot"
+			id: "0035907892269ECE"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
+			tasks: [{
+				id: "307F8B0707949CE6"
+				item: "gtceu:gravitic_rubedo_ingot"
+				type: "item"
+			}]
+			title: "Gravitic Rubedo"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0035907892269ECE"
+				"05BE7E00A2F8ABD2"
+			]
+			description: [
+				"gravitic rubedo builds this tier's own circuit line: the &6rubedo array&r core (alchemy table, then a furnace pass) and the &6rubedo wizard brain&r (manaweaving altar) both start here."
+				""
+				"a handful of vanilla combines with rubedo plus extrabotany metals round out the set -- motive cores, channeling vessels, ward lattices."
+			]
+			icon: "kubejs:rubedo_array"
+			id: "3AD6234979E22204"
+			subtitle: "small parts, big tier"
+			tasks: [{
+				id: "6C012FF281B3B05D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:rubedo_array)item(kubejs:rubedo_wizard_brain)item(kubejs:rubedo_motive_core)item(kubejs:rubedo_channeling_vessel)item(kubejs:rubedo_ward_lattice))"
+					}
+				}
+				title: "Any Rubedo Component"
+				type: "item"
+			}]
+			title: "Rubedo Components"
+			x: 0.0d
+			y: -7.5d
 		}
 	]
 	subtitle: ["The elves have materials you can't make yourself"]

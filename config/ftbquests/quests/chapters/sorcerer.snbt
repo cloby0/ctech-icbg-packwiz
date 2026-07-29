@@ -4,7 +4,7 @@
 	filename: "sorcerer"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "gtceu:prima_materia_ingot"
+	icon: "botania:gaia_ingot"
 	id: "137D785A44DC7E1D"
 	order_index: 4
 	quest_links: [
@@ -31,9 +31,9 @@
 				"51D5B5C004491077"
 			]
 			description: [
-				"elemental seeds come from the &6enchanting apparatus&r: a magebloom crop surrounded by four &bair essences&r and four &bair agglomeratio&r, 5500 source."
+				"weave wheat seeds with three &bair essentia&r and a feather at the manaweaving altar for &bair seeds&r."
 				""
-				"tip: the mystical agriculture infusion altar recipes are removed. the apparatus is the only way."
+				"tip: already invested in mystical agriculture? swap in air essentia plus two &bair agglomeratio&r instead -- cheaper, same seeds. neither route is required."
 			]
 			id: "46D6015549F81149"
 			size: 0.75d
@@ -53,7 +53,7 @@
 				"51D5B5C004491077"
 			]
 			description: [
-				"same apparatus ritual, earth flavor: magebloom crop, four &2earth essences&r, four &2earth agglomeratio&r."
+				"same weave, earth flavor: wheat seeds, three &2earth essentia&r, a scoop of dirt. or, if you've invested in mystical agriculture, earth essentia plus two &2earth agglomeratio&r."
 			]
 			id: "6D67F9A2B676C7CA"
 			size: 0.75d
@@ -73,7 +73,7 @@
 				"51D5B5C004491077"
 			]
 			description: [
-				"magebloom crop, four &9water essences&r, four &9water agglomeratio&r, one apparatus. hydroponics, technically."
+				"wheat seeds, three &9water essentia&r, a prismarine shard, one weave. or water essentia plus two &9water agglomeratio&r if mystical agriculture's your thing."
 			]
 			id: "5645B3BFEB76C34A"
 			size: 0.75d
@@ -93,7 +93,7 @@
 				"51D5B5C004491077"
 			]
 			description: [
-				"magebloom crop, four &cfire essences&r, four &cfire agglomeratio&r. the crop survives the ritual, so replant and farm it."
+				"wheat seeds, three &cfire essentia&r, netherrack. or fire essentia plus two &cfire agglomeratio&r, mystical agriculture route. the seeds themselves grow into a farmable crop either way."
 			]
 			id: "48904FDBC23CD945"
 			size: 0.75d
@@ -110,7 +110,7 @@
 		{
 			dependencies: ["46D6015549F81149"]
 			description: [
-				"plant the seeds on farmland, harvest &bair essence&r. a renewable element farm -- the cauldron brews from hobbyist just became optional."
+				"plant the seeds on farmland, harvest &bair essence&r. a renewable element farm, and another source feeding the same essentia tag as everything else."
 			]
 			id: "6F181FFA56989D01"
 			size: 0.75d
@@ -183,9 +183,11 @@
 				"18E8F3A1B08C0C04"
 			]
 			description: [
-				"a &aholy silver ingot&r enchanted over all four MA essences and four &3source blocks&r collapses into &5chaos essence&r for 6000 source."
+				"a bound &6afrit&r rituals a &aholy silver ingot&r with four blood magic demon wills and four mana blocks into &5chaos essence&r."
 				""
-				"tip: chaos essence also enchants into &cpyrium&r (fire+air) and bottled XP (water+earth)."
+				"tip: already sitting on all four MA essences? a second ritual takes those instead of the demon wills, faster and cheaper. neither route is required."
+				""
+				"chaos essence also weaves into &cpyrium&r (fire+air) and bottled XP (water+earth) at the manaweaving altar."
 			]
 			id: "270F7BBFAA80139A"
 			subtitle: "four elements, forced to agree"
@@ -201,13 +203,11 @@
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"&aprima materia&r caps off the &8sorcerer&r tier -- the combined form of all four elements."
+				"&aprima materia&r is the combined form of all four elements."
 				""
-				"imbue your &5chaos essence&r with an &delement attunement stone&r on the pedestal for 10000 source. keep the source jars stocked."
+				"a bound &6afrit&r rituals &5chaos essence&r with an &delement attunement stone&r and afrit essence into &aprima materia&r."
 				""
-				"the chaos essence already holds all four elemental essences and a pile of source; prima materia is the final step."
-				""
-				"&9note:&r prima materia bridges the elemental and the botanical. &amanasteel&r is next and needs this. its plates also brew &5epic ink&r later, so don't stop at one."
+				"&9note:&r its plates also brew &5epic ink&r later, so don't stop at one."
 			]
 			id: "3C613081F4FE51B2"
 			size: 1.5d
@@ -224,7 +224,7 @@
 		{
 			dependencies: ["3C613081F4FE51B2"]
 			description: [
-				"summon a &6marid&r and bind it to a crusher setup, or hand off logistics from the afrit above. required before alchemist -- manasteel automation assumes you have crushing throughput already sorted."
+				"summon a &6marid&r and bind it to a crusher setup, or hand off logistics from the afrit above. required before alchemist -- material processing only gets heavier from here."
 			]
 			id: "9A4C2F6D8B1E3075"
 			subtitle: "top-tier spirit, top-tier grind"
@@ -237,49 +237,6 @@
 			title: "Marid Spirit"
 			x: 1.5d
 			y: 8.25d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6spell turret&r casts whatever spell you inscribe on it, on a redstone pulse. farming, smelting, mob disposal -- if a spell does it, a turret automates it."
-			]
-			id: "5093B986663EAF9E"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "automation for the magically inclined"
-			tasks: [{
-				id: "578C295EE91F88AE"
-				item: "ars_nouveau:basic_spell_turret"
-				type: "item"
-			}]
-			title: "Basic Spell Turret"
-			x: 1.875d
-			y: -1.125d
-		}
-		{
-			dependencies: ["5093B986663EAF9E"]
-			description: [
-				"ars armorer builds &6guns that shoot spells&r. pistols, snipers, auto rifles, a mortar, a flying blade -- all fueled by source instead of gunpowder."
-			]
-			id: "040DF1F47AC5F4E3"
-			shape: "hexagon"
-			size: 0.75d
-			tasks: [{
-				id: "7D260F09DE651E41"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"SEMI\",GunId:\"ars_armorer:pistol_source_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:280,GunFireMode:\"SEMI\",GunId:\"ars_armorer:sniper_distance_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"AUTO\",GunId:\"ars_armorer:auto_rifle_stream_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:250,GunFireMode:\"SEMI\",GunId:\"ars_armorer:shotgun_splash_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:350,GunFireMode:\"AUTO\",GunId:\"ars_armorer:shotgun_jet_ejector\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:200,GunFireMode:\"BURST\",GunId:\"ars_armorer:special_miner_drill\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:400,GunFireMode:\"SEMI\",GunId:\"ars_armorer:mortar_source_thrower\",HasBulletInBarrel:1b})nbt(fuzzy:{GunCurrentAmmoCount:6,GunFireMode:\"SEMI\",GunId:\"ars_armorer:special_source_flying_blade\",HasBulletInBarrel:1b}))"
-					}
-				}
-				title: "Any Magic Gun"
-				type: "item"
-			}]
-			title: "Magic Guns!"
-			x: 1.875d
-			y: -1.875d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -316,25 +273,6 @@
 			}]
 			title: "Holy Hand Grenade"
 			x: 0.0d
-			y: -1.875d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"upgrade your novice book at the &6enchanting apparatus&r. more spell slots and higher tier glyphs."
-			]
-			id: "7D00D62B7AD615A6"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "level up, already"
-			tasks: [{
-				id: "22AAFB1314617990"
-				item: "ars_nouveau:apprentice_spell_book"
-				type: "item"
-			}]
-			title: "Apprentice Spell Book"
-			x: 1.125d
 			y: -1.875d
 		}
 		{
@@ -677,7 +615,7 @@
 		{
 			dependencies: ["1B9C0C6A43CB99C7"]
 			description: [
-				"finish in the &6imbuement chamber&r: charged gravitite over two &aholy silver rods&r and two &9resonant zanite crystals&r, 5000 source. three magic systems, one resonant core."
+				"a bound &6afrit&r rituals charged gravitite with two &aholy silver rods&r, two &9resonant zanite crystals&r, and afrit essence into the resonant core. three magic systems, one result."
 			]
 			id: "70103C694B3D2219"
 			size: 0.75d
@@ -694,7 +632,7 @@
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"chaos essence over two &cfire&r and two &bair&r essences enchants into FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
+				"weave chaos essence with two &cfire&r and two &bair&r essentia at the manaweaving altar for FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
 			]
 			id: "17D15E6418E8452E"
 			size: 0.75d
@@ -711,9 +649,9 @@
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"ink upgrades brew in the &6alchemist cauldron&r: common + source gem = uncommon, uncommon + divine pearl = rare, rare + &aprima materia plate&r = epic."
+				"the top rung of the scroll-quality ladder: rare ink upgrades with a &aprima materia plate&r for &5epic ink&r. check JEI for the exact brew."
 				""
-				"tip: 250mb per brew. an epic scroll habit is expensive. budget accordingly."
+				"an epic scroll habit is expensive. budget accordingly."
 			]
 			id: "7671BC8442421B72"
 			size: 0.75d
@@ -726,6 +664,44 @@
 			title: "Epic Ink"
 			x: -1.125d
 			y: 7.125d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			description: [
+				"the &6gaia guardian&r is botania's endgame boss -- fight it for a &alife essence&r drop. bring your best gear."
+			]
+			id: "69987C3015B77668"
+			subtitle: "botania's final exam"
+			tasks: [{
+				advancement: "botania:main/gaia_guardian_kill"
+				criterion: ""
+				id: "59C3DA3729E52128"
+				type: "advancement"
+			}]
+			title: "Gaia Guardian"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["69987C3015B77668"]
+			description: [
+				"the tier's signature metal. crush a &2gravitite ingot&r into shavings, bind them to a pinch of &6magichem admixture&r at the alchemy table, then combine with your &alife essence&r drop."
+				""
+				"finish it on a &9terra plate&r for &6gaia ingot&r -- botania's ladder ends here."
+			]
+			icon: "botania:gaia_ingot"
+			id: "2194BFF141F7B36A"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
+			tasks: [{
+				id: "6E3BC93C6372844E"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "Gaia Ingot"
+			x: 3.5d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Alchemy, the great work"]
