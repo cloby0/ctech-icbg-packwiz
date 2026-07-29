@@ -39,49 +39,49 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'minecraft:packed_ice', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'minecraft:packed_ice', 'kubejs:chaos_essence'],
         output: 'artifacts:aqua_dashers',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:feather', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:feather', 'kubejs:chaos_essence'],
         output: 'artifacts:bunny_hoppers',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:flint', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:flint', 'kubejs:chaos_essence'],
         output: 'artifacts:digging_claws',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:feather', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:feather', 'kubejs:chaos_essence'],
         output: 'artifacts:feral_claws',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'minecraft:blaze_rod', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'minecraft:blaze_rod', 'kubejs:chaos_essence'],
         output: 'artifacts:fire_gauntlet',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'kubejs:chaos_essence'],
         output: 'artifacts:pocket_piston',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:diamond', 'minecraft:diamond', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:chaos_essence'],
         output: 'artifacts:power_glove',
         sourceCost: Source.SORCERER
     })
@@ -95,35 +95,35 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:lightning_rod', 'minecraft:lightning_rod', 'minecraft:quartz', 'minecraft:redstone', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:lightning_rod', 'minecraft:lightning_rod', 'minecraft:quartz', 'minecraft:redstone', 'kubejs:chaos_essence'],
         output: 'artifacts:shock_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:cactus', 'minecraft:cactus', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:cactus', 'minecraft:cactus', 'kubejs:chaos_essence'],
         output: 'artifacts:thorn_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:amethyst_shard', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:amethyst_shard', 'kubejs:chaos_essence'],
         output: 'artifacts:flame_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'minecraft:diamond', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:chaos_essence'],
         output: 'artifacts:cross_necklace',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:golden_sheet', 'minecraft:gold_block', 'minecraft:gold_block', 'minecraft:ender_pearl', 'minecraft:string', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:golden_sheet', 'minecraft:gold_block', 'minecraft:gold_block', 'minecraft:ender_pearl', 'minecraft:string', 'kubejs:chaos_essence'],
         output: 'artifacts:golden_hook',
         sourceCost: Source.SORCERER
     })
@@ -136,63 +136,63 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'kubejs:chaos_essence'],
         output: 'artifacts:antidote_vessel',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'gtceu:luminessence_dust'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'kubejs:chaos_essence'],
         output: 'artifacts:pickaxe_heater',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:string', 'minecraft:lily_pad', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:string', 'minecraft:lily_pad', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:anglers_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:cowboy_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:cactus', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:cactus', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:novelty_drinking_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:string', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:plastic_drinking_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'minecraft:black_dye', 'minecraft:ender_pearl', 'minecraft:obsidian', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'minecraft:black_dye', 'minecraft:ender_pearl', 'minecraft:obsidian', 'kubejs:chaos_essence'],
         output: 'artifacts:superstitious_hat',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:emerald', 'minecraft:emerald', 'minecraft:wheat', 'minecraft:wheat', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:emerald', 'minecraft:emerald', 'minecraft:wheat', 'minecraft:wheat', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:villager_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'minecraft:string', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:whoopee_cushion',
         sourceCost: Source.INITIATE
     })
