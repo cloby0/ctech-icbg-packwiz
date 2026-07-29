@@ -125,7 +125,8 @@ ServerEvents.recipes(event => {
             'minecraft:gold_ingot', 'minecraft:gold_ingot',
             'minecraft:gold_ingot', 'minecraft:gold_ingot',
             'minecraft:totem_of_undying',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:totemic_gold_ingot',
         source: Source.THAUMATURGE,
@@ -158,7 +159,8 @@ ServerEvents.recipes(event => {
         input: 'minecraft:soul_sand',
         pedestalItems: [
             'minecraft:ghast_tear', 'minecraft:ghast_tear',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_motive_core'
         ],
         output: 'l2complements:soul_flame',
         source: Source.THAUMATURGE
@@ -170,7 +172,8 @@ ServerEvents.recipes(event => {
             'minecraft:prismarine', 'minecraft:prismarine',
             'minecraft:prismarine', 'minecraft:prismarine',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'minecraft:sponge', 'minecraft:sponge'
+            'minecraft:sponge', 'minecraft:sponge',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2complements:guardian_eye',
         sourceCost: Source.THAUMATURGE
@@ -181,7 +184,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:guardian_rune',
         sourceCost: Source.THAUMATURGE
@@ -193,7 +197,8 @@ ServerEvents.recipes(event => {
             'minecraft:piglin_banner_pattern',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2complements:piglin_rune',
         sourceCost: Source.THAUMATURGE
@@ -205,7 +210,8 @@ ServerEvents.recipes(event => {
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'kubejs:starforged_channeling_vessel'
         ],
         output: 'l2complements:reinforced_warp_stone',
         sourceCost: Source.THAUMATURGE
@@ -217,7 +223,8 @@ ServerEvents.recipes(event => {
             'minecraft:heart_of_the_sea',
             'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
             'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:totem_of_the_sea',
         sourceCost: Source.THAUMATURGE
@@ -251,7 +258,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'minecraft:rabbit_foot', 'minecraft:rabbit_foot'
+            'minecraft:rabbit_foot', 'minecraft:rabbit_foot',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2hostility:curse_of_sloth',
         source: Source.THAUMATURGE,
@@ -262,7 +270,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'minecraft:honey_bottle', 'minecraft:honey_bottle'
+            'minecraft:honey_bottle', 'minecraft:honey_bottle',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2hostility:curse_of_gluttony',
         source: Source.THAUMATURGE,
@@ -274,7 +283,8 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'minecraft:golden_apple'
+            'minecraft:golden_apple',
+            'kubejs:starforged_channeling_vessel'
         ],
         output: 'l2hostility:ring_of_healing',
         sourceCost: Source.THAUMATURGE
@@ -286,7 +296,8 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'minecraft:heart_of_the_sea'
+            'minecraft:heart_of_the_sea',
+            'kubejs:starforged_channeling_vessel'
         ],
         output: 'l2hostility:ring_of_ocean',
         sourceCost: Source.THAUMATURGE
@@ -298,7 +309,8 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2hostility:bottle_of_sanity',
         sourceCost: Source.THAUMATURGE
@@ -329,7 +341,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'kubejs:starforged_motive_core'
         ],
         output: 'l2hostility:eternal_witch_charge',
         sourceCost: Source.THAUMATURGE
@@ -341,7 +354,8 @@ ServerEvents.recipes(event => {
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust'
+            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2hostility:charm_of_looting_2',
         sourceCost: Source.THAUMATURGE
@@ -353,7 +367,8 @@ ServerEvents.recipes(event => {
             'minecraft:spectral_arrow', 'minecraft:spectral_arrow',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence'
+            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2hostility:detector_glasses',
         sourceCost: Source.THAUMATURGE
@@ -429,7 +444,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:spider_eye', 'minecraft:spider_eye'
+            'minecraft:spider_eye', 'minecraft:spider_eye',
+            'kubejs:starforged_wizard_brain'
         ],
         output: 'l2complements:cursed_droplet',
         source: Source.THAUMATURGE,

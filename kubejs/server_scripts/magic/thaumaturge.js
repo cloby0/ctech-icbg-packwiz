@@ -65,10 +65,21 @@ ServerEvents.recipes(event => {
 
     event.smelting('gtceu:starforged_chimerite_ingot', 'kubejs:charged_chimerite')
 
-    // Shortcut (Arcanist+): raw chimerite gem + admixture direct, gated on tier attainment not this file.
-    event.shapeless('gtceu:starforged_chimerite_ingot', [
-        'mna:chimerite_gem', 'magichem:admixture_light', '#kubejs:magic/arcanist'
-    ])
+    // Shortcut (Arcanist+, Rubedo worn): Alembic/Distillery fabricates the ingot straight from
+    // materia, real wisdom-field gate (wisdom_stone_rubedo, wisdom:3).
+    event.custom({
+        type: 'magichem:distillation_fabrication',
+        wisdom: 3,
+        categories: 1,
+        output_rate: 1.0,
+        batch_size: 3,
+        object: { item: 'gtceu:starforged_chimerite_ingot' },
+        components: [
+            { item: 'magichem:admixture_light', count: 50 },
+            { item: 'magichem:essentia_mineral', count: 30 },
+            { item: 'magichem:essentia_rubedo', count: 25 }
+        ]
+    })
 
     // raw_mana -> source_gem x4: dead output, dead pedestal (nature_essence goes with it).
     // Dropped outright, no port needed.
@@ -125,4 +136,73 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:starforged_ward_lattice', [
         'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:naquadah_dust'
     ])
+
+    // Wisdom Stone: Citrinitas (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
+    // Thaumaturge's own material line. Materia kept verbatim from the mod's own citrinitas recipe
+    // (magichem-0.5.2.jar data/magichem/recipes/alchemical_sublimation/magichem/wisdom_stone_citrinitas.json).
+    // Wizard Brain in stage 1: a worn Wisdom Stone is literally automated magical reasoning.
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 4,
+        wisdom: 2,
+        object: { item: 'magichem:wisdom_stone_citrinitas' },
+        stages: [
+            {
+                experience: 135,
+                components: [
+                    { item: 'kubejs:chimerite_dust' },
+                    { item: 'kubejs:star_touched_chimerite' },
+                    { item: 'kubejs:starforged_wizard_brain' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 100 },
+                    { item: 'magichem:admixture_history', count: 70 },
+                    { item: 'magichem:admixture_permanence', count: 70 },
+                    { item: 'magichem:essentia_citrinitas', count: 50 }
+                ]
+            },
+            {
+                experience: 180,
+                components: [
+                    { item: 'botania:rune_earth' },
+                    { item: 'botania:rune_water' },
+                    { item: 'botania:rune_spring' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_cold', count: 70 },
+                    { item: 'magichem:admixture_depths', count: 70 },
+                    { item: 'magichem:admixture_forests', count: 70 },
+                    { item: 'magichem:admixture_mountains', count: 70 }
+                ]
+            },
+            {
+                experience: 225,
+                components: [
+                    { item: 'ad_astra:ice_shard' },
+                    { item: 'gtceu:naquadah_dust' },
+                    { item: 'ad_astra:ice_shard' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_hells', count: 70 },
+                    { item: 'magichem:admixture_plains', count: 70 },
+                    { item: 'magichem:admixture_swamps', count: 70 },
+                    { item: 'magichem:admixture_wastes', count: 70 }
+                ]
+            },
+            {
+                experience: 270,
+                components: [
+                    { item: 'kubejs:vengeance_touched_chimerite' },
+                    { item: 'magichem:wisdom_stone_albedo' },
+                    { item: 'kubejs:vengeance_touched_chimerite' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_change', count: 100 },
+                    { item: 'magichem:admixture_curse', count: 70 },
+                    { item: 'magichem:admixture_sleep', count: 70 },
+                    { item: 'magichem:essentia_citrinitas', count: 40 }
+                ]
+            }
+        ]
+    })
 })

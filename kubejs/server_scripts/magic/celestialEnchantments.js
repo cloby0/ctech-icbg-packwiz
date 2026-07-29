@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst',
             'celestial_core:pure_nether_star', 'minecraft:netherite_scrap',
-            'botania:terrasteel_ingot', 'botania:terrasteel_ingot'
+            'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'kubejs:starforged_wizard_brain'
         ],
         output: 'celestial_enchantments:legendary_celestial_catalyst',
         sourceCost: Source.THAUMATURGE
