@@ -94,4 +94,33 @@ ServerEvents.recipes(event => {
     event.shapeless('gtceu:gravitic_rubedo_ingot', [
         'mna:superheated_purified_vinteum_ingot', 'bloodmagic:ingot_hellforged', '#kubejs:magic/sage'
     ])
+
+    // --- Microcrafting: Arcanist circuit + components ---
+    // Circuit built through 2 real handlers: Alchemy Table -> furnace.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:rubedo_array_core',
+        input: ['gtceu:gravitic_rubedo_ingot', 'kubejs:elven_source_lattice', 'botania:dragonstone'],
+        syphon: LP.ARCANIST,
+        ticks: 200
+    })
+
+    event.smelting('kubejs:rubedo_array', 'kubejs:rubedo_array_core')
+
+    // Wizard Brain: Manaweaving Altar (3rd distinct handler for this tier's item set).
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:rubedo_wizard_brain',
+        items: ['gtceu:gravitic_rubedo_ingot', 'kubejs:elven_concentrate', 'botania:pixie_dust'],
+        patterns: ['mna:diamond', 'mna:knot3'],
+        tier: 3
+    })
+
+    event.shapeless('kubejs:rubedo_motive_core', [
+        'gtceu:gravitic_rubedo_rod', 'extrabotany:aerialite_ingot', 'gtceu:gravitic_rubedo_ingot'
+    ])
+    event.shapeless('kubejs:rubedo_channeling_vessel', [
+        'gtceu:gravitic_rubedo_ingot', 'kubejs:weak_elementium_dust', 'extrabotany:photonium_ingot'
+    ])
+    event.shapeless('kubejs:rubedo_ward_lattice', [
+        'gtceu:gravitic_rubedo_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
+    ])
 })
