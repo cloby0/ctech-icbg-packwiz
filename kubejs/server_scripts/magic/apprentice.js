@@ -122,4 +122,37 @@ ServerEvents.recipes(event => {
 
     // Dominion Wand: dead Ars item, dead source_gem ingredient. Dropped, no replacement --
     // inventing a substitute utility wand isn't in the design spec, flag if one is wanted.
+
+    // --- Microcrafting: Apprentice circuit + components ---
+    // Circuit built through 2 real handlers: Alchemy Table -> Mana Pond.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:zanite_sigil_blank',
+        input: ['botania:manasteel_ingot', 'hexcasting:charged_amethyst', 'irons_spellbooks:magic_cloth'],
+        syphon: LP.APPRENTICE,
+        ticks: 200
+    })
+
+    addManaPondRecipe(event, {
+        input: 'kubejs:zanite_sigil_blank',
+        output: 'kubejs:zanite_sigil',
+        mana: Mana.APPRENTICE
+    })
+
+    // Wizard Brain: Manaweaving Altar t1 (3rd distinct handler for this tier's item set).
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:zanite_wizard_brain',
+        items: ['botania:manasteel_ingot', 'irons_spellbooks:magic_cloth', 'hexcasting:charged_amethyst'],
+        patterns: ['mna:circle', 'mna:square'],
+        tier: 1
+    })
+
+    event.shapeless('kubejs:zanite_motive_core', [
+        'gtceu:manasteel_rod', 'minecraft:glowstone_dust', 'botania:manasteel_ingot'
+    ])
+    event.shapeless('kubejs:zanite_channeling_vessel', [
+        'botania:manasteel_ingot', 'magichem:admixture_energy', 'minecraft:glow_berries'
+    ])
+    event.shapeless('kubejs:zanite_ward_lattice', [
+        'botania:manasteel_ingot', 'gtceu:amethyst_dust', 'minecraft:glowstone'
+    ])
 })
