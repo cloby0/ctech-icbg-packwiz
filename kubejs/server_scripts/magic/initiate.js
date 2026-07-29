@@ -308,4 +308,39 @@ ServerEvents.recipes(event => {
     // kubejs:magical_receiver's basic_spell_turret ingredient is Ars-native with no MNA/Blood
     // Magic equivalent, and this was the only consumer of it. arsArmorer.js (its attachment line)
     // deleted entirely for the same reason.
+
+    // --- Microcrafting: Initiate circuit + components ---
+    // Elementium is this tier's actual signature/anchor (corrected 2026-07-29, matching the
+    // original rework design doc); Holy Silver appears below only as a secondary flavor material.
+    // Circuit built through 2 real handlers: Manaweaving Altar t2 -> Spirit Infusion.
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:elementium_matrix_core',
+        items: ['botania:elementium_ingot', 'gtceu:holy_silver_dust', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
+    })
+
+    addSpiritInfusion(event, {
+        input: 'kubejs:elementium_matrix_core',
+        output: 'kubejs:elementium_matrix',
+        spirits: [{ type: 'aerial', count: 2 }]
+    })
+
+    // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    addEldrinAltarRecipe(event, {
+        output: 'kubejs:elementium_wizard_brain',
+        items: ['botania:elementium_ingot', 'irons_spellbooks:divine_pearl', 'kubejs:sacred_ambrosium_shard'],
+        affinity: 'ARCANE', power: Source.INITIATE,
+        tier: 2
+    })
+
+    event.shapeless('kubejs:elementium_motive_core', [
+        'gtceu:elementium_bolt', 'gtceu:skyforged_rod', 'aether:victory_medal'
+    ])
+    event.shapeless('kubejs:elementium_channeling_vessel', [
+        'botania:elementium_ingot', 'gtceu:holy_silver_plate', 'reliquary:mercy_cross'
+    ])
+    event.shapeless('kubejs:elementium_ward_lattice', [
+        'botania:elementium_ingot', 'gtceu:skyforged_plate', 'reliquary:fortune_coin'
+    ])
 });
