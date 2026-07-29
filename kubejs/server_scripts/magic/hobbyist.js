@@ -182,4 +182,50 @@ ServerEvents.recipes(event => {
             F: '#forge:tools/files'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'));
+
+    // --- Microcrafting: Hobbyist circuit + components ---
+    // Circuit built through 2 real handlers: cauldron (hexerei:mixingcauldron) -> Blood Altar.
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:lava" },
+        "ingredients": [
+            { "item": "gtceu:ashen_ichor_ingot" },
+            { "item": "gtceu:ashen_ichor_ingot" },
+            { "item": "irons_spellbooks:arcane_essence" },
+            { "item": "irons_spellbooks:arcane_essence" },
+            { "item": "occultism:otherworld_essence" },
+            { "item": "occultism:otherworld_essence" },
+            { "item": "minecraft:redstone" },
+            { "item": "minecraft:redstone" }
+        ],
+        "output": { "item": "kubejs:ichor_sigil_blank" },
+        "liquidOutput": { "fluid": "minecraft:lava" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    });
+
+    addBloodAltarRecipe(event, {
+        input: 'kubejs:ichor_sigil_blank',
+        output: 'kubejs:ichorbound_sigil',
+        syphon: LP.HOBBYIST,
+        upgradeLevel: 0
+    })
+
+    // Wizard Brain: Spirit Altar (3rd distinct handler for this tier's item set).
+    addSpiritInfusion(event, {
+        input: 'gtceu:ashen_ichor_ingot',
+        output: 'kubejs:ichor_wizard_brain',
+        spirits: [{ type: 'infernal', count: 1 }]
+    })
+
+    // Motive Core / Channeling Vessel / Ward Lattice: vanilla craft, structural/passive parts.
+    event.shapeless('kubejs:ichor_motive_core', [
+        'gtceu:ashen_ichor_ingot', 'minecraft:blaze_powder', 'gtceu:iron_rod'
+    ])
+    event.shapeless('kubejs:ichor_channeling_vessel', [
+        'gtceu:ashen_ichor_ingot', 'magichem:essentia_water', 'kubejs:primordial_organic_muck'
+    ])
+    event.shapeless('kubejs:ichor_ward_lattice', [
+        'gtceu:ashen_ichor_ingot', 'create:iron_sheet', 'magichem:essentia_earth'
+    ])
 });
