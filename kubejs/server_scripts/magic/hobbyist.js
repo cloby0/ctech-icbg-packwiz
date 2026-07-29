@@ -118,11 +118,12 @@ ServerEvents.recipes(event => {
                  [
                     'HAF',
                     'ACA',
-                    ' A '
+                    'MAM'
                  ],
                  {
                      A: 'irons_spellbooks:arcane_essence',
                      C: 'gtceu:double_gold_plate',
+                     M: 'gtceu:ashen_ichor_ingot',
                      H: '#forge:tools/hammers',
                      F: '#forge:tools/files'
                  }
@@ -147,13 +148,15 @@ ServerEvents.recipes(event => {
     ).damageIngredient(Ingredient.of('#forge:tools/saws')).damageIngredient(Ingredient.of('#forge:tools/mallets'))
 
     // Base spellbook = bind the four elements around a book, cased in copper.
+    // Circuit: this is the tier's actual casting device, the clearest circuit fit in the file --
+    // one of the three repeated copper-plate fillers becomes the Hobbyist circuit.
     event.remove({ output: 'irons_spellbooks:copper_spell_book' });
     event.shaped(
         Item.of('irons_spellbooks:copper_spell_book', 1),
         [
             'PFP',
             'WBA',
-            'PEH'
+            'XEH'
         ],
         {
             F: 'magichem:essentia_fire',
@@ -162,22 +165,25 @@ ServerEvents.recipes(event => {
             E: 'magichem:essentia_earth',
             B: 'minecraft:book',
             P: '#forge:plates/copper',
+            X: 'kubejs:ichorbound_sigil',
             H: '#forge:tools/hammers'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
 
-    // Iron spell book = direct upgrade of the copper book, reinforced with iron.
+    // Iron spell book = direct upgrade of the copper book, reinforced with iron. Already inherits
+    // the circuit via the copper book ingredient; Ward Lattice component fits the reinforcement theme.
     event.remove({ output: 'irons_spellbooks:iron_spell_book' });
     event.shaped(
         Item.of('irons_spellbooks:iron_spell_book', 1),
         [
             'HIF',
             'ICI',
-            ' I '
+            'LIL'
         ],
         {
             I: '#forge:plates/iron',
             C: 'irons_spellbooks:copper_spell_book',
+            L: 'kubejs:ichor_ward_lattice',
             H: '#forge:tools/hammers',
             F: '#forge:tools/files'
         }

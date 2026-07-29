@@ -129,9 +129,10 @@ ServerEvents.recipes(event => {
     })
 
     // Pulled to Hobbyist: air essence binds a slow-fall umbrella (was luminessence-tier enchanting)
+    // Ward Lattice component fills the previously-blank slot: protection theme fits an umbrella.
     event.shaped(Item.of('artifacts:umbrella', 1), [
-        'LAL', 'SIS', 'CT '
-    ], { 'L': 'minecraft:leather', 'A': '#kubejs:air_essences', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
+        'LAL', 'SIS', 'CTW'
+    ], { 'L': 'minecraft:leather', 'A': '#kubejs:air_essences', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters', 'W': 'kubejs:ichor_ward_lattice' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
