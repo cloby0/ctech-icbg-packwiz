@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
         .fusionStartEU(640000000)
 
     event.recipes.gtceu.autoclave('time_crystal_growth')
-        .itemInputs('4x gtceu:quartz_dust')
+        .itemInputs('4x gtceu:nether_quartz_dust')
         .inputFluids(Fluid.of('kubejs:temporal_plasma', 1000))
         .itemOutputs('1x kubejs:time_crystal')
         .duration(400)
