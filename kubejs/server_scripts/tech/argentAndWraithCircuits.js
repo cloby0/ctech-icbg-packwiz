@@ -131,6 +131,9 @@ ServerEvents.recipes(event => {
             '4x bloodmagic:basemonstersoul',
             '2x minecraft:redstone'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 4))
+        .perTick(false)
         .itemOutputs('1x kubejs:bound_demon_will')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -141,6 +144,9 @@ ServerEvents.recipes(event => {
             '2x bloodmagic:basemonstersoul_destructive',
             '4x minecraft:redstone'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 8))
+        .perTick(false)
         .itemOutputs('2x kubejs:crystallized_malice')
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
@@ -151,6 +157,9 @@ ServerEvents.recipes(event => {
             '2x bloodmagic:basemonstersoul_steadfast',
             '4x kubejs:crystallized_malice'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 16))
+        .perTick(false)
         .itemOutputs('2x kubejs:vengeful_ichor')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -160,6 +169,9 @@ ServerEvents.recipes(event => {
             '1x bloodmagic:ingot_hellforged',
             '4x kubejs:vengeful_ichor'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 32))
+        .perTick(false)
         .itemOutputs('1x kubejs:hellforged_determinant')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -169,6 +181,9 @@ ServerEvents.recipes(event => {
             '4x occultism:spirit_attuned_crystal',
             '2x minecraft:redstone'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 8))
+        .perTick(false)
         .itemOutputs('1x kubejs:bound_djinni_seal')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
@@ -178,6 +193,9 @@ ServerEvents.recipes(event => {
             '4x occultism:afrit_essence',
             '2x occultism:spirit_attuned_gem'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 16))
+        .perTick(false)
         .itemOutputs('2x kubejs:afrit_bound_core')
         .duration(300)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -188,6 +206,9 @@ ServerEvents.recipes(event => {
             '2x occultism:soul_shard',
             '2x kubejs:afrit_bound_core'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 32))
+        .perTick(false)
         .itemOutputs('2x kubejs:marid_dominion_matrix')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -198,6 +219,9 @@ ServerEvents.recipes(event => {
             '4x occultism:otherworld_essence',
             '2x kubejs:marid_dominion_matrix'
         )
+        .perTick(true)
+        .inputFluids(Fluid.of('kubejs:causal_lock_fluid', 64))
+        .perTick(false)
         .itemOutputs('1x kubejs:otherworld_convergence_core')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UIV])
