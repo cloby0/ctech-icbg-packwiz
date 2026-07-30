@@ -45,9 +45,9 @@ ServerEvents.recipes(event => {
     })
 
 
-    // --- Gravitic Rubedo: Arcanist signature material ---
+    // --- Rubedo Core: Arcanist signature material ---
     // Magic spine stays GT-free: vanilla combine, real Blood Magic Alchemy Table, real Occultism
-    // ritual, plain furnace smelt (gravitic_rubedo has no blastTemp on purpose).
+    // ritual, plain furnace smelt (rubedo_core has no blastTemp on purpose).
     //
     // "Grand Circle of Fabrication + worn Wisdom Stone" per the design spec doesn't work for a
     // custom output item -- verified against MagiChem's real recipes: Circle of Fabrication runs
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    event.smelting('gtceu:gravitic_rubedo_ingot', 'kubejs:bound_gravitic_core')
+    event.smelting('gtceu:rubedo_core_ingot', 'kubejs:bound_gravitic_core')
 
     // Shortcut (Sage+, Philosopher's Stone worn): Alembic/Distillery fabricates the ingot straight
     // from materia, real wisdom-field gate (philosophers_stone, wisdom:4).
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         categories: 1,
         output_rate: 1.0,
         batch_size: 3,
-        object: { item: 'gtceu:gravitic_rubedo_ingot' },
+        object: { item: 'gtceu:rubedo_core_ingot' },
         components: [
             { item: 'magichem:essentia_rubedo', count: 60 },
             { item: 'magichem:admixture_potential', count: 35 },
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
     // Circuit built through 2 real handlers: Alchemy Table -> furnace.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:rubedo_array_core',
-        input: ['gtceu:gravitic_rubedo_ingot', 'kubejs:elven_source_lattice', 'botania:dragonstone'],
+        input: ['gtceu:rubedo_core_ingot', 'kubejs:elven_source_lattice', 'botania:dragonstone'],
         syphon: LP.ARCANIST,
         ticks: 200
     })
@@ -107,19 +107,19 @@ ServerEvents.recipes(event => {
     // Wizard Brain: Manaweaving Altar (3rd distinct handler for this tier's item set).
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:rubedo_wizard_brain',
-        items: ['gtceu:gravitic_rubedo_ingot', 'mna:superheated_purified_vinteum_ingot', 'botania:pixie_dust'],
+        items: ['gtceu:rubedo_core_ingot', 'mna:superheated_purified_vinteum_ingot', 'botania:pixie_dust'],
         patterns: ['mna:diamond', 'mna:knot3'],
         tier: 3
     })
 
-    event.shapeless('kubejs:rubedo_motive_core', [
-        'gtceu:gravitic_rubedo_rod', 'extrabotany:aerialite_ingot', 'gtceu:gravitic_rubedo_ingot'
+    addComponentRecipe(event, 'kubejs:rubedo_motive_core', [
+        'gtceu:rubedo_core_rod', 'extrabotany:aerialite_ingot', 'gtceu:rubedo_core_ingot'
     ])
-    event.shapeless('kubejs:rubedo_channeling_vessel', [
-        'gtceu:gravitic_rubedo_ingot', 'mna:superheated_purified_vinteum_ingot', 'extrabotany:photonium_ingot'
+    addComponentRecipe(event, 'kubejs:rubedo_channeling_vessel', [
+        'gtceu:rubedo_core_ingot', 'mna:superheated_purified_vinteum_ingot', 'extrabotany:photonium_ingot'
     ])
-    event.shapeless('kubejs:rubedo_ward_lattice', [
-        'gtceu:gravitic_rubedo_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
+    addComponentRecipe(event, 'kubejs:rubedo_ward_lattice', [
+        'gtceu:rubedo_core_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
     ])
 
     // Wisdom Stone: Rubedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto

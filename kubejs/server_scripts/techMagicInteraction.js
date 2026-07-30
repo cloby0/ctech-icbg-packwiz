@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.mixer('rubedo_conduit_dust_mix')
-        .itemInputs('2x gtceu:gravitic_rubedo_dust', '1x minecraft:redstone')
+        .itemInputs('2x gtceu:rubedo_core_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:rubedo_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -675,7 +675,7 @@ ServerEvents.recipes(event => {
             'kubejs:element_attunement_stone',
             'gtceu:distilled_animus_ingot',
             'gtceu:starforged_chimerite_ingot',
-            'gtceu:gravitic_rubedo_ingot',
+            'gtceu:rubedo_core_ingot',
             'mysticalagriculture:air_essence',
             'gtceu:naquadah_dust'
         ],

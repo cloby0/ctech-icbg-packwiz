@@ -283,13 +283,13 @@ ServerEvents.recipes(event => {
         tier: 5
     })
 
-    event.shapeless('kubejs:empyrean_motive_core', [
+    addComponentRecipe(event, 'kubejs:empyrean_motive_core', [
         'gtceu:empyrean_ichor_rod', 'kubejs:gaian_blood_core', 'minecraft:netherite_ingot'
     ])
-    event.shapeless('kubejs:empyrean_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:empyrean_channeling_vessel', [
         'gtceu:empyrean_ichor_ingot', 'gtceu:abstract_elastomer_ingot', 'mysticalagriculture:enderman_essence'
     ])
-    event.shapeless('kubejs:empyrean_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:empyrean_ward_lattice', [
         'gtceu:empyrean_ichor_plate', 'kubejs:gaian_annihilation_core', 'minecraft:ender_eye'
     ])
 

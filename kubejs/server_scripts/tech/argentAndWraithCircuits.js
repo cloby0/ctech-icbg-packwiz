@@ -1,5 +1,73 @@
 ServerEvents.recipes(event => {
 
+    // Argentware/wraithware circuit boards -- raw board then printed board, mirroring GTCEu's
+    // own <x>_circuit_board (raw) / <x>_printed_circuit_board (wiring printed on) shape exactly:
+    // a chemical_reactor step consuming the raw board + foil of a material + a chemical fluid.
+    // The foil is where the magic-mod integration lives -- transmuted from a plain GT foil.
+
+    event.recipes.gtceu.circuit_assembler('argentware_circuit_board_recipe')
+        .itemInputs(
+            '1x gtceu:wetware_circuit_board',
+            '2x bloodmagic:basemonstersoul'
+        )
+        .itemOutputs('1x kubejs:argentware_circuit_board')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    addBloodAltarRecipe(event, {
+        output: { item: 'kubejs:argent_foil', count: 8 },
+        input: { item: 'gtceu:platinum_foil', count: 8 },
+        syphon: LP.ARCANIST,
+        upgradeLevel: 4,
+        consumptionRate: 50,
+        drainRate: 50
+    })
+
+    event.recipes.gtceu.chemical_reactor('argentware_printed_circuit_board_recipe')
+        .itemInputs(
+            '1x kubejs:argentware_circuit_board',
+            '16x kubejs:argent_foil'
+        )
+        .inputFluids(Fluid.of('gtceu:sodium_persulfate', 4000))
+        .itemOutputs('1x kubejs:argentware_printed_circuit_board')
+        .duration(1800)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler('wraithware_circuit_board_recipe')
+        .itemInputs(
+            '1x gtceu:wetware_circuit_board',
+            '2x occultism:spirit_attuned_crystal'
+        )
+        .itemOutputs('1x kubejs:wraithware_circuit_board')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.custom({
+        type: 'malum:spirit_infusion',
+        input: { item: 'gtceu:platinum_foil', count: 8 },
+        extra_items: [
+            { item: 'occultism:spirit_attuned_crystal', count: 4 },
+            { item: 'malum:astral_weave', count: 2 }
+        ],
+        spirits: [
+            { type: 'eldritch', count: 4 },
+            { type: 'arcane', count: 8 }
+        ],
+        output: { item: 'kubejs:spectral_foil', count: 8 }
+    }).id('kubejs:spirit_infusion/spectral_foil')
+
+    event.recipes.gtceu.chemical_reactor('wraithware_printed_circuit_board_recipe')
+        .itemInputs(
+            '1x kubejs:wraithware_circuit_board',
+            '16x kubejs:spectral_foil'
+        )
+        .inputFluids(Fluid.of('gtceu:sodium_persulfate', 4000))
+        .itemOutputs('1x kubejs:wraithware_printed_circuit_board')
+        .duration(1800)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // Laplace's Determinism Engine -- converts chance-based Demon Will / spirit essence
     // drops into a guaranteed-rate refined reagent for the argentware/wraithware circuit lines.
 
@@ -83,7 +151,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:argentware_printed_circuit_board',
             '1x gtceu:nano_cpu_chip',
             '1x kubejs:bound_demon_will',
             '8x gtceu:smd_capacitor',
@@ -96,7 +164,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_recipe_asmd')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:argentware_printed_circuit_board',
             '1x gtceu:nano_cpu_chip',
             '1x kubejs:bound_demon_will',
             '3x gtceu:advanced_smd_capacitor',
@@ -109,7 +177,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_assembly_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:argentware_printed_circuit_board',
             '2x kubejs:argentware_processor',
             '1x kubejs:crystallized_malice',
             '8x gtceu:smd_inductor',
@@ -124,7 +192,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_assembly_recipe_asmd')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:argentware_printed_circuit_board',
             '2x kubejs:argentware_processor',
             '1x kubejs:crystallized_malice',
             '2x gtceu:advanced_smd_inductor',
@@ -182,7 +250,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_unbound_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:wraithware_printed_circuit_board',
             '1x gtceu:nano_cpu_chip',
             '1x kubejs:bound_djinni_seal',
             '8x gtceu:smd_capacitor',
@@ -195,7 +263,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_unbound_recipe_asmd')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:wraithware_printed_circuit_board',
             '1x gtceu:nano_cpu_chip',
             '1x kubejs:bound_djinni_seal',
             '3x gtceu:advanced_smd_capacitor',
@@ -222,7 +290,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_assembly_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:wraithware_printed_circuit_board',
             '2x kubejs:wraithware_processor',
             '1x kubejs:afrit_bound_core',
             '8x gtceu:smd_inductor',
@@ -236,7 +304,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_assembly_recipe_asmd')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
+            '1x kubejs:wraithware_printed_circuit_board',
             '2x kubejs:wraithware_processor',
             '1x kubejs:afrit_bound_core',
             '2x gtceu:advanced_smd_inductor',

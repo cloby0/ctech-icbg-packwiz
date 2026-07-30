@@ -1160,7 +1160,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // purified vinteum + MagiChem rubedo essentia + Blood Magic Hellforged sand + Marid-tier
     // Occultism essence. No blastTemp on purpose -- magic spine stays GT-free, last step is a
     // literal furnace smelt.
-    event.create('gravitic_rubedo')
+    event.create('rubedo_core')
         .ingot()
         .color(0x7A1F3D).secondaryColor(0xD4AF37)
         .iconSet(GTMaterialIconSet.SHINY)

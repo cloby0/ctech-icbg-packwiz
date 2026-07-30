@@ -123,13 +123,13 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    event.shapeless('kubejs:starforged_motive_core', [
+    addComponentRecipe(event, 'kubejs:starforged_motive_core', [
         'gtceu:starforged_chimerite_rod', 'ad_astra:ice_shard', 'gtceu:starforged_chimerite_ingot'
     ])
-    event.shapeless('kubejs:starforged_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:starforged_channeling_vessel', [
         'gtceu:starforged_chimerite_ingot', 'botania:rune_water', 'kubejs:chimerite_dust'
     ])
-    event.shapeless('kubejs:starforged_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:starforged_ward_lattice', [
         'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:naquadah_dust'
     ])
 

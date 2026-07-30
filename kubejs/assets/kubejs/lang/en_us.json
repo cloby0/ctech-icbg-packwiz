@@ -1,5 +1,8 @@
 {
   "item.kubejs.ashen_ichor_ingot_rough": "Rough Ashen Ichor Ingot",
+  "item.kubejs.ichor_sigil_blank": "Blank Ichor Sigil",
+  "item.kubejs.zanite_sigil_blank": "Blank Zanite Sigil",
+  "item.kubejs.veridian_sigil_blank": "Blank Veridian Sigil",
 
   "item.kubejs.glowing_compound_dust": "Glowing Compound Dust",
   "item.kubejs.impure_glimmering_dust": "Impure Glimmering Dust",
@@ -188,6 +191,12 @@
   "item.kubejs.draconic_boule": "Draconic Boule",
   "item.kubejs.stabilized_chaos_crystal": "Stabilized Chaos Crystal",
   "item.kubejs.chaos_harmonic_board": "Chaos Harmonic Board",
+  "item.kubejs.argent_foil": "Argent Foil",
+  "item.kubejs.spectral_foil": "Spectral Foil",
+  "item.kubejs.argentware_circuit_board": "Argentware Circuit Board",
+  "item.kubejs.argentware_printed_circuit_board": "Argentware Printed Circuit Board",
+  "item.kubejs.wraithware_circuit_board": "Wraithware Circuit Board",
+  "item.kubejs.wraithware_printed_circuit_board": "Wraithware Printed Circuit Board",
   "item.kubejs.argentware_processor": "Argentware Processor",
   "item.kubejs.argentware_processor_assembly": "Argentware Processor Assembly",
   "item.kubejs.argentware_processor_supercomputer": "Argentware Processor Supercomputer",
