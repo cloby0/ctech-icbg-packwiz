@@ -56,7 +56,7 @@
 			description: [
 				"framework casings wrap a UHV hull, field generator, and emitters into the &6draconic infusion chamber&r -- the machine that industrializes draconic evolution's fusion altar."
 				""
-				"perfect overclocks, no parallel hatch. it drinks &5draconic computation&r fluid, so keep the chemical reactor loop from the next quest fed."
+				"perfect overclocks, no parallel hatch. it drinks &6argent energy&r, so keep the rendering loop fed."
 			]
 			id: "3B90E4C7A2D51F60"
 			subtitle: "draconic evolution's fusion altar, industrialized"
@@ -72,7 +72,7 @@
 		{
 			dependencies: ["2300F1C2E3D40004"]
 			description: [
-				"the &6draconic infusion chamber&r turns draconium ingot + draconic computation fluid into &aawakened draconium&r. draconic computation itself comes from a chemical reactor eating awakened draconium dust -- draconic evolution's own altar bootstraps the first batch before the loop can run on its own."
+				"the &6draconic infusion chamber&r turns draconium ingot + &6argent energy&r into &aawakened draconium&r. argent energy is rendered from &4life essence&r and raw will back at ZPM, so the blood altar you already run is the feedstock."
 				""
 				"awakened draconium is UEV's structural material. get this stable early; almost everything past this point wants some."
 			]
@@ -93,51 +93,55 @@
 		{
 			dependencies: ["2300F1C2E3D40008"]
 			description: [
-				"&aneutronium wafers&r come from cutting a &adraconic boule&r in a cleanroom cutter -- and draconic boule is a &5prophet-tier magic item&r, not a tech one. this is the real convergence point: the two trees actually need each other from here on."
+				"gregtech's own &awetware board&r is a multilayer board plus life support -- a petri dish, growth medium, a pump, a sensor. it keeps something alive."
 				""
-				"board assembly also wants a dragon heart crystal and both draconium and awakened draconium foil. feeds directly into the processor supercomputer below."
+				"&aargentware&r forks off the same multilayer board and adds the opposite: a &4tartaric gem&r to hold the occupant, &4demon will&r to run it, and a &4will gauge&r to watch it. no dish, no medium, no pump. will does not eat."
+				""
+				"printing wants &aargent foil&r, which is &5draconium&r foil run through the blood altar. draconium is fusion-only, so this is not a cheap board."
 			]
 			id: "2300F1C2E3D4000C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "where the two trees actually meet"
+			subtitle: "raw will, and nobody home"
 			tasks: [{
 				count: 2L
 				id: "2300F1C2E3D4000D"
-				item: "kubejs:draconic_resonance_board"
+				item: "kubejs:argentware_printed_circuit_board"
 				type: "item"
 			}]
-			title: "Draconic Resonance Board"
+			title: "Argentware Board"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40008"]
 			description: [
-				"the base &adraconic processor&r -- neutronium wafer, draconium foil, a dragon heart crystal, and a stack of advanced SMDs, run through the circuit assembler at UHV power. no new machine needed, just enough overclock."
+				"the base &aargentware processor&r -- the printed board, a stack of SMDs, and soldering alloy through the circuit assembler."
 				""
-				"draconic processor satisfies ZPM-tier circuit recipes -- three tiers behind, same deviation pattern as every circuit line before it."
+				"two recipes, same output: plain SMDs in bulk, or fewer advanced ones. the advanced route is optional here and mandatory later, which is the whole point of offering it now."
+				""
+				"argentware processor satisfies &aZPM&r-tier circuit recipes. that is what it &ofits&r, not what builds it -- the whole line is crafted at UHV."
 			]
 			id: "2300F1C2E3D40010"
 			shape: "square"
 			size: 0.75d
-			subtitle: "the draconic line starts here"
+			subtitle: "the argentware line starts here"
 			tasks: [{
 				count: 4L
 				id: "2300F1C2E3D40011"
-				item: "kubejs:draconic_processor"
+				item: "kubejs:argentware_processor"
 				type: "item"
 			}]
-			title: "Draconic Processor"
+			title: "Argentware Processor"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40010"]
 			description: [
-				"&aawakened draconium foil&r gates this recipe -- the same 'assembly rung introduces the gating material' pattern as every line before it (ostrum, calorite, naquadah wire)."
+				"the assembly rung. same shape as every circuit line you have built: frame, processors, SMDs, soldering alloy."
 				""
-				"satisfies UV-tier recipes. crafts up into the processor supercomputer below."
+				"satisfies &aUV&r-tier recipes. crafts up into the supercomputer below, which is where the components stop being ordinary."
 			]
 			id: "2300F1C2E3D40014"
 			shape: "square"
@@ -146,40 +150,42 @@
 			tasks: [{
 				count: 2L
 				id: "2300F1C2E3D40015"
-				item: "kubejs:draconic_processor_assembly"
+				item: "kubejs:argentware_processor_assembly"
 				type: "item"
 			}]
-			title: "Draconic Processor Assembly"
+			title: "Argentware Processor Assembly"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2300F1C2E3D40014", "2300F1C2E3D4000C"]
 			description: [
-				"an assembly line recipe: tritanium frame, draconic processor assembly, four resonance boards, a wall of advanced SMDs, RAM chips, europium plate, and two more dragon heart crystals."
+				"an assembly line recipe, and the first one that will not accept ordinary components."
 				""
-				"this is as far as the draconic line goes at UHV -- the mainframe rung needs chaos crystal dust, which doesn't exist until UEV. satisfies UHV-tier recipes; batch it, it's the ceiling here."
+				"&awarded SMDs&r are not stronger than advanced ones. they are re-cased in &econsecrated chromite&r so they keep working next to something bound. plain electronics geek out at this range -- that is the real reason every line before this one had a ceiling."
+				""
+				"satisfies &aUHV&r-tier recipes. batch it."
 			]
 			id: "2300F1C2E3D40018"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "the ceiling here -- mainframe waits for UEV"
+			subtitle: "ordinary parts stop working here"
 			tasks: [{
 				count: 2L
 				id: "2300F1C2E3D40019"
-				item: "kubejs:draconic_processor_supercomputer"
+				item: "kubejs:argentware_processor_supercomputer"
 				type: "item"
 			}]
-			title: "Draconic Processor Supercomputer"
+			title: "Argentware Processor Supercomputer"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["2300F1C2E3D40004", "2300F1C2E3D40018"]
 			description: [
-				"&aawakened draconium&r is UEV's structural material -- confirmed straight from the machine casing recipe (`uev_machine_casing_recipe`), not guessed. the &adraconic processor supercomputer&r is the best circuit reachable here; the mainframe stays out of reach until chaos crystal dust exists at UEV."
+				"&aawakened draconium&r is UEV's structural material -- straight from the machine casing recipe (`uev_machine_casing_recipe`), not guessed."
 				""
-				"both should be in steady production before leaving. UEV is next -- the chaos guardian and the chaos theme circuits wait there. bring prophet-tier magic progress if it isn't already running; this pack's endgame stops rewarding solo lines from here."
+				"both should be in steady production before leaving. UEV is next, and the question changes there: you have been burning will as fuel. next tier you stop burning it and start asking it to work. bring prophet-tier magic progress if it isn't already running; this pack's endgame stops rewarding solo lines from here."
 			]
 			icon: "gtceu:awakened_draconium_plate"
 			id: "2300F1C2E3D4001C"
@@ -196,7 +202,7 @@
 				{
 					count: 2L
 					id: "2300F1C2E3D4001E"
-					item: "kubejs:draconic_processor_supercomputer"
+					item: "kubejs:argentware_processor_supercomputer"
 					type: "item"
 				}
 			]

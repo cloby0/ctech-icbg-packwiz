@@ -72,7 +72,7 @@
 			description: [
 				"this is an &5ascendant-tier magic item&r (`magic/ascendant.js`) -- deeper into the magic tree than prophet. if the magic side hasn't pushed past sage and prophet yet, this is where it has to catch up."
 				""
-				"required directly for the chaos harmonic board below. no tech-only substitute exists for this one."
+				"required directly for the egoware board at UIV. no tech-only substitute exists for this one."
 			]
 			id: "2400F1C2E3D40008"
 			shape: "square"
@@ -91,51 +91,53 @@
 		{
 			dependencies: ["2400F1C2E3D40004", "2400F1C2E3D40008"]
 			description: [
-				"neutronium wafers, awakened draconium foil, a stabilized chaos crystal, and chaos crystal dust assemble in a cleanroom into the &achaos harmonic board&r -- the chaos theme's answer to the draconic resonance board."
+				"argentware burned will as fuel. &awraithware&r stops burning it and puts something in the board that can be argued with -- a &5spirit attuned crystal&r and an &5occultism soul gem&r, seated in an argentware board."
 				""
-				"chaos matrix fluid (chaos shard + gaia spirit dust + stellar plasma + draconic computation, chemical reactor) feeds most of the recipes downstream too -- worth automating alongside this."
+				"the occupant has a name and a rank. which pentacle you can draw decides which one answers, and that is the whole gate on this line."
+				""
+				"printed on &aspectral foil&r: draconium foil taken through malum's spirit infusion."
 			]
 			id: "2400F1C2E3D4000C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "the chaos theme's resonance board"
+			subtitle: "there's a guy in it"
 			tasks: [{
 				count: 2L
 				id: "2400F1C2E3D4000D"
-				item: "kubejs:chaos_harmonic_board"
+				item: "kubejs:wraithware_printed_circuit_board"
 				type: "item"
 			}]
-			title: "Chaos Harmonic Board"
+			title: "Wraithware Board"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2400F1C2E3D4000C"]
 			description: [
-				"chaos crystal dust, awakened draconium foil, a chaos harmonic board, and advanced SMDs, run through the circuit assembler. satisfies UV-tier recipes -- same three-tiers-behind deviation as the draconic line."
+				"the base rung comes out &ounbound&r -- a board with a vacancy. an &5occultism ritual&r fills it, and the eternal soul compression unit automates that ritual once you have built one."
 				""
-				"no new machine needed. just the ingredients and enough overclock."
+				"satisfies &aUV&r-tier recipes; crafted at UEV. two SMD routes again, plain or advanced."
 			]
 			id: "2400F1C2E3D40010"
 			shape: "square"
 			size: 0.75d
-			subtitle: "the chaos line starts here"
+			subtitle: "the wraithware line starts here"
 			tasks: [{
 				count: 4L
 				id: "2400F1C2E3D40011"
-				item: "kubejs:chaos_processor"
+				item: "kubejs:wraithware_processor"
 				type: "item"
 			}]
-			title: "Chaos Processor"
+			title: "Wraithware Processor"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2400F1C2E3D40010"]
 			description: [
-				"chaos matrix fluid gates this recipe, same role awakened draconium foil played for the draconic line's assembly rung."
+				"the assembly rung. more of the same shape, more bound processors packed together."
 				""
-				"satisfies UHV-tier recipes. crafts up into the processor supercomputer below."
+				"satisfies &aUHV&r-tier recipes. crafts up into the supercomputer below, where ordinary components stop coping."
 			]
 			id: "2400F1C2E3D40014"
 			shape: "square"
@@ -144,31 +146,31 @@
 			tasks: [{
 				count: 2L
 				id: "2400F1C2E3D40015"
-				item: "kubejs:chaos_processor_assembly"
+				item: "kubejs:wraithware_processor_assembly"
 				type: "item"
 			}]
-			title: "Chaos Processor Assembly"
+			title: "Wraithware Processor Assembly"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2400F1C2E3D40014", "2400F1C2E3D4000C"]
 			description: [
-				"an assembly line recipe: awakened framework frame, chaos processor assembly, four chaos harmonic boards, a wall of advanced SMDs, an awakened core, and both chaos matrix fluid and draconic computation."
+				"an assembly line recipe, and &awarded SMDs&r again -- consecrated chromite casings, because what is in these boards is louder than what was in the argentware ones."
 				""
-				"this is as far as the chaos line goes at UEV -- the mainframe rung runs at UIV EUt. satisfies UEV-tier recipes; it's the ceiling here, same deviation the draconic line hit at UHV."
+				"satisfies &aUEV&r-tier recipes. the mainframe rung above it is the last thing this line has to give."
 			]
 			id: "2400F1C2E3D40018"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "the ceiling here -- mainframe waits for UIV"
+			subtitle: "louder occupants, harder casings"
 			tasks: [{
 				count: 2L
 				id: "2400F1C2E3D40019"
-				item: "kubejs:chaos_processor_supercomputer"
+				item: "kubejs:wraithware_processor_supercomputer"
 				type: "item"
 			}]
-			title: "Chaos Processor Supercomputer"
+			title: "Wraithware Processor Supercomputer"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -177,7 +179,7 @@
 			description: [
 				"the draconic reactor's stabilizer and injector are both buildable now -- wyvern core -> awakened core -> draconic energy core -> chaotic core, all GT-craftable assembler recipes, no boss fight needed for the core ladder itself."
 				""
-				"the reactor core (the third piece) needs a cumium processor assembly and stays out of reach until UIV. build these two now so the full reactor is one step away next chapter."
+				"the reactor core (the third piece) needs an egoware processor assembly and stays out of reach until UIV. build these two now so the full reactor is one step away next chapter."
 			]
 			id: "2400F1C2E3D4001C"
 			shape: "square"
@@ -260,7 +262,7 @@
 				{
 					count: 2L
 					id: "2400F1C2E3D40026"
-					item: "kubejs:chaos_processor_supercomputer"
+					item: "kubejs:wraithware_processor_supercomputer"
 					type: "item"
 				}
 			]

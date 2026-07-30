@@ -35,6 +35,8 @@
 			description: [
 				"four cataclysm bosses, four elemental nuclei: ignitium (fire), lacrima (water), ancient metal (earth), essence of the storm (air). each boss drop dissolves and recrystallizes for extra copies -- see the dissolution recipes if one fight wasn't enough."
 				""
+				"four bound minds. you are not collecting parts, you are taking notes."
+				""
 				"each nucleus assembly line also wants naquadah plates and rods plus a pair of UV field generators. no new machine needed, just the ingredients and patience."
 			]
 			id: "2500F1C2E3D40004"
@@ -152,9 +154,9 @@
 		{
 			dependencies: ["2500F1C2E3D40018"]
 			description: [
-				"cumium foil and awakened draconium foil, through a chaos harmonic board, make the &acumium processor&r -- satisfies UEV-tier recipes. assemble two into the &acumium processor assembly&r, satisfying UIV."
+				"the &aegoware board&r is the first one built empty. its gate is the &aelemental convergence matrix&r -- you can only write a mind after binding five and studying them, which is what the trials were for."
 				""
-				"feeds both the draconic reactor core below and the artificial cumium brain."
+				"printed on awakened draconium, warded SMDs throughout. satisfies UEV, then UIV. feeds both the draconic reactor core below and the artificial cumium brain."
 			]
 			id: "2500F1C2E3D4001C"
 			shape: "square"
@@ -164,17 +166,17 @@
 				{
 					count: 4L
 					id: "2500F1C2E3D4001D"
-					item: "kubejs:cumium_processor"
+					item: "kubejs:egoware_processor"
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "2500F1C2E3D4001E"
-					item: "kubejs:cumium_processor_assembly"
+					item: "kubejs:egoware_processor_assembly"
 					type: "item"
 				}
 			]
-			title: "Cumium Circuits"
+			title: "Egoware"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -213,13 +215,13 @@
 				{
 					count: 2L
 					id: "2500F1C2E3D40025"
-					item: "kubejs:draconic_processor_mainframe"
+					item: "kubejs:argentware_processor_mainframe"
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "2500F1C2E3D40026"
-					item: "kubejs:chaos_processor_mainframe"
+					item: "kubejs:wraithware_processor_mainframe"
 					type: "item"
 				}
 			]
@@ -230,7 +232,9 @@
 		{
 			dependencies: ["2500F1C2E3D4001C"]
 			description: [
-				"the actual top of the circuit grid. two cumium processor assemblies, a wall of advanced SMDs (64 each of five types), chaotic singulite wire, cumium plate and foil, and both chaos matrix fluid and draconic computation."
+				"the actual top of the circuit grid. two egoware processor assemblies, a wall of &awarded SMDs&r (64 each of five types), chaotic singulite wire, cumium plate and foil."
+				""
+				"argentware held raw will. wraithware held someone you caught. this one holds a mind with no prior owner, because you wrote it."
 				""
 				"no tag past this exists in the pack -- this is the final circuit."
 			]

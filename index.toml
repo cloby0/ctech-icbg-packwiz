@@ -182,15 +182,15 @@ hash = "db6b8f279f0fd56ba25d587834583fc770c24258c5705d0bd0514216081458ff"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uev_authored.snbt"
-hash = "ec3aaea08c10071057ed174d17efe32f58cabafd8b547b2013a2a689ecd37ec7"
+hash = "396cf20f2458addc64181ac68dc2ff2fc76c93b0d7b8c37f820f8eccdae25f16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uhv_authored.snbt"
-hash = "6a92f4862c16bec01138c5e35b9b84e24b1d3360a067d187d31d89205e8bb9ea"
+hash = "81aa8ae879d95d3a4fe728633a684feb0c60910376b62016afea9669ce8d64df"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uiv_authored.snbt"
-hash = "690ac57a1ae06f35e0eccfa2e33679354df117564d43eef10bd0836aeaa054f0"
+hash = "ec2c1763e355743cb3a8ba9e440ef6cabcb517994f8016b477eb44a27e3625f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_uv_authored.snbt"
