@@ -5286,7 +5286,7 @@ hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "4254dffd91bc9940a4eef857b38c7c37e2be2e5f6c2f309e6c1ff451ff8f7de7"
+hash = "58247f6a541f033e5a49bb303fe08513c2d130389ce9f8b94525d1a88992a9b7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"

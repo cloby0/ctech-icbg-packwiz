@@ -37,7 +37,7 @@ function _spiritEngineInput(entry, debugLabel) {
 
 // Emits the optional GT route alongside the real ritual. Never replaces it -- if anything here
 // bails, the occultism:ritual above still stands on its own.
-function _mirrorToSpiritEngine(name, tier, ritualDummyId, ingredients, output, duration) {
+function _mirrorToSpiritEngine(event, name, tier, ritualDummyId, ingredients, output, duration) {
     let tierName = _spiritEngineTier[tier]
     if (tierName === undefined) {
         console.warn(`[spirit_binding_engine] no voltage mapped for pentacle tier '${tier}' (${name}), skipping GT mirror`)
@@ -101,7 +101,7 @@ function addOccultismRitual(event, crecipe) {
         result: typeof crecipe.output === 'object' ? crecipe.output : { item: outputId },
     }).id(`kubejs:ritual/${name}`)
 
-    _mirrorToSpiritEngine(name, tier, ritualDummyId, crecipe.ingredients, crecipe.output, duration)
+    _mirrorToSpiritEngine(event, name, tier, ritualDummyId, crecipe.ingredients, crecipe.output, duration)
 }
 
 global.addOccultismRitual = addOccultismRitual
