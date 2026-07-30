@@ -146,92 +146,52 @@ ServerEvents.recipes(event => {
         }).damageIngredient(Ingredient.of('#forge:tools/files'))
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot',
-            'irons_spellbooks:pyrium_ingot', 'kubejs:empyrean_array',
-            'kubejs:chaos_essence', 'irons_spellbooks:fire_rune', 'irons_spellbooks:fire_rune',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:pyromatic_codex',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot', 'kubejs:empyrean_array', 'kubejs:chaos_essence', 'irons_spellbooks:fire_rune', 'irons_spellbooks:fire_rune', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'gtceu:prima_materia_rod', 'kubejs:empyrean_array',
-            'kubejs:chaos_essence', 'irons_spellbooks:evocation_rune',
-            'irons_spellbooks:evocation_rune', 'minecraft:nether_star',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:evocation_folio',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:prima_materia_rod', 'kubejs:empyrean_array', 'kubejs:chaos_essence', 'irons_spellbooks:evocation_rune', 'irons_spellbooks:evocation_rune', 'minecraft:nether_star', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot',
-            'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
-            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
-            '#gtceu:circuits/zpm', '#gtceu:circuits/zpm',
-            'kubejs:empyrean_array'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:technomatic_folio',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot', 'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', '#gtceu:circuits/zpm', 'kubejs:empyrean_array'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'gtceu:elementium_plate', 'gtceu:elementium_plate',
-            'gtceu:elementium_plate', 'kubejs:empyrean_array',
-            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
-            'irons_spellbooks:ice_rune', 'irons_spellbooks:ice_rune',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:glacial_grimoire',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_array', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', 'irons_spellbooks:ice_rune', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'gtceu:elementium_plate', 'gtceu:elementium_plate',
-            'gtceu:elementium_plate', 'kubejs:empyrean_array',
-            'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice',
-            'irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'kubejs:verdant_chronicle',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_array', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', 'irons_spellbooks:nature_rune', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune',
-            'irons_spellbooks:portal_frame', 'kubejs:empyrean_array',
-            'gtceu:terrasteel_plate', 'gtceu:elementium_plate',
-            'minecraft:ender_eye', 'minecraft:ender_eye',
-            'kubejs:empyrean_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'legendary_spellbooks:annihilators_protocol',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:ender_rune', 'irons_spellbooks:ender_rune', 'irons_spellbooks:portal_frame', 'kubejs:empyrean_array', 'gtceu:terrasteel_plate', 'gtceu:elementium_plate', 'minecraft:ender_eye', 'kubejs:empyrean_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'irons_spellbooks:netherite_spell_book',
-        pedestalItems: [
-            'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune',
-            'irons_spellbooks:energized_core', 'kubejs:empyrean_array',
-            'kubejs:elven_source_lattice', 'gtceu:elementium_plate',
-            'irons_spellbooks:lightning_bottle', 'irons_spellbooks:lightning_bottle',
-            'kubejs:empyrean_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'legendary_spellbooks:stormbound_grimoire',
-        sourceCost: Source.SAGE
+        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:energized_core', 'kubejs:empyrean_array', 'kubejs:elven_source_lattice', 'gtceu:elementium_plate', 'irons_spellbooks:lightning_bottle', 'kubejs:empyrean_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 })

@@ -37,95 +37,95 @@ ServerEvents.recipes(event => {
         'HGF', 'GSG', ' G '
     ], { 'G': 'minecraft:gold_ingot', 'S': 'nameless_trinkets:dubious_dust', 'H': '#forge:tools/hammers', 'F': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:aqua_dashers',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'kubejs:gravitic_matrix', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:bunny_hoppers',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'kubejs:gravitic_matrix', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:flint', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:digging_claws',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:flint', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:feral_claws',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:fire_gauntlet',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:pocket_piston',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'kubejs:gravitic_matrix', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:power_glove',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:iron_sheet', 'minecraft:iron_block', 'kubejs:gravitic_matrix', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:phantom_membrane', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:black_dye', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:scarf_of_invisibility',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:phantom_membrane', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:black_dye', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:lightning_rod', 'kubejs:gravitic_matrix', 'minecraft:quartz', 'minecraft:redstone', 'kubejs:gravitic_wizard_brain', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:shock_pendant',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:amethyst_shard', 'minecraft:lightning_rod', 'kubejs:gravitic_matrix', 'minecraft:quartz', 'minecraft:redstone', 'kubejs:gravitic_wizard_brain', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:cactus', 'minecraft:cactus', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:thorn_pendant',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:cactus', 'minecraft:cactus', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'kubejs:gravitic_matrix', 'minecraft:amethyst_shard', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:flame_pendant',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'kubejs:gravitic_matrix', 'minecraft:amethyst_shard', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:cross_necklace',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:golden_sheet', 'minecraft:gold_block', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:string', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:golden_hook',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:golden_sheet', 'minecraft:gold_block', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:string', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
     // Pulled to Hobbyist: air essence binds a slow-fall umbrella (was luminessence-tier enchanting)
@@ -134,144 +134,144 @@ ServerEvents.recipes(event => {
         'LAL', 'SIS', 'CTW'
     ], { 'L': 'minecraft:leather', 'A': '#kubejs:air_essences', 'S': 'minecraft:string', 'I': 'minecraft:iron_ingot', 'T': 'minecraft:stick', 'C': '#forge:tools/wire_cutters', 'W': 'kubejs:ichor_ward_lattice' }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'kubejs:gravitic_matrix', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'kubejs:gravitic_channeling_vessel', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:antidote_vessel',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:glass_bottle', 'kubejs:gravitic_matrix', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'kubejs:gravitic_channeling_vessel', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'kubejs:gravitic_matrix', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:pickaxe_heater',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'kubejs:gravitic_matrix', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:string', 'minecraft:lily_pad', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:anglers_hat',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:lily_pad', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'kubejs:elementium_matrix', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'kubejs:elementium_motive_core', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:cowboy_hat',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'kubejs:elementium_matrix', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'kubejs:elementium_motive_core', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:cactus', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:novelty_drinking_hat',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:cactus', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:string', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:plastic_drinking_hat',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:string', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:obsidian', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:superstitious_hat',
-        sourceCost: Source.SORCERER
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:black_dye', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:obsidian', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:emerald', 'kubejs:elementium_matrix', 'minecraft:wheat', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:villager_hat',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:emerald', 'kubejs:elementium_matrix', 'minecraft:wheat', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'minecraft:string', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_motive_core', 'kubejs:sacred_ambrosium_shard'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:whoopee_cushion',
-        sourceCost: Source.INITIATE
+        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_motive_core', 'kubejs:sacred_ambrosium_shard'],
+        patterns: ['mna:diamond', 'mna:knot'],
+        tier: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_motive_core'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:cloud_in_a_bottle',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:glass_bottle', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_motive_core'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:diamond_block', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:totem_of_undying', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:crystal_heart',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:diamond_block', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:totem_of_undying', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:feather', 'minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_motive_core'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:helium_flamingo',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:glass_bottle', 'minecraft:feather', 'minecraft:feather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_motive_core'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:iron_ingot', 'kubejs:animus_matrix', 'minecraft:glass', 'minecraft:glass', 'minecraft:spider_eye', 'gtceu:holy_silver_dust', 'kubejs:animus_wizard_brain'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:night_vision_goggles',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:iron_ingot', 'kubejs:animus_matrix', 'minecraft:glass', 'minecraft:glass', 'minecraft:spider_eye', 'gtceu:holy_silver_dust', 'kubejs:animus_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:magma_cream', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:obsidian_skull',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:magma_cream', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:flint', 'minecraft:flint', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:steadfast_spikes',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:flint', 'minecraft:flint', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:diamond', 'minecraft:diamond', 'minecraft:iron_block', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:universal_attractor',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:iron_block', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['create:golden_sheet', 'minecraft:redstone_block', 'minecraft:rotten_flesh', 'minecraft:fermented_spider_eye', 'minecraft:diamond', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:vampiric_glove',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'create:golden_sheet', 'minecraft:redstone_block', 'minecraft:rotten_flesh', 'minecraft:fermented_spider_eye', 'minecraft:diamond', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:golden_apple', 'minecraft:gold_block', 'minecraft:feather', 'minecraft:ender_pearl', 'minecraft:rabbit_foot', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_wizard_brain'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:panic_necklace',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:golden_apple', 'minecraft:gold_block', 'minecraft:feather', 'minecraft:ender_pearl', 'minecraft:rabbit_foot', 'gtceu:holy_silver_dust', 'kubejs:animus_matrix', 'kubejs:animus_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:chorus_fruit', 'minecraft:chorus_fruit', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:prima_materia_ingot', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:chorus_totem',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:totem_of_undying', 'minecraft:chorus_fruit', 'minecraft:chorus_fruit', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:prima_materia_ingot', 'kubejs:animus_matrix', 'kubejs:animus_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:golden_apple', 'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:cooked_chicken', 'gtceu:prima_materia_ingot', 'kubejs:animus_matrix', 'kubejs:animus_wizard_brain'],
+    addMnaManaweavingRecipe(event, {
         output: 'artifacts:everlasting_beef',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:golden_apple', 'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:cooked_chicken', 'gtceu:prima_materia_ingot', 'kubejs:animus_matrix', 'kubejs:animus_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
 })

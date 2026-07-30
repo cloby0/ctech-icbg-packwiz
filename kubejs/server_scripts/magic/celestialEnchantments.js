@@ -20,37 +20,25 @@ ServerEvents.recipes(event => {
         '#kubejs:fire_essences', '#kubejs:fire_essences'
     ])
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: [
-            'celestial_core:fire_essence', 'minecraft:lapis_lazuli', 'minecraft:gold_ingot',
-            'minecraft:amethyst_shard', 'minecraft:redstone',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'celestial_enchantments:basic_celestial_catalyst',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'celestial_core:fire_essence', 'minecraft:lapis_lazuli', 'minecraft:gold_ingot', 'minecraft:amethyst_shard', 'minecraft:redstone', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: [
-            'celestial_enchantments:basic_celestial_catalyst', 'celestial_enchantments:basic_celestial_catalyst',
-            'celestial_core:midnight_fragment', 'minecraft:diamond',
-            'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'celestial_enchantments:advanced_celestial_catalyst',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:ultimate_dust', 'celestial_enchantments:basic_celestial_catalyst', 'celestial_enchantments:basic_celestial_catalyst', 'celestial_core:midnight_fragment', 'minecraft:diamond', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: [
-            'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst',
-            'celestial_core:pure_nether_star', 'minecraft:netherite_scrap',
-            'botania:terrasteel_ingot', 'kubejs:starforged_array', 'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'celestial_enchantments:legendary_celestial_catalyst',
-        sourceCost: Source.THAUMATURGE
+        items: ['nameless_trinkets:ultimate_dust', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_core:pure_nether_star', 'minecraft:netherite_scrap', 'botania:terrasteel_ingot', 'kubejs:starforged_array', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
 })

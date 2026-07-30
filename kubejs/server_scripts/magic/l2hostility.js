@@ -39,15 +39,11 @@ ServerEvents.recipes(event => {
     // as-is -- they still work (delegate to addEldrinAltarRecipe internally), full modernization
     // of this file is out of scope here.
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:prismarine_shard',
-        pedestalItems: [
-            'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot',
-            'minecraft:prismarine_crystals', 'minecraft:prismarine_crystals',
-            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:poseidite_ingot',
-        sourceCost: Source.ALCHEMIST
+        items: ['minecraft:prismarine_shard', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:prismarine_crystals', 'minecraft:prismarine_crystals', 'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
     event.shaped('l2complements:wind_capture_bottle', [
@@ -96,16 +92,11 @@ ServerEvents.recipes(event => {
         ' S '
     ], { S: 'gtceu:holy_silver_dust', M: '#gtceu:circuits/mv', C: 'minecraft:compass', D: '#forge:tools/screwdrivers' }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:dubious_dust',
-        pedestalItems: [
-            'minecraft:leather', 'minecraft:leather',
-            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust',
-            'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust',
-            'minecraft:gold_ingot', 'minecraft:gold_ingot'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_1',
-        sourceCost: Source.ALCHEMIST
+        items: ['nameless_trinkets:dubious_dust', 'minecraft:leather', 'minecraft:leather', 'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust', 'gtceu:distilled_animus_dust', 'minecraft:gold_ingot', 'minecraft:gold_ingot'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
     addImbuementRecipe(event, {
@@ -166,90 +157,53 @@ ServerEvents.recipes(event => {
         source: Source.THAUMATURGE
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:prismarine_crystals',
-        pedestalItems: [
-            'minecraft:prismarine', 'minecraft:prismarine',
-            'minecraft:prismarine', 'minecraft:prismarine',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'minecraft:sponge', 'minecraft:sponge',
-            'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:guardian_eye',
-        sourceCost: Source.THAUMATURGE
+        items: ['minecraft:prismarine_crystals', 'minecraft:prismarine', 'minecraft:prismarine', 'minecraft:prismarine', 'minecraft:prismarine', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'minecraft:sponge', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:guardian_eye',
-        pedestalItems: [
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'kubejs:starforged_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:guardian_rune',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2complements:guardian_eye', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:gold_ingot',
-        pedestalItems: [
-            'minecraft:piglin_banner_pattern',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:piglin_rune',
-        sourceCost: Source.THAUMATURGE
+        items: ['minecraft:gold_ingot', 'minecraft:piglin_banner_pattern', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:fragile_warp_stone',
-        pedestalItems: [
-            'minecraft:obsidian', 'minecraft:obsidian',
-            'minecraft:obsidian', 'minecraft:obsidian',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'kubejs:starforged_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:reinforced_warp_stone',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2complements:fragile_warp_stone', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'gtceu:starforged_chimerite_dust', 'kubejs:starforged_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:totem_of_undying',
-        pedestalItems: [
-            'minecraft:heart_of_the_sea',
-            'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
-            'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'kubejs:starforged_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:totem_of_the_sea',
-        sourceCost: Source.THAUMATURGE
+        items: ['minecraft:totem_of_undying', 'minecraft:heart_of_the_sea', 'minecraft:nautilus_shell', 'minecraft:nautilus_shell', 'minecraft:nautilus_shell', 'minecraft:nautilus_shell', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:totemic_carrot',
-        pedestalItems: [
-            'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot',
-            'minecraft:golden_carrot', 'minecraft:golden_carrot',
-            'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:enchanted_totemic_carrot',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2complements:totemic_carrot', 'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot', 'minecraft:golden_carrot', 'minecraft:golden_carrot', 'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:totemic_apple',
-        pedestalItems: [
-            'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot',
-            'minecraft:enchanted_golden_apple',
-            'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:enchanted_totemic_apple',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2complements:totemic_apple', 'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot', 'minecraft:enchanted_golden_apple', 'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
 
@@ -277,43 +231,25 @@ ServerEvents.recipes(event => {
         source: Source.THAUMATURGE,
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:glistering_melon_slice',
-        pedestalItems: [
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'minecraft:golden_apple',
-            'kubejs:starforged_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_healing',
-        sourceCost: Source.THAUMATURGE
+        items: ['minecraft:glistering_melon_slice', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'minecraft:golden_apple', 'kubejs:starforged_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:nautilus_shell',
-        pedestalItems: [
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'minecraft:heart_of_the_sea',
-            'kubejs:starforged_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_ocean',
-        sourceCost: Source.THAUMATURGE
+        items: ['minecraft:nautilus_shell', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'minecraft:heart_of_the_sea', 'kubejs:starforged_channeling_vessel'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:bottle_of_curse',
-        pedestalItems: [
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:bottle_of_sanity',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2hostility:bottle_of_curse', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
     event.shaped('l2hostility:booster_potion', [
@@ -336,42 +272,25 @@ ServerEvents.recipes(event => {
         ' W '
     ], { B: 'minecraft:blaze_rod', W: 'l2hostility:witch_droplet', E: 'l2hostility:hostility_essence' })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:witch_charge',
-        pedestalItems: [
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'kubejs:starforged_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:eternal_witch_charge',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2hostility:witch_charge', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: [
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_2',
-        sourceCost: Source.THAUMATURGE
+        items: ['nameless_trinkets:glowing_dust', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'gtceu:starforged_chimerite_dust', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:hostility_detector',
-        pedestalItems: [
-            'minecraft:spectral_arrow', 'minecraft:spectral_arrow',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'kubejs:starforged_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:detector_glasses',
-        sourceCost: Source.THAUMATURGE
+        items: ['l2hostility:hostility_detector', 'minecraft:spectral_arrow', 'minecraft:spectral_arrow', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_array', 'l2hostility:hostility_essence', 'kubejs:starforged_wizard_brain'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
     })
 
     event.shaped('l2hostility:book_of_reprint', [
@@ -380,17 +299,11 @@ ServerEvents.recipes(event => {
         'GHG'
     ], { G: 'minecraft:gold_ingot', H: 'gtceu:holy_silver_dust', B: 'minecraft:book', K: '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:book',
-        pedestalItems: [
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'kubejs:rubedo_array',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:book_of_omniscience',
-        sourceCost: Source.ARCANIST
+        items: ['minecraft:book', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:rubedo_array', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
 
@@ -455,17 +368,11 @@ ServerEvents.recipes(event => {
         source: Source.THAUMATURGE,
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:ender_eye',
-        pedestalItems: [
-            'minecraft:obsidian', 'minecraft:obsidian',
-            'minecraft:obsidian', 'minecraft:obsidian',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:void_eye',
-        sourceCost: Source.ARCANIST
+        items: ['minecraft:ender_eye', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
     addImbuementRecipe(event, {
@@ -499,145 +406,82 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_3',
-        sourceCost: Source.ARCANIST
+        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:chaos_ingot',
-        pedestalItems: [
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'minecraft:diamond_sword', 'minecraft:diamond_sword',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_wrath',
-        sourceCost: Source.ARCANIST
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'minecraft:diamond_sword', 'minecraft:diamond_sword', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:chaos_ingot',
-        pedestalItems: [
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'minecraft:rotten_flesh', 'minecraft:rotten_flesh',
-            'minecraft:netherite_ingot',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_lust',
-        sourceCost: Source.ARCANIST
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:netherite_ingot', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:chaos_ingot',
-        pedestalItems: [
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'minecraft:gold_block', 'minecraft:gold_block',
-            'kubejs:rubedo_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_greed',
-        sourceCost: Source.ARCANIST
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'minecraft:gold_block', 'minecraft:gold_block', 'kubejs:rubedo_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:totem_of_undying',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_life',
-        sourceCost: Source.ARCANIST
+        items: ['minecraft:totem_of_undying', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_channeling_vessel'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:sculkium_ingot',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_incarceration',
-        sourceCost: Source.ARCANIST
+        items: ['l2complements:sculkium_ingot', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:anvil',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
-            'kubejs:rubedo_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_corrosion',
-        sourceCost: Source.ARCANIST
+        items: ['minecraft:anvil', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:blaze_rod',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
-            'minecraft:soul_campfire', 'minecraft:soul_campfire',
-            'kubejs:rubedo_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:flaming_thorn',
-        sourceCost: Source.ARCANIST
+        items: ['minecraft:blaze_rod', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_array', 'minecraft:soul_campfire', 'kubejs:rubedo_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:nether_star',
-        pedestalItems: [
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:empyrean_array',
-            'kubejs:empyrean_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:platinum_star',
-        sourceCost: Source.SAGE
+        items: ['minecraft:nether_star', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:empyrean_array', 'kubejs:empyrean_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:chaos_ingot',
-        pedestalItems: [
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:ender_pearl', 'minecraft:ender_pearl',
-            'minecraft:ender_pearl', 'minecraft:ender_pearl',
-            'kubejs:rubedo_array'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:hostility_orb',
-        sourceCost: Source.ARCANIST
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'kubejs:rubedo_array'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:shulker_shell',
-        pedestalItems: [
-            'minecraft:end_stone', 'minecraft:end_stone',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:shulkerate_ingot',
-        sourceCost: Source.SAGE
+        items: ['minecraft:shulker_shell', 'minecraft:end_stone', 'minecraft:end_stone', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
     addRunicAltarRecipe(event, {
@@ -652,30 +496,18 @@ ServerEvents.recipes(event => {
         mana: Mana.ASCENDANT
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:feather',
-        pedestalItems: [
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'minecraft:echo_shard', 'minecraft:echo_shard',
-            'minecraft:echo_shard', 'minecraft:echo_shard',
-            'kubejs:empyrean_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:resonant_feather',
-        sourceCost: Source.SAGE
+        items: ['minecraft:feather', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'minecraft:echo_shard', 'minecraft:echo_shard', 'minecraft:echo_shard', 'kubejs:empyrean_channeling_vessel'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:phantom_membrane',
-        pedestalItems: [
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'l2complements:soul_flame', 'l2complements:soul_flame',
-            'l2complements:storm_core', 'l2complements:storm_core',
-            'kubejs:empyrean_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:sun_membrane',
-        sourceCost: Source.SAGE
+        items: ['minecraft:phantom_membrane', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'l2complements:soul_flame', 'l2complements:soul_flame', 'l2complements:storm_core', 'kubejs:empyrean_channeling_vessel'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
     addRunicAltarRecipe(event, {
@@ -704,121 +536,67 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_4',
-        sourceCost: Source.SAGE
+        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'kubejs:soul_of_gaia', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:resonant_feather',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_envy',
-        sourceCost: Source.SAGE
+        items: ['l2complements:resonant_feather', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'kubejs:soul_of_gaia', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:netherite_ingot',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'minecraft:netherite_ingot', 'minecraft:diamond',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_pride',
-        sourceCost: Source.SAGE
+        items: ['minecraft:netherite_ingot', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'minecraft:netherite_ingot', 'minecraft:diamond', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:nether_star',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'kubejs:empyrean_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_divinity',
-        sourceCost: Source.SAGE
+        items: ['minecraft:nether_star', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'gtceu:holy_silver_dust', 'kubejs:empyrean_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:spyglass',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:empyrean_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_reflection',
-        sourceCost: Source.SAGE
+        items: ['minecraft:spyglass', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'kubejs:soul_of_gaia', 'kubejs:empyrean_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:chaos_ingot',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'minecraft:gold_block', 'minecraft:gold_block',
-            'kubejs:empyrean_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:greed_of_nidhoggur',
-        sourceCost: Source.SAGE
+        items: ['l2hostility:chaos_ingot', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'minecraft:gold_block', 'kubejs:empyrean_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2complements:warden_bone_shard',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'minecraft:echo_shard', 'minecraft:echo_shard',
-            'kubejs:empyrean_motive_core'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:abyssal_thorn',
-        sourceCost: Source.SAGE
+        items: ['l2complements:warden_bone_shard', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'minecraft:echo_shard', 'kubejs:empyrean_motive_core'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:detector_glasses',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'minecraft:amethyst_shard', 'minecraft:amethyst_shard',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:oddeyes_glasses',
-        sourceCost: Source.SAGE
+        items: ['l2hostility:detector_glasses', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'minecraft:amethyst_shard', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'minecraft:ender_chest',
-        pedestalItems: [
-            'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:empyrean_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:pocket_of_restoration',
-        sourceCost: Source.SAGE
+        items: ['minecraft:ender_chest', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'kubejs:soul_of_gaia', 'kubejs:empyrean_channeling_vessel'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
 
@@ -834,119 +612,68 @@ ServerEvents.recipes(event => {
         mana: Mana.ASCENDANT
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'botania:manasteel_ingot', 'kubejs:empyrean_array',
-            'l2complements:soul_flame', 'l2complements:soul_flame',
-            'l2complements:sun_membrane', 'l2complements:sun_membrane',
-            'minecraft:fire_charge', 'minecraft:fire_charge',
-            'kubejs:empyrean_channeling_vessel'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2complements:heirophant_green',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_array', 'l2complements:soul_flame', 'l2complements:soul_flame', 'l2complements:sun_membrane', 'l2complements:sun_membrane', 'minecraft:fire_charge', 'kubejs:empyrean_channeling_vessel'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'gtceu:holy_silver_block', 'gtceu:holy_silver_block',
-            'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
-            'kubejs:empyrean_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:divinity_cross',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'gtceu:holy_silver_block', 'gtceu:holy_silver_block', 'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:empyrean_array', 'kubejs:empyrean_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'minecraft:nether_star',
-            'l2hostility:divinity_cross',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
-            'kubejs:empyrean_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:divinity_light',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'minecraft:nether_star', 'l2hostility:divinity_cross', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:empyrean_array', 'kubejs:empyrean_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'minecraft:leather', 'minecraft:leather',
-            'minecraft:leather', 'minecraft:leather',
-            'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
-            'kubejs:empyrean_ward_lattice'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:triple_strip_cape',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'l2complements:eternium_ingot', 'kubejs:soul_of_gaia', 'kubejs:empyrean_array', 'kubejs:empyrean_ward_lattice'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'minecraft:stick', 'minecraft:stick',
-            'minecraft:stick', 'minecraft:stick',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'l2hostility:hostility_essence', 'kubejs:empyrean_array',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:trait_adder_wand',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'minecraft:stick', 'minecraft:stick', 'minecraft:stick', 'minecraft:stick', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'kubejs:empyrean_array', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'botania:terrasteel_ingot',
-        pedestalItems: [
-            'minecraft:stick', 'minecraft:stick',
-            'minecraft:stick', 'minecraft:stick',
-            'l2hostility:hostility_essence', 'kubejs:empyrean_array',
-            'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
-            'kubejs:empyrean_wizard_brain'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:target_select_wand',
-        sourceCost: Source.SAGE
+        items: ['botania:terrasteel_ingot', 'minecraft:stick', 'minecraft:stick', 'minecraft:stick', 'minecraft:stick', 'l2hostility:hostility_essence', 'kubejs:empyrean_array', 'l2hostility:chaos_ingot', 'kubejs:empyrean_wizard_brain'],
+        patterns: ['mna:star', 'mna:hourglass'],
+        tier: 4
     })
 
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:miracle_ingot',
-        pedestalItems: [
-            'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'l2complements:shulkerate_ingot', 'l2complements:shulkerate_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            '#gtceu:circuits/iv', '#gtceu:circuits/iv'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:abrahadabra',
-        sourceCost: Source.ASCENDANT
+        items: ['l2hostility:miracle_ingot', 'l2complements:eternium_ingot', 'l2complements:eternium_ingot', 'l2complements:shulkerate_ingot', 'l2complements:shulkerate_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', '#gtceu:circuits/iv', '#gtceu:circuits/iv'],
+        patterns: ['mna:infinity', 'mna:inverted_split_triangle'],
+        tier: 5
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:miracle_ingot',
-        pedestalItems: [
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'gtceu:mithril_plate', 'gtceu:mithril_plate',
-            'l2complements:void_eye', 'l2complements:void_eye',
-            '#gtceu:circuits/iv', '#gtceu:circuits/iv'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:imagine_breaker',
-        sourceCost: Source.ASCENDANT
+        items: ['l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'gtceu:mithril_plate', 'gtceu:mithril_plate', 'l2complements:void_eye', 'l2complements:void_eye', '#gtceu:circuits/iv', '#gtceu:circuits/iv'],
+        patterns: ['mna:infinity', 'mna:inverted_split_triangle'],
+        tier: 5
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'l2hostility:miracle_ingot',
-        pedestalItems: [
-            'botania:terrasteel_ingot', 'botania:terrasteel_ingot',
-            'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'l2hostility:ring_of_divinity', 'l2hostility:ring_of_reflection',
-            '#gtceu:circuits/luv', '#gtceu:circuits/luv'
-        ],
+    addMnaManaweavingRecipe(event, {
         output: 'l2hostility:infinity_glove',
-        sourceCost: Source.ASCENDANT
+        items: ['l2hostility:miracle_ingot', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot', 'l2complements:eternium_ingot', 'l2complements:eternium_ingot', 'l2hostility:ring_of_divinity', 'l2hostility:ring_of_reflection', '#gtceu:circuits/luv', '#gtceu:circuits/luv'],
+        patterns: ['mna:infinity', 'mna:inverted_split_triangle'],
+        tier: 5
     })
 
 })
