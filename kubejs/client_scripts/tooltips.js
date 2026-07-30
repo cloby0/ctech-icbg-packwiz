@@ -25,8 +25,8 @@ ItemEvents.tooltip((event) => {
     "§7\"Nothing would be uncertain\" -- Laplace's demon, if it had ever met a chance-based drop table",
   ]);
 
-  event.add("kubejs:cumium_processor", "§aUEV-Tier Circuit");
-  event.add("kubejs:cumium_processor_assembly", "§aUIV-Tier Circuit");
+  event.add("kubejs:egoware_processor", "§aUEV-Tier Circuit");
+  event.add("kubejs:egoware_processor_assembly", "§aUIV-Tier Circuit");
   event.add("kubejs:artificial_cumium_brain", "§aUXV-Tier Circuit");
 
   const TIER_ITEMS = [

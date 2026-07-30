@@ -28,23 +28,40 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.assembler('chaos_harmonic_board_assembly')
+    // Egoware's board. The first two rungs hold an occupant that already existed -- raw will,
+    // then someone you caught. This one is built empty, to be written into. Its gate is the
+    // Elemental Convergence Matrix: you can only author a mind after binding five and studying
+    // them, which is what the Four Trials were for.
+    event.recipes.gtceu.assembler('egoware_circuit_board_assembly')
         .itemInputs(
+            '1x kubejs:wraithware_printed_circuit_board',
+            '1x kubejs:elemental_convergence_matrix',
             '4x gtceu:neutronium_wafer',
-            '2x gtceu:awakened_draconium_foil',
-            '1x kubejs:stabilized_chaos_crystal',
-            '1x gtceu:chaos_crystal_dust'
+            '1x kubejs:stabilized_chaos_crystal'
         )
-        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
-        .itemOutputs('kubejs:chaos_harmonic_board')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .inputFluids(Fluid.of('kubejs:argent_energy', 4000))
+        .itemOutputs('kubejs:egoware_circuit_board')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line('cumium_processor_assembly_recipe')
+    // Printed on awakened draconium -- the most expensive foil in the pack, because nothing here
+    // is borrowed. Same raw-then-printed shape as the other two lines.
+    event.recipes.gtceu.chemical_reactor('egoware_printed_circuit_board_recipe')
+        .itemInputs(
+            '1x kubejs:egoware_circuit_board',
+            '16x gtceu:awakened_draconium_foil'
+        )
+        .inputFluids(Fluid.of('gtceu:sodium_persulfate', 4000))
+        .itemOutputs('1x kubejs:egoware_printed_circuit_board')
+        .duration(1800)
+        .EUt(GTValues.VA[GTValues.UEV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.assembly_line('egoware_processor_assembly_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:cumium_processor',
+            '2x kubejs:egoware_processor',
             '4x gtceu:cumium_ingot',
             '32x gtceu:advanced_smd_diode',
             '32x gtceu:advanced_smd_capacitor',
@@ -61,7 +78,7 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:soldering_alloy', 2880),
             Fluid.of('kubejs:guardian_distillate', 8000)
         )
-        .itemOutputs('kubejs:cumium_processor_assembly')
+        .itemOutputs('kubejs:egoware_processor_assembly')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.UIV])
 
@@ -158,7 +175,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:awakened_draconium_ingot',
             '2x draconicevolution:large_chaos_frag',
             '1x draconicevolution:chaos_shard',
-            '1x kubejs:cumium_processor_assembly',
+            '1x kubejs:egoware_processor_assembly',
             '1x kubejs:ascendant_initiation_core',
             '4x gtceu:awakened_framework_plate'
         )
@@ -196,11 +213,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
 
 
-    event.recipes.gtceu.circuit_assembler('cumium_processor_recipe')
+    event.recipes.gtceu.circuit_assembler('egoware_processor_recipe')
         .itemInputs(
             '4x gtceu:cumium_foil',
             '2x gtceu:awakened_draconium_foil',
-            '1x kubejs:chaos_harmonic_board',
+            '1x kubejs:egoware_printed_circuit_board',
             '8x gtceu:advanced_smd_diode',
             '8x gtceu:advanced_smd_capacitor',
             '8x gtceu:advanced_smd_transistor',
@@ -210,14 +227,14 @@ ServerEvents.recipes(event => {
             Fluid.of('kubejs:guardian_distillate', 500),
             Fluid.of('kubejs:argent_energy', 1000)
         )
-        .itemOutputs('1x kubejs:cumium_processor')
+        .itemOutputs('1x kubejs:egoware_processor')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UIV])
 
     event.recipes.gtceu.assembly_line('artificial_cumium_brain_recipe')
         .itemInputs(
             '2x gtceu:awakened_framework_frame',
-            '2x kubejs:cumium_processor_assembly',
+            '2x kubejs:egoware_processor_assembly',
             '64x gtceu:advanced_smd_diode',
             '64x gtceu:advanced_smd_capacitor',
             '64x gtceu:advanced_smd_transistor',

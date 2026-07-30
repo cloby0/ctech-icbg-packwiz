@@ -120,6 +120,7 @@
 "tagprefix.mercury_stone": "Mercury %s Ore",
 "tagprefix.glacio_stone": "Glacio %s Ore",
 
+"block.gtceu.eternal_soul_compression_unit": "Eternal Soul Compression Unit",
 "block.gtceu.runic_forge": "Runic Forge",
 "block.gtceu.grand_enchanting_sanctum": "Grand Enchanting Sanctum",
 "block.gtceu.automated_mana_pond": "Mana Pond",
@@ -143,6 +144,7 @@
 "gtceu.mana_pond": "Mana Pond",
 "gtceu.imbuement_factory": "Imbuement Factory",
 "gtceu.enchanting_sanctum": "Grand Enchanting Sanctum",
+"gtceu.eternal_soul_compression_unit": "Eternal Soul Compression",
 "gtceu.runic_forge": "Runic Forge",
 "gtceu.terra_agglomeration": "Terra Agglomeration",
 

@@ -9,7 +9,7 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uev', 'kubejs:wraithware_processor_supercomputer')
     event.add('gtceu:circuits/uiv', 'kubejs:wraithware_processor_mainframe')
 
-    event.add('gtceu:circuits/uev', 'kubejs:cumium_processor')
-    event.add('gtceu:circuits/uiv', 'kubejs:cumium_processor_assembly')
+    event.add('gtceu:circuits/uev', 'kubejs:egoware_processor')
+    event.add('gtceu:circuits/uiv', 'kubejs:egoware_processor_assembly')
     event.add('gtceu:circuits/uxv', 'kubejs:artificial_cumium_brain')
 })

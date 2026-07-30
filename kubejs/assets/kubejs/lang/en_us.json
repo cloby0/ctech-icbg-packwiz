@@ -3,76 +3,57 @@
   "item.kubejs.ichor_sigil_blank": "Blank Ichor Sigil",
   "item.kubejs.zanite_sigil_blank": "Blank Zanite Sigil",
   "item.kubejs.veridian_sigil_blank": "Blank Veridian Sigil",
-
   "item.kubejs.glowing_compound_dust": "Glowing Compound Dust",
   "item.kubejs.impure_glimmering_dust": "Impure Glimmering Dust",
-
   "item.kubejs.pure_source_gem_dust": "Pure Source Gem Dust",
   "item.kubejs.rough_source_gem": "Rough Source Gem",
-
   "item.kubejs.holy_silver_blend": "Holy Silver Blend",
   "item.kubejs.element_attunement_stone": "Element Attunement Stone",
   "item.kubejs.chaos_essence": "Chaos Essence",
-
   "item.kubejs.disorganized_metal_form": "Disorganized Metal Form",
-
   "item.kubejs.florid_compound": "Florid Compound",
   "item.kubejs.living_metalloid": "Living Metalloid",
-
   "item.kubejs.raw_elementite": "Raw Elementite",
   "item.kubejs.elementite_dust": "Elementite Dust",
-
   "item.kubejs.vengeful_gaia_spirit": "Vengeful Gaia Spirit",
   "item.kubejs.soul_of_gaia": "Soul of Gaia",
   "item.kubejs.boundless_gaia_spirit_ingot": "Boundless Gaia Spirit Ingot",
-
   "item.kubejs.gaian_blood_core": "Gaian Blood Core",
   "item.kubejs.gaian_holy_core": "Gaian Holy Core",
   "item.kubejs.gaian_void_core": "Gaian Void Core",
   "item.kubejs.gaian_annihilation_core": "Gaian Annihilation Core",
-
   "item.kubejs.magical_receiver": "Magical Receiver",
   "item.kubejs.matter_energy_circuit": "Matter-Energy Circuit",
-
   "item.kubejs.hallowed_silicon_boule": "Hallowed Silicon Boule",
   "item.kubejs.primal_phosphorus_boule": "Primal Phosphorus Boule",
   "item.kubejs.verdant_naquadah_boule": "Verdant Naquadah Boule",
   "item.kubejs.gaian_neutronium_boule": "Gaian Neutronium Boule",
-
   "item.kubejs.pneuma_attuned_psimetal": "Pneuma-Attuned Psimetal",
   "item.kubejs.mineral_flux_crystal": "Mineral Flux Crystal",
-
   "item.kubejs.enchanted_zanite_gem": "Enchanted Zanite Gem",
   "item.kubejs.resonant_zanite_crystal": "Resonant Zanite Crystal",
   "item.kubejs.sanctified_ambrosium_bloom": "Sanctified Ambrosium Bloom",
   "item.kubejs.sacred_ambrosium_shard": "Sacred Ambrosium Shard",
   "item.kubejs.frozen_raw_gravitite": "Frozen Raw Gravitite",
   "item.kubejs.altar_charged_gravitite": "Altar-Charged Gravitite",
-
   "item.kubejs.latent_psi_crystal": "Latent Psi Crystal",
   "item.kubejs.hexed_amethyst_core": "Hexed Amethyst Core",
   "item.kubejs.hexed_mana_matrix": "Hexed Mana Matrix",
   "item.kubejs.elven_source_lattice": "Elven Source Lattice",
   "item.kubejs.rune_of_frost": "Rune of Frost",
-
   "item.kubejs.cannon_mechanism": "Cannon Mechanism",
-
   "item.kubejs.primordial_organic_muck": "Primordial Organic Muck",
   "item.kubejs.kerogen": "Kerogen",
   "item.kubejs.crude_petroleum_mass": "Crude Petroleum Mass",
-
   "item.kubejs.condensed_desh_carbonyl": "Condensed Desh Carbonyl",
-
   "item.kubejs.rocket_hull_section": "Rocket Hull Section",
   "item.kubejs.rocket_combustion_engine": "Rocket Combustion Engine",
   "item.kubejs.pressurized_rocket_tank": "Pressurized Rocket Tank",
   "item.kubejs.rocket_guidance_module": "Rocket Guidance Module",
-
   "item.kubejs.desh_hull_section": "Desh Hull Section",
   "item.kubejs.mars_rocket_engine": "Mars Rocket Engine",
   "item.kubejs.mars_propellant_tank": "Mars Propellant Tank",
   "item.kubejs.mars_guidance_module": "Mars Guidance Module",
-
   "item.kubejs.ostrum_perchlorate_mass": "Ostrum Perchlorate Mass",
   "item.kubejs.ostrum_carbonate_precipitate": "Ostrum Carbonate Precipitate",
   "item.kubejs.crude_ostrum_fluoride": "Crude Ostrum Fluoride",
@@ -81,7 +62,6 @@
   "item.kubejs.glacio_rocket_engine": "Glacio Rocket Engine",
   "item.kubejs.glacio_propellant_tank": "Glacio Propellant Tank",
   "item.kubejs.glacio_guidance_module": "Glacio Guidance Module",
-
   "item.kubejs.calorite_sulfate_slag": "Calorite Sulfate Slag",
   "item.kubejs.calorite_chloride_melt": "Calorite Chloride Melt",
   "item.kubejs.calorite_fluoride_precipitate": "Calorite Fluoride Precipitate",
@@ -90,74 +70,62 @@
   "item.kubejs.venus_rocket_engine": "Venus Rocket Engine",
   "item.kubejs.venus_propellant_tank": "Venus Propellant Tank",
   "item.kubejs.venus_guidance_module": "Venus Guidance Module",
-
   "item.kubejs.lv_pistol_frame": "LV Pistol Frame",
   "item.kubejs.mv_pistol_frame": "MV Pistol Frame",
   "item.kubejs.hv_pistol_frame": "HV Pistol Frame",
   "item.kubejs.ev_pistol_frame": "EV Pistol Frame",
   "item.kubejs.iv_pistol_frame": "IV Pistol Frame",
   "item.kubejs.luv_pistol_frame": "LuV Pistol Frame",
-
   "item.kubejs.lv_rifle_receiver": "LV Rifle Receiver",
   "item.kubejs.mv_rifle_receiver": "MV Rifle Receiver",
   "item.kubejs.hv_rifle_receiver": "HV Rifle Receiver",
   "item.kubejs.ev_rifle_receiver": "EV Rifle Receiver",
   "item.kubejs.iv_rifle_receiver": "IV Rifle Receiver",
   "item.kubejs.luv_rifle_receiver": "LuV Rifle Receiver",
-
   "item.kubejs.lv_heavy_frame": "LV Heavy Frame",
   "item.kubejs.mv_heavy_frame": "MV Heavy Frame",
   "item.kubejs.hv_heavy_frame": "HV Heavy Frame",
   "item.kubejs.ev_heavy_frame": "EV Heavy Frame",
   "item.kubejs.iv_heavy_frame": "IV Heavy Frame",
   "item.kubejs.luv_heavy_frame": "LuV Heavy Frame",
-
   "item.kubejs.lv_short_barrel_blank": "LV Short Barrel Blank",
   "item.kubejs.mv_short_barrel_blank": "MV Short Barrel Blank",
   "item.kubejs.hv_short_barrel_blank": "HV Short Barrel Blank",
   "item.kubejs.ev_short_barrel_blank": "EV Short Barrel Blank",
   "item.kubejs.iv_short_barrel_blank": "IV Short Barrel Blank",
   "item.kubejs.luv_short_barrel_blank": "LuV Short Barrel Blank",
-
   "item.kubejs.lv_short_barrel": "LV Short Barrel",
   "item.kubejs.mv_short_barrel": "MV Short Barrel",
   "item.kubejs.hv_short_barrel": "HV Short Barrel",
   "item.kubejs.ev_short_barrel": "EV Short Barrel",
   "item.kubejs.iv_short_barrel": "IV Short Barrel",
   "item.kubejs.luv_short_barrel": "LuV Short Barrel",
-
   "item.kubejs.lv_long_barrel_blank": "LV Long Barrel Blank",
   "item.kubejs.mv_long_barrel_blank": "MV Long Barrel Blank",
   "item.kubejs.hv_long_barrel_blank": "HV Long Barrel Blank",
   "item.kubejs.ev_long_barrel_blank": "EV Long Barrel Blank",
   "item.kubejs.iv_long_barrel_blank": "IV Long Barrel Blank",
   "item.kubejs.luv_long_barrel_blank": "LuV Long Barrel Blank",
-
   "item.kubejs.lv_long_barrel": "LV Long Barrel",
   "item.kubejs.mv_long_barrel": "MV Long Barrel",
   "item.kubejs.hv_long_barrel": "HV Long Barrel",
   "item.kubejs.ev_long_barrel": "EV Long Barrel",
   "item.kubejs.iv_long_barrel": "IV Long Barrel",
   "item.kubejs.luv_long_barrel": "LuV Long Barrel",
-
   "item.kubejs.gaia_flux_dust": "Gaia Flux Dust",
   "item.kubejs.ember_crystal": "Ember Crystal",
   "item.kubejs.hyaline_crystal": "Hyaline Crystal",
   "item.kubejs.aether_crystal": "Aether Crystal",
-  "item.kubejs.mineral_flux_crystal": "Mineral Flux Crystal",
-
   "item.kubejs.raw_ignitium_seed": "Raw Ignitium Seed",
   "item.kubejs.raw_ancient_metal_compound": "Raw Ancient Metal Compound",
   "item.kubejs.storm_quintessence": "Storm Quintessence",
   "item.kubejs.resonant_void_lattice": "Resonant Void Lattice",
-
   "item.kubejs.fire_nucleus": "Fire Nucleus",
   "item.kubejs.water_nucleus": "Water Nucleus",
   "item.kubejs.earth_nucleus": "Earth Nucleus",
   "item.kubejs.air_nucleus": "Air Nucleus",
   "item.kubejs.void_nucleus": "Void Nucleus",
   "item.kubejs.elemental_convergence_matrix": "Elemental Convergence Matrix",
-
   "item.kubejs.sperm_cell_pellet": "Sperm Cell Pellet",
   "item.kubejs.living_cell_matrix": "Living Cell Matrix",
   "item.kubejs.mana_seeded_cell_matrix": "Mana-Seeded Cell Matrix",
@@ -168,25 +136,20 @@
   "item.kubejs.source_crystal_lattice": "Source Crystal Lattice",
   "item.kubejs.vitalized_source_fragment": "Vitalized Source Fragment",
   "item.kubejs.source_bio_matrix": "Source Bio-Matrix",
-
   "item.kubejs.gestated_cumium_crystal": "Gestated Cumium Crystal",
   "item.kubejs.awakened_cumium_embryo": "Awakened Cumium Embryo",
   "item.kubejs.unforged_cumium_matrix": "Unforged Cumium Matrix",
-
   "item.kubejs.primal_latex_billet": "Primal Latex Billet",
   "item.kubejs.elemental_latex_compound": "Elemental Latex Compound",
-
   "item.kubejs.uhv_voltage_coil": "UHV Voltage Coil",
   "item.kubejs.uev_voltage_coil": "UEV Voltage Coil",
   "item.kubejs.uiv_voltage_coil": "UIV Voltage Coil",
-
   "item.kubejs.lv_gun_fire_control": "LV Gun Fire Control",
   "item.kubejs.mv_gun_fire_control": "MV Gun Fire Control",
   "item.kubejs.hv_gun_fire_control": "HV Gun Fire Control",
   "item.kubejs.ev_gun_fire_control": "EV Gun Fire Control",
   "item.kubejs.iv_gun_fire_control": "IV Gun Fire Control",
   "item.kubejs.luv_gun_fire_control": "LuV Gun Fire Control",
-
   "item.kubejs.dragon_heart_crystal": "Dragon Heart Crystal",
   "item.kubejs.draconic_boule": "Draconic Boule",
   "item.kubejs.stabilized_chaos_crystal": "Stabilized Chaos Crystal",
@@ -216,18 +179,15 @@
   "item.kubejs.cumium_processor": "Cumium Processor",
   "item.kubejs.cumium_processor_assembly": "Cumium Processor Assembly",
   "item.kubejs.artificial_cumium_brain": "Artificial Cumium Brain",
-
   "item.kubejs.draconic_sanguinary": "Draconic Sanguinary",
   "item.kubejs.draconic_sanctum": "Draconic Sanctum",
   "item.kubejs.dracontine_codex": "Dracontine Codex",
   "item.kubejs.chronicle_of_dominion": "Chronicle of Dominion",
-
   "item.kubejs.ascendant_initiation_core": "Ascendant Initiation Core",
   "item.kubejs.chaotic_sanguinary": "Chaotic Sanguinary",
   "item.kubejs.shattered_sanctum": "Shattered Sanctum",
   "item.kubejs.codex_of_entropy": "Codex of Entropy",
   "item.kubejs.chronicle_of_unraveling": "Chronicle of Unraveling",
-
   "item.kubejs.pyromatic_codex": "Pyromatic Codex",
   "item.kubejs.evocation_folio": "Evocation Folio",
   "item.kubejs.glacial_grimoire": "Glacial Grimoire",
@@ -238,7 +198,15 @@
   "item.kubejs.eldritch_codex": "Eldritch Codex",
   "item.kubejs.obliteration_chronicle": "Obliteration Chronicle",
   "item.kubejs.harbinger_codex": "Harbinger Codex",
-
-  "item.kubejs.wraithware_processor_unbound": "Unbound Wraithware Processor"
-
+  "item.kubejs.wraithware_processor_unbound": "Unbound Wraithware Processor",
+  "item.kubejs.argentware_circuit_board.tooltip": "§7The Board that keeps purpose",
+  "item.kubejs.argentware_printed_circuit_board.tooltip": "§7The Board that keeps purpose",
+  "item.kubejs.wraithware_circuit_board.tooltip": "§7The Board that keeps afterlife",
+  "item.kubejs.wraithware_printed_circuit_board.tooltip": "§7The Board that keeps afterlife",
+  "item.kubejs.egoware_circuit_board": "Egoware Circuit Board",
+  "item.kubejs.egoware_circuit_board.tooltip": "§7Your board",
+  "item.kubejs.egoware_printed_circuit_board": "Egoware Printed Circuit Board",
+  "item.kubejs.egoware_printed_circuit_board.tooltip": "§7Your board",
+  "item.kubejs.egoware_processor": "Egoware Processor",
+  "item.kubejs.egoware_processor_assembly": "Egoware Processor Assembly"
 }

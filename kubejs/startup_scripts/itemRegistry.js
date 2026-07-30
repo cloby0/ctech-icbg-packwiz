@@ -222,7 +222,6 @@ StartupEvents.registry('item', event => {
     event.create('dragon_heart_crystal')
     event.create('draconic_boule').texture('gtceu:item/neutronium_boule').glow(true)
     event.create('stabilized_chaos_crystal')
-    event.create('chaos_harmonic_board')
 
     event.create('argentware_processor')                 // ZPM
     event.create('argentware_processor_assembly')         // UV
@@ -233,19 +232,25 @@ StartupEvents.registry('item', event => {
     event.create('wraithware_processor_assembly')          // UHV
     event.create('wraithware_processor_supercomputer')     // UEV
     event.create('wraithware_processor_mainframe')         // UIV
-    event.create('cumium_processor')                  // UEV
-    event.create('cumium_processor_assembly')         // UIV
-    event.create('artificial_cumium_brain')           // UXV
+    event.create('egoware_processor')                  // UEV
+    event.create('egoware_processor_assembly')         // UIV
+    event.create('artificial_cumium_brain')            // UXV -- keeps its name: the other two
+                                                       // lines end in a machine, this one ends
+                                                       // in a brain. Cumium is the metal it is
+                                                       // printed on, not the occupant.
 
-    // Argentware/wraithware circuit boards -- raw board (from wetware's raw board) then
-    // printed board, same two-stage shape as GTCEu's own <x>_circuit_board / <x>_printed_circuit_board.
-    // Printing uses foil of a magical alloy instead of a plain GT metal.
+    // The -ware ladder's boards -- raw board then printed board, same two-stage shape as GTCEu's
+    // own <x>_circuit_board / <x>_printed_circuit_board. Printing uses foil of a magical alloy
+    // instead of a plain GT metal. Argentware forks off GT's multilayer board (sibling of
+    // wetware, not descendant); wraithware builds on argentware; egoware on wraithware.
     event.create('argent_foil')
     event.create('spectral_foil')
     event.create('argentware_circuit_board')
     event.create('argentware_printed_circuit_board')
     event.create('wraithware_circuit_board')
     event.create('wraithware_printed_circuit_board')
+    event.create('egoware_circuit_board')
+    event.create('egoware_printed_circuit_board')
 
     // Laplace's Determinism Engine reagents
     event.create('time_crystal')
