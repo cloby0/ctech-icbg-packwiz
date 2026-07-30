@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             A: Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
             B: 'gtceu:holy_silver_dust',
             V: 'kubejs:gravitic_channeling_vessel',
-            X: 'kubejs:gravitic_matrix'
+            X: 'kubejs:gravitic_sigil'
         }
     )
 
@@ -196,16 +196,16 @@ ServerEvents.recipes(event => {
     // --- Microcrafting: Sorcerer circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> Terra Plate.
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:gravitic_matrix_core',
+        output: 'kubejs:gravitic_sigil_blank',
         input: ['botania:gaia_ingot', 'kubejs:resonant_gravitite_core', 'kubejs:chaos_essence'],
         syphon: LP.SORCERER,
         ticks: 200
     })
 
     addTerraPlateRecipe(event, {
-        result: 'kubejs:gravitic_matrix',
+        result: 'kubejs:gravitic_sigil',
         mana: Mana.SORCERER,
-        ingredients: ['kubejs:gravitic_matrix_core', 'kubejs:element_attunement_stone']
+        ingredients: ['kubejs:gravitic_sigil_blank', 'kubejs:element_attunement_stone']
     })
 
     // Wizard Brain: Manaweaving Altar t2 (3rd distinct handler for this tier's item set).
@@ -216,14 +216,16 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
+    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment), anchored on
+    // the tier's actual signature (Gaia Ingot) -- prima_materia is a parallel line, ring flavor only.
     addComponentRecipe(event, 'kubejs:gravitic_motive_core', [
-        'gtceu:prima_materia_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
+        'gtceu:gaia_spirit_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
     ])
     addComponentRecipe(event, 'kubejs:gravitic_channeling_vessel', [
         'botania:gaia_ingot', 'kubejs:chaos_essence', 'mysticalagriculture:fire_essence'
     ])
     addComponentRecipe(event, 'kubejs:gravitic_ward_lattice', [
-        'gtceu:prima_materia_plate', 'bloodmagic:basemonstersoul_steadfast', 'botania:gaia_ingot'
+        'gtceu:gaia_spirit_plate', 'bloodmagic:basemonstersoul_steadfast', 'gtceu:prima_materia_plate'
     ])
 
     // Wisdom Stone: Albedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
@@ -243,7 +245,7 @@ ServerEvents.recipes(event => {
                 components: [
                     { item: 'kubejs:resonant_gravitite_core' },
                     { item: 'kubejs:element_attunement_stone' },
-                    { item: 'kubejs:gravitic_matrix' }
+                    { item: 'kubejs:gravitic_sigil' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_potential', count: 100 },

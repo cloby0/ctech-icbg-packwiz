@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal',
             'minecraft:diamond', 'minecraft:diamond',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'kubejs:starforged_array'
+            'kubejs:starforged_sigil'
         ],
         output: 'psi:psigem',
         sourceCost: Source.THAUMATURGE

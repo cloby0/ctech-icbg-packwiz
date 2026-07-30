@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             'kubejs:draconic_sanguinary',
             'kubejs:stabilized_chaos_crystal',
             'kubejs:stabilized_chaos_crystal',
-            'kubejs:wraithbound_matrix',
+            'kubejs:wraith_sigil',
             'draconicevolution:chaotic_core',
             'kubejs:wraith_wizard_brain',
             'botania:gaia_ingot',
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             'kubejs:draconic_sanctum',
             'kubejs:stabilized_chaos_crystal',
             'kubejs:stabilized_chaos_crystal',
-            'kubejs:wraithbound_matrix',
+            'kubejs:wraith_sigil',
             'draconicevolution:chaotic_core',
             'kubejs:wraith_channeling_vessel',
             'botania:gaia_ingot',
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
             'kubejs:dracontine_codex',
             'kubejs:stabilized_chaos_crystal',
             'kubejs:stabilized_chaos_crystal',
-            'kubejs:wraithbound_matrix',
+            'kubejs:wraith_sigil',
             'draconicevolution:chaotic_core',
             'kubejs:wraith_wizard_brain',
             'botania:gaia_ingot',
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             'kubejs:chronicle_of_dominion',
             'kubejs:stabilized_chaos_crystal',
             'kubejs:stabilized_chaos_crystal',
-            'kubejs:wraithbound_matrix',
+            'kubejs:wraith_sigil',
             'draconicevolution:chaotic_core',
             'kubejs:wraith_motive_core',
             'botania:gaia_ingot',
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             'kubejs:shattered_sanctum',
             'kubejs:codex_of_entropy',
             'kubejs:chronicle_of_unraveling',
-            'kubejs:wraithbound_matrix',
+            'kubejs:wraith_sigil',
             'kubejs:wraith_wizard_brain',
             'kubejs:wraith_channeling_vessel',
             'botania:gaia_ingot'
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     // tier sage.js's empyrean_core ritual uses). Anchored on Stabilized Chaos Crystal and the
     // wraithware bridge item, per design spec.
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:wraithbound_matrix_core',
+        output: 'kubejs:wraith_sigil_blank',
         input: ['kubejs:stabilized_chaos_crystal', 'kubejs:wraithware_processor_mainframe', 'occultism:otherworld_essence'],
         syphon: 2 * LP.ASCENDANT,
         ticks: 200,
@@ -109,12 +109,12 @@ ServerEvents.recipes(event => {
     })
 
     addOccultismRitual(event, {
-        name: 'wraithbound_matrix',
+        name: 'wraith_sigil',
         tier: 'marid',
-        output: 'kubejs:wraithbound_matrix',
+        output: 'kubejs:wraith_sigil',
         duration: 200,
         ingredients: [
-            { item: 'kubejs:wraithbound_matrix_core' },
+            { item: 'kubejs:wraith_sigil_blank' },
             { item: 'occultism:soul_shard' },
             { item: 'occultism:soul_shard' },
             { item: 'occultism:spirit_attuned_gem' },

@@ -211,14 +211,14 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'too_many_bows:dragons_breath',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_motive_core'],
         patterns: ['mna:split_triangle', 'mna:knot2'],
         tier: 3
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'too_many_bows:auroras_grace',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'too_many_bows:rift_shard', 'too_many_bows:rift_shard', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'too_many_bows:rift_shard', 'too_many_bows:rift_shard', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:prima_materia_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_motive_core'],
         patterns: ['mna:split_triangle', 'mna:knot2'],
         tier: 3
     })
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'too_many_bows:burnt_relic',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:ancient_debris', 'minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
+        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:ancient_debris', 'minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_motive_core'],
         patterns: ['mna:split_triangle', 'mna:knot2'],
         tier: 3
     })

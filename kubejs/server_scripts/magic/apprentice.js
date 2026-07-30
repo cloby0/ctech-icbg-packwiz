@@ -182,6 +182,7 @@ ServerEvents.recipes(event => {
         tier: 1
     })
 
+    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
     addComponentRecipe(event, 'kubejs:zanite_motive_core', [
         'gtceu:manasteel_rod', 'minecraft:glowstone_dust', 'botania:manasteel_ingot'
     ])
@@ -189,6 +190,6 @@ ServerEvents.recipes(event => {
         'botania:manasteel_ingot', 'magichem:admixture_energy', 'minecraft:glow_berries'
     ])
     addComponentRecipe(event, 'kubejs:zanite_ward_lattice', [
-        'botania:manasteel_ingot', 'gtceu:amethyst_dust', 'minecraft:glowstone'
+        'gtceu:manasteel_plate', 'gtceu:amethyst_dust', 'minecraft:glowstone'
     ])
 })

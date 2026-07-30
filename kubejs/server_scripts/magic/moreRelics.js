@@ -139,28 +139,28 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'morerelics:crown_of_the_legend',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium', 'kubejs:empyrean_array', 'kubejs:empyrean_ward_lattice'],
+        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'morerelics:king_crimson',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'kubejs:empyrean_array', 'kubejs:empyrean_wizard_brain'],
+        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'morerelics:made_in_heaven',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block', 'kubejs:empyrean_array', 'kubejs:empyrean_motive_core'],
+        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_motive_core'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'morerelics:wonder_of_u',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block', 'kubejs:empyrean_array', 'kubejs:empyrean_wizard_brain'],
+        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })

@@ -140,7 +140,7 @@
 				""
 				"a handful of vanilla combines with ichor plus this tier's own gaian cores round out the set -- motive cores, channeling vessels, ward lattices."
 			]
-			icon: "kubejs:empyrean_array"
+			icon: "kubejs:empyrean_sigil"
 			id: "64624A72C1208B1D"
 			subtitle: "small parts, biggest tier"
 			tasks: [{
@@ -149,7 +149,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:empyrean_array)item(kubejs:empyrean_wizard_brain)item(kubejs:empyrean_motive_core)item(kubejs:empyrean_channeling_vessel)item(kubejs:empyrean_ward_lattice))"
+						"ftbfiltersystem:filter": "or(item(kubejs:empyrean_sigil)item(kubejs:empyrean_wizard_brain)item(kubejs:empyrean_motive_core)item(kubejs:empyrean_channeling_vessel)item(kubejs:empyrean_ward_lattice))"
 					}
 				}
 				title: "Any Empyrean Component"

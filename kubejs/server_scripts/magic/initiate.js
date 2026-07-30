@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a void tear is a hole punched into space -- channels matter through it.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:void_tear',
-        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_matrix', 'kubejs:elementium_channeling_vessel'],
+        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
         affinity: 'ender',
         power: 2 * LP.INITIATE
     });
@@ -39,14 +39,14 @@ ServerEvents.recipes(event => {
             D: 'minecraft:ender_eye',
             F: '#forge:tools/files',
             V: 'kubejs:elementium_channeling_vessel',
-            Z: 'kubejs:elementium_matrix'
+            Z: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Motive Core: winter shears are a cutting/force tool.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:shears_of_winter',
-        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'kubejs:elementium_matrix', 'kubejs:elementium_motive_core'],
+        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'kubejs:elementium_sigil', 'kubejs:elementium_motive_core'],
         affinity: 'water',
         power: 2 * LP.INITIATE
     })
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             D: 'reliquary:lantern_of_paranoia',
             F: '#forge:tools/files',
             X: 'kubejs:elementium_wizard_brain',
-            Y: 'kubejs:elementium_matrix'
+            Y: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             D: 'minecraft:blue_ice',
             F: '#forge:tools/files',
             M: 'kubejs:elementium_motive_core',
-            Y: 'kubejs:elementium_matrix'
+            Y: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
             F: '#forge:tools/files',
             W: 'kubejs:elementium_ward_lattice',
-            X: 'kubejs:elementium_matrix'
+            X: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a fishing rod pulls things across distance -- channeling theme.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:rod_of_lyssa',
-        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_matrix', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
         affinity: 'earth',
         power: 2 * LP.INITIATE
     })
@@ -133,28 +133,28 @@ ServerEvents.recipes(event => {
             D: '#forge:gems/mana',
             F: '#forge:tools/files',
             M: 'kubejs:elementium_motive_core',
-            Y: 'kubejs:elementium_matrix'
+            Y: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Channeling Vessel: torches channel light/energy, consistent across all three magnum torches.
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:amethyst_magnum_torch',
-        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'kubejs:elementium_matrix', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'kubejs:elementium_sigil', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
         affinity: 'arcane',
         power: 2 * LP.INITIATE
     })
 
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:emerald_magnum_torch',
-        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', 'kubejs:elementium_matrix', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
         affinity: 'earth',
         power: 2 * LP.INITIATE
     })
 
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:diamond_magnum_torch',
-        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_matrix', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
         affinity: 'air',
         power: 2 * LP.INITIATE
     })
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
             C: 'irons_spellbooks:divine_pearl',
             F: '#forge:tools/files',
             W: 'kubejs:elementium_ward_lattice',
-            X: 'kubejs:elementium_matrix'
+            X: 'kubejs:elementium_sigil'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
     // skyforged material, already differentiated from the Elementium/Holy Silver material pool.
     // Components: tools -> Motive Core (kinetic tool force), armor -> Ward Lattice (protection),
     // gloves -> Channeling Vessel (grip/force transfer), cape -> Motive Core (mobility).
-    const XM = 'kubejs:elementium_matrix'
+    const XM = 'kubejs:elementium_sigil'
     const MC = 'kubejs:elementium_motive_core'
     const WL = 'kubejs:elementium_ward_lattice'
     const CV = 'kubejs:elementium_channeling_vessel'
@@ -349,15 +349,15 @@ ServerEvents.recipes(event => {
     // original rework design doc); Holy Silver appears below only as a secondary flavor material.
     // Circuit built through 2 real handlers: Manaweaving Altar t2 -> Spirit Infusion.
     addMnaManaweavingRecipe(event, {
-        output: 'kubejs:elementium_matrix_core',
+        output: 'kubejs:elementium_sigil_blank',
         items: ['botania:elementium_ingot', 'gtceu:holy_silver_dust', 'kubejs:sacred_ambrosium_shard'],
         patterns: ['mna:diamond', 'mna:knot'],
         tier: 2
     })
 
     addSpiritInfusion(event, {
-        input: 'kubejs:elementium_matrix_core',
-        output: 'kubejs:elementium_matrix',
+        input: 'kubejs:elementium_sigil_blank',
+        output: 'kubejs:elementium_sigil',
         spirits: [{ type: 'aerial', count: 2 }]
     })
 
@@ -369,13 +369,14 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
+    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
     addComponentRecipe(event, 'kubejs:elementium_motive_core', [
-        'gtceu:elementium_bolt', 'gtceu:skyforged_rod', 'aether:victory_medal'
+        'gtceu:elementium_rod', 'gtceu:skyforged_rod', 'aether:victory_medal'
     ])
     addComponentRecipe(event, 'kubejs:elementium_channeling_vessel', [
         'botania:elementium_ingot', 'gtceu:holy_silver_plate', 'reliquary:mercy_cross'
     ])
     addComponentRecipe(event, 'kubejs:elementium_ward_lattice', [
-        'botania:elementium_ingot', 'gtceu:skyforged_plate', 'reliquary:fortune_coin'
+        'gtceu:elementium_plate', 'gtceu:skyforged_plate', 'reliquary:fortune_coin'
     ])
 });

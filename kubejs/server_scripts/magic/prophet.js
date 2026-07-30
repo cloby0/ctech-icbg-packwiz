@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             'kubejs:blood_grimoire',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
-            'kubejs:argentbound_sigil',
+            'kubejs:argent_sigil',
             'draconicevolution:awakened_draconium_ingot',
             'kubejs:argent_wizard_brain',
             'kubejs:argent_motive_core',
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
             'kubejs:radiant_sanctum',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
-            'kubejs:argentbound_sigil',
+            'kubejs:argent_sigil',
             'draconicevolution:awakened_draconium_ingot',
             'kubejs:argent_channeling_vessel',
             'kubejs:argent_ward_lattice',
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             'kubejs:eldritch_codex',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
-            'kubejs:argentbound_sigil',
+            'kubejs:argent_sigil',
             'draconicevolution:awakened_draconium_ingot',
             'kubejs:argent_wizard_brain',
             'kubejs:argent_ward_lattice',
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             'kubejs:obliteration_chronicle',
             'kubejs:dragon_heart_crystal',
             'kubejs:dragon_heart_crystal',
-            'kubejs:argentbound_sigil',
+            'kubejs:argent_sigil',
             'draconicevolution:awakened_draconium_ingot',
             'kubejs:argent_motive_core',
             'kubejs:argent_channeling_vessel',
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
     // Circuit built through 2 real handlers: Alchemy Table -> Terra Plate. Anchored on Draconic
     // Boule (the tier's genuine capstone precursor) and the argentware bridge item, per design spec.
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:argentbound_sigil_blank',
+        output: 'kubejs:argent_sigil_blank',
         input: ['kubejs:draconic_boule', 'kubejs:argentware_processor_supercomputer', 'bloodmagic:ingot_hellforged'],
         syphon: LP.PROPHET,
         ticks: 200,
@@ -108,9 +108,9 @@ ServerEvents.recipes(event => {
     })
 
     addTerraPlateRecipe(event, {
-        result: 'kubejs:argentbound_sigil',
+        result: 'kubejs:argent_sigil',
         mana: Mana.PROPHET,
-        ingredients: ['kubejs:argentbound_sigil_blank', 'bloodmagic:basemonstersoul_vengeful']
+        ingredients: ['kubejs:argent_sigil_blank', 'bloodmagic:basemonstersoul_vengeful']
     })
 
     // Wizard Brain: Blood Altar (3rd distinct handler for this tier's item set). Blood Altar is a

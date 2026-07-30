@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'celestial_enchantments:legendary_celestial_catalyst',
-        items: ['nameless_trinkets:ultimate_dust', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_core:pure_nether_star', 'minecraft:netherite_scrap', 'botania:terrasteel_ingot', 'kubejs:starforged_array', 'kubejs:starforged_wizard_brain'],
+        items: ['nameless_trinkets:ultimate_dust', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_core:pure_nether_star', 'minecraft:netherite_scrap', 'botania:terrasteel_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_wizard_brain'],
         patterns: ['mna:split_triangle', 'mna:knot2'],
         tier: 3
     })

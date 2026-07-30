@@ -129,7 +129,7 @@
 				""
 				"a handful of vanilla combines with rubedo plus extrabotany metals round out the set -- motive cores, channeling vessels, ward lattices."
 			]
-			icon: "kubejs:rubedo_array"
+			icon: "kubejs:rubedo_sigil"
 			id: "3AD6234979E22204"
 			subtitle: "small parts, big tier"
 			tasks: [{
@@ -138,7 +138,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:rubedo_array)item(kubejs:rubedo_wizard_brain)item(kubejs:rubedo_motive_core)item(kubejs:rubedo_channeling_vessel)item(kubejs:rubedo_ward_lattice))"
+						"ftbfiltersystem:filter": "or(item(kubejs:rubedo_sigil)item(kubejs:rubedo_wizard_brain)item(kubejs:rubedo_motive_core)item(kubejs:rubedo_channeling_vessel)item(kubejs:rubedo_ward_lattice))"
 					}
 				}
 				title: "Any Rubedo Component"

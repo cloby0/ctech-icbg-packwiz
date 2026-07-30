@@ -96,13 +96,13 @@ ServerEvents.recipes(event => {
     // --- Microcrafting: Arcanist circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> furnace.
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:rubedo_array_core',
+        output: 'kubejs:rubedo_sigil_blank',
         input: ['gtceu:rubedo_core_ingot', 'kubejs:elven_source_lattice', 'botania:dragonstone'],
         syphon: LP.ARCANIST,
         ticks: 200
     })
 
-    event.smelting('kubejs:rubedo_array', 'kubejs:rubedo_array_core')
+    event.smelting('kubejs:rubedo_sigil', 'kubejs:rubedo_sigil_blank')
 
     // Wizard Brain: Manaweaving Altar (3rd distinct handler for this tier's item set).
     addMnaManaweavingRecipe(event, {

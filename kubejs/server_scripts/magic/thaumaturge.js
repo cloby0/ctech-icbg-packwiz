@@ -105,14 +105,14 @@ ServerEvents.recipes(event => {
     // Circuit built through 2 real handlers: MNA crushing -> MagiChem Astral Observer illumination.
     addMnaCrushingRecipe(event, {
         input: 'gtceu:starforged_chimerite_ingot',
-        output: 'kubejs:starforged_array_dust'
+        output: 'kubejs:starforged_sigil_blank'
     })
 
     event.custom({
         type: 'magichem:illumination',
-        input: 'kubejs:starforged_array_dust',
+        input: 'kubejs:starforged_sigil_blank',
         lumins: { type: 3, minutes: 4 },
-        result: { item: 'kubejs:starforged_array', count: 1 }
+        result: { item: 'kubejs:starforged_sigil', count: 1 }
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).

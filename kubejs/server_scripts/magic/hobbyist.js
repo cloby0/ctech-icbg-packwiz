@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
             M: 'gtceu:ashen_ichor_ingot',
             H: '#forge:tools/hammers',
             F: '#forge:tools/files',
-            X: 'kubejs:ichorbound_sigil',
+            X: 'kubejs:ichor_sigil',
             Y: 'kubejs:ichor_wizard_brain'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             E: 'magichem:essentia_earth',
             B: 'minecraft:book',
             P: '#forge:plates/copper',
-            X: 'kubejs:ichorbound_sigil',
+            X: 'kubejs:ichor_sigil',
             H: '#forge:tools/hammers'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 
     addBloodAltarRecipe(event, {
         input: 'kubejs:ichor_sigil_blank',
-        output: 'kubejs:ichorbound_sigil',
+        output: 'kubejs:ichor_sigil',
         syphon: LP.HOBBYIST,
         upgradeLevel: 0
     })
@@ -233,8 +233,11 @@ ServerEvents.recipes(event => {
     })
 
     // Motive Core / Channeling Vessel / Ward Lattice: vanilla craft, shaped, structural/passive parts.
+    // Center item = role signal: rod (kinetic) for Motive, ingot (bulk/flow) for Channeling,
+    // ingot again for Ward -- ashen_ichor has no plate form (GENERATE_ROD only, not structural
+    // by design, see gtceuMaterialRegistry.js).
     addComponentRecipe(event, 'kubejs:ichor_motive_core', [
-        'gtceu:ashen_ichor_ingot', 'minecraft:blaze_powder', 'gtceu:iron_rod'
+        'gtceu:ashen_ichor_rod', 'gtceu:ashen_ichor_ingot', 'minecraft:blaze_powder'
     ])
     addComponentRecipe(event, 'kubejs:ichor_channeling_vessel', [
         'gtceu:ashen_ichor_ingot', 'magichem:essentia_water', 'kubejs:primordial_organic_muck'

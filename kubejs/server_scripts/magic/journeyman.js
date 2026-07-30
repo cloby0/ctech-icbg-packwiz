@@ -259,14 +259,15 @@ ServerEvents.recipes(event => {
         ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:arcane_ingot', 'kubejs:resonant_zanite_crystal']
     })
 
+    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
     addComponentRecipe(event, 'kubejs:veridian_motive_core', [
-        'botania:terrasteel_ingot', 'gtceu:terrasteel_bolt', 'kubejs:veridium_filings'
+        'gtceu:terrasteel_rod', 'botania:terrasteel_ingot', 'kubejs:veridium_filings'
     ])
     addComponentRecipe(event, 'kubejs:veridian_channeling_vessel', [
         'botania:terrasteel_ingot', 'aether:ambrosium_shard', 'kubejs:enchanted_zanite_gem'
     ])
     addComponentRecipe(event, 'kubejs:veridian_ward_lattice', [
-        'botania:terrasteel_ingot', 'gtceu:terrasteel_plate', 'irons_spellbooks:protection_rune'
+        'gtceu:terrasteel_plate', 'botania:terrasteel_ingot', 'irons_spellbooks:protection_rune'
     ])
 
     // Wisdom Stone: Nigredo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto

@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune',
             '#gtceu:circuits/uv', '#gtceu:circuits/uv',
-            'kubejs:empyrean_array'
+            'kubejs:empyrean_sigil'
         ],
         affinity: 'arcane',
         power: 2 * LP.SAGE
@@ -264,15 +264,15 @@ ServerEvents.recipes(event => {
     // Ichor (the tier's genuinely novel capstone material) rather than gaia_ingot, which
     // magic_palette.md already flags as the single most over-repeated staple in the pack.
     addRunicAltarRecipe(event, {
-        output: 'kubejs:empyrean_array_core',
+        output: 'kubejs:empyrean_sigil_blank',
         mana: Mana.SAGE,
         ingredients: ['gtceu:empyrean_ichor_ingot', 'kubejs:gaian_void_core', 'minecraft:nether_star']
     })
 
     addTerraPlateRecipe(event, {
-        result: 'kubejs:empyrean_array',
+        result: 'kubejs:empyrean_sigil',
         mana: Mana.SAGE,
-        ingredients: ['kubejs:empyrean_array_core', 'kubejs:soul_of_gaia']
+        ingredients: ['kubejs:empyrean_sigil_blank', 'kubejs:soul_of_gaia']
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
