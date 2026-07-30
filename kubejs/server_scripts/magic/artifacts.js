@@ -39,91 +39,91 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'minecraft:packed_ice', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:packed_ice', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
         output: 'artifacts:aqua_dashers',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:feather', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:leather_boots', 'minecraft:leather_boots', 'minecraft:slime_ball', 'kubejs:gravitic_matrix', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
         output: 'artifacts:bunny_hoppers',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:flint', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:flint', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
         output: 'artifacts:digging_claws',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:flint', 'minecraft:feather', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:flint', 'minecraft:feather', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
         output: 'artifacts:feral_claws',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'minecraft:blaze_rod', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:fire_gauntlet',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:piston', 'minecraft:piston', 'minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
         output: 'artifacts:pocket_piston',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'minecraft:iron_block', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:iron_block', 'kubejs:gravitic_matrix', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:gravitic_motive_core', 'kubejs:chaos_essence'],
         output: 'artifacts:power_glove',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'minecraft:ender_pearl', 'minecraft:black_dye', 'gtceu:luminessence_dust'],
+        pedestalItems: ['minecraft:leather', 'minecraft:phantom_membrane', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:black_dye', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:scarf_of_invisibility',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:lightning_rod', 'minecraft:lightning_rod', 'minecraft:quartz', 'minecraft:redstone', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:lightning_rod', 'kubejs:gravitic_matrix', 'minecraft:quartz', 'minecraft:redstone', 'kubejs:gravitic_wizard_brain', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
         output: 'artifacts:shock_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:cactus', 'minecraft:cactus', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:iron_ingot', 'kubejs:gravitic_matrix', 'minecraft:cactus', 'minecraft:cactus', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:thorn_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:amethyst_shard', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:fire_charge', 'minecraft:blaze_rod', 'minecraft:blaze_powder', 'kubejs:gravitic_matrix', 'minecraft:amethyst_shard', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
         output: 'artifacts:flame_pendant',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'minecraft:diamond', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'kubejs:gravitic_matrix', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:cross_necklace',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:golden_sheet', 'minecraft:gold_block', 'minecraft:gold_block', 'minecraft:ender_pearl', 'minecraft:string', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:golden_sheet', 'minecraft:gold_block', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:string', 'kubejs:gravitic_motive_core', 'kubejs:gravitic_channeling_vessel', 'kubejs:chaos_essence'],
         output: 'artifacts:golden_hook',
         sourceCost: Source.SORCERER
     })
@@ -136,14 +136,14 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:glass_bottle', 'kubejs:gravitic_matrix', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'kubejs:gravitic_channeling_vessel', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:antidote_vessel',
         sourceCost: Source.SORCERER
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'kubejs:chaos_essence'],
+        pedestalItems: ['create:iron_sheet', 'minecraft:netherrack', 'minecraft:flint_and_steel', 'minecraft:iron_pickaxe', 'minecraft:coal', 'kubejs:gravitic_matrix', 'kubejs:gravitic_wizard_brain', 'kubejs:chaos_essence'],
         output: 'artifacts:pickaxe_heater',
         sourceCost: Source.SORCERER
     })
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'minecraft:black_dye', 'minecraft:ender_pearl', 'minecraft:obsidian', 'kubejs:chaos_essence'],
+        pedestalItems: ['minecraft:leather', 'minecraft:black_dye', 'kubejs:gravitic_matrix', 'minecraft:ender_pearl', 'minecraft:obsidian', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
         output: 'artifacts:superstitious_hat',
         sourceCost: Source.SORCERER
     })

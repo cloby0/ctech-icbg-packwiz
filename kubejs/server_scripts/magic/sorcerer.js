@@ -9,14 +9,15 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('reliquary:glowing_water', 3),
         [
-            '   ',
+            '  X',
             ' B ',
             'VA '
         ],
         {
             A: Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
             B: 'gtceu:holy_silver_dust',
-            V: 'kubejs:gravitic_channeling_vessel'
+            V: 'kubejs:gravitic_channeling_vessel',
+            X: 'kubejs:gravitic_matrix'
         }
     )
 
@@ -215,13 +216,13 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    event.shapeless('kubejs:gravitic_motive_core', [
+    addComponentRecipe(event, 'kubejs:gravitic_motive_core', [
         'gtceu:prima_materia_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
     ])
-    event.shapeless('kubejs:gravitic_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:gravitic_channeling_vessel', [
         'botania:gaia_ingot', 'kubejs:chaos_essence', 'mysticalagriculture:fire_essence'
     ])
-    event.shapeless('kubejs:gravitic_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:gravitic_ward_lattice', [
         'gtceu:prima_materia_plate', 'bloodmagic:basemonstersoul_steadfast', 'botania:gaia_ingot'
     ])
 
@@ -242,7 +243,7 @@ ServerEvents.recipes(event => {
                 components: [
                     { item: 'kubejs:resonant_gravitite_core' },
                     { item: 'kubejs:element_attunement_stone' },
-                    { item: 'kubejs:resonant_gravitite_core' }
+                    { item: 'kubejs:gravitic_matrix' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_potential', count: 100 },
