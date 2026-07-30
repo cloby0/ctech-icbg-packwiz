@@ -5,18 +5,28 @@ ServerEvents.recipes(event => {
     // a chemical_reactor step consuming the raw board + foil of a material + a chemical fluid.
     // The foil is where the magic-mod integration lives -- transmuted from a plain GT foil.
 
+    // Argentware forks off the same board wetware does, and adds the apparatus of keeping
+    // something BOUND rather than alive: a tartaric gem to hold it, raw will to run it, a gauge
+    // to watch it. No petri dish, no growth medium, no pump -- will does not subsist like tissue.
+    // Sibling of wetware, not a descendant, so the wetware chain is not a prerequisite.
+    // Crafted at UHV; the ZPM in its circuit tag is what it SATISFIES, not what builds it.
     event.recipes.gtceu.circuit_assembler('argentware_circuit_board_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
-            '2x bloodmagic:basemonstersoul'
+            '16x gtceu:multilayer_fiber_reinforced_circuit_board',
+            '1x bloodmagic:soulgemgreater',
+            '4x bloodmagic:basemonstersoul',
+            '1x bloodmagic:demonwillgauge'
         )
-        .itemOutputs('1x kubejs:argentware_circuit_board')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.ZPM])
+        .inputFluids(Fluid.of('kubejs:argent_energy', 2000))
+        .itemOutputs('16x kubejs:argentware_circuit_board')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UHV])
 
+    // Draconium, not platinum. Draconium is fusion-only (MK3/UV) so the foil is a real cost --
+    // this is a UHV board and it should not be printed on a LuV metal.
     addBloodAltarRecipe(event, {
         output: { item: 'kubejs:argent_foil', count: 8 },
-        input: { item: 'gtceu:platinum_foil', count: 8 },
+        input: { item: 'gtceu:draconium_foil', count: 8 },
         syphon: LP.ARCANIST,
         upgradeLevel: 4,
         consumptionRate: 50,
@@ -34,18 +44,23 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
+    // Wraithware is the next rung, not a second fork: you take the board that holds raw will and
+    // put an actual someone in it. Built on argentware, never on wetware -- nothing in this line
+    // is alive. The spirit gem and bound seal are the occupant; the argentware board is the cell.
     event.recipes.gtceu.circuit_assembler('wraithware_circuit_board_recipe')
         .itemInputs(
-            '1x gtceu:wetware_circuit_board',
-            '2x occultism:spirit_attuned_crystal'
+            '1x kubejs:argentware_printed_circuit_board',
+            '4x occultism:spirit_attuned_crystal',
+            '1x occultism:soul_gem'
         )
+        .inputFluids(Fluid.of('kubejs:argent_energy', 4000))
         .itemOutputs('1x kubejs:wraithware_circuit_board')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UV])
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.custom({
         type: 'malum:spirit_infusion',
-        input: { item: 'gtceu:platinum_foil', count: 8 },
+        input: { item: 'gtceu:draconium_foil', count: 8 },
         extra_items: [
             { item: 'occultism:spirit_attuned_crystal', count: 4 },
             { item: 'malum:astral_weave', count: 2 }
