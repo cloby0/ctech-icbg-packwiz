@@ -94,15 +94,17 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('aether:aether_portal_frame', 1),
         [
-            'GIG',
+            'XIG',
             'IHI',
-            'GZG'
+            'GZY'
         ],
         {
             G: 'minecraft:glowstone',
             I: 'gtceu:ashen_ichor_ingot',
             Z: 'kubejs:zanite_ward_lattice',
-            H: '#forge:tools/hammers'
+            H: '#forge:tools/hammers',
+            X: 'kubejs:zanite_sigil',
+            Y: 'kubejs:zanite_channeling_vessel'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
@@ -180,13 +182,13 @@ ServerEvents.recipes(event => {
         tier: 1
     })
 
-    event.shapeless('kubejs:zanite_motive_core', [
+    addComponentRecipe(event, 'kubejs:zanite_motive_core', [
         'gtceu:manasteel_rod', 'minecraft:glowstone_dust', 'botania:manasteel_ingot'
     ])
-    event.shapeless('kubejs:zanite_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:zanite_channeling_vessel', [
         'botania:manasteel_ingot', 'magichem:admixture_energy', 'minecraft:glow_berries'
     ])
-    event.shapeless('kubejs:zanite_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:zanite_ward_lattice', [
         'botania:manasteel_ingot', 'gtceu:amethyst_dust', 'minecraft:glowstone'
     ])
 })
