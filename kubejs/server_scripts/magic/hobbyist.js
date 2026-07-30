@@ -120,19 +120,21 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'reliquary:fortune_coin' })
     event.shaped(
-                 Item.of('reliquary:fortune_coin', 1),
-                 [
-                    'HAF',
-                    'ACA',
-                    'MAM'
-                 ],
-                 {
-                     A: 'irons_spellbooks:arcane_essence',
-                     C: 'gtceu:double_gold_plate',
-                     M: 'gtceu:ashen_ichor_ingot',
-                     H: '#forge:tools/hammers',
-                     F: '#forge:tools/files'
-                 }
+        Item.of('reliquary:fortune_coin', 1),
+        [
+            'HAF',
+            'XCA',
+            'MYM'
+        ],
+        {
+            A: 'irons_spellbooks:arcane_essence',
+            C: 'gtceu:double_gold_plate',
+            M: 'gtceu:ashen_ichor_ingot',
+            H: '#forge:tools/hammers',
+            F: '#forge:tools/files',
+            X: 'kubejs:ichorbound_sigil',
+            Y: 'kubejs:ichor_wizard_brain'
+        }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'irons_spellbooks:inscription_table' })
@@ -230,14 +232,14 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'infernal', count: 1 }]
     })
 
-    // Motive Core / Channeling Vessel / Ward Lattice: vanilla craft, structural/passive parts.
-    event.shapeless('kubejs:ichor_motive_core', [
+    // Motive Core / Channeling Vessel / Ward Lattice: vanilla craft, shaped, structural/passive parts.
+    addComponentRecipe(event, 'kubejs:ichor_motive_core', [
         'gtceu:ashen_ichor_ingot', 'minecraft:blaze_powder', 'gtceu:iron_rod'
     ])
-    event.shapeless('kubejs:ichor_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:ichor_channeling_vessel', [
         'gtceu:ashen_ichor_ingot', 'magichem:essentia_water', 'kubejs:primordial_organic_muck'
     ])
-    event.shapeless('kubejs:ichor_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:ichor_ward_lattice', [
         'gtceu:ashen_ichor_ingot', 'create:iron_sheet', 'magichem:essentia_earth'
     ])
 });
