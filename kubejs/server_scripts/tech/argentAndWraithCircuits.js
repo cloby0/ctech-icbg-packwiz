@@ -104,6 +104,25 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
+    event.recipes.gtceu.chemical_reactor('locked_timeline_refinement')
+        .itemInputs('2x minecraft:redstone')
+        .inputFluids(Fluid.of('kubejs:locked_timeline', 600))
+        .outputFluids(Fluid.of('kubejs:causal_lock_fluid', 500))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    event.recipes.gtceu.chemical_reactor('branch_residue_reclamation')
+        .itemInputs('1x minecraft:redstone')
+        .inputFluids(Fluid.of('kubejs:branch_residue', 400))
+        .outputFluids(Fluid.of('kubejs:unbound_causality', 250))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    event.recipes.gtceu.combustion_generator('branch_residue_burn')
+        .inputFluids(Fluid.of('kubejs:branch_residue', 1))
+        .duration(200)
+        .EUt(-GTValues.VA[GTValues.IV])
+
     // Laplace's Determinism Engine -- converts chance-based Demon Will / spirit essence
     // drops into a guaranteed-rate refined reagent for the argentware/wraithware circuit lines.
 
