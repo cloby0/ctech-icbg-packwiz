@@ -1,17 +1,21 @@
 StartupEvents.registry('fluid', event => {
-    event.create('kubejs:liquid_computation')
-        .displayName('Liquid Computation')
-        .color(0x00CCFF)
-        .viscosity(500)
-
-    event.create('kubejs:draconic_computation')
-        .displayName('Draconic Computation')
-        .color(0x6622CC)
+    // Argent Energy. DOOM's Argent Energy is what the UAC strip-mines Hell to obtain; here it is
+    // rendered from blood and will, which makes extraction literal -- life converted into power.
+    // Produced at ZPM so the Draconic Evolution hardware at ZPM/UV can reach it; volume is the
+    // tier gate, not availability. Replaced liquid_computation + draconic_computation (named for
+    // a dead tier theme, and duplicating GT's own computation system) and then confluence, which
+    // was named for its balance role rather than for anything in the world.
+    event.create('kubejs:argent_energy')
+        .displayName('Argent Energy')
+        .color(0xE8622C)
         .viscosity(400)
 
-    event.create('kubejs:chaos_matrix_fluid')
-        .displayName('Chaos Matrix Fluid')
-        .color(0xFF3300)
+    // Guardian Distillate: the UEV boss tier's resource. Extracted from Chaos Guardian drops,
+    // and the axis is yield per shard rather than throughput -- more refining steps recover more
+    // fluid from the same drop, so the boss stays an economy instead of a one-time unlock.
+    event.create('kubejs:guardian_distillate')
+        .displayName('Guardian Distillate')
+        .color(0xD4145A)
         .viscosity(600)
 
     event.create('kubejs:dissolved_lacrima')

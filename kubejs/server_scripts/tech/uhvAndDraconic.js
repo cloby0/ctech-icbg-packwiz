@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.draconic_infusion_chamber('awakened_draconium_infusion')
         .itemInputs('1x draconicevolution:draconium_ingot')
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 2000))
         .itemOutputs('1x draconicevolution:awakened_draconium_ingot')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -43,16 +43,10 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.gtceu.chemical_reactor('draconic_computation_synthesis')
-        .itemInputs(
-            '2x #gtceu:circuits/uv',
-            '1x draconicevolution:awakened_draconium_dust',
-            '1x gtceu:gaia_spirit_dust'
-        )
-        .inputFluids(Fluid.of('kubejs:liquid_computation', 4000))
-        .outputFluids(Fluid.of('kubejs:draconic_computation', 8000))
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UV])
+    // Confluence's two production routes live in techMagicInteraction.js -- it is a cross-lane
+    // fluid, so it belongs in the bridge file rather than either tier file. The old
+    // draconic_computation_synthesis that stood here was the middle rung of a three-fluid ladder
+    // whose root needed UEV circuits, which is why 57 recipes at ZPM/UV were unreachable.
 
     event.recipes.gtceu.cutter('cut_draconic_boule')
         .itemInputs('kubejs:draconic_boule')
@@ -83,7 +77,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:uhv_emitter',
             '2x #gtceu:circuits/uhv'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 2000))
         .itemOutputs('1x gtceu:draconic_infusion_chamber')
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])

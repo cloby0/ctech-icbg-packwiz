@@ -752,13 +752,31 @@ ServerEvents.recipes(event => {
     })
 
 
-    event.recipes.gtceu.chemical_reactor('uev_circuit_dissolution')
-        .itemInputs('4x #gtceu:circuits/uev', '1x gtceu:naquadria_dust')
-        .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
-        .outputFluids(Fluid.of('kubejs:liquid_computation', 8000))
-        .duration(20 * 20)
-        .EUt(GTValues.VA[GTValues.UEV])
-        .cleanroom(CleanroomType.CLEANROOM)
+    // Confluence: two routes, one per lane, same output. Neither requires the other -- a tech
+    // player and a magic player each reach it on their own terms, which is the point of the
+    // convergence tier. Both sit at ZPM because the Draconic Evolution wyvern hardware that
+    // consumes this runs at ZPM/UV; gating it any higher is what broke the old ladder.
+    // Argent energy is rendered, not synthesised: life essence and raw demonic will, reduced.
+    // Two routes so neither lane is a prerequisite for the other -- the tech route buys its will
+    // with naquadria and acid, the magic route brings its own and pays in volume instead.
+    event.recipes.gtceu.chemical_reactor('argent_energy_rendering')
+        .itemInputs('2x bloodmagic:basemonstersoul', '1x gtceu:naquadria_dust')
+        .inputFluids(
+            Fluid.of('bloodmagic:life_essence_fluid', 8000),
+            Fluid.of('gtceu:aqua_regia', 2000)
+        )
+        .outputFluids(Fluid.of('kubejs:argent_energy', 8000))
+        .circuit(1)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    event.recipes.gtceu.chemical_reactor('argent_energy_rendering_infernal')
+        .itemInputs('1x bloodmagic:basemonstersoul_destructive', '2x gtceu:gaia_spirit_dust')
+        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid', 12000))
+        .outputFluids(Fluid.of('kubejs:argent_energy', 12000))
+        .circuit(2)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.cutter('cut_hallowed_silicon_boule')
         .itemInputs('kubejs:hallowed_silicon_boule')
@@ -816,7 +834,7 @@ ServerEvents.recipes(event => {
         .inputFluids(
             Fluid.of('gtceu:cum', 16000),
             Fluid.of('kubejs:seminal_plasma', 4000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 4000)
+            Fluid.of('kubejs:guardian_distillate', 4000)
         )
         .itemOutputs('2x gtceu:cumium_dust')
         .duration(2000)

@@ -90,10 +90,12 @@ ServerEvents.recipes(event => {
             '2x draconicevolution:chaos_shard',
             '2x gtceu:naquadria_dust'
         )
-        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 2000))
+        .inputFluids(Fluid.of('kubejs:guardian_distillate', 2000))
         .itemOutputs('1x kubejs:resonant_void_lattice')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
+        // UHV, not UV: this already demands 2x chaos_shard, so it is Chaos Guardian gated no
+        // matter what voltage it declares. UV left it below its own ingredients' tier.
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.assembly_line('ctech:void_core_reconstitution')
         .itemInputs(
@@ -103,8 +105,8 @@ ServerEvents.recipes(event => {
             '2x gtceu:cumium_dust'
         )
         .inputFluids(
-            Fluid.of('kubejs:draconic_computation', 2000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 2000)
+            Fluid.of('kubejs:argent_energy', 2000),
+            Fluid.of('kubejs:guardian_distillate', 2000)
         )
         .itemOutputs('2x cataclysm:void_core')
         .duration(2000)
@@ -209,7 +211,7 @@ ServerEvents.recipes(event => {
             '1x botania:gaia_ingot'
         )
         .inputFluids(
-            Fluid.of('kubejs:chaos_matrix_fluid', 4000),
+            Fluid.of('kubejs:guardian_distillate', 4000),
             Fluid.of('gtceu:soldering_alloy', 1152)
         )
         .itemOutputs('1x kubejs:void_nucleus')
@@ -230,8 +232,8 @@ ServerEvents.recipes(event => {
             '1x #gtceu:circuits/uev'
         )
         .inputFluids(
-            Fluid.of('kubejs:draconic_computation', 4000),
-            Fluid.of('kubejs:chaos_matrix_fluid', 2000),
+            Fluid.of('kubejs:argent_energy', 4000),
+            Fluid.of('kubejs:guardian_distillate', 2000),
             Fluid.of('gtceu:soldering_alloy', 2304)
         )
         .itemOutputs('1x kubejs:elemental_convergence_matrix')

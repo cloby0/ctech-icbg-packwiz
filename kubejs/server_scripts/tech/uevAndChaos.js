@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             '1x kubejs:stabilized_chaos_crystal',
             '1x gtceu:chaos_crystal_dust'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('kubejs:chaos_harmonic_board')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('kubejs:chaos_matrix_fluid', 8000)
+            Fluid.of('kubejs:guardian_distillate', 8000)
         )
         .itemOutputs('kubejs:cumium_processor_assembly')
         .duration(2000)
@@ -104,18 +104,49 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.gtceu.chemical_reactor('chaos_matrix_fluid_synthesis')
+    // Guardian Distillate extraction. The axis is yield per shard, not throughput: the Chaos
+    // Guardian gates how many shards exist, so the upgrade path is recovering more fluid from
+    // each one rather than running more parallel machines. Same lesson as GT's ore-processing
+    // byproduct chain, applied to a boss drop. Circuit selects the route.
+    event.recipes.gtceu.chemical_reactor('guardian_distillate_crude')
+        .itemInputs('1x draconicevolution:chaos_shard')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
+        .outputFluids(Fluid.of('kubejs:guardian_distillate', 2000))
+        .circuit(1)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    // 2x the crude yield for a gaia spirit and hotter reagents.
+    event.recipes.gtceu.chemical_reactor('guardian_distillate_refined')
         .itemInputs(
             '1x draconicevolution:chaos_shard',
             '1x gtceu:gaia_spirit_dust'
         )
         .inputFluids(
             Fluid.of('gtceu:stellar_plasma_plasma', 2000),
-            Fluid.of('kubejs:draconic_computation', 4000)
+            Fluid.of('kubejs:argent_energy', 4000)
         )
-        .outputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 4000))
+        .outputFluids(Fluid.of('kubejs:guardian_distillate', 4000))
+        .circuit(2)
         .duration(300)
         .EUt(GTValues.VA[GTValues.UHV])
+
+    // 4x crude. Needs the tier's own capstone circuit, so it lands after the line it feeds --
+    // the optimization is offered long before it is required (Law 5).
+    event.recipes.gtceu.chemical_reactor('guardian_distillate_total')
+        .itemInputs(
+            '1x draconicevolution:chaos_shard',
+            '2x gtceu:gaia_spirit_dust',
+            '1x #gtceu:circuits/uiv'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:stellar_plasma_plasma', 4000),
+            Fluid.of('kubejs:argent_energy', 8000)
+        )
+        .outputFluids(Fluid.of('kubejs:guardian_distillate', 8000))
+        .circuit(3)
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.remove({ id: 'draconicevolution:machines/reactor_core' })
     event.remove({ id: 'draconicevolution:machines/reactor_stabilizer' })
@@ -132,8 +163,8 @@ ServerEvents.recipes(event => {
             '4x gtceu:awakened_framework_plate'
         )
         .inputFluids(
-            Fluid.of('kubejs:chaos_matrix_fluid', 4000),
-            Fluid.of('kubejs:draconic_computation', 2000)
+            Fluid.of('kubejs:guardian_distillate', 4000),
+            Fluid.of('kubejs:argent_energy', 2000)
         )
         .itemOutputs('draconicevolution:reactor_core')
         .duration(2000)
@@ -147,7 +178,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:reactor_prt_stab_frame',
             '1x draconicevolution:chaotic_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('draconicevolution:reactor_stabilizer')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -159,7 +190,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:awakened_draconium_ingot',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('2x draconicevolution:reactor_injector')
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -176,8 +207,8 @@ ServerEvents.recipes(event => {
             '8x gtceu:advanced_smd_resistor'
         )
         .inputFluids(
-            Fluid.of('kubejs:chaos_matrix_fluid', 500),
-            Fluid.of('kubejs:draconic_computation', 1000)
+            Fluid.of('kubejs:guardian_distillate', 500),
+            Fluid.of('kubejs:argent_energy', 1000)
         )
         .itemOutputs('1x kubejs:cumium_processor')
         .duration(400)
@@ -200,8 +231,8 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             Fluid.of('gtceu:soldering_alloy', 2880),
-            Fluid.of('kubejs:chaos_matrix_fluid', 12000),
-            Fluid.of('kubejs:draconic_computation', 4000)
+            Fluid.of('kubejs:guardian_distillate', 12000),
+            Fluid.of('kubejs:argent_energy', 4000)
         )
         .itemOutputs('1x kubejs:artificial_cumium_brain')
         .duration(3000)

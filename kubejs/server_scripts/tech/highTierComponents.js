@@ -457,7 +457,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             Fluid.of('gtceu:soldering_alloy', 3456),
-            Fluid.of('kubejs:draconic_computation', 2000)
+            Fluid.of('kubejs:argent_energy', 2000)
         )
         .itemOutputs('1x gtceu:uhv_field_generator')
         .duration(600)
@@ -476,7 +476,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             Fluid.of('gtceu:soldering_alloy', 6912),
-            Fluid.of('kubejs:chaos_matrix_fluid', 2000)
+            Fluid.of('kubejs:guardian_distillate', 2000)
         )
         .itemOutputs('1x gtceu:uev_field_generator')
         .duration(600)
@@ -495,7 +495,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             Fluid.of('gtceu:soldering_alloy', 13824),
-            Fluid.of('kubejs:chaos_matrix_fluid', 4000)
+            Fluid.of('kubejs:guardian_distillate', 4000)
         )
         .itemOutputs('1x gtceu:uiv_field_generator')
         .duration(600)

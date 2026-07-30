@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:draconium_core',
             '1x minecraft:nether_star'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:wyvern_core')
         .duration(400).EUt(GTValues.VA[GTValues.UV])
 
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
             '4x minecraft:redstone_block',
             '1x draconicevolution:draconium_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:wyvern_energy_core')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:wyvern_energy_core',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 2000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 2000))
         .itemOutputs('1x draconicevolution:draconic_energy_core')
         .duration(600).EUt(GTValues.VA[GTValues.UHV])
 
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:draconic_energy_core',
             '1x draconicevolution:awakened_core'
         )
-        .inputFluids(Fluid.of('kubejs:chaos_matrix_fluid', 2000))
+        .inputFluids(Fluid.of('kubejs:guardian_distillate', 2000))
         .itemOutputs('1x draconicevolution:chaotic_energy_core')
         .duration(800).EUt(GTValues.VA[GTValues.UEV])
 
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:draconium_plate',
             '1x draconicevolution:particle_generator'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:energy_core_stabilizer')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:wyvern_energy_core',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:energy_core')
         .duration(400).EUt(GTValues.VA[GTValues.UV])
 
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:draconium_core',
             '1x minecraft:diamond'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('2x draconicevolution:energy_pylon')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:draconium_core',
             '1x minecraft:enchanting_table'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:energy_transfuser')
         .duration(400).EUt(GTValues.VA[GTValues.UV])
 
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
             '4x minecraft:diamond',
             '1x draconicevolution:wyvern_energy_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('4x draconicevolution:basic_relay_crystal')
         .duration(200).EUt(GTValues.VA[GTValues.UV])
 
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
             '4x draconicevolution:basic_relay_crystal',
             '1x draconicevolution:draconium_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('4x draconicevolution:wyvern_relay_crystal')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
             '2x minecraft:ender_eye',
             '1x draconicevolution:basic_relay_crystal'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:basic_wireless_crystal')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
             '2x minecraft:ender_eye',
             '1x draconicevolution:wyvern_relay_crystal'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:wyvern_wireless_crystal')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
             '2x minecraft:ender_eye',
             '1x draconicevolution:draconic_relay_crystal'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:draconic_wireless_crystal')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
             '2x minecraft:diamond',
             '2x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:reactor_prt_focus_ring')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:draconium_rod',
             '1x draconicevolution:draconium_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:reactor_prt_out_rotor')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:draconium_rod',
             '1x draconicevolution:draconium_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:reactor_prt_in_rotor')
         .duration(300).EUt(GTValues.VA[GTValues.UHV])
 
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:awakened_draconium_plate',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:reactor_prt_stab_frame')
         .duration(300).EUt(GTValues.VA[GTValues.UHV])
 
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:draconium_plate',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:reactor_prt_rotor_full')
         .duration(400).EUt(GTValues.VA[GTValues.UHV])
 
@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
             '1x draconicevolution:wyvern_energy_core',
             '1x minecraft:skeleton_skull'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:grinder')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -347,7 +347,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:draconium_plate',
             '1x draconicevolution:entity_detector'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:entity_detector_advanced')
         .duration(300).EUt(GTValues.VA[GTValues.UV])
 
@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
             '2x create:iron_sheet',
             '1x draconicevolution:wyvern_core'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 1000))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 1000))
         .itemOutputs('1x draconicevolution:celestial_manipulator')
         .duration(400).EUt(GTValues.VA[GTValues.UV])
 
@@ -403,7 +403,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:awakened_draconium_plate',
             '1x draconicevolution:magnet'
         )
-        .inputFluids(Fluid.of('kubejs:draconic_computation', 500))
+        .inputFluids(Fluid.of('kubejs:argent_energy', 500))
         .itemOutputs('1x draconicevolution:advanced_magnet')
         .duration(300).EUt(GTValues.VA[GTValues.UHV])
 
