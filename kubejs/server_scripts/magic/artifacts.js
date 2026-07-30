@@ -150,28 +150,28 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:string', 'minecraft:lily_pad', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'minecraft:cod', 'minecraft:salmon', 'minecraft:string', 'minecraft:lily_pad', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:anglers_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'kubejs:elementium_matrix', 'minecraft:feather', 'minecraft:gold_ingot', 'minecraft:string', 'kubejs:elementium_motive_core', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:cowboy_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:cactus', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:cactus', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:novelty_drinking_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:sugar', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'minecraft:glass_bottle', 'kubejs:elementium_matrix', 'minecraft:sugar', 'minecraft:string', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_channeling_vessel', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:plastic_drinking_hat',
         sourceCost: Source.INITIATE
     })
@@ -185,14 +185,14 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:emerald', 'minecraft:emerald', 'minecraft:wheat', 'minecraft:wheat', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'minecraft:emerald', 'kubejs:elementium_matrix', 'minecraft:wheat', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_ward_lattice', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:villager_hat',
         sourceCost: Source.INITIATE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'minecraft:string', 'kubejs:sacred_ambrosium_shard'],
+        pedestalItems: ['minecraft:leather', 'minecraft:slime_ball', 'minecraft:tnt', 'minecraft:gunpowder', 'minecraft:string', 'kubejs:elementium_matrix', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_motive_core', 'kubejs:sacred_ambrosium_shard'],
         output: 'artifacts:whoopee_cushion',
         sourceCost: Source.INITIATE
     })

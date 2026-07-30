@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a void tear is a hole punched into space -- channels matter through it.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:void_tear',
-        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_channeling_vessel'],
+        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_matrix', 'kubejs:elementium_channeling_vessel'],
         affinity: 'ender',
         power: 2 * LP.INITIATE
     });
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         Item.of('reliquary:ender_staff', 1),
         [
             'FDV',
-            'BCB',
+            'BCZ',
             ' A '
         ],
         {
@@ -38,14 +38,15 @@ ServerEvents.recipes(event => {
             C: 'reliquary:void_tear',
             D: 'minecraft:ender_eye',
             F: '#forge:tools/files',
-            V: 'kubejs:elementium_channeling_vessel'
+            V: 'kubejs:elementium_channeling_vessel',
+            Z: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Motive Core: winter shears are a cutting/force tool.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:shears_of_winter',
-        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'minecraft:snowball', 'kubejs:elementium_motive_core'],
+        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'kubejs:elementium_matrix', 'kubejs:elementium_motive_core'],
         affinity: 'water',
         power: 2 * LP.INITIATE
     })
@@ -55,7 +56,7 @@ ServerEvents.recipes(event => {
         Item.of('reliquary:sojourner_staff', 1),
         [
             'FDX',
-            'BCB',
+            'BCY',
             ' A '
         ],
         {
@@ -64,7 +65,8 @@ ServerEvents.recipes(event => {
             C: 'reliquary:void_tear',
             D: 'reliquary:lantern_of_paranoia',
             F: '#forge:tools/files',
-            X: 'kubejs:elementium_wizard_brain'
+            X: 'kubejs:elementium_wizard_brain',
+            Y: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -73,7 +75,7 @@ ServerEvents.recipes(event => {
         Item.of('reliquary:glacial_staff', 1),
         [
             'FDM',
-            'BCB',
+            'BCY',
             ' A '
         ],
         {
@@ -82,7 +84,8 @@ ServerEvents.recipes(event => {
             C: 'reliquary:void_tear',
             D: 'minecraft:blue_ice',
             F: '#forge:tools/files',
-            M: 'kubejs:elementium_motive_core'
+            M: 'kubejs:elementium_motive_core',
+            Y: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -90,7 +93,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of("reliquary:hero_medallion", 1),
         [
-            'CHC',
+            'XHC',
             'BAB',
             'WFC'
         ],
@@ -100,7 +103,8 @@ ServerEvents.recipes(event => {
             C: '#forge:gems/mana',
             H: '#forge:tools/hammers',
             F: '#forge:tools/files',
-            W: 'kubejs:elementium_ward_lattice'
+            W: 'kubejs:elementium_ward_lattice',
+            X: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
@@ -109,7 +113,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a fishing rod pulls things across distance -- channeling theme.
     addEldrinAltarRecipe(event, {
         output: 'reliquary:rod_of_lyssa',
-        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_matrix', 'kubejs:elementium_channeling_vessel'],
         affinity: 'earth',
         power: 2 * LP.INITIATE
     })
@@ -119,7 +123,7 @@ ServerEvents.recipes(event => {
         Item.of('constructionwand:infinity_wand', 1),
         [
             'FDM',
-            'BCB',
+            'BCY',
             ' A '
         ],
         {
@@ -128,28 +132,29 @@ ServerEvents.recipes(event => {
             C: 'constructionwand:diamond_wand',
             D: '#forge:gems/mana',
             F: '#forge:tools/files',
-            M: 'kubejs:elementium_motive_core'
+            M: 'kubejs:elementium_motive_core',
+            Y: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Channeling Vessel: torches channel light/energy, consistent across all three magnum torches.
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:amethyst_magnum_torch',
-        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'kubejs:elementium_matrix', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
         affinity: 'arcane',
         power: 2 * LP.INITIATE
     })
 
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:emerald_magnum_torch',
-        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', '#forge:gems/mana', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', 'kubejs:elementium_matrix', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
         affinity: 'earth',
         power: 2 * LP.INITIATE
     })
 
     addEldrinAltarRecipe(event, {
         output: 'magnumtorch:diamond_magnum_torch',
-        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', '#forge:gems/mana', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
+        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_matrix', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
         affinity: 'air',
         power: 2 * LP.INITIATE
     })
@@ -194,7 +199,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('reliquary:mercy_cross', '{Damage:0}'),
         [
-            'FAW',
+            'FXW',
             'ACA',
             ' B '
         ],
@@ -203,7 +208,8 @@ ServerEvents.recipes(event => {
             B: '#forge:rods/long/gold',
             C: 'irons_spellbooks:divine_pearl',
             F: '#forge:tools/files',
-            W: 'kubejs:elementium_ward_lattice'
+            W: 'kubejs:elementium_ward_lattice',
+            X: 'kubejs:elementium_matrix'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
@@ -252,19 +258,24 @@ ServerEvents.recipes(event => {
     // Circuit on the flagship chestplate only -- Initiate circuit is near-universal by default,
     // not mandatory on every piece of a single equipment set; the other 10 pieces stay pure
     // skyforged material, already differentiated from the Elementium/Holy Silver material pool.
+    // Components: tools -> Motive Core (kinetic tool force), armor -> Ward Lattice (protection),
+    // gloves -> Channeling Vessel (grip/force transfer), cape -> Motive Core (mobility).
     const XM = 'kubejs:elementium_matrix'
+    const MC = 'kubejs:elementium_motive_core'
+    const WL = 'kubejs:elementium_ward_lattice'
+    const CV = 'kubejs:elementium_channeling_vessel'
     ;[
-        ['aether:valkyrie_pickaxe',    ['PPP', 'HRF', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
-        ['aether:valkyrie_axe',        ['PP ', 'PRH', ' RF'], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
-        ['aether:valkyrie_shovel',     ['HPF', ' R ', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
-        ['aether:valkyrie_hoe',        ['PPH', ' RF', ' R '], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
-        ['aether:valkyrie_lance',      ['H P', ' R ', 'R F'], { P: SP, R: SR, H: TH, F: TF }, [TH, TF]],
-        ['aether:valkyrie_helmet',     ['PPP', 'PHP'],        { P: SP, H: TH }, [TH]],
-        ['aether:valkyrie_chestplate', ['PHP', 'PXP', 'PPP'], { P: SP, H: TH, X: XM }, [TH]],
-        ['aether:valkyrie_leggings',   ['PPP', 'PHP', 'P P'], { P: SP, H: TH }, [TH]],
-        ['aether:valkyrie_boots',      ['PHP', 'P P'],        { P: SP, H: TH }, [TH]],
-        ['aether:valkyrie_gloves',     ['PHP', 'PMP'],        { P: SP, M: VM, H: TH }, [TH]],
-        ['aether:valkyrie_cape',       ['KPP', 'PMP', 'PPP'], { P: SP, M: VM, K: TK }, [TK]]
+        ['aether:valkyrie_pickaxe',    ['PPP', 'HRF', ' Q '], { P: SP, R: SR, Q: MC, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_axe',        ['PP ', 'PRH', ' QF'], { P: SP, R: SR, Q: MC, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_shovel',     ['HPF', ' R ', ' Q '], { P: SP, R: SR, Q: MC, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_hoe',        ['PPH', ' RF', ' Q '], { P: SP, R: SR, Q: MC, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_lance',      ['H P', ' R ', 'Q F'], { P: SP, R: SR, Q: MC, H: TH, F: TF }, [TH, TF]],
+        ['aether:valkyrie_helmet',     ['PWP', 'PHP'],        { P: SP, H: TH, W: WL }, [TH]],
+        ['aether:valkyrie_chestplate', ['PHP', 'PXP', 'PWP'], { P: SP, H: TH, X: XM, W: WL }, [TH]],
+        ['aether:valkyrie_leggings',   ['PWP', 'PHP', 'P P'], { P: SP, H: TH, W: WL }, [TH]],
+        ['aether:valkyrie_boots',      ['PHP', 'W P'],        { P: SP, H: TH, W: WL }, [TH]],
+        ['aether:valkyrie_gloves',     ['PHP', 'CMP'],        { P: SP, M: VM, H: TH, C: CV }, [TH]],
+        ['aether:valkyrie_cape',       ['KPP', 'PMP', 'QPP'], { P: SP, M: VM, K: TK, Q: MC }, [TK]]
     ].forEach(([out, pat, keys, tools]) => {
         let r = event.shaped(out, pat, keys)
         tools.forEach(t => r.damageIngredient(Ingredient.of(t)))
@@ -358,13 +369,13 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    event.shapeless('kubejs:elementium_motive_core', [
+    addComponentRecipe(event, 'kubejs:elementium_motive_core', [
         'gtceu:elementium_bolt', 'gtceu:skyforged_rod', 'aether:victory_medal'
     ])
-    event.shapeless('kubejs:elementium_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:elementium_channeling_vessel', [
         'botania:elementium_ingot', 'gtceu:holy_silver_plate', 'reliquary:mercy_cross'
     ])
-    event.shapeless('kubejs:elementium_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:elementium_ward_lattice', [
         'botania:elementium_ingot', 'gtceu:skyforged_plate', 'reliquary:fortune_coin'
     ])
 });
