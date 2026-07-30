@@ -68,6 +68,27 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom(CleanroomType.CLEANROOM)
 
+    // Determinism Engine fuel chain -- Causal Lock Fluid production. A Time Crystal is fused
+    // then grown (not mined, not assembled from circuits), dissolved, and distilled with a
+    // genuine chance split into a usable branch and a waste branch.
+
+    event.recipes.gtceu.fusion_reactor('temporal_plasma_fusion')
+        .inputFluids(
+            Fluid.of('gtceu:arcmetal', 144),
+            Fluid.of('gtceu:americium', 144)
+        )
+        .outputFluids(Fluid.of('kubejs:temporal_plasma', 1000))
+        .duration(300)
+        .EUt(98304)
+        .fusionStartEU(640000000)
+
+    event.recipes.gtceu.autoclave('time_crystal_growth')
+        .itemInputs('4x gtceu:quartz_dust')
+        .inputFluids(Fluid.of('kubejs:temporal_plasma', 1000))
+        .itemOutputs('1x kubejs:time_crystal')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+
     // Laplace's Determinism Engine -- converts chance-based Demon Will / spirit essence
     // drops into a guaranteed-rate refined reagent for the argentware/wraithware circuit lines.
 
