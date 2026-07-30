@@ -607,7 +607,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:empyrean_array',
             'kubejs:empyrean_motive_core'
         ],
         output: 'l2hostility:platinum_star',
@@ -656,7 +656,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:feather',
         pedestalItems: [
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'kubejs:empyrean_channeling_vessel'
@@ -669,7 +669,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:phantom_membrane',
         pedestalItems: [
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'l2complements:soul_flame', 'l2complements:soul_flame',
             'l2complements:storm_core', 'l2complements:storm_core',
             'kubejs:empyrean_channeling_vessel'
@@ -709,7 +709,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'kubejs:empyrean_wizard_brain'
         ],
@@ -722,7 +722,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'kubejs:empyrean_wizard_brain'
         ],
@@ -735,7 +735,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'minecraft:netherite_ingot', 'minecraft:diamond',
             'kubejs:empyrean_wizard_brain'
         ],
@@ -748,7 +748,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'kubejs:empyrean_ward_lattice'
         ],
@@ -761,7 +761,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'kubejs:empyrean_ward_lattice'
         ],
@@ -774,7 +774,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'minecraft:gold_block', 'minecraft:gold_block',
             'kubejs:empyrean_motive_core'
         ],
@@ -787,7 +787,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'kubejs:empyrean_motive_core'
         ],
@@ -800,7 +800,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'minecraft:amethyst_shard', 'minecraft:amethyst_shard',
             'kubejs:empyrean_wizard_brain'
         ],
@@ -813,7 +813,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot',
             'botania:manasteel_ingot', 'botania:manasteel_ingot',
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
             'kubejs:empyrean_channeling_vessel'
         ],
@@ -837,7 +837,7 @@ ServerEvents.recipes(event => {
     addEnchantingRecipe(event, {
         reagent: 'botania:terrasteel_ingot',
         pedestalItems: [
-            'botania:manasteel_ingot', 'botania:manasteel_ingot',
+            'botania:manasteel_ingot', 'kubejs:empyrean_array',
             'l2complements:soul_flame', 'l2complements:soul_flame',
             'l2complements:sun_membrane', 'l2complements:sun_membrane',
             'minecraft:fire_charge', 'minecraft:fire_charge',
@@ -853,7 +853,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_block', 'gtceu:holy_silver_block',
             'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
             'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:divinity_cross',
@@ -866,7 +866,7 @@ ServerEvents.recipes(event => {
             'minecraft:nether_star',
             'l2hostility:divinity_cross',
             'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
             'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:divinity_light',
@@ -879,7 +879,7 @@ ServerEvents.recipes(event => {
             'minecraft:leather', 'minecraft:leather',
             'minecraft:leather', 'minecraft:leather',
             'l2complements:eternium_ingot', 'l2complements:eternium_ingot',
-            'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia',
+            'kubejs:soul_of_gaia', 'kubejs:empyrean_array',
             'kubejs:empyrean_ward_lattice'
         ],
         output: 'l2hostility:triple_strip_cape',
@@ -892,7 +892,7 @@ ServerEvents.recipes(event => {
             'minecraft:stick', 'minecraft:stick',
             'minecraft:stick', 'minecraft:stick',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
+            'l2hostility:hostility_essence', 'kubejs:empyrean_array',
             'kubejs:empyrean_wizard_brain'
         ],
         output: 'l2hostility:trait_adder_wand',
@@ -904,7 +904,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:stick', 'minecraft:stick',
             'minecraft:stick', 'minecraft:stick',
-            'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
+            'l2hostility:hostility_essence', 'kubejs:empyrean_array',
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'kubejs:empyrean_wizard_brain'
         ],
