@@ -384,7 +384,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:book',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:rubedo_array',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
@@ -411,7 +411,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2complements:warden_bone_shard',
@@ -423,7 +423,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:lightning_rod',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'minecraft:glass',
             'kubejs:rubedo_motive_core'
         ],
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
         ],
@@ -473,7 +473,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2complements:piglin_rune',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'l2complements:sculkium_ingot',
             'kubejs:rubedo_motive_core'
         ],
@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:tnt', 'minecraft:tnt',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'kubejs:rubedo_motive_core'
         ],
         output: 'l2complements:explosion_shard',
@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
         ],
@@ -516,7 +516,7 @@ ServerEvents.recipes(event => {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'minecraft:diamond_sword', 'minecraft:diamond_sword',
             'kubejs:rubedo_wizard_brain'
         ],
@@ -528,7 +528,7 @@ ServerEvents.recipes(event => {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'minecraft:rotten_flesh', 'minecraft:rotten_flesh',
             'minecraft:netherite_ingot',
             'kubejs:rubedo_wizard_brain'
@@ -541,7 +541,7 @@ ServerEvents.recipes(event => {
         reagent: 'l2hostility:chaos_ingot',
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'minecraft:gold_block', 'minecraft:gold_block',
             'kubejs:rubedo_wizard_brain'
         ],
@@ -554,7 +554,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_channeling_vessel'
         ],
@@ -567,7 +567,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_ward_lattice'
         ],
@@ -580,7 +580,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_motive_core'
         ],
@@ -593,7 +593,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:rubedo_array',
             'minecraft:soul_campfire', 'minecraft:soul_campfire',
             'kubejs:rubedo_motive_core'
         ],
