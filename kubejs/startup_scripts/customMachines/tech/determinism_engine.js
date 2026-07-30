@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('determinism_engine')
         .category('determinism')
         .setEUIO('in')
-        .setMaxIOSize(4, 1, 0, 0)
+        .setMaxIOSize(4, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER)
 
@@ -14,7 +14,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('determinism_engine', 'multiblock')
         .recipeTypes(['determinism_engine'])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+            Java.loadClass('com.gregtechceu.gtceu.api.recipe.modifier.EfficiencyModifier').of(2, 0.97, 0.5)
+        ])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aaa", "aea", "aaa")
             .aisle("aaa", "ada", "aaa")
