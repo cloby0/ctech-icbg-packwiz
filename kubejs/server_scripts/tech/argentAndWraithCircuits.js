@@ -89,6 +89,21 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
+    event.recipes.gtceu.chemical_reactor('time_crystal_dissolution')
+        .itemInputs('1x kubejs:time_crystal')
+        .inputFluids(Fluid.of('gtceu:aqua_regia', 2000))
+        .outputFluids(Fluid.of('kubejs:unbound_causality', 1000))
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.distillation_tower('unbound_causality_distillation')
+        .inputFluids(Fluid.of('kubejs:unbound_causality', 1000))
+        .chancedFluidOutput(Fluid.of('kubejs:locked_timeline', 600), "80/100")
+        .chancedFluidOutput(Fluid.of('kubejs:branch_residue', 400), "35/100")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV])
+
     // Laplace's Determinism Engine -- converts chance-based Demon Will / spirit essence
     // drops into a guaranteed-rate refined reagent for the argentware/wraithware circuit lines.
 
