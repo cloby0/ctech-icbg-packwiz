@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     // Wilden/Drygmy mob-drop items (wilden_tribute/horn/spike, drygmy_shard) have no MNA/Blood
     // Magic/Malum equivalent. wilden_alloy_dust and the wilden_tribute x2 duplication recipe are
     // dropped outright, no replacement. primal_latex_billet/abstract_elastomer below (the
-    // load-bearing half feeding uevAndChaos.js) get new non-Ars ingredients instead of being
+    // load-bearing half feeding uevAndEgoware.js) get new non-Ars ingredients instead of being
     // dropped, since abstract_elastomer_ingot is a real UEV tech-tree bridge material.
 
     addRunicAltarRecipe(event, {

@@ -5549,11 +5549,11 @@ file = "kubejs/server_scripts/tech/thermal.js"
 hash = "0d70d27df9acc626db9170fc6b52ce94a6a32853e94e5d914c2b65ffb32fbb86"
 
 [[files]]
-file = "kubejs/server_scripts/tech/uevAndChaos.js"
+file = "kubejs/server_scripts/tech/uevAndEgoware.js"
 hash = "df498441725041248dc8d1c8dc9bfad0299b2810fff8b5cb9cf08ef5d1bd1114"
 
 [[files]]
-file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
+file = "kubejs/server_scripts/tech/uhvTier.js"
 hash = "c76876481b41e0d0168155c2f0293be44817c657c06076565f70b0f4f74352ee"
 
 [[files]]
