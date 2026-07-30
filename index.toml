@@ -5286,7 +5286,7 @@ hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "58247f6a541f033e5a49bb303fe08513c2d130389ce9f8b94525d1a88992a9b7"
+hash = "066234d7db883b62072e1c24ced3237c4f86f22694cfd77482cc07d2a7d12fe4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
@@ -5601,6 +5601,10 @@ file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
 hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
+hash = "09c533408dac90eedeb570fbebacfc2ea75149e6e439bd7685fbb489e07e2d3a"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
 hash = "411a491cc3d160f0d24abfe723911c94ae6556ad105679f494c02dcb506476ff"
 
@@ -5619,10 +5623,6 @@ hash = "a45cb68e4799c29c08978c76eaa58f642ed5a087046fea7a108b83a077d96763"
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
 hash = "33e58ee57c8c5b04c694027b8790301e9db317e46fc866afb36bdcbf8eb56ca9"
-
-[[files]]
-file = "kubejs/startup_scripts/customMachines/magic/spirit_binding_engine.js"
-hash = "380557082431b2cc5e393fac449f22675287444ef989bbd8222dd309b27dd124"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -7014,11 +7014,6 @@ hash = "20ac24c67acb7777e13a043e796bb3e9ebbdcfcd08bf488aa0cace770d75c63b"
 metafile = true
 
 [[files]]
-file = "mods/oh-the-biomes-weve-gone.pw.toml"
-hash = "910bf8541d58020d34c119cd3b35bd3d4fc3954db80ba22f2db98849a1b40357"
-metafile = true
-
-[[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
 hash = "2a6cecc87fb42098b8b4a6ca813ce1ae362d43841918957c2388dff65149315c"
 metafile = true
@@ -7156,6 +7151,16 @@ metafile = true
 [[files]]
 file = "mods/refurbished-furniture.pw.toml"
 hash = "2bcee75d08b33dd6506b7cd3f67ea9d0d2c1bf14e26728fa8e12ef19c895b165"
+metafile = true
+
+[[files]]
+file = "mods/regions-unexplored-expansion.pw.toml"
+hash = "0cb89402cf2752e5de7910c89df43691d58143f80487131f5a06d6336294f4be"
+metafile = true
+
+[[files]]
+file = "mods/regions-unexplored.pw.toml"
+hash = "e162eaf2b01dcfc4f7f9f796284f1a577fcfc244057081e32f8f432891ba6a7a"
 metafile = true
 
 [[files]]

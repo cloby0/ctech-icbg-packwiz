@@ -6,12 +6,17 @@ let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegist
 
 let _occultismRitualIndex = 0
 
-// Voltage per pentacle tier for the Spirit Binding Engine mirror. Deliberately lands each tier
+function stripNamespace(str) {
+    const colon = str.indexOf(':')
+    return colon === -1 ? str : str.slice(colon + 1)
+}
+
+// Voltage per pentacle tier for the Eternal Soul Compression Unit mirror. Deliberately lands each tier
 // at or before the point its rituals are actually needed -- afrit is ZPM so the wraithware
 // circuit line (UV-UIV) arrives with its ritual gate already automatable, not simultaneously.
 // Tier names, not GTValues lookups -- this object is built at file-load time, before GTValues
-// is guaranteed bound. Resolved lazily in _mirrorToSpiritEngine instead.
-let _spiritEngineTier = {
+// is guaranteed bound. Resolved lazily in _mirrorToSoulCompressor instead.
+let _soulCompressionTier = {
     foliot: 'LuV',
     djinni: 'LuV',
     afrit: 'ZPM',
@@ -19,48 +24,70 @@ let _spiritEngineTier = {
 }
 
 // Occultism ingredient entries are {item} or {tag}; GT wants '<count>x <id>' / '<count>x #<tag>'.
-function _spiritEngineInput(entry, debugLabel) {
+// A Forge ingredient may also be an OR-list of alternatives -- GT has no OR for loose items, so
+// take the first branch rather than dropping the whole recipe.
+function _soulCompressionInput(entry, debugLabel) {
+    if (!entry) return null
+    if (Array.isArray(entry)) entry = entry[0]
     if (!entry) return null
     let count = entry.count || 1
     if (entry.tag) return `${count}x #${entry.tag}`
     let id = entry.item ?? entry.id ?? null
     if (!id) {
-        console.warn(`[spirit_binding_engine] unknown ingredient shape at ${debugLabel}`)
+        console.warn(`[soul_compression] unknown ingredient shape at ${debugLabel}`)
         return null
     }
     if (!$ForgeRegistries.ITEMS.getValue(id)) {
-        console.warn(`[spirit_binding_engine] skipping non-existent item '${id}' at ${debugLabel}`)
+        console.warn(`[soul_compression] skipping non-existent item '${id}' at ${debugLabel}`)
         return null
     }
     return `${count}x ${id}`
 }
 
+// Pentacle tier from the recipe's own fields. pentacle_id is the primary source
+// (occultism:craft_<tier>); activation_item (book_of_binding_bound_<tier>) is the fallback for
+// rituals using a non-standard pentacle.
+function _pentacleTier(crecipe) {
+    let hay = String(crecipe.pentacle_id || '') + ' ' +
+        String((crecipe.activation_item && crecipe.activation_item.item) || '')
+    let tiers = ['foliot', 'djinni', 'afrit', 'marid']
+    for (let i = 0; i < tiers.length; i++) {
+        if (hay.indexOf(tiers[i]) !== -1) return tiers[i]
+    }
+    return null
+}
+
 // Emits the optional GT route alongside the real ritual. Never replaces it -- if anything here
 // bails, the occultism:ritual above still stands on its own.
-function _mirrorToSpiritEngine(event, name, tier, ritualDummyId, ingredients, output, duration) {
-    let tierName = _spiritEngineTier[tier]
+function _mirrorToSoulCompressor(event, name, tier, ingredients, output, duration) {
+    let tierName = _soulCompressionTier[tier]
     if (tierName === undefined) {
-        console.warn(`[spirit_binding_engine] no voltage mapped for pentacle tier '${tier}' (${name}), skipping GT mirror`)
+        console.warn(`[soul_compression] no voltage mapped for pentacle tier '${tier}' (${name}), skipping GT mirror`)
         return
     }
     let voltage = GTValues[tierName]
 
     let inputs = (ingredients || [])
-        .map(e => _spiritEngineInput(e, name))
+        .map(e => _soulCompressionInput(e, name))
         .filter(e => e !== null)
     if (inputs.length !== (ingredients || []).length) {
-        console.warn(`[spirit_binding_engine] ${name}: dropped an ingredient, skipping GT mirror`)
+        console.warn(`[soul_compression] ${name}: dropped an ingredient, skipping GT mirror`)
         return
     }
 
-    // Ritual dummy is the machine's program, same as the real ritual consuming it off the bowl.
-    inputs.push(`1x ${ritualDummyId}`)
+    // No ritual dummy input. Occultism's ritual_dummy items are JEI display placeholders for the
+    // pentacle book -- nothing crafts them (neither ours nor Occultism's own ship a recipe) and
+    // the real ritual never consumes one. Requiring it made every mirrored recipe uncraftable.
+    if (inputs.length === 0) {
+        console.warn(`[soul_compression] ${name}: no usable ingredients, skipping GT mirror`)
+        return
+    }
     if (inputs.length > 9) {
-        console.warn(`[spirit_binding_engine] ${name}: ${inputs.length} inputs exceeds 9, skipping GT mirror`)
+        console.warn(`[soul_compression] ${name}: ${inputs.length} inputs exceeds 9, skipping GT mirror`)
         return
     }
 
-    let r = event.recipes.gtceu.spirit_binding_engine(`spirit_binding/${name}`)
+    let r = event.recipes.gtceu.eternal_soul_compression_unit(`soul_compression/${name}`)
         .itemOutputs(typeof output === 'object' ? `${output.count || 1}x ${output.item}` : `1x ${output}`)
         .duration(duration * 4)
         .EUt(GTValues.VA[voltage])
@@ -101,14 +128,54 @@ function addOccultismRitual(event, crecipe) {
         result: typeof crecipe.output === 'object' ? crecipe.output : { item: outputId },
     }).id(`kubejs:ritual/${name}`)
 
-    _mirrorToSpiritEngine(event, name, tier, ritualDummyId, crecipe.ingredients, crecipe.output, duration)
+    _mirrorToSoulCompressor(event, name, tier, crecipe.ingredients, crecipe.output, duration)
 }
 
 global.addOccultismRitual = addOccultismRitual
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.assembler('spirit_binding_engine_controller')
+    // Occultism ships 18 craft rituals of its own. Mirror those too -- an automator that only
+    // handles the pack's own additions isn't worth the multiblock. The other 48 rituals
+    // (summon/familiar/possess/resurrect) output entities, not items, and are skipped.
+    // Recipes we authored are skipped here because addOccultismRitual already mirrored them
+    // directly; they are told apart by their kubejs: ritual_dummy namespace.
+    event.forEachRecipe({ type: 'occultism:ritual' }, recipe => {
+        let crecipe
+        try {
+            crecipe = JSON.parse(recipe.json.toString())
+        } catch (e) {
+            console.warn('[soul_compression] unreadable ritual json, skipping')
+            return
+        }
+
+        if (crecipe.ritual_type !== 'occultism:craft') return
+
+        let dummy = crecipe.ritual_dummy && crecipe.ritual_dummy.item
+        if (!dummy) return
+        if (String(dummy).startsWith('kubejs:')) return
+
+        let result = crecipe.result
+        if (!result || !result.item) {
+            console.warn(`[soul_compression] ${dummy}: no item result, skipping`)
+            return
+        }
+
+        let tier = _pentacleTier(crecipe)
+        if (!tier) {
+            console.warn(`[soul_compression] ${dummy}: unresolvable pentacle tier, skipping`)
+            return
+        }
+
+        // Occultism's dummy ids are path-style (occultism:ritual_dummy/craft_soul_gem), so flatten
+        // the slash rather than nesting it into the generated recipe id.
+        let name = stripNamespace(dummy).replace(/\//g, '_')
+
+        _mirrorToSoulCompressor(event, name, tier,
+            crecipe.ingredients, result, crecipe.duration || 60)
+    })
+
+    event.recipes.gtceu.assembler('eternal_soul_compression_unit_controller')
         .itemInputs(
             '4x gtceu:starforged_chimerite_plate',
             '4x gtceu:starforged_chimerite_bolt',
@@ -119,7 +186,7 @@ ServerEvents.recipes(event => {
             '1x #gtceu:circuits/luv'
         )
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
-        .itemOutputs('1x gtceu:spirit_binding_engine')
+        .itemOutputs('1x gtceu:eternal_soul_compression_unit')
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
 

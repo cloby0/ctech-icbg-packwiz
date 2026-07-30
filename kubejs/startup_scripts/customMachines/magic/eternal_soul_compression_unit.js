@@ -8,7 +8,7 @@
 // than a bespoke casing, so it reads as a bound ritual circle instead of a steel box.
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('spirit_binding_engine')
+    event.create('eternal_soul_compression_unit')
         .category('magic')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 0, 0)
@@ -17,14 +17,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('spirit_binding_engine', 'multiblock')
+    event.create('eternal_soul_compression_unit', 'multiblock')
         ["tooltips(java.util.List)"]([
-            Component.literal("Allows you to automate Occultism crafting rituals"),
+            Component.literal("Steal demons right out of hell and squish them into your items!"),
             Component.literal("Pentacle tier sets the voltage: Foliot/Djinni LuV, Afrit ZPM, Marid UV")
         ])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeTypes(['spirit_binding_engine'])
+        .recipeTypes(['eternal_soul_compression_unit'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("ccc", "cKc", "ccc")
