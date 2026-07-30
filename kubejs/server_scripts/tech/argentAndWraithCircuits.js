@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:argent_energy', 4000))
         .itemOutputs('1x kubejs:wraithware_circuit_board')
         .duration(600)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.custom({
         type: 'malum:spirit_infusion',
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:sodium_persulfate', 4000))
         .itemOutputs('1x kubejs:wraithware_printed_circuit_board')
         .duration(1800)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .EUt(GTValues.VA[GTValues.UEV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     // Determinism Engine fuel chain -- Causal Lock Fluid production. A Time Crystal is fused
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('1x kubejs:argentware_processor')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_recipe_asmd')
         .itemInputs(
@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('2x kubejs:argentware_processor')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_assembly_recipe')
         .itemInputs(
@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('2x kubejs:argentware_processor_assembly')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.circuit_assembler('argentware_processor_assembly_recipe_asmd')
         .itemInputs(
@@ -297,7 +297,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('4x kubejs:argentware_processor_assembly')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.assembly_line('argentware_processor_supercomputer_recipe')
         .stationResearch(b => b
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
         .itemOutputs('1x kubejs:argentware_processor_supercomputer')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.assembly_line('argentware_processor_mainframe_recipe')
         .stationResearch(b => b
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('1x kubejs:argentware_processor_mainframe')
         .duration(2000)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     // Wraithware -- Occultism spirit circuit line (UV-UIV). Base tier requires a real
     // Occultism ritual (the line's one manual-automation gate) after the circuit_assembler step.
@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('1x kubejs:wraithware_processor_unbound')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_unbound_recipe_asmd')
         .itemInputs(
@@ -366,7 +366,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('2x kubejs:wraithware_processor_unbound')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     addOccultismRitual(event, {
         name: 'wraithware_processor',
@@ -394,7 +394,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('2x kubejs:wraithware_processor_assembly')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.circuit_assembler('wraithware_processor_assembly_recipe_asmd')
         .itemInputs(
@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('4x kubejs:wraithware_processor_assembly')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.assembly_line('wraithware_processor_supercomputer_recipe')
         .stationResearch(b => b
@@ -426,7 +426,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 1152))
         .itemOutputs('1x kubejs:wraithware_processor_supercomputer')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.assembly_line('wraithware_processor_mainframe_recipe')
         .stationResearch(b => b
@@ -449,7 +449,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('1x kubejs:wraithware_processor_mainframe')
         .duration(2000)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     // Laplace's Determinism Engine controller -- gated at ZPM, matching where argentware begins.
 

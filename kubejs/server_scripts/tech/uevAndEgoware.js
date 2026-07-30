@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:argent_energy', 4000))
         .itemOutputs('kubejs:egoware_circuit_board')
         .duration(1200)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UIV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     // Printed on awakened draconium -- the most expensive foil in the pack, because nothing here
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:sodium_persulfate', 4000))
         .itemOutputs('1x kubejs:egoware_printed_circuit_board')
         .duration(1800)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UIV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.assembly_line('egoware_processor_assembly_recipe')
@@ -218,10 +218,10 @@ ServerEvents.recipes(event => {
             '4x gtceu:cumium_foil',
             '2x gtceu:awakened_draconium_foil',
             '1x kubejs:egoware_printed_circuit_board',
-            '8x gtceu:advanced_smd_diode',
-            '8x gtceu:advanced_smd_capacitor',
-            '8x gtceu:advanced_smd_transistor',
-            '8x gtceu:advanced_smd_resistor'
+            '8x kubejs:warded_smd_diode',
+            '8x kubejs:warded_smd_capacitor',
+            '8x kubejs:warded_smd_transistor',
+            '8x kubejs:warded_smd_resistor'
         )
         .inputFluids(
             Fluid.of('kubejs:guardian_distillate', 500),

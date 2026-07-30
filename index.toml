@@ -5406,7 +5406,7 @@ hash = "3e17d9fa91f164f2864eecb0f5e5a8eae6832a7dbe9e5158ac93f13b74474dc0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/argentAndWraithCircuits.js"
-hash = "54ddfc5ce63a4c63c9063ace63c03e10b60b2b7360c44ade44e162d2141f8b58"
+hash = "0e9ab6b57df6a67bb2b246fe2164119ac200aa07ae53fce3790cd09c39ce3e68"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
@@ -5550,7 +5550,7 @@ hash = "0d70d27df9acc626db9170fc6b52ce94a6a32853e94e5d914c2b65ffb32fbb86"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndEgoware.js"
-hash = "56be1402d3943b42b8012d3a8f14ae3a5654f0659ff21fa41b6d4071e0a8c6ea"
+hash = "85ceeb410babfb1067a9c5be4e9771ea25b46f30b1de85785e6fa385c98778be"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvTier.js"
