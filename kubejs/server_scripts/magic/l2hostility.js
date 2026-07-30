@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     // Dead ars_nouveau:source_gem across this whole file (never touched by the magic rework's
     // tier phases) swapped for this rework's own tier-signature dust, matched to each recipe's
     // own tier field: Alchemist->distilled_animus_dust, Thaumaturge->starforged_chimerite_dust,
-    // Arcanist->gravitic_rubedo_dust, Sage->kubejs:soul_of_gaia. Fixed 2026-07-28 alongside the
+    // Arcanist->rubedo_core_dust, Sage->kubejs:soul_of_gaia. Fixed 2026-07-28 alongside the
     // reported runic_forge/awakened_cumium_embryo error (same failure class: dead item breaks
     // GT .itemInputs()). Helper calls (addEnchantingRecipe/addImbuementRecipe/Source.TIER) left
     // as-is -- they still work (delegate to addEldrinAltarRecipe internally), full modernization
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
         input: 'minecraft:soul_sand',
         pedestalItems: [
             'minecraft:ghast_tear', 'minecraft:ghast_tear',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'kubejs:starforged_motive_core'
         ],
         output: 'l2complements:soul_flame',
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:prismarine', 'minecraft:prismarine',
             'minecraft:prismarine', 'minecraft:prismarine',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'minecraft:sponge', 'minecraft:sponge',
             'kubejs:starforged_wizard_brain'
         ],
@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:guardian_rune',
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
             'minecraft:piglin_banner_pattern',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'kubejs:starforged_wizard_brain'
         ],
         output: 'l2complements:piglin_rune',
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'kubejs:starforged_channeling_vessel'
         ],
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
             'minecraft:heart_of_the_sea',
             'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
             'minecraft:nautilus_shell', 'minecraft:nautilus_shell',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:totem_of_the_sea',
@@ -235,7 +235,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot',
             'minecraft:golden_carrot', 'minecraft:golden_carrot',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:enchanted_totemic_carrot',
         sourceCost: Source.THAUMATURGE
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2complements:totemic_gold_ingot', 'l2complements:totemic_gold_ingot',
             'minecraft:enchanted_golden_apple',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'
+            'kubejs:starforged_array', 'kubejs:starforged_ward_lattice'
         ],
         output: 'l2complements:enchanted_totemic_apple',
         sourceCost: Source.THAUMATURGE
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
         input: 'minecraft:feather',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'minecraft:rabbit_foot', 'minecraft:rabbit_foot',
             'kubejs:starforged_wizard_brain'
         ],
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
         input: 'minecraft:golden_apple',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'minecraft:honey_bottle', 'minecraft:honey_bottle',
             'kubejs:starforged_wizard_brain'
         ],
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:glistering_melon_slice',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'minecraft:golden_apple',
             'kubejs:starforged_channeling_vessel'
@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
         reagent: 'minecraft:nautilus_shell',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'minecraft:heart_of_the_sea',
             'kubejs:starforged_channeling_vessel'
@@ -307,7 +307,7 @@ ServerEvents.recipes(event => {
         reagent: 'l2hostility:bottle_of_curse',
         pedestalItems: [
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'kubejs:starforged_wizard_brain'
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'kubejs:starforged_motive_core'
         ],
         output: 'l2hostility:eternal_witch_charge',
@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust',
             'kubejs:starforged_wizard_brain'
         ],
@@ -366,7 +366,7 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:spectral_arrow', 'minecraft:spectral_arrow',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
-            'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
+            'gtceu:holy_silver_dust', 'kubejs:starforged_array',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
             'kubejs:starforged_wizard_brain'
         ],
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust',
             'l2hostility:hostility_essence', 'l2hostility:hostility_essence',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:book_of_omniscience',
@@ -400,7 +400,7 @@ ServerEvents.recipes(event => {
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust'
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust'
         ],
         output: 'l2complements:sculkium_ingot',
         source: Source.ARCANIST,
@@ -447,7 +447,7 @@ ServerEvents.recipes(event => {
         input: 'minecraft:fermented_spider_eye',
         pedestalItems: [
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
+            'gtceu:prima_materia_dust', 'kubejs:starforged_array',
             'minecraft:spider_eye', 'minecraft:spider_eye',
             'kubejs:starforged_wizard_brain'
         ],
@@ -461,7 +461,7 @@ ServerEvents.recipes(event => {
             'minecraft:obsidian', 'minecraft:obsidian',
             'minecraft:obsidian', 'minecraft:obsidian',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2complements:void_eye',
@@ -505,7 +505,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_wizard_brain'
         ],
         output: 'l2hostility:charm_of_looting_3',
@@ -555,7 +555,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_channeling_vessel'
         ],
         output: 'l2hostility:ring_of_life',
@@ -568,7 +568,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_ward_lattice'
         ],
         output: 'l2hostility:ring_of_incarceration',
@@ -581,7 +581,7 @@ ServerEvents.recipes(event => {
             'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:gravitic_rubedo_dust', 'gtceu:gravitic_rubedo_dust',
+            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust',
             'kubejs:rubedo_motive_core'
         ],
         output: 'l2hostility:ring_of_corrosion',

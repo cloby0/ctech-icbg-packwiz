@@ -211,14 +211,14 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_motive_core'],
+        pedestalItems: ['minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
         output: 'too_many_bows:dragons_breath',
         sourceCost: Source.THAUMATURGE
     })
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:bow', 'too_many_bows:rift_shard', 'too_many_bows:rift_shard', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_motive_core'],
+        pedestalItems: ['minecraft:bow', 'too_many_bows:rift_shard', 'too_many_bows:rift_shard', 'minecraft:ender_eye', 'minecraft:ender_eye', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
         output: 'too_many_bows:auroras_grace',
         sourceCost: Source.THAUMATURGE
     })
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
 
     addEnchantingRecipe(event, {
         reagent: 'nameless_trinkets:ultimate_dust',
-        pedestalItems: ['minecraft:bow', 'minecraft:ancient_debris', 'minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_ingot', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_motive_core'],
+        pedestalItems: ['minecraft:bow', 'minecraft:ancient_debris', 'minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_ingot', 'gtceu:prima_materia_ingot', 'kubejs:starforged_array', 'kubejs:starforged_motive_core'],
         output: 'too_many_bows:burnt_relic',
         sourceCost: Source.THAUMATURGE
     })
