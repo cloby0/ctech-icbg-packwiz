@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
                 ' A '
             ],
             {
-                A: 'minecraft:blaze_rod',
+                A: 'kubejs:veridian_sigil',
                 B: 'kubejs:zanite_laced_iron',
                 W: 'kubejs:veridian_ward_lattice'
             }
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
             {
                 A: 'gtceu:lead_plate',
                 B: 'kubejs:veridium_filings',
-                C: 'minecraft:glowstone',
+                C: 'kubejs:veridian_sigil',
                 H: '#forge:tools/hammers',
                 X: 'kubejs:veridian_wizard_brain'
             }
@@ -56,21 +56,22 @@ ServerEvents.recipes(event => {
             Item.of('enderstorage:ender_chest', 1),
             [
                 'VBA',
-                'BCB',
+                'SCB',
                 'ABA'
             ],
             {
                 A: 'aether:ambrosium_shard',
                 B: 'minecraft:obsidian',
                 C: 'kubejs:zanite_laced_iron',
-                V: 'kubejs:veridian_channeling_vessel'
+                V: 'kubejs:veridian_channeling_vessel',
+                S: 'kubejs:veridian_sigil'
             }
         );
     event.shaped(
             Item.of('enderstorage:ender_tank', 1),
             [
                 'VBA',
-                'DCD',
+                'SCD',
                 'ABA'
             ],
             {
@@ -78,13 +79,14 @@ ServerEvents.recipes(event => {
                 B: 'minecraft:obsidian',
                 C: 'kubejs:zanite_laced_iron',
                 D: 'minecraft:glass',
-                V: 'kubejs:veridian_channeling_vessel'
+                V: 'kubejs:veridian_channeling_vessel',
+                S: 'kubejs:veridian_sigil'
             }
         );
     event.shaped(
             Item.of('enderstorage:ender_pouch', 1),
             [
-                'ABA',
+                'XBA',
                 'ACA',
                 'KAV'
             ],
@@ -93,7 +95,8 @@ ServerEvents.recipes(event => {
                 C: 'enderstorage:ender_chest',
                 B: 'kubejs:zanite_laced_iron',
                 K: '#forge:tools/knives',
-                V: 'kubejs:veridian_channeling_vessel'
+                V: 'kubejs:veridian_channeling_vessel',
+                X: 'kubejs:veridian_sigil'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/knives'));
 
@@ -104,7 +107,7 @@ ServerEvents.recipes(event => {
     event.shaped(
             Item.of('reliquary:lantern_of_paranoia', 1),
             [
-                'FAD',
+                'FXD',
                 'BCB',
                 'WAD'
             ],
@@ -114,7 +117,8 @@ ServerEvents.recipes(event => {
                 C: 'kubejs:veridium_filings',
                 D: '#forge:rods/silver',
                 F: '#forge:tools/files',
-                W: 'kubejs:veridian_wizard_brain'
+                W: 'kubejs:veridian_wizard_brain',
+                X: 'kubejs:veridian_sigil'
             }
         ).damageIngredient(Ingredient.of('#forge:tools/files'));
 
@@ -255,13 +259,13 @@ ServerEvents.recipes(event => {
         ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:arcane_ingot', 'kubejs:resonant_zanite_crystal']
     })
 
-    event.shapeless('kubejs:veridian_motive_core', [
+    addComponentRecipe(event, 'kubejs:veridian_motive_core', [
         'botania:terrasteel_ingot', 'gtceu:terrasteel_bolt', 'kubejs:veridium_filings'
     ])
-    event.shapeless('kubejs:veridian_channeling_vessel', [
+    addComponentRecipe(event, 'kubejs:veridian_channeling_vessel', [
         'botania:terrasteel_ingot', 'aether:ambrosium_shard', 'kubejs:enchanted_zanite_gem'
     ])
-    event.shapeless('kubejs:veridian_ward_lattice', [
+    addComponentRecipe(event, 'kubejs:veridian_ward_lattice', [
         'botania:terrasteel_ingot', 'gtceu:terrasteel_plate', 'irons_spellbooks:protection_rune'
     ])
 
@@ -283,7 +287,7 @@ ServerEvents.recipes(event => {
                 components: [
                     { item: 'kubejs:veridium_filings' },
                     { item: 'kubejs:resonant_zanite_crystal' },
-                    { item: 'kubejs:veridium_filings' }
+                    { item: 'kubejs:veridian_sigil' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_potential', count: 70 },
@@ -311,7 +315,7 @@ ServerEvents.recipes(event => {
                 components: [
                     { item: 'kubejs:enchanted_zanite_gem' },
                     { item: 'magichem:inert_wisdom_stone' },
-                    { item: 'kubejs:enchanted_zanite_gem' }
+                    { item: 'kubejs:veridian_wizard_brain' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_change', count: 55 },
