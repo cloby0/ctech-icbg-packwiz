@@ -77,13 +77,33 @@ ServerEvents.recipes(event => {
     // manasteel far cheaper. No reason to keep a harder, less profitable duplicate recipe for
     // the same output this many tiers later. Per user direction 2026-07-28.
 
-    event.shapeless('minecraft:gold_ingot',   ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'])
-    event.shapeless('gtceu:tin_ingot',       ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'])
-    event.shapeless('gtceu:lead_ingot',      ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'])
-    event.shapeless('gtceu:aluminium_ingot', ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'])
-
     // Ore-sort family (abstract_metal_ingot + essence tags -> named metal) -- refine steps, not
-    // rituals. Moved to the Manaweaving Altar.
+    // rituals. Moved to the Manaweaving Altar. Single-essence members below, two-essence after.
+    addMnaManaweavingRecipe(event, {
+        output: 'minecraft:gold_ingot',
+        items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'],
+        patterns: ['mna:triangle', 'mna:backslash'],
+        tier: 3
+    })
+    addMnaManaweavingRecipe(event, {
+        output: 'gtceu:tin_ingot',
+        items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'],
+        patterns: ['mna:circle', 'mna:slash'],
+        tier: 3
+    })
+    addMnaManaweavingRecipe(event, {
+        output: 'gtceu:lead_ingot',
+        items: ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'],
+        patterns: ['mna:square', 'mna:backslash'],
+        tier: 3
+    })
+    addMnaManaweavingRecipe(event, {
+        output: 'gtceu:aluminium_ingot',
+        items: ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'],
+        patterns: ['mna:slash', 'mna:backslash'],
+        tier: 3
+    })
+
     addMnaManaweavingRecipe(event, {
         output: 'gtceu:bismuth_ingot',
         items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences', '#kubejs:water_essences'],
@@ -110,8 +130,10 @@ ServerEvents.recipes(event => {
     })
     addMnaManaweavingRecipe(event, {
         output: 'gtceu:holy_silver_ingot',
+        // Distinct pattern pair from silver_ingot above: same patterns plus a superset item list
+        // is ambiguous, and the player would have hit silver by accident.
         items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
-        patterns: ['mna:circle', 'mna:diamond'],
+        patterns: ['mna:circle', 'mna:knot'],
         tier: 3
     })
 

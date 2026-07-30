@@ -5194,7 +5194,7 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "3a8cd19d99997c11cf0e9e05a2bff829e5492610a8f0443b5222ae4ecdc4fb72"
+hash = "529246044e234bcc40caa6d1e8e40b3a6aa37286cea85aad96a3866dd2d7364a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
@@ -5262,7 +5262,7 @@ hash = "53d90c03f99df461d7bba0e902f761404b39eca782631449da1e9d48214913fb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "edeff89059870cfb94de99920748ac399f592c1caed4094203d1faabda0e8457"
+hash = "12c01c1aad955818811fa51785b028037e61fb9cdffba3edcac92c9fc796eeef"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/microcraftingRecipes.js"
@@ -5286,7 +5286,7 @@ hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "e490f004d089329904558384a6dde89ef53105cd94274cf1c2e8e811adcc6249"
+hash = "4254dffd91bc9940a4eef857b38c7c37e2be2e5f6c2f309e6c1ff451ff8f7de7"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
@@ -5402,7 +5402,7 @@ hash = "3e17d9fa91f164f2864eecb0f5e5a8eae6832a7dbe9e5158ac93f13b74474dc0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/argentAndWraithCircuits.js"
-hash = "21643ed7d2e87e1764d44fca24f0c18fbe9de1478469d3bae2a8e1cf9435bd4a"
+hash = "51353fb364f06b59dae410d4171991e685b9de12f3b906b4b4c7546c2fbb2b43"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
@@ -5550,7 +5550,7 @@ hash = "0b85a15e9533bda3aaa28a716026cb36ed467987bb16d7dc6816b67cb44a9331"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvAndDraconic.js"
-hash = "56af69b34e4449ec711417deb1a1d65f88a6a092250d69f10ed1a9fbeaa60e81"
+hash = "2e680bfd05887b142ed6b04e3de20f2d0963e238a75b1177e8bbd152cbed9ef8"
 
 [[files]]
 file = "kubejs/server_scripts/tech/woot.js"
@@ -5621,6 +5621,10 @@ file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
 hash = "33e58ee57c8c5b04c694027b8790301e9db317e46fc866afb36bdcbf8eb56ca9"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/magic/spirit_binding_engine.js"
+hash = "380557082431b2cc5e393fac449f22675287444ef989bbd8222dd309b27dd124"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
 hash = "7f1923da935aab65a3cc708974bf7249005943021ac99bcdbc60e65c46105601"
 
@@ -5666,7 +5670,7 @@ hash = "1bfa555cde4485f422880e7345a0443bc408ae7cc6468563cc9427d1991faa37"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "e22109c043d0840e1d70feab41934e04ed477a8abb71489bf0b1286639192894"
+hash = "f232f9158b5cbd7a28d500c1697364285e0d1e7c4863af362b05a188f7153dca"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"

@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         )
         .outputFluids(Fluid.of('gtceu:draconium', 32))
         .duration(300)
-        .EUt(98304)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .fusionStartEU(640000000)
 
 

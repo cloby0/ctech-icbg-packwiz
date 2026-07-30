@@ -757,11 +757,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(1400, "low", GTValues.VA[GTValues.LV], 800)
         .components(c('2x manasteel_conduit'), c('1x manganese_phosphide'))
         .cableProperties(GTValues.VA[GTValues.LV], 1, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('verdantium')
         .ingot()
@@ -772,11 +768,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(1800, "low", GTValues.VA[GTValues.MV], 1000)
         .components(c('2x terrasteel_conduit'), c('1x vanadium'), c('1x gallium'))
         .cableProperties(GTValues.VA[GTValues.MV], 1, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('elenbarite')
         .ingot()
@@ -787,11 +779,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1200)
         .components(c('2x elementium_conduit'), c('1x mercury_barium_calcium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.HV], 2, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('gaiobium')
         .ingot()
@@ -802,11 +790,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(3600, "mid", GTValues.VA[GTValues.EV], 1400)
         .components(c('2x gaia_conduit'), c('1x niobium'), c('1x titanium'))
         .cableProperties(GTValues.VA[GTValues.EV], 4, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('animarium')
         .ingot()
@@ -817,11 +801,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4500, "high", GTValues.VA[GTValues.IV], 1600)
         .components(c('2x animus_conduit'), c('1x samarium_iron_arsenic_oxide'))
         .cableProperties(GTValues.VA[GTValues.IV], 4, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('chimerindium')
         .ingot()
@@ -832,11 +812,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(6000, "high", GTValues.VA[GTValues.LuV], 1800)
         .components(c('2x chimerite_conduit'), c('1x indium_tin_barium_titanium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.LuV], 8, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('gravidium')
         .ingot()
@@ -847,11 +823,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(7500, "high", GTValues.VA[GTValues.ZPM], 2000)
         .components(c('2x rubedo_conduit'), c('1x uranium_rhodium_dinaquadide'))
         .cableProperties(GTValues.VA[GTValues.ZPM], 8, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('empyrium')
         .ingot()
@@ -862,11 +834,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(9000, "high", GTValues.VA[GTValues.UV], 2400)
         .components(c('2x ichor_conduit'), c('1x yttrium_barium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.UV], 16, 0, true)
-        .flags(
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
-        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 
     event.create('consecrated_chromite')
@@ -1009,7 +977,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
 
     event.create('awakened_framework')
@@ -1025,7 +993,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
 
     event.create('draconic_fluxite')
@@ -1040,7 +1008,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
 
     event.create('chaotic_singulite')
@@ -1055,7 +1023,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
 
     event.create('abstract_elastomer')
@@ -1152,8 +1120,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components(c('1x gaia_spirit'), c('1x ashen_ichor'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_BOLT_SCREW
+            GTMaterialFlags.GENERATE_ROD
         )
 
     // Arcanist signature metal (magic rework Phase 8): crafted line, no ore vein -- superheated
@@ -1172,8 +1139,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components(c('1x vinteum_iron'), c('1x afrit_essence'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_BOLT_SCREW
+            GTMaterialFlags.GENERATE_ROD
         )
 
     // Hobbyist signature metal (magic rework Phase 1): crafted line, no ore vein --
@@ -1432,8 +1398,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4200, "high", GTValues.VA[GTValues.IV], 1000)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_BOLT_SCREW
+            GTMaterialFlags.GENERATE_ROD
         )
 
 })
