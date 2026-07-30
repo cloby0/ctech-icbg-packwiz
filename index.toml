@@ -5402,7 +5402,7 @@ hash = "3e17d9fa91f164f2864eecb0f5e5a8eae6832a7dbe9e5158ac93f13b74474dc0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/argentAndWraithCircuits.js"
-hash = "51353fb364f06b59dae410d4171991e685b9de12f3b906b4b4c7546c2fbb2b43"
+hash = "758ed329a35c0f9623073e243baecb09fd388beb029bc6fe73f147390eb68f93"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"

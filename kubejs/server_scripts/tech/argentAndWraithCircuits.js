@@ -99,8 +99,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.distillation_tower('unbound_causality_distillation')
         .inputFluids(Fluid.of('kubejs:unbound_causality', 1000))
-        .chancedFluidOutput(Fluid.of('kubejs:locked_timeline', 600), "80/100")
-        .chancedFluidOutput(Fluid.of('kubejs:branch_residue', 400), "35/100")
+        .chancedFluidOutput(Fluid.of('kubejs:locked_timeline', 600), "80/100", 0)
+        .chancedFluidOutput(Fluid.of('kubejs:branch_residue', 400), "35/100", 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.UEV])
 
