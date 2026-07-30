@@ -1,6 +1,25 @@
 
 ServerEvents.recipes(event => {
 
+    // Warded SMDs: the third and final component tier. The axis is tolerance, not power --
+    // ordinary electronics fail near something bound, so these are re-cased in consecrated
+    // chromite. That is why every line's top two rungs were previously capped: not an arbitrary
+    // gate, just components that could not survive the company they were keeping.
+    let wardedSmds = ['diode', 'capacitor', 'transistor', 'resistor', 'inductor']
+    wardedSmds.forEach(part => {
+        event.recipes.gtceu.assembler('warded_smd_' + part)
+            .itemInputs(
+                '16x gtceu:advanced_smd_' + part,
+                '4x gtceu:consecrated_chromite_foil',
+                '2x gtceu:fine_consecrated_chromite_wire'
+            )
+            .inputFluids(Fluid.of('kubejs:argent_energy', 500))
+            .itemOutputs('16x kubejs:warded_smd_' + part)
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .cleanroom(CleanroomType.CLEANROOM)
+    })
+
 
     event.recipes.gtceu.assembler('draconium_wire_coil_recipe')
         .itemInputs(

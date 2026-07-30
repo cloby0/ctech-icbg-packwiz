@@ -845,11 +845,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(2800, "low", GTValues.VA[GTValues.HV], 1200)
         .components(c('2x holy_silver'), c('1x chromium'))
+        // Foil and fine wire feed the warded SMD line: ordinary electronics fail in the presence
+        // of something bound, so the top circuit rungs are re-cased in a consecrated metal.
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_FRAME
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE
         )
 
     event.create('ambrotungstite')

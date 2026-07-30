@@ -252,6 +252,15 @@ StartupEvents.registry('item', event => {
     event.create('egoware_circuit_board')
     event.create('egoware_printed_circuit_board')
 
+    // Warded SMDs -- the third and final component tier. Not more powerful than advanced SMDs:
+    // re-cased in consecrated chromite so they keep working next to a bound occupant. Ordinary
+    // components geek out at close range, which is why every line's top rungs need these.
+    event.create('warded_smd_diode').texture('gtceu:item/advanced_smd_diode')
+    event.create('warded_smd_capacitor').texture('gtceu:item/advanced_smd_capacitor')
+    event.create('warded_smd_transistor').texture('gtceu:item/advanced_smd_transistor')
+    event.create('warded_smd_resistor').texture('gtceu:item/advanced_smd_resistor')
+    event.create('warded_smd_inductor').texture('gtceu:item/advanced_smd_inductor')
+
     // Laplace's Determinism Engine reagents
     event.create('time_crystal')
     event.create('bound_demon_will')

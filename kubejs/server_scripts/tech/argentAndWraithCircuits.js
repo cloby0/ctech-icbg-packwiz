@@ -307,7 +307,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:tritanium_frame',
             '2x kubejs:argentware_processor_assembly',
             '1x kubejs:vengeful_ichor',
-            '8x gtceu:smd_diode',
+            '8x kubejs:warded_smd_diode',
             '16x gtceu:ram_chip',
             '2x bloodmagic:basemonstersoul_vengeful',
             '2x bloodmagic:basemonstersoul_steadfast'
@@ -326,8 +326,8 @@ ServerEvents.recipes(event => {
             '2x gtceu:tritanium_frame',
             '2x kubejs:argentware_processor_supercomputer',
             '1x kubejs:hellforged_determinant',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_capacitor',
+            '32x kubejs:warded_smd_diode',
+            '32x kubejs:warded_smd_capacitor',
             '32x gtceu:ram_chip',
             '1x bloodmagic:ingot_hellforged'
         )
@@ -418,7 +418,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:tritanium_frame',
             '2x kubejs:wraithware_processor_assembly',
             '1x kubejs:marid_dominion_matrix',
-            '8x gtceu:smd_diode',
+            '8x kubejs:warded_smd_diode',
             '16x gtceu:ram_chip',
             '4x occultism:soul_gem',
             '2x occultism:soul_shard'
@@ -437,8 +437,8 @@ ServerEvents.recipes(event => {
             '2x gtceu:tritanium_frame',
             '2x kubejs:wraithware_processor_supercomputer',
             '1x kubejs:otherworld_convergence_core',
-            '32x gtceu:advanced_smd_diode',
-            '32x gtceu:advanced_smd_transistor',
+            '32x kubejs:warded_smd_diode',
+            '32x kubejs:warded_smd_transistor',
             '32x gtceu:ram_chip',
             '2x occultism:soul_shard',
             '4x occultism:otherworld_essence'

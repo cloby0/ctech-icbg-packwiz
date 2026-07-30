@@ -208,5 +208,15 @@
   "item.kubejs.egoware_printed_circuit_board": "Egoware Printed Circuit Board",
   "item.kubejs.egoware_printed_circuit_board.tooltip": "§7Your board",
   "item.kubejs.egoware_processor": "Egoware Processor",
-  "item.kubejs.egoware_processor_assembly": "Egoware Processor Assembly"
+  "item.kubejs.egoware_processor_assembly": "Egoware Processor Assembly",
+  "item.kubejs.warded_smd_diode": "Warded SMD Diode",
+  "item.kubejs.warded_smd_diode.tooltip": "§7Keeps working in bad company",
+  "item.kubejs.warded_smd_capacitor": "Warded SMD Capacitor",
+  "item.kubejs.warded_smd_capacitor.tooltip": "§7Keeps working in bad company",
+  "item.kubejs.warded_smd_transistor": "Warded SMD Transistor",
+  "item.kubejs.warded_smd_transistor.tooltip": "§7Keeps working in bad company",
+  "item.kubejs.warded_smd_resistor": "Warded SMD Resistor",
+  "item.kubejs.warded_smd_resistor.tooltip": "§7Keeps working in bad company",
+  "item.kubejs.warded_smd_inductor": "Warded SMD Inductor",
+  "item.kubejs.warded_smd_inductor.tooltip": "§7Keeps working in bad company"
 }

@@ -1154,7 +1154,7 @@ hash = "2fe3237476ed3466029f6459b1a72876c3b4c8e495ddea11bbf18199d637e21f"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "6b77797e817bc845f9092be68920ef7ba8af53cbc626e17a282ca871036c5194"
+hash = "0de754976f21676f5d94b09f285b365c4e4fa4a2e9b50674d25482447c0e4f1c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -5370,7 +5370,7 @@ hash = "48d043245814b7fde0392234586c12cfd15648c90e41b56104277d9082cc1114"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
-hash = "c3fb204b68bf7fdede282d951711700df3df8a003200b07e37360225f66fee11"
+hash = "44e273b474d526694b04b3013e7886defa51b7a22795761c94cdba36f15c1fb9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
@@ -5406,7 +5406,7 @@ hash = "3e17d9fa91f164f2864eecb0f5e5a8eae6832a7dbe9e5158ac93f13b74474dc0"
 
 [[files]]
 file = "kubejs/server_scripts/tech/argentAndWraithCircuits.js"
-hash = "59b8972fe5f5212edeec87192f45a669a1bb6effdcc82f3fbf9cc3b99abf6369"
+hash = "54ddfc5ce63a4c63c9063ace63c03e10b60b2b7360c44ade44e162d2141f8b58"
 
 [[files]]
 file = "kubejs/server_scripts/tech/attachments.js"
@@ -5494,7 +5494,7 @@ hash = "fd133324d654a297c79d32a61da7a130d978192004eb4ec1e9dcf7fc6749a33e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/highTierComponents.js"
-hash = "c798f51e52288bdcb1876ae762c4f2a4d89add3d935a38589ce7d1acbf90399a"
+hash = "be3e5e2fd477fa991bf3c91dbd617f41ce1a61cc983fd1ec0f666fd5f5902072"
 
 [[files]]
 file = "kubejs/server_scripts/tech/hvAndSpace.js"
@@ -5550,7 +5550,7 @@ hash = "0d70d27df9acc626db9170fc6b52ce94a6a32853e94e5d914c2b65ffb32fbb86"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uevAndEgoware.js"
-hash = "df498441725041248dc8d1c8dc9bfad0299b2810fff8b5cb9cf08ef5d1bd1114"
+hash = "56be1402d3943b42b8012d3a8f14ae3a5654f0659ff21fa41b6d4071e0a8c6ea"
 
 [[files]]
 file = "kubejs/server_scripts/tech/uhvTier.js"
@@ -5674,7 +5674,7 @@ hash = "1bfa555cde4485f422880e7345a0443bc408ae7cc6468563cc9427d1991faa37"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "f232f9158b5cbd7a28d500c1697364285e0d1e7c4863af362b05a188f7153dca"
+hash = "2b619fbbc307d20e73a79f3755c8f31335b2d99bd34882678548a022a1bdfa25"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -5682,7 +5682,7 @@ hash = "50cd94672812eed675e47acce700a8d94f831747892b2d49891cf5d6a499f503"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "41222c3b7285374aa26baedd94792c1fa0d1690bbff964fff336bcf983fc705c"
+hash = "3d36d9a799336175dd888cecc813dcb6cdc77e6b024ff0cdfe76acf07bb31636"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
