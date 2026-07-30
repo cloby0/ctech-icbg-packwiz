@@ -42,7 +42,7 @@ StartupEvents.registry('item', event => {
     event.create('vengeance_touched_chimerite')
     event.create('charged_chimerite')
 
-    // Magic rework Phase 8 (Arcanist): Gravitic Rubedo chain -> gtceu:gravitic_rubedo_ingot.
+    // Magic rework Phase 8 (Arcanist): Rubedo Core chain -> gtceu:rubedo_core_ingot.
     event.create('rubedo_touched_vinteum')
     event.create('gravitic_residue')
     event.create('bound_gravitic_core')
@@ -237,6 +237,16 @@ StartupEvents.registry('item', event => {
     event.create('cumium_processor_assembly')         // UIV
     event.create('artificial_cumium_brain')           // UXV
 
+    // Argentware/wraithware circuit boards -- raw board (from wetware's raw board) then
+    // printed board, same two-stage shape as GTCEu's own <x>_circuit_board / <x>_printed_circuit_board.
+    // Printing uses foil of a magical alloy instead of a plain GT metal.
+    event.create('argent_foil')
+    event.create('spectral_foil')
+    event.create('argentware_circuit_board')
+    event.create('argentware_printed_circuit_board')
+    event.create('wraithware_circuit_board')
+    event.create('wraithware_printed_circuit_board')
+
     // Laplace's Determinism Engine reagents
     event.create('bound_demon_will')
     event.create('crystallized_malice')
@@ -277,83 +287,104 @@ StartupEvents.registry('item', event => {
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
 
-    let ritualDummies = ['resonant_gravitite_core', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core', 'wraithware_processor']
+    let ritualDummies = ['resonant_gravitite_core', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core', 'wraithware_processor', 'wraithbound_matrix']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)
     })
 
     // --- Magic microcrafting: Circuit + Component items (per docs/superpowers/specs/2026-07-29-magic-microcrafting-components-design.md) ---
+    // Textures borrowed from GT's own tiered part icons so each item reads at a glance:
+    // blank circuit board -> finished processor (ladder by tier), Wizard Brain -> robot_arm
+    // (decision-making), Motive Core -> electric_motor (kinetic), Channeling Vessel -> electric_pump
+    // (flow), Ward Lattice -> field_generator (containment). Hobbyist has no sub-LV GT analog, so
+    // it reuses LV's icon set.
 
     // Hobbyist
-    event.create('ichor_sigil_blank')
-    event.create('ichorbound_sigil')
-    event.create('ichor_wizard_brain')
-    event.create('ichor_motive_core')
-    event.create('ichor_channeling_vessel')
-    event.create('ichor_ward_lattice')
+    event.create('ichor_sigil_blank').texture('gtceu:item/phenolic_circuit_board')
+    event.create('ichorbound_sigil').texture('gtceu:item/basic_integrated_circuit')
+    event.create('ichor_wizard_brain').texture('gtceu:item/lv_robot_arm')
+    event.create('ichor_motive_core').texture('gtceu:item/lv_electric_motor')
+    event.create('ichor_channeling_vessel').texture('gtceu:item/lv_electric_pump')
+    event.create('ichor_ward_lattice').texture('gtceu:item/lv_field_generator')
 
-    // Apprentice
-    event.create('zanite_sigil_blank')
-    event.create('zanite_sigil')
-    event.create('zanite_wizard_brain')
-    event.create('zanite_motive_core')
-    event.create('zanite_channeling_vessel')
-    event.create('zanite_ward_lattice')
+    // Apprentice (LV)
+    event.create('zanite_sigil_blank').texture('gtceu:item/plastic_circuit_board')
+    event.create('zanite_sigil').texture('gtceu:item/basic_integrated_circuit')
+    event.create('zanite_wizard_brain').texture('gtceu:item/lv_robot_arm')
+    event.create('zanite_motive_core').texture('gtceu:item/lv_electric_motor')
+    event.create('zanite_channeling_vessel').texture('gtceu:item/lv_electric_pump')
+    event.create('zanite_ward_lattice').texture('gtceu:item/lv_field_generator')
 
-    // Journeyman
-    event.create('veridian_sigil_blank')
-    event.create('veridian_sigil')
-    event.create('veridian_wizard_brain')
-    event.create('veridian_motive_core')
-    event.create('veridian_channeling_vessel')
-    event.create('veridian_ward_lattice')
+    // Journeyman (MV)
+    event.create('veridian_sigil_blank').texture('gtceu:item/resin_circuit_board')
+    event.create('veridian_sigil').texture('gtceu:item/good_integrated_circuit')
+    event.create('veridian_wizard_brain').texture('gtceu:item/mv_robot_arm')
+    event.create('veridian_motive_core').texture('gtceu:item/mv_electric_motor')
+    event.create('veridian_channeling_vessel').texture('gtceu:item/mv_electric_pump')
+    event.create('veridian_ward_lattice').texture('gtceu:item/mv_field_generator')
 
-    // Initiate
-    event.create('elementium_matrix_core')
-    event.create('elementium_matrix')
-    event.create('elementium_wizard_brain')
-    event.create('elementium_motive_core')
-    event.create('elementium_channeling_vessel')
-    event.create('elementium_ward_lattice')
+    // Initiate (HV)
+    event.create('elementium_matrix_core').texture('gtceu:item/epoxy_circuit_board')
+    event.create('elementium_matrix').texture('gtceu:item/advanced_integrated_circuit')
+    event.create('elementium_wizard_brain').texture('gtceu:item/hv_robot_arm')
+    event.create('elementium_motive_core').texture('gtceu:item/hv_electric_motor')
+    event.create('elementium_channeling_vessel').texture('gtceu:item/hv_electric_pump')
+    event.create('elementium_ward_lattice').texture('gtceu:item/hv_field_generator')
 
-    // Sorcerer
-    event.create('gravitic_matrix_core')
-    event.create('gravitic_matrix')
-    event.create('gravitic_wizard_brain')
-    event.create('gravitic_motive_core')
-    event.create('gravitic_channeling_vessel')
-    event.create('gravitic_ward_lattice')
+    // Sorcerer (EV)
+    event.create('gravitic_matrix_core').texture('gtceu:item/fiber_reinforced_circuit_board')
+    event.create('gravitic_matrix').texture('gtceu:item/nano_processor_assembly')
+    event.create('gravitic_wizard_brain').texture('gtceu:item/ev_robot_arm')
+    event.create('gravitic_motive_core').texture('gtceu:item/ev_electric_motor')
+    event.create('gravitic_channeling_vessel').texture('gtceu:item/ev_electric_pump')
+    event.create('gravitic_ward_lattice').texture('gtceu:item/ev_field_generator')
 
-    // Alchemist
-    event.create('animus_matrix_core')
-    event.create('animus_matrix')
-    event.create('animus_wizard_brain')
-    event.create('animus_motive_core')
-    event.create('animus_channeling_vessel')
-    event.create('animus_ward_lattice')
+    // Alchemist (IV)
+    event.create('animus_matrix_core').texture('gtceu:item/multilayer_fiber_reinforced_circuit_board')
+    event.create('animus_matrix').texture('gtceu:item/nano_processor_computer')
+    event.create('animus_wizard_brain').texture('gtceu:item/iv_robot_arm')
+    event.create('animus_motive_core').texture('gtceu:item/iv_electric_motor')
+    event.create('animus_channeling_vessel').texture('gtceu:item/iv_electric_pump')
+    event.create('animus_ward_lattice').texture('gtceu:item/iv_field_generator')
 
-    // Thaumaturge
-    event.create('starforged_array_dust')
-    event.create('starforged_array')
-    event.create('starforged_wizard_brain')
-    event.create('starforged_motive_core')
-    event.create('starforged_channeling_vessel')
-    event.create('starforged_ward_lattice')
+    // Thaumaturge (LuV)
+    event.create('starforged_array_dust').texture('gtceu:item/wetware_circuit_board')
+    event.create('starforged_array').texture('gtceu:item/nano_processor_mainframe')
+    event.create('starforged_wizard_brain').texture('gtceu:item/luv_robot_arm')
+    event.create('starforged_motive_core').texture('gtceu:item/luv_electric_motor')
+    event.create('starforged_channeling_vessel').texture('gtceu:item/luv_electric_pump')
+    event.create('starforged_ward_lattice').texture('gtceu:item/luv_field_generator')
 
-    // Arcanist
-    event.create('rubedo_array_core')
-    event.create('rubedo_array')
-    event.create('rubedo_wizard_brain')
-    event.create('rubedo_motive_core')
-    event.create('rubedo_channeling_vessel')
-    event.create('rubedo_ward_lattice')
+    // Arcanist (ZPM)
+    event.create('rubedo_array_core').texture('gtceu:item/wetware_printed_circuit_board')
+    event.create('rubedo_array').texture('gtceu:item/crystal_processor_computer')
+    event.create('rubedo_wizard_brain').texture('gtceu:item/zpm_robot_arm')
+    event.create('rubedo_motive_core').texture('gtceu:item/zpm_electric_motor')
+    event.create('rubedo_channeling_vessel').texture('gtceu:item/zpm_electric_pump')
+    event.create('rubedo_ward_lattice').texture('gtceu:item/zpm_field_generator')
 
-    // Sage
-    event.create('empyrean_array_core')
-    event.create('empyrean_array')
-    event.create('empyrean_wizard_brain')
-    event.create('empyrean_motive_core')
-    event.create('empyrean_channeling_vessel')
-    event.create('empyrean_ward_lattice')
+    // Sage (UV)
+    event.create('empyrean_array_core').texture('gtceu:item/multilayer_fiber_reinforced_printed_circuit_board')
+    event.create('empyrean_array').texture('gtceu:item/crystal_processor_mainframe')
+    event.create('empyrean_wizard_brain').texture('gtceu:item/uv_robot_arm')
+    event.create('empyrean_motive_core').texture('gtceu:item/uv_electric_motor')
+    event.create('empyrean_channeling_vessel').texture('gtceu:item/uv_electric_pump')
+    event.create('empyrean_ward_lattice').texture('gtceu:item/uv_field_generator')
+
+    // Prophet (UHV) -- Blood Magic-themed circuit bridging to kubejs:argentware_processor_supercomputer
+    event.create('argentbound_sigil_blank').texture('gtceu:item/wetware_circuit_board')
+    event.create('argentbound_sigil').texture('gtceu:item/micro_processor_mainframe')
+    event.create('argent_wizard_brain').texture('gtceu:item/uhv_robot_arm')
+    event.create('argent_motive_core').texture('gtceu:item/uhv_electric_motor')
+    event.create('argent_channeling_vessel').texture('gtceu:item/uhv_electric_pump')
+    event.create('argent_ward_lattice').texture('gtceu:item/uhv_field_generator')
+
+    // Ascendant (UIV) -- Occultism-themed circuit bridging to kubejs:wraithware_processor_mainframe
+    event.create('wraithbound_matrix_core').texture('gtceu:item/wetware_printed_circuit_board')
+    event.create('wraithbound_matrix').texture('gtceu:item/quantum_processor_mainframe')
+    event.create('wraith_wizard_brain').texture('gtceu:item/uiv_robot_arm')
+    event.create('wraith_motive_core').texture('gtceu:item/uiv_electric_motor')
+    event.create('wraith_channeling_vessel').texture('gtceu:item/uiv_electric_pump')
+    event.create('wraith_ward_lattice').texture('gtceu:item/uiv_field_generator')
 })
