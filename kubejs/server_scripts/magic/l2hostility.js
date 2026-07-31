@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     // Dead ars_nouveau:source_gem across this whole file (never touched by the magic rework's
     // tier phases) swapped for this rework's own tier-signature dust, matched to each recipe's
     // own tier field: Alchemist->distilled_animus_dust, Thaumaturge->starforged_chimerite_dust,
-    // Arcanist->rubedo_core_dust, Sage->kubejs:soul_of_gaia. Fixed 2026-07-28 alongside the
+    // Arcanist->rubedo_core_dust, Sage->kubejs:bound_astral_soul. Fixed 2026-07-28 alongside the
     // reported runic_forge/awakened_cumium_embryo error (same failure class: dead item breaks
     // GT .itemInputs()). Helper calls (addEnchantingRecipe/addImbuementRecipe/Source.TIER) left
     // as-is -- they still work (delegate to addEldrinAltarRecipe internally), full modernization
@@ -479,7 +479,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2complements:shulkerate_ingot',
-        items: ['minecraft:shulker_shell', 'minecraft:end_stone', 'minecraft:end_stone', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia'],
+        items: ['minecraft:shulker_shell', 'minecraft:end_stone', 'minecraft:end_stone', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -538,14 +538,14 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_4',
-        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:soul_of_gaia', 'kubejs:empyrean_wizard_brain'],
+        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:bound_astral_soul', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_envy',
-        items: ['l2complements:resonant_feather', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:soul_of_gaia', 'kubejs:empyrean_wizard_brain'],
+        items: ['l2complements:resonant_feather', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:bound_astral_soul', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -566,7 +566,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_reflection',
-        items: ['minecraft:spyglass', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:soul_of_gaia', 'kubejs:empyrean_ward_lattice'],
+        items: ['minecraft:spyglass', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:bound_astral_soul', 'kubejs:empyrean_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -594,7 +594,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:pocket_of_restoration',
-        items: ['minecraft:ender_chest', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:soul_of_gaia', 'kubejs:empyrean_channeling_vessel'],
+        items: ['minecraft:ender_chest', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:bound_astral_soul', 'kubejs:empyrean_channeling_vessel'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -607,7 +607,7 @@ ServerEvents.recipes(event => {
             { item: 'botania:terrasteel_ingot' }, { item: 'botania:terrasteel_ingot' },
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
-            { item: 'kubejs:soul_of_gaia' }, { item: 'kubejs:soul_of_gaia' }
+            { item: 'kubejs:bound_astral_soul' }, { item: 'kubejs:bound_astral_soul' }
         ],
         mana: Mana.ASCENDANT
     })
@@ -621,21 +621,21 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:divinity_cross',
-        items: ['botania:terrasteel_ingot', 'gtceu:holy_silver_block', 'gtceu:holy_silver_block', 'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
+        items: ['botania:terrasteel_ingot', 'gtceu:holy_silver_block', 'gtceu:holy_silver_block', 'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:divinity_light',
-        items: ['botania:terrasteel_ingot', 'minecraft:nether_star', 'l2hostility:divinity_cross', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:soul_of_gaia', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
+        items: ['botania:terrasteel_ingot', 'minecraft:nether_star', 'l2hostility:divinity_cross', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:triple_strip_cape',
-        items: ['botania:terrasteel_ingot', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'l2complements:eternium_ingot', 'kubejs:soul_of_gaia', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
+        items: ['botania:terrasteel_ingot', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'minecraft:leather', 'l2complements:eternium_ingot', 'kubejs:bound_astral_soul', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })

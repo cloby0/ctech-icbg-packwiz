@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')
         .itemInputs(
             '1x cataclysm:ignitium_ingot',
-            '4x mysticalagriculture:fire_essence'
+            '4x magichem:essentia_fire'
         )
         .inputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .itemOutputs('1x kubejs:raw_ignitium_seed')
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x cataclysm:ancient_metal_ingot',
             '2x kubejs:mineral_flux_crystal',
-            '4x mysticalagriculture:earth_essence'
+            '4x magichem:essentia_earth'
         )
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 1000))
         .itemOutputs('1x kubejs:raw_ancient_metal_compound')
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '1x cataclysm:essence_of_the_storm',
             '4x kubejs:aether_crystal',
-            '4x mysticalagriculture:air_essence'
+            '4x magichem:essentia_air'
         )
         .inputFluids(Fluid.of('gtceu:aether_air', 1000))
         .itemOutputs('1x kubejs:storm_quintessence')
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
             '2x cataclysm:ignitium_ingot',
             '4x gtceu:naquadah_plate',
             '4x gtceu:magnesium_dust',
-            '4x mysticalagriculture:fire_essence',
+            '4x magichem:essentia_fire',
             '2x gtceu:uv_field_generator',
             '4x gtceu:naquadah_rod'
         )
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x cataclysm:lacrima',
             '4x gtceu:naquadah_plate',
-            '4x mysticalagriculture:water_essence',
+            '4x magichem:essentia_water',
             '2x gtceu:uv_field_generator',
             '4x gtceu:naquadah_rod'
         )
@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x cataclysm:ancient_metal_ingot',
             '4x gtceu:naquadah_plate',
-            '4x mysticalagriculture:earth_essence',
+            '4x magichem:essentia_earth',
             '2x kubejs:mineral_flux_crystal',
             '2x gtceu:uv_field_generator',
             '4x gtceu:naquadah_rod'
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '2x cataclysm:essence_of_the_storm',
             '4x gtceu:naquadah_plate',
-            '4x mysticalagriculture:air_essence',
+            '4x magichem:essentia_air',
             '4x kubejs:aether_crystal',
             '2x gtceu:uv_field_generator',
             '4x gtceu:naquadah_rod'

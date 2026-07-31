@@ -7,13 +7,57 @@
 	icon: "botania:manasteel_ingot"
 	id: "57B17DD0492AB6CD"
 	order_index: 1
-	quest_links: [{
-		id: "4B448276B68B2210"
-		linked_quest: "1BBC77A8493BB220"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "4B448276B68B2210"
+			linked_quest: "1BBC77A8493BB220"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "07EFAF5ED307BC3B"
+			linked_quest: "46F3E5D16CC665B8"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	quests: [
+		{
+			dependencies: ["1BBC77A8493BB220"]
+			description: [
+				"mana & artifice's own book, the &6codex arcana&r, explains what everything IS -- affinities, spell parts, every device you'll meet. it also carries magichem's own &6alchemical theory&r category (essentia, admixtures, every process and device), no separate trip needed. glass panes, a mana-tinted flower, and an ornate table craft the &6occulus&r, a block that tells you what to do next, in order, tier by tier."
+				""
+				"the codex explains the WHAT. the occulus tracks the WHERE. keep both handy."
+			]
+			id: "397F9B92F41539D3"
+			subtitle: "what and what's next"
+			tasks: [{
+				id: "6389D0D34348588E"
+				item: "mna:occulus"
+				type: "item"
+			}]
+			title: "Occulus"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["397F9B92F41539D3"]
+			description: [
+				"the deep magichem theory -- alembic, admixtures, fulmination, distillation, every device -- already lives in your codex arcana's &6alchemical theory&r category. the &6codex materia&r is narrower: a running tally of every essentia and admixture you've dissolved, with counts. find the &6wandering wizard&r and right-click her with your codex arcana in hand to trade for it."
+				""
+				"she'll trade it back if you ask -- you're not out a book permanently, just borrowing hers for a minute."
+			]
+			id: "235314EFFEE9BF20"
+			subtitle: "borrow, don't buy"
+			tasks: [{
+				id: "7369C46F698E598D"
+				item: "magichem:codex_materia"
+				type: "item"
+			}]
+			title: "Codex Materia"
+			x: -4.5d
+			y: -1.0d
+		}
 		{
 			dependencies: ["1BBC77A8493BB220"]
 			description: [
@@ -32,44 +76,8 @@
 				type: "item"
 			}]
 			title: "Manaweaving Altar"
-			x: -1.875d
-			y: -1.125d
-		}
-		{
-			dependencies: ["5CCF5C4303843804"]
-			description: [
-				"mana & artifice's own book, the &6codex arcana&r, explains what everything IS -- affinities, spell parts, every device you'll meet. glass panes, a mana-tinted flower, and an ornate table craft the &6occulus&r, a block that tells you what to do next, in order, tier by tier."
-				""
-				"the codex explains the WHAT. the occulus tracks the WHERE. keep both handy."
-			]
-			id: "397F9B92F41539D3"
-			subtitle: "what and what's next"
-			tasks: [{
-				id: "6389D0D34348588E"
-				item: "mna:occulus"
-				type: "item"
-			}]
-			title: "Occulus"
-			x: -3.0d
-			y: -1.125d
-		}
-		{
-			dependencies: ["397F9B92F41539D3"]
-			description: [
-				"magichem doesn't ship its own codex -- it hitches a ride. find the &6wandering wizard&r and right-click her with your &6codex arcana&r in hand to trade it for the &6codex materia&r, explaining every magichem device (alembic, fusery, astral observer, and the rest)."
-				""
-				"she'll trade it back if you ask -- you're not out a book permanently, just borrowing hers for a minute."
-			]
-			id: "235314EFFEE9BF20"
-			subtitle: "borrow, don't buy"
-			tasks: [{
-				id: "7369C46F698E598D"
-				item: "magichem:codex_materia"
-				type: "item"
-			}]
-			title: "Codex Materia"
-			x: -4.0d
-			y: -1.125d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5CCF5C4303843804"]
@@ -87,8 +95,8 @@
 				type: "item"
 			}]
 			title: "Arcane Essence"
-			x: -0.75d
-			y: -1.125d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1BBC77A8493BB220"]
@@ -106,8 +114,8 @@
 				type: "item"
 			}]
 			title: "Inscription Table"
-			x: -3.0d
-			y: -1.875d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["46F3E5D16CC665B8"]
@@ -127,8 +135,8 @@
 				type: "item"
 			}]
 			title: "Alchemy Table"
-			x: 0.0d
-			y: -1.125d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1C4D9CB5510F47D0"]
@@ -148,8 +156,8 @@
 				type: "item"
 			}]
 			title: "Manasteel"
-			x: 0.0d
-			y: -2.25d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["66724F3FB8D5FB59"]
@@ -167,8 +175,8 @@
 				type: "item"
 			}]
 			title: "Aether Portal Frame"
-			x: 1.5d
-			y: -2.25d
+			x: 4.5d
+			y: -3.25d
 		}
 		{
 			dependencies: ["66724F3FB8D5FB59"]
@@ -186,8 +194,8 @@
 				type: "advancement"
 			}]
 			title: "Djinni Spirit"
-			x: 1.5d
-			y: -3.5d
+			x: 4.5d
+			y: -1.75d
 		}
 	]
 	subtitle: ["Searching the depths for power"]

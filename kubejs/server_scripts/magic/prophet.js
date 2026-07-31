@@ -4,12 +4,12 @@ ServerEvents.recipes(event => {
         output: 'kubejs:dragon_heart_crystal',
         input: [
             'draconicevolution:dragon_heart',
-            'kubejs:gaian_blood_core',
-            'kubejs:gaian_holy_core',
-            'kubejs:gaian_void_core',
-            'kubejs:gaian_annihilation_core',
-            'kubejs:boundless_gaia_spirit_ingot',
-            'kubejs:boundless_gaia_spirit_ingot',
+            'kubejs:astral_blood_core',
+            'kubejs:astral_holy_core',
+            'kubejs:astral_void_core',
+            'kubejs:astral_annihilation_core',
+            'kubejs:boundless_astral_ingot',
+            'kubejs:boundless_astral_ingot',
             'draconicevolution:awakened_draconium_ingot',
             'draconicevolution:wyvern_core'
         ],

@@ -7,12 +7,10 @@ ServerEvents.tags('item', event => {
   ]
 
   // magichem:essentia_<element> is the real thing (MagiChem's Alembic, entry-tier, wisdom 0) --
-  // replaces the custom kubejs:<element>_essence items entirely. mysticalagriculture stays as
-  // the alternate/cheaper route wherever a tier splits default vs MysticalAg. Per user direction
-  // 2026-07-28: let MagiChem be a full-game system.
+  // replaces the custom kubejs:<element>_essence items entirely. Per user direction 2026-07-28:
+  // let MagiChem be a full-game system. MysticalAgriculture removed from the pack 2026-07-31.
   elements.forEach(element => {
     event.add(`kubejs:${element}_essences`, `magichem:essentia_${element}`);
-    event.add(`kubejs:${element}_essences`, `mysticalagriculture:${element}_essence`);
   })
 
   event.add('forge:cheese', 'ad_astra:cheese');
@@ -40,6 +38,6 @@ ServerEvents.tags('item', event => {
   event.add('kubejs:magic/alchemist',  ['gtceu:abstract_metal_ingot', 'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'kubejs:hexed_amethyst_core', 'kubejs:hexed_mana_matrix'])
   event.add('kubejs:magic/thaumaturge', ['gtceu:starforged_chimerite_ingot', 'kubejs:star_touched_chimerite'])
   event.add('kubejs:magic/arcanist',   ['gtceu:rubedo_core_ingot', 'extrabotany:aerialite_ingot', 'extrabotany:photonium_ingot', 'extrabotany:shadowium_ingot'])
-  event.add('kubejs:magic/sage',       ['gtceu:empyrean_ichor_ingot', 'kubejs:vengeful_gaia_spirit', 'kubejs:soul_of_gaia', 'kubejs:boundless_gaia_spirit_ingot', 'kubejs:gaian_blood_core', 'kubejs:gaian_holy_core', 'kubejs:gaian_void_core', 'kubejs:gaian_annihilation_core', 'kubejs:blood_grimoire', 'kubejs:radiant_sanctum', 'kubejs:eldritch_codex', 'kubejs:obliteration_chronicle', 'kubejs:harbinger_codex', 'kubejs:pyromatic_codex', 'kubejs:evocation_folio', 'kubejs:glacial_grimoire', 'kubejs:verdant_chronicle', 'kubejs:technomatic_folio'])
+  event.add('kubejs:magic/sage',       ['gtceu:empyrean_ichor_ingot', 'kubejs:vengeful_wraith', 'kubejs:bound_astral_soul', 'kubejs:boundless_astral_ingot', 'kubejs:astral_blood_core', 'kubejs:astral_holy_core', 'kubejs:astral_void_core', 'kubejs:astral_annihilation_core', 'kubejs:blood_grimoire', 'kubejs:radiant_sanctum', 'kubejs:eldritch_codex', 'kubejs:obliteration_chronicle', 'kubejs:harbinger_codex', 'kubejs:pyromatic_codex', 'kubejs:evocation_folio', 'kubejs:glacial_grimoire', 'kubejs:verdant_chronicle', 'kubejs:technomatic_folio'])
   event.add('kubejs:magic/sage_plus', ['extrabotany:orichalcos_ingot', 'extrabotany:hero_medal'])
 });

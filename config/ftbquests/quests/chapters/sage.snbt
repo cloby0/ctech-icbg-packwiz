@@ -17,28 +17,7 @@
 	}]
 	quests: [
 		{
-			dependencies: ["23D66F8D6CD53A68"]
-			description: [
-				"this tier's own bulk route to &agaia ingot&r -- feed the boundless spirit ingot through a &9terra plate&r with two terrasteel blocks. the gaian core rituals ahead eat these by the handful."
-			]
-			id: "4E4F37F6AB877E5C"
-			shape: "square"
-			size: 1.5d
-			subtitle: "what the stars taste like"
-			tasks: [{
-				id: "5B834F0AE04F354B"
-				item: "botania:gaia_ingot"
-				type: "item"
-			}]
-			title: "Gaia Spirit Ingot"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"4E4F37F6AB877E5C"
-				"302D332A3D2BD619"
-			]
+			dependencies: ["302D332A3D2BD619"]
 			description: [
 				"you started this book boiling essences in a borrowed cauldron. now you're farming the guardian of gaia for ingots and smelting starlight into empyrean ichor."
 				""
@@ -60,56 +39,6 @@
 			subtitle: "is this... the end?"
 			title: "The Crescendo"
 			x: 16.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"kill the &5guardian of gaia&r for life essence, then bind it at the &6runic altar&r with runes of &4wrath&r and &4pride&r over four elementium bolts -- 8000 mana."
-			]
-			dependencies: ["0035907892269ECE"]
-			id: "7A973CEE81B78C5C"
-			subtitle: "it's understandably upset"
-			tasks: [{
-				id: "7E024FF9662AAD92"
-				item: "kubejs:vengeful_gaia_spirit"
-				type: "item"
-			}]
-			title: "Vengeful Gaia Spirit"
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7A973CEE81B78C5C"]
-			description: [
-				"bind the vengeful spirit to a wither skeleton skull, two ender pearls, and a soul gem at the eldrin altar for &dsoul of gaia&r. already deep in mystical agriculture? wither skeleton essence plus two enderman essence works too, cheaper."
-				""
-				"it takes a few more steps from here."
-			]
-			id: "57D3230B92DA91E0"
-			subtitle: "a concentrated grudge"
-			tasks: [{
-				id: "056989769411D5E0"
-				item: "kubejs:soul_of_gaia"
-				type: "item"
-			}]
-			title: "Soul of Gaia"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"bind the soul of gaia to EIGHT &delementium blocks&r at the eldrin altar for the boundless spirit ingot."
-			]
-			dependencies: ["57D3230B92DA91E0"]
-			id: "23D66F8D6CD53A68"
-			subtitle: "boundless, allegedly"
-			tasks: [{
-				id: "36AA68C441D4A1CE"
-				item: "kubejs:boundless_gaia_spirit_ingot"
-				type: "item"
-			}]
-			title: "Boundless Gaia Spirit Ingot"
-			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -138,7 +67,7 @@
 			description: [
 				"empyrean ichor builds this tier's own set of parts: the &6empyrean array&r core (runic altar, then a terra plate pass) and the &6empyrean wizard brain&r (eldrin altar) both start here."
 				""
-				"a handful of vanilla combines with ichor plus this tier's own gaian cores round out the set -- motive cores, channeling vessels, ward lattices."
+				"a handful of vanilla combines with ichor plus this tier's own astral cores round out the set -- motive cores, channeling vessels, ward lattices."
 			]
 			icon: "kubejs:empyrean_sigil"
 			id: "64624A72C1208B1D"
@@ -165,7 +94,7 @@
 				"64624A72C1208B1D"
 			]
 			description: [
-				"the &6alchemical nexus&r runs a brand-new Ritual of the Balanced Scales -- no jar recipe to re-theme, this one's built for this pack alone. a gaian blood core, gaian holy core, and empyrean wizard brain open it; a gaian annihilation core, nether star, and ender eye carry stage two; three of your grimoires (blood, radiant, eldritch) carry stage three; the final stage folds in two &6empyrean ichor&r and arcanist's own &6wisdom stone: rubedo&r into the &6philosopher's stone&r."
+				"the &6alchemical nexus&r runs a brand-new Ritual of the Balanced Scales -- no jar recipe to re-theme, this one's built for this pack alone. an astral blood core, astral holy core, and empyrean wizard brain open it; an astral annihilation core, nether star, and ender eye carry stage two; three of your grimoires (blood, radiant, eldritch) carry stage three; the final stage folds in two &6empyrean ichor&r and arcanist's own &6wisdom stone: rubedo&r into the &6philosopher's stone&r."
 				""
 				"the book bookends itself: you started boiling essences in a borrowed cauldron, and you end fusing the Magnum Opus's five stages into one stone."
 			]
@@ -183,9 +112,9 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4E4F37F6AB877E5C"]
+			dependencies: ["0035907892269ECE"]
 			description: [
-				"&agaia ingots&r and &dlife essence&r anchor four ritual cores: &4blood&r, &eholy&r, &5void&r, and &8annihilation&r. each wants its own flavor of runes, vials, and unpleasantness."
+				"bound astral souls and &dlife essence&r anchor four ritual cores: &4blood&r, &eholy&r, &5void&r, and &8annihilation&r. each wants its own flavor of runes, vials, and unpleasantness."
 				""
 				"craft any one to start your library."
 			]
@@ -197,13 +126,13 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:gaian_blood_core)item(kubejs:gaian_holy_core)item(kubejs:gaian_void_core)item(kubejs:gaian_annihilation_core))"
+						"ftbfiltersystem:filter": "or(item(kubejs:astral_blood_core)item(kubejs:astral_holy_core)item(kubejs:astral_void_core)item(kubejs:astral_annihilation_core))"
 					}
 				}
-				title: "Any Gaian Core"
+				title: "Any Astral Core"
 				type: "item"
 			}]
-			title: "Gaian Cores"
+			title: "Astral Cores"
 			x: 12.0d
 			y: 2.0d
 		}

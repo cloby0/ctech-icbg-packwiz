@@ -141,43 +141,29 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('phlogiston_to_fire_essence')
         .inputFluids(Fluid.of('gtceu:phlogiston', 500))
-        .itemOutputs('1x mysticalagriculture:fire_essence')
+        .itemOutputs('1x magichem:essentia_fire')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('aqua_vitae_to_water_essence')
         .itemInputs('1x minecraft:prismarine_shard')
         .inputFluids(Fluid.of('gtceu:aqua_vitae', 1000))
-        .itemOutputs('1x mysticalagriculture:water_essence')
+        .itemOutputs('1x magichem:essentia_water')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('mineral_ichor_to_earth_essence')
         .itemInputs('1x minecraft:clay_ball')
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 1500))
-        .itemOutputs('1x mysticalagriculture:earth_essence')
+        .itemOutputs('1x magichem:essentia_earth')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge('pneuma_to_air_essence')
         .inputFluids(Fluid.of('gtceu:pneuma', 3000))
-        .itemOutputs('1x mysticalagriculture:air_essence')
+        .itemOutputs('1x magichem:essentia_air')
         .outputFluids(Fluid.of('gtceu:air', 1000))
         .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.chemical_reactor('inferium_to_source_fluid')
-        .itemInputs('4x mysticalagriculture:inferium_essence')
-        .inputFluids(Fluid.of('gtceu:distilled_water', 1000))
-        .outputFluids(Fluid.of('manafluid:mana', 500))
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.chemical_reactor('pneuma_to_source_fluid')
-        .itemInputs('4x mysticalagriculture:inferium_essence')
-        .inputFluids(Fluid.of('gtceu:pneuma', 1000))
-        .outputFluids(Fluid.of('manafluid:mana', 2500))
-        .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('consecrated_chromite_with_ichor')
@@ -343,7 +329,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.centrifuge('pgs_fire_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:fire_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x magichem:essentia_fire')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '2x gtceu:platinum_raw_dust',
@@ -356,7 +342,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.centrifuge('pgs_water_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:water_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x magichem:essentia_water')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '5x gtceu:platinum_raw_dust',
@@ -368,7 +354,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.centrifuge('pgs_earth_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:earth_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x magichem:essentia_earth')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '2x gtceu:platinum_raw_dust',
@@ -381,7 +367,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.centrifuge('pgs_air_bias')
-        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x mysticalagriculture:air_essence')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust', '1x magichem:essentia_air')
         .inputFluids(Fluid.of('gtceu:aqua_regia', 1200))
         .itemOutputs(
             '4x gtceu:platinum_raw_dust',
@@ -394,28 +380,28 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor('phlogiston_extraction')
-        .itemInputs('2x mysticalagriculture:fire_essence', '1x gtceu:sulfur_dust')
+        .itemInputs('2x magichem:essentia_fire', '1x gtceu:sulfur_dust')
         .outputFluids(Fluid.of('gtceu:phlogiston', 500))
         .itemOutputs('1x gtceu:ash_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('aqua_vitae_extraction')
-        .itemInputs('2x mysticalagriculture:water_essence', '1x minecraft:prismarine_shard')
+        .itemInputs('2x magichem:essentia_water', '1x minecraft:prismarine_shard')
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 500))
         .itemOutputs('1x gtceu:salt_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('mineral_ichor_extraction')
-        .itemInputs('2x mysticalagriculture:earth_essence', '1x minecraft:clay_ball')
+        .itemInputs('2x magichem:essentia_earth', '1x minecraft:clay_ball')
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 500))
         .itemOutputs('1x gtceu:calcite_dust')
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('pneuma_extraction')
-        .itemInputs('2x mysticalagriculture:air_essence', '1x minecraft:feather')
+        .itemInputs('2x magichem:essentia_air', '1x minecraft:feather')
         .outputFluids(Fluid.of('gtceu:pneuma', 500))
         .itemOutputs('1x gtceu:ash_dust')
         .duration(10 * 20)
@@ -428,7 +414,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer('phlogisticated_fuel_stabilized')
-        .itemInputs('1x mysticalagriculture:water_essence')
+        .itemInputs('1x magichem:essentia_water')
         .inputFluids(Fluid.of('gtceu:phlogiston', 500), Fluid.of('gtceu:heavy_fuel', 1000))
         .outputFluids(Fluid.of('gtceu:phlogisticated_fuel', 2000))
         .duration(20 * 20)
@@ -452,7 +438,7 @@ ServerEvents.recipes(event => {
     // producer and consumer are both dead. Aerosol synthesis below now runs straight off
     // superheated purified vinteum ingot instead of the deleted elven_concentrate middle-item.
     event.recipes.gtceu.chemical_reactor('faefire_aerosol_synthesis')
-        .itemInputs('1x mna:superheated_purified_vinteum_ingot', '2x mysticalagriculture:air_essence')
+        .itemInputs('1x mna:superheated_purified_vinteum_ingot', '2x magichem:essentia_air')
         .outputFluids(Fluid.of('gtceu:faefire_aerosol', 500))
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -645,8 +631,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('ctech:runic_bio_catalyst_mix')
         .itemInputs(
             '1x kubejs:runic_growth_catalyst',
-            '4x mysticalagriculture:earth_essence',
-            '4x mysticalagriculture:water_essence'
+            '4x magichem:essentia_earth',
+            '4x magichem:essentia_water'
         )
         .inputFluids(Fluid.of('gtceu:mineral_ichor', 1000))
         .itemOutputs('1x kubejs:runic_bio_catalyst')
@@ -676,7 +662,7 @@ ServerEvents.recipes(event => {
             'gtceu:distilled_animus_ingot',
             'gtceu:starforged_chimerite_ingot',
             'gtceu:rubedo_core_ingot',
-            'mysticalagriculture:air_essence',
+            'magichem:essentia_air',
             'gtceu:naquadah_dust'
         ],
         affinity: 'arcane',
@@ -686,8 +672,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('ctech:vitalized_source_fragment_synthesis')
         .itemInputs(
             '1x kubejs:source_crystal_lattice',
-            '2x mysticalagriculture:fire_essence',
-            '2x mysticalagriculture:water_essence'
+            '2x magichem:essentia_fire',
+            '2x magichem:essentia_water'
         )
         .inputFluids(Fluid.of('kubejs:seminal_plasma', 1000))
         .itemOutputs('1x kubejs:vitalized_source_fragment')
@@ -697,8 +683,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('ctech:source_bio_matrix_mix')
         .itemInputs(
             '1x kubejs:vitalized_source_fragment',
-            '2x mysticalagriculture:air_essence',
-            '2x mysticalagriculture:earth_essence',
+            '2x magichem:essentia_air',
+            '2x magichem:essentia_earth',
             '1x gtceu:naquadah_dust'
         )
         .itemOutputs('1x kubejs:source_bio_matrix')

@@ -10,6 +10,25 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [ ]
+			description: [
+				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essentia, life essence, and rituals. three pillars carry the tree: &6mana & artifice&r (manaweaving/wands), &4blood magic&r (the LP economy), and &dmagichem&r (essentia/alembic)."
+				""
+				"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
+			]
+			id: "1FA819FE418EBE16"
+			shape: "diamond"
+			subtitle: "the easy way out"
+			tasks: [{
+				id: "5CE2A909940AA9BB"
+				title: "Magic!"
+				type: "checkmark"
+			}]
+			title: "Magic!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
 			dependencies: ["1FA819FE418EBE16"]
 			description: [
 				"hexerei's &6mixing cauldron&r is your first magical workstation. fire charges, ashen ichor, and plenty else brew here across the early tree."
@@ -26,45 +45,8 @@
 				type: "item"
 			}]
 			title: "Double, Double"
-			x: 0.0d
+			x: 1.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["475DA94832CDDEB7"]
-			description: [
-				"two &cfire essentia&r plus one each of &9water&r/&2earth&r/&7air&r, plus blaze powder, coal, and occultism's &dotherworld essence&r, brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
-				""
-				"the tech tree reaches the nether through metallurgy. this skips all of it."
-			]
-			id: "7FDB6031A17DC65B"
-			subtitle: "i'd rather not touch steel"
-			tasks: [{
-				id: "3AF5DEF6D2FCCE84"
-				item: "minecraft:fire_charge"
-				type: "item"
-			}]
-			title: "Arson Works Too"
-			x: 3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7FDB6031A17DC65B"]
-			description: [
-				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. this quest tracks the &blumberjack&r ritual specifically; you can also bind a foliot to &bcleaner&r or &bitem transport&r duty afterward, but summon a lumberjack first to clear this quest."
-				""
-				"costs a fire charge. cheap, and it's required -- the apprentice tier assumes you have logistics help."
-			]
-			id: "8F3A6C1D2B9E4057"
-			subtitle: "your first spirit"
-			tasks: [{
-				advancement: "occultism:occultism/summon_foliot_lumberjack"
-				criterion: ""
-				id: "8F3A6C1D2B9E4058"
-				type: "advancement"
-			}]
-			title: "Foliot Spirit"
-			x: 5.0d
-			y: -1.5d
 		}
 		{
 			dependencies: ["46F3E5D16CC665B8"]
@@ -95,8 +77,45 @@
 				}
 			]
 			title: "Greek to Me"
-			x: 2.0d
+			x: 3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["475DA94832CDDEB7"]
+			description: [
+				"two &cfire essentia&r plus one each of &9water&r/&2earth&r/&7air&r, plus blaze powder, coal, and occultism's &dotherworld essence&r, brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
+				""
+				"the tech tree reaches the nether through metallurgy. this skips all of it."
+			]
+			id: "7FDB6031A17DC65B"
+			subtitle: "i'd rather not touch steel"
+			tasks: [{
+				id: "3AF5DEF6D2FCCE84"
+				item: "minecraft:fire_charge"
+				type: "item"
+			}]
+			title: "Arson Works Too"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FDB6031A17DC65B"]
+			description: [
+				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. this quest tracks the &blumberjack&r ritual specifically; you can also bind a foliot to &bcleaner&r or &bitem transport&r duty afterward, but summon a lumberjack first to clear this quest."
+				""
+				"costs a fire charge. cheap, and it's required -- the apprentice tier assumes you have logistics help."
+			]
+			id: "8F3A6C1D2B9E4057"
+			subtitle: "your first spirit"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_lumberjack"
+				criterion: ""
+				id: "8F3A6C1D2B9E4058"
+				type: "advancement"
+			}]
+			title: "Foliot Spirit"
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7FDB6031A17DC65B"]
@@ -118,8 +137,8 @@
 				type: "dimension"
 			}]
 			title: "Nether Again"
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
@@ -143,51 +162,8 @@
 				type: "item"
 			}]
 			title: "Elemental Fashion"
-			x: 1.5d
+			x: 3.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["475DA94832CDDEB7"]
-			description: [
-				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates -- plus an &9ichor sigil&r: brew ashen ichor, arcane essentia, and otherworld essence in the heated cauldron for a sigil blank, then charge it at the &4blood altar&r."
-				""
-				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
-			]
-			id: "62E8A3F71C0D4B20"
-			subtitle: "required reading"
-			tasks: [{
-				id: "62E8A3F71C0D4B21"
-				item: "irons_spellbooks:iron_spell_book"
-				type: "item"
-			}]
-			title: "Booked Up"
-			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["42FBF65B12E36EC7"]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "mna:manaweaver_wand"
-				tag: { }
-			}
-			description: [
-				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essentia, life essence, and rituals. three pillars carry the tree: &6mana & artifice&r (manaweaving/wands), &4blood magic&r (the LP economy), and &dmagichem&r (essentia/alembic)."
-				""
-				"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
-			]
-			id: "1FA819FE418EBE16"
-			shape: "diamond"
-			subtitle: "the easy way out"
-			tasks: [{
-				id: "5CE2A909940AA9BB"
-				title: "Magic!"
-				type: "checkmark"
-			}]
-			title: "Magic!"
-			x: -1.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["1FA819FE418EBE16"]
@@ -206,8 +182,8 @@
 				type: "item"
 			}]
 			title: "First Blood"
-			x: -1.5d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["501D74B0BE102380"]
@@ -230,7 +206,7 @@
 				type: "item"
 			}]
 			title: "Sanguine Scientiem"
-			x: -2.5d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
@@ -251,8 +227,26 @@
 				type: "item"
 			}]
 			title: "Ashen Ichor"
-			x: 3.5d
-			y: 2.0d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["475DA94832CDDEB7"]
+			description: [
+				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates -- plus an &9ichor sigil&r: brew ashen ichor, arcane essentia, and otherworld essence in the heated cauldron for a sigil blank, then charge it at the &4blood altar&r."
+				""
+				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
+			]
+			id: "62E8A3F71C0D4B20"
+			subtitle: "required reading"
+			tasks: [{
+				id: "62E8A3F71C0D4B21"
+				item: "irons_spellbooks:iron_spell_book"
+				type: "item"
+			}]
+			title: "Booked Up"
+			x: 3.0d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Dip your toes into the arcane"]

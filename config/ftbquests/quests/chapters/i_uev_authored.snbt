@@ -14,20 +14,6 @@
 			x: -1.5d
 			y: 0.0d
 		}
-		{
-			id: "19E4C0A7B5D2F380"
-			linked_quest: "4E4F37F6AB877E5C"
-			size: 0.75d
-			x: 2.0d
-			y: -3.0d
-		}
-		{
-			id: "19E4C0A7B5D2F381"
-			linked_quest: "57D3230B92DA91E0"
-			size: 0.75d
-			x: 3.5d
-			y: -3.0d
-		}
 	]
 	quests: [
 		{

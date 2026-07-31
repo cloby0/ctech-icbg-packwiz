@@ -53,7 +53,7 @@
 				}
 			]
 			title: "Elven Trade Portal"
-			x: -0.5d
+			x: -2.5d
 			y: -2.0d
 		}
 		{
@@ -72,7 +72,7 @@
 			}]
 			title: "Superheated Purified Vinteum"
 			x: 0.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["36021729B91C1137"]
@@ -95,8 +95,8 @@
 				type: "item"
 			}]
 			title: "Elven Novelties"
-			x: 0.5d
-			y: -6.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["36021729B91C1137"]
@@ -117,7 +117,7 @@
 			}]
 			title: "Gravitic Rubedo"
 			x: 0.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -146,7 +146,7 @@
 			}]
 			title: "Rubedo Components"
 			x: 0.0d
-			y: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3AD6234979E22204"]
@@ -165,7 +165,7 @@
 			}]
 			title: "Wisdom Stone: Rubedo"
 			x: 1.5d
-			y: -7.5d
+			y: -5.5d
 		}
 	]
 	subtitle: ["The elves have materials you can't make yourself"]

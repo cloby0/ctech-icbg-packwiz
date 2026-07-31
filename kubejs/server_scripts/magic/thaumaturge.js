@@ -118,19 +118,19 @@ ServerEvents.recipes(event => {
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
     addEldrinAltarRecipe(event, {
         output: 'kubejs:starforged_wizard_brain',
-        items: ['gtceu:starforged_chimerite_ingot', 'kubejs:star_touched_chimerite', 'ad_astra:ice_shard'],
+        items: ['gtceu:starforged_chimerite_ingot', 'kubejs:star_touched_chimerite', 'minecraft:blue_ice'],
         affinity: 'WATER', power: Source.THAUMATURGE,
         tier: 4
     })
 
     addComponentRecipe(event, 'kubejs:starforged_motive_core', [
-        'gtceu:starforged_chimerite_rod', 'ad_astra:ice_shard', 'gtceu:starforged_chimerite_ingot'
+        'gtceu:starforged_chimerite_rod', 'minecraft:blue_ice', 'gtceu:starforged_chimerite_ingot'
     ])
     addComponentRecipe(event, 'kubejs:starforged_channeling_vessel', [
         'gtceu:starforged_chimerite_ingot', 'botania:rune_water', 'kubejs:chimerite_dust'
     ])
     addComponentRecipe(event, 'kubejs:starforged_ward_lattice', [
-        'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:naquadah_dust'
+        'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:holy_silver_dust'
     ])
 
     // Wisdom Stone: Citrinitas (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto

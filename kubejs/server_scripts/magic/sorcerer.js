@@ -56,32 +56,10 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // MysticalAg difficulty-cliff fix, part 1 (seeds): ars_nouveau:magebloom_crop reagent was
-    // dead regardless of the pedestal issue (same open fiber question as 03/04) -- swapped to
-    // wheat_seeds, matching output theme. Default recipe drops the hard _agglomeratio
-    // requirement (replaced with a third essence tag + a plain tier-appropriate item); a second,
-    // MysticalAg-based alternate keeps _agglomeratio, costed cheaper as the reward-for-investment
-    // route. Both coexist, neither replaces the other.
-    const elementFlavor = { fire: 'minecraft:netherrack', water: 'minecraft:prismarine_shard', earth: 'minecraft:dirt', air: 'minecraft:feather' }
-
-    Object.keys(elementFlavor).forEach(element => {
-        // Simple ingredient-swap crafts, not ritual-scale -- moved to the Manaweaving Altar.
-        addMnaManaweavingRecipe(event, {
-            output: `mysticalagriculture:${element}_seeds`,
-            items: ['minecraft:wheat_seeds', `#kubejs:${element}_essences`, `#kubejs:${element}_essences`, `#kubejs:${element}_essences`, elementFlavor[element]],
-            patterns: ['mna:square', 'mna:circle'],
-            tier: 2
-        })
-
-        addMnaManaweavingRecipe(event, {
-            output: `mysticalagriculture:${element}_seeds`,
-            items: ['minecraft:wheat_seeds', `#kubejs:${element}_essences`, `mysticalagriculture:${element}_agglomeratio`, `mysticalagriculture:${element}_agglomeratio`],
-            patterns: ['mna:circle', 'mna:diamond'],
-            tier: 2
-        })
-
-        event.remove({ id: `mysticalagriculture:seed/infusion/${element}` })
-    })
+    // MysticalAgriculture removed from the pack 2026-07-31 -- the element-seed farming loop
+    // (seeds -> plant -> harvest essence) this fed was entirely MysticalAg-native, no replacement.
+    // The Air/Earth/Water/Fire Seed and Essence quests in sorcerer.snbt are stale until the
+    // questbook rebuild replaces this cluster.
 
     // Prima Materia rework 2026-07-29: was pure Occultism ritual, zero MagiChem tie despite
     // being the pack's explicit "classical alchemy" nod and MagiChem being the actual classical
@@ -222,7 +200,7 @@ ServerEvents.recipes(event => {
         'gtceu:gaia_spirit_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
     ])
     addComponentRecipe(event, 'kubejs:gravitic_channeling_vessel', [
-        'botania:gaia_ingot', 'kubejs:chaos_essence', 'mysticalagriculture:fire_essence'
+        'botania:gaia_ingot', 'kubejs:chaos_essence', 'magichem:essentia_fire'
     ])
     addComponentRecipe(event, 'kubejs:gravitic_ward_lattice', [
         'gtceu:gaia_spirit_plate', 'bloodmagic:basemonstersoul_steadfast', 'gtceu:prima_materia_plate'

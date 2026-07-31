@@ -12,7 +12,7 @@
 		linked_quest: "2D3D4D46D2DD008F"
 		shape: "rsquare"
 		x: 0.0d
-		y: 0.0d
+		y: -0.5d
 	}]
 	quests: [
 		{
@@ -30,8 +30,8 @@
 				type: "item"
 			}]
 			title: "Runic Forge"
-			x: 2.25d
-			y: -7.0d
+			x: 8.0d
+			y: -1.75d
 		}
 		{
 			description: [
@@ -51,8 +51,8 @@
 				type: "item"
 			}]
 			title: "Terrestrial Agglomeration Plate"
-			x: 0.0d
-			y: -7.0d
+			x: 6.5d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2D3D4D46D2DD008F"]
@@ -86,8 +86,8 @@
 				type: "item"
 			}]
 			title: "Mana Pearl"
-			x: 1.5d
-			y: -6.5d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -102,11 +102,10 @@
 				type: "item"
 			}]
 			title: "Mana Diamond"
-			x: -1.5d
-			y: -5.75d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["2D3D4D46D2DD008F"]
 			description: [
 				"&3hex casting&r is a visual, pattern-based magic system. instead of crafting spells, you draw them in the air with a staff."
 				""
@@ -123,8 +122,8 @@
 				type: "item"
 			}]
 			title: "Hexed Amethyst Core"
-			x: 0.0d
-			y: 1.125d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -140,8 +139,8 @@
 				type: "item"
 			}]
 			title: "Focus"
-			x: -1.125d
-			y: 1.5d
+			x: -5.5d
+			y: -2.25d
 		}
 		{
 			description: [
@@ -157,8 +156,8 @@
 				type: "item"
 			}]
 			title: "Hex Spellbook"
-			x: -0.375d
-			y: 1.875d
+			x: -4.75d
+			y: -2.25d
 		}
 		{
 			description: [
@@ -174,8 +173,8 @@
 				type: "item"
 			}]
 			title: "Hex Artifact"
-			x: 0.375d
-			y: 1.875d
+			x: -4.0d
+			y: -2.25d
 		}
 		{
 			description: [
@@ -197,8 +196,8 @@
 				type: "item"
 			}]
 			title: "Any Hex Staff"
-			x: 1.125d
-			y: 1.5d
+			x: -3.25d
+			y: -2.25d
 		}
 		{
 			description: [
@@ -214,8 +213,8 @@
 				type: "item"
 			}]
 			title: "Legendary Ink"
-			x: 1.125d
-			y: 0.0d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -240,7 +239,7 @@
 			}]
 			title: "Elemental Runes"
 			x: 0.0d
-			y: -1.875d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -265,7 +264,7 @@
 			}]
 			title: "Season Runes"
 			x: 0.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1C79439FDCE2173E"]
@@ -292,7 +291,7 @@
 			}]
 			title: "Sin Runes"
 			x: 1.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2D3D4D46D2DD008F"]
@@ -312,7 +311,7 @@
 				type: "item"
 			}]
 			title: "Starforged Chimerite"
-			x: -1.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{

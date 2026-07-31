@@ -16,64 +16,6 @@
 	}]
 	quests: [
 		{
-			dependencies: ["138BA0CD22478ACF"]
-			description: [
-				"the &6automated mana pond&r multiblock replaces flower-sitting: it runs mana pool infusions off &dliquid source&r, one input at a time, with a &dparallel hatch&r and perfect overclocks."
-				""
-				"catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r alchemy catalyst, &7circuit 3&r conjuration catalyst. built around a real mana pool and &3manaplatinite&r casings at IV."
-			]
-			id: "61F4B8D0C3A75E30"
-			subtitle: "the pool cleans itself now"
-			tasks: [{
-				id: "61F4B8D0C3A75E31"
-				item: "gtceu:automated_mana_pond"
-				type: "item"
-			}]
-			title: "Automated Mana Pond"
-			x: -2.25d
-			y: -6.0d
-		}
-		{
-			dependencies: ["3C48407D270C6942"]
-			description: [
-				"the &3mana pool&r is the central hub of &3botania&r."
-				""
-				"flowers generate &dmana&r and pipe it into the pool. from there it's used for pretty much everything botania does - crafting, transformation, terraforming, you name it."
-				""
-				"&9note:&r at this tier, reliable options include the &aendoflame&r (coal/charcoal) and &arosa arcana&r (XP). keep them fed."
-			]
-			id: "138BA0CD22478ACF"
-			size: 0.75d
-			subtitle: "an expensive infinity pool"
-			tasks: [{
-				id: "2B744BA6473CBDBD"
-				item: "botania:mana_pool"
-				type: "item"
-			}]
-			title: "Mana Pool"
-			x: -1.125d
-			y: -6.0d
-		}
-		{
-			description: [
-				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essentia in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
-				""
-				"weave it with a pair of essentia at the manaweaving altar for bismuth, copper, silver, magnesium, or holy silver -- pick your pair, pick your metal."
-			]
-			dependencies: ["7BDD15A9F2B6BCDD"]
-			id: "5E61BE3584D271A8"
-			size: 0.75d
-			subtitle: "it's metal. it works."
-			tasks: [{
-				id: "01EEE80DDFE70C38"
-				item: "gtceu:abstract_metal_ingot"
-				type: "item"
-			}]
-			title: "Abstract Metal Ingot"
-			x: 1.125d
-			y: -6.0d
-		}
-		{
 			dependencies: [
 				"3C613081F4FE51B2"
 				"9A4C2F6D8B1E3075"
@@ -94,8 +36,139 @@
 				type: "item"
 			}]
 			title: "Pure Daisy"
-			x: -1.125d
-			y: -1.875d
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"ring your pure daisy with stone and wait. &flivingrock&r feeds every botania build from here on."
+			]
+			dependencies: ["1F374C13B7A1C7A2"]
+			id: "3C48407D270C6942"
+			size: 0.75d
+			subtitle: "stone, but alive. sort of."
+			tasks: [{
+				id: "6B4DF27906811AA8"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			title: "Livingrock"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3C48407D270C6942"]
+			description: [
+				"the &3mana pool&r is the central hub of &3botania&r."
+				""
+				"flowers generate &dmana&r and pipe it into the pool. from there it's used for pretty much everything botania does - crafting, transformation, terraforming, you name it."
+				""
+				"&9note:&r at this tier, reliable options include the &aendoflame&r (coal/charcoal) and &arosa arcana&r (XP). keep them fed."
+			]
+			id: "138BA0CD22478ACF"
+			size: 0.75d
+			subtitle: "an expensive infinity pool"
+			tasks: [{
+				id: "2B744BA6473CBDBD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			title: "Mana Pool"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["138BA0CD22478ACF"]
+			description: [
+				"the &6automated mana pond&r multiblock replaces flower-sitting: it runs mana pool infusions off &dliquid source&r, one input at a time, with a &dparallel hatch&r and perfect overclocks."
+				""
+				"catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r alchemy catalyst, &7circuit 3&r conjuration catalyst. built around a real mana pool and &3manaplatinite&r casings at IV."
+			]
+			id: "61F4B8D0C3A75E30"
+			subtitle: "the pool cleans itself now"
+			tasks: [{
+				id: "61F4B8D0C3A75E31"
+				item: "gtceu:automated_mana_pond"
+				type: "item"
+			}]
+			title: "Automated Mana Pond"
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3C613081F4FE51B2"
+				"9A4C2F6D8B1E3075"
+			]
+			description: [
+				"the &3abstract metal&r line turns &dprima materia&r into a whole family of ordinary metals."
+				""
+				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward the abstract ingot."
+			]
+			id: "2C27B13A2CA65DEC"
+			size: 0.75d
+			subtitle: "magic philosophy, compressed"
+			tasks: [{
+				id: "65D66F5AB27EEF45"
+				item: "gtceu:concepts_bucket"
+				type: "item"
+			}]
+			title: "Condensed Concepts"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"bind a bucket to a &aprima materia block&r, bottled XP, and charged amethyst at the eldrin altar for a &dbucket of concepts&r. weaving it with a &fholy silver block&r condenses that into &7metal form&r."
+			]
+			dependencies: ["2C27B13A2CA65DEC"]
+			id: "442B54C049E4C49E"
+			size: 0.75d
+			subtitle: "it's almost an ingot"
+			tasks: [{
+				id: "20D2CC7AEE2E2DE9"
+				item: "gtceu:metal_form_bucket"
+				type: "item"
+			}]
+			title: "Metal Form"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"bind the metal form to three ad astra &bice shards&r and an otherworld essence at the eldrin altar to freeze it into a solid you can hold. still disorganized, but real."
+			]
+			dependencies: ["442B54C049E4C49E"]
+			id: "7BDD15A9F2B6BCDD"
+			size: 0.75d
+			subtitle: "like an ingot, but confused"
+			tasks: [{
+				id: "06E9CA2754667DC0"
+				item: "kubejs:disorganized_metal_form"
+				type: "item"
+			}]
+			title: "Disorganized Metal Form"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essentia in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
+				""
+				"weave it with a pair of essentia at the manaweaving altar for bismuth, copper, silver, magnesium, or holy silver -- pick your pair, pick your metal."
+			]
+			dependencies: ["7BDD15A9F2B6BCDD"]
+			id: "5E61BE3584D271A8"
+			size: 0.75d
+			subtitle: "it's metal. it works."
+			tasks: [{
+				id: "01EEE80DDFE70C38"
+				item: "gtceu:abstract_metal_ingot"
+				type: "item"
+			}]
+			title: "Abstract Metal Ingot"
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			description: [
@@ -111,8 +184,28 @@
 				type: "item"
 			}]
 			title: "Legendary Ink"
-			x: -0.5d
-			y: 1.5d
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. one tier below legendary."
+			]
+			dependencies: [
+				"51D5B5C004491077"
+				"3C613081F4FE51B2"
+			]
+			id: "10BFE2CEB381C280"
+			size: 0.75d
+			subtitle: "for epic spells only"
+			tasks: [{
+				id: "5D51DAFB12AD3536"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			title: "Epic Ink"
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
@@ -136,103 +229,8 @@
 				type: "item"
 			}]
 			title: "Alkahestry Tome"
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"3C613081F4FE51B2"
-				"9A4C2F6D8B1E3075"
-			]
-			description: [
-				"the &3abstract metal&r line turns &dprima materia&r into a whole family of ordinary metals."
-				""
-				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward the abstract ingot."
-			]
-			id: "2C27B13A2CA65DEC"
-			size: 0.75d
-			subtitle: "magic philosophy, compressed"
-			tasks: [{
-				id: "65D66F5AB27EEF45"
-				item: "gtceu:concepts_bucket"
-				type: "item"
-			}]
-			title: "Condensed Concepts"
-			x: 1.125d
-			y: -1.875d
-		}
-		{
-			description: [
-				"bind a bucket to a &aprima materia block&r, bottled XP, and charged amethyst at the eldrin altar for a &dbucket of concepts&r. weaving it with a &fholy silver block&r condenses that into &7metal form&r."
-			]
-			dependencies: ["2C27B13A2CA65DEC"]
-			id: "442B54C049E4C49E"
-			size: 0.75d
-			subtitle: "it's almost an ingot"
-			tasks: [{
-				id: "20D2CC7AEE2E2DE9"
-				item: "gtceu:metal_form_bucket"
-				type: "item"
-			}]
-			title: "Metal Form"
-			x: 1.125d
-			y: -3.0d
-		}
-		{
-			description: [
-				"bind the metal form to three ad astra &bice shards&r and an otherworld essence at the eldrin altar to freeze it into a solid you can hold. still disorganized, but real."
-				""
-				"tip: already sitting on mystical agriculture ice essence? a second altar recipe takes three of those instead, cheaper. neither route is required."
-			]
-			dependencies: ["442B54C049E4C49E"]
-			id: "7BDD15A9F2B6BCDD"
-			size: 0.75d
-			subtitle: "like an ingot, but confused"
-			tasks: [{
-				id: "06E9CA2754667DC0"
-				item: "kubejs:disorganized_metal_form"
-				type: "item"
-			}]
-			title: "Disorganized Metal Form"
-			x: 1.125d
-			y: -4.875d
-		}
-		{
-			description: [
-				"ring your pure daisy with stone and wait. &flivingrock&r feeds every botania build from here on."
-			]
-			dependencies: ["1F374C13B7A1C7A2"]
-			id: "3C48407D270C6942"
-			size: 0.75d
-			subtitle: "stone, but alive. sort of."
-			tasks: [{
-				id: "6B4DF27906811AA8"
-				item: "botania:livingrock"
-				type: "item"
-			}]
-			title: "Livingrock"
-			x: -1.125d
-			y: -3.75d
-		}
-		{
-			description: [
-				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. one tier below legendary."
-			]
-			dependencies: [
-				"51D5B5C004491077"
-				"3C613081F4FE51B2"
-			]
-			id: "10BFE2CEB381C280"
-			size: 0.75d
-			subtitle: "for epic spells only"
-			tasks: [{
-				id: "5D51DAFB12AD3536"
-				item: "irons_spellbooks:epic_ink"
-				type: "item"
-			}]
-			title: "Epic Ink"
-			x: -1.5d
-			y: 1.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
@@ -252,8 +250,8 @@
 				type: "item"
 			}]
 			title: "Distilled Animus"
-			x: 2.5d
-			y: 1.5d
+			x: 3.0d
+			y: -1.0d
 		}
 	]
 	subtitle: ["Flowers doing metallurgy now"]

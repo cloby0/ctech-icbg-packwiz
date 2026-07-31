@@ -9,25 +9,13 @@ ServerEvents.recipes(event => {
         power: 2 * LP.ALCHEMIST
     })
 
-    event.remove({ id: "botania:petal_apothecary/pure_daisy" })
-
-    // MysticalAg rule (same as 05-sorcerer.md): default recipe drops the hard MysticalAg
-    // requirement (2x earth_essence -> a third essence tag + a plain earth-flavored item); a
-    // second alternate keeps the MysticalAg essence, cheaper, as the reward-for-investment route.
-    // ars_nouveau:magebloom_crop reagent was dead too (same open fiber question) -- wheat_seeds.
-    addEldrinAltarRecipe(event, {
-        output: 'botania:pure_daisy',
-        items: ['minecraft:wheat_seeds', 'gtceu:holy_silver_dust', 'gtceu:prima_materia_rod', '#kubejs:earth_essences', 'minecraft:dirt'],
-        affinity: 'earth',
-        power: 2 * LP.ALCHEMIST
-    })
-
-    addEldrinAltarRecipe(event, {
-        output: 'botania:pure_daisy',
-        items: ['minecraft:wheat_seeds', 'gtceu:holy_silver_dust', 'gtceu:prima_materia_rod', 'mysticalagriculture:earth_essence', 'mysticalagriculture:earth_essence'],
-        affinity: 'earth',
-        power: LP.ALCHEMIST
-    })
+    // Pure Daisy previously re-gated to Alchemist (Eldrin Altar, prima_materia_rod) -- broke
+    // progression pack-wide: Livingrock (Pure Daisy's own output) feeds the vanilla Mana Pool
+    // (5x livingrock, botania:mana_pool.json) that Apprentice's own Manasteel recipe infuses
+    // through (addManaPondRecipe registers a real botania:mana_infusion recipe, not just the
+    // GT multiblock route). Reverted to vanilla: petal_apothecary reagent is plain seeds/petals,
+    // genuinely Hobbyist-tier accessible, matching Botania's own "most important early flower"
+    // design intent. Per user direction 2026-07-31.
 
     addEldrinAltarRecipe(event, {
         output: 'gtceu:concepts_bucket',
@@ -46,20 +34,11 @@ ServerEvents.recipes(event => {
     // otherworld_essence is renewable via the Datura farming loop (occultism.js spirit_fire
     // recipes), no spirit-tier ceiling -- works as an ongoing Occultism tax through the top
     // half of the tree, where there's no higher spirit to summon past Marid (Sorcerer).
-    // MysticalAg rule again: default drops the 3x ice_essence hard requirement for ad_astra's
-    // ice_shard (already an established item elsewhere, per thaumaturge.js); alternate keeps it.
     addEldrinAltarRecipe(event, {
         output: 'kubejs:disorganized_metal_form',
         items: ['gtceu:metal_form_bucket', 'ad_astra:ice_shard', 'ad_astra:ice_shard', 'ad_astra:ice_shard', 'occultism:otherworld_essence'],
         affinity: 'water',
         power: LP.ALCHEMIST
-    })
-
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:disorganized_metal_form',
-        items: ['gtceu:metal_form_bucket', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'occultism:otherworld_essence'],
-        affinity: 'water',
-        power: LP.ALCHEMIST / 2
     })
 
     event.smelting('gtceu:abstract_metal_ingot', 'kubejs:disorganized_metal_form')
@@ -415,7 +394,7 @@ ServerEvents.recipes(event => {
         'gtceu:distilled_animus_rod', 'gtceu:distilled_animus_ingot', 'botania:mana_pearl'
     ])
     addComponentRecipe(event, 'kubejs:animus_channeling_vessel', [
-        'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'mysticalagriculture:ice_essence'
+        'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'occultism:otherworld_essence'
     ])
     addComponentRecipe(event, 'kubejs:animus_ward_lattice', [
         'gtceu:distilled_animus_plate', 'gtceu:distilled_animus_ingot', 'kubejs:hexed_mana_matrix'

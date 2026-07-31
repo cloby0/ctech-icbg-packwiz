@@ -7,181 +7,17 @@
 	icon: "botania:gaia_ingot"
 	id: "137D785A44DC7E1D"
 	order_index: 4
-	quest_links: [
-		{
-			id: "5E60B50C46A8F7E1"
-			linked_quest: "51D5B5C004491077"
-			shape: "square"
-			size: 1.5d
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "6665F5949BE7244B"
-			linked_quest: "475DA94832CDDEB7"
-			size: 0.5d
-			x: 0.0d
-			y: 3.0d
-		}
-	]
+	quest_links: [{
+		id: "5E60B50C46A8F7E1"
+		linked_quest: "51D5B5C004491077"
+		shape: "square"
+		size: 1.5d
+		x: -8.5d
+		y: -4.5d
+	}]
 	quests: [
 		{
-			dependencies: [
-				"475DA94832CDDEB7"
-				"51D5B5C004491077"
-			]
-			description: [
-				"weave wheat seeds with three &bair essentia&r and a feather at the manaweaving altar for &bair seeds&r."
-				""
-				"tip: already invested in mystical agriculture? swap in air essentia plus two &bair agglomeratio&r instead -- cheaper, same seeds. neither route is required."
-			]
-			id: "46D6015549F81149"
-			size: 0.75d
-			subtitle: "it grows air. domestically."
-			tasks: [{
-				id: "06E45B1F0AC456B0"
-				item: "mysticalagriculture:air_seeds"
-				type: "item"
-			}]
-			title: "Air Seed"
-			x: 2.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"475DA94832CDDEB7"
-				"51D5B5C004491077"
-			]
-			description: [
-				"same weave, earth flavor: wheat seeds, three &2earth essentia&r, a scoop of dirt. or, if you've invested in mystical agriculture, earth essentia plus two &2earth agglomeratio&r."
-			]
-			id: "6D67F9A2B676C7CA"
-			size: 0.75d
-			subtitle: "it grows... earth. sure."
-			tasks: [{
-				id: "7B56C1923A8E9123"
-				item: "mysticalagriculture:earth_seeds"
-				type: "item"
-			}]
-			title: "Earth Seed"
-			x: 1.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"475DA94832CDDEB7"
-				"51D5B5C004491077"
-			]
-			description: [
-				"wheat seeds, three &9water essentia&r, a prismarine shard, one weave. or water essentia plus two &9water agglomeratio&r if mystical agriculture's your thing."
-			]
-			id: "5645B3BFEB76C34A"
-			size: 0.75d
-			subtitle: "somehow this makes sense"
-			tasks: [{
-				id: "5428D8F946CFC23F"
-				item: "mysticalagriculture:water_seeds"
-				type: "item"
-			}]
-			title: "Water Seed"
-			x: -1.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"475DA94832CDDEB7"
-				"51D5B5C004491077"
-			]
-			description: [
-				"wheat seeds, three &cfire essentia&r, netherrack. or fire essentia plus two &cfire agglomeratio&r, mystical agriculture route. the seeds themselves grow into a farmable crop either way."
-			]
-			id: "48904FDBC23CD945"
-			size: 0.75d
-			subtitle: "fire, but domestic"
-			tasks: [{
-				id: "32AA5130D51CDBA0"
-				item: "mysticalagriculture:fire_seeds"
-				type: "item"
-			}]
-			title: "Fire Seed"
-			x: -2.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["46D6015549F81149"]
-			description: [
-				"plant the seeds on farmland, harvest &bair essence&r. a renewable element farm, and another source feeding the same essentia tag as everything else."
-			]
-			id: "6F181FFA56989D01"
-			size: 0.75d
-			subtitle: "lighter than air. obviously."
-			tasks: [{
-				id: "292D3CAA3A5BFC1B"
-				item: "mysticalagriculture:air_essence"
-				type: "item"
-			}]
-			title: "Air Essence"
-			x: 2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6D67F9A2B676C7CA"]
-			description: [
-				"crops in, &2earth essence&r out. tip: MA growth accelerators and lilypads of fertility stack. build one big essence farm now -- you'll want it by sage."
-			]
-			id: "5168FD0A21AE3B49"
-			size: 0.75d
-			subtitle: "ground-breaking"
-			tasks: [{
-				id: "465E928A2B317D45"
-				item: "mysticalagriculture:earth_essence"
-				type: "item"
-			}]
-			title: "Earth Essence"
-			x: 1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["5645B3BFEB76C34A"]
-			description: [
-				"&9water essence&r, farmed. the four elements, grown as crops."
-			]
-			id: "5E9CB75348632373"
-			size: 0.75d
-			subtitle: "damp"
-			tasks: [{
-				id: "5B832A5646999CC7"
-				item: "mysticalagriculture:water_essence"
-				type: "item"
-			}]
-			title: "Water Essence"
-			x: -1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["48904FDBC23CD945"]
-			description: [
-				"&cfire essence&r, harvested from the crop."
-			]
-			id: "18E8F3A1B08C0C04"
-			size: 0.75d
-			subtitle: "hot"
-			tasks: [{
-				id: "32F22F37E6082359"
-				item: "mysticalagriculture:fire_essence"
-				type: "item"
-			}]
-			title: "Fire Essence"
-			x: -2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"5E9CB75348632373"
-				"5168FD0A21AE3B49"
-				"6F181FFA56989D01"
-				"18E8F3A1B08C0C04"
-			]
+			dependencies: ["51D5B5C004491077"]
 			description: [
 				"the Circle of Fabrication runs the alembic's own trick backwards: instead of breaking an item into essentia, it fuses essentia straight into an item. eight &5nigredo&r essentia plus four each of &cfire&r/&9water&r/&2earth&r/&7air&r fuse into &5chaos essence&r -- the undifferentiated pre-elemental state, before the four classical elements split apart."
 				""
@@ -195,8 +31,8 @@
 				type: "item"
 			}]
 			title: "Chaos Essence"
-			x: 0.0d
-			y: 6.5d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["270F7BBFAA80139A"]
@@ -216,8 +52,8 @@
 				type: "item"
 			}]
 			title: "Prima Materia"
-			x: 0.0d
-			y: 8.25d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
@@ -236,7 +72,7 @@
 			}]
 			title: "Wisdom Stone: Albedo"
 			x: 1.0d
-			y: 8.75d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
@@ -260,8 +96,8 @@
 				type: "item"
 			}]
 			title: "Demon Will"
-			x: -0.5d
-			y: 8.25d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C613081F4FE51B2"]
@@ -277,8 +113,133 @@
 				type: "advancement"
 			}]
 			title: "Marid Spirit"
-			x: 1.5d
-			y: 8.25d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["270F7BBFAA80139A"]
+			description: [
+				"weave chaos essence with two &cfire&r and two &bair&r essentia at the manaweaving altar for FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
+			]
+			id: "17D15E6418E8452E"
+			size: 0.75d
+			subtitle: "chaos, refined into metal"
+			tasks: [{
+				id: "473C3A340A0D66C2"
+				item: "irons_spellbooks:pyrium_ingot"
+				type: "item"
+			}]
+			title: "Pyrium Ingot"
+			x: -2.75d
+			y: -2.5d
+		}
+		{
+			dependencies: ["270F7BBFAA80139A"]
+			description: [
+				"the top rung of the scroll-quality ladder: rare ink upgrades with a &aprima materia plate&r for &5epic ink&r. check JEI for the exact brew."
+				""
+				"an epic scroll habit is expensive. budget accordingly."
+			]
+			id: "7671BC8442421B72"
+			size: 0.75d
+			subtitle: "for epic-tier spells only"
+			tasks: [{
+				id: "6D318A143E41B383"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			title: "Epic Ink"
+			x: -1.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			description: [
+				"raw gravitite goes in the aether &bfreezer&r first. cold metal holds its levitation better, apparently."
+			]
+			id: "50376974E4F14658"
+			size: 0.75d
+			subtitle: "ice-cold and ready to levitate"
+			tasks: [{
+				id: "1E6A37FA7C141667"
+				item: "kubejs:frozen_raw_gravitite"
+				type: "item"
+			}]
+			title: "Frozen Raw Gravitite"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["50376974E4F14658"]
+			description: [
+				"frozen gravitite runs through the aether &6altar&r next. freeze it, then charge it."
+			]
+			id: "1B9C0C6A43CB99C7"
+			size: 0.75d
+			subtitle: "blessed by the aether itself"
+			tasks: [{
+				id: "48EBD5DF3AA8A14E"
+				item: "kubejs:altar_charged_gravitite"
+				type: "item"
+			}]
+			title: "Altar-Charged Gravitite"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B9C0C6A43CB99C7"]
+			description: [
+				"a bound &6afrit&r rituals charged gravitite with two &aholy silver rods&r, two &9resonant zanite crystals&r, and afrit essence into the resonant core. three magic systems, one result."
+			]
+			id: "70103C694B3D2219"
+			size: 0.75d
+			subtitle: "it floats. if you let it."
+			tasks: [{
+				id: "396938C3DDEDBA04"
+				item: "kubejs:resonant_gravitite_core"
+				type: "item"
+			}]
+			title: "Resonant Gravitite Core"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["51D5B5C004491077"]
+			description: [
+				"the &6gaia guardian&r is botania's endgame boss -- fight it for a &alife essence&r drop. bring your best gear."
+			]
+			id: "69987C3015B77668"
+			subtitle: "botania's final exam"
+			tasks: [{
+				advancement: "botania:main/gaia_guardian_kill"
+				criterion: ""
+				id: "59C3DA3729E52128"
+				type: "advancement"
+			}]
+			title: "Gaia Guardian"
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["69987C3015B77668"]
+			description: [
+				"the tier's signature metal. crush a &2gravitite ingot&r into shavings, bind them to a pinch of &6magichem admixture&r at the alchemy table, then combine with your &alife essence&r drop."
+				""
+				"finish it on a &9terra plate&r for &6gaia ingot&r -- botania's ladder ends here."
+			]
+			icon: "botania:gaia_ingot"
+			id: "2194BFF141F7B36A"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "the tier's signature metal"
+			tasks: [{
+				id: "6E3BC93C6372844E"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "Gaia Ingot"
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -296,8 +257,8 @@
 				type: "item"
 			}]
 			title: "Glowing Water"
-			x: 0.0d
-			y: -1.125d
+			x: -5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0DED4DF736A831B4"]
@@ -314,8 +275,8 @@
 				type: "item"
 			}]
 			title: "Holy Hand Grenade"
-			x: 0.0d
-			y: -1.875d
+			x: -3.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -346,8 +307,8 @@
 				type: "item"
 			}]
 			title: "Ender's Hand"
-			x: -2.625d
-			y: -1.125d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -370,8 +331,8 @@
 				type: "item"
 			}]
 			title: "Any Magnum Torch"
-			x: 1.125d
-			y: -1.125d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -404,8 +365,8 @@
 				type: "item"
 			}]
 			title: "Reflection Necklace"
-			x: -1.125d
-			y: -1.125d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -447,8 +408,8 @@
 				type: "item"
 			}]
 			title: "Shadow Glaive"
-			x: -1.125d
-			y: -1.875d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -480,8 +441,8 @@
 				type: "item"
 			}]
 			title: "Magic Mirror"
-			x: -1.875d
-			y: -1.125d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -512,8 +473,8 @@
 				type: "item"
 			}]
 			title: "Spatial Sign"
-			x: -1.875d
-			y: -1.875d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -545,8 +506,8 @@
 				type: "item"
 			}]
 			title: "Space Dissector"
-			x: -3.375d
-			y: -1.125d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -578,8 +539,8 @@
 				type: "item"
 			}]
 			title: "Elytra Booster"
-			x: -3.375d
-			y: -1.875d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["51D5B5C004491077"]
@@ -617,133 +578,8 @@
 				type: "item"
 			}]
 			title: "Infinity Ham"
-			x: -2.625d
-			y: -1.875d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"raw gravitite goes in the aether &bfreezer&r first. cold metal holds its levitation better, apparently."
-			]
-			id: "50376974E4F14658"
-			size: 0.75d
-			subtitle: "ice-cold and ready to levitate"
-			tasks: [{
-				id: "1E6A37FA7C141667"
-				item: "kubejs:frozen_raw_gravitite"
-				type: "item"
-			}]
-			title: "Frozen Raw Gravitite"
-			x: 1.875d
-			y: 0.375d
-		}
-		{
-			dependencies: ["50376974E4F14658"]
-			description: [
-				"frozen gravitite runs through the aether &6altar&r next. freeze it, then charge it."
-			]
-			id: "1B9C0C6A43CB99C7"
-			size: 0.75d
-			subtitle: "blessed by the aether itself"
-			tasks: [{
-				id: "48EBD5DF3AA8A14E"
-				item: "kubejs:altar_charged_gravitite"
-				type: "item"
-			}]
-			title: "Altar-Charged Gravitite"
-			x: 2.625d
-			y: 0.75d
-		}
-		{
-			dependencies: ["1B9C0C6A43CB99C7"]
-			description: [
-				"a bound &6afrit&r rituals charged gravitite with two &aholy silver rods&r, two &9resonant zanite crystals&r, and afrit essence into the resonant core. three magic systems, one result."
-			]
-			id: "70103C694B3D2219"
-			size: 0.75d
-			subtitle: "it floats. if you let it."
-			tasks: [{
-				id: "396938C3DDEDBA04"
-				item: "kubejs:resonant_gravitite_core"
-				type: "item"
-			}]
-			title: "Resonant Gravitite Core"
-			x: 3.375d
-			y: 1.125d
-		}
-		{
-			dependencies: ["270F7BBFAA80139A"]
-			description: [
-				"weave chaos essence with two &cfire&r and two &bair&r essentia at the manaweaving altar for FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
-			]
-			id: "17D15E6418E8452E"
-			size: 0.75d
-			subtitle: "chaos, refined into metal"
-			tasks: [{
-				id: "473C3A340A0D66C2"
-				item: "irons_spellbooks:pyrium_ingot"
-				type: "item"
-			}]
-			title: "Pyrium Ingot"
-			x: 1.125d
-			y: 7.125d
-		}
-		{
-			dependencies: ["270F7BBFAA80139A"]
-			description: [
-				"the top rung of the scroll-quality ladder: rare ink upgrades with a &aprima materia plate&r for &5epic ink&r. check JEI for the exact brew."
-				""
-				"an epic scroll habit is expensive. budget accordingly."
-			]
-			id: "7671BC8442421B72"
-			size: 0.75d
-			subtitle: "for epic-tier spells only"
-			tasks: [{
-				id: "6D318A143E41B383"
-				item: "irons_spellbooks:epic_ink"
-				type: "item"
-			}]
-			title: "Epic Ink"
-			x: -1.125d
-			y: 7.125d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"the &6gaia guardian&r is botania's endgame boss -- fight it for a &alife essence&r drop. bring your best gear."
-			]
-			id: "69987C3015B77668"
-			subtitle: "botania's final exam"
-			tasks: [{
-				advancement: "botania:main/gaia_guardian_kill"
-				criterion: ""
-				id: "59C3DA3729E52128"
-				type: "advancement"
-			}]
-			title: "Gaia Guardian"
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["69987C3015B77668"]
-			description: [
-				"the tier's signature metal. crush a &2gravitite ingot&r into shavings, bind them to a pinch of &6magichem admixture&r at the alchemy table, then combine with your &alife essence&r drop."
-				""
-				"finish it on a &9terra plate&r for &6gaia ingot&r -- botania's ladder ends here."
-			]
-			icon: "botania:gaia_ingot"
-			id: "2194BFF141F7B36A"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "6E3BC93C6372844E"
-				item: "botania:gaia_ingot"
-				type: "item"
-			}]
-			title: "Gaia Ingot"
-			x: 3.5d
-			y: 4.0d
+			x: 7.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Alchemy, the great work"]

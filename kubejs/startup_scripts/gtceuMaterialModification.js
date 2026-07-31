@@ -140,43 +140,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('crimson_iron', 'silentgear:raw_crimson_iron')
     rawOre('azure_silver', 'silentgear:raw_azure_silver')
 
-    // ==== MysticalAgriculture ====
-    // Essences: the dust form IS the _essence item (isotopes of mana, no ingot).
-    ;['inferium', 'prudentium', 'tertium', 'imperium', 'supremium'].forEach(e => {
-        dust(e, `mysticalagriculture:${e}_essence`)
-    })
-
-    // Four classical element essences: dust form IS the base _essence item.
-    ;['fire', 'water', 'earth', 'air'].forEach(e => {
-        dust(`${e}_essence`, `mysticalagriculture:${e}_essence`)
-    })
-
-    // prosperity gem = prosperity_gemstone; gem block = prosperity_gemstone_block; rawOre = prosperity_shard
-    // (mined from the Aether vein, aetherWorldgen.js). prosperity_ingot stays a plain MA item (not gregged).
-    gem('prosperity', 'mysticalagriculture:prosperity_gemstone')
-    block('prosperity', 'mysticalagriculture:prosperity_gemstone_block')
-    rawOre('prosperity', 'mysticalagriculture:prosperity_shard')
-
-    // -ites: prosperity+essence alloys, GEM form -> MA's <tier>_gemstone (+ gemstone block).
-    // The MA <tier>_ingot line is obliterated; ingot uses are swapped to gtceu:<ite>_plate.
-    // [ite material, MA tier name, namespace]
-    function maIte(ite, tier, ns) {
-        gem(ite,   `${ns}:${tier}_gemstone`)
-        block(ite, `${ns}:${tier}_gemstone_block`)
-    }
-    maIte('inferite',           'inferium',           'mysticalagriculture')
-    maIte('prudentite',         'prudentium',         'mysticalagriculture')
-    maIte('tertite',            'tertium',            'mysticalagriculture')
-    maIte('imperite',           'imperium',           'mysticalagriculture')
-    maIte('supremite',          'supremium',          'mysticalagriculture')
-    maIte('awakened_supremite', 'awakened_supremium', 'mysticalagriculture')
-    maIte('insanite',           'insanium',           'mysticalagradditions')
-
-    // soulium: gem + gemstone block + its own dust (ingot obliterated + swapped).
-    gem('soulium',   'mysticalagriculture:soulium_gemstone')
-    block('soulium', 'mysticalagriculture:soulium_gemstone_block')
-    dust('soulium',  'mysticalagriculture:soulium_dust')
-
     // mana: Botania's own dust item is canonical, no gtceu duplicate.
     dust('mana', 'botania:mana_powder')
 
