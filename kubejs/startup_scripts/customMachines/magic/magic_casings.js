@@ -1,17 +1,5 @@
 StartupEvents.registry('block', event => {
-    event.create('sanctum_sourcestone_casing')
-        .textureAll('kubejs:block/sanctum_sourcestone_casing')
-        .displayName('Sourcestone Sanctum Casing')
-        .stoneSoundType()
-        .hardness(3).resistance(6)
-        .tagBlock('mineable/pickaxe')
 
-    event.create('imbuement_holystone_casing')
-        .textureAll('kubejs:block/imbuement_holystone_casing')
-        .displayName('Holystone Imbuement Casing')
-        .stoneSoundType()
-        .hardness(3).resistance(6)
-        .tagBlock('mineable/pickaxe')
 
     event.create('runic_forge_casing')
         .textureAll('kubejs:block/runic_forge_casing')

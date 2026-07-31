@@ -24,42 +24,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["3D7B1E9C6A2F5091"]
-			description: [
-				"the &6grand enchanting sanctum&r automates the alchemy table, fed by liquid &4life essence&r from a hatch instead of an altar hookup, with a &dparallel hatch&r slot and perfect overclocking."
-				""
-				"its &3sourcestone casings&r come out of an HV assembler, eight at a time."
-			]
-			id: "58C1A4F7B0E92D30"
-			subtitle: "alchemy, but make it factory"
-			tasks: [{
-				id: "58C1A4F7B0E92D31"
-				item: "gtceu:grand_enchanting_sanctum"
-				type: "item"
-			}]
-			title: "Grand Enchanting Sanctum"
-			x: 2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"the &6imbuement factory&r automates the eldrin altar. note the structure itself needs a &9vinteum block&r and a blood magic &4master ritual stone&r built into the frame -- they're part of the multiblock, not the recipe."
-				""
-				"&3holystone casings&r from the HV assembler round out the shell."
-			]
-			id: "58C1A4F7B0E92D32"
-			subtitle: "imbuement at line speed"
-			tasks: [{
-				id: "58C1A4F7B0E92D33"
-				item: "gtceu:imbuement_factory"
-				type: "item"
-			}]
-			title: "Imbuement Factory"
-			x: 2.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["05818C75B31F3A89"]
 			description: [
 				"weave &7silver dust&r with two &esacred ambrosium shards&r and two &6ambrosium dust&r at the manaweaving altar for &fholy silver blend&r. silver dust from the tech side, sacred ambrosium from the aether."

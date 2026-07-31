@@ -1,5 +1,5 @@
 
-// Imbuement Factory (gtceu:imbuement_factory) retired -- magic no longer needs a GT multiblock.
+// Imbuement Factory retired 2026-07-28, machine deleted 2026-07-30 along with its quest.
 // addImbuementRecipe kept as the stable call-site API; it now routes straight to the live
 // Eldrin Altar instead of the dead Ars Nouveau chamber + GT mirror it used to emit. Note: the old
 // Ars mechanic never consumed pedestalItems (catalyst-style); Eldrin Altar consumes every item in

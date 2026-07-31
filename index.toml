@@ -202,7 +202,7 @@ hash = "9ebcb99632b299557f3ca2ab49f14443bd6b261b0402a764c23d4f9371bd8bb0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "10de5114dfcf97edf7b4e3439430a389ece5cdbeba4c02b3aabfab95d6070573"
+hash = "36e43ae43b313e4694a5a7afa2d93405236473f4ea5ca24c4c2a278f9d334bb3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
@@ -1078,7 +1078,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "faa3e37d0d31b78c493b6a3b220955a27efd9adb0c5b3e063b7b3d445b3cd15b"
+hash = "aced8fbebe7c7d6887796beb9c23572b8c68c3bcf6e4fd9aa2cac2bf21a24ea3"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -1161,20 +1161,12 @@ file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/imbuement_holystone_casing.png"
-hash = "283c0c9b076aaa85f1518dc0c2f711f463fcb90fea826ea8918fd1deb7775877"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/block/mana_livingrock_casing.png"
 hash = "205f00225be34ba90c8e3dbb0da019cab613eb9170c4416d59fc3b588e73ea76"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/runic_forge_casing.png"
 hash = "205f00225be34ba90c8e3dbb0da019cab613eb9170c4416d59fc3b588e73ea76"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/sanctum_sourcestone_casing.png"
-hash = "ce67c0f13db5a7516a48acfb08bf4e7b4a1a25d01809c4ab9c2f2f5a1da53546"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/activated_bio_matrix.png"
@@ -5254,11 +5246,11 @@ hash = "9ee9bad471bc397f1c5c031ccff1e444b1a086eec5ff8694a75f36a334137c12"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/grandEnchantingSanctumRecipes.js"
-hash = "c7921833f30ffe95d190face6a257ddf2f725c924b329c27f6df456650d6ef46"
+hash = "09a059149231a93ee587028653b5285339b17e2d0c64cadc924af9fda9a6e217"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/imbuementFactoryRecipes.js"
-hash = "a8ef5c3ae42654ccb633d1101c33efdbfd13548b253f2b45837e17a29f8c7382"
+hash = "a819333b8da4ee1c9f975f693d203102cc8d8d3b90b7805a031eddf7bbb78a2a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/malumRecipes.js"
@@ -5609,16 +5601,8 @@ file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_uni
 hash = "09c533408dac90eedeb570fbebacfc2ea75149e6e439bd7685fbb489e07e2d3a"
 
 [[files]]
-file = "kubejs/startup_scripts/customMachines/magic/grand_enchanting_sanctum.js"
-hash = "411a491cc3d160f0d24abfe723911c94ae6556ad105679f494c02dcb506476ff"
-
-[[files]]
-file = "kubejs/startup_scripts/customMachines/magic/imbuement_factory.js"
-hash = "1c499c9b0dcdd089f9f429d0cc31af4485fee9deea55b0dd9cf25830a0bd41f6"
-
-[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
-hash = "aa45f6fc40c3d697fe3edbfb4f2f1907f9297c9c3b562fbef99258496c84bb0b"
+hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"

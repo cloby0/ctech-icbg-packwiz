@@ -26,6 +26,4 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_lapis' });
     event.remove({ id: 'ars_nouveau:imbuement_amethyst' });
     event.remove({ id: 'ars_nouveau:imbuement_amethyst_block' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:source_gem' });
-    event.remove({ type: 'gtceu:imbuement_factory', output: 'ars_nouveau:source_gem_block' });
 })
