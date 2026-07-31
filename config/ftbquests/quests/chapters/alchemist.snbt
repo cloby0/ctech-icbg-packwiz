@@ -237,7 +237,7 @@
 		{
 			dependencies: ["3C613081F4FE51B2"]
 			description: [
-				"the tier's signature metal. combine &9animus dust&r with &darcane essentia&r for &carcane residue&r, then feed the soul forge two residue, a destructive will, soul sand, and magma cream for &canimus fragment&r."
+				"the tier's signature metal. combine &9animus dust&r with &darcane essentia&r for &carcane residue&r, then feed the soul forge one residue, a destructive will, soul sand, and magma cream for &canimus fragment&r."
 				""
 				"crush the fragment for &9distilled animus dust&r, then finish it at the alchemy table for &6distilled animus ingot&r."
 			]

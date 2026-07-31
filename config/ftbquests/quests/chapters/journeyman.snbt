@@ -68,7 +68,7 @@
 				type: "advancement"
 			}]
 			title: "Afrit Spirit"
-			x: 1.5d
+			x: 1.375d
 			y: -3.0d
 		}
 		{
@@ -163,6 +163,25 @@
 			title: "Resonant Zanite Crystal"
 			x: -1.875d
 			y: -1.875d
+		}
+		{
+			dependencies: ["45BDF6BE6B2DD0CB"]
+			description: [
+				"the &6alchemical nexus&r runs a three-stage &5sublimation&r ritual -- the Ritual of the Balanced Scales. stage one fuses veridium filings, a resonant zanite crystal, and a veridian sigil; stage two burns through soot and bone salts; stage three binds an inert wisdom stone into &6wisdom stone: nigredo&r."
+				""
+				"wear it and apprentice's manasteel shortcut opens: raw materia straight to ingot at the alembic, no zanite chain needed."
+			]
+			id: "023DEB500B3C28D2"
+			shape: "diamond"
+			subtitle: "the blackening"
+			tasks: [{
+				id: "579E2E8AFC78AC3C"
+				item: "magichem:wisdom_stone_nigredo"
+				type: "item"
+			}]
+			title: "Wisdom Stone: Nigredo"
+			x: -1.875d
+			y: -2.625d
 		}
 		{
 			dependencies: ["557FF11A5C0306BC"]

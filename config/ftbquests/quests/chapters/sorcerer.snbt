@@ -183,9 +183,7 @@
 				"18E8F3A1B08C0C04"
 			]
 			description: [
-				"a bound &6afrit&r rituals a &aholy silver ingot&r with four blood magic demon wills and four mana blocks into &5chaos essence&r."
-				""
-				"tip: already sitting on all four MA essences? a second ritual takes those instead of the demon wills, faster and cheaper. neither route is required."
+				"the Circle of Fabrication runs the alembic's own trick backwards: instead of breaking an item into essentia, it fuses essentia straight into an item. eight &5nigredo&r essentia plus four each of &cfire&r/&9water&r/&2earth&r/&7air&r fuse into &5chaos essence&r -- the undifferentiated pre-elemental state, before the four classical elements split apart."
 				""
 				"chaos essence also weaves into &cpyrium&r (fire+air) and bottled XP (water+earth) at the manaweaving altar."
 			]
@@ -203,9 +201,9 @@
 		{
 			dependencies: ["270F7BBFAA80139A"]
 			description: [
-				"&aprima materia&r is the combined form of all four elements."
+				"&aprima materia&r is the combined form of all four elements. bind &5chaos essence&r, a &6holy silver ingot&r, and a pinch of &dmagichem admixture&r at the alchemy table for &6prima materia seed&r."
 				""
-				"a bound &6afrit&r rituals &5chaos essence&r with an &delement attunement stone&r and afrit essence into &aprima materia&r."
+				"a bound &6afrit&r rituals the seed with an &delement attunement stone&r and another admixture pinch, plus afrit essence, into &aprima materia&r."
 				""
 				"&9note:&r its plates also brew &5epic ink&r later, so don't stop at one."
 			]
@@ -219,6 +217,50 @@
 			}]
 			title: "Prima Materia"
 			x: 0.0d
+			y: 8.25d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"the &6alchemical nexus&r runs a second Ritual of the Balanced Scales, three stages deeper this time. resonant gravitite core, an element attunement stone, and a gravitic sigil open it; the final stage folds in two &aprima materia&r and journeyman's own &6wisdom stone: nigredo&r into &6wisdom stone: albedo&r."
+				""
+				"wear it and initiate's elementite shortcut opens: raw materia straight to ambrosia-touched elementite, no ambrosium chain needed."
+			]
+			id: "74085062F99B8D8C"
+			shape: "diamond"
+			subtitle: "the whitening"
+			tasks: [{
+				id: "3D4289E3C7C1D793"
+				item: "magichem:wisdom_stone_albedo"
+				type: "item"
+			}]
+			title: "Wisdom Stone: Albedo"
+			x: 1.0d
+			y: 8.75d
+		}
+		{
+			dependencies: ["3C613081F4FE51B2"]
+			description: [
+				"&5demon will&r manifests near mobs once your soul network is well-stocked -- snare it with a &6soul snare&r or a sentient tool. five flavors exist (raw, corrosive, destructive, steadfast, vengeful), same display name, different item ids -- check the tooltip."
+				""
+				"you've been spending prima materia's plates upward; this tier's own gravitic components start eating will too. stock up on whichever flavor your current recipe wants."
+			]
+			id: "67B9B6F1E671C377"
+			subtitle: "the mobs' problem becomes yours"
+			tasks: [{
+				id: "5A25286EFEC4035A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(bloodmagic:basemonstersoul)item(bloodmagic:basemonstersoul_corrosive)item(bloodmagic:basemonstersoul_destructive)item(bloodmagic:basemonstersoul_steadfast)item(bloodmagic:basemonstersoul_vengeful))"
+					}
+				}
+				title: "Any Demon Will"
+				type: "item"
+			}]
+			title: "Demon Will"
+			x: -0.5d
 			y: 8.25d
 		}
 		{

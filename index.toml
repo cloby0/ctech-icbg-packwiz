@@ -133,20 +133,28 @@ file = "config/fancymenu/user_variables.db"
 hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
 
 [[files]]
+file = "config/ftbquests/quests/.ftbq-cache/existing_quests.json5"
+hash = "da3c9525239ec5bf20eb067e75d01a6a6cb316f12a8516f6b4788c6e98771963"
+
+[[files]]
+file = "config/ftbquests/quests/.ftbq-cache/mods.json5"
+hash = "335ffdc5da1743659f8a0c7b377419c36ae3cb88d948b7761060b780c3e746e1"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "f7c30f74ade7214c582cb7a3c13c80659e9f11e8cca8341b264fa2e9117a0cdd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/alchemist.snbt"
-hash = "ebaf400a30680b0bcc7b0d1b00855b548c261d448852efcdac2053884c02d910"
+hash = "7e9436a9591d2b1bda4cdc28cd4a6caf34bbe91084a195dd7dedb5a60f7fe92d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/apprentice.snbt"
-hash = "e455ee837b0413b55e6b266864d92eb87b97fbdee9b07d4d2b46944526de0c8b"
+hash = "752db8b4e42e4f313899e127282f8b3a2e6386b6822f01f1ac44b0024af9e793"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/arcanist.snbt"
-hash = "6fae174ddc395be1d0bace7bb144967bda943639b49a141b26bfc49d4a26275b"
+hash = "6a50c6feecc4e81b9d2116637bb6f8393325962d1b2652e8e43aef8d060dcc0c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_ev_authored.snbt"
@@ -154,7 +162,7 @@ hash = "6e82c6840148c842d3ee38c70dfba959419793e4ebc996c446482aa271ebb0ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
-hash = "19e807ac9ba6ca483f867d639e7936437b771331911d32663d687537d9d0b347"
+hash = "9c88f1f34e2cc75a77779451ce39c0b5b8d351616295647a6c690c5fab1afea3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
@@ -202,23 +210,23 @@ hash = "9ebcb99632b299557f3ca2ab49f14443bd6b261b0402a764c23d4f9371bd8bb0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "36e43ae43b313e4694a5a7afa2d93405236473f4ea5ca24c4c2a278f9d334bb3"
+hash = "5026362d542f106c60d5a6d9f6f5d9b773d4ebac334cb093f66b21634cd9df7f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
-hash = "504d0c27393d8cf4ca0df304a369ea433e1054c960f1820de2ef10b7ec32def7"
+hash = "fe5470a99223729f79b4e5972127fff633b2b25fee7d410088f990c45ca9cd72"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
-hash = "c1722ade4e85f49f2520cd3ec439d651b177bacbf53f3a2f333af37ead03c39f"
+hash = "a756fdada973fc39e77e9e5760177af615aecb19831868e09e391723fea1b828"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sorcerer.snbt"
-hash = "0333cf21b041a1ec0812e14121bb7213f8af9bf997cecfa0e50d1adf859382f6"
+hash = "855c5d897bb73137e2306cc27cbb621c4200b39bbcd897ab2a9b0a6bd3d6be27"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thaumaturge.snbt"
-hash = "6385f857855021a16e2880752555945a3f32cf37f7490119f43dd33e0da1458a"
+hash = "9396189f1edef2e7f10aaef8d14698e4b92677048f54291ee1e1b1c095af66b6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"

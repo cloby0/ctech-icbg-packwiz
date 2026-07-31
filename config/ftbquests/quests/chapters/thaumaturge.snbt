@@ -103,7 +103,7 @@
 			}]
 			title: "Mana Diamond"
 			x: -1.5d
-			y: -6.5d
+			y: -5.75d
 		}
 		{
 			dependencies: ["2D3D4D46D2DD008F"]
@@ -313,6 +313,25 @@
 			}]
 			title: "Starforged Chimerite"
 			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F1ABCF957C7AE77"]
+			description: [
+				"the &6alchemical nexus&r runs a four-stage Ritual of the Balanced Scales this time. chimerite dust and star-touched chimerite open it; runes and vinteum plates carry the middle stages; the final stage folds in two vengeance-touched chimerite and sorcerer's own &6wisdom stone: albedo&r into &6wisdom stone: citrinitas&r."
+				""
+				"wear it and alchemist's distilled animus shortcut opens: raw materia straight to ingot, no soul forge needed."
+			]
+			id: "2345ABDCF190E4FA"
+			shape: "diamond"
+			subtitle: "the yellowing"
+			tasks: [{
+				id: "28BED88AA3E4C0EF"
+				item: "magichem:wisdom_stone_citrinitas"
+				type: "item"
+			}]
+			title: "Wisdom Stone: Citrinitas"
+			x: -3.0d
 			y: -6.5d
 		}
 	]

@@ -23,7 +23,7 @@
 				""
 				"you can't visit. you can only trade. drop items through the portal and the elves will send something back."
 				""
-				"this is how you get &aelven materials&r -- pixie dust, dragonstone, and the concentrate this tier's own signature chain needs."
+				"purely optional here -- this tier's own signature chain runs on &6superheated purified vinteum&r instead, no elven trading required. the portal's still good for dreamwood, elf glass, and a few item-return trades if you want them."
 			]
 			id: "7611918249B75923"
 			subtitle: "time to make some weird friends"
@@ -57,27 +57,27 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7611918249B75923"]
+			dependencies: ["7F1ABCF957C7AE77"]
 			description: [
-				"the &3elven portal&r trades &dweak elementium dust&r (you've had a source of it since initiate) three at a time for two &aelven concentrate&r."
+				"&9purified vinteum ingot&r (dust + arcane ash + a mana flower, then smelt) fed through the &6arcane furnace&r at tier 2, 400 ticks of burn, comes out &6superheated purified vinteum&r -- this tier's real workhorse intermediate."
 				""
-				"feed the portal, collect the concentrate, process it further."
+				"no elves involved. every recipe below eats this directly."
 			]
 			id: "36021729B91C1137"
-			subtitle: "what the elves give back"
+			subtitle: "cooked twice, purified twice"
 			tasks: [{
 				id: "0404B1F210000928"
-				item: "kubejs:elven_concentrate"
+				item: "mna:superheated_purified_vinteum_ingot"
 				type: "item"
 			}]
-			title: "Elven Concentrate"
+			title: "Superheated Purified Vinteum"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["36021729B91C1137"]
 			description: [
-				"weave elven concentrate with a mana pearl and air essentia for &6pixie dust&r, or with a mana diamond and earth+water essentia for &6dragonstone&r."
+				"weave two superheated purified vinteum with a mana pearl and air essentia for &6pixie dust&r, or with a mana diamond and earth+water essentia for &6dragonstone&r."
 			]
 			icon: "botania:pixie_dust"
 			id: "05BE7E00A2F8ABD2"
@@ -125,7 +125,7 @@
 				"05BE7E00A2F8ABD2"
 			]
 			description: [
-				"gravitic rubedo builds this tier's own circuit line: the &6rubedo array&r core (alchemy table, then a furnace pass) and the &6rubedo wizard brain&r (manaweaving altar) both start here."
+				"gravitic rubedo builds this tier's own set of parts: the &6rubedo array&r core (alchemy table, then a furnace pass) and the &6rubedo wizard brain&r (manaweaving altar) both start here."
 				""
 				"a handful of vanilla combines with rubedo plus extrabotany metals round out the set -- motive cores, channeling vessels, ward lattices."
 			]
@@ -146,6 +146,25 @@
 			}]
 			title: "Rubedo Components"
 			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3AD6234979E22204"]
+			description: [
+				"the &6alchemical nexus&r runs a fourth Ritual of the Balanced Scales. an elven source lattice, gravitic residue, and a rubedo item open it; ambrosia and pixie dust or dragonstone carry the middle stages; the final stage folds in two superheated purified vinteum and thaumaturge's own &6wisdom stone: citrinitas&r into &6wisdom stone: rubedo&r."
+				""
+				"wear it and thaumaturge's chimerite shortcut opens: raw materia straight to ingot, no astral observer needed."
+			]
+			id: "14DFD63BB3E9D353"
+			shape: "diamond"
+			subtitle: "the reddening"
+			tasks: [{
+				id: "2CAA0E30B1373FD8"
+				item: "magichem:wisdom_stone_rubedo"
+				type: "item"
+			}]
+			title: "Wisdom Stone: Rubedo"
+			x: 1.5d
 			y: -7.5d
 		}
 	]

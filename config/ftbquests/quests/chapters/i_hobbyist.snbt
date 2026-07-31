@@ -143,13 +143,13 @@
 				type: "item"
 			}]
 			title: "Elemental Fashion"
-			x: 2.0d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["475DA94832CDDEB7"]
 			description: [
-				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates."
+				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates -- plus an &9ichor sigil&r: brew ashen ichor, arcane essentia, and otherworld essence in the heated cauldron for a sigil blank, then charge it at the &4blood altar&r."
 				""
 				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
 			]
@@ -207,14 +207,38 @@
 			}]
 			title: "First Blood"
 			x: -1.5d
-			y: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["501D74B0BE102380"]
+			description: [
+				"blood magic's own guide book, &6sanguine scientiem&r, explains every altar tier, ritual, and sigil this mod ships -- book + glass turns any patchouli guide into it."
+				""
+				"your altar is tier 0 right now. tier 1 needs 8 runes placed around it, tier 2 needs 28, tier 3 needs 56, tier 4 needs 108 -- each tier raises the LP buffer and unlocks pricier recipes. the book's own &6tiers & getting started&r page walks the whole ladder."
+			]
+			id: "775A2410E874BF90"
+			subtitle: "read the book that came with the altar"
+			tasks: [{
+				id: "702058039C085DB5"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sanguine Scientiem"
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["46F3E5D16CC665B8", "501D74B0BE102380"]
 			description: [
 				"the tier's signature metal. &carcane charcoal fragments&r (malum) plus redstone brew into &6ichor dust&r in the cauldron. blend in a pinch of &9vinteum dust&r (mana & artifice), then charge the blend at the &4blood altar&r into &6kindled ichor dust&r."
 				""
-				"smelt the kindled dust into a rough ingot, then finish it at malum's &dspirit altar&r with two infernal spirits bound -- that's &6ashen ichor&r, a real GT material from here on. shortcut once you hit journeyman: vinteum dust + arcane charcoal, no altar chain needed."
+				"smelt the kindled dust into a rough ingot, then finish it at malum's &dspirit altar&r with two infernal spirits bound -- that's &6ashen ichor&r, a real GT material from here on. shortcut once you hit apprentice: vinteum dust + arcane charcoal at the alchemy table, no altar chain needed."
 			]
 			icon: "gtceu:ashen_ichor_ingot"
 			id: "46D4D92DC55B091D"
@@ -228,7 +252,7 @@
 			}]
 			title: "Ashen Ichor"
 			x: 3.5d
-			y: 1.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Dip your toes into the arcane"]

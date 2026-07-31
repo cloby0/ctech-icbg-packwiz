@@ -126,7 +126,7 @@
 		{
 			dependencies: ["42FDEBEBA7998889"]
 			description: [
-				"the tier's signature metal. bind &2terrasteel dust&r at the spirit altar with two aqueous spirits for &9weak elementium dust&r, then combine it with &6ambrosium dust&r and a pinch of &dmagichem essentia&r for &aambrosia-touched elementite&r."
+				"the tier's signature metal. combine &2terrasteel dust&r, &6ambrosium dust&r, and a pinch of &dmagichem essentia&r for &aambrosia-touched elementite&r -- straight off terrasteel now, no altar step."
 				""
 				"three of those trade at an elven workbench for two &6elementium ingots&r."
 			]
@@ -352,7 +352,7 @@
 		}
 		{
 			description: [
-				"bind a &amana gem&r to four &5crying obsidian&r at the eldrin altar for a &6void tear&r -- it swallows an entire stack-type of items into one slot. also the battery for half of reliquary's staves."
+				"bind a &amana gem&r to three &5crying obsidian&r plus an &6elementium sigil&r and &6elementium channeling vessel&r at the eldrin altar for a &6void tear&r -- costs ender affinity power. it swallows an entire stack-type of items into one slot. also the battery for half of reliquary's staves."
 			]
 			dependencies: ["42FDEBEBA7998889"]
 			id: "28B20F274E486CDB"

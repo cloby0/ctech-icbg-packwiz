@@ -38,6 +38,42 @@
 		{
 			dependencies: ["5CCF5C4303843804"]
 			description: [
+				"mana & artifice's own book, the &6codex arcana&r, explains what everything IS -- affinities, spell parts, every device you'll meet. glass panes, a mana-tinted flower, and an ornate table craft the &6occulus&r, a block that tells you what to do next, in order, tier by tier."
+				""
+				"the codex explains the WHAT. the occulus tracks the WHERE. keep both handy."
+			]
+			id: "397F9B92F41539D3"
+			subtitle: "what and what's next"
+			tasks: [{
+				id: "6389D0D34348588E"
+				item: "mna:occulus"
+				type: "item"
+			}]
+			title: "Occulus"
+			x: -3.0d
+			y: -1.125d
+		}
+		{
+			dependencies: ["397F9B92F41539D3"]
+			description: [
+				"magichem doesn't ship its own codex -- it hitches a ride. find the &6wandering wizard&r and right-click her with your &6codex arcana&r in hand to trade it for the &6codex materia&r, explaining every magichem device (alembic, fusery, astral observer, and the rest)."
+				""
+				"she'll trade it back if you ask -- you're not out a book permanently, just borrowing hers for a minute."
+			]
+			id: "235314EFFEE9BF20"
+			subtitle: "borrow, don't buy"
+			tasks: [{
+				id: "7369C46F698E598D"
+				item: "magichem:codex_materia"
+				type: "item"
+			}]
+			title: "Codex Materia"
+			x: -4.0d
+			y: -1.125d
+		}
+		{
+			dependencies: ["5CCF5C4303843804"]
+			description: [
 				"weave an &damethyst shard&r into &5arcane essence&r -- the base reagent for iron's spells and half your future books."
 				""
 				"just the altar, the shard, and two glyphs."

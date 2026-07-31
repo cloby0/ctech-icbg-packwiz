@@ -136,7 +136,7 @@
 		{
 			dependencies: ["302D332A3D2BD619"]
 			description: [
-				"empyrean ichor builds this tier's own circuit line: the &6empyrean array&r core (runic altar, then a terra plate pass) and the &6empyrean wizard brain&r (eldrin altar) both start here."
+				"empyrean ichor builds this tier's own set of parts: the &6empyrean array&r core (runic altar, then a terra plate pass) and the &6empyrean wizard brain&r (eldrin altar) both start here."
 				""
 				"a handful of vanilla combines with ichor plus this tier's own gaian cores round out the set -- motive cores, channeling vessels, ward lattices."
 			]
@@ -157,6 +157,29 @@
 			}]
 			title: "Empyrean Components"
 			x: 5.0d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"71C3F5A0B2D98E40"
+				"64624A72C1208B1D"
+			]
+			description: [
+				"the &6alchemical nexus&r runs a brand-new Ritual of the Balanced Scales -- no jar recipe to re-theme, this one's built for this pack alone. a gaian blood core, gaian holy core, and empyrean wizard brain open it; a gaian annihilation core, nether star, and ender eye carry stage two; three of your grimoires (blood, radiant, eldritch) carry stage three; the final stage folds in two &6empyrean ichor&r and arcanist's own &6wisdom stone: rubedo&r into the &6philosopher's stone&r."
+				""
+				"the book bookends itself: you started boiling essences in a borrowed cauldron, and you end fusing the Magnum Opus's five stages into one stone."
+			]
+			id: "57BA856B368E7C69"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "the great work, complete"
+			tasks: [{
+				id: "79D951418C57CA9B"
+				item: "magichem:philosophers_stone"
+				type: "item"
+			}]
+			title: "Philosopher's Stone"
+			x: 9.0d
 			y: 2.0d
 		}
 		{
