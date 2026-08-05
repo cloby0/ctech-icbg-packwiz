@@ -18,12 +18,12 @@ ServerEvents.recipes(event => {
             }
     ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
-    // Custom fire/water/air/earth essence crafting dropped: MagiChem's Alembic (real, cheap,
-    // entry-tier device -- coal/dirt/feather/etc -> essentia_fire/earth/air/water, wisdom 0, no
-    // Wisdom Stone needed) already produces the real thing. #kubejs:<element>_essences tags now
-    // point at magichem:essentia_<element> instead (itemTags.js) -- every recipe using those
-    // tags picks this up automatically, no other file needed touching. Per user direction
-    // 2026-07-28: let MagiChem be a full-game system, not just a Phase 6 sidebar.
+    // MagiChem is NOT available at Hobbyist. MagiChem's devices gate on Mana & Artifice tiers
+    // (Alembic = MNA T1), MNA T0 is the vinteum ladder, and vinteum is Aether-only -- which the
+    // player cannot reach until Apprentice. So every magichem:essentia_* reference in this file
+    // is replaced by Botania mystical petals, which are genuinely turn-one (Petal Apothecary).
+    // Element mapping used throughout this tier: fire=red, water=blue, earth=brown, air=white.
+    // From Apprentice on, #kubejs:<element>_essences (MagiChem-backed) is the real currency again.
 
     // Four elements combine into a no-steel Nether igniter (magic path; vanilla flint_and_steel untouched)
     // Also the exact item occultism.js's Foliot summon ritual consumes as its gate item --
@@ -32,11 +32,11 @@ ServerEvents.recipes(event => {
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
         "ingredients": [
-            { "item": "magichem:essentia_fire" },
-            { "item": "magichem:essentia_fire" },
-            { "item": "magichem:essentia_water" },
-            { "item": "magichem:essentia_earth" },
-            { "item": "magichem:essentia_air" },
+            { "tag": "botania:petals/red" },
+            { "tag": "botania:petals/red" },
+            { "tag": "botania:petals/blue" },
+            { "tag": "botania:petals/brown" },
+            { "tag": "botania:petals/white" },
             { "item": "minecraft:blaze_powder" },
             { "item": "minecraft:coal" },
             { "item": "occultism:otherworld_essence" }
@@ -87,11 +87,13 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    // 2a. blend in vinteum dust, 2b. Blood Altar charges the blend into kindled ichor dust (small LP tax)
-    event.shapeless('kubejs:vinteum_ichor_blend', ['kubejs:ichor_dust', 'mna:vinteum_dust'])
+    // 2a. blend in livingrock, 2b. Blood Altar charges the blend into kindled ichor dust (small LP tax)
+    // Was vinteum dust -- vinteum is Aether-only now, and the Aether opens at Apprentice.
+    // Livingrock is Pure Daisy output: stone the daisy has grown mana through, available turn one.
+    event.shapeless('kubejs:livingrock_ichor_blend', ['kubejs:ichor_dust', 'botania:livingrock'])
 
     addBloodAltarRecipe(event, {
-        input: 'kubejs:vinteum_ichor_blend',
+        input: 'kubejs:livingrock_ichor_blend',
         output: 'kubejs:kindled_ichor_dust',
         syphon: LP.HOBBYIST / 2,
         upgradeLevel: 0
@@ -167,10 +169,10 @@ ServerEvents.recipes(event => {
             'XEH'
         ],
         {
-            F: 'magichem:essentia_fire',
-            W: 'magichem:essentia_water',
-            A: 'magichem:essentia_air',
-            E: 'magichem:essentia_earth',
+            F: '#botania:petals/red',
+            W: '#botania:petals/blue',
+            A: '#botania:petals/white',
+            E: '#botania:petals/brown',
             B: 'minecraft:book',
             P: '#forge:plates/copper',
             X: 'kubejs:ichor_sigil',
@@ -225,24 +227,76 @@ ServerEvents.recipes(event => {
         upgradeLevel: 0
     })
 
-    // Wizard Brain: Spirit Altar (3rd distinct handler for this tier's item set).
+    // Wizard Brain: Spirit Altar (3rd distinct handler for this tier's item set). Grammar --
+    // a thought vessel (book) plus an animating agent (infernal spirit) bound into tier metal.
     addSpiritInfusion(event, {
         input: 'gtceu:ashen_ichor_ingot',
         output: 'kubejs:ichor_wizard_brain',
+        extraItems: [{ item: 'minecraft:book' }],
         spirits: [{ type: 'infernal', count: 1 }]
     })
+    event.custom({
+        "type": "hexerei:mixingcauldron",
+        "liquid": { "fluid": "minecraft:lava" },
+        "ingredients": [
+            { "item": "gtceu:ashen_ichor_rod" },
+            { "item": "gtceu:ashen_ichor_rod" },
+            { "item": "minecraft:blaze_powder" },
+            { "item": "minecraft:blaze_powder" },
+            { "item": "minecraft:redstone" },
+            { "item": "minecraft:redstone" },
+            { "item": "minecraft:gunpowder" },
+            { "item": "malum:arcane_charcoal" }
+        ],
+        "output": { "item": "kubejs:ichor_motive_core" },
+        "liquidOutput": { "fluid": "minecraft:lava" },
+        "fluidLevelsConsumed": 1000,
+        "heatRequirement": "heated"
+    })
 
-    // Motive Core / Channeling Vessel / Ward Lattice: vanilla craft, shaped, structural/passive parts.
-    // Center item = role signal: rod (kinetic) for Motive, ingot (bulk/flow) for Channeling,
-    // ingot again for Ward -- ashen_ichor has no plate form (GENERATE_ROD only, not structural
-    // by design, see gtceuMaterialRegistry.js).
-    addComponentRecipe(event, 'kubejs:ichor_motive_core', [
-        'gtceu:ashen_ichor_rod', 'gtceu:ashen_ichor_ingot', 'minecraft:blaze_powder'
-    ])
-    addComponentRecipe(event, 'kubejs:ichor_channeling_vessel', [
-        'gtceu:ashen_ichor_ingot', 'magichem:essentia_water', 'kubejs:primordial_organic_muck'
-    ])
-    addComponentRecipe(event, 'kubejs:ichor_ward_lattice', [
-        'gtceu:ashen_ichor_ingot', 'create:iron_sheet', 'magichem:essentia_earth'
-    ])
+    // Channeling Vessel: drawn open on the ground with arcane ashes -- the array IS the vessel
+    // being scribed. Blood Magic's in-world alchemy array, first use of that handler in the pack.
+    addAlchemyArrayRecipe(event, {
+        base: 'bloodmagic:blankslate',
+        thrown: 'gtceu:ashen_ichor_ingot',
+        output: 'kubejs:ichor_channeling_vessel'
+    })
+
+    // Ward Lattice: literally lattice-shaped, hammered flat over an obsidian core.
+    event.shaped(
+        Item.of('kubejs:ichor_ward_lattice', 1),
+        [
+            'I I',
+            ' O ',
+            'IHI'
+        ],
+        {
+            I: 'gtceu:ashen_ichor_ingot',
+            O: 'minecraft:obsidian',
+            H: '#forge:tools/hammers'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    // --- Quick & Dirty Portal Generator: the only way into the Aether ---
+    // Exotic metal does the impossible job (the striker that throws a spark which opens a hole in
+    // the world); mundane silver does the shell and fasteners. Silver has no spring form, so the
+    // return spring is gold. The water bucket is the reagent the frame actually wants -- the
+    // Channeling Vessel is what stores it, which is why that component is the one in here.
+    event.shaped(
+        Item.of('kubejs:quick_and_dirty_portal_generator', 1),
+        [
+            'SPS',
+            'RCR',
+            'WFG'
+        ],
+        {
+            S: 'gtceu:silver_screw',
+            P: 'gtceu:silver_plate',
+            R: 'gtceu:ashen_ichor_rod',
+            C: 'kubejs:ichor_channeling_vessel',
+            W: 'minecraft:water_bucket',
+            F: 'gtceu:gold_spring',
+            G: 'minecraft:glowstone_dust'
+        }
+    )
 });

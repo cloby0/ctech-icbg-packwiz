@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     // Dead ars_nouveau:source_gem across this whole file (never touched by the magic rework's
     // tier phases) swapped for this rework's own tier-signature dust, matched to each recipe's
     // own tier field: Alchemist->distilled_animus_dust, Thaumaturge->starforged_chimerite_dust,
-    // Arcanist->rubedo_core_dust, Sage->kubejs:bound_astral_soul. Fixed 2026-07-28 alongside the
+    // Arcanist->gtceu:katharite_dust, Sage->kubejs:bound_astral_soul. Fixed 2026-07-28 alongside the
     // reported runic_forge/awakened_cumium_embryo error (same failure class: dead item breaks
     // GT .itemInputs()). Helper calls (addEnchantingRecipe/addImbuementRecipe/Source.TIER) left
     // as-is -- they still work (delegate to addEldrinAltarRecipe internally), full modernization
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:book_of_omniscience',
-        items: ['minecraft:book', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:rubedo_sigil', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        items: ['minecraft:book', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:kathar_sigil', 'l2hostility:hostility_essence', 'l2hostility:hostility_essence', 'gtceu:katharite_dust', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:rubedo_core_dust', 'gtceu:rubedo_core_dust'
+            'gtceu:katharite_dust', 'gtceu:katharite_dust'
         ],
         output: 'l2complements:sculkium_ingot',
         source: Source.ARCANIST,
@@ -324,8 +324,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:echo_shard', 'minecraft:echo_shard',
             'minecraft:echo_shard', 'minecraft:echo_shard',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil',
-            'kubejs:rubedo_wizard_brain'
+            'gtceu:prima_materia_dust', 'kubejs:kathar_sigil',
+            'kubejs:kathar_wizard_brain'
         ],
         output: 'l2complements:warden_bone_shard',
         source: Source.ARCANIST,
@@ -336,9 +336,9 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:lightning_rod',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil',
+            'gtceu:prima_materia_dust', 'kubejs:kathar_sigil',
             'minecraft:glass',
-            'kubejs:rubedo_motive_core'
+            'kubejs:kathar_motive_core'
         ],
         output: 'l2complements:storm_core',
         source: Source.ARCANIST,
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
             'minecraft:totem_of_undying',
-            'kubejs:rubedo_channeling_vessel'
+            'kubejs:kathar_channeling_vessel'
         ],
         output: 'l2complements:life_essence',
         source: Source.ARCANIST,
@@ -370,7 +370,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2complements:void_eye',
-        items: ['minecraft:ender_eye', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        items: ['minecraft:ender_eye', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'gtceu:katharite_dust', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -380,9 +380,9 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'l2complements:piglin_rune',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil',
+            'gtceu:prima_materia_dust', 'kubejs:kathar_sigil',
             'l2complements:sculkium_ingot',
-            'kubejs:rubedo_motive_core'
+            'kubejs:kathar_motive_core'
         ],
         output: 'l2complements:blackstone_core',
         source: Source.ARCANIST,
@@ -393,8 +393,8 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             'minecraft:tnt', 'minecraft:tnt',
             'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil',
-            'kubejs:rubedo_motive_core'
+            'gtceu:prima_materia_dust', 'kubejs:kathar_sigil',
+            'kubejs:kathar_motive_core'
         ],
         output: 'l2complements:explosion_shard',
         source: Source.ARCANIST,
@@ -408,56 +408,56 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:charm_of_looting_3',
-        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_wizard_brain'],
+        items: ['nameless_trinkets:ultimate_dust', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'gtceu:katharite_dust', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_wrath',
-        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'minecraft:diamond_sword', 'minecraft:diamond_sword', 'kubejs:rubedo_wizard_brain'],
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'minecraft:diamond_sword', 'minecraft:diamond_sword', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_lust',
-        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:netherite_ingot', 'kubejs:rubedo_wizard_brain'],
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:netherite_ingot', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:curse_of_greed',
-        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'minecraft:gold_block', 'minecraft:gold_block', 'kubejs:rubedo_wizard_brain'],
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'minecraft:gold_block', 'minecraft:gold_block', 'kubejs:kathar_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_life',
-        items: ['minecraft:totem_of_undying', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_channeling_vessel'],
+        items: ['minecraft:totem_of_undying', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'gtceu:katharite_dust', 'kubejs:kathar_channeling_vessel'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_incarceration',
-        items: ['l2complements:sculkium_ingot', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_ward_lattice'],
+        items: ['l2complements:sculkium_ingot', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'gtceu:katharite_dust', 'kubejs:kathar_ward_lattice'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:ring_of_corrosion',
-        items: ['minecraft:anvil', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'gtceu:rubedo_core_dust', 'kubejs:rubedo_motive_core'],
+        items: ['minecraft:anvil', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'gtceu:katharite_dust', 'kubejs:kathar_motive_core'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:flaming_thorn',
-        items: ['minecraft:blaze_rod', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:rubedo_sigil', 'minecraft:soul_campfire', 'kubejs:rubedo_motive_core'],
+        items: ['minecraft:blaze_rod', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'minecraft:soul_campfire', 'kubejs:kathar_motive_core'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -471,7 +471,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'l2hostility:hostility_orb',
-        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'kubejs:rubedo_sigil'],
+        items: ['l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'kubejs:kathar_sigil'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })

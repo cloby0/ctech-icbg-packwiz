@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "irons_spellbooks:alchemist_cauldron_brew",
         "base_fluid": { "Amount": 1000, "FluidName": "irons_spellbooks:epic_ink" },
-        "input": { "item": "kubejs:elven_source_lattice" },
+        "input": { "item": "kubejs:kathar_lattice" },
         "results": [{ "Amount": 250, "FluidName": "irons_spellbooks:legendary_ink" }]
     })
 
@@ -162,21 +162,21 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:technomatic_folio',
-        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot', 'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', '#gtceu:circuits/zpm', 'kubejs:empyrean_sigil'],
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:gravidium_ingot', 'gtceu:gravidium_ingot', 'cataclysm_spellbooks:technomancy_rune', 'cataclysm_spellbooks:technomancy_rune', 'kubejs:kathar_lattice', 'kubejs:kathar_lattice', '#gtceu:circuits/zpm', 'kubejs:empyrean_sigil'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:glacial_grimoire',
-        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', 'irons_spellbooks:ice_rune', 'kubejs:empyrean_wizard_brain'],
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'kubejs:kathar_lattice', 'irons_spellbooks:ice_rune', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
 
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:verdant_chronicle',
-        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:elven_source_lattice', 'kubejs:elven_source_lattice', 'irons_spellbooks:nature_rune', 'kubejs:empyrean_wizard_brain'],
+        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'kubejs:kathar_lattice', 'irons_spellbooks:nature_rune', 'kubejs:empyrean_wizard_brain'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
 
     addMnaManaweavingRecipe(event, {
         output: 'legendary_spellbooks:stormbound_grimoire',
-        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:energized_core', 'kubejs:empyrean_sigil', 'kubejs:elven_source_lattice', 'gtceu:elementium_plate', 'irons_spellbooks:lightning_bottle', 'kubejs:empyrean_motive_core'],
+        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:energized_core', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'gtceu:elementium_plate', 'irons_spellbooks:lightning_bottle', 'kubejs:empyrean_motive_core'],
         patterns: ['mna:star', 'mna:hourglass'],
         tier: 4
     })

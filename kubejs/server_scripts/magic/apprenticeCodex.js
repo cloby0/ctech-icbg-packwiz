@@ -1,20 +1,26 @@
 ServerEvents.recipes(event => {
+    // Keystone tax (2026-08-04). This file was 52 crafting-grid recipes that never touched a magic
+    // device. The mod's spine materials (irons_spellbooks:arcane_ingot, gtceu:luminessence_dust)
+    // ALREADY pass through the Malum Spirit Altar in journeyman.js, so the fix is to tax the
+    // devices and the top-end gear, not the materials:
+    //   K1  apprentice_desk                      -- Manaweaving Altar
+    //   K2  spellcaster_workbench / atelier       -- Runic Altar;  spell_calibration_bench -- Alchemy Table
+    //   K3  the six endgame staves               -- Eldrin Altar
+    // The ~35 mid-tier staves, guns and charms stay in the grid on purpose: they already consume
+    // Spirit-Altar-made arcane ingot and luminessence, so they are not self-contained, and turning
+    // 35 weapon recipes into rituals would be tedious to play for no extra dependency.
 
 
+
+    // K1: the mod's entry device. Manaweaving Altar -- MNA owns study and scribing, and a desk you
+    // learn at should be made by learning.
     event.remove({ id: 'apprenticecodex:apprentice_desk' })
-    event.shaped('apprenticecodex:apprentice_desk', [
-        'CAC',
-        'SSS',
-        'FMF'
-    ], {
-        C: 'gtceu:luminessence_dust',
-        A: 'irons_spellbooks:arcane_essence',
-        S: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences',
-        M: '#forge:tools/mallets'
-    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
-
-    event.remove({ id: 'apprenticecodex:arcanum_in_a_jar' })
+    addMnaManaweavingRecipe(event, {
+        output: 'apprenticecodex:apprentice_desk',
+        items: ['gtceu:luminessence_dust', 'gtceu:luminessence_dust', 'irons_spellbooks:arcane_essence', '#minecraft:wooden_slabs', '#minecraft:wooden_slabs', '#minecraft:wooden_fences'],
+        patterns: ['mna:triangle', 'mna:circle'],
+        tier: 1
+    })
     event.shaped('apprenticecodex:arcanum_in_a_jar', [
         'GAG',
         'GLG',
@@ -70,35 +76,27 @@ ServerEvents.recipes(event => {
     })
 
 
+    // K2a: Runic Altar. The workbench every later staff is assembled on.
     event.remove({ id: 'apprenticecodex:spellcaster_workbench' })
-    event.shaped('apprenticecodex:spellcaster_workbench', [
-        'WSM',
-        'XXX',
-        'FAF'
-    ], {
-        S: 'gtceu:luminessence_dust',
-        X: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences',
-        A: 'irons_spellbooks:arcane_ingot',
-        W: '#forge:tools/saws',
-        M: '#forge:tools/mallets'
-    }).damageIngredient(Ingredient.of('#forge:tools/saws')).damageIngredient(Ingredient.of('#forge:tools/mallets'))
-
+    addRunicAltarRecipe(event, {
+        output: { item: 'apprenticecodex:spellcaster_workbench' },
+        mana: Mana.JOURNEYMAN,
+        ingredients: [
+            { item: 'gtceu:luminessence_dust' },
+            { item: 'irons_spellbooks:arcane_ingot' },
+            { item: 'minecraft:oak_slab', count: 3 },
+            { item: 'minecraft:oak_fence', count: 2 }
+        ]
+    })
+    // K2b: Alchemy Table. Calibration is a measured, LP-fed process, not carpentry.
     event.remove({ id: 'apprenticecodex:spell_calibration_bench' })
-    event.shaped('apprenticecodex:spell_calibration_bench', [
-        'ASI',
-        'XXX',
-        'FDF'
-    ], {
-        A: 'minecraft:amethyst_shard',
-        S: 'gtceu:luminessence_dust',
-        I: 'irons_spellbooks:scroll',
-        X: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences',
-        D: '#forge:tools/screwdrivers'
-    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
-
-    event.remove({ id: 'apprenticecodex:copper_swingcast_staff' })
+    addAlchemyTableRecipe(event, {
+        output: 'apprenticecodex:spell_calibration_bench',
+        input: ['minecraft:amethyst_shard', 'gtceu:luminessence_dust', 'irons_spellbooks:scroll', 'minecraft:oak_slab', 'minecraft:oak_fence'],
+        syphon: LP.JOURNEYMAN,
+        ticks: 200,
+        upgradeLevel: 1
+    })
     event.shaped('apprenticecodex:copper_swingcast_staff', [
         'HAB',
         'SWC',
@@ -338,21 +336,18 @@ ServerEvents.recipes(event => {
         M: '#forge:tools/hammers'
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
+    // K2c: Runic Altar. The atelier is where finished gear gets its character.
     event.remove({ id: 'apprenticecodex:atelier_station' })
-    event.shaped('apprenticecodex:atelier_station', [
-        'BMH',
-        'SSS',
-        'FLF'
-    ], {
-        B: 'apprenticecodex:spellcasters_flask',
-        M: 'irons_spellbooks:magic_cloth',
-        H: 'gtceu:holy_silver_ingot',
-        S: '#minecraft:wooden_slabs',
-        F: '#minecraft:wooden_fences',
-        L: '#forge:tools/mallets'
-    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
-
-    event.remove({ id: 'apprenticecodex:autocast_amulet' })
+    addRunicAltarRecipe(event, {
+        output: { item: 'apprenticecodex:atelier_station' },
+        mana: Mana.JOURNEYMAN,
+        ingredients: [
+            { item: 'apprenticecodex:spellcasters_flask' },
+            { item: 'irons_spellbooks:magic_cloth' },
+            { item: 'gtceu:holy_silver_ingot' },
+            { item: 'minecraft:oak_slab', count: 3 }
+        ]
+    })
     event.shaped('apprenticecodex:autocast_amulet', [
         'HDH',
         'ACA',
@@ -400,21 +395,12 @@ ServerEvents.recipes(event => {
     }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     event.remove({ id: 'apprenticecodex:multipurpose_staffrifle' })
-    event.shaped('apprenticecodex:multipurpose_staffrifle', [
-        'MWL',
-        'DMH',
-        'FTM'
-    ], {
-        M: 'irons_spellbooks:mithril_ingot',
-        W: 'irons_spellbooks:weapon_parts',
-        L: 'irons_spellbooks:cooldown_upgrade_orb',
-        H: 'gtceu:holy_silver_ingot',
-        T: 'gtceu:stainless_steel_ingot',
-        D: '#forge:tools/screwdrivers',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/screwdrivers')).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:circuit_heat_staff' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:multipurpose_staffrifle',
+        items: ['irons_spellbooks:mithril_ingot', 'irons_spellbooks:mithril_ingot', 'irons_spellbooks:mithril_ingot', 'irons_spellbooks:weapon_parts', 'irons_spellbooks:cooldown_upgrade_orb', 'gtceu:holy_silver_ingot'],
+        affinity: 'ender',
+        power: LP.ALCHEMIST
+    })
     event.shaped('apprenticecodex:circuit_heat_staff', [
         'CPH',
         'DWT',
@@ -430,22 +416,12 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apprenticecodex:mithril_freecast_staff' })
-    event.shaped('apprenticecodex:mithril_freecast_staff', [
-        'MAG',
-        'LWP',
-        'D F'
-    ], {
-        A: 'irons_spellbooks:arcane_ingot',
-        G: 'minecraft:glass',
-        L: 'irons_spellbooks:magic_cloth',
-        W: 'irons_spellbooks:weapon_parts',
-        P: 'gtceu:prima_materia_plate',
-        D: 'irons_spellbooks:mithril_scrap',
-        M: '#forge:tools/hammers',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:revolvercast_staff' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:mithril_freecast_staff',
+        items: ['irons_spellbooks:arcane_ingot', 'irons_spellbooks:magic_cloth', 'irons_spellbooks:weapon_parts', 'gtceu:prima_materia_plate', 'irons_spellbooks:mithril_scrap'],
+        affinity: 'air',
+        power: LP.ALCHEMIST
+    })
     event.shaped('apprenticecodex:revolvercast_staff', [
         'DAG',
         'LPM',
@@ -517,20 +493,12 @@ ServerEvents.recipes(event => {
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'apprenticecodex:photon_siphon' })
-    event.shaped('apprenticecodex:photon_siphon', [
-        'PAP',
-        'LSL',
-        'FCS'
-    ], {
-        P: 'gtceu:prima_materia_plate',
-        A: 'irons_spellbooks:arcane_ingot',
-        L: 'gtceu:glass_lens',
-        S: 'irons_spellbooks:mithril_scrap',
-        C: 'gtceu:prima_materia_dust',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:mana_thruster' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:photon_siphon',
+        items: ['gtceu:prima_materia_plate', 'gtceu:prima_materia_plate', 'irons_spellbooks:arcane_ingot', 'gtceu:glass_lens', 'gtceu:glass_lens', 'irons_spellbooks:mithril_scrap'],
+        affinity: 'arcane',
+        power: LP.ALCHEMIST
+    })
     event.shaped('apprenticecodex:mana_thruster', [
         'WSF',
         'PAP',
@@ -676,21 +644,12 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apprenticecodex:zenith_staff' })
-    event.shaped('apprenticecodex:zenith_staff', [
-        'HMS',
-        'FXC',
-        'P  '
-    ], {
-        M: 'irons_spellbooks:mithril_ingot',
-        S: 'irons_spellbooks:divine_soulshard',
-        X: 'botania:manasteel_ingot',
-        C: 'irons_spellbooks:mithril_weave',
-        P: 'irons_spellbooks:weapon_parts',
-        H: '#forge:tools/hammers',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:focus_staffbow' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:zenith_staff',
+        items: ['irons_spellbooks:mithril_ingot', 'irons_spellbooks:divine_soulshard', 'botania:manasteel_ingot', 'irons_spellbooks:mithril_weave', 'irons_spellbooks:weapon_parts'],
+        affinity: 'arcane',
+        power: LP.ALCHEMIST
+    })
     event.shaped('apprenticecodex:focus_staffbow', [
         'CMS',
         'DXS',
@@ -704,47 +663,12 @@ ServerEvents.recipes(event => {
     }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
     event.remove({ id: 'apprenticecodex:illuminate_stellar_staff' })
-    event.shaped('apprenticecodex:illuminate_stellar_staff', [
-        'FYS',
-        ' NY',
-        'X  '
-    ], {
-        Y: 'botania:mana_glass',
-        S: 'minecraft:netherite_sword',
-        N: 'minecraft:nether_star',
-        X: 'botania:manasteel_ingot',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:unite_luna_staff' })
-    event.shaped('apprenticecodex:unite_luna_staff', [
-        'HPS',
-        'FRP',
-        'X  '
-    ], {
-        P: 'botania:mana_glass',
-        S: 'minecraft:netherite_sword',
-        R: 'irons_spellbooks:silver_ring',
-        X: 'botania:manasteel_ingot',
-        H: '#forge:tools/hammers',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:pastel_staff' })
-    event.shaped('apprenticecodex:pastel_staff', [
-        'HMU',
-        'FX ',
-        'P  '
-    ], {
-        M: 'irons_spellbooks:mithril_ingot',
-        U: 'irons_spellbooks:upgrade_orb',
-        X: 'botania:manasteel_ingot',
-        P: 'irons_spellbooks:weapon_parts',
-        H: '#forge:tools/hammers',
-        F: '#forge:tools/files'
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'apprenticecodex:satellite_followcast_amulet' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:illuminate_stellar_staff',
+        items: ['botania:mana_glass', 'botania:mana_glass', 'minecraft:netherite_sword', 'minecraft:nether_star', 'botania:manasteel_ingot'],
+        affinity: 'fire',
+        power: LP.ALCHEMIST
+    })
     event.shaped('apprenticecodex:satellite_followcast_amulet', [
         'X X',
         'ADA',

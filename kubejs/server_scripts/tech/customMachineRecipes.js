@@ -23,7 +23,7 @@ let tierCable = [
 ]
 let tierMagic = [
     'gtceu:luminessence_dust',
-    'gtceu:mana_dust',
+    'botania:mana_powder',
     'gtceu:holy_silver_plate',
     'gtceu:prima_materia_plate',
     'gtceu:manasteel_plate',

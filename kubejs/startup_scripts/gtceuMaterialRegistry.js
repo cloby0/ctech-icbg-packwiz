@@ -156,9 +156,22 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('wicked_spirit')  .protons(40).neutrons(164).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
     event.create('eldritch_spirit').protons(40).neutrons(168).halfLifeSeconds(-1).decayTo(null).symbol('Ml').isIsotope(true)
 
+    // Blood Magic's Demon Realm metal. Real ore line (forge:ores/raw_materials/dusts/ingots/
+    // storage_blocks/hellforged all populated by bloodmagic) -- ore-native, so it gets an element,
+    // not a composition. All item forms setIgnored to bloodmagic's own (gtceuMaterialModification.js).
+    event.create('hellforged')
+        .protons(52)
+        .neutrons(200)
+        .halfLifeSeconds(-1)
+        .decayTo(null)
+        .symbol('Df')
+        .isIsotope(false)
+
     // Souls: afrit_essence (Occultism) + all 5 Blood Magic Demon Will types, isotopes of one shared
     // "soul" element per user direction -- all soul-stuff is one element for composition purposes.
     // Composition-only, same as the spirits above.
+    // Bare `soul` is the lightest isotope: what soul sand carries, used by soul_gem's composition.
+    event.create('soul')              .protons(50).neutrons(166).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
     event.create('afrit_essence')     .protons(50).neutrons(170).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
     event.create('demon_will_raw')        .protons(50).neutrons(174).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
     event.create('demon_will_corrosive')  .protons(50).neutrons(178).halfLifeSeconds(-1).decayTo(null).symbol('Sl').isIsotope(true)
@@ -177,13 +190,39 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // names via GTMaterials.get(), which only sees Materials, not bare Elements -- without these,
     // any material with e.g. c('1x infernal_spirit') silently gets a NULL component and never
     // generates its item (no thrown error). Confirmed dead: ashen_ichor, empyrean_ichor (chains off
-    // it), rubedo_core, starforged_chimerite, distilled_animus.
+    // it), katharite, starforged_chimerite, distilled_animus.
     event.create('infernal_spirit').element('infernal_spirit')
     event.create('earthen_spirit').element('earthen_spirit')
     event.create('aqueous_spirit').element('aqueous_spirit')
     event.create('afrit_essence').element('afrit_essence')
     event.create('demon_will_vengeful').element('demon_will_vengeful')
     event.create('demon_will_destructive').element('demon_will_destructive')
+    event.create('soul').element('soul')
+
+    // Cross-mod source materials. These exist so the magic-tier signature metals can declare an
+    // honest .components() -- before this, hellforged and soul_gem silently dropped out of
+    // empyrean_ichor's composition because neither was a registered Material.
+    // Every item form is setIgnored to the source mod's own item (gtceuMaterialModification.js),
+    // per the canonical-item-direction rule: source-mod-native materials never OEI-merge into gtceu.
+
+    // Demon Realm metal. No .ore() -- the vein is Blood Magic's own Demon Realm worldgen, not a
+    // GT vein, so GT gets the material without claiming the worldgen.
+    event.create('hellforged')
+        .ingot()
+        .element('hellforged')
+        .color(0x6E2233)
+        .secondaryColor(0x2A0E14)
+        .iconSet(GTMaterialIconSet.METALLIC)
+
+    // Occultism's soul gem, from its real Djinni craft ritual: diamond + copper + silver + gold
+    // + 4x soul sand (data/occultism/recipes/ritual/craft_soul_gem.json). Soul sand has no GT
+    // material, so it resolves through the `soul` element twin above.
+    event.create('soul_gem')
+        .gem()
+        .color(0x8FD9E8)
+        .secondaryColor(0x2E4A66)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .components(c('1x diamond'), c('1x copper'), c('1x silver'), c('1x gold'), c('4x soul'))
 
     event.create('ambrosium')
         .gem()
@@ -322,6 +361,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xA9CBE0)
         .iconSet(GTMaterialIconSet.DULL)
 
+    // Botania's livingrock: stone the Pure Daisy has grown mana through. Literally 8 stone + 1 mana.
+    // Dust-only -- botania:livingrock stays the canonical block, GT just gets a macerate/centrifuge
+    // handle on it. Centrifuging returns 8x stone dust + 1x mana (-> botania:mana_powder, which is
+    // setIgnored), so a GT player can run livingrock back into mana powder. Deliberate hybridization
+    // reward, not a magic-lane requirement.
+    event.create('livingrock')
+        .dust()
+        .color(0xB0B0A8)
+        .secondaryColor(0x8FA37E)
+        .iconSet(GTMaterialIconSet.ROUGH)
+        .components(c('8x stone'), c('1x mana'))
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
     event.create('holy_silver')
         .ingot()
         .color(0xe7f79e)
@@ -371,8 +423,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x55f609)
         .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
-        // From the real recipe (journeyman.js): veridium_ingot -> veridium_filings -> +4x Earthen
-        // Spirit -> verdant_charged_filings -> +1x manasteel_block + magichem:essentia_verdant
+        // From the real recipe (journeyman.js): veridium_ingot -> veridium_dust -> +4x Earthen
+        // Spirit -> verdant_charged_dust -> +1x manasteel_block + magichem:essentia_verdant
         // (not a GT material, MagiChem excluded per user direction) -> verdant_grafted_manasteel
         // -> Terra Plate -> Terrasteel.
         .components(c('1x manasteel'), c('1x veridium'), c('4x earthen_spirit'))
@@ -408,7 +460,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
-        // From the real recipe (sorcerer.js): gravitite_ingot -> gravitite_shavings ->
+        // From the real recipe (sorcerer.js): gravitite_ingot -> gravitite_dust ->
         // +magichem:admixture_mountains (not a GT material) -> bound_gravitite ->
         // +botania:life_essence (real item, not a registered GT material) -> gravity_bound_life_essence
         // -> Terra Plate -> Gaia Ingot. Only gravitite maps to a registered GT material.
@@ -419,12 +471,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
-
-    event.create('abstract_metal')
-        .ingot()
-        .color(0xA2A6A2)
-        .secondaryColor(0x505350)
-        .iconSet(GTMaterialIconSet.METALLIC)
 
     event.create('concepts')
         .fluid()
@@ -729,10 +775,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x2A3266)
         .iconSet(GTMaterialIconSet.DULL)
 
-    event.create('rubedo_conduit')
+    event.create('katharite_conduit')
         .dust()
-        .color(0xC23A5C)
-        .secondaryColor(0x5C1A2C)
+        .color(0xCFE3DA)
+        .secondaryColor(0x4E7A6B)
         .iconSet(GTMaterialIconSet.DULL)
 
     event.create('ichor_conduit')
@@ -815,7 +861,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0x601048)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .blastTemp(7500, "high", GTValues.VA[GTValues.ZPM], 2000)
-        .components(c('2x rubedo_conduit'), c('1x uranium_rhodium_dinaquadide'))
+        .components(c('2x katharite_conduit'), c('1x uranium_rhodium_dinaquadide'))
         .cableProperties(GTValues.VA[GTValues.ZPM], 8, 0, true)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -1113,21 +1159,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         // From the real recipe (sage.js): bloodmagic:ingot_hellforged + botania:gaia_ingot ->
         // hallowed_remnant; + mna:greater_mote_arcane -> wellspring_bound_remnant; + ritual with
         // gtceu:ashen_ichor_ingot + occultism:soul_gem -> empyrean_core -> smelt -> ingot.
-        // gaia_spirit (-> botania:gaia_ingot) and ashen_ichor are the only registered GT materials
-        // actually in this chain; hellforged/greater_mote/soul_gem aren't GT materials.
-        .components(c('1x gaia_spirit'), c('1x ashen_ichor'))
+        // hellforged and soul_gem are registered materials now, so the composition is honest --
+        // only mna:greater_mote_arcane still drops out (no GT material, no sane one to invent).
+        .components(c('1x gaia_spirit'), c('1x ashen_ichor'), c('1x hellforged'), c('1x soul_gem'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD
         )
 
-    // Arcanist signature metal (magic rework Phase 8): crafted line, no ore vein -- superheated
-    // purified vinteum + MagiChem rubedo essentia + Blood Magic Hellforged sand + Marid-tier
-    // Occultism essence. No blastTemp on purpose -- magic spine stays GT-free, last step is a
+    // Arcanist signature metal: crafted line, no ore vein. Arcanist's theme is REFINEMENT --
+    // this is vinteum purified one step past what Mana & Artifice itself can do. Renamed from
+    // rubedo_core 2026-08-04; the old name borrowed MagiChem's Magnum Opus, and the chain also
+    // borrowed Sorcerer's `gravitic_` prefix and Initiate's `elven_` prefix. All three swept. No blastTemp on purpose -- magic spine stays GT-free, last step is a
     // literal furnace smelt.
-    event.create('rubedo_core')
+    event.create('katharite')
         .ingot()
-        .color(0x7A1F3D).secondaryColor(0xD4AF37)
+        .color(0xE8F2EE).secondaryColor(0x7FBFA8)
         .iconSet(GTMaterialIconSet.SHINY)
         // From the real recipe (arcanist.js): mna:superheated_purified_vinteum_ingot (an
         // iron-alloy vinteum_ingot derivative, -> vinteum_iron, not pure vinteum)
@@ -1148,10 +1195,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xB23A1F).secondaryColor(0x4A150A)
         .iconSet(GTMaterialIconSet.ROUGH)
         // From the real recipe (hobbyist.js): 4x malum:arcane_charcoal_fragment + 4x redstone ->
-        // ichor dust; + mna:vinteum_dust (-> vinteum) -> kindled ichor; + 2x Infernal Spirit at
-        // the Spirit Altar -> ingot.
-        .components(c('1x carbon'), c('1x redstone'), c('1x vinteum'), c('2x infernal_spirit'))
-        .blastTemp(1400, "low", GTValues.VA[GTValues.ULV], 400)
+        // ichor dust; + botania:livingrock (-> livingrock) -> kindled ichor; + 2x Infernal Spirit
+        // at the Spirit Altar -> ingot. Was vinteum -- vinteum is Aether-only now, and Hobbyist is
+        // pre-Aether, so the blend reagent moved to livingrock (Pure Daisy, genuinely turn-one).
+        .components(c('1x carbon'), c('1x redstone'), c('1x livingrock'), c('2x infernal_spirit'))
+        .blastTemp(1400, "low", GTValues.VA[GTValues.LV], 400)
         .flags(GTMaterialFlags.GENERATE_ROD)
 
     // Sage alt spine: Primal/Wilden beast metal, gaia-independent. Dust from magic chain -> furnace smelt -> ingot.
@@ -1289,10 +1337,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // chimerite gem + MagiChem astral admixture + Blood Magic Vengeful Will + MagiChem Astral
     // Observer starlight infusion. No blastTemp on purpose -- magic spine stays GT-free, last
     // step is a literal furnace smelt (blastTemp would block that per feedback_no_smelting_blast_temp).
+    // Gem, not ingot -- it is chimerite, a gem, star-charged. Nothing about it is smelted:
+    // the chain ends at the Runic Altar, not a furnace.
     event.create('starforged_chimerite')
-        .ingot()
+        .gem()
         .color(0x2E3A87).secondaryColor(0xB8C8FF)
-        .iconSet(GTMaterialIconSet.SHINY)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
         // From the real recipe (thaumaturge.js): mna:chimerite_gem + magichem:admixture_light
         // (neither a GT material) + bloodmagic:basemonstersoul_vengeful (-> demon_will_vengeful).
         .components(c('1x demon_will_vengeful'))

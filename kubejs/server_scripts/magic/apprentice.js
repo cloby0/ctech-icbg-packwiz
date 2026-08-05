@@ -11,12 +11,13 @@ ServerEvents.recipes(event => {
         tier: 1
     });
 
-    // mana lost its ore vein to vinteum (gtceuMaterialRegistry.js) so mana_dust needs a
-    // source of its own -- refine off vinteum_dust here instead of hijacking Occultism's
-    // crusher into transmuting raw_vinteum into a different material (see journeyman.js).
+    // Direction flipped: mana powder -> vinteum, not the reverse. Vinteum's ore is Aether-only
+    // now, so this is what makes it renewable once Botania's mana economy is running. The old
+    // recipe also output `gtceu:mana_dust`, which isn't a real item -- mana's dust is setIgnored
+    // to botania:mana_powder (gtceuMaterialModification.js).
     addMnaManaweavingRecipe(event, {
-        output: 'gtceu:mana_dust',
-        items: ['mna:vinteum_dust'],
+        output: 'mna:vinteum_dust',
+        items: ['botania:mana_powder'],
         patterns: ['mna:circle', 'mna:slash'],
         tier: 1
     });
@@ -29,10 +30,11 @@ ServerEvents.recipes(event => {
         tier: 1
     });
 
-    // bloodmagic:alchemytable's only other recipe (initiate.js) needs ambrosia_touched_elementite,
-    // an Initiate-tier intermediate -- but this tier's own Manasteel chain needs the table two
-    // tiers early. Cheap Apprentice-only bootstrap recipe, coexists with Initiate's harder one
-    // (same output, different recipe id, first one built wins).
+    // The pack's single Alchemy Table recipe. Blood Magic's vanilla one (stone/planks/iron/gold/
+    // blankslate) is removed here -- it's cheap enough to bypass the zanite gate entirely. The
+    // duplicate Initiate-tier recipe was deleted 2026-08-04: identical output meant it never won,
+    // and this tier's own Manasteel chain needs the table anyway.
+    event.remove({ id: 'bloodmagic:alchemy_table' })
     event.shaped(
         Item.of('bloodmagic:alchemytable', 1),
         [
@@ -89,24 +91,12 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // Aether gate (moved here from the old Journeyman slot): glowstone + Hobbyist's Ashen Ichor.
-    // Ward Lattice component: a portal frame's whole job is containing/stabilizing the gate.
-    event.shaped(
-        Item.of('aether:aether_portal_frame', 1),
-        [
-            'XIG',
-            'IHI',
-            'GZY'
-        ],
-        {
-            G: 'minecraft:glowstone',
-            I: 'gtceu:ashen_ichor_ingot',
-            Z: 'kubejs:zanite_ward_lattice',
-            H: '#forge:tools/hammers',
-            X: 'kubejs:zanite_sigil',
-            Y: 'kubejs:zanite_channeling_vessel'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    // Aether portal frame recipe deleted. It was circular: every zanite component in it needs
+    // Manasteel, which needs aether:zanite_gemstone, which only exists in the Aether. The gate is
+    // kubejs:quick_and_dirty_portal_generator (hobbyist.js) via
+    // #aether:aether_portal_activation_items instead. aether:aether_portal_frame stays a
+    // registered creative-only item -- layerRegistry.js uses its texture as the Aether ore-layer
+    // icon, so do NOT obliterate it.
 
     addMnaManaweavingRecipe(event, {
         output: { item: 'kubejs:kerogen', count: 4 },
@@ -175,21 +165,32 @@ ServerEvents.recipes(event => {
     })
 
     // Wizard Brain: Manaweaving Altar t1 (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (book) + animating agent (otherworld essence) in tier metal.
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:zanite_wizard_brain',
-        items: ['botania:manasteel_ingot', 'irons_spellbooks:magic_cloth', 'hexcasting:charged_amethyst'],
+        items: ['botania:manasteel_ingot', 'minecraft:book', 'occultism:otherworld_essence'],
         patterns: ['mna:circle', 'mna:square'],
         tier: 1
     })
+    addManaPondRecipe(event, {
+        input: { item: 'minecraft:piston' },
+        mana: 2 * Mana.APPRENTICE,
+        output: { item: 'kubejs:zanite_motive_core' }
+    })
 
-    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
-    addComponentRecipe(event, 'kubejs:zanite_motive_core', [
-        'gtceu:manasteel_rod', 'minecraft:glowstone_dust', 'botania:manasteel_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:zanite_channeling_vessel', [
-        'botania:manasteel_ingot', 'magichem:admixture_energy', 'minecraft:glow_berries'
-    ])
-    addComponentRecipe(event, 'kubejs:zanite_ward_lattice', [
-        'gtceu:manasteel_plate', 'gtceu:amethyst_dust', 'minecraft:glowstone'
-    ])
+    // Channeling Vessel: a bucket is only a bucket until something is dissolved into its walls.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:zanite_channeling_vessel',
+        input: ['minecraft:bucket', 'botania:manasteel_ingot', 'botania:mana_powder', 'magichem:admixture_energy'],
+        syphon: LP.APPRENTICE,
+        upgradeLevel: 1
+    })
+
+    // Ward Lattice: woven, not forged -- four plates knotted around a rune.
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:zanite_ward_lattice',
+        items: ['gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'irons_spellbooks:protection_rune', 'minecraft:obsidian'],
+        patterns: ['mna:square', 'mna:triangle'],
+        tier: 1
+    })
 })

@@ -88,14 +88,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('rubedo_conduit_dust_mix')
-        .itemInputs('2x gtceu:rubedo_core_dust', '1x minecraft:redstone')
-        .itemOutputs('3x gtceu:rubedo_conduit_dust')
+    event.recipes.gtceu.mixer('katharite_conduit_dust_mix')
+        .itemInputs('2x gtceu:katharite_dust', '1x minecraft:redstone')
+        .itemOutputs('3x gtceu:katharite_conduit_dust')
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.mixer('gravidium_dust_mix')
-        .itemInputs('2x gtceu:rubedo_conduit_dust', '1x gtceu:uranium_rhodium_dinaquadide_dust')
+        .itemInputs('2x gtceu:katharite_conduit_dust', '1x gtceu:uranium_rhodium_dinaquadide_dust')
         .itemOutputs('3x gtceu:gravidium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -660,8 +660,8 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_ingot',
             'kubejs:element_attunement_stone',
             'gtceu:distilled_animus_ingot',
-            'gtceu:starforged_chimerite_ingot',
-            'gtceu:rubedo_core_ingot',
+            'gtceu:starforged_chimerite_gem',
+            'gtceu:katharite_ingot',
             'magichem:essentia_air',
             'gtceu:naquadah_dust'
         ],

@@ -143,6 +143,19 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     // mana: Botania's own dust item is canonical, no gtceu duplicate.
     dust('mana', 'botania:mana_powder')
 
+    // ==== Blood Magic ====
+    // hellforged: Blood Magic ships the whole ore line (forge:ores/raw_materials/dusts/ingots/
+    // storage_blocks/hellforged), so every form is theirs. Registered as a GT material purely so
+    // empyrean_ichor's .components() can name it. Note the ingot/block ids don't follow the usual
+    // <mod>:<material>_<form> pattern -- no assumptionator() here.
+    ingot('hellforged', 'bloodmagic:ingot_hellforged')
+    dust('hellforged', 'bloodmagic:sand_hellforged')
+    rawOre('hellforged', 'bloodmagic:rawdemonite')
+    block('hellforged', 'bloodmagic:dungeon_metal')
+
+    // ==== Occultism ====
+    gem('soul_gem', 'occultism:soul_gem')
+
     // ==== Malum ====
     ingot('hallowed_gold', 'malum:hallowed_gold_ingot')
     nugget('hallowed_gold', 'malum:hallowed_gold_nugget')

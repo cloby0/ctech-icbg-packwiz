@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         output: 'kubejs:prima_materia_seed',
         input: ['kubejs:chaos_essence', 'gtceu:holy_silver_ingot', 'magichem:admixture_potential'],
         syphon: LP.SORCERER,
-        upgradeLevel: 4
+        upgradeLevel: 2
     })
 
     // afrit_essence already used once in this file (resonant_gravitite_core above) -- a
@@ -130,6 +130,27 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
+    // --- Pixie Dust / Dragonstone: moved here from arcanist.js 2026-08-04 ---
+    // Botania's own elven_trade recipes for both are removed (arcanist.js). Pixie Dust is a hard
+    // requirement of the Gaia Pylon (mana_pylon + 2x elementium_ingot + 2x pixie_dust), the Gaia
+    // Pylon is a hard requirement of the Ritual of Gaia, and the Guardian of Gaia is this pack's
+    // only source of botania:life_essence -- which this tier's own Gaia Spirit Ingot chain needs.
+    // Gating them at Arcanist made Sorcerer uncompletable. Superheated purified vinteum swapped for
+    // plain purified vinteum: superheating is Arcanist-tier Runeforge work.
+    addMnaManaweavingRecipe(event, {
+        output: { item: 'botania:pixie_dust', count: 3 },
+        items: ['botania:mana_pearl', 'mna:purified_vinteum_ingot', 'mna:purified_vinteum_ingot', '#kubejs:air_essences', '#kubejs:air_essences'],
+        patterns: ['mna:split_triangle', 'mna:knot4'],
+        tier: 3
+    })
+
+    addMnaManaweavingRecipe(event, {
+        output: { item: 'botania:dragonstone', count: 2 },
+        items: ['botania:mana_diamond', 'mna:purified_vinteum_ingot', 'mna:purified_vinteum_ingot', '#kubejs:earth_essences', '#kubejs:water_essences'],
+        patterns: ['mna:split_triangle', 'mna:knot3'],
+        tier: 3
+    })
+
     // --- Gaia Ingot: Sorcerer signature material, gravitite chain. Botania's ladder ends here. ---
     // Life Essence dependency: botania:life_essence is a Gaia Guardian boss drop (sage.js also
     // has its own craftable route, positioned after Sorcerer in the tier ladder -- left as-is).
@@ -139,19 +160,22 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'occultism:crushing',
         ingredient: { item: 'aether_redux:gravitite_ingot' },
-        result: { item: 'kubejs:gravitite_shavings' },
-    }).id('kubejs:crushing/gravitite_ingot_to_shavings')
+        result: { item: 'gtceu:gravitite_dust' },
+    }).id('kubejs:crushing/gravitite_ingot_to_dust')
 
-    // upgradeLevel 4 IS the Master Orb requirement -- a BM Alchemy Table only reaches T4 with
-    // Master-tier rune investment, so the orb itself doesn't need to be a consumed ingredient here.
+    // upgradeLevel is a 0-indexed BLOOD ORB tier, not an altar tier: 0 Weak, 1 Apprentice,
+    // 2 Magician, 3 Master, 4 Archmage (proven by bloodmagic's own altar orb recipes -- weakbloodorb
+    // is upgradeLevel 0 at a T1 altar, archmagebloodorb is 4 at a T5 altar). This was 4, which
+    // demanded an Archmage orb and therefore a Tier-5 altar and a Demon Realm trip, at the 5th of
+    // 9 magic tiers. Now 2 = Magician orb = Tier-3 altar, per the pack's altar/tier map.
     // magichem:admixture_mountains is a real MagiChem admixture (confirmed in the jar lang file)
     // -- heavy/dense stone theme fits gravitite. Per user direction 2026-07-28: make MagiChem
     // load-bearing, not just a background essence tag.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:bound_gravitite',
-        input: ['kubejs:gravitite_shavings', 'magichem:admixture_mountains'],
+        input: ['gtceu:gravitite_dust', 'magichem:admixture_mountains'],
         syphon: LP.SORCERER,
-        upgradeLevel: 4
+        upgradeLevel: 2
     })
 
     event.shapeless('kubejs:gravity_bound_life_essence', ['kubejs:bound_gravitite', 'botania:life_essence'])
@@ -187,24 +211,45 @@ ServerEvents.recipes(event => {
     })
 
     // Wizard Brain: Manaweaving Altar t2 (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (spell book) + animating agent (afrit essence).
     addMnaManaweavingRecipe(event, {
         output: 'kubejs:gravitic_wizard_brain',
-        items: ['botania:gaia_ingot', 'kubejs:element_attunement_stone', 'occultism:afrit_essence'],
+        items: ['botania:gaia_ingot', 'occultism:dictionary_of_spirits', 'occultism:afrit_essence', 'kubejs:element_attunement_stone'],
         patterns: ['mna:knot2', 'mna:diamond'],
         tier: 2
     })
+    addOccultismRitual(event, {
+        name: 'gravitic_motive_core',
+        tier: 'afrit',
+        output: 'kubejs:gravitic_motive_core',
+        duration: 120,
+        ingredients: [
+            { item: 'gtceu:gaia_spirit_rod' },
+            { item: 'kubejs:resonant_gravitite_core' },
+            { item: 'minecraft:piston' },
+            { item: 'occultism:afrit_essence' }
+        ]
+    })
 
-    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment), anchored on
-    // the tier's actual signature (Gaia Ingot) -- prima_materia is a parallel line, ring flavor only.
-    addComponentRecipe(event, 'kubejs:gravitic_motive_core', [
-        'gtceu:gaia_spirit_rod', 'kubejs:resonant_gravitite_core', 'irons_spellbooks:pyrium_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:gravitic_channeling_vessel', [
-        'botania:gaia_ingot', 'kubejs:chaos_essence', 'magichem:essentia_fire'
-    ])
-    addComponentRecipe(event, 'kubejs:gravitic_ward_lattice', [
-        'gtceu:gaia_spirit_plate', 'bloodmagic:basemonstersoul_steadfast', 'gtceu:prima_materia_plate'
-    ])
+    // Channeling Vessel: runic work, not a grid craft.
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:gravitic_channeling_vessel' },
+        mana: Mana.SORCERER,
+        ingredients: [
+            { item: 'botania:gaia_ingot' },
+            { item: 'botania:mana_bottle' },
+            { item: 'kubejs:chaos_essence' },
+            { item: 'botania:rune_water' }
+        ]
+    })
+
+    // Ward Lattice: Steadfast Will is the defensive aspect -- dissolved into the plate.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:gravitic_ward_lattice',
+        input: ['gtceu:gaia_spirit_plate', 'bloodmagic:basemonstersoul_steadfast', 'gtceu:prima_materia_plate', 'botania:rune_earth'],
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
+    })
 
     // Wisdom Stone: Albedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
     // Sorcerer's own material line. Materia kept verbatim from the mod's own albedo recipe

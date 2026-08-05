@@ -1,20 +1,18 @@
 ServerEvents.recipes(event => {
 
+    // K1, and the shared keystone for Inventory Pets too (inventoryPets.js): an animated body.
+    // Malum Spirit Altar, not a crafting grid -- you are putting a spirit into a clay shell, and
+    // that one recipe gates two entire mods.
     event.remove({ id: 'modulargolems:metal_golem_template' })
-    event.shaped(
-        Item.of('modulargolems:metal_golem_template', 1),
-        [
-            'ZHC',
-            'HSH',
-            'CHC'
+    addSpiritInfusion(event, {
+        input: { item: 'minecraft:clay_ball', count: 4 },
+        output: 'modulargolems:metal_golem_template',
+        extraItems: [
+            { item: 'gtceu:holy_silver_plate', count: 4 },
+            { item: 'irons_spellbooks:divine_pearl' }
         ],
-        {
-            C: 'minecraft:clay_ball',
-            H: 'gtceu:holy_silver_plate',
-            S: 'irons_spellbooks:divine_pearl',
-            Z: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+        spirits: [{ type: 'earthen', count: 4 }, { type: 'arcane', count: 2 }]
+    })
 
     event.remove({ id: 'modulargolems:empty_upgrade' })
     event.shaped(
@@ -32,41 +30,37 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
 
+    // K2: the workbench where golems are actually assembled -- Botania's Runic Altar, because
+    // binding a body to a purpose is rune work.
     event.remove({ id: 'modulargolems:golem_workbench' })
-    event.shaped(
-        Item.of('modulargolems:golem_workbench', 1),
-        [
-            'MgM',
-            'WTR',
-            'EIE'
-        ],
-        {
-            M: 'gtceu:manasteel_plate',
-            g: 'modulargolems:golem_slicing_axe',
-            R: 'minecraft:redstone',
-            T: 'minecraft:smithing_table',
-            E: 'minecraft:echo_shard',
-            I: 'minecraft:anvil',
-            W: '#forge:tools/wrenches'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
+    addRunicAltarRecipe(event, {
+        output: { item: 'modulargolems:golem_workbench' },
+        mana: Mana.JOURNEYMAN,
+        ingredients: [
+            { item: 'gtceu:manasteel_plate', count: 2 },
+            { item: 'modulargolems:golem_slicing_axe' },
+            { item: 'minecraft:smithing_table' },
+            { item: 'minecraft:anvil' },
+            { item: 'minecraft:echo_shard', count: 2 }
+        ]
+    })
 
+    // K3: the late expansion template -- an Afrit ritual. This is what lets a golem exceed its
+    // original build, so it is the mod's capstone gate rather than another grid craft.
     event.remove({ id: 'modulargolems:diamond_expansion_template' })
-    event.shaped(
-        Item.of('modulargolems:diamond_expansion_template', 1),
-        [
-            'AZA',
-            'DPD',
-            'ACA'
-        ],
-        {
-            A: 'modulargolems:empty_upgrade',
-            C: 'minecraft:diamond',
-            D: 'irons_spellbooks:divine_pearl',
-            P: 'gtceu:manasteel_plate',
-            Z: '#forge:tools/screwdrivers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
+    addOccultismRitual(event, {
+        name: 'diamond_expansion_template',
+        tier: 'afrit',
+        output: 'modulargolems:diamond_expansion_template',
+        duration: 120,
+        ingredients: [
+            { item: 'modulargolems:empty_upgrade', count: 4 },
+            { item: 'minecraft:diamond', count: 2 },
+            { item: 'irons_spellbooks:divine_pearl', count: 2 },
+            { item: 'gtceu:manasteel_plate' },
+            { item: 'occultism:afrit_essence' }
+        ]
+    })
 
     event.remove({ id: 'modulargolems:netherite_expansion_template' })
     event.shaped(

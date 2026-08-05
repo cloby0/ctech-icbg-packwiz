@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
             ],
             {
                 A: 'gtceu:lead_plate',
-                B: 'kubejs:veridium_filings',
+                B: 'gtceu:veridium_dust',
                 C: 'kubejs:veridian_sigil',
                 H: '#forge:tools/hammers',
                 X: 'kubejs:veridian_wizard_brain'
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
             {
                 A: '#forge:plates/iron',
                 B: 'minecraft:glass',
-                C: 'kubejs:veridium_filings',
+                C: 'gtceu:veridium_dust',
                 D: '#forge:rods/silver',
                 F: '#forge:tools/files',
                 W: 'kubejs:veridian_wizard_brain',
@@ -133,18 +133,37 @@ ServerEvents.recipes(event => {
     // mana_dust (mana lost its ore vein, see gtceuMaterialRegistry.js) is sourced instead
     // via a Manaweaving Altar refine off vinteum_dust -- see apprentice.js.
 
+    event.remove({ id: 'botania:runic_altar' })
+    event.remove({ id: 'botania:gaia_ingot' })
+    event.remove({ id: 'botania:runic_altar_alt' })
+    event.shaped(
+        Item.of('botania:runic_altar', 1),
+        [
+            'WAA',
+            'DCD',
+            'BAB'
+        ],
+        {
+            A: 'botania:livingrock_bricks',
+            B: 'botania:livingrock',
+            C: 'botania:mana_diamond',
+            D: 'gtceu:manasteel_bolt',
+            W: '#forge:tools/wrenches'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
+
     // --- Terrasteel: Journeyman signature material, veridium chain ---
     // Magic spine stays GT-free: Occultism crushing (same pattern as raw_mana above), Spirit
     // Altar, Alchemy Table -- no GT machine anywhere in this chain.
     event.custom({
         type: 'occultism:crushing',
         ingredient: { item: 'aether_redux:veridium_ingot' },
-        result: { item: 'kubejs:veridium_filings' },
-    }).id('kubejs:crushing/veridium_ingot_to_filings')
+        result: { item: 'gtceu:veridium_dust' },
+    }).id('kubejs:crushing/veridium_ingot_to_dust')
 
     addSpiritInfusion(event, {
-        input: 'kubejs:veridium_filings',
-        output: 'kubejs:verdant_charged_filings',
+        input: 'gtceu:veridium_dust',
+        output: 'kubejs:verdant_charged_dust',
         spirits: [{ type: 'earthen', count: 4 }]
     })
 
@@ -153,7 +172,7 @@ ServerEvents.recipes(event => {
     // make MagiChem load-bearing, not just a background essence tag.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:verdant_grafted_manasteel',
-        input: ['kubejs:verdant_charged_filings', 'botania:manasteel_block', 'magichem:essentia_verdant'],
+        input: ['kubejs:verdant_charged_dust', 'botania:manasteel_block', 'magichem:essentia_verdant'],
         syphon: LP.JOURNEYMAN
     })
 
@@ -184,7 +203,7 @@ ServerEvents.recipes(event => {
         input: 'kubejs:enchanted_zanite_gem',
         output: 'kubejs:resonant_zanite_crystal',
         extraItems: [
-            { item: 'kubejs:verdant_charged_filings', count: 2 },
+            { item: 'kubejs:verdant_charged_dust', count: 2 },
             { item: 'occultism:spirit_attuned_crystal' }
         ],
         spirits: [{ type: 'arcane', count: 2 }, { type: 'aerial' }]
@@ -247,28 +266,45 @@ ServerEvents.recipes(event => {
 
     addAlchemyTableRecipe(event, {
         output: 'kubejs:veridian_sigil',
-        input: ['kubejs:veridian_sigil_blank', 'kubejs:veridium_filings', 'irons_spellbooks:arcane_ingot'],
+        input: ['kubejs:veridian_sigil_blank', 'gtceu:veridium_dust', 'irons_spellbooks:arcane_ingot'],
         syphon: LP.JOURNEYMAN,
         ticks: 200
     })
 
     // Wizard Brain: Terra Plate (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (spell book) + animating agent (spirit attuned crystal).
     addTerraPlateRecipe(event, {
         result: 'kubejs:veridian_wizard_brain',
         mana: Mana.JOURNEYMAN,
-        ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:arcane_ingot', 'kubejs:resonant_zanite_crystal']
+        ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:iron_spell_book', 'occultism:spirit_attuned_crystal']
+    })
+    addMnaArcaneFurnaceRecipe(event, {
+        input: 'kubejs:verdant_charged_dust',
+        output: 'kubejs:veridian_motive_core',
+        burnTime: 400,
+        tier: 2
     })
 
-    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
-    addComponentRecipe(event, 'kubejs:veridian_motive_core', [
-        'gtceu:terrasteel_rod', 'botania:terrasteel_ingot', 'kubejs:veridium_filings'
-    ])
-    addComponentRecipe(event, 'kubejs:veridian_channeling_vessel', [
-        'botania:terrasteel_ingot', 'aether:ambrosium_shard', 'kubejs:enchanted_zanite_gem'
-    ])
-    addComponentRecipe(event, 'kubejs:veridian_ward_lattice', [
-        'gtceu:terrasteel_plate', 'botania:terrasteel_ingot', 'irons_spellbooks:protection_rune'
-    ])
+    // Channeling Vessel: enchanted at the Aether Altar, the way zanite itself is.
+    event.custom({
+        "type": "aether:enchanting",
+        "ingredient": { "item": "botania:mana_bottle" },
+        "result": { "item": "kubejs:veridian_channeling_vessel" },
+        "cookingtime": 400,
+        "experience": 1.0
+    })
+
+    // Ward Lattice: runic work -- the altar binds the protection into the plate directly.
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:veridian_ward_lattice' },
+        mana: Mana.JOURNEYMAN,
+        ingredients: [
+            { item: 'gtceu:terrasteel_plate' },
+            { item: 'gtceu:terrasteel_plate' },
+            { item: 'irons_spellbooks:protection_rune' },
+            { item: 'minecraft:crying_obsidian' }
+        ]
+    })
 
     // Wisdom Stone: Nigredo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
     // Journeyman's own material line -- components swapped from MagiChem's generic endgame items,
@@ -286,7 +322,7 @@ ServerEvents.recipes(event => {
             {
                 experience: 45,
                 components: [
-                    { item: 'kubejs:veridium_filings' },
+                    { item: 'gtceu:veridium_dust' },
                     { item: 'kubejs:resonant_zanite_crystal' },
                     { item: 'kubejs:veridian_sigil' }
                 ],

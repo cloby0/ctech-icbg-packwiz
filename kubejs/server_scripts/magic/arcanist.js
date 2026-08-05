@@ -22,32 +22,23 @@ ServerEvents.recipes(event => {
     // elven_source_lattice: dead ars_nouveau:source_gem x2 swapped for this tier's own new
     // intermediate, 2x gravitic residue.
     addEldrinAltarRecipe(event, {
-        output: 'kubejs:elven_source_lattice',
-        items: ['mna:superheated_purified_vinteum_ingot', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'kubejs:gravitic_residue', 'kubejs:gravitic_residue'],
+        output: 'kubejs:kathar_lattice',
+        items: ['mna:superheated_purified_vinteum_ingot', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'kubejs:katharic_residue', 'kubejs:katharic_residue'],
         affinity: 'arcane',
         power: LP.ARCANIST
     })
 
     // raw_mana -> source_gem x5: dead reagent and output. Dropped outright, no port needed.
 
-    addMnaManaweavingRecipe(event, {
-        output: { item: 'botania:pixie_dust', count: 3 },
-        items: ['botania:mana_pearl', 'mna:superheated_purified_vinteum_ingot', 'mna:superheated_purified_vinteum_ingot', '#kubejs:air_essences', '#kubejs:air_essences'],
-        patterns: ['mna:star', 'mna:diamond'],
-        tier: 4
-    })
-
-    addMnaManaweavingRecipe(event, {
-        output: { item: 'botania:dragonstone', count: 2 },
-        items: ['botania:mana_diamond', 'mna:superheated_purified_vinteum_ingot', 'mna:superheated_purified_vinteum_ingot', '#kubejs:earth_essences', '#kubejs:water_essences'],
-        patterns: ['mna:square', 'mna:diamond'],
-        tier: 4
-    })
+    // Pixie Dust and Dragonstone moved to sorcerer.js 2026-08-04. They were only here because
+    // Elementium used to be an Arcanist material; Elementium is Initiate-tier now, and Pixie Dust
+    // gates the Gaia Pylon, which gates the Gaia Guardian, which is Sorcerer's only source of
+    // botania:life_essence. Leaving them here made Sorcerer uncompletable.
 
 
     // --- Rubedo Core: Arcanist signature material ---
     // Magic spine stays GT-free: vanilla combine, real Blood Magic Alchemy Table, real Occultism
-    // ritual, plain furnace smelt (rubedo_core has no blastTemp on purpose).
+    // ritual, plain furnace smelt (katharite has no blastTemp on purpose).
     //
     // "Grand Circle of Fabrication + worn Wisdom Stone" per the design spec doesn't work for a
     // custom output item -- verified against MagiChem's real recipes: Circle of Fabrication runs
@@ -56,26 +47,26 @@ ServerEvents.recipes(event => {
     // and Phase 7 (Fusery) already hit. Vanilla combine instead -- magichem:essentia_rubedo is a
     // real base Essentia (confirmed in the jar's lang file) and keeps the Rubedo theme intact
     // without needing the Wisdom Stone equipped/consumed at all.
-    event.shapeless('kubejs:rubedo_touched_vinteum', ['mna:superheated_purified_vinteum_ingot', 'magichem:essentia_rubedo'])
+    event.shapeless('kubejs:clarified_vinteum', ['mna:superheated_purified_vinteum_ingot', 'magichem:essentia_rubedo'])
 
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:gravitic_residue',
-        input: ['kubejs:rubedo_touched_vinteum', 'bloodmagic:sand_hellforged'],
+        output: 'kubejs:katharic_residue',
+        input: ['kubejs:clarified_vinteum', 'bloodmagic:sand_hellforged'],
         syphon: LP.ARCANIST
     })
 
     addOccultismRitual(event, {
-        name: 'bound_gravitic_core',
+        name: 'katharite_core',
         tier: 'marid',
-        output: 'kubejs:bound_gravitic_core',
+        output: 'kubejs:katharite_core',
         duration: 150,
         ingredients: [
-            { item: 'kubejs:gravitic_residue' },
+            { item: 'kubejs:katharic_residue' },
             { item: 'occultism:afrit_essence' }
         ]
     })
 
-    event.smelting('gtceu:rubedo_core_ingot', 'kubejs:bound_gravitic_core')
+    event.smelting('gtceu:katharite_ingot', 'kubejs:katharite_core')
 
     // Shortcut (Sage+, Philosopher's Stone worn): Alembic/Distillery fabricates the ingot straight
     // from materia, real wisdom-field gate (philosophers_stone, wisdom:4).
@@ -85,7 +76,7 @@ ServerEvents.recipes(event => {
         categories: 1,
         output_rate: 1.0,
         batch_size: 3,
-        object: { item: 'gtceu:rubedo_core_ingot' },
+        object: { item: 'gtceu:katharite_ingot' },
         components: [
             { item: 'magichem:essentia_rubedo', count: 60 },
             { item: 'magichem:admixture_potential', count: 35 },
@@ -96,31 +87,51 @@ ServerEvents.recipes(event => {
     // --- Microcrafting: Arcanist circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> furnace.
     addAlchemyTableRecipe(event, {
-        output: 'kubejs:rubedo_sigil_blank',
-        input: ['gtceu:rubedo_core_ingot', 'kubejs:elven_source_lattice', 'botania:dragonstone'],
+        output: 'kubejs:kathar_sigil_blank',
+        input: ['gtceu:katharite_ingot', 'kubejs:kathar_lattice', 'botania:dragonstone'],
         syphon: LP.ARCANIST,
         ticks: 200
     })
 
-    event.smelting('kubejs:rubedo_sigil', 'kubejs:rubedo_sigil_blank')
+    event.smelting('kubejs:kathar_sigil', 'kubejs:kathar_sigil_blank')
 
     // Wizard Brain: Manaweaving Altar (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (akashic bookshelf -- stored, queryable knowledge) + animating
+    // agent (pixie dust).
     addMnaManaweavingRecipe(event, {
-        output: 'kubejs:rubedo_wizard_brain',
-        items: ['gtceu:rubedo_core_ingot', 'mna:superheated_purified_vinteum_ingot', 'botania:pixie_dust'],
+        output: 'kubejs:kathar_wizard_brain',
+        items: ['gtceu:katharite_ingot', 'hexcasting:akashic_bookshelf', 'botania:pixie_dust', 'mna:superheated_purified_vinteum_ingot'],
         patterns: ['mna:diamond', 'mna:knot3'],
         tier: 3
     })
+    addMnaArcaneFurnaceRecipe(event, {
+        input: 'gtceu:katharite_rod',
+        output: 'kubejs:kathar_motive_core',
+        burnTime: 800,
+        tier: 4
+    })
 
-    addComponentRecipe(event, 'kubejs:rubedo_motive_core', [
-        'gtceu:rubedo_core_rod', 'extrabotany:aerialite_ingot', 'gtceu:rubedo_core_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:rubedo_channeling_vessel', [
-        'gtceu:rubedo_core_ingot', 'mna:superheated_purified_vinteum_ingot', 'extrabotany:photonium_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:rubedo_ward_lattice', [
-        'gtceu:rubedo_core_plate', 'extrabotany:shadowium_ingot', 'botania:dragonstone'
-    ])
+    // Channeling Vessel: hellforged sand scours the bucket out from the inside.
+    addArcRecipe(event, {
+        input: 'gtceu:concepts_bucket',
+        tool: '#forge:tools/wrenches',
+        output: 'kubejs:kathar_channeling_vessel',
+        bonusOutputs: [{ item: 'extrabotany:photonium_ingot', chance: 0.2 }]
+    })
+
+    // Ward Lattice: Marid-bound. Shadowium wants a spirit strong enough to hold it still.
+    addOccultismRitual(event, {
+        name: 'kathar_ward_lattice',
+        tier: 'marid',
+        output: 'kubejs:kathar_ward_lattice',
+        duration: 180,
+        ingredients: [
+            { item: 'gtceu:katharite_plate' },
+            { item: 'extrabotany:shadowium_ingot' },
+            { item: 'minecraft:netherite_scrap' },
+            { item: 'occultism:afrit_essence' }
+        ]
+    })
 
     // Wisdom Stone: Rubedo (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
     // Arcanist's own material line. Materia kept verbatim from the mod's own rubedo recipe
@@ -138,9 +149,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 135,
                 components: [
-                    { item: 'kubejs:elven_source_lattice' },
-                    { item: 'kubejs:gravitic_residue' },
-                    { item: 'kubejs:rubedo_wizard_brain' }
+                    { item: 'kubejs:kathar_lattice' },
+                    { item: 'kubejs:katharic_residue' },
+                    { item: 'kubejs:kathar_wizard_brain' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_potential', count: 100 },
@@ -180,9 +191,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 270,
                 components: [
-                    { item: 'kubejs:rubedo_touched_vinteum' },
+                    { item: 'kubejs:clarified_vinteum' },
                     { item: 'magichem:wisdom_stone_citrinitas' },
-                    { item: 'kubejs:rubedo_touched_vinteum' }
+                    { item: 'kubejs:clarified_vinteum' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_change', count: 100 },

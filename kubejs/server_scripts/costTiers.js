@@ -5,6 +5,10 @@
 
 const MANA_PER_SOURCE = 2
 
+// Tier order is Hobbyist -> ... -> Sage -> PROPHET -> ASCENDANT. Ascendant consumes Prophet's
+// outputs (ascendant.js builds from draconic_sanguinary/sanctum/dracontine_codex/
+// chronicle_of_dominion), so Prophet is the cheaper of the two. Both were previously listed the
+// other way round, which inverted the curve at the two hardest tiers in the pack.
 const Source = {
     HOBBYIST: 100,
     APPRENTICE: 250,
@@ -15,8 +19,8 @@ const Source = {
     THAUMATURGE: 8000,
     ARCANIST: 16000,
     SAGE: 32000,
-    ASCENDANT: 64000,
-    PROPHET: 128000
+    PROPHET: 64000,
+    ASCENDANT: 128000
 }
 
 const Mana = {}
@@ -31,6 +35,9 @@ global.Mana = Mana
 // off Ars Nouveau (magic rework Phase 1+). Placeholder scale pending in-game LP generation rate
 // verification (Blood Magic altar/sacrifice/Well of Suffering throughput is a code constant, not
 // in datapack JSON).
+// Same ordering rule as Source above. Monotonic through the whole tree -- Prophet and Ascendant
+// used to sit BELOW Sage (65k and 95k against Sage's 100k) despite being the two tiers after it.
+// Rough shape: ~2x per tier early, tapering to ~1.5x once Blood Altar throughput scales.
 const LP = {
     HOBBYIST: 500,
     APPRENTICE: 1500,
@@ -41,8 +48,8 @@ const LP = {
     THAUMATURGE: 35000,
     ARCANIST: 55000,
     SAGE: 100000,
-    PROPHET: 65000,
-    ASCENDANT: 95000
+    PROPHET: 160000,
+    ASCENDANT: 250000
 }
 
 global.LP = LP

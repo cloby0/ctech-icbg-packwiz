@@ -17,103 +17,22 @@ ServerEvents.recipes(event => {
     // genuinely Hobbyist-tier accessible, matching Botania's own "most important early flower"
     // design intent. Per user direction 2026-07-31.
 
+    // --- Abstract Metal line REMOVED 2026-08-04 ---
+    // The whole concepts_bucket -> metal_form_bucket -> disorganized_metal_form ->
+    // abstract_metal_ingot chain, the Mana Pond iron bypass, and the nine "abstract ingot +
+    // essence tag -> named metal" ore-sort recipes are gone. It was a leftover from when Manasteel
+    // lived at this tier, it was a strictly worse way to automate ores than Occultism's miner
+    // spirits, and its `disorganized_metal_form` step consumed ad_astra:ice_shard -- a Moon-only
+    // resource, i.e. a hard tech-line dependency inside the magic lane. Every downstream consumer
+    // was repointed to gtceu:prima_materia_ingot.
+    //
+    // gtceu:concepts_bucket survives as a craftable container (it is the Channeling Vessel article
+    // from Alchemist on); metal_form_bucket and disorganized_metal_form do not.
     addEldrinAltarRecipe(event, {
         output: 'gtceu:concepts_bucket',
         items: ['minecraft:bucket', 'gtceu:prima_materia_block', 'minecraft:experience_bottle', 'minecraft:experience_bottle', 'hexcasting:charged_amethyst'],
         affinity: 'arcane',
         power: LP.ALCHEMIST
-    })
-
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:metal_form_bucket',
-        items: ['gtceu:concepts_bucket', 'gtceu:holy_silver_block'],
-        patterns: ['mna:triangle', 'mna:slash'],
-        tier: 3
-    })
-
-    // otherworld_essence is renewable via the Datura farming loop (occultism.js spirit_fire
-    // recipes), no spirit-tier ceiling -- works as an ongoing Occultism tax through the top
-    // half of the tree, where there's no higher spirit to summon past Marid (Sorcerer).
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:disorganized_metal_form',
-        items: ['gtceu:metal_form_bucket', 'ad_astra:ice_shard', 'ad_astra:ice_shard', 'ad_astra:ice_shard', 'occultism:otherworld_essence'],
-        affinity: 'water',
-        power: LP.ALCHEMIST
-    })
-
-    event.smelting('gtceu:abstract_metal_ingot', 'kubejs:disorganized_metal_form')
-
-    // Repeat-friendly bypass for the ritual chain above: once the mana pond is built,
-    // skip concepts_bucket -> metal_form_bucket -> disorganized_metal_form per ingot.
-    addManaPondRecipe(event, {
-        input: { item: 'minecraft:iron_ingot' },
-        mana: 2 * Mana.ALCHEMIST,
-        catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
-        output: { item: 'gtceu:abstract_metal_ingot' }
-    })
-
-    // abstract_metal_ingot -> manasteel_ingot dropped: Apprentice's zanite chain already makes
-    // manasteel far cheaper. No reason to keep a harder, less profitable duplicate recipe for
-    // the same output this many tiers later. Per user direction 2026-07-28.
-
-    // Ore-sort family (abstract_metal_ingot + essence tags -> named metal) -- refine steps, not
-    // rituals. Moved to the Manaweaving Altar. Single-essence members below, two-essence after.
-    addMnaManaweavingRecipe(event, {
-        output: 'minecraft:gold_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences'],
-        patterns: ['mna:triangle', 'mna:backslash'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:tin_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences'],
-        patterns: ['mna:circle', 'mna:slash'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:lead_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences'],
-        patterns: ['mna:square', 'mna:backslash'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:aluminium_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:air_essences'],
-        patterns: ['mna:slash', 'mna:backslash'],
-        tier: 3
-    })
-
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:bismuth_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences', '#kubejs:water_essences'],
-        patterns: ['mna:triangle', 'mna:circle'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'minecraft:copper_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:fire_essences', '#kubejs:earth_essences'],
-        patterns: ['mna:triangle', 'mna:square'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:silver_ingot',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences', '#kubejs:air_essences'],
-        patterns: ['mna:circle', 'mna:diamond'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:magnesium_dust',
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:earth_essences', '#kubejs:air_essences'],
-        patterns: ['mna:square', 'mna:diamond'],
-        tier: 3
-    })
-    addMnaManaweavingRecipe(event, {
-        output: 'gtceu:holy_silver_ingot',
-        // Distinct pattern pair from silver_ingot above: same patterns plus a superset item list
-        // is ambiguous, and the player would have hit silver by accident.
-        items: ['gtceu:abstract_metal_ingot', '#kubejs:water_essences', '#kubejs:air_essences', '#forge:gems/ambrosium'],
-        patterns: ['mna:circle', 'mna:knot'],
-        tier: 3
     })
 
     // raw_mana -> source_gem: dead output, Source Gem retired pack-wide since 03-journeyman.md.
@@ -130,188 +49,12 @@ ServerEvents.recipes(event => {
     })
 
 
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:hexed_amethyst_core',
-        items: ['hexcasting:charged_amethyst', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'gtceu:abstract_metal_ingot', 'minecraft:glowstone'],
-        affinity: 'arcane',
-        power: LP.ALCHEMIST
-    })
-
-    // The one fix that unblocks the whole ~20-recipe hexcasting chain below: source_gem (dead)
-    // -> 2x arcane_residue (this tier's own new Distilled Animus intermediate).
-    addEldrinAltarRecipe(event, {
-        output: 'kubejs:hexed_mana_matrix',
-        items: [
-            'kubejs:hexed_amethyst_core',
-            'gtceu:holy_silver_plate', 'gtceu:holy_silver_plate',
-            'botania:mana_pearl', 'botania:mana_pearl',
-            'kubejs:arcane_residue', 'kubejs:arcane_residue'
-        ],
-        affinity: 'arcane',
-        power: 2 * LP.ALCHEMIST
-    })
-
-    // Circuit: a staff is the tier's central casting device, same role copper_spell_book played
-    // at Hobbyist -- filled into the shared pattern's one open slot for all 14 wood variants.
-    event.remove({ output: /hexcasting:staff\// })
-    const staffPattern = ['ZSA', ' WB', 'CX ']
-    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w, Z: '#forge:tools/saws', X: 'kubejs:animus_sigil', B: 'kubejs:animus_wizard_brain', C: 'kubejs:animus_channeling_vessel' })
-    ;[
-        ['minecraft:oak_planks',                     'hexcasting:staff/oak'],
-        ['minecraft:birch_planks',                   'hexcasting:staff/birch'],
-        ['minecraft:spruce_planks',                  'hexcasting:staff/spruce'],
-        ['minecraft:jungle_planks',                  'hexcasting:staff/jungle'],
-        ['minecraft:acacia_planks',                  'hexcasting:staff/acacia'],
-        ['minecraft:dark_oak_planks',                'hexcasting:staff/dark_oak'],
-        ['minecraft:mangrove_planks',                'hexcasting:staff/mangrove'],
-        ['minecraft:bamboo_planks',                  'hexcasting:staff/bamboo'],
-        ['minecraft:cherry_planks',                  'hexcasting:staff/cherry'],
-        ['minecraft:crimson_planks',                 'hexcasting:staff/crimson'],
-        ['minecraft:warped_planks',                  'hexcasting:staff/warped'],
-        ['hexcasting:edified_planks',                'hexcasting:staff/edified'],
-        ['hexcasting:quenched_allay_shard',          'hexcasting:staff/quenched'],
-        ['#hexcasting:brainswept_circle_components', 'hexcasting:staff/mindsplice'],
-    ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)).damageIngredient(Ingredient.of('#forge:tools/saws')))
-
-    // Channeling Vessel: a lens focuses and channels light/magic through it.
-    event.remove({ id: 'hexcasting:lens' })
-    event.shaped('hexcasting:lens', ['FCV', 'CAX', ' C '], {
-        C: 'minecraft:glass',
-        A: 'kubejs:hexed_amethyst_core',
-        F: '#forge:tools/files',
-        V: 'kubejs:animus_channeling_vessel',
-        X: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    // Wizard Brain: a thought knot is literally stored/looped thought (iota storage).
-    event.remove({ id: 'hexcasting:thought_knot' })
-    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string', 'kubejs:animus_wizard_brain', 'kubejs:animus_sigil', '#forge:tools/wire_cutters']).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
-
-    event.remove({ id: 'hexcasting:slate' })
-    event.shaped('6x hexcasting:slate', ['HA ', 'SXS'], {
-        A: 'kubejs:hexed_amethyst_core',
-        S: 'minecraft:deepslate',
-        H: '#forge:tools/hammers',
-        X: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
-
-    // Wizard Brain: a cypher encodes a single stored pattern for reuse -- stored logic.
-    event.remove({ id: 'hexcasting:cypher' })
-    event.shaped('hexcasting:cypher', ['FCX', 'YAC', ' C '], {
-        C: '#forge:ingots/copper',
-        A: 'kubejs:hexed_amethyst_core',
-        F: '#forge:tools/files',
-        X: 'kubejs:animus_wizard_brain',
-        Y: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/files'))
-
-    event.remove({ id: 'hexcasting:scroll_small' })
-    event.shaped('hexcasting:scroll_small', ['KA', 'P '], {
-        A: 'kubejs:hexed_amethyst_core',
-        P: 'minecraft:paper',
-        K: '#forge:tools/knives',
-    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
-
-    event.remove({ id: 'hexcasting:scroll_medium' })
-    event.shaped('hexcasting:scroll_medium', ['K A', 'XP ', 'BP '], {
-        A: 'kubejs:hexed_amethyst_core',
-        P: 'minecraft:paper',
-        K: '#forge:tools/knives',
-        X: 'kubejs:animus_sigil',
-        B: 'kubejs:animus_wizard_brain',
-    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
-
-    event.remove({ id: 'hexcasting:scroll' })
-    event.shaped('hexcasting:scroll', ['PXA', 'PPP', 'BPK'], {
-        A: 'kubejs:hexed_amethyst_core',
-        P: 'minecraft:paper',
-        K: '#forge:tools/knives',
-        X: 'kubejs:animus_sigil',
-        B: 'kubejs:animus_wizard_brain',
-    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
-
-    event.remove({ id: 'hexcasting:scroll_paper' })
-    event.shaped('8x hexcasting:scroll_paper', ['PXP', 'PAP', 'BPK'], {
-        P: 'minecraft:paper',
-        A: 'kubejs:hexed_amethyst_core',
-        K: '#forge:tools/knives',
-        X: 'kubejs:animus_sigil',
-        B: 'kubejs:animus_wizard_brain',
-    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
-
-    // Wizard Brain: an abacus is a literal computation/counting device.
-    event.remove({ id: 'hexcasting:abacus' })
-    event.shaped('hexcasting:abacus', ['MYX', 'SAS', 'WAW'], {
-        W: '#minecraft:planks',
-        A: 'kubejs:hexed_amethyst_core',
-        S: 'minecraft:stick',
-        M: '#forge:tools/mallets',
-        X: 'kubejs:animus_wizard_brain',
-        Y: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
-
-    // Channeling Vessel: a bookshelf/connector stores and channels knowledge flow.
-    event.remove({ id: 'hexcasting:akashic_bookshelf' })
-    event.shaped('hexcasting:akashic_bookshelf', ['ZPV', 'XAC', 'LPL'], {
-        L: '#hexcasting:edified_logs',
-        P: '#hexcasting:edified_planks',
-        C: 'minecraft:book',
-        A: 'kubejs:hexed_mana_matrix',
-        Z: '#forge:tools/saws',
-        V: 'kubejs:animus_channeling_vessel',
-        X: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
-
-    event.remove({ id: 'hexcasting:akashic_connector' })
-    event.shaped('4x hexcasting:akashic_connector', ['ZXV', '12A', 'LPL'], {
-        L: '#hexcasting:edified_logs',
-        P: '#hexcasting:edified_planks',
-        '1': 'hexcasting:amethyst_dust',
-        '2': 'minecraft:amethyst_shard',
-        A: 'kubejs:hexed_mana_matrix',
-        Z: '#forge:tools/saws',
-        V: 'kubejs:animus_channeling_vessel',
-        X: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
-
-    event.remove({ id: 'hexcasting:focus' })
-    event.remove({ id: 'hexcasting:focus_rotated' })
-    // Circuit: focus and spellbook are the tier's own core casting devices (focus is the
-    // hand-held caster, spellbook the written form) -- same role as Hobbyist's spell books.
-    addEldrinAltarRecipe(event, {
-        output: 'hexcasting:focus',
-        items: ['minecraft:leather', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'kubejs:animus_wizard_brain', 'kubejs:animus_sigil'],
-        affinity: 'arcane',
-        power: LP.ALCHEMIST
-    })
-
-    event.remove({ id: 'hexcasting:spellbook' })
-    addEldrinAltarRecipe(event, {
-        output: 'hexcasting:spellbook',
-        items: ['minecraft:writable_book', 'gtceu:holy_silver_plate', 'kubejs:animus_wizard_brain', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'minecraft:chorus_fruit', 'kubejs:animus_sigil'],
-        affinity: 'ender',
-        power: LP.ALCHEMIST
-    })
-
-    // Wizard Brain: an artifact stores and can rebroadcast a spell -- unattended casting logic.
-    event.remove({ id: 'hexcasting:artifact' })
-    addEldrinAltarRecipe(event, {
-        output: 'hexcasting:artifact',
-        items: ['#minecraft:music_discs', 'gtceu:holy_silver_plate', 'kubejs:animus_sigil', 'kubejs:hexed_mana_matrix', 'kubejs:hexed_mana_matrix', 'gtceu:abstract_metal_ingot', 'kubejs:animus_wizard_brain'],
-        affinity: 'arcane',
-        power: LP.ALCHEMIST
-    })
-
-    // Ward Lattice: a worn trinket is a passive protective effect.
-    event.remove({ id: 'hexcasting:trinket' })
-    event.shaped('hexcasting:trinket', ['HXF', 'MAM', 'WMW'], {
-        M: 'gtceu:holy_silver_plate',
-        A: 'kubejs:hexed_mana_matrix',
-        H: '#forge:tools/hammers',
-        F: '#forge:tools/files',
-        W: 'kubejs:animus_ward_lattice',
-        X: 'kubejs:animus_sigil',
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
+    // --- Hex Casting moved to initiate.js 2026-08-04 ---
+    // The whole Hex line (hexed_amethyst_core, hexed_mana_matrix, staves, lens, thought knot,
+    // slate, cypher, scrolls, abacus, akashic blocks, focus, spellbook, artifact, trinket) now
+    // lives at Initiate. Charged amethyst is Apprentice-tier and Holy Silver is Initiate's own
+    // parallel line, so nothing about Hex actually needed Alchemist. The two keystone items still
+    // feed this tier: animus_sigil and animus_ward_lattice both consume hexed_mana_matrix.
 
     // hex_ars_link:linker_base: hex_ars_link is one of the 12 cut Ars addons. This recipe
     // crafts an item that no longer exists -- dropped outright, no port.
@@ -382,21 +125,34 @@ ServerEvents.recipes(event => {
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (thought knot -- literally stored, looped thought) + animating
+    // agent (arcane residue, this tier's own animus intermediate).
     addEldrinAltarRecipe(event, {
         output: 'kubejs:animus_wizard_brain',
-        items: ['gtceu:distilled_animus_ingot', 'kubejs:hexed_amethyst_core', 'botania:mana_diamond'],
+        items: ['gtceu:distilled_animus_ingot', 'minecraft:writable_book', 'kubejs:arcane_residue', 'kubejs:hexed_amethyst_core'],
         affinity: 'ARCANE', power: Source.ALCHEMIST,
         tier: 3
     })
+    addManaPondRecipe(event, {
+        input: { item: 'gtceu:distilled_animus_rod' },
+        mana: 2 * Mana.ALCHEMIST,
+        catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
+        output: { item: 'kubejs:animus_motive_core' }
+    })
 
-    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
-    addComponentRecipe(event, 'kubejs:animus_motive_core', [
-        'gtceu:distilled_animus_rod', 'gtceu:distilled_animus_ingot', 'botania:mana_pearl'
-    ])
-    addComponentRecipe(event, 'kubejs:animus_channeling_vessel', [
-        'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'occultism:otherworld_essence'
-    ])
-    addComponentRecipe(event, 'kubejs:animus_ward_lattice', [
-        'gtceu:distilled_animus_plate', 'gtceu:distilled_animus_ingot', 'kubejs:hexed_mana_matrix'
-    ])
+    // Channeling Vessel: woven shut around the residue it will carry.
+    addMnaManaweavingRecipe(event, {
+        output: 'kubejs:animus_channeling_vessel',
+        items: ['gtceu:concepts_bucket', 'gtceu:distilled_animus_ingot', 'kubejs:arcane_residue', 'kubejs:arcane_residue'],
+        patterns: ['mna:split_triangle', 'mna:knot2'],
+        tier: 3
+    })
+
+    // Ward Lattice: forged out of Steadfast Will at the Soul Forge, where Will belongs.
+    addSoulForgeRecipe(event, {
+        output: 'kubejs:animus_ward_lattice',
+        inputs: ['gtceu:distilled_animus_plate', 'bloodmagic:basemonstersoul_steadfast', 'kubejs:hexed_mana_matrix', 'minecraft:obsidian'],
+        drain: 30,
+        minimumDrain: 600
+    })
 })

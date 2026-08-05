@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:holy_silver_plate',
         S: 'malum:processed_soulstone',
-        G: 'kubejs:veridium_filings',
+        G: 'gtceu:veridium_dust',
         R: 'gtceu:holy_silver_rod',
         H: '#forge:tools/hammers'
     }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
         extraItems: [
             { item: 'malum:runewood_planks', count: 6 },
             { item: 'malum:hex_ash', count: 2 },
-            { item: 'kubejs:veridium_filings', count: 2 }
+            { item: 'gtceu:veridium_dust', count: 2 }
         ],
         spirits: [
             { type: 'aerial', count: 2 },

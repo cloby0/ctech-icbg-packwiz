@@ -4,22 +4,32 @@ StartupEvents.registry('item', event => {
     // 2026-07-28 -- MagiChem's real magichem:essentia_<element> replaces them entirely
     // (see itemTags.js). No longer registered here.
 
-    // Ashen Ichor chain: arcane charcoal + redstone -> ichor dust -> vinteum blend
+    // Ashen Ichor chain: arcane charcoal + redstone -> ichor dust -> livingrock blend
     // -> Blood Altar charge -> kindled dust -> smelt -> rough ingot -> Spirit Altar -> gtceu:ashen_ichor_ingot.
+    // Blend reagent was vinteum; vinteum is Aether-only now and Hobbyist is pre-Aether.
     event.create('ichor_dust')
-    event.create('vinteum_ichor_blend')
+    event.create('livingrock_ichor_blend')
     event.create('kindled_ichor_dust')
     event.create('ashen_ichor_ingot_rough')
+
+    // The only way into the Aether. `Disables Aether Portal creation` is true in
+    // defaultconfigs/aether-server.toml, which kills the glowstone-frame + water route, and
+    // aether:aether_portal_frame has no recipe -- so this item, listed in
+    // #aether:aether_portal_activation_items, is the gate. Damageable: 4 portals per unit, so a
+    // broken or griefed frame isn't a permanent lockout on a shared server.
+    event.create('quick_and_dirty_portal_generator')
+        .maxDamage(4)
+        .maxStackSize(1)
 
     // Magic rework Phase 2 (Apprentice): zanite chain -> botania:manasteel_ingot, replaces Luminessence.
     event.create('zanite_shard')
     event.create('cracked_zanite')
     event.create('zanite_laced_iron')
 
-    // Magic rework Phase 3 (Journeyman): veridium chain -> botania:terrasteel_ingot, replaces
-    // the old Source Gem line (pure_source_gem_dust/rough_source_gem retired with it).
-    event.create('veridium_filings')
-    event.create('verdant_charged_filings')
+    // Magic rework Phase 3 (Journeyman): veridium chain -> botania:terrasteel_ingot.
+    // veridium_filings deleted 2026-08-04 -- crushing an ingot yields gtceu:veridium_dust like
+    // every other ingot in the pack. Same for gravitite_shavings at Sorcerer.
+    event.create('verdant_charged_dust')
     event.create('verdant_grafted_manasteel')
 
     // Magic rework Phase 4 (Initiate): ambrosium chain -> botania:elementium_ingot.
@@ -28,7 +38,6 @@ StartupEvents.registry('item', event => {
 
     // Magic rework Phase 5 (Sorcerer): gravitite chain -> botania:gaia_ingot. Gaia Guardian is
     // now expected to be fought at Sorcerer (boss-drop Life Essence), per user direction.
-    event.create('gravitite_shavings')
     event.create('bound_gravitite')
     event.create('gravity_bound_life_essence')
 
@@ -36,16 +45,15 @@ StartupEvents.registry('item', event => {
     event.create('arcane_residue')
     event.create('animus_fragment')
 
-    // Magic rework Phase 7 (Thaumaturge): Starforged Chimerite chain -> gtceu:starforged_chimerite_ingot.
+    // Magic rework Phase 7 (Thaumaturge): Starforged Chimerite chain -> gtceu:starforged_chimerite_gem.
     event.create('chimerite_dust')
     event.create('star_touched_chimerite')
-    event.create('vengeance_touched_chimerite')
     event.create('charged_chimerite')
 
-    // Magic rework Phase 8 (Arcanist): Rubedo Core chain -> gtceu:rubedo_core_ingot.
-    event.create('rubedo_touched_vinteum')
-    event.create('gravitic_residue')
-    event.create('bound_gravitic_core')
+    // Magic rework Phase 8 (Arcanist): Rubedo Core chain -> gtceu:katharite_ingot.
+    event.create('clarified_vinteum')
+    event.create('katharic_residue')
+    event.create('katharite_core')
 
     // Magic rework Phase 9 (Sage): Empyrean Ichor chain -> gtceu:empyrean_ichor_ingot.
     event.create('hallowed_remnant')
@@ -56,8 +64,6 @@ StartupEvents.registry('item', event => {
     event.create('element_attunement_stone')
     event.create('chaos_essence')
     event.create('prima_materia_seed')
-
-    event.create('disorganized_metal_form')
 
     event.create('vengeful_wraith')
     event.create('bound_astral_soul')
@@ -143,7 +149,7 @@ StartupEvents.registry('item', event => {
     event.create('hexed_amethyst_core')
     event.create('hexed_mana_matrix')
 
-    event.create('elven_source_lattice')
+    event.create('kathar_lattice')
 
     event.create('ostrum_hull_section')
     event.create('glacio_rocket_engine')
@@ -302,7 +308,11 @@ StartupEvents.registry('item', event => {
     event.create('void_nucleus')
     event.create('elemental_convergence_matrix')
 
-    let ritualDummies = ['resonant_gravitite_core', 'prima_materia_ingot', 'bound_gravitic_core', 'empyrean_core', 'wraithware_processor', 'wraith_sigil']
+    let ritualDummies = ['resonant_gravitite_core', 'prima_materia_ingot', 'katharite_core', 'empyrean_core', 'wraithware_processor', 'wraith_sigil',
+        'gravitic_motive_core', 'kathar_ward_lattice', 'wraith_motive_core',
+        // Inventory Pets keystone tax: late/PvP-breaking pets + meta pets are Occultism rituals
+        'pet_enderman', 'pet_end_portal', 'pet_house', 'pet_illuminati', 'pet_juggernaut', 'pet_loot', 'pet_nether_portal', 'pet_pacman', 'pet_qcm', 'pet_black_hole', 'pet_cloud', 'pet_heart', 'pet_moon', 'pet_pufferfish', 'pet_shield', 'pet_slime', 'pet_sun', 'pet_grave', 'pet_mickerson', 'pet_wither', 'pet_dingot', 'pet_flying_saddle', 'pet_sated_chest', 'pet_sated_double_chest', 'pet_meta', 'pet_meta_aoe', 'pet_meta_fan', 'pet_meta_mob', 'pet_meta_peaceful', 'pet_meta_special', 'pet_meta_utility', 'pet_meta_youtuber', 'pet_meta_25', 'pet_meta_50', 'pet_meta_75', 'pet_meta_100',
+        'diamond_expansion_template']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)
@@ -372,12 +382,12 @@ StartupEvents.registry('item', event => {
     event.create('starforged_ward_lattice')
 
     // Arcanist (ZPM)
-    event.create('rubedo_sigil_blank')
-    event.create('rubedo_sigil')
-    event.create('rubedo_wizard_brain')
-    event.create('rubedo_motive_core')
-    event.create('rubedo_channeling_vessel')
-    event.create('rubedo_ward_lattice')
+    event.create('kathar_sigil_blank')
+    event.create('kathar_sigil')
+    event.create('kathar_wizard_brain')
+    event.create('kathar_motive_core')
+    event.create('kathar_channeling_vessel')
+    event.create('kathar_ward_lattice')
 
     // Sage (UV)
     event.create('empyrean_sigil_blank')

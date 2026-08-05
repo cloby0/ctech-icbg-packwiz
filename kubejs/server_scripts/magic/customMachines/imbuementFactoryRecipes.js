@@ -10,12 +10,9 @@ function addImbuementRecipe(event, crecipe) {
     let outputRaw = crecipe.output
     let output = (typeof outputRaw === 'string' && crecipe.count > 1) ? { item: outputRaw, count: crecipe.count } : outputRaw
 
-    addEldrinAltarRecipe(event, {
-        output: output,
-        items: items,
-        affinity: 'arcane',
-        power: sourceCost
-    })
+    // Same Eldrin-Altar-is-MNA-T4 routing as addEnchantingRecipe -- see
+    // grandEnchantingSanctumRecipes.js for the full rationale.
+    routeLegacyMagicRecipe(event, output, items, sourceCost)
 }
 
 global.addImbuementRecipe = addImbuementRecipe

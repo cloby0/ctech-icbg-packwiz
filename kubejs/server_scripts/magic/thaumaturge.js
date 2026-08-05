@@ -1,22 +1,8 @@
 ServerEvents.recipes(event => {
-    event.remove({ id: 'botania:runic_altar' })
-    event.remove({ id: 'botania:gaia_ingot' })
-    event.remove({ id: 'botania:runic_altar_alt' })
-    event.shaped(
-        Item.of('botania:runic_altar', 1),
-        [
-            'WAA',
-            'DCD',
-            'BAB'
-        ],
-        {
-            A: 'botania:livingrock_bricks',
-            B: 'botania:livingrock',
-            C: 'botania:mana_diamond',
-            D: 'gtceu:manasteel_bolt',
-            W: '#forge:tools/wrenches'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
+    // Runic Altar recipe moved to journeyman.js 2026-08-04 -- runes are wanted from
+    // Journeyman on, and every ingredient (livingrock, mana diamond, manasteel bolt) is
+    // Apprentice-tier. It has no business first appearing at LuV.
+
     // florid_compound -> living_metalloid (+fertile_essence) -> terrasteel x3 dropped entirely,
     // rune_of_frost with it: Journeyman's veridium chain already makes terrasteel for
     // 1000 mana/ingot (Mana.JOURNEYMAN); this route cost 16*Mana.PROPHET for 3 ingots, ~1365x
@@ -28,44 +14,70 @@ ServerEvents.recipes(event => {
     // pack decision, not restored).
     event.remove({ id: "botania:terra_plate/terrasteel_ingot" })
 
-    // --- Starforged Chimerite: Thaumaturge signature material ---
-    // MNA tier 4 devices are literally astral (sun/moon/starlight infusion) -- this chain's name
-    // and ingredients match what's mechanically unlocking at this tier. Magic spine stays
-    // GT-free throughout: MNA's own crushing mechanic, vanilla combines, MagiChem's real
-    // Astral Observer illumination step, plain furnace smelt (starforged_chimerite has no
-    // blastTemp on purpose).
+    // --- Starforged Chimerite: Thaumaturge signature material (redesigned 2026-08-04) ---
+    // The old chain was crush -> combine with an admixture -> combine with a tier item -> one
+    // wildcard step -> smelt. Every tier read the same. This one is five different handlers, no
+    // shapeless craft, no furnace, and it opens with a real automation puzzle instead of a click.
     //
-    // "Fusery: Materia -> Admixture" per the design spec doesn't literally work for a custom
-    // output item -- verified against the mod's real recipe JSON (magichem:fixation_separation
-    // only pairs one of MagiChem's ~150 fixed admixture items with its OWN fixed formula, same
-    // mechanical constraint Phase 6 found for the Alembic). Vanilla combine instead, same
-    // substitution pattern used everywhere else in this rework a tier's flavor text says
-    // "combine"/"process"/"craft" against a mechanically-incompatible machine.
-    //
-    // Astral Observer DOES work for real here: magichem:illumination takes a single item + a
-    // light-phase timer ("lumins": {type, minutes}) -> result. Verified against the mod's real
-    // recipe JSON (magichem:vinteum_dust_to_stardust uses type 3 for its "stardust" output,
-    // matching our own starlight theme) -- Vengeful Will is consumed in a combine step just
-    // before the Observer, since illumination only accepts one input item.
+    // 1. AUTOMATION (the cross-mod answer to "chimerite can't be farmed"). Chimerite has no ore
+    //    feature -- vanilla MNA only drops it while hand-mining emerald/diamond/coal ore, and often
+    //    destroys it. Malum's Spirit Crucible generates it instead: the Alchemical Impetus is a
+    //    DURABILITY CATALYST, not a consumed input, and Spirit Catalyzers stack up to 8 for
+    //    exponential speed at proportionally higher impetus wear. That is the tier's automation
+    //    challenge -- build the crucible array, feed it spirits, and keep impetuses repaired
+    //    (arcane spirits repair a cracked_alchemical_impetus).
+    event.custom({
+        type: 'malum:spirit_focusing',
+        durabilityCost: 3,
+        time: 900,
+        input: { item: 'malum:alchemical_impetus' },
+        output: { item: 'kubejs:chimerite_dust', count: 3 },
+        spirits: [
+            { type: 'arcane', count: 4 },
+            { type: 'aerial', count: 2 }
+        ]
+    }).id('kubejs:spirit_focusing/chimerite_dust')
+
+    // 1b. Manual route so the tier isn't hard-blocked on building the crucible first.
     addMnaCrushingRecipe(event, {
         input: 'mna:chimerite_gem',
-        output: 'kubejs:chimerite_dust'
+        output: 'kubejs:chimerite_dust',
+        outputCount: 2,
+        tier: 4
     })
 
-    event.shapeless('kubejs:star_touched_chimerite', ['kubejs:chimerite_dust', 'magichem:admixture_light'])
+    // 2. Star-touching happens in-world, on an alchemy array -- ashes on the ground, admixture
+    //    thrown onto the dust. Was a shapeless craft.
+    addAlchemyArrayRecipe(event, {
+        base: 'kubejs:chimerite_dust',
+        thrown: 'magichem:admixture_light',
+        output: 'kubejs:star_touched_chimerite'
+    })
 
-    event.shapeless('kubejs:vengeance_touched_chimerite', ['kubejs:star_touched_chimerite', 'bloodmagic:basemonstersoul_vengeful'])
-
+    // 3. The Astral Observer, on a real starlight timer. This is the step that earns the name and
+    //    it is kept exactly as-is -- lumins type 3 is the mod's own "stardust" phase.
     event.custom({
         type: 'magichem:illumination',
-        input: 'kubejs:vengeance_touched_chimerite',
+        input: 'kubejs:star_touched_chimerite',
         lumins: { type: 3, minutes: 4 },
         result: { item: 'kubejs:charged_chimerite', count: 1 }
     })
 
-    event.smelting('gtceu:starforged_chimerite_ingot', 'kubejs:charged_chimerite')
+    // 4. Finished at the Runic Altar, not a furnace -- gems aren't smelted. The two seasonal runes
+    //    are CATALYSTS: Botania returns runes on completion, so they are a one-time infrastructure
+    //    cost that the recipe then leans on forever. Vengeful Will is the consumed half.
+    addRunicAltarRecipe(event, {
+        output: { item: 'gtceu:starforged_chimerite_gem' },
+        mana: Mana.THAUMATURGE,
+        ingredients: [
+            { item: 'kubejs:charged_chimerite' },
+            { item: 'bloodmagic:basemonstersoul_vengeful' },
+            { item: 'botania:rune_winter' },
+            { item: 'botania:rune_summer' }
+        ]
+    })
 
-    // Shortcut (Arcanist+, Rubedo worn): Alembic/Distillery fabricates the ingot straight from
+    // Shortcut (Arcanist+, Rubedo worn): Alembic/Distillery fabricates the gem straight from
     // materia, real wisdom-field gate (wisdom_stone_rubedo, wisdom:3).
     event.custom({
         type: 'magichem:distillation_fabrication',
@@ -73,7 +85,7 @@ ServerEvents.recipes(event => {
         categories: 1,
         output_rate: 1.0,
         batch_size: 3,
-        object: { item: 'gtceu:starforged_chimerite_ingot' },
+        object: { item: 'gtceu:starforged_chimerite_gem' },
         components: [
             { item: 'magichem:admixture_light', count: 50 },
             { item: 'magichem:essentia_mineral', count: 30 },
@@ -104,7 +116,7 @@ ServerEvents.recipes(event => {
     // --- Microcrafting: Thaumaturge circuit + components ---
     // Circuit built through 2 real handlers: MNA crushing -> MagiChem Astral Observer illumination.
     addMnaCrushingRecipe(event, {
-        input: 'gtceu:starforged_chimerite_ingot',
+        input: 'gtceu:starforged_chimerite_gem',
         output: 'kubejs:starforged_sigil_blank'
     })
 
@@ -116,22 +128,40 @@ ServerEvents.recipes(event => {
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (spell book) + animating agent (vengeful will).
     addEldrinAltarRecipe(event, {
         output: 'kubejs:starforged_wizard_brain',
-        items: ['gtceu:starforged_chimerite_ingot', 'kubejs:star_touched_chimerite', 'minecraft:blue_ice'],
+        items: ['gtceu:starforged_chimerite_gem', 'hexcasting:spellbook', 'bloodmagic:basemonstersoul_vengeful', 'kubejs:star_touched_chimerite'],
         affinity: 'WATER', power: Source.THAUMATURGE,
         tier: 4
     })
+    event.custom({
+        type: 'magichem:illumination',
+        input: 'gtceu:starforged_chimerite_rod',
+        lumins: { type: 2, minutes: 6 },
+        result: { item: 'kubejs:starforged_motive_core', count: 1 }
+    })
 
-    addComponentRecipe(event, 'kubejs:starforged_motive_core', [
-        'gtceu:starforged_chimerite_rod', 'minecraft:blue_ice', 'gtceu:starforged_chimerite_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:starforged_channeling_vessel', [
-        'gtceu:starforged_chimerite_ingot', 'botania:rune_water', 'kubejs:chimerite_dust'
-    ])
-    addComponentRecipe(event, 'kubejs:starforged_ward_lattice', [
-        'gtceu:starforged_chimerite_plate', 'botania:rune_earth', 'gtceu:holy_silver_dust'
-    ])
+    // Channeling Vessel: frozen shut in the Aether's Icestone Freezer.
+    event.custom({
+        "type": "aether:freezing",
+        "ingredient": { "item": "botania:mana_bottle" },
+        "result": { "item": "kubejs:starforged_channeling_vessel" },
+        "cookingtime": 600,
+        "experience": 1.0
+    })
+
+    // Ward Lattice: runic, on the altar that has existed since Journeyman.
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:starforged_ward_lattice' },
+        mana: Mana.THAUMATURGE,
+        ingredients: [
+            { item: 'gtceu:starforged_chimerite_plate' },
+            { item: 'botania:rune_earth' },
+            { item: 'botania:rune_winter' },
+            { item: 'minecraft:echo_shard' }
+        ]
+    })
 
     // Wisdom Stone: Citrinitas (Ritual of the Balanced Scales, Alchemical Nexus). Re-themed onto
     // Thaumaturge's own material line. Materia kept verbatim from the mod's own citrinitas recipe
@@ -191,9 +221,9 @@ ServerEvents.recipes(event => {
             {
                 experience: 270,
                 components: [
-                    { item: 'kubejs:vengeance_touched_chimerite' },
+                    { item: 'kubejs:charged_chimerite' },
                     { item: 'magichem:wisdom_stone_albedo' },
-                    { item: 'kubejs:vengeance_touched_chimerite' }
+                    { item: 'kubejs:charged_chimerite' }
                 ],
                 materia: [
                     { item: 'magichem:admixture_change', count: 100 },

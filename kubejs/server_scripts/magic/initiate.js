@@ -16,12 +16,19 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'magnumtorch:diamond_magnum_torch' });
     event.remove({ id: 'magnumtorch:emerald_magnum_torch' });
 
+    // ALL Eldrin Altar recipes moved off this tier 2026-08-04. The Eldrin Altar is MNA tier 4
+    // content -- its own Manaweaving recipe is `tier: 4`, and it needs Eldrin Conduits (also T4),
+    // chimerite crystals, motes, a lit Fume Filter, a faction and realistically a captured
+    // Wellspring. Initiate is MNA tier 3. These are Alchemy Table recipes now: still a real cost
+    // sink (LP instead of Eldrin power), on a device the player actually owns by this tier.
+    // upgradeLevel 2 = Magician Blood Orb = Tier-3 altar, matching Initiate on the altar map.
+
     // Channeling Vessel: a void tear is a hole punched into space -- channels matter through it.
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'reliquary:void_tear',
-        items: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
-        affinity: 'ender',
-        power: 2 * LP.INITIATE
+        input: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     });
 
     // Channeling Vessel: void/ender theme, consistent with void_tear's own ingredient above.
@@ -44,11 +51,11 @@ ServerEvents.recipes(event => {
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Motive Core: winter shears are a cutting/force tool.
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'reliquary:shears_of_winter',
-        items: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'kubejs:elementium_sigil', 'kubejs:elementium_motive_core'],
-        affinity: 'water',
-        power: 2 * LP.INITIATE
+        input: ['minecraft:shears', 'minecraft:blue_ice', '#kubejs:water_essences', 'minecraft:snowball', 'kubejs:elementium_sigil', 'kubejs:elementium_motive_core'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     })
 
     // Wizard Brain: already uses lantern_of_paranoia (detection) as an ingredient -- scouting/awareness theme.
@@ -111,11 +118,11 @@ ServerEvents.recipes(event => {
     // magebloom_fiber dropped -- dead ingredient, same open fiber-crop question flagged in
     // 03-journeyman.md (no post-Ars fiber source decided yet). Pedestal count reduced, not substituted.
     // Channeling Vessel: a fishing rod pulls things across distance -- channeling theme.
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'reliquary:rod_of_lyssa',
-        items: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
-        affinity: 'earth',
-        power: 2 * LP.INITIATE
+        input: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     })
 
     // Motive Core: a construction wand's entire job is projecting building force.
@@ -138,48 +145,32 @@ ServerEvents.recipes(event => {
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
     // Channeling Vessel: torches channel light/energy, consistent across all three magnum torches.
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'magnumtorch:amethyst_magnum_torch',
-        items: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'kubejs:elementium_sigil', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
-        affinity: 'arcane',
-        power: 2 * LP.INITIATE
+        input: ['minecraft:amethyst_shard', 'gtceu:holy_silver_rod', 'gtceu:ambrosium_dust', 'kubejs:elementium_sigil', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     })
 
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'magnumtorch:emerald_magnum_torch',
-        items: ['minecraft:emerald', 'gtceu:holy_silver_rod', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
-        affinity: 'earth',
-        power: 2 * LP.INITIATE
+        input: ['minecraft:emerald', 'gtceu:holy_silver_rod', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'aether:ambrosium_shard', 'kubejs:elementium_channeling_vessel'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     })
 
-    addEldrinAltarRecipe(event, {
+    addAlchemyTableRecipe(event, {
         output: 'magnumtorch:diamond_magnum_torch',
-        items: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
-        affinity: 'air',
-        power: 2 * LP.INITIATE
+        input: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
     })
 
-    // Enchanting Apparatus/Arcane Pedestal/Arcane Core: Ars Nouveau blocks, gone with the mod.
-    // This is where the old "Enchanting Apparatus unlocks at Initiate" gate lived -- per
-    // 00-foundation.md, that gate carries forward as a re-craft of the Alchemy Table's real
-    // block (Blood Magic's own), gated with this tier's own materials in place of source_plate/
-    // luminessence_dust. No pedestal/core equivalent needed -- Blood Magic's table is one block.
-    event.remove({ id: 'bloodmagic:alchemy_table' })
-    event.shaped(
-        Item.of('bloodmagic:alchemytable', 1),
-        [
-            'AEA',
-            'FBF',
-            'AGA'
-        ],
-        {
-            A: 'aether:ambrosium_shard',
-            E: 'kubejs:ambrosia_touched_elementite',
-            F: '#forge:plates/gold',
-            B: 'bloodmagic:blankslate',
-            G: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
+    // Second Alchemy Table recipe deleted. Two recipes for one block meant the "harder" Initiate
+    // one never mattered -- the Apprentice bootstrap (apprentice.js) always won, since first built
+    // wins on identical output. Apprentice keeps it, because that tier's Manasteel chain needs the
+    // table and Blood Magic's own Alchemy Table is a Tier-1 item anyway. Blood Magic's vanilla
+    // recipe stays removed there.
 
     addSpiritInfusion(event, {
         input: 'kubejs:sanctified_ambrosium_bloom',
@@ -288,8 +279,9 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
+    // Fortune Coin is equipment, not a crafting reagent -- it doesn't stack. One per craft.
     addMnaManaweavingRecipe(event, {
-        output: { item: 'reliquary:fortune_coin', count: 4 },
+        output: 'reliquary:fortune_coin',
         items: ['kubejs:sacred_ambrosium_shard', '#kubejs:earth_essences', '#kubejs:earth_essences', '#kubejs:water_essences', '#kubejs:water_essences'],
         patterns: ['mna:circle', 'mna:backslash'],
         tier: 2
@@ -344,6 +336,199 @@ ServerEvents.recipes(event => {
     // Magic equivalent, and this was the only consumer of it. arsArmorer.js (its attachment line)
     // deleted entirely for the same reason.
 
+    // --- Hex Casting: moved here from alchemist.js 2026-08-04 ---
+    // Charged amethyst is Apprentice-tier and Holy Silver is this tier's own parallel line, so
+    // nothing in Hex ever needed Alchemist. Ingredients rebased off Alchemist's animus set onto
+    // Initiate's elementium set; prima_materia (Sorcerer) -> elementium_ingot, arcane_residue
+    // (Alchemist) -> sacred_ambrosium_shard. Every former Eldrin Altar recipe is an Alchemy Table
+    // recipe now -- the altar is MNA tier 4 and this tier is tier 3.
+    // Two keystone items gate the whole line: hexed_amethyst_core, then hexed_mana_matrix.
+
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:hexed_amethyst_core',
+        input: ['hexcasting:charged_amethyst', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'botania:elementium_ingot', 'minecraft:glowstone'],
+        syphon: LP.INITIATE,
+        upgradeLevel: 2
+    })
+
+    // The one fix that unblocks the whole ~20-recipe hexcasting chain below: source_gem (dead)
+    // -> 2x arcane_residue (this tier's own new Distilled Animus intermediate).
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:hexed_mana_matrix',
+        input: [
+            'kubejs:hexed_amethyst_core',
+            'gtceu:holy_silver_plate',
+            'botania:mana_pearl', 'botania:mana_pearl',
+            'kubejs:sacred_ambrosium_shard', 'kubejs:sacred_ambrosium_shard'
+        ],
+        syphon: 2 * LP.INITIATE,
+        upgradeLevel: 2
+    })
+
+    // Circuit: a staff is the tier's central casting device, same role copper_spell_book played
+    // at Hobbyist -- filled into the shared pattern's one open slot for all 14 wood variants.
+    event.remove({ output: /hexcasting:staff\// })
+    const staffPattern = ['ZSA', ' WB', 'CX ']
+    const staffKey = (w) => ({ S: 'minecraft:stick', A: 'kubejs:hexed_amethyst_core', W: w, Z: '#forge:tools/saws', X: 'kubejs:elementium_sigil', B: 'kubejs:elementium_wizard_brain', C: 'kubejs:elementium_channeling_vessel' })
+    ;[
+        ['minecraft:oak_planks',                     'hexcasting:staff/oak'],
+        ['minecraft:birch_planks',                   'hexcasting:staff/birch'],
+        ['minecraft:spruce_planks',                  'hexcasting:staff/spruce'],
+        ['minecraft:jungle_planks',                  'hexcasting:staff/jungle'],
+        ['minecraft:acacia_planks',                  'hexcasting:staff/acacia'],
+        ['minecraft:dark_oak_planks',                'hexcasting:staff/dark_oak'],
+        ['minecraft:mangrove_planks',                'hexcasting:staff/mangrove'],
+        ['minecraft:bamboo_planks',                  'hexcasting:staff/bamboo'],
+        ['minecraft:cherry_planks',                  'hexcasting:staff/cherry'],
+        ['minecraft:crimson_planks',                 'hexcasting:staff/crimson'],
+        ['minecraft:warped_planks',                  'hexcasting:staff/warped'],
+        ['hexcasting:edified_planks',                'hexcasting:staff/edified'],
+        ['hexcasting:quenched_allay_shard',          'hexcasting:staff/quenched'],
+        ['#hexcasting:brainswept_circle_components', 'hexcasting:staff/mindsplice'],
+    ].forEach(([w, result]) => event.shaped(result, staffPattern, staffKey(w)).damageIngredient(Ingredient.of('#forge:tools/saws')))
+
+    // Channeling Vessel: a lens focuses and channels light/magic through it.
+    event.remove({ id: 'hexcasting:lens' })
+    event.shaped('hexcasting:lens', ['FCV', 'CAX', ' C '], {
+        C: 'minecraft:glass',
+        A: 'kubejs:hexed_amethyst_core',
+        F: '#forge:tools/files',
+        V: 'kubejs:elementium_channeling_vessel',
+        X: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
+
+    // Wizard Brain: a thought knot is literally stored/looped thought (iota storage).
+    event.remove({ id: 'hexcasting:thought_knot' })
+    event.shapeless('hexcasting:thought_knot', ['kubejs:hexed_amethyst_core', 'minecraft:string', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_sigil', '#forge:tools/wire_cutters']).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
+
+    event.remove({ id: 'hexcasting:slate' })
+    event.shaped('6x hexcasting:slate', ['HA ', 'SXS'], {
+        A: 'kubejs:hexed_amethyst_core',
+        S: 'minecraft:deepslate',
+        H: '#forge:tools/hammers',
+        X: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    // Wizard Brain: a cypher encodes a single stored pattern for reuse -- stored logic.
+    event.remove({ id: 'hexcasting:cypher' })
+    event.shaped('hexcasting:cypher', ['FCX', 'YAC', ' C '], {
+        C: '#forge:ingots/copper',
+        A: 'kubejs:hexed_amethyst_core',
+        F: '#forge:tools/files',
+        X: 'kubejs:elementium_wizard_brain',
+        Y: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/files'))
+
+    event.remove({ id: 'hexcasting:scroll_small' })
+    event.shaped('hexcasting:scroll_small', ['KA', 'P '], {
+        A: 'kubejs:hexed_amethyst_core',
+        P: 'minecraft:paper',
+        K: '#forge:tools/knives',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+
+    event.remove({ id: 'hexcasting:scroll_medium' })
+    event.shaped('hexcasting:scroll_medium', ['K A', 'XP ', 'BP '], {
+        A: 'kubejs:hexed_amethyst_core',
+        P: 'minecraft:paper',
+        K: '#forge:tools/knives',
+        X: 'kubejs:elementium_sigil',
+        B: 'kubejs:elementium_wizard_brain',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+
+    event.remove({ id: 'hexcasting:scroll' })
+    event.shaped('hexcasting:scroll', ['PXA', 'PPP', 'BPK'], {
+        A: 'kubejs:hexed_amethyst_core',
+        P: 'minecraft:paper',
+        K: '#forge:tools/knives',
+        X: 'kubejs:elementium_sigil',
+        B: 'kubejs:elementium_wizard_brain',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+
+    event.remove({ id: 'hexcasting:scroll_paper' })
+    event.shaped('8x hexcasting:scroll_paper', ['PXP', 'PAP', 'BPK'], {
+        P: 'minecraft:paper',
+        A: 'kubejs:hexed_amethyst_core',
+        K: '#forge:tools/knives',
+        X: 'kubejs:elementium_sigil',
+        B: 'kubejs:elementium_wizard_brain',
+    }).damageIngredient(Ingredient.of('#forge:tools/knives'))
+
+    // Wizard Brain: an abacus is a literal computation/counting device.
+    event.remove({ id: 'hexcasting:abacus' })
+    event.shaped('hexcasting:abacus', ['MYX', 'SAS', 'WAW'], {
+        W: '#minecraft:planks',
+        A: 'kubejs:hexed_amethyst_core',
+        S: 'minecraft:stick',
+        M: '#forge:tools/mallets',
+        X: 'kubejs:elementium_wizard_brain',
+        Y: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/mallets'))
+
+    // Channeling Vessel: a bookshelf/connector stores and channels knowledge flow.
+    event.remove({ id: 'hexcasting:akashic_bookshelf' })
+    event.shaped('hexcasting:akashic_bookshelf', ['ZPV', 'XAC', 'LPL'], {
+        L: '#hexcasting:edified_logs',
+        P: '#hexcasting:edified_planks',
+        C: 'minecraft:book',
+        A: 'kubejs:hexed_mana_matrix',
+        Z: '#forge:tools/saws',
+        V: 'kubejs:elementium_channeling_vessel',
+        X: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
+
+    event.remove({ id: 'hexcasting:akashic_connector' })
+    event.shaped('4x hexcasting:akashic_connector', ['ZXV', '12A', 'LPL'], {
+        L: '#hexcasting:edified_logs',
+        P: '#hexcasting:edified_planks',
+        '1': 'hexcasting:amethyst_dust',
+        '2': 'minecraft:amethyst_shard',
+        A: 'kubejs:hexed_mana_matrix',
+        Z: '#forge:tools/saws',
+        V: 'kubejs:elementium_channeling_vessel',
+        X: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/saws'))
+
+    event.remove({ id: 'hexcasting:focus' })
+    event.remove({ id: 'hexcasting:focus_rotated' })
+    // Circuit: focus and spellbook are the tier's own core casting devices (focus is the
+    // hand-held caster, spellbook the written form) -- same role as Hobbyist's spell books.
+    // Focus and spellbook go to the Manaweaving Altar, not the table: 7 ingredients each, over the
+    // Alchemy Table's 6-slot cap, and a woven/written casting focus is what manaweaving is for.
+    addMnaManaweavingRecipe(event, {
+        output: 'hexcasting:focus',
+        items: ['minecraft:leather', 'gtceu:holy_silver_rod', 'gtceu:holy_silver_rod', 'kubejs:hexed_mana_matrix', 'minecraft:glowstone', 'kubejs:elementium_wizard_brain', 'kubejs:elementium_sigil'],
+        patterns: ['mna:split_triangle', 'mna:knot'],
+        tier: 3
+    })
+
+    event.remove({ id: 'hexcasting:spellbook' })
+    addMnaManaweavingRecipe(event, {
+        output: 'hexcasting:spellbook',
+        items: ['minecraft:writable_book', 'gtceu:holy_silver_plate', 'kubejs:elementium_wizard_brain', 'kubejs:hexed_mana_matrix', 'botania:elementium_ingot', 'minecraft:chorus_fruit', 'kubejs:elementium_sigil'],
+        patterns: ['mna:split_triangle', 'mna:square'],
+        tier: 3
+    })
+
+    // Wizard Brain: an artifact stores and can rebroadcast a spell -- unattended casting logic.
+    event.remove({ id: 'hexcasting:artifact' })
+    addAlchemyTableRecipe(event, {
+        output: 'hexcasting:artifact',
+        input: ['#minecraft:music_discs', 'gtceu:holy_silver_plate', 'kubejs:elementium_sigil', 'kubejs:hexed_mana_matrix', 'botania:elementium_ingot', 'kubejs:elementium_wizard_brain'],
+        syphon: LP.INITIATE,
+        upgradeLevel: 2
+    })
+
+    // Ward Lattice: a worn trinket is a passive protective effect.
+    event.remove({ id: 'hexcasting:trinket' })
+    event.shaped('hexcasting:trinket', ['HXF', 'MAM', 'WMW'], {
+        M: 'gtceu:holy_silver_plate',
+        A: 'kubejs:hexed_mana_matrix',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files',
+        W: 'kubejs:elementium_ward_lattice',
+        X: 'kubejs:elementium_sigil',
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
+
     // --- Microcrafting: Initiate circuit + components ---
     // Elementium is this tier's actual signature/anchor (corrected 2026-07-29, matching the
     // original rework design doc); Holy Silver appears below only as a secondary flavor material.
@@ -361,22 +546,40 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'aerial', count: 2 }]
     })
 
-    // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
-    addEldrinAltarRecipe(event, {
+    // Wizard Brain: Alchemy Table (3rd distinct handler for this tier's item set -- sigil blank is
+    // Manaweaving T2, sigil is Spirit Infusion). Grammar: thought vessel (spell book) + animating
+    // agent (divine pearl).
+    addAlchemyTableRecipe(event, {
         output: 'kubejs:elementium_wizard_brain',
-        items: ['botania:elementium_ingot', 'irons_spellbooks:divine_pearl', 'kubejs:sacred_ambrosium_shard'],
-        affinity: 'ARCANE', power: Source.INITIATE,
-        tier: 2
+        input: ['botania:elementium_ingot', 'irons_spellbooks:gold_spell_book', 'irons_spellbooks:divine_pearl', 'kubejs:sacred_ambrosium_shard'],
+        syphon: LP.INITIATE,
+        ticks: 200,
+        upgradeLevel: 2
+    })
+    addArcRecipe(event, {
+        input: 'gtceu:elementium_rod',
+        tool: '#forge:tools/files',
+        output: 'kubejs:elementium_motive_core',
+        bonusOutputs: [{ item: 'gtceu:skyforged_rod', chance: 0.25 }]
     })
 
-    // Center item = role signal: rod (kinetic) / ingot (flow) / plate (containment).
-    addComponentRecipe(event, 'kubejs:elementium_motive_core', [
-        'gtceu:elementium_rod', 'gtceu:skyforged_rod', 'aether:victory_medal'
-    ])
-    addComponentRecipe(event, 'kubejs:elementium_channeling_vessel', [
-        'botania:elementium_ingot', 'gtceu:holy_silver_plate', 'reliquary:mercy_cross'
-    ])
-    addComponentRecipe(event, 'kubejs:elementium_ward_lattice', [
-        'gtceu:elementium_plate', 'gtceu:skyforged_plate', 'reliquary:fortune_coin'
-    ])
+    // Channeling Vessel: the elves trade you a vessel already hollowed.
+    event.custom({
+        "type": "botania:elven_trade",
+        "ingredients": [
+            { "item": "botania:mana_bottle" },
+            { "item": "botania:elementium_ingot" },
+            { "item": "gtceu:holy_silver_plate" }
+        ],
+        "output": [
+            { "item": "kubejs:elementium_channeling_vessel" }
+        ]
+    })
+
+    // Ward Lattice: scribed on the ground, a protection rune thrown onto skyforged plating.
+    addAlchemyArrayRecipe(event, {
+        base: 'gtceu:skyforged_plate',
+        thrown: 'irons_spellbooks:protection_rune',
+        output: 'kubejs:elementium_ward_lattice'
+    })
 });

@@ -130,14 +130,35 @@ ServerEvents.recipes(event => {
         output: 'kubejs:wraith_wizard_brain',
         spirits: [{ type: 'eldritch', count: 2 }]
     })
+    addOccultismRitual(event, {
+        name: 'wraith_motive_core',
+        tier: 'marid',
+        output: 'kubejs:wraith_motive_core',
+        duration: 200,
+        ingredients: [
+            { item: 'kubejs:stabilized_chaos_crystal' },
+            { item: 'draconicevolution:chaotic_core' },
+            { item: 'occultism:afrit_essence' },
+            { item: 'occultism:soul_shard' }
+        ]
+    })
 
-    addComponentRecipe(event, 'kubejs:wraith_motive_core', [
-        'kubejs:stabilized_chaos_crystal', 'draconicevolution:chaotic_core', 'occultism:afrit_essence'
-    ])
-    addComponentRecipe(event, 'kubejs:wraith_channeling_vessel', [
-        'kubejs:stabilized_chaos_crystal', 'occultism:otherworld_essence', 'occultism:soul_shard'
-    ])
-    addComponentRecipe(event, 'kubejs:wraith_ward_lattice', [
-        'kubejs:stabilized_chaos_crystal', 'occultism:spirit_attuned_gem', 'draconicevolution:chaotic_core'
-    ])
+    // Channeling Vessel: Alchemy Table, Archmage orb.
+    addAlchemyTableRecipe(event, {
+        output: 'kubejs:wraith_channeling_vessel',
+        input: ['kubejs:stabilized_chaos_crystal', 'gtceu:concepts_bucket', 'occultism:soul_shard', 'gtceu:chaos_crystal_dust'],
+        syphon: LP.ASCENDANT,
+        upgradeLevel: 4
+    })
+
+    // Ward Lattice: Spirit Infusion, eldritch spirits -- endermen and endermites pay for this one.
+    addSpiritInfusion(event, {
+        input: 'kubejs:stabilized_chaos_crystal',
+        output: 'kubejs:wraith_ward_lattice',
+        extraItems: [
+            { item: 'occultism:spirit_attuned_gem' },
+            { item: 'gtceu:chaos_crystal_dust' }
+        ],
+        spirits: [{ type: 'eldritch', count: 4 }]
+    })
 })

@@ -121,14 +121,26 @@ ServerEvents.recipes(event => {
         syphon: LP.PROPHET,
         upgradeLevel: 4
     })
+    addArcRecipe(event, {
+        input: 'draconicevolution:wyvern_core',
+        tool: 'bloodmagic:sand_hellforged',
+        output: 'kubejs:argent_motive_core',
+        consumeInput: true,
+        bonusOutputs: [{ item: 'draconicevolution:draconium_dust', chance: 0.3 }]
+    })
 
-    addComponentRecipe(event, 'kubejs:argent_motive_core', [
-        'kubejs:draconic_boule', 'draconicevolution:wyvern_core', 'bloodmagic:sand_hellforged'
-    ])
-    addComponentRecipe(event, 'kubejs:argent_channeling_vessel', [
-        'kubejs:draconic_boule', 'bloodmagic:blankslate', 'gtceu:neutronium_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:argent_ward_lattice', [
-        'kubejs:draconic_boule', 'bloodmagic:basemonstersoul_corrosive', 'botania:gaia_ingot'
-    ])
+    // Channeling Vessel: Terra Plate, poured around a neutronium core.
+    addTerraPlateRecipe(event, {
+        result: 'kubejs:argent_channeling_vessel',
+        mana: Mana.PROPHET,
+        ingredients: ['kubejs:draconic_boule', 'gtceu:concepts_bucket', 'gtceu:neutronium_ingot']
+    })
+
+    // Ward Lattice: Blood Altar, a strict single-input transform -- pure LP, no assembly.
+    addBloodAltarRecipe(event, {
+        input: { item: 'draconicevolution:draconium_ingot', count: 4 },
+        output: 'kubejs:argent_ward_lattice',
+        syphon: LP.PROPHET,
+        upgradeLevel: 4
+    })
 })

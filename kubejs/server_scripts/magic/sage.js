@@ -189,11 +189,11 @@ ServerEvents.recipes(event => {
 
     // abstract_elastomer_compound_mix: GT mixer retired (magic spine stays GT-free) -- vanilla
     // combine instead. Dead ars_nouveau:source_gem x4 / wilden_horn swapped for real UV-tier
-    // materials already established in this pack (naquadah_dust, abstract_metal_ingot).
+    // materials already established in this pack (naquadah_dust, prima_materia_ingot).
     event.shapeless('kubejs:elemental_latex_compound', [
         'kubejs:primal_latex_billet',
         'gtceu:naquadah_dust', 'gtceu:naquadah_dust', 'gtceu:naquadah_dust', 'gtceu:naquadah_dust',
-        'gtceu:abstract_metal_ingot'
+        'gtceu:prima_materia_ingot'
     ])
 
     // abstract_elastomer_ingot: dead wilden_tribute x2 and the leftover gaia_ingot x4 (Sorcerer-
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
             'kubejs:elemental_latex_compound',
             'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul',
             'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul',
-            'gtceu:abstract_metal_ingot', 'gtceu:abstract_metal_ingot'
+            'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
         ],
         affinity: 'earth',
         power: LP.SAGE
@@ -261,22 +261,39 @@ ServerEvents.recipes(event => {
     })
 
     // Wizard Brain: Eldrin Altar (3rd distinct handler for this tier's item set).
+    // Grammar: thought vessel (hex artifact -- stored spell logic that casts unattended) +
+    // animating agent (astral holy core).
     addEldrinAltarRecipe(event, {
         output: 'kubejs:empyrean_wizard_brain',
-        items: ['gtceu:empyrean_ichor_ingot', 'kubejs:astral_holy_core', 'irons_spellbooks:divine_pearl'],
+        items: ['gtceu:empyrean_ichor_ingot', 'hexcasting:artifact', 'kubejs:astral_holy_core', 'irons_spellbooks:divine_pearl'],
         affinity: 'ENDER', power: Source.SAGE,
         tier: 5
     })
+    addRunicAltarRecipe(event, {
+        output: { item: 'kubejs:empyrean_motive_core' },
+        mana: Mana.SAGE,
+        ingredients: [
+            { item: 'gtceu:empyrean_ichor_rod' },
+            { item: 'botania:rune_wrath' },
+            { item: 'minecraft:netherite_ingot' },
+            { item: 'minecraft:nether_star' }
+        ]
+    })
 
-    addComponentRecipe(event, 'kubejs:empyrean_motive_core', [
-        'gtceu:empyrean_ichor_rod', 'kubejs:astral_blood_core', 'minecraft:netherite_ingot'
-    ])
-    addComponentRecipe(event, 'kubejs:empyrean_channeling_vessel', [
-        'gtceu:empyrean_ichor_ingot', 'gtceu:abstract_elastomer_ingot', 'occultism:otherworld_essence'
-    ])
-    addComponentRecipe(event, 'kubejs:empyrean_ward_lattice', [
-        'gtceu:empyrean_ichor_plate', 'kubejs:astral_annihilation_core', 'minecraft:ender_eye'
-    ])
+    // Channeling Vessel: Terra Plate -- poured, not assembled.
+    addTerraPlateRecipe(event, {
+        result: 'kubejs:empyrean_channeling_vessel',
+        mana: Mana.SAGE,
+        ingredients: ['gtceu:empyrean_ichor_ingot', 'gtceu:concepts_bucket', 'gtceu:abstract_elastomer_ingot']
+    })
+
+    // Ward Lattice: Eldrin Altar, water affinity -- a ward is a standing field, not a plate.
+    addEldrinAltarRecipe(event, {
+        output: 'kubejs:empyrean_ward_lattice',
+        items: ['gtceu:empyrean_ichor_plate', 'irons_spellbooks:holy_rune', 'irons_spellbooks:holy_rune', 'minecraft:nether_star', 'kubejs:sacred_ambrosium_shard'],
+        affinity: 'water',
+        power: LP.SAGE
+    })
 
     // Wisdom Stone: Philosopher's Stone (Ritual of the Balanced Scales, Alchemical Nexus).
     // Brand-new recipe -- confirmed via full jar recipe search that magichem-0.5.2.jar ships NO
