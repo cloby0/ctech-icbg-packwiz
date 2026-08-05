@@ -9,11 +9,12 @@ function stripNamespace(str) {
 }
 
 function manaToTicks(mana) {
-    return Math.max(Math.round(mana / 100), 20) * 2
+    return Math.min(1200, Math.max(100, Math.round(mana / 100)))
 }
 
-// Inverse of ars_botania mana_convert (source buys mana at 2:1).
-let source_rate = 0.5
+function agglomerationTicks(mana) {
+    return Math.min(2400, Math.max(600, Math.round(mana / 2500)))
+}
 
 function resolveRunicIngredient(ing, debugLabel) {
     if (Array.isArray(ing)) {
@@ -76,9 +77,9 @@ function addRunicAltarRecipe(event, crecipe) {
     }
 
     const gt = event.recipes.gtceu.runic_forge('runic_forge/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
+        .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
         .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(manaToTicks(mana * source_rate))
+        .duration(manaToTicks(mana))
         .EUt(LuV_EU)
     itemInputs.forEach(input => gt.itemInputs(input))
 }
@@ -105,11 +106,10 @@ function addTerraPlateRecipe(event, crecipe) {
         if (resolved) itemInputs.push(resolved)
     }
 
-    const duration = mana >= 1000000 ? 1200 : 600
     const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
+        .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
         .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(duration)
+        .duration(agglomerationTicks(mana))
         .EUt(LuV_EU)
     itemInputs.forEach(input => gt.itemInputs(input))
 }
@@ -150,9 +150,9 @@ ServerEvents.recipes(event => {
         console.log('[runic_forge] cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.runic_forge(`runic_forge/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
+            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
             .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(manaToTicks(mana * source_rate))
+            .duration(manaToTicks(mana))
             .EUt(LuV_EU)
 
         itemInputs.forEach(input => gt.itemInputs(input))
@@ -184,13 +184,12 @@ ServerEvents.recipes(event => {
         if (skip || itemInputs.length === 0) return
 
         const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
-        const duration = mana >= 1000000 ? 1200 : 600
         console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
 
         const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
+            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
             .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(duration)
+            .duration(agglomerationTicks(mana))
             .EUt(LuV_EU)
 
         itemInputs.forEach(input => gt.itemInputs(input))

@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
         output: 'reliquary:alkahestry_tome',
         items: ['minecraft:book', 'gtceu:prima_materia_plate', 'minecraft:redstone_block', 'kubejs:animus_sigil', 'minecraft:experience_bottle', 'kubejs:animus_wizard_brain'],
         affinity: 'arcane',
-        power: 2 * LP.ALCHEMIST
+        power: 2 * LP.ALCHEMIST,
+        tier: 4
     })
 
     // Pure Daisy previously re-gated to Alchemist (Eldrin Altar, prima_materia_rod) -- broke
@@ -32,7 +33,8 @@ ServerEvents.recipes(event => {
         output: 'gtceu:concepts_bucket',
         items: ['minecraft:bucket', 'gtceu:prima_materia_block', 'minecraft:experience_bottle', 'minecraft:experience_bottle', 'hexcasting:charged_amethyst'],
         affinity: 'arcane',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
 
     // raw_mana -> source_gem: dead output, Source Gem retired pack-wide since 03-journeyman.md.
@@ -43,7 +45,7 @@ ServerEvents.recipes(event => {
 
     addManaPondRecipe(event, {
         input: { tag: 'forge:ingots/silver' },
-        mana: Mana.ALCHEMIST,
+        mana: ManaPool.ALCHEMIST,
         catalyst: { type: 'block', block: 'botania:alchemy_catalyst' },
         output: { item: 'gtceu:holy_silver_ingot' }
     })
@@ -131,11 +133,11 @@ ServerEvents.recipes(event => {
         output: 'kubejs:animus_wizard_brain',
         items: ['gtceu:distilled_animus_ingot', 'minecraft:writable_book', 'kubejs:arcane_residue', 'kubejs:hexed_amethyst_core'],
         affinity: 'ARCANE', power: Source.ALCHEMIST,
-        tier: 3
+        tier: 4
     })
     addManaPondRecipe(event, {
         input: { item: 'gtceu:distilled_animus_rod' },
-        mana: 2 * Mana.ALCHEMIST,
+        mana: 2 * ManaPool.ALCHEMIST,
         catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
         output: { item: 'kubejs:animus_motive_core' }
     })

@@ -1,13 +1,13 @@
 name = "Apprentice's Codex"
-filename = "apprentice_codex-0.9.4+mc1.20.1.jar"
+filename = "apprentice_codex-0.9.6+mc1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b3e351653265da0edf13635751c8d8dd5dbffcd0"
+hash = "25b6886a553abd69a56ab2c751f1f73607fe0f3b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8247662
+file-id = 8512965
 project-id = 1450885

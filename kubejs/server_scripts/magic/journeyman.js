@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: 'botania:terrasteel_ingot',
-        mana: Mana.JOURNEYMAN,
+        mana: Agglomeration.JOURNEYMAN,
         ingredients: ['kubejs:verdant_grafted_manasteel']
     })
 
@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
     // Grammar: thought vessel (spell book) + animating agent (spirit attuned crystal).
     addTerraPlateRecipe(event, {
         result: 'kubejs:veridian_wizard_brain',
-        mana: Mana.JOURNEYMAN,
+        mana: Agglomeration.JOURNEYMAN,
         ingredients: ['botania:terrasteel_ingot', 'irons_spellbooks:iron_spell_book', 'occultism:spirit_attuned_crystal']
     })
     addMnaArcaneFurnaceRecipe(event, {
@@ -297,7 +297,7 @@ ServerEvents.recipes(event => {
     // Ward Lattice: runic work -- the altar binds the protection into the plate directly.
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:veridian_ward_lattice' },
-        mana: Mana.JOURNEYMAN,
+        mana: RunicAltar.JOURNEYMAN,
         ingredients: [
             { item: 'gtceu:terrasteel_plate' },
             { item: 'gtceu:terrasteel_plate' },

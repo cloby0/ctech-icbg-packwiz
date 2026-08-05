@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: 'botania:gaia_ingot',
-        mana: Mana.SORCERER,
+        mana: Agglomeration.SORCERER,
         ingredients: ['kubejs:gravity_bound_life_essence']
     })
 
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: 'kubejs:gravitic_sigil',
-        mana: Mana.SORCERER,
+        mana: Agglomeration.SORCERER,
         ingredients: ['kubejs:gravitic_sigil_blank', 'kubejs:element_attunement_stone']
     })
 
@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: runic work, not a grid craft.
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:gravitic_channeling_vessel' },
-        mana: Mana.SORCERER,
+        mana: RunicAltar.SORCERER,
         ingredients: [
             { item: 'botania:gaia_ingot' },
             { item: 'botania:mana_bottle' },

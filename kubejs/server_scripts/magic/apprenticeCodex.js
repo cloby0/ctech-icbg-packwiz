@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'apprenticecodex:spellcaster_workbench' })
     addRunicAltarRecipe(event, {
         output: { item: 'apprenticecodex:spellcaster_workbench' },
-        mana: Mana.JOURNEYMAN,
+        mana: RunicAltar.JOURNEYMAN,
         ingredients: [
             { item: 'gtceu:luminessence_dust' },
             { item: 'irons_spellbooks:arcane_ingot' },
@@ -340,7 +340,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'apprenticecodex:atelier_station' })
     addRunicAltarRecipe(event, {
         output: { item: 'apprenticecodex:atelier_station' },
-        mana: Mana.JOURNEYMAN,
+        mana: RunicAltar.JOURNEYMAN,
         ingredients: [
             { item: 'apprenticecodex:spellcasters_flask' },
             { item: 'irons_spellbooks:magic_cloth' },
@@ -399,7 +399,8 @@ ServerEvents.recipes(event => {
         output: 'apprenticecodex:multipurpose_staffrifle',
         items: ['irons_spellbooks:mithril_ingot', 'irons_spellbooks:mithril_ingot', 'irons_spellbooks:mithril_ingot', 'irons_spellbooks:weapon_parts', 'irons_spellbooks:cooldown_upgrade_orb', 'gtceu:holy_silver_ingot'],
         affinity: 'ender',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
     event.shaped('apprenticecodex:circuit_heat_staff', [
         'CPH',
@@ -420,7 +421,8 @@ ServerEvents.recipes(event => {
         output: 'apprenticecodex:mithril_freecast_staff',
         items: ['irons_spellbooks:arcane_ingot', 'irons_spellbooks:magic_cloth', 'irons_spellbooks:weapon_parts', 'gtceu:prima_materia_plate', 'irons_spellbooks:mithril_scrap'],
         affinity: 'air',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
     event.shaped('apprenticecodex:revolvercast_staff', [
         'DAG',
@@ -497,7 +499,8 @@ ServerEvents.recipes(event => {
         output: 'apprenticecodex:photon_siphon',
         items: ['gtceu:prima_materia_plate', 'gtceu:prima_materia_plate', 'irons_spellbooks:arcane_ingot', 'gtceu:glass_lens', 'gtceu:glass_lens', 'irons_spellbooks:mithril_scrap'],
         affinity: 'arcane',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
     event.shaped('apprenticecodex:mana_thruster', [
         'WSF',
@@ -648,7 +651,8 @@ ServerEvents.recipes(event => {
         output: 'apprenticecodex:zenith_staff',
         items: ['irons_spellbooks:mithril_ingot', 'irons_spellbooks:divine_soulshard', 'botania:manasteel_ingot', 'irons_spellbooks:mithril_weave', 'irons_spellbooks:weapon_parts'],
         affinity: 'arcane',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
     event.shaped('apprenticecodex:focus_staffbow', [
         'CMS',
@@ -662,12 +666,39 @@ ServerEvents.recipes(event => {
         C: '#forge:tools/wire_cutters'
     }).damageIngredient(Ingredient.of('#forge:tools/wire_cutters'))
 
+    // Restored 2026-08-04: a bad regex in the keystone-tax conversion deleted this recipe and
+    // pastel_staff below instead of converting them. unite_luna_staff is a K3 endgame staff.
+    event.remove({ id: 'apprenticecodex:unite_luna_staff' })
+    addEldrinAltarRecipe(event, {
+        output: 'apprenticecodex:unite_luna_staff',
+        items: ['botania:mana_glass', 'botania:mana_glass', 'minecraft:netherite_sword', 'irons_spellbooks:silver_ring', 'botania:manasteel_ingot'],
+        affinity: 'water',
+        power: LP.ALCHEMIST,
+        tier: 4
+    })
+
+    // pastel_staff is NOT a keystone -- restored exactly as it was, in the grid.
+    event.remove({ id: 'apprenticecodex:pastel_staff' })
+    event.shaped('apprenticecodex:pastel_staff', [
+        'HMU',
+        'FX ',
+        'P  '
+    ], {
+        M: 'irons_spellbooks:mithril_ingot',
+        U: 'irons_spellbooks:upgrade_orb',
+        X: 'botania:manasteel_ingot',
+        P: 'irons_spellbooks:weapon_parts',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    }).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
+
     event.remove({ id: 'apprenticecodex:illuminate_stellar_staff' })
     addEldrinAltarRecipe(event, {
         output: 'apprenticecodex:illuminate_stellar_staff',
         items: ['botania:mana_glass', 'botania:mana_glass', 'minecraft:netherite_sword', 'minecraft:nether_star', 'botania:manasteel_ingot'],
         affinity: 'fire',
-        power: LP.ALCHEMIST
+        power: LP.ALCHEMIST,
+        tier: 4
     })
     event.shaped('apprenticecodex:satellite_followcast_amulet', [
         'X X',

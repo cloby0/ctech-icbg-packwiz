@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:vengeful_wraith' },
-        mana: Mana.SAGE,
+        mana: RunicAltar.SAGE,
         ingredients: [
             { item: 'botania:life_essence' },
             { item: 'botania:rune_wrath' },
@@ -27,7 +27,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:bound_astral_soul',
         items: ['kubejs:vengeful_wraith', 'minecraft:wither_skeleton_skull', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'occultism:soul_gem'],
         affinity: 'ender',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     addEldrinAltarRecipe(event, {
@@ -40,7 +41,8 @@ ServerEvents.recipes(event => {
             'botania:elementium_block', 'botania:elementium_block'
         ],
         affinity: 'earth',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Channeling Vessel: a blood core's whole theme is flowing vitality.
@@ -53,7 +55,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_channeling_vessel'
         ],
         affinity: 'fire',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Ward Lattice: a holy core is protective/divine ward.
@@ -66,7 +69,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_ward_lattice'
         ],
         affinity: 'water',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Wizard Brain: a void core channels eldritch/otherworldly knowledge.
@@ -78,7 +82,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'ender',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Motive Core: an annihilation core is raw destructive force.
@@ -92,7 +97,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_motive_core'
         ],
         affinity: 'ender',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Wizard Brain: a grimoire is stored magical knowledge, same role as any tier's spell book.
@@ -106,7 +112,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'fire',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     // Ward Lattice: a sanctum is a protective holy structure.
@@ -120,7 +127,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_ward_lattice'
         ],
         affinity: 'water',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     // Wizard Brain: a codex is stored eldritch knowledge.
@@ -134,7 +142,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_wizard_brain'
         ],
         affinity: 'ender',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     // Motive Core: a chronicle of obliteration is raw destructive force, matches its core.
@@ -148,7 +157,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_motive_core'
         ],
         affinity: 'ender',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     // Circuit: the tech-bridge codex, already built from UV circuits -- doubling down on the
@@ -163,7 +173,8 @@ ServerEvents.recipes(event => {
             'kubejs:empyrean_sigil'
         ],
         affinity: 'arcane',
-        power: 2 * LP.SAGE
+        power: 2 * LP.SAGE,
+        tier: 5
     })
 
     // botania:life_essence: dropped the crafted production recipe entirely. Life Essence comes
@@ -184,7 +195,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:primal_latex_billet',
         items: ['gtceu:rubber_dust', 'gtceu:rubber_dust', 'gtceu:rubber_dust', 'gtceu:rubber_dust', '#kubejs:fire_essences', '#kubejs:water_essences', '#kubejs:earth_essences', '#kubejs:air_essences', 'occultism:otherworld_essence', 'occultism:otherworld_essence'],
         affinity: 'earth',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // abstract_elastomer_compound_mix: GT mixer retired (magic spine stays GT-free) -- vanilla
@@ -209,7 +221,8 @@ ServerEvents.recipes(event => {
             'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'
         ],
         affinity: 'earth',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // --- Empyrean Ichor: Sage capstone material, no shortcut (capstones stay hard by design) ---
@@ -250,13 +263,13 @@ ServerEvents.recipes(event => {
     // magic_palette.md already flags as the single most over-repeated staple in the pack.
     addRunicAltarRecipe(event, {
         output: 'kubejs:empyrean_sigil_blank',
-        mana: Mana.SAGE,
+        mana: RunicAltar.SAGE,
         ingredients: ['gtceu:empyrean_ichor_ingot', 'kubejs:astral_void_core', 'minecraft:nether_star']
     })
 
     addTerraPlateRecipe(event, {
         result: 'kubejs:empyrean_sigil',
-        mana: Mana.SAGE,
+        mana: Agglomeration.SAGE,
         ingredients: ['kubejs:empyrean_sigil_blank', 'kubejs:bound_astral_soul']
     })
 
@@ -271,7 +284,7 @@ ServerEvents.recipes(event => {
     })
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:empyrean_motive_core' },
-        mana: Mana.SAGE,
+        mana: RunicAltar.SAGE,
         ingredients: [
             { item: 'gtceu:empyrean_ichor_rod' },
             { item: 'botania:rune_wrath' },
@@ -283,7 +296,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: Terra Plate -- poured, not assembled.
     addTerraPlateRecipe(event, {
         result: 'kubejs:empyrean_channeling_vessel',
-        mana: Mana.SAGE,
+        mana: Agglomeration.SAGE,
         ingredients: ['gtceu:empyrean_ichor_ingot', 'gtceu:concepts_bucket', 'gtceu:abstract_elastomer_ingot']
     })
 
@@ -292,7 +305,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:empyrean_ward_lattice',
         items: ['gtceu:empyrean_ichor_plate', 'irons_spellbooks:holy_rune', 'irons_spellbooks:holy_rune', 'minecraft:nether_star', 'kubejs:sacred_ambrosium_shard'],
         affinity: 'water',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     // Wisdom Stone: Philosopher's Stone (Ritual of the Balanced Scales, Alchemical Nexus).

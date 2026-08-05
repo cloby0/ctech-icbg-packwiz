@@ -312,7 +312,9 @@ StartupEvents.registry('item', event => {
         'gravitic_motive_core', 'kathar_ward_lattice', 'wraith_motive_core',
         // Inventory Pets keystone tax: late/PvP-breaking pets + meta pets are Occultism rituals
         'pet_enderman', 'pet_end_portal', 'pet_house', 'pet_illuminati', 'pet_juggernaut', 'pet_loot', 'pet_nether_portal', 'pet_pacman', 'pet_qcm', 'pet_black_hole', 'pet_cloud', 'pet_heart', 'pet_moon', 'pet_pufferfish', 'pet_shield', 'pet_slime', 'pet_sun', 'pet_grave', 'pet_mickerson', 'pet_wither', 'pet_dingot', 'pet_flying_saddle', 'pet_sated_chest', 'pet_sated_double_chest', 'pet_meta', 'pet_meta_aoe', 'pet_meta_fan', 'pet_meta_mob', 'pet_meta_peaceful', 'pet_meta_special', 'pet_meta_utility', 'pet_meta_youtuber', 'pet_meta_25', 'pet_meta_50', 'pet_meta_75', 'pet_meta_100',
-        'diamond_expansion_template']
+        'diamond_expansion_template',
+        // Enigmatic Legacy keystone tax: Marid capstones
+        'cosmic_heart', 'eye_of_nebula', 'the_infinitum']
     ritualDummies.forEach(name => {
         event.create('ritual_dummy_' + name, 'occultism:ritual_dummy')
             .displayName('Ritual: ' + name)

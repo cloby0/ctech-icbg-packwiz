@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'modulargolems:golem_workbench' })
     addRunicAltarRecipe(event, {
         output: { item: 'modulargolems:golem_workbench' },
-        mana: Mana.JOURNEYMAN,
+        mana: RunicAltar.JOURNEYMAN,
         ingredients: [
             { item: 'gtceu:manasteel_plate', count: 2 },
             { item: 'modulargolems:golem_slicing_axe' },

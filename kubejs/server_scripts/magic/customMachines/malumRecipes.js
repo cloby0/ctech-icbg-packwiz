@@ -41,6 +41,21 @@ function _malumOutput(crecipe) {
     return { id: id, count: count }
 }
 
+// '#tag' shorthand in `item` must become a real {tag: ...} ingredient, or Malum's
+// deserializer tries to create a ResourceLocation from the literal '#tag' string and crashes.
+function _malumExtraItems(extraItems) {
+    let out = []
+    for (let i = 0; i < extraItems.length; i++) {
+        let e = extraItems[i]
+        if (e.item && e.item.charAt(0) === '#') {
+            out.push({ tag: e.item.slice(1), count: e.count || 1 })
+        } else {
+            out.push(e)
+        }
+    }
+    return out
+}
+
 let _spiritInfusionIndex = 0
 
 function addSpiritInfusion(event, crecipe) {
@@ -55,7 +70,7 @@ function addSpiritInfusion(event, crecipe) {
         spirits: _malumSpirits(crecipe.spirits || []),
     }
     if (crecipe.extraItems && crecipe.extraItems.length > 0) {
-        json.extra_items = crecipe.extraItems
+        json.extra_items = _malumExtraItems(crecipe.extraItems)
     }
 
     console.log(`[malum] infusion ${index}: ${o.id} spirits=${json.spirits.length}`)

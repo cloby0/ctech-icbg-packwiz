@@ -4,9 +4,9 @@ ServerEvents.recipes(event => {
     // Apprentice-tier. It has no business first appearing at LuV.
 
     // florid_compound -> living_metalloid (+fertile_essence) -> terrasteel x3 dropped entirely,
-    // rune_of_frost with it: Journeyman's veridium chain already makes terrasteel for
-    // 1000 mana/ingot (Mana.JOURNEYMAN); this route cost 16*Mana.PROPHET for 3 ingots, ~1365x
-    // more per ingot, using the exact same addTerraPlateRecipe helper -- no handler exclusivity,
+    // rune_of_frost with it: Journeyman's veridium chain already makes terrasteel at the tier's
+    // own Agglomeration cost; this route was ~1365x more per ingot, using the exact same
+    // addTerraPlateRecipe helper -- no handler exclusivity,
     // no bulk/cost advantage, per user direction 2026-07-28's two-part test. Every intermediate
     // here (florid_compound, living_metalloid, fertile_essence, rune_of_frost) had no other
     // consumer in the pack, so the whole dead-end cascade goes, not just the terrasteel recipe.
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     //    cost that the recipe then leans on forever. Vengeful Will is the consumed half.
     addRunicAltarRecipe(event, {
         output: { item: 'gtceu:starforged_chimerite_gem' },
-        mana: Mana.THAUMATURGE,
+        mana: RunicAltar.THAUMATURGE,
         ingredients: [
             { item: 'kubejs:charged_chimerite' },
             { item: 'bloodmagic:basemonstersoul_vengeful' },
@@ -98,14 +98,14 @@ ServerEvents.recipes(event => {
 
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_diamond' },
-        mana: 2 * Mana.THAUMATURGE,
+        mana: 2 * ManaPool.THAUMATURGE,
         catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
         output: { item: 'botania:mana_diamond', count: 2 }
     })
 
     addManaPondRecipe(event, {
         input: { item: 'botania:mana_pearl' },
-        mana: 2 * Mana.THAUMATURGE,
+        mana: 2 * ManaPool.THAUMATURGE,
         catalyst: { type: 'block', block: 'botania:conjuration_catalyst' },
         output: { item: 'botania:mana_pearl', count: 2 }
     })
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
     // Ward Lattice: runic, on the altar that has existed since Journeyman.
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:starforged_ward_lattice' },
-        mana: Mana.THAUMATURGE,
+        mana: RunicAltar.THAUMATURGE,
         ingredients: [
             { item: 'gtceu:starforged_chimerite_plate' },
             { item: 'botania:rune_earth' },

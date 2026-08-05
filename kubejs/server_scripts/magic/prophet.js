@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: 'kubejs:argent_sigil',
-        mana: Mana.PROPHET,
+        mana: Agglomeration.PROPHET,
         ingredients: ['kubejs:argent_sigil_blank', 'bloodmagic:basemonstersoul_vengeful']
     })
 
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: Terra Plate, poured around a neutronium core.
     addTerraPlateRecipe(event, {
         result: 'kubejs:argent_channeling_vessel',
-        mana: Mana.PROPHET,
+        mana: Agglomeration.PROPHET,
         ingredients: ['kubejs:draconic_boule', 'gtceu:concepts_bucket', 'gtceu:neutronium_ingot']
     })
 

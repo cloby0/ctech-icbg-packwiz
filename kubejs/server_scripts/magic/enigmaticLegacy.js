@@ -1,4 +1,15 @@
 ServerEvents.recipes(event => {
+    // Keystone tax (2026-08-04). This file was 26 crafting-grid recipes with no magic device in
+    // sight. Taxed at the MATERIAL layer and the capstones, not at a gateway item -- the mod's real
+    // gateway (Ring of the Seven Curses) is a SPAWN item and cannot be gated, and The Acknowledgment
+    // is just the guidebook.
+    //   K1  evil_essence -> evil_ingot  -- Blood Altar, then Soul Forge (Destructive Will)
+    //   K2  abyssal_heart               -- Malum Spirit Infusion, wicked + eldritch
+    //   K3  cosmic_heart, eye_of_nebula, the_infinitum -- Occultism ritual, Marid
+    //       enigmatic_elytra            -- Eldrin Altar, air
+    // etherium_ingot stays EBF-only ON PURPOSE: Enigmatic Legacy gear is meant to be hybridized
+    // with tech, same call as L2Hostility. Do not add a magic-only alternate route.
+
 
 
     event.remove({ output: 'enigmaticlegacy:the_acknowledgment' })
@@ -226,22 +237,14 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
+    // K1b: Soul Forge. Destructive Will is the consumed half -- an ingot forged out of malice.
     event.remove({ output: 'enigmaticlegacy:evil_ingot' })
-    event.shaped(
-        Item.of('enigmaticlegacy:evil_ingot', 1),
-        [
-            'HPT',
-            'ENE',
-            'TET'
-        ],
-        {
-            T: 'minecraft:ghast_tear',
-            P: 'gtceu:prima_materia_plate',
-            E: 'enigmaticlegacy:evil_essence',
-            N: 'minecraft:netherite_ingot',
-            H: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    addSoulForgeRecipe(event, {
+        output: 'enigmaticlegacy:evil_ingot',
+        inputs: ['enigmaticlegacy:evil_essence', 'minecraft:netherite_ingot', 'minecraft:ghast_tear', 'bloodmagic:basemonstersoul_destructive'],
+        drain: 30,
+        minimumDrain: 600
+    })
 
 
     event.remove({ output: 'enigmaticlegacy:forbidden_axe' })
@@ -263,63 +266,51 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
+    // K3: Marid ritual. Already ate a nether star; now it costs a bound Marid too.
     event.remove({ output: 'enigmaticlegacy:cosmic_heart' })
-    event.shaped(
-        Item.of('enigmaticlegacy:cosmic_heart', 1),
-        [
-            'HSD',
-            'MXM',
-            'DED'
-        ],
-        {
-            D: 'enigmaticlegacy:astral_dust',
-            S: 'minecraft:nether_star',
-            M: 'gtceu:manasteel_plate',
-            X: 'minecraft:heart_of_the_sea',
-            E: 'minecraft:ender_eye',
-            H: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    addOccultismRitual(event, {
+        name: 'cosmic_heart',
+        tier: 'marid',
+        output: 'enigmaticlegacy:cosmic_heart',
+        duration: 200,
+        ingredients: [
+            { item: 'enigmaticlegacy:astral_dust', count: 3 },
+            { item: 'minecraft:nether_star' },
+            { item: 'minecraft:heart_of_the_sea' },
+            { item: 'minecraft:ender_eye' },
+            { item: 'occultism:soul_gem' }
+        ]
+    })
 
 
+    // K3: Eldrin Altar, air -- flight is woven, not hammered.
     event.remove({ output: 'enigmaticlegacy:enigmatic_elytra' })
-    event.shaped(
-        Item.of('enigmaticlegacy:enigmatic_elytra', 1),
-        [
-            'TAT',
-            'EXE',
-            'KND'
-        ],
-        {
-            T: 'botania:terrasteel_ingot',
-            A: 'enigmaticlegacy:angel_blessing',
-            E: 'enigmaticlegacy:etherium_ingot',
-            X: 'minecraft:elytra',
-            D: 'enigmaticlegacy:astral_dust',
-            N: 'enigmaticlegacy:eye_of_nebula',
-            K: '#forge:tools/knives'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/knives'))
+    addEldrinAltarRecipe(event, {
+        output: 'enigmaticlegacy:enigmatic_elytra',
+        items: ['minecraft:elytra', 'enigmaticlegacy:angel_blessing', 'enigmaticlegacy:etherium_ingot', 'enigmaticlegacy:etherium_ingot', 'enigmaticlegacy:eye_of_nebula', 'enigmaticlegacy:astral_dust', 'botania:terrasteel_ingot', 'botania:terrasteel_ingot'],
+        affinity: 'air',
+        power: 2 * LP.SAGE,
+        tier: 5
+    })
 
 
+    // K3 capstone: Marid ritual. The mod's endgame artifact.
     event.remove({ output: 'enigmaticlegacy:the_infinitum' })
-    event.shaped(
-        Item.of('enigmaticlegacy:the_infinitum', 1),
-        [
-            'HCH',
-            'EXE',
-            'MAZ'
-        ],
-        {
-            H: 'enigmaticlegacy:cosmic_heart',
-            C: 'enigmaticlegacy:enchanter_pearl',
-            E: 'enigmaticlegacy:evil_essence',
-            X: 'enigmaticlegacy:the_twist',
-            Z: 'botania:elementium_ingot',
-            A: 'enigmaticlegacy:abyssal_heart',
-            M: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    addOccultismRitual(event, {
+        name: 'the_infinitum',
+        tier: 'marid',
+        output: 'enigmaticlegacy:the_infinitum',
+        duration: 200,
+        ingredients: [
+            { item: 'enigmaticlegacy:cosmic_heart', count: 2 },
+            { item: 'enigmaticlegacy:abyssal_heart' },
+            { item: 'enigmaticlegacy:the_twist' },
+            { item: 'enigmaticlegacy:enchanter_pearl' },
+            { item: 'enigmaticlegacy:evil_essence', count: 2 },
+            { item: 'botania:elementium_ingot' },
+            { item: 'occultism:soul_gem' }
+        ]
+    })
 
     event.remove({ output: 'enigmaticlegacy:desolation_ring' })
     event.shaped(
@@ -373,22 +364,21 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
-        Item.of('enigmaticlegacy:eye_of_nebula', 1),
-        [
-            'FPA',
-            'DXD',
-            'ABA'
-        ],
-        {
-            A: 'enigmaticlegacy:astral_dust',
-            P: 'gtceu:prima_materia_plate',
-            D: 'enigmaticlegacy:etherium_ingot',
-            X: 'minecraft:ender_eye',
-            B: 'minecraft:dragon_breath',
-            F: '#forge:tools/files'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/files'))
+    // K3: Marid ritual. Keeps its etherium cost -- that GT/EBF dependency is deliberate
+    // hybridization for Enigmatic Legacy gear, NOT a magic-lane violation. Do not "fix" it.
+    addOccultismRitual(event, {
+        name: 'eye_of_nebula',
+        tier: 'marid',
+        output: 'enigmaticlegacy:eye_of_nebula',
+        duration: 200,
+        ingredients: [
+            { item: 'enigmaticlegacy:astral_dust', count: 3 },
+            { item: 'gtceu:prima_materia_plate' },
+            { item: 'enigmaticlegacy:etherium_ingot', count: 2 },
+            { item: 'minecraft:ender_eye' },
+            { item: 'minecraft:dragon_breath' }
+        ]
+    })
 
     event.shaped(
         Item.of('enigmaticlegacy:void_pearl', 1),
@@ -405,19 +395,13 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    event.shaped(
-        Item.of('enigmaticlegacy:evil_essence', 2),
-        [
-            'MW ',
-            'WPW',
-            ' W '
-        ],
-        {
-            W: 'minecraft:wither_rose',
-            P: 'gtceu:prima_materia_plate',
-            M: '#forge:tools/mortars'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/mortars'))
+    // K1a: wither roses ground down under LP. The evil line starts at the Blood Altar.
+    addBloodAltarRecipe(event, {
+        input: { item: 'minecraft:wither_rose', count: 4 },
+        output: { item: 'enigmaticlegacy:evil_essence', count: 2 },
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
+    })
 
     event.shaped(
         Item.of('enigmaticlegacy:earth_heart', 1),
@@ -464,19 +448,15 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
-    event.shaped(
-        Item.of('enigmaticlegacy:abyssal_heart', 1),
-        [
-            'HTC',
-            'TAT',
-            'CTC'
+    // K2: Spirit Infusion -- a wither skull bound into terrasteel.
+    addSpiritInfusion(event, {
+        input: 'minecraft:wither_skeleton_skull',
+        output: 'enigmaticlegacy:abyssal_heart',
+        extraItems: [
+            { item: 'botania:terrasteel_ingot', count: 4 },
+            { item: 'minecraft:crying_obsidian', count: 3 }
         ],
-        {
-            C: 'minecraft:crying_obsidian',
-            T: 'botania:terrasteel_ingot',
-            A: 'minecraft:wither_skeleton_skull',
-            H: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+        spirits: [{ type: 'wicked', count: 6 }, { type: 'eldritch', count: 2 }]
+    })
 
 })

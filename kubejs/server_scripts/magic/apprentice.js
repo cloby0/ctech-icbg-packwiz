@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
 
     addManaPondRecipe(event, {
         input: { item: 'kubejs:zanite_laced_iron' },
-        mana: Mana.APPRENTICE,
+        mana: ManaPool.APPRENTICE,
         output: { item: 'botania:manasteel_ingot' }
     })
 
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
     addManaPondRecipe(event, {
         input: { item: 'kubejs:zanite_sigil_blank' },
         output: { item: 'kubejs:zanite_sigil' },
-        mana: Mana.APPRENTICE
+        mana: ManaPool.APPRENTICE
     })
 
     // Wizard Brain: Manaweaving Altar t1 (3rd distinct handler for this tier's item set).
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
     })
     addManaPondRecipe(event, {
         input: { item: 'minecraft:piston' },
-        mana: 2 * Mana.APPRENTICE,
+        mana: 2 * ManaPool.APPRENTICE,
         output: { item: 'kubejs:zanite_motive_core' }
     })
 

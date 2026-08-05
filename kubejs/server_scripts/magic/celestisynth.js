@@ -1,40 +1,33 @@
 ServerEvents.recipes(event => {
 
+    // Keystone tax (2026-08-04). Only two recipes here are gateable: solar_crystal and lunar_stone
+    // are gathered materials with no craft, and the 8 armour pieces already consume them plus
+    // irons_spellbooks mithril, so they are not self-contained.
+    //   K1  celestial_core  -- MagiChem Astral Observer. A celestial mod's core should be made by
+    //       leaving it under the sky, not by a crafting grid.
+    //   K2  starlit_factory -- Botania Runic Altar.
     event.remove({ id: 'celestisynth:celestial_core' })
-    event.shaped(
-        Item.of('celestisynth:celestial_core', 1),
-        [
-            'FX ',
-            'XYX',
-            ' X '
-        ],
-        {
-            X: 'minecraft:amethyst_shard',
-            Y: 'irons_spellbooks:divine_pearl',
-            F: '#forge:tools/files'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/files'))
+    event.custom({
+        type: 'magichem:illumination',
+        input: 'irons_spellbooks:divine_pearl',
+        lumins: { type: 1, minutes: 5 },
+        result: { item: 'celestisynth:celestial_core', count: 1 }
+    })
 
     event.remove({ id: 'celestisynth:supernal_netherite_ingot_smithing' })
 
     event.remove({ id: 'celestisynth:starlit_factory' })
-    event.shaped(
-        Item.of('celestisynth:starlit_factory', 1),
-        [
-            'IAI',
-            'SCB',
-            'WOO'
-        ],
-        {
-            I: 'celestisynth:celestial_netherite_ingot',
-            A: 'irons_spellbooks:arcane_ingot',
-            S: 'minecraft:smithing_table',
-            C: 'minecraft:crafting_table',
-            B: 'minecraft:blast_furnace',
-            O: 'minecraft:obsidian',
-            W: '#forge:tools/wrenches'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
+    addRunicAltarRecipe(event, {
+        output: { item: 'celestisynth:starlit_factory' },
+        mana: RunicAltar.THAUMATURGE,
+        ingredients: [
+            { item: 'celestisynth:celestial_netherite_ingot', count: 2 },
+            { item: 'irons_spellbooks:arcane_ingot' },
+            { item: 'minecraft:smithing_table' },
+            { item: 'minecraft:blast_furnace' },
+            { item: 'minecraft:obsidian', count: 2 }
+        ]
+    })
 
     const armorData = [
         {

@@ -6,12 +6,8 @@ function stripNamespace(str) {
     return colon === -1 ? str : str.slice(colon + 1)
 }
 
-function manaRound(num) {
-    if ((num / 100) > 20) {
-        return num / 100
-    } else {
-        return 20
-    }
+function pondTicks(mana) {
+    return Math.min(1200, Math.max(40, Math.round(mana / 100)))
 }
 
 function catalystify(str) {
@@ -23,9 +19,6 @@ function catalystify(str) {
         return 1;
     }
 }
-
-// Inverse of ars_botania mana_convert (source buys mana at 2:1).
-let source_rate = 0.5
 
 let _nextManaPondIndex = 1
 
@@ -101,9 +94,9 @@ function addManaPondRecipe(event, crecipe) {
         console.log(`[mana_pond] mana=${mana} input=${itemInput} output=${outputId}`)
 
         let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', Math.round(mana * source_rate)))
-            .duration((manaRound(mana * source_rate) * 2))
-            .EUt(GTValues.VA[GTValues.IV] + Math.round(mana * source_rate / 25))
+            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
+            .duration(pondTicks(mana))
+            .EUt(GTValues.VA[GTValues.IV] + Math.round(mana / 50))
             .circuit(catalystify(catalystBlock))
 
         if (isConjuration) {

@@ -127,6 +127,33 @@ ItemEvents.tooltip((event) => {
     "§7Obtained from killing the Sun Spirit",
   );
 
+  const COMPONENT_TIERS = [
+    ["ichor", "§8Hobbyist"],
+    ["zanite", "§7Apprentice"],
+    ["veridian", "§aJourneyman"],
+    ["elementium", "§6Initiate"],
+    ["gravitic", "§5Sorcerer"],
+    ["animus", "§bAlchemist"],
+    ["starforged", "§dThaumaturge"],
+    ["kathar", "§9Arcanist"],
+    ["empyrean", "§eSage"],
+    ["argent", "§cProphet"],
+    ["wraith", "§4Ascendant"],
+  ];
+  const COMPONENT_SUFFIXES = [
+    "sigil_blank",
+    "sigil",
+    "wizard_brain",
+    "motive_core",
+    "channeling_vessel",
+    "ward_lattice",
+  ];
+  for (const [prefix, label] of COMPONENT_TIERS) {
+    for (const suffix of COMPONENT_SUFFIXES) {
+      event.add(`kubejs:${prefix}_${suffix}`, `${label}-Tier Component`);
+    }
+  }
+
   event.add("draconicevolution:draconium_ingot", ["§5UV-Tier Material"]);
   event.add("draconicevolution:awakened_draconium_ingot", [
     "§6UHV-Tier Material",

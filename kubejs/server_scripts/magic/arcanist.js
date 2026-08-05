@@ -25,7 +25,8 @@ ServerEvents.recipes(event => {
         output: 'kubejs:kathar_lattice',
         items: ['mna:superheated_purified_vinteum_ingot', 'kubejs:resonant_zanite_crystal', 'kubejs:resonant_zanite_crystal', 'kubejs:katharic_residue', 'kubejs:katharic_residue'],
         affinity: 'arcane',
-        power: LP.ARCANIST
+        power: LP.ARCANIST,
+        tier: 4
     })
 
     // raw_mana -> source_gem x5: dead reagent and output. Dropped outright, no port needed.

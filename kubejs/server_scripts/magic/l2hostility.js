@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('l2hostility/hostility_essence')
         .itemInputs('4x l2hostility:witch_droplet', '2x gtceu:holy_silver_dust')
-        .inputFluids(Fluid.of('manafluid:mana', Source.JOURNEYMAN))
+        .inputFluids(Fluid.of('manafluid:mana', manaMB(ManaPool.JOURNEYMAN)))
         .itemOutputs('1x l2hostility:hostility_essence')
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])
@@ -493,7 +493,7 @@ ServerEvents.recipes(event => {
             { item: 'l2complements:totem_of_the_sea' },
             { item: 'l2complements:life_essence' }, { item: 'l2complements:life_essence' }
         ],
-        mana: Mana.ASCENDANT
+        mana: RunicAltar.ASCENDANT
     })
 
     addMnaManaweavingRecipe(event, {
@@ -519,12 +519,12 @@ ServerEvents.recipes(event => {
             { item: 'minecraft:wither_skeleton_skull' }, { item: 'minecraft:wither_skeleton_skull' },
             { item: 'l2hostility:chaos_ingot' }, { item: 'l2hostility:chaos_ingot' }
         ],
-        mana: Mana.ASCENDANT
+        mana: RunicAltar.ASCENDANT
     })
 
     event.recipes.gtceu.assembler('l2hostility/miracle_ingot')
         .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x gtceu:prima_materia_dust')
-        .inputFluids(Fluid.of('manafluid:mana', Source.SORCERER))
+        .inputFluids(Fluid.of('manafluid:mana', manaMB(ManaPool.ALCHEMIST)))
         .itemOutputs('1x l2hostility:miracle_ingot')
         .duration(400)
         .EUt(GTValues.VA[GTValues.IV])
@@ -609,7 +609,7 @@ ServerEvents.recipes(event => {
             { item: 'botania:manasteel_ingot' }, { item: 'botania:manasteel_ingot' },
             { item: 'kubejs:bound_astral_soul' }, { item: 'kubejs:bound_astral_soul' }
         ],
-        mana: Mana.ASCENDANT
+        mana: RunicAltar.ASCENDANT
     })
 
     addMnaManaweavingRecipe(event, {

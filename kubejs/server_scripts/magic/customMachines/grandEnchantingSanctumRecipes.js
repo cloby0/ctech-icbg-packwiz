@@ -30,11 +30,15 @@ function _manaweaveRouteFor(sourceCost) {
 
 function routeLegacyMagicRecipe(event, output, items, sourceCost) {
     if (sourceCost >= ELDRIN_MIN_COST) {
+        // MNA tier gate (docs/claude/mod_tier_checkpoints.md): Alchemist/Thaumaturge/Arcanist all
+        // sit in the T4 range, Sage is the first tier to reach T5.
+        let tier = sourceCost >= Source.SAGE ? 5 : 4
         addEldrinAltarRecipe(event, {
             output: output,
             items: items,
             affinity: 'arcane',
-            power: sourceCost
+            power: sourceCost,
+            tier: tier
         })
         return
     }

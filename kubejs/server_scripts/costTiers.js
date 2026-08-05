@@ -1,9 +1,6 @@
 // priority: 10
-// Source cost per magic tier, GTValues-style. Mana (botania) mirrors Source via MANA_PER_SOURCE.
-// Server scripts share one scope, so Source/Mana are visible in every server script. Declare them nowhere else.
-// Must match mana_convert in config/ars_botania-common.toml and source_rate (its inverse) in pond/runicForge helpers.
-
-const MANA_PER_SOURCE = 2
+// Source cost per magic tier, GTValues-style. Server scripts share one scope, so these tables are
+// visible in every server script. Declare them nowhere else.
 
 // Tier order is Hobbyist -> ... -> Sage -> PROPHET -> ASCENDANT. Ascendant consumes Prophet's
 // outputs (ascendant.js builds from draconic_sanguinary/sanctum/dracontine_codex/
@@ -23,13 +20,78 @@ const Source = {
     ASCENDANT: 128000
 }
 
-const Mana = {}
-for (let tier in Source) {
-    Mana[tier] = Source[tier] * MANA_PER_SOURCE
+global.Source = Source
+
+// Botania mana. One table per handler, because Botania's three handlers occupy three different
+// cost bands and a single table flattens them. Bands below are the mod's own, read out of
+// Botania-452 / ExtraBotany-1.9.2 recipe JSON:
+//   mana_infusion (Mana Pool)   25 - 90 000      (manasteel 3 000, mana diamond 10 000)
+//   runic_altar                 5 200 - 22 500
+//   terra_plate                 500 000 - 4 000 000  (terrasteel 500 000)
+// The old single `Mana` table was Source * 2, i.e. 200 - 256 000, which priced terrestrial
+// agglomeration below a vanilla mana-pool infusion.
+
+// Mana Pool infusion. Apprentice anchors on vanilla manasteel (3 000); Sage on the vanilla
+// mana_infusion ceiling (90 000).
+const ManaPool = {
+    HOBBYIST: 1500,
+    APPRENTICE: 3000,
+    JOURNEYMAN: 6000,
+    INITIATE: 10000,
+    SORCERER: 16000,
+    ALCHEMIST: 25000,
+    THAUMATURGE: 40000,
+    ARCANIST: 60000,
+    SAGE: 90000,
+    PROPHET: 130000,
+    ASCENDANT: 180000
 }
 
-global.Source = Source
-global.Mana = Mana
+// Runic Altar. Hobbyist anchors on the vanilla rune floor (5 200), Initiate on its ceiling
+// (22 500); past that the pack is off the end of Botania's own ladder.
+const RunicAltar = {
+    HOBBYIST: 5000,
+    APPRENTICE: 8000,
+    JOURNEYMAN: 12000,
+    INITIATE: 18000,
+    SORCERER: 25000,
+    ALCHEMIST: 35000,
+    THAUMATURGE: 50000,
+    ARCANIST: 70000,
+    SAGE: 100000,
+    PROPHET: 150000,
+    ASCENDANT: 200000
+}
+
+// Terrestrial Agglomeration. Journeyman anchors on vanilla terrasteel (500 000 = half a mana
+// pool); Sage on ExtraBotany's rhein_hammer ceiling (4 000 000). Ascendant tops out at 8 pools.
+const Agglomeration = {
+    HOBBYIST: 250000,
+    APPRENTICE: 350000,
+    JOURNEYMAN: 500000,
+    INITIATE: 750000,
+    SORCERER: 1000000,
+    ALCHEMIST: 1500000,
+    THAUMATURGE: 2000000,
+    ARCANIST: 3000000,
+    SAGE: 4000000,
+    PROPHET: 6000000,
+    ASCENDANT: 8000000
+}
+
+global.ManaPool = ManaPool
+global.RunicAltar = RunicAltar
+global.Agglomeration = Agglomeration
+
+// manafluid:mana carries 100 mana per mB -- ManaPoolFluidHandler stores currentMana / 100.0 and
+// reports capacity as maxMana / 100, so a full 1 000 000-mana pool is 10 000 mB. Every GT mirror
+// recipe that charges mana must go through this, never a raw tier constant used as a millibucket
+// count.
+const MANA_PER_MB = 100
+function manaMB(mana) {
+    return Math.max(1, Math.round(mana / MANA_PER_MB))
+}
+global.manaMB = manaMB
 
 // Blood Magic Life Essence (LP) cost per magic tier. Replaces Source/Mana once tier files migrate
 // off Ars Nouveau (magic rework Phase 1+). Placeholder scale pending in-game LP generation rate

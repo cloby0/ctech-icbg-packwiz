@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
-        .inputFluids(Fluid.of('manafluid:mana', Source.THAUMATURGE))
+        .inputFluids(Fluid.of('manafluid:mana', manaMB(5 * ManaPool.THAUMATURGE)))
         .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
@@ -597,7 +597,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     addManaPondRecipe(event, {
-        mana: Mana.SAGE,
+        mana: ManaPool.SAGE,
         input: { item: 'kubejs:living_cell_matrix' },
         output: { item: 'kubejs:mana_seeded_cell_matrix' }
     })
@@ -617,7 +617,7 @@ ServerEvents.recipes(event => {
 
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:runic_growth_catalyst' },
-        mana: Mana.SAGE,
+        mana: RunicAltar.SAGE,
         ingredients: [
             { item: 'botania:rune_spring' },
             { item: 'botania:rune_summer' },
@@ -666,7 +666,8 @@ ServerEvents.recipes(event => {
             'gtceu:naquadah_dust'
         ],
         affinity: 'arcane',
-        power: LP.SAGE
+        power: LP.SAGE,
+        tier: 5
     })
 
     event.recipes.gtceu.chemical_reactor('ctech:vitalized_source_fragment_synthesis')
@@ -712,7 +713,7 @@ ServerEvents.recipes(event => {
     // Ascendant/Prophet the same way Gaia Spirit Ingot did before this rework").
     addRunicAltarRecipe(event, {
         output: { item: 'kubejs:awakened_cumium_embryo' },
-        mana: Mana.ASCENDANT,
+        mana: RunicAltar.ASCENDANT,
         ingredients: [
             { item: 'kubejs:gestated_cumium_crystal' },
             { item: 'botania:gaia_ingot' },
@@ -726,7 +727,7 @@ ServerEvents.recipes(event => {
 
     addTerraPlateRecipe(event, {
         result: { item: 'kubejs:unforged_cumium_matrix' },
-        mana: 128 * Mana.PROPHET,
+        mana: Agglomeration.ASCENDANT,
         ingredients: [
             { item: 'kubejs:awakened_cumium_embryo' },
             { item: 'draconicevolution:awakened_draconium_ingot' },
