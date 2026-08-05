@@ -5213,10 +5213,6 @@ file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
 hash = "9da93e553c64ea31ec92e38b665993ad74653460babc3f332ee02568e3e0beca"
 
 [[files]]
-file = "kubejs/server_scripts/magic/cyberSpells.js"
-hash = "99cb1a934cb73173b06e0d94b099bd1a7ac7ff3d9f84508a6df3e7239bde2f46"
-
-[[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
 hash = "e0e9bb5b49f11dc266f8f95d002eeb23ba45b5be83f7b471209d2bbf42f65e0c"
 
