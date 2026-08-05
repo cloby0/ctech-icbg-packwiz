@@ -94,6 +94,17 @@ function _mirrorToSoulCompressor(event, name, tier, ingredients, output, duratio
     inputs.forEach(i => r.itemInputs(i))
 }
 
+// '#tag' shorthand in `item` must become a real {tag: ...} ingredient, or Occultism's
+// deserializer tries to create a ResourceLocation from the literal '#tag' string and crashes.
+function _occultismNormalizeIngredients(ingredients) {
+    return (ingredients || []).map(e => {
+        if (e && e.item && e.item.charAt(0) === '#') {
+            return { tag: e.item.slice(1), count: e.count || 1 }
+        }
+        return e
+    })
+}
+
 function addOccultismRitual(event, crecipe) {
     let index = _occultismRitualIndex++
     let outputId = typeof crecipe.output === 'object' ? crecipe.output.item : crecipe.output
@@ -115,6 +126,7 @@ function addOccultismRitual(event, crecipe) {
     }
 
     let duration = crecipe.duration || 60
+    let ingredients = _occultismNormalizeIngredients(crecipe.ingredients)
 
     console.log(`[occultism-ritual] ${index}: ${outputId} tier=${tier}`)
     event.custom({
@@ -124,11 +136,11 @@ function addOccultismRitual(event, crecipe) {
         activation_item: { item: 'occultism:book_of_binding_bound_' + tier },
         ritual_dummy: { item: ritualDummyId },
         duration: duration,
-        ingredients: crecipe.ingredients,
+        ingredients: ingredients,
         result: typeof crecipe.output === 'object' ? crecipe.output : { item: outputId },
     }).id(`kubejs:ritual/${name}`)
 
-    _mirrorToSoulCompressor(event, name, tier, crecipe.ingredients, crecipe.output, duration)
+    _mirrorToSoulCompressor(event, name, tier, ingredients, crecipe.output, duration)
 }
 
 global.addOccultismRitual = addOccultismRitual
