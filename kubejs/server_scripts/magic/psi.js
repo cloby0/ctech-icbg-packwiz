@@ -127,8 +127,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
 
+    // 2026-08-06: the CAD is a magic-channeling core but the recipe was pure GT/create-loop --
+    // MNA's raw arcane-conduit ingot added. (mna:vinteum_plate does not exist -- verified
+    // against the mod's lang file, ingot is the real form.)
     event.recipes.gtceu.assembler('psi_psimetal_cad_assembly')
-        .itemInputs('4x #forge:ingots/psimetal', 'gtceu:gravitite_spring', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil')
+        .itemInputs('4x #forge:ingots/psimetal', 'gtceu:gravitite_spring', '#gtceu:circuits/hv', 'gtceu:holy_silver_foil', 'mna:vinteum_ingot')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x psi:cad_assembly_psimetal')
         .duration(20 * 20)
@@ -217,8 +220,10 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
+    // 2026-08-06: psionic mind-armor never touched a trunk mod -- Malum's soul/spirit material
+    // added, fitting the "channel your mind through it" theme better than another generic plate.
     event.recipes.gtceu.assembler('psi_exosuit_chestplate')
-        .itemInputs('8x #forge:ingots/psimetal', '2x psi:psigem', '#gtceu:circuits/hv', '2x gtceu:gravitite_plate')
+        .itemInputs('8x #forge:ingots/psimetal', '2x psi:psigem', '#gtceu:circuits/hv', '2x gtceu:gravitite_plate', 'malum:processed_soulstone')
         .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
         .itemOutputs('1x psi:psimetal_exosuit_chestplate')
         .duration(20 * 20)
