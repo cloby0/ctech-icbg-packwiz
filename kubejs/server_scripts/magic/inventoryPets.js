@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_april_fool',
         extraItems: [{ item: 'minecraft:redstone', count: 2 }, { item: 'minecraft:tripwire_hook' }, { item: 'inventorypets:nugget_obsidian', count: 3 }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'arcane', count: 2 }]
+        spirits: [{ type: 'arcane', count: 2 }, { type: 'wicked', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -86,14 +86,15 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_bed',
         extraItems: [{ item: 'minecraft:redstone', count: 5 }, { item: 'minecraft:white_wool' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'aqueous', count: 2 }]
+        // Was aqueous -- mistyped, nothing aqueous about a bed. Sacred (rest) is the real fit.
+        spirits: [{ type: 'sacred', count: 2 }]
     })
 
     addSpiritInfusion(event, {
         input: TMPL,
         output: 'inventorypets:pet_biome',
         extraItems: [{ item: 'minecraft:dirt' }, { item: 'minecraft:grass_block' }, { item: 'minecraft:sand' }, { item: 'minecraft:gravel' }, { item: 'minecraft:snowball' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'earthen', count: 2 }]
+        spirits: [{ type: 'earthen', count: 2 }, { type: 'aqueous', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -107,14 +108,14 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_brewing_stand',
         extraItems: [{ item: 'minecraft:cobblestone', count: 5 }, { item: 'minecraft:nether_wart' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'arcane', count: 2 }]
+        spirits: [{ type: 'arcane', count: 2 }, { type: 'infernal', count: 1 }]
     })
 
     addSpiritInfusion(event, {
         input: TMPL,
         output: 'inventorypets:pet_cheetah',
         extraItems: [{ item: 'minecraft:blaze_powder', count: 5 }, { item: '#inventorypets:raw_meats' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'aerial', count: 2 }]
+        spirits: [{ type: 'aerial', count: 2 }, { type: 'infernal', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -135,7 +136,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_christmas_tree',
         extraItems: [{ item: 'minecraft:redstone', count: 2 }, { item: 'minecraft:cookie' }, { item: 'inventorypets:nugget_emerald', count: 3 }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'infernal', count: 2 }]
+        spirits: [{ type: 'infernal', count: 2 }, { type: 'sacred', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -156,14 +157,14 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_crafting_table',
         extraItems: [{ item: '#minecraft:planks', count: 5 }, { item: '#minecraft:logs' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'arcane', count: 2 }]
+        spirits: [{ type: 'arcane', count: 2 }, { type: 'earthen', count: 1 }]
     })
 
     addSpiritInfusion(event, {
         input: TMPL,
         output: 'inventorypets:pet_creeper',
         extraItems: [{ item: 'inventorypets:nugget_emerald', count: 5 }, { item: 'minecraft:gunpowder' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'wicked', count: 2 }]
+        spirits: [{ type: 'wicked', count: 2 }, { type: 'infernal', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -225,7 +226,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_ghast',
         extraItems: [{ item: 'minecraft:quartz', count: 5 }, { item: 'minecraft:blaze_powder' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'aerial', count: 2 }]
+        spirits: [{ type: 'aerial', count: 2 }, { type: 'infernal', count: 1 }]
     })
 
     addOccultismRitual(event, {
@@ -252,7 +253,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_iron_golem',
         extraItems: [{ item: 'minecraft:iron_nugget', count: 5 }, { item: 'minecraft:iron_ingot' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'earthen', count: 2 }]
+        spirits: [{ type: 'earthen', count: 2 }, { type: 'sacred', count: 1 }]
     })
 
     addOccultismRitual(event, {
@@ -300,7 +301,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_menorah',
         extraItems: [{ item: 'inventorypets:nugget_lapis', count: 2 }, { item: 'minecraft:lapis_lazuli' }, { item: 'minecraft:gold_nugget', count: 3 }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'infernal', count: 2 }]
+        spirits: [{ type: 'infernal', count: 2 }, { type: 'sacred', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -314,7 +315,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_mooshroom',
         extraItems: [{ item: 'minecraft:redstone', count: 2 }, { item: 'minecraft:brown_mushroom' }, { item: 'minecraft:iron_nugget', count: 3 }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'sacred', count: 2 }]
+        spirits: [{ type: 'sacred', count: 2 }, { type: 'earthen', count: 1 }]
     })
 
     addOccultismRitual(event, {
@@ -331,7 +332,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_ocelot',
         extraItems: [{ item: 'minecraft:gold_nugget', count: 5 }, { item: '#inventorypets:cooked_fishes' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'sacred', count: 2 }]
+        spirits: [{ type: 'sacred', count: 2 }, { type: 'aqueous', count: 1 }]
     })
 
     addOccultismRitual(event, {
@@ -362,7 +363,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_pixie',
         extraItems: [{ item: 'minecraft:gold_ingot', count: 4 }, { item: 'inventorypets:nugget_emerald' }, { item: 'minecraft:emerald', count: 2 }],
-        spirits: [{ type: 'sacred', count: 2 }]
+        spirits: [{ type: 'sacred', count: 2 }, { type: 'aerial', count: 1 }]
     })
 
     addSpiritInfusion(event, {
@@ -421,7 +422,7 @@ ServerEvents.recipes(event => {
         input: TMPL,
         output: 'inventorypets:pet_silverfish',
         extraItems: [{ item: 'minecraft:iron_nugget', count: 5 }, { item: 'minecraft:cobblestone' }, { item: 'minecraft:gold_ingot' }],
-        spirits: [{ type: 'wicked', count: 2 }]
+        spirits: [{ type: 'wicked', count: 2 }, { type: 'earthen', count: 1 }]
     })
 
     addSpiritInfusion(event, {
