@@ -65,11 +65,19 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: blaze_rod + magma_cream is straight fire theming,
+    // infernal spirit is the honest cost, not a woven pattern.
+    addSpiritInfusion(event, {
         output: 'artifacts:fire_gauntlet',
-        items: ['nameless_trinkets:glowing_dust', 'minecraft:fire_charge', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:blaze_rod', 'kubejs:gravitic_sigil', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
-        patterns: ['mna:diamond', 'mna:knot'],
-        tier: 2
+        input: 'minecraft:blaze_rod',
+        spirits: [{ type: 'infernal', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:fire_charge' },
+            { item: 'minecraft:magma_cream', count: 2 },
+            { item: 'kubejs:gravitic_sigil' },
+            { item: 'kubejs:gravitic_ward_lattice' },
+            { item: 'kubejs:chaos_essence' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -86,11 +94,19 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: stealth/deception is a wicked-spirit archetype.
+    addSpiritInfusion(event, {
         output: 'artifacts:scarf_of_invisibility',
-        items: ['nameless_trinkets:glowing_dust', 'minecraft:leather', 'minecraft:phantom_membrane', 'kubejs:gravitic_sigil', 'minecraft:ender_pearl', 'minecraft:black_dye', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
-        patterns: ['mna:diamond', 'mna:knot'],
-        tier: 2
+        input: 'minecraft:phantom_membrane',
+        spirits: [{ type: 'wicked', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:leather' },
+            { item: 'minecraft:ender_pearl' },
+            { item: 'minecraft:black_dye' },
+            { item: 'kubejs:gravitic_sigil' },
+            { item: 'kubejs:gravitic_ward_lattice' },
+            { item: 'kubejs:chaos_essence' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -114,11 +130,19 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: totem/cross death-warding is sacred iconography,
+    // not a woven pattern.
+    addSpiritInfusion(event, {
         output: 'artifacts:cross_necklace',
-        items: ['nameless_trinkets:glowing_dust', 'minecraft:totem_of_undying', 'minecraft:golden_apple', 'minecraft:diamond', 'kubejs:gravitic_sigil', 'kubejs:gravitic_ward_lattice', 'kubejs:chaos_essence'],
-        patterns: ['mna:diamond', 'mna:knot'],
-        tier: 2
+        input: 'minecraft:totem_of_undying',
+        spirits: [{ type: 'sacred', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:golden_apple' },
+            { item: 'minecraft:diamond' },
+            { item: 'kubejs:gravitic_sigil' },
+            { item: 'kubejs:gravitic_ward_lattice' },
+            { item: 'kubejs:chaos_essence' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -204,11 +228,17 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: it's literally a heart (extra hearts) -- a
+    // single-item life-force upgrade is the archetypal Blood Altar craft, not a pattern-weave.
+    // Blood Altar's schema is single-input only, so the other 6 ingredients' value folds into
+    // the LP syphon instead. (No event.remove needed -- the old recipe was KubeJS-authored via
+    // addMnaManaweavingRecipe in this same file, not a vanilla recipe with a real mod ID; deleting
+    // that call is enough, there is nothing pre-existing left to remove.)
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:totem_of_undying',
         output: 'artifacts:crystal_heart',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:diamond_block', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:crying_obsidian', 'minecraft:totem_of_undying', 'gtceu:holy_silver_dust', 'kubejs:animus_sigil', 'kubejs:animus_ward_lattice'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        upgradeLevel: 3,
+        syphon: LP.ALCHEMIST
     })
 
     addMnaManaweavingRecipe(event, {
@@ -239,18 +269,28 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: telekinetic pull is raw unshaped magic, arcane's
+    // signature domain, not a woven pattern.
+    addSpiritInfusion(event, {
         output: 'artifacts:universal_attractor',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:diamond', 'minecraft:diamond', 'minecraft:iron_block', 'minecraft:ender_pearl', 'minecraft:ender_pearl', 'gtceu:holy_silver_dust', 'kubejs:animus_sigil', 'kubejs:animus_channeling_vessel'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:iron_block',
+        spirits: [{ type: 'arcane', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:diamond', count: 2 },
+            { item: 'minecraft:ender_pearl', count: 2 },
+            { item: 'gtceu:holy_silver_dust' },
+            { item: 'kubejs:animus_sigil' },
+            { item: 'kubejs:animus_channeling_vessel' }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: life-drain is literally what the Blood Altar
+    // represents. fermented_spider_eye (corruption) as the sole input, rest folds into LP.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:fermented_spider_eye',
         output: 'artifacts:vampiric_glove',
-        items: ['nameless_trinkets:ultimate_dust', 'create:golden_sheet', 'minecraft:redstone_block', 'minecraft:rotten_flesh', 'minecraft:fermented_spider_eye', 'minecraft:diamond', 'gtceu:holy_silver_dust', 'kubejs:animus_sigil', 'kubejs:animus_channeling_vessel'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        upgradeLevel: 3,
+        syphon: LP.ALCHEMIST
     })
 
     addMnaManaweavingRecipe(event, {
