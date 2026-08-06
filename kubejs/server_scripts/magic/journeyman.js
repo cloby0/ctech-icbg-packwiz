@@ -133,6 +133,10 @@ ServerEvents.recipes(event => {
     // mana_dust (mana lost its ore vein, see gtceuMaterialRegistry.js) is sourced instead
     // via a Manaweaving Altar refine off vinteum_dust -- see apprentice.js.
 
+    // Runic Altar is built here at Journeyman but stays mandatory through Sorcerer/Thaumaturge/
+    // Sage (addRunicAltarRecipe consumers in sorcerer.js, thaumaturge.js, sage.js) -- one of the
+    // pack's most load-bearing stations, and veridian_sigil had zero mandatory-path consumer.
+    // One of 2 duplicated manasteel_bolt slots swapped for it, 2026-08-06.
     event.remove({ id: 'botania:runic_altar' })
     event.remove({ id: 'botania:gaia_ingot' })
     event.remove({ id: 'botania:runic_altar_alt' })
@@ -140,7 +144,7 @@ ServerEvents.recipes(event => {
         Item.of('botania:runic_altar', 1),
         [
             'WAA',
-            'DCD',
+            'DCX',
             'BAB'
         ],
         {
@@ -148,6 +152,7 @@ ServerEvents.recipes(event => {
             B: 'botania:livingrock',
             C: 'botania:mana_diamond',
             D: 'gtceu:manasteel_bolt',
+            X: 'kubejs:veridian_sigil',
             W: '#forge:tools/wrenches'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
