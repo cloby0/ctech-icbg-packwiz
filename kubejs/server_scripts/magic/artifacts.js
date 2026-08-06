@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'artifacts:scarf_of_invisibility',
         input: 'minecraft:phantom_membrane',
-        spirits: [{ type: 'wicked', count: 3 }],
+        spirits: [{ type: 'wicked', count: 3 }, { type: 'arcane', count: 1 }],
         extraItems: [
             { item: 'minecraft:leather' },
             { item: 'minecraft:ender_pearl' },
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'artifacts:universal_attractor',
         input: 'minecraft:iron_block',
-        spirits: [{ type: 'arcane', count: 4 }],
+        spirits: [{ type: 'arcane', count: 4 }, { type: 'earthen', count: 1 }],
         extraItems: [
             { item: 'minecraft:diamond', count: 2 },
             { item: 'minecraft:ender_pearl', count: 2 },
