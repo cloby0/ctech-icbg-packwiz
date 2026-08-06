@@ -234,4 +234,26 @@ ServerEvents.recipes(event => {
         'kubejs:zanite_wizard_brain',
         'kubejs:zanite_sigil'
     ])
+
+    // Serpent Staff: a staff channels magic from caster to target -- Channeling Vessel is the
+    // last of the 5 zanite components to get a home. No tier conflict (chelicerae,
+    // kraken_shell_fragment, ender_eye are all mundane), no duplicate to replace, both added
+    // as new slots. 2026-08-06.
+    event.remove({ id: 'reliquary:serpent_staff' })
+    event.shaped(
+        Item.of('reliquary:serpent_staff', 1),
+        [
+            'ZCE',
+            'XKC',
+            'S  '
+        ],
+        {
+            C: 'reliquary:chelicerae',
+            E: 'minecraft:ender_eye',
+            K: 'reliquary:kraken_shell_fragment',
+            S: 'minecraft:stick',
+            X: 'kubejs:zanite_channeling_vessel',
+            Z: 'kubejs:zanite_sigil'
+        }
+    )
 })
