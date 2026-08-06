@@ -35,22 +35,33 @@ ServerEvents.recipes(event => {
                 W: 'kubejs:veridian_ward_lattice'
             }
         );
-    // Wizard Brain: alkahestry (universal transmutation) is a complex process, fits automation theme.
-    event.shaped(
-            Item.of('reliquary:alkahestry_altar', 1),
-            [
-                'XHA',
-                'BCB',
-                'ABA'
-            ],
+    // Sublimation: MagiChem's Ritual of the Balanced Scales builds the altar itself --
+    // alkahestry (universal transmutation) is MagiChem's own alchemy theme, tighter than a
+    // vanilla shaped recipe. Channeling Vessel (station/conduit grammar), not Wizard Brain --
+    // that's reserved pack-wide for worn/wielded gear, not stations. Gated on Nigredo (wisdom 0),
+    // Journeyman's own tier.
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 2,
+        wisdom: 0,
+        object: { item: 'reliquary:alkahestry_altar' },
+        stages: [
             {
-                A: 'gtceu:lead_plate',
-                B: 'gtceu:veridium_dust',
-                C: 'kubejs:veridian_sigil',
-                H: '#forge:tools/hammers',
-                X: 'kubejs:veridian_wizard_brain'
+                experience: 20,
+                components: [
+                    { item: 'gtceu:lead_plate' },
+                    { item: 'gtceu:veridium_dust' },
+                    { item: 'kubejs:veridian_sigil' },
+                    { item: 'kubejs:veridian_channeling_vessel' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 50 },
+                    { item: 'magichem:essentia_conceptual', count: 40 },
+                    { item: 'magichem:essentia_nigredo', count: 30 }
+                ]
             }
-        ).damageIngredient(Ingredient.of('#forge:tools/hammers'));
+        ]
+    })
     // Channeling Vessel: the ender-storage family (chest/tank/pouch) is literally item/fluid transport.
     event.shaped(
             Item.of('enderstorage:ender_chest', 1),
