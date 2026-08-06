@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'nameless_trinkets:ghast_eye',
         input: 'minecraft:ghast_tear',
-        spirits: [{ type: 'infernal', count: 2 }],
+        spirits: [{ type: 'infernal', count: 2 }, { type: 'aerial', count: 1 }],
         extraItems: [
             { item: 'minecraft:redstone_block', count: 2 },
             { item: 'minecraft:ghast_tear' }

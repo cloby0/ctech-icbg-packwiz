@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'uniqueaccessories:soul_gem',
         input: 'minecraft:ender_pearl',
-        spirits: [{ type: 'arcane', count: 3 }],
+        spirits: [{ type: 'arcane', count: 3 }, { type: 'infernal', count: 1 }],
         extraItems: [
             { item: 'minecraft:obsidian', count: 2 },
             { item: 'minecraft:blaze_rod' }
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'uniqueaccessories:devils_eyeball',
         input: 'minecraft:blaze_rod',
-        spirits: [{ type: 'infernal', count: 3 }],
+        spirits: [{ type: 'infernal', count: 3 }, { type: 'wicked', count: 1 }],
         extraItems: [
             { item: 'minecraft:obsidian', count: 2 },
             { item: 'minecraft:fermented_spider_eye' }
