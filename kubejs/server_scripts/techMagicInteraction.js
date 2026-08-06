@@ -833,8 +833,12 @@ ServerEvents.recipes(event => {
     // (undead flesh/bones on blighted ground), blighted_gunk by harvesting blighted terrain
     // (both created by the Arcane Rite -- see the mod's own Codex text), cthonic_gold by mining
     // the Aether vein (`kubejs:soulstone_vein`, `gtceuMaterialRegistry.js`) after its dead
-    // overworld ore was stripped 2026-08-05. cursed_grit's no-tech source is unconfirmed in this
-    // pack -- this recipe may currently be its only route; verify in-game before relying on that.
+    // overworld ore was stripped 2026-08-05.
+    // `malum:cursed_grit` was removed here 2026-08-06 -- it does not exist. Not in the mod's own
+    // lang file or anywhere else in this pack; the "nine alchemical reagents" figure elsewhere in
+    // the docs is wrong, the real set is 8 (the 7 above plus astral_weave, gated separately in
+    // tech/argentAndWraithCircuits.js). Crashed the server on load with "Invalid or empty output
+    // item" until fixed.
     event.recipes.gtceu.centrifuge('malum_hex_ash_from_charcoal')
         .itemInputs('4x malum:arcane_charcoal')
         .itemOutputs('1x malum:hex_ash')
@@ -869,12 +873,6 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:clay_dust')
         .itemOutputs('1x malum:alchemical_calx')
         .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.chemical_reactor('malum_cursed_grit_from_soulsand')
-        .itemInputs('4x minecraft:soul_sand', '1x gtceu:sulfur_dust')
-        .itemOutputs('1x malum:cursed_grit')
-        .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor('malum_blighted_gunk_from_rot')
