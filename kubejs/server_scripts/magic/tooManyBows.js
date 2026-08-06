@@ -55,11 +55,17 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: venom/corruption (fermented spider eye) is exactly
+    // Malum's wicked-spirit iconography.
+    addSpiritInfusion(event, {
         output: 'too_many_bows:verdant_viper',
-        items: ['nameless_trinkets:glowing_dust', 'minecraft:bow', 'minecraft:spider_eye', 'minecraft:spider_eye', 'minecraft:fermented_spider_eye', 'minecraft:vine', 'gtceu:luminessence_dust'],
-        patterns: ['mna:diamond', 'mna:knot'],
-        tier: 2
+        input: 'minecraft:bow',
+        spirits: [{ type: 'wicked', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:spider_eye', count: 2 },
+            { item: 'minecraft:fermented_spider_eye' },
+            { item: 'minecraft:vine' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -139,11 +145,17 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: "spectral" + phantom membrane is a ghost/void
+    // signature, stronger as a typed soul cost than a generic pattern fill.
+    addSpiritInfusion(event, {
         output: 'too_many_bows:spectral_whisper',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:phantom_membrane', 'minecraft:phantom_membrane', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:bow',
+        spirits: [{ type: 'eldritch', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:phantom_membrane', count: 2 },
+            { item: 'minecraft:obsidian', count: 2 },
+            { item: 'gtceu:holy_silver_dust', count: 2 }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -174,18 +186,30 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: Aether sky-realm + feathers is unambiguously wind.
+    addSpiritInfusion(event, {
         output: 'too_many_bows:aethers_call',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'minecraft:feather', 'minecraft:feather', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:bow',
+        spirits: [{ type: 'aerial', count: 4 }],
+        extraItems: [
+            { item: 'aether:zanite_gemstone', count: 2 },
+            { item: 'minecraft:feather', count: 2 },
+            { item: 'gtceu:holy_silver_dust', count: 2 }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: soul sand + wither skull + "demon" naming is
+    // underworld/soul iconography, practically begging for a typed-soul cost.
+    addSpiritInfusion(event, {
         output: 'too_many_bows:demons_grasp',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:blaze_rod', 'minecraft:wither_skeleton_skull', 'minecraft:soul_sand', 'minecraft:soul_sand', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:bow',
+        spirits: [{ type: 'infernal', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:blaze_rod' },
+            { item: 'minecraft:wither_skeleton_skull' },
+            { item: 'minecraft:soul_sand', count: 2 },
+            { item: 'gtceu:holy_silver_dust', count: 2 }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -209,11 +233,14 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: dragon breath is a single significant, hard-won
+    // upgrade material -- fits the rigid single-item + LP schema as a life-cost sacrifice far
+    // better than a 9-slot pattern craft.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:dragon_breath',
         output: 'too_many_bows:dragons_breath',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'minecraft:dragon_breath', 'minecraft:dragon_breath', 'minecraft:end_stone', 'minecraft:end_stone', 'gtceu:prima_materia_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_motive_core'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        upgradeLevel: 3,
+        syphon: LP.THAUMATURGE
     })
 
     addMnaManaweavingRecipe(event, {
@@ -223,11 +250,17 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: "cursed" + wither skull is death/curse magic, a
+    // direct wicked-spirit match.
+    addSpiritInfusion(event, {
         output: 'too_many_bows:necro_flame_bow',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:bow', 'too_many_bows:cursed_stone', 'too_many_bows:cursed_stone', 'minecraft:wither_skeleton_skull', 'minecraft:wither_skeleton_skull', 'gtceu:prima_materia_ingot', 'gtceu:prima_materia_ingot'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:bow',
+        spirits: [{ type: 'wicked', count: 4 }],
+        extraItems: [
+            { item: 'too_many_bows:cursed_stone', count: 2 },
+            { item: 'minecraft:wither_skeleton_skull', count: 2 },
+            { item: 'gtceu:prima_materia_ingot', count: 2 }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
