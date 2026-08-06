@@ -197,11 +197,15 @@ ServerEvents.recipes(event => {
         syphon: LP.INITIATE,
         upgradeLevel: 2
     })
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:ghast_tear","minecraft:redstone_block","minecraft:ghast_tear","minecraft:redstone_block"],
+    // Reflavored to Spirit Altar 2026-08-06: ghast tear is Nether/infernal in origin.
+    addSpiritInfusion(event, {
         output: 'nameless_trinkets:ghast_eye',
-        syphon: LP.INITIATE,
-        upgradeLevel: 2
+        input: 'minecraft:ghast_tear',
+        spirits: [{ type: 'infernal', count: 2 }],
+        extraItems: [
+            { item: 'minecraft:redstone_block', count: 2 },
+            { item: 'minecraft:ghast_tear' }
+        ]
     })
     addAlchemyTableRecipe(event, {
         input: ["nameless_trinkets:glowing_dust","minecraft:rotten_flesh","minecraft:paper","minecraft:bone","minecraft:paper"],
@@ -227,11 +231,16 @@ ServerEvents.recipes(event => {
         syphon: LP.SORCERER,
         upgradeLevel: 2
     })
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:cod","minecraft:salmon","minecraft:tropical_fish","minecraft:pufferfish"],
+    // Reflavored to Spirit Altar 2026-08-06: built entirely from fish, textbook aqueous.
+    addSpiritInfusion(event, {
         output: 'nameless_trinkets:tear_of_the_sea',
-        syphon: LP.INITIATE,
-        upgradeLevel: 2
+        input: 'minecraft:cod',
+        spirits: [{ type: 'aqueous', count: 2 }],
+        extraItems: [
+            { item: 'minecraft:salmon' },
+            { item: 'minecraft:tropical_fish' },
+            { item: 'minecraft:pufferfish' }
+        ]
     })
     addAlchemyTableRecipe(event, {
         input: ["nameless_trinkets:glowing_dust","minecraft:brown_mushroom","minecraft:red_mushroom","minecraft:hay_block","minecraft:hay_block"],
@@ -239,11 +248,12 @@ ServerEvents.recipes(event => {
         syphon: LP.INITIATE,
         upgradeLevel: 2
     })
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:crying_obsidian","minecraft:blaze_powder","minecraft:blaze_powder","minecraft:clock"],
+    // Reflavored to Blood Altar 2026-08-06: "vampire blood" is a blood-sacrifice item by name.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:crying_obsidian',
         output: 'nameless_trinkets:vampire_blood',
-        syphon: LP.INITIATE,
-        upgradeLevel: 2
+        upgradeLevel: 2,
+        syphon: LP.INITIATE
     })
     addAlchemyTableRecipe(event, {
         input: ["nameless_trinkets:glowing_dust","minecraft:rotten_flesh","minecraft:leather","minecraft:porkchop","minecraft:bone"],
