@@ -110,6 +110,41 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Eldrin Altar: MNA tier-4 content, first genuinely mandatory at Alchemist -- was 100%
+    // internal MNA items with no tie to this tier's own material chain. One of 6 duplicated
+    // chimerite_crystals swapped for the tier's own signature ingot.
+    event.remove({ id: 'mna:manaweaving/eldrin/eldrin_altar' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:eldrin_altar',
+        items: [
+            'mna:pedestal',
+            'mna:chimerite_crystals',
+            'mna:chimerite_crystals',
+            'mna:chimerite_crystals',
+            'mna:chimerite_crystals',
+            'mna:chimerite_crystals',
+            'gtceu:distilled_animus_ingot'
+        ],
+        patterns: ['mna:hourglass', 'mna:split_triangle', 'mna:inverted_triangle', 'mna:diamond'],
+        tier: 4
+    })
+
+    // Arcane conduit: same gap as the altar above. kubejs:arcane_residue already exists earlier
+    // in this file (Distilled Animus chain) -- appended as a 5th item, no duplicate to replace.
+    event.remove({ id: 'mna:manaweaving/eldrin/conduit_arcane' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:eldrin_conduit_arcane',
+        items: [
+            'mna:mote_ender',
+            'mna:lesser_eldrin_conduit_arcane',
+            'mna:chimerite_gem',
+            'mna:decoration/chimerite_arcane_stone',
+            'kubejs:arcane_residue'
+        ],
+        patterns: ['mna:knot', 'mna:knot2', 'mna:knot3', 'mna:knot4'],
+        tier: 4
+    })
+
     // --- Microcrafting: Alchemist circuit + components ---
     // Circuit built through 2 real handlers: Soul Forge -> Alchemy Table.
     addSoulForgeRecipe(event, {
