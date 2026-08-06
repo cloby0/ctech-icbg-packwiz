@@ -14,18 +14,22 @@ ServerEvents.recipes(event => {
         spirits: [{ type: 'earthen', count: 4 }, { type: 'arcane', count: 2 }]
     })
 
+    // 2026-08-06: an empty upgrade SLOT is thematically "install a working spirit" -- one of 4
+    // duplicated ambrosium_dust swapped for Occultism's own flavor item; the golem chain
+    // otherwise leans on Malum/Botania only.
     event.remove({ id: 'modulargolems:empty_upgrade' })
     event.shaped(
         Item.of('modulargolems:empty_upgrade', 2),
         [
             'DSC',
-            'SHS',
+            'SHO',
             'CSC'
         ],
         {
             C: 'minecraft:clay_ball',
             S: 'gtceu:ambrosium_dust',
             H: 'gtceu:holy_silver_plate',
+            O: 'occultism:spirit_attuned_crystal',
             D: '#forge:tools/screwdrivers'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/screwdrivers'))
