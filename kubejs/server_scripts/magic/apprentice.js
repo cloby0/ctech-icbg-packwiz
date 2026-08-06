@@ -193,4 +193,45 @@ ServerEvents.recipes(event => {
         patterns: ['mna:square', 'mna:triangle'],
         tier: 1
     })
+
+    // --- Give the zanite set real consumers ---
+    // All 5 zanite components were pack-wide dead: their one former consumer
+    // (aether:aether_portal_frame) was correctly deleted 2026-08-04 fixing an unrelated
+    // circular Aether-access bug, and nothing replaced it. midas_touchstone/infernal_tear/
+    // infernal_chalice/witherless_rose were checked and rejected (Initiate-tier void_tear or
+    // Wither-tier nether_stars ingredient -- would tier-invert the gate).
+
+    // Kraken Shell: protective vs. drowning -- Ward Lattice (containment/protection) fits.
+    // One of 3x kraken_shell_fragment replaced with the circuit; ward_lattice added as a new slot.
+    event.remove({ id: 'reliquary:kraken_shell' })
+    event.shapeless('reliquary:kraken_shell', [
+        'reliquary:kraken_shell_fragment',
+        'reliquary:kraken_shell_fragment',
+        'reliquary:nebulous_heart',
+        'kubejs:zanite_sigil',
+        'kubejs:zanite_ward_lattice'
+    ])
+
+    // Angelic Feather: flight-adjacent -- Motive Core (kinetic) fits, and matches Apprentice's
+    // Aether/flight theme. No duplicated ingredient exists, both added as new slots.
+    event.remove({ id: 'reliquary:angelic_feather' })
+    event.shapeless('reliquary:angelic_feather', [
+        '#forge:feathers',
+        'reliquary:nebulous_heart',
+        'reliquary:bat_wing',
+        'reliquary:fertile_essence',
+        'kubejs:zanite_sigil',
+        'kubejs:zanite_motive_core'
+    ])
+
+    // Phoenix Down: auto-revives on death, unattended -- Wizard Brain fits exactly.
+    // One of 3x angelheart_vial replaced with Wizard Brain; circuit added as a new slot.
+    event.remove({ id: 'reliquary:phoenix_down' })
+    event.shapeless('reliquary:phoenix_down', [
+        'reliquary:angelheart_vial',
+        'reliquary:angelheart_vial',
+        'reliquary:angelic_feather',
+        'kubejs:zanite_wizard_brain',
+        'kubejs:zanite_sigil'
+    ])
 })
