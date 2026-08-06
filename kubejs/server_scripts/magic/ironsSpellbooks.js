@@ -36,11 +36,17 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
-    addAlchemyTableRecipe(event, {
-        input: ["minecraft:book","minecraft:sculk","minecraft:sculk","gtceu:prima_materia_dust","gtceu:prima_materia_dust","minecraft:echo_shard"],
+    // Reflavored to Spirit Altar 2026-08-06: sculk + echo shard is pure deep-dark/void
+    // iconography.
+    addSpiritInfusion(event, {
         output: 'irons_spellbooks:ruined_book',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:book',
+        spirits: [{ type: 'eldritch', count: 2 }],
+        extraItems: [
+            { item: 'minecraft:sculk', count: 2 },
+            { item: 'gtceu:prima_materia_dust', count: 2 },
+            { item: 'minecraft:echo_shard' }
+        ]
     })
 
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_uncommon_ink' })
@@ -142,11 +148,19 @@ ServerEvents.recipes(event => {
         }).damageIngredient(Ingredient.of('#forge:tools/files'))
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: double fire_rune is already a typed-element
+    // ingredient -- Spirit Altar's typed-soul cost is more honest than pattern-weaving.
+    addSpiritInfusion(event, {
         output: 'kubejs:pyromatic_codex',
-        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot', 'irons_spellbooks:pyrium_ingot', 'kubejs:empyrean_sigil', 'kubejs:chaos_essence', 'irons_spellbooks:fire_rune', 'irons_spellbooks:fire_rune', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'irons_spellbooks:netherite_spell_book',
+        spirits: [{ type: 'infernal', count: 5 }],
+        extraItems: [
+            { item: 'irons_spellbooks:pyrium_ingot', count: 3 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:chaos_essence' },
+            { item: 'irons_spellbooks:fire_rune', count: 2 },
+            { item: 'kubejs:empyrean_wizard_brain' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -163,18 +177,32 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: ice/frost theming maps directly onto aqueous.
+    addSpiritInfusion(event, {
         output: 'kubejs:glacial_grimoire',
-        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'kubejs:kathar_lattice', 'irons_spellbooks:ice_rune', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'irons_spellbooks:netherite_spell_book',
+        spirits: [{ type: 'aqueous', count: 5 }],
+        extraItems: [
+            { item: 'gtceu:elementium_plate', count: 3 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:kathar_lattice', count: 2 },
+            { item: 'irons_spellbooks:ice_rune' },
+            { item: 'kubejs:empyrean_wizard_brain' }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: nature-rune theming is a clean earthen match.
+    addSpiritInfusion(event, {
         output: 'kubejs:verdant_chronicle',
-        items: ['irons_spellbooks:netherite_spell_book', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'gtceu:elementium_plate', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'kubejs:kathar_lattice', 'irons_spellbooks:nature_rune', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'irons_spellbooks:netherite_spell_book',
+        spirits: [{ type: 'earthen', count: 5 }],
+        extraItems: [
+            { item: 'gtceu:elementium_plate', count: 3 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:kathar_lattice', count: 2 },
+            { item: 'irons_spellbooks:nature_rune' },
+            { item: 'kubejs:empyrean_wizard_brain' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -184,10 +212,20 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: storm/lightning theming is the strongest
+    // single-element fit in this file.
+    addSpiritInfusion(event, {
         output: 'legendary_spellbooks:stormbound_grimoire',
-        items: ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:lightning_rune', 'irons_spellbooks:energized_core', 'kubejs:empyrean_sigil', 'kubejs:kathar_lattice', 'gtceu:elementium_plate', 'irons_spellbooks:lightning_bottle', 'kubejs:empyrean_motive_core'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'irons_spellbooks:netherite_spell_book',
+        spirits: [{ type: 'aerial', count: 5 }],
+        extraItems: [
+            { item: 'irons_spellbooks:lightning_rune', count: 2 },
+            { item: 'irons_spellbooks:energized_core' },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:kathar_lattice' },
+            { item: 'gtceu:elementium_plate' },
+            { item: 'irons_spellbooks:lightning_bottle' },
+            { item: 'kubejs:empyrean_motive_core' }
+        ]
     })
 })
