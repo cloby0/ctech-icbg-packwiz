@@ -37,6 +37,25 @@ ServerEvents.recipes(event => {
     // botania:life_essence. Leaving them here made Sorcerer uncompletable.
 
 
+    // Chimerite-Bound Dungeon Metal: wraps Blood Magic's own dungeon_metal with Thaumaturge's
+    // signature material, so the Tier 5 altar upgrade below can't be reached by pure Blood Magic
+    // grinding -- Thaumaturge tax for Arcanist's gate, per the Runic Altar precedent (GT/foreign
+    // item gating a trunk-mod station).
+    event.shapeless('kubejs:chimerite_bound_dungeon_metal', [
+        'bloodmagic:dungeon_metal',
+        'gtceu:starforged_chimerite_gem'
+    ])
+
+    event.remove({ id: 'bloodmagic:altar/archmagebloodorb' })
+    addBloodAltarRecipe(event, {
+        input: 'kubejs:chimerite_bound_dungeon_metal',
+        output: 'bloodmagic:archmagebloodorb',
+        upgradeLevel: 4,
+        syphon: 80000,
+        consumptionRate: 50,
+        drainRate: 100
+    })
+
     // --- Rubedo Core: Arcanist signature material ---
     // Magic spine stays GT-free: vanilla combine, real Blood Magic Alchemy Table, real Occultism
     // ritual, plain furnace smelt (katharite has no blastTemp on purpose).

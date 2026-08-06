@@ -55,6 +55,9 @@ StartupEvents.registry('item', event => {
     event.create('katharic_residue')
     event.create('katharite_core')
 
+    // Thaumaturge tax on the Blood Magic Tier 5 altar (Archmage's Blood Orb) -- 2026-08-06.
+    event.create('chimerite_bound_dungeon_metal')
+
     // Magic rework Phase 9 (Sage): Empyrean Ichor chain -> gtceu:empyrean_ichor_ingot.
     event.create('hallowed_remnant')
     event.create('wellspring_bound_remnant')
