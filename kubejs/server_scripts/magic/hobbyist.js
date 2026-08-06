@@ -141,6 +141,19 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/files'))
 
+    // Infernal Claw: a claw is a moving mechanical weapon -- Motive Core fits. ichor_motive_core
+    // had zero consumers pack-wide before this (crafted, never used). No duplicated ingredient
+    // exists to replace, so both are added as new slots.
+    event.remove({ id: 'reliquary:infernal_claw' })
+    event.shapeless('reliquary:infernal_claw', [
+        '#forge:leather',
+        'reliquary:molten_core',
+        'reliquary:rib_bone',
+        'reliquary:slime_pearl',
+        'kubejs:ichor_sigil',
+        'kubejs:ichor_motive_core'
+    ])
+
     event.remove({ id: 'irons_spellbooks:inscription_table' })
     event.shaped(
                 Item.of('irons_spellbooks:inscription_table', 1),
