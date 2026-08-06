@@ -21,6 +21,26 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Soul Forge (Hellfire Forge) block build: was 100% vanilla, letting a player reach
+    // Alchemist's core station via pure Blood Magic grinding. One of 4 duplicated stone slots
+    // replaced with this tier's own signature material.
+    event.remove({ id: 'bloodmagic:soul_forge' })
+    event.shaped(
+        Item.of('bloodmagic:soulforge', 1),
+        [
+            'I I',
+            'sSs',
+            'GOs'
+        ],
+        {
+            I: '#forge:ingots/iron',
+            S: 'bloodmagic:blankslate',
+            s: '#forge:stone',
+            O: '#forge:storage_blocks/iron',
+            G: 'gtceu:gaia_spirit_dust'
+        }
+    )
+
     // basic_spell_turret: same open gap as 04-initiate.md's magical_receiver (Ars-native item,
     // no MNA/Blood Magic equivalent, ars_nouveau:source_jar ingredient already dead too).
     // Not re-solved here -- dropped, matching the Initiate-tier decision to retire that line.
