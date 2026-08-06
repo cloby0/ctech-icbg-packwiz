@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'relics:jellyfish_necklace',
         input: 'minecraft:slime_ball',
-        spirits: [{ type: 'aqueous', count: 3 }],
+        spirits: [{ type: 'aqueous', count: 3 }, { type: 'aerial', count: 1 }],
         extraItems: [
             { item: 'minecraft:feather', count: 2 }
         ]

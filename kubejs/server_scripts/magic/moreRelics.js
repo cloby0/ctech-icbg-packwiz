@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'morerelics:tyrant_mask',
         input: 'minecraft:wither_skeleton_skull',
-        spirits: [{ type: 'wicked', count: 4 }],
+        spirits: [{ type: 'wicked', count: 4 }, { type: 'earthen', count: 1 }],
         extraItems: [
             { item: 'minecraft:obsidian', count: 2 },
             { item: 'minecraft:iron_block' },
