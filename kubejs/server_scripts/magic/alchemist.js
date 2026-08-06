@@ -146,6 +146,38 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
+    // Water conduit: same gap as the altar/arcane conduit above. animus_fragment appended as a
+    // 5th item, distinct from arcane_residue (already used on the arcane conduit).
+    event.remove({ id: 'mna:manaweaving/eldrin/conduit_water' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:eldrin_conduit_water',
+        items: [
+            'mna:mote_ender',
+            'mna:lesser_eldrin_conduit_water',
+            'mna:chimerite_gem',
+            'mna:decoration/chimerite_arcane_stone',
+            'kubejs:animus_fragment'
+        ],
+        patterns: ['mna:circle', 'mna:hourglass', 'mna:circle'],
+        tier: 4
+    })
+
+    // Ender conduit: same gap. distilled_animus_dust appended as a 5th item, distinct from the
+    // other two conduits' picks.
+    event.remove({ id: 'mna:manaweaving/eldrin/conduit_ender' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:eldrin_conduit_ender',
+        items: [
+            'mna:mote_ender',
+            'mna:lesser_eldrin_conduit_ender',
+            'mna:chimerite_gem',
+            'mna:decoration/chimerite_arcane_stone',
+            'gtceu:distilled_animus_dust'
+        ],
+        patterns: ['mna:slash', 'mna:split_triangle', 'mna:inverted_triangle', 'mna:backslash'],
+        tier: 4
+    })
+
     // --- Microcrafting: Alchemist circuit + components ---
     // Circuit built through 2 real handlers: Soul Forge -> Alchemy Table.
     addSoulForgeRecipe(event, {
