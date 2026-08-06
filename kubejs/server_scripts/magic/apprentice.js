@@ -30,25 +30,49 @@ ServerEvents.recipes(event => {
         tier: 1
     });
 
+    // Manaweaving Altar: was 100% vanilla, MNA-native (arcane sandstone/wall/stone + water).
+    // Zanite now flanks the water bucket -- ties the altar to the Aether gem that opens the
+    // same tier, while the sandstone family stays MNA's own dominant identity.
+    event.remove({ id: 'mna:manaweaving_altar' })
+    event.shaped(
+        Item.of('mna:manaweaving_altar', 1),
+        [
+            'WUW',
+            'ZBZ',
+            'WSW'
+        ],
+        {
+            W: 'mna:decoration/arcane_sandstone_wall',
+            U: 'mna:decoration/arcane_sandstone',
+            Z: 'aether:zanite_gemstone',
+            B: 'minecraft:water_bucket',
+            S: 'mna:decoration/arcane_stone'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
     // The pack's single Alchemy Table recipe. Blood Magic's vanilla one (stone/planks/iron/gold/
     // blankslate) is removed here -- it's cheap enough to bypass the zanite gate entirely. The
     // duplicate Initiate-tier recipe was deleted 2026-08-04: identical output meant it never won,
     // and this tier's own Manasteel chain needs the table anyway.
+    // Shape now reads as the actual model: legs, red cloth top, corner bottles, iron frame,
+    // zanite core, blankslate base -- not a generic filled grid.
     event.remove({ id: 'bloodmagic:alchemy_table' })
     event.shaped(
         Item.of('bloodmagic:alchemytable', 1),
         [
-            'IBI',
-            'GSG',
-            'IBI'
+            'TRT',
+            'IZI',
+            'LBL'
         ],
         {
+            T: 'minecraft:glass_bottle',
+            R: 'minecraft:red_carpet',
             I: '#forge:plates/iron',
-            B: 'bloodmagic:blankslate',
-            G: 'minecraft:glass',
-            S: 'aether:zanite_gemstone'
+            Z: 'aether:zanite_gemstone',
+            L: 'minecraft:stone_slab',
+            B: 'bloodmagic:blankslate'
         }
-    )
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     // --- Manasteel: Apprentice signature material, zanite chain (replaces Luminessence here) ---
     // Magic spine stays GT-free: hammer-crush, hand combine, Alchemy Table infusion -- no GT machine.

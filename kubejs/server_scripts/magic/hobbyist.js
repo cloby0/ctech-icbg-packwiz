@@ -68,6 +68,46 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
+    // Blood Altar: was 100% vanilla (6/9 stone+furnace+gold ingots). Fills the 2 empty corners
+    // and the gold band upgrades ingot -> plate. arcane_charcoal_fragment/livingrock are both the
+    // same pre-altar reagents the Ashen Ichor chain below consumes -- non-circular (both obtained
+    // via Mixing Cauldron / Pure Daisy, neither needs this altar to exist).
+    event.remove({ id: 'bloodmagic:blood_altar' })
+    event.shaped(
+        Item.of('bloodmagic:altar', 1),
+        [
+            'CSC',
+            'SFS',
+            'PLP'
+        ],
+        {
+            C: 'malum:arcane_charcoal_fragment',
+            S: '#forge:stone',
+            F: 'minecraft:furnace',
+            P: '#forge:plates/gold',
+            L: 'botania:livingrock'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+
+    // Spirit Altar: was 100% vanilla (7/9). Same charcoal/livingrock pairing as the Blood Altar
+    // above -- shared Hobbyist-altar grammar -- while runewood/soulstone stay Malum's own identity.
+    event.remove({ id: 'malum:spirit_altar' })
+    event.shaped(
+        Item.of('malum:spirit_altar', 1),
+        [
+            'CYC',
+            'ZXZ',
+            'XLX'
+        ],
+        {
+            C: 'malum:arcane_charcoal_fragment',
+            Y: 'malum:processed_soulstone',
+            Z: '#forge:plates/gold',
+            X: 'malum:runewood_planks',
+            L: 'botania:livingrock'
+        }
+    ).damageIngredient(Ingredient.of('#forge:tools/saws'))
+
     // --- Ashen Ichor: Hobbyist signature metal, no Ars dependency ---
     // 1. arcane charcoal + redstone -> ichor dust
     event.custom({
