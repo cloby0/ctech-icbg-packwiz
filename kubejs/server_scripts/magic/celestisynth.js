@@ -16,13 +16,15 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'celestisynth:supernal_netherite_ingot_smithing' })
 
+    // Reflavored 2026-08-06: built on Botania's own Runic Altar but spent zero Botania material
+    // -- irons_spellbooks:arcane_ingot swapped for a mana-charged Botania item.
     event.remove({ id: 'celestisynth:starlit_factory' })
     addRunicAltarRecipe(event, {
         output: { item: 'celestisynth:starlit_factory' },
         mana: RunicAltar.THAUMATURGE,
         ingredients: [
             { item: 'celestisynth:celestial_netherite_ingot', count: 2 },
-            { item: 'irons_spellbooks:arcane_ingot' },
+            { item: 'botania:mana_diamond' },
             { item: 'minecraft:smithing_table' },
             { item: 'minecraft:blast_furnace' },
             { item: 'minecraft:obsidian', count: 2 }
@@ -52,6 +54,8 @@ ServerEvents.recipes(event => {
         }
     ]
 
+    // Reflavored 2026-08-06: sun/moon armor is a celestial-magic theme -- MNA's raw
+    // starlight-conduit material fits harder than reusing irons_spellbooks mithril a second time.
     armorData.forEach(entry => {
         const set = entry.set
         const mat = entry.mat
@@ -61,7 +65,7 @@ ServerEvents.recipes(event => {
             event.shaped(
                 Item.of(`celestisynth:${set}_${piece}`, 1),
                 pattern,
-                { x: mat, M: '#forge:ingots/mithril', H: '#forge:tools/hammers' }
+                { x: mat, M: 'mna:vinteum_ingot', H: '#forge:tools/hammers' }
             ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
         })
     })
