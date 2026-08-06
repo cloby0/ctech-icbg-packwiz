@@ -34,11 +34,14 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: this is the capstone of the catalyst chain (not
+    // consumed further), and a pure nether star is a singular major sacrifice, not a bulk
+    // pattern-weave input.
+    addBloodAltarRecipe(event, {
+        input: 'celestial_core:pure_nether_star',
         output: 'celestial_enchantments:legendary_celestial_catalyst',
-        items: ['nameless_trinkets:ultimate_dust', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_enchantments:advanced_celestial_catalyst', 'celestial_core:pure_nether_star', 'minecraft:netherite_scrap', 'botania:terrasteel_ingot', 'kubejs:starforged_sigil', 'kubejs:starforged_wizard_brain'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        upgradeLevel: 3,
+        syphon: LP.THAUMATURGE
     })
 
 })
