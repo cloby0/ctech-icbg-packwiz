@@ -156,18 +156,28 @@ ServerEvents.recipes(event => {
         upgradeLevel: 2
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:ender_pearl","minecraft:obsidian","minecraft:obsidian","minecraft:blaze_rod","gtceu:luminessence_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: literally named "soul gem" -- LP-syphon framing
+    // undercut its own name.
+    addSpiritInfusion(event, {
         output: 'uniqueaccessories:soul_gem',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:ender_pearl',
+        spirits: [{ type: 'arcane', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:obsidian', count: 2 },
+            { item: 'minecraft:blaze_rod' }
+        ]
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:blaze_rod","minecraft:obsidian","minecraft:obsidian","minecraft:fermented_spider_eye","gtceu:luminessence_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: devil-themed eye built from blaze rod + fermented
+    // spider eye, straightforwardly infernal.
+    addSpiritInfusion(event, {
         output: 'uniqueaccessories:devils_eyeball',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:blaze_rod',
+        spirits: [{ type: 'infernal', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:obsidian', count: 2 },
+            { item: 'minecraft:fermented_spider_eye' }
+        ]
     })
 
     addEnchantingRecipe(event, {
@@ -226,11 +236,13 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:wither_rose","minecraft:red_dye","minecraft:red_dye","minecraft:ink_sac","gtceu:luminessence_dust"],
+    // Reflavored to Blood Altar 2026-08-06: a "heart" trinket built from wither rose is a
+    // life-cost sacrifice, not a pattern-weave.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:wither_rose',
         output: 'uniqueaccessories:withered_heart',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        upgradeLevel: 2,
+        syphon: LP.SORCERER
     })
 
     addAlchemyTableRecipe(event, {
