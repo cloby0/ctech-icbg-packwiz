@@ -111,8 +111,9 @@ ServerEvents.recipes(event => {
     })
 
     // Eldrin Altar: MNA tier-4 content, first genuinely mandatory at Alchemist -- was 100%
-    // internal MNA items with no tie to this tier's own material chain. One of 6 duplicated
-    // chimerite_crystals swapped for the tier's own signature ingot.
+    // internal MNA items with no tie to this tier's own material chain. Two of 6 duplicated
+    // chimerite_crystals swapped for the tier's own signature ingot and its sigil -- station
+    // builds are a real sigil target (one-time, non-bulk craft), corrected 2026-08-06.
     event.remove({ id: 'mna:manaweaving/eldrin/eldrin_altar' })
     addMnaManaweavingRecipe(event, {
         output: 'mna:eldrin_altar',
@@ -122,8 +123,8 @@ ServerEvents.recipes(event => {
             'mna:chimerite_crystals',
             'mna:chimerite_crystals',
             'mna:chimerite_crystals',
-            'mna:chimerite_crystals',
-            'gtceu:distilled_animus_ingot'
+            'gtceu:distilled_animus_ingot',
+            'kubejs:animus_sigil'
         ],
         patterns: ['mna:hourglass', 'mna:split_triangle', 'mna:inverted_triangle', 'mna:diamond'],
         tier: 4

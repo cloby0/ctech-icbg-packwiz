@@ -23,12 +23,13 @@ ServerEvents.recipes(event => {
 
     // Soul Forge (Hellfire Forge) block build: was 100% vanilla, letting a player reach
     // Alchemist's core station via pure Blood Magic grinding. One of 4 duplicated stone slots
-    // replaced with this tier's own signature material.
+    // replaced with this tier's own signature material; the sigil fills the previously-blank
+    // grid cell -- station builds are a real sigil target, corrected 2026-08-06.
     event.remove({ id: 'bloodmagic:soul_forge' })
     event.shaped(
         Item.of('bloodmagic:soulforge', 1),
         [
-            'I I',
+            'IXI',
             'sSs',
             'GOs'
         ],
@@ -37,7 +38,8 @@ ServerEvents.recipes(event => {
             S: 'bloodmagic:blankslate',
             s: '#forge:stone',
             O: '#forge:storage_blocks/iron',
-            G: 'gtceu:gaia_spirit_dust'
+            G: 'gtceu:gaia_spirit_dust',
+            X: 'kubejs:gravitic_sigil'
         }
     )
 

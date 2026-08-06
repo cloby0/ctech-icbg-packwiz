@@ -40,10 +40,12 @@ ServerEvents.recipes(event => {
     // Chimerite-Bound Dungeon Metal: wraps Blood Magic's own dungeon_metal with Thaumaturge's
     // signature material, so the Tier 5 altar upgrade below can't be reached by pure Blood Magic
     // grinding -- Thaumaturge tax for Arcanist's gate, per the Runic Altar precedent (GT/foreign
-    // item gating a trunk-mod station).
+    // item gating a trunk-mod station). Also carries starforged_sigil -- corrected 2026-08-06:
+    // station builds are a real sigil target (one-time, non-bulk craft), not an exemption.
     event.shapeless('kubejs:chimerite_bound_dungeon_metal', [
         'bloodmagic:dungeon_metal',
-        'gtceu:starforged_chimerite_gem'
+        'gtceu:starforged_chimerite_gem',
+        'kubejs:starforged_sigil'
     ])
 
     event.remove({ id: 'bloodmagic:altar/archmagebloodorb' })
