@@ -99,11 +99,16 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["minecraft:glass_bottle","l2hostility:witch_droplet","l2hostility:witch_droplet","gtceu:prima_materia_dust","gtceu:prima_materia_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: a curse bottle should be soul-typed, not
+    // LP-crafted.
+    addSpiritInfusion(event, {
         output: 'l2hostility:bottle_of_curse',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:glass_bottle',
+        spirits: [{ type: 'wicked', count: 3 }],
+        extraItems: [
+            { item: 'l2hostility:witch_droplet', count: 2 },
+            { item: 'gtceu:prima_materia_dust', count: 2 }
+        ]
     })
 
 
@@ -175,11 +180,19 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: "warp stone" is a space/reality-distortion item,
+    // arcane's domain.
+    addSpiritInfusion(event, {
         output: 'l2complements:reinforced_warp_stone',
-        items: ['l2complements:fragile_warp_stone', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:holy_silver_dust', 'kubejs:starforged_sigil', 'gtceu:starforged_chimerite_dust', 'kubejs:starforged_channeling_vessel'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'l2complements:fragile_warp_stone',
+        spirits: [{ type: 'arcane', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:obsidian', count: 4 },
+            { item: 'gtceu:holy_silver_dust' },
+            { item: 'kubejs:starforged_sigil' },
+            { item: 'gtceu:starforged_chimerite_dust' },
+            { item: 'kubejs:starforged_channeling_vessel' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -228,18 +241,33 @@ ServerEvents.recipes(event => {
         source: Source.THAUMATURGE,
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: healing/restoration reads as a holy blessing, not
+    // a woven pattern.
+    addSpiritInfusion(event, {
         output: 'l2hostility:ring_of_healing',
-        items: ['minecraft:glistering_melon_slice', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_sigil', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'minecraft:golden_apple', 'kubejs:starforged_channeling_vessel'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:golden_apple',
+        spirits: [{ type: 'sacred', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:glistering_melon_slice' },
+            { item: 'gtceu:holy_silver_dust', count: 3 },
+            { item: 'kubejs:starforged_sigil' },
+            { item: 'gtceu:starforged_chimerite_dust', count: 2 },
+            { item: 'kubejs:starforged_channeling_vessel' }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: nautilus/heart-of-the-sea ring is textbook aqueous.
+    addSpiritInfusion(event, {
         output: 'l2hostility:ring_of_ocean',
-        items: ['minecraft:nautilus_shell', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust', 'kubejs:starforged_sigil', 'gtceu:starforged_chimerite_dust', 'gtceu:starforged_chimerite_dust', 'minecraft:heart_of_the_sea', 'kubejs:starforged_channeling_vessel'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:heart_of_the_sea',
+        spirits: [{ type: 'aqueous', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:nautilus_shell' },
+            { item: 'gtceu:holy_silver_dust', count: 3 },
+            { item: 'kubejs:starforged_sigil' },
+            { item: 'gtceu:starforged_chimerite_dust', count: 2 },
+            { item: 'kubejs:starforged_channeling_vessel' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -452,11 +480,19 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: blaze_rod + soul campfire is straightforwardly
+    // infernal.
+    addSpiritInfusion(event, {
         output: 'l2hostility:flaming_thorn',
-        items: ['minecraft:blaze_rod', 'l2hostility:chaos_ingot', 'l2hostility:chaos_ingot', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust', 'kubejs:kathar_sigil', 'minecraft:soul_campfire', 'kubejs:kathar_motive_core'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'minecraft:blaze_rod',
+        spirits: [{ type: 'infernal', count: 4 }],
+        extraItems: [
+            { item: 'l2hostility:chaos_ingot', count: 2 },
+            { item: 'gtceu:prima_materia_dust', count: 3 },
+            { item: 'kubejs:kathar_sigil' },
+            { item: 'minecraft:soul_campfire' },
+            { item: 'kubejs:kathar_motive_core' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -540,11 +576,19 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: part of the Seven Deadly Sins set; a curse is soul
+    // corruption, not weaving.
+    addSpiritInfusion(event, {
         output: 'l2hostility:curse_of_envy',
-        items: ['l2complements:resonant_feather', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'kubejs:bound_astral_soul', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'l2complements:resonant_feather',
+        spirits: [{ type: 'wicked', count: 5 }],
+        extraItems: [
+            { item: 'l2hostility:miracle_ingot', count: 2 },
+            { item: 'botania:manasteel_ingot', count: 3 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:bound_astral_soul' },
+            { item: 'kubejs:empyrean_wizard_brain' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -575,11 +619,19 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: warden_bone_shard/echo_shard is deep-dark/Warden
+    // lore, the pack's clearest eldritch signature.
+    addSpiritInfusion(event, {
         output: 'l2hostility:abyssal_thorn',
-        items: ['l2complements:warden_bone_shard', 'l2hostility:miracle_ingot', 'l2hostility:miracle_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'botania:manasteel_ingot', 'kubejs:empyrean_sigil', 'minecraft:echo_shard', 'kubejs:empyrean_motive_core'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'l2complements:warden_bone_shard',
+        spirits: [{ type: 'eldritch', count: 3 }],
+        extraItems: [
+            { item: 'l2hostility:miracle_ingot', count: 2 },
+            { item: 'botania:manasteel_ingot', count: 3 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'minecraft:echo_shard' },
+            { item: 'kubejs:empyrean_motive_core' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
@@ -616,11 +668,18 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: name and holy_silver_block are explicitly holy.
+    addSpiritInfusion(event, {
         output: 'l2hostility:divinity_cross',
-        items: ['botania:terrasteel_ingot', 'gtceu:holy_silver_block', 'gtceu:holy_silver_block', 'l2hostility:ring_of_divinity', 'l2hostility:ring_of_divinity', 'kubejs:bound_astral_soul', 'kubejs:bound_astral_soul', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+        input: 'botania:terrasteel_ingot',
+        spirits: [{ type: 'sacred', count: 5 }],
+        extraItems: [
+            { item: 'gtceu:holy_silver_block', count: 2 },
+            { item: 'l2hostility:ring_of_divinity', count: 2 },
+            { item: 'kubejs:bound_astral_soul', count: 2 },
+            { item: 'kubejs:empyrean_sigil' },
+            { item: 'kubejs:empyrean_ward_lattice' }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
