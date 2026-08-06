@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'legendary_spellbooks:stormbound_grimoire',
         input: 'irons_spellbooks:netherite_spell_book',
-        spirits: [{ type: 'aerial', count: 5 }],
+        spirits: [{ type: 'aerial', count: 5 }, { type: 'arcane', count: 1 }],
         extraItems: [
             { item: 'irons_spellbooks:lightning_rune', count: 2 },
             { item: 'irons_spellbooks:energized_core' },

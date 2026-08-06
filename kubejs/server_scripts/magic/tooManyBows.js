@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'too_many_bows:verdant_viper',
         input: 'minecraft:bow',
-        spirits: [{ type: 'wicked', count: 3 }],
+        spirits: [{ type: 'wicked', count: 3 }, { type: 'earthen', count: 1 }],
         extraItems: [
             { item: 'minecraft:spider_eye', count: 2 },
             { item: 'minecraft:fermented_spider_eye' },
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'too_many_bows:demons_grasp',
         input: 'minecraft:bow',
-        spirits: [{ type: 'infernal', count: 4 }],
+        spirits: [{ type: 'infernal', count: 4 }, { type: 'wicked', count: 1 }],
         extraItems: [
             { item: 'minecraft:blaze_rod' },
             { item: 'minecraft:wither_skeleton_skull' },
@@ -255,7 +255,9 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'too_many_bows:necro_flame_bow',
         input: 'minecraft:bow',
-        spirits: [{ type: 'wicked', count: 4 }],
+        // Name says "flame" but no fire ingredient exists in its own list -- infernal added so
+        // the spirit cost matches the item's own identity, not just its visible ingredients.
+        spirits: [{ type: 'wicked', count: 4 }, { type: 'infernal', count: 1 }],
         extraItems: [
             { item: 'too_many_bows:cursed_stone', count: 2 },
             { item: 'minecraft:wither_skeleton_skull', count: 2 },
