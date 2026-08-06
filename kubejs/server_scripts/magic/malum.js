@@ -20,21 +20,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'malum:spirit_infusion/copper_impetus' })
     event.remove({ id: 'malum:spirit_infusion/gold_impetus' })
 
-    // --- Machine gating: Altar at Journeyman (MV), rest at Initiate (HV) ---
+    // --- Machine gating: rest at Initiate (HV) ---
+    // Spirit Altar itself stays Malum's own vanilla recipe -- Hobbyist's Ashen Ichor chain needs
+    // it for Spirit Infusion, and no non-circular Hobbyist-tier material exists to gate it with
+    // (Ashen Ichor is a product of this altar). Fixed 2026-08-06, see
+    // docs/superpowers/specs/2026-08-06-trunk-mod-integration-design.md.
     // Magic materials only. A player with zero tech progression must be able to build these.
-
-    event.remove({ id: 'malum:spirit_altar' })
-    event.shaped('malum:spirit_altar', [
-        'PSP',
-        'PGP',
-        'RHR'
-    ], {
-        P: 'gtceu:holy_silver_plate',
-        S: 'malum:processed_soulstone',
-        G: 'gtceu:veridium_dust',
-        R: 'gtceu:holy_silver_rod',
-        H: '#forge:tools/hammers'
-    }).damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
     event.remove({ id: 'malum:spirit_infusion/spirit_crucible' })
     event.shaped('malum:spirit_crucible', [
