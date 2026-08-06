@@ -25,11 +25,13 @@ ServerEvents.recipes(event => {
         'ZGF', 'GDG', 'FGF'
     ], { 'F': 'minecraft:feather', 'G': 'minecraft:gold_ingot', 'D': 'nameless_trinkets:dubious_dust', 'Z': '#forge:tools/files' }).damageIngredient(Ingredient.of('#forge:tools/files'))
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: "guts" is explicitly visceral/gore-themed, a
+    // single-item sacrifice fits the name better than a pattern-weave.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:golden_apple',
         output: 'morerelics:guts_orb',
-        items: ['nameless_trinkets:glowing_dust', 'minecraft:golden_apple', 'minecraft:golden_apple', 'minecraft:obsidian', 'minecraft:obsidian', 'gtceu:luminessence_dust'],
-        patterns: ['mna:diamond', 'mna:knot'],
-        tier: 2
+        upgradeLevel: 2,
+        syphon: LP.SORCERER
     })
 
     addMnaManaweavingRecipe(event, {
@@ -81,11 +83,13 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Blood Altar 2026-08-06: another literal "heart" item, life-force framing
+    // outclasses generic weaving.
+    addBloodAltarRecipe(event, {
+        input: 'minecraft:magma_cream',
         output: 'morerelics:thermoseismic_heart',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:magma_cream', 'minecraft:magma_cream', 'minecraft:ice', 'minecraft:ice', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        upgradeLevel: 3,
+        syphon: LP.ALCHEMIST
     })
 
     addMnaManaweavingRecipe(event, {
@@ -109,11 +113,17 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
+    // Reflavored to Spirit Altar 2026-08-06: wither_skeleton_skull is necromantic/evil
+    // iconography, wicked spirit's core niche.
+    addSpiritInfusion(event, {
         output: 'morerelics:tyrant_mask',
-        items: ['nameless_trinkets:ultimate_dust', 'minecraft:obsidian', 'minecraft:wither_skeleton_skull', 'minecraft:obsidian', 'minecraft:iron_block', 'gtceu:holy_silver_dust', 'gtceu:holy_silver_dust'],
-        patterns: ['mna:split_triangle', 'mna:knot2'],
-        tier: 3
+        input: 'minecraft:wither_skeleton_skull',
+        spirits: [{ type: 'wicked', count: 4 }],
+        extraItems: [
+            { item: 'minecraft:obsidian', count: 2 },
+            { item: 'minecraft:iron_block' },
+            { item: 'gtceu:holy_silver_dust', count: 2 }
+        ]
     })
 
     addMnaManaweavingRecipe(event, {
