@@ -62,18 +62,18 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:feather', 'minecraft:feather', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:slime_ball","minecraft:slime_ball","minecraft:feather","minecraft:feather","gtceu:luminessence_dust"],
         output: 'relics:jellyfish_necklace',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:packed_ice","minecraft:packed_ice","minecraft:iron_ingot","minecraft:iron_ingot","gtceu:luminessence_dust"],
         output: 'relics:ice_breaker',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -97,18 +97,18 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:blackstone', 'minecraft:blackstone', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:gold_ingot","minecraft:gold_ingot","minecraft:blackstone","minecraft:blackstone","gtceu:luminessence_dust"],
         output: 'relics:bastion_ring',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:glass_bottle', 'minecraft:blaze_powder', 'minecraft:blaze_powder', 'minecraft:fire_charge', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:glass_bottle","minecraft:blaze_powder","minecraft:blaze_powder","minecraft:fire_charge","gtceu:luminessence_dust"],
         output: 'relics:blazing_flask',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -118,11 +118,11 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:diamond', 'minecraft:golden_apple', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:gold_ingot","minecraft:gold_ingot","minecraft:diamond","minecraft:golden_apple","gtceu:luminessence_dust"],
         output: 'relics:holy_locket',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {

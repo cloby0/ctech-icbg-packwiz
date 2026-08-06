@@ -214,9 +214,14 @@ ServerEvents.recipes(event => {
         tier: 2
     })
 
+    // alchemical_impetus is the Spirit Crucible's durability catalyst -- requiring one here ties
+    // Initiate's own Holy Silver line to the tier's signature Malum machine (crucible/catalyzer/
+    // obelisk, gated at Initiate/HV in malum.js), which the pack's chains otherwise never touch.
+    // Consumed once as a gateway item, not a repeated bulk reagent (matches the mercy_cross
+    // pattern already here).
     addMnaManaweavingRecipe(event, {
         output: 'gtceu:holy_silver_dust',
-        items: ['kubejs:holy_silver_blend', 'reliquary:mercy_cross'],
+        items: ['kubejs:holy_silver_blend', 'reliquary:mercy_cross', 'malum:alchemical_impetus'],
         patterns: ['mna:triangle', 'mna:backslash'],
         tier: 2
     });

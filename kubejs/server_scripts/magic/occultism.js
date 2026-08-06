@@ -188,9 +188,9 @@ ServerEvents.recipes(event => {
     // material -> tier. Materials Occultism ships its own miner/ores/<name>.json for get remapped
     // (remove + rebuild, same id); materials it doesn't ship get a fresh kubejs: id.
     const shippedByOccultism = new Set([
-        'coal', 'copper', 'tin', 'iron', 'lead', 'zinc', 'nickel', 'silver', 'sulfur', 'salt',
+        'coal', 'copper', 'tin', 'iron', 'lead', 'nickel', 'silver', 'sulfur', 'salt',
         'aluminum', 'electrotine', 'lithium', 'cobalt', 'malachite', 'cinnabar', 'certus_quartz',
-        'diamond', 'emerald', 'ruby', 'sapphire', 'topaz', 'amethyst', 'opal', 'tungsten', 'platinum',
+        'diamond', 'emerald', 'ruby', 'sapphire', 'topaz', 'amethyst', 'opal', 'platinum',
         'thorium', 'niter',
     ])
     // Occultism shipped these with mistyped/nonexistent result tags for this pack's material set --
@@ -203,13 +203,13 @@ ServerEvents.recipes(event => {
     // those are dropped or swapped for the real GT equivalent (uranium -> uraninite, garnet -> the two
     // real garnet variants) rather than shipping dead recipes.
     const tierMaterials = {
-        foliot: ['coal', 'copper', 'tin', 'iron', 'lead', 'zinc', 'nickel', 'silver', 'sulfur', 'salt',
+        foliot: ['coal', 'copper', 'tin', 'iron', 'lead', 'nickel', 'silver', 'sulfur', 'salt',
             'saltpeter', 'cassiterite', 'apatite'],
         djinni: ['aluminium', 'bauxite', 'electrotine', 'lithium', 'cobalt', 'magnetite', 'hematite',
             'pyrite', 'galena', 'sphalerite', 'chalcopyrite', 'bornite', 'malachite', 'cinnabar',
             'certus_quartz', 'diamond', 'emerald', 'ruby', 'sapphire', 'topaz', 'red_garnet',
             'yellow_garnet', 'amethyst', 'opal'],
-        afrit: ['tungsten', 'tungstate', 'scheelite', 'platinum', 'palladium', 'molybdenum',
+        afrit: ['tungstate', 'scheelite', 'platinum', 'palladium', 'molybdenum',
             'vanadium_magnetite', 'uraninite', 'pitchblende', 'thorium', 'monazite', 'neodymium',
             'chromite'],
         marid: ['naquadah', 'iesnium', 'plutonium'],
@@ -218,11 +218,24 @@ ServerEvents.recipes(event => {
     // Automates away Ars Nouveau's Source Gem and Mystical Agriculture's Prosperity essence chain --
     // both are hand-authored magic-tree signature resources (Journeyman line, MA farming loop), not
     // general GT ore progression. Close the loophole rather than re-tier it. Also drops garnet/osmium/
-    // uranium, Occultism's shipped recipes for tags that don't exist in this pack's material set.
-    ;['inferium', 'prosperity', 'garnet', 'osmium', 'uranium'].forEach(material => {
+    // uranium (Occultism's shipped recipes for tags that don't exist in this pack's material set), and
+    // zinc/tungsten (no gtceu:zinc_ore or gtceu:tungsten_ore block exists -- GT gets zinc from
+    // sphalerite and tungsten from tungstate/scheelite, both already covered above; the vanilla
+    // Occultism recipes for these two point at forge:ores/zinc and forge:ores/tungsten, which in this
+    // pack contain ONLY create:zinc_ore and superbwarfare:scheelite_ore respectively -- zero gtceu
+    // members, off-progression loot).
+    ;['inferium', 'prosperity', 'garnet', 'osmium', 'uranium', 'zinc', 'tungsten'].forEach(material => {
         event.remove({ id: `occultism:miner/ores/${material}_ore` })
     })
 
+    // result is a concrete item, not a tag lookup: Occultism's WeightedOutputIngredient resolves a
+    // tag output via AlmostUnifiedIntegration.getPreferredItemForTag(), falling back to whatever item
+    // happens to be first in the tag's internal (non-random, cached-per-recipe) iteration order when
+    // no preference is set. This pack removed Almost Unified for OneEnough (see
+    // project_oneenough_migration memory) so that hook is permanently dead -- every miner recipe using
+    // `result: { tag: ... }` silently collapses to one fixed, arbitrary item, which in practice landed
+    // on vanilla ore blocks instead of the intended gtceu ones. Pointing at the real gtceu id directly
+    // sidesteps the broken hook entirely.
     Object.keys(tierMaterials).forEach(tier => {
         tierMaterials[tier].forEach(material => {
             const shippedKey = Object.keys(tagFix).find(k => tagFix[k] === material) || material
@@ -232,7 +245,7 @@ ServerEvents.recipes(event => {
             event.custom({
                 type: 'occultism:miner',
                 ingredient: minerIngredient[tier],
-                result: { tag: `forge:ores/${material}` },
+                result: { item: `gtceu:${material}_ore` },
                 weight: 500,
             }).id(id)
         })
@@ -419,6 +432,22 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     const crushingTier = { foliot: 1, djinni: 2, afrit: 3, marid: 4 }
 
+    // Same broken-output-tag landmine as the miner rebalance above: occultism:crushing's
+    // result is also an OutputIngredient, so `{ tag: 'forge:dusts/...' }` silently collapses to
+    // one fixed non-gtceu item (bloodmagic:ironsand, occultism:iron_dust, etc -- verified against
+    // docs/claude/full_pack_dump/datasets/tags/items/forge/dusts/). Resolve every material to its
+    // real dust item up front. Exceptions: azure_silver/crimson_iron dust is setIgnored to
+    // silentgear (materials.md L47-48), iesnium dust is occultism's own (materials.md L40),
+    // redstone dust doesn't exist as a gtceu item -- unified to minecraft:redstone
+    // (feedback_gtceu_redstone_dust_unified memory).
+    const dustExceptions = {
+        azure_silver: 'silentgear:azure_silver_dust',
+        crimson_iron: 'silentgear:crimson_iron_dust',
+        iesnium: 'occultism:iesnium_dust',
+        redstone: 'minecraft:redstone',
+    }
+    const dustItem = material => dustExceptions[material] || `gtceu:${material}_dust`
+
     // Ore-vein metals: 3 recipe ids each (dust / dust_from_raw / dust_from_raw_block).
     // Reuses the miner rebalance's material lists above, plus 4 real ores that list
     // missed -- crimson_iron/azure_silver/graphite/mithril -- and gold, all verified via
@@ -444,7 +473,7 @@ ServerEvents.recipes(event => {
                     type: 'occultism:crushing',
                     ingredient: { tag: `forge:${form.tagPath(material)}` },
                     minTier: crushingTier[tier],
-                    result: { tag: `forge:dusts/${material}`, count: form.count },
+                    result: { item: dustItem(material), count: form.count },
                     crushingTime: 200,
                 }).id(id)
             })
@@ -473,7 +502,7 @@ ServerEvents.recipes(event => {
                     type: 'occultism:crushing',
                     ingredient: { tag: `forge:${form.tagPath(material)}` },
                     minTier: crushingTier[tier],
-                    result: { tag: `forge:dusts/${material}`, count: form.count },
+                    result: { item: dustItem(material), count: form.count },
                     crushingTime: 200,
                 }).id(id)
             })
@@ -481,12 +510,14 @@ ServerEvents.recipes(event => {
     })
 
     // obsidian_dust: single recipe, no suffix variants, ingredient tag has no ores/ prefix.
+    // No gtceu:obsidian_dust exists (only small/tiny variants) -- occultism's own dust item is
+    // the on-mod, deterministic choice instead of the broken forge:dusts/obsidian tag output.
     event.remove({ id: 'occultism:obsidian_dust' })
     event.custom({
         type: 'occultism:crushing',
         ingredient: { tag: 'forge:obsidian' },
         minTier: crushingTier.foliot,
-        result: { tag: 'forge:dusts/obsidian', count: 1 },
+        result: { item: 'occultism:obsidian_dust', count: 1 },
         crushingTime: 200,
     }).id('occultism:obsidian_dust')
 

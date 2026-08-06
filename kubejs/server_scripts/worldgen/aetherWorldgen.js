@@ -234,6 +234,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.get('soulstone'), 4, 8, 70)
             .withBlock(GTMaterials.get('brilliance'), 2, 55, 96)
+            .withBlock(GTMaterials.get('cthonic_gold'), 3, 8, 50)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('soulstone'))

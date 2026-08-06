@@ -1323,6 +1323,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .addOreByproducts('soulstone', 'amethyst')
         .washedIn('gtceu:mercury')
 
+    // cthonic_gold: same Aether vein as soulstone/brilliance (2026-08-05 fix -- its native
+    // overworld deepslate ore was dead worldgen, never spawns in the pregenerated world).
+    // Lore ties it to gold ("density of true gold"), so gold is the ore byproduct.
+    event.create('cthonic_gold')
+        .gem()
+        .ore()
+        .color(0xB08D3E)
+        .secondaryColor(0x5C4A1E)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .addOreByproducts('gold', 'sulfur')
+        .washedIn('gtceu:mercury')
+
     // blazing_quartz: Nether gem, no washedIn (matches GT's own nether quartz treatment).
     event.create('blazing_quartz')
         .gem()

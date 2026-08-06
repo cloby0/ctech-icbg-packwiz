@@ -41,6 +41,19 @@ ServerEvents.recipes(event => {
         "experience": 0.8
     })
 
+    // grand_victory_medal: Aether Redux's Valkyrie Queen drop. Initiate's Skyforged line already
+    // sets up the Queen fight as a milestone ("Victory Medals are proof required to fight the
+    // Valkyrie Queen") but nothing paid off actually killing her -- this closes that loop one
+    // tier later, alongside the gravitite this recipe already runs on.
+    // Not farmable like regular victory medals -- resonant_gravitite_core feeds gravitic_sigil,
+    // which artifacts.js consumes dozens of times, so the medal itself must be renewable once you
+    // have one. Terra Plate duplication (same mechanic Thaumaturge uses for mana_diamond/mana_pearl).
+    addTerraPlateRecipe(event, {
+        result: { item: 'aether_redux:grand_victory_medal', count: 2 },
+        mana: Agglomeration.SORCERER,
+        ingredients: ['aether_redux:grand_victory_medal', 'botania:life_essence']
+    })
+
     addOccultismRitual(event, {
         name: 'resonant_gravitite_core',
         tier: 'afrit',
@@ -52,7 +65,8 @@ ServerEvents.recipes(event => {
             { item: 'gtceu:holy_silver_rod' },
             { item: 'kubejs:resonant_zanite_crystal' },
             { item: 'kubejs:resonant_zanite_crystal' },
-            { item: 'occultism:afrit_essence' }
+            { item: 'occultism:afrit_essence' },
+            { item: 'aether_redux:grand_victory_medal' }
         ]
     })
 
@@ -92,6 +106,17 @@ ServerEvents.recipes(event => {
         input: ['kubejs:chaos_essence', 'gtceu:holy_silver_ingot', 'magichem:admixture_potential'],
         syphon: LP.SORCERER,
         upgradeLevel: 2
+    })
+
+    // element_attunement_stone's only source pack-wide is aether:sun_spirit loot (lootTables.js) --
+    // no crafting recipe exists anywhere. It's consumed 4x in this file alone, including gating
+    // prima_materia_ingot (the Marid spirit-summon item), and gravitic_sigil/wizard_brain feed
+    // dozens of artifacts.js recipes downstream. Same bottleneck class as grand_victory_medal --
+    // Terra Plate duplication makes it renewable once you've killed the Sun Spirit once.
+    addTerraPlateRecipe(event, {
+        result: { item: 'kubejs:element_attunement_stone', count: 2 },
+        mana: Agglomeration.SORCERER,
+        ingredients: ['kubejs:element_attunement_stone', 'minecraft:glowstone_dust']
     })
 
     // afrit_essence already used once in this file (resonant_gravitite_core above) -- a

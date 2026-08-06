@@ -77,11 +77,11 @@ ServerEvents.recipes(event => {
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
-    addImbuementRecipe(event, {
-        input: 'kubejs:latent_psi_crystal',
+    addAlchemyTableRecipe(event, {
+        input: ["kubejs:latent_psi_crystal","gtceu:holy_silver_dust","gtceu:holy_silver_dust"],
         output: 'psi:psidust',
-        source: Source.SORCERER,
-        pedestalItems: ['gtceu:holy_silver_dust', 'gtceu:holy_silver_dust']
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     event.recipes.gtceu.assembler('psi_iron_cad_assembly')

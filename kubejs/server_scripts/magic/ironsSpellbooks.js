@@ -36,15 +36,11 @@ ServerEvents.recipes(event => {
         }
     ).damageIngredient(Ingredient.of('#forge:tools/hammers')).damageIngredient(Ingredient.of('#forge:tools/wrenches'))
 
-    addImbuementRecipe(event, {
-        input: 'minecraft:book',
+    addAlchemyTableRecipe(event, {
+        input: ["minecraft:book","minecraft:sculk","minecraft:sculk","gtceu:prima_materia_dust","gtceu:prima_materia_dust","minecraft:echo_shard"],
         output: 'irons_spellbooks:ruined_book',
-        source: Source.SORCERER,
-        pedestalItems: [
-            'minecraft:sculk', 'minecraft:sculk',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust',
-            'minecraft:echo_shard'
-        ]
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     event.remove({ id: 'irons_spellbooks:alchemist_cauldron/brew_uncommon_ink' })

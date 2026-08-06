@@ -99,9 +99,13 @@ ServerEvents.recipes(event => {
     // --- Microcrafting: Prophet circuit + components ---
     // Circuit built through 2 real handlers: Alchemy Table -> Terra Plate. Anchored on Draconic
     // Boule (the tier's genuine capstone precursor) and the argentware bridge item, per design spec.
+    // orichalcos_ingot: Extra Botany's own capstone metal, already tagged 'kubejs:magic/sage_plus'
+    // (grouped with hero_medal) but never actually consumed anywhere. Its native Runic Altar
+    // recipe costs 150,000 mana + 2x gaia_ingot + 4x life_essence -- squarely Prophet-band, not
+    // Arcanist where the rest of Extra Botany's metals (aerialite/photonium/shadowium) sit.
     addAlchemyTableRecipe(event, {
         output: 'kubejs:argent_sigil_blank',
-        input: ['kubejs:draconic_boule', 'kubejs:argentware_processor_supercomputer', 'bloodmagic:ingot_hellforged'],
+        input: ['kubejs:draconic_boule', 'kubejs:argentware_processor_supercomputer', 'bloodmagic:ingot_hellforged', 'extrabotany:orichalcos_ingot'],
         syphon: LP.PROPHET,
         ticks: 200,
         upgradeLevel: 4
@@ -129,11 +133,15 @@ ServerEvents.recipes(event => {
         bonusOutputs: [{ item: 'draconicevolution:draconium_dust', chance: 0.3 }]
     })
 
-    // Channeling Vessel: Terra Plate, poured around a neutronium core.
+    // Channeling Vessel: Terra Plate, poured around a neutronium core. calorite_ingot (Ad Astra's
+    // Glacio-tier fuel/engine metal, LuV space progression) added 2026-08-06 as the pack's first
+    // dimension-locked-material bridge placed strictly past UV -- per philosophy.md, space
+    // progression is legitimate pack content, and a vessel/conduit slot fits calorite's own
+    // in-mod role (engines, fuel tanks) better than any other component slot.
     addTerraPlateRecipe(event, {
         result: 'kubejs:argent_channeling_vessel',
         mana: Agglomeration.PROPHET,
-        ingredients: ['kubejs:draconic_boule', 'gtceu:concepts_bucket', 'gtceu:neutronium_ingot']
+        ingredients: ['kubejs:draconic_boule', 'gtceu:concepts_bucket', 'gtceu:neutronium_ingot', 'ad_astra:calorite_ingot']
     })
 
     // Ward Lattice: Blood Altar, a strict single-input transform -- pure LP, no assembly.

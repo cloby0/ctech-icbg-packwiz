@@ -828,9 +828,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
 
     // --- Malum reagent alternates (supplemental only) ---
-    // Every output here also has a surviving magic route (spirit_infusion or
-    // an equivalent Malum mechanic). These exist so tech players have a second
-    // path, never a sole one.
+    // All of these have a surviving native no-tech route: hex_ash/void_salts/alchemical_calx via
+    // their own spirit_infusion recipes, rotting_essence/grim_talc via Malum's "Esoteric Reaping"
+    // (undead flesh/bones on blighted ground), blighted_gunk by harvesting blighted terrain
+    // (both created by the Arcane Rite -- see the mod's own Codex text), cthonic_gold by mining
+    // the Aether vein (`kubejs:soulstone_vein`, `gtceuMaterialRegistry.js`) after its dead
+    // overworld ore was stripped 2026-08-05. cursed_grit's no-tech source is unconfirmed in this
+    // pack -- this recipe may currently be its only route; verify in-game before relying on that.
     event.recipes.gtceu.centrifuge('malum_hex_ash_from_charcoal')
         .itemInputs('4x malum:arcane_charcoal')
         .itemOutputs('1x malum:hex_ash')
@@ -841,6 +845,42 @@ ServerEvents.recipes(event => {
         .itemInputs('2x malum:processed_soulstone', '1x gtceu:salt_dust')
         .itemOutputs('2x malum:void_salts')
         .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.centrifuge('malum_rotting_essence_from_flesh')
+        .itemInputs('8x minecraft:rotten_flesh')
+        .itemOutputs('1x malum:rotting_essence')
+        .duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('malum_grim_talc_from_magnesium')
+        .itemInputs('1x gtceu:magnesium_dust', '1x gtceu:silicon_dioxide_dust')
+        .itemOutputs('1x malum:grim_talc')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('malum_cthonic_gold_from_dust')
+        .itemInputs('3x gtceu:gold_dust', '1x gtceu:sulfur_dust')
+        .itemOutputs('1x malum:cthonic_gold')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.centrifuge('malum_alchemical_calx_from_clay')
+        .itemInputs('4x gtceu:clay_dust')
+        .itemOutputs('1x malum:alchemical_calx')
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('malum_cursed_grit_from_soulsand')
+        .itemInputs('4x minecraft:soul_sand', '1x gtceu:sulfur_dust')
+        .itemOutputs('1x malum:cursed_grit')
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor('malum_blighted_gunk_from_rot')
+        .itemInputs('4x minecraft:rotten_flesh', '2x minecraft:poisonous_potato')
+        .itemOutputs('1x malum:blighted_gunk')
+        .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.HV])
 
 })

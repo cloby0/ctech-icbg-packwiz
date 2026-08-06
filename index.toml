@@ -5122,7 +5122,7 @@ hash = "8a47b81420fe1a7458285cc15cd486affd382c92c89ea96eb2be63d44b773ef3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "cfe48049a3ff0477f0fc8113df69d1d720f6d5a9d08a665b2ec533f43da91557"
+hash = "77f3fc6c4b1957751df7927b288bfad9f6870f5581fbd9df51f3f4527053b23a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -5139,6 +5139,10 @@ hash = "2e2f5ae559f29c163906c8b97e88e204c51f5ae768be29bc665433250122ede6"
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
 hash = "1a1093a4ea43145347abcfd58baafe353f678c9a40130fdf3dd54c12ef83e261"
+
+[[files]]
+file = "kubejs/server_scripts/magic/botaniaOrechid.js"
+hash = "bab761a4114b3855fa2cd68a1a93f2f61d07e058e914650e7c32346b1bca33f3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestialEnchantments.js"
@@ -5221,12 +5225,16 @@ file = "kubejs/server_scripts/magic/extrabotany.js"
 hash = "54797210a54b082bd6f9daf4ce00ce2701d427c8409ca15429c871305ffba197"
 
 [[files]]
+file = "kubejs/server_scripts/magic/hexerei.js"
+hash = "fcd686bb7c88c4d0345abd303cdb0d91eff1dad7c39c47d7b187ef24176cd10f"
+
+[[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "408fc31c8ca9104e3157559dc23ff33d3a83effc9afd6cbf69f0ee1f1fef1e59"
+hash = "464f45f443b0fad2c01a8111b2a9da4f7dc592ef3ee5c5554c2211ea80cc2785"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "50debd83c60799a196c09ec7e798ee8e6c2795cd1b20ef96209551837f0cd432"
+hash = "3b27ef9d7b92c951f611cd97b9b4f88ed9ce0862cc5f910f01516c8deb3adc7c"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"
@@ -5234,7 +5242,7 @@ hash = "2e0ec7a16d49cb12663aa4c8d74c8722c8b7bdc1519b8f179389bfc146b9daba"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "05d54a3492d3443637d85494e2c9152a7402439dd7047de38d701bf4889e2575"
+hash = "ef0481377c4600e1df1363617d1d852d4a085c5c4ce968657a536166ff1b9b52"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
@@ -5242,11 +5250,11 @@ hash = "996cfd2a05758574937640198863d0b71cdd8e0ed00295ca147a1b34432174b8"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
-hash = "c2022ba0d5351c1b6b14070bca86f29b14674471b1a6ec4d81d153e92a0eb5f0"
+hash = "4577394b8c59e136c724464d669b50731534de099d8dc2d74c92902721af83be"
 
 [[files]]
 file = "kubejs/server_scripts/magic/malum.js"
-hash = "f64b403de63375efeee00767b0304fac9bc640ce444a0386e22f4259fc9c3a89"
+hash = "67228ae99f7f672b5531cbf2647e8b9dbed2463448a5c483cac4b15d7eeeecde"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
@@ -5258,23 +5266,23 @@ hash = "ab351af744fd1d0286d568ade89cec9ac9905f6497265e11f0e85692acd37307"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
-hash = "60204be4e1d31e7403661661a84bbfcb36b70e551022f9c6dc7abb101924addc"
+hash = "3ab0cbd27eb8814ebe2b12844f0129046bc9734e704cd75e264ac0ff003d7e50"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "29acf9064848985c13e91bdb2d053b66b7f72b2d715694a353c5f13528a29d97"
+hash = "ffe7b0c4cdbb06f0a165757a5a21661e312087301610320a5f16e6ad3f605d43"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
-hash = "9ce8d01bceb0e76e02849d84856d57ce33530d0c7e607e901ca5c4259149d2a5"
+hash = "aba9e2645ddc29a2b6c05aa24a7153b65fc632dc9ea0c4fafd59f1226758f0f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "b8ac2a33b9302c96c5fc4870e5ac677bc19ccbcecf444cdcfeaa91bace85c92c"
+hash = "2084d26d64784d73dd4e8cd6c8c250e6f895d89b8366b1674cfb9e9755af6fc1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
-hash = "48d043245814b7fde0392234586c12cfd15648c90e41b56104277d9082cc1114"
+hash = "002bac08d0791267d75793c611415873026f52e47c8e0553562a20b2b34d263f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
@@ -5282,7 +5290,7 @@ hash = "7c0520283b3ccec1e6af7bec67b85b372122d3952d53eb09d31d741af9b4320a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "774ef513e4ff0e1afc48cedbbf1a1b1ddce2dc0fb62a464c5c986de4e7c87081"
+hash = "8a632fe892e819abcb38d56406bc3ac121d4e8ee166db22792585bc72edd69bb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
@@ -5294,7 +5302,7 @@ hash = "ef01e1e2e0de33e7f354a83f5308bcdc6f934b8791059705314836921fb6d676"
 
 [[files]]
 file = "kubejs/server_scripts/magic/uniqueAccessories.js"
-hash = "7fbce3ecc2b654053dfde63140ae2afca9add64dae32eeb8f5dfdf0591167558"
+hash = "36a0bf0b3f941cdc638c5359b355cf9fb5d969c7872bab4659cc241fe241f601"
 
 [[files]]
 file = "kubejs/server_scripts/oei_tag_cleanup.js"
@@ -5466,11 +5474,11 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "9888f7d62b639af0182e66ec1dd3758e6f325de622019e9e93ae7d6927a12131"
+hash = "18569f9f7c27e9382c894d8ee27c20a6a19d4b1166c52a4d029dc7f5a1fdccbc"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
-hash = "87440f32340f25737deeb6c8be0fb6967481762090ac4cb119edfb818b87fcec"
+hash = "2006dd2f42a0f8bd6de3b0a92e4b7c8f424a3baf0d3c900bc8c35fc1b4c7f380"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/endWorldgen.js"
@@ -5566,11 +5574,11 @@ hash = "c256b59269c3e613b6aa07bef8591e5fd1a8affcbed591d88b5d99d76da66341"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialModification.js"
-hash = "742652f95bf4d1fb547edba1771874b0c9227f91f23b21dd80f12edcf5a4e44e"
+hash = "cd9adccdbbfff27a26784bad3ae9db4c352a9f3d46356231830f132a6463ce35"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "eadcfd1fc51e9c3b0baa5d826241cf1bced23cecee0c3bde60411e474284a831"
+hash = "2c5f6192a6f2ea31d2dd76b6c6c6c2031060e40a33d0c8a1bb433af5617fb3d5"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -5586,7 +5594,7 @@ hash = "fb63a446397924d35bdcfafae1106a1504a3636166289ffb2545ffde38cb8ef1"
 
 [[files]]
 file = "kubejs/startup_scripts/malumRemoveWorldgen.js"
-hash = "1c3238a33541d92d1424cbdfb9321ab9d735c6761cdc4444d8fa2e39ee2a4771"
+hash = "bfe4731ec950f1f696d3b4c0e98c207914d977d979359391faf8225f6e7cfb26"
 
 [[files]]
 file = "kubejs/startup_scripts/namespace.js"

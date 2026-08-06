@@ -176,4 +176,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     // blazing_quartz: no rawOre -- Malum's ore drops the gem directly, no raw form exists.
     gem('blazing_quartz', 'malum:blazing_quartz')
     block('blazing_quartz', 'malum:block_of_blazing_quartz')
+
+    rawOre('cthonic_gold', 'malum:cthonic_gold_fragment')
+    gem('cthonic_gold', 'malum:cthonic_gold')
+    block('cthonic_gold', 'malum:block_of_cthonic_gold')
 })

@@ -37,18 +37,18 @@ ServerEvents.recipes(event => {
         'KPP', 'LSL', 'PIP'
     ], { 'P': 'minecraft:paper', 'L': 'minecraft:leather', 'S': 'nameless_trinkets:dubious_dust', 'I': 'minecraft:ink_sac', 'K': '#forge:tools/knives' }).damageIngredient(Ingredient.of('#forge:tools/knives'))
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:leather","minecraft:leather","minecraft:iron_ingot","minecraft:iron_ingot","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:tool_belt',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:cooked_beef', 'minecraft:iron_ingot', 'minecraft:leather', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:leather","minecraft:cooked_beef","minecraft:iron_ingot","minecraft:leather","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:survival_belt',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -65,18 +65,18 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:slime_ball', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:slime_ball","minecraft:slime_ball","minecraft:slime_ball","minecraft:iron_ingot","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:strong_sticky_slime_ball',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'minecraft:quartz', 'minecraft:redstone', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:amethyst_shard","minecraft:amethyst_shard","minecraft:quartz","minecraft:redstone","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:amplifier_stone',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -93,18 +93,18 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:bone', 'minecraft:bone', 'minecraft:gravel', 'minecraft:gravel', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:bone","minecraft:bone","minecraft:gravel","minecraft:gravel","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:fossil_shark_tooth',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:bone', 'minecraft:bone', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:bone","minecraft:bone","minecraft:iron_ingot","minecraft:iron_ingot","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:starved_wolf_skull',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -128,18 +128,18 @@ ServerEvents.recipes(event => {
         sourceCost: Source.INITIATE
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:leather', 'minecraft:coal', 'minecraft:coal', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:leather","minecraft:leather","minecraft:coal","minecraft:coal","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:black_belt',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:leather', 'minecraft:white_wool', 'minecraft:white_wool', 'minecraft:string', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:leather","minecraft:white_wool","minecraft:white_wool","minecraft:string","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:tabi',
-        sourceCost: Source.INITIATE
+        syphon: LP.INITIATE,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -149,25 +149,25 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:honeycomb', 'minecraft:honeycomb', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:honeycomb","minecraft:honeycomb","minecraft:gold_ingot","minecraft:gold_ingot","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:royal_honeycomb',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:ender_pearl', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:blaze_rod', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:ender_pearl","minecraft:obsidian","minecraft:obsidian","minecraft:blaze_rod","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:soul_gem',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:blaze_rod', 'minecraft:obsidian', 'minecraft:obsidian', 'minecraft:fermented_spider_eye', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:blaze_rod","minecraft:obsidian","minecraft:obsidian","minecraft:fermented_spider_eye","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:devils_eyeball',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -177,11 +177,11 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'minecraft:prismarine_crystals', 'minecraft:prismarine_crystals', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:amethyst_shard","minecraft:amethyst_shard","minecraft:prismarine_crystals","minecraft:prismarine_crystals","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:shiny_stone',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -191,11 +191,11 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:string', 'minecraft:string', 'minecraft:feather', 'minecraft:feather', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:string","minecraft:string","minecraft:feather","minecraft:feather","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:silver_cat_tail',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {
@@ -226,25 +226,25 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:wither_rose', 'minecraft:red_dye', 'minecraft:red_dye', 'minecraft:ink_sac', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:wither_rose","minecraft:red_dye","minecraft:red_dye","minecraft:ink_sac","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:withered_heart',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:suspicious_stew', 'minecraft:red_mushroom', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:suspicious_stew","minecraft:red_mushroom","minecraft:red_mushroom","minecraft:brown_mushroom","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:suspicious_mushroom',
-        sourceCost: Source.INITIATE
+        syphon: LP.INITIATE,
+        upgradeLevel: 2
     })
 
-    addEnchantingRecipe(event, {
-        reagent: 'nameless_trinkets:glowing_dust',
-        pedestalItems: ['minecraft:cooked_porkchop', 'minecraft:cooked_porkchop', 'minecraft:honey_bottle', 'minecraft:honey_bottle', 'gtceu:luminessence_dust'],
+    addAlchemyTableRecipe(event, {
+        input: ["nameless_trinkets:glowing_dust","minecraft:cooked_porkchop","minecraft:cooked_porkchop","minecraft:honey_bottle","minecraft:honey_bottle","gtceu:luminessence_dust"],
         output: 'uniqueaccessories:supreme_meat',
-        sourceCost: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
     addEnchantingRecipe(event, {

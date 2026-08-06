@@ -99,14 +99,11 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addImbuementRecipe(event, {
-        input: 'minecraft:glass_bottle',
-        pedestalItems: [
-            'l2hostility:witch_droplet', 'l2hostility:witch_droplet',
-            'gtceu:prima_materia_dust', 'gtceu:prima_materia_dust'
-        ],
+    addAlchemyTableRecipe(event, {
+        input: ["minecraft:glass_bottle","l2hostility:witch_droplet","l2hostility:witch_droplet","gtceu:prima_materia_dust","gtceu:prima_materia_dust"],
         output: 'l2hostility:bottle_of_curse',
-        source: Source.SORCERER
+        syphon: LP.SORCERER,
+        upgradeLevel: 2
     })
 
 
