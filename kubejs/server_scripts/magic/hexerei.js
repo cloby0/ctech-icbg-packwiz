@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
     // LP syphon at Initiate ties the capstone to the pack's own economy instead of leaving it a
     // pure vanilla-farm item. Trimmed from 8 native ingredients to fit the Alchemy Table's
     // 6-slot cap -- kept the totem, dropped the duplicate leaf/flower pairs down to one each.
+    // 2026-08-06: added bloodmagic:weakbloodshard -- LP was the only Blood Magic presence here,
+    // no actual BM item; a blood shard makes the sacrifice literal, not just a cost.
     event.remove({ id: 'hexerei:crow_ankh_amulet_from_mixing_cauldron' })
     addAlchemyTableRecipe(event, {
         output: 'hexerei:crow_ankh_amulet',
@@ -30,7 +32,8 @@ ServerEvents.recipes(event => {
             'minecraft:totem_of_undying',
             { item: 'minecraft:glow_berries', count: 2 },
             'hexerei:dried_mugwort_flowers',
-            'hexerei:dried_yellow_dock_flowers'
+            'hexerei:dried_yellow_dock_flowers',
+            'bloodmagic:weakbloodshard'
         ],
         syphon: LP.INITIATE,
         ticks: 200,
