@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'l2hostility:ring_of_ocean',
         input: 'minecraft:heart_of_the_sea',
-        spirits: [{ type: 'aqueous', count: 4 }],
+        spirits: [{ type: 'aqueous', count: 4 }, { type: 'sacred', count: 1 }],
         extraItems: [
             { item: 'minecraft:nautilus_shell' },
             { item: 'gtceu:holy_silver_dust', count: 3 },
@@ -485,7 +485,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'l2hostility:flaming_thorn',
         input: 'minecraft:blaze_rod',
-        spirits: [{ type: 'infernal', count: 4 }],
+        spirits: [{ type: 'infernal', count: 4 }, { type: 'wicked', count: 1 }],
         extraItems: [
             { item: 'l2hostility:chaos_ingot', count: 2 },
             { item: 'gtceu:prima_materia_dust', count: 3 },
@@ -624,7 +624,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'l2hostility:abyssal_thorn',
         input: 'l2complements:warden_bone_shard',
-        spirits: [{ type: 'eldritch', count: 3 }],
+        spirits: [{ type: 'eldritch', count: 3 }, { type: 'wicked', count: 1 }],
         extraItems: [
             { item: 'l2hostility:miracle_ingot', count: 2 },
             { item: 'botania:manasteel_ingot', count: 3 },
@@ -672,7 +672,7 @@ ServerEvents.recipes(event => {
     addSpiritInfusion(event, {
         output: 'l2hostility:divinity_cross',
         input: 'botania:terrasteel_ingot',
-        spirits: [{ type: 'sacred', count: 5 }],
+        spirits: [{ type: 'sacred', count: 5 }, { type: 'arcane', count: 1 }],
         extraItems: [
             { item: 'gtceu:holy_silver_block', count: 2 },
             { item: 'l2hostility:ring_of_divinity', count: 2 },
