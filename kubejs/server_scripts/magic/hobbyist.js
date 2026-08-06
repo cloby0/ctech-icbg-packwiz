@@ -25,9 +25,11 @@ ServerEvents.recipes(event => {
     // Element mapping used throughout this tier: fire=red, water=blue, earth=brown, air=white.
     // From Apprentice on, #kubejs:<element>_essences (MagiChem-backed) is the real currency again.
 
-    // Four elements combine into a no-steel Nether igniter (magic path; vanilla flint_and_steel untouched)
-    // Also the exact item occultism.js's Foliot summon ritual consumes as its gate item --
-    // otherworld_essence here makes that gate ingredient itself carry an Occultism cost.
+    // Four elements combine into 4 Chthonic Yew saplings -- plant 2x2, grow, and the tree
+    // opens its own Nether portal (window_box). Replaces the old no-steel-igniter fire charge
+    // route as this tier's Nether-entry step (vanilla flint_and_steel still untouched).
+    // occultism.js's Foliot ritual still gates on plain minecraft:fire_charge (vanilla recipe),
+    // unaffected by this swap.
     event.custom({
         "type": "hexerei:mixingcauldron",
         "liquid": { "fluid": "minecraft:lava" },
@@ -41,7 +43,7 @@ ServerEvents.recipes(event => {
             { "item": "minecraft:coal" },
             { "item": "occultism:otherworld_essence" }
         ],
-        "output": { "item": "minecraft:fire_charge", "count": 4 },
+        "output": { "item": "window_box:chthonic_yew_sapling", "count": 4 },
         "liquidOutput": { "fluid": "minecraft:lava" },
         "fluidLevelsConsumed": 1000,
         "heatRequirement": "heated"
