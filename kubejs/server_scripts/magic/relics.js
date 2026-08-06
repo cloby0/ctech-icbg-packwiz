@@ -62,11 +62,14 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:slime_ball","minecraft:slime_ball","minecraft:feather","minecraft:feather","gtceu:luminessence_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: jellyfish/ocean theming maps cleanly onto aqueous.
+    addSpiritInfusion(event, {
         output: 'relics:jellyfish_necklace',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:slime_ball',
+        spirits: [{ type: 'aqueous', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:feather', count: 2 }
+        ]
     })
 
     addAlchemyTableRecipe(event, {
@@ -104,11 +107,17 @@ ServerEvents.recipes(event => {
         upgradeLevel: 2
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:glass_bottle","minecraft:blaze_powder","minecraft:blaze_powder","minecraft:fire_charge","gtceu:luminessence_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: blaze_powder/fire_charge is straightforward fire
+    // theming, infernal is the honest cost.
+    addSpiritInfusion(event, {
         output: 'relics:blazing_flask',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:blaze_powder',
+        spirits: [{ type: 'infernal', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:glass_bottle' },
+            { item: 'minecraft:blaze_powder' },
+            { item: 'minecraft:fire_charge' }
+        ]
     })
 
     addEnchantingRecipe(event, {
@@ -118,11 +127,15 @@ ServerEvents.recipes(event => {
         sourceCost: Source.SORCERER
     })
 
-    addAlchemyTableRecipe(event, {
-        input: ["nameless_trinkets:glowing_dust","minecraft:gold_ingot","minecraft:gold_ingot","minecraft:diamond","minecraft:golden_apple","gtceu:luminessence_dust"],
+    // Reflavored to Spirit Altar 2026-08-06: name is literally "holy" -- direct match to sacred.
+    addSpiritInfusion(event, {
         output: 'relics:holy_locket',
-        syphon: LP.SORCERER,
-        upgradeLevel: 2
+        input: 'minecraft:golden_apple',
+        spirits: [{ type: 'sacred', count: 3 }],
+        extraItems: [
+            { item: 'minecraft:gold_ingot', count: 2 },
+            { item: 'minecraft:diamond' }
+        ]
     })
 
     addEnchantingRecipe(event, {
