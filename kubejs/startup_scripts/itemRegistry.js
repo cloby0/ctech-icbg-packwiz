@@ -393,6 +393,7 @@ StartupEvents.registry('item', event => {
     event.create('kathar_motive_core')
     event.create('kathar_channeling_vessel')
     event.create('kathar_ward_lattice')
+    event.create('archmage_blood_core')
 
     // Sage (UV)
     event.create('empyrean_sigil_blank')

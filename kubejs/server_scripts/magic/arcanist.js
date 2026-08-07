@@ -48,14 +48,41 @@ ServerEvents.recipes(event => {
         'kubejs:starforged_sigil'
     ])
 
+    // Blood Altar keeps its own LP tax unchanged -- Blood Magic's own identity mechanic, real
+    // tier-4 altar requirement. Output renamed to an intermediate; a new Sublimation stage below
+    // infuses it into the finished orb ("things you put materials INTO" -- not a bulk item, a
+    // one-off you're enhancing). wisdom:3/tier:5 matches this file's own Rubedo wisdom-stone gate.
     event.remove({ id: 'bloodmagic:altar/archmagebloodorb' })
     addBloodAltarRecipe(event, {
         input: 'kubejs:chimerite_bound_dungeon_metal',
-        output: 'bloodmagic:archmagebloodorb',
+        output: 'kubejs:archmage_blood_core',
         upgradeLevel: 4,
         syphon: 80000,
         consumptionRate: 50,
         drainRate: 100
+    })
+
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 5,
+        wisdom: 3,
+        object: { item: 'bloodmagic:archmagebloodorb' },
+        stages: [
+            {
+                experience: 200,
+                components: [
+                    { item: 'kubejs:archmage_blood_core' },
+                    { item: 'kubejs:kathar_wizard_brain' },
+                    { item: 'kubejs:kathar_ward_lattice' },
+                    { item: 'botania:dragonstone' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 100 },
+                    { item: 'magichem:admixture_violence', count: 70 },
+                    { item: 'magichem:essentia_rubedo', count: 60 }
+                ]
+            }
+        ]
     })
 
     // --- Rubedo Core: Arcanist signature material ---
