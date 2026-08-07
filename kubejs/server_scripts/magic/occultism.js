@@ -52,6 +52,23 @@ ServerEvents.recipes(event => {
         }).id('occultism:ritual/' + name)
     }
 
+    // Keystone Tax Wave 3: no existing helper covers plain occultism:craft rituals (only
+    // summon_spirit_with_job and craft_miner_spirit above). ritualType defaults to
+    // 'occultism:craft'; Dimensional Matrix passes 'occultism:craft_with_spirit_name' instead.
+    function craftRitual(name, tier, duration, ingredients, result, ritualType) {
+        event.remove({ id: 'occultism:ritual/' + name })
+        event.custom({
+            type: 'occultism:ritual',
+            ritual_type: ritualType || 'occultism:craft',
+            pentacle_id: 'occultism:craft_' + tier,
+            activation_item: { item: 'occultism:book_of_binding_bound_' + tier },
+            ritual_dummy: { item: 'occultism:ritual_dummy/' + name },
+            duration: duration,
+            ingredients: ingredients,
+            result: result,
+        }).id('occultism:ritual/' + name)
+    }
+
     // Foliot ritual/craft -> Hobbyist gate
     summonRitual('summon_foliot_lumberjack', 'foliot', 'occultism:lumberjack', -1, 60, [
         { item: 'occultism:otherworld_sapling' },
@@ -152,6 +169,53 @@ ServerEvents.recipes(event => {
         { item: 'minecraft:nether_star' },
         gate.marid,
     ], { item: 'occultism:miner_marid_master' })
+
+    // Storage Stabilizer / Dimensional Matrix / Familiar Ring: Occultism's own capstone item
+    // ladder, was 100% intra-mod+vanilla at every tier -- a player could reach Marid-tier
+    // Occultism power without ever touching another mod. Tier 1 (Foliot) stays free; tiers 2-4
+    // reuse the exact gate materials this file already uses for job-summon rituals.
+    craftRitual('craft_stabilizer_tier2', 'djinni', 240, [
+        { item: 'occultism:storage_stabilizer_tier1' },
+        { tag: 'forge:storage_blocks/silver' },
+        { item: 'minecraft:ghast_tear' },
+        { item: 'occultism:spirit_attuned_gem' },
+        { item: 'occultism:spirit_attuned_gem' },
+        gate.djinni,
+    ], { item: 'occultism:storage_stabilizer_tier2' })
+
+    craftRitual('craft_stabilizer_tier3', 'afrit', 240, [
+        { item: 'occultism:storage_stabilizer_tier2' },
+        { tag: 'forge:storage_blocks/gold' },
+        { item: 'minecraft:nether_star' },
+        { item: 'occultism:spirit_attuned_crystal' },
+        gate.afrit,
+    ], { item: 'occultism:storage_stabilizer_tier3' })
+
+    craftRitual('craft_stabilizer_tier4', 'marid', 240, [
+        { item: 'occultism:storage_stabilizer_tier3' },
+        { tag: 'forge:storage_blocks/iesnium' },
+        { item: 'minecraft:dragon_head' },
+        { item: 'occultism:spirit_attuned_crystal' },
+        { item: 'occultism:spirit_attuned_crystal' },
+        gate.marid,
+    ], { item: 'occultism:storage_stabilizer_tier4' })
+
+    craftRitual('craft_dimensional_matrix', 'djinni', 240, [
+        { tag: 'forge:storage_blocks/quartz' },
+        { tag: 'forge:storage_blocks/quartz' },
+        { tag: 'forge:storage_blocks/quartz' },
+        { tag: 'forge:ender_pearls' },
+        gate.djinni,
+    ], { item: 'occultism:dimensional_matrix' }, 'occultism:craft_with_spirit_name')
+
+    craftRitual('craft_familiar_ring', 'djinni', 90, [
+        { item: 'occultism:soul_gem' },
+        { tag: 'forge:ingots/gold' },
+        { tag: 'forge:ingots/gold' },
+        { tag: 'forge:ingots/silver' },
+        { tag: 'forge:ingots/silver' },
+        gate.djinni,
+    ], { item: 'occultism:familiar_ring' })
 
     // --- Miner GT-ore-spread rebalance ---
     // Vanilla Occultism puts nearly every ore (including tungsten/platinum/uranium/thorium) on the
