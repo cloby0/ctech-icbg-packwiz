@@ -22,26 +22,49 @@ ServerEvents.recipes(event => {
     )
 
     // Soul Forge (Hellfire Forge) block build: was 100% vanilla, letting a player reach
-    // Alchemist's core station via pure Blood Magic grinding. One of 4 duplicated stone slots
-    // replaced with this tier's own signature material; the sigil fills the previously-blank
-    // grid cell -- station builds are a real sigil target, corrected 2026-08-06.
+    // Alchemist's core station via pure Blood Magic grinding. Moved to Sublimation 2026-08-06 --
+    // "infuse an object with Materia to enhance it" (in-game codex) fits the pack's core alchemy
+    // station better than a bare shaped recipe. Stage 1 = physical assembly, stage 2 = empowerment
+    // with this tier's own full material set (sigil/vessel/lattice/core -- no wizard_brain, that's
+    // reserved pack-wide for worn/wielded gear, not stations). Materia flavor reused from this
+    // file's own wisdom_stone_albedo recipe. wisdom: 1 / tier: 3 matches Sorcerer's own gate.
     event.remove({ id: 'bloodmagic:soul_forge' })
-    event.shaped(
-        Item.of('bloodmagic:soulforge', 1),
-        [
-            'IXI',
-            'sSs',
-            'GOs'
-        ],
-        {
-            I: '#forge:ingots/iron',
-            S: 'bloodmagic:blankslate',
-            s: '#forge:stone',
-            O: '#forge:storage_blocks/iron',
-            G: 'gtceu:gaia_spirit_dust',
-            X: 'kubejs:gravitic_sigil'
-        }
-    )
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 3,
+        wisdom: 1,
+        object: { item: 'bloodmagic:soulforge' },
+        stages: [
+            {
+                experience: 60,
+                components: [
+                    { item: 'minecraft:iron_block' },
+                    { item: 'minecraft:iron_ingot' },
+                    { item: 'minecraft:iron_ingot' },
+                    { item: 'bloodmagic:blankslate' },
+                    { item: 'minecraft:stone' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 70 },
+                    { item: 'magichem:admixture_breath', count: 40 },
+                    { item: 'magichem:essentia_conceptual', count: 55 }
+                ]
+            },
+            {
+                experience: 90,
+                components: [
+                    { item: 'gtceu:gaia_spirit_dust' },
+                    { item: 'kubejs:gravitic_sigil' },
+                    { item: 'kubejs:gravitic_channeling_vessel' },
+                    { item: 'kubejs:gravitic_ward_lattice' },
+                    { item: 'kubejs:gravitic_motive_core' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_albedo', count: 50 }
+                ]
+            }
+        ]
+    })
 
     // basic_spell_turret: same open gap as 04-initiate.md's magical_receiver (Ars-native item,
     // no MNA/Blood Magic equivalent, ars_nouveau:source_jar ingredient already dead too).

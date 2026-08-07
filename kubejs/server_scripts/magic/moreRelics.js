@@ -147,32 +147,154 @@ ServerEvents.recipes(event => {
         tier: 3
     })
 
-    addMnaManaweavingRecipe(event, {
-        output: 'morerelics:crown_of_the_legend',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'botania:terrasteel_ingot', 'minecraft:nether_star', '#forge:ingots/elementium', 'kubejs:empyrean_sigil', 'kubejs:empyrean_ward_lattice'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+    // The 4 named capstone relics were indistinguishable from routine Manaweaving crafts despite
+    // being Sage tier's most legendary items. Moved to Sublimation (2026-08-06) -- "infuse an
+    // object with Materia to enhance it, or impart magical properties" (in-game codex) is a much
+    // tighter diegetic fit for a legendary artifact than the mod's own bulk crafting mechanism.
+    // wisdom: 4 / tier: 6 matches sage.js's own Philosopher's Stone gate -- Empyrean Ichor is
+    // Sage's signature material, all 4 already built from it. Same ingredients as before, split
+    // across 2 stages; materia flavor drawn from sage.js's own wisdom_stone_philosophers_stone
+    // recipe so all 5 Sage-tier sublimations read as one family.
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 6,
+        wisdom: 4,
+        object: { item: 'morerelics:crown_of_the_legend' },
+        stages: [
+            {
+                experience: 180,
+                components: [
+                    { item: 'nameless_trinkets:ultimate_dust' },
+                    { item: 'gtceu:empyrean_ichor_ingot' },
+                    { item: 'botania:gaia_ingot' },
+                    { item: 'botania:terrasteel_ingot' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_nigredo', count: 60 },
+                    { item: 'magichem:admixture_potential', count: 90 }
+                ]
+            },
+            {
+                experience: 220,
+                components: [
+                    { item: 'minecraft:nether_star' },
+                    { item: 'botania:elementium_ingot' },
+                    { item: 'kubejs:empyrean_sigil' },
+                    { item: 'kubejs:empyrean_ward_lattice' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_albedo', count: 60 },
+                    { item: 'magichem:admixture_change', count: 90 }
+                ]
+            }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
-        output: 'morerelics:king_crimson',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 6,
+        wisdom: 4,
+        object: { item: 'morerelics:king_crimson' },
+        stages: [
+            {
+                experience: 180,
+                components: [
+                    { item: 'nameless_trinkets:ultimate_dust' },
+                    { item: 'gtceu:empyrean_ichor_ingot' },
+                    { item: 'botania:gaia_ingot' },
+                    { item: 'minecraft:nether_star' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_citrinitas', count: 60 },
+                    { item: 'magichem:admixture_potential', count: 90 }
+                ]
+            },
+            {
+                experience: 220,
+                components: [
+                    { item: 'minecraft:nether_star' },
+                    { item: 'minecraft:netherite_block' },
+                    { item: 'kubejs:empyrean_sigil' },
+                    { item: 'kubejs:empyrean_wizard_brain' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_rubedo', count: 60 },
+                    { item: 'magichem:admixture_sorcery', count: 90 }
+                ]
+            }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
-        output: 'morerelics:made_in_heaven',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:elytra', 'botania:elementium_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_motive_core'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 6,
+        wisdom: 4,
+        object: { item: 'morerelics:made_in_heaven' },
+        stages: [
+            {
+                experience: 180,
+                components: [
+                    { item: 'nameless_trinkets:ultimate_dust' },
+                    { item: 'gtceu:empyrean_ichor_ingot' },
+                    { item: 'botania:gaia_ingot' },
+                    { item: 'minecraft:nether_star' },
+                    { item: 'minecraft:nether_star' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_wizard', count: 70 },
+                    { item: 'magichem:essentia_conceptual', count: 80 }
+                ]
+            },
+            {
+                experience: 220,
+                components: [
+                    { item: 'minecraft:elytra' },
+                    { item: 'botania:elementium_block' },
+                    { item: 'kubejs:empyrean_sigil' },
+                    { item: 'kubejs:empyrean_motive_core' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_potential', count: 100 },
+                    { item: 'magichem:essentia_rubedo', count: 60 }
+                ]
+            }
+        ]
     })
 
-    addMnaManaweavingRecipe(event, {
-        output: 'morerelics:wonder_of_u',
-        items: ['nameless_trinkets:ultimate_dust', 'gtceu:empyrean_ichor_ingot', 'botania:gaia_ingot', 'minecraft:nether_star', 'minecraft:nether_star', 'minecraft:netherite_block', 'botania:elementium_block', 'kubejs:empyrean_sigil', 'kubejs:empyrean_wizard_brain'],
-        patterns: ['mna:star', 'mna:hourglass'],
-        tier: 4
+    event.custom({
+        type: 'magichem:sublimation',
+        tier: 6,
+        wisdom: 4,
+        object: { item: 'morerelics:wonder_of_u' },
+        stages: [
+            {
+                experience: 180,
+                components: [
+                    { item: 'nameless_trinkets:ultimate_dust' },
+                    { item: 'gtceu:empyrean_ichor_ingot' },
+                    { item: 'botania:gaia_ingot' },
+                    { item: 'minecraft:nether_star' },
+                    { item: 'minecraft:nether_star' }
+                ],
+                materia: [
+                    { item: 'magichem:essentia_nigredo', count: 60 },
+                    { item: 'magichem:essentia_citrinitas', count: 60 }
+                ]
+            },
+            {
+                experience: 220,
+                components: [
+                    { item: 'minecraft:netherite_block' },
+                    { item: 'botania:elementium_block' },
+                    { item: 'kubejs:empyrean_sigil' },
+                    { item: 'kubejs:empyrean_wizard_brain' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_change', count: 100 },
+                    { item: 'magichem:essentia_rubedo', count: 70 }
+                ]
+            }
+        ]
     })
 
 })
