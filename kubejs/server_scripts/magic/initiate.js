@@ -308,6 +308,18 @@ ServerEvents.recipes(event => {
     // MagiChem load-bearing, not just a background essence tag.
     event.shapeless('kubejs:ambrosia_touched_elementite', ['gtceu:ambrosium_dust', 'gtceu:terrasteel_dust', 'magichem:essentia_precious'])
 
+    // Large Bloodstone Brick: T4 Blood Altar pillar cap material, was pure vanilla+BM
+    // (forge:stone + weakbloodshard) with zero tie to the tier band the altar structurally
+    // unlocks at that point. Initiate tax -- this tier's own signature material. The small
+    // Bloodstone Brick (4 large -> 4 small) needs no separate tax; it can't be made without this
+    // recipe now.
+    event.remove({ id: 'bloodmagic:largebloodstonebrick' })
+    event.shapeless(Item.of('bloodmagic:largebloodstonebrick', 8), [
+        '#forge:stone',
+        'bloodmagic:weakbloodshard',
+        'gtceu:elementium_dust'
+    ])
+
     event.custom({
         "type": "botania:elven_trade",
         "ingredients": [
