@@ -68,45 +68,88 @@ ServerEvents.recipes(event => {
         "heatRequirement": "heated"
     });
 
-    // Blood Altar: was 100% vanilla (6/9 stone+furnace+gold ingots). Fills the 2 empty corners
-    // and the gold band upgrades ingot -> plate. arcane_charcoal_fragment/livingrock are both the
-    // same pre-altar reagents the Ashen Ichor chain below consumes -- non-circular (both obtained
-    // via Mixing Cauldron / Pure Daisy, neither needs this altar to exist).
+    // Dictionary of Spirits: was forge:seeds/datura + forge:books, zero Botania involvement --
+    // the one item every spirit-binding needs, reachable with no infrastructure at all. Rebuilt
+    // from GTCEu's own book_from_leather shape (paper + leather + glue -> book), substituting
+    // Livingwood for leather (the spine must be living material) and Slime Ball for GT's own Glue
+    // fluid (the real vanilla item that Glue is itself made from). Root of the Botania -> Occultism
+    // -> Malum -> Blood Magic bootstrap chain.
+    event.remove({ id: 'occultism:crafting/dictionary_of_spirits' })
+    event.shapeless('occultism:dictionary_of_spirits', [
+        'minecraft:paper',
+        'minecraft:paper',
+        'minecraft:paper',
+        'botania:livingwood',
+        'minecraft:slime_ball',
+        '#forge:seeds/datura'
+    ])
+
+    // Blood Altar: was 100% vanilla (6/9 stone+furnace+gold ingots), then 2026-08-06 filled the 2
+    // empty corners and the gold band with arcane_charcoal_fragment/livingrock. Built at the
+    // Spirit Altar now, not a plain grid craft: moves Blood Magic's entry point onto Malum's own
+    // station (which, after this file's Spirit Altar edit above, itself needs Occultism's
+    // Otherstone) -- a real transitive chain instead of a direct ingredient hack.
+    // arcane_charcoal_fragment traces to plain log smelting with zero spirit involvement by
+    // Malum's own design (this pack already removed Malum's old crucible-ore economy specifically
+    // because it let spirits substitute for real ore costs), so forcing spirits into that
+    // ingredient itself would have fought the mod's own logic -- gating the build METHOD instead
+    // is the correct fix. Furnace is the prime input (the vessel being infused into an altar);
+    // everything else carries over unchanged as extraItems. Wicked spirits: dark/sacrificial
+    // magic fits Blood Magic's own identity better than any of the other seven spirit types.
     event.remove({ id: 'bloodmagic:blood_altar' })
-    event.shaped(
-        Item.of('bloodmagic:altar', 1),
-        [
-            'CSC',
-            'SFS',
-            'PLP'
+    addSpiritInfusion(event, {
+        input: 'minecraft:furnace',
+        output: 'bloodmagic:altar',
+        extraItems: [
+            { item: 'malum:arcane_charcoal_fragment', count: 2 },
+            { tag: 'forge:stone', count: 3 },
+            { tag: 'forge:plates/gold', count: 2 },
+            { item: 'botania:livingrock', count: 1 }
         ],
-        {
-            C: 'malum:arcane_charcoal_fragment',
-            S: '#forge:stone',
-            F: 'minecraft:furnace',
-            P: '#forge:plates/gold',
-            L: 'botania:livingrock'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+        spirits: [{ type: 'wicked', count: 4 }]
+    })
 
     // Spirit Altar: was 100% vanilla (7/9). Same charcoal/livingrock pairing as the Blood Altar
     // above -- shared Hobbyist-altar grammar -- while runewood/soulstone stay Malum's own identity.
+    // Occultism tax added 2026-08-07: an altar that channels something from the Otherworld,
+    // built partly from stone already touched by the Otherworld. Otherstone replaces one of the
+    // three duplicated runewood_planks slots. This is the real universal gate on Malum's spirit
+    // system -- every soul-hunter weapon feeds spirits through this one altar, unlike gating a
+    // single weapon recipe.
     event.remove({ id: 'malum:spirit_altar' })
     event.shaped(
         Item.of('malum:spirit_altar', 1),
         [
             'CYC',
             'ZXZ',
-            'XLX'
+            'OLX'
         ],
         {
             C: 'malum:arcane_charcoal_fragment',
             Y: 'malum:processed_soulstone',
             Z: '#forge:plates/gold',
             X: 'malum:runewood_planks',
-            L: 'botania:livingrock'
+            L: 'botania:livingrock',
+            O: 'occultism:otherstone'
         }
     ).damageIngredient(Ingredient.of('#forge:tools/saws'))
+
+    // Crude Scythe: flavor touch, not load-bearing on its own (Spirit Altar above is the real
+    // gate on Malum's spirit system -- scythes aren't the only soul-hunter weapon). A weapon
+    // needs to be spiritually attuned via the Otherworld before it can harvest a soul from a
+    // kill, which is literally what #malum:soul_hunter_weapon already claims. One of the three
+    // original iron-ingot slots (X) is replaced with a new key (E) for the essence.
+    event.remove({ id: 'malum:crude_scythe' })
+    event.shaped('malum:crude_scythe', [
+        'XEY',
+        ' #X',
+        '#  '
+    ], {
+        X: '#forge:ingots/iron',
+        Y: 'malum:processed_soulstone',
+        E: 'occultism:otherworld_essence',
+        '#': '#forge:rods/wooden'
+    })
 
     // --- Ashen Ichor: Hobbyist signature metal, no Ars dependency ---
     // 1. arcane charcoal + redstone -> ichor dust
