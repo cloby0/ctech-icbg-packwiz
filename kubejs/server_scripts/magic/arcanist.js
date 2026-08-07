@@ -62,6 +62,10 @@ ServerEvents.recipes(event => {
         drainRate: 100
     })
 
+    // Materia is the real archmagebloodorb signature, verified against MagiChem's own compat
+    // distillation recipe (magichem-0.5.2.jar data/magichem/recipes/alchemical_distillation_fabrication/
+    // bloodmagic/archmagebloodorb.json) -- infused with exactly what the orb would yield if
+    // distilled, split across 2 stages by theme (blood/wizard vs spirit/potential/vessel).
     event.custom({
         type: 'magichem:sublimation',
         tier: 5,
@@ -74,12 +78,26 @@ ServerEvents.recipes(event => {
                     { item: 'kubejs:archmage_blood_core' },
                     { item: 'kubejs:kathar_wizard_brain' },
                     { item: 'kubejs:kathar_ward_lattice' },
-                    { item: 'botania:dragonstone' }
+                    { item: 'botania:dragonstone' },
+                    { item: 'gtceu:katharite_plate' }
                 ],
                 materia: [
-                    { item: 'magichem:admixture_potential', count: 100 },
-                    { item: 'magichem:admixture_violence', count: 70 },
-                    { item: 'magichem:essentia_rubedo', count: 60 }
+                    { item: 'magichem:admixture_blood', count: 70 },
+                    { item: 'magichem:admixture_wizard', count: 50 }
+                ]
+            },
+            {
+                experience: 250,
+                components: [
+                    { item: 'kubejs:kathar_channeling_vessel' },
+                    { item: 'kubejs:kathar_motive_core' },
+                    { item: 'botania:pixie_dust' },
+                    { item: 'botania:mana_diamond' }
+                ],
+                materia: [
+                    { item: 'magichem:admixture_spirit', count: 60 },
+                    { item: 'magichem:admixture_potential', count: 58 },
+                    { item: 'magichem:admixture_vessel', count: 32 }
                 ]
             }
         ]
