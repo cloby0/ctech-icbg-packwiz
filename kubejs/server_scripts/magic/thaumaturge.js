@@ -93,6 +93,28 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Wellspring Pillar: one component of the wellspring-capture multiblock (MNA's own
+    // Occulus T4->T5 gate structure), was 100% internal MNA. Thaumaturge tax -- one of 4
+    // duplicated rune_ritual_metal entries swapped for starforged_chimerite_dust, keeping total
+    // items at 9 (addMnaManaweavingRecipe's hard cap -- this recipe was already at exactly 9).
+    event.remove({ id: 'mna:manaweaving/eldrin/wellspring_pillar' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:wellspring_pillar',
+        items: [
+            'mna:decoration/arcane_sandstone',
+            'mna:rune_ritual_metal',
+            'mna:rune_ritual_metal',
+            'mna:rune_ritual_metal',
+            'gtceu:starforged_chimerite_dust',
+            'mna:decoration/arcane_sandstone_wall',
+            'mna:decoration/arcane_sandstone_wall',
+            'minecraft:hopper',
+            'mna:eldrin_rift'
+        ],
+        patterns: ['mna:slash', 'mna:split_triangle', 'mna:inverted_triangle', 'mna:backslash'],
+        tier: 4
+    })
+
     // raw_mana -> source_gem x4: dead output, dead pedestal (nature_essence goes with it).
     // Dropped outright, no port needed.
 
