@@ -71,6 +71,62 @@ ServerEvents.recipes(event => {
     }).damageIngredient(Ingredient.of('#forge:tools/files'))
         .damageIngredient(Ingredient.of('#forge:tools/hammers'))
 
+    // Malignant Pewter Ingot: Malum's own capstone-gear material layer, was 100%
+    // vanilla+Malum-native despite feeding every top-tier weapon/armor recipe. Occultism tax --
+    // otherworld_essence, matching the pewter's own "otherworldly" theme.
+    event.remove({ id: 'malum:spirit_infusion/malignant_pewter_ingot' })
+    addSpiritInfusion(event, {
+        input: { tag: 'forge:ingots/iron', count: 4 },
+        output: 'malum:malignant_pewter_ingot',
+        extraItems: [
+            { item: 'malum:malignant_lead', count: 1 },
+            { item: 'malum:null_slate', count: 8 },
+            { item: 'minecraft:netherite_scrap', count: 3 },
+            { item: 'occultism:otherworld_essence', count: 1 }
+        ],
+        spirits: [
+            { type: 'earthen', count: 16 },
+            { type: 'eldritch', count: 4 }
+        ]
+    })
+
+    // Malignant Stronghold Chestplate: one flagship capstone piece, Sorcerer tax on top of the
+    // Malignant Pewter Ingot tax above (material-layer + capstone, the standard 2-keystone
+    // shape) -- not all 7 capstone items, matching philosophy.md's anti-bulk-tedium rule.
+    event.remove({ id: 'malum:spirit_infusion/malignant_stronghold_chestplate' })
+    addSpiritInfusion(event, {
+        input: { item: 'malum:soul_stained_steel_chestplate', count: 1 },
+        output: 'malum:malignant_stronghold_chestplate',
+        extraItems: [
+            { item: 'malum:malignant_pewter_plating', count: 3 },
+            { item: 'gtceu:gaia_spirit_dust', count: 1 }
+        ],
+        spirits: [
+            { type: 'earthen', count: 32 },
+            { type: 'wicked', count: 32 },
+            { type: 'eldritch', count: 16 }
+        ]
+    })
+
+    // Runewood Obelisk: sibling of the already-taxed Brilliant Obelisk, left untouched by
+    // oversight. Initiate tax -- elementium_dust, kept as a native spirit_infusion recipe
+    // (Brilliant Obelisk's own tax converted it to shaped crafting; that's a bigger structural
+    // change than this one-ingredient fix needs).
+    event.remove({ id: 'malum:spirit_infusion/runewood_obelisk' })
+    addSpiritInfusion(event, {
+        input: { item: 'malum:runewood_planks', count: 2 },
+        output: 'malum:runewood_obelisk',
+        extraItems: [
+            { item: 'malum:hallowed_gold_ingot', count: 2 },
+            { item: 'malum:hex_ash', count: 1 },
+            { item: 'gtceu:elementium_dust', count: 1 }
+        ],
+        spirits: [
+            { type: 'aerial', count: 16 },
+            { type: 'sacred', count: 8 }
+        ]
+    })
+
     // --- Focusing re-cost ---
     // Shipped values gave ~800 units per impetus before catalyzer acceleration.
     // Halved output and doubled durability cost brings that to ~200.
