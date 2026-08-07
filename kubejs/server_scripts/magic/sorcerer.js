@@ -260,6 +260,21 @@ ServerEvents.recipes(event => {
         ingredients: ['kubejs:gravity_bound_life_essence']
     })
 
+    // Gaia-Bound Blood Shard: wraps the Master Blood Orb's vanilla weakbloodshard cost with
+    // Sorcerer's own signature material -- same gap the Archmage Orb had before arcanist.js's
+    // fix, one tier down. Sorcerer tax for the Alchemist/Thaumaturge band's altar gate, same
+    // material this tier's Soul Forge tax already uses.
+    event.shapeless('kubejs:gaia_bound_bloodshard', ['bloodmagic:weakbloodshard', 'gtceu:gaia_spirit_dust'])
+    event.remove({ id: 'bloodmagic:altar/masterbloodorb' })
+    addBloodAltarRecipe(event, {
+        input: 'kubejs:gaia_bound_bloodshard',
+        output: 'bloodmagic:masterbloodorb',
+        upgradeLevel: 3,
+        syphon: 40000,
+        consumptionRate: 30,
+        drainRate: 50
+    })
+
     // Shortcut (Alchemist+): Alchemist's Soul Forge produces the pre-terra-plate feed directly,
     // batch output. Drain cost is the gate -- no stone exists at Alchemist yet.
     addSoulForgeRecipe(event, {
