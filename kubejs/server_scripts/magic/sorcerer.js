@@ -26,8 +26,11 @@ ServerEvents.recipes(event => {
     // "infuse an object with Materia to enhance it" (in-game codex) fits the pack's core alchemy
     // station better than a bare shaped recipe. Stage 1 = physical assembly, stage 2 = empowerment
     // with this tier's own full material set (sigil/vessel/lattice/core -- no wizard_brain, that's
-    // reserved pack-wide for worn/wielded gear, not stations). Materia flavor reused from this
-    // file's own wisdom_stone_albedo recipe. wisdom: 1 / tier: 3 matches Sorcerer's own gate.
+    // reserved pack-wide for worn/wielded gear, not stations). Materia is the real soulforge
+    // signature, verified against MagiChem's own compat distillation recipe (magichem-0.5.2.jar
+    // data/magichem/recipes/alchemical_distillation_fabrication/bloodmagic/soulforge.json), split
+    // by theme: metal/stone/wrought = structural, instrument/sorcery = empowerment.
+    // wisdom: 1 / tier: 3 matches Sorcerer's own gate.
     event.remove({ id: 'bloodmagic:soul_forge' })
     event.custom({
         type: 'magichem:sublimation',
@@ -45,9 +48,9 @@ ServerEvents.recipes(event => {
                     { item: 'minecraft:stone' }
                 ],
                 materia: [
-                    { item: 'magichem:admixture_potential', count: 70 },
-                    { item: 'magichem:admixture_breath', count: 40 },
-                    { item: 'magichem:essentia_conceptual', count: 55 }
+                    { item: 'magichem:admixture_metal', count: 40 },
+                    { item: 'magichem:admixture_stone', count: 3 },
+                    { item: 'magichem:essentia_wrought', count: 2 }
                 ]
             },
             {
@@ -60,7 +63,8 @@ ServerEvents.recipes(event => {
                     { item: 'kubejs:gravitic_motive_core' }
                 ],
                 materia: [
-                    { item: 'magichem:essentia_albedo', count: 50 }
+                    { item: 'magichem:admixture_instrument', count: 4 },
+                    { item: 'magichem:admixture_sorcery', count: 4 }
                 ]
             }
         ]
