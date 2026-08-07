@@ -360,20 +360,15 @@ ServerEvents.recipes(event => {
         output: 'kubejs:ichor_channeling_vessel'
     })
 
-    // Ward Lattice: literally lattice-shaped, hammered flat over an obsidian core.
-    event.shaped(
-        Item.of('kubejs:ichor_ward_lattice', 1),
-        [
-            'I I',
-            ' O ',
-            'IHI'
-        ],
-        {
-            I: 'gtceu:ashen_ichor_ingot',
-            O: 'minecraft:obsidian',
-            H: '#forge:tools/hammers'
-        }
-    ).damageIngredient(Ingredient.of('#forge:tools/hammers'))
+    // Ward Lattice: relocated onto the Spirit Altar 2026-08-07 -- the one component in this
+    // tier's set that never ran through a foreign station (Sigil/Wizard Brain/Channeling Vessel
+    // already do). Sacred spirit: protective/warding reads as blessing, not corruption or force.
+    addSpiritInfusion(event, {
+        input: { item: 'gtceu:ashen_ichor_ingot', count: 4 },
+        output: 'kubejs:ichor_ward_lattice',
+        extraItems: [{ item: 'minecraft:obsidian', count: 1 }],
+        spirits: [{ type: 'sacred', count: 2 }]
+    })
 
     // --- Quick & Dirty Portal Generator: the only way into the Aether ---
     // Exotic metal does the impossible job (the striker that throws a spark which opens a hole in
