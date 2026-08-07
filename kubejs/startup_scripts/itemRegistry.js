@@ -58,6 +58,10 @@ StartupEvents.registry('item', event => {
     // Thaumaturge tax on the Blood Magic Tier 5 altar (Archmage's Blood Orb) -- 2026-08-06.
     event.create('chimerite_bound_dungeon_metal')
 
+    // Keystone Tax Wave 3: Journeyman tax on Magician Blood Orb, Sorcerer tax on Master Blood Orb.
+    event.create('terrasteel_bound_gold_block')
+    event.create('gaia_bound_bloodshard')
+
     // Magic rework Phase 9 (Sage): Empyrean Ichor chain -> gtceu:empyrean_ichor_ingot.
     event.create('hallowed_remnant')
     event.create('wellspring_bound_remnant')

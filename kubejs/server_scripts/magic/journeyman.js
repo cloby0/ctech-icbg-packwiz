@@ -198,6 +198,39 @@ ServerEvents.recipes(event => {
         ingredients: ['kubejs:verdant_grafted_manasteel']
     })
 
+    // Terrasteel-Bound Gold Block: wraps the Magician Blood Orb's vanilla gold-block cost with
+    // this tier's own signature material -- Blood Magic's orb chain was otherwise 100%
+    // rush-alone-reachable, letting a player skip Journeyman/Initiate/Sorcerer entirely for
+    // upgradeLevel 2 access. Journeyman tax for the Initiate/Sorcerer band's altar gate.
+    event.shapeless('kubejs:terrasteel_bound_gold_block', ['#forge:storage_blocks/gold', 'gtceu:terrasteel_dust'])
+    event.remove({ id: 'bloodmagic:altar/magicianbloodorb' })
+    addBloodAltarRecipe(event, {
+        input: 'kubejs:terrasteel_bound_gold_block',
+        output: 'bloodmagic:magicianbloodorb',
+        upgradeLevel: 2,
+        syphon: 25000,
+        consumptionRate: 20,
+        drainRate: 20
+    })
+
+    // Runeforge: two parallel vanilla builds existed (mna:runeforge, mna:runeforge_alt), both
+    // 100% MNA/vanilla -- taxing only one would leave the other as a free bypass. Both removed,
+    // replaced with a single recipe carrying this tier's own signature material in the pattern's
+    // one empty slot.
+    event.remove({ id: 'mna:runeforge' })
+    event.remove({ id: 'mna:runeforge_alt' })
+    event.shaped('mna:runeforge', [
+        'TGT',
+        'RSR',
+        'ASA'
+    ], {
+        S: 'mna:decoration/arcane_sandstone',
+        A: 'mna:decoration/arcane_stone',
+        T: 'mna:transmuted_silver',
+        R: '#mna:stone_runes',
+        G: 'botania:terrasteel_ingot'
+    })
+
     // Shortcut (Initiate+): Initiate's Manaweaving Altar t2 fabricates the pre-terra-plate feed
     // directly, batch output. Pattern tier is the gate -- no stone exists at Initiate yet.
     addMnaManaweavingRecipe(event, {
