@@ -178,6 +178,19 @@ ServerEvents.recipes(event => {
         tier: 4
     })
 
+    // Crystal of Memories: gates greater_mote_arcane, which gates Occulus T4->T5 -- was 100%
+    // internal MNA + vanilla, zero tie to this pack's own tier ladder. Alchemist tax --
+    // distilled_animus_ingot, already defined earlier in this file. Tier bumped 2->4 to match
+    // the material's own band (declared tier is the binding gate per addMnaManaweavingRecipe's
+    // own doc comment; this recipe's patterns are all tier <=2, well under the new declared tier).
+    event.remove({ id: 'mna:manaweaving/crystal_of_memories' })
+    addMnaManaweavingRecipe(event, {
+        output: 'mna:crystal_of_memories',
+        items: ['mna:vinteum_dust', 'minecraft:emerald', 'mna:chimerite_gem', 'gtceu:distilled_animus_ingot'],
+        patterns: ['mna:diamond', 'mna:knot', 'mna:knot3'],
+        tier: 4
+    })
+
     // --- Microcrafting: Alchemist circuit + components ---
     // Circuit built through 2 real handlers: Soul Forge -> Alchemy Table.
     addSoulForgeRecipe(event, {
