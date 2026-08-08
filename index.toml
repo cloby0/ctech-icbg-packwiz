@@ -5538,7 +5538,7 @@ hash = "e6267a950d4cf1871123dd53ad5848f88f66559145e329aa2667f74ab433e84e"
 
 [[files]]
 file = "kubejs/server_scripts/costTiers.js"
-hash = "a348c78250eff0dccc461ee72851d48d27279456b18c8b50f11624979c90f24e"
+hash = "a58d6365c14037b881c9019e2efbc9f99f793ecf240aff12abef6f8f5f8163d5"
 
 [[files]]
 file = "kubejs/server_scripts/fluidTags.js"
@@ -5958,7 +5958,7 @@ hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/_icbgCoreLoaders.js"
-hash = "979d5e1f2b0295739d716713425a450ffdb4eec98652685f9a028bf5349ed381"
+hash = "b9e810a39049c1526211032ef9f473326478a335ea1abc3f4898c62b92fe7b59"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"

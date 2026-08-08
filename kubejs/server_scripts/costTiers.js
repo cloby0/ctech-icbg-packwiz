@@ -1,4 +1,4 @@
-// priority: -1000000
+// priority: 10
 // Source cost per magic tier, GTValues-style. Server scripts share one scope, so these tables are
 // visible in every server script. Declare them nowhere else.
 
