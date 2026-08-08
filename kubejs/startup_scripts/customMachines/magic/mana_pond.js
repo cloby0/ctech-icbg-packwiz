@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('magic')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 3, 1)
-        .setMaxSize('in', ManaCap, 1)
+        .setMaxSize('in', global.ManaCap, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 });
@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("c", Predicates.blocks("kubejs:mana_livingrock_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(IcbgPartAbilities.MANA_INPUT)))
+                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_INPUT)))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))

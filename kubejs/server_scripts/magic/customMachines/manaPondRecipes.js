@@ -99,7 +99,7 @@ function addManaPondRecipe(event, crecipe) {
         let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
             .duration(dur)
             .perTick(true)
-            .input(ManaCap, Math.round(mana / dur))
+            .input(global.ManaCap, Math.round(mana / dur))
             .perTick(false)
             .EUt(euForMana(mana, ManaPool) + Math.round(mana / 50))
             .circuit(catalystify(catalystBlock))

@@ -113,7 +113,7 @@ function _mirrorToSoulCompressor(event, name, tier, ingredients, output, duratio
         .itemOutputs(typeof output === 'object' ? `${output.count || 1}x ${output.item}` : `1x ${output}`)
         .duration(lpDuration)
         .perTick(true)
-        .input(LpCap, lpRate)
+        .input(global.LpCap, lpRate)
         .perTick(false)
         .EUt(GTValues.VA[voltage])
         .addDataInt('orb_tier', _orbTierForMagicTier[magicTier])

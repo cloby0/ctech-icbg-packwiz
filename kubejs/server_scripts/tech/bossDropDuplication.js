@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('kubejs:dissolved_lacrima', 1000))
         .duration(200)
         .perTick(true)
-        .input(ManaCap, Math.round(ManaPool.SORCERER / 200))
+        .input(global.ManaCap, Math.round(ManaPool.SORCERER / 200))
         .perTick(false)
         .EUt(GTValues.VA[GTValues.LuV])
 

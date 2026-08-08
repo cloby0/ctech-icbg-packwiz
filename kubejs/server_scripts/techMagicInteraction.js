@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:pneuma', 2000))
         .duration(30 * 20)
         .perTick(true)
-        .input(ManaCap, Math.round(5 * ManaPool.THAUMATURGE / (30 * 20)))
+        .input(global.ManaCap, Math.round(5 * ManaPool.THAUMATURGE / (30 * 20)))
         .perTick(false)
         .EUt(GTValues.VA[GTValues.EV])
 

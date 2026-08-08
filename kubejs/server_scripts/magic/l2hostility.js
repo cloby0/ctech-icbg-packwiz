@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x l2hostility:hostility_essence')
         .duration(300)
         .perTick(true)
-        .input(ManaCap, Math.round(ManaPool.JOURNEYMAN / 300))
+        .input(global.ManaCap, Math.round(ManaPool.JOURNEYMAN / 300))
         .perTick(false)
         .EUt(GTValues.VA[GTValues.HV])
 
@@ -561,7 +561,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x l2hostility:miracle_ingot')
         .duration(400)
         .perTick(true)
-        .input(ManaCap, Math.round(ManaPool.ALCHEMIST / 400))
+        .input(global.ManaCap, Math.round(ManaPool.ALCHEMIST / 400))
         .perTick(false)
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(1)
