@@ -45,7 +45,12 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:helium', 25000))
         .outputFluids(Fluid.of('gtceu:oxygen', 17500))
         .outputFluids(Fluid.of('gtceu:hydrogen', 5000))
-        .outputFluids(Fluid.of('manafluid:mana', 2500))
+        // Re-costed off icbg_core:liquid_mana (was manafluid:mana, 2500 mB -- an arbitrary carry-
+        // over from that fluid's rate, never a chosen number). 250 mB matches the pack's other
+        // liquid_mana producer (techMagicInteraction.js's infernal_diesel_refine) -- both are
+        // byproducts of an EV-tier refining step, not primary products, so there's no reason for
+        // one to output 10x the other.
+        .outputFluids(Fluid.of('icbg_core:liquid_mana', 250))
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 

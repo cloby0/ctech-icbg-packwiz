@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
+
     // Magic superconductor ladder: charge the tier's signature material with redstone into a
     // conduit dust, then fuse the conduit with a real GT-tree superconductor compound of the
     // same voltage tier (see gtceuMaterialRegistry.js for the full design note).
@@ -131,12 +133,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(5 * ManaPool.THAUMATURGE)))
         .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
         .outputFluids(Fluid.of('gtceu:pneuma', 2000))
         .duration(30 * 20)
+        .perTick(true)
+        .input(ManaCap, Math.round(5 * ManaPool.THAUMATURGE / (30 * 20)))
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge('phlogiston_to_fire_essence')
@@ -425,7 +429,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:infernal_diesel', 750))
         .outputFluids(Fluid.of('gtceu:naphtha', 400))
         .outputFluids(Fluid.of('gtceu:light_fuel', 100))
-        .outputFluids(Fluid.of('manafluid:mana', 250))
+        .outputFluids(Fluid.of('icbg_core:liquid_mana', 250))
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 

@@ -1,8 +1,12 @@
+const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
+const IcbgPartAbilities = Java.loadClass('com.icbg.core.registry.IcbgPartAbilities')
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('runic_forge')
         .category('magic')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 2, 0)
+        .setMaxSize('in', ManaCap, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER)
 
@@ -10,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('magic')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 1, 0)
+        .setMaxSize('in', ManaCap, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER)
 })
@@ -27,7 +32,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("bbb", "bMb", "bbb")
             .where("b", Predicates.blocks("kubejs:runic_forge_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(IcbgPartAbilities.MANA_INPUT)))
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where("M", Predicates.abilities(PartAbility.MAINTENANCE))
         .build())

@@ -83,15 +83,30 @@ global.ManaPool = ManaPool
 global.RunicAltar = RunicAltar
 global.Agglomeration = Agglomeration
 
-// manafluid:mana carries 100 mana per mB -- ManaPoolFluidHandler stores currentMana / 100.0 and
-// reports capacity as maxMana / 100, so a full 1 000 000-mana pool is 10 000 mB. Every GT mirror
-// recipe that charges mana must go through this, never a raw tier constant used as a millibucket
-// count.
-const MANA_PER_MB = 100
-function manaMB(mana) {
-    return Math.max(1, Math.round(mana / MANA_PER_MB))
+// Reverse-look a mana value against its own cost table (ManaPool/RunicAltar/Agglomeration) to find
+// the magic tier it belongs to, then map that tier to the GT voltage the pack already treats as its
+// analog (docs/claude/balance.md §4c). Used to price the mana_pond/runic_forge/terra_agglomeration
+// mirrors' EU off the recipe's own tier instead of one hardcoded voltage floor -- see
+// docs/claude/specs/mana-capability-port.md §4b. Prophet/Ascendant have no analog in that table;
+// UHV/UEV continue the same ladder one step at a time, since both are already post-UV in every
+// other pack table.
+const TIER_ORDER = ['HOBBYIST', 'APPRENTICE', 'JOURNEYMAN', 'INITIATE', 'SORCERER', 'ALCHEMIST', 'THAUMATURGE', 'ARCANIST', 'SAGE', 'PROPHET', 'ASCENDANT']
+const TIER_VOLTAGE = {
+    HOBBYIST: 'LV', APPRENTICE: 'LV', JOURNEYMAN: 'MV', INITIATE: 'HV', SORCERER: 'EV',
+    ALCHEMIST: 'IV', THAUMATURGE: 'LuV', ARCANIST: 'ZPM', SAGE: 'UV', PROPHET: 'UHV', ASCENDANT: 'UEV'
 }
-global.manaMB = manaMB
+function magicTierForMana(mana, table) {
+    let tier = 'HOBBYIST'
+    for (let i = 0; i < TIER_ORDER.length; i++) {
+        if (mana >= table[TIER_ORDER[i]]) tier = TIER_ORDER[i]
+        else break
+    }
+    return tier
+}
+function euForMana(mana, table) {
+    return GTValues.VA[GTValues[TIER_VOLTAGE[magicTierForMana(mana, table)]]]
+}
+global.euForMana = euForMana
 
 // Blood Magic Life Essence (LP) cost per magic tier. Replaces Source/Mana once tier files migrate
 // off Ars Nouveau (magic rework Phase 1+). Placeholder scale pending in-game LP generation rate

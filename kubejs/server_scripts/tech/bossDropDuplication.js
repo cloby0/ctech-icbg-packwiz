@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
+
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')
         .itemInputs(
             '1x cataclysm:ignitium_ingot',
@@ -27,9 +29,11 @@ ServerEvents.recipes(event => {
             '1x cataclysm:lacrima',
             '4x #kubejs:water_essences'
         )
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(ManaPool.SORCERER)))
         .outputFluids(Fluid.of('kubejs:dissolved_lacrima', 1000))
         .duration(200)
+        .perTick(true)
+        .input(ManaCap, Math.round(ManaPool.SORCERER / 200))
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.chemical_reactor('ctech:lacrima_recrystallization')

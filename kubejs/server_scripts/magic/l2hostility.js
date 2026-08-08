@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
 
     ;['poseidite', 'totemic_gold', 'sculkium', 'shulkerate', 'eternium'].forEach(m =>
         event.remove({ output: `l2complements:${m}_ingot` }))
@@ -286,9 +287,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('l2hostility/hostility_essence')
         .itemInputs('4x l2hostility:witch_droplet', '2x gtceu:holy_silver_dust')
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(ManaPool.JOURNEYMAN)))
         .itemOutputs('1x l2hostility:hostility_essence')
         .duration(300)
+        .perTick(true)
+        .input(ManaCap, Math.round(ManaPool.JOURNEYMAN / 300))
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.shaped('l2hostility:witch_charge', [
@@ -557,9 +560,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('l2hostility/miracle_ingot')
         .itemInputs('2x l2hostility:chaos_ingot', '2x botania:manasteel_ingot', '4x gtceu:prima_materia_dust')
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(ManaPool.ALCHEMIST)))
         .itemOutputs('1x l2hostility:miracle_ingot')
         .duration(400)
+        .perTick(true)
+        .input(ManaCap, Math.round(ManaPool.ALCHEMIST / 400))
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(1)
 

@@ -1,5 +1,6 @@
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
+const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
 
 let _nextRunicIndex = 1
 
@@ -55,13 +56,13 @@ function resolveRunicIngredient(ing, debugLabel) {
 }
 
 function addRunicAltarRecipe(event, crecipe) {
-    const LuV_EU = GTValues.VA[GTValues.LuV]
     const index = _nextRunicIndex++
     const output = crecipe.output
     const outputId = typeof output === 'string' ? output : output.item
     const outputCount = output.count || 1
     const mana = crecipe.mana || 0
     const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
+    const dur = manaToTicks(mana)
 
     event.custom({
         type: 'botania:runic_altar',
@@ -77,21 +78,23 @@ function addRunicAltarRecipe(event, crecipe) {
     }
 
     const gt = event.recipes.gtceu.runic_forge('runic_forge/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
         .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(manaToTicks(mana))
-        .EUt(LuV_EU)
+        .duration(dur)
+        .perTick(true)
+        .input(ManaCap, Math.round(mana / dur))
+        .perTick(false)
+        .EUt(euForMana(mana, RunicAltar))
     itemInputs.forEach(input => gt.itemInputs(input))
 }
 
 function addTerraPlateRecipe(event, crecipe) {
-    const LuV_EU = GTValues.VA[GTValues.LuV]
     const index = _nextRunicIndex++
     const result = crecipe.result
     const outputId = typeof result === 'string' ? result : result.item
     const outputCount = result.count || 1
     const mana = crecipe.mana || 0
     const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
+    const dur = agglomerationTicks(mana)
 
     event.custom({
         type: 'botania:terra_plate',
@@ -107,10 +110,12 @@ function addTerraPlateRecipe(event, crecipe) {
     }
 
     const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
-        .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
         .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(agglomerationTicks(mana))
-        .EUt(LuV_EU)
+        .duration(dur)
+        .perTick(true)
+        .input(ManaCap, Math.round(mana / dur))
+        .perTick(false)
+        .EUt(euForMana(mana, Agglomeration))
     itemInputs.forEach(input => gt.itemInputs(input))
 }
 
@@ -118,8 +123,6 @@ global.addRunicAltarRecipe = addRunicAltarRecipe
 global.addTerraPlateRecipe = addTerraPlateRecipe
 
 ServerEvents.recipes(event => {
-
-    const LuV_EU = GTValues.VA[GTValues.LuV]
 
     event.forEachRecipe({ type: 'botania:runic_altar' }, recipe => {
         const index = _nextRunicIndex++
@@ -148,12 +151,15 @@ ServerEvents.recipes(event => {
 
         const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
         console.log('[runic_forge] cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
+        const dur = manaToTicks(mana)
 
         const gt = event.recipes.gtceu.runic_forge(`runic_forge/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
             .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(manaToTicks(mana))
-            .EUt(LuV_EU)
+            .duration(dur)
+            .perTick(true)
+            .input(ManaCap, Math.round(mana / dur))
+            .perTick(false)
+            .EUt(euForMana(mana, RunicAltar))
 
         itemInputs.forEach(input => gt.itemInputs(input))
     })
@@ -185,12 +191,15 @@ ServerEvents.recipes(event => {
 
         const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
         console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
+        const dur = agglomerationTicks(mana)
 
         const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
             .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(agglomerationTicks(mana))
-            .EUt(LuV_EU)
+            .duration(dur)
+            .perTick(true)
+            .input(ManaCap, Math.round(mana / dur))
+            .perTick(false)
+            .EUt(euForMana(mana, Agglomeration))
 
         itemInputs.forEach(input => gt.itemInputs(input))
     })

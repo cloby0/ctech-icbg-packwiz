@@ -349,10 +349,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components(c('2x gold'), c('1x redstone'), c('1x mana'))
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
-    // Liquid form is manafluid:mana (ManaFluid addon, mods/botania-mana-fluid.pw.toml) --
-    // GTCEu's Material.Builder has no way to point .fluid()/.liquid() at an already-registered
-    // Fluid (only FluidBuilder, which always builds a new one), so this material stays fluid-less
-    // and recipes needing liquid mana reference manafluid:mana / manafluid:mana_bucket directly.
+    // Liquid form is icbg_core:liquid_mana (icbg_core mod, see
+    // ../../intercontinental-ballistic-coremod/docs/magic-as-recipe-ingredients.md) -- GTCEu's
+    // Material.Builder has no way to point .fluid()/.liquid() at an already-registered Fluid (only
+    // FluidBuilder, which always builds a new one), so this material stays fluid-less and recipes
+    // needing liquid mana reference icbg_core:liquid_mana directly. The old manafluid addon (and
+    // its manafluid:mana fluid) was removed once the mana capability port retargeted its two
+    // producer recipes -- see docs/claude/specs/mana-capability-port.md §9.
     // No ore vein -- vinteum took over the Aether worldgen slot this used to occupy. Dust-only.
     event.create('mana')
         .dust()

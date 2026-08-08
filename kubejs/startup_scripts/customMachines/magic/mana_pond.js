@@ -1,8 +1,12 @@
+const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
+const IcbgPartAbilities = Java.loadClass('com.icbg.core.registry.IcbgPartAbilities')
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('mana_pond')
         .category('magic')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 3, 1)
+        .setMaxSize('in', ManaCap, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 });
@@ -10,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('automated_mana_pond', 'multiblock')
         ["tooltips(java.util.List)"]
-            ([Component.literal("Allows you to automate Mana Pool recipes using Liquefied Source")])
+            ([Component.literal("Allows you to automate Mana Pool recipes using a mana input hatch")])
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['mana_pond'])
@@ -25,7 +29,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("b", Predicates.blocks("kubejs:mana_livingrock_casing"))
             .where("c", Predicates.blocks("kubejs:mana_livingrock_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(IcbgPartAbilities.MANA_INPUT)))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))

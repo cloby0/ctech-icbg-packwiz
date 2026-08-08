@@ -3,6 +3,7 @@
 // Writes raw event.custom JSON, which is what magic/occultism.js already does.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
+const LpCap = Java.loadClass('com.icbg.core.recipe.lp.LpRecipeCapability').CAP
 
 let _occultismRitualIndex = 0
 
@@ -21,6 +22,24 @@ let _soulCompressionTier = {
     djinni: 'LuV',
     afrit: 'ZPM',
     marid: 'UV',
+}
+
+// LP side of the same tiering (mana-capability-port.md §5): charges LP, not mana, so pentacle tier
+// also drives an LP rate (costTiers.js's LP table, keyed to the voltage's magic-tier analog above)
+// and an orb_tier permission gate. Orb tiers only span 5 steps against 11 magic tiers, so bucket two
+// magic tiers per orb tier (three for the top bucket) rather than inventing a finer orb ladder.
+let _soulCompressionMagicTier = {
+    foliot: 'THAUMATURGE',
+    djinni: 'THAUMATURGE',
+    afrit: 'ARCANIST',
+    marid: 'SAGE',
+}
+let _orbTierForMagicTier = {
+    HOBBYIST: 1, APPRENTICE: 1,
+    JOURNEYMAN: 2, INITIATE: 2,
+    SORCERER: 3, ALCHEMIST: 3,
+    THAUMATURGE: 4, ARCANIST: 4,
+    SAGE: 5, PROPHET: 5, ASCENDANT: 5
 }
 
 // Occultism ingredient entries are {item} or {tag}; GT wants '<count>x <id>' / '<count>x #<tag>'.
@@ -87,10 +106,18 @@ function _mirrorToSoulCompressor(event, name, tier, ingredients, output, duratio
         return
     }
 
+    let lpDuration = duration * 4
+    let magicTier = _soulCompressionMagicTier[tier]
+    let lpRate = Math.max(1, Math.round(LP[magicTier] / lpDuration))
+
     let r = event.recipes.gtceu.eternal_soul_compression_unit(`soul_compression/${name}`)
         .itemOutputs(typeof output === 'object' ? `${output.count || 1}x ${output.item}` : `1x ${output}`)
-        .duration(duration * 4)
+        .duration(lpDuration)
+        .perTick(true)
+        .input(LpCap, lpRate)
+        .perTick(false)
         .EUt(GTValues.VA[voltage])
+        .addDataInt('orb_tier', _orbTierForMagicTier[magicTier])
     inputs.forEach(i => r.itemInputs(i))
 }
 

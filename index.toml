@@ -1093,8 +1093,96 @@ file = "kubejs/assets/kubejs/textures/item/altar_charged_gravitite.png"
 hash = "3993bc7cd0cbff651d7865e5c74913584ff6dbfb5410c7bea7a1d2c1ae9bc3bf"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_channeling_vessel.png"
+hash = "54bceeb90b6be16e97acdc16d9b50fc0e9576501003e5d1983be659a9e3d8237"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_motive_core.png"
+hash = "d591705859d29ed5be812e4e4bee4412de1915a70b0c5d60d631768fd8947a07"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_sigil.png"
+hash = "5ab0570df6b364d9a28a9909104090298515e275fe6ba8336147902838d2e0a9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_sigil_blank.png"
+hash = "cb2144263cd56d827a10782670a36c98ad82d7de854f2d7fb080db65a0efae83"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_ward_lattice.png"
+hash = "6e3e1442d60e2fbc012f37aae6d91e478ab669c627bf295d00ca8010c0cb0b59"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/animus_wizard_brain.png"
+hash = "eb74d52b356ec2f461b80fee2b0f5844522b1ebd0e16a1590837e948dbc5d861"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_channeling_vessel.png"
+hash = "a0db6093f7ef646aac86e8f475e041fafa439cc2c752f86695b090ddf5ab84d5"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/argent_foil.png"
 hash = "1e8ccfbdc45b8f27bb58613bb3e21fd22756719e63ad2b63d2d4cdbf65399ae0"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_motive_core.png"
+hash = "dc4e66612b88ce04c43ae8e191965d5e5fadedbede5936a8633075a35d24ce18"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_sigil.png"
+hash = "ee7de0cad79d787a48c1881fb0ab4fb963195a6c99c084d947bc15ec5f0c97b9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_sigil_blank.png"
+hash = "efd86bcde3ab212a7e350c89ea9c2001f6034e22c260d95e0a08de2ee9092ee4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_ward_lattice.png"
+hash = "9544b3cdf7e513976ff33f953890d6537d450700c8c593d694244068e809a356"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argent_wizard_brain.png"
+hash = "8b29950b030b9fa250fe6ff6802651c645ff46f6396175be2902d7fe62177f85"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_circuit_board.png"
+hash = "086e048ba19593015b745dc574caf6480900fe08e7b4b4f86fd5cbd960e86d5f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_printed_circuit_board.png"
+hash = "13ed4c1ee0770be1539d45200e2a301d0b5bfe5e875edee643f137c95d8b9ac4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor.png"
+hash = "32ef1adfe6f163cba247ffa4eb825a2b3cbad2141e647209556e023fa7956636"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor.png.mcmeta"
+hash = "86bfa2531b669d4f249278e9f35a7f55d2d45540ca36f503107af07bd1fae0f1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_assembly.png"
+hash = "9b4837d5f197cb19b878ea93f53aca764246be0c154fa8fcb5ce5d2a04f16a4b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_assembly.png.mcmeta"
+hash = "0d81a8feb03b276867a0e8e49acb6c76202b11cd1f7257752cd2c3ff512e0a3a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_mainframe.png"
+hash = "3c20bf659cefd49605ecdbcba9c66f345d36f9c2b26a2243d70a63810e18d20e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_mainframe.png.mcmeta"
+hash = "4d42ae6190a6076d415e0fd6c713c1250138724545181e0426783f97ad841b66"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_supercomputer.png"
+hash = "7a3685a1bc7636f0ca63fc4e3f68625c81376f2295cb1b7ff87357c82bc3f52d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/argentware_processor_supercomputer.png.mcmeta"
+hash = "f6dd0d2e54b016f022c7fd6745825e08065b4699e88eea0d65b98d950146686d"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/artificial_cumium_brain.png"
@@ -1165,6 +1253,10 @@ file = "kubejs/assets/kubejs/textures/item/chaotic_sanguinary.png"
 hash = "7b1b02ad1bd935a8943b0144fbcb75527eefc2bde460386fbb5c97cd3f133eb8"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/chimerite_dust.png"
+hash = "a7037f8b73c57b55d035664825b3bc6545c1ee953970e8f705fe8dbe6a481ba3"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/chronicle_of_dominion.png"
 hash = "becf4918cfd49f416bd9b9c3912817fd4b7cd8eaa9445ba3cb4a1d37fd516a12"
 
@@ -1213,6 +1305,10 @@ file = "kubejs/assets/kubejs/textures/item/disorganized_metal_form.png"
 hash = "19c928c0a259c23967663c2c4289d65bbc88c92347c6c10d2126f6352e6f0318"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/draconic_boule.png"
+hash = "52e8aae36116c888be10376980651fe340653f497f01ee9861b558f9fdfcb3c5"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/draconic_processor.png"
 hash = "6cf9e8c3f3c69f581286cc46f73b46d7350a5bf48b1748e5e73bbcc7c8fd431d"
 
@@ -1253,6 +1349,30 @@ file = "kubejs/assets/kubejs/textures/item/earth_nucleus.png"
 hash = "8b7aef712f3463b03acd32a345d8011793f60f1b4afafcaed3ef16c2dfe32a6b"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_circuit_board.png"
+hash = "acb05c2f09d2c8d9d277928db03d4b741f9b74ce1055841a0a13ac266de421ac"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_printed_circuit_board.png"
+hash = "21a820c7d3a6219ef453303361a38bcb76c8c9626291157ebe1d77689d8c6090"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_processor.png"
+hash = "f4eea3f17c36b2409cb16945f65d340af2499c454f5c7e573c326239a6a472ee"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_processor.png.mcmeta"
+hash = "86bfa2531b669d4f249278e9f35a7f55d2d45540ca36f503107af07bd1fae0f1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_processor_assembly.png"
+hash = "e80c4a82a98044d794ff2d4b2d785681c44007b14faa43cb4a0a159ee9a8030d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/egoware_processor_assembly.png.mcmeta"
+hash = "0d81a8feb03b276867a0e8e49acb6c76202b11cd1f7257752cd2c3ff512e0a3a"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/eldritch_codex.png"
 hash = "bd809092e358de70c8e4f68c97c1cfeb250cc5bdad45822a8e04a49220be2be8"
 
@@ -1277,6 +1397,30 @@ file = "kubejs/assets/kubejs/textures/item/elementite_dust.png"
 hash = "90748e564ca71d7fffdcfa832896fa072d6a58512bd4cc4837b7437ee7be0cf3"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_channeling_vessel.png"
+hash = "6a8bf4be1f9eaf25d702712536d681aac8fa792cd77e26605c7030625573f555"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_motive_core.png"
+hash = "7b5031277e75ace1336c71123756f5857ca830babb682031ff58e589a7ea301d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_sigil.png"
+hash = "32567d288408bfed511be2b4efe758d0d2d756006718d463e7f7145c84404ee5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_sigil_blank.png"
+hash = "6fb47f56d85a07a358fa7987cd355f5b89ed8bffcd2f17426ec39738e7124358"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_ward_lattice.png"
+hash = "b3592151ee812c80b8a3a7279a0230b9accbdf3a57457749f4708473a704296c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/elementium_wizard_brain.png"
+hash = "ecb60e6fecb33a3f4c6d6799a26c1468c12aec7030c917b6160ecd165289a392"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/elven_concentrate.png"
 hash = "b54db6d210a35da8d42db5eb5d452f3896ad0e2b62d88f38151d0433818c3ee4"
 
@@ -1287,6 +1431,34 @@ hash = "f6b5749496320103a787090d7ebe520f21640956de5f9e1d172f0224e7540d96"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ember_crystal.png"
 hash = "5a9be63496ae53986a745ef9f7d8b5ece80c442f13504d995a765361278a4ea8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_channeling_vessel.png"
+hash = "ccaa8a7438266c81ff93e14b97dafa299fa89ec34c399c036113bd1b600add44"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_core.png"
+hash = "331ad95812c0c984c2817420e3a3f7897de63aff2cdc6a9a4fc1c5df03e1fbb0"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_motive_core.png"
+hash = "131bc085da5650fdb9ce537f0c8eb9bbd0d4c4d89bf971946a1d39fb64edc60a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_sigil.png"
+hash = "699abeadadbfb496fb149e1f0c0a3787f6755692def0377248c7c678c0a10c8a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_sigil_blank.png"
+hash = "deef861d0155480b23363f5c7babcd0df896959266450b8521ac3a8c65b4d622"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_ward_lattice.png"
+hash = "9d79e2bb13d908132aa445d02163a5e3f444446ed7bf55c7b8243f90bb8cd821"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/empyrean_wizard_brain.png"
+hash = "f1a109aca1ebf7451246c21334888842d1de632870176dbebf5ed049000152e2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/enchanted_zanite_gem.png"
@@ -1357,6 +1529,10 @@ file = "kubejs/assets/kubejs/textures/item/gaian_holy_core.png"
 hash = "a1bd777eae3e6b04c03e4141d436393b93f84d30b97ba364b0b2afde05bd35dc"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/gaian_neutronium_boule.png"
+hash = "6a4d1614eaa00c799ce4bf3ca20d3641248efd6f5de3f2ba72b4c4c702073db9"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/gaian_void_core.png"
 hash = "9a4ee784ed91cdb93692016034e4a346a49d39895e2332edd05830de72d771e3"
 
@@ -1385,12 +1561,40 @@ file = "kubejs/assets/kubejs/textures/item/glowing_compound_dust.png"
 hash = "f4f4a7e067f07df0c52929a1a8cf8d6b1c9982eed9e694df690fb720324a6437"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_channeling_vessel.png"
+hash = "4fc4b4d03fcc27d8c6eb3ede4781cc69397de728b6417a07b93438d28f93f055"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_motive_core.png"
+hash = "2a4b3b1ea3046501d0d972a1ba05f98da6a52e12a4ed4a6481ae95ef324e9640"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_sigil.png"
+hash = "a15a7b28326d5e88b2c2703f0c1afb7bc93dd159047a7e8c69b21d72ba83296c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_sigil_blank.png"
+hash = "96674b489da4aa363b916a96d000e7b6a3b641449885d1d93ff82f891c6b8751"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_ward_lattice.png"
+hash = "c815295ed89f4a46dbbcf90f2d9d0e4a79f5ef137ff813d36d7d2963557edfe9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gravitic_wizard_brain.png"
+hash = "9699240aab5f6e75191e78bf9729fe1c40a42bbce8a13e89d2106de792ff584b"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/guidance_module.png"
 hash = "c8ab7b2aae931e3a44f093dcc43517809a85830acfadd82b5f9c245f3f74eac4"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/gun_fire_control.png"
 hash = "0d0958b6082a989ad64c4e238cb7c55f8444aeb502a84522c755c84bc01c6725"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hallowed_silicon_boule.png"
+hash = "98f8bbcc5a038f11b362d80f8e7468de04c39d7cc6ceda50c5da90ed4e5d140e"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/harbinger_codex.png"
@@ -1453,6 +1657,34 @@ file = "kubejs/assets/kubejs/textures/item/hyaline_crystal.png"
 hash = "b58167d1f058e66c25b0f9378e21e097ccb2ac6a7cd5339febacecccb57a1e93"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_channeling_vessel.png"
+hash = "e17fe2018589f8a773265726b4d71592faf7e2f6440041f458d98ef8f3a8e4fc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_dust.png"
+hash = "1aa82cc77df1b0500e79d1bb43df97fe4f24d2eb645d183c948e38cb984b3f6c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_motive_core.png"
+hash = "a4b78e7a949533dcb0338a28bf8b4e579a9335af2bc1f9cf3e960e2f01b49997"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_sigil.png"
+hash = "cfcaf424c9c4ee70089572dd7d8a70ad4d7d8a6350a9ed04ec624956853c2da2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_sigil_blank.png"
+hash = "3fe5fad9a83f1ba5282e9d8b005c17cde6b3b2dc7787b0949857747921c88bec"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_ward_lattice.png"
+hash = "39c849da9294758844cc799b7da45c8d41946fb14333a379e3b801d0bac18d70"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ichor_wizard_brain.png"
+hash = "7770b17c858f1f70901a54f62535d41f3103d7b8c0bddef2754079a274012d8e"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/impure_glimmering_dust.png"
 hash = "094f3039a4934fd5d2aca7dc3d7d734574d652fe583ce5ee04682a7cc5619408"
 
@@ -1489,6 +1721,34 @@ file = "kubejs/assets/kubejs/textures/item/iv_short_barrel_blank.png"
 hash = "064c0308dda53524b4422bb5f83155d500be5f838e8ff0268c68d3be9c94eb57"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_channeling_vessel.png"
+hash = "d847d764d58d69ff1238bb6b8952b8e5796c53daaa5d057f0a7a63cbefcba23d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_lattice.png"
+hash = "7c72c52519ceeeddfa27b5a6fd8b34bf704f8d8b7f6d915636151ea5eba5d24f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_motive_core.png"
+hash = "9fe5cf7b4c6e2a62460e8b460ff16bc22f33b5128145dba16040c6c68d16b512"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_sigil.png"
+hash = "5b553cd4766f7016a46ed9ca524c78b5973ba871599ea76b687fce97d4c5bdf2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_sigil_blank.png"
+hash = "f8e366df342155e7415f95baa7d6518867b1e09b9e951530a2bcd1b4c7177a6c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_ward_lattice.png"
+hash = "536d6ef30b1f18e575593283a1dfec44ad32ab499f6a4c74eb4598ff6474e3fa"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kathar_wizard_brain.png"
+hash = "8502ab129379a433bec9af7b4d2cd93d578eaf953f4600667c700c49a2b045be"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/katharic_residue.png"
 hash = "edd117ba5a341b851daeeb23fbdbe708da4acda2eb2a1557564511893ee6bdf8"
 
@@ -1499,6 +1759,10 @@ hash = "76f06e124a810fbe3adbe389b51244304376ff09975b859f7532829c87f3452d"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/kerogen.png"
 hash = "8c17bb68ffc9289032fbfcc29e77100746b0675bdff4a0399579c343365a7f5c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kindled_ichor_dust.png"
+hash = "335e98108cd0d3f3b64bbba2ce4dedfc548437b5f324461ea9c9441464409663"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/latent_psi_crystal.png"
@@ -1677,6 +1941,10 @@ file = "kubejs/assets/kubejs/textures/item/primal_latex_billet.png"
 hash = "24ddbb4b7b4478bc7dfa72e89edfc16c0cabeffa8931fed330c2269f9f6a5bfd"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/primal_phosphorus_boule.png"
+hash = "6286ebc5c0151472305051fd52ba634fe82d33de2a16e2f440b7c2db9f226aca"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/primordial_organic_muck.png"
 hash = "de0316b93f902762953eeae6a16e1bddff0c76d98ea311104ae86d3d1b8d6b3f"
 
@@ -1715,6 +1983,10 @@ hash = "257421655e85bc324a2011f4faddfc5aec6bc3b5e2923a98c8b79d2a2157af42"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/raw_ostrum_sponge.png"
 hash = "d5029c5197d7d46b7c3dff33739dfb378aae9be51ca61cf2d83af80671eb1ada"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/resonant_gravitite_core.png"
+hash = "5ee3153fdbdc9765aa0eab3ab24f92e61f6a50d023aae682be273112d6fc53ec"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/resonant_void_lattice.png"
@@ -1801,6 +2073,30 @@ file = "kubejs/assets/kubejs/textures/item/stabilized_chaos_crystal.png"
 hash = "972f8fec5b0cb91fa3bda2e947fd79e448a974fe7bb7b4b02d6bf251323eaa0a"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_channeling_vessel.png"
+hash = "e66b5152e0961742894ce7e0c86d87b33ca9c63d127de000a0e5979b259d3c11"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_motive_core.png"
+hash = "b944b3fdb38767c1613f72620b2301da7e2b3874052fe7218bda8421de126769"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_sigil.png"
+hash = "05bf6fcc13f0e4f3c3cf64457f84219dc840cdf6a456caa182c932d378414408"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_sigil_blank.png"
+hash = "0c9afde3ac9b94dd7669ba75e13ca0b80fe5a6f16fcc1ff3d3d319e1c0df0b4f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_ward_lattice.png"
+hash = "e30428b071384518df24f86eb40e06fd3c201c8b34d557d16ad93bd88ea8a15e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/starforged_wizard_brain.png"
+hash = "8096740c420173b3eeb0d3016d322ab42d9d4f36f26f1e6cc06389bdea233c88"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/storm_quintessence.png"
 hash = "d2a7cd573adcd67410f795cf7b095e68a357aa3a3df027e1e8a6578756ca2e89"
 
@@ -1841,8 +2137,40 @@ file = "kubejs/assets/kubejs/textures/item/venus_rocket_engine.png"
 hash = "8645e24c9d1ac257190163a6702eb12ba2420f1c1f9038dcd5ed32b7abbcaa1c"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/verdant_charged_dust.png"
+hash = "c9304e0a17187bd7e45044c8dd7fdfd3c654143f17eb9455de6a1c3669f20a7c"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/verdant_chronicle.png"
 hash = "48424bab90b6c7f2cbfcaa3df1066ec662b71c9e4c9d002621737929bf75f636"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/verdant_naquadah_boule.png"
+hash = "7832d74331ee423de131a4a2500e6e92419add360a6186c21653bae935e49ec6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_channeling_vessel.png"
+hash = "dd0d58a479054778a2cb8fc5ee7285b2b632226e6a28fee87428f5c6f10c0b56"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_motive_core.png"
+hash = "9e3a622917fc4838ee621ccb0c68c1835d90ad91b92ba160b3dc9c53ac28658f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_sigil.png"
+hash = "50699f510174a74f669ca9a95eee5d4426cfe379b393823fac77a1da6f78b29b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_sigil_blank.png"
+hash = "230ab4f42eab17e336d0b6fe7155b09a45f4b29701c82814d4e0cd54b165b446"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_ward_lattice.png"
+hash = "80e36adbb10186c620859c10020aa4b179680d5d56d9dfdc9b9d722c5779ced8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/veridian_wizard_brain.png"
+hash = "0b71d77dea59c0ce96ccc649374a999d20a064eb0c2f47e0ab213b25f3762962"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/vitalized_source_fragment.png"
@@ -1853,6 +2181,26 @@ file = "kubejs/assets/kubejs/textures/item/void_nucleus.png"
 hash = "34954517135b9448c57948497ed64a94176757fb3e1010f68cd660951953af9e"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/warded_smd_capacitor.png"
+hash = "39468f729ebb7308a600905f6cb594157eb0839129afdd4a33a57ffba6f8fd15"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/warded_smd_diode.png"
+hash = "5ed33b3545858ae8c995e35c9907bbb5c2006e3ed5747463226826815127c20f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/warded_smd_inductor.png"
+hash = "d97609656c97a933e296641c32227288a2a1c67a7e7ed40b031dc4d9a5253a63"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/warded_smd_resistor.png"
+hash = "2f0e654a9b6e56ca23d90a91ae17fe6b56dce672d426a4396437a001a9b04141"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/warded_smd_transistor.png"
+hash = "23e972ca781a9a9c981b88b00164df50f9d47ce852992f59d752bcc9b96c5501"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/water_nucleus.png"
 hash = "473dc0ee27ae0562e7947e2bb41ed7774e078b8855ed780a421a3e6956543576"
 
@@ -1861,12 +2209,104 @@ file = "kubejs/assets/kubejs/textures/item/weak_elementium_dust.png"
 hash = "c187f37e2469f5e733697ba17402ba55c84b5372877f4ff94b0bea6a0cfccec3"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_channeling_vessel.png"
+hash = "aa9fcdd71306f33d0e6f29598f0221ccb243ffe0731b9f4b1249e964b293b3d3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_motive_core.png"
+hash = "39bbdf0780ca05f58e6a92a366f8fb5d5165fb984a047fe106891b1262d91475"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_sigil.png"
+hash = "9d752f296be50d6181eab047493d2fa41f77eae6740806fea94301974f66fcd4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_sigil_blank.png"
+hash = "c00a775a10d4453cdbd0b850d44fa613658946fb76f0844ea677926155ace63f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_ward_lattice.png"
+hash = "f3821b3822704814f090ea057b53fbb7a90d3fe6d9c2c4abd1297350261c7034"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraith_wizard_brain.png"
+hash = "74a8a9deaf431b54a87333394d75b12c522055174468203b78857d2ff838c998"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_circuit_board.png"
+hash = "f4e234fa06fb99b4cfb01e8cf37e4d125e1cb842e745c1e7ba416da8561f9d8c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_printed_circuit_board.png"
+hash = "74ee5c2391362ed284d7845f32d445961f620b52c5bf697f7dd6dfadc601de81"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor.png"
+hash = "2b13e007595fe2439978747d1f484efaeed2c22f28aa3a4593f2c58c56445f06"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor.png.mcmeta"
+hash = "86bfa2531b669d4f249278e9f35a7f55d2d45540ca36f503107af07bd1fae0f1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_assembly.png"
+hash = "fbe57a5bd463bc612255977d5b3099ba4a7488480de1b53b2945ed3c6e832231"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_assembly.png.mcmeta"
+hash = "0d81a8feb03b276867a0e8e49acb6c76202b11cd1f7257752cd2c3ff512e0a3a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_mainframe.png"
+hash = "4a4abcc44f151d56a74ea9d6553d76ebf9d521476974dc677c3dd094e80698eb"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_mainframe.png.mcmeta"
+hash = "4d42ae6190a6076d415e0fd6c713c1250138724545181e0426783f97ad841b66"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_supercomputer.png"
+hash = "0cf4846c70b5eaf5a43d2228d5446dce427745e061462e91ed62b2a87e3bce81"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_supercomputer.png.mcmeta"
+hash = "f6dd0d2e54b016f022c7fd6745825e08065b4699e88eea0d65b98d950146686d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/wraithware_processor_unbound.png"
+hash = "153c21a4a79d756788646b11949c33df0e70f5441d29d2f9d82fdb0e705d34c7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_channeling_vessel.png"
+hash = "91ec82c02e19146694ebc17e8222a97102a35b382adbf959c8be63bb9b5f3d66"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/zanite_laced_iron.png"
 hash = "c6a88e70bc233abc6984b7d5f75b2b0e87e1ce688a41ba695a5a34a1867381f5"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_motive_core.png"
+hash = "25b9409fad78043a7776ba095a39b2979f88ef447054d0da5bb79827e279f661"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/zanite_shard.png"
 hash = "3c9479588dd4c27b43e272fa61a770bcf0d4acc9e12e6e42c3a4ad5f5f46a494"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_sigil.png"
+hash = "b18b34c293fe9cf879596470dcdd3989a06936b0675b1e2a19c0d762cbf13c09"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_sigil_blank.png"
+hash = "d92329f8d549e325357d5e0b9ca6b718f016059a4b9eef1b465de64e20e51c7b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_ward_lattice.png"
+hash = "bbeea034b56de835468a7e51440d86a14e66323a54f4fdf5a4072b5e1b98cba8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/zanite_wizard_brain.png"
+hash = "43c7b82a366edc8587f4bcd5feb3a16bab42b3ae88bbe54c9f3acc007e7f8b7a"
 
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/edition.png"
@@ -5098,7 +5538,7 @@ hash = "e6267a950d4cf1871123dd53ad5848f88f66559145e329aa2667f74ab433e84e"
 
 [[files]]
 file = "kubejs/server_scripts/costTiers.js"
-hash = "5435a571592d2793f54b28d8ce48a64c68d36ee3ff557e5b6ebe145e61c08fec"
+hash = "b29b077fd32c73450a664c66f920d98dc8799688c5919f066b2913df46610991"
 
 [[files]]
 file = "kubejs/server_scripts/fluidTags.js"
@@ -5118,11 +5558,11 @@ hash = "80b3f3d4428e608d03adf4bca1c7903f5ae1cfbce447fecc3d222b2150a04281"
 
 [[files]]
 file = "kubejs/server_scripts/magic/alchemist.js"
-hash = "8a47b81420fe1a7458285cc15cd486affd382c92c89ea96eb2be63d44b773ef3"
+hash = "c3d8fbe7780a39444bde4b91ecd0016e9eb3183501373fa0aec5e6b292db68b6"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprentice.js"
-hash = "77f3fc6c4b1957751df7927b288bfad9f6870f5581fbd9df51f3f4527053b23a"
+hash = "05ef50e84914413549c38413769d6ba204b084686cb8f5ecb391b7adb43eb5d3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/apprenticeCodex.js"
@@ -5130,11 +5570,11 @@ hash = "cecc3942d165e0ef9c0e45a02f1871776753298e61340846d7e98ec3cc68e38e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/arcanist.js"
-hash = "1c016fe54d0695e1b81f42df464eb18cc2c4e366c77ba090d358d000577438c7"
+hash = "639021f5fa801d2bd625ee2455eba7d0116ddd8552d4cbfd15289db2c29327ef"
 
 [[files]]
 file = "kubejs/server_scripts/magic/artifacts.js"
-hash = "2e2f5ae559f29c163906c8b97e88e204c51f5ae768be29bc665433250122ede6"
+hash = "31a4efa763ef0cca495e5b17e359770fe598700a29ad07fe2aafd41723efe0c0"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ascendant.js"
@@ -5146,11 +5586,11 @@ hash = "bab761a4114b3855fa2cd68a1a93f2f61d07e058e914650e7c32346b1bca33f3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestialEnchantments.js"
-hash = "86f827601dbe495a26f5326bdbf29b9e1e923e585fd809054687e9f3e54f69b2"
+hash = "edc4c1a08c4b6ecada150e5f7ab6ba2ca567248bb83918e17e2515c923d07b56"
 
 [[files]]
 file = "kubejs/server_scripts/magic/celestisynth.js"
-hash = "ec390aeb92360b52ee6aa683bffd58f65a67f4a6a2f3aa9f70ae5e9a974b5c04"
+hash = "df6d19402d466d99d4e5a13c16c50671719c1b2d6ea9a040b831bdb031603e99"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/alchemyTableRecipes.js"
@@ -5190,7 +5630,7 @@ hash = "4c3081264bec544755704594f631552721a6d2b9cff4a6c1f08dc82f620cc6f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "f751f2d435db7417662088a82fe3e30cc12e14bdbd13f474c762509c6d018e64"
+hash = "b366abbbcfa6a207e10ee85d46e00ed216194f7934794ea8b50eae0124f6a801"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/mnaArcaneFurnaceRecipes.js"
@@ -5210,11 +5650,11 @@ hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "0857ab399202e9e7a73b9a2d34241defa51e2d987f35812cff33231c988a9d64"
+hash = "26f01a0f5561fd37c28e17ad52e844985a860435a3abf9162d843c942a1a0a9d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "9da93e553c64ea31ec92e38b665993ad74653460babc3f332ee02568e3e0beca"
+hash = "ab76874164c4662580a04926b496bc0b40de057b3762d4d2828e787cc62fb4dd"
 
 [[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
@@ -5226,51 +5666,51 @@ hash = "54797210a54b082bd6f9daf4ce00ce2701d427c8409ca15429c871305ffba197"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hexerei.js"
-hash = "fcd686bb7c88c4d0345abd303cdb0d91eff1dad7c39c47d7b187ef24176cd10f"
+hash = "f6c83d6380552273ac64485cffcfc15beef14d44d497ac39793f17235f1384eb"
 
 [[files]]
 file = "kubejs/server_scripts/magic/hobbyist.js"
-hash = "464f45f443b0fad2c01a8111b2a9da4f7dc592ef3ee5c5554c2211ea80cc2785"
+hash = "1aad9857b50815a701e8eb7b1e5cafe19223b7c62386ab4906bd252ce05e6665"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "3b27ef9d7b92c951f611cd97b9b4f88ed9ce0862cc5f910f01516c8deb3adc7c"
+hash = "60028757654997db5a1f9723ba7aae2144f507363e124c3ca29d7b27f6edad32"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"
-hash = "2e0ec7a16d49cb12663aa4c8d74c8722c8b7bdc1519b8f179389bfc146b9daba"
+hash = "25e639653fd06685a17f3eb3d9004c8af1245f48ed8eedcbdc3b5140070aa43e"
 
 [[files]]
 file = "kubejs/server_scripts/magic/ironsSpellbooks.js"
-hash = "ef0481377c4600e1df1363617d1d852d4a085c5c4ce968657a536166ff1b9b52"
+hash = "032eeaf51e78ac106a0a3cf240fa0825749159a9da273384065002c343b15011"
 
 [[files]]
 file = "kubejs/server_scripts/magic/journeyman.js"
-hash = "996cfd2a05758574937640198863d0b71cdd8e0ed00295ca147a1b34432174b8"
+hash = "4c2e73b7015962b77c1d88e3e5426cd1695527f68259799e4cc723ca636c3212"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
-hash = "4577394b8c59e136c724464d669b50731534de099d8dc2d74c92902721af83be"
+hash = "4318eb91a6a7291deb30ea9c72a9b5e7061305613bedcf6d952d90ac6875bc14"
 
 [[files]]
 file = "kubejs/server_scripts/magic/malum.js"
-hash = "67228ae99f7f672b5531cbf2647e8b9dbed2463448a5c483cac4b15d7eeeecde"
+hash = "41cc051227cf681c83a127b7242658d09e04dbad54c6c8d85dbf6e518c5f7c4f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/modularGolems.js"
-hash = "e34feed6c07535f6ed8707bc99494b78a0939ef41a20978ced40e193b6ca2d7e"
+hash = "012b043d1caad8637e9ad737357aec9603b596255008b37af6bc9bb256a80c8b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/moreRelics.js"
-hash = "ab351af744fd1d0286d568ade89cec9ac9905f6497265e11f0e85692acd37307"
+hash = "893a07bcb483fa507eec7b8014a8f653e6d58b1d13b549277171cc3f2a9bbeb4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/namelessTrinkets.js"
-hash = "3ab0cbd27eb8814ebe2b12844f0129046bc9734e704cd75e264ac0ff003d7e50"
+hash = "e166529bfd9146d9836b0789d5a9cf035c6af6b2a31605e45dbfa9077d865858"
 
 [[files]]
 file = "kubejs/server_scripts/magic/occultism.js"
-hash = "ffe7b0c4cdbb06f0a165757a5a21661e312087301610320a5f16e6ad3f605d43"
+hash = "136ed58b8e8c5be62997b50cba204936e7920f494a6653a40f027aa5158b1cac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
@@ -5278,11 +5718,11 @@ hash = "aba9e2645ddc29a2b6c05aa24a7153b65fc632dc9ea0c4fafd59f1226758f0f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
-hash = "2084d26d64784d73dd4e8cd6c8c250e6f895d89b8366b1674cfb9e9755af6fc1"
+hash = "4cec7c24a4e5c73d41ef0516b8d6f1542e805494459bf06059cdf5b9a5eced81"
 
 [[files]]
 file = "kubejs/server_scripts/magic/relics.js"
-hash = "002bac08d0791267d75793c611415873026f52e47c8e0553562a20b2b34d263f"
+hash = "d5b2fd4afd13c2b24ecd0012ef2a253599190d36915d9808fe4dd73ef543c1e4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sage.js"
@@ -5290,19 +5730,19 @@ hash = "7c0520283b3ccec1e6af7bec67b85b372122d3952d53eb09d31d741af9b4320a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/sorcerer.js"
-hash = "8a632fe892e819abcb38d56406bc3ac121d4e8ee166db22792585bc72edd69bb"
+hash = "dc616d6d9437b6d65fe5db8f670091e0a964eee9e6e91829303bab2d7cea422f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/thaumaturge.js"
-hash = "86084968df88e976f6265dc88bda283294b3bc3ccd0a8d9b0e869ad44379f9a1"
+hash = "5be020cebcd495362e3aadb21e44139f383a6c9d4f0c93a155d281aedabc136d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/tooManyBows.js"
-hash = "ef01e1e2e0de33e7f354a83f5308bcdc6f934b8791059705314836921fb6d676"
+hash = "fd8efa81f807ac2432969f3a24f900d99dbc727cac9732edb3e23155b62750d3"
 
 [[files]]
 file = "kubejs/server_scripts/magic/uniqueAccessories.js"
-hash = "36a0bf0b3f941cdc638c5359b355cf9fb5d969c7872bab4659cc241fe241f601"
+hash = "8e125b207954afe2b2534a6065a6d4ca1fae5b6126ad37ee3dc9b54ff188a341"
 
 [[files]]
 file = "kubejs/server_scripts/oei_tag_cleanup.js"
@@ -5318,7 +5758,7 @@ hash = "c0d06972732a7bc1516639981987ab6de5beb3236fb0f07103605baad9fbc783"
 
 [[files]]
 file = "kubejs/server_scripts/tech/airDistillation.js"
-hash = "3e17d9fa91f164f2864eecb0f5e5a8eae6832a7dbe9e5158ac93f13b74474dc0"
+hash = "0272e7bbc4947ad9fb5dec3a135ea043c377f85643bc47515a9cb4ac4d956b5b"
 
 [[files]]
 file = "kubejs/server_scripts/tech/argentAndWraithCircuits.js"
@@ -5338,7 +5778,7 @@ hash = "d2c0eb28519420e84e3146e327a35cb645c282dfffe7f9a069361574f90cb654"
 
 [[files]]
 file = "kubejs/server_scripts/tech/bossDropDuplication.js"
-hash = "4f2a447b2d6eac397d733085ddec767b3d4e4446b4601e6b0609119e63e60651"
+hash = "92ccfe0271ccccf10d736b69935f2c0ce500a1666d937f65142511ac3b0586d7"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
@@ -5474,7 +5914,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "18569f9f7c27e9382c894d8ee27c20a6a19d4b1166c52a4d029dc7f5a1fdccbc"
+hash = "bb972a6a815da34f69cd46d6ed0f827832aa654fe3f3682aba9b52783851cfdd"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -5518,7 +5958,7 @@ hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
-hash = "09c533408dac90eedeb570fbebacfc2ea75149e6e439bd7685fbb489e07e2d3a"
+hash = "ab1ee00001490810e383d1b8b328f323d85cc24e46a27ec21d2a9d85180b0d64"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -5526,11 +5966,11 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "a45cb68e4799c29c08978c76eaa58f642ed5a087046fea7a108b83a077d96763"
+hash = "b5bf01eeb844566652161d0f1ef32e28f976970cc5872f9e49bbefd570aeb2e9"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "33e58ee57c8c5b04c694027b8790301e9db317e46fc866afb36bdcbf8eb56ca9"
+hash = "b0a732b2a670c71c7de08e87f5eb5e599c8d36f3f85b1b2927051558af5ada09"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -5578,7 +6018,7 @@ hash = "cd9adccdbbfff27a26784bad3ae9db4c352a9f3d46356231830f132a6463ce35"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "2c5f6192a6f2ea31d2dd76b6c6c6c2031060e40a33d0c8a1bb433af5617fb3d5"
+hash = "d25d39e700c02a5c46e0b671b3940dc47a88153009ffc973d163078603187699"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -5586,7 +6026,7 @@ hash = "50cd94672812eed675e47acce700a8d94f831747892b2d49891cf5d6a499f503"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "37e18b40e0690295aa76eb924f954b6942a50267bd6921ac73a0b80be22a402b"
+hash = "79d1deb8cae0d5b3ca160fbd345c88789635e7254222a68eacba8a704974177f"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"
@@ -5830,11 +6270,6 @@ metafile = true
 [[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089"
-metafile = true
-
-[[files]]
-file = "mods/botania-mana-fluid.pw.toml"
-hash = "f3d496cb117262c7b8db6718807d827a9f2b885b79f9d35bf65467333854019c"
 metafile = true
 
 [[files]]

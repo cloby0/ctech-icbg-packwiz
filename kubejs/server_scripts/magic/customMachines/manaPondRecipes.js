@@ -1,5 +1,6 @@
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
+const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
 
 function stripNamespace(str) {
     const colon = str.indexOf(':')
@@ -10,6 +11,8 @@ function pondTicks(mana) {
     return Math.min(1200, Math.max(40, Math.round(mana / 100)))
 }
 
+// Circuit discriminator for the mana_pond recipe type (1 plain / 2 alchemy / 3 conjuration), not a
+// mana multiplier -- the returned number only ever reaches .circuit(), never touches `mana`.
 function catalystify(str) {
     if (str === "botania:alchemy_catalyst") {
         return 2;
@@ -92,11 +95,14 @@ function addManaPondRecipe(event, crecipe) {
         let outputName = stripNamespace(outputId)
 
         console.log(`[mana_pond] mana=${mana} input=${itemInput} output=${outputId}`)
+        const dur = pondTicks(mana)
 
         let r = event.recipes.gtceu.mana_pond(`botania/${inputName}_to_${outputName}_${index}`)
-            .inputFluids(Fluid.of('manafluid:mana', manaMB(mana)))
-            .duration(pondTicks(mana))
-            .EUt(GTValues.VA[GTValues.IV] + Math.round(mana / 50))
+            .duration(dur)
+            .perTick(true)
+            .input(ManaCap, Math.round(mana / dur))
+            .perTick(false)
+            .EUt(euForMana(mana, ManaPool) + Math.round(mana / 50))
             .circuit(catalystify(catalystBlock))
 
         if (isConjuration) {
