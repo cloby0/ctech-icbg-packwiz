@@ -130,15 +130,17 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
+    // TODO(liquid-mana-loop): consumes icbg_core:liquid_mana as a fluid input, which
+    // ManaFluidRecipeGuard flags as closing the mana loop (Liquiflora is supposed to be the fluid's
+    // only legal sink). distillation_tower's onRecipeBuild NPEs without a fluid input and this
+    // recipe has none otherwise -- revisit once there's a non-mana input or a different machine.
     event.recipes.gtceu.distillation_tower('source_fluid_distillation')
+        .inputFluids(Fluid.of('icbg_core:liquid_mana', 2000)) // 5 * ManaPool.THAUMATURGE @ 100 mana/mB
         .outputFluids(Fluid.of('gtceu:phlogiston', 2000))
         .outputFluids(Fluid.of('gtceu:aqua_vitae', 2000))
         .outputFluids(Fluid.of('gtceu:mineral_ichor', 2000))
         .outputFluids(Fluid.of('gtceu:pneuma', 2000))
         .duration(30 * 20)
-        .perTick(true)
-        .input(global.ManaCap, Math.round(5 * ManaPool.THAUMATURGE / (30 * 20)))
-        .perTick(false)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge('phlogiston_to_fire_essence')
