@@ -7,9 +7,6 @@
 // Structure is built from Occultism's own blocks around a real Golden Sacrificial Bowl rather
 // than a bespoke casing, so it reads as a bound ritual circle instead of a steel box.
 
-const LpCap = Java.loadClass('com.icbg.core.recipe.lp.LpRecipeCapability').CAP
-const IcbgPartAbilities = Java.loadClass('com.icbg.core.registry.IcbgPartAbilities')
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('eternal_soul_compression_unit')
         .category('magic')

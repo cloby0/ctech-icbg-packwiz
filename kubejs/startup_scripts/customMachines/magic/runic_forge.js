@@ -1,6 +1,3 @@
-const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
-const IcbgPartAbilities = Java.loadClass('com.icbg.core.registry.IcbgPartAbilities')
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('runic_forge')
         .category('magic')

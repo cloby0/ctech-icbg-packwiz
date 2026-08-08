@@ -3,7 +3,6 @@
 // Writes raw event.custom JSON, which is what magic/occultism.js already does.
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
-const LpCap = Java.loadClass('com.icbg.core.recipe.lp.LpRecipeCapability').CAP
 
 let _occultismRitualIndex = 0
 

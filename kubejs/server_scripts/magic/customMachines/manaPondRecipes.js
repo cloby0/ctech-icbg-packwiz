@@ -1,6 +1,5 @@
 
 let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
-const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
 
 function stripNamespace(str) {
     const colon = str.indexOf(':')

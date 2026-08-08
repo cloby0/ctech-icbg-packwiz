@@ -5538,7 +5538,7 @@ hash = "e6267a950d4cf1871123dd53ad5848f88f66559145e329aa2667f74ab433e84e"
 
 [[files]]
 file = "kubejs/server_scripts/costTiers.js"
-hash = "b29b077fd32c73450a664c66f920d98dc8799688c5919f066b2913df46610991"
+hash = "a348c78250eff0dccc461ee72851d48d27279456b18c8b50f11624979c90f24e"
 
 [[files]]
 file = "kubejs/server_scripts/fluidTags.js"
@@ -5630,7 +5630,7 @@ hash = "4c3081264bec544755704594f631552721a6d2b9cff4a6c1f08dc82f620cc6f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "b366abbbcfa6a207e10ee85d46e00ed216194f7934794ea8b50eae0124f6a801"
+hash = "cdfffe950e85308fe87a832de0fc847e9ab11cd3243a2209ab8d6e664559593f"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/mnaArcaneFurnaceRecipes.js"
@@ -5650,11 +5650,11 @@ hash = "80263da79c2331c4d745b3b72e8e7a077132e4963d4488affb7525acd8fe536d"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/occultismRitualRecipes.js"
-hash = "26f01a0f5561fd37c28e17ad52e844985a860435a3abf9162d843c942a1a0a9d"
+hash = "aa78c2a745eead4a308d4b7156a23a40822b2f73e1a2a3a1878aca994a450c49"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "ab76874164c4662580a04926b496bc0b40de057b3762d4d2828e787cc62fb4dd"
+hash = "641378fd531d6c2c4bb437b57ab83de6252ddd116b2cd9d466adb55ed5c504e9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
@@ -5690,7 +5690,7 @@ hash = "4c2e73b7015962b77c1d88e3e5426cd1695527f68259799e4cc723ca636c3212"
 
 [[files]]
 file = "kubejs/server_scripts/magic/l2hostility.js"
-hash = "4318eb91a6a7291deb30ea9c72a9b5e7061305613bedcf6d952d90ac6875bc14"
+hash = "01138d27666b0d5fd53e599d1def3b2142e72d804cc1795d9b56fb36dc3ee933"
 
 [[files]]
 file = "kubejs/server_scripts/magic/malum.js"
@@ -5778,7 +5778,7 @@ hash = "d2c0eb28519420e84e3146e327a35cb645c282dfffe7f9a069361574f90cb654"
 
 [[files]]
 file = "kubejs/server_scripts/tech/bossDropDuplication.js"
-hash = "92ccfe0271ccccf10d736b69935f2c0ce500a1666d937f65142511ac3b0586d7"
+hash = "6259d39204d9c743adfce93b03ef9d0ab5b50901b10c4b8d06e13ebe07ffe41e"
 
 [[files]]
 file = "kubejs/server_scripts/tech/cbc.js"
@@ -5914,7 +5914,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "bb972a6a815da34f69cd46d6ed0f827832aa654fe3f3682aba9b52783851cfdd"
+hash = "d1b184f2c7e83ccc22144eb49d2aa95132801cbe4590fc1cb8f322955c363ca9"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -5957,8 +5957,12 @@ file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
 hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/magic/_icbgCoreLoaders.js"
+hash = "979d5e1f2b0295739d716713425a450ffdb4eec98652685f9a028bf5349ed381"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
-hash = "ab1ee00001490810e383d1b8b328f323d85cc24e46a27ec21d2a9d85180b0d64"
+hash = "ebb3d328260fe6427cfb69fade4e3b9f3d6b1bc784d9b650d07d3b0cde4015ab"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -5966,11 +5970,11 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "b5bf01eeb844566652161d0f1ef32e28f976970cc5872f9e49bbefd570aeb2e9"
+hash = "d298bdcc25543617b1c62cb74669b324077b2cd461364284868545af65d85c56"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "b0a732b2a670c71c7de08e87f5eb5e599c8d36f3f85b1b2927051558af5ada09"
+hash = "aaf34595de849e5e000c36172943eda2f66fede835a842770e95c400813999ce"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
@@ -6857,6 +6861,10 @@ metafile = true
 [[files]]
 file = "mods/hexerei-0.4.2.3.jar"
 hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
+
+[[files]]
+file = "mods/icbg-core-1.20.1-1.0.0.jar"
+hash = "33234f06e15c8d3113e93e21aac76e5c938ce55e175e26ab02ff3beadbf01d80"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"

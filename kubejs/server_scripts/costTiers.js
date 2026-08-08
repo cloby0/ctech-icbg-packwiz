@@ -1,6 +1,14 @@
-// priority: 10
+// priority: -1000000
 // Source cost per magic tier, GTValues-style. Server scripts share one scope, so these tables are
 // visible in every server script. Declare them nowhere else.
+
+// icbg_core capability loaders. Redeclaring these per-file crashed startup_scripts on load
+// (const IcbgPartAbilities in 3 files, const ManaCap in 2, all top-level and sharing scope) --
+// server_scripts had the same bug waiting (ManaCap top-level in both manaPondRecipes.js and
+// runicForgeRecipes.js). One canonical global here, referenced bare everywhere else, same as
+// ManaPool/RunicAltar/Agglomeration below.
+global.ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
+global.LpCap = Java.loadClass('com.icbg.core.recipe.lp.LpRecipeCapability').CAP
 
 // Tier order is Hobbyist -> ... -> Sage -> PROPHET -> ASCENDANT. Ascendant consumes Prophet's
 // outputs (ascendant.js builds from draconic_sanguinary/sanctum/dracontine_codex/

@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
-
     // Magic superconductor ladder: charge the tier's signature material with redstone into a
     // conduit dust, then fuse the conduit with a real GT-tree superconductor compound of the
     // same voltage tier (see gtceuMaterialRegistry.js for the full design note).

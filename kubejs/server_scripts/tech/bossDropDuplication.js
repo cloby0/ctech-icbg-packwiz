@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
-
     event.recipes.gtceu.chemical_reactor('ctech:ignitium_dissolution')
         .itemInputs(
             '1x cataclysm:ignitium_ingot',

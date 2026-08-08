@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    const ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
-
     ;['poseidite', 'totemic_gold', 'sculkium', 'shulkerate', 'eternium'].forEach(m =>
         event.remove({ output: `l2complements:${m}_ingot` }))
 
