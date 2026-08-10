@@ -5962,7 +5962,7 @@ hash = "6d0c49bc3510a801c33c045b69353bfa543fb6beafb0fac1f5b748ff6dac2663"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
-hash = "eef583149ac31a866e5921c56296f004dae4f1e193639514439f985b46f4f397"
+hash = "d6d7b6135bd053e14f3afe5182025a927fb4097c47d7222faa3bd17ae51a1aac"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -5970,11 +5970,11 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "3875a24b3d91a9ea806f5b12d3954cc3585e96c522379a9f666b4e0d0ae2b046"
+hash = "0efb936420dfb7248cb9736f369aa80bcc92f1f6e13263555da9042c095a6cc4"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "3fc96cc211a810ddbfc196e2a5c0985684f55eea6b28e7c081222b051da3595d"
+hash = "33869fa64cabc97d0cc1bf566217cd7e51ca9ddee7673a40be5a6cf7f49a5986"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"

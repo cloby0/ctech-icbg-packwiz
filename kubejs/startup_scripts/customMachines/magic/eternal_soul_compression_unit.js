@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("c", Predicates.blocks("occultism:otherstone")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.LP_INPUT)))
+                .or(Predicates.abilities(Java.loadClass('com.icbg.core.registry.IcbgPartAbilities').LP_INPUT)))
             .where("g", Predicates.blocks("occultism:golden_sacrificial_bowl"))
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where("M", Predicates.abilities(PartAbility.MAINTENANCE))

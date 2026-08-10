@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("c", Predicates.blocks("kubejs:mana_livingrock_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_INPUT)))
+                .or(Predicates.abilities(Java.loadClass('com.icbg.core.registry.IcbgPartAbilities').MANA_INPUT)))
             .where("x", Predicates.any())
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
