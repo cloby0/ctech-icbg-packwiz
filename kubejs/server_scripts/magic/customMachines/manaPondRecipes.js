@@ -128,27 +128,27 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('automated_mana_pond_controller')
         .itemInputs(
-            '4x gtceu:manaplatinite_plate',
-            '1x gtceu:manaplatinite_frame',
+            '4x gtceu:verdantium_plate',
+            '1x gtceu:verdantium_frame',
             '1x botania:mana_pool',
-            '1x gtceu:iv_electric_pump',
-            '1x gtceu:iv_sensor',
-            '1x #gtceu:circuits/iv'
+            '1x gtceu:mv_electric_pump',
+            '1x gtceu:mv_sensor',
+            '1x #gtceu:circuits/mv'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x gtceu:automated_mana_pond')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.assembler('mana_livingrock_casing_assembly')
         .itemInputs(
-            '4x gtceu:manaplatinite_plate',
-            '4x gtceu:manaplatinite_rod',
+            '4x gtceu:verdantium_plate',
+            '4x gtceu:verdantium_rod',
             '1x botania:livingrock_bricks',
-            '1x #gtceu:circuits/iv'
+            '1x #gtceu:circuits/mv'
         )
         .inputFluids(Fluid.of('gtceu:lubricant', 50))
         .itemOutputs('8x kubejs:mana_livingrock_casing')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.MV])
 })

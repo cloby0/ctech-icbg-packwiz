@@ -205,28 +205,28 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('runic_forge_controller')
         .itemInputs(
-            '4x gtceu:terra_iridite_plate',
-            '1x gtceu:terra_iridite_frame',
+            '4x gtceu:elenbarite_plate',
+            '1x gtceu:elenbarite_frame',
             '1x botania:runic_altar',
-            '1x gtceu:luv_electric_pump',
-            '1x gtceu:luv_sensor',
-            '1x #gtceu:circuits/luv'
+            '1x gtceu:hv_electric_pump',
+            '1x gtceu:hv_sensor',
+            '1x #gtceu:circuits/hv'
         )
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
         .itemOutputs('1x gtceu:runic_forge')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.assembler('runic_forge_casing_assembly')
         .itemInputs(
-            '4x gtceu:terra_iridite_plate',
-            '4x gtceu:terra_iridite_rod',
+            '4x gtceu:elenbarite_plate',
+            '4x gtceu:elenbarite_rod',
             '1x botania:livingrock_bricks',
-            '1x #gtceu:circuits/luv'
+            '1x #gtceu:circuits/hv'
         )
         .inputFluids(Fluid.of('gtceu:lubricant', 50))
         .itemOutputs('8x kubejs:runic_forge_casing')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.HV])
 
 })

@@ -982,7 +982,7 @@ hash = "4c83648d21517eac4135900dc6f151ad1fab0eb323cbd7bdc22dfbce89700e4d"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "74c6f9cf292b7254f87ba18bbb92a36e822aaf01870e957b5a40d1a5f737ced7"
+hash = "626183fb59d58189796646b601fc093a3e9b92e49f7d4aa17949678effc8e5e5"
 
 [[files]]
 file = "kubejs/assets/gtceu/textures/block/casings/coils/machine_coil_awakened_draconium.png"
@@ -5630,7 +5630,7 @@ hash = "4c3081264bec544755704594f631552721a6d2b9cff4a6c1f08dc82f620cc6f5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/manaPondRecipes.js"
-hash = "47a60d88845b90f218eb2666e34482a8056dfb7ba4285836ef405201d87017f9"
+hash = "0de14dec5a4a6ed48089b285764411cf943813fb92b05bc7c3e773eba32869b1"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/mnaArcaneFurnaceRecipes.js"
@@ -5654,7 +5654,7 @@ hash = "81e0fb871b39ec36c0466e5656847d77bdb3d358be6c93c8786c266915e39237"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "2242735cc745a1ee08e81c8de69a1097913689d4e2f9d67ab1a37cad4080ea56"
+hash = "3c70964cb624db75dc62962ca4c6347ec793d93d39ae1c974e8dcd874b639f5a"
 
 [[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
@@ -5914,7 +5914,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "2273de584270b61d5ac3346d48d060d36d61cdaeb977aeb23b59e62ef9f3d1ed"
+hash = "57f1e00838b5b4b2df27667c532ece211169ee11855c92889745f58d14113a0a"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -6022,7 +6022,7 @@ hash = "cd9adccdbbfff27a26784bad3ae9db4c352a9f3d46356231830f132a6463ce35"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceuMaterialRegistry.js"
-hash = "d25d39e700c02a5c46e0b671b3940dc47a88153009ffc973d163078603187699"
+hash = "1c227706050e861717b3c7ef37918198790ea71063e050664ff0941eef1727ad"
 
 [[files]]
 file = "kubejs/startup_scripts/gunCraftingComponents.js"
@@ -6864,7 +6864,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-core-1.20.1-1.0.0.jar"
-hash = "33234f06e15c8d3113e93e21aac76e5c938ce55e175e26ab02ff3beadbf01d80"
+hash = "59e1ccf25558923345f31fa4b0f69919bd8af3001ecee9066a42d57bb454f268"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"

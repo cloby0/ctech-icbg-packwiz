@@ -70,12 +70,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.mixer('terra_iridite_dust_mix')
-        .itemInputs('2x gtceu:terrasteel_dust', '1x gtceu:iridium_dust')
-        .itemOutputs('3x gtceu:terra_iridite_dust')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LuV])
-
     event.recipes.gtceu.mixer('chimerite_conduit_dust_mix')
         .itemInputs('2x gtceu:starforged_chimerite_dust', '1x minecraft:redstone')
         .itemOutputs('3x gtceu:chimerite_conduit_dust')
@@ -123,12 +117,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('3x gtceu:ambrotungstite_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.mixer('manaplatinite_dust_mix')
-        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:platinum_dust')
-        .itemOutputs('3x gtceu:manaplatinite_dust')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
 
     // TODO(liquid-mana-loop): consumes icbg_core:liquid_mana as a fluid input, which
     // ManaFluidRecipeGuard flags as closing the mana loop (Liquiflora is supposed to be the fluid's
@@ -185,14 +173,6 @@ ServerEvents.recipes(event => {
         .chancedOutput('kubejs:mineral_flux_crystal', 3000, 0)
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.chemical_reactor('manaplatinite_with_ichor')
-        .itemInputs('2x gtceu:manasteel_dust', '1x gtceu:platinum_dust')
-        .inputFluids(Fluid.of('gtceu:mineral_ichor', 500))
-        .itemOutputs('3x gtceu:manaplatinite_dust')
-        .chancedOutput('kubejs:mineral_flux_crystal', 3000, 0)
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.chemical_reactor('mineral_flux_crystal_to_ichor')
         .itemInputs('1x kubejs:mineral_flux_crystal')

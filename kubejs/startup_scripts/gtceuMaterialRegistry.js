@@ -811,7 +811,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(1800, "low", GTValues.VA[GTValues.MV], 1000)
         .components(c('2x terrasteel_conduit'), c('1x vanadium'), c('1x gallium'))
         .cableProperties(GTValues.VA[GTValues.MV], 1, 0, true)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
 
     event.create('elenbarite')
         .ingot()
@@ -822,7 +827,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(2700, "low", GTValues.VA[GTValues.HV], 1200)
         .components(c('2x elementium_conduit'), c('1x mercury_barium_calcium_cuprate'))
         .cableProperties(GTValues.VA[GTValues.HV], 2, 0, true)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
 
     event.create('gaiobium')
         .ingot()
@@ -907,36 +917,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.SHINY)
         .blastTemp(3200, "mid", GTValues.VA[GTValues.HV], 1300)
         .components(c('1x holy_silver'), c('2x tungsten'))
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_FRAME
-        )
-
-    event.create('manaplatinite')
-        .ingot()
-        .fluid()
-        .color(0xC8D8E8)
-        .secondaryColor(0x7890A8)
-        .iconSet(GTMaterialIconSet.SHINY)
-        .blastTemp(4200, "mid", GTValues.VA[GTValues.IV], 1500)
-        .components(c('2x manasteel'), c('1x platinum'))
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_FRAME
-        )
-
-    event.create('terra_iridite')
-        .ingot()
-        .fluid()
-        .color(0x6EC4A0)
-        .secondaryColor(0x3A7862)
-        .iconSet(GTMaterialIconSet.SHINY)
-        .blastTemp(5200, "high", GTValues.VA[GTValues.LuV], 1600)
-        .components(c('2x terrasteel'), c('1x iridium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
