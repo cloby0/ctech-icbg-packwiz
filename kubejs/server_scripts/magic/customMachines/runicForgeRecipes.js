@@ -12,10 +12,6 @@ function manaToTicks(mana) {
     return Math.min(1200, Math.max(100, Math.round(mana / 100)))
 }
 
-function agglomerationTicks(mana) {
-    return Math.min(2400, Math.max(600, Math.round(mana / 2500)))
-}
-
 function resolveRunicIngredient(ing, debugLabel) {
     if (Array.isArray(ing)) {
         for (let i = 0; i < ing.length; i++) {
@@ -86,40 +82,7 @@ function addRunicAltarRecipe(event, crecipe) {
     itemInputs.forEach(input => gt.itemInputs(input))
 }
 
-function addTerraPlateRecipe(event, crecipe) {
-    const index = _nextRunicIndex++
-    const result = crecipe.result
-    const outputId = typeof result === 'string' ? result : result.item
-    const outputCount = result.count || 1
-    const mana = crecipe.mana || 0
-    const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
-    const dur = agglomerationTicks(mana)
-
-    event.custom({
-        type: 'botania:terra_plate',
-        ingredients: crecipe.ingredients,
-        mana: mana,
-        result: result
-    }).id('kubejs:terra_plate_' + safeId + '_' + index)
-
-    const itemInputs = []
-    for (let i = 0; i < crecipe.ingredients.length; i++) {
-        let resolved = resolveRunicIngredient(crecipe.ingredients[i], outputId + '[' + i + ']')
-        if (resolved) itemInputs.push(resolved)
-    }
-
-    const gt = event.recipes.gtceu.terra_agglomeration('terra_agglomeration/' + safeId + '_' + index)
-        .itemOutputs(outputCount + 'x ' + outputId)
-        .duration(dur)
-        .perTick(true)
-        .input(global.ManaCap, Math.round(mana / dur))
-        .perTick(false)
-        .EUt(euForMana(mana, Agglomeration))
-    itemInputs.forEach(input => gt.itemInputs(input))
-}
-
 global.addRunicAltarRecipe = addRunicAltarRecipe
-global.addTerraPlateRecipe = addTerraPlateRecipe
 
 ServerEvents.recipes(event => {
 
@@ -159,46 +122,6 @@ ServerEvents.recipes(event => {
             .input(global.ManaCap, Math.round(mana / dur))
             .perTick(false)
             .EUt(euForMana(mana, RunicAltar))
-
-        itemInputs.forEach(input => gt.itemInputs(input))
-    })
-
-    event.forEachRecipe({ type: 'botania:terra_plate' }, recipe => {
-        const index = _nextRunicIndex++
-        const crecipe = JSON.parse(recipe.json.toString())
-
-        const result = crecipe.result
-        if (!result) { console.warn('[runic_forge] skipping terra_plate entry ' + index + ': no result'); return }
-        const outputId = typeof result === 'string' ? result : result.item
-        if (!outputId) { console.warn('[runic_forge] skipping terra_plate entry ' + index + ': no result item'); return }
-        if (!$ForgeRegistries.ITEMS.getValue(outputId)) {
-            console.warn('[runic_forge] skipping terra_plate entry ' + index + ': non-existent output \'' + outputId + '\'')
-            return
-        }
-        const outputCount = result.count || 1
-        const mana = crecipe.mana || 0
-
-        const ingredients = crecipe.ingredients || []
-        const itemInputs = []
-        let skip = false
-        for (let i = 0; i < ingredients.length; i++) {
-            let resolved = resolveRunicIngredient(ingredients[i], outputId + '[' + i + ']')
-            if (!resolved) { skip = true; break }
-            itemInputs.push(resolved)
-        }
-        if (skip || itemInputs.length === 0) return
-
-        const safeId = stripNamespace(outputId).replace(/[^a-z0-9_]/g, '_').toLowerCase()
-        console.log('[runic_forge] terra_agglomeration cloning ' + outputId + ' x' + outputCount + ' mana=' + mana)
-        const dur = agglomerationTicks(mana)
-
-        const gt = event.recipes.gtceu.terra_agglomeration(`terra_agglomeration/clone_${safeId}_${index}`)
-            .itemOutputs(`${outputCount}x ${outputId}`)
-            .duration(dur)
-            .perTick(true)
-            .input(global.ManaCap, Math.round(mana / dur))
-            .perTick(false)
-            .EUt(euForMana(mana, Agglomeration))
 
         itemInputs.forEach(input => gt.itemInputs(input))
     })

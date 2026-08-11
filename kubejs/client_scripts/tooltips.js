@@ -9,7 +9,7 @@ ItemEvents.tooltip((event) => {
   event.add("kubejs:argentware_processor_supercomputer", "§cUHV-Tier Circuit");
   event.add("kubejs:argentware_processor_mainframe", [
     "§cUEV-Tier Circuit",
-    "§7Wetware laced with argent will -- demons power it, whether they meant to or not",
+    "§7Maxwell's little friend",
   ]);
 
   event.add("kubejs:wraithware_processor_unbound", "§dUV-Tier Circuit (pre-ritual)");
@@ -18,11 +18,11 @@ ItemEvents.tooltip((event) => {
   event.add("kubejs:wraithware_processor_supercomputer", "§dUEV-Tier Circuit");
   event.add("kubejs:wraithware_processor_mainframe", [
     "§dUIV-Tier Circuit",
-    "§7An afrit bound to move numbers for you -- Maxwell's demon, minus the physics violation",
+    "§7Spirit box (?)",
   ]);
 
   event.add("gtceu:determinism_engine", [
-    "§7\"Nothing would be uncertain\" -- Laplace's demon, if it had ever met a chance-based drop table",
+    "§7Issue one of how to turn thought experiments into transcendental science"
   ]);
 
   event.add("kubejs:egoware_processor", "§aUEV-Tier Circuit");
@@ -153,9 +153,4 @@ ItemEvents.tooltip((event) => {
       event.add(`kubejs:${prefix}_${suffix}`, `${label}-Tier Component`);
     }
   }
-
-  event.add("draconicevolution:draconium_ingot", ["§5UV-Tier Material"]);
-  event.add("draconicevolution:awakened_draconium_ingot", [
-    "§6UHV-Tier Material",
-  ]);
 });

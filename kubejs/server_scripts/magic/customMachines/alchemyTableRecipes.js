@@ -52,6 +52,34 @@ function normalizeAlchemyInput(i) {
     return i
 }
 
+// upgradeLevel (bound Blood Orb tier, 0-4 = altar T1-T5) -> voltage. Follows the pack's own
+// altar-tier-to-magic-tier map (progression.md): T1 Hobbyist, ..., T5 Arcanist/Sage.
+let _thinktankVoltageByUpgradeLevel = { 0: 'LV', 1: 'MV', 2: 'HV', 3: 'EV', 4: 'IV' }
+
+// Emits the optional GT route alongside the real Alchemy Table recipe. Never replaces it -- if
+// anything here bails, the bloodmagic:alchemytable recipe above still stands on its own.
+function _mirrorToThinktank(event, outputId, outputCount, inputItems, syphon, ticks, upgradeLevel, index) {
+    if (inputItems.length > 6) {
+        console.warn(`[alchemical_thinktank] ${outputId}: ${inputItems.length} inputs exceeds 6, skipping GT mirror`)
+        return
+    }
+    let tierName = _thinktankVoltageByUpgradeLevel[upgradeLevel]
+    if (tierName === undefined) {
+        console.warn(`[alchemical_thinktank] ${outputId}: no voltage mapped for upgradeLevel ${upgradeLevel}, skipping GT mirror`)
+        return
+    }
+    let lpRate = Math.max(1, Math.round(syphon / ticks))
+
+    let r = event.recipes.gtceu.alchemical_thinktank(`alchemical_thinktank/${stripNamespace(outputId)}_${index}`)
+        .itemOutputs(outputCount > 1 ? `${outputCount}x ${outputId}` : `1x ${outputId}`)
+        .duration(ticks)
+        .perTick(true)
+        .input(global.LpCap, lpRate)
+        .perTick(false)
+        .EUt(GTValues.VA[GTValues[tierName]])
+    inputItems.forEach(i => r.itemInputs(i))
+}
+
 // crecipe: { output: 'item:id' | { item, count }, input: ['item:a', '#tag:b', ...],
 //            syphon: LP cost, ticks: processing time, upgradeLevel: altar tier 0-4 (default 0) }
 function addAlchemyTableRecipe(event, crecipe) {
@@ -96,6 +124,25 @@ function addAlchemyTableRecipe(event, crecipe) {
         .ticks(ticks)
         .upgradeLevel(upgradeLevel)
         .id(`kubejs:alchemytable_${stripNamespace(outputId)}_${index}`)
+
+    _mirrorToThinktank(event, outputId, outputCount, inputItems, syphon, ticks, upgradeLevel, index)
 }
 
 global.addAlchemyTableRecipe = addAlchemyTableRecipe
+
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.assembler('alchemical_thinktank_controller')
+        .itemInputs(
+            '4x gtceu:invar_plate',
+            '2x gtceu:invar_frame',
+            '1x bloodmagic:masterritualstone',
+            '1x create:mechanical_arm',
+            '1x gtceu:hv_electric_pump',
+            '1x gtceu:hv_sensor',
+            '1x #gtceu:circuits/hv'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('1x gtceu:alchemical_thinktank')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+})

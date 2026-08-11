@@ -2330,7 +2330,7 @@ hash = "de8687d41e45aac48ea1cf3fedaa6e40bc380c083d12c14ed08f5a05be7bfeb5"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "7fc2942b848692411bd4c2e139c4af8143c0dc156cbc5c8257ed115dfe1bb8ea"
+hash = "6dbe38c43b1f93d0b0d9d92c8018550159f0bf2b21bd010893c3f3d8d8f804e5"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -5594,7 +5594,11 @@ hash = "df6d19402d466d99d4e5a13c16c50671719c1b2d6ea9a040b831bdb031603e99"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/alchemyTableRecipes.js"
-hash = "8ae70940202cff1bbd2f3fb776af99e36f5e32f6abc84fbef80c59ed2a8f51e0"
+hash = "34995817e96290327b56751f6b7160f6d748716141706e5e6850fa5ee8ec2fac"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/alfheimPostOfficeRecipes.js"
+hash = "35a33ca95eccb5e252d3a37f1088fb3c07cf76acfe00804526f4e7b4d8c82a61"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/bloodMagicAltarRecipes.js"
@@ -5607,6 +5611,10 @@ hash = "2d7eea5d09424bbef14cb003181d0817129cc2d67f1eef810f5f92b9cec3b61f"
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/bloodMagicArrayRecipes.js"
 hash = "8be25afa6403701f4ab1e0b38991c6866ca9520ed916cf59324dcc350bd5b3c2"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/bloodMagicMeteorRecipes.js"
+hash = "f10bf21618fe7c8c82142e479d1d332d4b06b4fe6aacdd546877efe128a8b2b4"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/bloodMagicSoulForgeRecipes.js"
@@ -5654,7 +5662,11 @@ hash = "88b84ec1bba0dfc041226631b804221b3f7f5f0a9ae8e55081cb9a6542b7ebc9"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/runicForgeRecipes.js"
-hash = "3c70964cb624db75dc62962ca4c6347ec793d93d39ae1c974e8dcd874b639f5a"
+hash = "25fa972edc897a542f8bdeda74879eac2e4960faa61bf9bbc5ba2e825f6466b0"
+
+[[files]]
+file = "kubejs/server_scripts/magic/customMachines/terraReliquaryRecipes.js"
+hash = "760b3f2df123038b3ca66a02d0fc04b07bc8754090596e8ecc3380f151c84a7b"
 
 [[files]]
 file = "kubejs/server_scripts/magic/enigmaticLegacy.js"
@@ -5961,6 +5973,14 @@ file = "kubejs/startup_scripts/customMachines/magic/_icbgCoreLoaders.js"
 hash = "6d0c49bc3510a801c33c045b69353bfa543fb6beafb0fac1f5b748ff6dac2663"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/magic/alchemical_thinktank.js"
+hash = "1384b645c17fc50a9c989ec3b741a602600d9a352c72a35b2866aa635a3ed8a7"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/alfheim_post_office.js"
+hash = "f783a115e1e4f800404c916dae312fa919c15bdbb5c196c72aea8e10ca1dbb97"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
 hash = "d6d7b6135bd053e14f3afe5182025a927fb4097c47d7222faa3bd17ae51a1aac"
 
@@ -5970,11 +5990,19 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "0efb936420dfb7248cb9736f369aa80bcc92f1f6e13263555da9042c095a6cc4"
+hash = "03cac1132c76fed82b1187e99c175f1510cdbacfbeccef3cb7ead7a7b3c89163"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/meteor_chamber.js"
+hash = "9fb629de5cb431da64e75a0d053a5b98ea4f79f4eb72cc42707c8f54bf28d7e8"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "33869fa64cabc97d0cc1bf566217cd7e51ca9ddee7673a40be5a6cf7f49a5986"
+hash = "ab1164793061ab3c9f9a37a5da794b1f7c4d86fb7ac006b5bd8b043aae482c01"
+
+[[files]]
+file = "kubejs/startup_scripts/customMachines/magic/terra_reliquary.js"
+hash = "ac57640cc3a86fc49dd9e35a50023aaadb4c627a1721bd3788f9e46314a0f56a"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
