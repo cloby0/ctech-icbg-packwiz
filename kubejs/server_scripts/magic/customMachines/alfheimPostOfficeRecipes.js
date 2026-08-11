@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         let outputs = rawOutputs.map((e, i) => _resolvePostOfficeEntry(e, `${index} output[${i}]`))
         if (inputs.some(e => e === null) || outputs.some(e => e === null)) return
 
-        let label = stripNamespace(recipe.id ? recipe.id.toString() : `trade_${index}`).replace(/[^a-z0-9_]/gi, '_')
+        let label = stripNamespace(recipe.getId() ? recipe.getId() : `trade_${index}`).replace(/[^a-z0-9_]/gi, '_')
 
         let gt = event.recipes.gtceu.alfheim_post_office(`alfheim_post_office/${label}`)
             .duration(_postOfficeDuration)

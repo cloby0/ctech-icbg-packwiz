@@ -5598,7 +5598,7 @@ hash = "34995817e96290327b56751f6b7160f6d748716141706e5e6850fa5ee8ec2fac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/alfheimPostOfficeRecipes.js"
-hash = "35a33ca95eccb5e252d3a37f1088fb3c07cf76acfe00804526f4e7b4d8c82a61"
+hash = "3d6c2fc56e62bb85a72353d6002a3a06439389dfd961559362b7f177fe4e1af5"
 
 [[files]]
 file = "kubejs/server_scripts/magic/customMachines/bloodMagicAltarRecipes.js"
