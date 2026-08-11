@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a void tear is a hole punched into space -- channels matter through it.
     addAlchemyTableRecipe(event, {
         output: 'reliquary:void_tear',
-        input: ['#forge:gems/mana', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
+        input: ['botania:mana_pearl', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'minecraft:crying_obsidian', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
         syphon: 2 * LP.INITIATE,
         upgradeLevel: 2
     });
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         {
             A: 'reliquary:fortune_coin',
             B: 'gtceu:wrought_iron_plate',
-            C: '#forge:gems/mana',
+            C: 'botania:mana_pearl',
             H: '#forge:tools/hammers',
             F: '#forge:tools/files',
             W: 'kubejs:elementium_ward_lattice',
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
     // Channeling Vessel: a fishing rod pulls things across distance -- channeling theme.
     addAlchemyTableRecipe(event, {
         output: 'reliquary:rod_of_lyssa',
-        input: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', '#forge:gems/mana', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
+        input: ['minecraft:fishing_rod', 'irons_spellbooks:nature_rune', 'botania:mana_pearl', 'kubejs:elementium_sigil', 'kubejs:elementium_channeling_vessel'],
         syphon: 2 * LP.INITIATE,
         upgradeLevel: 2
     })
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:long_iron_rod',
             B: 'irons_spellbooks:evocation_rune',
             C: 'constructionwand:diamond_wand',
-            D: '#forge:gems/mana',
+            D: 'botania:mana_pearl',
             F: '#forge:tools/files',
             M: 'kubejs:elementium_motive_core',
             Y: 'kubejs:elementium_sigil'
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
 
     addAlchemyTableRecipe(event, {
         output: 'magnumtorch:diamond_magnum_torch',
-        input: ['minecraft:diamond', 'gtceu:holy_silver_plate', '#forge:gems/mana', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
+        input: ['minecraft:diamond', 'gtceu:holy_silver_plate', 'botania:mana_pearl', 'kubejs:elementium_sigil', 'gtceu:ambrosium_dust', 'kubejs:elementium_channeling_vessel'],
         syphon: 2 * LP.INITIATE,
         upgradeLevel: 2
     })

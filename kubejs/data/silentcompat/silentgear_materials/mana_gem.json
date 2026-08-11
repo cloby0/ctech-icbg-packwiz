@@ -13,7 +13,7 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:gems/mana"
+        "item": "botania:mana_pearl"
       }
     },
     "name": {

@@ -5250,7 +5250,7 @@ hash = "e42b97e6e0c62a2054c810561805982848e9ac56174face23c7c2ce383f5afec"
 
 [[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/mana_gem.json"
-hash = "f1fea1d42a2e07a7add7987277090b4a816f496b60171e04a2f8a2911cbb72f4"
+hash = "abda5d1f71918fd4344b2e3adf9a76b4a1dd3b1439e9c42edcfc6bf96965ee6d"
 
 [[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/mana_weave.json"
@@ -5686,7 +5686,7 @@ hash = "1aad9857b50815a701e8eb7b1e5cafe19223b7c62386ab4906bd252ce05e6665"
 
 [[files]]
 file = "kubejs/server_scripts/magic/initiate.js"
-hash = "60028757654997db5a1f9723ba7aae2144f507363e124c3ca29d7b27f6edad32"
+hash = "64ee72103633997822bb9c85e08241f348ecb2f211228925fe48b7ebc7c21d50"
 
 [[files]]
 file = "kubejs/server_scripts/magic/inventoryPets.js"
