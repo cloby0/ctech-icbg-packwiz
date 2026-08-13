@@ -9,421 +9,426 @@
 	order_index: 3
 	quest_links: [
 		{
-			id: "07EFAF5ED307BC3A"
-			linked_quest: "42FDEBEBA7998889"
-			x: 0.0d
+			id: "48110B02BB9974D9"
+			linked_quest: "6D8F3BF5F97B7060"
+			x: -1.5d
 			y: 0.0d
+		}
+		{
+			id: "1256C237ADA21268"
+			linked_quest: "1EC8892670B47114"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "06ABBDCB42FEE810"
+			linked_quest: "1564C165488EB31A"
+			x: 3.0d
+			y: -3.0d
 		}
 	]
 	quests: [
-		{
-			dependencies: ["42FDEBEBA7998889"]
-			description: [
-				"the tier's signature metal. combine &2terrasteel dust&r, &6ambrosium dust&r, and a pinch of &dmagichem essentia&r for &aambrosia-touched elementite&r -- straight off terrasteel now, no altar step."
-				""
-				"three of those trade at an elven workbench for two &6elementium ingots&r."
-			]
-			icon: "botania:elementium_ingot"
-			id: "148A1F928C29D912"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "1297F59EAA057562"
-				item: "botania:elementium_ingot"
-				type: "item"
-			}]
-			title: "Elementium"
-			x: -3.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["42FDEBEBA7998889"]
-			description: [
-				"bind a &amana gem&r to three &5crying obsidian&r plus an &6elementium sigil&r and &6elementium channeling vessel&r at the eldrin altar for a &6void tear&r -- costs ender affinity power. it swallows an entire stack-type of items into one slot. also the battery for half of reliquary's staves."
-			]
-			id: "28B20F274E486CDB"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "bottomless pocket edition"
-			tasks: [{
-				id: "1B4364F2D2872F97"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
+			{
+				dependencies: ["6D8F3BF5F97B7060"]
+				description: [
+					"craft the &6elven gateway core&r (livingwood logs + terrasteel nuggets) and 2x &6natura pylon&r (mana pylon + terrasteel nuggets + ender eye). build the frame -- 8 livingwood + 3 glimmering livingwood around the core."
+					""
+					"place 2 mana pools, each with a natura pylon directly above, within 11x11x11 of the core. right-click the core with the wand of the forest -- costs a lot of mana, and the pools must stay full or the link closes."
+				]
+				icon: "botania:alfheim_portal"
+				id: "04A9E80BC6BB6126"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "a second sky within the first"
+				tasks: [{
+					item: "botania:alfheim_portal"
+					id: "3133F4378DC99E77"
+					type: "item"
+				}]
+				title: "Alfheim Portal"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["04A9E80BC6BB6126"]
+				description: [
+					"craft an &6eldritch orb&r; cast a tier-3 spell (complexity 50+); open a &6manaweave cache&r; perform a &6sanctum invocation&r (spawns a loci of power -- build your faction's circle of power around it)."
+					""
+					"&6runic enchant&r at the runic anvil; disenchant an item; transcribe a rote spell; animate an iron/gold/bone construct; craft a faction artifact; craft a t3 pylon; reach &6magic level 45&r."
+				]
+				id: "643BD75BE5175AB6"
+				subtitle: "the tier-3 checklist"
+				tasks: [{
+					id: "462EC4B7F3FCB1A9"
+					title: "Tier 3 Checklist Clear"
+					type: "checkmark"
+				}]
+				title: "MNA Tier Three"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["04A9E80BC6BB6126"]
+				description: [
+					"chimerite has no ore feature -- it drops while mining emerald ore (magic level 5+, best rate), diamond ore (level 10+), or coal ore (level 20+), and is often destroyed in the process."
+					""
+					"start banking it now. thaumaturge's whole signature line runs on it, and there's no faster source waiting for you there."
+				]
+				id: "040B933A75B4EFA0"
+				shape: "square"
+				size: 0.75d
+				subtitle: "bank it now, spend it at thaumaturge"
+				tasks: [{
+					item: "mna:chimerite_gem"
+					id: "5D311F85B867CE2C"
+					count: 8L
+					type: "item"
+				}]
+				title: "Chimerite Banking"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["04A9E80BC6BB6126"]
+				description: [
+					"kill valkyries in the deep aether for &6victory medals&r. they're also the proof of strength required to fight the valkyrie queen, and the gate item on this tier's afrit crusher until terrasteel existed."
+				]
+				id: "0AB3A7BDA8B09141"
+				subtitle: "proof you can take a hit"
+				tasks: [{
+					item: "aether:victory_medal"
+					id: "524725E10C639C10"
+					count: 4L
+					type: "item"
+				}]
+				title: "Valkyrie Medals"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6D8F3BF5F97B7060"]
+				description: [
+					"28 runes and corner pillars capped with glowstone unlocks &6rituals&r -- master ritual stone, weak activation crystal, ritual diviner. consider the &6well of suffering&r for passive LP."
+					""
+					"the large bloodstone brick (t4 pillar cap, one tier ahead) now needs &6elementium dust&r -- this tier's own tax on the altar's own structure."
+				]
+				id: "4FF1957ABF96997D"
+				shape: "rsquare"
+				subtitle: "rituals open up"
+				tasks: [{
+					item: "bloodmagic:largebloodstonebrick"
+					id: "6159A4B545E156C3"
+					count: 4L
+					type: "item"
+				}]
+				title: "Blood Altar Tier Three"
+				x: 0.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["1EC8892670B47114"]
+				description: [
+					"spirit altar: sanctified ambrosium bloom + 2x ambrosium dust, sealed with 2x sacred + 1 aerial spirit. feeds holy silver, divine pearl, and this tier's own wizard brain."
+				]
+				id: "2DCED1BD6A620CDE"
+				subtitle: "journeyman's bloom, finished here"
+				tasks: [{
+					item: "kubejs:sacred_ambrosium_shard"
+					id: "501E4B22A0B4E251"
+					count: 4L
+					type: "item"
+				}]
+				title: "Sacred Ambrosium Shard"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["2DCED1BD6A620CDE"]
+				description: [
+					"spirit infusion: ender pearl + a sacred ambrosium shard, sealed with 2x sacred + 1 arcane spirit."
+				]
+				id: "62B9B4DD81320D1C"
+				subtitle: "a pearl, sanctified"
+				tasks: [{
+					item: "irons_spellbooks:divine_pearl"
+					id: "2DC6F382004125B1"
+					type: "item"
+				}]
+				title: "Divine Pearl"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["62B9B4DD81320D1C"]
+				description: [
+					"manaweaving t2 (triangle/slash): silver dust + 2x sacred ambrosium shard + 2x ambrosium dust -- &6holy silver blend&r. weave again (triangle/backslash) with a &6mercy cross&r and malum's &2alchemical impetus&r -- ties this line to the initiate-tier spirit crucible -- for &6holy silver dust&r."
+					""
+					"weave a third time (triangle/circle) with fire essences for the ingot. gt's own smelting recipe is removed -- manaweaving is the only route."
+				]
+				id: "4BF7F8C2A0D7B010"
+				subtitle: "a parallel line, not the anchor"
+				tasks: [{
+					item: "gtceu:holy_silver_ingot"
+					id: "32BC0F3F0DFB7AF5"
+					count: 2L
+					type: "item"
+				}]
+				title: "Holy Silver"
+				x: 6.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["0AB3A7BDA8B09141"]
+				description: [
+					"manaweaving t2 (diamond/backslash): skyjade + 2x victory medal + air + water essences -- &6skyforged dust&r. furnace-smelts to the ingot; GT autogens the rest of the forms."
+				]
+				id: "14EF5F369AA68F0A"
+				subtitle: "the aether/valkyrie alt line"
+				tasks: [{
+					item: "gtceu:skyforged_ingot"
+					id: "4F8A03146A419B17"
+					type: "item"
+				}]
+				title: "Skyforged"
+				x: 6.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["14EF5F369AA68F0A", "components"]
+				description: [
+					"the full 11-piece set (pickaxe, axe, shovel, hoe, lance, helmet, chestplate, leggings, boots, gloves, cape), all built from skyforged plate/rod + victory medals. only the &6chestplate&r carries the elementium sigil -- tools take a motive core, armor a ward lattice, gloves a channeling vessel, the cape a motive core."
+					""
+					"craft the chestplate to clear this."
+				]
+				id: "07184CA54CDEFD12"
+				shape: "square"
+				size: 0.75d
+				subtitle: "the combat endpoint"
+				tasks: [{
+					item: "aether:valkyrie_chestplate"
+					id: "157F6F91C8902A7D"
+					type: "item"
+				}]
+				title: "Valkyrie Gear"
+				x: 7.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["2DCED1BD6A620CDE", "1564C165488EB31A"]
+				description: [
+					"hand-combine ambrosium dust + terrasteel dust + &dmagichem essentia_precious&r -- &6ambrosia-touched elementite&r. the elves trade 3 of them for 2x &6elementium ingot&r, at a working alfheim portal."
+					""
+					"no gt machine anywhere in this chain. shortcut waits at sorcerer (albedo wisdom stone, batch 3, no raw items)."
+				]
+				icon: "botania:elementium_ingot"
+				id: "0D8C74BBA6A28EBF"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "botania:elementium_ingot"
+					id: "2DA4C47AE4F25DF7"
+					count: 2L
+					type: "item"
+				}]
+				title: "Elementium"
+				x: 4.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF"]
+				description: [
+					"alchemy table, upgradeLevel 2: charged amethyst + 2x holy silver rod + elementium ingot + glowstone -- the first of hex casting's two keystones. every hex item in the game reroutes through this and the matrix below now; nothing in hex needs alchemist any more."
+				]
+				id: "2501B90CE123186C"
+				subtitle: "hex casting's whole tree gates on 2 items"
+				tasks: [{
+					item: "kubejs:hexed_amethyst_core"
+					id: "562613C5FCF23762"
+					type: "item"
+				}]
+				title: "Hexed Amethyst Core"
+				x: 6.0d
+				y: -1.5d
+			}
+			{
+				dependencies: ["2501B90CE123186C"]
+				description: [
+					"alchemy table, upgradeLevel 2: amethyst core + holy silver plate + 2x mana pearl + 2x sacred ambrosium shard. everything below -- all 14 staves, lens, thought knot, slate, cypher, 4 scroll types, abacus, akashic bookshelf/connector, focus, spellbook, artifact, trinket -- reroutes through these two items."
+				]
+				id: "720A7B6C6EAEFD86"
+				subtitle: "the second keystone"
+				tasks: [{
+					item: "kubejs:hexed_mana_matrix"
+					id: "426FF1ABE26E1E83"
+					type: "item"
+				}]
+				title: "Hexed Mana Matrix"
+				x: 7.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["720A7B6C6EAEFD86", "components", "wizard_brain"]
+				description: [
+					"with both keystones in hand, craft any staff (14 wood variants), the &6focus&r (manaweaving t3, split_triangle/knot), the &6spellbook&r (manaweaving t3, split_triangle/square), or the &6artifact&r (alchemy table). craft any one to clear this."
+					""
+					"focus and spellbook are this tier's own core casting devices, same role hobbyist's spell books played."
+				]
+				id: "42766DFAC1B79720"
+				shape: "square"
+				size: 0.75d
+				subtitle: "the whole hex tree, one keystone deep"
+				tasks: [{
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(hexcasting:staff/oak)item(hexcasting:focus)item(hexcasting:spellbook)item(hexcasting:artifact))"
 						}
 					}
-					id: "reliquary:void_tear"
-				}
-				type: "item"
-			}]
-			title: "Void Tear"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["28B20F274E486CDB"]
-			description: [
-				"the &6sojourner's staff&r eats torches and places them from range. your caves light themselves now."
-			]
-			id: "0B8AA1EB97970DB4"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "cave lighting, at range"
-			tasks: [{
-				id: "406CC399D0C22A76"
-				item: "reliquary:sojourner_staff"
-				type: "item"
-			}]
-			title: "Sojourner's Staff"
-			x: -1.5d
-			y: -3.75d
-		}
-		{
-			dependencies: ["28B20F274E486CDB"]
-			description: [
-				"the &6glacial staff&r freezes water and chills whatever it pokes. bridge water, slow mobs."
-			]
-			id: "0B3840C36E5D555F"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "cryogenics for beginners"
-			tasks: [{
-				id: "3409A9D49B6C33C2"
-				item: "reliquary:glacial_staff"
-				type: "item"
-			}]
-			title: "Glacial Staff"
-			x: -0.5d
-			y: -3.75d
-		}
-		{
-			dependencies: ["28B20F274E486CDB"]
-			description: [
-				"the &6ender staff&r throws reusable ender pearls off a &5void tear&r battery. teleport without spending pearls."
-			]
-			id: "383562436DCFD6B5"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "pearls sold separately"
-			tasks: [{
-				id: "6FA4920ADBBCB71C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [{
-								amount: 0
-								filter: {
-									Count: 1b
-									id: "minecraft:ender_pearl"
-								}
-							}]
+					id: "6891FF5B69C5C99C"
+					title: "Any Hex Casting Device"
+					type: "item"
+				}]
+				title: "Hex Casting Gear"
+				x: 9.0d
+				y: -1.5d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "components"]
+				description: [
+					"all six were eldrin altar recipes until 2026-08-04 -- the altar is mna tier-4 content and this tier is tier 3, so they moved to the alchemy table: &6void tear&r, &6shears of winter&r, &6rod of lyssa&r, and all three &6magnum torches&r (amethyst/emerald/diamond). craft any one."
+					""
+					"12,000 LP, upgradeLevel 2 -- fits the table's 6-slot cap exactly."
+				]
+				id: "54F7F06A844056EA"
+				shape: "square"
+				size: 0.75d
+				subtitle: "six crafts, one table, upgradeLevel 2"
+				tasks: [{
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(reliquary:void_tear)item(reliquary:shears_of_winter)item(reliquary:rod_of_lyssa)item(magnumtorch:diamond_magnum_torch))"
 						}
 					}
-					id: "reliquary:ender_staff"
-				}
-				type: "item"
-			}]
-			title: "Ender Staff"
-			x: 0.5d
-			y: -3.75d
-		}
-		{
-			dependencies: ["28B20F274E486CDB"]
-			description: [
-				"a diamond construction wand upgraded with &aevocation runes&r and a mana gem: the &6infinity wand&r places from your WHOLE inventory. walls happen in seconds."
-			]
-			id: "29C678486D003116"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "buildier"
-			tasks: [{
-				id: "72A0A2B720C889FA"
-				item: {
-					Count: 1
-					id: "constructionwand:infinity_wand"
-					tag: {
-						wand_options: { }
+					id: "65800EA1922D806D"
+					title: "Any Table Artifact"
+					type: "item"
+				}]
+				title: "Table Artifacts"
+				x: 9.0d
+				y: -3.0d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "components"]
+				description: [
+					"shaped grid crafts, not table recipes: &6ender staff&r (void theme), &6sojourner staff&r (scouting, uses lantern of paranoia), &6glacial staff&r (elemental force), &6hero medallion&r, &6mercy cross&r, and the &6infinity construction wand&r. craft any one."
+					""
+					"each carries an elementium sigil plus whichever component matches its theme."
+				]
+				id: "7E31299D60F4856E"
+				shape: "square"
+				size: 0.75d
+				subtitle: "combat staffs, grid-built"
+				tasks: [{
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(reliquary:ender_staff)item(reliquary:sojourner_staff)item(reliquary:glacial_staff)item(reliquary:hero_medallion)item(constructionwand:infinity_wand))"
+						}
 					}
+					id: "6ED2A25DE293BD98"
+					title: "Any Combat Staff"
+					type: "item"
+				}]
+				title: "Combat Staffs"
+				x: 7.5d
+				y: -3.0d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "4BF7F8C2A0D7B010"]
+				description: [
+					"manaweaving t2 (diamond/knot): elementium ingot + holy silver dust + a sacred ambrosium shard -- a sigil blank. spirit-infuse with 2x aerial spirit to finish it."
+				]
+				id: "18DC2FE378110301"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:elementium_sigil"
+					id: "5E17E8032743503E"
+					count: 2L
+					type: "item"
+				}]
+				title: "Elementium Sigil"
+				x: 6.0d
+				y: -3.0d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "62B9B4DD81320D1C"]
+				description: [
+					"alchemy table, upgradeLevel 2: elementium ingot + iron's spellbooks' gold spell book + a divine pearl + a sacred ambrosium shard."
+				]
+				id: "14FF5BA04FED7FD2"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:elementium_wizard_brain"
+					id: "10E25D86394BA52D"
+					type: "item"
+				}]
+				title: "Elementium Wizard Brain"
+				x: 4.5d
+				y: -3.0d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "14EF5F369AA68F0A"]
+				description: [
+					"&6motive core&r (gt arc furnace, elementium rod + a file -- 25% chance of a bonus skyforged rod), &6channeling vessel&r (the elves trade mana bottle + elementium ingot + holy silver plate for it), &6ward lattice&r (blood magic alchemy array: throw a protection rune onto a skyforged plate base)."
+				]
+				id: "72AE1B827C73373D"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:elementium_motive_core"
+					id: "0FBCBC2728805412"
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "Infinity Wand"
-			x: 1.5d
-			y: -3.75d
-		}
-		{
-			dependencies: ["42FDEBEBA7998889"]
-			hide_dependency_lines: true
-			description: [
-				"the &6rod of lyssa&r is a fishing rod for POCKETS -- cast it at a mob and steal what it's holding."
-			]
-			id: "7DB0088826AE5760"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "theft, at range"
-			tasks: [{
-				id: "3938AAFF343374B4"
-				item: "reliquary:rod_of_lyssa"
-				type: "item"
-			}]
-			title: "Rod of Lyssa"
-			x: 3.0d
-			y: -1.0d
-		}
-		{
-			description: [
-				"the &6hero medallion&r banks your XP and pays it back out on demand. enchanting, anvils, and glyph costs all draw from the same account now."
-			]
-			dependencies: ["42FDEBEBA7998889"]
-			hide_dependency_lines: true
-			id: "362A4516582710E7"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "you're (technically) a hero now"
-			tasks: [{
-				id: "2A66D7B89C12968C"
-				item: "reliquary:hero_medallion"
-				type: "item"
-			}]
-			title: "Hero Medallion"
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			description: [
-				"&dblank runes&r are the canvas for iron's spells rune crafting -- each themed rune stamps one onto a blank. stock up; every armor upgrade eats them."
-			]
-			dependencies: ["42FDEBEBA7998889"]
-			hide_dependency_lines: true
-			id: "1C404D0B2D0F0DEF"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "for spells that don't exist yet"
-			tasks: [{
-				count: 6L
-				id: "29BCE45DC3A2BCCF"
-				item: "irons_spellbooks:blank_rune"
-				type: "item"
-			}]
-			title: "Blank Runes"
-			x: 3.0d
-			y: -0.25d
-		}
-		{
-			description: [
-				"&2uncommon ink&r brews from &7common ink&r. check JEI for the recipe. the first rung of the scroll-quality ladder."
-			]
-			dependencies: ["42FDEBEBA7998889"]
-			hide_dependency_lines: true
-			id: "4E06D62D4ADB57BB"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "not quite legendary"
-			tasks: [{
-				id: "230985872D188756"
-				item: "irons_spellbooks:uncommon_ink"
-				type: "item"
-			}]
-			title: "Uncommon Ink"
-			x: 4.5d
-			y: -0.25d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			description: [
-				"the &3silver dungeon&r houses the &dvalkyrie queen&r, who drops a &adivine pearl&r on defeat."
-				""
-				"bring zanite gear. bring healing. bring patience."
-			]
-			id: "6300D75BCC09AEF1"
-			size: 0.75d
-			subtitle: "clear it out, loot it"
-			tasks: [{
-				advancement: "aether:silver_dungeon"
-				criterion: ""
-				id: "250C18732EF37828"
-				type: "advancement"
-			}]
-			title: "Silver Dungeon"
-			x: -10.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3D7B1E9C6A2F5091"]
-			description: [
-				"the &bskyforged&r line is the aether's answer to holy silver -- a fully independent alt spine. no silver required."
-				""
-				"weave &3skyjade&r with two &6victory medals&r and an air and water essentia at the manaweaving altar. fight the valkyrie queen for the medals. the dust smelts straight to ingots in any furnace."
-			]
-			id: "4F7A2B90D3E16C30"
-			subtitle: "forged in the sky, name checks out"
-			tasks: [{
-				id: "4F7A2B90D3E16C31"
-				item: "gtceu:skyforged_dust"
-				type: "item"
-			}]
-			title: "Skyforged Dust"
-			x: -10.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["4F7A2B90D3E16C30"]
-			description: [
-				"&bskyforged&r plates and rods hammer into the complete &fvalkyrie&r arsenal -- tools, the lance, full armor, gloves, and the cape. gloves and cape want extra &6victory medals&r."
-				""
-				"craft any piece to prove the forge works."
-			]
-			id: "33D08E5A61B94F70"
-			subtitle: "dress code: divine"
-			tasks: [{
-				id: "33D08E5A61B94F71"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(aether:valkyrie_pickaxe)item(aether:valkyrie_axe)item(aether:valkyrie_shovel)item(aether:valkyrie_hoe)item(aether:valkyrie_lance)item(aether:valkyrie_helmet)item(aether:valkyrie_chestplate)item(aether:valkyrie_leggings)item(aether:valkyrie_boots)item(aether:valkyrie_gloves)item(aether:valkyrie_cape))"
-					}
+				{
+					item: "kubejs:elementium_channeling_vessel"
+					id: "0D3C3D69466D25C1"
+					type: "item"
 				}
-				title: "Any Valkyrie Gear"
-				type: "item"
-			}]
-			title: "The Valkyrie Armory"
-			x: -10.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["3AE23124DDE87034", "3D7B1E9C6A2F5091"]
-			description: [
-				"bind a &esanctified ambrosium bloom&r and two &6ambrosium dust&r at the spirit altar with sacred and aerial spirits for a &esacred ambrosium shard&r."
-			]
-			id: "05818C75B31F3A89"
-			size: 0.75d
-			subtitle: "blessed, and then some"
-			tasks: [{
-				id: "7575851D3B7D65C1"
-				item: "kubejs:sacred_ambrosium_shard"
-				type: "item"
-			}]
-			title: "Sacred Ambrosium Shard"
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["05818C75B31F3A89"]
-			description: [
-				"bind an &dender pearl&r to a &esacred ambrosium shard&r at the spirit altar for a &ddivine pearl&r -- iron's spells' blessed counterpart, and the upgrade reagent that turns uncommon ink rare."
-			]
-			id: "2D1F7AFFE193EDE3"
-			subtitle: "basically an aether ender pearl"
-			tasks: [{
-				id: "5C0B76FCCF9776E5"
-				item: "irons_spellbooks:divine_pearl"
-				type: "item"
-			}]
-			title: "Divine Pearl"
-			x: -4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2D1F7AFFE193EDE3"]
-			description: [
-				"a silver cross that smites the undead on hit. its day job here is holier: it's an ingredient in the holy silver line above."
-			]
-			id: "2DFC564DDE9DDE82"
-			size: 0.75d
-			subtitle: "less violent than it sounds"
-			tasks: [{
-				id: "263AFC9691CBD4E1"
-				item: {
-					Count: 1
-					id: "reliquary:mercy_cross"
-					tag: {
-						Damage: 0
-					}
+				{
+					item: "kubejs:elementium_ward_lattice"
+					id: "20057A58DE285123"
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "Mercy Cross"
-			x: -4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["2D1F7AFFE193EDE3"]
-			description: [
-				"upgrade &2uncommon ink&r with a &ddivine pearl&r for &drare ink&r. check JEI for the exact recipe. better ink, better scroll odds."
-			]
-			id: "7592A92943AC392E"
-			size: 0.75d
-			subtitle: "write better spells with better ink"
-			tasks: [{
-				id: "69DF3188A92DEC55"
-				item: "irons_spellbooks:rare_ink"
-				type: "item"
-			}]
-			title: "Rare Ink"
-			x: -2.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["05818C75B31F3A89"]
-			description: [
-				"weave &7silver dust&r with two &esacred ambrosium shards&r and two &6ambrosium dust&r at the manaweaving altar for &fholy silver blend&r. silver dust from the tech side, sacred ambrosium from the aether."
-			]
-			id: "6598E24995416CFD"
-			subtitle: "mix thoroughly, do NOT drink"
-			tasks: [{
-				id: "6C02D0375522FFDC"
-				item: "kubejs:holy_silver_blend"
-				type: "item"
-			}]
-			title: "Holy Silver Blend"
-			x: -8.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6598E24995416CFD", "2DFC564DDE9DDE82"]
-			description: [
-				"weave the blend with a &6mercy cross&r at the manaweaving altar. the cross gets consumed -- keep a spare or two coming from the divine pearl chain."
-			]
-			id: "0D62A4DC7559CA80"
-			subtitle: "getting holier by the step"
-			tasks: [{
-				id: "0092B8C1D4B97700"
-				item: "gtceu:holy_silver_dust"
-				type: "item"
-			}]
-			title: "Holy Silver Dust"
-			x: -7.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["0D62A4DC7559CA80"]
-			description: [
-				"&aholy silver&r is one of this tier's two parallel material lines -- the magic line's equivalent of &7aluminium&r."
-				""
-				"weave the dust with a pinch of &cfire essentia&r at the manaweaving altar to finish it."
-				""
-				"&9note:&r holy silver isn't mined. it's &dprocessed&r. plan accordingly."
-			]
-			icon: "gtceu:holy_silver_ingot"
-			id: "51D5B5C004491077"
-			shape: "square"
-			size: 1.5d
-			subtitle: "the arcane equivalent of aluminium"
-			tasks: [{
-				id: "351B5AA9A555B8AA"
-				item: "gtceu:holy_silver_ingot"
-				type: "item"
-			}]
-			title: "Holy Silver Ingot"
-			x: -7.0d
-			y: -10.0d
-		}
+				]
+				title: "Tier Components"
+				x: 4.5d
+				y: -4.5d
+			}
+			{
+				dependencies: ["0D8C74BBA6A28EBF", "18DC2FE378110301", "14FF5BA04FED7FD2", "72AE1B827C73373D", "643BD75BE5175AB6", "4FF1957ABF96997D"]
+				description: [
+					"elementium flowing, hex casting fully open, holy silver and skyforged both banked. sorcerer wants the gaia guardian dead -- gear up before you knock."
+				]
+				icon: "botania:elementium_ingot"
+				id: "38ED4692A9C92BE9"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the elven gate stays open behind you"
+				tasks: [{
+					id: "31199B28C63109A4"
+					title: "Onward to Sorcerer"
+					type: "checkmark"
+				}]
+				title: "Tier Three Complete"
+				x: 10.5d
+				y: -1.5d
+			}
 	]
-	subtitle: ["Still cashing in new resources"]
+	subtitle: ["A gate to the elves"]
 	title: "IV. Initiate"
 }

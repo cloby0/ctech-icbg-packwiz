@@ -1,0 +1,80 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+        "tier": 4,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:ashen_ichor_ingot" },
+        "rod": { "item": "gtceu:ashen_ichor_rod" },
+        "tip": { "item": "gtceu:ashen_ichor_dust" }
+    },
+    "name": { "text": "Ashen Ichor" },
+    "stats": {
+        "main": {
+            "durability": 893,
+            "armor_durability": 15,
+            "enchantment_value": 3.7,
+            "rarity": 15,
+            "charging_value": 0.8,
+            "harvest_speed": 5,
+            "melee_damage": 4,
+            "magic_damage": 1,
+            "attack_speed": 0,
+            "ranged_damage": 1,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 10,
+            "armor/helmet": 1,
+            "armor/chestplate": 4,
+            "armor/leggings": 3,
+            "armor/boots": 1,
+            "armor_toughness": 4,
+            "magic_armor": 3
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.1 },
+            "melee_damage": { "mul2": 0.1 }
+        },
+        "tip": {
+            "durability": { "add": 145 },
+            "armor_durability": { "add": 4 },
+            "harvest_speed": { "add": 2 },
+            "melee_damage": { "add": 2 },
+            "rarity": { "add": 21 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:hard", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#B23A1F" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#B23A1F" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#4A150A" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#B23A1F" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#B23A1F" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

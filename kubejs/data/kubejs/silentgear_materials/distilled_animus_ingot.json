@@ -1,0 +1,88 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 9,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:distilled_animus_ingot" },
+        "rod": { "item": "gtceu:distilled_animus_rod" },
+        "tip": { "item": "gtceu:distilled_animus_dust" }
+    },
+    "name": { "text": "Distilled Animus" },
+    "stats": {
+        "main": {
+            "durability": 3352,
+            "armor_durability": 56,
+            "enchantment_value": 9.2,
+            "rarity": 30,
+            "charging_value": 1.3,
+            "harvest_speed": 18,
+            "melee_damage": 13,
+            "magic_damage": 3,
+            "attack_speed": 0,
+            "ranged_damage": 5,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 35,
+            "armor/helmet": 5,
+            "armor/chestplate": 14,
+            "armor/leggings": 10,
+            "armor/boots": 5,
+            "armor_toughness": 13,
+            "magic_armor": 12
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.15 },
+            "melee_damage": { "mul2": 0.15 }
+        },
+        "tip": {
+            "durability": { "add": 546 },
+            "armor_durability": { "add": 14 },
+            "harvest_speed": { "add": 5 },
+            "melee_damage": { "add": 7 },
+            "rarity": { "add": 42 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:brilliant", "level": 2 },
+            { "name": "silentcompat:spell_damage", "level": 2 }
+        ],
+        "tip": [
+            { "name": "silentgear:brilliant", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#8A4FD1" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#8A4FD1" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#8A4FD1" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#4A2570" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#8A4FD1" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#8A4FD1" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

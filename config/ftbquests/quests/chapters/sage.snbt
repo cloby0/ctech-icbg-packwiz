@@ -7,161 +7,379 @@
 	icon: "gtceu:empyrean_ichor_ingot"
 	id: "6B058364BA34F53C"
 	order_index: 8
-	quest_links: [{
-		id: "1E107863AA9AD9C7"
-		linked_quest: "0035907892269ECE"
-		shape: "square"
-		size: 1.5d
-		x: 0.0d
-		y: 0.0d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: ["302D332A3D2BD619"]
-			description: [
-				"you started this book boiling essences in a borrowed cauldron. now you're farming the guardian of gaia for ingots and smelting starlight into empyrean ichor."
-				""
-				"no reward in this box -- the pack doesn't do quest rewards. what you get is the whole magic tree unlocked, and plenty of ways to use it on the tech side."
-				""
-				"ascendant and prophet tier work continues in the &6UHV+&r chapters, where both trees start relying on each other."
-			]
-			hide_details_until_startable: true
-			hide_text_until_complete: true
-			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				id: "gtceu:empyrean_ichor_ingot"
-				tag: { }
-			}
-			id: "448A708579752294"
-			shape: "heart"
-			size: 4.0d
-			subtitle: "is this... the end?"
-			title: "The Crescendo"
-			x: 16.0d
+			id: "6B1537901309D95F"
+			linked_quest: "3E7BE65647F754CE"
+			x: -1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0035907892269ECE"]
-			description: [
-				"the tier's signature metal. combine a hellforged ingot with a &6gaia ingot&r for &fhallowed remnant&r, then fold in a greater arcane mote for &9wellspring-bound remnant&r."
-				""
-				"a bound &6marid&r rituals it with your original &castarted-with ashen ichor&r and a soul gem into &6empyrean core&r. a plain furnace finishes the smelt -- the tree bookends itself."
-			]
-			icon: "gtceu:empyrean_ichor_ingot"
-			id: "302D332A3D2BD619"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "32F4456FC7CC6F63"
-				item: "gtceu:empyrean_ichor_ingot"
-				type: "item"
-			}]
-			title: "Empyrean Ichor"
-			x: 3.0d
-			y: 2.0d
+			id: "6218BC6A88E3C9E7"
+			linked_quest: "4E84A1409EBD40D8"
+			x: 1.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["302D332A3D2BD619"]
-			description: [
-				"empyrean ichor builds this tier's own set of parts: the &6empyrean array&r core (runic altar, then a terra plate pass) and the &6empyrean wizard brain&r (eldrin altar) both start here."
-				""
-				"a handful of vanilla combines with ichor plus this tier's own astral cores round out the set -- motive cores, channeling vessels, ward lattices."
-			]
-			icon: "kubejs:empyrean_sigil"
-			id: "64624A72C1208B1D"
-			subtitle: "small parts, biggest tier"
-			tasks: [{
-				id: "03F67E95E8E47CEE"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:empyrean_sigil)item(kubejs:empyrean_wizard_brain)item(kubejs:empyrean_motive_core)item(kubejs:empyrean_channeling_vessel)item(kubejs:empyrean_ward_lattice))"
-					}
-				}
-				title: "Any Empyrean Component"
-				type: "item"
-			}]
-			title: "Empyrean Components"
-			x: 5.0d
-			y: 2.75d
+			id: "13933D584797A5DB"
+			linked_quest: "12D828F2BD840369"
+			x: 1.5d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"71C3F5A0B2D98E40"
-				"64624A72C1208B1D"
-			]
-			description: [
-				"the &6alchemical nexus&r runs a brand-new Ritual of the Balanced Scales -- no jar recipe to re-theme, this one's built for this pack alone. an astral blood core, astral holy core, and empyrean wizard brain open it; an astral annihilation core, nether star, and ender eye carry stage two; three of your grimoires (blood, radiant, eldritch) carry stage three; the final stage folds in two &6empyrean ichor&r and arcanist's own &6wisdom stone: rubedo&r into the &6philosopher's stone&r."
-				""
-				"the book bookends itself: you started boiling essences in a borrowed cauldron, and you end fusing the Magnum Opus's five stages into one stone."
-			]
-			id: "57BA856B368E7C69"
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "the great work, complete"
-			tasks: [{
-				id: "79D951418C57CA9B"
-				item: "magichem:philosophers_stone"
-				type: "item"
-			}]
-			title: "Philosopher's Stone"
-			x: 9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0035907892269ECE"]
-			description: [
-				"bound astral souls and &dlife essence&r anchor four ritual cores: &4blood&r, &eholy&r, &5void&r, and &8annihilation&r. each wants its own flavor of runes, vials, and unpleasantness."
-				""
-				"craft any one to start your library."
-			]
-			id: "71C3F5A0B2D98E40"
-			subtitle: "pick your poison"
-			tasks: [{
-				id: "71C3F5A0B2D98E41"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:astral_blood_core)item(kubejs:astral_holy_core)item(kubejs:astral_void_core)item(kubejs:astral_annihilation_core))"
-					}
-				}
-				title: "Any Astral Core"
-				type: "item"
-			}]
-			title: "Astral Cores"
-			x: 12.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["71C3F5A0B2D98E40"]
-			description: [
-				"each core enchants into its own tome: the &4blood grimoire&r, the &eradiant sanctum&r, the &5eldritch codex&r, the &8obliteration chronicle&r -- and for those dabbling in naquadah, the &3harbinger codex&r."
-				""
-				"craft any one. collect the rest if you feel like it."
-			]
-			id: "2A85C0D9F4E17B60"
-			subtitle: "light reading for the end times"
-			tasks: [{
-				id: "2A85C0D9F4E17B61"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:blood_grimoire)item(kubejs:radiant_sanctum)item(kubejs:eldritch_codex)item(kubejs:obliteration_chronicle)item(kubejs:harbinger_codex))"
-					}
-				}
-				title: "Any Grimoire"
-				type: "item"
-			}]
-			title: "The Forbidden Library"
-			x: 14.0d
-			y: 2.0d
+			id: "50D649C478F8F8AC"
+			linked_quest: "5C59510CCDEDA037"
+			x: -1.5d
+			y: 1.5d
 		}
 	]
-	subtitle: ["The last stretch of the magic tree"]
+	quests: [
+			{
+				dependencies: ["3E7BE65647F754CE"]
+				description: [
+					"complete the tier-4 task list, then the single tier-5 gate task. &6greater motes&r require a captured &6eldrin wellspring&r feeding the eldrin altar -- `mna:greater_mote_arcane` is what this tier's own empyrean chain needs."
+				]
+				id: "29ADE0AFD4138C75"
+				shape: "rsquare"
+				subtitle: "the last mna tier"
+				tasks: [{
+					item: "mna:greater_mote_arcane"
+					id: "5A9883C87C20EAF9"
+					count: 2L
+					type: "item"
+				}]
+				title: "MNA Tier Five"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["3E7BE65647F754CE"]
+				description: [
+					"occultism's mob-capture ritual loop produces &6soul gems&r on repeat. this tier consumes them four separate times -- bank a stock before you start the astral line."
+				]
+				id: "23F5BC546B99AAD9"
+				subtitle: "renewable, from the capture loop"
+				tasks: [{
+					item: "occultism:soul_gem"
+					id: "05068552351C37D3"
+					count: 4L
+					type: "item"
+				}]
+				title: "Soul Gem"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5C59510CCDEDA037"]
+				description: [
+					"botania has no rune-tier system, only a craft tree: basic runes feed compound runes (spring/summer/autumn/winter), which feed &6rune of wrath&r and &6rune of pride&r (2x mana diamond + 2 compound runes each). buildable since journeyman's runic altar -- vengeful wraith below is just the first pack recipe to actually spend them."
+				]
+				id: "093B14B5E3C049F7"
+				shape: "square"
+				size: 0.6d
+				subtitle: "not a late-game item, just first spent here"
+				tasks: [
+				{
+					item: "botania:rune_wrath"
+					id: "15C13DABBEB9767A"
+					type: "item"
+				}
+				{
+					item: "botania:rune_pride"
+					id: "6F6C4BB418EDA223"
+					type: "item"
+				}
+				]
+				title: "Wrath & Pride"
+				x: 0.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["093B14B5E3C049F7"]
+				description: [
+					"runic altar, sage-tier mana: life essence + rune of wrath + rune of pride + 4x elementium bolt."
+				]
+				id: "2BCCBB960BD79456"
+				subtitle: "the astral line begins"
+				tasks: [{
+					item: "kubejs:vengeful_wraith"
+					id: "3196F04FB85A73AF"
+					type: "item"
+				}]
+				title: "Vengeful Wraith"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["2BCCBB960BD79456", "23F5BC546B99AAD9"]
+				description: [
+					"eldrin altar, ender power (2x this tier's cost), tier 5: vengeful wraith + a wither skeleton skull + 2x ender pearl + a soul gem."
+				]
+				id: "31A01398861E37F8"
+				subtitle: "a soul, ender-bound"
+				tasks: [{
+					item: "kubejs:bound_astral_soul"
+					id: "50EDA41AC28A1FC5"
+					count: 6L
+					type: "item"
+				}]
+				title: "Bound Astral Soul"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["31A01398861E37F8"]
+				description: [
+					"eldrin altar, earth power, tier 5: bound astral soul + 8x elementium block. a pure kubejs item with no gt forms -- it stays that way, feeding prophet's uev tech-bridge recipes untouched."
+				]
+				id: "49EA73306D256B78"
+				subtitle: "feeds the merged endgame directly"
+				tasks: [{
+					item: "kubejs:boundless_astral_ingot"
+					id: "3F3E0525AF56F61A"
+					type: "item"
+				}]
+				title: "Boundless Astral Ingot"
+				x: 4.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["29ADE0AFD4138C75", "4E84A1409EBD40D8", "12D828F2BD840369"]
+				description: [
+					"hand-combine hellforged ingot + &6gaia spirit ingot&r -- &6hallowed remnant&r. combine with a greater arcane mote -- &6wellspring-bound remnant&r. occultism ritual, marid, 200 ticks: remnant + &6gtceu:ashen_ichor_ingot&r + a soul gem -- &6empyrean core&r."
+					""
+					"plain furnace smelt to the ingot, no blastTemp. the hobbyist material you started the whole tree with is a hard requirement of the sage capstone -- deliberate bookend."
+				]
+				icon: "gtceu:empyrean_ichor_ingot"
+				id: "297D4C99EED7931A"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "no shortcut exists -- capstones stay hard"
+				tasks: [{
+					item: "gtceu:empyrean_ichor_ingot"
+					id: "6926114D2856F25A"
+					count: 2L
+					type: "item"
+				}]
+				title: "Empyrean Ichor"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["31A01398861E37F8", "297D4C99EED7931A"]
+				description: [
+					"each: life essence + bound astral soul + affinity items + its matching empyrean component. &cfire&r blood core (blood vials, blood runes, netherite, empyrean channeling vessel). &9water&r holy core (divine pearls, holy runes, sacred ambrosium shards, empyrean ward lattice). &5ender&r void core (otherworld essence, ender runes, a nether star, empyrean wizard brain). &5ender&r annihilation core (annihilators protocol, ender runes, 2x nether star, empyrean motive core)."
+				]
+				id: "1F5AC3FB9201E2F9"
+				shape: "square"
+				size: 0.75d
+				subtitle: "four affinities, each eldrin altar tier 5"
+				tasks: [
+				{
+					item: "kubejs:astral_blood_core"
+					id: "67F03F9401E9A4E3"
+					type: "item"
+				}
+				{
+					item: "kubejs:astral_holy_core"
+					id: "7021256B1F240296"
+					type: "item"
+				}
+				{
+					item: "kubejs:astral_void_core"
+					id: "467ACCFFF97492B8"
+					type: "item"
+				}
+				{
+					item: "kubejs:astral_annihilation_core"
+					id: "60202C18AD78FF85"
+					type: "item"
+				}
+				]
+				title: "Astral Cores"
+				x: 6.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["1F5AC3FB9201E2F9", "wizard_brain"]
+				description: [
+					"each eldrin altar, tier 5, 2x this tier's power: &6blood grimoire&r (from the blood core), &6radiant sanctum&r (holy core), &6eldritch codex&r (void core), &6obliteration chronicle&r (annihilation core) -- each also spends an empyrean wizard brain or ward lattice."
+				]
+				id: "2DD5990DAF3AF8B4"
+				shape: "square"
+				size: 0.75d
+				subtitle: "built from their matching core"
+				tasks: [
+				{
+					item: "kubejs:blood_grimoire"
+					id: "6FEFD337825B3135"
+					type: "item"
+				}
+				{
+					item: "kubejs:radiant_sanctum"
+					id: "67DCCD3805C604A1"
+					type: "item"
+				}
+				{
+					item: "kubejs:eldritch_codex"
+					id: "745D7BB3CAE3364C"
+					type: "item"
+				}
+				{
+					item: "kubejs:obliteration_chronicle"
+					id: "19549DA028FF6FA8"
+					type: "item"
+				}
+				]
+				title: "Astral Tomes"
+				x: 7.5d
+				y: 0.5d
+			}
+			{
+				dependencies: ["sigil"]
+				description: [
+					"eldrin altar, arcane power (2x), tier 5: &6gtceu:empyrium_ingot&r + 4x &9uv-tier circuits&r + 4x cataclysm's technomancy rune + empyrean sigil."
+					""
+					"&cthe tech tree must be at uv&r for this one -- the merged endgame starts here. everything else in this tier is completable with zero gregtech."
+				]
+				id: "509603FBDB6D94B7"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "the one sage recipe that genuinely requires gt progression"
+				tasks: [{
+					item: "kubejs:harbinger_codex"
+					id: "25FFED35652B185C"
+					type: "item"
+				}]
+				title: "Harbinger Codex"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["31A01398861E37F8"]
+				description: [
+					"eldrin altar, earth power: 4x rubber dust + one of each essence tag + 2x otherworld essence -- &6primal latex billet&r. hand-combine with 4x naquadah dust + a prima materia ingot -- &6elemental latex compound&r."
+					""
+					"eldrin altar again: compound + 6x bound astral soul + 2x prima materia ingot -- &6gtceu:abstract_elastomer_ingot&r. feeds prophet's own merged-endgame recipes."
+				]
+				id: "3722CD9E8DD250C4"
+				shape: "square"
+				size: 0.75d
+				subtitle: "the uev tech bridge"
+				tasks: [{
+					item: "gtceu:abstract_elastomer_ingot"
+					id: "77C8B9CAD0CA8E84"
+					type: "item"
+				}]
+				title: "Abstract Elastomer"
+				x: 4.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["297D4C99EED7931A", "31A01398861E37F8"]
+				description: [
+					"runic altar: empyrean ichor ingot + an astral void core + a nether star -- a sigil blank. finish it at the terra plate with a bound astral soul."
+					""
+					"anchored on empyrean ichor rather than gaia ingot -- the tier's genuinely novel capstone, not the pack's most over-repeated staple."
+				]
+				id: "0DB9FA6368D78F16"
+				subtitle: "the tier circuit, anchored on the capstone itself"
+				tasks: [{
+					item: "kubejs:empyrean_sigil"
+					id: "634F354388DD274E"
+					type: "item"
+				}]
+				title: "Empyrean Sigil"
+				x: 6.0d
+				y: -1.0d
+			}
+			{
+				dependencies: ["297D4C99EED7931A"]
+				description: [
+					"eldrin altar, ender power, tier 5: empyrean ichor ingot + a hex artifact (stored spell logic that casts unattended) + an astral holy core + a divine pearl."
+				]
+				id: "6F01069A74CAED50"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:empyrean_wizard_brain"
+					id: "4DCBA85BB97B3222"
+					type: "item"
+				}]
+				title: "Empyrean Wizard Brain"
+				x: 7.5d
+				y: -1.0d
+			}
+			{
+				dependencies: ["297D4C99EED7931A", "3722CD9E8DD250C4"]
+				description: [
+					"&6motive core&r (runic altar: empyrean ichor rod + rune of wrath + netherite ingot + a nether star). &6channeling vessel&r (terra plate: empyrean ichor ingot + concepts bucket + abstract elastomer ingot). &6ward lattice&r (eldrin altar, water power: empyrean plate + 2x holy rune + a nether star + sacred ambrosium shard)."
+					""
+					"no astral core appears in any component -- the cores consume the components, not the reverse. build order: empyrean ichor -> wizard brain + these three -> astral cores -> sigil -> tomes."
+				]
+				id: "4359332E3C70500C"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:empyrean_motive_core"
+					id: "6DB62C648000B1B7"
+					type: "item"
+				}
+				{
+					item: "kubejs:empyrean_channeling_vessel"
+					id: "141601C42A5AEDE6"
+					type: "item"
+				}
+				{
+					item: "kubejs:empyrean_ward_lattice"
+					id: "714D0254389D50F6"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 9.0d
+				y: -1.0d
+			}
+			{
+				dependencies: ["2DD5990DAF3AF8B4", "0DB9FA6368D78F16", "6F01069A74CAED50", "4359332E3C70500C"]
+				description: [
+					"four-stage sublimation, tier 6, wisdom 4 -- magichem ships no recipe of any kind for this item, so this is the only one that exists. stage 1: astral blood core, astral holy core, empyrean wizard brain. stage 2: annihilation core, nether star, ender eye. stage 3: all three tomes short of obliteration chronicle. stage 4: 2x empyrean ichor ingot + wisdom stone rubedo."
+					""
+					"also grants death protection (elixir of life). the final stage echoes empyrean ichor itself -- no shortcut, same as the material it wears."
+				]
+				icon: "magichem:philosophers_stone"
+				id: "486E809CD967C7FD"
+				shape: "hexagon"
+				size: 1.5d
+				subtitle: "wisdom stone: the philosopher’s stone"
+				tasks: [{
+					item: "magichem:philosophers_stone"
+					id: "17547AB6B3514FC8"
+					type: "item"
+				}]
+				title: "Philosopher's Stone"
+				x: 10.5d
+				y: -0.5d
+			}
+			{
+				dependencies: ["297D4C99EED7931A", "0DB9FA6368D78F16", "6F01069A74CAED50", "4359332E3C70500C", "2DD5990DAF3AF8B4", "486E809CD967C7FD"]
+				description: [
+					"empyrean ichor producible, all four cores and tomes built, abstract elastomer flowing, the philosopher's stone worn. from prophet on, the magic tree needs the tech tree at uhv/draconic -- everything below consumes draconic evolution and gt endgame outputs."
+				]
+				icon: "gtceu:empyrean_ichor_ingot"
+				id: "24F3267F87E97C82"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the last solo tier"
+				tasks: [{
+					id: "606921E8F9202DBD"
+					title: "Onward to Prophet"
+					type: "checkmark"
+				}]
+				title: "Tier Nine Complete"
+				x: 12.0d
+				y: -0.5d
+			}
+	]
+	subtitle: ["The crescendo, solo"]
 	title: "IX. Sage"
 }

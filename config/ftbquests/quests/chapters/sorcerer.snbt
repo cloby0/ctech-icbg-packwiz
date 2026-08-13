@@ -7,581 +7,405 @@
 	icon: "botania:gaia_ingot"
 	id: "137D785A44DC7E1D"
 	order_index: 4
-	quest_links: [{
-		id: "5E60B50C46A8F7E1"
-		linked_quest: "51D5B5C004491077"
-		shape: "square"
-		size: 1.5d
-		x: -8.5d
-		y: -4.5d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"the Circle of Fabrication runs the alembic's own trick backwards: instead of breaking an item into essentia, it fuses essentia straight into an item. eight &5nigredo&r essentia plus four each of &cfire&r/&9water&r/&2earth&r/&7air&r fuse into &5chaos essence&r -- the undifferentiated pre-elemental state, before the four classical elements split apart."
-				""
-				"chaos essence also weaves into &cpyrium&r (fire+air) and bottled XP (water+earth) at the manaweaving altar."
-			]
-			id: "270F7BBFAA80139A"
-			subtitle: "four elements, forced to agree"
-			tasks: [{
-				id: "1AE3507AD0CF9579"
-				item: "kubejs:chaos_essence"
-				type: "item"
-			}]
-			title: "Chaos Essence"
-			x: -2.0d
+			id: "615C1D2896D0B16E"
+			linked_quest: "38ED4692A9C92BE9"
+			x: -1.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["270F7BBFAA80139A"]
-			description: [
-				"&aprima materia&r is the combined form of all four elements. bind &5chaos essence&r, a &6holy silver ingot&r, and a pinch of &dmagichem admixture&r at the alchemy table for &6prima materia seed&r."
-				""
-				"a bound &6afrit&r rituals the seed with an &delement attunement stone&r and another admixture pinch, plus afrit essence, into &aprima materia&r."
-				""
-				"&9note:&r its plates also brew &5epic ink&r later, so don't stop at one."
-			]
-			id: "3C613081F4FE51B2"
-			size: 1.5d
-			subtitle: "the first matter"
-			tasks: [{
-				id: "0A2DE3E8C71654D5"
-				item: "gtceu:prima_materia_ingot"
-				type: "item"
-			}]
-			title: "Prima Materia"
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C613081F4FE51B2"]
-			description: [
-				"the &6alchemical nexus&r runs a second Ritual of the Balanced Scales, three stages deeper this time. resonant gravitite core, an element attunement stone, and a gravitic sigil open it; the final stage folds in two &aprima materia&r and journeyman's own &6wisdom stone: nigredo&r into &6wisdom stone: albedo&r."
-				""
-				"wear it and initiate's elementite shortcut opens: raw materia straight to ambrosia-touched elementite, no ambrosium chain needed."
-			]
-			id: "74085062F99B8D8C"
-			shape: "diamond"
-			subtitle: "the whitening"
-			tasks: [{
-				id: "3D4289E3C7C1D793"
-				item: "magichem:wisdom_stone_albedo"
-				type: "item"
-			}]
-			title: "Wisdom Stone: Albedo"
-			x: 1.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3C613081F4FE51B2"]
-			description: [
-				"&5demon will&r manifests near mobs once your soul network is well-stocked -- snare it with a &6soul snare&r or a sentient tool. five flavors exist (raw, corrosive, destructive, steadfast, vengeful), same display name, different item ids -- check the tooltip."
-				""
-				"you've been spending prima materia's plates upward; this tier's own gravitic components start eating will too. stock up on whichever flavor your current recipe wants."
-			]
-			id: "67B9B6F1E671C377"
-			subtitle: "the mobs' problem becomes yours"
-			tasks: [{
-				id: "5A25286EFEC4035A"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(bloodmagic:basemonstersoul)item(bloodmagic:basemonstersoul_corrosive)item(bloodmagic:basemonstersoul_destructive)item(bloodmagic:basemonstersoul_steadfast)item(bloodmagic:basemonstersoul_vengeful))"
-					}
-				}
-				title: "Any Demon Will"
-				type: "item"
-			}]
-			title: "Demon Will"
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C613081F4FE51B2"]
-			description: [
-				"summon a &6marid&r and bind it to a crusher setup, or hand off logistics from the afrit above. required before alchemist -- material processing only gets heavier from here."
-			]
-			id: "9A4C2F6D8B1E3075"
-			subtitle: "top-tier spirit, top-tier grind"
-			tasks: [{
-				advancement: "occultism:occultism/summon_marid_crusher"
-				criterion: ""
-				id: "9A4C2F6D8B1E3076"
-				type: "advancement"
-			}]
-			title: "Marid Spirit"
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["270F7BBFAA80139A"]
-			description: [
-				"weave chaos essence with two &cfire&r and two &bair&r essentia at the manaweaving altar for FOUR &cpyrium ingots&r. iron's spellbooks' fire-attuned metal, four at a time."
-			]
-			id: "17D15E6418E8452E"
-			size: 0.75d
-			subtitle: "chaos, refined into metal"
-			tasks: [{
-				id: "473C3A340A0D66C2"
-				item: "irons_spellbooks:pyrium_ingot"
-				type: "item"
-			}]
-			title: "Pyrium Ingot"
-			x: -2.75d
-			y: -2.5d
-		}
-		{
-			dependencies: ["270F7BBFAA80139A"]
-			description: [
-				"the top rung of the scroll-quality ladder: rare ink upgrades with a &aprima materia plate&r for &5epic ink&r. check JEI for the exact brew."
-				""
-				"an epic scroll habit is expensive. budget accordingly."
-			]
-			id: "7671BC8442421B72"
-			size: 0.75d
-			subtitle: "for epic-tier spells only"
-			tasks: [{
-				id: "6D318A143E41B383"
-				item: "irons_spellbooks:epic_ink"
-				type: "item"
-			}]
-			title: "Epic Ink"
-			x: -1.25d
-			y: -2.5d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"raw gravitite goes in the aether &bfreezer&r first. cold metal holds its levitation better, apparently."
-			]
-			id: "50376974E4F14658"
-			size: 0.75d
-			subtitle: "ice-cold and ready to levitate"
-			tasks: [{
-				id: "1E6A37FA7C141667"
-				item: "kubejs:frozen_raw_gravitite"
-				type: "item"
-			}]
-			title: "Frozen Raw Gravitite"
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["50376974E4F14658"]
-			description: [
-				"frozen gravitite runs through the aether &6altar&r next. freeze it, then charge it."
-			]
-			id: "1B9C0C6A43CB99C7"
-			size: 0.75d
-			subtitle: "blessed by the aether itself"
-			tasks: [{
-				id: "48EBD5DF3AA8A14E"
-				item: "kubejs:altar_charged_gravitite"
-				type: "item"
-			}]
-			title: "Altar-Charged Gravitite"
-			x: -3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["1B9C0C6A43CB99C7"]
-			description: [
-				"a bound &6afrit&r rituals charged gravitite with two &aholy silver rods&r, two &9resonant zanite crystals&r, and afrit essence into the resonant core. three magic systems, one result."
-			]
-			id: "70103C694B3D2219"
-			size: 0.75d
-			subtitle: "it floats. if you let it."
-			tasks: [{
-				id: "396938C3DDEDBA04"
-				item: "kubejs:resonant_gravitite_core"
-				type: "item"
-			}]
-			title: "Resonant Gravitite Core"
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			description: [
-				"the &6gaia guardian&r is botania's endgame boss -- fight it for a &alife essence&r drop. bring your best gear."
-			]
-			id: "69987C3015B77668"
-			subtitle: "botania's final exam"
-			tasks: [{
-				advancement: "botania:main/gaia_guardian_kill"
-				criterion: ""
-				id: "59C3DA3729E52128"
-				type: "advancement"
-			}]
-			title: "Gaia Guardian"
-			x: -5.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["69987C3015B77668"]
-			description: [
-				"the tier's signature metal. crush a &2gravitite ingot&r into shavings, bind them to a pinch of &6magichem admixture&r at the alchemy table, then combine with your &alife essence&r drop."
-				""
-				"finish it on a &9terra plate&r for &6gaia ingot&r -- botania's ladder ends here."
-			]
-			icon: "botania:gaia_ingot"
-			id: "2194BFF141F7B36A"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "6E3BC93C6372844E"
-				item: "botania:gaia_ingot"
-				type: "item"
-			}]
-			title: "Gaia Ingot"
-			x: -3.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"&eglowing water&r is a throwable that burns the undead. crafts three at a time."
-			]
-			id: "0DED4DF736A831B4"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "do NOT drink"
-			tasks: [{
-				id: "779EC72152CFF108"
-				item: "reliquary:glowing_water"
-				type: "item"
-			}]
-			title: "Glowing Water"
-			x: -5.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["0DED4DF736A831B4"]
-			description: [
-				"a thrown explosive, brutal against the undead. count to three, then lob it."
-			]
-			id: "7D3CF0C46B40CAF1"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "of antioch"
-			tasks: [{
-				id: "55E56C1D279EA797"
-				item: "reliquary:holy_hand_grenade"
-				type: "item"
-			}]
-			title: "Holy Hand Grenade"
-			x: -3.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6ender's hand&r swaps your position with whatever you're aiming at, creepers included."
-			]
-			id: "1FF1B92CC5B8C283"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "teleportation is valid combat"
-			tasks: [{
-				id: "2EFBFEE05F8EBC36"
-				item: {
-					Count: 1
-					id: "relics:enders_hand"
-					tag: {
-						abilities: {
-							swap: {
-								points: 0
-								stats: {
-									distance: 17.07544d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Ender's Hand"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"a &6magnum torch&r suppresses hostile spawns in a large radius. one per base district and the nights go quiet."
-			]
-			id: "79584900C141FBA0"
-			shape: "hexagon"
-			size: 0.75d
-			tasks: [{
-				id: "46BCF94081CF5909"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(magnumtorch:diamond_magnum_torch)item(magnumtorch:emerald_magnum_torch)item(magnumtorch:amethyst_magnum_torch))"
-					}
-				}
-				type: "item"
-			}]
-			title: "Any Magnum Torch"
-			x: 5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6reflection necklace&r stores the hits you take and detonates them back outward."
-			]
-			id: "1074384652CF1489"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "the best defense"
-			tasks: [{
-				id: "72AFBE014CA44FC2"
-				item: {
-					Count: 1
-					id: "relics:reflection_necklace"
-					tag: {
-						abilities: {
-							explode: {
-								points: 0
-								stats: {
-									capacity: 48.31926d
-									damage: 0.39788d
-									stun: 0.14664d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Reflection Necklace"
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6shadow glaive&r ricochets between targets before returning. good against groups."
-			]
-			id: "5A9F425F74A7A52B"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "for throwing at problems"
-			tasks: [{
-				id: "0E2792D91A2A062E"
-				item: {
-					Count: 1
-					id: "relics:shadow_glaive"
-					tag: {
-						abilities: {
-							glaive: {
-								points: 0
-								stats: {
-									bounces: 3.49074d
-									damage: 4.49413d
-									radius: 2.76672d
-									recharge: 15.85544d
-								}
-							}
-							saw: {
-								points: 0
-								stats: {
-									damage: 1.39353d
-									speed: 19.6261d
-								}
-							}
-						}
-						charges: 8
-					}
-				}
-				type: "item"
-			}]
-			title: "Shadow Glaive"
-			x: 4.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6magic mirror&r teleports you home from nearly a thousand blocks out."
-			]
-			id: "4A8C585CA9F997BB"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "for skipping the walk home"
-			tasks: [{
-				id: "423B5461F5230125"
-				item: {
-					Count: 1
-					id: "relics:magic_mirror"
-					tag: {
-						abilities: {
-							teleport: {
-								points: 0
-								stats: {
-									cooldown: 110.79929d
-									distance: 952.0146d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Magic Mirror"
-			x: 5.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6spatial sign&r seals a point in space you can snap back to. set it before boss rooms or risky builds."
-			]
-			id: "4471E5D89176B710"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "it's a sign. a spatial one."
-			tasks: [{
-				id: "237CFCD1DA9FD0C0"
-				item: {
-					Count: 1
-					id: "relics:spatial_sign"
-					tag: {
-						abilities: {
-							seal: {
-								points: 0
-								stats: {
-									time: 2.18845d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Spatial Sign"
-			x: 7.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6space dissector&r cuts a rift you can step through -- handy for skipping past terrain."
-			]
-			id: "6ABEF9F555A0BD6E"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "dissects space. yes, really."
-			tasks: [{
-				id: "42BF6C459FB86C8E"
-				item: {
-					Count: 1
-					id: "relics:space_dissector"
-					tag: {
-						abilities: {
-							dissection: {
-								points: 0
-								stats: {
-									distance: 17.76857d
-									time: 5.49754d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Space Dissector"
-			x: 4.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6elytra booster&r straps stored thrust to your wings, so you don't need firework rockets."
-			]
-			id: "2AC473C0C6832A84"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "go faster, why not"
-			tasks: [{
-				id: "7D07EA23600F86D9"
-				item: {
-					Count: 1
-					id: "relics:elytra_booster"
-					tag: {
-						abilities: {
-							boost: {
-								points: 0
-								stats: {
-									capacity: 52.09108d
-									speed: 1.15444d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Elytra Booster"
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["51D5B5C004491077"]
-			hide_dependency_lines: true
-			description: [
-				"the &6infinity ham&r regrows its own slices. ten pieces, effectively infinite food."
-			]
-			id: "37D0AC07A071D56D"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "it never runs out. don't ask why."
-			tasks: [{
-				id: "56F9C04B6AD2F7B9"
-				item: {
-					Count: 1
-					id: "relics:infinity_ham"
-					tag: {
-						abilities: {
-							autophagy: {
-								points: 0
-								stats: {
-									feed: 1.05955d
-								}
-							}
-							infusion: {
-								points: 0
-								stats: {
-									duration: 2.75752d
-								}
-							}
-						}
-						pieces: 10
-					}
-				}
-				type: "item"
-			}]
-			title: "Infinity Ham"
-			x: 7.0d
-			y: -3.0d
 		}
 	]
-	subtitle: ["Alchemy, the great work"]
+	quests: [
+			{
+				dependencies: ["38ED4692A9C92BE9"]
+				description: [
+					"manaweaving t3: &6pixie dust&r x3 (split_triangle/knot4: mana pearl + 2x purified vinteum ingot + 2x air essences) and &6dragonstone&r x2 (split_triangle/knot3: mana diamond + 2x purified vinteum ingot + earth + water essences)."
+					""
+					"both used to sit at arcanist, which made this tier's own gaia pylon unreachable -- pixie dust is a hard requirement of it. plain purified vinteum, not superheated -- that's arcanist-tier runeforge work."
+				]
+				id: "7DDFB751A8B82D94"
+				subtitle: "moved here, not arcanist"
+				tasks: [
+				{
+					item: "botania:pixie_dust"
+					id: "5954C74A87102249"
+					count: 3L
+					type: "item"
+				}
+				{
+					item: "botania:dragonstone"
+					id: "2B62341636DC2797"
+					count: 2L
+					type: "item"
+				}
+				]
+				title: "Pixie Dust & Dragonstone"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["7DDFB751A8B82D94"]
+				description: [
+					"craft &6gaia pylons&r (mana pylon + 2x elementium ingot + 2x pixie dust). place an active beacon, surround it with gaia pylons, then sneak-right-click the beacon with a terrasteel ingot to start the fight -- the beacon effect is nullified while it runs."
+					""
+					"the guardian drops &6life essence&r -- this pack's boss-gated source of it. bring enchanted elementium armor, a terra blade, and brews. this pack's own terra plate recipe can duplicate a &6grand victory medal&r afterward (life essence + the medal, 2x output) if you brought one from the valkyrie queen."
+				]
+				id: "273A243A941DC071"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "the beacon fight"
+				tasks: [{
+					item: "botania:life_essence"
+					id: "3FF9F817AD50855B"
+					type: "item"
+				}]
+				title: "Guardian of Gaia"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["38ED4692A9C92BE9"]
+				description: [
+					"the vanilla shaped recipe is gone -- the forge is built at magichem's &6ritual of the balanced scales&r instead, tier 3, wisdom 1. stage 1 is physical assembly (iron block, 2x iron ingot, blankslate, stone). stage 2 is empowerment with this tier's own full set: &6gaia spirit dust&r, plus the gravitic sigil/vessel/lattice/motive core."
+					""
+					"reaching this station now requires having sorcerer's own material line in hand first -- no more skipping straight here from pure blood magic grinding."
+				]
+				icon: "bloodmagic:soulforge"
+				id: "5417A43881AA537B"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "built by sublimation, not the grid"
+				tasks: [{
+					item: "bloodmagic:soulforge"
+					id: "2D6CD5CA26D5806E"
+					type: "item"
+				}]
+				title: "Soul Forge"
+				x: 0.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["38ED4692A9C92BE9"]
+				description: [
+					"mine &6raw gravitite&r (aether redux). freeze it at the aether's icestone freezer for &6frozen raw gravitite&r, then enchant that at the aether altar for &6altar-charged gravitite&r."
+				]
+				id: "7CE07C1BE9F87854"
+				subtitle: "mine it, freeze it, charge it"
+				tasks: [{
+					item: "kubejs:altar_charged_gravitite"
+					id: "4BF5E9E9DAF15BCA"
+					type: "item"
+				}]
+				title: "Charged Gravitite"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["7CE07C1BE9F87854"]
+				description: [
+					"occultism ritual, afrit pentacle, 120 ticks: altar-charged gravitite + 2x holy silver rod + 2x resonant zanite crystal + afrit essence + a &6grand victory medal&r."
+					""
+					"not farmable on its own -- this recipe is why the valkyrie queen fight from initiate has a real payoff, and why terra plate can duplicate the medal once you've killed her."
+				]
+				id: "56A67C0175837EC3"
+				subtitle: "the sun spirit pays off"
+				tasks: [{
+					item: "kubejs:resonant_gravitite_core"
+					id: "05F2455C7B0CEF8D"
+					type: "item"
+				}]
+				title: "Resonant Gravitite Core"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["38ED4692A9C92BE9"]
+				description: [
+					"the only source pack-wide is &6aether:sun_spirit&r loot -- no crafting recipe exists. it's consumed four times in this tier alone and feeds the gravitic sigil and wizard brain downstream."
+					""
+					"kill the sun spirit once, then this tier's own terra plate recipe duplicates it (glowstone dust cost) -- renewable from here on."
+				]
+				id: "168E3331554C7D65"
+				subtitle: "the sun spirit, again"
+				tasks: [{
+					item: "kubejs:element_attunement_stone"
+					id: "57866290ABB2E676"
+					count: 2L
+					type: "item"
+				}]
+				title: "Element Attunement Stone"
+				x: 4.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["38ED4692A9C92BE9"]
+				description: [
+					"the circle of fabrication runs distillation_fabrication in reverse -- materia into an item, not item into materia. 8x essentia_nigredo (the magnum opus's blackening stage) plus 4x each of fire/water/earth/air essentia."
+				]
+				id: "6E7831B6B5E62E07"
+				subtitle: "the four elements, unseparated"
+				tasks: [{
+					item: "kubejs:chaos_essence"
+					id: "526079AAF1D11492"
+					count: 2L
+					type: "item"
+				}]
+				title: "Chaos Essence"
+				x: 1.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["6E7831B6B5E62E07"]
+				description: [
+					"alchemy table, upgradeLevel 2: chaos essence + holy silver ingot + &dmagichem admixture_potential&r -- the classical definition of prima materia is pure undifferentiated potential, and this is a real admixture, not invented flavor."
+				]
+				id: "60519AD9D5578326"
+				subtitle: "prima materia's real gate"
+				tasks: [{
+					item: "kubejs:prima_materia_seed"
+					id: "66F4E5EC84AACDCE"
+					type: "item"
+				}]
+				title: "Prima Materia Seed"
+				x: 3.0d
+				y: -1.5d
+			}
+			{
+				dependencies: ["60519AD9D5578326", "168E3331554C7D65"]
+				description: [
+					"occultism ritual, &6afrit&r pentacle (not marid -- this item IS the marid gate item, so gating it behind marid would be circular), 150 ticks: seed + element attunement stone + &dadmixture_philosophers_concoction&r + afrit essence."
+				]
+				id: "15DD34FC19FC4D68"
+				subtitle: "the marid gate item -- deliberately not marid-summoned"
+				tasks: [{
+					item: "gtceu:prima_materia_ingot"
+					id: "6EFB46751597E003"
+					count: 2L
+					type: "item"
+				}]
+				title: "Prima Materia"
+				x: 4.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["15DD34FC19FC4D68"]
+				description: [
+					"summon a &6marid&r -- costs a prima materia ingot. there is no fifth spirit tier; past this, occultism keeps recurring as ingredients and as crush-tier gating."
+				]
+				id: "41E0618F659371D6"
+				subtitle: "the last spirit tier"
+				tasks: [{
+					advancement: "occultism:occultism/summon_marid_crusher"
+					criterion: ""
+					id: "19629C7B5D3E8F55"
+					type: "advancement"
+				}]
+				title: "Marid Spirit"
+				x: 6.0d
+				y: -1.5d
+			}
+			{
+				dependencies: ["273A243A941DC071", "56A67C0175837EC3"]
+				description: [
+					"occultism crushing turns a gravitite ingot into &6gravitite dust&r. bind it at the alchemy table with &dmagichem admixture_mountains&r (upgradeLevel 2) -- &6bound gravitite&r. hand-combine with life essence -- &6gravity-bound life essence&r."
+					""
+					"shortcut once you're at alchemist: the soul forge produces this directly, batch of 2, no crushing or alchemy table step."
+				]
+				id: "2554D46D4EEBE1DE"
+				subtitle: "botania's ladder ends here"
+				tasks: [{
+					item: "kubejs:gravity_bound_life_essence"
+					id: "3182B8110ADFD8CE"
+					type: "item"
+				}]
+				title: "Gravity-Bound Life Essence"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["2554D46D4EEBE1DE", "38ED4692A9C92BE9"]
+				description: [
+					"infuse gravity-bound life essence at the &9terra plate&r. botania's own gaia_ingot recipe is removed -- this is the only route now."
+				]
+				icon: "botania:gaia_ingot"
+				id: "4E84A1409EBD40D8"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "botania:gaia_ingot"
+					id: "7623DF05AACA95C6"
+					count: 2L
+					type: "item"
+				}]
+				title: "Gaia Spirit Ingot"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["4E84A1409EBD40D8"]
+				description: [
+					"&6gaia-bound blood shard&r wraps the vanilla weakbloodshard cost with a pinch of &6gaia spirit dust&r -- the same material family the soul forge tax uses. 40,000 LP at the blood altar, upgradeLevel 3."
+					""
+					"needs your altar at tier 4 (108 runes) to hold the syphon."
+				]
+				id: "44D4B51A634629F4"
+				subtitle: "the master orb chain, taxed"
+				tasks: [{
+					item: "bloodmagic:masterbloodorb"
+					id: "1E379B62D610E38D"
+					type: "item"
+				}]
+				title: "Master Blood Orb"
+				x: 6.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6E7831B6B5E62E07"]
+				description: [
+					"manaweaving t2: &6pyrium ingot&r x4 (triangle/diamond: chaos essence + 2x fire + 2x air essences) and &6experience bottle&r x8 (circle/square: chaos essence + 2x water + 2x earth essences)."
+				]
+				id: "276FFDF0F7DB3B17"
+				shape: "square"
+				size: 0.75d
+				subtitle: "two side lines off chaos essence"
+				tasks: [
+				{
+					item: "irons_spellbooks:pyrium_ingot"
+					id: "266A5D0DB732C166"
+					count: 4L
+					type: "item"
+				}
+				{
+					item: "minecraft:experience_bottle"
+					id: "504A4E4D0DD05692"
+					count: 8L
+					type: "item"
+				}
+				]
+				title: "Pyrium & Bottled XP"
+				x: 1.5d
+				y: -3.0d
+			}
+			{
+				dependencies: ["4E84A1409EBD40D8", "56A67C0175837EC3"]
+				description: [
+					"alchemy table (200 ticks): gaia ingot + resonant gravitite core + chaos essence -- a sigil blank. finish it at the terra plate with an element attunement stone."
+				]
+				id: "74B6B0967617176D"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:gravitic_sigil"
+					id: "323DE2FA76E07C65"
+					type: "item"
+				}]
+				title: "Gravitic Sigil"
+				x: 6.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["4E84A1409EBD40D8", "168E3331554C7D65"]
+				description: [
+					"manaweaving t2 (knot2/diamond): gaia ingot + occultism's dictionary of spirits + afrit essence + element attunement stone."
+				]
+				id: "549CC3810F646169"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:gravitic_wizard_brain"
+					id: "1E8848BA32B82DFF"
+					type: "item"
+				}]
+				title: "Gravitic Wizard Brain"
+				x: 7.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["4E84A1409EBD40D8", "56A67C0175837EC3", "41E0618F659371D6"]
+				description: [
+					"&6motive core&r (occultism ritual, afrit, 120 ticks: gaia spirit rod + resonant gravitite core + a plain piston + afrit essence). &6channeling vessel&r (runic altar: gaia ingot + mana bottle + chaos essence + rune_water). &6ward lattice&r (alchemy table, upgradeLevel 2: gaia spirit plate + steadfast will + prima materia plate + rune_earth)."
+				]
+				id: "103E88506DD388E6"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:gravitic_motive_core"
+					id: "70232B8B652853D4"
+					type: "item"
+				}
+				{
+					item: "kubejs:gravitic_channeling_vessel"
+					id: "414D9BC2E372756F"
+					type: "item"
+				}
+				{
+					item: "kubejs:gravitic_ward_lattice"
+					id: "379D264749D09AB7"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 7.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["74B6B0967617176D", "549CC3810F646169", "15DD34FC19FC4D68"]
+				description: [
+					"three-stage sublimation, tier 3, wisdom 1. stage 1: resonant gravitite core, element attunement stone, gravitic sigil. stage 2: radiant rose, abjuration necrotic, slumbering idol. stage 3: 2x prima materia ingot + wisdom stone nigredo."
+					""
+					"wear it and the shortcut ladder advances: distillation fabrication makes initiate's &6ambrosia-touched elementite&r straight from materia, batch of 3."
+				]
+				icon: "magichem:wisdom_stone_albedo"
+				id: "0F0C40E0873A507F"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "wisdom stone: albedo"
+				tasks: [{
+					item: "magichem:wisdom_stone_albedo"
+					id: "35A83C76B49C75D6"
+					type: "item"
+				}]
+				title: "Albedo Wisdom Stone"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["74B6B0967617176D", "103E88506DD388E6"]
+				description: [
+					"strong healing potion + holy silver dust + a gravitic sigil + gravitic channeling vessel. optional gear, not required for the tier's exit."
+				]
+				id: "04D4E77B823E81E0"
+				shape: "square"
+				size: 0.6d
+				subtitle: "a bottled magical fluid"
+				tasks: [{
+					item: "reliquary:glowing_water"
+					id: "19F9AE0FF4D4EA05"
+					type: "item"
+				}]
+				title: "Glowing Water"
+				x: 9.0d
+				y: 2.0d
+			}
+			{
+				dependencies: ["4E84A1409EBD40D8", "74B6B0967617176D", "549CC3810F646169", "103E88506DD388E6", "5417A43881AA537B", "44D4B51A634629F4"]
+				description: [
+					"gaia spirit ingot flowing, prima materia banked, marid summoned. alchemist wants the demon will loop running -- start banking tartaric gems before you go."
+				]
+				icon: "botania:gaia_ingot"
+				id: "5C59510CCDEDA037"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the guardian is dead, the forge stands"
+				tasks: [{
+					id: "074FB786106477D7"
+					title: "Onward to Alchemist"
+					type: "checkmark"
+				}]
+				title: "Tier Four Complete"
+				x: 10.5d
+				y: 0.5d
+			}
+	]
+	subtitle: ["Chaos, given form"]
 	title: "V. Sorcerer"
 }

@@ -4,250 +4,613 @@
 	filename: "i_hobbyist"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "minecraft:glowstone_dust"
+	icon: "gtceu:ashen_ichor_ingot"
 	id: "7CF2FD9D3493A9FF"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: [ ]
-			description: [
-				"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essentia, life essence, and rituals. three pillars carry the tree: &6mana & artifice&r (manaweaving/wands), &4blood magic&r (the LP economy), and &dmagichem&r (essentia/alembic)."
-				""
-				"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
-			]
-			id: "1FA819FE418EBE16"
-			shape: "diamond"
-			subtitle: "the easy way out"
-			tasks: [{
-				id: "5CE2A909940AA9BB"
+			{
+				dependencies: [ ]
+				description: [
+					"this is the magic side: no boilers, no voltage, no soot -- cauldrons, essentia, life essence, and rituals. four pillars carry the tree at this stage: &6botania&r (petals/livingrock), &doccultism&r (spiritfire/spirits), &2malum&r (soul-hunting/spirit altar), and &4blood magic&r (the LP economy). &9mana & artifice&r and &dmagichem&r don't open until apprentice -- they're aether-gated, and the aether is what this whole chapter builds toward."
+					""
+					"magic and tech trade materials constantly in this pack. even a pure mage should check the other book now and then."
+				]
+				id: "6135CDA5AA58E147"
+				shape: "diamond"
+				subtitle: "the easy way out"
+				tasks: [{
+					id: "4FD1872CC8EEE445"
+					title: "Magic!"
+					type: "checkmark"
+				}]
 				title: "Magic!"
-				type: "checkmark"
-			}]
-			title: "Magic!"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1FA819FE418EBE16"]
-			description: [
-				"hexerei's &6mixing cauldron&r is your first magical workstation. fire charges, ashen ichor, and plenty else brew here across the early tree."
-				""
-				"needs a heat source underneath and the right liquid inside. the recipe's in JEI."
-			]
-			id: "46F3E5D16CC665B8"
-			shape: "rsquare"
-			size: 1.5d
-			subtitle: "The cauldron awakens"
-			tasks: [{
-				id: "18F0B637AAB71C9E"
-				item: "hexerei:mixing_cauldron"
-				type: "item"
-			}]
-			title: "Double, Double"
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["46F3E5D16CC665B8"]
-			description: [
-				"magichem's &6alembic&r decomposes ordinary items into essentia -- coal, dirt, feathers, and the like break down into &cfire&r/&2earth&r/&7air&r/&9water&r essentia. wisdom 0, no wisdom stone needed, entry tier."
-				""
-				"brew spares. essentia are the base of this whole tree."
-			]
-			id: "475DA94832CDDEB7"
-			subtitle: "who needs the periodic table"
-			tasks: [
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"hexerei's &6mixing cauldron&r is your first magical workstation. 2x iron plate, `gtceu:iron_bolt`, a vanilla cauldron, 2x gold plate, 2x wooden slab, damaging a wrench."
+					""
+					"needs a heat source underneath and the right liquid inside -- lava for most of this tier's recipes, water for a couple. the recipe's in JEI."
+				]
+				id: "7F807C243FE802BB"
+				shape: "rsquare"
+				size: 1.5d
+				subtitle: "The cauldron awakens"
+				tasks: [{
+					item: "hexerei:mixing_cauldron"
+					id: "66FAE6BF81926F73"
+					type: "item"
+				}]
+				title: "Double, Double"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"place it, fill with water (right-click or throw in a bucket), throw in &6mystical petals&r, then throw a seed to finish. every botania flower is made here."
+					""
+					"&6mystical petals&r are this tier's elemental currency, standing in for the magichem essentia you won't have until apprentice: &cfire = red&r, &9water = blue&r, &2earth = brown&r, &7air = white&r. collect one of each -- you'll be brewing with all four constantly."
+				]
+				id: "3AFE4C91FE577BFD"
+				shape: "rsquare"
+				subtitle: "what and what is next"
+				tasks: [
 				{
-					id: "0B787DB01AADC412"
-					item: "magichem:essentia_fire"
+					item: "botania:apothecary_default"
+					id: "092ACC432226F87F"
 					type: "item"
 				}
 				{
-					id: "47BEC2412B467A34"
+					item: "botania:red_petal"
+					id: "14AA8E5E1C4D6AB3"
+					title: "Red Petal (fire)"
+					type: "item"
+				}
+				{
+					item: "botania:blue_petal"
+					id: "62F8B4406878DDFA"
+					title: "Blue Petal (water)"
+					type: "item"
+				}
+				{
+					item: "botania:brown_petal"
+					id: "1CC07247E7BE607C"
+					title: "Brown Petal (earth)"
+					type: "item"
+				}
+				{
+					item: "botania:white_petal"
+					id: "4863A8829AF05552"
+					title: "White Petal (air)"
+					type: "item"
+				}
+				]
+				title: "Petal Apothecary"
+				x: 1.5d
+				y: -2.0d
+			}
+			{
+				dependencies: ["3AFE4C91FE577BFD"]
+				description: [
+					"the &6pure daisy&r (apothecary, plain petals + seeds -- deliberately cheap) placed next to stone makes &6livingrock&r; next to wood makes livingwood."
+					""
+					"livingrock isn't flavor here -- it's the ashen ichor blend reagent, the spirit altar's own build cost, and the blood altar's build cost. keep a stack on hand from turn one."
+				]
+				id: "62F896951CAD2872"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "a hard requirement, not a decoration"
+				tasks: [{
+					item: "botania:livingrock"
+					id: "501C07B19DAC8861"
+					count: 4L
+					type: "item"
+				}]
+				title: "Pure Daisy"
+				x: 3.0d
+				y: -2.0d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"break grass for &ddemon's dream&r seeds, farm the plant, compress fruit/seeds into &ddemon's dream essence&r, then throw it on the ground and light it with flint & steel -- &dspiritfire&r."
+					""
+					"throw items into the flame to convert them: andesite -> &dotherstone&r, oak sapling -> otherworld sapling, feather -> &dawakened feather&r, black dye -> &dpurified ink&r, book -> &dtaboo book&r, and impure chalk -> pure &6white chalk&r. these five conversions are the backbone of everything occultism does from here on."
+				]
+				id: "3C9F8E8606AC1E24"
+				shape: "rsquare"
+				subtitle: "light the veil on fire"
+				tasks: [{
+					item: "occultism:otherworld_essence"
+					id: "663F19213D4C571F"
+					title: "Otherworld Essence"
+					type: "item"
+				}]
+				title: "Spiritfire"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["3C9F8E8606AC1E24"]
+				description: [
+					"an empty book of binding is taboo book + awakened feather + purified ink. dye it white for a &6book of binding: foliot&r, then craft it with the &ddictionary of spirits&r to name it -- that binds it to a specific summon."
+					""
+					"the dictionary itself: 3x paper, botania livingwood (the spine must be living), and a slime ball (a real vanilla stand-in for gt's own glue). craft otherstone sacrificial bowls, one golden bowl, and tallow candles (kill large animals with a &6butcher knife&r) -- then draw the pentacle, fill the bowls, and right-click the golden bowl with the bound book."
+				]
+				id: "02C3307D419D7F32"
+				shape: "rsquare"
+				subtitle: "paper, feather, ink, and a name"
+				tasks: [{
+					item: "occultism:golden_sacrificial_bowl"
+					id: "07DA60D51DA81AF2"
+					type: "item"
+				}]
+				title: "Books of Binding"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["02C3307D419D7F32"]
+				description: [
+					"summon a &6foliot&r -- occultism's lowest-tier helper. this quest tracks the &blumberjack&r ritual specifically; you can also bind a foliot to &bcleaner&r or &bitem transport&r duty afterward."
+					""
+					"every foliot ritual in this pack additionally costs a plain &6fire charge&r (unmodified vanilla recipe) as a gate item. cheap, and required -- apprentice assumes you have logistics help."
+				]
+				id: "426B74354D3A5B86"
+				subtitle: "your first spirit"
+				tasks: [{
+					advancement: "occultism:occultism/summon_foliot_lumberjack"
+					criterion: ""
+					id: "480BC2C1677DDC58"
+					type: "advancement"
+				}]
+				title: "Foliot Spirit"
+				x: 4.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"malum's &carcane charcoal&r comes from plain log smelting -- zero spirit cost by the mod's own design. process it into &carcane charcoal fragments&r."
+					""
+					"you'll burn through a lot of these: they're the shell of both the blood altar and the spirit altar, and the base of the ashen ichor chain."
+				]
+				id: "32024DC5D3146879"
+				subtitle: "malum's own fire"
+				tasks: [{
+					item: "malum:arcane_charcoal_fragment"
+					id: "1BC990ED69B7AE67"
+					count: 8L
+					type: "item"
+				}]
+				title: "Arcane Charcoal"
+				x: 1.5d
+				y: 3.0d
+			}
+			{
+				dependencies: ["32024DC5D3146879", "3C9F8E8606AC1E24"]
+				description: [
+					"a weapon needs to be spiritually attuned via the otherworld before it can harvest a soul from a kill -- iron ingots, &dotherworld essence&r, and malum's own &2processed soulstone&r, on a stick."
+					""
+					"cheapest entry into &2#malum:soul_hunter_weapon&r, not the only one. kill mobs with it to harvest typed spirits."
+				]
+				id: "7936F7D0E8857C8F"
+				subtitle: "attuned to the otherworld"
+				tasks: [{
+					item: "malum:crude_scythe"
+					id: "036E8BD2C82689FF"
+					type: "item"
+				}]
+				title: "Crude Scythe"
+				x: 3.0d
+				y: 3.0d
+			}
+			{
+				dependencies: ["7936F7D0E8857C8F"]
+				description: [
+					"wicked spirits fit blood magic's own identity better than any of the other seven types -- and you'll need a handful of them soon, both for the spirit altar's own recipe list and to build the blood altar itself."
+					""
+					"bank at least 8."
+				]
+				id: "5E9DA7D9E2195C7D"
+				subtitle: "dark, sacrificial, fitting"
+				tasks: [{
+					item: "malum:wicked_spirit"
+					id: "47D0460E6A144644"
+					count: 8L
+					type: "item"
+				}]
+				title: "Wicked Spirits"
+				x: 4.5d
+				y: 3.0d
+			}
+			{
+				dependencies: ["5E9DA7D9E2195C7D", "62F896951CAD2872"]
+				description: [
+					"malum's vanilla recipe -- runewood planks, processed soulstone, gold plates, arcane charcoal fragment, &6livingrock&r, and occultism's &dotherstone&r, damaging a saw."
+					""
+					"spirit infusion takes one prime input + typed spirits + optional pedestal extras. this is where ashen ichor gets finished, and -- unusually -- where the blood altar itself gets built."
+				]
+				icon: "malum:spirit_altar"
+				id: "7D39B03D4CA89F01"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "where souls get shaped"
+				tasks: [{
+					item: "malum:spirit_altar"
+					id: "392FA222935155C5"
+					type: "item"
+				}]
+				title: "Spirit Altar"
+				x: 6.0d
+				y: 2.25d
+			}
+			{
+				dependencies: ["7D39B03D4CA89F01"]
+				description: [
+					"blood magic's &4blood altar&r isn't a plain grid craft here -- it's infused &6at the spirit altar&r: a furnace + arcane charcoal fragments + stone + gold plates + livingrock, sealed with 4x &6wicked spirit&r."
+					""
+					"right-click air near it with a &4sacrificial dagger&r: 1 heart = 200 LP. bind a &6weak blood orb&r (diamond + 2,000 LP at tier 0) -- every LP cost in this pack draws from your soul network through a bound orb, not the altar directly. place blood runes to raise the tier: 8 for tier 1, 28 for tier 2."
+				]
+				icon: "bloodmagic:weakbloodorb"
+				id: "13C07BBFC29A2CF5"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "built at a stranger station than usual"
+				tasks: [
+				{
+					item: "bloodmagic:altar"
+					id: "34B5CBCC0F7C0E96"
+					type: "item"
+				}
+				{
+					item: "bloodmagic:weakbloodorb"
+					id: "61E4656CC76700BE"
+					type: "item"
+				}
+				]
+				title: "First Blood"
+				x: 7.5d
+				y: 2.25d
+			}
+			{
+				dependencies: ["13C07BBFC29A2CF5"]
+				description: [
+					"blood magic's own guide book explains every altar tier, ritual, and sigil the mod ships -- book + glass turns any patchouli guide into it."
+					""
+					"the &6tiers & getting started&r page walks the whole ladder. you'll be syphoning LP out of this altar for the rest of the tree."
+				]
+				id: "2AEEACDA43C91391"
+				subtitle: "read the book that came with the altar"
+				tasks: [{
 					item: {
 						Count: 1
-						id: "ftbfiltersystem:smart_filter"
+						id: "patchouli:guide_book"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(magichem:essentia_earth)item(magichem:essentia_air)item(magichem:essentia_water))"
+							"patchouli:book": "bloodmagic:guide"
 						}
 					}
-					title: "Any Other Essentia"
+					id: "0C6AE7788805F252"
+					type: "item"
+				}]
+				title: "Sanguine Scientiem"
+				x: 9.0d
+				y: 2.25d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"hand-craftable with a file, hammer, and wire cutter -- no ore processing chain needed yet. bank a &6silver screw&r, a &6silver plate&r, and a &6gold spring&r (silver has no spring form)."
+					""
+					"silver is already required by the foliot crusher ritual, so this isn't a new gate -- just get enough for what's coming."
+				]
+				id: "696540FF0C1738BD"
+				subtitle: "the shell, not the spark"
+				tasks: [
+				{
+					item: "gtceu:silver_screw"
+					id: "304C630734F09F3C"
+					count: 2L
 					type: "item"
 				}
-			]
-			title: "Greek to Me"
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["475DA94832CDDEB7"]
-			description: [
-				"two &cfire essentia&r plus one each of &9water&r/&2earth&r/&7air&r, plus blaze powder, coal, and occultism's &dotherworld essence&r, brew into four &6fire charges&r in the cauldron. a fire charge lights a nether portal on right-click -- no flint and steel required."
-				""
-				"the tech tree reaches the nether through metallurgy. this skips all of it."
-			]
-			id: "7FDB6031A17DC65B"
-			subtitle: "i'd rather not touch steel"
-			tasks: [{
-				id: "3AF5DEF6D2FCCE84"
-				item: "minecraft:fire_charge"
-				type: "item"
-			}]
-			title: "Arson Works Too"
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7FDB6031A17DC65B"]
-			description: [
-				"summon a &6foliot&r spirit -- occultism's lowest-tier helper. this quest tracks the &blumberjack&r ritual specifically; you can also bind a foliot to &bcleaner&r or &bitem transport&r duty afterward, but summon a lumberjack first to clear this quest."
-				""
-				"costs a fire charge. cheap, and it's required -- the apprentice tier assumes you have logistics help."
-			]
-			id: "8F3A6C1D2B9E4057"
-			subtitle: "your first spirit"
-			tasks: [{
-				advancement: "occultism:occultism/summon_foliot_lumberjack"
-				criterion: ""
-				id: "8F3A6C1D2B9E4058"
-				type: "advancement"
-			}]
-			title: "Foliot Spirit"
-			x: 6.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7FDB6031A17DC65B"]
-			dependency_requirement: "one_completed"
-			description: [
-				"build the frame, right-click a fire charge, walk in. the nether has blaze rods, soul sand, and plenty that wants you dead -- most of it an ingredient eventually."
-				""
-				"bring spare fire charges. portals break."
-			]
-			icon: "minecraft:netherrack"
-			id: "1BBC77A8493BB220"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "welcome to hell, weather's lovely"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "3FB55B635F060F2D"
-				title: "Take a Trip to the Nether"
-				type: "dimension"
-			}]
-			title: "Nether Again"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["475DA94832CDDEB7"]
-			description: [
-				"essentia bind into wearables. &bair&r essentia sews an &6umbrella&r that slows your fall, &9water&r essentia webs a pair of &6flippers&r, and &2earth&r essentia roots the &6rooted boots&r."
-				""
-				"the flippers and boots also need &ddubious dust&r from nameless trinkets. the umbrella just needs leather, a stick, and wire cutters. craft any one."
-			]
-			id: "5B21D4E09A7F3C10"
-			subtitle: "the drip of the elements"
-			tasks: [{
-				id: "5B21D4E09A7F3C11"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(artifacts:umbrella)item(artifacts:flippers)item(artifacts:rooted_boots))"
-					}
+				{
+					item: "gtceu:silver_plate"
+					id: "4E58AD42509D9F6A"
+					count: 2L
+					type: "item"
 				}
-				title: "Any Elemental Artifact"
-				type: "item"
-			}]
-			title: "Elemental Fashion"
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1FA819FE418EBE16"]
-			description: [
-				"blood magic's &4blood altar&r turns life essence into &6LP&r (life points), the resource that fuels alchemy and infusion pack-wide. self-sacrifice with a ritual knife fills it at tier 0, no orb required yet."
-				""
-				"you'll be syphoning LP out of this altar for the rest of the tree."
-			]
-			icon: "bloodmagic:weakbloodorb"
-			id: "501D74B0BE102380"
-			shape: "rsquare"
-			subtitle: "the first altar"
-			tasks: [{
-				id: "411C5FF82F54BECD"
-				item: "bloodmagic:altar"
-				type: "item"
-			}]
-			title: "First Blood"
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["501D74B0BE102380"]
-			description: [
-				"blood magic's own guide book, &6sanguine scientiem&r, explains every altar tier, ritual, and sigil this mod ships -- book + glass turns any patchouli guide into it."
-				""
-				"your altar is tier 0 right now. tier 1 needs 8 runes placed around it, tier 2 needs 28, tier 3 needs 56, tier 4 needs 108 -- each tier raises the LP buffer and unlocks pricier recipes. the book's own &6tiers & getting started&r page walks the whole ladder."
-			]
-			id: "775A2410E874BF90"
-			subtitle: "read the book that came with the altar"
-			tasks: [{
-				id: "702058039C085DB5"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "bloodmagic:guide"
-					}
+				{
+					item: "gtceu:gold_spring"
+					id: "23AB725C2EACA079"
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "Sanguine Scientiem"
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["46F3E5D16CC665B8", "501D74B0BE102380"]
-			description: [
-				"the tier's signature metal. &carcane charcoal fragments&r (malum) plus redstone brew into &6ichor dust&r in the cauldron. blend in a pinch of &9vinteum dust&r (mana & artifice), then charge the blend at the &4blood altar&r into &6kindled ichor dust&r."
-				""
-				"smelt the kindled dust into a rough ingot, then finish it at malum's &dspirit altar&r with two infernal spirits bound -- that's &6ashen ichor&r, a real GT material from here on. shortcut once you hit apprentice: vinteum dust + arcane charcoal at the alchemy table, no altar chain needed."
-			]
-			icon: "gtceu:ashen_ichor_ingot"
-			id: "46D4D92DC55B091D"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "02D4C5E13E757C05"
-				item: "gtceu:ashen_ichor_ingot"
-				type: "item"
-			}]
-			title: "Ashen Ichor"
-			x: 4.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["475DA94832CDDEB7"]
-			description: [
-				"the &6copper spell book&r binds all four essentia around a book, cased in copper plates -- plus an &9ichor sigil&r: brew ashen ichor, arcane essentia, and otherworld essence in the heated cauldron for a sigil blank, then charge it at the &4blood altar&r."
-				""
-				"reinforce it with iron plates for the &6iron spell book&r and an extra spell slot. the copper one comes first."
-			]
-			id: "62E8A3F71C0D4B20"
-			subtitle: "required reading"
-			tasks: [{
-				id: "62E8A3F71C0D4B21"
-				item: "irons_spellbooks:iron_spell_book"
-				type: "item"
-			}]
-			title: "Booked Up"
-			x: 3.0d
-			y: -2.5d
-		}
+				]
+				title: "Silver & Gold Hardware"
+				x: 1.5d
+				y: 4.5d
+			}
+			{
+				dependencies: ["3AFE4C91FE577BFD", "3C9F8E8606AC1E24"]
+				description: [
+					"the mixing cauldron, heated, with lava inside: 2x red petal, blue petal, brown petal, white petal, blaze powder, coal, and &dotherworld essence&r -- 4x &6chthonic yew sapling&r."
+					""
+					"plant all 4 in a 2x2 and bonemeal. it grows into a dark-oak-style special tree that opens its own nether portal in the trunk -- no obsidian frame needed."
+				]
+				id: "2A2CD9AC32093E24"
+				subtitle: "a tree that opens its own door"
+				tasks: [{
+					item: "window_box:chthonic_yew_sapling"
+					id: "7235085AA80B13E9"
+					count: 4L
+					type: "item"
+				}]
+				title: "Chthonic Yew Sapling"
+				x: 4.5d
+				y: 6.0d
+			}
+			{
+				dependencies: ["2A2CD9AC32093E24"]
+				description: [
+					"walk into your chthonic yew's trunk. the nether has blaze rods, soul sand, infernal spirits, and plenty that wants you dead -- most of it an ingredient eventually."
+					""
+					"this is also where you'll harvest &6infernal spirits&r with your soul-hunter weapon -- ashen ichor needs two."
+				]
+				icon: "minecraft:netherrack"
+				id: "6730B731DE37163F"
+				shape: "rsquare"
+				subtitle: "welcome to hell, weather's lovely"
+				tasks: [{
+					dimension: "minecraft:the_nether"
+					id: "73B8FACF06F5E2FE"
+					title: "Take a Trip to the Nether"
+					type: "dimension"
+				}]
+				title: "Nether Again"
+				x: 6.0d
+				y: 4.5d
+			}
+			{
+				dependencies: ["6730B731DE37163F", "7D39B03D4CA89F01"]
+				description: [
+					"harvest these with your soul-hunter weapon in the nether. bank at least 4 -- 2 finish the ashen ichor ingot, 1 feeds the wizard brain, and you'll want spares."
+				]
+				id: "7A547669A2805B71"
+				subtitle: "the spirit ashen ichor actually wants"
+				tasks: [{
+					item: "malum:infernal_spirit"
+					id: "271CC5F4EE9459D7"
+					count: 4L
+					type: "item"
+				}]
+				title: "Infernal Spirits"
+				x: 7.5d
+				y: 4.5d
+			}
+			{
+				dependencies: ["13C07BBFC29A2CF5", "7A547669A2805B71", "32024DC5D3146879"]
+				description: [
+					"the full chain: arcane charcoal fragments + redstone brew into &6ichor dust&r in the cauldron (lava, heated). blend in a pinch of &6livingrock&r for &6livingrock ichor blend&r, then charge it at the &4blood altar&r (250 LP, tier 0) into &6kindled ichor dust&r."
+					""
+					"smelt the kindled dust into a rough ingot, then finish it at the &6spirit altar&r with 2x &6infernal spirit&r -- &6ashen ichor&r, a real GT material from here on. `.ingot()` + `GENERATE_ROD` only, no plate form. shortcut once you hit apprentice: vinteum dust + arcane charcoal fragment at the alchemy table, batch of 2, no altar chain needed."
+				]
+				icon: "gtceu:ashen_ichor_ingot"
+				id: "3C2B43016D465E46"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "gtceu:ashen_ichor_ingot"
+					id: "453B94792DCEE68E"
+					type: "item"
+				}]
+				title: "Ashen Ichor"
+				x: 9.0d
+				y: 3.5d
+			}
+			{
+				dependencies: ["3C2B43016D465E46"]
+				description: [
+					"cauldron (lava, heated): 2x ashen ichor ingot, 2x &5arcane essence&r, 2x &dotherworld essence&r, 2x redstone -- a sigil blank. charge it at the &4blood altar&r (500 LP, tier 0) to finish it."
+					""
+					"this tier's circuit-equivalent. every recipe below that wants one means exactly this item."
+				]
+				id: "7FF0B1403E2572E6"
+				subtitle: "required reading, cast in metal"
+				tasks: [{
+					item: "kubejs:ichor_sigil"
+					id: "1431E83FC3A742F8"
+					type: "item"
+				}]
+				title: "Ichor Sigil"
+				x: 10.5d
+				y: 3.0d
+			}
+			{
+				dependencies: ["3C2B43016D465E46"]
+				description: [
+					"spirit altar: ashen ichor ingot + a plain book (the thought vessel) + 1 infernal spirit (the animating agent). every tier's wizard brain follows this same grammar -- vessel plus agent, bound into tier metal."
+				]
+				id: "2AB7115E3001212A"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:ichor_wizard_brain"
+					id: "45628C8112189044"
+					type: "item"
+				}]
+				title: "Ichor Wizard Brain"
+				x: 10.5d
+				y: 4.0d
+			}
+			{
+				dependencies: ["3C2B43016D465E46"]
+				description: [
+					"three components, always the same 3x3 grammar (article + reagent around the tier's S-form): &6motive core&r (ashen ichor rod + blaze powder + redstone, cauldron), &6channeling vessel&r (blood magic alchemy array: throw an ashen ichor ingot onto a blankslate base), and &6ward lattice&r (spirit altar, 4x ashen ichor ingot + obsidian + 2x &6sacred spirit&r)."
+					""
+					"ashen ichor has no plate form, so the ward lattice falls back to the ingot -- the one exception you'll see written into appendix A0 of the design doc, if you ever read it."
+				]
+				id: "643C7CC9B3B931F0"
+				subtitle: "motive, vessel, ward -- the same shape every tier"
+				tasks: [
+				{
+					item: "kubejs:ichor_motive_core"
+					id: "396FF24F069B2FA6"
+					type: "item"
+				}
+				{
+					item: "kubejs:ichor_channeling_vessel"
+					id: "6D37C1744D924925"
+					type: "item"
+				}
+				{
+					item: "kubejs:ichor_ward_lattice"
+					id: "4940168825EFFD1F"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 10.5d
+				y: 5.0d
+			}
+			{
+				dependencies: ["6135CDA5AA58E147"]
+				description: [
+					"iron's spellbooks' main crafting desk: common ink, a book, wooden slabs, logs, damaging a saw and mallet. no sigil needed -- pure infrastructure."
+				]
+				id: "03CE9ED4A79D830C"
+				shape: "rsquare"
+				size: 0.75d
+				subtitle: "the spellcrafting desk"
+				tasks: [{
+					item: "irons_spellbooks:inscription_table"
+					id: "59A8708306E06563"
+					type: "item"
+				}]
+				title: "Inscription Table"
+				x: 6.0d
+				y: 6.0d
+			}
+			{
+				dependencies: ["3AFE4C91FE577BFD", "7FF0B1403E2572E6", "643C7CC9B3B931F0"]
+				description: [
+					"the &6copper spell book&r binds all four mystical petals around a book, cased in copper plates, plus an &6ichor sigil&r -- this tier's actual casting device."
+					""
+					"reinforce it with iron plates and a &6ward lattice&r for the &6iron spell book&r and an extra spell slot. the copper one comes first."
+				]
+				id: "3E16D13FC56A3A5B"
+				subtitle: "required reading"
+				tasks: [{
+					item: "irons_spellbooks:iron_spell_book"
+					id: "52144410886D66BD"
+					type: "item"
+				}]
+				title: "Booked Up"
+				x: 12.0d
+				y: 3.0d
+			}
+			{
+				dependencies: ["7FF0B1403E2572E6", "2AB7115E3001212A"]
+				description: [
+					"reliquary's fortune coin: &5arcane essence&r, a double gold plate, an ashen ichor ingot, plus an &6ichor sigil&r and &6ichor wizard brain&r, damaging a hammer and file."
+					""
+					"doesn't stack -- it's equipment, not a bulk reagent. treat it that way in every recipe that touches it."
+				]
+				id: "2DB724B92433C1CE"
+				size: 0.75d
+				subtitle: "luck, cast and charged"
+				tasks: [{
+					item: "reliquary:fortune_coin"
+					id: "55F857DB60826292"
+					type: "item"
+				}]
+				title: "Fortune Coin"
+				x: 12.0d
+				y: 4.0d
+			}
+			{
+				dependencies: ["7FF0B1403E2572E6", "643C7CC9B3B931F0"]
+				description: [
+					"reliquary's infernal claw: leather, molten core, rib bone, slime pearl, plus an &6ichor sigil&r and &6ichor motive core&r -- a claw is a mechanical weapon, so the motive core fits the theme."
+					""
+					"optional power trinket, not required for the tier's exit."
+				]
+				id: "31A76CC2A84104CB"
+				size: 0.75d
+				subtitle: "a moving mechanical weapon"
+				tasks: [{
+					item: "reliquary:infernal_claw"
+					id: "525F05457B8C9FD5"
+					type: "item"
+				}]
+				title: "Infernal Claw"
+				x: 12.0d
+				y: 5.0d
+			}
+			{
+				dependencies: ["7F807C243FE802BB"]
+				description: [
+					"cauldron (water, heated): 8x live coral. the early renewable-oil toy for hybrid tech players -- feeds oil at apprentice via the manaweaving altar's kerogen recipe."
+					""
+					"nothing downstream of hobbyist requires this. build it if you're planning a tech crossover, skip it if you're not."
+				]
+				id: "0D7DE2282962ACE0"
+				shape: "square"
+				size: 0.6d
+				subtitle: "optional, and load-bearing nowhere"
+				tasks: [{
+					item: "kubejs:primordial_organic_muck"
+					id: "61F7F32A01169791"
+					type: "item"
+				}]
+				title: "Primordial Organic Muck"
+				x: 3.0d
+				y: 6.0d
+			}
+			{
+				dependencies: ["696540FF0C1738BD", "643C7CC9B3B931F0", "3C2B43016D465E46"]
+				description: [
+					"aether portal creation is disabled pack-wide -- the glowstone+water route is dead, and the vanilla frame recipe is deleted. this item is the &6only&r entry in `#aether:aether_portal_activation_items`."
+					""
+					"silver screws + silver plate for the shell and fasteners, an ashen ichor rod for the striker, a gold spring for its return (silver has none), an ichor channeling vessel to hold the water charge, and glowstone dust for the frame-matched medium. &cdamageable, 4 uses&r -- keep a spare. if your aether portal breaks while you're inside, dying is the only way home."
+				]
+				id: "2DF957BD06378ABA"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "the only way through"
+				tasks: [{
+					item: "kubejs:quick_and_dirty_portal_generator"
+					id: "1A8DB69B9B118E6C"
+					type: "item"
+				}]
+				title: "Quick & Dirty Portal Generator"
+				x: 13.5d
+				y: 3.5d
+			}
+			{
+				dependencies: ["2DF957BD06378ABA"]
+				description: [
+					"build a 4x5 glowstone frame, right-click it with the portal generator, walk in. that's it -- hobbyist is done."
+					""
+					"the aether has zanite, its own dangers, and every ingredient apprentice is built on. &6mana & artifice&r and &6magichem&r both wait on the other side -- neither can start until now."
+				]
+				icon: "aether:aether_portal_frame"
+				id: "74C95A7023AFCE73"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "a second sky"
+				tasks: [{
+					dimension: "aether:the_aether"
+					id: "6DBE82CCA08FC700"
+					title: "Reach the Aether"
+					type: "dimension"
+				}]
+				title: "A Second Sky"
+				x: 15.0d
+				y: 3.5d
+			}
 	]
 	subtitle: ["Dip your toes into the arcane"]
 	title: "I. Hobbyist"

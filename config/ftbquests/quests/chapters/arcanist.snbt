@@ -4,170 +4,258 @@
 	filename: "arcanist"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "gtceu:gravitic_rubedo_ingot"
+	icon: "gtceu:katharite_ingot"
 	id: "7337FC0129A5752D"
 	order_index: 7
-	quest_links: [{
-		id: "71BE038EB1D9B1C3"
-		linked_quest: "7F1ABCF957C7AE77"
-		shape: "square"
-		size: 1.5d
-		x: 0.0d
-		y: 0.0d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: ["7F1ABCF957C7AE77"]
-			description: [
-				"the &3elven portal&r opens a gateway to &dalfheim&r - home of the elves."
-				""
-				"you can't visit. you can only trade. drop items through the portal and the elves will send something back."
-				""
-				"purely optional here -- this tier's own signature chain runs on &6superheated purified vinteum&r instead, no elven trading required. the portal's still good for dreamwood, elf glass, and a few item-return trades if you want them."
-			]
-			id: "7611918249B75923"
-			subtitle: "time to make some weird friends"
-			tasks: [
-				{
-					count: 8L
-					id: "3C7B69FE09B0B1A7"
-					item: "botania:livingwood_log"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "001E0B2EB1878615"
-					item: "botania:glimmering_livingwood_log"
-					type: "item"
-				}
-				{
-					id: "41AFFFDD052DB77F"
-					item: "botania:alfheim_portal"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "6CFB6D3E4742751D"
-					item: "botania:natura_pylon"
-					type: "item"
-				}
-			]
-			title: "Elven Trade Portal"
-			x: -2.5d
-			y: -2.0d
+			id: "162146F9B2DE13E2"
+			linked_quest: "41567D8EE63BF015"
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7F1ABCF957C7AE77"]
-			description: [
-				"&9purified vinteum ingot&r (dust + arcane ash + a mana flower, then smelt) fed through the &6arcane furnace&r at tier 2, 400 ticks of burn, comes out &6superheated purified vinteum&r -- this tier's real workhorse intermediate."
-				""
-				"no elves involved. every recipe below eats this directly."
-			]
-			id: "36021729B91C1137"
-			subtitle: "cooked twice, purified twice"
-			tasks: [{
-				id: "0404B1F210000928"
-				item: "mna:superheated_purified_vinteum_ingot"
-				type: "item"
-			}]
-			title: "Superheated Purified Vinteum"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["36021729B91C1137"]
-			description: [
-				"weave two superheated purified vinteum with a mana pearl and air essentia for &6pixie dust&r, or with a mana diamond and earth+water essentia for &6dragonstone&r."
-			]
-			icon: "botania:pixie_dust"
-			id: "05BE7E00A2F8ABD2"
-			subtitle: "the elves' other exports"
-			tasks: [{
-				id: "5D33288DD128B733"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(botania:pixie_dust)item(botania:dragonstone))"
-					}
-				}
-				title: "Any Elven Novelty"
-				type: "item"
-			}]
-			title: "Elven Novelties"
-			x: -2.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["36021729B91C1137"]
-			description: [
-				"the tier's signature metal. combine &9superheated purified vinteum&r with &drubedo essentia&r, then bind it to hellforged sand at the alchemy table for &cgravitic residue&r."
-				""
-				"a bound &6marid&r rituals the residue with afrit essence into &6gravitic rubedo&r. a plain furnace finishes the smelt."
-			]
-			icon: "gtceu:gravitic_rubedo_ingot"
-			id: "0035907892269ECE"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "307F8B0707949CE6"
-				item: "gtceu:gravitic_rubedo_ingot"
-				type: "item"
-			}]
-			title: "Gravitic Rubedo"
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"0035907892269ECE"
-				"05BE7E00A2F8ABD2"
-			]
-			description: [
-				"gravitic rubedo builds this tier's own set of parts: the &6rubedo array&r core (alchemy table, then a furnace pass) and the &6rubedo wizard brain&r (manaweaving altar) both start here."
-				""
-				"a handful of vanilla combines with rubedo plus extrabotany metals round out the set -- motive cores, channeling vessels, ward lattices."
-			]
-			icon: "kubejs:rubedo_sigil"
-			id: "3AD6234979E22204"
-			subtitle: "small parts, big tier"
-			tasks: [{
-				id: "6C012FF281B3B05D"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:rubedo_sigil)item(kubejs:rubedo_wizard_brain)item(kubejs:rubedo_motive_core)item(kubejs:rubedo_channeling_vessel)item(kubejs:rubedo_ward_lattice))"
-					}
-				}
-				title: "Any Rubedo Component"
-				type: "item"
-			}]
-			title: "Rubedo Components"
-			x: 0.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["3AD6234979E22204"]
-			description: [
-				"the &6alchemical nexus&r runs a fourth Ritual of the Balanced Scales. an elven source lattice, gravitic residue, and a rubedo item open it; ambrosia and pixie dust or dragonstone carry the middle stages; the final stage folds in two superheated purified vinteum and thaumaturge's own &6wisdom stone: citrinitas&r into &6wisdom stone: rubedo&r."
-				""
-				"wear it and thaumaturge's chimerite shortcut opens: raw materia straight to ingot, no astral observer needed."
-			]
-			id: "14DFD63BB3E9D353"
-			shape: "diamond"
-			subtitle: "the reddening"
-			tasks: [{
-				id: "2CAA0E30B1373FD8"
-				item: "magichem:wisdom_stone_rubedo"
-				type: "item"
-			}]
-			title: "Wisdom Stone: Rubedo"
+			id: "02973A8437121FCD"
+			linked_quest: "72BEDBC6D7F457BF"
 			x: 1.5d
-			y: -5.5d
+			y: 2.5d
 		}
 	]
-	subtitle: ["The elves have materials you can't make yourself"]
+	quests: [
+			{
+				dependencies: ["41567D8EE63BF015"]
+				description: [
+					"&6vinteum dust&r + &6arcane ash&r + a manaweaving flower, shapeless x3 -- &6purified vinteum dust&r. the same ore-to-coated-iron-to-ingot path as regular vinteum, but an 800-tick smelt -- &6purified vinteum ingot&r."
+					""
+					"arcane ash comes from arcane compound, burned in the arcane furnace, x4."
+				]
+				id: "1BEB71191349EF50"
+				shape: "rsquare"
+				subtitle: "the same ladder, hotter"
+				tasks: [{
+					item: "mna:purified_vinteum_ingot"
+					id: "50A1879DAD7179B6"
+					count: 4L
+					type: "item"
+				}]
+				title: "Purified Vinteum"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["1BEB71191349EF50"]
+				description: [
+					"one more pass through the arcane furnace turns purified vinteum ingot into &6superheated purified vinteum ingot&r -- this tier's real precursor, feeding the sigil, the wizard brain, and the lattice below."
+				]
+				id: "2774C53E7256E8A6"
+				subtitle: "the arcane furnace finishes it"
+				tasks: [{
+					item: "mna:superheated_purified_vinteum_ingot"
+					id: "73B8DC3567C7F43F"
+					count: 4L
+					type: "item"
+				}]
+				title: "Superheated Purified Vinteum"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["41567D8EE63BF015"]
+				description: [
+					"perform the &6pathway to the endless realm&r ritual. mine raw demonite and find &6intricate hellforged parts&r -- these are where &6hellforged sand&r and &6hellforged ingot&r come from."
+					""
+					"demonite blocks + the archmage's blood orb take your altar to &6tier 5&r (108 runes, hellforged blocks at the corners). hellforged parts + netherite scrap double every rune's power."
+				]
+				id: "12D828F2BD840369"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "come armed"
+				tasks: [{
+					item: "bloodmagic:sand_hellforged"
+					id: "2ABDB99382DA5113"
+					count: 4L
+					type: "item"
+				}]
+				title: "Pathway to the Endless Realm"
+				x: 0.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["2774C53E7256E8A6", "12D828F2BD840369"]
+				description: [
+					"hand-combine superheated purified vinteum ingot + &dmagichem essentia_rubedo&r -- &6clarified vinteum&r. bind it to hellforged sand at the alchemy table -- &6katharic residue&r."
+				]
+				id: "72662FBA3FC11710"
+				subtitle: "vinteum, clarified and bound"
+				tasks: [{
+					item: "kubejs:katharic_residue"
+					id: "4ABD8BDAF949AA07"
+					count: 2L
+					type: "item"
+				}]
+				title: "Katharic Residue"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["72662FBA3FC11710"]
+				description: [
+					"occultism ritual, &6marid&r pentacle, 150 ticks: katharic residue + afrit essence -- &6katharite core&r. plain furnace smelt to the ingot -- no blastTemp on this one, by design."
+					""
+					"shortcut once sage's philosopher's stone is worn: distillation fabrication, batch of 3, no raw items."
+				]
+				icon: "gtceu:katharite_ingot"
+				id: "1C9527CDB53769C2"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "gtceu:katharite_ingot"
+					id: "20AB44BB88B204C7"
+					count: 2L
+					type: "item"
+				}]
+				title: "Rubedo Core"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["12D828F2BD840369", "72BEDBC6D7F457BF"]
+				description: [
+					"&6chimerite-bound dungeon metal&r wraps blood magic's own dungeon metal with a starforged chimerite gem and its sigil -- so this station can't be reached by pure blood magic grinding."
+					""
+					"the blood altar's own tier-4 tax syphons that into &6archmage blood core&r (80,000 LP, upgradeLevel 4). a second stage -- magichem sublimation, tier 5, wisdom 3 -- infuses it into the finished orb with kathar's own wizard brain/ward lattice, dragonstone, and katharite plate."
+				]
+				id: "532CF085F380B0E7"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "taxed twice: material, then sublimation"
+				tasks: [{
+					item: "bloodmagic:archmagebloodorb"
+					id: "5BE55556EFAC58DC"
+					type: "item"
+				}]
+				title: "Archmage Blood Orb"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["2774C53E7256E8A6"]
+				description: [
+					"eldrin altar, arcane power, tier 4: superheated purified vinteum ingot + 2x resonant zanite crystal + 2x katharic residue. gates the demon-realm side of this tier's own build queue."
+				]
+				id: "329114425BC62DAA"
+				subtitle: "the eldrin altar, one more time"
+				tasks: [{
+					item: "kubejs:kathar_lattice"
+					id: "61623D59835E1056"
+					type: "item"
+				}]
+				title: "Kathar Lattice"
+				x: 6.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["1C9527CDB53769C2", "329114425BC62DAA"]
+				description: [
+					"alchemy table (200 ticks): katharite ingot + kathar lattice + dragonstone -- a sigil blank. plain furnace smelt finishes it, no altar step needed."
+				]
+				id: "119AD0458DA70986"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:kathar_sigil"
+					id: "65CB19C1DE754055"
+					type: "item"
+				}]
+				title: "Kathar Sigil"
+				x: 7.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["1C9527CDB53769C2", "2774C53E7256E8A6"]
+				description: [
+					"manaweaving, tier 3 (diamond/knot3): katharite ingot + hexcasting's akashic bookshelf (stored, queryable knowledge) + pixie dust + superheated purified vinteum ingot."
+				]
+				id: "38A2C3B49DE489E1"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:kathar_wizard_brain"
+					id: "1520E81B01EE72F4"
+					type: "item"
+				}]
+				title: "Kathar Wizard Brain"
+				x: 7.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["1C9527CDB53769C2"]
+				description: [
+					"&6motive core&r (arcane furnace, 800-tick burn, tier 4, off katharite rod). &6channeling vessel&r (gt arc furnace: hellforged sand scours a concepts bucket out, 20% chance of a bonus photonium ingot). &6ward lattice&r (occultism ritual, marid, 180 ticks: katharite plate + shadowium ingot + netherite scrap + afrit essence)."
+				]
+				id: "658E9390379F01AD"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:kathar_motive_core"
+					id: "3D2C5DCE0FCB9135"
+					type: "item"
+				}
+				{
+					item: "kubejs:kathar_channeling_vessel"
+					id: "2E0CE65D88A2127D"
+					type: "item"
+				}
+				{
+					item: "kubejs:kathar_ward_lattice"
+					id: "47B4BB21DCBEF24E"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["119AD0458DA70986", "38A2C3B49DE489E1", "658E9390379F01AD"]
+				description: [
+					"four-stage sublimation, tier 5, wisdom 3. stage 1: kathar lattice, katharic residue, kathar wizard brain. stage 2: ambrosia, fork of the gulaporrigo, nectar. stage 3: pixie dust, dragonstone, mana diamond. stage 4: 2x clarified vinteum + wisdom stone citrinitas."
+					""
+					"wear it and sage's philosopher's stone-tier shortcut for starforged chimerite opens up."
+				]
+				icon: "magichem:wisdom_stone_rubedo"
+				id: "047C29BCDD3E1F52"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "wisdom stone: rubedo"
+				tasks: [{
+					item: "magichem:wisdom_stone_rubedo"
+					id: "6F4239D9AAEB4FC3"
+					type: "item"
+				}]
+				title: "Rubedo Wisdom Stone"
+				x: 10.5d
+				y: 0.5d
+			}
+			{
+				dependencies: ["1C9527CDB53769C2", "119AD0458DA70986", "38A2C3B49DE489E1", "658E9390379F01AD", "532CF085F380B0E7"]
+				description: [
+					"rubedo core flowing, the archmage blood orb bound, hellforged sand banked. sage wants a captured wellspring and mna tier 5 -- the tech tree needs to be at UV for the one bridge recipe waiting there."
+				]
+				icon: "gtceu:katharite_ingot"
+				id: "3E7BE65647F754CE"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the endless realm, survived"
+				tasks: [{
+					id: "7B8626AADF16DD29"
+					title: "Onward to Sage"
+					type: "checkmark"
+				}]
+				title: "Tier Seven Complete"
+				x: 12.0d
+				y: 0.5d
+			}
+	]
+	subtitle: ["Into the endless realm"]
 	title: "VIII. Arcanist"
 }

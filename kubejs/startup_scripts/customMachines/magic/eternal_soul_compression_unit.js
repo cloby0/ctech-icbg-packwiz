@@ -27,7 +27,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['eternal_soul_compression_unit'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+            global.IcbgRecipeModifiers.MANA_SPEED, global.IcbgRecipeModifiers.LP_PARALLEL])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("ccc", "cKc", "ccc")
             .aisle("ccc", "cgc", "ccc")
@@ -35,6 +36,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("c", Predicates.blocks("occultism:otherstone")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(Java.loadClass('com.icbg.core.registry.IcbgPartAbilities').LP_INPUT)))
             .where("g", Predicates.blocks("occultism:golden_sacrificial_bowl"))
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))

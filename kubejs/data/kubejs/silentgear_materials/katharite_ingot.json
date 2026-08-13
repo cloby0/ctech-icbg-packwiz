@@ -1,0 +1,86 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 11,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:katharite_ingot" },
+        "rod": { "item": "gtceu:katharite_rod" },
+        "tip": { "item": "gtceu:katharite_dust" }
+    },
+    "name": { "text": "Katharite" },
+    "stats": {
+        "main": {
+            "durability": 6323,
+            "armor_durability": 106,
+            "enchantment_value": 11.6,
+            "rarity": 40,
+            "charging_value": 1.4,
+            "harvest_speed": 30,
+            "melee_damage": 17,
+            "magic_damage": 6,
+            "attack_speed": 0,
+            "ranged_damage": 8,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 57,
+            "armor/helmet": 9,
+            "armor/chestplate": 23,
+            "armor/leggings": 17,
+            "armor/boots": 9,
+            "armor_toughness": 22,
+            "magic_armor": 19
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.15 },
+            "melee_damage": { "mul2": 0.15 }
+        },
+        "tip": {
+            "durability": { "add": 1031 },
+            "armor_durability": { "add": 26 },
+            "harvest_speed": { "add": 9 },
+            "melee_damage": { "add": 9 },
+            "rarity": { "add": 56 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:malleable", "level": 2 },
+            { "name": "silentgear:brilliant", "level": 2 },
+            { "name": "silentcompat:spell_damage", "level": 3 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E8F2EE" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#E8F2EE" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#E8F2EE" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#7FBFA8" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#7FBFA8" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#E8F2EE" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

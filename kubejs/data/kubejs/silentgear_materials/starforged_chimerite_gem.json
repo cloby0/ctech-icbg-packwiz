@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 10,
+        "categories": [
+            "gem"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:starforged_chimerite_gem" },
+        "rod": { "item": "gtceu:starforged_chimerite_rod" },
+        "tip": { "item": "gtceu:starforged_chimerite_dust" }
+    },
+    "name": { "text": "Starforged Chimerite" },
+    "stats": {
+        "main": {
+            "durability": 4161,
+            "armor_durability": 70,
+            "enchantment_value": 11.7,
+            "rarity": 35,
+            "charging_value": 1.5,
+            "harvest_speed": 23,
+            "melee_damage": 13,
+            "magic_damage": 5,
+            "attack_speed": 0,
+            "ranged_damage": 6,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 44,
+            "armor/helmet": 7,
+            "armor/chestplate": 18,
+            "armor/leggings": 13,
+            "armor/boots": 7,
+            "armor_toughness": 17,
+            "magic_armor": 15
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.15 },
+            "melee_damage": { "mul2": 0.15 }
+        },
+        "tip": {
+            "durability": { "add": 678 },
+            "armor_durability": { "add": 17 },
+            "harvest_speed": { "add": 7 },
+            "melee_damage": { "add": 7 },
+            "rarity": { "add": 49 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:brilliant", "level": 2 },
+            { "name": "kubejs:swift_casting", "level": 3 }
+        ],
+        "tip": [
+            { "name": "kubejs:swift_casting", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#2E3A87" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#2E3A87" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#B8C8FF" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#B8C8FF" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#2E3A87" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

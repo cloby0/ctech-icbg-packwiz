@@ -1,0 +1,236 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prophet"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "kubejs:draconic_boule"
+	id: "02CF47889797174C"
+	order_index: 9
+	quest_links: [
+		{
+			id: "1EBCBD77EEE049FF"
+			linked_quest: "24F3267F87E97C82"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "78DCA3CC1FA06469"
+			linked_quest: "1F5AC3FB9201E2F9"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "7D6A717D7E3766AC"
+			linked_quest: "2DD5990DAF3AF8B4"
+			x: 6.0d
+			y: -2.0d
+		}
+	]
+	quests: [
+			{
+				dependencies: ["24F3267F87E97C82"]
+				description: [
+					"from here, the magic tree requires the tech tree. get the tech side through &6UHV/draconic&r: awakened draconium ingots, wyvern cores, dragon hearts, &6gtceu:neutronium_ingot&r, &6kubejs:gaian_neutronium_boule&r, and &6kubejs:argentware_processor_supercomputer&r."
+					""
+					"everything below is an alchemy table recipe -- 160,000 LP each (`LP.PROPHET`)."
+				]
+				id: "6EDEB304C55B709E"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "the merged endgame starts in earnest"
+				tasks: [{
+					id: "76FD338C43187BCF"
+					title: "Tech Tree at UHV/Draconic"
+					type: "checkmark"
+				}]
+				title: "Tech Prerequisites"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6EDEB304C55B709E", "1F5AC3FB9201E2F9"]
+				description: [
+					"alchemy table: `draconicevolution:dragon_heart` + all four astral cores + 2x boundless astral ingot + an awakened draconium ingot + a wyvern core."
+				]
+				id: "6545B84EE014D2DB"
+				subtitle: "all four sage cores, spent at once"
+				tasks: [{
+					item: "kubejs:dragon_heart_crystal"
+					id: "666062E85757DDE3"
+					count: 2L
+					type: "item"
+				}]
+				title: "Dragon Heart Crystal"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6545B84EE014D2DB", "24F3267F87E97C82"]
+				description: [
+					"alchemy table: `kubejs:gaian_neutronium_boule` + dragon heart crystal + 2x awakened draconium ingot + a wyvern core + 2x gaia ingot + 2x neutronium ingot."
+					""
+					"a pure kubejs item with no gt forms -- it holds the centre slot in every component below."
+				]
+				icon: "kubejs:draconic_boule"
+				id: "6A5499FDAC498167"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's capstone precursor"
+				tasks: [{
+					item: "kubejs:draconic_boule"
+					id: "3A9AF923410566FC"
+					type: "item"
+				}]
+				title: "Draconic Boule"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6A5499FDAC498167"]
+				description: [
+					"alchemy table (200 ticks, upgradeLevel 4): draconic boule + argentware processor supercomputer + hellforged ingot + extra botany's &6orichalcos ingot&r -- a sigil blank. finish it at the terra plate with a vengeful will."
+				]
+				id: "447E31C2F035914B"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:argent_sigil"
+					id: "35814868613A4556"
+					count: 2L
+					type: "item"
+				}]
+				title: "Argent Sigil"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6EDEB304C55B709E"]
+				description: [
+					"blood altar, upgradeLevel 4: 4x steadfast will. the blood altar is a strict single-input transform, so this component doesn't route through draconic boule at all -- pure LP."
+				]
+				id: "36A9CDBCADBBEBFE"
+				subtitle: "pure LP, no boule needed"
+				tasks: [{
+					item: "kubejs:argent_wizard_brain"
+					id: "1300204CCF6C376E"
+					type: "item"
+				}]
+				title: "Argent Wizard Brain"
+				x: 4.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6A5499FDAC498167"]
+				description: [
+					"&6motive core&r (gt arc furnace: a wyvern core, hellforged sand as the tool, 30% bonus draconium dust). &6channeling vessel&r (terra plate: draconic boule + concepts bucket + neutronium ingot + ad astra's calorite ingot -- the pack's first bridge material placed strictly past uv). &6ward lattice&r (blood altar, upgradeLevel 4, pure LP: 4x draconium ingot)."
+				]
+				id: "3BBE0F5829D65702"
+				subtitle: "motive and ward the same way, vessel through the boule"
+				tasks: [
+				{
+					item: "kubejs:argent_motive_core"
+					id: "596155A253187675"
+					type: "item"
+				}
+				{
+					item: "kubejs:argent_channeling_vessel"
+					id: "5C88C2A139C74002"
+					type: "item"
+				}
+				{
+					item: "kubejs:argent_ward_lattice"
+					id: "125E940F49417556"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 6.0d
+				y: 1.0d
+			}
+			{
+				dependencies: ["447E31C2F035914B", "36A9CDBCADBBEBFE", "3BBE0F5829D65702", "2DD5990DAF3AF8B4"]
+				description: [
+					"alchemy table: sage's blood grimoire + 2x dragon heart crystal + argent sigil + an awakened draconium ingot + argent wizard brain + argent motive core + gaia ingot + gaia spirit dust."
+				]
+				id: "332FF6BAEAE6F460"
+				subtitle: "from the blood grimoire"
+				tasks: [{
+					item: "kubejs:draconic_sanguinary"
+					id: "56F6E1D5FBE6AD53"
+					type: "item"
+				}]
+				title: "Draconic Sanguinary"
+				x: 7.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["447E31C2F035914B", "3BBE0F5829D65702"]
+				description: [
+					"same shape as sanguinary, from sage's radiant sanctum: argent channeling vessel + argent ward lattice in place of wizard brain + motive core."
+				]
+				id: "3AFD2B7B87DE75B0"
+				subtitle: "from the radiant sanctum"
+				tasks: [{
+					item: "kubejs:draconic_sanctum"
+					id: "4C72A5D49722D121"
+					type: "item"
+				}]
+				title: "Draconic Sanctum"
+				x: 9.0d
+				y: -0.75d
+			}
+			{
+				dependencies: ["447E31C2F035914B", "36A9CDBCADBBEBFE", "3BBE0F5829D65702"]
+				description: [
+					"same shape again, from sage's eldritch codex: argent wizard brain + argent ward lattice."
+				]
+				id: "227913BDFD0717A6"
+				subtitle: "from the eldritch codex"
+				tasks: [{
+					item: "kubejs:dracontine_codex"
+					id: "444D216889711407"
+					type: "item"
+				}]
+				title: "Dracontine Codex"
+				x: 9.0d
+				y: 0.75d
+			}
+			{
+				dependencies: ["447E31C2F035914B", "3BBE0F5829D65702"]
+				description: [
+					"same shape once more, from sage's obliteration chronicle: argent motive core + argent channeling vessel."
+				]
+				id: "1499F6DCD1F4B84B"
+				subtitle: "from the obliteration chronicle"
+				tasks: [{
+					item: "kubejs:chronicle_of_dominion"
+					id: "7140ED695C7484C2"
+					type: "item"
+				}]
+				title: "Chronicle of Dominion"
+				x: 9.0d
+				y: 2.0d
+			}
+			{
+				dependencies: ["332FF6BAEAE6F460", "3AFD2B7B87DE75B0", "227913BDFD0717A6", "1499F6DCD1F4B84B"]
+				description: [
+					"all four draconic tomes built. ascendant needs the tech tree at uev/chaos -- chaos shards, the chaotic core, gtceu chaos crystal dust, and the wraithware processor mainframe."
+				]
+				icon: "kubejs:draconic_boule"
+				id: "78A7E5ADDB3CEAF5"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the fork before the terminus"
+				tasks: [{
+					id: "213B95000EADAF03"
+					title: "Onward to Ascendant"
+					type: "checkmark"
+				}]
+				title: "Prophet Complete"
+				x: 10.5d
+				y: 0.75d
+			}
+	]
+	subtitle: ["Where the trees converge"]
+	title: "X. Prophet"
+}

@@ -7,320 +7,406 @@
 	icon: "botania:terrasteel_ingot"
 	id: "678B455094A57005"
 	order_index: 2
-	quest_links: [{
-		id: "274881337E63AA77"
-		linked_quest: "66724F3FB8D5FB59"
-		x: 0.0d
-		y: 0.0d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: [
-				"5732DF3D208DC50F"
-				"5C2E9B7A4D1F6083"
-			]
-			description: [
-				"step through your portal frame. the aether is up there: floating islands, hostile mobs, and the ores this chapter runs on."
-				""
-				"tip: bring blocks for bridging. falling off the aether drops you back to the overworld at terminal velocity."
-			]
-			icon: "aether:aether_portal_frame"
-			id: "33704DE3C564BD46"
-			size: 0.75d
-			subtitle: "up to see the man upstairs"
-			tasks: [{
-				dimension: "aether:the_aether"
-				icon: "aether:aether_portal_frame"
-				id: "1F578B2124CF8CBD"
-				title: "Head to the Aether"
-				type: "dimension"
-			}]
-			title: "Off to See the Man Upstairs"
-			x: 0.0d
+			id: "68B5A7F400BAC994"
+			linked_quest: "13CC8F12B68F0899"
+			x: -1.5d
 			y: 0.0d
 		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			description: [
-				"&2veridium ore&r generates in the aether as a proper GT-style ore. mine plenty -- this tier's signature chain runs on it."
-			]
-			icon: "gtceu:raw_veridium"
-			id: "2BDE0042C9B10FEF"
-			size: 0.75d
-			subtitle: "the aether's structural ore"
-			tasks: [{
-				count: 8L
-				id: "3C725871626807FB"
-				item: "gtceu:raw_veridium"
-				type: "item"
-			}]
-			title: "Raw Veridium"
-			x: 1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2BDE0042C9B10FEF"]
-			description: [
-				"the tier's signature metal. crush a &2veridium ingot&r into filings, charge them at the spirit altar with four earthen spirits, then bind the result to a &9manasteel block&r at the alchemy table with a pinch of &6magichem essentia&r."
-				""
-				"finish it on a &9terra plate&r for &6terrasteel ingot&r. this one carries you through the rest of the tree."
-			]
-			icon: "botania:terrasteel_ingot"
-			id: "42FDEBEBA7998889"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "6BCDF02D7C5639D8"
-				item: "botania:terrasteel_ingot"
-				type: "item"
-			}]
-			title: "Terrasteel"
-			x: 3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["42FDEBEBA7998889"]
-			description: [
-				"summon an &6afrit&r and bind it to a crusher setup. required before initiate -- material processing ahead chews through more than manual crushing can keep up with."
-			]
-			id: "3D7B1E9C6A2F5091"
-			subtitle: "the crushing gets real"
-			tasks: [{
-				advancement: "occultism:occultism/summon_afrit_crusher"
-				criterion: ""
-				id: "3D7B1E9C6A2F5092"
-				type: "advancement"
-			}]
-			title: "Afrit Spirit"
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			description: [
-				"&eambrosium&r is the aether's glowing all-purpose rock. here it's a real ore line -- and the feedstock for what's ahead."
-			]
-			id: "557FF11A5C0306BC"
-			size: 0.75d
-			subtitle: "the aether's other thing"
-			tasks: [{
-				count: 8L
-				id: "0C0ADD32747DC555"
-				item: "gtceu:raw_ambrosium"
-				type: "item"
-			}]
-			title: "Raw Ambrosium"
-			x: 1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["557FF11A5C0306BC"]
-			description: [
-				"four ambrosium shards and four glowstone dust in a heated &9water&r cauldron bloom into &esanctified ambrosium&r."
-				""
-				"tip: heated cauldron, WATER this time. drain the lava first."
-			]
-			id: "3AE23124DDE87034"
-			size: 0.75d
-			subtitle: "bless the rock"
-			tasks: [{
-				id: "0666134470222C91"
-				item: "kubejs:sanctified_ambrosium_bloom"
-				type: "item"
-			}]
-			title: "Sanctified Ambrosium Bloom"
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["557FF11A5C0306BC"]
-			description: [
-				"one inventory, every dimension. dye the three wool pads to make separate channels."
-				""
-				"tip: on a server, channels are per-color, not per-player by default. sneak-click the latch with a diamond for a private network."
-			]
-			id: "205170FC8134DC8D"
-			size: 0.75d
-			subtitle: "shared with yourself, across the map"
-			tasks: [{
-				id: "1A1F67BED84E07AF"
-				item: "enderstorage:ender_chest"
-				type: "item"
-			}]
-			title: "Ender Chest"
-			x: 1.5d
-			y: 2.75d
-		}
-		{
-			dependencies: ["557FF11A5C0306BC"]
-			description: [
-				"same trick, fluids. pump lava in at the nether, drain it at your base."
-			]
-			id: "3A9BBD003CB49590"
-			size: 0.75d
-			subtitle: "like an ender chest but wetter"
-			tasks: [{
-				id: "523F223AF747D3CA"
-				item: "enderstorage:ender_tank"
-				type: "item"
-			}]
-			title: "Ender Tank"
-			x: 3.0d
-			y: 2.75d
-		}
-		{
-			dependencies: ["557FF11A5C0306BC"]
-			description: [
-				"the pouch opens its matching ender chest from anywhere. mining trips deposit straight home."
-				""
-				"tip: match the wool colors on the pouch to the chest's channel, or you'll open the wrong network."
-			]
-			id: "7E85C70688BC511F"
-			size: 0.75d
-			subtitle: "pocket dimension, travel size"
-			tasks: [{
-				id: "3BC542FCDC05773B"
-				item: "enderstorage:ender_pouch"
-				type: "item"
-			}]
-			title: "Ender Pouch"
-			x: 2.25d
-			y: 2.0d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			description: [
-				"&9zanite&r hardens the further it wears down, and this pack has plans for it well beyond tools. grab a stack while you're up here."
-			]
-			id: "297B9B212C544AF0"
-			size: 0.75d
-			subtitle: "the other other aether ore"
-			tasks: [{
-				id: "4D2AB6B81DCEEC99"
-				item: "gtceu:raw_zanite"
-				type: "item"
-			}]
-			title: "Raw Zanite"
-			x: -1.5d
-			y: -0.75d
-		}
-		{
-			dependencies: ["297B9B212C544AF0"]
-			description: [
-				"feed a zanite gemstone through the aether's &6altar&r to enchant it. the altar runs on ambrosium shards as fuel -- convenient, since you just mined a pile."
-			]
-			id: "08B0AB8D3C90EB10"
-			size: 0.75d
-			subtitle: "feeling more powerful already"
-			tasks: [{
-				id: "0A78B6122B82E6D6"
-				item: "kubejs:enchanted_zanite_gem"
-				type: "item"
-			}]
-			title: "Enchanted Zanite"
-			x: -3.0d
-			y: -0.75d
-		}
-		{
-			dependencies: [
-				"08B0AB8D3C90EB10"
-				"2BDE0042C9B10FEF"
-			]
-			description: [
-				"bind the enchanted gem to a spirit-attuned crystal and a pair of verdant filings at the spirit altar to get a &9resonant zanite crystal&r."
-				""
-				"tip: resonant crystals bind onward into &ccinder essence&r (fire) or &barcane ingots&r (air) -- your bulk route into iron's spells materials."
-			]
-			id: "45BDF6BE6B2DD0CB"
-			size: 0.75d
-			subtitle: "it hums"
-			tasks: [{
-				id: "245CF51C6A647EA1"
-				item: "kubejs:resonant_zanite_crystal"
-				type: "item"
-			}]
-			title: "Resonant Zanite Crystal"
-			x: -1.5d
-			y: -1.75d
-		}
-		{
-			dependencies: ["45BDF6BE6B2DD0CB"]
-			description: [
-				"the &6alchemical nexus&r runs a three-stage &5sublimation&r ritual -- the Ritual of the Balanced Scales. stage one fuses veridium filings, a resonant zanite crystal, and a veridian sigil; stage two burns through soot and bone salts; stage three binds an inert wisdom stone into &6wisdom stone: nigredo&r."
-				""
-				"wear it and apprentice's manasteel shortcut opens: raw materia straight to ingot at the alembic, no zanite chain needed."
-			]
-			id: "023DEB500B3C28D2"
-			shape: "diamond"
-			subtitle: "the blackening"
-			tasks: [{
-				id: "579E2E8AFC78AC3C"
-				item: "magichem:wisdom_stone_nigredo"
-				type: "item"
-			}]
-			title: "Wisdom Stone: Nigredo"
-			x: -3.0d
-			y: -1.75d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			hide_dependency_lines: true
-			description: [
-				"the &6lantern of paranoia&r auto-places torches in dark spots around you as you walk. cave lighting without the wrist strain."
-			]
-			id: "2F9CF65DB439E571"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "it sees you"
-			tasks: [{
-				id: "0CE9CA0649212582"
-				item: "reliquary:lantern_of_paranoia"
-				type: "item"
-			}]
-			title: "Lantern of Paranoia"
-			x: -1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			hide_dependency_lines: true
-			description: [
-				"the &6interdiction torch&r shoves hostile mobs away from itself. plant one at each base entrance and enjoy the silence. crafts three at a time."
-			]
-			id: "60B898EA8C6DB0F5"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "get out of my house"
-			tasks: [{
-				id: "3FFF00B98948C69F"
-				item: "reliquary:interdiction_torch"
-				type: "item"
-			}]
-			title: "Interdiction Torch"
-			x: -0.75d
-			y: 2.25d
-		}
-		{
-			dependencies: ["33704DE3C564BD46"]
-			hide_dependency_lines: true
-			description: [
-				"the &6alkahestry altar&r eats redstone and, given open sky and time, transmutes it into glowstone. slow, silent, profitable."
-			]
-			id: "48823E5A5985391B"
-			shape: "hexagon"
-			size: 0.75d
-			subtitle: "alchemy by another name"
-			tasks: [{
-				id: "72DFD61331E7272A"
-				item: "reliquary:alkahestry_altar"
-				type: "item"
-			}]
-			title: "Alkahestry Altar"
-			x: 0.0d
-			y: 2.5d
-		}
 	]
-	subtitle: ["A hostile paradise with good ores"]
+	quests: [
+			{
+				dependencies: ["13CC8F12B68F0899"]
+				description: [
+					"craft a &6mana crystal fragment&r then a &6mana pylon&r at the manaweaving altar. runescribe a rune at the runescribing table, then runeforge it at the &6runeforge&r (pattern + superheated vinteum, struck with the runesmith's hammer -- patterns break after 4 forgings)."
+					""
+					"the pack rebuilt the runeforge itself: arcane sandstone/stone, transmuted silver, stone runes, and this tier's own &6terrasteel ingot&r in the pattern's one open slot -- both of mna's parallel vanilla builds are gone, this is the only route now."
+				]
+				id: "684009FE65DE3D22"
+				shape: "rsquare"
+				subtitle: "pylons, runes, and a forge"
+				tasks: [{
+					item: "mna:runeforge"
+					id: "10D27C9F14E89647"
+					type: "item"
+				}]
+				title: "MNA Tier Two"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["684009FE65DE3D22"]
+				description: [
+					"craft a charcoal print of a forged rune. perform a &6mote ritual&r (one per affinity -- endless void/forgotten lore/untamed wind/searing inferno/deep ocean/ancient stone -- each with its own placement condition). perform the &6ritual of alteration&r; use the &6affinity tinker table&r."
+					""
+					"light an &6eldrin fume filter&r to burn motes/sachets into eldrin power. obtain a spell book; use a &6study desk&r with a torn journal page. craft a magic broom and animate a construct with 3+ wood/stone parts. reach &6magic level 30&r."
+				]
+				id: "49B40AA0908828C4"
+				subtitle: "the rest of the tier-2 checklist"
+				tasks: [{
+					id: "27EC17AFFC1CE38B"
+					title: "Tier 2 Checklist Clear"
+					type: "checkmark"
+				}]
+				title: "Rites & Rituals"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["49B40AA0908828C4"]
+				description: [
+					"the wizard's council, the burning hells (demons), the faerie courts (fey), or the undead path -- complete one faction ritual to advance from tier 2 to tier 3. &cthe choice is permanent&r and changes your casting resource (mana/brimstone/souls/summer fire/winter ice)."
+					""
+					"fey and demon rituals want a mote of air or mote of fire as an offering."
+				]
+				id: "4576C9E872798FC3"
+				subtitle: "permanent, and it makes the other three hostile"
+				tasks: [{
+					id: "0EFD865193E990E2"
+					title: "Faction Chosen"
+					type: "checkmark"
+				}]
+				title: "Choose a Faction"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["684009FE65DE3D22"]
+				description: [
+					"the block itself, over a checkerboard of lapis blocks and livingrock, fed by sparks aimed at it. this is where terrasteel gets infused, and it stays load-bearing through sorcerer, thaumaturge, and sage."
+				]
+				id: "09247FB1AB61E3AA"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "half a mana pool per swing"
+				tasks: [{
+					item: "botania:terra_plate"
+					id: "00148F7305B563E0"
+					type: "item"
+				}]
+				title: "Terra Plate"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["13CC8F12B68F0899"]
+				description: [
+					"mine &6veridium ore&r (aether redux) and smelt to ingot. crush it with occultism's crusher for &6veridium dust&r -- the base of this tier's whole material chain."
+				]
+				id: "1E7A8C76FE9BA39D"
+				subtitle: "the aether keeps giving"
+				tasks: [{
+					item: "gtceu:veridium_dust"
+					id: "1AD7B46AAE501CB4"
+					count: 4L
+					type: "item"
+				}]
+				title: "Veridium Filings"
+				x: 1.5d
+				y: 3.0d
+			}
+			{
+				dependencies: ["1E7A8C76FE9BA39D", "09247FB1AB61E3AA"]
+				description: [
+					"veridium dust + 4x earthen spirit at the spirit altar -- &6verdant charged dust&r. bind it to a manasteel block at the alchemy table with a pinch of &dmagichem essentia_verdant&r -- &6verdant grafted manasteel&r."
+					""
+					"infuse at the &9terra plate&r for &6terrasteel ingot&r. shortcut once you're at initiate (manaweaving t2 exists): veridium ingot + manasteel block, batch of 2, no spirit altar step needed."
+				]
+				icon: "botania:terrasteel_ingot"
+				id: "1564C165488EB31A"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "botania:terrasteel_ingot"
+					id: "3D98480F949C2F32"
+					count: 2L
+					type: "item"
+				}]
+				title: "Terrasteel"
+				x: 4.5d
+				y: 2.0d
+			}
+			{
+				dependencies: ["1564C165488EB31A"]
+				description: [
+					"summon an &6afrit&r (crusher job) -- costs a terrasteel ingot, this pack's re-gate. the foliot/djinni crusher covers you until now. craft `miner_afrit_deeps` while you're at it."
+				]
+				id: "153E153089659803"
+				subtitle: "the crusher upgrades itself"
+				tasks: [{
+					advancement: "occultism:occultism/summon_afrit_crusher"
+					criterion: ""
+					id: "37E9FEE206B6A5E5"
+					type: "advancement"
+				}]
+				title: "Afrit Spirit"
+				x: 6.0d
+				y: 2.0d
+			}
+			{
+				dependencies: ["1564C165488EB31A"]
+				description: [
+					"a magician blood orb used to be reachable by pure blood-magic grinding -- this pack wraps its vanilla gold-block cost in a &6terrasteel-bound gold block&r first, so the orb chain can't skip this tier."
+					""
+					"25,000 LP at the blood altar, upgradeLevel 2. needs your altar at tier 3 (28 runes) to hold the syphon."
+				]
+				id: "4904535A3FB3B1B2"
+				subtitle: "the orb chain wasn't always taxed"
+				tasks: [{
+					item: "bloodmagic:magicianbloodorb"
+					id: "2D909BA5B0CEA2D5"
+					type: "item"
+				}]
+				title: "Magician Blood Orb"
+				x: 6.0d
+				y: 3.0d
+			}
+			{
+				dependencies: ["1E7A8C76FE9BA39D"]
+				description: [
+					"enchant a zanite gemstone at the aether altar (250 ticks) for &6enchanted zanite gem&r. spirit-infuse it with 2x verdant charged dust + occultism's &dspirit attuned crystal&r, sealed with 2x arcane + 1 aerial spirit -- &6resonant zanite crystal&r."
+				]
+				id: "5AF9DC580914A8A6"
+				subtitle: "an enchanted gem, spirit-bound"
+				tasks: [{
+					item: "kubejs:resonant_zanite_crystal"
+					id: "5A620728A1FD44EB"
+					count: 2L
+					type: "item"
+				}]
+				title: "Resonant Zanite Crystal"
+				x: 3.0d
+				y: 3.0d
+			}
+			{
+				dependencies: ["5AF9DC580914A8A6"]
+				description: [
+					"both spirit-infused off &6resonant zanite crystal&r: &ccinder essence&r x3 (2x fire essences, 2x infernal + 1 arcane spirit) and &6arcane ingot&r x4 (2x air essences, 2x arcane + 1 aerial spirit)."
+				]
+				id: "550C75256DC34456"
+				subtitle: "iron's spells wants both"
+				tasks: [
+				{
+					item: "irons_spellbooks:cinder_essence"
+					id: "7F251E6A2CA96030"
+					count: 3L
+					type: "item"
+				}
+				{
+					item: "irons_spellbooks:arcane_ingot"
+					id: "1B3F3B985384C6EC"
+					count: 4L
+					type: "item"
+				}
+				]
+				title: "Cinder & Arcane Ingots"
+				x: 4.5d
+				y: 3.5d
+			}
+			{
+				dependencies: ["13CC8F12B68F0899"]
+				description: [
+					"cauldron, water, heated: 4x ambrosium shard + 4x glowstone dust. banks the reagent initiate's holy silver line needs -- start early."
+				]
+				id: "1EC8892670B47114"
+				subtitle: "feeds initiate"
+				tasks: [{
+					item: "kubejs:sanctified_ambrosium_bloom"
+					id: "796A5427E25EC74C"
+					count: 2L
+					type: "item"
+				}]
+				title: "Sanctified Ambrosium Bloom"
+				x: 1.5d
+				y: 4.5d
+			}
+			{
+				dependencies: ["684009FE65DE3D22"]
+				description: [
+					"spirit altar: &dmagichem admixture_light&r + glowstone dust, sealed with a sacred + an aerial spirit -- a real registered GT material, just needed a producer once ars nouveau left the pack."
+				]
+				id: "29FAEC320E5B0481"
+				subtitle: "light, bound with spirits"
+				tasks: [{
+					item: "gtceu:luminessence_dust"
+					id: "13214E669428ABA3"
+					type: "item"
+				}]
+				title: "Luminessence Dust"
+				x: 3.0d
+				y: 4.5d
+			}
+			{
+				dependencies: ["1564C165488EB31A"]
+				description: [
+					"spirit altar: terrasteel ingot + 2x earthen spirit -- a sigil blank. finish it at the alchemy table (200 ticks): blank + veridium dust + arcane ingot."
+				]
+				id: "0AFC25081501FA66"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:veridian_sigil"
+					id: "69985293C938A4EB"
+					count: 2L
+					type: "item"
+				}]
+				title: "Veridian Sigil"
+				x: 6.0d
+				y: 4.5d
+			}
+			{
+				dependencies: ["0AFC25081501FA66"]
+				description: [
+					"livingrock bricks + livingrock + a mana diamond + a manasteel bolt + a &6veridian sigil&r, damaging a wrench. both of botania's own vanilla builds are removed -- this is the only route."
+					""
+					"one of this pack's most load-bearing stations: sorcerer, thaumaturge, and sage all still call recipes through it."
+				]
+				icon: "botania:runic_altar"
+				id: "2513204224FE3302"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "mandatory through sage"
+				tasks: [{
+					item: "botania:runic_altar"
+					id: "467377ED934DC6FB"
+					type: "item"
+				}]
+				title: "Runic Altar"
+				x: 7.5d
+				y: 4.5d
+			}
+			{
+				dependencies: ["09247FB1AB61E3AA", "1564C165488EB31A"]
+				description: [
+					"terra plate: terrasteel ingot + iron spell book (thought vessel) + &dspirit attuned crystal&r (animating agent)."
+				]
+				id: "7BE0BA2E3C10F43F"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:veridian_wizard_brain"
+					id: "735012FF15024895"
+					type: "item"
+				}]
+				title: "Veridian Wizard Brain"
+				x: 6.0d
+				y: 5.5d
+			}
+			{
+				dependencies: ["2513204224FE3302", "1564C165488EB31A"]
+				description: [
+					"&6motive core&r (mna arcane furnace, 800-tick burn, tier 2, off verdant charged dust), &6channeling vessel&r (aether altar enchant on a mana bottle, 400 ticks), &6ward lattice&r (this tier's own runic altar: 2x terrasteel plate + protection rune + crying obsidian)."
+				]
+				id: "1EB49FCAF1CC1CFC"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:veridian_motive_core"
+					id: "1264CCCFCFDD7C36"
+					type: "item"
+				}
+				{
+					item: "kubejs:veridian_channeling_vessel"
+					id: "735E1A36F0A9AB8E"
+					type: "item"
+				}
+				{
+					item: "kubejs:veridian_ward_lattice"
+					id: "2D735D0919559A33"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 9.0d
+				y: 5.0d
+			}
+			{
+				dependencies: ["0AFC25081501FA66", "1EB49FCAF1CC1CFC"]
+				description: [
+					"five items rebuilt around this tier's set: &6interdiction torch&r and &6lantern of paranoia&r (protection/detection theme, ward lattice / wizard brain), and the &6ender chest / tank / pouch&r family (channeling vessel -- item and fluid transport, literally). craft any one."
+					""
+					"optional utility, not required for the tier's exit."
+				]
+				id: "78506DC2288F6819"
+				shape: "square"
+				size: 0.75d
+				subtitle: "detection, deterrence, transport"
+				tasks: [{
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(reliquary:interdiction_torch)item(reliquary:lantern_of_paranoia)item(enderstorage:ender_chest)item(enderstorage:ender_tank)item(enderstorage:ender_pouch))"
+						}
+					}
+					id: "1D2C10BC5DD7C0BF"
+					title: "Any Utility Item"
+					type: "item"
+				}]
+				title: "Reliquary & Ender Storage"
+				x: 9.0d
+				y: 3.5d
+			}
+			{
+				dependencies: ["0AFC25081501FA66", "1EB49FCAF1CC1CFC"]
+				description: [
+					"the &6ritual of the balanced scales&r (magichem sublimation, alchemical nexus, wisdom 0) builds the altar directly -- alkahestry is universal transmutation, magichem's own alchemy theme fits tighter than a vanilla shaped recipe."
+					""
+					"lead plate + veridium dust + &6veridian sigil&r + &6veridian channeling vessel&r, plus 50 admixture_potential / 40 essentia_conceptual / 30 essentia_nigredo."
+				]
+				id: "5076B53A9963573B"
+				shape: "rsquare"
+				subtitle: "magichem builds its own altar"
+				tasks: [{
+					item: "reliquary:alkahestry_altar"
+					id: "5BBF71939E2CBE20"
+					type: "item"
+				}]
+				title: "Alkahestry Altar"
+				x: 9.0d
+				y: 2.0d
+			}
+			{
+				dependencies: ["1E7A8C76FE9BA39D", "5AF9DC580914A8A6", "0AFC25081501FA66"]
+				description: [
+					"three-stage sublimation at the alchemical nexus, wisdom 0. stage 1: veridium dust, resonant zanite crystal, veridian sigil. stage 2: salt of soot, mote achromatic, salt of bone. stage 3: enchanted zanite gem, inert wisdom stone, veridian wizard brain."
+					""
+					"wear it, then the whole shortcut ladder opens: distillation fabrication makes &6manasteel&r straight from materia, batch of 3, no raw items at all -- apprentice's material, made cheap from here on."
+				]
+				icon: "magichem:wisdom_stone_nigredo"
+				id: "21A4E6A06F710B7D"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "wisdom stone: nigredo"
+				tasks: [{
+					item: "magichem:wisdom_stone_nigredo"
+					id: "170175DACDD28CD5"
+					type: "item"
+				}]
+				title: "Nigredo Wisdom Stone"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["4576C9E872798FC3", "1564C165488EB31A", "0AFC25081501FA66", "7BE0BA2E3C10F43F", "1EB49FCAF1CC1CFC", "153E153089659803"]
+				description: [
+					"faction chosen, terrasteel flowing, the runic altar built and staying built -- initiate is next, and it wants the alfheim portal open."
+				]
+				icon: "botania:runic_altar"
+				id: "6D8F3BF5F97B7060"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the fork behind you, terrasteel in hand"
+				tasks: [{
+					id: "3F8D3A3B2D217C30"
+					title: "Onward to Initiate"
+					type: "checkmark"
+				}]
+				title: "Tier Two Complete"
+				x: 10.5d
+				y: 1.0d
+			}
+	]
+	subtitle: ["Head to the Aether"]
 	title: "III. Journeyman"
 }

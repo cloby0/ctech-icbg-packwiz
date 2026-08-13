@@ -6,5 +6,6 @@
 // finish loading, so bare references don't resolve -- consumers must use global.X explicitly.
 // See docs/claude/specs/mana-capability-port.md.
 global.IcbgPartAbilities = Java.loadClass('com.icbg.core.registry.IcbgPartAbilities')
+global.IcbgRecipeModifiers = Java.loadClass('com.icbg.core.registry.IcbgRecipeModifiers')
 global.ManaCap = Java.loadClass('com.icbg.core.recipe.mana.ManaRecipeCapability').CAP
 global.LpCap = Java.loadClass('com.icbg.core.recipe.lp.LpRecipeCapability').CAP

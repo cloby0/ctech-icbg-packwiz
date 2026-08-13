@@ -14,7 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeTypes(['runic_forge'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+            global.IcbgRecipeModifiers.MANA_SPEED, global.IcbgRecipeModifiers.LP_PARALLEL])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("bbb", "bKb", "bbb")
             .aisle("bbb", "bbb", "bbb")
@@ -22,6 +23,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("b", Predicates.blocks("kubejs:runic_forge_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(Java.loadClass('com.icbg.core.registry.IcbgPartAbilities').MANA_INPUT)))
             .where("K", Predicates.controller(Predicates.blocks(definition.get())))
             .where("M", Predicates.abilities(PartAbility.MAINTENANCE))

@@ -4,336 +4,321 @@
 	filename: "thaumaturge"
 	group: "5807E75CE9629B4E"
 	hide_quest_until_deps_visible: true
-	icon: "gtceu:starforged_chimerite_ingot"
+	icon: "gtceu:starforged_chimerite_gem"
 	id: "321C191A1AEEDAD8"
 	order_index: 6
-	quest_links: [{
-		id: "4813B934B8D4C8E5"
-		linked_quest: "2D3D4D46D2DD008F"
-		shape: "rsquare"
-		x: 0.0d
-		y: -0.5d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: ["5188A30959FE9535"]
-			description: [
-				"the &6runic forge&r multiblock automates both the &drunic altar&r and the &aterra plate&r in one structure, drinking &dliquid source&r instead of raw mana."
-				""
-				"it always runs at &5LuV&r voltage. parallel hatch and perfect overclocks are supported."
-			]
-			id: "61F4B8D0C3A75E20"
-			subtitle: "the altar, automated"
-			tasks: [{
-				id: "61F4B8D0C3A75E21"
-				item: "gtceu:runic_forge"
-				type: "item"
-			}]
-			title: "Runic Forge"
-			x: 8.0d
-			y: -1.75d
+			id: "4B7C4DBE0102FA6D"
+			linked_quest: "5195DB0516098DB0"
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			description: [
-				"the &6terra plate&r multiblock feeds every high-tier botania craft in this pack -- terrasteel, gaia ingot, and more all pour through it."
-				""
-				"build it once. you'll be back."
-			]
-			dependencies: [
-				"202F55D0054B18FC"
-				"3D4DC3DA79713198"
-			]
-			id: "5188A30959FE9535"
-			subtitle: "biggest crafting block in the game? probably."
-			tasks: [{
-				id: "2632A3C4FDDDF444"
-				item: "botania:terra_plate"
-				type: "item"
-			}]
-			title: "Terrestrial Agglomeration Plate"
-			x: 6.5d
-			y: -1.75d
-		}
-		{
-			dependencies: ["2D3D4D46D2DD008F"]
-			description: [
-				"the &3runic altar&r turns &dmana&r and materials into &arunes&r - the building blocks of advanced &3botania&r crafting, and an ingredient in more than a few recipes further up the tree."
-				""
-				"&9tip:&r each rune crafting consumes a fixed amount of mana. keep your pools topped up or this will take forever."
-			]
-			id: "4F76358C60F3FDE1"
-			size: 0.75d
-			subtitle: "where the real magic happens"
-			tasks: [{
-				id: "1973AE35A207E52E"
-				item: "botania:runic_altar"
-				type: "item"
-			}]
-			title: "Runic Altar"
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			description: [
-				"toss an ender pearl into a &3mana pool&r and let it soak."
-			]
-			dependencies: ["138BA0CD22478ACF"]
-			id: "3D4DC3DA79713198"
-			subtitle: "ender pearl but glowier"
-			tasks: [{
-				id: "4269C1CD1A25CF75"
-				item: "botania:mana_pearl"
-				type: "item"
-			}]
-			title: "Mana Pearl"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
-			description: [
-				"drop a diamond in the &3mana pool&r and it comes out infused. botania's staple crafting gem."
-			]
-			dependencies: ["138BA0CD22478ACF"]
-			id: "202F55D0054B18FC"
-			subtitle: "diamonds but with extra steps (and plants)"
-			tasks: [{
-				id: "33BC48D27EE86D77"
-				item: "botania:mana_diamond"
-				type: "item"
-			}]
-			title: "Mana Diamond"
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			description: [
-				"&3hex casting&r is a visual, pattern-based magic system. instead of crafting spells, you draw them in the air with a staff."
-				""
-				"it has a learning curve. the in-game book explains everything."
-				""
-				"the &ahexed amethyst core&r is your entry point."
-			]
-			id: "578575F33D569EE2"
-			size: 0.75d
-			subtitle: "the start of something weird"
-			tasks: [{
-				id: "017002DE63E2B613"
-				item: "kubejs:hexed_amethyst_core"
-				type: "item"
-			}]
-			title: "Hexed Amethyst Core"
-			x: -4.0d
-			y: -0.5d
-		}
-		{
-			description: [
-				"hex casting begins: the &6focus&r stores a pattern or an entity reference for your staff to read. your first step into programmable magic."
-			]
-			dependencies: ["578575F33D569EE2"]
-			id: "22A18D1A3497D675"
-			size: 0.75d
-			subtitle: "like a wand but geometric"
-			tasks: [{
-				id: "5640147F484CCE9D"
-				item: "hexcasting:focus"
-				type: "item"
-			}]
-			title: "Focus"
-			x: -5.5d
-			y: -2.25d
-		}
-		{
-			description: [
-				"a multi-page focus. store a whole library of patterns and flip between them mid-cast."
-			]
-			dependencies: ["578575F33D569EE2"]
-			id: "5D529521754924FA"
-			size: 0.75d
-			subtitle: "written in patterns"
-			tasks: [{
-				id: "76C9DC1EBEB47BB8"
-				item: "hexcasting:spellbook"
-				type: "item"
-			}]
-			title: "Hex Spellbook"
-			x: -4.75d
-			y: -2.25d
-		}
-		{
-			description: [
-				"an &6artifact&r casts a stored hex on use, by anyone -- as long as you feed it media."
-			]
-			dependencies: ["578575F33D569EE2"]
-			id: "4FF741638D500FCF"
-			size: 0.75d
-			subtitle: "it does something. we think."
-			tasks: [{
-				id: "102B7093EAFBCBC4"
-				item: "hexcasting:artifact"
-				type: "item"
-			}]
-			title: "Hex Artifact"
-			x: -4.0d
-			y: -2.25d
-		}
-		{
-			description: [
-				"the staff is your hex-drawing instrument. any wood works the same. mind the mishaps."
-			]
-			dependencies: ["578575F33D569EE2"]
-			id: "08EEEC1E164C719E"
-			size: 0.75d
-			tasks: [{
-				id: "4DE4DF8844E4EA2C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(hexcasting:staves)"
-					}
-				}
-				title: "Any Hex Staff"
-				type: "item"
-			}]
-			title: "Any Hex Staff"
-			x: -3.25d
-			y: -2.25d
-		}
-		{
-			description: [
-				"same brew as the alchemist route: epic ink plus an &delven source lattice&r. legendary scrolls stop failing on inscription."
-			]
-			dependencies: ["2D3D4D46D2DD008F"]
-			id: "5F3CCA0806278FD9"
-			size: 0.75d
-			subtitle: "for when archmage just isn't enough"
-			tasks: [{
-				id: "1896D95300FEBA47"
-				item: "irons_spellbooks:legendary_ink"
-				type: "item"
-			}]
-			title: "Legendary Ink"
-			x: 3.0d
-			y: -0.5d
-		}
-		{
-			description: [
-				"the &6runic altar&r stamps the five base runes -- water, fire, earth, air, mana. these are consumable ingredients everywhere in botania, so make spares of everything."
-			]
-			dependencies: ["4F76358C60F3FDE1"]
-			id: "0EFC49A84C9C3FBB"
-			size: 0.75d
-			subtitle: "fire, water, earth, air. classic."
-			tasks: [{
-				count: 4L
-				id: "35B2DD3C04A45D6E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(botania:rune_water)item(botania:rune_fire)item(botania:rune_earth)item(botania:rune_air)item(botania:rune_mana))"
-					}
-				}
-				title: "Any Element Runes"
-				type: "item"
-			}]
-			title: "Elemental Runes"
-			x: 0.0d
-			y: -2.5d
-		}
-		{
-			description: [
-				"pair the elemental runes into &aspring&r, &esummer&r, &6autumn&r, and &bwinter&r. the altar's second course, and the gateway to every fancier rune."
-			]
-			dependencies: ["0EFC49A84C9C3FBB"]
-			id: "1C79439FDCE2173E"
-			size: 0.75d
-			subtitle: "spring, summer, autumn, winter. obviously."
-			tasks: [{
-				count: 4L
-				id: "4DD65CF7E6E97AE3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(botania:rune_spring)item(botania:rune_summer)item(botania:rune_autumn)item(botania:rune_winter))"
-					}
-				}
-				title: "Any Season Runes"
-				type: "item"
-			}]
-			title: "Season Runes"
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1C79439FDCE2173E"]
-			description: [
-				"the seven sin runes, each with its own runic altar recipe."
-				""
-				"grindy. worth having spares of all seven regardless."
-			]
-			id: "5AF8A1AB9B552519"
-			size: 0.75d
-			subtitle: "pride, greed, wrath... you know the rest"
-			tasks: [{
-				count: 4L
-				id: "0D800D5FB13E74AF"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(botania:rune_lust)item(botania:rune_gluttony)item(botania:rune_greed)item(botania:rune_sloth)item(botania:rune_wrath)item(botania:rune_envy)item(botania:rune_pride))"
-					}
-				}
-				title: "Any Sinful Runes"
-				type: "item"
-			}]
-			title: "Sin Runes"
+			id: "09860F3B56D0E1A9"
+			linked_quest: "2513204224FE3302"
 			x: 1.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2D3D4D46D2DD008F"]
-			description: [
-				"the tier's signature metal. crush a &dchimerite gem&r into dust, combine it with &6magichem admixture&r for star-touched chimerite, then fold in a vengeful demon will."
-				""
-				"bind the result at an &bastral observer&r and wait out the light phase for &6charged chimerite&r. a plain furnace finishes it into &astarforged chimerite ingot&r."
-			]
-			icon: "gtceu:starforged_chimerite_ingot"
-			id: "7F1ABCF957C7AE77"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "68DDE19F3E0BDDB1"
-				item: "gtceu:starforged_chimerite_ingot"
-				type: "item"
-			}]
-			title: "Starforged Chimerite"
-			x: -2.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["7F1ABCF957C7AE77"]
-			description: [
-				"the &6alchemical nexus&r runs a four-stage Ritual of the Balanced Scales this time. chimerite dust and star-touched chimerite open it; runes and vinteum plates carry the middle stages; the final stage folds in two vengeance-touched chimerite and sorcerer's own &6wisdom stone: albedo&r into &6wisdom stone: citrinitas&r."
-				""
-				"wear it and alchemist's distilled animus shortcut opens: raw materia straight to ingot, no soul forge needed."
-			]
-			id: "2345ABDCF190E4FA"
-			shape: "diamond"
-			subtitle: "the yellowing"
-			tasks: [{
-				id: "28BED88AA3E4C0EF"
-				item: "magichem:wisdom_stone_citrinitas"
-				type: "item"
-			}]
-			title: "Wisdom Stone: Citrinitas"
-			x: -3.0d
-			y: -6.5d
+			y: 2.5d
 		}
 	]
-	subtitle: ["Runes, hexes, and starlight"]
+	quests: [
+			{
+				dependencies: ["5195DB0516098DB0"]
+				description: [
+					"chimerite has no ore feature -- vanilla mna only drops it while hand-mining emerald/diamond/coal ore, and often destroys it. malum's &6spirit crucible&r generates it instead."
+					""
+					"the &6alchemical impetus&r is a durability catalyst, not a consumed input. spirit catalyzers stack up to 8 nearby for exponential speed, at proportionally higher impetus wear -- arcane spirits repair a cracked impetus. build the array, feed it spirits, keep the impetuses fed."
+				]
+				id: "366A5C83208FB875"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "chimerite's automation answer"
+				tasks: [{
+					item: "malum:spirit_crucible"
+					id: "0E3B570131301C76"
+					type: "item"
+				}]
+				title: "Spirit Crucible Array"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["366A5C83208FB875"]
+				description: [
+					"the crucible array (900 ticks, 3 durability, 4 arcane + 2 aerial spirits) turns an alchemical impetus into 3x &6chimerite dust&r on its own."
+					""
+					"not built the array yet? mna crushing on a plain chimerite gem works too -- slower, but the tier isn't hard-blocked on automation."
+				]
+				id: "15653C7C81DFE124"
+				subtitle: "automated, or crushed by hand"
+				tasks: [{
+					item: "kubejs:chimerite_dust"
+					id: "2D9D279FD92B4E1B"
+					count: 6L
+					type: "item"
+				}]
+				title: "Chimerite Dust"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["15653C7C81DFE124"]
+				description: [
+					"an alchemy array, in-world: chimerite dust as the base, &dmagichem admixture_light&r thrown onto it."
+				]
+				id: "6CE991601577022A"
+				subtitle: "ashes on the ground, admixture in the air"
+				tasks: [{
+					item: "kubejs:star_touched_chimerite"
+					id: "2E39B5FD42AC5CA1"
+					count: 2L
+					type: "item"
+				}]
+				title: "Star-Touched Chimerite"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5195DB0516098DB0"]
+				description: [
+					"magichem's own device: transforms objects by infusing them with sunlight, moonlight, and starlight. mna tier 4 also opens the eldrin orrery, grand distillery, grand fusery, grand centrifuge, and the yellowed wisdom stone."
+				]
+				icon: "magichem:astral_observer"
+				id: "127629D02678FF15"
+				shape: "rsquare"
+				subtitle: "mna tier 4 unlocks it"
+				tasks: [{
+					item: "magichem:astral_observer"
+					id: "0BC5367D072F2F65"
+					type: "item"
+				}]
+				title: "Astral Observer"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6CE991601577022A", "127629D02678FF15"]
+				description: [
+					"illumination at the astral observer, lumins type 3 (starlight) for 4 real minutes -- the mod's own 'stardust' phase, kept exactly as-is."
+				]
+				id: "00496EBE96D3E313"
+				subtitle: "the step that earns the name"
+				tasks: [{
+					item: "kubejs:charged_chimerite"
+					id: "4AA38B484249A575"
+					count: 2L
+					type: "item"
+				}]
+				title: "Charged Chimerite"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5195DB0516098DB0"]
+				description: [
+					"the resonance of the faceted crystal ritual, fire rune this time -- &6basemonstersoul_vengeful&r, this tier's own demon will aspect."
+				]
+				id: "467D8C73E129CADC"
+				subtitle: "fire-rune split"
+				tasks: [{
+					item: "bloodmagic:basemonstersoul_vengeful"
+					id: "69627D7B15910E86"
+					count: 3L
+					type: "item"
+				}]
+				title: "Vengeful Will"
+				x: 0.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["2513204224FE3302"]
+				description: [
+					"&6rune of winter&r and &6rune of summer&r, built up botania's own compound-rune tree (needs manasteel_ingot at the base). the starforged chimerite recipe below spends them as catalysts -- botania returns them when the craft completes, so this is a one-time cost you lean on forever."
+				]
+				id: "0FCC99945B417513"
+				subtitle: "catalysts, not reagents -- returned on completion"
+				tasks: [
+				{
+					item: "botania:rune_winter"
+					id: "75CF55629E4CA5AC"
+					type: "item"
+				}
+				{
+					item: "botania:rune_summer"
+					id: "2A38AFC5CDA00669"
+					type: "item"
+				}
+				]
+				title: "Seasonal Runes"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["00496EBE96D3E313", "467D8C73E129CADC", "0FCC99945B417513"]
+				description: [
+					"finished at the &6runic altar&r, not a furnace -- gems aren't smelted. charged chimerite + vengeful will + the two seasonal runes (returned after the craft)."
+					""
+					"shortcut once arcanist's rubedo wisdom stone is worn: distillation fabrication, batch of 3, no raw items."
+				]
+				icon: "gtceu:starforged_chimerite_gem"
+				id: "72BEDBC6D7F457BF"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature material"
+				tasks: [{
+					item: "gtceu:starforged_chimerite_gem"
+					id: "0986EFE02F247AEB"
+					count: 2L
+					type: "item"
+				}]
+				title: "Starforged Chimerite"
+				x: 6.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["72BEDBC6D7F457BF"]
+				description: [
+					"manaweaving, tier 4: one of four formerly-duplicated rune_ritual_metal slots now carries &6starforged chimerite dust&r. part of the wellspring-capture multiblock -- mna's own occulus t4->t5 gate."
+				]
+				id: "49FD99A6C32C041F"
+				subtitle: "mna's own t4->t5 gate structure, taxed"
+				tasks: [{
+					item: "mna:wellspring_pillar"
+					id: "3A38DECC16560E56"
+					type: "item"
+				}]
+				title: "Wellspring Pillar"
+				x: 7.5d
+				y: 0.5d
+			}
+			{
+				dependencies: ["5195DB0516098DB0"]
+				description: [
+					"mana pond + conjuration catalyst, double thaumaturge mana cost: mana diamond -> 2x, mana pearl -> 2x. optional, but every downstream tier leans on the supply."
+				]
+				id: "01BE37C52B97E584"
+				shape: "square"
+				size: 0.6d
+				subtitle: "botania catalyst work, pure and simple"
+				tasks: [
+				{
+					item: "botania:mana_diamond"
+					id: "7F5F551058B4A72D"
+					count: 2L
+					type: "item"
+				}
+				{
+					item: "botania:mana_pearl"
+					id: "730C549B7CEA60FF"
+					count: 2L
+					type: "item"
+				}
+				]
+				title: "Mana Pond Duplication"
+				x: 1.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["72BEDBC6D7F457BF"]
+				description: [
+					"mna crushing turns the gem into a sigil blank. finish it at the astral observer -- illumination, type 3, 4 minutes, same cycle as the material itself."
+				]
+				id: "627F6C45609F066E"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:starforged_sigil"
+					id: "107D7F1A368255B4"
+					type: "item"
+				}]
+				title: "Starforged Sigil"
+				x: 7.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["72BEDBC6D7F457BF", "467D8C73E129CADC"]
+				description: [
+					"eldrin altar, WATER power, tier 4: starforged chimerite gem + initiate's hexcasting spellbook + vengeful will + star-touched chimerite."
+				]
+				id: "150A49012914FD1A"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:starforged_wizard_brain"
+					id: "2F4F8EFF09570F8A"
+					type: "item"
+				}]
+				title: "Starforged Wizard Brain"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["72BEDBC6D7F457BF"]
+				description: [
+					"&6motive core&r (astral observer illumination, type 2/moonlight, 6 minutes, off the rod). &6channeling vessel&r (frozen shut in the aether's icestone freezer, 600 ticks). &6ward lattice&r (runic altar: starforged plate + rune_earth + rune_winter + echo shard)."
+				]
+				id: "57CAC759276E20D0"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:starforged_motive_core"
+					id: "1CEEB00D10C5C65C"
+					type: "item"
+				}
+				{
+					item: "kubejs:starforged_channeling_vessel"
+					id: "7D4C1E41AC957DF9"
+					type: "item"
+				}
+				{
+					item: "kubejs:starforged_ward_lattice"
+					id: "0B44B7A26AAA8D51"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 9.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["627F6C45609F066E", "150A49012914FD1A", "57CAC759276E20D0"]
+				description: [
+					"four-stage sublimation, tier 4, wisdom 2. stage 1: chimerite dust, star-touched chimerite, starforged wizard brain (a worn wisdom stone is literally automated magical reasoning). stage 2: rune_earth, rune_water, rune_spring. stage 3: 2x starforged chimerite plate + charged chimerite. stage 4: 2x charged chimerite + wisdom stone albedo."
+					""
+					"wear it and alchemist's distilled animus ingot fabricates straight from materia, batch of 3."
+				]
+				icon: "magichem:wisdom_stone_citrinitas"
+				id: "625AE10F9BDB9626"
+				shape: "hexagon"
+				size: 1.25d
+				subtitle: "wisdom stone: citrinitas"
+				tasks: [{
+					item: "magichem:wisdom_stone_citrinitas"
+					id: "7BFDF628F2B1536B"
+					type: "item"
+				}]
+				title: "Citrinitas Wisdom Stone"
+				x: 10.5d
+				y: 1.0d
+			}
+			{
+				dependencies: ["72BEDBC6D7F457BF", "627F6C45609F066E", "150A49012914FD1A", "57CAC759276E20D0", "625AE10F9BDB9626"]
+				description: [
+					"starforged chimerite flowing, the astral observer running, the crucible array feeding it dust. arcanist wants the demon realm -- come armed."
+				]
+				icon: "gtceu:starforged_chimerite_gem"
+				id: "41567D8EE63BF015"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the stars answered"
+				tasks: [{
+					id: "63A7B85F2B5341C2"
+					title: "Onward to Arcanist"
+					type: "checkmark"
+				}]
+				title: "Tier Six Complete"
+				x: 12.0d
+				y: 1.0d
+			}
+	]
+	subtitle: ["A gem, star-touched"]
 	title: "VII. Thaumaturge"
 }

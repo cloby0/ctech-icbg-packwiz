@@ -7,253 +7,304 @@
 	icon: "gtceu:distilled_animus_ingot"
 	id: "726A09074A62FCF3"
 	order_index: 5
-	quest_links: [{
-		id: "0D9EB282C01F6BBD"
-		linked_quest: "3C613081F4FE51B2"
-		size: 1.5d
-		x: 0.0d
-		y: 0.0d
-	}]
-	quests: [
+	quest_links: [
 		{
-			dependencies: [
-				"3C613081F4FE51B2"
-				"9A4C2F6D8B1E3075"
-			]
-			description: [
-				"the &3pure daisy&r is the foundation of botania."
-				""
-				"place &7stone&r or &eliving wood&r next to it and wait. it slowly purifies them into their arcane equivalents."
-				""
-				"that's it."
-			]
-			id: "1F374C13B7A1C7A2"
-			size: 0.75d
-			subtitle: "it's literally just a flower"
-			tasks: [{
-				id: "68D9F5C25216864D"
-				item: "botania:pure_daisy"
-				type: "item"
-			}]
-			title: "Pure Daisy"
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			description: [
-				"ring your pure daisy with stone and wait. &flivingrock&r feeds every botania build from here on."
-			]
-			dependencies: ["1F374C13B7A1C7A2"]
-			id: "3C48407D270C6942"
-			size: 0.75d
-			subtitle: "stone, but alive. sort of."
-			tasks: [{
-				id: "6B4DF27906811AA8"
-				item: "botania:livingrock"
-				type: "item"
-			}]
-			title: "Livingrock"
-			x: -3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3C48407D270C6942"]
-			description: [
-				"the &3mana pool&r is the central hub of &3botania&r."
-				""
-				"flowers generate &dmana&r and pipe it into the pool. from there it's used for pretty much everything botania does - crafting, transformation, terraforming, you name it."
-				""
-				"&9note:&r at this tier, reliable options include the &aendoflame&r (coal/charcoal) and &arosa arcana&r (XP). keep them fed."
-			]
-			id: "138BA0CD22478ACF"
-			size: 0.75d
-			subtitle: "an expensive infinity pool"
-			tasks: [{
-				id: "2B744BA6473CBDBD"
-				item: "botania:mana_pool"
-				type: "item"
-			}]
-			title: "Mana Pool"
-			x: -3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["138BA0CD22478ACF"]
-			description: [
-				"the &6automated mana pond&r multiblock replaces flower-sitting: it runs mana pool infusions off &dliquid source&r, one input at a time, with a &dparallel hatch&r and perfect overclocks."
-				""
-				"catalyst business is handled by circuits: &7circuit 1&r plain, &7circuit 2&r alchemy catalyst, &7circuit 3&r conjuration catalyst. built around a real mana pool and &3manaplatinite&r casings at IV."
-			]
-			id: "61F4B8D0C3A75E30"
-			subtitle: "the pool cleans itself now"
-			tasks: [{
-				id: "61F4B8D0C3A75E31"
-				item: "gtceu:automated_mana_pond"
-				type: "item"
-			}]
-			title: "Automated Mana Pond"
-			x: -3.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"3C613081F4FE51B2"
-				"9A4C2F6D8B1E3075"
-			]
-			description: [
-				"the &3abstract metal&r line turns &dprima materia&r into a whole family of ordinary metals."
-				""
-				"&ocondensed concepts&r and &ometal form&r are intermediate processing steps toward the abstract ingot."
-			]
-			id: "2C27B13A2CA65DEC"
-			size: 0.75d
-			subtitle: "magic philosophy, compressed"
-			tasks: [{
-				id: "65D66F5AB27EEF45"
-				item: "gtceu:concepts_bucket"
-				type: "item"
-			}]
-			title: "Condensed Concepts"
-			x: -1.0d
-			y: -1.0d
-		}
-		{
-			description: [
-				"bind a bucket to a &aprima materia block&r, bottled XP, and charged amethyst at the eldrin altar for a &dbucket of concepts&r. weaving it with a &fholy silver block&r condenses that into &7metal form&r."
-			]
-			dependencies: ["2C27B13A2CA65DEC"]
-			id: "442B54C049E4C49E"
-			size: 0.75d
-			subtitle: "it's almost an ingot"
-			tasks: [{
-				id: "20D2CC7AEE2E2DE9"
-				item: "gtceu:metal_form_bucket"
-				type: "item"
-			}]
-			title: "Metal Form"
-			x: -1.0d
-			y: -2.5d
-		}
-		{
-			description: [
-				"bind the metal form to three ad astra &bice shards&r and an otherworld essence at the eldrin altar to freeze it into a solid you can hold. still disorganized, but real."
-			]
-			dependencies: ["442B54C049E4C49E"]
-			id: "7BDD15A9F2B6BCDD"
-			size: 0.75d
-			subtitle: "like an ingot, but confused"
-			tasks: [{
-				id: "06E9CA2754667DC0"
-				item: "kubejs:disorganized_metal_form"
-				type: "item"
-			}]
-			title: "Disorganized Metal Form"
-			x: -1.0d
-			y: -4.0d
-		}
-		{
-			description: [
-				"smelt the disorganized form to get the &7abstract metal ingot&r. combine it with an elemental essentia in the grid: fire = gold, water = tin, earth = lead, air = aluminium."
-				""
-				"weave it with a pair of essentia at the manaweaving altar for bismuth, copper, silver, magnesium, or holy silver -- pick your pair, pick your metal."
-			]
-			dependencies: ["7BDD15A9F2B6BCDD"]
-			id: "5E61BE3584D271A8"
-			size: 0.75d
-			subtitle: "it's metal. it works."
-			tasks: [{
-				id: "01EEE80DDFE70C38"
-				item: "gtceu:abstract_metal_ingot"
-				type: "item"
-			}]
-			title: "Abstract Metal Ingot"
-			x: -1.0d
-			y: -5.5d
-		}
-		{
-			description: [
-				"epic ink brewed with an &delven source lattice&r, an arcanist-tier elven export. the highest ink tier for spell scrolls."
-			]
-			dependencies: ["3C613081F4FE51B2"]
-			id: "3CFDB9C271774552"
-			size: 0.75d
-			subtitle: "the best ink there is"
-			tasks: [{
-				id: "386FECC40F4FE79E"
-				item: "irons_spellbooks:legendary_ink"
-				type: "item"
-			}]
-			title: "Legendary Ink"
-			x: 1.0d
+			id: "4470D4F0D2E3A4B9"
+			linked_quest: "5C59510CCDEDA037"
+			x: -1.5d
 			y: 0.0d
 		}
 		{
-			description: [
-				"rare ink plus a &aprima materia plate&r in the alchemist cauldron. one tier below legendary."
-			]
-			dependencies: [
-				"51D5B5C004491077"
-				"3C613081F4FE51B2"
-			]
-			id: "10BFE2CEB381C280"
-			size: 0.75d
-			subtitle: "for epic spells only"
-			tasks: [{
-				id: "5D51DAFB12AD3536"
-				item: "irons_spellbooks:epic_ink"
-				type: "item"
-			}]
-			title: "Epic Ink"
-			x: 1.0d
-			y: -1.0d
+			id: "09F8784B4CAFA9A2"
+			linked_quest: "5417A43881AA537B"
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["3C613081F4FE51B2"]
-			description: [
-				"bind a &6book&r to a &aprima materia plate&r, two &credstone blocks&r, and a bottle o' enchanting at the eldrin altar for the &6alkahestry tome&r."
-				""
-				"charge it with redstone and it transmutes common materials in the crafting grid."
-			]
-			id: "262FBCDEA658CDE8"
-			size: 0.75d
-			subtitle: "the art of transmutation, pocket edition"
-			tasks: [{
-				id: "58A6F647DCE439F5"
-				item: {
-					Count: 1
-					id: "reliquary:alkahestry_tome"
-					tag: {
-						Damage: 1001
-					}
-				}
-				type: "item"
-			}]
-			title: "Alkahestry Tome"
-			x: 1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3C613081F4FE51B2"]
-			description: [
-				"the tier's signature metal. combine &9animus dust&r with &darcane essentia&r for &carcane residue&r, then feed the soul forge one residue, a destructive will, soul sand, and magma cream for &canimus fragment&r."
-				""
-				"crush the fragment for &9distilled animus dust&r, then finish it at the alchemy table for &6distilled animus ingot&r."
-			]
-			icon: "gtceu:distilled_animus_ingot"
-			id: "2D3D4D46D2DD008F"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "417BB77B93665ADC"
-				item: "gtceu:distilled_animus_ingot"
-				type: "item"
-			}]
-			title: "Distilled Animus"
+			id: "27E9EEDAA7C66542"
+			linked_quest: "720A7B6C6EAEFD86"
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 	]
-	subtitle: ["Flowers doing metallurgy now"]
+	quests: [
+			{
+				dependencies: ["5C59510CCDEDA037"]
+				description: [
+					"kill mobs with a sentient sword (or soul snares) into a &4tartaric gem&r. build a &4demon crucible&r and burn will into the chunk's aura (cap 100 per aspect per chunk -- read it with a demon will aura gauge). build a &4demon crystallizer&r for will crystal clusters."
+					""
+					"run the &6resonance of the faceted crystal&r ritual to split raw will into four aspects: water rune -> steadfast, air -> &6destructive&r, fire -> vengeful, earth -> corrosive. put an empty tartaric gem in a hellfire forge in the crucible's chunk to fill it with that aspect."
+				]
+				id: "1081A7AEF490548A"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "the crucible, the crystallizer, the four aspects"
+				tasks: [{
+					item: "bloodmagic:basemonstersoul_destructive"
+					id: "28A082E0B58EABD9"
+					count: 4L
+					type: "item"
+				}]
+				title: "Demon Will Loop"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5C59510CCDEDA037"]
+				description: [
+					"mna's own animus dust + &dmagichem essentia_arcane&r, hand-combined. the base of this tier's whole material chain."
+				]
+				id: "2FB2A6F95602C841"
+				subtitle: "hand-combined, no machine needed"
+				tasks: [{
+					item: "kubejs:arcane_residue"
+					id: "5E7392B51938DFD3"
+					count: 4L
+					type: "item"
+				}]
+				title: "Arcane Residue"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["1081A7AEF490548A", "2FB2A6F95602C841", "5417A43881AA537B"]
+				description: [
+					"the soul forge, drain 20 / min 400: arcane residue + destructive will + soul sand + magma cream. the soul forge takes exactly 4 fixed slots -- verified against the mod's own recipe json."
+				]
+				id: "27A3AC14DD52B461"
+				subtitle: "the destructive will spends here"
+				tasks: [{
+					item: "kubejs:animus_fragment"
+					id: "6EE771AA22FCDAFF"
+					count: 2L
+					type: "item"
+				}]
+				title: "Animus Fragment"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["27A3AC14DD52B461"]
+				description: [
+					"occultism crushing turns the fragment straight into a real gt dust. finish it at the alchemy table -- a magic-only route that bypasses the gt ebf requirement entirely, same pattern hobbyist's ashen ichor uses."
+					""
+					"gt's own blastTemp still autogens an ebf route, harmless if unused. shortcut once thaumaturge's citrinitas wisdom stone is worn: distillation fabrication, batch of 3, no raw items."
+				]
+				icon: "gtceu:distilled_animus_ingot"
+				id: "7424156E1D3D4D72"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "gtceu:distilled_animus_ingot"
+					id: "3B812A7DA7954A40"
+					count: 2L
+					type: "item"
+				}]
+				title: "Distilled Animus"
+				x: 4.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["7424156E1D3D4D72", "720A7B6C6EAEFD86"]
+				description: [
+					"soul forge (drain 20/min 400): distilled animus ingot + arcane residue + mana pearl -- a sigil blank. finish it at the alchemy table (200 ticks) with initiate's own &6hexed mana matrix&r."
+				]
+				id: "76EFF1EFAC20AAF1"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:animus_sigil"
+					id: "43BA4F08721192FC"
+					count: 2L
+					type: "item"
+				}]
+				title: "Animus Sigil"
+				x: 6.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["76EFF1EFAC20AAF1"]
+				description: [
+					"manaweaving, tier 4 (hourglass/split_triangle/inverted_triangle/diamond): a pedestal + 4x chimerite crystals + &6distilled animus ingot&r + &6animus sigil&r. two of the six formerly-duplicated chimerite crystal slots now carry this tier's own material -- station builds are a real sigil target."
+					""
+					"nothing below alchemist ever touches this altar. everything from initiate's hex casting downward that used to route through it now runs on the alchemy table instead."
+				]
+				icon: "mna:eldrin_altar"
+				id: "6B08EA993597FCBF"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "mna tier-4 content, genuinely mandatory here"
+				tasks: [{
+					item: "mna:eldrin_altar"
+					id: "73B0BADDA7AD1B95"
+					type: "item"
+				}]
+				title: "Eldrin Altar"
+				x: 7.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["6B08EA993597FCBF"]
+				description: [
+					"all three carry a distinct alchemist-tier tax now: the &6arcane conduit&r takes arcane residue, the &6water conduit&r takes an animus fragment, the &6ender conduit&r takes distilled animus dust -- each on top of its mote/lesser-conduit/chimerite base."
+				]
+				id: "209F5C22E8965A56"
+				shape: "square"
+				size: 0.75d
+				subtitle: "arcane, water, ender"
+				tasks: [
+				{
+					item: "mna:eldrin_conduit_arcane"
+					id: "2D9B901C8E6B0808"
+					type: "item"
+				}
+				{
+					item: "mna:eldrin_conduit_water"
+					id: "10B1ED6A92F01572"
+					type: "item"
+				}
+				{
+					item: "mna:eldrin_conduit_ender"
+					id: "607E85121935DD43"
+					type: "item"
+				}
+				]
+				title: "Eldrin Conduits"
+				x: 9.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["7424156E1D3D4D72"]
+				description: [
+					"manaweaving, tier 4 (diamond/knot/knot3): vinteum dust + emerald + a chimerite gem + this tier's own distilled animus ingot. gates &6greater_mote_arcane&r, which gates the occulus's own t4->t5 advance."
+				]
+				id: "6BACB3915E0593FA"
+				subtitle: "gates occulus t4->t5"
+				tasks: [{
+					item: "mna:crystal_of_memories"
+					id: "0ECC428687644E95"
+					type: "item"
+				}]
+				title: "Crystal of Memories"
+				x: 9.0d
+				y: -1.5d
+			}
+			{
+				dependencies: ["6B08EA993597FCBF"]
+				description: [
+					"eldrin altar, arcane power: a bucket + prima materia block + 2x experience bottle + charged amethyst. this is the channeling vessel article from here through sage -- not a dead intermediate, a real recurring ingredient."
+				]
+				id: "5FBFD9ED3A678166"
+				subtitle: "a craftable container, this tier on"
+				tasks: [{
+					item: "gtceu:concepts_bucket"
+					id: "6B13A943B1EA6ACF"
+					type: "item"
+				}]
+				title: "Concepts Bucket"
+				x: 9.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6B08EA993597FCBF"]
+				description: [
+					"eldrin altar, arcane power, tier 4: distilled animus ingot + writable book + arcane residue + initiate's &6hexed amethyst core&r. thought knot is the vessel article here -- stored, looped thought."
+				]
+				id: "6541533FDB67C598"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:animus_wizard_brain"
+					id: "4F1DC970CF171F5C"
+					type: "item"
+				}]
+				title: "Animus Wizard Brain"
+				x: 10.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5FBFD9ED3A678166", "7424156E1D3D4D72"]
+				description: [
+					"&6motive core&r (mana pond + conjuration catalyst, distilled animus rod, double mana cost). &6channeling vessel&r (manaweaving t3: concepts bucket + distilled animus ingot + 2x arcane residue). &6ward lattice&r (soul forge: distilled animus plate + steadfast will + hexed mana matrix + obsidian)."
+				]
+				id: "0ED2B7B3315E967E"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:animus_motive_core"
+					id: "496A093682E6F411"
+					type: "item"
+				}
+				{
+					item: "kubejs:animus_channeling_vessel"
+					id: "0831F36B5F1C2D92"
+					type: "item"
+				}
+				{
+					item: "kubejs:animus_ward_lattice"
+					id: "3C76FD5A4E662BE8"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 10.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["6B08EA993597FCBF", "6541533FDB67C598"]
+				description: [
+					"eldrin altar, arcane power (2x this tier's cost), tier 4: book + prima materia plate + a redstone block + animus sigil + experience bottle + animus wizard brain. optional gear, not required for the tier's exit."
+				]
+				id: "30ED5F1FA6DCD195"
+				shape: "square"
+				size: 0.75d
+				subtitle: "stored transmutation knowledge"
+				tasks: [{
+					item: "reliquary:alkahestry_tome"
+					id: "0547B65A6FA2A443"
+					type: "item"
+				}]
+				title: "Alkahestry Tome"
+				x: 12.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["5C59510CCDEDA037"]
+				description: [
+					"botania's alchemy catalyst, placed under a mana pond. two bypasses become available once you have it: silver -> holy silver ingot directly (8,000 mana), and a batch conversion at 16,000 mana. neither is required -- manaweaving's own holy silver line from initiate still works."
+				]
+				id: "1D656100BB85EC71"
+				shape: "square"
+				size: 0.6d
+				subtitle: "an optional bypass, not a requirement"
+				tasks: [{
+					item: "botania:alchemy_catalyst"
+					id: "2DD9178324A896AB"
+					type: "item"
+				}]
+				title: "Alchemy Catalyst"
+				x: 1.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["7424156E1D3D4D72", "76EFF1EFAC20AAF1", "6541533FDB67C598", "0ED2B7B3315E967E", "6B08EA993597FCBF"]
+				description: [
+					"distilled animus flowing, the eldrin altar built and all three conduits running, hex casting's whole tree open since initiate. thaumaturge wants chimerite banked at scale -- you should already have a head start from initiate."
+				]
+				icon: "mna:eldrin_altar"
+				id: "5195DB0516098DB0"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "the altar stands, the will loop feeds it"
+				tasks: [{
+					id: "2757963DAC777D2A"
+					title: "Onward to Thaumaturge"
+					type: "checkmark"
+				}]
+				title: "Tier Five Complete"
+				x: 12.0d
+				y: 1.5d
+			}
+	]
+	subtitle: ["Everything has a formula"]
 	title: "VI. Alchemist"
 }

@@ -9,194 +9,453 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "4B448276B68B2210"
-			linked_quest: "1BBC77A8493BB220"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "07EFAF5ED307BC3B"
-			linked_quest: "46F3E5D16CC665B8"
+			id: "3FABC79217AF2DC9"
+			linked_quest: "74C95A7023AFCE73"
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			id: "36A4DFC418F1BAF1"
+			linked_quest: "0D7DE2282962ACE0"
+			x: 1.5d
+			y: -5.5d
 		}
 	]
 	quests: [
-		{
-			dependencies: ["1BBC77A8493BB220"]
-			description: [
-				"mana & artifice's own book, the &6codex arcana&r, explains what everything IS -- affinities, spell parts, every device you'll meet. it also carries magichem's own &6alchemical theory&r category (essentia, admixtures, every process and device), no separate trip needed. glass panes, a mana-tinted flower, and an ornate table craft the &6occulus&r, a block that tells you what to do next, in order, tier by tier."
-				""
-				"the codex explains the WHAT. the occulus tracks the WHERE. keep both handy."
-			]
-			id: "397F9B92F41539D3"
-			subtitle: "what and what's next"
-			tasks: [{
-				id: "6389D0D34348588E"
-				item: "mna:occulus"
-				type: "item"
-			}]
-			title: "Occulus"
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["397F9B92F41539D3"]
-			description: [
-				"the deep magichem theory -- alembic, admixtures, fulmination, distillation, every device -- already lives in your codex arcana's &6alchemical theory&r category. the &6codex materia&r is narrower: a running tally of every essentia and admixture you've dissolved, with counts. find the &6wandering wizard&r and right-click her with your codex arcana in hand to trade for it."
-				""
-				"she'll trade it back if you ask -- you're not out a book permanently, just borrowing hers for a minute."
-			]
-			id: "235314EFFEE9BF20"
-			subtitle: "borrow, don't buy"
-			tasks: [{
-				id: "7369C46F698E598D"
-				item: "magichem:codex_materia"
-				type: "item"
-			}]
-			title: "Codex Materia"
-			x: -4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1BBC77A8493BB220"]
-			description: [
-				"the &6manaweaving altar&r draws glyphs onto items sitting in its pedestals -- your main crafting bench from here on."
-				""
-				"up to 9 items, up to 6 glyphs per craft. the recipe's in JEI."
-			]
-			icon: "mna:manaweaving_altar"
-			id: "5CCF5C4303843804"
-			shape: "rsquare"
-			size: 0.75d
-			subtitle: "glyphs and pedestals"
-			tasks: [{
-				id: "746B92DE3DCF18C2"
-				item: "mna:manaweaving_altar"
-				type: "item"
-			}]
-			title: "Manaweaving Altar"
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5CCF5C4303843804"]
-			description: [
-				"weave an &damethyst shard&r into &5arcane essence&r -- the base reagent for iron's spells and half your future books."
-				""
-				"just the altar, the shard, and two glyphs."
-			]
-			id: "7EA490DB5937F1B3"
-			size: 0.75d
-			subtitle: "ghost juice, essentially"
-			tasks: [{
-				id: "6E9C9B6B45BD2BF9"
-				item: "irons_spellbooks:arcane_essence"
-				type: "item"
-			}]
-			title: "Arcane Essence"
-			x: -1.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1BBC77A8493BB220"]
-			description: [
-				"the &6inscription table&r binds spell scrolls into books -- iron's spells' main crafting desk."
-				""
-				"archwood, gold screws, common ink, magic cloth, a feather."
-			]
-			id: "23DADC343F70C96F"
-			size: 0.75d
-			subtitle: "the spellcrafting desk"
-			tasks: [{
-				id: "56DAA8BCEFF118C0"
-				item: "irons_spellbooks:inscription_table"
-				type: "item"
-			}]
-			title: "Inscription Table"
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["46F3E5D16CC665B8"]
-			description: [
-				"blood magic's &4alchemy table&r binds several items at once, syphoning &6LP&r from a nearby blood altar to power the craft."
-				""
-				"the recipe's in JEI. keep your altar topped up before you start a batch."
-			]
-			icon: "bloodmagic:alchemytable"
-			id: "1C4D9CB5510F47D0"
-			shape: "rsquare"
-			size: 0.75d
-			subtitle: "several items, one bill"
-			tasks: [{
-				id: "4704974828335B14"
-				item: "bloodmagic:alchemytable"
-				type: "item"
-			}]
-			title: "Alchemy Table"
-			x: 1.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["1C4D9CB5510F47D0"]
-			description: [
-				"the tier's signature metal. hammer a &dzanite gemstone&r into a shard, weaken it with redstone, then bind the cracked shard to iron at the &4alchemy table&r with a pinch of &6magichem admixture&r."
-				""
-				"drop the result in a &9mana pond&r for &6manasteel ingot&r. get comfortable making this -- it's everywhere from here on."
-			]
-			icon: "botania:manasteel_ingot"
-			id: "66724F3FB8D5FB59"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "the tier's signature metal"
-			tasks: [{
-				id: "6B59B1376B0D613E"
-				item: "botania:manasteel_ingot"
-				type: "item"
-			}]
-			title: "Manasteel"
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["66724F3FB8D5FB59"]
-			description: [
-				"glowstone and ashen ichor build the &6aether portal frame&r -- the gate to a second sky."
-				""
-				"the aether has its own resources and its own dangers. worth the trip."
-			]
-			id: "5732DF3D208DC50F"
-			size: 0.75d
-			subtitle: "a second sky"
-			tasks: [{
-				id: "31DAA8E71C21AD23"
-				item: "aether:aether_portal_frame"
-				type: "item"
-			}]
-			title: "Aether Portal Frame"
-			x: 4.5d
-			y: -3.25d
-		}
-		{
-			dependencies: ["66724F3FB8D5FB59"]
-			description: [
-				"summon a &6djinni&r and bind its &bmanage machine&r job to the mixing cauldron or the manaweaving altar -- either exposes a standard item-handler inventory, so the djinni feeds and empties it without you standing there."
-				""
-				"costs a manasteel ingot."
-			]
-			id: "5C2E9B7A4D1F6083"
-			subtitle: "hands-off crafting, finally"
-			tasks: [{
-				advancement: "occultism:occultism/summon_djinni_manage_machine"
-				criterion: ""
-				id: "5C2E9B7A4D1F6084"
-				type: "advancement"
-			}]
-			title: "Djinni Spirit"
-			x: 4.5d
-			y: -1.75d
-		}
+			{
+				dependencies: ["74C95A7023AFCE73"]
+				description: [
+					"the aether has its own ore layer. mine &6zanite ore&r for &6zanite gemstones&r -- this tier's core reagent, and the ingredient that flanks the manaweaving altar's own water bucket."
+					""
+					"everything below in this chapter traces back to this gem one way or another."
+				]
+				icon: "aether:zanite_gemstone"
+				id: "036302EC2DFA7854"
+				shape: "rsquare"
+				subtitle: "the gem that opens the tier"
+				tasks: [{
+					item: "aether:zanite_gemstone"
+					id: "3DC12DD0D9DE7FD3"
+					count: 4L
+					type: "item"
+				}]
+				title: "Zanite Ore"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["74C95A7023AFCE73"]
+				description: [
+					"mine &6vinteum ore&r (aether, holystone layer, alongside zanite) and smelt it into &6vinteum dust&r. combine dust + iron ingot (shapeless) for &6vinteum coated iron&r, then smelt again for &6vinteum ingot&r."
+					""
+					"this is mna's own tier-0 ladder -- the last vanilla-mod step before the codex opens."
+				]
+				id: "493CD31CA3633E4C"
+				subtitle: "ore, smelt, combine, smelt again"
+				tasks: [{
+					item: "mna:vinteum_ingot"
+					id: "3289C8D569AD580B"
+					count: 3L
+					type: "item"
+				}]
+				title: "The Vinteum Ladder"
+				x: 1.5d
+				y: 1.0d
+			}
+			{
+				dependencies: ["493CD31CA3633E4C"]
+				description: [
+					"find a &6spellmonger&r villager and trade vinteum ingots for the &6codex arcana&r -- mna's own guide book. read it: it explains every affinity, spell part, and device you'll meet, and carries magichem's &6alchemical theory&r category too, so you don't need a separate magichem book."
+					""
+					"the codex explains the WHAT. the occulus (next) tracks the WHERE."
+				]
+				id: "11251CB64DDAEA0F"
+				subtitle: "don't buy it, trade for it"
+				tasks: [{
+					advancement: "mna:tier_0/codex_trade"
+					criterion: ""
+					id: "49B27B84382AA3A2"
+					type: "advancement"
+				}]
+				title: "Codex Arcana"
+				x: 3.0d
+				y: 1.0d
+			}
+			{
+				dependencies: ["11251CB64DDAEA0F"]
+				description: [
+					"glass panes, a mana-tinted flower, and an ornate table craft the &6occulus&r -- a block that tracks your mna tier and lists what to do next, in order."
+					""
+					"you're tier 0 right now. sleeping in a bed after clearing the tier-1 task list below advances you to tier 2 -- that's journeyman's gate, not this one."
+				]
+				id: "72C3A0AA5A50997D"
+				subtitle: "what and what's next"
+				tasks: [{
+					item: "mna:occulus"
+					id: "68057D32EAB9CDF9"
+					type: "item"
+				}]
+				title: "Occulus"
+				x: 4.5d
+				y: 1.0d
+			}
+			{
+				dependencies: ["11251CB64DDAEA0F"]
+				description: [
+					"find the &6wandering wizard&r and right-click her with your codex arcana in hand to trade for the &6codex materia&r -- a running tally of every essentia/admixture you've dissolved, with counts."
+					""
+					"she'll trade it back if you ask. the deep magichem theory already lives in your codex arcana; this book is just the ledger."
+				]
+				id: "16DB7A344179D1B3"
+				subtitle: "borrow, don't buy"
+				tasks: [{
+					item: "magichem:codex_materia"
+					id: "285BB23968642D40"
+					type: "item"
+				}]
+				title: "Codex Materia"
+				x: 4.5d
+				y: 2.0d
+			}
+			{
+				dependencies: ["72C3A0AA5A50997D", "036302EC2DFA7854"]
+				description: [
+					"arcane sandstone + arcane sandstone wall + arcane stone + a &6zanite gemstone&r flanking the water bucket, damaging a hammer. cast the &6transmute cantrip&r on stone/sandstone with a manaweaver wand to get the raw arcane blocks."
+					""
+					"your main crafting bench from here on -- up to 9 items, up to 6 glyphs per craft, drawn in the pattern's exact order. the recipe's in JEI."
+				]
+				icon: "mna:manaweaving_altar"
+				id: "3CFEDBBB700507B5"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "glyphs and pedestals"
+				tasks: [{
+					item: "mna:manaweaving_altar"
+					id: "501795847BCEABAF"
+					type: "item"
+				}]
+				title: "Manaweaving Altar"
+				x: 6.0d
+				y: 1.0d
+			}
+			{
+				dependencies: ["3CFEDBBB700507B5"]
+				description: [
+					"weave an amethyst shard into &5arcane essence&r -- the base reagent for iron's spells and half your future books. just the altar, the shard, and two glyphs (triangle, slash)."
+				]
+				id: "332598B4B349DD6A"
+				size: 0.75d
+				subtitle: "ghost juice, essentially"
+				tasks: [{
+					item: "irons_spellbooks:arcane_essence"
+					id: "45CC90AC7AC8FD3F"
+					type: "item"
+				}]
+				title: "Arcane Essence"
+				x: 7.5d
+				y: 0.5d
+			}
+			{
+				dependencies: ["72C3A0AA5A50997D"]
+				description: [
+					"book + wool carpet + basic table + animated quill + vellum. iron's spellbooks' spell-scribing station."
+				]
+				id: "668FDFEA75526F80"
+				shape: "rsquare"
+				size: 0.75d
+				subtitle: "the spellcrafting desk"
+				tasks: [{
+					item: "irons_spellbooks:inscription_table"
+					id: "5CB5E773C5C4BD7A"
+					type: "item"
+				}]
+				title: "Inscription Table"
+				x: 4.5d
+				y: -1.0d
+			}
+			{
+				dependencies: ["668FDFEA75526F80"]
+				description: [
+					"scribe a spell at the inscription table, then perform the &6ritual of arcana&r to make it real. cast spells until you reach &6magic level 15&r -- part of mna's own tier-1 checklist."
+				]
+				id: "34BF3E988FC3C72B"
+				subtitle: "make it real"
+				tasks: [{
+					item: "mna:spell_book"
+					id: "7EF8619187376BCD"
+					type: "item"
+				}]
+				title: "Ritual of Arcana"
+				x: 6.0d
+				y: -1.0d
+			}
+			{
+				dependencies: ["036302EC2DFA7854"]
+				description: [
+					"blood magic's vanilla recipe is removed -- too cheap, it'd bypass the zanite gate entirely. the pack's own recipe: glass bottles, red carpet, iron plates, a &6zanite gemstone&r core, a stone slab base, a blankslate, damaging a hammer."
+					""
+					"several items at once, syphoning LP from a nearby altar. the recipe's in JEI -- keep your altar topped up before a batch."
+				]
+				icon: "bloodmagic:alchemytable"
+				id: "7528BA1A867DE0D7"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "the pack rebuilt this one"
+				tasks: [{
+					item: "bloodmagic:alchemytable"
+					id: "1FC0E1A447F99280"
+					type: "item"
+				}]
+				title: "Alchemy Table"
+				x: 1.5d
+				y: -1.5d
+			}
+			{
+				dependencies: ["74C95A7023AFCE73"]
+				description: [
+					"&6mana pool&r (livingrock) + &6mana spreader&r (livingwood) + a generating flower -- endoflame is the standard start, fed with fuel. aim the spreader at the pool with the wand of the forest in bind mode."
+					""
+					"aim for at least 500 mana banked per manasteel ingot -- you'll be running this constantly from here on."
+				]
+				id: "3851D1752B7464FA"
+				shape: "rsquare"
+				subtitle: "botania catches up"
+				tasks: [
+				{
+					item: "botania:mana_pool"
+					id: "2DC6352CB5003D78"
+					type: "item"
+				}
+				{
+					item: "botania:mana_spreader"
+					id: "75BBF97F37D020D1"
+					type: "item"
+				}
+				]
+				title: "Mana Pool & Spreader"
+				x: 3.0d
+				y: -2.5d
+			}
+			{
+				dependencies: ["7528BA1A867DE0D7", "3851D1752B7464FA"]
+				description: [
+					"hammer a &6zanite gemstone&r into a shard, weaken it with 2x redstone into &6cracked zanite&r, then bind it to iron at the &4alchemy table&r with a pinch of &dmagichem admixture_energy&r -- &6zanite-laced iron&r."
+					""
+					"drop the result in a &9mana pool&r (500 mana) for &6manasteel ingot&r. get comfortable making this -- it's everywhere from here on. shortcut once journeyman's nigredo wisdom stone is worn: distillation fabrication, batch of 3, no raw items at all."
+				]
+				icon: "botania:manasteel_ingot"
+				id: "7537487EB2D4A540"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's signature metal"
+				tasks: [{
+					item: "botania:manasteel_ingot"
+					id: "36E5554AC564AC4B"
+					count: 2L
+					type: "item"
+				}]
+				title: "Manasteel"
+				x: 4.5d
+				y: -2.5d
+			}
+			{
+				dependencies: ["7537487EB2D4A540"]
+				description: [
+					"summon a &6djinni&r and bind its &bmanage machine&r job to the mixing cauldron or the manaweaving altar -- either exposes a standard item-handler inventory, so the djinni feeds and empties it without you standing there."
+					""
+					"costs a manasteel ingot -- this pack's re-gate on every djinni ritual."
+				]
+				id: "5EF8548756EE74AA"
+				subtitle: "hands-off crafting, finally"
+				tasks: [{
+					advancement: "occultism:occultism/summon_djinni_manage_machine"
+					criterion: ""
+					id: "532CCBF13F5E3990"
+					type: "advancement"
+				}]
+				title: "Djinni Spirit"
+				x: 6.0d
+				y: -2.5d
+			}
+			{
+				dependencies: ["332598B4B349DD6A"]
+				description: [
+					"the altar earns its keep with side recipes: &6golden apple&r (apple + 4x gold ingot, circle/square), &6charged amethyst&r x2 (amethyst dust + air essence, triangle/backslash), and &6experience bottle&r x4 (cracked zanite + 2x fire essences, triangle/slash)."
+					""
+					"collect one of each to prove the altar's earning its keep."
+				]
+				id: "1056431D95D7A4F7"
+				subtitle: "what the altar makes on the side"
+				tasks: [
+				{
+					item: "minecraft:golden_apple"
+					id: "5540D07DE37A8544"
+					type: "item"
+				}
+				{
+					item: "hexcasting:charged_amethyst"
+					id: "31EDC1E4B4711701"
+					count: 2L
+					type: "item"
+				}
+				{
+					item: "minecraft:experience_bottle"
+					id: "12CE215B213DA559"
+					count: 4L
+					type: "item"
+				}
+				]
+				title: "Manaweaving Utility"
+				x: 9.0d
+				y: 0.5d
+			}
+			{
+				dependencies: ["3CFEDBBB700507B5", "3851D1752B7464FA"]
+				description: [
+					"this recipe runs &6mana powder -> vinteum dust&r, not the reverse (circle, slash) -- that's what makes vinteum renewable. mana powder is a plain mana pool infusion (gunpowder/redstone/glowstone/sugar, 500 mana), so once botania is running you're no longer aether-bound for vinteum."
+					""
+					"note `gtceu:mana_dust` doesn't exist -- mana's dust is setIgnored to &6botania:mana_powder&r."
+				]
+				id: "25490EF41530AE48"
+				subtitle: "the direction that matters"
+				tasks: [{
+					item: "mna:vinteum_dust"
+					id: "43F8165862E97225"
+					count: 2L
+					type: "item"
+				}]
+				title: "Renewable Vinteum"
+				x: 7.5d
+				y: 1.5d
+			}
+			{
+				dependencies: ["0D7DE2282962ACE0", "3CFEDBBB700507B5"]
+				description: [
+					"4x primordial organic muck + earth essences weave into &6kerogen&r (square, backslash). heat 4x kerogen + 4x fire essences in the cauldron for &6crude petroleum mass&r, then a GT extractor turns it into 4,000mB &9gtceu:oil_heavy&r."
+					""
+					"nothing downstream requires this. the tech-crossover renewable-oil toy, not a magic-lane gate."
+				]
+				id: "628E35FFBB2E94E9"
+				shape: "square"
+				size: 0.6d
+				subtitle: "optional, for hybrid players"
+				tasks: [{
+					item: "kubejs:crude_petroleum_mass"
+					id: "5630F739000958E7"
+					type: "item"
+				}]
+				title: "Oil Bootstrap"
+				x: 1.5d
+				y: -4.0d
+			}
+			{
+				dependencies: ["7537487EB2D4A540"]
+				description: [
+					"alchemy table (200 ticks): manasteel ingot + &dcharged amethyst&r + &dmagic cloth&r -- a sigil blank. finish it in the mana pool, 500 mana."
+				]
+				id: "0A5D3916CC1FA0BB"
+				subtitle: "the tier circuit"
+				tasks: [{
+					item: "kubejs:zanite_sigil"
+					id: "710DF91C8252FB8A"
+					type: "item"
+				}]
+				title: "Zanite Sigil"
+				x: 6.0d
+				y: -4.0d
+			}
+			{
+				dependencies: ["7537487EB2D4A540"]
+				description: [
+					"manaweaving altar t1 (circle, square): manasteel ingot + a plain book + &dotherworld essence&r -- vessel plus agent, same grammar as every tier."
+				]
+				id: "16DA66C37138757D"
+				subtitle: "a thought bound into metal"
+				tasks: [{
+					item: "kubejs:zanite_wizard_brain"
+					id: "1D5238062A828113"
+					type: "item"
+				}]
+				title: "Zanite Wizard Brain"
+				x: 6.0d
+				y: -5.0d
+			}
+			{
+				dependencies: ["7537487EB2D4A540"]
+				description: [
+					"&6motive core&r (mana pool, 2x apprentice mana cost, from a plain piston -- no rod involved this tier), &6channeling vessel&r (alchemy table: bucket + manasteel ingot + mana powder + admixture_energy, upgradeLevel 1), &6ward lattice&r (manaweaving t1: 4x manasteel plate + protection rune + obsidian, square/triangle)."
+				]
+				id: "48628AA3F876A1C4"
+				subtitle: "motive, vessel, ward"
+				tasks: [
+				{
+					item: "kubejs:zanite_motive_core"
+					id: "7A2D3750296B0FE8"
+					type: "item"
+				}
+				{
+					item: "kubejs:zanite_channeling_vessel"
+					id: "257036C61119F1CE"
+					type: "item"
+				}
+				{
+					item: "kubejs:zanite_ward_lattice"
+					id: "07F5055A882A9F5F"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 6.0d
+				y: -6.0d
+			}
+			{
+				dependencies: ["0A5D3916CC1FA0BB", "48628AA3F876A1C4"]
+				description: [
+					"four reliquary items were rebuilt around the zanite set: &6kraken shell&r (ward lattice), &6angelic feather&r (motive core), &6phoenix down&r (wizard brain), and &6serpent staff&r (channeling vessel). craft any one to clear this."
+					""
+					"optional power gear, not required for the tier's exit."
+				]
+				id: "514B1CBE8634C60D"
+				shape: "square"
+				size: 0.75d
+				subtitle: "the zanite set gets a home"
+				tasks: [{
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(reliquary:kraken_shell)item(reliquary:angelic_feather)item(reliquary:phoenix_down)item(reliquary:serpent_staff))"
+						}
+					}
+					id: "05F5227E4D5DB854"
+					title: "Any Reliquary Trinket"
+					type: "item"
+				}]
+				title: "Reliquary Trinkets"
+				x: 7.5d
+				y: -5.5d
+			}
+			{
+				dependencies: ["5EF8548756EE74AA", "0A5D3916CC1FA0BB", "16DA66C37138757D", "48628AA3F876A1C4", "25490EF41530AE48"]
+				description: [
+					"clear the occulus's remaining tier-1 tasks (magic level 15, transmute cantrip on stone/sandstone/copper, craft on the manaweaving altar), then sleep in a bed to meditate up to &6mna tier 2&r."
+					""
+					"that's journeyman's gate, not this one -- terrasteel and the faction choice wait on the other side."
+				]
+				icon: "mna:occulus"
+				id: "13CC8F12B68F0899"
+				shape: "shield"
+				size: 1.5d
+				subtitle: "sleep on it"
+				tasks: [{
+					id: "7FA2330909B5BA8B"
+					title: "Sleep to Advance"
+					type: "checkmark"
+				}]
+				title: "Tier One Complete"
+				x: 9.0d
+				y: -2.5d
+			}
 	]
 	subtitle: ["Searching the depths for power"]
 	title: "II. Apprentice"

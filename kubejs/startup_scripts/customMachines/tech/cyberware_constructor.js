@@ -17,7 +17,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeTypes(['cyberware_constructor'])
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,
-            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+            global.IcbgRecipeModifiers.MANA_SPEED,
+            global.IcbgRecipeModifiers.LP_PARALLEL
         ])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aaa", "aaa", "aaa")
@@ -30,7 +32,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
             .where("a", Predicates.blocks("gtceu:clean_machine_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1)))
             .where("b", Predicates.controller(Predicates.blocks(definition.get())))
             .where("c", Predicates.blocks("gtceu:stainless_steel_frame"))
 

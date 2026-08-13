@@ -1,0 +1,89 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:netherite",
+    "availability": {
+        "tier": 13,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": { "item": "gtceu:empyrean_ichor_ingot" },
+        "rod": { "item": "gtceu:empyrean_ichor_rod" },
+        "tip": { "item": "gtceu:empyrean_ichor_dust" }
+    },
+    "name": { "text": "Empyrean Ichor" },
+    "stats": {
+        "main": {
+            "durability": 10735,
+            "armor_durability": 180,
+            "enchantment_value": 16.7,
+            "rarity": 53,
+            "charging_value": 1.7,
+            "harvest_speed": 49,
+            "melee_damage": 28,
+            "magic_damage": 10,
+            "attack_speed": 0,
+            "ranged_damage": 13,
+            "ranged_speed": 0,
+            "projectile_speed": 1,
+            "projectile_accuracy": 1,
+            "armor": 94,
+            "armor/helmet": 14,
+            "armor/chestplate": 38,
+            "armor/leggings": 28,
+            "armor/boots": 14,
+            "armor_toughness": 36,
+            "magic_armor": 31
+        },
+        "rod": {
+            "harvest_speed": { "mul2": 0.15 },
+            "melee_damage": { "mul2": 0.15 }
+        },
+        "tip": {
+            "durability": { "add": 1750 },
+            "armor_durability": { "add": 45 },
+            "harvest_speed": { "add": 15 },
+            "melee_damage": { "add": 15 },
+            "rarity": { "add": 74 }
+        }
+    },
+    "traits": {
+        "main": [
+            { "name": "silentgear:malleable", "level": 3 },
+            { "name": "silentgear:holy", "level": 2 },
+            { "name": "kubejs:holy_attunement", "level": 5 }
+        ],
+        "tip": [
+            { "name": "silentgear:holy", "level": 1 }
+        ]
+    },
+    "model": {
+        "main/all": [
+            { "texture": "silentgear:main_generic_hc", "color": "#F2E9C9" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/armor": [
+            { "texture": "silentgear:main_generic_hc", "color": "#F2E9C9" },
+            { "texture": "silentgear:_highlight" }
+        ],
+        "main/fragment": [
+            { "texture": "silentgear:metal", "color": "#F2E9C9" }
+        ],
+        "rod/all": [
+            { "texture": "silentgear:rod_generic_lc", "color": "#8A6FD1" }
+        ],
+        "tip/all": [
+            { "texture": "silentgear:tip_sharp", "color": "#F2E9C9" }
+        ],
+        "tip/part": [
+            { "texture": "silentgear:tip_base" },
+            { "texture": "silentgear:tip", "color": "#8A6FD1" },
+            { "texture": "silentgear:tip_shine" }
+        ]
+    }
+}

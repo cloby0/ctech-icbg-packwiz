@@ -1,9 +1,9 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "harvest_tier": "minecraft:diamond",
+    "harvest_tier": "minecraft:iron",
     "availability": {
-        "tier": 9,
+        "tier": 5,
         "categories": [
             "metal"
         ],
@@ -72,26 +72,26 @@
     },
     "stats": {
         "main": {
-            "durability": 3596,
-            "armor_durability": 61,
-            "enchantment_value": 9,
-            "harvest_speed": 19,
-            "melee_damage": 11,
-            "magic_damage": 4,
+            "durability": 1292,
+            "armor_durability": 22,
+            "enchantment_value": 3.9,
+            "harvest_speed": 7,
+            "melee_damage": 4,
+            "magic_damage": 1,
             "attack_speed": 0,
-            "armor": 35,
-            "armor/helmet": 5,
-            "armor/chestplate": 14,
-            "armor/leggings": 10,
-            "armor/boots": 5,
-            "armor_toughness": 14,
-            "ranged_damage": 5,
+            "armor": 13,
+            "armor/helmet": 2,
+            "armor/chestplate": 5,
+            "armor/leggings": 4,
+            "armor/boots": 2,
+            "armor_toughness": 5,
+            "ranged_damage": 2,
             "ranged_speed": 0,
-            "rarity": 31,
-            "charging_value": 2,
+            "rarity": 17,
+            "charging_value": 0.8,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
-            "magic_armor": 12
+            "magic_armor": 4
         },
         "rod": {
             "melee_damage": {
@@ -103,19 +103,19 @@
         },
         "tip": {
             "durability": {
-                "add": 280
+                "add": 101
             },
             "armor_durability": {
-                "add": 7
+                "add": 2
             },
             "harvest_speed": {
-                "add": 2
+                "add": 1
             },
             "melee_damage": {
-                "add": 2
+                "add": 1
             },
             "rarity": {
-                "add": 15
+                "add": 8
             }
         },
         "coating": {
@@ -132,13 +132,13 @@
                 "mul2": 0.3
             },
             "armor_toughness": {
-                "add": 4
+                "add": 1
             },
             "enchantment_value": {
-                "add": 7
+                "add": 3
             },
             "rarity": {
-                "add": 27
+                "add": 15
             }
         }
     },

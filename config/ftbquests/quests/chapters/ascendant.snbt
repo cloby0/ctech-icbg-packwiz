@@ -1,0 +1,213 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ascendant"
+	group: "5807E75CE9629B4E"
+	hide_quest_until_deps_visible: true
+	icon: "kubejs:ascendant_initiation_core"
+	id: "7A6E3CB8578D9E12"
+	order_index: 10
+	quest_links: [
+		{
+			id: "37218B01C9A45D55"
+			linked_quest: "78A7E5ADDB3CEAF5"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "639ADE5FDD301804"
+			linked_quest: "6545B84EE014D2DB"
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	quests: [
+			{
+				dependencies: ["78A7E5ADDB3CEAF5"]
+				description: [
+					"get the tech side through &6UEV/chaos&r: `draconicevolution:chaos_shard`, `chaotic_core`, &6gtceu:chaos_crystal_dust&r, and &6kubejs:wraithware_processor_mainframe&r."
+					""
+					"everything below is an alchemy table recipe, 2x `LP.ASCENDANT` (500,000 LP) except where noted."
+				]
+				id: "097D65BFD8B045E5"
+				shape: "rsquare"
+				size: 1.25d
+				subtitle: "uev/chaos, this time"
+				tasks: [{
+					id: "56A17695C004E71A"
+					title: "Tech Tree at UEV/Chaos"
+					type: "checkmark"
+				}]
+				title: "Tech Prerequisites"
+				x: 0.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["097D65BFD8B045E5", "6545B84EE014D2DB"]
+				description: [
+					"alchemy table: chaos shard + 2x argentware processor supercomputer + 2x chaotic core + 2x gaia ingot + a dragon heart crystal + an awakened draconium ingot."
+				]
+				icon: "kubejs:stabilized_chaos_crystal"
+				id: "0956860136392933"
+				shape: "hexagon"
+				size: 1.75d
+				subtitle: "the tier's capstone precursor"
+				tasks: [{
+					item: "kubejs:stabilized_chaos_crystal"
+					id: "39F62F892717ADC0"
+					count: 2L
+					type: "item"
+				}]
+				title: "Stabilized Chaos Crystal"
+				x: 1.5d
+				y: 0.0d
+			}
+			{
+				dependencies: ["0956860136392933"]
+				description: [
+					"alchemy table (200 ticks, upgradeLevel 4): stabilized chaos crystal + wraithware processor mainframe + otherworld essence -- a sigil blank. finish it at an occultism ritual, &6marid&r pentacle, 200 ticks: blank + 2x soul shard + spirit attuned gem + soul gem."
+				]
+				id: "630879C94D49A7A0"
+				subtitle: "the tier circuit, forged through occultism"
+				tasks: [{
+					item: "kubejs:wraith_sigil"
+					id: "53F16BB7E0BC9A71"
+					type: "item"
+				}]
+				title: "Wraith Sigil"
+				x: 3.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["097D65BFD8B045E5"]
+				description: [
+					"spirit infusion: 4x spirit attuned crystal + 2x &6eldritch spirit&r. eldritch spirits aren't rare -- endermen and endermites both drop them, but plan for the farm before you need four."
+				]
+				id: "5D17366A07F94620"
+				subtitle: "pure occultism, not crystal-anchored"
+				tasks: [{
+					item: "kubejs:wraith_wizard_brain"
+					id: "3F3992A6B2F2E18C"
+					type: "item"
+				}]
+				title: "Wraith Wizard Brain"
+				x: 3.0d
+				y: 1.5d
+			}
+			{
+				dependencies: ["0956860136392933"]
+				description: [
+					"&6motive core&r (occultism ritual, marid, 200 ticks: stabilized chaos crystal + chaotic core + afrit essence + soul shard). &6channeling vessel&r (alchemy table, upgradeLevel 4: stabilized chaos crystal + concepts bucket + soul shard + chaos crystal dust). &6ward lattice&r (spirit infusion: stabilized chaos crystal + spirit attuned gem + chaos crystal dust, sealed with 4x eldritch spirit)."
+				]
+				id: "06460447E16F78CF"
+				subtitle: "motive by ritual, vessel by table, ward by spirits"
+				tasks: [
+				{
+					item: "kubejs:wraith_motive_core"
+					id: "3BEE351CD0C40492"
+					type: "item"
+				}
+				{
+					item: "kubejs:wraith_channeling_vessel"
+					id: "72E1446916B360E2"
+					type: "item"
+				}
+				{
+					item: "kubejs:wraith_ward_lattice"
+					id: "4EF7C0ACCE14B3DE"
+					type: "item"
+				}
+				]
+				title: "Tier Components"
+				x: 4.5d
+				y: 1.0d
+			}
+			{
+				dependencies: ["630879C94D49A7A0", "5D17366A07F94620", "06460447E16F78CF", "78A7E5ADDB3CEAF5"]
+				description: [
+					"alchemy table: prophet's draconic sanguinary + 2x stabilized chaos crystal + wraith sigil + a chaotic core + wraith wizard brain + gaia ingot + wraith motive core + chaos crystal dust."
+				]
+				id: "08FC5028C232D69D"
+				subtitle: "from the draconic sanguinary"
+				tasks: [{
+					item: "kubejs:chaotic_sanguinary"
+					id: "15B36EEA8653C8DF"
+					type: "item"
+				}]
+				title: "Chaotic Sanguinary"
+				x: 6.0d
+				y: 0.0d
+			}
+			{
+				dependencies: ["630879C94D49A7A0", "06460447E16F78CF"]
+				description: [
+					"same shape, from prophet's draconic sanctum: wraith channeling vessel + wraith ward lattice in place of wizard brain + motive core."
+				]
+				id: "042773BC8230C833"
+				subtitle: "from the draconic sanctum"
+				tasks: [{
+					item: "kubejs:shattered_sanctum"
+					id: "38AB3E2D3E9B6EC8"
+					type: "item"
+				}]
+				title: "Shattered Sanctum"
+				x: 7.5d
+				y: -0.75d
+			}
+			{
+				dependencies: ["630879C94D49A7A0", "5D17366A07F94620", "06460447E16F78CF"]
+				description: [
+					"same shape again, from prophet's dracontine codex: wraith wizard brain + wraith ward lattice."
+				]
+				id: "1544B823A0624ED4"
+				subtitle: "from the dracontine codex"
+				tasks: [{
+					item: "kubejs:codex_of_entropy"
+					id: "2B4CCE2D4586141A"
+					type: "item"
+				}]
+				title: "Codex of Entropy"
+				x: 7.5d
+				y: 0.75d
+			}
+			{
+				dependencies: ["630879C94D49A7A0", "06460447E16F78CF"]
+				description: [
+					"same shape once more, from prophet's chronicle of dominion: wraith motive core + wraith channeling vessel."
+				]
+				id: "5721C7FAFF309CDB"
+				subtitle: "from the chronicle of dominion"
+				tasks: [{
+					item: "kubejs:chronicle_of_unraveling"
+					id: "64F4A5EC73B4705D"
+					type: "item"
+				}]
+				title: "Chronicle of Unraveling"
+				x: 7.5d
+				y: 2.0d
+			}
+			{
+				dependencies: ["08FC5028C232D69D", "042773BC8230C833", "1544B823A0624ED4", "5721C7FAFF309CDB"]
+				description: [
+					"alchemy table: stabilized chaos crystal + all four chaotic tomes above + wraith sigil + wraith wizard brain + wraith channeling vessel + gaia ingot."
+					""
+					"&6this is the magic tree's terminus.&r beyond it the pack continues into the shared tech/magic cumium ingot endgame -- a tech document, not a magic one."
+				]
+				icon: "kubejs:ascendant_initiation_core"
+				id: "4403FF2233946ECA"
+				shape: "hexagon"
+				size: 2.0d
+				subtitle: "the magic tree ends here"
+				tasks: [{
+					item: "kubejs:ascendant_initiation_core"
+					id: "0EFE0FAFE75E0181"
+					type: "item"
+				}]
+				title: "Ascendant Initiation Core"
+				x: 9.0d
+				y: 0.75d
+			}
+	]
+	subtitle: ["The last chaos, tamed"]
+	title: "XI. Ascendant"
+}

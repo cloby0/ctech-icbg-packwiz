@@ -3,7 +3,7 @@
     "simple": true,
     "harvest_tier": "minecraft:netherite",
     "availability": {
-        "tier": 13,
+        "tier": 8,
         "categories": [
             "metal"
         ],
@@ -91,27 +91,27 @@
     },
     "stats": {
         "main": {
-            "durability": 10496,
-            "armor_durability": 177,
-            "enchantment_value": 18,
-            "harvest_speed": 50,
-            "melee_damage": 29,
-            "magic_damage": 11,
-            "attack_speed": 1,
-            "attack_speed/axe": 1,
-            "armor": 95,
-            "armor/helmet": 15,
-            "armor/chestplate": 30,
-            "armor/leggings": 25,
-            "armor/boots": 15,
-            "armor_toughness": 36,
-            "ranged_damage": 13,
+            "durability": 2858,
+            "armor_durability": 48,
+            "enchantment_value": 6.7,
+            "harvest_speed": 14,
+            "melee_damage": 8,
+            "magic_damage": 3,
+            "attack_speed": 0.3,
+            "attack_speed/axe": 0.3,
+            "armor": 27,
+            "armor/helmet": 4,
+            "armor/chestplate": 9,
+            "armor/leggings": 7,
+            "armor/boots": 4,
+            "armor_toughness": 10,
+            "ranged_damage": 4,
             "ranged_speed": 0,
-            "rarity": 54,
-            "charging_value": 2,
+            "rarity": 26,
+            "charging_value": 1,
             "projectile_speed": 1,
             "projectile_accuracy": 1,
-            "magic_armor": 32,
+            "magic_armor": 9,
             "knockback_resistance": {
                 "add": 2
             }
@@ -129,22 +129,22 @@
         },
         "tip": {
             "durability": {
-                "add": 2229
+                "add": 607
             },
             "armor_durability": {
-                "add": 80
+                "add": 22
             },
             "harvest_speed": {
-                "add": 20
+                "add": 6
             },
             "melee_damage": {
-                "add": 16
+                "add": 4
             },
             "ranged_damage": {
-                "add": 7
+                "add": 2
             },
             "rarity": {
-                "add": 25
+                "add": 12
             }
         },
         "coating": {
@@ -161,28 +161,28 @@
                 "mul2": 0.5
             },
             "armor/helmet": {
-                "add": 2
+                "add": 1
             },
             "armor/chestplate": {
-                "add": 4
+                "add": 1
             },
             "armor/leggings": {
-                "add": 3
+                "add": 1
             },
             "armor/boots": {
-                "add": 2
+                "add": 1
             },
             "armor_toughness": {
-                "add": 7
+                "add": 2
             },
             "knockback_resistance": {
                 "add": 2
             },
             "enchantment_value": {
-                "add": 11
+                "add": 4
             },
             "rarity": {
-                "add": 39
+                "add": 19
             }
         }
     },

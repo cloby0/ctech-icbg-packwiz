@@ -146,15 +146,19 @@ hash = "f7c30f74ade7214c582cb7a3c13c80659e9f11e8cca8341b264fa2e9117a0cdd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/alchemist.snbt"
-hash = "252cad930ab835a26017d3cd3656d3f1975cbc65f8f6bc1545d4c7eca047fc4c"
+hash = "3edfd7be05c4f52dca291b1241682a27fbf611b824096e4a07d45ccbf83cfdec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/apprentice.snbt"
-hash = "b4a377c49f7bb924615709a05b9845b9cbe92ff2972e88d48343a6d126fee8e8"
+hash = "d642f405b0cf176bcfb7c102c2418b40c265fa09c1b52191a56ee3f4eba85cc5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/arcanist.snbt"
-hash = "eb3b03326a6f9994cc5e70471093515aa0b7cc362739dbe51fa9250cd30f13ef"
+hash = "45a0fe9e190eb1e77ce806bc69704da9a3d87ed5d65982a061489752dcb911d7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ascendant.snbt"
+hash = "69b8f95c94b12df0eed46662893fa1caf190c53052b998170d954913aa34ddbf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_ev_authored.snbt"
@@ -162,7 +166,7 @@ hash = "6e82c6840148c842d3ee38c70dfba959419793e4ebc996c446482aa271ebb0ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hobbyist.snbt"
-hash = "eee6675b6ff84e8b6c1c5f2bd91d0405dc8207df68b9e7390dca14210c41df26"
+hash = "de72f8af23a26df6aae5f908493b19056e9389c51e90d644094db71dbd9c479c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/i_hv_authored.snbt"
@@ -210,23 +214,27 @@ hash = "9ebcb99632b299557f3ca2ab49f14443bd6b261b0402a764c23d4f9371bd8bb0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/initiate.snbt"
-hash = "9adf356618840e8949d82eebe51ce80dcdf2c1ed380f43ab906ad280e2aab0c0"
+hash = "33d06739617fe14f0907e04e48905ae9ccac6b403d99a93c8411990f32f0ea59"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/journeyman.snbt"
-hash = "ead0d9b7fa5b7257a0e5d3fca7d06b1d938b7662059440c8b15060feb66ae151"
+hash = "71471dd4aa73ca36541dd50dcd34d3092b5ed282a3fd64fd3e9f7c676ffaf63e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/prophet.snbt"
+hash = "a7cc7cd2492b8663ec1f191dee5da448b0505addc87ee16597c1ea0e09ae7b09"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
-hash = "e99df07b9e21a6b0a041dcf6bb122f7a646884fb87ff5e7fdb1143a3c4a3781b"
+hash = "370765138d9be2c670cdd7c48c83290f709112c47233efc2d0fe5ed93f6b0488"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sorcerer.snbt"
-hash = "4131324365c718a7e5e750b6f18c11331a0fb508fa2d94f6af3196286609d900"
+hash = "cc062fee0fd85db37f17d78ed7a2bc7383b635e70052c31766f099de61cc17b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thaumaturge.snbt"
-hash = "657fdbdab1f792ddb0df8e7dea7c07b4ec7d9fa5529a871163a92277f3eef5fa"
+hash = "0d94b81d9851d471f9be387bf5c69a371b7452075d78bf0cc425ca03dc6bf6ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"
@@ -3029,6 +3037,10 @@ file = "kubejs/data/kubejs/silentgear_materials/arcane_rune.json"
 hash = "78e230323c3da5f77ab6b3ee771d24e950c02c6b2090d56fb3a552b88e126734"
 
 [[files]]
+file = "kubejs/data/kubejs/silentgear_materials/ashen_ichor_ingot.json"
+hash = "eaf667ec5c8fafaa4a7f0576828264981e0d2ec72aba163b6f81055a5df70bd5"
+
+[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/awakened_draconium_ingot.json"
 hash = "71789e77db774066f96e5f77afbea805272220041120552c8a1ec2c656bf7340"
 
@@ -3213,6 +3225,10 @@ file = "kubejs/data/kubejs/silentgear_materials/darmstadtium_ingot.json"
 hash = "411c8ddf88e99d8faf6d60ef30956b388350a9cb424689889b7e96fe01043154"
 
 [[files]]
+file = "kubejs/data/kubejs/silentgear_materials/distilled_animus_ingot.json"
+hash = "032bb620e6713fd8d198e7c749f45a951081da5d5edabbc366ed48a361df4153"
+
+[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/divine_pearl.json"
 hash = "d8f980ba1a931d39781f3e8741ccecc68afb7ce8456e1df3ecba131bcdfdaacf"
 
@@ -3241,12 +3257,12 @@ file = "kubejs/data/kubejs/silentgear_materials/duranium_ingot.json"
 hash = "233b9f549fc3872cef79a3b3ba5241cc62faeb317534deb8ed2587006478abec"
 
 [[files]]
-file = "kubejs/data/kubejs/silentgear_materials/elementium.json"
-hash = "1fe9a026d3200edb61587344af142f3dc3ee99e86e03d73ce53c6a6b3ad19efa"
-
-[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/elf_quartz.json"
 hash = "c9964ae1e8471447e6c1cc238b894f605bf172df47bd057a394a63949feebb30"
+
+[[files]]
+file = "kubejs/data/kubejs/silentgear_materials/empyrean_ichor_ingot.json"
+hash = "8426101e9722c7a94356efc19345a75b2819317b8bf75a25ff73bfe6cc981386"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/ender_rune.json"
@@ -3291,10 +3307,6 @@ hash = "8f8e1db953cd3cd3353181f97c1d7dfb4f9de8523e31ad603f07e0db036e9285"
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/frozen_bone.json"
 hash = "7619aa2dd0adc1228fba3dbfae635d63833cdcd772333f2ed4cfcc807a31c3dd"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/gaia.json"
-hash = "41f5cc21dbabf16834c145f6237ba56b0720a7d87890d503b98229c700090129"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/graphene_ingot.json"
@@ -3373,6 +3385,10 @@ file = "kubejs/data/kubejs/silentgear_materials/kanthal_ingot.json"
 hash = "6bc856d2404075553535d0f7f9c7620c8e91b57324aa53d8d608601e3a8d5b2a"
 
 [[files]]
+file = "kubejs/data/kubejs/silentgear_materials/katharite_ingot.json"
+hash = "fbf35352ddf19cb5f1176163da453e5170fb7d836edf8056c811a00a59e08fc0"
+
+[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/lavender_quartz.json"
 hash = "4f347b64135c87245ad413953f1b88ca1e07d5860ddbfdcd3aee7c6e150f53d5"
 
@@ -3447,10 +3463,6 @@ hash = "9029c41f37dd86e84ff940e91b32aeefc01e2835b2e3583ea87f78b15c2ba39f"
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/mana_string.json"
 hash = "24bee1ae9127780572c1a7d981e7f4a4e381bc1085d26c474987766244c32e3f"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/manasteel.json"
-hash = "a0f6eba6c1357d64552c7ef203657a5b89d02a06c73983b850a20a8ee4c413fd"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/manganese_ingot.json"
@@ -3657,6 +3669,10 @@ file = "kubejs/data/kubejs/silentgear_materials/stainless_steel_ingot.json"
 hash = "c3931cfa010e715f098b0271b9eb76be2769235cc72e175196b80770b2ddd130"
 
 [[files]]
+file = "kubejs/data/kubejs/silentgear_materials/starforged_chimerite_gem.json"
+hash = "cce94fc2b74a01f4b88626d04360929428159c9b2bd2f4a4d4f3ec4ce7d81cb6"
+
+[[files]]
 file = "kubejs/data/kubejs/silentgear_materials/stellite_100_ingot.json"
 hash = "e1fc35255fcb0b4f4f38a9866900b3a38b0e52c3c901d01ac4f1b801b1cf2b4c"
 
@@ -3679,10 +3695,6 @@ hash = "5f53ae07fce72833f2e0d60951ee606bd5deebb4bbf21143d803fa361b20ae10"
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/technomancy_rune.json"
 hash = "a7a1a760cc6fcb84b3663e8e64b08decdede7b48bbf1304d95df26bde7e2bf7f"
-
-[[files]]
-file = "kubejs/data/kubejs/silentgear_materials/terrasteel.json"
-hash = "e65162b63c9f604c018153f0e319828e73cd1f97c1cf7b6e998201b56069631a"
 
 [[files]]
 file = "kubejs/data/kubejs/silentgear_materials/thorium_ingot.json"
@@ -5245,8 +5257,16 @@ file = "kubejs/data/silentcompat/silentgear_materials/echo_shard.json"
 hash = "a557e55b7fbd254143fb91574edf1042d10342f90cc82b31bb263374f379f334"
 
 [[files]]
+file = "kubejs/data/silentcompat/silentgear_materials/elementium.json"
+hash = "e2c4564885fd6ca8e7c2deb7f3705d0a6e0751178d6b49a259f251b244d23408"
+
+[[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/ender_pearl.json"
 hash = "e42b97e6e0c62a2054c810561805982848e9ac56174face23c7c2ce383f5afec"
+
+[[files]]
+file = "kubejs/data/silentcompat/silentgear_materials/gaia.json"
+hash = "67c18ed5588aa8ed7178e215ef3d2c37b79cffc17b6b91de86704df4355fced6"
 
 [[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/mana_gem.json"
@@ -5257,12 +5277,20 @@ file = "kubejs/data/silentcompat/silentgear_materials/mana_weave.json"
 hash = "23238d62cbc6d207463d697849b16fe427dd08faa21891fa5b42a0f103c30a02"
 
 [[files]]
+file = "kubejs/data/silentcompat/silentgear_materials/manasteel.json"
+hash = "4b4fe58b2c7cb9ef0fb2d944e354fa2877ce064a8d2789cdaf61ef24bb46373b"
+
+[[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/plasteel.json"
 hash = "7c1bdafe9bc8765527ca5a6c6c6c35b664247cc6d717bc4831a8c88947836343"
 
 [[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/solarmetal.json"
 hash = "75d46d54eb8dcf6e6a2406b531a6d97e6f81fbaadecc422879943f029adbb1f7"
+
+[[files]]
+file = "kubejs/data/silentcompat/silentgear_materials/terrasteel.json"
+hash = "08f38fb215df039965b9fcfdc3315c69a8c778c1e517bd0d507ab8e84c47c564"
 
 [[files]]
 file = "kubejs/data/silentcompat/silentgear_materials/void_core.json"
@@ -5969,20 +5997,24 @@ file = "kubejs/startup_scripts/customMachines/draconic_casings.js"
 hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
+file = "kubejs/startup_scripts/customMachines/icbgBoostHatchGcymWiring.js"
+hash = "148abd56fea7f5bc500a4625c9bd6ce1beee662c5e0db7ba109c7bec5bc7d253"
+
+[[files]]
 file = "kubejs/startup_scripts/customMachines/magic/_icbgCoreLoaders.js"
-hash = "6d0c49bc3510a801c33c045b69353bfa543fb6beafb0fac1f5b748ff6dac2663"
+hash = "c94030f764847772c133b07bc9f0c2477d8a5f640d92579882bed6d9746c206b"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/alchemical_thinktank.js"
-hash = "1384b645c17fc50a9c989ec3b741a602600d9a352c72a35b2866aa635a3ed8a7"
+hash = "21acd0e72b1cd3a022c18342b85ca0c3e3fe8756b8eddb25a5f84547158cfc45"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/alfheim_post_office.js"
-hash = "7cc5b4ecfe1408846db328a80e0971d8864d14678b31577c94bb669d37634f80"
+hash = "e520a89f51ee7a4f31fa7742a4e7c9d62e83586de3ccce710f1c99a67fa48581"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
-hash = "d6d7b6135bd053e14f3afe5182025a927fb4097c47d7222faa3bd17ae51a1aac"
+hash = "55507d3887ec8e8aada2c5fb9c5fcfd002f1ef2d699e905a8a79f2611c6c8874"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -5990,27 +6022,27 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "03cac1132c76fed82b1187e99c175f1510cdbacfbeccef3cb7ead7a7b3c89163"
+hash = "aa11942ab30bde22acd259b68e8b336b464ebe754d1a1a8fff7d960357d535bc"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/meteor_chamber.js"
-hash = "9fb629de5cb431da64e75a0d053a5b98ea4f79f4eb72cc42707c8f54bf28d7e8"
+hash = "0a0dd7b6162d2bb2273c5ca2f742fbed9da1e77b9e4dff21160223e972a49830"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "ab1164793061ab3c9f9a37a5da794b1f7c4d86fb7ac006b5bd8b043aae482c01"
+hash = "b111975939a9d627dfb9ae652e5ab0f2fbc568e7efb9dfadbb499f1e85c575bd"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/terra_reliquary.js"
-hash = "ac57640cc3a86fc49dd9e35a50023aaadb4c627a1721bd3788f9e46314a0f56a"
+hash = "d0b7abca4660bf7a72c52a5ac3e73485b351142aef6eae30076ad66764583864"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "7f1923da935aab65a3cc708974bf7249005943021ac99bcdbc60e65c46105601"
+hash = "f3ea3ded2e45f939ba41281dd4adeace01992538a59f2494239862e7a7a42637"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
-hash = "f955775c34aa029429862ce96fe85fc3b490c649519a17b0edcc752b0d51701b"
+hash = "f9aa32b2b2707d8178b813999839979c6abf2cf4094d2a8020ad130d0ca5e07a"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/determinism_engine.js"
@@ -6022,7 +6054,7 @@ hash = "66025fde1a19af9cf45f31a18c1e30c03e84745ef12729badd48890df094b13f"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "aa4c29ad0ac9f4625458970af806170fe003cca0228736cb661a204829f0f629"
+hash = "eb66f48c7451759f1fb4cd40f22cbaf20f29a52a1fe51a8fddbeaa8045c1ddc7"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
@@ -6030,7 +6062,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
-hash = "44409d338287817385c106a063acfa9472b17d92bb5d781438678b5e69531622"
+hash = "028dc03149406e234ba76907bc304640cd4bc0a78dd1d3fd4f9c8665283f7594"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/void_crucible.js"
@@ -6892,7 +6924,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-core-1.20.1-1.0.0.jar"
-hash = "02b0059f04dce5ef2c462dc9b1ba9e4404717810e277cf5b6809925570db7dd8"
+hash = "d8be44a15e5c6c2110dfef56a3c537dc27a47dda554db0ea01e17f1b9ccd8bc3"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
