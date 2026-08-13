@@ -17,8 +17,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,
             GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
-            global.IcbgRecipeModifiers.MANA_SPEED,
-            global.IcbgRecipeModifiers.LP_PARALLEL
+            global.IcbgManaSpeedModifier,
+            global.IcbgLpParallelModifier
         ])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aaaaa", "addda", "aaaaa", "accca", "accca", "aaaaa")
@@ -34,15 +34,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("a", Predicates.blocks("gtceu:solid_machine_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(global.IcbgManaSpeedInputAbility).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgLpParallelBoostAbility).setMaxGlobalLimited(1)))
             .where("b", Predicates.controller(Predicates.blocks(definition.get())))
             .where("c", Predicates.blocks("minecraft:glass"))
             .where("d", Predicates.blocks("gtceu:steel_gearbox")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(global.IcbgManaSpeedInputAbility).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgLpParallelBoostAbility).setMaxGlobalLimited(1)))
             .where("e", Predicates.blocks("gtceu:light_concrete"))
             .where("f", Predicates.blocks("minecraft:air"))
             .build()

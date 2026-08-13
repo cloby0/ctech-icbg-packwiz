@@ -48,6 +48,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             return
         }
         def.setRecipeModifier(new RecipeModifierList(def.getRecipeModifier(),
-            global.IcbgRecipeModifiers.MANA_SPEED, global.IcbgRecipeModifiers.LP_PARALLEL))
+            global.IcbgManaSpeedModifier, global.IcbgLpParallelModifier))
     })
 })

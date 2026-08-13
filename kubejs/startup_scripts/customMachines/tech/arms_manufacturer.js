@@ -18,8 +18,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,
             GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
-            global.IcbgRecipeModifiers.MANA_SPEED,
-            global.IcbgRecipeModifiers.LP_PARALLEL
+            global.IcbgManaSpeedModifier,
+            global.IcbgLpParallelModifier
         ])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaaa")
@@ -29,8 +29,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("a", Predicates.blocks("gtceu:large_scale_assembler_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.MANA_SPEED_INPUT).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(global.IcbgPartAbilities.LP_PARALLEL_BOOST).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(global.IcbgManaSpeedInputAbility).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(global.IcbgLpParallelBoostAbility).setMaxGlobalLimited(1)))
             .where("b", Predicates.blocks("gtceu:tempered_glass"))
             .where("c", Predicates.controller(Predicates.blocks(definition.get())))
             .where("d", Predicates.any())

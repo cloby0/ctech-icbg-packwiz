@@ -5998,23 +5998,23 @@ hash = "9724e63ffcf72fc49903570f23f00c5c84773ac163a6d707c9d37193d2bebef6"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/icbgBoostHatchGcymWiring.js"
-hash = "148abd56fea7f5bc500a4625c9bd6ce1beee662c5e0db7ba109c7bec5bc7d253"
+hash = "2942ac2cfedccf6bb0d4fa9c6e72def1be02b8c1dccc616195fadcd33fe92955"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/_icbgCoreLoaders.js"
-hash = "c94030f764847772c133b07bc9f0c2477d8a5f640d92579882bed6d9746c206b"
+hash = "6af4a7e0272ee1986b9f728692105d7cfd31666cfe5f52abe8629254a9c3a11c"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/alchemical_thinktank.js"
-hash = "21acd0e72b1cd3a022c18342b85ca0c3e3fe8756b8eddb25a5f84547158cfc45"
+hash = "57646d44c05945d59aa3631de4e127fd020d4b306056edbff8429db3d88acccc"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/alfheim_post_office.js"
-hash = "e520a89f51ee7a4f31fa7742a4e7c9d62e83586de3ccce710f1c99a67fa48581"
+hash = "683190020d8a65ac0507b22244ee0c0150b6557f2c4b963422b8afeb065fb2d5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
-hash = "55507d3887ec8e8aada2c5fb9c5fcfd002f1ef2d699e905a8a79f2611c6c8874"
+hash = "0d868a75d45de2bb1c62722185c1ac602478ca5788b3151f57d2ecefbc27dd50"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/magic_casings.js"
@@ -6022,27 +6022,27 @@ hash = "71e0ec52b7ed3864069e0eeec84fea59057bd2f28d417ecb2a72f85d24a6d3e5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/mana_pond.js"
-hash = "aa11942ab30bde22acd259b68e8b336b464ebe754d1a1a8fff7d960357d535bc"
+hash = "a81a465f99c74b5938625ce1089899800c2b6740f88994e5fbda496ea16538eb"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/meteor_chamber.js"
-hash = "0a0dd7b6162d2bb2273c5ca2f742fbed9da1e77b9e4dff21160223e972a49830"
+hash = "91819b6d998864e6fbee99707f3f1a74284e404e177ba7431b049eb9a95709c5"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/runic_forge.js"
-hash = "b111975939a9d627dfb9ae652e5ab0f2fbc568e7efb9dfadbb499f1e85c575bd"
+hash = "943416bc49cc2977d3badcd95f5354512964acdfe0f4402ce43b4681852736cd"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/terra_reliquary.js"
-hash = "d0b7abca4660bf7a72c52a5ac3e73485b351142aef6eae30076ad66764583864"
+hash = "cce733a87cfda047096ce145290b856d25a8e88244f72bff366329e0299f2d60"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/arms_manufacturer.js"
-hash = "f3ea3ded2e45f939ba41281dd4adeace01992538a59f2494239862e7a7a42637"
+hash = "1b67b74c01d4b4e8fc543e79553cd071cb5dea33e466dd4328e0293c5a0a8bd4"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/cyberware_constructor.js"
-hash = "f9aa32b2b2707d8178b813999839979c6abf2cf4094d2a8020ad130d0ca5e07a"
+hash = "b3c1c7a6e2b3420dcf4d5594d38c198bbbb95e2e2c3aabb8ee97a7932c4f0c83"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/determinism_engine.js"
@@ -6054,7 +6054,7 @@ hash = "66025fde1a19af9cf45f31a18c1e30c03e84745ef12729badd48890df094b13f"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/epitaxial_growth_chamber.js"
-hash = "eb66f48c7451759f1fb4cd40f22cbaf20f29a52a1fe51a8fddbeaa8045c1ddc7"
+hash = "9a6c2c4a009d460b3d95bbfab143979af464739e0805532494a118485a5cf0ec"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/me_constructor.js"
@@ -6062,7 +6062,7 @@ hash = "c10ceab6e3b7e0cbc26031dfebf4c9f99fe068e47da84d3c6b97f283f1cc8c8e"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/vehicle_assembler.js"
-hash = "028dc03149406e234ba76907bc304640cd4bc0a78dd1d3fd4f9c8665283f7594"
+hash = "304795a374fe9698c06814bfaa735a4677e781f1f42f036de53e93b853e04e6d"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/tech/void_crucible.js"
