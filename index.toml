@@ -5926,7 +5926,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "57f1e00838b5b4b2df27667c532ece211169ee11855c92889745f58d14113a0a"
+hash = "7265737c04f192ef48e51b49c932ebe0eea35b602b18e76100195487c0a6b6c6"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -5978,7 +5978,7 @@ hash = "1384b645c17fc50a9c989ec3b741a602600d9a352c72a35b2866aa635a3ed8a7"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/alfheim_post_office.js"
-hash = "f783a115e1e4f800404c916dae312fa919c15bdbb5c196c72aea8e10ca1dbb97"
+hash = "7cc5b4ecfe1408846db328a80e0971d8864d14678b31577c94bb669d37634f80"
 
 [[files]]
 file = "kubejs/startup_scripts/customMachines/magic/eternal_soul_compression_unit.js"
@@ -6892,7 +6892,7 @@ hash = "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
 
 [[files]]
 file = "mods/icbg-core-1.20.1-1.0.0.jar"
-hash = "59e1ccf25558923345f31fa4b0f69919bd8af3001ecee9066a42d57bb454f268"
+hash = "02b0059f04dce5ef2c462dc9b1ba9e4404717810e277cf5b6809925570db7dd8"
 
 [[files]]
 file = "mods/icbg-gear-1.20.1-1.0.0.jar"
@@ -7896,10 +7896,6 @@ hash = "db4ba9188052b75c67fe536e5e7fc127499611abcb98b3542cf79a450fa13ece"
 [[files]]
 file = "tacz/Applied Armorer-v1.1.4.1-for114+.zip"
 hash = "e52ddb8b6412951f9b79c9ed9a7521a849cef4192f19af4843a3392cdbcfc420"
-
-[[files]]
-file = "tacz/Ars Armorer_v1.0.1_for117.zip"
-hash = "42bf9b52c340693c3f961b1385880e9938b5d032bd3b31eec539539b88204c7a"
 
 [[files]]
 file = "tacz/Create Armorer-v1.2.0.1-for117.zip"
