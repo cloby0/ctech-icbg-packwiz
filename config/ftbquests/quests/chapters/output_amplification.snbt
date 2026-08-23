@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "output_amplification"
+	group: "337107DE6FEF7850"
+	hide_quest_until_deps_visible: false
+	icon: "gtceu:automated_mana_pond"
+	id: "6217FA8A3C5366DC"
+	order_index: 12
+	quests: [
+		{
+			description: [
+				"every magic mod's own station still works with zero GT, always. the seven multiblocks below are optional mirrors: same recipe, same output, but automatable and parallelizable instead of hand-worked."
+				""
+				"nothing here is a shortcut to a material a magic player can't also get. it's the same recipe, running while you're not watching it."
+			]
+			id: "22E51C8F30C7FFBC"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "tech feeds magic back"
+			tasks: [{
+				id: "33A444E214F8E891"
+				title: "Output Amplification"
+				type: "checkmark"
+			}]
+			title: "Output Amplification"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6mana pond&r mirrors botania's &bmana pool&r infusion recipes one for one. feed it items and a mana input hatch, get the same output the pool would give -- just automatable, and parallel-scalable with a parallel hatch."
+				""
+				"built at MV. the real mana pool never stops working; this just means you don't have to stand there refilling it."
+			]
+			id: "625B93E782B73B02"
+			subtitle: "mana infusion, unattended"
+			tasks: [{
+				id: "75C6A8EF93E7D4A0"
+				item: "gtceu:automated_mana_pond"
+				type: "item"
+			}]
+			title: "Mana Pond"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6runic forge&r mirrors botania's &brunic altar&r. same rune recipes, same mana cost, run through a hatch instead of a nearby mana spreader network."
+				""
+				"built at HV. runeforging by hand never goes away -- this is throughput for a base making runes in bulk."
+			]
+			id: "3BE7A01BF9F9AAD0"
+			subtitle: "runeforging, unattended"
+			tasks: [{
+				id: "6734BD08E1072743"
+				item: "gtceu:runic_forge"
+				type: "item"
+			}]
+			title: "Runic Forge"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6terra reliquary&r mirrors botania's &bterrestrial agglomeration&r ritual -- the recipe that makes terra plates. same mana cost, same output, no ritual altar upkeep."
+				""
+				"built at HV. this is the single biggest mana sink in the pack; automating it is worth it the moment you're making a second terra plate."
+			]
+			id: "5B6378A1FF621540"
+			subtitle: "terra plates, unattended"
+			tasks: [{
+				id: "0EFF29CCC6B50AC5"
+				item: "gtceu:terra_reliquary"
+				type: "item"
+			}]
+			title: "Terra Reliquary"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6alfheim post office&r mirrors botania's &belven trade ritual&r -- the recipe elementium is made from. same trade, same mana upkeep, no ritual stone babysitting."
+				""
+				"built at HV. elementium is on the magic spine at Initiate; this just keeps the trade running while you're elsewhere."
+			]
+			id: "6D9ED3A4C28303A2"
+			subtitle: "elven trade, unattended"
+			tasks: [{
+				id: "195795FED2F37D45"
+				item: "gtceu:alfheim_post_office"
+				type: "item"
+			}]
+			title: "Alfheim Post Office"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6alchemical thinktank&r mirrors blood magic's &balchemy table&r. same LP syphon, same recipes, drawn from an LP input hatch instead of a nearby blood altar network."
+				""
+				"built at HV. every alchemy table recipe in the pack -- relics, trinkets, tier microcrafting -- runs through this if you'd rather not stand at the table."
+			]
+			id: "355F98532FFFEFFF"
+			subtitle: "alchemy, unattended"
+			tasks: [{
+				id: "4CFA95ED23F16273"
+				item: "gtceu:alchemical_thinktank"
+				type: "item"
+			}]
+			title: "Alchemical Thinktank"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6meteor chamber&r mirrors blood magic's meteor ritual (&bMark of the Falling Tower&r). same catalyst, same LP cost, but a fixed item payout instead of a randomised in-world explosion -- a GT recipe can't world-gen terrain."
+				""
+				"built at LuV. the real ritual still works and still drops its usual ore spread; this is the version that fits on a factory floor."
+			]
+			id: "2B1CEA712973992B"
+			subtitle: "meteor ritual, unattended"
+			tasks: [{
+				id: "3A3C1660EB51192B"
+				item: "gtceu:meteor_chamber"
+				type: "item"
+			}]
+			title: "Meteor Chamber"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["22E51C8F30C7FFBC"]
+			description: [
+				"the &6eternal soul compression unit&r mirrors occultism's crafting rituals. it charges LP through an input hatch and gates by installed blood orb tier -- foliot and djinni rituals need LuV, afrit needs ZPM, marid needs UV."
+				""
+				"the real ritual circle never goes away. this is the version that runs while your familiar is off doing something else."
+			]
+			id: "197ECECE7B065388"
+			subtitle: "ritual crafting, unattended"
+			tasks: [{
+				id: "0727E929411F54B2"
+				item: "gtceu:eternal_soul_compression_unit"
+				type: "item"
+			}]
+			title: "Eternal Soul Compression Unit"
+			x: 1.5d
+			y: -10.5d
+		}
+	]
+	subtitle: ["seven magic stations, mirrored as GT multiblocks. never a shortcut, always a bulk lane."]
+	title: "Output Amplification"
+}

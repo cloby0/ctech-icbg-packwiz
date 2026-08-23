@@ -31,7 +31,7 @@
 			{
 				dependencies: ["24F3267F87E97C82"]
 				description: [
-					"from here, the magic tree requires the tech tree. get the tech side through &6UHV/draconic&r: awakened draconium ingots, wyvern cores, dragon hearts, &6gtceu:neutronium_ingot&r, &6kubejs:gaian_neutronium_boule&r, and &6kubejs:argentware_processor_supercomputer&r."
+					"from here, the magic tree requires the tech tree. get the tech side through &6UHV/draconic&r: awakened draconium ingots, wyvern cores, dragon hearts, &6gtceu:neutronium_ingot&r, &6kubejs:wyrmforged_neutronium_boule&r, and &6kubejs:argentware_processor_supercomputer&r."
 					""
 					"everything below is an alchemy table recipe -- 160,000 LP each (`LP.PROPHET`)."
 				]
@@ -68,7 +68,7 @@
 			{
 				dependencies: ["6545B84EE014D2DB", "24F3267F87E97C82"]
 				description: [
-					"alchemy table: `kubejs:gaian_neutronium_boule` + dragon heart crystal + 2x awakened draconium ingot + a wyvern core + 2x gaia ingot + 2x neutronium ingot."
+					"alchemy table: `kubejs:wyrmforged_neutronium_boule` + dragon heart crystal + 2x awakened draconium ingot + a wyvern core + 2x gaia ingot + 2x neutronium ingot."
 					""
 					"a pure kubejs item with no gt forms -- it holds the centre slot in every component below."
 				]

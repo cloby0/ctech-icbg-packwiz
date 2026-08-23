@@ -449,7 +449,7 @@ ServerEvents.recipes(event => {
     addEnchantingRecipe(event, {
         reagent: 'gtceu:neutronium_boule',
         pedestalItems: ['botania:gaia_ingot'],
-        output: 'kubejs:gaian_neutronium_boule',
+        output: 'kubejs:wyrmforged_neutronium_boule',
         sourceCost: Source.THAUMATURGE
     })
 
@@ -759,8 +759,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.cutter('cut_gaian_neutronium_boule')
-        .itemInputs('kubejs:gaian_neutronium_boule')
+    event.recipes.gtceu.cutter('cut_wyrmforged_neutronium_boule')
+        .itemInputs('kubejs:wyrmforged_neutronium_boule')
         .inputFluids(Fluid.of('gtceu:lubricant', 1500))
         .itemOutputs('192x gtceu:neutronium_wafer')
         .duration(2000)

@@ -221,8 +221,12 @@ file = "config/ftbquests/quests/chapters/journeyman.snbt"
 hash = "71471dd4aa73ca36541dd50dcd34d3092b5ed282a3fd64fd3e9f7c676ffaf63e"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/output_amplification.snbt"
+hash = "387f8848621169ccc906aaef4b10773bec30964209029ec036ac1963d279974a"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/prophet.snbt"
-hash = "a7cc7cd2492b8663ec1f191dee5da448b0505addc87ee16597c1ea0e09ae7b09"
+hash = "7d593676e211390945932b55a9b368352d916448b67efdc290b8d4af8b0659c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sage.snbt"
@@ -238,7 +242,7 @@ hash = "0d94b81d9851d471f9be387bf5c69a371b7452075d78bf0cc425ca03dc6bf6ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome_to_icbg.snbt"
-hash = "60e21c9ef382357160f60f2e063564e433c99f0cb304eeaee70ea44dcf5ef10d"
+hash = "ec7fcd3a6ee8456e90a63e397e921c1299506eb2741e47b7da17a1b7ebeed5ee"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -1066,7 +1070,7 @@ hash = "2fe3237476ed3466029f6459b1a72876c3b4c8e495ddea11bbf18199d637e21f"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "52db9f8b3360a41bdd9836605c6d0c15c06bde6596a68a59df312cab296c7888"
+hash = "07018946ea32c7dfeed15b2c2535efeb992878957e47aef7ecd61817b3ffa315"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
@@ -5754,7 +5758,7 @@ hash = "136ed58b8e8c5be62997b50cba204936e7920f494a6653a40f027aa5158b1cac"
 
 [[files]]
 file = "kubejs/server_scripts/magic/prophet.js"
-hash = "aba9e2645ddc29a2b6c05aa24a7153b65fc632dc9ea0c4fafd59f1226758f0f5"
+hash = "ea431cfdcf982864f6b3d515141bd0ea6b5de1b7bf9837c9543ebc068e714795"
 
 [[files]]
 file = "kubejs/server_scripts/magic/psi.js"
@@ -5954,7 +5958,7 @@ hash = "fc01cfb1900f9223604451b56829dec478a49436655b3d3e855f9e5eac1c763d"
 
 [[files]]
 file = "kubejs/server_scripts/techMagicInteraction.js"
-hash = "7265737c04f192ef48e51b49c932ebe0eea35b602b18e76100195487c0a6b6c6"
+hash = "4d3c81388b6b4ee5d7df478afdde0948d85bf789ea6dc4e54b8f704143028390"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen/aetherWorldgen.js"
@@ -6090,7 +6094,7 @@ hash = "50cd94672812eed675e47acce700a8d94f831747892b2d49891cf5d6a499f503"
 
 [[files]]
 file = "kubejs/startup_scripts/itemRegistry.js"
-hash = "79d1deb8cae0d5b3ca160fbd345c88789635e7254222a68eacba8a704974177f"
+hash = "395e6b47c6a51d70a0c47a3a2e35ca2304b1b2448bf5c16df25334a119c1aee9"
 
 [[files]]
 file = "kubejs/startup_scripts/layerRegistry.js"

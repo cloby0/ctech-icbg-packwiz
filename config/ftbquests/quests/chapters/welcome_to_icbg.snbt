@@ -264,7 +264,7 @@
 				""
 				"tip: magic here is restructured around pack progression -- recipes you know from other packs WILL lie to you. trust JEI, not memory."
 			]
-			icon: "ars_nouveau:source_gem"
+			icon: "gtceu:ashen_ichor_ingot"
 			id: "42FBF65B12E36EC7"
 			shape: "diamond"
 			subtitle: "sorcery"

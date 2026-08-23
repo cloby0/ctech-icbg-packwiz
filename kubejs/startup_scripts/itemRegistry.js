@@ -103,7 +103,7 @@ StartupEvents.registry('item', event => {
     event.create('hallowed_silicon_boule').texture('gtceu:item/silicon_boule').glow(true)
     event.create('primal_phosphorus_boule').texture('gtceu:item/phosphorus_boule').glow(true)
     event.create('verdant_naquadah_boule').texture('gtceu:item/naquadah_boule').glow(true)
-    event.create('gaian_neutronium_boule').texture('gtceu:item/neutronium_boule').glow(true)
+    event.create('wyrmforged_neutronium_boule').texture('gtceu:item/neutronium_boule').glow(true)
 
     event.create('gaia_flux_dust')
     event.create('sperm_cell_pellet')

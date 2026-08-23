@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     addAlchemyTableRecipe(event, {
         output: 'kubejs:draconic_boule',
         input: [
-            'kubejs:gaian_neutronium_boule',
+            'kubejs:wyrmforged_neutronium_boule',
             'kubejs:dragon_heart_crystal',
             'draconicevolution:awakened_draconium_ingot',
             'draconicevolution:awakened_draconium_ingot',
